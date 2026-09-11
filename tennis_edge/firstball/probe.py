@@ -23,7 +23,9 @@ from datetime import datetime, timezone, date
 
 from .catalogue import CANDIDATES, UA_BROWSERISH, Candidate
 
-MAX_STORE_BYTES = 2_000_000
+# ESPN's WTA scoreboard alone is >2 MB; a cap that truncates a payload makes a live source look
+# broken, which is exactly the kind of self-inflicted false negative this research must not make.
+MAX_STORE_BYTES = 16_000_000
 TIMESTAMP_KEY_RE = re.compile(r"(time|date|ts$|_ts|stamp|start|begin|clock|updated|modified)", re.I)
 ISO_RE = re.compile(r"^\d{4}-\d{2}-\d{2}([T ]\d{2}:\d{2}(:\d{2})?)?")
 RATE_HEADERS = ("retry-after", "x-ratelimit-limit", "x-ratelimit-remaining", "x-ratelimit-reset",
@@ -115,9 +117,17 @@ def fetch(url: str, *, accept: str, referer: str = "", ua: str = UA_BROWSERISH, 
     return rec
 
 
-def analyse(rec: dict, expect: str) -> dict:
+def analyse(rec: dict, expect: str, raw_path: str | None = None) -> dict:
+    """Summarise a fetch. When `raw_path` is given the payload is also stored gzipped, so a later reader
+    can re-derive anything this summary missed (the summary is lossy; the evidence must not be)."""
     body = rec.pop("_body", b"")
     out = dict(rec)
+    if raw_path and body:
+        os.makedirs(os.path.dirname(raw_path), exist_ok=True)
+        with gzip.open(raw_path, "wb") as fh:
+            fh.write(body)
+        out["raw_evidence"] = os.path.relpath(raw_path, os.path.dirname(os.path.dirname(raw_path)))
+        out["raw_sha256"] = __import__("hashlib").sha256(body).hexdigest()
     if not body:
         return out
     if expect in ("json", "unknown"):

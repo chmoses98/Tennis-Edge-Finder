@@ -32,6 +32,7 @@ def main():
     ap.add_argument("--round-gap", type=int, default=120, help="seconds between rounds")
     ap.add_argument("--per-request-gap", type=float, default=1.5)
     ap.add_argument("--only", default="", help="comma-separated candidate ids")
+    ap.add_argument("--save-raw", action="store_true", help="store every payload gzipped under raw/")
     a = ap.parse_args()
 
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
@@ -57,11 +58,11 @@ def main():
         print(f"== round {rnd} ({len(cands)} candidates)", flush=True)
         for c in cands:
             url = _fmt_urls(c, today)
+            raw = os.path.join(out, "raw", f"{c.id}.r{rnd}.gz") if a.save_raw else None
             try:
-                rec = analyse(fetch(url, accept=c.accept, referer=c.referer), c.expect)
+                rec = analyse(fetch(url, accept=c.accept, referer=c.referer), c.expect, raw)
             except Exception as e:
                 rec = {"url": url, "status": None, "error": f"probe-crash {type(e).__name__}: {e}"[:300]}
-            body_key = f"{c.id}.r{rnd}"
             slot = summary["candidates"].setdefault(c.id, {
                 "name": c.name, "host_class": c.host_class, "levels": list(c.levels),
                 "answers": list(c.answers), "auth": c.auth, "notes": c.notes, "url_template": c.url,
@@ -78,7 +79,8 @@ def main():
                     continue
                 url = _fmt_urls(c, y)
                 try:
-                    rec = analyse(fetch(url, accept=c.accept, referer=c.referer), c.expect)
+                    rec = analyse(fetch(url, accept=c.accept, referer=c.referer), c.expect,
+                                  os.path.join(out, "raw", f"{c.id}.hist.gz") if a.save_raw else None)
                 except Exception as e:
                     rec = {"url": url, "status": None, "error": f"probe-crash {type(e).__name__}: {e}"[:300]}
                 summary["candidates"][c.id]["historical_probe"] = rec

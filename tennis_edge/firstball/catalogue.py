@@ -117,4 +117,43 @@ CANDIDATES: tuple[Candidate, ...] = (
       notes="EXCHANGE_TRUTH; may corroborate but never be sole sports-truth authority"),
 )
 
+# ---------------------------------------------------------------------------------------------------
+# Round 2, added after the 2026-09-11T19:36Z probe. That round established: ESPN's site API is reachable
+# and rich; ATP, SofaScore and flashscore block runner IPs (Cloudflare / 401); the ITF API root works but
+# the live-scores controller name was wrong; several guessed slam feeds are stale paths. These candidates
+# chase the gaps that matter -- above all ITF/Challenger/qualifying, which nothing reachable covers yet.
+ROUND2: tuple[Candidate, ...] = (
+    C("espn_leagues", "ESPN core - every tennis league ESPN carries", "broadcaster",
+      "https://sports.core.api.espn.com/v2/sports/tennis/leagues?limit=100", ("ALL",), (),
+      notes="does ESPN carry Challenger/ITF at all?"),
+    C("espn_site_atp_chal", "ESPN site API - ATP Challenger scoreboard", "broadcaster",
+      "https://site.api.espn.com/apis/site/v2/sports/tennis/atp-challenger/scoreboard?dates={date_ymd}",
+      ("CHALLENGER",), (1, 3, 4)),
+    C("espn_site_itf_men", "ESPN site API - ITF men scoreboard", "broadcaster",
+      "https://site.api.espn.com/apis/site/v2/sports/tennis/itf-men/scoreboard?dates={date_ymd}",
+      ("ITF_M",), (1, 3, 4)),
+    C("itf_livescores_page", "ITF live-scores page (to discover the real API path)", "official_tour",
+      "https://www.itftennis.com/en/live-scores/", ("ITF_M", "ITF_W", "QUALIFYING"), (3, 4),
+      expect="html", accept="text/html"),
+    C("itf_livescore_api_v2", "ITF - LiveScoresApi alternate controller", "official_tour",
+      "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=MT",
+      ("ITF_M",), (3, 4), referer="https://www.itftennis.com/en/live-scores/"),
+    C("itf_matches_api", "ITF - MatchesApi live scores", "official_tour",
+      "https://www.itftennis.com/tennis/api/MatchesApi/GetLiveScores?circuitCode=MT",
+      ("ITF_M",), (3, 4), referer="https://www.itftennis.com/en/live-scores/"),
+    C("protennislive_home", "protennislive home (to discover its feed)", "official_tour",
+      "https://www.protennislive.com/", ("ATP", "CHALLENGER"), (3, 4), expect="html", accept="text/html"),
+    C("tennisexplorer_live", "tennisexplorer live page", "aggregator",
+      "https://www.tennisexplorer.com/live/", ("ATP", "WTA", "CHALLENGER", "ITF_M", "ITF_W", "QUALIFYING"),
+      (3, 4), expect="html", accept="text/html", notes="robots.txt allows /live/"),
+    C("sofascore_www_host", "SofaScore via www host", "aggregator",
+      "https://www.sofascore.com/api/v1/sport/tennis/events/live",
+      ("ATP", "WTA", "CHALLENGER", "ITF_M", "ITF_W"), (1, 3, 4, 5), referer="https://www.sofascore.com/"),
+    C("sofascore_app_host", "SofaScore via app host", "aggregator",
+      "https://api.sofascore.app/api/v1/sport/tennis/events/live",
+      ("ATP", "WTA", "CHALLENGER", "ITF_M", "ITF_W"), (1, 3, 4, 5), referer="https://www.sofascore.com/"),
+)
+
+CANDIDATES = CANDIDATES + ROUND2
+
 HOSTS = tuple(sorted({c.url.split("/")[2] for c in CANDIDATES}))

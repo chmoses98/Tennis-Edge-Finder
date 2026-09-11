@@ -19,6 +19,10 @@ on:
         description: 'comma-separated candidate ids, blank for all'
         required: false
         default: ''
+      save_raw:
+        description: 'store every payload gzipped as raw evidence (true/false)'
+        required: false
+        default: 'false'
 
 permissions:
   contents: write
@@ -43,7 +47,8 @@ jobs:
           python3 scripts/firstball/probe_sources.py \
             --rounds "${{ github.event.inputs.rounds || '3' }}" \
             --round-gap "${{ github.event.inputs.round_gap || '120' }}" \
-            --only "${{ github.event.inputs.only || '' }}"
+            --only "${{ github.event.inputs.only || '' }}" \
+            ${{ github.event.inputs.save_raw == 'true' && '--save-raw' || '' }}
       - name: Publish evidence
         if: always()
         run: |
