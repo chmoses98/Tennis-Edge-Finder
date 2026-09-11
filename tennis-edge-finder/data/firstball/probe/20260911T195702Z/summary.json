@@ -1,0 +1,485 @@
+{
+ "run_id": "20260911T195702Z",
+ "started_at": "2026-09-11T19:57:02.341330+00:00",
+ "rounds": 1,
+ "round_gap_s": 30,
+ "probe_date_utc": "2026-09-11",
+ "candidates": {
+  "itf_live_host": {
+   "name": "live.itftennis.com scoreboard page",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_M",
+    "ITF_W",
+    "QUALIFYING"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://live.itftennis.com/en/live-scores/",
+   "rounds": [
+    {
+     "url": "https://live.itftennis.com/en/live-scores/",
+     "requested_at_utc": "2026-09-11T19:58:09.211087+00:00",
+     "status": 200,
+     "latency_ms": 959,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 53866,
+     "truncated": false,
+     "headers": {},
+     "raw_evidence": "raw/itf_live_host.r0.gz",
+     "raw_sha256": "a5cdc9c096590aadebe95d3af21b3730ffed91556fd583505dd84f7ba820bf8a",
+     "parse": "html",
+     "text_head": "\r\n\r\n<!doctype html>\r\n<html class=\"js-priorityNav\" lang=\"en\">\r\n<head><script src=\"/fic-number-thrall-faire-touch-dull-fight-erefull\" async></script>\r\n    <!-- Google Tag Manager -->\r\n<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\r\nnew Date().getTime(),event:'gtm.js'});var f=d.getE"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 959,
+    "latency_ms_max": 959,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "itf_widget_sdk": {
+   "name": "ITF widget SDK bundle (to discover its data host)",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_M",
+    "ITF_W"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "JavaScript; probed to read the API base URL out of it",
+   "url_template": "https://widgets.itf-production.sports-data.stadion.io/itf-widget-sdk.umd.js",
+   "rounds": [
+    {
+     "url": "https://widgets.itf-production.sports-data.stadion.io/itf-widget-sdk.umd.js",
+     "requested_at_utc": "2026-09-11T19:58:11.672795+00:00",
+     "status": 200,
+     "latency_ms": 1305,
+     "content_type": "text/javascript",
+     "bytes": 1214531,
+     "truncated": false,
+     "headers": {
+      "server": "AmazonS3"
+     },
+     "raw_evidence": "raw/itf_widget_sdk.r0.gz",
+     "raw_sha256": "4679a4913507ee3bc7ba830fd0ceb304f8f02b91f1baeb122e7b65d4a0978e7a",
+     "parse": "html",
+     "text_head": "(function(C,Ot){typeof exports==\"object\"&&typeof module<\"u\"?Ot(require(\"react\"),require(\"react-dom\")):typeof define==\"function\"&&define.amd?define([\"react\",\"react-dom\"],Ot):(C=typeof globalThis<\"u\"?globalThis:C||self,Ot(C.React,C.ReactDOM))})(this,function(C,Ot){\"use strict\";var i8=Object.defineProp"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 1305,
+    "latency_ms_max": 1305,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "stadion_itf_root": {
+   "name": "stadion.io ITF data host root",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_M",
+    "ITF_W"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.itf-production.sports-data.stadion.io/",
+   "rounds": [
+    {
+     "url": "https://api.itf-production.sports-data.stadion.io/",
+     "requested_at_utc": "2026-09-11T19:58:14.530838+00:00",
+     "status": 403,
+     "latency_ms": 296,
+     "error": "HTTPError 403",
+     "content_type": "text/html",
+     "bytes": 919,
+     "headers": {
+      "server": "CloudFront"
+     },
+     "raw_evidence": "raw/stadion_itf_root.r0.gz",
+     "raw_sha256": "9a965af6be2d80dc7d0e5c35a6c74d00a783577654c8ab3a59e2638ab4ddf304",
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01 Transitional//EN\" \"http://www.w3.org/TR/html4/loose.dtd\">\n<HTML><HEAD><META HTTP-EQUIV=\"Content-Type\" CONTENT=\"text/html; charset=iso-8859-1\">\n<TITLE>ERROR: The request could not be satisfied</TITLE>\n</HEAD><BODY>\n<H1>403 ERROR</H1>\n<H2>The request could "
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     403
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 296,
+    "latency_ms_max": 296,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "stadion_itf_alt": {
+   "name": "stadion.io ITF host (widget subdomain root)",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_M",
+    "ITF_W"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://itf-production.sports-data.stadion.io/",
+   "rounds": [
+    {
+     "url": "https://itf-production.sports-data.stadion.io/",
+     "requested_at_utc": "2026-09-11T19:58:16.328037+00:00",
+     "status": null,
+     "latency_ms": 278,
+     "error": "URLError: <urlopen error [Errno -5] No address associated with hostname>",
+     "bytes": 0
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     null
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 278,
+    "latency_ms_max": 278,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "tennisexplorer_matches": {
+   "name": "tennisexplorer full match board for a date",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA",
+    "CHALLENGER",
+    "ITF_M",
+    "ITF_W",
+    "QUALIFYING"
+   ],
+   "answers": [
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "only plausible Challenger/ITF route not behind a bot wall",
+   "url_template": "https://www.tennisexplorer.com/matches/?type=all&year={year}&month={month}&day={day}",
+   "rounds": [
+    {
+     "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=11",
+     "requested_at_utc": "2026-09-11T19:58:18.107064+00:00",
+     "status": 200,
+     "latency_ms": 1879,
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 500485,
+     "truncated": false,
+     "headers": {
+      "server": "nginx"
+     },
+     "raw_evidence": "raw/tennisexplorer_matches.r0.gz",
+     "raw_sha256": "38641211d79e257f9f803fd9674579e285e342325996f421a02ac8bc44200761",
+     "parse": "html",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://developers.facebook.com/schema/\">\n<head>\n    <"
+    }
+   ],
+   "historical_probe": {
+    "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=10",
+    "requested_at_utc": "2026-09-11T19:58:23.190476+00:00",
+    "status": 200,
+    "latency_ms": 2147,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 622621,
+    "truncated": false,
+    "headers": {
+     "server": "nginx"
+    },
+    "raw_evidence": "raw/tennisexplorer_matches.hist.gz",
+    "raw_sha256": "048cdd4d7e9ea71571f051b7e3d9889e8f43fa1f130b32f6444aa1d233750e76",
+    "parse": "html",
+    "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://developers.facebook.com/schema/\">\n<head>\n    <"
+   },
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 1879,
+    "latency_ms_max": 1879,
+    "timestamp_fields": [],
+    "historical_status": 200
+   }
+  },
+  "protennislive_http": {
+   "name": "protennislive over plain http",
+   "host_class": "official_tour",
+   "levels": [
+    "ATP",
+    "CHALLENGER"
+   ],
+   "answers": [
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "http://www.protennislive.com/",
+   "rounds": [
+    {
+     "url": "http://www.protennislive.com/",
+     "requested_at_utc": "2026-09-11T19:58:21.499497+00:00",
+     "status": 503,
+     "latency_ms": 190,
+     "error": "HTTPError 503",
+     "content_type": "text/html; charset=us-ascii",
+     "bytes": 326,
+     "headers": {
+      "cf-ray": "a3993f288faeae99-SJC",
+      "server": "cloudflare"
+     },
+     "raw_evidence": "raw/protennislive_http.r0.gz",
+     "raw_sha256": "fb2d9f058c2010c57f86a05ae33d282f33e3825290c66b8b120cd177416c6bdf",
+     "parse": "html",
+     "text_head": "<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\"http://www.w3.org/TR/html4/strict.dtd\">\r\n<HTML><HEAD><TITLE>Service Unavailable</TITLE>\r\n<META HTTP-EQUIV=\"Content-Type\" Content=\"text/html; charset=us-ascii\"></HEAD>\r\n<BODY><h2>Service Unavailable</h2>\r\n<hr><p>HTTP Error 503. The service is unavaila"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     503
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 190,
+    "latency_ms_max": 190,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  }
+ },
+ "robots": {
+  "api.elections.kalshi.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "api.itf-production.sports-data.stadion.io": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 919
+  },
+  "api.sofascore.app": {
+   "status": 200,
+   "disallow_star": [
+    "/"
+   ],
+   "bytes": 34
+  },
+  "api.sofascore.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 48
+  },
+  "api.tennisapi.io": {
+   "status": 200,
+   "disallow_star": [
+    "/api/",
+    "/cdn-cgi/l/email-protection"
+   ],
+   "bytes": 617
+  },
+  "api.wtatennis.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "ausopen.com": {
+   "status": 200,
+   "disallow_star": [
+    "/core/",
+    "/profiles/",
+    "/README.md",
+    "/composer/Metapackage/README.txt",
+    "/composer/Plugin/ProjectMessage/README.md",
+    "/composer/Plugin/Scaffold/README.md",
+    "/composer/Plugin/VendorHardening/README.txt",
+    "/composer/Template/README.txt",
+    "/modules/README.txt",
+    "/sites/README.txt",
+    "/themes/README.txt",
+    "/admin/",
+    "/comment/reply/",
+    "/filter/tips",
+    "/node/add/",
+    "/search/",
+    "/user/register",
+    "/user/password",
+    "/user/login",
+    "/user/logout",
+    "/media/oembed",
+    "/*/media/oembed",
+    "/index.php/admin/",
+    "/index.php/comment/reply/",
+    "/index.php/filter/tips",
+    "/index.php/node/add/",
+    "/index.php/search/",
+    "/index.php/user/password",
+    "/index.php/user/register",
+    "/index.php/user/login",
+    "/index.php/user/logout",
+    "/index.php/media/oembed",
+    "/index.php/*/media/oembed",
+    "/search"
+   ],
+   "bytes": 2111
+  },
+  "itf-production.sports-data.stadion.io": {
+   "status": null,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "live.itftennis.com": {
+   "status": 200,
+   "disallow_star": [],
+   "bytes": 53858
+  },
+  "local-global.flashscore.ninja": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "prod-public-api.livescore.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 548
+  },
+  "site.api.espn.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 389
+  },
+  "sports.core.api.espn.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 520
+  },
+  "widgets.itf-production.sports-data.stadion.io": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 111
+  },
+  "www.atptour.com": {
+   "status": 200,
+   "disallow_star": [
+    "/sitecore/",
+    "*/ajax/*",
+    "/*/photos/photo-filter-results",
+    "/*/scores/archive/*",
+    "/*/search-results",
+    "/*/video/video-filter-results",
+    "/*/stats/player-tendencies",
+    "/*/scores/match-stats",
+    "/*/scores/second-screen"
+   ],
+   "bytes": 2183
+  },
+  "www.itftennis.com": {
+   "status": 200,
+   "disallow_star": [
+    "/umbraco/"
+   ],
+   "bytes": 126
+  },
+  "www.protennislive.com": {
+   "status": 503,
+   "disallow_star": [],
+   "bytes": 326
+  },
+  "www.rolandgarros.com": {
+   "status": 200,
+   "disallow_star": [
+    "/admin",
+    "/maintenance"
+   ],
+   "bytes": 77
+  },
+  "www.sofascore.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 48
+  },
+  "www.tennisexplorer.com": {
+   "status": 200,
+   "disallow_star": [
+    "/redirect/",
+    "/terms-of-use/",
+    "/contact/"
+   ],
+   "bytes": 132
+  },
+  "www.thesportsdb.com": {
+   "status": 200,
+   "disallow_star": [
+    "/nfo/",
+    "/nfo.php"
+   ],
+   "bytes": 379
+  },
+  "www.usopen.org": {
+   "status": null,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "www.wimbledon.com": {
+   "status": 200,
+   "disallow_star": [
+    "/en_GB/scores/2025/schedule/pdf/",
+    "/en_GB/wimbledonfoundation/",
+    "/en_GB/visitandtickets/",
+    "/en_GB/amexverify/",
+    "/en_GB/mywimbledon/",
+    "/matchvideo/",
+    "/webview/",
+    "/s/",
+    "/api/",
+    "/author/",
+    "/testwim",
+    "/mobile",
+    "/zh_CN"
+   ],
+   "bytes": 500
+  }
+ },
+ "finished_at": "2026-09-11T19:58:26.853867+00:00"
+}
