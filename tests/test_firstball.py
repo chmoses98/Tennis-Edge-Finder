@@ -315,3 +315,21 @@ def test_23_full_name_bindings_are_strong_bare_surnames_are_weak():
     assert affinity("Juan Pablo Varillas", "Juan P. Varillas") == 1.0
     assert affinity("Zverev", "Alexander Zverev") == 0.7          # bare surname stays WEAK
     assert affinity("Alexander Zverev", "Mischa Zverev") == 0.0   # wrong person, never a partial match
+
+
+def test_24_many_kalshi_events_for_one_physical_match_all_bind():
+    """Kalshi lists one meeting under several event tickers; they are one match on one court."""
+    feed = [SourceMatch("espn_atp", "182768", "Alexander Zverev", "Karen Khachanov", "PRE", scheduled_utc=SCHED)]
+    ours = [OurMatch(f"KXATP{fam}-26SEP11ZVEKHA", "Alexander Zverev", "Karen Khachanov", SCHED)
+            for fam in ("MATCH", "EXACTMATCH", "SSPREAD", "SETWINNER-2", "SETWINNER-3")]
+    mp, _ = map_all(ours, feed)
+    assert {m.status for m in mp.values()} == {"MATCHED"}
+    assert {m.source_match_id for m in mp.values()} == {"182768"}
+
+
+def test_25_two_different_physical_matches_claiming_one_row_still_collide():
+    feed = [SourceMatch("espn_atp", "1", "A B", "C D", "PRE", scheduled_utc=SCHED)]
+    ours = [OurMatch("m1", "A B", "C D", SCHED), OurMatch("m2", "A B", "C D", SCHED + timedelta(days=3))]
+    mp, _ = map_all(ours, feed, window_hours=200)
+    assert mp["m1"].status == "AMBIGUOUS" and mp["m2"].status == "AMBIGUOUS"
+    assert "different physical matches" in mp["m1"].reason

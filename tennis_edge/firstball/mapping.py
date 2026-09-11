@@ -34,6 +34,19 @@ class OurMatch:
     scheduled_utc: datetime | None = None
     doubles: bool = False
 
+    @property
+    def physical_key(self) -> str:
+        """What PHYSICAL match this is, independent of how many Kalshi events cover it.
+
+        Kalshi lists one physical meeting under several event tickers -- match winner, exact score, set
+        spread, set winner and so on all get their own event. They are one match on one court. Without
+        this, the collision guard sees five of 'our matches' claiming a single feed row and refuses all
+        of them, which is exactly what happened on the first live run.
+        """
+        a, b = sorted((normalize_name(self.player_a), normalize_name(self.player_b)))
+        day = self.scheduled_utc.date().isoformat() if self.scheduled_utc else ""
+        return f"{a}|{b}|{day}|{'D' if self.doubles else 'S'}"
+
 
 @dataclass(frozen=True)
 class Mapping:
@@ -127,16 +140,19 @@ def map_all(ours: list[OurMatch], feed: list[SourceMatch], **kw) -> tuple[dict[s
     counts: dict[str, int] = {}
     for m in out.values():
         counts[m.status] = counts.get(m.status, 0) + 1
-    # a feed match claimed by two of our matches is also a collision: nobody gets it
+    # A feed row claimed by two DIFFERENT physical matches is a collision: nobody gets it. Several event
+    # tickers for the SAME physical match claiming one row is not a collision, it is the normal case.
+    phys = {m.match_id: m.physical_key for m in ours}
     claims: dict[tuple, list[str]] = {}
     for mid, m in out.items():
         if m.status in ("MATCHED", "WEAK"):
             claims.setdefault((m.source, m.source_match_id), []).append(mid)
     for key, mids in claims.items():
-        if len(mids) > 1:
+        if len({phys.get(mid) for mid in mids}) > 1:
             for mid in mids:
                 out[mid] = Mapping(mid, "AMBIGUOUS", source=key[0], score=out[mid].score,
-                                   reason=f"feed match {key[1]} claimed by {len(mids)} of our matches")
+                                   reason=f"feed match {key[1]} claimed by "
+                                          f"{len({phys.get(x) for x in mids})} different physical matches")
             for mid in mids:
                 counts[out[mid].status] = counts.get(out[mid].status, 0)
             counts["MATCHED"] = max(0, counts.get("MATCHED", 0) - sum(1 for mid in mids))
