@@ -1,0 +1,51 @@
+name: First-ball source probe
+
+# Phase 0 of the first-ball-truth wave. The research sandbox has no egress to tennis hosts, so every
+# candidate source is probed from a runner and the raw evidence is published to the `tennis-data` branch.
+# Dispatch-only: this is research, not a production feed, and it must never run itself on a schedule.
+
+on:
+  workflow_dispatch:
+    inputs:
+      rounds:
+        description: 'probe rounds (spaced, to tell luck from reliability)'
+        required: false
+        default: '3'
+      round_gap:
+        description: 'seconds between rounds'
+        required: false
+        default: '120'
+      only:
+        description: 'comma-separated candidate ids, blank for all'
+        required: false
+        default: ''
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-firstball-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probe candidate sources
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/firstball/probe_sources.py \
+            --rounds "${{ github.event.inputs.rounds || '3' }}" \
+            --round-gap "${{ github.event.inputs.round_gap || '120' }}" \
+            --only "${{ github.event.inputs.only || '' }}"
+      - name: Publish evidence
+        if: always()
+        run: |
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/probe \
+            --message "first-ball source probe $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
