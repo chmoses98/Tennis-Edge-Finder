@@ -46,11 +46,22 @@ def latest_discovery(root=None):
 
 
 def same_answer(a, b) -> bool:
+    """Has the ANSWER changed, or only the running lower bound?
+
+    While a match has not started, every pass pushes the lower bound forward by one poll interval, which
+    is real information but is not an answer about the first ball -- and it is always recomputable from
+    the observations, which are kept. Writing a new derivation version for it every sixty seconds would
+    bury the versions that mean something. So a truth with no upper bound is considered unchanged as long
+    as its confidence, contradiction status and walkover status are unchanged; the moment an upper bound
+    appears (play observed) or any of those change, the new derivation is written.
+    """
     if a is None or b is None:
         return False
-    return (a.confidence == b.confidence and a.lower_bound_utc == b.lower_bound_utc
-            and a.upper_bound_utc == b.upper_bound_utc and a.contradiction_status == b.contradiction_status
-            and a.no_play == b.no_play)
+    if (a.confidence, a.contradiction_status, a.no_play) != (b.confidence, b.contradiction_status, b.no_play):
+        return False
+    if a.upper_bound_utc is None and b.upper_bound_utc is None:
+        return True
+    return a.lower_bound_utc == b.lower_bound_utc and a.upper_bound_utc == b.upper_bound_utc
 
 
 def main():
