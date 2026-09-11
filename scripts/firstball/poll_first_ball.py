@@ -180,6 +180,16 @@ def main():
             stats.setdefault("mapping", {})
             for k, v in mdiag["counts"].items():
                 stats["mapping"][k] = stats["mapping"].get(k, 0) + v
+            # keep WHY a pair was refused: a large AMBIGUOUS count is fail-closed behaviour, but it is
+            # only diagnosable if the reason travels with the number
+            samples = stats.setdefault("mapping_refusals", {})
+            for mid, m in mp.items():
+                if m.status in ("AMBIGUOUS", "WEAK") and m.reason and mid not in samples:
+                    samples[mid] = {"status": m.status, "reason": m.reason,
+                                    "score": round(m.score, 3), "runner_up": round(m.runner_up, 3),
+                                    "source": m.source}
+                if len(samples) >= 25:
+                    break
 
         stats["passes"] += 1
         if a.once or (a.max_passes and stats["passes"] >= a.max_passes) or time.time() + interval > end:
