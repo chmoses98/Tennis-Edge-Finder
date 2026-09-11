@@ -12,7 +12,7 @@ construction, which is what keeps the two Zverevs apart.
 from __future__ import annotations
 
 from dataclasses import dataclass
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 from tennis_edge.identity.names import name_tokens, normalize_name, player_match_score
 from .sources import SourceMatch
@@ -78,7 +78,16 @@ def pair_score(src: SourceMatch, ours: OurMatch) -> tuple[float, bool]:
     return (direct, False) if direct >= swap else (swap, True)
 
 
-def map_match(ours: OurMatch, feed: list[SourceMatch], *, window_hours: int = DEFAULT_WINDOW_HOURS) -> Mapping:
+def map_match(ours: OurMatch, feed: list[SourceMatch], *, window_hours: int = DEFAULT_WINDOW_HOURS,
+              now: datetime | None = None) -> Mapping:
+    """Bind one of our matches to one feed row, or refuse.
+
+    A tournament board lists the SAME pair in several rounds across a fortnight, so a name-only contest
+    ties and everything is refused. The tie-break is time, and only time: among the top-scoring
+    candidates, the one scheduled nearest our own nominal time (or nearest now, when we have no nominal)
+    is the current meeting. If two candidates tie on BOTH name score and time distance, nothing is
+    chosen -- that is a genuine collision and it fails closed.
+    """
     scored = []
     for s in feed:
         if s.doubles != ours.doubles:
@@ -91,13 +100,22 @@ def map_match(ours: OurMatch, feed: list[SourceMatch], *, window_hours: int = DE
             scored.append((sc, s, swapped))
     if not scored:
         return Mapping(ours.match_id, "UNMATCHED", reason="no candidate above the affinity floor")
-    scored.sort(key=lambda x: -x[0])
+    anchor = ours.scheduled_utc or now or datetime.now(timezone.utc)
+
+    def time_distance(s: SourceMatch):
+        if s.scheduled_utc is None:
+            return float("inf")
+        return abs((s.scheduled_utc - anchor).total_seconds())
+
+    scored.sort(key=lambda x: (-x[0], time_distance(x[1]), x[1].source_match_id))
     best_score, best, swapped = scored[0]
     rivals = [x for x in scored[1:] if x[1].source_match_id != best.source_match_id]
     runner = rivals[0][0] if rivals else 0.0
-    if rivals and best_score - runner <= MIN_MARGIN:
+    tied = [x for x in rivals if best_score - x[0] <= MIN_MARGIN
+            and time_distance(x[1]) - time_distance(best) <= MIN_MARGIN]
+    if tied:
         return Mapping(ours.match_id, "AMBIGUOUS", source=best.source, score=best_score, runner_up=runner,
-                       reason=f"{1 + len(rivals)} feed matches tie at {best_score:.2f}")
+                       reason=f"{1 + len(tied)} feed matches tie at {best_score:.2f} and are equidistant in time")
     status = "MATCHED" if best_score >= STRONG_AFFINITY else "WEAK"
     return Mapping(ours.match_id, status, source=best.source, source_match_id=best.source_match_id,
                    score=best_score, runner_up=runner, swapped=swapped,

@@ -287,3 +287,31 @@ def test_invariant_same_provider_twice_is_one_witness():
                             obs(source="espn_wta", state="PRE", at=SCHED + timedelta(minutes=40)),
                             obs(source="espn_wta", state="IN", at=SCHED + timedelta(minutes=50))])
     assert both.confidence == "C" and both.bracket_seconds == 720
+
+
+def test_21_same_pair_in_several_rounds_is_broken_by_time_not_refused():
+    """A tournament board lists the same pair across a fortnight; a name-only contest ties on all of them."""
+    feed = [SourceMatch("espn_atp", "r1", "Alexander Zverev", "Karen Khachanov", "POST",
+                        scheduled_utc=SCHED - timedelta(days=5)),
+            SourceMatch("espn_atp", "r2", "Alexander Zverev", "Karen Khachanov", "PRE", scheduled_utc=SCHED),
+            SourceMatch("espn_atp", "r3", "Alexander Zverev", "Karen Khachanov", "POST",
+                        scheduled_utc=SCHED - timedelta(days=12))]
+    mp, _ = map_all([OurMatch("m1", "Alexander Zverev", "Karen Khachanov", SCHED)], feed)
+    assert mp["m1"].status == "MATCHED" and mp["m1"].source_match_id == "r2"
+
+
+def test_22_a_genuine_collision_still_fails_closed():
+    """Equal names AND equal times is a real collision: nothing is chosen."""
+    feed = [SourceMatch("espn_atp", "a", "A B", "C D", "PRE", scheduled_utc=SCHED),
+            SourceMatch("espn_atp", "b", "A B", "C D", "PRE", scheduled_utc=SCHED)]
+    mp, _ = map_all([OurMatch("m2", "A B", "C D", SCHED)], feed)
+    assert mp["m2"].status == "AMBIGUOUS" and "equidistant" in mp["m2"].reason
+
+
+def test_23_full_name_bindings_are_strong_bare_surnames_are_weak():
+    from tennis_edge.firstball.mapping import affinity
+    assert affinity("Alexander Zverev", "Alexander Zverev") == 1.0
+    assert affinity("Zverev A.", "Alexander Zverev") == 1.0
+    assert affinity("Juan Pablo Varillas", "Juan P. Varillas") == 1.0
+    assert affinity("Zverev", "Alexander Zverev") == 0.7          # bare surname stays WEAK
+    assert affinity("Alexander Zverev", "Mischa Zverev") == 0.0   # wrong person, never a partial match

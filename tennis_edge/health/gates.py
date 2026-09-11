@@ -45,7 +45,7 @@ def first_ball_metrics(store_root=None, coverage_path=None, discovery_dir=None, 
     tour calendar happens to be quiet.
     """
     from tennis_edge.firstball.store import FirstBallStore
-    from tennis_edge.firstball.watchlist import RELIABLE_NOMINAL_LEVELS
+    from tennis_edge.firstball.watchlist import SOURCE_COVERED_LEVELS
     now = now or datetime.now(timezone.utc)
     root = store_root or os.path.join(PROJ, "data", "firstball", "store")
     out = {"store": root, "truths": 0, "strict_truths": 0, "no_play": 0, "contradictions": 0,
@@ -79,7 +79,7 @@ def first_ball_metrics(store_root=None, coverage_path=None, discovery_dir=None, 
         try:
             from tennis_edge.firstball.watchlist import build_watchlist
             items, _ = build_watchlist(d, now=now)
-            covered = [i for i in items if i.level in RELIABLE_NOMINAL_LEVELS]
+            covered = [i for i in items if i.level in SOURCE_COVERED_LEVELS]
             seen = {o.match_id for o in obs}
             out["watchlist"] = {
                 "total": len(items),

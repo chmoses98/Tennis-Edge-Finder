@@ -25,6 +25,14 @@ from datetime import datetime, timezone, timedelta
 
 RELIABLE_NOMINAL_LEVELS = ("GRAND_SLAM", "MASTERS_1000", "TOUR_500_250", "TOUR_FINALS", "OLYMPICS", "TEAM")
 
+#: Levels a WIRED first-ball source actually covers. This is NOT the same thing as "the nominal time is
+#: reliable", and conflating the two makes the coverage metric lie. Membership is evidence-based: ESPN's
+#: league index carries atp and wta only (atp-challenger returns HTTP 400), and its WTA board was observed
+#: carrying WTA 125 matches on 2026-09-11. Everything absent here has no first-ball source at all and is
+#: expected to stay START_UNKNOWN -- see docs/FIRST_BALL_SOURCES.md.
+SOURCE_COVERED_LEVELS = ("GRAND_SLAM", "MASTERS_1000", "TOUR_500_250", "TOUR_FINALS", "OLYMPICS", "TEAM",
+                         "WTA_125")
+
 TIER_HOT, TIER_WARM, TIER_COLD = "HOT", "WARM", "COLD"
 TIER_SECONDS = {TIER_HOT: 60, TIER_WARM: 300, TIER_COLD: 900}
 
