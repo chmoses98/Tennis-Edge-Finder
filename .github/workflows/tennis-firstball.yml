@@ -73,6 +73,15 @@ jobs:
           END=$(( $(date +%s) + MINUTES * 60 ))
           SEG=0
           while [ $(date +%s) -lt $END ]; do
+            # Refresh the LIVE open universe before every segment. A discovery snapshot can be many hours
+            # old and still list matches that have since been played out; the capture conductor
+            # republishes the open universe every ten minutes, so its freshest pass is the real one.
+            git fetch --depth=1 origin tennis-data || true
+            rm -rf data/kalshi/capture; mkdir -p data/kalshi/capture
+            for f in $(git ls-tree -r --name-only origin/tennis-data "tennis-edge-finder/data/kalshi/capture/$(date -u +%Y-%m-%d)/" 2>/dev/null | grep '\.quotes\.jsonl\.gz$' | sort | tail -2); do
+              git archive origin/tennis-data "$f" | tar -x --strip-components=1 || true
+            done
+            ls data/kalshi/capture/*/*.quotes.jsonl.gz 2>/dev/null | tail -1 || echo "::warning::no fresh capture pass for segment $SEG"
             python3 scripts/firstball/poll_first_ball.py --minutes "$SEGMENT" --sources "$SOURCES" \
               || echo "::warning::poll segment $SEG returned non-zero (partial)"
             python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/store \

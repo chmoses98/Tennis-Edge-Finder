@@ -26,3 +26,43 @@ records ExchangeTruth / provisional SportsTruth (exchange result until a results
 close (candle bid/ask before min(scheduled, close − 7 h)) and CLV, appends to data/research/settlements/ and
 rewrites SCORECARD.md (scores shown only from 30 gradeable rows). `.github/workflows/tennis-run.yml` runs
 build → states → run_tennis → settle → health on the runner and publishes data/research to `tennis-data`.
+
+## Timing classification (added by the first-ball wave, 2026-09-11)
+
+Every prospective observation now carries an explicit timing class, derived from first-ball truth and
+written to `data/research/timing/<run>.jsonl` on the `tennis-data` branch:
+
+| class | meaning |
+|---|---|
+| `STRICT_PREGAME` | captured strictly before the EARLIEST possible first ball |
+| `POST_START` | captured at or after the LATEST possible first ball |
+| `AMBIGUOUS` | inside the first-ball bracket, or credible sources contradict each other |
+| `START_UNKNOWN` | no trustworthy first-ball evidence for this match |
+
+Rules this protocol now binds itself to:
+
+* **Strict pregame research uses `STRICT_PREGAME` rows only.** Nothing else is eligible, at any
+  confidence, for any claim about information held before the first ball.
+* **Nothing is dropped.** `POST_START`, `AMBIGUOUS` and `START_UNKNOWN` rows are retained and labelled.
+  A research record that deletes its inconvenient rows is a highlight reel.
+* **The classification is DERIVED, the observation is IMMUTABLE.** A ledger row's `generated_at_utc` is
+  never rewritten. When better first-ball truth arrives, the truth store gains a new derivation version
+  and every affected row is reclassified from it, with the classifier version and derivation version
+  recorded on the derived row. Recovering sports truth after the fact is allowed and expected.
+  Rewriting a prediction or quote timestamp is forbidden.
+* **Confidence C is never silently promoted.** An indirect bound classifies as `START_UNKNOWN` unless a
+  caller explicitly opts into exploratory mode, which strict research does not.
+* **A scheduled time is not a start.** The close function takes a truth object, so a nominal time, a
+  Kalshi `occurrence_datetime` or a market `close_time` cannot be substituted for the first ball by
+  accident. `tests/test_firstball.py` pins each of those substitutions as a failure.
+
+## Segmented coverage schema
+
+`data/research/segments/coverage.json` records, per run, the counts needed by the next research wave,
+segmented by tour, level, family, surface, discipline, timing class, truth confidence, close basis,
+data-quality grade, spread bucket, liquidity bucket, time-to-first-ball bucket, implied-probability
+bucket, favourite/underdog and model-market disagreement bucket.
+
+It deliberately records **counts and coverage only** -- n, strict n, rows with a close, rows with CLV. No
+performance is reported by bucket, and no bucket is promoted. The purpose of this schema is to guarantee
+that when edge research does begin, it begins on rows whose pregame status can survive an audit.

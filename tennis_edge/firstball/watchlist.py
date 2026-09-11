@@ -71,13 +71,55 @@ def _parse_ts(v):
         return None
 
 
-def build_watchlist(discovery_dir: str, *, now: datetime | None = None,
+def _fresh_open_tickers(capture_root: str | None, now: datetime, max_age_min: int = 45):
+    """Tickers still open in the freshest capture pass, or None when no fresh pass is available.
+
+    A discovery snapshot can be many hours old, and its 'open' markets include matches that have since
+    been played and settled. Watching those wastes polling on matches whose first ball is already in the
+    past, and -- worse -- produces one-sided C brackets that look like evidence. The capture conductor
+    republishes the open universe every ten minutes, so when a recent pass exists it is the live
+    universe and the discovery snapshot is only used for names and nominal times.
+    """
+    import glob as _glob
+    import gzip as _gzip
+    if not capture_root or not os.path.isdir(capture_root):
+        return None
+    files = sorted(_glob.glob(os.path.join(capture_root, "*", "*.quotes.jsonl.gz")))
+    if not files:
+        return None
+    tickers, newest = set(), None
+    for f in files[-2:]:
+        try:
+            with _gzip.open(f, "rt") as fh:
+                for line in fh:
+                    line = line.strip()
+                    if not line:
+                        continue
+                    r = json.loads(line)
+                    if r.get("ticker"):
+                        tickers.add(r["ticker"])
+                    ts = r.get("captured_at")
+                    if ts and (newest is None or ts > newest):
+                        newest = ts
+        except (OSError, ValueError):
+            continue
+    if not tickers or not newest:
+        return None
+    try:
+        age = (now - datetime.fromisoformat(newest.replace("Z", "+00:00"))).total_seconds() / 60
+    except ValueError:
+        return None
+    return tickers if age <= max_age_min else None
+
+
+def build_watchlist(discovery_dir: str, *, now: datetime | None = None, capture_root: str | None = None,
                     lookback_hours: int = 6, horizon_hours: int = 14) -> tuple[list[WatchItem], dict]:
     from tennis_edge.kalshi.markets import parse_market
     from tennis_edge.pricing.competition import classify_competition
     now = now or datetime.now(timezone.utc)
     lo, hi = now - timedelta(hours=lookback_hours), now + timedelta(hours=horizon_hours)
 
+    fresh = _fresh_open_tickers(capture_root, now)
     by_event: dict[str, list] = {}
     raw_by_ticker: dict[str, dict] = {}
     for p in glob.glob(os.path.join(discovery_dir, "markets", "*.json")):
@@ -88,7 +130,9 @@ def build_watchlist(discovery_dir: str, *, now: datetime | None = None,
             by_event.setdefault(pm.event_ticker, []).append(pm)
             raw_by_ticker[pm.ticker] = m
 
-    items, diag = [], {"events": len(by_event), "no_names": 0, "outside_window": 0, "selected": 0}
+    items, diag = [], {"events": len(by_event), "no_names": 0, "outside_window": 0, "selected": 0,
+                       "closed_since_discovery": 0,
+                       "universe": "freshest_capture" if fresh is not None else "discovery_snapshot"}
     for ev, pms in by_event.items():
         names = {True: None, False: None}
         for pm in pms:
@@ -96,6 +140,9 @@ def build_watchlist(discovery_dir: str, *, now: datetime | None = None,
                 names[pm.subject_is_a] = names[pm.subject_is_a] or pm.subject
         if not names[True] or not names[False]:
             diag["no_names"] += 1
+            continue
+        if fresh is not None and not any(pm.ticker in fresh for pm in pms):
+            diag["closed_since_discovery"] += 1
             continue
         head = pms[0]
         info = classify_competition(head.competition, head.tour)

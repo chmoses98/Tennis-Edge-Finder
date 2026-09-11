@@ -19,3 +19,36 @@
 
 UNKNOWN (evidence absent) is treated as not-PASS. Gates are never relaxed to go green; fix the pipeline.
 `python -c "from tennis_edge.health.gates import run_all; [print(g.to_dict()) for g in run_all()]"`.
+
+## First-ball submetrics (added 2026-09-11)
+
+`tennis_edge.health.gates.first_ball_metrics()` derives these from evidence on disk and feeds gates
+TENNIS-6, TENNIS-8 and TENNIS-10:
+
+| metric | meaning |
+|---|---|
+| `truths`, `strict_truths`, `no_play` | matches with any first-ball truth, with A/B truth, and confirmed walkovers |
+| `by_confidence` | A / B / C / UNKNOWN distribution |
+| `bracket_seconds_median`, `bracket_seconds_p90` | the timestamp error bound actually being achieved |
+| `contradictions`, `contradiction_rate` | material source disagreements, and their share |
+| `chain_violations` | append-only integrity of the first-ball store |
+| `observations`, `matches_observed` | raw polling volume and reach |
+| `watchlist.levels_with_a_wired_source` / `levels_without_any_source` | the structural coverage gap, reported as counts |
+| `watchlist.pct_covered_with_source_mapping` | share of watched matches at covered levels actually bound to a source |
+| `pct_classifiable`, `pct_strict_pregame` | share of prospective observations with a class other than START_UNKNOWN, and the strict share |
+| `executable_close_rows`, `strict_clv_rows` | closes and CLV rows that are first-ball anchored |
+| `horizons_populated` / `horizons_total` | how many canonical decision horizons had a real quote |
+
+### What changed in the gates
+
+* **TENNIS-6** now prefers actual first-ball truth over the scheduled fallback for every match where
+  truth exists.
+* **TENNIS-8** is no longer only about settled-prediction sports truth. It also requires an intact
+  first-ball hash chain and that at least 90% of watched matches *at levels with a wired source* are
+  actually bound to that source. Levels with no source at all are reported as counts, never averaged in.
+* **TENNIS-10** measures close coverage against **strict** first-ball-anchored closes. A close cut off at
+  `scheduled_start - margin` no longer counts toward it. With no A/B truth yet the gate reports UNKNOWN,
+  which is a failure for production purposes, by design.
+
+Thresholds were not moved to accommodate any of this. The gates that fail, fail because the underlying
+coverage does not exist yet, and that is the information they are meant to carry.

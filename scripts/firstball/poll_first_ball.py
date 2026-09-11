@@ -57,6 +57,8 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--discovery", default=None)
     ap.add_argument("--store", default=os.path.join(PROJ, "data", "firstball", "store"))
+    ap.add_argument("--capture", default=os.path.join(PROJ, "data", "kalshi", "capture"),
+                    help="freshest capture pass defines the live open universe; discovery only supplies names")
     ap.add_argument("--sources", default=DEFAULT_SOURCES)
     ap.add_argument("--minutes", type=float, default=55.0)
     ap.add_argument("--max-passes", type=int, default=0, help="0 = unlimited within --minutes")
@@ -85,7 +87,7 @@ def main():
 
     while True:
         now = datetime.now(timezone.utc)
-        items, diag = build_watchlist(disc, now=now)
+        items, diag = build_watchlist(disc, now=now, capture_root=a.capture)
         items = [it for it in items if it.match_id not in resolved]
         interval, tiers = poll_interval(items, now)
         interval = max(interval, a.min_interval)
