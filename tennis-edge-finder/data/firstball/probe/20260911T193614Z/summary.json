@@ -1,0 +1,2961 @@
+{
+ "run_id": "20260911T193614Z",
+ "started_at": "2026-09-11T19:36:14.437127+00:00",
+ "rounds": 3,
+ "round_gap_s": 150,
+ "probe_date_utc": "2026-09-11",
+ "candidates": {
+  "espn_site_atp_scoreboard": {
+   "name": "ESPN site API - ATP scoreboard",
+   "host_class": "broadcaster",
+   "levels": [
+    "ATP",
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    1,
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "undocumented but long-lived public JSON behind espn.com",
+   "url_template": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard?dates={date_ymd}",
+   "rounds": [
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:37:09.349295+00:00",
+     "status": 200,
+     "latency_ms": 154,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 1753495,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "leagues": [
+       "list[1]",
+       {
+        "id": "str",
+        "uid": "str",
+        "name": "str",
+        "abbreviation": "str",
+        "midsizeName": "str",
+        "slug": "str",
+        "season": {
+         "year": "int",
+         "startDate": "str",
+         "endDate": "str",
+         "displayName": "str",
+         "type": "dict"
+        },
+        "logos": [
+         "list[2]"
+        ],
+        "calendarType": "str",
+        "calendarIsWhitelist": "bool",
+        "calendarStartDate": "str",
+        "calendarEndDate": "str",
+        "calendar": [
+         "list[285]"
+        ]
+       }
+      ],
+      "events": [
+       "list[1]",
+       {
+        "id": "str",
+        "uid": "str",
+        "date": "str",
+        "endDate": "str",
+        "major": "bool",
+        "name": "str",
+        "shortName": "str",
+        "season": {
+         "year": "int",
+         "type": "int"
+        },
+        "groupings": [
+         "list[5]"
+        ],
+        "status": {
+         "period": "int",
+         "type": "dict"
+        },
+        "venue": {
+         "displayName": "str"
+        },
+        "links": [
+         "list[2]"
+        ],
+        "previousWinners": [
+         "list[5]"
+        ],
+        "calendar": {
+         "type": "str",
+         "timeZone": "str",
+         "startDate": "str",
+         "endDate": "str",
+         "calendar": "list"
+        }
+       }
+      ],
+      "provider": {
+       "id": "str",
+       "name": "str",
+       "displayName": "str",
+       "priority": "int"
+      }
+     },
+     "timestamp_fields": {
+      "$.leagues[].season.startDate": {
+       "kind": "iso8601",
+       "sample": "2026-01-01T08:00Z"
+      },
+      "$.leagues[].season.endDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-01T07:59Z"
+      },
+      "$.leagues[].logos[].lastUpdated": {
+       "kind": "iso8601",
+       "sample": "2026-09-10T12:08Z"
+      },
+      "$.leagues[].calendarStartDate": {
+       "kind": "iso8601",
+       "sample": "2026-01-01T08:00Z"
+      },
+      "$.leagues[].calendarEndDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-01T07:59Z"
+      },
+      "$.events[].date": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T04:00Z"
+      },
+      "$.events[].endDate": {
+       "kind": "iso8601",
+       "sample": "2026-09-14T03:59Z"
+      },
+      "$.events[].groupings[].competitions[].date": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T15:05Z"
+      },
+      "$.events[].groupings[].competitions[].startDate": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T15:05Z"
+      },
+      "$.events[].groupings[].competitions[].timeValid": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.events[].calendar.timeZone": {
+       "kind": "named_but_unparsed",
+       "sample": "America/New_York"
+      },
+      "$.events[].calendar.startDate": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T04:00Z"
+      },
+      "$.events[].calendar.endDate": {
+       "kind": "iso8601",
+       "sample": "2026-09-13T04:00Z"
+      }
+     },
+     "top_level_count": 3
+    },
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:41:01.653262+00:00",
+     "status": 200,
+     "latency_ms": 249,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 1753495,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "leagues": [
+       "list[1]",
+       {
+        "id": "str",
+        "uid": "str",
+        "name": "str",
+        "abbreviation": "str",
+        "midsizeName": "str",
+        "slug": "str",
+        "season": {
+         "year": "int",
+         "startDate": "str",
+         "endDate": "str",
+         "displayName": "str",
+         "type": "dict"
+        },
+        "logos": [
+         "list[2]"
+        ],
+        "calendarType": "str",
+        "calendarIsWhitelist": "bool",
+        "calendarStartDate": "str",
+        "calendarEndDate": "str",
+        "calendar": [
+         "list[285]"
+        ]
+       }
+      ],
+      "events": [
+       "list[1]",
+       {
+        "id": "str",
+        "uid": "str",
+        "date": "str",
+        "endDate": "str",
+        "major": "bool",
+        "name": "str",
+        "shortName": "str",
+        "season": {
+         "year": "int",
+         "type": "int"
+        },
+        "groupings": [
+         "list[5]"
+        ],
+        "status": {
+         "period": "int",
+         "type": "dict"
+        },
+        "venue": {
+         "displayName": "str"
+        },
+        "links": [
+         "list[2]"
+        ],
+        "previousWinners": [
+         "list[5]"
+        ],
+        "calendar": {
+         "type": "str",
+         "timeZone": "str",
+         "startDate": "str",
+         "endDate": "str",
+         "calendar": "list"
+        }
+       }
+      ],
+      "provider": {
+       "id": "str",
+       "name": "str",
+       "displayName": "str",
+       "priority": "int"
+      }
+     },
+     "timestamp_fields": {
+      "$.leagues[].season.startDate": {
+       "kind": "iso8601",
+       "sample": "2026-01-01T08:00Z"
+      },
+      "$.leagues[].season.endDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-01T07:59Z"
+      },
+      "$.leagues[].logos[].lastUpdated": {
+       "kind": "iso8601",
+       "sample": "2026-09-10T12:08Z"
+      },
+      "$.leagues[].calendarStartDate": {
+       "kind": "iso8601",
+       "sample": "2026-01-01T08:00Z"
+      },
+      "$.leagues[].calendarEndDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-01T07:59Z"
+      },
+      "$.events[].date": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T04:00Z"
+      },
+      "$.events[].endDate": {
+       "kind": "iso8601",
+       "sample": "2026-09-14T03:59Z"
+      },
+      "$.events[].groupings[].competitions[].date": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T15:05Z"
+      },
+      "$.events[].groupings[].competitions[].startDate": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T15:05Z"
+      },
+      "$.events[].groupings[].competitions[].timeValid": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.events[].calendar.timeZone": {
+       "kind": "named_but_unparsed",
+       "sample": "America/New_York"
+      },
+      "$.events[].calendar.startDate": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T04:00Z"
+      },
+      "$.events[].calendar.endDate": {
+       "kind": "iso8601",
+       "sample": "2026-09-13T04:00Z"
+      }
+     },
+     "top_level_count": 3
+    },
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:44:38.952867+00:00",
+     "status": 200,
+     "latency_ms": 464,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 1753495,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "leagues": [
+       "list[1]",
+       {
+        "id": "str",
+        "uid": "str",
+        "name": "str",
+        "abbreviation": "str",
+        "midsizeName": "str",
+        "slug": "str",
+        "season": {
+         "year": "int",
+         "startDate": "str",
+         "endDate": "str",
+         "displayName": "str",
+         "type": "dict"
+        },
+        "logos": [
+         "list[2]"
+        ],
+        "calendarType": "str",
+        "calendarIsWhitelist": "bool",
+        "calendarStartDate": "str",
+        "calendarEndDate": "str",
+        "calendar": [
+         "list[285]"
+        ]
+       }
+      ],
+      "events": [
+       "list[1]",
+       {
+        "id": "str",
+        "uid": "str",
+        "date": "str",
+        "endDate": "str",
+        "major": "bool",
+        "name": "str",
+        "shortName": "str",
+        "season": {
+         "year": "int",
+         "type": "int"
+        },
+        "groupings": [
+         "list[5]"
+        ],
+        "status": {
+         "period": "int",
+         "type": "dict"
+        },
+        "venue": {
+         "displayName": "str"
+        },
+        "links": [
+         "list[2]"
+        ],
+        "previousWinners": [
+         "list[5]"
+        ],
+        "calendar": {
+         "type": "str",
+         "timeZone": "str",
+         "startDate": "str",
+         "endDate": "str",
+         "calendar": "list"
+        }
+       }
+      ],
+      "provider": {
+       "id": "str",
+       "name": "str",
+       "displayName": "str",
+       "priority": "int"
+      }
+     },
+     "timestamp_fields": {
+      "$.leagues[].season.startDate": {
+       "kind": "iso8601",
+       "sample": "2026-01-01T08:00Z"
+      },
+      "$.leagues[].season.endDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-01T07:59Z"
+      },
+      "$.leagues[].logos[].lastUpdated": {
+       "kind": "iso8601",
+       "sample": "2026-09-10T12:08Z"
+      },
+      "$.leagues[].calendarStartDate": {
+       "kind": "iso8601",
+       "sample": "2026-01-01T08:00Z"
+      },
+      "$.leagues[].calendarEndDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-01T07:59Z"
+      },
+      "$.events[].date": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T04:00Z"
+      },
+      "$.events[].endDate": {
+       "kind": "iso8601",
+       "sample": "2026-09-14T03:59Z"
+      },
+      "$.events[].groupings[].competitions[].date": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T15:05Z"
+      },
+      "$.events[].groupings[].competitions[].startDate": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T15:05Z"
+      },
+      "$.events[].groupings[].competitions[].timeValid": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.events[].calendar.timeZone": {
+       "kind": "named_but_unparsed",
+       "sample": "America/New_York"
+      },
+      "$.events[].calendar.startDate": {
+       "kind": "iso8601",
+       "sample": "2026-08-24T04:00Z"
+      },
+      "$.events[].calendar.endDate": {
+       "kind": "iso8601",
+       "sample": "2026-09-13T04:00Z"
+      }
+     },
+     "top_level_count": 3
+    }
+   ],
+   "historical_probe": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard?dates=20260910",
+    "requested_at_utc": "2026-09-11T19:38:17.153601+00:00",
+    "status": 200,
+    "latency_ms": 168,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 1753395,
+    "truncated": false,
+    "headers": {},
+    "parse": "json",
+    "structure": {
+     "leagues": [
+      "list[1]",
+      {
+       "id": "str",
+       "uid": "str",
+       "name": "str",
+       "abbreviation": "str",
+       "midsizeName": "str",
+       "slug": "str",
+       "season": {
+        "year": "int",
+        "startDate": "str",
+        "endDate": "str",
+        "displayName": "str",
+        "type": "dict"
+       },
+       "logos": [
+        "list[2]"
+       ],
+       "calendarType": "str",
+       "calendarIsWhitelist": "bool",
+       "calendarStartDate": "str",
+       "calendarEndDate": "str",
+       "calendar": [
+        "list[285]"
+       ]
+      }
+     ],
+     "events": [
+      "list[1]",
+      {
+       "id": "str",
+       "uid": "str",
+       "date": "str",
+       "endDate": "str",
+       "major": "bool",
+       "name": "str",
+       "shortName": "str",
+       "season": {
+        "year": "int",
+        "type": "int"
+       },
+       "groupings": [
+        "list[5]"
+       ],
+       "status": {
+        "period": "int",
+        "type": "dict"
+       },
+       "venue": {
+        "displayName": "str"
+       },
+       "links": [
+        "list[2]"
+       ],
+       "previousWinners": [
+        "list[5]"
+       ],
+       "calendar": {
+        "type": "str",
+        "timeZone": "str",
+        "startDate": "str",
+        "endDate": "str",
+        "calendar": "list"
+       }
+      }
+     ],
+     "provider": {
+      "id": "str",
+      "name": "str",
+      "displayName": "str",
+      "priority": "int"
+     }
+    },
+    "timestamp_fields": {
+     "$.leagues[].season.startDate": {
+      "kind": "iso8601",
+      "sample": "2026-01-01T08:00Z"
+     },
+     "$.leagues[].season.endDate": {
+      "kind": "iso8601",
+      "sample": "2027-01-01T07:59Z"
+     },
+     "$.leagues[].logos[].lastUpdated": {
+      "kind": "iso8601",
+      "sample": "2026-09-10T12:08Z"
+     },
+     "$.leagues[].calendarStartDate": {
+      "kind": "iso8601",
+      "sample": "2026-01-01T08:00Z"
+     },
+     "$.leagues[].calendarEndDate": {
+      "kind": "iso8601",
+      "sample": "2027-01-01T07:59Z"
+     },
+     "$.events[].date": {
+      "kind": "iso8601",
+      "sample": "2026-08-24T04:00Z"
+     },
+     "$.events[].endDate": {
+      "kind": "iso8601",
+      "sample": "2026-09-14T03:59Z"
+     },
+     "$.events[].groupings[].competitions[].date": {
+      "kind": "iso8601",
+      "sample": "2026-08-24T15:05Z"
+     },
+     "$.events[].groupings[].competitions[].startDate": {
+      "kind": "iso8601",
+      "sample": "2026-08-24T15:05Z"
+     },
+     "$.events[].groupings[].competitions[].timeValid": {
+      "kind": "named_but_unparsed",
+      "sample": true
+     },
+     "$.events[].calendar.timeZone": {
+      "kind": "named_but_unparsed",
+      "sample": "America/New_York"
+     },
+     "$.events[].calendar.startDate": {
+      "kind": "iso8601",
+      "sample": "2026-08-24T04:00Z"
+     },
+     "$.events[].calendar.endDate": {
+      "kind": "iso8601",
+      "sample": "2026-09-13T04:00Z"
+     }
+    },
+    "top_level_count": 3
+   },
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 154,
+    "latency_ms_max": 464,
+    "timestamp_fields": [
+     "$.events[].calendar.endDate",
+     "$.events[].calendar.startDate",
+     "$.events[].calendar.timeZone",
+     "$.events[].date",
+     "$.events[].endDate",
+     "$.events[].groupings[].competitions[].date",
+     "$.events[].groupings[].competitions[].startDate",
+     "$.events[].groupings[].competitions[].timeValid",
+     "$.leagues[].calendarEndDate",
+     "$.leagues[].calendarStartDate",
+     "$.leagues[].logos[].lastUpdated",
+     "$.leagues[].season.endDate",
+     "$.leagues[].season.startDate"
+    ],
+    "historical_status": 200
+   }
+  },
+  "espn_site_wta_scoreboard": {
+   "name": "ESPN site API - WTA scoreboard",
+   "host_class": "broadcaster",
+   "levels": [
+    "WTA",
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    1,
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard?dates={date_ymd}",
+   "rounds": [
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:37:11.029317+00:00",
+     "status": 200,
+     "latency_ms": 143,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 2000001,
+     "truncated": true,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "{\"leagues\":[{\"id\":\"900\",\"uid\":\"s:850~l:900\",\"name\":\"WTA\",\"abbreviation\":\"WTA\",\"midsizeName\":\"WTA\",\"slug\":\"wta\",\"season\":{\"year\":2026,\"startDate\":\"2026-01-01T08:00Z\",\"endDate\":\"2027-01-01T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\""
+    },
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:41:03.426079+00:00",
+     "status": 200,
+     "latency_ms": 171,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 2000001,
+     "truncated": true,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "{\"leagues\":[{\"id\":\"900\",\"uid\":\"s:850~l:900\",\"name\":\"WTA\",\"abbreviation\":\"WTA\",\"midsizeName\":\"WTA\",\"slug\":\"wta\",\"season\":{\"year\":2026,\"startDate\":\"2026-01-01T08:00Z\",\"endDate\":\"2027-01-01T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\""
+    },
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:44:40.940276+00:00",
+     "status": 200,
+     "latency_ms": 141,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 2000001,
+     "truncated": true,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "{\"leagues\":[{\"id\":\"900\",\"uid\":\"s:850~l:900\",\"name\":\"WTA\",\"abbreviation\":\"WTA\",\"midsizeName\":\"WTA\",\"slug\":\"wta\",\"season\":{\"year\":2026,\"startDate\":\"2026-01-01T08:00Z\",\"endDate\":\"2027-01-01T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\""
+    }
+   ],
+   "historical_probe": {
+    "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard?dates=20260910",
+    "requested_at_utc": "2026-09-11T19:38:18.848483+00:00",
+    "status": 200,
+    "latency_ms": 237,
+    "content_type": "application/json;charset=UTF-8",
+    "bytes": 2000001,
+    "truncated": true,
+    "headers": {},
+    "parse": "not-json (JSONDecodeError)",
+    "text_head": "{\"leagues\":[{\"id\":\"900\",\"uid\":\"s:850~l:900\",\"name\":\"WTA\",\"abbreviation\":\"WTA\",\"midsizeName\":\"WTA\",\"slug\":\"wta\",\"season\":{\"year\":2026,\"startDate\":\"2026-01-01T08:00Z\",\"endDate\":\"2027-01-01T07:59Z\",\"displayName\":\"2026\",\"type\":{\"id\":\"2\",\"type\":2,\"name\":\"Regular Season\",\"abbreviation\":\"reg\"}},\"logos\":[{\""
+   },
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 141,
+    "latency_ms_max": 171,
+    "timestamp_fields": [],
+    "historical_status": 200
+   }
+  },
+  "espn_core_atp_events": {
+   "name": "ESPN core API - ATP events",
+   "host_class": "broadcaster",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [
+    1,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/events?dates={date_ymd}",
+   "rounds": [
+    {
+     "url": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/events?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:37:12.700406+00:00",
+     "status": 200,
+     "latency_ms": 146,
+     "content_type": "application/json;charset=utf-8",
+     "bytes": 169,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "count": "int",
+      "pageIndex": "int",
+      "pageSize": "int",
+      "pageCount": "int",
+      "items": [
+       "list[1]",
+       {
+        "$ref": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    },
+    {
+     "url": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/events?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:41:05.128086+00:00",
+     "status": 200,
+     "latency_ms": 138,
+     "content_type": "application/json;charset=utf-8",
+     "bytes": 169,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "count": "int",
+      "pageIndex": "int",
+      "pageSize": "int",
+      "pageCount": "int",
+      "items": [
+       "list[1]",
+       {
+        "$ref": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    },
+    {
+     "url": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/events?dates=20260911",
+     "requested_at_utc": "2026-09-11T19:44:42.607691+00:00",
+     "status": 200,
+     "latency_ms": 119,
+     "content_type": "application/json;charset=utf-8",
+     "bytes": 169,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "count": "int",
+      "pageIndex": "int",
+      "pageSize": "int",
+      "pageCount": "int",
+      "items": [
+       "list[1]",
+       {
+        "$ref": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    }
+   ],
+   "historical_probe": {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/events?dates=20260910",
+    "requested_at_utc": "2026-09-11T19:38:20.611845+00:00",
+    "status": 200,
+    "latency_ms": 131,
+    "content_type": "application/json;charset=utf-8",
+    "bytes": 169,
+    "truncated": false,
+    "headers": {},
+    "parse": "json",
+    "structure": {
+     "count": "int",
+     "pageIndex": "int",
+     "pageSize": "int",
+     "pageCount": "int",
+     "items": [
+      "list[1]",
+      {
+       "$ref": "str"
+      }
+     ]
+    },
+    "timestamp_fields": {},
+    "top_level_count": 5
+   },
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 119,
+    "latency_ms_max": 146,
+    "timestamp_fields": [],
+    "historical_status": 200
+   }
+  },
+  "espn_site_leagues": {
+   "name": "ESPN site API - tennis leagues list",
+   "host_class": "broadcaster",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "coverage probe only",
+   "url_template": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/teams",
+   "rounds": [
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/teams",
+     "requested_at_utc": "2026-09-11T19:37:14.346772+00:00",
+     "status": 200,
+     "latency_ms": 108,
+     "content_type": "application/json",
+     "bytes": 248,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "sports": [
+       "list[1]",
+       {
+        "id": "str",
+        "leagues": [
+         "list[1]"
+        ],
+        "name": "str",
+        "slug": "str",
+        "uid": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/teams",
+     "requested_at_utc": "2026-09-11T19:41:06.766707+00:00",
+     "status": 200,
+     "latency_ms": 79,
+     "content_type": "application/json",
+     "bytes": 248,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "sports": [
+       "list[1]",
+       {
+        "id": "str",
+        "leagues": [
+         "list[1]"
+        ],
+        "name": "str",
+        "slug": "str",
+        "uid": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/teams",
+     "requested_at_utc": "2026-09-11T19:44:44.227190+00:00",
+     "status": 200,
+     "latency_ms": 195,
+     "content_type": "application/json",
+     "bytes": 248,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "sports": [
+       "list[1]",
+       {
+        "id": "str",
+        "leagues": [
+         "list[1]"
+        ],
+        "name": "str",
+        "slug": "str",
+        "uid": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 79,
+    "latency_ms_max": 195,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "atp_live_scores": {
+   "name": "ATP Tour - live scores feed",
+   "host_class": "official_tour",
+   "levels": [
+    "ATP",
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.atptour.com/en/-/www/scores/live",
+   "rounds": [
+    {
+     "url": "https://www.atptour.com/en/-/www/scores/live",
+     "requested_at_utc": "2026-09-11T19:37:15.954903+00:00",
+     "status": 403,
+     "latency_ms": 49,
+     "error": "HTTPError 403",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 5957,
+     "headers": {
+      "cf-ray": "a3992042fa3c1770-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    },
+    {
+     "url": "https://www.atptour.com/en/-/www/scores/live",
+     "requested_at_utc": "2026-09-11T19:41:08.346079+00:00",
+     "status": 403,
+     "latency_ms": 228,
+     "error": "HTTPError 403",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 6225,
+     "headers": {
+      "cf-ray": "a39925f0889cb154-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    },
+    {
+     "url": "https://www.atptour.com/en/-/www/scores/live",
+     "requested_at_utc": "2026-09-11T19:44:45.923054+00:00",
+     "status": 403,
+     "latency_ms": 94,
+     "error": "HTTPError 403",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 5957,
+     "headers": {
+      "cf-ray": "a3992b3f99f4b154-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     403,
+     403,
+     403
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 49,
+    "latency_ms_max": 228,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "atp_current_scores": {
+   "name": "ATP Tour - current tournament scores",
+   "host_class": "official_tour",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.atptour.com/en/-/www/scores/current",
+   "rounds": [
+    {
+     "url": "https://www.atptour.com/en/-/www/scores/current",
+     "requested_at_utc": "2026-09-11T19:37:17.504194+00:00",
+     "status": 403,
+     "latency_ms": 48,
+     "error": "HTTPError 403",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 5966,
+     "headers": {
+      "cf-ray": "a399204ca9c5b154-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    },
+    {
+     "url": "https://www.atptour.com/en/-/www/scores/current",
+     "requested_at_utc": "2026-09-11T19:41:10.074167+00:00",
+     "status": 200,
+     "latency_ms": 381,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 45367,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a39925fb686a57ea-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!doctype html>\r\n<html class=\"no-js\" lang=\"en\" dir=\"ltr\">\r\n<head>\r\n    <script>\r\n    window.atp_settings = {};\r\n    window.atp_settings.pre_roll_ad_unit = \"video-ad-atp\";\r\n</script>\r\n\r\n\r\n\r\n    <!-- GTM Head Tag -->\r\n    \r\n\r\n<!-- Google Tag Manager -->\r\n<script nonce=\"b620e426-d5a1-4dc8-abd8-c57aba61"
+    },
+    {
+     "url": "https://www.atptour.com/en/-/www/scores/current",
+     "requested_at_utc": "2026-09-11T19:44:47.517518+00:00",
+     "status": 403,
+     "latency_ms": 51,
+     "error": "HTTPError 403",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 5966,
+     "headers": {
+      "cf-ray": "a3992b494f2e1770-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html lang=\"en-US\"><head><title>Just a moment...</title><meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\"><meta http-equiv=\"X-UA-Compatible\" content=\"IE=Edge\"><meta name=\"robots\" content=\"noindex,nofollow\"><meta name=\"viewport\" content=\"width=device-width,initial-scal"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     403,
+     200,
+     403
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 48,
+    "latency_ms_max": 381,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "protennislive_oop": {
+   "name": "protennislive - official order of play / live",
+   "host_class": "official_tour",
+   "levels": [
+    "ATP",
+    "CHALLENGER"
+   ],
+   "answers": [
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "ATP/Challenger official posting site",
+   "url_template": "https://www.protennislive.com/posting/livescores.json",
+   "rounds": [
+    {
+     "url": "https://www.protennislive.com/posting/livescores.json",
+     "requested_at_utc": "2026-09-11T19:37:19.052374+00:00",
+     "status": 404,
+     "latency_ms": 181,
+     "error": "HTTPError 404",
+     "content_type": "text/html",
+     "bytes": 1245,
+     "headers": {
+      "cf-ray": "a39920565b92f3c2-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style typ"
+    },
+    {
+     "url": "https://www.protennislive.com/posting/livescores.json",
+     "requested_at_utc": "2026-09-11T19:41:11.955311+00:00",
+     "status": 404,
+     "latency_ms": 190,
+     "error": "HTTPError 404",
+     "content_type": "text/html",
+     "bytes": 1245,
+     "headers": {
+      "cf-ray": "a3992605fc08ef62-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style typ"
+    },
+    {
+     "url": "https://www.protennislive.com/posting/livescores.json",
+     "requested_at_utc": "2026-09-11T19:44:49.069224+00:00",
+     "status": 404,
+     "latency_ms": 308,
+     "error": "HTTPError 404",
+     "content_type": "text/html",
+     "bytes": 1245,
+     "headers": {
+      "cf-ray": "a3992b5399e3ef62-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Strict//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd\">\r\n<html xmlns=\"http://www.w3.org/1999/xhtml\">\r\n<head>\r\n<meta http-equiv=\"Content-Type\" content=\"text/html; charset=iso-8859-1\"/>\r\n<title>404 - File or directory not found.</title>\r\n<style typ"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 181,
+    "latency_ms_max": 308,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "wta_live_matches": {
+   "name": "WTA - live matches",
+   "host_class": "official_tour",
+   "levels": [
+    "WTA"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.wtatennis.com/tennis/live/matches",
+   "rounds": [
+    {
+     "url": "https://api.wtatennis.com/tennis/live/matches",
+     "requested_at_utc": "2026-09-11T19:37:20.733756+00:00",
+     "status": 404,
+     "latency_ms": 236,
+     "error": "HTTPError 404",
+     "content_type": "application/json",
+     "bytes": 108,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "timestamp": "str",
+      "status": "int",
+      "error": "str",
+      "path": "str"
+     },
+     "timestamp_fields": {
+      "$.timestamp": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T19:37:20.963+00:00"
+      }
+     },
+     "top_level_count": 4
+    },
+    {
+     "url": "https://api.wtatennis.com/tennis/live/matches",
+     "requested_at_utc": "2026-09-11T19:41:13.645521+00:00",
+     "status": 404,
+     "latency_ms": 187,
+     "error": "HTTPError 404",
+     "content_type": "application/json",
+     "bytes": 108,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "timestamp": "str",
+      "status": "int",
+      "error": "str",
+      "path": "str"
+     },
+     "timestamp_fields": {
+      "$.timestamp": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T19:41:13.825+00:00"
+      }
+     },
+     "top_level_count": 4
+    },
+    {
+     "url": "https://api.wtatennis.com/tennis/live/matches",
+     "requested_at_utc": "2026-09-11T19:44:50.877876+00:00",
+     "status": 404,
+     "latency_ms": 164,
+     "error": "HTTPError 404",
+     "content_type": "application/json",
+     "bytes": 108,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "timestamp": "str",
+      "status": "int",
+      "error": "str",
+      "path": "str"
+     },
+     "timestamp_fields": {
+      "$.timestamp": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T19:44:51.033+00:00"
+      }
+     },
+     "top_level_count": 4
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 164,
+    "latency_ms_max": 236,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "wta_matches_by_date": {
+   "name": "WTA - matches by date",
+   "host_class": "official_tour",
+   "levels": [
+    "WTA"
+   ],
+   "answers": [
+    1,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.wtatennis.com/tennis/matches?date={date_dash}",
+   "rounds": [
+    {
+     "url": "https://api.wtatennis.com/tennis/matches?date=2026-09-11",
+     "requested_at_utc": "2026-09-11T19:37:22.470137+00:00",
+     "status": 404,
+     "latency_ms": 55,
+     "error": "HTTPError 404",
+     "content_type": "application/json",
+     "bytes": 103,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "timestamp": "str",
+      "status": "int",
+      "error": "str",
+      "path": "str"
+     },
+     "timestamp_fields": {
+      "$.timestamp": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T19:37:22.518+00:00"
+      }
+     },
+     "top_level_count": 4
+    },
+    {
+     "url": "https://api.wtatennis.com/tennis/matches?date=2026-09-11",
+     "requested_at_utc": "2026-09-11T19:41:15.332764+00:00",
+     "status": 404,
+     "latency_ms": 52,
+     "error": "HTTPError 404",
+     "content_type": "application/json",
+     "bytes": 103,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "timestamp": "str",
+      "status": "int",
+      "error": "str",
+      "path": "str"
+     },
+     "timestamp_fields": {
+      "$.timestamp": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T19:41:15.377+00:00"
+      }
+     },
+     "top_level_count": 4
+    },
+    {
+     "url": "https://api.wtatennis.com/tennis/matches?date=2026-09-11",
+     "requested_at_utc": "2026-09-11T19:44:52.542637+00:00",
+     "status": 404,
+     "latency_ms": 55,
+     "error": "HTTPError 404",
+     "content_type": "application/json",
+     "bytes": 103,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "timestamp": "str",
+      "status": "int",
+      "error": "str",
+      "path": "str"
+     },
+     "timestamp_fields": {
+      "$.timestamp": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T19:44:52.589+00:00"
+      }
+     },
+     "top_level_count": 4
+    }
+   ],
+   "historical_probe": {
+    "url": "https://api.wtatennis.com/tennis/matches?date=2026-09-10",
+    "requested_at_utc": "2026-09-11T19:38:22.243842+00:00",
+    "status": 404,
+    "latency_ms": 161,
+    "error": "HTTPError 404",
+    "content_type": "application/json",
+    "bytes": 103,
+    "headers": {},
+    "parse": "json",
+    "structure": {
+     "timestamp": "str",
+     "status": "int",
+     "error": "str",
+     "path": "str"
+    },
+    "timestamp_fields": {
+     "$.timestamp": {
+      "kind": "iso8601",
+      "sample": "2026-09-11T19:38:22.398+00:00"
+     }
+    },
+    "top_level_count": 4
+   },
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 52,
+    "latency_ms_max": 55,
+    "timestamp_fields": [],
+    "historical_status": 404
+   }
+  },
+  "itf_livescores_mt": {
+   "name": "ITF - live scores, men's world tennis tour",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_M",
+    "QUALIFYING"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=MT&searchString=&skip=0&take=100",
+   "rounds": [
+    {
+     "url": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=MT&searchString=&skip=0&take=100",
+     "requested_at_utc": "2026-09-11T19:37:24.025713+00:00",
+     "status": 404,
+     "latency_ms": 145,
+     "error": "HTTPError 404",
+     "content_type": "",
+     "bytes": 0,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     }
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=MT&searchString=&skip=0&take=100",
+     "requested_at_utc": "2026-09-11T19:41:16.885281+00:00",
+     "status": 404,
+     "latency_ms": 341,
+     "error": "HTTPError 404",
+     "content_type": "",
+     "bytes": 0,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     }
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=MT&searchString=&skip=0&take=100",
+     "requested_at_utc": "2026-09-11T19:44:54.098056+00:00",
+     "status": 404,
+     "latency_ms": 386,
+     "error": "HTTPError 404",
+     "content_type": "",
+     "bytes": 0,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     }
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 145,
+    "latency_ms_max": 386,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "itf_livescores_wt": {
+   "name": "ITF - live scores, women's world tennis tour",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_W",
+    "QUALIFYING"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=WT&searchString=&skip=0&take=100",
+   "rounds": [
+    {
+     "url": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=WT&searchString=&skip=0&take=100",
+     "requested_at_utc": "2026-09-11T19:37:25.671609+00:00",
+     "status": 404,
+     "latency_ms": 134,
+     "error": "HTTPError 404",
+     "content_type": "",
+     "bytes": 0,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     }
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=WT&searchString=&skip=0&take=100",
+     "requested_at_utc": "2026-09-11T19:41:18.727090+00:00",
+     "status": 404,
+     "latency_ms": 138,
+     "error": "HTTPError 404",
+     "content_type": "",
+     "bytes": 0,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     }
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/LiveScoresApi/GetLiveScores?circuitCode=WT&searchString=&skip=0&take=100",
+     "requested_at_utc": "2026-09-11T19:44:55.985059+00:00",
+     "status": 404,
+     "latency_ms": 134,
+     "error": "HTTPError 404",
+     "content_type": "",
+     "bytes": 0,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     }
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 134,
+    "latency_ms_max": 138,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "itf_calendar": {
+   "name": "ITF - tournament calendar API",
+   "host_class": "official_tour",
+   "levels": [
+    "ITF_M"
+   ],
+   "answers": [
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.itftennis.com/tennis/api/TournamentApi/GetCalendar?circuitCode=MT&searchString=&skip=0&take=50",
+   "rounds": [
+    {
+     "url": "https://www.itftennis.com/tennis/api/TournamentApi/GetCalendar?circuitCode=MT&searchString=&skip=0&take=50",
+     "requested_at_utc": "2026-09-11T19:37:27.306058+00:00",
+     "status": 200,
+     "latency_ms": 1362,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 38147,
+     "truncated": false,
+     "headers": {
+      "server": "Microsoft-IIS/10.0"
+     },
+     "parse": "json",
+     "structure": {
+      "url": "str",
+      "items": [
+       "list[50]",
+       {
+        "tournamentName": "str",
+        "dates": "str",
+        "location": "str",
+        "category": "str",
+        "prizeMoney": "str",
+        "liveLink": "str",
+        "surfaceDesc": "str",
+        "surfaceCode": "str",
+        "tourStatusCode": "NoneType",
+        "tourStatusDesc": "NoneType",
+        "indoorOrOutDoor": "str",
+        "isRecognised": "bool",
+        "recognisedTournamentLink": "str",
+        "id": "int",
+        "name": "str",
+        "promotionalName": "str",
+        "hostNation": "str",
+        "hostNationCode": "str",
+        "venue": "str",
+        "startDate": "str",
+        "endDate": "str",
+        "tournamentKey": "str",
+        "tennisCategoryCode": "str",
+        "tournamentLink": "str",
+        "hospitality": "NoneType"
+       }
+      ],
+      "totalItems": "int"
+     },
+     "timestamp_fields": {
+      "$.items[].dates": {
+       "kind": "named_but_unparsed",
+       "sample": "28 Dec to 03 Jan 2027"
+      },
+      "$.items[].startDate": {
+       "kind": "iso8601",
+       "sample": "2026-12-28T00:00:00"
+      },
+      "$.items[].endDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-03T00:00:00"
+      }
+     },
+     "top_level_count": 3
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/TournamentApi/GetCalendar?circuitCode=MT&searchString=&skip=0&take=50",
+     "requested_at_utc": "2026-09-11T19:41:20.366072+00:00",
+     "status": 200,
+     "latency_ms": 66,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 38147,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "url": "str",
+      "items": [
+       "list[50]",
+       {
+        "tournamentName": "str",
+        "dates": "str",
+        "location": "str",
+        "category": "str",
+        "prizeMoney": "str",
+        "liveLink": "str",
+        "surfaceDesc": "str",
+        "surfaceCode": "str",
+        "tourStatusCode": "NoneType",
+        "tourStatusDesc": "NoneType",
+        "indoorOrOutDoor": "str",
+        "isRecognised": "bool",
+        "recognisedTournamentLink": "str",
+        "id": "int",
+        "name": "str",
+        "promotionalName": "str",
+        "hostNation": "str",
+        "hostNationCode": "str",
+        "venue": "str",
+        "startDate": "str",
+        "endDate": "str",
+        "tournamentKey": "str",
+        "tennisCategoryCode": "str",
+        "tournamentLink": "str",
+        "hospitality": "NoneType"
+       }
+      ],
+      "totalItems": "int"
+     },
+     "timestamp_fields": {
+      "$.items[].dates": {
+       "kind": "named_but_unparsed",
+       "sample": "28 Dec to 03 Jan 2027"
+      },
+      "$.items[].startDate": {
+       "kind": "iso8601",
+       "sample": "2026-12-28T00:00:00"
+      },
+      "$.items[].endDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-03T00:00:00"
+      }
+     },
+     "top_level_count": 3
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/TournamentApi/GetCalendar?circuitCode=MT&searchString=&skip=0&take=50",
+     "requested_at_utc": "2026-09-11T19:44:57.620043+00:00",
+     "status": 200,
+     "latency_ms": 59,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 38147,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "url": "str",
+      "items": [
+       "list[50]",
+       {
+        "tournamentName": "str",
+        "dates": "str",
+        "location": "str",
+        "category": "str",
+        "prizeMoney": "str",
+        "liveLink": "str",
+        "surfaceDesc": "str",
+        "surfaceCode": "str",
+        "tourStatusCode": "NoneType",
+        "tourStatusDesc": "NoneType",
+        "indoorOrOutDoor": "str",
+        "isRecognised": "bool",
+        "recognisedTournamentLink": "str",
+        "id": "int",
+        "name": "str",
+        "promotionalName": "str",
+        "hostNation": "str",
+        "hostNationCode": "str",
+        "venue": "str",
+        "startDate": "str",
+        "endDate": "str",
+        "tournamentKey": "str",
+        "tennisCategoryCode": "str",
+        "tournamentLink": "str",
+        "hospitality": "NoneType"
+       }
+      ],
+      "totalItems": "int"
+     },
+     "timestamp_fields": {
+      "$.items[].dates": {
+       "kind": "named_but_unparsed",
+       "sample": "28 Dec to 03 Jan 2027"
+      },
+      "$.items[].startDate": {
+       "kind": "iso8601",
+       "sample": "2026-12-28T00:00:00"
+      },
+      "$.items[].endDate": {
+       "kind": "iso8601",
+       "sample": "2027-01-03T00:00:00"
+      }
+     },
+     "top_level_count": 3
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 59,
+    "latency_ms_max": 1362,
+    "timestamp_fields": [
+     "$.items[].dates",
+     "$.items[].endDate",
+     "$.items[].startDate"
+    ],
+    "historical_status": null
+   }
+  },
+  "usopen_live": {
+   "name": "US Open - live scores feed",
+   "host_class": "official_event",
+   "levels": [
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.usopen.org/en_US/scores/feed/live.json",
+   "rounds": [
+    {
+     "url": "https://www.usopen.org/en_US/scores/feed/live.json",
+     "requested_at_utc": "2026-09-11T19:37:30.168818+00:00",
+     "status": null,
+     "latency_ms": 25111,
+     "error": "TimeoutError: The read operation timed out",
+     "bytes": 0
+    },
+    {
+     "url": "https://www.usopen.org/en_US/scores/feed/live.json",
+     "requested_at_utc": "2026-09-11T19:41:21.932767+00:00",
+     "status": null,
+     "latency_ms": 25082,
+     "error": "TimeoutError: The read operation timed out",
+     "bytes": 0
+    },
+    {
+     "url": "https://www.usopen.org/en_US/scores/feed/live.json",
+     "requested_at_utc": "2026-09-11T19:44:59.179683+00:00",
+     "status": null,
+     "latency_ms": 25251,
+     "error": "TimeoutError: The read operation timed out",
+     "bytes": 0
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     null,
+     null,
+     null
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 25082,
+    "latency_ms_max": 25251,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "wimbledon_live": {
+   "name": "Wimbledon - live scores feed",
+   "host_class": "official_event",
+   "levels": [
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.wimbledon.com/en_GB/scores/feed/live.json",
+   "rounds": [
+    {
+     "url": "https://www.wimbledon.com/en_GB/scores/feed/live.json",
+     "requested_at_utc": "2026-09-11T19:37:56.781094+00:00",
+     "status": 200,
+     "latency_ms": 217,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 233300,
+     "truncated": false,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html data-dpl-id=\"v0_118_1\" lang=\"en\"><head><meta charSet=\"utf-8\"/><link rel=\"preconnect\" href=\"/\" crossorigin=\"\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no\"/><link rel=\"preload\" as=\"image\" href=\"/_next/static/media/Logo-Off"
+    },
+    {
+     "url": "https://www.wimbledon.com/en_GB/scores/feed/live.json",
+     "requested_at_utc": "2026-09-11T19:41:48.515868+00:00",
+     "status": 200,
+     "latency_ms": 126,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 233300,
+     "truncated": false,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html data-dpl-id=\"v0_118_1\" lang=\"en\"><head><meta charSet=\"utf-8\"/><link rel=\"preconnect\" href=\"/\" crossorigin=\"\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no\"/><link rel=\"preload\" as=\"image\" href=\"/_next/static/media/Logo-Off"
+    },
+    {
+     "url": "https://www.wimbledon.com/en_GB/scores/feed/live.json",
+     "requested_at_utc": "2026-09-11T19:45:25.932168+00:00",
+     "status": 200,
+     "latency_ms": 283,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 233300,
+     "truncated": false,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!DOCTYPE html><html data-dpl-id=\"v0_118_1\" lang=\"en\"><head><meta charSet=\"utf-8\"/><link rel=\"preconnect\" href=\"/\" crossorigin=\"\"/><meta name=\"viewport\" content=\"width=device-width, initial-scale=1, maximum-scale=2, user-scalable=no\"/><link rel=\"preload\" as=\"image\" href=\"/_next/static/media/Logo-Off"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 126,
+    "latency_ms_max": 283,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "ausopen_live": {
+   "name": "Australian Open - live scores",
+   "host_class": "official_event",
+   "levels": [
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://ausopen.com/api/live-scores",
+   "rounds": [
+    {
+     "url": "https://ausopen.com/api/live-scores",
+     "requested_at_utc": "2026-09-11T19:37:58.498226+00:00",
+     "status": 404,
+     "latency_ms": 516,
+     "error": "HTTPError 404",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 20000,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n\n<head>\n    <script>\n      window.dataLayer = window.dataLayer || [];\n    </script>\n    <!-- Google Tag Manager -->\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:"
+    },
+    {
+     "url": "https://ausopen.com/api/live-scores",
+     "requested_at_utc": "2026-09-11T19:41:50.142872+00:00",
+     "status": 404,
+     "latency_ms": 59,
+     "error": "HTTPError 404",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 20000,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n\n<head>\n    <script>\n      window.dataLayer = window.dataLayer || [];\n    </script>\n    <!-- Google Tag Manager -->\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:"
+    },
+    {
+     "url": "https://ausopen.com/api/live-scores",
+     "requested_at_utc": "2026-09-11T19:45:27.715881+00:00",
+     "status": 404,
+     "latency_ms": 344,
+     "error": "HTTPError 404",
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 20000,
+     "headers": {},
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\n<!DOCTYPE html>\n<html lang=\"en\" dir=\"ltr\" prefix=\"og: https://ogp.me/ns#\">\n\n<head>\n    <script>\n      window.dataLayer = window.dataLayer || [];\n    </script>\n    <!-- Google Tag Manager -->\n    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n          new Date().getTime(),event:"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 59,
+    "latency_ms_max": 516,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "rolandgarros_live": {
+   "name": "Roland-Garros - live scores",
+   "host_class": "official_event",
+   "levels": [
+    "GRAND_SLAM"
+   ],
+   "answers": [
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.rolandgarros.com/api/en-us/live-scores",
+   "rounds": [
+    {
+     "url": "https://www.rolandgarros.com/api/en-us/live-scores",
+     "requested_at_utc": "2026-09-11T19:38:00.515257+00:00",
+     "status": 404,
+     "latency_ms": 446,
+     "error": "HTTPError 404",
+     "content_type": "application/problem+json",
+     "bytes": 144,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "type": "str",
+      "title": "str",
+      "status": "int",
+      "detail": "str",
+      "instance": "str"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    },
+    {
+     "url": "https://www.rolandgarros.com/api/en-us/live-scores",
+     "requested_at_utc": "2026-09-11T19:41:51.703230+00:00",
+     "status": 404,
+     "latency_ms": 632,
+     "error": "HTTPError 404",
+     "content_type": "application/problem+json",
+     "bytes": 144,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "type": "str",
+      "title": "str",
+      "status": "int",
+      "detail": "str",
+      "instance": "str"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    },
+    {
+     "url": "https://www.rolandgarros.com/api/en-us/live-scores",
+     "requested_at_utc": "2026-09-11T19:45:29.560914+00:00",
+     "status": 404,
+     "latency_ms": 551,
+     "error": "HTTPError 404",
+     "content_type": "application/problem+json",
+     "bytes": 144,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "type": "str",
+      "title": "str",
+      "status": "int",
+      "detail": "str",
+      "instance": "str"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404,
+     404,
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 446,
+    "latency_ms_max": 632,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "sofascore_live": {
+   "name": "SofaScore - live tennis events",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA",
+    "CHALLENGER",
+    "ITF_M",
+    "ITF_W",
+    "QUALIFYING",
+    "DOUBLES"
+   ],
+   "answers": [
+    1,
+    3,
+    4,
+    5
+   ],
+   "auth": "none",
+   "notes": "deepest coverage; check terms + anti-bot",
+   "url_template": "https://api.sofascore.com/api/v1/sport/tennis/events/live",
+   "rounds": [
+    {
+     "url": "https://api.sofascore.com/api/v1/sport/tennis/events/live",
+     "requested_at_utc": "2026-09-11T19:38:02.461519+00:00",
+     "status": 403,
+     "latency_ms": 69,
+     "error": "HTTPError 403",
+     "content_type": "application/json",
+     "bytes": 48,
+     "headers": {
+      "retry-after": "0",
+      "server": "Varnish"
+     },
+     "parse": "json",
+     "structure": {
+      "error": {
+       "code": "int",
+       "reason": "str"
+      }
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://api.sofascore.com/api/v1/sport/tennis/events/live",
+     "requested_at_utc": "2026-09-11T19:41:53.836132+00:00",
+     "status": 403,
+     "latency_ms": 136,
+     "error": "HTTPError 403",
+     "content_type": "application/json",
+     "bytes": 48,
+     "headers": {
+      "retry-after": "0",
+      "server": "Varnish"
+     },
+     "parse": "json",
+     "structure": {
+      "error": {
+       "code": "int",
+       "reason": "str"
+      }
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://api.sofascore.com/api/v1/sport/tennis/events/live",
+     "requested_at_utc": "2026-09-11T19:45:31.612169+00:00",
+     "status": 403,
+     "latency_ms": 58,
+     "error": "HTTPError 403",
+     "content_type": "application/json",
+     "bytes": 48,
+     "headers": {
+      "retry-after": "0",
+      "server": "Varnish"
+     },
+     "parse": "json",
+     "structure": {
+      "error": {
+       "code": "int",
+       "reason": "str"
+      }
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     403,
+     403,
+     403
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 58,
+    "latency_ms_max": 136,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "sofascore_scheduled": {
+   "name": "SofaScore - scheduled tennis events for a date",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA",
+    "CHALLENGER",
+    "ITF_M",
+    "ITF_W",
+    "QUALIFYING",
+    "DOUBLES"
+   ],
+   "answers": [
+    1,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/{date_dash}",
+   "rounds": [
+    {
+     "url": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-11",
+     "requested_at_utc": "2026-09-11T19:38:04.031594+00:00",
+     "status": 403,
+     "latency_ms": 39,
+     "error": "HTTPError 403",
+     "content_type": "application/json",
+     "bytes": 48,
+     "headers": {
+      "retry-after": "0",
+      "server": "Varnish"
+     },
+     "parse": "json",
+     "structure": {
+      "error": {
+       "code": "int",
+       "reason": "str"
+      }
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-11",
+     "requested_at_utc": "2026-09-11T19:41:55.472271+00:00",
+     "status": 403,
+     "latency_ms": 38,
+     "error": "HTTPError 403",
+     "content_type": "application/json",
+     "bytes": 48,
+     "headers": {
+      "retry-after": "0",
+      "server": "Varnish"
+     },
+     "parse": "json",
+     "structure": {
+      "error": {
+       "code": "int",
+       "reason": "str"
+      }
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-11",
+     "requested_at_utc": "2026-09-11T19:45:33.170562+00:00",
+     "status": 403,
+     "latency_ms": 43,
+     "error": "HTTPError 403",
+     "content_type": "application/json",
+     "bytes": 48,
+     "headers": {
+      "retry-after": "0",
+      "server": "Varnish"
+     },
+     "parse": "json",
+     "structure": {
+      "error": {
+       "code": "int",
+       "reason": "str"
+      }
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    }
+   ],
+   "historical_probe": {
+    "url": "https://api.sofascore.com/api/v1/sport/tennis/scheduled-events/2026-09-10",
+    "requested_at_utc": "2026-09-11T19:38:23.905675+00:00",
+    "status": 403,
+    "latency_ms": 39,
+    "error": "HTTPError 403",
+    "content_type": "application/json",
+    "bytes": 48,
+    "headers": {
+     "retry-after": "0",
+     "server": "Varnish"
+    },
+    "parse": "json",
+    "structure": {
+     "error": {
+      "code": "int",
+      "reason": "str"
+     }
+    },
+    "timestamp_fields": {},
+    "top_level_count": 1
+   },
+   "rollup": {
+    "status_codes": [
+     403,
+     403,
+     403
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 38,
+    "latency_ms_max": 43,
+    "timestamp_fields": [],
+    "historical_status": 403
+   }
+  },
+  "livescore_tennis": {
+   "name": "livescore.com public react API",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA",
+    "CHALLENGER",
+    "ITF_M",
+    "ITF_W"
+   ],
+   "answers": [
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://prod-public-api.livescore.com/v1/api/react/date/tennis/{date_ymd}/0",
+   "rounds": [
+    {
+     "url": "https://prod-public-api.livescore.com/v1/api/react/date/tennis/20260911/0",
+     "requested_at_utc": "2026-09-11T19:38:05.571045+00:00",
+     "status": 503,
+     "latency_ms": 137,
+     "error": "HTTPError 503",
+     "content_type": "text/html",
+     "bytes": 592,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome f"
+    },
+    {
+     "url": "https://prod-public-api.livescore.com/v1/api/react/date/tennis/20260911/0",
+     "requested_at_utc": "2026-09-11T19:41:57.010736+00:00",
+     "status": 503,
+     "latency_ms": 232,
+     "error": "HTTPError 503",
+     "content_type": "text/html",
+     "bytes": 592,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome f"
+    },
+    {
+     "url": "https://prod-public-api.livescore.com/v1/api/react/date/tennis/20260911/0",
+     "requested_at_utc": "2026-09-11T19:45:34.714236+00:00",
+     "status": 503,
+     "latency_ms": 260,
+     "error": "HTTPError 503",
+     "content_type": "text/html",
+     "bytes": 592,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome f"
+    }
+   ],
+   "historical_probe": {
+    "url": "https://prod-public-api.livescore.com/v1/api/react/date/tennis/20260910/0",
+    "requested_at_utc": "2026-09-11T19:38:25.444689+00:00",
+    "status": 503,
+    "latency_ms": 266,
+    "error": "HTTPError 503",
+    "content_type": "text/html",
+    "bytes": 592,
+    "headers": {
+     "server": "nginx"
+    },
+    "parse": "not-json (JSONDecodeError)",
+    "text_head": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>\r\n<!-- a padding to disable MSIE and Chrome friendly error page -->\r\n<!-- a padding to disable MSIE and Chrome f"
+   },
+   "rollup": {
+    "status_codes": [
+     503,
+     503,
+     503
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 137,
+    "latency_ms_max": 260,
+    "timestamp_fields": [],
+    "historical_status": 503
+   }
+  },
+  "thesportsdb_tennis": {
+   "name": "TheSportsDB - events on a day",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA"
+   ],
+   "answers": [
+    1,
+    4
+   ],
+   "auth": "none",
+   "notes": "free public key 3",
+   "url_template": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d={date_dash}&s=Tennis",
+   "rounds": [
+    {
+     "url": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=2026-09-11&s=Tennis",
+     "requested_at_utc": "2026-09-11T19:38:07.208435+00:00",
+     "status": 200,
+     "latency_ms": 53,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 15,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a39921834c74c957-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "json",
+     "structure": {
+      "events": "NoneType"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=2026-09-11&s=Tennis",
+     "requested_at_utc": "2026-09-11T19:41:58.743051+00:00",
+     "status": 200,
+     "latency_ms": 76,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 15,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a399272a7ead658c-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "json",
+     "structure": {
+      "events": "NoneType"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    },
+    {
+     "url": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=2026-09-11&s=Tennis",
+     "requested_at_utc": "2026-09-11T19:45:36.474713+00:00",
+     "status": 200,
+     "latency_ms": 64,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 15,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a3992c7b3c43658c-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "json",
+     "structure": {
+      "events": "NoneType"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 1
+    }
+   ],
+   "historical_probe": {
+    "url": "https://www.thesportsdb.com/api/v1/json/3/eventsday.php?d=2026-09-10&s=Tennis",
+    "requested_at_utc": "2026-09-11T19:38:27.211518+00:00",
+    "status": 200,
+    "latency_ms": 53,
+    "content_type": "application/json; charset=utf-8",
+    "bytes": 15,
+    "truncated": false,
+    "headers": {
+     "cf-ray": "a3992200582fc957-IAD",
+     "server": "cloudflare"
+    },
+    "parse": "json",
+    "structure": {
+     "events": "NoneType"
+    },
+    "timestamp_fields": {},
+    "top_level_count": 1
+   },
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 53,
+    "latency_ms_max": 76,
+    "timestamp_fields": [],
+    "historical_status": 200
+   }
+  },
+  "tennisexplorer_html": {
+   "name": "tennisexplorer.com - results page",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA",
+    "CHALLENGER",
+    "ITF_M",
+    "ITF_W"
+   ],
+   "answers": [
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://www.tennisexplorer.com/matches/?type=all&year={year}&month={month}&day={day}",
+   "rounds": [
+    {
+     "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=11",
+     "requested_at_utc": "2026-09-11T19:38:08.762158+00:00",
+     "status": 200,
+     "latency_ms": 1587,
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 499865,
+     "truncated": false,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "html",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://developers.facebook.com/schema/\">\n<head>\n    <"
+    },
+    {
+     "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=11",
+     "requested_at_utc": "2026-09-11T19:42:00.319570+00:00",
+     "status": 200,
+     "latency_ms": 1588,
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 499308,
+     "truncated": false,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "html",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://developers.facebook.com/schema/\">\n<head>\n    <"
+    },
+    {
+     "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=11",
+     "requested_at_utc": "2026-09-11T19:45:38.038925+00:00",
+     "status": 200,
+     "latency_ms": 1174,
+     "content_type": "text/html; charset=UTF-8",
+     "bytes": 500397,
+     "truncated": false,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "html",
+     "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://developers.facebook.com/schema/\">\n<head>\n    <"
+    }
+   ],
+   "historical_probe": {
+    "url": "https://www.tennisexplorer.com/matches/?type=all&year=2026&month=09&day=10",
+    "requested_at_utc": "2026-09-11T19:38:28.764555+00:00",
+    "status": 200,
+    "latency_ms": 1388,
+    "content_type": "text/html; charset=UTF-8",
+    "bytes": 622563,
+    "truncated": false,
+    "headers": {
+     "server": "nginx"
+    },
+    "parse": "html",
+    "text_head": "<!DOCTYPE html PUBLIC \"-//W3C//DTD XHTML 1.0 Transitional//EN\" \"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd\">\n<html xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en\" lang=\"en\" xmlns:og=\"http://opengraphprotocol.org/schema/\" xmlns:fb=\"http://developers.facebook.com/schema/\">\n<head>\n    <"
+   },
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 1174,
+    "latency_ms_max": 1588,
+    "timestamp_fields": [],
+    "historical_status": 200
+   }
+  },
+  "flashscore_feed": {
+   "name": "flashscore data feed",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA"
+   ],
+   "answers": [
+    3,
+    4
+   ],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://local-global.flashscore.ninja/2/x/feed/f_2_0_1_en_1",
+   "rounds": [
+    {
+     "url": "https://local-global.flashscore.ninja/2/x/feed/f_2_0_1_en_1",
+     "requested_at_utc": "2026-09-11T19:38:11.849351+00:00",
+     "status": 401,
+     "latency_ms": 486,
+     "error": "HTTPError 401",
+     "content_type": "",
+     "bytes": 323,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\n            <!DOCTYPE HTML>\n             <HTML>\n                     <HEAD>\n                            <TITLE>Error</TITLE>\n                            <META HTTP-EQUIV='Content-Type' CONTENT='text/html;'>\n                    </HEAD>\n                    <BODY><H1>401 Unauthorized</H1></BODY>\n     "
+    },
+    {
+     "url": "https://local-global.flashscore.ninja/2/x/feed/f_2_0_1_en_1",
+     "requested_at_utc": "2026-09-11T19:42:03.407870+00:00",
+     "status": 401,
+     "latency_ms": 500,
+     "error": "HTTPError 401",
+     "content_type": "",
+     "bytes": 323,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\n            <!DOCTYPE HTML>\n             <HTML>\n                     <HEAD>\n                            <TITLE>Error</TITLE>\n                            <META HTTP-EQUIV='Content-Type' CONTENT='text/html;'>\n                    </HEAD>\n                    <BODY><H1>401 Unauthorized</H1></BODY>\n     "
+    },
+    {
+     "url": "https://local-global.flashscore.ninja/2/x/feed/f_2_0_1_en_1",
+     "requested_at_utc": "2026-09-11T19:45:40.713584+00:00",
+     "status": 401,
+     "latency_ms": 943,
+     "error": "HTTPError 401",
+     "content_type": "",
+     "bytes": 323,
+     "headers": {
+      "server": "nginx"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\n            <!DOCTYPE HTML>\n             <HTML>\n                     <HEAD>\n                            <TITLE>Error</TITLE>\n                            <META HTTP-EQUIV='Content-Type' CONTENT='text/html;'>\n                    </HEAD>\n                    <BODY><H1>401 Unauthorized</H1></BODY>\n     "
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     401,
+     401,
+     401
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 486,
+    "latency_ms_max": 943,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "tennis_api_io": {
+   "name": "tennisapi.io public endpoint",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP",
+    "WTA"
+   ],
+   "answers": [
+    3
+   ],
+   "auth": "none",
+   "notes": "existence unverified",
+   "url_template": "https://api.tennisapi.io/v1/matches/live",
+   "rounds": [
+    {
+     "url": "https://api.tennisapi.io/v1/matches/live",
+     "requested_at_utc": "2026-09-11T19:38:13.835460+00:00",
+     "status": 200,
+     "latency_ms": 244,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 86714,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a39921ada993397f-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"theme-color\" content=\"#0e0e0e\">\n<title>Live Tennis API \u2014 Real-Time Scores, Odds &amp; AI Win-Probability</title>\n<meta name=\"description\" content=\"Live te"
+    },
+    {
+     "url": "https://api.tennisapi.io/v1/matches/live",
+     "requested_at_utc": "2026-09-11T19:42:05.408904+00:00",
+     "status": 200,
+     "latency_ms": 467,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 86714,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a39927564d46397f-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"theme-color\" content=\"#0e0e0e\">\n<title>Live Tennis API \u2014 Real-Time Scores, Odds &amp; AI Win-Probability</title>\n<meta name=\"description\" content=\"Live te"
+    },
+    {
+     "url": "https://api.tennisapi.io/v1/matches/live",
+     "requested_at_utc": "2026-09-11T19:45:43.156960+00:00",
+     "status": 200,
+     "latency_ms": 218,
+     "content_type": "text/html; charset=utf-8",
+     "bytes": 86714,
+     "truncated": false,
+     "headers": {
+      "cf-ray": "a3992ca5dddbd6f9-IAD",
+      "server": "cloudflare"
+     },
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<!doctype html>\n<html lang=\"en\">\n<head>\n<meta charset=\"utf-8\">\n<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">\n<meta name=\"theme-color\" content=\"#0e0e0e\">\n<title>Live Tennis API \u2014 Real-Time Scores, Odds &amp; AI Win-Probability</title>\n<meta name=\"description\" content=\"Live te"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 0,
+    "total_rounds": 3,
+    "reliability": 0.0,
+    "latency_ms_min": 218,
+    "latency_ms_max": 467,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "kalshi_exchange_status": {
+   "name": "Kalshi exchange status (corroboration only)",
+   "host_class": "exchange",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "EXCHANGE_TRUTH; may corroborate but never be sole sports-truth authority",
+   "url_template": "https://api.elections.kalshi.com/trade-api/v2/exchange/status",
+   "rounds": [
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/exchange/status",
+     "requested_at_utc": "2026-09-11T19:38:15.579654+00:00",
+     "status": 200,
+     "latency_ms": 73,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 667,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "exchange_active": "bool",
+      "exchange_index_statuses": [
+       "list[4]",
+       {
+        "description": "str",
+        "exchange_active": "bool",
+        "exchange_index": "int",
+        "intra_exchange_transfers_active": "bool",
+        "trading_active": "bool"
+       }
+      ],
+      "intra_exchange_transfers_active": "bool",
+      "trading_active": "bool"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 4
+    },
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/exchange/status",
+     "requested_at_utc": "2026-09-11T19:42:07.376920+00:00",
+     "status": 200,
+     "latency_ms": 75,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 667,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "exchange_active": "bool",
+      "exchange_index_statuses": [
+       "list[4]",
+       {
+        "description": "str",
+        "exchange_active": "bool",
+        "exchange_index": "int",
+        "intra_exchange_transfers_active": "bool",
+        "trading_active": "bool"
+       }
+      ],
+      "intra_exchange_transfers_active": "bool",
+      "trading_active": "bool"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 4
+    },
+    {
+     "url": "https://api.elections.kalshi.com/trade-api/v2/exchange/status",
+     "requested_at_utc": "2026-09-11T19:45:44.875434+00:00",
+     "status": 200,
+     "latency_ms": 119,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 667,
+     "truncated": false,
+     "headers": {},
+     "parse": "json",
+     "structure": {
+      "exchange_active": "bool",
+      "exchange_index_statuses": [
+       "list[4]",
+       {
+        "description": "str",
+        "exchange_active": "bool",
+        "exchange_index": "int",
+        "intra_exchange_transfers_active": "bool",
+        "trading_active": "bool"
+       }
+      ],
+      "intra_exchange_transfers_active": "bool",
+      "trading_active": "bool"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 4
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200,
+     200,
+     200
+    ],
+    "success_rounds": 3,
+    "total_rounds": 3,
+    "reliability": 1.0,
+    "latency_ms_min": 73,
+    "latency_ms_max": 119,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  }
+ },
+ "robots": {
+  "api.elections.kalshi.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "api.sofascore.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 48
+  },
+  "api.tennisapi.io": {
+   "status": 200,
+   "disallow_star": [
+    "/api/",
+    "/cdn-cgi/l/email-protection"
+   ],
+   "bytes": 617
+  },
+  "api.wtatennis.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "ausopen.com": {
+   "status": 200,
+   "disallow_star": [
+    "/core/",
+    "/profiles/",
+    "/README.md",
+    "/composer/Metapackage/README.txt",
+    "/composer/Plugin/ProjectMessage/README.md",
+    "/composer/Plugin/Scaffold/README.md",
+    "/composer/Plugin/VendorHardening/README.txt",
+    "/composer/Template/README.txt",
+    "/modules/README.txt",
+    "/sites/README.txt",
+    "/themes/README.txt",
+    "/admin/",
+    "/comment/reply/",
+    "/filter/tips",
+    "/node/add/",
+    "/search/",
+    "/user/register",
+    "/user/password",
+    "/user/login",
+    "/user/logout",
+    "/media/oembed",
+    "/*/media/oembed",
+    "/index.php/admin/",
+    "/index.php/comment/reply/",
+    "/index.php/filter/tips",
+    "/index.php/node/add/",
+    "/index.php/search/",
+    "/index.php/user/password",
+    "/index.php/user/register",
+    "/index.php/user/login",
+    "/index.php/user/logout",
+    "/index.php/media/oembed",
+    "/index.php/*/media/oembed",
+    "/search"
+   ],
+   "bytes": 2111
+  },
+  "local-global.flashscore.ninja": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "prod-public-api.livescore.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 548
+  },
+  "site.api.espn.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 389
+  },
+  "sports.core.api.espn.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 520
+  },
+  "www.atptour.com": {
+   "status": 200,
+   "disallow_star": [
+    "/sitecore/",
+    "*/ajax/*",
+    "/*/photos/photo-filter-results",
+    "/*/scores/archive/*",
+    "/*/search-results",
+    "/*/video/video-filter-results",
+    "/*/stats/player-tendencies",
+    "/*/scores/match-stats",
+    "/*/scores/second-screen"
+   ],
+   "bytes": 2183
+  },
+  "www.itftennis.com": {
+   "status": 200,
+   "disallow_star": [
+    "/umbraco/"
+   ],
+   "bytes": 126
+  },
+  "www.protennislive.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 1245
+  },
+  "www.rolandgarros.com": {
+   "status": 200,
+   "disallow_star": [
+    "/admin",
+    "/maintenance"
+   ],
+   "bytes": 77
+  },
+  "www.tennisexplorer.com": {
+   "status": 200,
+   "disallow_star": [
+    "/redirect/",
+    "/terms-of-use/",
+    "/contact/"
+   ],
+   "bytes": 132
+  },
+  "www.thesportsdb.com": {
+   "status": 200,
+   "disallow_star": [
+    "/nfo/",
+    "/nfo.php"
+   ],
+   "bytes": 379
+  },
+  "www.usopen.org": {
+   "status": null,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "www.wimbledon.com": {
+   "status": 200,
+   "disallow_star": [
+    "/en_GB/scores/2025/schedule/pdf/",
+    "/en_GB/wimbledonfoundation/",
+    "/en_GB/visitandtickets/",
+    "/en_GB/amexverify/",
+    "/en_GB/mywimbledon/",
+    "/matchvideo/",
+    "/webview/",
+    "/s/",
+    "/api/",
+    "/author/",
+    "/testwim",
+    "/mobile",
+    "/zh_CN"
+   ],
+   "bytes": 500
+  }
+ },
+ "finished_at": "2026-09-11T19:45:46.495025+00:00"
+}
