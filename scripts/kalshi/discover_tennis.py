@@ -67,9 +67,11 @@ def publish(out_root, message):
     """Best-effort incremental publish of the discovery directory to the data branch."""
     if os.environ.get("TENNIS_PUBLISH", "0") != "1":
         return
-    rel = os.path.relpath(out_root, os.path.abspath(os.path.join(PROJ, "..")))
+    # PROJ is the repository root (standalone repo since the 2026-09-11 migration); --src is relative to it and
+    # publish_branch.py re-applies the historical `tennis-edge-finder/` prefix on the data branch via --dest-prefix.
+    rel = os.path.relpath(out_root, PROJ)
     cmd = [sys.executable, os.path.join(PROJ, "scripts", "ci", "publish_branch.py"), "--src", rel, "--message", message,
-           "--repo", os.path.abspath(os.path.join(PROJ, ".."))]
+           "--repo", PROJ]
     print("+ publish:", " ".join(cmd), flush=True)
     subprocess.run(cmd, check=False)
 

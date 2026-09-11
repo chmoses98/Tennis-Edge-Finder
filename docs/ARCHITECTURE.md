@@ -1,9 +1,14 @@
 # Architecture
 
+Repository: `chmoses98/tennis-edge-finder` (standalone since the 2026-09-11 migration; it was built inside
+`chmoses98/nfl-edge-finder` overnight — see MIGRATION_AUDIT.md). Code lives at the repository root; the orphan
+`tennis-data` branch keeps its original `tennis-edge-finder/data/...` prefix so every pre-migration evidence
+commit kept its ORIGINAL SHA.
+
 ```
 GitHub Actions runner (open internet)                      dev sandbox / owner machine (egress-restricted)
 ┌──────────────────────────────────────────┐              ┌──────────────────────────────────────────────┐
-│ tennis-bootstrap.yml  (on demand)        │              │ tennis_edge/data/build.py  -> matches.parquet │
+│ tennis-bootstrap.yml  (daily + dispatch) │              │ tennis_edge/data/build.py  -> matches.parquet │
 │   scripts/data/bootstrap_sources.py      │  git fetch   │ tennis_edge/models/state.py -> ratings_*.json │
 │   scripts/kalshi/discover_tennis.py      │ ───────────► │ scripts/run_tennis.py -> projections + ledger │
 │ tennis-capture.yml (self-chaining loop)  │  tennis-data │ scripts/research/*  -> RESULTS_*.md           │
@@ -13,7 +18,8 @@ GitHub Actions runner (open internet)                      dev sandbox / owner m
 
 Immutable evidence lives on the orphan `tennis-data` branch (`tennis-edge-finder/data/sources/<run>/`,
 `data/kalshi/discovery/<run>/`, `data/kalshi/capture/<day>/<run>.*.jsonl.gz`); code lives on the code branch;
-nothing under `data/` is committed to the code branch.
+nothing under `data/` is committed to `main` except the small research artifacts that were committed before the
+migration (ledger, projections, settlements, health snapshot) and are preserved as-is.
 
 ## Layers (tennis_edge/)
 | package | role |

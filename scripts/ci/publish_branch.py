@@ -28,7 +28,13 @@ def sh(cmd, cwd=None, check=True, capture=False):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--src", required=True, help="directory (relative to repo) whose contents to publish at the same relative path")
+    ap.add_argument("--src", required=True, help="local directory (relative to repo) whose contents to publish")
+    ap.add_argument("--dest-prefix", default="tennis-edge-finder",
+                    help="path prefix the contents take ON THE DATA BRANCH. Defaults to 'tennis-edge-finder' because the "
+                         "evidence tree was created while this project lived in a subdirectory of chmoses98/nfl-edge-finder; "
+                         "keeping the prefix is what let the 2026-09-11 migration transfer every pre-migration commit with its "
+                         "ORIGINAL SHA instead of rewriting frozen observations. Never change it to make the layout prettier: "
+                         "that would fork the append-only tree in two (see MIGRATION_AUDIT.md).")
     ap.add_argument("--message", required=True)
     ap.add_argument("--branch", default="tennis-data")
     ap.add_argument("--repo", default=os.getcwd())
@@ -36,6 +42,7 @@ def main():
     a = ap.parse_args()
     repo = os.path.abspath(a.repo)
     src = os.path.join(repo, a.src)
+    dest_rel = os.path.join(a.dest_prefix, a.src) if a.dest_prefix else a.src
     if not os.path.isdir(src) or not any(os.scandir(src)):
         print("nothing to publish (source empty)"); return 0
     wt = os.path.join(os.path.dirname(repo), f"_{a.branch}_wt")
@@ -56,7 +63,7 @@ def main():
         sh(["git", "add", "README.md"], cwd=wt)
         sh(["git", "commit", "-q", "-m", "init market-data orphan branch"], cwd=wt)
     for attempt in range(1, a.attempts + 1):
-        dest = os.path.join(wt, a.src)
+        dest = os.path.join(wt, dest_rel)
         os.makedirs(dest, exist_ok=True)
         # copy (append-only: new files; existing files are overwritten with identical content)
         for root, dirs, files in os.walk(src):
@@ -71,7 +78,7 @@ def main():
                     print(f"::warning::skipping oversized file {srcp} ({os.path.getsize(srcp) / 1e6:.1f} MB)")
                     continue
                 shutil.copy2(srcp, os.path.join(dest, rel, fn))
-        sh(["git", "add", "-A", "--", a.src], cwd=wt)
+        sh(["git", "add", "-A", "--", dest_rel], cwd=wt)
         if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=wt).returncode == 0:
             print("no changes to publish"); return 0
         sh(["git", "commit", "-q", "-m", a.message], cwd=wt)

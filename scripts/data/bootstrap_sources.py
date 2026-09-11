@@ -28,7 +28,7 @@ import sys
 import urllib.request
 from datetime import datetime, timezone
 
-UA = "tennis-edge-finder/0.1 (research data acquisition; github.com/chmoses98/nfl-edge-finder)"
+UA = "tennis-edge-finder/0.1 (research data acquisition; github.com/chmoses98/tennis-edge-finder)"
 
 
 def sha256(path):

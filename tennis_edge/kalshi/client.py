@@ -20,7 +20,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timezone
 
 BASE_URL = "https://api.elections.kalshi.com/trade-api/v2"
-USER_AGENT = "tennis-edge-finder/0.1 (read-only research; github.com/chmoses98/nfl-edge-finder)"
+USER_AGENT = "tennis-edge-finder/0.1 (read-only research; github.com/chmoses98/tennis-edge-finder)"
 
 
 class KalshiError(RuntimeError):

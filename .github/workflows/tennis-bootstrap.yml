@@ -8,8 +8,10 @@ on:
   # workflow_dispatch is only registered for workflows on the default branch; a push to the
   # tennis branch that touches the trigger file runs this workflow FROM that branch.
   push:
-    branches: ['claude/tennis-edge-finder-nr4scu']
-    paths: ['tennis-edge-finder/.bootstrap-trigger']
+    branches: ['main']
+    paths: ['.bootstrap-trigger']
+  schedule:
+    - cron: '40 5 * * *'   # daily source refresh: fork snapshots go stale and TENNIS-14 fails on them
   workflow_dispatch:
     inputs:
       budget_minutes:
@@ -42,27 +44,27 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          if grep -q "jobs=kalshi" tennis-edge-finder/.bootstrap-trigger 2>/dev/null; then echo "trigger requests kalshi only; skipping sources"; exit 0; fi
+          if grep -q "jobs=kalshi" .bootstrap-trigger 2>/dev/null; then echo "trigger requests kalshi only; skipping sources"; exit 0; fi
           EXTRA=""
           if [ "${{ github.event.inputs.skip_mcp }}" = "true" ]; then EXTRA="--skip-mcp"; fi
-          python3 tennis-edge-finder/scripts/data/bootstrap_sources.py --only sackmann --out tennis-edge-finder/data/sources $EXTRA
+          python3 scripts/data/bootstrap_sources.py --only sackmann --out data/sources $EXTRA
       - name: Publish Sackmann snapshots
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 tennis-edge-finder/scripts/ci/publish_branch.py --branch tennis-data --src tennis-edge-finder/data/sources --message "tennis sources bootstrap (sackmann) $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          rm -rf tennis-edge-finder/data/sources
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources --message "tennis sources bootstrap (sackmann) $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          rm -rf data/sources
       - name: Acquire tennis-data.co.uk (+ mirrors)
         id: acquire_td
         continue-on-error: true
         timeout-minutes: 30
         run: |
-          if grep -q "jobs=kalshi" tennis-edge-finder/.bootstrap-trigger 2>/dev/null; then exit 0; fi
+          if grep -q "jobs=kalshi" .bootstrap-trigger 2>/dev/null; then exit 0; fi
           sleep 2
-          python3 tennis-edge-finder/scripts/data/bootstrap_sources.py --only tennisdata --out tennis-edge-finder/data/sources
+          python3 scripts/data/bootstrap_sources.py --only tennisdata --out data/sources
       - name: Publish tennis-data snapshots
         run: |
-          python3 tennis-edge-finder/scripts/ci/publish_branch.py --branch tennis-data --src tennis-edge-finder/data/sources --message "tennis sources bootstrap (tennis-data + mirrors) $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources --message "tennis sources bootstrap (tennis-data + mirrors) $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
       - name: Report partial acquisition
         if: steps.acquire.outcome != 'success'
         run: echo "::warning::source acquisition reported failures (see manifest.json); data published for inspection"
@@ -83,13 +85,13 @@ jobs:
         env:
           TENNIS_PUBLISH: "1"
         run: |
-          if grep -q "jobs=sources" tennis-edge-finder/.bootstrap-trigger 2>/dev/null; then echo "trigger requests sources only; skipping kalshi"; exit 0; fi
+          if grep -q "jobs=sources" .bootstrap-trigger 2>/dev/null; then echo "trigger requests sources only; skipping kalshi"; exit 0; fi
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 tennis-edge-finder/scripts/kalshi/discover_tennis.py --budget-minutes "${{ github.event.inputs.budget_minutes || '200' }}"
+          python3 scripts/kalshi/discover_tennis.py --budget-minutes "${{ github.event.inputs.budget_minutes || '200' }}"
       - name: Final publish
         run: |
-          python3 tennis-edge-finder/scripts/ci/publish_branch.py --branch tennis-data --src tennis-edge-finder/data/kalshi --message "kalshi tennis discovery final publish $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi --message "kalshi tennis discovery final publish $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
       - name: Fail if discovery was incomplete
         if: steps.discover.outcome != 'success'
         run: |

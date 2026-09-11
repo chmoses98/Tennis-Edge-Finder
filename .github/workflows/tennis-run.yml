@@ -8,8 +8,10 @@ name: RUN TENNIS (projections + settlement)
 on:
   workflow_dispatch:
   push:
-    branches: ['claude/tennis-edge-finder-nr4scu']
-    paths: ['tennis-edge-finder/.run-trigger']
+    branches: ['main']
+    paths: ['.run-trigger']
+  schedule:
+    - cron: '25 */6 * * *'   # projections + settlement four times a day
 
 permissions:
   contents: write
@@ -32,17 +34,17 @@ jobs:
       - name: Pull snapshots, capture and existing ledger from tennis-data
         run: |
           git fetch --depth=1 origin tennis-data
-          git archive origin/tennis-data tennis-edge-finder/data | tar -x
-          ls tennis-edge-finder/data
+          # the evidence tree keeps its historical `tennis-edge-finder/` prefix (see MIGRATION_AUDIT.md);
+          # --strip-components=1 lands it at ./data/ where the standalone code expects it
+          git archive origin/tennis-data tennis-edge-finder/data | tar -x --strip-components=1
+          ls data
       - name: Build canonical table and rating states
         run: |
-          cd tennis-edge-finder
           PYTHONPATH=. python3 tennis_edge/data/build.py | tail -5
           PYTHONPATH=. python3 -m tennis_edge.models.state --tour ATP
           PYTHONPATH=. python3 -m tennis_edge.models.state --tour WTA
       - name: Project, settle, health
         run: |
-          cd tennis-edge-finder
           PYTHONPATH=. python3 scripts/run_tennis.py | tail -20
           PYTHONPATH=. python3 scripts/ops/settle_ledger.py | tail -10
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"
@@ -51,5 +53,5 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 tennis-edge-finder/scripts/ci/publish_branch.py --branch tennis-data --src tennis-edge-finder/data/research --message "tennis run $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
-          python3 tennis-edge-finder/scripts/ci/publish_branch.py --branch tennis-data --src tennis-edge-finder/data/processed --message "tennis processed artifacts $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research --message "tennis run $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/processed --message "tennis processed artifacts $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
