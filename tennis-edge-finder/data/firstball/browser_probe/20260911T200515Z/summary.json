@@ -1,0 +1,423 @@
+{
+ "run_id": "20260911T200515Z",
+ "started_at": "2026-09-11T20:05:15.652058+00:00",
+ "pages": {
+  "https://live.itftennis.com/en/live-scores/": {
+   "title": "World Tennis Tour Live | ITF",
+   "n_requests": 39,
+   "api_calls": [
+    {
+     "url": "https://widgets.itf-production.sports-data.stadion.io/itf-widget-sdk.umd.js",
+     "status": 200,
+     "method": "GET",
+     "resource_type": "script",
+     "request_headers": {
+      "origin": "https://www.itftennis.com",
+      "referer": "https://www.itftennis.com/"
+     },
+     "content_type": "text/javascript"
+    },
+    {
+     "url": "https://public-gbr.mkt.dynamics.com/api/v1.0/orgs/477bd92d-53fe-4790-9df3-11fb131dba0f/landingpageforms/forms/221840a7-9abb-ee11-9078-6045bd127be4/visits",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "fetch",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 43,
+     "body_file": "bodies/6854874949701302.json.gz",
+     "top_keys": [
+      "interactionStatus",
+      "errorMessage"
+     ]
+    },
+    {
+     "url": "https://app.termly.io/api/v1/snippets/websites/736a1a74-e471-43b1-9611-36ab129ebc69/cookies?lang=en",
+     "status": 200,
+     "method": "GET",
+     "resource_type": "xhr",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json, text/plain, */*"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 19162,
+     "body_file": "bodies/8804679327693439.json.gz",
+     "top_keys": [
+      "cookies"
+     ]
+    },
+    {
+     "url": "https://app.termly.io/api/v1/snippets/websites/736a1a74-e471-43b1-9611-36ab129ebc69/statistics",
+     "status": 201,
+     "method": "POST",
+     "resource_type": "xhr",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json, text/plain, */*"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 3,
+     "body_file": "bodies/6959515969712953.json.gz",
+     "body_error": "TypeError: object of type 'int' has no len()"
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/monitor",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/monitor",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    }
+   ],
+   "all_hosts": [
+    "analytics.tiktok.com",
+    "app.termly.io",
+    "assets-gbr.mkt.dynamics.com",
+    "connect.facebook.net",
+    "cxppusa1formui01cdnsa01-endpoint.azureedge.net",
+    "itftennis-ep.azureedge.net",
+    "live.itftennis.com",
+    "public-gbr.mkt.dynamics.com",
+    "unpkg.com",
+    "widgets.itf-production.sports-data.stadion.io",
+    "www.gstatic.com",
+    "www.instagram.com",
+    "www.itftennis.com"
+   ]
+  },
+  "https://www.itftennis.com/en/live-scores/": {
+   "title": "World Tennis Tour Live | ITF",
+   "n_requests": 40,
+   "api_calls": [
+    {
+     "url": "https://widgets.itf-production.sports-data.stadion.io/itf-widget-sdk.umd.js",
+     "status": 200,
+     "method": "GET",
+     "resource_type": "script",
+     "request_headers": {
+      "origin": "https://www.itftennis.com",
+      "referer": "https://www.itftennis.com/"
+     },
+     "content_type": "text/javascript"
+    },
+    {
+     "url": "https://public-gbr.mkt.dynamics.com/api/v1.0/orgs/477bd92d-53fe-4790-9df3-11fb131dba0f/landingpageforms/forms/221840a7-9abb-ee11-9078-6045bd127be4/visits",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "fetch",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 43,
+     "body_file": "bodies/6854874949701302.json.gz",
+     "top_keys": [
+      "interactionStatus",
+      "errorMessage"
+     ]
+    },
+    {
+     "url": "https://app.termly.io/api/v1/snippets/websites/736a1a74-e471-43b1-9611-36ab129ebc69/cookies?lang=en",
+     "status": 200,
+     "method": "GET",
+     "resource_type": "xhr",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json, text/plain, */*"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 19162,
+     "body_file": "bodies/8804679327693439.json.gz",
+     "top_keys": [
+      "cookies"
+     ]
+    },
+    {
+     "url": "https://app.termly.io/api/v1/snippets/websites/736a1a74-e471-43b1-9611-36ab129ebc69/statistics",
+     "status": 201,
+     "method": "POST",
+     "resource_type": "xhr",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json, text/plain, */*"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 3,
+     "body_file": "bodies/6959515969712953.json.gz",
+     "body_error": "TypeError: object of type 'int' has no len()"
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/monitor",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/monitor",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    }
+   ],
+   "all_hosts": [
+    "analytics.tiktok.com",
+    "app.termly.io",
+    "assets-gbr.mkt.dynamics.com",
+    "connect.facebook.net",
+    "cxppusa1formui01cdnsa01-endpoint.azureedge.net",
+    "itftennis-ep.azureedge.net",
+    "live.itftennis.com",
+    "public-gbr.mkt.dynamics.com",
+    "unpkg.com",
+    "widgets.itf-production.sports-data.stadion.io",
+    "www.gstatic.com",
+    "www.instagram.com",
+    "www.itftennis.com"
+   ]
+  },
+  "https://www.itftennis.com/en/world-tennis-tour-live/": {
+   "title": "World Tennis Tour Live | ITF",
+   "n_requests": 37,
+   "api_calls": [
+    {
+     "url": "https://widgets.itf-production.sports-data.stadion.io/itf-widget-sdk.umd.js",
+     "status": 200,
+     "method": "GET",
+     "resource_type": "script",
+     "request_headers": {
+      "origin": "https://www.itftennis.com",
+      "referer": "https://www.itftennis.com/"
+     },
+     "content_type": "text/javascript"
+    },
+    {
+     "url": "https://public-gbr.mkt.dynamics.com/api/v1.0/orgs/477bd92d-53fe-4790-9df3-11fb131dba0f/landingpageforms/forms/221840a7-9abb-ee11-9078-6045bd127be4/visits",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "fetch",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 43,
+     "body_file": "bodies/6854874949701302.json.gz",
+     "top_keys": [
+      "interactionStatus",
+      "errorMessage"
+     ]
+    },
+    {
+     "url": "https://app.termly.io/api/v1/snippets/websites/736a1a74-e471-43b1-9611-36ab129ebc69/cookies?lang=en",
+     "status": 200,
+     "method": "GET",
+     "resource_type": "xhr",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json, text/plain, */*"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 19162,
+     "body_file": "bodies/8804679327693439.json.gz",
+     "top_keys": [
+      "cookies"
+     ]
+    },
+    {
+     "url": "https://app.termly.io/api/v1/snippets/websites/736a1a74-e471-43b1-9611-36ab129ebc69/statistics",
+     "status": 201,
+     "method": "POST",
+     "resource_type": "xhr",
+     "request_headers": {
+      "referer": "",
+      "accept": "application/json, text/plain, */*"
+     },
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 3,
+     "body_file": "bodies/6959515969712953.json.gz",
+     "body_error": "TypeError: object of type 'int' has no len()"
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel/act",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/monitor",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/monitor",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    },
+    {
+     "url": "https://analytics.tiktok.com/api/v2/pixel",
+     "status": 200,
+     "method": "POST",
+     "resource_type": "ping",
+     "request_headers": {
+      "referer": ""
+     },
+     "content_type": ""
+    }
+   ],
+   "all_hosts": [
+    "analytics.tiktok.com",
+    "app.termly.io",
+    "assets-gbr.mkt.dynamics.com",
+    "connect.facebook.net",
+    "cxppusa1formui01cdnsa01-endpoint.azureedge.net",
+    "itftennis-ep.azureedge.net",
+    "public-gbr.mkt.dynamics.com",
+    "unpkg.com",
+    "widgets.itf-production.sports-data.stadion.io",
+    "www.gstatic.com",
+    "www.instagram.com",
+    "www.itftennis.com"
+   ]
+  }
+ },
+ "finished_at": "2026-09-11T20:06:23.143757+00:00"
+}
