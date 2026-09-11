@@ -59,7 +59,7 @@ changed the conclusion:
 | WTA main tour | ESPN | solved, state transitions |
 | Grand Slam singles | ESPN | solved (one request returned all 478 US Open matches with `Final`, `Retired`, `Walkover`, `In Progress` states) |
 | WTA 125 / Challenger-level WTA | ESPN | partially present on the WTA board; observed binding live |
-| Doubles | ESPN | **unverified.** Zero doubles rows parsed from the US Open board. Falls through to `START_UNKNOWN`. |
+| Doubles | ESPN | **covered.** ESPN shapes a pair as `roster` (a dict with a combined name and an athletes array), not as an `athlete`; the adapter read it as a list and so produced no doubles rows at all. Fixed and tested: 147 doubles matches now parse from the ATP board, and a pair binds to a Kalshi-style team name at affinity 0.95. |
 | ATP Challenger | none | **unsolved.** ESPN's tennis league index contains `atp` and `wta` only; `atp-challenger` returns HTTP 400. |
 | ITF men / ITF women | none | **unsolved** |
 | Qualifying | none | **unsolved** |
@@ -216,7 +216,7 @@ from it automatically.
    Kalshi's nominal metadata is worst.
 2. **The ITF's own feed was not cracked.** The provider is identified; the widget made no data requests
    during the probe window. Re-run during peak ITF hours and past the consent gate.
-3. **Doubles coverage is unverified** against a board with live doubles.
+3. ~~Doubles coverage unverified.~~ **Resolved:** ESPN carries doubles under a `roster` shape the adapter misread. Fixed and tested; a pair binds to a Kalshi-style team name at affinity 0.95.
 4. **Feed lag is assumed, not measured.** The 120 s allowance is a conservative placeholder; measuring
    ESPN's real latency against a second independent source would tighten every bracket.
 5. **Only one provider is wired in,** so cross-provider reconciliation is exercised only in tests.

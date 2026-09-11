@@ -126,12 +126,22 @@ class EspnAdapter(Adapter):
             for g in ev.get("groupings") or []:
                 comps += list(g.get("competitions") or [])
             for comp in comps:
-                names = []
+                names, pair = [], False
                 for c in comp.get("competitors") or []:
                     a = c.get("athlete") or c.get("team") or {}
                     n = a.get("displayName") or a.get("fullName") or a.get("shortDisplayName") or ""
-                    if not n and isinstance(c.get("roster"), list):
-                        n = " / ".join((r.get("athlete") or {}).get("displayName", "") for r in c["roster"])
+                    # DOUBLES: ESPN shapes a pair as `roster`, a DICT carrying a combined displayName and
+                    # an athletes array -- not as an `athlete`, and not as a list. Reading it as a list is
+                    # why doubles silently produced no rows at all on the first pass.
+                    roster = c.get("roster")
+                    if not n and isinstance(roster, dict):
+                        n = roster.get("displayName") or " / ".join(
+                            x.get("displayName") or x.get("fullName") or ""
+                            for x in (roster.get("athletes") or []))
+                        pair = pair or bool(n)
+                    elif not n and isinstance(roster, list):
+                        n = " / ".join((r.get("athlete") or {}).get("displayName", "") for r in roster)
+                        pair = pair or bool(n)
                     names.append(n)
                 if len(names) != 2 or not all(names):
                     continue
@@ -147,7 +157,7 @@ class EspnAdapter(Adapter):
                     player_a=names[0], player_b=names[1], state=state, source_status=desc,
                     scheduled_utc=_iso_utc(comp.get("date") or ev.get("date")), claimed_start_utc=None,
                     games_played=games, tournament=(ev.get("name") or ""),
-                    level_hint=self.league.upper(), doubles="/" in names[0],
+                    level_hint=self.league.upper(), doubles=pair or "/" in names[0],
                     time_interpretation=self.time_interpretation))
         return out
 

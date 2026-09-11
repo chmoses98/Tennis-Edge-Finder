@@ -18,7 +18,8 @@
   flashscore requires signed requests, livescore.com returns 503, and the ITF's own scoreboard is served by
   a provider whose API paths the site builds dynamically (a headless-browser probe observed the widget make
   zero data requests). Those matches stay START_UNKNOWN and are excluded from strict pregame research.
-  **Doubles coverage is unverified.** See docs/FIRST_BALL_SOURCES.md.
+  **Doubles IS covered** at those levels (ESPN shapes a pair as `roster`, which the adapter initially
+  misread). See docs/FIRST_BALL_SOURCES.md.
 * **Historical first-ball recovery is impossible from any reachable source.** Across 1,378 completed ESPN
   competitions, zero report a start differing from their scheduled time and none report an end time, so the
   field is a schedule. Prospective rows captured before first-ball polling stay START_UNKNOWN and are

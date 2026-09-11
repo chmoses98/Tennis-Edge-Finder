@@ -59,7 +59,7 @@ this whole wave exists to eliminate.
 | ATP main tour (250/500/1000/Finals) | ESPN | **solved**, state transitions |
 | WTA main tour | ESPN | **solved**, state transitions |
 | Grand Slam singles | ESPN | **solved** (the probe returned all 478 US Open matches from one request, with `Final`, `Retired`, `Walkover` and `In Progress` states) |
-| Doubles | ESPN | **unverified.** The US Open board parsed zero doubles rows. Either ESPN does not carry them or it shapes them differently (`roster` rather than `athlete`). Until that is checked against a board with live doubles, doubles matches fall through to START_UNKNOWN. |
+| Doubles | ESPN | **covered.** ESPN does carry doubles, shaping a pair as `roster` (a dict with a combined displayName and an athletes array) rather than as an `athlete`. The adapter read it as a list, which is why zero doubles rows appeared at first. Fixed and tested: 147 doubles matches parse from the ATP board. |
 | ATP Challenger | none | **unsolved.** ESPN provably does not carry it: its tennis league index contains `atp` and `wta` only, and `atp-challenger` returns HTTP 400. ATP's own site is behind Cloudflare, protennislive is down, SofaScore blocks runner IPs. |
 | ITF men / ITF women | none | **unsolved.** Same blocks, plus the ITF's own live feed is served by a provider whose paths the site builds dynamically. |
 | Qualifying | none | **unsolved**, for the same reasons. |

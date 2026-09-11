@@ -333,3 +333,28 @@ def test_25_two_different_physical_matches_claiming_one_row_still_collide():
     mp, _ = map_all(ours, feed, window_hours=200)
     assert mp["m1"].status == "AMBIGUOUS" and mp["m2"].status == "AMBIGUOUS"
     assert "different physical matches" in mp["m1"].reason
+
+
+def test_26_espn_doubles_are_parsed_from_the_roster_shape():
+    """ESPN shapes a pair as `roster`: a DICT with a combined displayName and an athletes array."""
+    ad = REGISTRY["espn_atp"]
+    payload = {"events": [{"id": 1, "name": "US Open", "competitions": [{
+        "id": "9", "date": "2026-09-11T15:00Z",
+        "status": {"type": {"state": "in", "description": "In Progress"}},
+        "competitors": [
+            {"roster": {"displayName": "Luisa Stefani / Neal Skupski",
+                        "athletes": [{"displayName": "Luisa Stefani"}, {"displayName": "Neal Skupski"}]}},
+            {"roster": {"athletes": [{"displayName": "Erin Routliffe"}, {"displayName": "Lloyd Glasspool"}]}},
+        ]}]}]}
+    got = ad.parse(payload)
+    assert len(got) == 1
+    m = got[0]
+    assert m.doubles and m.state == "IN"
+    assert m.player_a == "Luisa Stefani / Neal Skupski"
+    assert m.player_b == "Erin Routliffe / Lloyd Glasspool"
+
+
+def test_27_a_doubles_team_binds_to_a_kalshi_style_team_name():
+    from tennis_edge.firstball.mapping import affinity
+    assert affinity("Luisa Stefani / Neal Skupski", "Stefani/Skupski") >= 0.9
+    assert affinity("Luisa Stefani / Neal Skupski", "Erin Routliffe / Lloyd Glasspool") == 0.0
