@@ -1,0 +1,101 @@
+{
+ "run_id": "20260911T203848Z",
+ "started_at": "2026-09-11T20:38:48.633154+00:00",
+ "passes": 10,
+ "requests": 20,
+ "observations": 0,
+ "truths_written": 0,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 20
+ },
+ "mapping": {
+  "UNMATCHED": 60,
+  "MATCHED": 0,
+  "AMBIGUOUS": 110
+ },
+ "mapping_refusals": {
+  "KXATPEXACTMATCH-26SEP11ZVEKHA": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182768 claimed by 5 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPEXACTMATCH-26SEP11TIASHE": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182766 claimed by 6 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSSPREAD-26SEP11ZVEKHA": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182768 claimed by 5 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSSPREAD-26SEP11TIASHE": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182766 claimed by 6 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPMATCH-26SEP11ZVEKHA": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182768 claimed by 5 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPMATCH-26SEP11TIASHE": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182766 claimed by 6 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP11ZVEKHA-3": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182768 claimed by 5 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP11ZVEKHA-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182768 claimed by 5 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP11TIASHE-3": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182766 claimed by 6 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP11TIASHE-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182766 claimed by 6 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP11TIASHE-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 182766 claimed by 6 of our matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  }
+ },
+ "finished_at": "2026-09-11T20:48:02.181090+00:00"
+}
