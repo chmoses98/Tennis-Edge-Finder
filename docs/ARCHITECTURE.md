@@ -13,6 +13,8 @@ GitHub Actions runner (open internet)                      dev sandbox / owner m
 │   scripts/kalshi/discover_tennis.py      │ ───────────► │ scripts/run_tennis.py -> projections + ledger │
 │ tennis-capture.yml (self-chaining loop)  │  tennis-data │ scripts/research/*  -> RESULTS_*.md           │
 │   scripts/kalshi/capture_tennis.py       │   branch     │ tennis_edge/health/gates.py -> TENNIS-1..14   │
+│ tennis-firstball.yml (self-chaining)     │              │ scripts/ops/settle_ledger.py -> timing, CLV,  │
+│   scripts/firstball/poll_first_ball.py   │              │   horizons, segmented coverage                │
 └──────────────────────────────────────────┘              └──────────────────────────────────────────────┘
 ```
 
@@ -33,7 +35,8 @@ migration (ledger, projections, settlements, health snapshot) and are preserved 
 | `pricing/` | payoff pricing from one distribution; consistency invariants; fees; competition/level/surface inference |
 | `futures/` | exact bracket DP for tournament winner / round advancement |
 | `doubles/` | team identity + baseline interface (explicitly unvalidated) |
-| `ledger/` | append-only hash-chained prediction ledger; SportsTruth / ExchangeTruth; canonical close + CLV |
+| `ledger/` | append-only hash-chained prediction ledger; SportsTruth / ExchangeTruth; executable quote timelines; first-ball-anchored canonical close; CLV v2 |
+| `firstball/` | ACTUAL first-ball truth: source catalogue and prober, live-score adapters, fail-closed match mapping, multi-source reconciliation, immutable hash-chained store, timing classification, canonical decision horizons, adaptive watchlist |
 | `eval/` | proper scores, calibration, paired bootstrap |
 | `health/` | gates TENNIS-1..14 |
 
