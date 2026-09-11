@@ -93,11 +93,38 @@ Two deliberate conservatisms, both of which make strict pregame HARDER to reach:
 ## 6. Current first-ball mapping coverage
 
 The poller runs continuously as a self-dispatching conductor (`tennis-firstball.yml`), fetching each
-board once per pass and mapping it onto the open Kalshi universe. Live behaviour observed during this
-session: 100% HTTP 200, conditional requests in use, and mapping quality that went from **0 MATCHED /
-144 WEAK** to **20 MATCHED / 0 WEAK** after a defect in the name matcher was found and fixed (see §11).
-`UNMATCHED` remains large and is expected: most of the Kalshi tennis universe is ITF and Challenger,
-which ESPN provably does not carry.
+board once per pass and mapping it onto the LIVE open Kalshi universe (the freshest capture pass, not a
+discovery snapshot that may be hours stale). Every request in every segment returned HTTP 200.
+
+Mapping quality across the session, as three real defects were found and fixed:
+
+| segment | MATCHED | WEAK | AMBIGUOUS | what was wrong |
+|---|---|---|---|---|
+| first | 0 | 144 | 120 | full-name bindings scored 0.7, so every ESPN binding was WEAK |
+| after the affinity fix | 20 | 0 | 120 | a tournament board lists the same pair in several rounds, so name-only contests tied |
+| after the time tie-break | 0 | 0 | 110 | one physical match is listed under several Kalshi event tickers, and the collision guard read those as several matches fighting over one feed row |
+| after the physical-key fix | **110** | 0 | **0** | — |
+
+`UNMATCHED` stays large by design: most of the Kalshi tennis universe is ITF and Challenger, which ESPN
+provably does not carry.
+
+### The three defects, and why they matter
+
+All three were found by running the thing against live data, not by reasoning about it, and all three
+failed in the SAFE direction: they refused bindings rather than inventing them. That is the behaviour a
+fail-closed design is supposed to have, and it is also why the defects were visible at all.
+
+1. **Full names scored as uncertainty.** The project's matcher was built for "Federer R." against
+   "Roger Federer", where a missing initial is genuine doubt worth 0.7. Live feeds give full names on
+   both sides, where a complete token match is the strongest evidence available. A bare surname still
+   scores 0.7 and still maps WEAK.
+2. **The same pair appears in several rounds.** A tournament board spans a fortnight. The tie-break is
+   time and only time: among top-scoring candidates, the one scheduled nearest our own nominal is the
+   current meeting. Equal names AND equal times is still a genuine collision and still refuses.
+3. **One match, many Kalshi events.** Match winner, exact score, set spread and set winner each get
+   their own event ticker for a single meeting on a single court. Our matches now carry a physical key
+   (normalised player pair, date, discipline); several tickers sharing a key may all bind to one feed
+   row. Two different physical matches claiming one row still collide.
 
 ## 7. Historical first-ball recovery
 
@@ -168,11 +195,20 @@ No threshold was moved to accommodate any of this.
 
 ## 14. Live prospective proof
 
-The full path ran against live data: watchlist → live-score fetch → mapping → immutable observation →
-reconciliation → truth → publication to `tennis-data`, with two Kalshi events bound to ESPN rows at
-affinity 1.0. No match transitioned from `PRE` to `IN` while the poller watched during this session, so
-**no end-to-end first-ball detection is claimed**. The conductor is left running with a cron backstop so
-the first future genuine transition proves the path naturally.
+The full path ran against live data end to end: live-universe watchlist → live-score fetch → fail-closed
+mapping → immutable observation → reconciliation → truth → publication to `tennis-data`, then
+classification, close, CLV and horizons through `settle_ledger`, then the health gates.
+
+Observed in this session: **264 immutable observations across 120 PRE, 100 IN and 44 POST readings**,
+110 markets bound at affinity 1.0 with zero ambiguity, and a US Open semifinal held under watch in the
+PRE state with its lower bound advancing pass by pass, exactly as designed.
+
+**No PRE-to-IN transition completed while the poller watched during this session, so no end-to-end
+first-ball detection is claimed and no strict (A/B) truth exists yet.** Every truth written so far is
+confidence C: either one-sided (play was already under way when watching began) or a lower bound on a
+match that has not started. The conductor is left running with a cron backstop so the first future
+genuine transition proves the path naturally, and `settle_ledger` reclassifies every affected ledger row
+from it automatically.
 
 ## 15. Unresolved blockers
 
