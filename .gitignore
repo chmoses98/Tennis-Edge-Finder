@@ -14,3 +14,12 @@ __pycache__/
 research/scratch/
 research/*.log
 research/**/log_*.txt
+
+# First-ball truth store and the derived research tables live on the orphan `tennis-data` branch.
+# Keeping regenerated derivations OUT of the code repo is deliberate: a stale committed copy is how a
+# derived artifact ends up looking like fresh evidence.
+data/firstball/
+data/research/timing/
+data/research/clv/
+data/research/horizons/
+data/research/segments/

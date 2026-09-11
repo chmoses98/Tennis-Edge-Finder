@@ -1,0 +1,91 @@
+name: First-Ball Truth Conductor
+
+# Phase 3 of the first-ball wave: continuous, adaptive polling for the ACTUAL start of every mapped
+# tennis match, so that "this observation existed before the first ball" becomes a checkable claim
+# instead of an assumption about a scheduled time.
+#
+# Shape mirrors the capture conductor deliberately: one runner loops for ~5h40m, publishes its
+# append-only store to `tennis-data` after every segment, then dispatches its own successor; cron is the
+# backstop if a dispatch is ever lost, and `concurrency` guarantees at most one running plus one pending.
+#
+# Cadence is decided by the WATCHLIST, not by this file: 60 s when a match is near its expected start or
+# is an ITF/Challenger event whose nominal time is not a start time at all, 300 s when something is hours
+# away, 900 s otherwise. Request volume scales with the number of SOURCES, not matches, because every
+# feed is a day-level or live-level board.
+
+on:
+  workflow_dispatch:
+    inputs:
+      minutes:
+        description: 'how long this conductor loops'
+        required: false
+        default: '340'
+      segment:
+        description: 'minutes of polling between publishes'
+        required: false
+        default: '10'
+      sources:
+        description: 'comma-separated adapter ids'
+        required: false
+        default: 'espn_atp,espn_wta'
+      chain:
+        description: 'dispatch a successor when finished (true/false)'
+        required: false
+        default: 'true'
+  push:
+    branches: ['main']
+    paths: ['.firstball-trigger']
+  schedule:
+    - cron: '17 */5 * * *'
+
+permissions:
+  contents: write
+  actions: write
+
+concurrency:
+  group: tennis-firstball-conductor
+  cancel-in-progress: false
+
+jobs:
+  poll:
+    runs-on: ubuntu-latest
+    timeout-minutes: 355
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Poll for first ball, publish after every segment
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          MINUTES="${{ github.event.inputs.minutes || '340' }}"
+          SEGMENT="${{ github.event.inputs.segment || '10' }}"
+          SOURCES="${{ github.event.inputs.sources || 'espn_atp,espn_wta' }}"
+          git fetch --depth=1 origin tennis-data || true
+          # the append-only store and the newest discovery snapshot both live on the data branch
+          git archive origin/tennis-data tennis-edge-finder/data/firstball/store | tar -x --strip-components=1 || true
+          LATEST=$(git ls-tree --name-only origin/tennis-data tennis-edge-finder/data/kalshi/discovery/ 2>/dev/null | sort | tail -1)
+          if [ -n "$LATEST" ]; then
+            git archive origin/tennis-data "$LATEST" | tar -x --strip-components=1 || true
+          fi
+          ls -d data/kalshi/discovery/* 2>/dev/null | tail -2 || echo "::warning::no discovery snapshot unpacked"
+          END=$(( $(date +%s) + MINUTES * 60 ))
+          SEG=0
+          while [ $(date +%s) -lt $END ]; do
+            python3 scripts/firstball/poll_first_ball.py --minutes "$SEGMENT" --sources "$SOURCES" \
+              || echo "::warning::poll segment $SEG returned non-zero (partial)"
+            python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/store \
+              --message "first-ball truth $(date -u +'%Y-%m-%dT%H:%M:%SZ') (segment $SEG)" \
+              || echo "::warning::publish failed on segment $SEG"
+            SEG=$((SEG+1))
+          done
+          echo "first-ball conductor finished after $SEG segments"
+      - name: Dispatch successor
+        if: always() && (github.event.inputs.chain == 'true' || github.event_name == 'push' || github.event_name == 'schedule')
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/tennis-firstball.yml/dispatches" \
+            -d '{"ref":"${{ github.ref_name }}","inputs":{"minutes":"340","segment":"10","chain":"true"}}' -w "\nHTTP %{http_code}\n"

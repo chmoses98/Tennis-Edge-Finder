@@ -156,4 +156,34 @@ ROUND2: tuple[Candidate, ...] = (
 
 CANDIDATES = CANDIDATES + ROUND2
 
+# ---------------------------------------------------------------------------------------------------
+# Round 3. The ITF live-scores page turned out to be a React shell whose scoreboard is served by the
+# ITF's own data provider, stadion.io (`widgets.itf-production.sports-data.stadion.io`). If that feed is
+# publicly readable it is an OFFICIAL source for the exact levels nothing else reaches: ITF and
+# qualifying. Everything else here chases Challenger, which ESPN provably does not carry (its league
+# list contains atp and wta only, and atp-challenger returns HTTP 400).
+ROUND3: tuple[Candidate, ...] = (
+    C("itf_live_host", "live.itftennis.com scoreboard page", "official_tour",
+      "https://live.itftennis.com/en/live-scores/", ("ITF_M", "ITF_W", "QUALIFYING"), (3, 4, 5),
+      expect="html", accept="text/html"),
+    C("itf_widget_sdk", "ITF widget SDK bundle (to discover its data host)", "official_tour",
+      "https://widgets.itf-production.sports-data.stadion.io/itf-widget-sdk.umd.js",
+      ("ITF_M", "ITF_W"), (), expect="html", accept="*/*",
+      notes="JavaScript; probed to read the API base URL out of it"),
+    C("stadion_itf_root", "stadion.io ITF data host root", "official_tour",
+      "https://api.itf-production.sports-data.stadion.io/", ("ITF_M", "ITF_W"), (3, 4, 5),
+      expect="unknown", accept="*/*", referer="https://live.itftennis.com/"),
+    C("stadion_itf_alt", "stadion.io ITF host (widget subdomain root)", "official_tour",
+      "https://itf-production.sports-data.stadion.io/", ("ITF_M", "ITF_W"), (3, 4, 5),
+      expect="unknown", accept="*/*", referer="https://live.itftennis.com/"),
+    C("tennisexplorer_matches", "tennisexplorer full match board for a date", "aggregator",
+      "https://www.tennisexplorer.com/matches/?type=all&year={year}&month={month}&day={day}",
+      ("ATP", "WTA", "CHALLENGER", "ITF_M", "ITF_W", "QUALIFYING"), (3, 4),
+      expect="html", accept="text/html", notes="only plausible Challenger/ITF route not behind a bot wall"),
+    C("protennislive_http", "protennislive over plain http", "official_tour",
+      "http://www.protennislive.com/", ("ATP", "CHALLENGER"), (3, 4), expect="html", accept="text/html"),
+)
+
+CANDIDATES = CANDIDATES + ROUND3
+
 HOSTS = tuple(sorted({c.url.split("/")[2] for c in CANDIDATES}))
