@@ -3,6 +3,13 @@
 Free-data tennis projection and Kalshi tennis-market research platform. **Status: research / market capture.
 Real-money authority OFF. No model has shown edge against bookmaker prices; see MORNING_REPORT.md.**
 
+### First-ball truth
+
+`tennis-firstball.yml` polls live-score feeds adaptively and brackets the ACTUAL first ball of every
+mapped match, so "this observation existed before the first ball" is a checkable claim rather than an
+assumption about a scheduled time. Solved for ATP and WTA main tour and the Grand Slams; Challenger,
+ITF and qualifying have no reachable source and fail closed as START_UNKNOWN. Real-money authority OFF.
+
 ## What it does
 * Discovers the entire Kalshi tennis universe dynamically (143 series, 165k markets parsed), normalises every
   market into a payoff definition, and captures quotes/books/trades/settlements/candles prospectively.
@@ -32,4 +39,5 @@ branch under the historical `tennis-edge-finder/data/...` prefix; see MIGRATION_
 
 Docs: docs/ARCHITECTURE.md, DATA_SOURCES.md, KALSHI_MARKET_TAXONOMY.md, IDENTITY.md, MODELING.md,
 VALIDATION.md, CLV_AND_SETTLEMENT.md, PROSPECTIVE_RESEARCH_PROTOCOL.md, PRODUCTION_HEALTH.md,
-KNOWN_LIMITATIONS.md, DECISION_LOG.md. Report: MORNING_REPORT.md. Migration record: MIGRATION_AUDIT.md.
+KNOWN_LIMITATIONS.md, DECISION_LOG.md, FIRST_BALL_SOURCES.md, FIRST_BALL_TRUTH.md.
+Reports: MORNING_REPORT.md, FIRST_BALL_WAVE_REPORT.md. Migration record: MIGRATION_AUDIT.md.
