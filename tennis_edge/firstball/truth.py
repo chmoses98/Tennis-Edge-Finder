@@ -97,6 +97,14 @@ class FirstBallObservation:
     raw_evidence_location: str = ""         # path on the tennis-data branch
     mapping_status: str = "MATCHED"         # MATCHED | WEAK -- how firmly this reading is bound to OUR match
     mapping_score: float = 1.0
+    #: Sources that share an upstream data provider are NOT independent evidence. ESPN's atp and wta
+    #: scoreboards return the same combined event during a Grand Slam, so counting them as two agreeing
+    #: sources would manufacture confidence that does not exist. Defaults to the source id.
+    independence_group: str = ""
+
+    @property
+    def group(self) -> str:
+        return self.independence_group or self.source
 
     def to_dict(self):
         d = asdict(self)

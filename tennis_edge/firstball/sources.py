@@ -76,6 +76,10 @@ class Adapter:
     authority = "secondary"
     levels: tuple = ()
     time_interpretation = ""
+    #: sources sharing an upstream provider are one witness; see FirstBallObservation.independence_group
+    independence_group = ""
+    #: True when one request returns the whole tournament board, so polling extra dates is pure waste
+    board_spans_tournament = False
 
     def endpoints(self, day: date) -> list[str]:
         raise NotImplementedError
@@ -93,6 +97,10 @@ class EspnAdapter(Adapter):
     """
     authority = "secondary"
     time_interpretation = "iso8601_explicit_utc"
+    independence_group = "espn"
+    # verified 2026-09-11: ?dates=20260911 returned all 478 US Open matches from 2026-08-24 onward, with
+    # states pre/in/post and Walkover/Retired descriptions -- one request covers the whole event
+    board_spans_tournament = True
 
     def __init__(self, league: str = "atp"):
         self.league = league
@@ -155,6 +163,7 @@ class SofascoreAdapter(Adapter):
     """
     authority = "secondary"
     time_interpretation = "epoch_seconds_utc"
+    independence_group = "sofascore"
     levels = ("ATP", "WTA", "CHALLENGER", "ITF_M", "ITF_W", "QUALIFYING", "DOUBLES", "GRAND_SLAM")
 
     def __init__(self, mode: str = "live"):

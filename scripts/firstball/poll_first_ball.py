@@ -80,6 +80,8 @@ def main():
              "requests": 0, "observations": 0, "truths_written": 0, "sources": [x.id for x in adapters],
              "resolved": {}, "http": {}}
     resolved: set[str] = {mid for mid, t in store.latest_truths().items() if t.strict_eligible}
+    cache_headers: dict[str, dict] = {}
+    last_parse: dict[str, tuple] = {}
 
     while True:
         now = datetime.now(timezone.utc)
@@ -92,20 +94,31 @@ def main():
 
         feed = []
         for ad in adapters:
-            # today AND tomorrow in UTC: a match scheduled at 23:40Z sits on tomorrow's board for a feed
-            # that keys by local date, and dropping it would create a silent hole near midnight.
+            # A board that spans the whole tournament needs ONE request. For a feed keyed by local date,
+            # also ask for tomorrow: a match at 23:40Z sits on tomorrow's board and dropping it would be a
+            # silent hole at midnight.
+            dates = [now.date()] if getattr(ad, "board_spans_tournament", False) else \
+                    [now.date(), (now + timedelta(days=1)).date()]
             urls, seen = [], set()
-            for d in (now.date(), (now + timedelta(days=1)).date()):
+            for d in dates:
                 for u in ad.endpoints(d):
                     if u not in seen:
                         seen.add(u)
                         urls.append(u)
             for url in urls:
-                rec = fetch(url, accept="application/json", referer=getattr(ad, "referer", ""))
+                # Conditional GET. These boards are megabytes; re-downloading an unchanged one every
+                # 60 s would be rude and pointless, and a 304 is itself evidence that nothing moved.
+                rec = fetch(url, accept="application/json", referer=getattr(ad, "referer", ""),
+                            extra_headers=cache_headers.get(url) or {})
                 stats["requests"] += 1
                 code = str(rec.get("status"))
                 stats["http"][code] = stats["http"].get(code, 0) + 1
                 body = rec.pop("_body", b"")
+                if rec.get("status") == 304 and url in last_parse:
+                    got, digest = last_parse[url]
+                    feed.extend((m, digest, url) for m in got)
+                    print(f"    {ad.id} {url[-46:]} -> 304 not modified ({len(got)} cached)", flush=True)
+                    continue
                 if rec.get("status") != 200 or not body:
                     print(f"    {ad.id} {url[-52:]} -> {rec.get('status')} {rec.get('error','')[:60]}", flush=True)
                     continue
@@ -116,9 +129,16 @@ def main():
                     continue
                 got = ad.parse(payload)
                 digest = hashlib.sha256(body).hexdigest()
+                last_parse[url] = (got, digest)
+                h = {}
+                if rec.get("etag"):
+                    h["If-None-Match"] = rec["etag"]
+                if rec.get("last_modified"):
+                    h["If-Modified-Since"] = rec["last_modified"]
+                cache_headers[url] = h
                 for m in got:
                     feed.append((m, digest, url))
-                print(f"    {ad.id} {url[-52:]} -> {len(got)} matches", flush=True)
+                print(f"    {ad.id} {url[-46:]} -> {len(got)} matches ({len(body)//1024} KiB)", flush=True)
 
         if items and feed:
             mp, mdiag = map_all([OurMatch(it.match_id, it.player_a, it.player_b, it.scheduled_utc, it.doubles)
@@ -135,6 +155,7 @@ def main():
                     source_status=sm.source_status, source_event_timestamp=sm.scheduled_utc,
                     source_time_interpretation=sm.time_interpretation, explicit_start_utc=sm.claimed_start_utc,
                     games_played=sm.games_played, payload_hash=digest,
+                    independence_group=getattr(REGISTRY.get(sm.source), "independence_group", "") or sm.source,
                     raw_evidence_location=f"firstball/poll/{run_id}", mapping_status=mapping.status,
                     mapping_score=mapping.score)
                 if not a.dry_run:

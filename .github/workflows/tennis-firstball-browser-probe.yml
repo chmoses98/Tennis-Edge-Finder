@@ -1,0 +1,45 @@
+name: First-ball browser probe (ITF feed discovery)
+
+# One-off research probe. The ITF live-scores page renders its scoreboard from the ITF's own data
+# provider, and the minified bundle builds request paths dynamically. Rather than guess API paths, this
+# loads the official page in a headless browser and records the network it actually performs.
+# Dispatch-only. Never part of the production loop.
+
+on:
+  workflow_dispatch:
+    inputs:
+      wait_ms:
+        description: 'how long to let the page run after load'
+        required: false
+        default: '15000'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-firstball-browser-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install headless Chromium
+        run: |
+          python3 -m pip install --quiet playwright
+          python3 -m playwright install --with-deps chromium
+      - name: Record the ITF live-scores page network
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/firstball/discover_itf_feed.py --wait-ms "${{ github.event.inputs.wait_ms || '15000' }}"
+      - name: Publish evidence
+        if: always()
+        run: |
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/browser_probe \
+            --message "ITF feed discovery probe $(date -u +'%Y-%m-%dT%H:%M:%SZ')"

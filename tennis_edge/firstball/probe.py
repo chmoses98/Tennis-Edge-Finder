@@ -85,8 +85,10 @@ def structural_digest(obj, depth=0):
     return type(obj).__name__
 
 
-def fetch(url: str, *, accept: str, referer: str = "", ua: str = UA_BROWSERISH, timeout: int = 25) -> dict:
+def fetch(url: str, *, accept: str, referer: str = "", ua: str = UA_BROWSERISH, timeout: int = 25,
+          extra_headers: dict | None = None) -> dict:
     headers = {"Accept": accept, "User-Agent": ua, "Accept-Language": "en-US,en;q=0.9"}
+    headers.update(extra_headers or {})
     if referer:
         headers["Referer"] = referer
         headers["Origin"] = "https://" + referer.split("/")[2]
@@ -99,7 +101,8 @@ def fetch(url: str, *, accept: str, referer: str = "", ua: str = UA_BROWSERISH, 
             rec.update(status=r.status, latency_ms=round((time.monotonic() - t0) * 1000),
                        content_type=r.headers.get("Content-Type", ""), bytes=len(body),
                        truncated=len(body) > MAX_STORE_BYTES,
-                       headers={h: r.headers.get(h) for h in RATE_HEADERS if r.headers.get(h)})
+                       headers={h: r.headers.get(h) for h in RATE_HEADERS if r.headers.get(h)},
+                       etag=r.headers.get("ETag"), last_modified=r.headers.get("Last-Modified"))
             rec["_body"] = body[:MAX_STORE_BYTES]
     except urllib.error.HTTPError as e:
         body = b""
@@ -107,7 +110,9 @@ def fetch(url: str, *, accept: str, referer: str = "", ua: str = UA_BROWSERISH, 
             body = e.read(20000)
         except Exception:
             pass
-        rec.update(status=e.code, latency_ms=round((time.monotonic() - t0) * 1000), error=f"HTTPError {e.code}",
+        rec.update(status=e.code, latency_ms=round((time.monotonic() - t0) * 1000),
+                   error="" if e.code == 304 else f"HTTPError {e.code}",
+                   etag=(e.headers or {}).get("ETag"), last_modified=(e.headers or {}).get("Last-Modified"),
                    content_type=e.headers.get("Content-Type", "") if e.headers else "", bytes=len(body),
                    headers={h: e.headers.get(h) for h in RATE_HEADERS if e.headers and e.headers.get(h)})
         rec["_body"] = body

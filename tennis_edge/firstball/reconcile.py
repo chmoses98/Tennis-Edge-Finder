@@ -31,6 +31,19 @@ from .truth import (FirstBallObservation, FirstBallTruth, B_MAX_BRACKET_S, MATER
 
 MINOR_DISAGREEMENT_S = 60
 
+#: Every live-score feed lags reality by some unknown amount, and it lags in the DANGEROUS direction: a
+#: feed still showing "not started" when play has already begun pushes the observed lower bound LATER
+#: than the true first ball, which would label genuinely post-start observations as strictly pregame.
+#: No source documents its latency, so the lower bound is widened by a conservative allowance that is
+#: recorded on the truth. Measuring a source's real lag (and shrinking its allowance on evidence) is
+#: exactly the kind of validation docs/FIRST_BALL_SOURCES.md tracks; until then this is the safe default.
+DEFAULT_LAG_ALLOWANCE_S = 120
+SOURCE_LAG_ALLOWANCE_S: dict[str, int] = {}
+
+
+def lag_allowance(source: str) -> int:
+    return SOURCE_LAG_ALLOWANCE_S.get(source, DEFAULT_LAG_ALLOWANCE_S)
+
 #: Sources whose explicit "actual start" field has been VALIDATED against independently observed state
 #: transitions during source research. Empty until that evidence exists -- an undocumented field is a
 #: claim, not a fact, and this project does not promote claims to confidence A on faith.
@@ -76,11 +89,18 @@ def bracket_for_source(obs: list[FirstBallObservation]) -> SourceBracket | None:
 
     played = [o for o in obs if o.state in ("IN", "POST")]
     explicit = [o for o in obs if o.explicit_start_utc is not None]
+    pre = [o for o in obs if o.state == "PRE"]
     lo = hi = None
     if played:
         hi = played[0].observed_at_utc
-        pre_before = [o for o in obs if o.state == "PRE" and o.observed_at_utc < hi]
+        pre_before = [o for o in pre if o.observed_at_utc < hi]
         lo = max(o.observed_at_utc for o in pre_before) if pre_before else None
+    elif pre:
+        # A source that has only ever said "not started" still constrains the answer from below. That
+        # one-sided bound is what lets one feed's PRE combine with another feed's IN.
+        lo = max(o.observed_at_utc for o in pre)
+    if lo is not None:
+        lo = lo - timedelta(seconds=lag_allowance(src))
 
     if explicit:
         t = min(o.explicit_start_utc for o in explicit)
@@ -95,12 +115,42 @@ def bracket_for_source(obs: list[FirstBallObservation]) -> SourceBracket | None:
         if lo is None and hi is None:
             return SourceBracket(src, auth, None, t, DERIVATION_SCORE_BACKCAST, explicit, point=t, weak=weak)
 
-    if hi is None:
+    if hi is None and lo is None:
         return None
     method = DERIVATION_STATE_BRACKET if lo is not None else DERIVATION_SCORE_BACKCAST
     if auth == AUTHORITY_EXCHANGE:
         method = DERIVATION_EXCHANGE_BRACKET
     return SourceBracket(src, auth, lo, hi, method, obs, weak=weak)
+
+
+def _merge_same_provider(brackets, observations):
+    """Collapse sources that share an upstream provider into ONE bracket.
+
+    Two ESPN endpoints reporting the same match are one witness, not two. Within a group the brackets are
+    intersected (they should agree; if they do not, the provider contradicts itself and the group is kept
+    at its widest, which is the conservative reading)."""
+    group_of = {}
+    for o in observations:
+        group_of[o.source] = o.group
+    by_group: dict[str, list] = {}
+    for b in brackets:
+        by_group.setdefault(group_of.get(b.source, b.source), []).append(b)
+    out = []
+    for g, bs in by_group.items():
+        if len(bs) == 1:
+            out.append(bs[0])
+            continue
+        los = [b.lo for b in bs if b.lo is not None]
+        his = [b.hi for b in bs if b.hi is not None]
+        lo, hi = (max(los) if los else None), (min(his) if his else None)
+        if lo is not None and hi is not None and lo > hi:        # provider disagrees with itself
+            lo = min(los) if los else None
+            hi = max(his) if his else None
+        base = sorted(bs, key=lambda b: (b.width if b.width is not None else 1e9, b.source))[0]
+        merged = SourceBracket("+".join(sorted({b.source for b in bs})), base.authority, lo, hi,
+                               base.method, base.obs, weak=all(b.weak for b in bs))
+        out.append(merged)
+    return out
 
 
 def reconcile(match_id: str, observations: list[FirstBallObservation], *, now: datetime | None = None,
@@ -125,6 +175,7 @@ def reconcile(match_id: str, observations: list[FirstBallObservation], *, now: d
             derivation_version=derivation_version)
 
     brackets = [b for b in (bracket_for_source(v) for v in by_source.values()) if b is not None]
+    brackets = _merge_same_provider(brackets, observations)
     if not brackets:
         return FirstBallTruth(match_id=match_id, actual_first_ball_at_utc=None, lower_bound_utc=None,
                               upper_bound_utc=None, confidence="UNKNOWN", derivation_method="NO_EVIDENCE",
@@ -166,7 +217,20 @@ def reconcile(match_id: str, observations: list[FirstBallObservation], *, now: d
     his = [b.hi for b in narrowing if b.hi is not None]
     lo = max(los) if los else None
     hi = min(his) if his else None
-    if lo is not None and hi is not None and lo > hi:          # exchange narrowing made it inconsistent
+    if lo is not None and hi is not None and lo > hi:
+        sports_lo = max([b.lo for b in pool if b.lo is not None] or [None]) if pool else None
+        sports_hi = min([b.hi for b in pool if b.hi is not None] or [None]) if pool else None
+        if sports_lo is not None and sports_hi is not None and sports_lo > sports_hi:
+            # two sports sources place the first ball in disjoint windows: no winner is picked
+            return FirstBallTruth(
+                match_id=match_id, actual_first_ball_at_utc=None, lower_bound_utc=None, upper_bound_utc=None,
+                confidence="UNKNOWN", derivation_method=DERIVATION_MULTI,
+                contradiction_status=CONTRADICTION_MATERIAL,
+                contradiction_detail="sources place the first ball in disjoint windows "
+                                     f"(earliest possible {sports_lo.isoformat()} is after latest possible {sports_hi.isoformat()})",
+                observed_at_utc=now, source="+".join(sorted(b.source for b in pool)),
+                contributing_sources=tuple(sorted(b.source for b in pool)), created_at=now,
+                derivation_version=derivation_version)
         lo, hi = primary.lo, primary.hi
         contradiction = contradiction or CONTRADICTION_MINOR
         detail = detail or "exchange activity inconsistent with the sports bracket; sports bracket kept"
