@@ -33,6 +33,82 @@ def _latest_discovery(root=None):
     return os.path.dirname(runs[-1]) if runs else None
 
 
+
+# ---------------------------------------------------------------------------------------------------
+def first_ball_metrics(store_root=None, coverage_path=None, discovery_dir=None, now=None) -> dict:
+    """Submetrics for gates TENNIS-8 and TENNIS-10, all derived from evidence on disk.
+
+    Deliberately reports the levels WITHOUT a wired first-ball source separately rather than folding
+    them into a ratio. ESPN reaches ATP and WTA main tour and the Grand Slams; Challenger, ITF and
+    qualifying have no reachable source at all (see docs/FIRST_BALL_SOURCES.md). Averaging those levels
+    into a coverage percentage would let a structural gap hide inside a number that drifts up when the
+    tour calendar happens to be quiet.
+    """
+    from tennis_edge.firstball.store import FirstBallStore
+    from tennis_edge.firstball.watchlist import RELIABLE_NOMINAL_LEVELS
+    now = now or datetime.now(timezone.utc)
+    root = store_root or os.path.join(PROJ, "data", "firstball", "store")
+    out = {"store": root, "truths": 0, "strict_truths": 0, "no_play": 0, "contradictions": 0,
+           "contradiction_rate": None, "bracket_seconds_median": None, "bracket_seconds_p90": None,
+           "by_confidence": {}, "chain_violations": [], "observations": 0, "matches_observed": 0}
+    if not os.path.isdir(root):
+        out["reason"] = "no first-ball store yet"
+        return out
+    store = FirstBallStore(root)
+    truths = store.latest_truths()
+    obs = store.observations()
+    out["observations"] = len(obs)
+    out["matches_observed"] = len({o.match_id for o in obs})
+    out["truths"] = len(truths)
+    out["strict_truths"] = sum(1 for t in truths.values() if t.strict_eligible)
+    out["no_play"] = sum(1 for t in truths.values() if t.no_play)
+    out["contradictions"] = sum(1 for t in truths.values() if t.contradiction_status == "MATERIAL")
+    out["contradiction_rate"] = round(out["contradictions"] / len(truths), 4) if truths else None
+    for t in truths.values():
+        out["by_confidence"][t.confidence] = out["by_confidence"].get(t.confidence, 0) + 1
+    widths = sorted(t.bracket_seconds for t in truths.values()
+                    if t.strict_eligible and t.bracket_seconds is not None)
+    if widths:
+        out["bracket_seconds_median"] = widths[len(widths) // 2]
+        out["bracket_seconds_p90"] = widths[min(len(widths) - 1, int(0.9 * len(widths)))]
+    out["chain_violations"] = store.verify_chain()[:10]
+
+    # how much of what we are currently watching is bound to a first-ball source at all
+    d = discovery_dir or _latest_discovery()
+    if d:
+        try:
+            from tennis_edge.firstball.watchlist import build_watchlist
+            items, _ = build_watchlist(d, now=now)
+            covered = [i for i in items if i.level in RELIABLE_NOMINAL_LEVELS]
+            seen = {o.match_id for o in obs}
+            out["watchlist"] = {
+                "total": len(items),
+                "levels_with_a_wired_source": len(covered),
+                "levels_without_any_source": len(items) - len(covered),
+                "watched_and_observed": sum(1 for i in items if i.match_id in seen),
+                "covered_and_observed": sum(1 for i in covered if i.match_id in seen),
+                "pct_covered_with_source_mapping": round(
+                    sum(1 for i in covered if i.match_id in seen) / len(covered), 4) if covered else None,
+            }
+        except Exception as e:                       # a metric must never take the gates down
+            out["watchlist"] = {"error": f"{type(e).__name__}: {e}"[:200]}
+
+    cov = coverage_path or os.path.join(PROJ, "data", "research", "segments", "coverage.json")
+    if os.path.exists(cov):
+        c = json.load(open(cov))
+        tc = c.get("timing_classes", {})
+        total = sum(tc.values()) or 0
+        out["observations_classified"] = total
+        out["timing_classes"] = tc
+        out["pct_classifiable"] = round((total - tc.get("START_UNKNOWN", 0)) / total, 4) if total else None
+        out["pct_strict_pregame"] = round(tc.get("STRICT_PREGAME", 0) / total, 4) if total else None
+        out["executable_close_rows"] = c.get("executable_close_rows")
+        out["strict_clv_rows"] = c.get("strict_clv_rows")
+        out["horizons_populated"] = c.get("horizons_populated")
+        out["horizons_total"] = c.get("horizons_total")
+    return out
+
+
 def gate_1_discovery(now=None) -> GateResult:
     """TENNIS-1: complete Kalshi tennis discovery -- latest snapshot complete, catalogue paginated fully, < 36h old."""
     d = _latest_discovery()
@@ -136,13 +212,31 @@ def gate_7_identity(links_summary: dict | None) -> GateResult:
     return GateResult("TENNIS-7", "player_identity_integrity", "PASS" if used_amb == 0 else "FAIL", {"ambiguous": amb, "ambiguous_used": used_amb, **{k: v for k, v in links_summary.items() if k in ("MATCHED", "UNMATCHED")}})
 
 
-def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_conflicts: int | None, rules_id_changes: list | None) -> tuple[GateResult, GateResult]:
-    """TENNIS-8: sports truth available for >= 98% of settled predictions; TENNIS-9: no unexplained exchange/sports conflicts and no unreviewed settlement-rule text changes."""
+def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_conflicts: int | None,
+                   rules_id_changes: list | None, first_ball: dict | None = None) -> tuple[GateResult, GateResult]:
+    """TENNIS-8: sports truth health, which since the first-ball wave explicitly INCLUDES first-ball
+    coverage: sports truth for >= 98% of settled predictions, an intact first-ball hash chain, and every
+    match we are watching at a level with a wired source actually bound to that source. TENNIS-9: no
+    unexplained exchange/sports conflicts and no unreviewed settlement-rule text changes."""
+    fb = first_ball if first_ball is not None else first_ball_metrics()
+    wl = fb.get("watchlist") or {}
+    pct_mapped = wl.get("pct_covered_with_source_mapping")
+    fb_ok = (not fb.get("chain_violations")) and (pct_mapped is None or pct_mapped >= 0.9)
+    detail_fb = {"first_ball": {k: fb.get(k) for k in
+                                ("truths", "strict_truths", "no_play", "contradictions", "contradiction_rate",
+                                 "by_confidence", "bracket_seconds_median", "bracket_seconds_p90",
+                                 "chain_violations", "observations", "matches_observed", "watchlist",
+                                 "pct_classifiable", "pct_strict_pregame", "timing_classes")}}
     if sports_total is None:
-        g8 = GateResult("TENNIS-8", "sports_truth_health", "UNKNOWN", {"reason": "no settled predictions yet"})
+        status = "UNKNOWN"
+        g8 = GateResult("TENNIS-8", "sports_truth_health", status,
+                        {"reason": "no settled predictions yet", **detail_fb})
     else:
         rate = sports_ok / sports_total if sports_total else 0
-        g8 = GateResult("TENNIS-8", "sports_truth_health", "PASS" if sports_total and rate >= 0.98 else "FAIL", {"ok": sports_ok, "total": sports_total, "rate": round(rate, 4)})
+        ok = bool(sports_total) and rate >= 0.98 and fb_ok
+        g8 = GateResult("TENNIS-8", "sports_truth_health", "PASS" if ok else "FAIL",
+                        {"ok": sports_ok, "total": sports_total, "rate": round(rate, 4),
+                         "first_ball_ok": fb_ok, **detail_fb})
     if exchange_conflicts is None:
         g9 = GateResult("TENNIS-9", "exchange_settlement_health", "UNKNOWN", {"reason": "no settled predictions yet", "rules_id_changes": rules_id_changes or []})
     else:
@@ -150,12 +244,31 @@ def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_con
     return g8, g9
 
 
-def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actual_start_basis: int | None) -> GateResult:
-    """TENNIS-10: a canonical close exists for >= 95% of settled pregame predictions; basis breakdown reported."""
+def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actual_start_basis: int | None,
+                         first_ball: dict | None = None) -> GateResult:
+    """TENNIS-10: CLV close coverage, measured against STRICT first-ball-anchored closes.
+
+    The denominator is deliberately the predictions whose match HAS A/B first-ball truth. A close cut off
+    at `scheduled_start - margin` no longer counts: it is not evidence that the quote preceded the first
+    ball, and counting it would let the gate go green on exactly the rows this wave exists to distrust.
+    Predictions with no first-ball truth are reported, not averaged away."""
+    fb = first_ball if first_ball is not None else first_ball_metrics()
+    strict_rows = fb.get("strict_clv_rows")
+    detail = {"settled": n_settled, "with_close": n_with_close, "actual_first_ball_basis": n_actual_start_basis,
+              "strict_clv_rows": strict_rows, "executable_close_rows": fb.get("executable_close_rows"),
+              "matches_with_strict_truth": fb.get("strict_truths"),
+              "observations_classified": fb.get("observations_classified"),
+              "pct_strict_pregame": fb.get("pct_strict_pregame"),
+              "horizons_populated": fb.get("horizons_populated"), "horizons_total": fb.get("horizons_total")}
+    if not fb.get("strict_truths"):
+        return GateResult("TENNIS-10", "clv_close_coverage", "UNKNOWN",
+                          {"reason": "no match has A/B first-ball truth yet, so no strict close is possible", **detail})
     if n_settled is None:
-        return GateResult("TENNIS-10", "clv_close_coverage", "UNKNOWN", {"reason": "no settled predictions yet"})
-    rate = n_with_close / n_settled if n_settled else 0
-    return GateResult("TENNIS-10", "clv_close_coverage", "PASS" if n_settled and rate >= 0.95 else "FAIL", {"settled": n_settled, "with_close": n_with_close, "actual_first_ball_basis": n_actual_start_basis, "rate": round(rate, 4)})
+        return GateResult("TENNIS-10", "clv_close_coverage", "UNKNOWN",
+                          {"reason": "no settled predictions yet", **detail})
+    rate = (strict_rows or 0) / n_settled if n_settled else 0
+    detail["strict_rate"] = round(rate, 4)
+    return GateResult("TENNIS-10", "clv_close_coverage", "PASS" if rate >= 0.95 else "FAIL", detail)
 
 
 def gate_11_consistency(violations: list | None) -> GateResult:
@@ -236,6 +349,13 @@ def _auto_extra() -> dict:
                 if s:
                     starts[r["match_id"]] = (None, datetime.fromisoformat(s.replace("Z", "+00:00")))
             extra["starts"] = starts
+    # TENNIS-6 prefers ACTUAL first-ball truth over the scheduled fallback wherever truth exists
+    fbroot = os.path.join(PROJ, "data", "firstball", "store")
+    if os.path.isdir(fbroot):
+        from tennis_edge.firstball.store import FirstBallStore
+        for mid, t in FirstBallStore(fbroot).latest_truths().items():
+            if mid in extra.get("starts", {}) and t.strict_eligible and not t.no_play:
+                extra["starts"][mid] = (t.lower_bound_utc, extra["starts"][mid][1])
     return extra
 
 
@@ -246,8 +366,11 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
     out.append(gate_5_capture_freshness())
     out.append(gate_6_no_post_start_leakage(extra.get("ledger_rows", []), extra.get("starts", {})) if extra.get("ledger_rows") else GateResult("TENNIS-6", "no_post_start_leakage", "UNKNOWN", {"reason": "no ledger rows supplied"}))
     out.append(gate_7_identity(extra.get("links_summary")))
-    out += list(gate_8_9_truth(extra.get("sports_ok"), extra.get("sports_total"), extra.get("exchange_conflicts"), extra.get("rules_id_changes")))
-    out.append(gate_10_clv_coverage(extra.get("n_settled"), extra.get("n_with_close"), extra.get("n_actual_start_basis")))
+    fb = extra.get("first_ball") if extra.get("first_ball") is not None else first_ball_metrics()
+    out += list(gate_8_9_truth(extra.get("sports_ok"), extra.get("sports_total"), extra.get("exchange_conflicts"),
+                               extra.get("rules_id_changes"), first_ball=fb))
+    out.append(gate_10_clv_coverage(extra.get("n_settled"), extra.get("n_with_close"),
+                                    extra.get("n_actual_start_basis"), first_ball=fb))
     out.append(gate_11_consistency(extra.get("consistency_violations")))
     out.append(gate_12_ledger()); out.append(gate_13_reproducible()); out.append(gate_14_source_freshness())
     return out

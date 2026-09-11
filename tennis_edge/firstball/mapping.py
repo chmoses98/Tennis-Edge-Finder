@@ -14,7 +14,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timedelta
 
-from tennis_edge.identity.names import player_match_score, normalize_name
+from tennis_edge.identity.names import name_tokens, normalize_name, player_match_score
 from .sources import SourceMatch
 
 MIN_AFFINITY = 0.7
@@ -48,10 +48,28 @@ class Mapping:
 
 
 def affinity(a, b) -> float:
-    """Symmetric name affinity in [0, 1]; 0.0 means "provably not the same player"."""
-    if not normalize_name(a) or not normalize_name(b):
+    """Symmetric name affinity in [0, 1]; 0.0 means "provably not the same player".
+
+    The project's matcher was built for "Federer R." against "Roger Federer", where a missing initial is
+    genuine uncertainty and scores 0.7. Live-score feeds also give FULL names on both sides, and there a
+    complete token match is not uncertainty at all -- it is the strongest evidence available. Without
+    this, every ESPN binding would be reported WEAK and no match could ever reach confidence A or B.
+    A bare surname still scores 0.7 and still maps WEAK, which is the case that must stay cautious.
+    """
+    na, nb = normalize_name(a), normalize_name(b)
+    if not na or not nb:
         return 0.0
-    return max(player_match_score(a, b), player_match_score(b, a))
+    ta, tb = set(name_tokens(a)), set(name_tokens(b))
+    base = max(player_match_score(a, b), player_match_score(b, a))
+    if base <= 0.0:
+        return 0.0
+    if ta and ta == tb:
+        return 1.0
+    # one side is a fuller spelling of the other ("Juan Pablo Varillas" vs "Juan P. Varillas"),
+    # with at least two tokens in common so a lone surname cannot qualify
+    if len(ta & tb) >= 2 and (ta <= tb or tb <= ta):
+        return 0.95
+    return base
 
 
 def pair_score(src: SourceMatch, ours: OurMatch) -> tuple[float, bool]:
