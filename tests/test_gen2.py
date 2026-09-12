@@ -136,3 +136,70 @@ def test_serve_points_rejects_impossible_rows():
     assert serve_points({"w_svpt": 0, "w_1stWon": 0, "w_2ndWon": 0}, "w") == (None, None)
     assert serve_points({"w_svpt": 50, "w_1stWon": 40, "w_2ndWon": 30}, "w") == (None, None)   # won > played
     assert serve_points({"w_svpt": 50, "w_1stWon": 20, "w_2ndWon": 10}, "w") == (50.0, 30.0)
+
+
+# --------------------------------------------------------------- wave 2: research discipline
+def test_registry_refuses_to_confirm_a_candidate_on_its_own_discovery_data(tmp_path):
+    from tennis_edge.research.registry import (DISCOVERY_ONLY, ELIGIBLE_FOR_CEO_REVIEW, EdgeCandidate,
+                                               FirewallError, add_evidence, load_all, save, set_status,
+                                               SUPPORTED_FOR_MORE_RESEARCH)
+    c = EdgeCandidate("C1", "h", "rule", "MATCH_WINNER", "v1", "2020-01-01", "2026-09-01",
+                      "2026-09-12T00:00:00Z", "2026-09-12T00:00:00Z", 100, "acc", "clv", "fee")
+    assert c.status == DISCOVERY_ONLY
+    with pytest.raises(FirewallError):
+        add_evidence(c, observed_from="2026-06-01T00:00:00Z", observed_to="2026-09-01T00:00:00Z",
+                     n=9999, metrics={})
+    with pytest.raises(FirewallError):
+        set_status(c, SUPPORTED_FOR_MORE_RESEARCH)
+    add_evidence(c, observed_from="2026-09-13T00:00:00Z", observed_to="2026-10-01T00:00:00Z", n=50, metrics={})
+    with pytest.raises(FirewallError):                 # enough recency, not enough sample
+        set_status(c, ELIGIBLE_FOR_CEO_REVIEW)
+    add_evidence(c, observed_from="2026-10-01T00:00:00Z", observed_to="2026-11-01T00:00:00Z", n=100, metrics={})
+    assert set_status(c, SUPPORTED_FOR_MORE_RESEARCH).status == SUPPORTED_FOR_MORE_RESEARCH
+    save(c, str(tmp_path))
+    assert load_all(str(tmp_path))[0].candidate_id == "C1"
+
+
+def test_no_registry_status_can_grant_real_money_authority():
+    from tennis_edge.research.registry import STATUSES
+    assert not any("REAL" in s or "LIVE" in s or "APPROVED" in s for s in STATUSES)
+    assert "ELIGIBLE_FOR_CEO_REVIEW" in STATUSES
+
+
+def test_frozen_candidates_are_wellformed_and_carry_an_opposing_reason():
+    from tennis_edge.research.registry import load_all
+    root = os.path.join(ROOT, "data", "research", "edge_candidates")
+    cands = load_all(root)
+    assert len(cands) >= 3, "wave 2 froze at least three candidates"
+    for c in cands:
+        assert c.strongest_opposing_reason.strip(), f"{c.candidate_id} has no opposing reason"
+        assert c.minimum_n > 0 and c.inclusion_rule.strip() and c.rationale.strip()
+        assert c.confirmation_start >= c.frozen_at
+
+
+def test_shadow_board_is_append_only_and_demands_a_counter_argument(tmp_path):
+    from tennis_edge.research.shadow import ShadowBoard, ShadowError, ShadowRow
+    b = ShadowBoard(str(tmp_path))
+    with pytest.raises(ShadowError):
+        b.append(ShadowRow("m", "T", "MATCH_WINNER", "MODEL_4", "v1", 0.6, 0.58, 0.60, 10, 0.02, 0.02,
+                           rationale="looks cheap"))
+    r = b.append(ShadowRow("m", "T", "MATCH_WINNER", "MODEL_4", "v1", 0.6, 0.58, 0.60, 10, 0.02, 0.02,
+                           rationale="looks cheap", strongest_opposing_reason="the market is sharper here",
+                           first_ball_classification="STRICT_PREGAME"))
+    assert b.verify_chain() == []
+    b.settle(r["shadow_id"], outcome=1, executable_clv=0.01)
+    assert b.verify_chain() == []
+    # rewriting a settled row must be detectable
+    path = os.path.join(str(tmp_path), sorted(os.listdir(str(tmp_path)))[0])
+    txt = open(path).read().replace('"rationale":"looks cheap"', '"rationale":"was obviously right"')
+    open(path, "w").write(txt)
+    assert b.verify_chain(), "a rewritten shadow row must break the chain"
+
+
+def test_segments_are_preregistered_and_post_hoc_ones_are_marked():
+    from tennis_edge.research import segments
+    assert segments.PREREGISTERED_AT == "2026-09-12"
+    for dim in segments.DIMENSIONS:
+        assert segments.is_preregistered(dim) or dim in segments.POST_HOC_DIMENSIONS
+    assert segments.bucket(3.0, segments.DISAGREEMENT_PP) == "2.5-5pp"
+    assert segments.bucket(None, segments.DISAGREEMENT_PP) == "UNKNOWN"

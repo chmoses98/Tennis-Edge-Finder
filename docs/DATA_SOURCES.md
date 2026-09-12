@@ -30,3 +30,44 @@ observations we capture ourselves are our own records of public API responses.
 `tennis-edge-finder/data/sources/<run_id>/manifest.json` records every file's sha256, byte counts, row
 counts, source URL/commit and the candidate list examined. Run ids: 20260911T071045Z (Sackmann forks + TML +
 MCP), 20260911T070313Z (mirror odds), 20260911T063759Z (Kalshi discovery).
+
+
+## Freshness, re-investigated 2026-09-12 (wave 2)
+
+TENNIS-14 was failing because the fundamental sources were stale. The re-investigation, with evidence:
+
+| source | reachable | freshest data | verdict |
+|---|---|---|---|
+| `JeffSackmann/tennis_atp` / `tennis_wta` (upstream) | **no**, HTTP 404 both | - | gone |
+| 20 most recently pushed `tennis_atp` forks | yes | pushed 2026-06-10 (one), 2026-06-08 (all others) | **every fork froze with upstream**; chasing forks is wasted effort |
+| `Kadantte/tennis_atp` (fork in use) | yes | ATP matches to 2026-06-01 | frozen |
+| `VictorSquidWei/tennis_wta` (fork in use) | yes | WTA matches to 2026-04-27 | frozen |
+| `gmalbert/tennis-predictions` (community mirror) | yes, pushed 2026-09-11 | **ATP to 2026-09-01** (challenger), 2026-08-30 (main) | freshest ATP available; TML-format, ATP-site ids |
+| `Tennismylife/TML-Database` (upstream) | yes | 2026-01-22 | behind the mirror |
+| tennis-data.co.uk | **no**, HTTP 503 | - | still down |
+| ESPN site API scoreboard | yes | **current, both tours** | results only: no serve statistics, no surface |
+| ESPN rankings API | yes | current | not yet ingested |
+
+### What changed as a result
+
+1. **A cross-system player crosswalk** (`tennis_edge/identity/crosswalk.py`). Production ratings used to
+   exclude every non-Sackmann row, because merging id systems naively once produced duplicate rating
+   entities. That exclusion cost three months of ATP results. The crosswalk binds foreign ids to
+   canonical ones by normalised name and fails closed at every step: a name shared by two players in
+   EITHER system maps to nothing, and a match with one unmapped player is left unmapped as a whole.
+   4,701 of 4,991 mirror players crosswalked, 88,896 extra rows admitted, and **ATP ratings moved from
+   as-of 2026-06-01 to as-of 2026-09-01**. WTA is unchanged: nothing fresher exists.
+2. **An ESPN results feed** (`tennis_edge/data/espn_results.py`, `scripts/data/fetch_espn_results.py`).
+   The only reachable source of CURRENT results for both tours, which matters most for WTA. Verified
+   against a saved payload: 473 completed singles parsed from one board, 97% passing canonical
+   validation, the remainder correctly quarantined as retirements. ESPN's regulation-length field is
+   deliberately ignored, because it reports five sets for a men's slam even on a best-of-three
+   qualifying match.
+
+### Still stale, and honestly so
+
+WTA fundamentals end 2026-04-27 and no free source was found to fix the history. TENNIS-14 continues to
+fail rather than being relaxed. The knock-on cost is visible in the board accounting: the largest
+fixable coverage blocker is UNMAPPED_IDENTITY, and most of those are recent arrivals absent from a
+registry built on four-month-old data. **The coverage gap is largely the freshness gap wearing a
+different hat.**

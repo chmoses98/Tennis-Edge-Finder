@@ -1,0 +1,110 @@
+{
+ "tour": "ATP",
+ "generated_at": "2026-09-12T06:40:21.057350+00:00",
+ "n_matches": 12946,
+ "rows_per_lane": {
+  "fundamental": 12946,
+  "market_conditioned": 12946,
+  "elo_conditioned": 12946
+ },
+ "means": {
+  "brier_over_21_5": {
+   "elo_conditioned": 0.20045,
+   "fundamental": 0.20114,
+   "market_conditioned": 0.20023
+  },
+  "logloss_over_21_5": {
+   "elo_conditioned": 0.56126,
+   "fundamental": 0.56187,
+   "market_conditioned": 0.56029
+  },
+  "abs_err_total_games": {
+   "elo_conditioned": 5.95173,
+   "fundamental": 5.91364,
+   "market_conditioned": 5.90298
+  },
+  "sq_err_total_games": {
+   "elo_conditioned": 49.20693,
+   "fundamental": 48.30173,
+   "market_conditioned": 47.91897
+  },
+  "brier_sets_played": {
+   "elo_conditioned": 0.1885,
+   "fundamental": 0.18896,
+   "market_conditioned": 0.18832
+  },
+  "logloss_sets_played": {
+   "elo_conditioned": 0.52921,
+   "fundamental": 0.53015,
+   "market_conditioned": 0.52887
+  },
+  "logloss_exact_score": {
+   "elo_conditioned": 1.37007,
+   "fundamental": 1.35038,
+   "market_conditioned": 1.3271
+  },
+  "abs_err_game_diff": {
+   "elo_conditioned": 4.17372,
+   "fundamental": 4.10248,
+   "market_conditioned": 4.00667
+  }
+ },
+ "bootstrap_mc_minus_fundamental": {
+  "brier_over_21_5": {
+   "diff": -0.0009040999746649064,
+   "ci_lo": -0.0015177261780879143,
+   "ci_hi": -0.00029129997660245517,
+   "p_better": 0.9985,
+   "n": 12946
+  },
+  "logloss_over_21_5": {
+   "diff": -0.0015739977854646783,
+   "ci_lo": -0.003003613552798606,
+   "ci_hi": -0.00010623356110640895,
+   "p_better": 0.981,
+   "n": 12946
+  },
+  "abs_err_total_games": {
+   "diff": -0.010660968102819001,
+   "ci_lo": -0.02552967919470489,
+   "ci_hi": 0.0038955650087038065,
+   "p_better": 0.9285,
+   "n": 12946
+  },
+  "sq_err_total_games": {
+   "diff": -0.3827596395550032,
+   "ci_lo": -0.6256651873670864,
+   "ci_hi": -0.13041619147259353,
+   "p_better": 0.999,
+   "n": 12946
+  },
+  "brier_sets_played": {
+   "diff": -0.0006354793863326268,
+   "ci_lo": -0.0011219227815576687,
+   "ci_hi": -0.00012158889758227266,
+   "p_better": 0.995,
+   "n": 12946
+  },
+  "logloss_sets_played": {
+   "diff": -0.0012756036911242736,
+   "ci_lo": -0.0023149542950073342,
+   "ci_hi": -0.00023159913211444246,
+   "p_better": 0.9925,
+   "n": 12946
+  },
+  "logloss_exact_score": {
+   "diff": -0.023285150047432514,
+   "ci_lo": -0.027755557458174658,
+   "ci_hi": -0.01866983676914756,
+   "p_better": 1.0,
+   "n": 12946
+  },
+  "abs_err_game_diff": {
+   "diff": -0.0958112636019728,
+   "ci_lo": -0.1149090735389377,
+   "ci_hi": -0.07675497674140111,
+   "p_better": 1.0,
+   "n": 12946
+  }
+ }
+}
