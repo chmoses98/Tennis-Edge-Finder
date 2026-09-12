@@ -67,9 +67,15 @@ jobs:
           # The Sackmann forks are frozen (upstream gone) and the mirror lags by days, so ESPN's public
           # scoreboard is the only reachable feed carrying CURRENT results for both tours. Results only:
           # no serve statistics, no surface, ESPN-local player ids bound by the name crosswalk.
+          # the sources job installs nothing by default (the Sackmann fetcher is stdlib-only) and this
+          # script needs pandas; without it the step dies on import and continue-on-error reports
+          # SUCCESS, which is how two runs published nothing while looking green
+          python3 -m pip install --quiet pandas
           python3 scripts/data/fetch_espn_results.py --since "${{ github.event.inputs.espn_since || '2026-04-01' }}"
+          ls -d data/sources/espn/* >/dev/null 2>&1 || { echo "::error::ESPN fetch produced no output"; exit 1; }
       - name: Publish ESPN results
         if: always()
+        # a green step that published nothing is worse than a red one, so say so out loud
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
