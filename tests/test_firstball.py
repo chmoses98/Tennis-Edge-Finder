@@ -371,3 +371,37 @@ def test_28_a_match_seen_unstarted_past_its_nominal_time_goes_hot():
     assert poll_interval([overdue], SCHED)[0] == 300
     no_nominal = WatchItem("n", "A", "B", False, None, True, "ATP", "GRAND_SLAM", "US Open", ())
     assert no_nominal.tier(SCHED, "PRE") == TIER_HOT
+
+
+# --------------------------------------------------------------- wave 2: active-board accounting
+def test_29_every_contract_carries_exactly_one_board_state():
+    from tennis_edge.kalshi.accounting import (BOARD_STATES, NO_DRAW, PROJECTED, UNMAPPED_IDENTITY,
+                                               UNSUPPORTED_FAMILY, board_accounting, check_total)
+    pj = {"projected_tickers": ["A", "B"],
+          "excluded": [{"ticker": "C", "stage": "scope", "reason": "needs a draw feed"},
+                       {"ticker": "D", "stage": "family", "reason": "SEASON_RANKING: not priced"},
+                       {"ticker": "E", "stage": "doubles", "reason": "doubles: player 'Moyano' unmapped/ambiguous"},
+                       {"ticker": "F", "stage": "lifecycle", "reason": "closed since discovery"},
+                       {"ticker": "G", "stage": "who-knows", "reason": "?"}]}
+    acc = board_accounting(pj)
+    assert check_total(acc) == []
+    assert acc["states"][PROJECTED] == 2
+    assert acc["states"][NO_DRAW] == 1 and acc["states"][UNSUPPORTED_FAMILY] == 1
+    # a doubles event rejected on a partner's name is an IDENTITY failure, not a data-volume one
+    assert acc["states"][UNMAPPED_IDENTITY] == 1
+    assert acc["states"]["OTHER_EXPLICIT_FAIL_CLOSED"] == 1        # unknown stage fails closed
+    assert set(acc["states"]) <= set(BOARD_STATES)
+    # closed contracts are out of BOTH ratios, and coverage B excludes capability-blocked contracts
+    # 7 contracts, one of them closed since discovery: 6 active, 2 priced
+    assert acc["contracts_seen"] == 7 and acc["active"] == 6
+    assert acc["coverage_a_all_active"] == round(2 / 6, 4)
+    # coverage B drops the two capability-blocked contracts (no draw feed, unsupported family)
+    assert acc["coverage_b_denominator"] == 4 and acc["coverage_b_should_be_priceable"] == 0.5
+
+
+def test_30_coverage_cannot_be_improved_by_dropping_a_contract():
+    from tennis_edge.kalshi.accounting import board_accounting, check_total
+    full = {"projected_tickers": ["A"], "excluded": [{"ticker": "B", "stage": "identity", "reason": "x"}]}
+    acc = board_accounting(full)
+    assert acc["contracts_seen"] == 2 and acc["coverage_a_all_active"] == 0.5
+    assert check_total(acc) == []

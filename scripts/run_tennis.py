@@ -149,6 +149,23 @@ def main():
 
     projections = []; consistency_violations = []; projected_tickers = []
     today = date.today()
+
+    # ONE physical match is listed under several series -- KXATPMATCH-26SEP11ZVEKHA,
+    # KXATPGSPREAD-26SEP11ZVEKHA, KXATPSETWINNER-26SEP11ZVEKHA-2 -- sharing the date+code suffix. Some of
+    # those families' rules text names only one side, so the event alone cannot recover both competitors
+    # and every contract on it used to be dropped as unidentifiable. The sibling event that DOES name
+    # both is the same match on the same court, so its names are used. Sides come from the ticker
+    # grammar, which is shared across series, so the orientation cannot silently flip.
+    def _event_suffix(ev_ticker: str) -> str:
+        return ev_ticker.split("-", 1)[1] if "-" in ev_ticker else ev_ticker
+
+    suffix_names: dict[str, dict] = {}
+    for ev, pms in by_event.items():
+        slot = suffix_names.setdefault(_event_suffix(ev), {True: None, False: None})
+        for pm in pms:
+            if pm.subject and pm.subject_is_a is not None and not slot[pm.subject_is_a]:
+                slot[pm.subject_is_a] = pm.subject
+
     for ev, pms in by_event.items():
         # competitors: full names per side from any market whose subject side is known
         names = {True: None, False: None}; comp_ids = {True: None, False: None}
@@ -156,6 +173,11 @@ def main():
             if pm.subject and pm.subject_is_a is not None:
                 names[pm.subject_is_a] = names[pm.subject_is_a] or pm.subject
                 comp_ids[pm.subject_is_a] = comp_ids[pm.subject_is_a] or pm.competitor_id
+        sib = suffix_names.get(_event_suffix(ev), {})
+        for side in (True, False):
+            if not names[side] and sib.get(side):
+                names[side] = sib[side]
+                coverage["names_recovered_from_sibling_event"] += 1
         head = pms[0]
         info = classify_competition(head.competition, head.tour)
         tour = info["tour"]
