@@ -108,11 +108,61 @@ def describe(rows, label):
     return out
 
 
+def settlements_from_capture(capture_root: str) -> dict:
+    """{ticker: 1.0/0.0} from the capture stream itself.
+
+    Kalshi writes the settled result onto the market record, and the capture publishes every CHANGED
+    market, so a settlement arrives in the ordinary quote stream. No separate settlement feed is needed
+    and, more to the point, no closing line is ever reconstructed after the fact.
+    """
+    import gzip
+    out = {}
+    for f in sorted(glob.glob(os.path.join(capture_root, "*", "*.quotes.jsonl.gz"))):
+        with gzip.open(f, "rt") as fh:
+            for line in fh:
+                if not line.strip():
+                    continue
+                m = json.loads(line)
+                r = m.get("result")
+                if r in ("yes", "no"):
+                    out[m["ticker"]] = 1.0 if r == "yes" else 0.0
+    return out
+
+
+def accuracy(rows, settled: dict) -> dict:
+    """Who was closer to the truth: the external venue, Kalshi, or us. First observation per contract."""
+    seen, recs = set(), []
+    for r in sorted(rows, key=lambda x: x["generated_at"]):
+        tk = r["kalshi_ticker"]
+        if tk in seen or tk not in settled or r.get("external_fair") is None:
+            continue
+        seen.add(tk)
+        recs.append((settled[tk], r))
+    if not recs:
+        return {"n": 0, "note": "no observed contract has settled yet"}
+    def brier(get):
+        vals = [(get(r) - y) ** 2 for y, r in recs if get(r) is not None]
+        return (round(st.mean(vals), 5), len(vals)) if vals else (None, 0)
+    b_ext, n_ext = brier(lambda r: r["external_fair"])
+    b_kal, n_kal = brier(lambda r: r["kalshi_mid"])
+    b_mod, n_mod = brier(lambda r: r.get("model_fair"))
+    paired = [((r["external_fair"] - y) ** 2) - ((r["kalshi_mid"] - y) ** 2) for y, r in recs]
+    paired_model = [((r["model_fair"] - y) ** 2) - ((r["kalshi_mid"] - y) ** 2)
+                    for y, r in recs if r.get("model_fair") is not None]
+    return {"n": len(recs), "external_brier": b_ext, "kalshi_brier": b_kal, "model_brier": b_mod,
+            "n_model": n_mod,
+            "external_minus_kalshi": round(st.mean(paired), 5), "external_minus_kalshi_ci": boot_ci(paired),
+            "model_minus_kalshi": round(st.mean(paired_model), 5) if paired_model else None,
+            "model_minus_kalshi_ci": boot_ci(paired_model) if paired_model else [None, None]}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ledger", default=os.path.join(PROJ, "data", "research", "external", "dislocations"))
     ap.add_argument("--out", default=os.path.join(PROJ, "research", "external_market"))
     ap.add_argument("--min-gap-min", type=float, default=20.0)
+    ap.add_argument("--capture", default=os.path.join(PROJ, "data", "kalshi", "capture"),
+                    help="capture root, read only to recover settlements from the quote stream")
     a = ap.parse_args()
     rows = load(a.ledger)
     if not rows:
@@ -147,6 +197,14 @@ def main():
             buckets[keyfn(r)].append(r)
         res["scorecards"][name] = [describe(v, k) for k, v in sorted(buckets.items())]
 
+    settled = settlements_from_capture(a.capture) if os.path.isdir(a.capture) else {}
+    res["settled_contracts_seen"] = len(settled)
+    res["accuracy"] = accuracy(withref, settled)
+    res["accuracy_kalshi_outlier"] = accuracy(
+        [r for r in withref if r["triangulation"] == "KALSHI_LONE_OUTLIER"], settled)
+    res["accuracy_model_outlier"] = accuracy(
+        [r for r in withref if r["triangulation"] == "MODEL_LONE_OUTLIER"], settled)
+
     os.makedirs(a.out, exist_ok=True)
     json.dump(res, open(os.path.join(a.out, "scorecard.json"), "w"), indent=1, default=str)
 
@@ -174,6 +232,21 @@ def main():
         L.append(f"| {s['subset']} | {s['n_with_follow_up']} | {s['move_toward_external_mean']:+.5f} | "
                  f"[{s['move_toward_external_ci'][0]}, {s['move_toward_external_ci'][1]}] | "
                  f"{s['share_moved_toward']:.3f} | {s['median_follow_up_minutes']:.0f} |")
+    acc = res["accuracy"]
+    if acc.get("n"):
+        L += ["", "## Who was right, where contracts have settled", "",
+              f"{acc['n']} settled contracts, first observation of each.", "",
+              "| forecaster | Brier |", "|---|---|",
+              f"| Kalshi mid | {acc['kalshi_brier']} |",
+              f"| external reference | {acc['external_brier']} |",
+              f"| our frozen model | {acc['model_brier']} |", "",
+              f"External minus Kalshi: **{acc['external_minus_kalshi']:+.5f}** "
+              f"CI [{acc['external_minus_kalshi_ci'][0]}, {acc['external_minus_kalshi_ci'][1]}]. "
+              + (f"Model minus Kalshi: **{acc['model_minus_kalshi']:+.5f}** "
+                 f"CI [{acc['model_minus_kalshi_ci'][0]}, {acc['model_minus_kalshi_ci'][1]}]."
+                 if acc.get("model_minus_kalshi") is not None else "")]
+    else:
+        L += ["", "## Who was right", "", "No observed contract has settled yet."]
     open(os.path.join(a.out, "SCORECARD.md"), "w").write("\n".join(L) + "\n")
     print("\n".join(L))
     return 0
