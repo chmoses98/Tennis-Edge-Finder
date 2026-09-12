@@ -1,0 +1,26 @@
+{
+ "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
+ "hypothesis": "Outside ITF, opportunities with a positive fee-adjusted edge return more than they cost after fees.",
+ "inclusion_rule": "MATCH_WINNER contracts, level != 'ITF', fee-adjusted edge at the executable ask > 0, qualification passes, one contract at the displayed ask, taker fee.",
+ "market_family": "MATCH_WINNER",
+ "model_version": "gen2_dyn_hier_sr_v1+fair_v1+selector_v1",
+ "discovery_window_start": "2026-08-25",
+ "discovery_window_end": "2026-09-11",
+ "frozen_at": "2026-09-12T17:24:04.826616+00:00",
+ "confirmation_start": "2026-09-12T17:24:04.826616+00:00",
+ "minimum_n": 600,
+ "required_accuracy_condition": "on the SELECTED rows our Brier must be no worse than the Kalshi mid's. This condition currently FAILS and is the reason the candidate is not a claim.",
+ "required_clv_condition": "mean strict executable CLV > 0 with a 95% interval excluding zero, once A/B first-ball truth exists to compute it; none exists today",
+ "required_after_fee_condition": "realised after-fee P&L per contract > 0 with a 95% interval excluding zero",
+ "status": "PROSPECTIVE_PENDING",
+ "rationale": "Positive in all three blocks (+1.6c discovery, +6.1c validation, +4.2c holdout) and never significant in any of them. Frozen because a consistent sign across a chronological split is the weakest evidence worth keeping, and because writing the pass conditions down now is the only way to stop a later wave from lowering them.",
+ "strongest_opposing_reason": "On the very rows it selects, our probability is LESS accurate than the price (holdout Brier 0.2248 against the market's 0.2159). A positive return with worse accuracy on 220 mostly-underdog bets is what variance looks like, not what an edge looks like. Its sibling rule R1, which added two more filters and looked far better on discovery and validation, went NEGATIVE on the holdout -- from the same data.",
+ "prereg_dimensions": [
+  "level",
+  "fee_adjusted_edge"
+ ],
+ "post_hoc": false,
+ "evidence": [],
+ "schema_version": 1,
+ "fingerprint": "d14460d3db1bb488"
+}

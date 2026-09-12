@@ -30,7 +30,10 @@ SERVE_KEYS = ("aces", "doubleFaults", "firstServePointsWon", "servicePointsWon",
 
 
 def get(url: str, timeout=25):
-    req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "*/*"})
+    headers = {"User-Agent": UA, "Accept": "*/*"}
+    if "api.github.com" in url and os.environ.get("GITHUB_TOKEN"):
+        headers["Authorization"] = f"Bearer {os.environ['GITHUB_TOKEN']}"
+    req = urllib.request.Request(url, headers=headers)
     t0 = time.time()
     try:
         with urllib.request.urlopen(req, timeout=timeout) as r:
@@ -88,8 +91,22 @@ def main():
     if body:
         open(os.path.join(root, "espn_wta_scoreboard.json.gz"), "wb").write(gzip.compress(body))
         if not ev:
-            m = re.search(r'"id"\s*:\s*"(\d{6,})"', body.decode("utf-8", "replace"))
-            ev = m.group(1) if m else ""
+            # events[].id, not the first id in the document -- the first one is the league.
+            try:
+                sb = json.loads(body.decode("utf-8", "replace"))
+                for e in sb.get("events") or []:
+                    for g in e.get("groupings") or []:
+                        for c in g.get("competitions") or []:
+                            if ((c.get("status") or {}).get("type") or {}).get("completed"):
+                                ev = str(c.get("id") or e.get("id") or "")
+                                break
+                        if ev:
+                            break
+                    if ev:
+                        break
+                    ev = str(e.get("id") or "")
+            except Exception:                                  # noqa: BLE001
+                ev = ""
 
     candidates = [
         ("espn_summary", f"https://site.api.espn.com/apis/site/v2/sports/tennis/wta/summary?event={ev}" if ev else None,

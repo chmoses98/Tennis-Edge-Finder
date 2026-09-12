@@ -28,9 +28,11 @@ class DecisionPolicy:
     version: str = SELECTOR_VERSION
     min_fee_adjusted_edge: float = 0.0     # after the taker fee, at the executable ask
     #: AN UPPER BOUND, which looks backwards and is the most important number here. Against a
-    #: two-sided market whose mid beats us globally, a claimed 25c edge is overwhelmingly more likely
-    #: to be our error than theirs, and Wave 3 measured it: opportunities claiming more than 15c
-    #: realised -3.8c on the discovery and validation blocks, the worst band on the board.
+    #: two-sided market whose mid beats ours globally, a claimed 25c edge is overwhelmingly more likely
+    #: to be our error than theirs. Honest about the evidence: this band realised -3.7c on the discovery
+    #: and validation blocks (the worst on the board) and +0.6c on the holdout, so the cap rests on the
+    #: prior, not on a replicated measurement. It is a refusal to act on numbers we do not believe,
+    #: which is the cheapest kind of protection and the easiest to justify being wrong about.
     max_fee_adjusted_edge: float = 0.15
     require_robust_edge: bool = True       # positive under EVERY configuration in the defensible set
     min_data_quality: float = 0.60

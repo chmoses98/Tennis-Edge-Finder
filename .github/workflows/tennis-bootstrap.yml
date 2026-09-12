@@ -80,7 +80,7 @@ jobs:
         run: |
           # BOUNDED (Wave 3 Phase 18): the women's serve statistics stop at 2026-04-27 and TENNIS-14
           # fails on that. This checks the few remaining candidates and records what each returned.
-          python3 scripts/data/probe_serve_sources.py
+          GITHUB_TOKEN="${{ github.token }}" python3 scripts/data/probe_serve_sources.py
       - name: Publish serve-source probe
         if: always()
         run: |

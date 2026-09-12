@@ -1,0 +1,25 @@
+{
+ "candidate_id": "W3-2026-001-ABSTAIN-ITF",
+ "hypothesis": "Acting on our disagreement with the Kalshi price is NEGATIVE-VALUE at ITF level; excluding ITF raises the realised after-fee edge of the positive-edge set.",
+ "inclusion_rule": "MATCH_WINNER contracts where fee-adjusted edge at the executable ask is > 0. Compare the realised after-fee P&L per contract of rows with level == 'ITF' against rows with level != 'ITF'. One contract at the displayed ask, taker fee.",
+ "market_family": "MATCH_WINNER",
+ "model_version": "gen2_dyn_hier_sr_v1+fair_v1+selector_v1",
+ "discovery_window_start": "2026-08-25",
+ "discovery_window_end": "2026-09-11",
+ "frozen_at": "2026-09-12T17:24:04.826616+00:00",
+ "confirmation_start": "2026-09-12T17:24:04.826616+00:00",
+ "minimum_n": 400,
+ "required_accuracy_condition": "ITF realised after-fee P&L per contract < 0 with a bootstrap 95% interval excluding zero, AND below the non-ITF subset's",
+ "required_clv_condition": "not required: this is an abstention rule and generates no position",
+ "required_after_fee_condition": "the non-ITF subset's realised after-fee P&L per contract exceeds the combined set's",
+ "status": "PROSPECTIVE_PENDING",
+ "rationale": "Discovery+validation: ITF realised -3.5c per contract, 95% CI [-6.5c, -0.4c], n=763. Holdout: -4.8c, CI [-9.2c, -0.4c], n=369. Same sign, both intervals excluding zero, on blocks separated in time. The mechanism is plausible and was predicted by Wave 2: serve statistics cover about 4% of ITF matches, so the structural model is running on rating-implied point probabilities and cross-level translation at exactly the level where the rating substrate is thinnest.",
+ "strongest_opposing_reason": "Eighteen days of one exchange, and the two blocks are adjacent rather than independent seasons: the same players, tournaments and surface conditions appear in both, so 'replicated' is weaker here than the two intervals make it look. ITF is also where our identity coverage is worst, so part of the effect may be mis-mapped players rather than a modelling failure -- and that has a different fix.",
+ "prereg_dimensions": [
+  "level"
+ ],
+ "post_hoc": false,
+ "evidence": [],
+ "schema_version": 1,
+ "fingerprint": "b2bc4e45ed8ea3bb"
+}
