@@ -1,0 +1,1506 @@
+{
+ "run_id": "20260912T042630Z",
+ "started_at": "2026-09-12T04:26:30.764949+00:00",
+ "rounds": 1,
+ "round_gap_s": 30,
+ "probe_date_utc": "2026-09-12",
+ "candidates": {
+  "espn_atp_rankings": {
+   "name": "ESPN - ATP rankings",
+   "host_class": "broadcaster",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "current rankings?",
+   "url_template": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/rankings",
+   "rounds": [
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/rankings",
+     "requested_at_utc": "2026-09-12T04:27:42.194557+00:00",
+     "status": 200,
+     "latency_ms": 96,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 387609,
+     "truncated": false,
+     "headers": {},
+     "etag": null,
+     "last_modified": null,
+     "raw_evidence": "raw/espn_atp_rankings.r0.gz",
+     "raw_sha256": "eb181b9ef7edbe1163e7ce9e3dbe6fea2ac8a79276be348e6d4f073cad166d1f",
+     "parse": "json",
+     "structure": {
+      "sports": [
+       "list[1]",
+       {
+        "$ref": "str",
+        "id": "str",
+        "guid": "str",
+        "uid": "str",
+        "name": "str",
+        "displayName": "str",
+        "slug": "str",
+        "logos": [
+         "list[2]"
+        ],
+        "links": [
+         "list[3]"
+        ]
+       }
+      ],
+      "leagues": [
+       "list[1]",
+       {
+        "$ref": "str",
+        "id": "str",
+        "uid": "str",
+        "name": "str",
+        "abbreviation": "str",
+        "shortName": "str",
+        "midsizeName": "str"
+       }
+      ],
+      "rankings": [
+       "list[1]",
+       {
+        "id": "str",
+        "name": "str",
+        "shortName": "str",
+        "type": "str",
+        "ranks": [
+         "list[150]"
+        ],
+        "update": "str"
+       }
+      ],
+      "availableRankings": [
+       "list[1]",
+       {
+        "id": "str",
+        "name": "str",
+        "shortName": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {
+      "$.sports[].logos[].lastUpdated": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T08:21Z"
+      },
+      "$.rankings[].ranks[].points": {
+       "kind": "named_but_unparsed",
+       "sample": 12800.0
+      },
+      "$.rankings[].update": {
+       "kind": "iso8601",
+       "sample": "2026-08-27T07:00Z"
+      }
+     },
+     "top_level_count": 4
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 96,
+    "latency_ms_max": 96,
+    "timestamp_fields": [
+     "$.rankings[].ranks[].points",
+     "$.rankings[].update",
+     "$.sports[].logos[].lastUpdated"
+    ],
+    "historical_status": null
+   }
+  },
+  "espn_wta_rankings": {
+   "name": "ESPN - WTA rankings",
+   "host_class": "broadcaster",
+   "levels": [
+    "WTA"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/rankings",
+   "rounds": [
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/rankings",
+     "requested_at_utc": "2026-09-12T04:27:43.801743+00:00",
+     "status": 200,
+     "latency_ms": 59,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 384545,
+     "truncated": false,
+     "headers": {},
+     "etag": null,
+     "last_modified": null,
+     "raw_evidence": "raw/espn_wta_rankings.r0.gz",
+     "raw_sha256": "08ced0448839189b2c49a72ea94ac21d3075a5da92896d060acce2b61dd562c2",
+     "parse": "json",
+     "structure": {
+      "sports": [
+       "list[1]",
+       {
+        "$ref": "str",
+        "id": "str",
+        "guid": "str",
+        "uid": "str",
+        "name": "str",
+        "displayName": "str",
+        "slug": "str",
+        "logos": [
+         "list[2]"
+        ],
+        "links": [
+         "list[3]"
+        ]
+       }
+      ],
+      "leagues": [
+       "list[1]",
+       {
+        "$ref": "str",
+        "id": "str",
+        "uid": "str",
+        "name": "str",
+        "abbreviation": "str",
+        "shortName": "str",
+        "midsizeName": "str"
+       }
+      ],
+      "rankings": [
+       "list[1]",
+       {
+        "id": "str",
+        "name": "str",
+        "shortName": "str",
+        "type": "str",
+        "ranks": [
+         "list[150]"
+        ],
+        "update": "str"
+       }
+      ],
+      "availableRankings": [
+       "list[1]",
+       {
+        "id": "str",
+        "name": "str",
+        "shortName": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {
+      "$.sports[].logos[].lastUpdated": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T08:21Z"
+      },
+      "$.rankings[].ranks[].points": {
+       "kind": "named_but_unparsed",
+       "sample": 8575.0
+      },
+      "$.rankings[].update": {
+       "kind": "iso8601",
+       "sample": "2026-08-27T07:00Z"
+      }
+     },
+     "top_level_count": 4
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 59,
+    "latency_ms_max": 59,
+    "timestamp_fields": [
+     "$.rankings[].ranks[].points",
+     "$.rankings[].update",
+     "$.sports[].logos[].lastUpdated"
+    ],
+    "historical_status": null
+   }
+  },
+  "espn_match_summary": {
+   "name": "ESPN - completed match summary (serve stats?)",
+   "host_class": "broadcaster",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [
+    5
+   ],
+   "auth": "none",
+   "notes": "does a completed match carry serve/return statistics?",
+   "url_template": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/summary?event=184607",
+   "rounds": [
+    {
+     "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/summary?event=184607",
+     "requested_at_utc": "2026-09-12T04:27:45.371527+00:00",
+     "status": 400,
+     "latency_ms": 64,
+     "error": "HTTPError 400",
+     "etag": null,
+     "last_modified": null,
+     "content_type": "application/json;charset=UTF-8",
+     "bytes": 186,
+     "headers": {},
+     "raw_evidence": "raw/espn_match_summary.r0.gz",
+     "raw_sha256": "affa92826694350da202b4952d0e5d3b96e81ab8dce5f8a841fc0d7a700d646e",
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "\u001f\ufffd\b\u0000\u0000\u0000\u0000\u0000\u0000\ufffd<\ufffd\ufffd\n\ufffd0\u0014E\u007f%d.I\ufffdb\ufffd\ufffdAJQ\u0007\ufffd\ufffdKH\u001f5\ufffd&!\ufffd%\ufffd\ufffd\ufffdX\ufffd.\ufffd\ufffd;\ufffd77~\u0000\ufffdTeY\ufffd\u0019\u0010\ufffd\ufffd4\ufffd\ufffd\ufffd#\ufffd.\ufffd\ufffdu#;w\ufffd\ufffd=\ufffdB#%\u0006\u001f\t\ufffd\ufffd\u0011\ufffd\u000eV\u0000\u0006'B&\ufffd\ufffd\u001b\ufffd\u0004\ufffdY\ufffd\u0013\ufffd1\u0001JMAB\u0006\ufffd\ufffd\u0771:\ufffd\ufffd4~\u000e@\ufffd\ufffdw\ufffd\rIS\u0082\ufffdR\ufffdBlHQ\ufffd'U\ufffdyA\ufffd\ufffdri\ufffd\nf\ufffdy\ufffdjO\ufffd\ufffd{\u072e}\ufffd?_\u0000\u0000\u0000\ufffd\ufffd\u0003\u0000\ufffd\ufffd\t\ufffd\ufffd\u0000\u0000\u0000"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     400
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 64,
+    "latency_ms_max": 64,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "espn_core_athletes": {
+   "name": "ESPN core - athlete index",
+   "host_class": "broadcaster",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "player identity source",
+   "url_template": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/athletes?limit=100",
+   "rounds": [
+    {
+     "url": "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/athletes?limit=100",
+     "requested_at_utc": "2026-09-12T04:27:46.935919+00:00",
+     "status": 200,
+     "latency_ms": 94,
+     "content_type": "application/json;charset=utf-8",
+     "bytes": 9170,
+     "truncated": false,
+     "headers": {},
+     "etag": null,
+     "last_modified": null,
+     "raw_evidence": "raw/espn_core_athletes.r0.gz",
+     "raw_sha256": "dcb960b294dbed36c7e5804c3a988bc5565e991a634681451a2eec38f5f98d11",
+     "parse": "json",
+     "structure": {
+      "count": "int",
+      "pageIndex": "int",
+      "pageSize": "int",
+      "pageCount": "int",
+      "items": [
+       "list[100]",
+       {
+        "$ref": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {},
+     "top_level_count": 5
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 94,
+    "latency_ms_max": 94,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "sackmann_atp_repo": {
+   "name": "JeffSackmann/tennis_atp repo metadata",
+   "host_class": "aggregator",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "upstream 404'd during the overnight build; is it back?",
+   "url_template": "https://api.github.com/repos/JeffSackmann/tennis_atp",
+   "rounds": [
+    {
+     "url": "https://api.github.com/repos/JeffSackmann/tennis_atp",
+     "requested_at_utc": "2026-09-12T04:27:48.530899+00:00",
+     "status": 404,
+     "latency_ms": 106,
+     "error": "HTTPError 404",
+     "etag": null,
+     "last_modified": null,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 132,
+     "headers": {
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "58",
+      "x-ratelimit-reset": "1789190792",
+      "server": "github.com"
+     },
+     "raw_evidence": "raw/sackmann_atp_repo.r0.gz",
+     "raw_sha256": "a298fd3d1a255b0eb21a952212460852e05ba9721d3445fb42d7ad054d88f94a",
+     "parse": "json",
+     "structure": {
+      "message": "str",
+      "documentation_url": "str",
+      "status": "str"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 3
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 106,
+    "latency_ms_max": 106,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "sackmann_wta_repo": {
+   "name": "JeffSackmann/tennis_wta repo metadata",
+   "host_class": "aggregator",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.github.com/repos/JeffSackmann/tennis_wta",
+   "rounds": [
+    {
+     "url": "https://api.github.com/repos/JeffSackmann/tennis_wta",
+     "requested_at_utc": "2026-09-12T04:27:50.137948+00:00",
+     "status": 404,
+     "latency_ms": 99,
+     "error": "HTTPError 404",
+     "etag": null,
+     "last_modified": null,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 132,
+     "headers": {
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "57",
+      "x-ratelimit-reset": "1789190792",
+      "server": "github.com"
+     },
+     "raw_evidence": "raw/sackmann_wta_repo.r0.gz",
+     "raw_sha256": "a298fd3d1a255b0eb21a952212460852e05ba9721d3445fb42d7ad054d88f94a",
+     "parse": "json",
+     "structure": {
+      "message": "str",
+      "documentation_url": "str",
+      "status": "str"
+     },
+     "timestamp_fields": {},
+     "top_level_count": 3
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 99,
+    "latency_ms_max": 99,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "sackmann_atp_2026": {
+   "name": "Sackmann ATP 2026 matches (raw)",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2026.csv",
+   "rounds": [
+    {
+     "url": "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2026.csv",
+     "requested_at_utc": "2026-09-12T04:27:51.737135+00:00",
+     "status": 404,
+     "latency_ms": 65,
+     "error": "HTTPError 404",
+     "etag": null,
+     "last_modified": null,
+     "content_type": "text/plain; charset=utf-8",
+     "bytes": 14,
+     "headers": {},
+     "raw_evidence": "raw/sackmann_atp_2026.r0.gz",
+     "raw_sha256": "d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed",
+     "parse": "html",
+     "text_head": "404: Not Found"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     404
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 65,
+    "latency_ms_max": 65,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "sackmann_forks_recent": {
+   "name": "GitHub search: most recently updated tennis_atp forks",
+   "host_class": "aggregator",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "find a fork fresher than the one in use",
+   "url_template": "https://api.github.com/search/repositories?q=tennis_atp+in:name+fork:only&sort=updated&order=desc&per_page=20",
+   "rounds": [
+    {
+     "url": "https://api.github.com/search/repositories?q=tennis_atp+in:name+fork:only&sort=updated&order=desc&per_page=20",
+     "requested_at_utc": "2026-09-12T04:27:53.302296+00:00",
+     "status": 200,
+     "latency_ms": 662,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 122493,
+     "truncated": false,
+     "headers": {
+      "x-ratelimit-limit": "10",
+      "x-ratelimit-remaining": "3",
+      "x-ratelimit-reset": "1789187279",
+      "server": "github.com"
+     },
+     "etag": null,
+     "last_modified": null,
+     "raw_evidence": "raw/sackmann_forks_recent.r0.gz",
+     "raw_sha256": "5e634b9aceb8e15220fec21eab51d0d530ffae4ff2d854b66f4b3b37ea7bf61a",
+     "parse": "json",
+     "structure": {
+      "total_count": "int",
+      "incomplete_results": "bool",
+      "items": [
+       "list[20]",
+       {
+        "id": "int",
+        "node_id": "str",
+        "name": "str",
+        "full_name": "str",
+        "private": "bool",
+        "owner": {
+         "login": "str",
+         "id": "int",
+         "node_id": "str",
+         "avatar_url": "str",
+         "gravatar_id": "str",
+         "url": "str",
+         "html_url": "str",
+         "followers_url": "str",
+         "following_url": "str",
+         "gists_url": "str",
+         "starred_url": "str",
+         "subscriptions_url": "str",
+         "organizations_url": "str",
+         "repos_url": "str",
+         "events_url": "str",
+         "received_events_url": "str",
+         "type": "str",
+         "user_view_type": "str",
+         "site_admin": "bool"
+        },
+        "html_url": "str",
+        "description": "str",
+        "fork": "bool",
+        "url": "str",
+        "forks_url": "str",
+        "keys_url": "str",
+        "collaborators_url": "str",
+        "teams_url": "str",
+        "hooks_url": "str",
+        "issue_events_url": "str",
+        "events_url": "str",
+        "assignees_url": "str",
+        "branches_url": "str",
+        "tags_url": "str",
+        "blobs_url": "str",
+        "git_tags_url": "str",
+        "git_refs_url": "str",
+        "trees_url": "str",
+        "statuses_url": "str"
+       }
+      ]
+     },
+     "timestamp_fields": {
+      "$.incomplete_results": {
+       "kind": "named_but_unparsed",
+       "sample": false
+      },
+      "$.items[].id": {
+       "kind": "epoch_s",
+       "sample": 1163236064
+      },
+      "$.items[].created_at": {
+       "kind": "iso8601",
+       "sample": "2026-02-21T10:07:13Z"
+      },
+      "$.items[].updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-06-10T01:19:44Z"
+      },
+      "$.items[].pushed_at": {
+       "kind": "iso8601",
+       "sample": "2026-06-10T01:19:35Z"
+      },
+      "$.items[].has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.items[].has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      }
+     },
+     "top_level_count": 3
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 662,
+    "latency_ms_max": 662,
+    "timestamp_fields": [
+     "$.incomplete_results",
+     "$.items[].created_at",
+     "$.items[].has_projects",
+     "$.items[].has_pull_requests",
+     "$.items[].id",
+     "$.items[].pushed_at",
+     "$.items[].updated_at"
+    ],
+    "historical_status": null
+   }
+  },
+  "tml_repo": {
+   "name": "Tennismylife/TML-Database metadata",
+   "host_class": "aggregator",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.github.com/repos/Tennismylife/TML-Database",
+   "rounds": [
+    {
+     "url": "https://api.github.com/repos/Tennismylife/TML-Database",
+     "requested_at_utc": "2026-09-12T04:27:55.468397+00:00",
+     "status": 200,
+     "latency_ms": 135,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 5916,
+     "truncated": false,
+     "headers": {
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "56",
+      "x-ratelimit-reset": "1789190792",
+      "server": "github.com"
+     },
+     "etag": "W/\"c9c4136043658c4764a80c7596e9a098b00bcb2aa943c7fe2e5c184648fbcdf2\"",
+     "last_modified": "Thu, 03 Sep 2026 04:28:03 GMT",
+     "raw_evidence": "raw/tml_repo.r0.gz",
+     "raw_sha256": "e30302f9e8940266ca215d0b894afb4d0ad81b7f2153fb589ace3a872bb2a3c1",
+     "parse": "json",
+     "structure": {
+      "id": "int",
+      "node_id": "str",
+      "name": "str",
+      "full_name": "str",
+      "private": "bool",
+      "owner": {
+       "login": "str",
+       "id": "int",
+       "node_id": "str",
+       "avatar_url": "str",
+       "gravatar_id": "str",
+       "url": "str",
+       "html_url": "str",
+       "followers_url": "str",
+       "following_url": "str",
+       "gists_url": "str",
+       "starred_url": "str",
+       "subscriptions_url": "str",
+       "organizations_url": "str",
+       "repos_url": "str",
+       "events_url": "str",
+       "received_events_url": "str",
+       "type": "str",
+       "user_view_type": "str",
+       "site_admin": "bool"
+      },
+      "html_url": "str",
+      "description": "str",
+      "fork": "bool",
+      "url": "str",
+      "forks_url": "str",
+      "keys_url": "str",
+      "collaborators_url": "str",
+      "teams_url": "str",
+      "hooks_url": "str",
+      "issue_events_url": "str",
+      "events_url": "str",
+      "assignees_url": "str",
+      "branches_url": "str",
+      "tags_url": "str",
+      "blobs_url": "str",
+      "git_tags_url": "str",
+      "git_refs_url": "str",
+      "trees_url": "str",
+      "statuses_url": "str"
+     },
+     "timestamp_fields": {
+      "$.created_at": {
+       "kind": "iso8601",
+       "sample": "2020-02-05T18:06:37Z"
+      },
+      "$.updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-09-03T04:28:03Z"
+      },
+      "$.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2026-01-27T14:03:52Z"
+      },
+      "$.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      }
+     },
+     "top_level_count": 84
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 135,
+    "latency_ms_max": 135,
+    "timestamp_fields": [
+     "$.created_at",
+     "$.has_projects",
+     "$.has_pull_requests",
+     "$.pushed_at",
+     "$.updated_at"
+    ],
+    "historical_status": null
+   }
+  },
+  "tml_2026": {
+   "name": "TML 2026 season file (raw)",
+   "host_class": "aggregator",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://raw.githubusercontent.com/Tennismylife/TML-Database/master/2026.csv",
+   "rounds": [
+    {
+     "url": "https://raw.githubusercontent.com/Tennismylife/TML-Database/master/2026.csv",
+     "requested_at_utc": "2026-09-12T04:27:57.104323+00:00",
+     "status": 200,
+     "latency_ms": 29,
+     "content_type": "text/plain; charset=utf-8",
+     "bytes": 28551,
+     "truncated": false,
+     "headers": {},
+     "etag": "\"2eae120c15513d90b21afc69a35c6b2e8abf3784c2fd65017ab035b7400b5f9e\"",
+     "last_modified": null,
+     "raw_evidence": "raw/tml_2026.r0.gz",
+     "raw_sha256": "8e9b756d1874e9e7866796b797273dd3b791d89eeb6b52aa6ee961a2c4c82c01",
+     "parse": "html",
+     "text_head": "tourney_id,tourney_name,surface,draw_size,tourney_level,indoor,tourney_date,match_num,winner_id,winner_seed,winner_entry,winner_name,winner_hand,winner_ht,winner_ioc,winner_age,winner_rank,winner_rank_points,loser_id,loser_seed,loser_entry,loser_name,loser_hand,loser_ht,loser_ioc,loser_age,loser_ran"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 29,
+    "latency_ms_max": 29,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "kadantte_fork_repo": {
+   "name": "Kadantte/tennis_atp (the fork currently in use)",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.github.com/repos/Kadantte/tennis_atp",
+   "rounds": [
+    {
+     "url": "https://api.github.com/repos/Kadantte/tennis_atp",
+     "requested_at_utc": "2026-09-12T04:27:58.634572+00:00",
+     "status": 200,
+     "latency_ms": 162,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 17217,
+     "truncated": false,
+     "headers": {
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "55",
+      "x-ratelimit-reset": "1789190792",
+      "server": "github.com"
+     },
+     "etag": "W/\"013896ee8d19a953afb214f2a4204c1f5ebc0e037e4bb79e496e6c56eab159c4\"",
+     "last_modified": "Wed, 02 Sep 2026 18:04:23 GMT",
+     "raw_evidence": "raw/kadantte_fork_repo.r0.gz",
+     "raw_sha256": "6a192d59dba4bb0ee86942f5876c8cf1a8671527c1e26e5fd6acb2cfb87ba4a9",
+     "parse": "json",
+     "structure": {
+      "id": "int",
+      "node_id": "str",
+      "name": "str",
+      "full_name": "str",
+      "private": "bool",
+      "owner": {
+       "login": "str",
+       "id": "int",
+       "node_id": "str",
+       "avatar_url": "str",
+       "gravatar_id": "str",
+       "url": "str",
+       "html_url": "str",
+       "followers_url": "str",
+       "following_url": "str",
+       "gists_url": "str",
+       "starred_url": "str",
+       "subscriptions_url": "str",
+       "organizations_url": "str",
+       "repos_url": "str",
+       "events_url": "str",
+       "received_events_url": "str",
+       "type": "str",
+       "user_view_type": "str",
+       "site_admin": "bool"
+      },
+      "html_url": "str",
+      "description": "str",
+      "fork": "bool",
+      "url": "str",
+      "forks_url": "str",
+      "keys_url": "str",
+      "collaborators_url": "str",
+      "teams_url": "str",
+      "hooks_url": "str",
+      "issue_events_url": "str",
+      "events_url": "str",
+      "assignees_url": "str",
+      "branches_url": "str",
+      "tags_url": "str",
+      "blobs_url": "str",
+      "git_tags_url": "str",
+      "git_refs_url": "str",
+      "trees_url": "str",
+      "statuses_url": "str"
+     },
+     "timestamp_fields": {
+      "$.id": {
+       "kind": "epoch_s",
+       "sample": 1043929472
+      },
+      "$.created_at": {
+       "kind": "iso8601",
+       "sample": "2025-08-24T23:09:04Z"
+      },
+      "$.updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-09-02T18:04:23Z"
+      },
+      "$.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2026-06-08T18:18:23Z"
+      },
+      "$.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.parent.created_at": {
+       "kind": "iso8601",
+       "sample": "2015-03-17T22:51:36Z"
+      },
+      "$.parent.updated_at": {
+       "kind": "iso8601",
+       "sample": "2022-07-16T13:39:25Z"
+      },
+      "$.parent.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2015-03-17T23:14:32Z"
+      },
+      "$.parent.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.parent.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.source.created_at": {
+       "kind": "iso8601",
+       "sample": "2015-03-17T22:51:36Z"
+      },
+      "$.source.updated_at": {
+       "kind": "iso8601",
+       "sample": "2022-07-16T13:39:25Z"
+      },
+      "$.source.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2015-03-17T23:14:32Z"
+      },
+      "$.source.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.source.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      }
+     },
+     "top_level_count": 86
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 162,
+    "latency_ms_max": 162,
+    "timestamp_fields": [
+     "$.created_at",
+     "$.has_projects",
+     "$.has_pull_requests",
+     "$.id",
+     "$.parent.created_at",
+     "$.parent.has_projects",
+     "$.parent.has_pull_requests",
+     "$.parent.pushed_at",
+     "$.parent.updated_at",
+     "$.pushed_at",
+     "$.source.created_at",
+     "$.source.has_projects",
+     "$.source.has_pull_requests",
+     "$.source.pushed_at",
+     "$.source.updated_at",
+     "$.updated_at"
+    ],
+    "historical_status": null
+   }
+  },
+  "victorsquid_fork_repo": {
+   "name": "VictorSquidWei/tennis_wta (the WTA fork in use)",
+   "host_class": "aggregator",
+   "levels": [
+    "WTA"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.github.com/repos/VictorSquidWei/tennis_wta",
+   "rounds": [
+    {
+     "url": "https://api.github.com/repos/VictorSquidWei/tennis_wta",
+     "requested_at_utc": "2026-09-12T04:28:00.297866+00:00",
+     "status": 200,
+     "latency_ms": 170,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 17323,
+     "truncated": false,
+     "headers": {
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "54",
+      "x-ratelimit-reset": "1789190792",
+      "server": "github.com"
+     },
+     "etag": "W/\"254de0df89e81e75dced24f2b470296bb6a1bdf3702f5c82feb910dab93aedbb\"",
+     "last_modified": "Fri, 08 May 2026 03:34:35 GMT",
+     "raw_evidence": "raw/victorsquid_fork_repo.r0.gz",
+     "raw_sha256": "3772739857bc9361bfbc571a22f1d907a4d0b3ce36b71b458ec7e168b51ef483",
+     "parse": "json",
+     "structure": {
+      "id": "int",
+      "node_id": "str",
+      "name": "str",
+      "full_name": "str",
+      "private": "bool",
+      "owner": {
+       "login": "str",
+       "id": "int",
+       "node_id": "str",
+       "avatar_url": "str",
+       "gravatar_id": "str",
+       "url": "str",
+       "html_url": "str",
+       "followers_url": "str",
+       "following_url": "str",
+       "gists_url": "str",
+       "starred_url": "str",
+       "subscriptions_url": "str",
+       "organizations_url": "str",
+       "repos_url": "str",
+       "events_url": "str",
+       "received_events_url": "str",
+       "type": "str",
+       "user_view_type": "str",
+       "site_admin": "bool"
+      },
+      "html_url": "str",
+      "description": "str",
+      "fork": "bool",
+      "url": "str",
+      "forks_url": "str",
+      "keys_url": "str",
+      "collaborators_url": "str",
+      "teams_url": "str",
+      "hooks_url": "str",
+      "issue_events_url": "str",
+      "events_url": "str",
+      "assignees_url": "str",
+      "branches_url": "str",
+      "tags_url": "str",
+      "blobs_url": "str",
+      "git_tags_url": "str",
+      "git_refs_url": "str",
+      "trees_url": "str",
+      "statuses_url": "str"
+     },
+     "timestamp_fields": {
+      "$.id": {
+       "kind": "epoch_s",
+       "sample": 1232554239
+      },
+      "$.created_at": {
+       "kind": "iso8601",
+       "sample": "2026-05-08T03:34:35Z"
+      },
+      "$.updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-05-08T03:34:35Z"
+      },
+      "$.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2026-05-06T21:02:33Z"
+      },
+      "$.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.parent.created_at": {
+       "kind": "iso8601",
+       "sample": "2015-03-21T22:12:53Z"
+      },
+      "$.parent.updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-09-07T08:14:26Z"
+      },
+      "$.parent.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2015-04-12T13:42:42Z"
+      },
+      "$.parent.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.parent.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.source.created_at": {
+       "kind": "iso8601",
+       "sample": "2015-03-21T22:12:53Z"
+      },
+      "$.source.updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-09-07T08:14:26Z"
+      },
+      "$.source.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2015-04-12T13:42:42Z"
+      },
+      "$.source.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.source.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      }
+     },
+     "top_level_count": 86
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 170,
+    "latency_ms_max": 170,
+    "timestamp_fields": [
+     "$.created_at",
+     "$.has_projects",
+     "$.has_pull_requests",
+     "$.id",
+     "$.parent.created_at",
+     "$.parent.has_projects",
+     "$.parent.has_pull_requests",
+     "$.parent.pushed_at",
+     "$.parent.updated_at",
+     "$.pushed_at",
+     "$.source.created_at",
+     "$.source.has_projects",
+     "$.source.has_pull_requests",
+     "$.source.pushed_at",
+     "$.source.updated_at",
+     "$.updated_at"
+    ],
+    "historical_status": null
+   }
+  },
+  "tennisdata_couk_2026": {
+   "name": "tennis-data.co.uk 2026 ATP workbook",
+   "host_class": "aggregator",
+   "levels": [
+    "ATP"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "503 for every request during the overnight build; recheck",
+   "url_template": "http://www.tennis-data.co.uk/2026/2026.xlsx",
+   "rounds": [
+    {
+     "url": "http://www.tennis-data.co.uk/2026/2026.xlsx",
+     "requested_at_utc": "2026-09-12T04:28:01.969542+00:00",
+     "status": 503,
+     "latency_ms": 676,
+     "error": "HTTPError 503",
+     "etag": null,
+     "last_modified": null,
+     "content_type": "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet",
+     "bytes": 489,
+     "headers": {
+      "retry-after": "207",
+      "server": "nginx"
+     },
+     "raw_evidence": "raw/tennisdata_couk_2026.r0.gz",
+     "raw_sha256": "861e040b357dca6a3fba736197a479f7054cd38ddd02e4bda339b444cbf61af8",
+     "parse": "not-json (JSONDecodeError)",
+     "text_head": "<html>\n<head>\n<title>The page is temporarily unavailable</title>\n<style>\nbody { font-family: Tahoma, Verdana, Arial, sans-serif; }\n</style>\n</head>\n<body bgcolor=\"white\" text=\"black\">\n<table width=\"100%\" height=\"100%\">\n<tr>\n<td align=\"center\" valign=\"middle\">\nThe page you are looking for is temporar"
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     503
+    ],
+    "success_rounds": 0,
+    "total_rounds": 1,
+    "reliability": 0.0,
+    "latency_ms_min": 676,
+    "latency_ms_max": 676,
+    "timestamp_fields": [],
+    "historical_status": null
+   }
+  },
+  "gmalbert_mirror_repo": {
+   "name": "gmalbert/tennis-predictions mirror metadata",
+   "host_class": "aggregator",
+   "levels": [
+    "ALL"
+   ],
+   "answers": [],
+   "auth": "none",
+   "notes": "",
+   "url_template": "https://api.github.com/repos/gmalbert/tennis-predictions",
+   "rounds": [
+    {
+     "url": "https://api.github.com/repos/gmalbert/tennis-predictions",
+     "requested_at_utc": "2026-09-12T04:28:04.145869+00:00",
+     "status": 200,
+     "latency_ms": 132,
+     "content_type": "application/json; charset=utf-8",
+     "bytes": 6238,
+     "truncated": false,
+     "headers": {
+      "x-ratelimit-limit": "60",
+      "x-ratelimit-remaining": "53",
+      "x-ratelimit-reset": "1789190792",
+      "server": "github.com"
+     },
+     "etag": "W/\"b15d045a87a7e370813a9ae5778f76f8cb0074acf330908a165c45e5272f0e5b\"",
+     "last_modified": "Fri, 11 Sep 2026 05:03:54 GMT",
+     "raw_evidence": "raw/gmalbert_mirror_repo.r0.gz",
+     "raw_sha256": "8810e13a16abf73143eba1dc111e8c8618923f744f8a1b7efd65764d2bb72913",
+     "parse": "json",
+     "structure": {
+      "id": "int",
+      "node_id": "str",
+      "name": "str",
+      "full_name": "str",
+      "private": "bool",
+      "owner": {
+       "login": "str",
+       "id": "int",
+       "node_id": "str",
+       "avatar_url": "str",
+       "gravatar_id": "str",
+       "url": "str",
+       "html_url": "str",
+       "followers_url": "str",
+       "following_url": "str",
+       "gists_url": "str",
+       "starred_url": "str",
+       "subscriptions_url": "str",
+       "organizations_url": "str",
+       "repos_url": "str",
+       "events_url": "str",
+       "received_events_url": "str",
+       "type": "str",
+       "user_view_type": "str",
+       "site_admin": "bool"
+      },
+      "html_url": "str",
+      "description": "str",
+      "fork": "bool",
+      "url": "str",
+      "forks_url": "str",
+      "keys_url": "str",
+      "collaborators_url": "str",
+      "teams_url": "str",
+      "hooks_url": "str",
+      "issue_events_url": "str",
+      "events_url": "str",
+      "assignees_url": "str",
+      "branches_url": "str",
+      "tags_url": "str",
+      "blobs_url": "str",
+      "git_tags_url": "str",
+      "git_refs_url": "str",
+      "trees_url": "str",
+      "statuses_url": "str"
+     },
+     "timestamp_fields": {
+      "$.id": {
+       "kind": "epoch_s",
+       "sample": 1167757980
+      },
+      "$.created_at": {
+       "kind": "iso8601",
+       "sample": "2026-02-26T16:45:28Z"
+      },
+      "$.updated_at": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T05:03:54Z"
+      },
+      "$.pushed_at": {
+       "kind": "iso8601",
+       "sample": "2026-09-11T05:03:51Z"
+      },
+      "$.has_projects": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      },
+      "$.has_pull_requests": {
+       "kind": "named_but_unparsed",
+       "sample": true
+      }
+     },
+     "top_level_count": 84
+    }
+   ],
+   "rollup": {
+    "status_codes": [
+     200
+    ],
+    "success_rounds": 1,
+    "total_rounds": 1,
+    "reliability": 1.0,
+    "latency_ms_min": 132,
+    "latency_ms_max": 132,
+    "timestamp_fields": [
+     "$.created_at",
+     "$.has_projects",
+     "$.has_pull_requests",
+     "$.id",
+     "$.pushed_at",
+     "$.updated_at"
+    ],
+    "historical_status": null
+   }
+  }
+ },
+ "robots": {
+  "api.elections.kalshi.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "api.github.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 106
+  },
+  "api.itf-production.sports-data.stadion.io": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 919
+  },
+  "api.sofascore.app": {
+   "status": 200,
+   "disallow_star": [
+    "/"
+   ],
+   "bytes": 34
+  },
+  "api.sofascore.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 48
+  },
+  "api.tennisapi.io": {
+   "status": 200,
+   "disallow_star": [
+    "/api/",
+    "/cdn-cgi/l/email-protection"
+   ],
+   "bytes": 617
+  },
+  "api.wtatennis.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "ausopen.com": {
+   "status": 200,
+   "disallow_star": [
+    "/core/",
+    "/profiles/",
+    "/README.md",
+    "/composer/Metapackage/README.txt",
+    "/composer/Plugin/ProjectMessage/README.md",
+    "/composer/Plugin/Scaffold/README.md",
+    "/composer/Plugin/VendorHardening/README.txt",
+    "/composer/Template/README.txt",
+    "/modules/README.txt",
+    "/sites/README.txt",
+    "/themes/README.txt",
+    "/admin/",
+    "/comment/reply/",
+    "/filter/tips",
+    "/node/add/",
+    "/search/",
+    "/user/register",
+    "/user/password",
+    "/user/login",
+    "/user/logout",
+    "/media/oembed",
+    "/*/media/oembed",
+    "/index.php/admin/",
+    "/index.php/comment/reply/",
+    "/index.php/filter/tips",
+    "/index.php/node/add/",
+    "/index.php/search/",
+    "/index.php/user/password",
+    "/index.php/user/register",
+    "/index.php/user/login",
+    "/index.php/user/logout",
+    "/index.php/media/oembed",
+    "/index.php/*/media/oembed",
+    "/search"
+   ],
+   "bytes": 2111
+  },
+  "itf-production.sports-data.stadion.io": {
+   "status": null,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "live.itftennis.com": {
+   "status": 200,
+   "disallow_star": [],
+   "bytes": 53859
+  },
+  "local-global.flashscore.ninja": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "prod-public-api.livescore.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 548
+  },
+  "raw.githubusercontent.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 14
+  },
+  "site.api.espn.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 387
+  },
+  "sports.core.api.espn.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 520
+  },
+  "widgets.itf-production.sports-data.stadion.io": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 111
+  },
+  "www.atptour.com": {
+   "status": 200,
+   "disallow_star": [
+    "/sitecore/",
+    "*/ajax/*",
+    "/*/photos/photo-filter-results",
+    "/*/scores/archive/*",
+    "/*/search-results",
+    "/*/video/video-filter-results",
+    "/*/stats/player-tendencies",
+    "/*/scores/match-stats",
+    "/*/scores/second-screen"
+   ],
+   "bytes": 2183
+  },
+  "www.itftennis.com": {
+   "status": 200,
+   "disallow_star": [
+    "/umbraco/"
+   ],
+   "bytes": 126
+  },
+  "www.protennislive.com": {
+   "status": 404,
+   "disallow_star": [],
+   "bytes": 1245
+  },
+  "www.rolandgarros.com": {
+   "status": 200,
+   "disallow_star": [
+    "/admin",
+    "/maintenance"
+   ],
+   "bytes": 77
+  },
+  "www.sofascore.com": {
+   "status": 403,
+   "disallow_star": [],
+   "bytes": 48
+  },
+  "www.tennis-data.co.uk": {
+   "status": null,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "www.tennisexplorer.com": {
+   "status": 200,
+   "disallow_star": [
+    "/redirect/",
+    "/terms-of-use/",
+    "/contact/"
+   ],
+   "bytes": 132
+  },
+  "www.thesportsdb.com": {
+   "status": 200,
+   "disallow_star": [
+    "/nfo/",
+    "/nfo.php"
+   ],
+   "bytes": 379
+  },
+  "www.usopen.org": {
+   "status": null,
+   "disallow_star": [],
+   "bytes": 0
+  },
+  "www.wimbledon.com": {
+   "status": 200,
+   "disallow_star": [
+    "/en_GB/scores/2025/schedule/pdf/",
+    "/en_GB/wimbledonfoundation/",
+    "/en_GB/visitandtickets/",
+    "/en_GB/amexverify/",
+    "/en_GB/mywimbledon/",
+    "/matchvideo/",
+    "/webview/",
+    "/s/",
+    "/api/",
+    "/author/",
+    "/testwim",
+    "/mobile",
+    "/zh_CN"
+   ],
+   "bytes": 500
+  }
+ },
+ "finished_at": "2026-09-12T04:28:05.779286+00:00"
+}
