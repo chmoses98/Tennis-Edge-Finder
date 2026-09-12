@@ -60,3 +60,24 @@ weekly-refreshed match data does not carry. Candidate directions with real upsid
 features on Challenger/ITF where the market is thinner (Kalshi Challenger LL 0.604 vs ITF 0.525 suggests ITF is
 already efficient), (4) derivative markets (totals/spreads) where the DP distribution might beat a crowd that mostly
 trades the winner -- untested for lack of settled derivative histories with a clean pregame quote.
+
+
+## Wave 3 addendum: what the models are worth against Kalshi
+
+Measured on 2,242 settled Kalshi match-winner markets, 2026-08-25..2026-09-11, walk-forward ratings.
+
+| forecaster | Brier |
+|---|---|
+| Kalshi mid | **0.1865** |
+| Elo (Model 1) | 0.2064 |
+| Gen-2 blended (Model 3) | 0.2069 |
+
+Two things follow. First, the market is better by about two Brier points and no subset was found where
+that reverses -- including subsets that returned a profit. Second, Gen-2's Wave 2 advantage over Elo does
+not appear here: on this board, dominated by ITF and Challenger, the two are indistinguishable and Gen-2
+is fractionally behind. That is consistent with Wave 2's own finding that Gen-2 only helps where serve
+evidence exists, and with Wave 3's measurement that ITF is where our disagreement is actively harmful.
+
+Model 4 (market-conditioned) has no role in this lane: for a match-winner contract its winner probability
+IS the market's, so it cannot disagree with the price. It remains a derivative-pricing model, and Kalshi's
+derivative board remains almost empty.

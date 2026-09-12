@@ -1,7 +1,17 @@
 # tennis-edge-finder
 
 Free-data tennis projection and Kalshi tennis-market research platform. **Status: research / market capture.
-Real-money authority OFF. No model has shown edge against bookmaker prices; see MORNING_REPORT.md.**
+Real-money authority OFF. No model has shown edge against bookmaker prices, and Wave 3 found no subset of
+Kalshi tennis markets where our probability is more accurate than the price -- including the subsets that
+returned a profit. See WAVE3_SELECTIVE_EDGE_REPORT.md and MORNING_REPORT.md.**
+
+### Selective mispricing detector
+
+`scripts/ops/shadow_board.py` prices the live board, applies `selector_v1`, and returns PASS on most of it.
+The three decisions are PASS, WATCH and SHADOW_BET; there is no fourth, and no code path in this repository
+expresses a real wager. A SHADOW_BET means an opportunity survived every check we know how to run, which is
+a statement about our checks rather than about the market -- every row says so in its own text. See
+`docs/SELECTIVE_EDGE_PROTOCOL.md`, `docs/OPPORTUNITY_SCHEMA.md` and `research/SELECTOR_FAILURE_MODES.md`.
 
 ### First-ball truth
 
@@ -19,6 +29,9 @@ ITF and qualifying have no reachable source and fail closed as START_UNKNOWN. Re
   from ONE exact match distribution (DP engine validated against Monte Carlo), checks probability invariants,
   and writes an append-only, hash-chained prediction ledger with the market quote beside every projection.
 * Benchmarks against Pinnacle closing-style prices, fits walk-forward hybrids, reports disagreement buckets.
+* Scores settled Kalshi markets walk-forward (`data/processed/asof/`: every player's state after each match,
+  read strictly before the match date) and studies WHEN a disagreement with the price is worth anything.
+  The answer so far is "at ITF level, less than nothing".
 
 ## Run (automated)
 `.github/workflows/tennis-run.yml` (cron, push to `.run-trigger`, or dispatch) rebuilds, refits, prices, settles

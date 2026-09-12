@@ -95,3 +95,28 @@ evidence. Do not ingest it.
 The feed is **results-only**: no serve statistics, no reliable surface, no `best_of` (ESPN reports the
 event's regulation length, which is wrong for qualifying, so the field is deliberately left empty). It can
 refresh Elo-family ratings. It cannot feed Gen-2, so it does not close TENNIS-14.
+
+
+## Serve statistics: where they actually stop (2026-09-12)
+
+Wave 3 corrected a belief carried since Wave 2. Serve statistics are **not** uniformly frozen:
+
+| tour | latest match with serve statistics | source | levels |
+|---|---|---|---|
+| ATP | **2026-09-01** | TML Challenger mirror | 2,275 Challenger + 381 ITF matches since 2026-06-01 |
+| WTA | **2026-04-27** | frozen Sackmann fork | none since |
+
+The ATP coverage lands exactly where Kalshi lists markets, so the structural model is NOT running blind on
+the men's board. The gap is a WTA gap.
+
+A bounded search for a current, free, legally usable WTA serve-statistics source (Wave 3 Phase 18,
+`scripts/data/probe_serve_sources.py`, published to `data/sources/serve_probe/`) found none:
+
+* ESPN's scoreboard carries results only; its `summary` endpoint returns 400 for tennis.
+* tennisabstract.com's robots.txt disallows `/jsmatches/`, `/jsplayers/` and `/jsfrags/` -- the paths the
+  data lives on. Not usable regardless of what it contains.
+* api.wtatennis.com returns 404.
+* Of six recently-pushed WTA repositories, two ship Sackmann-shaped CSVs with serve columns and neither
+  has a 2026 file; they are copies of the same frozen upstream.
+
+TENNIS-14 stays red. It is red for the women only, and that is now recorded rather than implied.

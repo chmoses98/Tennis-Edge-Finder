@@ -52,3 +52,28 @@ PREGAME PROJECTIONS (run_tennis, ledger) → DETECT ACTUAL START (**needs live-s
 ledger/close.py**) → FREEZE PREGAME CORPUS → DETECT FINAL RESULT (Sackmann/TML refresh, Kalshi
 expiration_value as secondary) → INGEST SPORTS TRUTH → INGEST KALSHI TERMINAL SETTLEMENT (capture
 settlements stream) → SELECT CANONICAL CLOSE (candles/quotes before cutoff) → SCORE MODEL → CLV → REPORTS.
+
+
+## Wave 3: the selective layer
+
+```
+capture / discovery ──► fair.py ──────────────► Opportunity ──► qualify_v1 ──► selector_v1 ──► PASS
+   (prices, depth)      (13 configs, no          (immutable,      (12 hard        (7 gates)     WATCH
+                         prices as inputs)        fingerprinted)   filters)                     SHADOW_BET
+        ▲                    ▲                         │
+        │                    │                         ▼
+   asof_<tour>.json.gz   ratings + Gen-2        data/research/opportunities/
+   (walk-forward, read   state per checkpoint    (append-only, hash-chained)
+    strictly before D)
+```
+
+`tennis_edge/models/fair.py` is the single place a fair probability is computed, so the research pipeline
+and the live board cannot drift apart. It imports nothing that touches prices; `tests/test_gen2.py` walks
+the import graph and fails if Model 3 can reach a price-bearing module.
+
+`tennis_edge/models/asof.py` exists because the production rating artifact is an END state, and scoring a
+July market with it would let July inform July. A market on day D reads the last checkpoint strictly before
+D -- before the DATE, not the timestamp, so a player who plays twice in a day contributes neither match.
+
+`tennis_edge/selector/model.py` enforces the chronology in code: fitting outside the declared window
+raises, and fitting a frozen selector raises. There is no flag to turn either off.

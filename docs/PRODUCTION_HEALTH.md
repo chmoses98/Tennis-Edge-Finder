@@ -52,3 +52,17 @@ TENNIS-6, TENNIS-8 and TENNIS-10:
 
 Thresholds were not moved to accommodate any of this. The gates that fail, fail because the underlying
 coverage does not exist yet, and that is the information they are meant to carry.
+
+
+## Wave 3 additions
+
+* **TENNIS-14 (fundamental staleness)** is red for the WOMEN only. ATP serve statistics reach 2026-09-01
+  through the TML Challenger mirror; WTA stops at 2026-04-27 and a bounded search found no free, permitted
+  replacement (`docs/DATA_SOURCES.md`). Results for both tours are current to 2026-09-11 via ESPN, so the
+  Elo family is fresh on both sides and only the structural model is starved.
+* **Identity confidence is now graded.** An exact full-name match carries 1.0 (0.9 if the player has not
+  appeared in two years); a compound-surname alias carries 0.9. Qualification requires >= 0.95, so an
+  aliased identity can restore board coverage but can never drive a SHADOW_BET.
+* **The opportunity store** (`data/research/opportunities/`) is append-only and hash-chained, and
+  `OpportunityStore.verify_chain()` checks both the chain and each row's own fingerprint. It belongs in the
+  same daily integrity sweep as the prediction ledger and the first-ball store.
