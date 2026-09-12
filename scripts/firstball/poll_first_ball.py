@@ -100,7 +100,15 @@ def main():
         now = datetime.now(timezone.utc)
         items, diag = build_watchlist(disc, now=now, capture_root=a.capture)
         items = [it for it in items if it.match_id not in resolved]
-        interval, tiers = poll_interval(items, now)
+        # what a source last SAID about each match outranks what the exchange scheduled: a match seen
+        # still not started, past its nominal time, is the most urgent thing on the board
+        last_state = {}
+        for o in store.observations():
+            cur = last_state.get(o.match_id)
+            if cur is None or o.observed_at_utc > cur[1]:
+                last_state[o.match_id] = (o.state, o.observed_at_utc)
+        states = {k: v[0] for k, v in last_state.items()}
+        interval, tiers = poll_interval(items, now, states)
         interval = max(interval, a.min_interval)
         print(f"[{now:%H:%M:%S}] watch={len(items)} tiers={tiers} interval={interval}s "
               f"(discovery {os.path.basename(disc)}, {diag})", flush=True)

@@ -50,10 +50,23 @@ class WatchItem:
     competition: str
     tickers: tuple
 
-    def tier(self, now: datetime) -> str:
-        if self.scheduled_utc is None:
+    def tier(self, now: datetime, observed_state: str | None = None) -> str:
+        """How urgently to poll this match.
+
+        `observed_state` is what a live-score source last said about it, and it dominates the schedule.
+        A match we have SEEN still not started, whose nominal time has already passed, is the single most
+        urgent thing on the board: it can begin at any second and its schedule has already been proven
+        worthless. Tiering that case off the nominal alone put a delayed Grand Slam semifinal on a
+        five-minute cadence on 2026-09-11 and cost a confidence-B bracket by 61 seconds -- the exact
+        failure this wave exists to prevent.
+        """
+        if observed_state in ("IN", "POST", "NO_PLAY"):
+            return TIER_COLD                       # nothing left to bracket; the poller drops it anyway
+        dt = (self.scheduled_utc - now).total_seconds() if self.scheduled_utc else None
+        if observed_state == "PRE" and (dt is None or dt <= 1800):
+            return TIER_HOT                        # seen not-started, and due or overdue
+        if dt is None:
             return TIER_WARM
-        dt = (self.scheduled_utc - now).total_seconds()
         if not self.nominal_reliable:
             # the nominal is not a start time; play may already have begun, so stay warm across the window
             return TIER_HOT if -3600 <= dt <= 3 * 3600 else TIER_WARM
@@ -169,12 +182,17 @@ def build_watchlist(discovery_dir: str, *, now: datetime | None = None, capture_
     return items, diag
 
 
-def poll_interval(items: list[WatchItem], now: datetime | None = None) -> tuple[int, dict]:
-    """Cadence for the next pass: the most urgent tier any watched match is in."""
+def poll_interval(items: list[WatchItem], now: datetime | None = None,
+                  states: dict | None = None) -> tuple[int, dict]:
+    """Cadence for the next pass: the most urgent tier any watched match is in.
+
+    `states` maps match_id -> the last state a live-score source reported, so that what we have actually
+    SEEN outranks what the exchange scheduled."""
     now = now or datetime.now(timezone.utc)
+    states = states or {}
     counts = {TIER_HOT: 0, TIER_WARM: 0, TIER_COLD: 0}
     for it in items:
-        counts[it.tier(now)] += 1
+        counts[it.tier(now, states.get(it.match_id))] += 1
     for tier in (TIER_HOT, TIER_WARM, TIER_COLD):
         if counts[tier]:
             return TIER_SECONDS[tier], counts

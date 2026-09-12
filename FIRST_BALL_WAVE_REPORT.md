@@ -195,20 +195,37 @@ No threshold was moved to accommodate any of this.
 
 ## 14. Live prospective proof
 
-The full path ran against live data end to end: live-universe watchlist → live-score fetch → fail-closed
-mapping → immutable observation → reconciliation → truth → publication to `tennis-data`, then
-classification, close, CLV and horizons through `settle_ledger`, then the health gates.
+**The transition was captured on live data.** A US Open semifinal, scheduled hours earlier and delayed
+behind a long preceding match, was held under watch in the pre-match state for over two hours and then
+observed starting:
 
-Observed in this session: **264 immutable observations across 120 PRE, 100 IN and 44 POST readings**,
-110 markets bound at affinity 1.0 with zero ambiguity, and a US Open semifinal held under watch in the
-PRE state with its lower bound advancing pass by pass, exactly as designed.
+| reading | time (UTC) | source status |
+|---|---|---|
+| last pre-match | 2026-09-11T23:42:38 | `Scheduled` |
+| first in-progress | 2026-09-11T23:46:39 | `In Progress` |
 
-**No PRE-to-IN transition completed while the poller watched during this session, so no end-to-end
-first-ball detection is claimed and no strict (A/B) truth exists yet.** Every truth written so far is
-confidence C: either one-sided (play was already under way when watching began) or a lower bound on a
-match that has not started. The conductor is left running with a cron backstop so the first future
-genuine transition proves the path naturally, and `settle_ledger` reclassifies every affected ledger row
-from it automatically.
+The full path ran: live-universe watchlist → live-score fetch → fail-closed mapping → immutable
+observation → reconciliation → truth → publication to `tennis-data`, then classification, close, CLV and
+horizons through settlement, then the health gates. 1,262 immutable observations were recorded across
+pre-match, in-progress and finished readings, 110 markets bound at affinity 1.0 with zero ambiguity, and
+the preceding semifinal was separately observed moving from in-progress to Final, which confirms the
+whole state machine against live data.
+
+**The bracket came out at confidence C, not B, and the reason is worth recording.** The raw gap was
+240.6 s; with the 120 s feed-lag allowance the bracket is 360.6 s, which exceeds the 300 s ceiling for B
+by 61 seconds. The cause was the polling cadence, and it is a design defect this run exposed: the tier
+was chosen from the Kalshi nominal time, and a match whose nominal had passed two hours earlier fell
+into the five-minute WARM tier. That is precisely backwards. A match we have SEEN still not started,
+whose schedule has already been proven worthless, is the most urgent thing on the board.
+
+Fixed: what a source last reported now outranks what the exchange scheduled. A watched match observed
+pre-match and at or past its nominal time is polled at 60 s, one observed in progress drops to cold, and
+a match with no nominal at all is polled hot rather than warm. On the same transition this would have
+produced a bracket of roughly 60 to 120 s plus the allowance, comfortably inside B.
+
+**So: the path is proven end to end on a real delayed match, and the first STRICT (A/B) truth is not yet
+claimed.** No strict close or strict CLV row exists yet. The conductor keeps running with a cron
+backstop, and every affected ledger row is reclassified automatically as truth arrives.
 
 ## 15. Unresolved blockers
 
@@ -218,7 +235,8 @@ from it automatically.
    during the probe window. Re-run during peak ITF hours and past the consent gate.
 3. ~~Doubles coverage unverified.~~ **Resolved:** ESPN carries doubles under a `roster` shape the adapter misread. Fixed and tested; a pair binds to a Kalshi-style team name at affinity 0.95.
 4. **Feed lag is assumed, not measured.** The 120 s allowance is a conservative placeholder; measuring
-   ESPN's real latency against a second independent source would tighten every bracket.
+   ESPN's real latency against a second independent source would tighten every bracket. On the observed
+   transition it was the difference between confidence B and C.
 5. **Only one provider is wired in,** so cross-provider reconciliation is exercised only in tests.
 6. **No strict CLV row exists yet.** Nothing is wrong; the coverage simply does not exist until matches
    are bracketed going forward.

@@ -358,3 +358,16 @@ def test_27_a_doubles_team_binds_to_a_kalshi_style_team_name():
     from tennis_edge.firstball.mapping import affinity
     assert affinity("Luisa Stefani / Neal Skupski", "Stefani/Skupski") >= 0.9
     assert affinity("Luisa Stefani / Neal Skupski", "Erin Routliffe / Lloyd Glasspool") == 0.0
+
+
+def test_28_a_match_seen_unstarted_past_its_nominal_time_goes_hot():
+    """The delayed-match case, which is the whole reason this subsystem exists."""
+    from tennis_edge.firstball.watchlist import TIER_COLD, TIER_HOT, TIER_WARM, WatchItem, poll_interval
+    overdue = WatchItem("m", "A", "B", False, SCHED - timedelta(hours=2), True, "ATP", "GRAND_SLAM", "US Open", ())
+    assert overdue.tier(SCHED) == TIER_WARM                       # schedule alone: five-minute cadence
+    assert overdue.tier(SCHED, "PRE") == TIER_HOT                 # seen not started: one-minute cadence
+    assert overdue.tier(SCHED, "IN") == TIER_COLD                 # already bracketed, stop hammering
+    assert poll_interval([overdue], SCHED, {"m": "PRE"})[0] == 60
+    assert poll_interval([overdue], SCHED)[0] == 300
+    no_nominal = WatchItem("n", "A", "B", False, None, True, "ATP", "GRAND_SLAM", "US Open", ())
+    assert no_nominal.tier(SCHED, "PRE") == TIER_HOT
