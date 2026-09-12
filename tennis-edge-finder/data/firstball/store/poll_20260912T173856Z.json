@@ -1,0 +1,59 @@
+{
+ "run_id": "20260912T173856Z",
+ "started_at": "2026-09-12T17:38:56.630200+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 312,
+ "truths_written": 6,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP12SORKOI-2": {
+   "confidence": "B",
+   "bracket_s": 190.9346,
+   "first_ball": "2026-09-12T17:37:23.280649+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12SORKOI-1": {
+   "confidence": "B",
+   "bracket_s": 190.9346,
+   "first_ball": "2026-09-12T17:37:23.280649+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12MIMDOL-2": {
+   "confidence": "B",
+   "bracket_s": 190.9346,
+   "first_ball": "2026-09-12T17:37:23.280649+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12MIMDOL-1": {
+   "confidence": "B",
+   "bracket_s": 190.9346,
+   "first_ball": "2026-09-12T17:37:23.280649+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP12SORKOI": {
+   "confidence": "B",
+   "bracket_s": 190.9346,
+   "first_ball": "2026-09-12T17:37:23.280649+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP12MIMDOL": {
+   "confidence": "B",
+   "bracket_s": 190.9346,
+   "first_ball": "2026-09-12T17:37:23.280649+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 312,
+  "UNMATCHED": 36
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-12T17:48:26.329441+00:00"
+}
