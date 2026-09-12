@@ -1,0 +1,30 @@
+{
+ "run_id": "20260912T172736Z",
+ "since": "2026-08-01",
+ "until": "2026-09-12",
+ "step_days": 4,
+ "http": {
+  "200": 24
+ },
+ "source": "ESPN site API public scoreboard",
+ "note": "results only: no serve statistics, no surface, ESPN-local player ids",
+ "finished_at": "2026-09-12T17:28:21.191382+00:00",
+ "files": {
+  "espn_matches_ATP_2026.csv.gz": 623,
+  "espn_matches_WTA_2026.csv.gz": 871
+ },
+ "rows_before_dedupe": 9966,
+ "rows": 1494,
+ "summary": {
+  "rows": 1494,
+  "by_tour": {
+   "WTA": 871,
+   "ATP": 623
+  },
+  "date_min": "20260725",
+  "date_max": "20260912",
+  "tournaments": 20,
+  "skipped": {},
+  "parsed_at": "2026-09-12T17:28:21.201117+00:00"
+ }
+}
