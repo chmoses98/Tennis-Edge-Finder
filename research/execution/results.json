@@ -1,0 +1,128 @@
+{
+ "generated_at": "2026-09-12T17:09:00.100622+00:00",
+ "window": [
+  "2026-08-25",
+  "2026-09-06"
+ ],
+ "n_rows": 3102,
+ "note": "discovery+validation only; the holdout is not read here",
+ "sensitivity": [
+  {
+   "subset": "positive edge",
+   "worse_execution_cents": 0,
+   "n": 1297,
+   "mean_pnl": -0.008943716268311495,
+   "roi": -0.02312599681020736,
+   "ci": [
+    -0.031527370855821135,
+    0.013711642251349274
+   ]
+  },
+  {
+   "subset": "positive edge",
+   "worse_execution_cents": 1,
+   "n": 1297,
+   "mean_pnl": -0.018989976869699325,
+   "roi": -0.047859627305054164,
+   "ci": [
+    -0.04156534309946031,
+    0.003679645335389351
+   ]
+  },
+  {
+   "subset": "positive edge",
+   "worse_execution_cents": 2,
+   "n": 1297,
+   "mean_pnl": -0.029074787972243655,
+   "roi": -0.07145970324610111,
+   "ci": [
+    -0.05164263685427912,
+    -0.006359676175790298
+   ]
+  },
+  {
+   "subset": "positive edge",
+   "worse_execution_cents": 3,
+   "n": 1297,
+   "mean_pnl": -0.0391750192752506,
+   "roi": -0.09395166509495023,
+   "ci": [
+    -0.06175809560524289,
+    -0.016460678488820376
+   ]
+  },
+  {
+   "subset": "positive edge",
+   "worse_execution_cents": 5,
+   "n": 1297,
+   "mean_pnl": -0.059406322282189686,
+   "roi": -0.13587867031126005,
+   "ci": [
+    -0.08193523515805708,
+    -0.036699113338473414
+   ]
+  },
+  {
+   "subset": "positive robust edge",
+   "worse_execution_cents": 0,
+   "n": 1022,
+   "mean_pnl": -0.010958904109589048,
+   "roi": -0.030172413793103463,
+   "ci": [
+    -0.03724143835616439,
+    0.015401663405088056
+   ]
+  },
+  {
+   "subset": "positive robust edge",
+   "worse_execution_cents": 1,
+   "n": 1022,
+   "mean_pnl": -0.020998043052837593,
+   "roi": -0.056257536832171176,
+   "ci": [
+    -0.0473001467710372,
+    0.005343444227005859
+   ]
+  },
+  {
+   "subset": "positive robust edge",
+   "worse_execution_cents": 2,
+   "n": 1022,
+   "mean_pnl": -0.031095890410958928,
+   "roi": -0.08111695339220996,
+   "ci": [
+    -0.05737891389432487,
+    -0.004735812133072429
+   ]
+  },
+  {
+   "subset": "positive robust edge",
+   "worse_execution_cents": 3,
+   "n": 1022,
+   "mean_pnl": -0.04124266144814093,
+   "roi": -0.10481163744871322,
+   "ci": [
+    -0.06753620352250493,
+    -0.014872553816046987
+   ]
+  },
+  {
+   "subset": "positive robust edge",
+   "worse_execution_cents": 5,
+   "n": 1022,
+   "mean_pnl": -0.061545988258317044,
+   "roi": -0.14873492551430603,
+   "ci": [
+    -0.08784931506849317,
+    -0.03512695694716244
+   ]
+  }
+ ],
+ "bet_up_to": {
+  "n": 1297,
+  "median_bet_up_to": 0.47,
+  "median_ask": 0.35,
+  "median_headroom_cents": 8.000000000000002
+ },
+ "one_tick_fragile_share": 0.07555898226676946
+}

@@ -1,0 +1,35 @@
+{
+ "built_at": "2026-09-12T17:03:29.383877+00:00",
+ "discovery": "20260911T063759Z",
+ "fair_version": "fair_v1",
+ "pregame_hours": 7.0,
+ "funnel": {
+  "events": 3921,
+  "linked": 2242,
+  "unmapped_identity": 345,
+  "non_binary_settlement": 49,
+  "no_prestart_quote": 1284,
+  "not_two_parsed_sides": 1
+ },
+ "rows": 4484,
+ "matches": 2242,
+ "perturbations": [
+  "base",
+  "surface_pool_low",
+  "surface_pool_high",
+  "shrink_low",
+  "shrink_high",
+  "surface_dev_loose",
+  "surface_dev_tight",
+  "blend_structural",
+  "blend_rating",
+  "recency_hard",
+  "recency_soft",
+  "corner_structural",
+  "corner_rating"
+ ],
+ "date_range": [
+  "2026-08-25",
+  "2026-09-11"
+ ]
+}

@@ -73,16 +73,18 @@ def expected_value(fair_yes: float, yes_ask: float | None, no_ask: float | None,
     return out
 
 
-def breakeven_price(fair: float, sched: FeeSchedule = FeeSchedule(), role: str = "taker", contracts: float = 100.0) -> float:
-    """Highest price at which buying the side with win-probability `fair` still has non-negative EV after fees.
-    ("BET UP TO" in the owner-facing output.) Solved by bisection on price."""
-    lo, hi = 0.01, 0.99
-    coef = TAKER_COEF if role == "taker" else (MAKER_COEF if sched.maker_applies else 0.0)
-    for _ in range(60):
-        mid = 0.5 * (lo + hi)
-        fee = coef * sched.fee_multiplier * mid * (1 - mid)
-        if fair - mid - fee >= 0:
-            lo = mid
-        else:
-            hi = mid
-    return math.floor(lo * 100) / 100.0
+def breakeven_price(fair: float, sched: FeeSchedule = FeeSchedule(), role: str = "taker", contracts: float = 1.0) -> float:
+    """Highest price at which buying the side with win-probability `fair` still has non-negative EV after
+    fees. ("BET UP TO" in the owner-facing output.)
+
+    Searched over whole cents against the REAL fee, which Kalshi rounds UP to the cent. An earlier
+    version bisected on the unrounded fee and then floored the answer, which could name a price one cent
+    above the true break-even: at a fair value of 30c it returned 28c, where the rounded-up fee makes the
+    trade exactly zero-minus. A "bet up to" that is not actually payable is worse than no number at all.
+    """
+    fee_fn = taker_fee if role == "taker" else maker_fee
+    for cents in range(99, 0, -1):
+        p = cents / 100.0
+        if fair - p - fee_fn(p, contracts, sched) / contracts >= 0:
+            return p
+    return 0.0

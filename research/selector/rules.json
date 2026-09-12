@@ -1,0 +1,389 @@
+{
+ "generated_at": "2026-09-12T17:10:04.857975+00:00",
+ "method": "derived on discovery, checked on validation, holdout read once at the end",
+ "block_sizes": {
+  "discovery": 2112,
+  "validation": 990,
+  "holdout": 1382
+ },
+ "rules": {
+  "R1_moderate_nonitf_evenmoney": {
+   "rule": "fee-adjusted edge 3-15c, not an ITF event, ask between 35c and 65c, and the market has not already drifted toward our side in the last six hours",
+   "blocks": {
+    "discovery": {
+     "block": "discovery",
+     "n": 85,
+     "selection_rate": 0.04024621212121212,
+     "hit_rate": 0.6352941176470588,
+     "avg_ask": 0.49682352941176466,
+     "claimed_edge": 0.08415116809025486,
+     "realised_edge": 0.11847058823529415,
+     "ci": [
+      0.02047058823529412,
+      0.21411764705882355
+     ],
+     "roi": 0.22922831777828365,
+     "model_brier": 0.2202257370050659,
+     "market_brier": 0.23649588235294117,
+     "model_log_loss": 0.6320466411082897,
+     "market_log_loss": 0.6657765682475543,
+     "worst_drawdown": -5.349999999999999
+    },
+    "validation": {
+     "block": "validation",
+     "n": 18,
+     "selection_rate": 0.01818181818181818,
+     "hit_rate": 0.6111111111111112,
+     "avg_ask": 0.43555555555555553,
+     "claimed_edge": 0.08292565773539556,
+     "realised_edge": 0.15555555555555556,
+     "ci": [
+      -0.060013888888888894,
+      0.36166666666666664
+     ],
+     "roi": 0.34146341463414626,
+     "model_brier": 0.21202128280718915,
+     "market_brier": 0.24023472222222222,
+     "model_log_loss": 0.6158433225709911,
+     "market_log_loss": 0.6726882978139606,
+     "worst_drawdown": -1.3900000000000001
+    },
+    "holdout": {
+     "block": "holdout",
+     "n": 41,
+     "selection_rate": 0.029667149059334298,
+     "hit_rate": 0.43902439024390244,
+     "avg_ask": 0.4624390243902439,
+     "claimed_edge": 0.07898458452534649,
+     "realised_edge": -0.04341463414634149,
+     "ci": [
+      -0.19854268292682928,
+      0.10806097560975589
+     ],
+     "roi": -0.08998988877654202,
+     "model_brier": 0.27115052523774125,
+     "market_brier": 0.24762621951219513,
+     "model_log_loss": 0.7399607865688393,
+     "market_log_loss": 0.6884557533610248,
+     "worst_drawdown": -4.0600000000000005
+    }
+   },
+   "survived_validation": true
+  },
+  "R2_moderate_edge_only": {
+   "rule": "fee-adjusted edge between 3c and 15c and nothing else",
+   "blocks": {
+    "discovery": {
+     "block": "discovery",
+     "n": 487,
+     "selection_rate": 0.23058712121212122,
+     "hit_rate": 0.4188911704312115,
+     "avg_ask": 0.39092402464065706,
+     "claimed_edge": 0.08065122484099216,
+     "realised_edge": 0.010082135523613955,
+     "ci": [
+      -0.02852156057494867,
+      0.04911704312114989
+     ],
+     "roi": 0.02466221306946605,
+     "model_brier": 0.19467636787760553,
+     "market_brier": 0.18885790554414783,
+     "model_log_loss": 0.5733300783881677,
+     "market_log_loss": 0.552434277650207,
+     "worst_drawdown": -12.590000000000005
+    },
+    "validation": {
+     "block": "validation",
+     "n": 216,
+     "selection_rate": 0.21818181818181817,
+     "hit_rate": 0.39351851851851855,
+     "avg_ask": 0.3649074074074074,
+     "claimed_edge": 0.08279938858170198,
+     "realised_edge": 0.010648148148148136,
+     "ci": [
+      -0.047966435185185195,
+      0.06893518518518518
+     ],
+     "roi": 0.02781136638452233,
+     "model_brier": 0.20431703869813148,
+     "market_brier": 0.19835983796296294,
+     "model_log_loss": 0.5945574799974521,
+     "market_log_loss": 0.582860683398132,
+     "worst_drawdown": -6.039999999999999
+    },
+    "holdout": {
+     "block": "holdout",
+     "n": 308,
+     "selection_rate": 0.22286541244573083,
+     "hit_rate": 0.37987012987012986,
+     "avg_ask": 0.38003246753246755,
+     "claimed_edge": 0.07955035509993182,
+     "realised_edge": -0.017922077922077926,
+     "ci": [
+      -0.06993506493506493,
+      0.03315178571428566
+     ],
+     "roi": -0.045053868756121454,
+     "model_brier": 0.22366968739506268,
+     "market_brier": 0.2092024350649351,
+     "model_log_loss": 0.6370770030218189,
+     "market_log_loss": 0.6045426784209283,
+     "worst_drawdown": -10.69
+    }
+   },
+   "survived_validation": true
+  },
+  "R3_nonitf_only": {
+   "rule": "any positive fee-adjusted edge outside ITF",
+   "blocks": {
+    "discovery": {
+     "block": "discovery",
+     "n": 391,
+     "selection_rate": 0.18513257575757575,
+     "hit_rate": 0.45268542199488493,
+     "avg_ask": 0.41874680306905376,
+     "claimed_edge": 0.09422481534816618,
+     "realised_edge": 0.0156777493606138,
+     "ci": [
+      -0.026703324808184156,
+      0.059386828644501254
+     ],
+     "roi": 0.035875226780593406,
+     "model_brier": 0.20261672162987082,
+     "market_brier": 0.18873350383631715,
+     "model_log_loss": 0.5939853156810777,
+     "market_log_loss": 0.5545125572768093,
+     "worst_drawdown": -11.420000000000005
+    },
+    "validation": {
+     "block": "validation",
+     "n": 143,
+     "selection_rate": 0.14444444444444443,
+     "hit_rate": 0.4755244755244755,
+     "avg_ask": 0.39545454545454545,
+     "claimed_edge": 0.08732460410810983,
+     "realised_edge": 0.061398601398601385,
+     "ci": [
+      -0.014895104895104889,
+      0.13678496503496504
+     ],
+     "roi": 0.14826072272880775,
+     "model_brier": 0.21452441357486204,
+     "market_brier": 0.21776695804195803,
+     "model_log_loss": 0.6164189210650524,
+     "market_log_loss": 0.6207817708694798,
+     "worst_drawdown": -2.6000000000000005
+    },
+    "holdout": {
+     "block": "holdout",
+     "n": 220,
+     "selection_rate": 0.15918958031837915,
+     "hit_rate": 0.45,
+     "avg_ask": 0.38972727272727276,
+     "claimed_edge": 0.0951240136505314,
+     "realised_edge": 0.04168181818181818,
+     "ci": [
+      -0.018955681818181826,
+      0.10300340909090902
+     ],
+     "roi": 0.10208170989647111,
+     "model_brier": 0.2247980457942308,
+     "market_brier": 0.21592897727272725,
+     "model_log_loss": 0.6403182827123629,
+     "market_log_loss": 0.6196192986102331,
+     "worst_drawdown": -7.119999999999999
+    }
+   },
+   "survived_validation": true
+  },
+  "R4_evenmoney_only": {
+   "rule": "any positive fee-adjusted edge with an ask between 40c and 60c",
+   "blocks": {
+    "discovery": {
+     "block": "discovery",
+     "n": 267,
+     "selection_rate": 0.12642045454545456,
+     "hit_rate": 0.5692883895131086,
+     "avg_ask": 0.49307116104868903,
+     "claimed_edge": 0.09364519026980027,
+     "realised_edge": 0.056217228464419476,
+     "ci": [
+      -0.0020280898876404545,
+      0.11355805243445691
+     ],
+     "roi": 0.10957004160887655,
+     "model_brier": 0.24580033870041937,
+     "market_brier": 0.24210617977528087,
+     "model_log_loss": 0.686164112323158,
+     "market_log_loss": 0.6772620806804671,
+     "worst_drawdown": -5.739999999999997
+    },
+    "validation": {
+     "block": "validation",
+     "n": 112,
+     "selection_rate": 0.11313131313131314,
+     "hit_rate": 0.5535714285714286,
+     "avg_ask": 0.4920535714285714,
+     "claimed_edge": 0.08482500722077661,
+     "realised_edge": 0.04151785714285715,
+     "ci": [
+      -0.051267857142857164,
+      0.13223660714285707
+     ],
+     "roi": 0.08108108108108109,
+     "model_brier": 0.2532149205633078,
+     "market_brier": 0.2520459821428571,
+     "model_log_loss": 0.705391188683197,
+     "market_log_loss": 0.6973123489790545,
+     "worst_drawdown": -7.620000000000003
+    },
+    "holdout": {
+     "block": "holdout",
+     "n": 150,
+     "selection_rate": 0.1085383502170767,
+     "hit_rate": 0.4866666666666667,
+     "avg_ask": 0.4843333333333334,
+     "claimed_edge": 0.08796653771421462,
+     "realised_edge": -0.01766666666666668,
+     "ci": [
+      -0.09680166666666666,
+      0.061538333333333244
+     ],
+     "roi": -0.03502974223397227,
+     "model_brier": 0.2536226156840634,
+     "market_brier": 0.24201249999999996,
+     "model_log_loss": 0.7003902440572706,
+     "market_log_loss": 0.6770487054579976,
+     "worst_drawdown": -11.170000000000005
+    }
+   },
+   "survived_validation": true
+  },
+  "R5_not_already_moved": {
+   "rule": "any positive fee-adjusted edge where the market has not drifted toward us in six hours",
+   "blocks": {
+    "discovery": {
+     "block": "discovery",
+     "n": 560,
+     "selection_rate": 0.26515151515151514,
+     "hit_rate": 0.4107142857142857,
+     "avg_ask": 0.37891071428571427,
+     "claimed_edge": 0.11280313946682265,
+     "realised_edge": 0.014124999999999992,
+     "ci": [
+      -0.022108035714285722,
+      0.048642857142857134
+     ],
+     "roi": 0.03561619163402222,
+     "model_brier": 0.20423120168814468,
+     "market_brier": 0.1835503571428571,
+     "model_log_loss": 0.5907447604090702,
+     "market_log_loss": 0.541912917129376,
+     "worst_drawdown": -14.639999999999997
+    },
+    "validation": {
+     "block": "validation",
+     "n": 237,
+     "selection_rate": 0.23939393939393938,
+     "hit_rate": 0.3755274261603376,
+     "avg_ask": 0.35143459915611813,
+     "claimed_edge": 0.10108450873606362,
+     "realised_edge": 0.006413502109704632,
+     "ci": [
+      -0.05063396624472575,
+      0.0643470464135021
+     ],
+     "roi": 0.01737540009144945,
+     "model_brier": 0.21366469845719635,
+     "market_brier": 0.20484103375527427,
+     "model_log_loss": 0.6159239846669073,
+     "market_log_loss": 0.5947749347111998,
+     "worst_drawdown": -4.75
+    },
+    "holdout": {
+     "block": "holdout",
+     "n": 359,
+     "selection_rate": 0.2597684515195369,
+     "hit_rate": 0.3426183844011142,
+     "avg_ask": 0.3355988857938718,
+     "claimed_edge": 0.11651389803630191,
+     "realised_edge": -0.010222841225626755,
+     "ci": [
+      -0.0558224233983287,
+      0.03691364902506954
+     ],
+     "roi": -0.028972921765216746,
+     "model_brier": 0.2169359959233588,
+     "market_brier": 0.19767806406685237,
+     "model_log_loss": 0.6208115090839792,
+     "market_log_loss": 0.5801622255823405,
+     "worst_drawdown": -13.280000000000005
+    }
+   },
+   "survived_validation": true
+  },
+  "R6_evidence_and_quality": {
+   "rule": "positive edge with at least 1,500 serve points on the thinner player and data quality >= 0.7",
+   "blocks": {
+    "discovery": {
+     "block": "discovery",
+     "n": 460,
+     "selection_rate": 0.2178030303030303,
+     "hit_rate": 0.43043478260869567,
+     "avg_ask": 0.4119130434782609,
+     "claimed_edge": 0.09353519186929206,
+     "realised_edge": -0.0001304347826087141,
+     "ci": [
+      -0.04089347826086958,
+      0.040632065217391274
+     ],
+     "roi": -0.00030293850348383567,
+     "model_brier": 0.2149053168795728,
+     "market_brier": 0.19623375,
+     "model_log_loss": 0.6183578421748339,
+     "market_log_loss": 0.5740077694986256,
+     "worst_drawdown": -13.630000000000017
+    },
+    "validation": {
+     "block": "validation",
+     "n": 199,
+     "selection_rate": 0.201010101010101,
+     "hit_rate": 0.44221105527638194,
+     "avg_ask": 0.3980402010050252,
+     "claimed_edge": 0.08666229402523351,
+     "realised_edge": 0.0250753768844221,
+     "ci": [
+      -0.041658291457286445,
+      0.091110552763819
+     ],
+     "roi": 0.06011323936875073,
+     "model_brier": 0.22793810068858567,
+     "market_brier": 0.22841243718592963,
+     "model_log_loss": 0.6484826845826962,
+     "market_log_loss": 0.6476162987390008,
+     "worst_drawdown": -5.119999999999997
+    },
+    "holdout": {
+     "block": "holdout",
+     "n": 249,
+     "selection_rate": 0.18017366136034732,
+     "hit_rate": 0.43775100401606426,
+     "avg_ask": 0.4067871485943775,
+     "claimed_edge": 0.0931110383665336,
+     "realised_edge": 0.011927710843373475,
+     "ci": [
+      -0.048034136546184734,
+      0.06915662650602408
+     ],
+     "roi": 0.02801094029991507,
+     "model_brier": 0.23835268049597913,
+     "market_brier": 0.2243273092369478,
+     "model_log_loss": 0.6708379402357116,
+     "market_log_loss": 0.6403420974873691,
+     "worst_drawdown": -7.380000000000001
+    }
+   },
+   "survived_validation": true
+  }
+ }
+}

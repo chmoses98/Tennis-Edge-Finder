@@ -1,0 +1,116 @@
+{
+ "generated_at": "2026-09-12T17:09:00.100622+00:00",
+ "window": [
+  "2026-08-25",
+  "2026-09-06"
+ ],
+ "n_rows": 3102,
+ "note": "discovery+validation only; the holdout is not read here",
+ "subsets": [
+  {
+   "subset": "market moved TOWARD our side in the last 6h",
+   "n": 500,
+   "hit_rate": 0.342,
+   "avg_ask": 0.36632,
+   "claimed_edge": 0.10593298246075138,
+   "realised_edge": -0.04206,
+   "roi": -0.10951413841587251,
+   "ci_realised": [
+    -0.07862100000000001,
+    -0.004299500000000003
+   ],
+   "model_brier": 0.2118717142669387,
+   "market_brier": 0.17833025
+  },
+  {
+   "subset": "market moved AGAINST our side in the last 6h",
+   "n": 479,
+   "hit_rate": 0.3987473903966597,
+   "avg_ask": 0.3641127348643006,
+   "claimed_edge": 0.11417745032965662,
+   "realised_edge": 0.01676409185803757,
+   "roi": 0.04388697600699566,
+   "ci_realised": [
+    -0.023635699373695206,
+    0.056180584551148216
+   ],
+   "model_brier": 0.21736773989493544,
+   "market_brier": 0.20079796450939458
+  },
+  {
+   "subset": "market barely moved",
+   "n": 318,
+   "hit_rate": 0.4025157232704403,
+   "avg_ask": 0.3807232704402516,
+   "claimed_edge": 0.10199933322000707,
+   "realised_edge": 0.004402515723270427,
+   "roi": 0.011058451816745623,
+   "ci_realised": [
+    -0.040346698113207555,
+    0.04974842767295597
+   ],
+   "model_brier": 0.19147439959132861,
+   "market_brier": 0.1734380503144654
+  },
+  {
+   "subset": "a large 6h move in either direction",
+   "n": 179,
+   "hit_rate": 0.2569832402234637,
+   "avg_ask": 0.2636312849162011,
+   "claimed_edge": 0.1354581889852985,
+   "realised_edge": -0.02234636871508381,
+   "roi": -0.08000000000000003,
+   "ci_realised": [
+    -0.07854748603351956,
+    0.03598324022346369
+   ],
+   "model_brier": 0.18463170161084577,
+   "market_brier": 0.15048240223463685
+  },
+  {
+   "subset": "high 24h volatility",
+   "n": 397,
+   "hit_rate": 0.2695214105793451,
+   "avg_ask": 0.27659949622166247,
+   "claimed_edge": 0.13437987968741608,
+   "realised_edge": -0.022972292191435772,
+   "roi": -0.07853944195659662,
+   "ci_realised": [
+    -0.058740554156171285,
+    0.01310138539042822
+   ],
+   "model_brier": 0.1849514719814097,
+   "market_brier": 0.1465007556675063
+  },
+  {
+   "subset": "quoted in at least 20 of the last 24 hours",
+   "n": 206,
+   "hit_rate": 0.44660194174757284,
+   "avg_ask": 0.4127184466019418,
+   "claimed_edge": 0.1002765747822257,
+   "realised_edge": 0.01631067961165047,
+   "roi": 0.037906137184115486,
+   "ci_realised": [
+    -0.03782038834951456,
+    0.07354368932038834
+   ],
+   "model_brier": 0.18572704165155288,
+   "market_brier": 0.1710152912621359
+  },
+  {
+   "subset": "quoted in fewer than 8 of the last 24 hours",
+   "n": 206,
+   "hit_rate": 0.3640776699029126,
+   "avg_ask": 0.3334466019417476,
+   "claimed_edge": 0.10550485771291279,
+   "realised_edge": 0.013155339805825233,
+   "roi": 0.037487895974546936,
+   "ci_realised": [
+    -0.046894417475728166,
+    0.07257281553398058
+   ],
+   "model_brier": 0.2062024752724999,
+   "market_brier": 0.1917752427184466
+  }
+ ]
+}

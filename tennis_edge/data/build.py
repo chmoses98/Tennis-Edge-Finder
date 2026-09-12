@@ -4,8 +4,9 @@ Source priority for the SAME match (dedupe key: tour, tourney_date, normalised w
   1. sackmann fork/upstream snapshot (schema of record; numeric Sackmann ids)
   2. TML-Database (ATP main tour 1968-2026; ATP-site alphanumeric ids)
   3. mirror TML challenger files (ATP Challenger 2000-2026)
+  4. ESPN public scoreboard results, both tours, current (results only: no serve statistics)
 Player ids from different id systems are never merged by this builder: rows carry `id_system`
-('sackmann' | 'tml') and identity resolution across systems is a separate, confidence-scored step
+('sackmann' | 'tml' | 'espn') and identity resolution across systems is a separate, confidence-scored step
 (tennis_edge.identity). Ratings are therefore built PER id_system unless a verified crosswalk exists.
 
 Outputs (data/processed/):
@@ -99,12 +100,32 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
     else:
         manifest["sources"]["tml_ATP_challenger"] = {"status": "ABSENT"}
 
+    # 4. ESPN current results (both tours). Results only -- no serve statistics -- so these rows carry
+    # Elo forward through the months the frozen Sackmann forks no longer cover, and contribute nothing to
+    # the serve/return model. Lowest dedupe priority: where a richer source has the same match, it wins.
+    espn_root = os.path.join(SOURCES, "espn")
+    espn_runs = sorted(glob.glob(os.path.join(espn_root, "*"))) if os.path.isdir(espn_root) else []
+    espn_run = next((r for r in reversed(espn_runs)
+                     if glob.glob(os.path.join(r, "espn_matches_*.csv.gz"))
+                     and not os.path.exists(os.path.join(r, "QUARANTINED.md"))), None)
+    if espn_run:
+        for tour in ("ATP", "WTA"):
+            paths = [p for p in glob.glob(os.path.join(espn_run, f"espn_matches_{tour}_*.csv.gz"))
+                     if (mm := re.search(r"_(\d{4})\.csv\.gz$", os.path.basename(p))) and int(mm.group(1)) >= min_year]
+            if not paths:
+                continue
+            c, q, counts = _load_group(paths, tour, "main", "espn", f"espn_{tour}", set())
+            clean_all += c; q_all += q
+            manifest["sources"][f"espn_{tour}"] = {"status": "OK", "run": os.path.basename(espn_run), "files": counts}
+    else:
+        manifest["sources"]["espn"] = {"status": "ABSENT"}
+
     if not clean_all:
         raise SystemExit("no sources found")
     df = pd.concat(clean_all, ignore_index=True)
     q = pd.concat(q_all, ignore_index=True) if q_all else pd.DataFrame(columns=CANONICAL_COLUMNS + ["reason", "reasons"])
     # cross-source dedupe: same tour/date/round/normalised names -> keep highest-priority source
-    prio = {"sackmann": 0, "tml": 1}
+    prio = {"sackmann": 0, "tml": 1, "espn": 2}
     df["_wn"] = df["winner_name"].map(lambda x: normalize_name(x) if x else "")
     df["_ln"] = df["loser_name"].map(lambda x: normalize_name(x) if x else "")
     df["_prio"] = df["id_system"].map(prio)
@@ -119,9 +140,12 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
     # exclusion costs three months of ATP results, so the ids are now crosswalked explicitly and the rows
     # that cannot be crosswalked stay excluded and visible. See identity/crosswalk.py.
     from tennis_edge.identity.crosswalk import build_crosswalk, apply_crosswalk, summarise
-    crosswalk = build_crosswalk(df)
+    crosswalk = pd.concat([build_crosswalk(df, foreign=sysname) for sysname in ("tml", "espn")], ignore_index=True)
     df = apply_crosswalk(df, crosswalk)
     manifest["player_crosswalk"] = summarise(crosswalk, df)
+    manifest["player_crosswalk_by_system"] = {
+        sysname: summarise(crosswalk[crosswalk.foreign_id_system == sysname])
+        for sysname in crosswalk["foreign_id_system"].unique()} if len(crosswalk) else {}
     manifest["rows"] = int(len(df)); manifest["quarantine_rows"] = int(len(q))
     manifest["by_tour_level"] = {f"{k[0]}|{k[1]}": int(v) for k, v in df.groupby(["tour", "level_canonical"]).size().items()}
     manifest["by_id_system"] = {k: int(v) for k, v in df["id_system"].value_counts().items()}

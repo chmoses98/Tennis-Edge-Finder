@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-09-12T17:09:00.100622+00:00",
+ "window": [
+  "2026-08-25",
+  "2026-09-06"
+ ],
+ "n_rows": 3102,
+ "note": "discovery+validation only; the holdout is not read here",
+ "coefficients": {
+  "is_underdog": -0.6930545400188157,
+  "log_ev_side": 0.25398711177647226,
+  "log_ev_min": -0.0701754822256677,
+  "env_sign_stable": -0.062452310676136186,
+  "robust_edge": -0.05123220513999372,
+  "disagreement": -0.04050778300585275,
+  "raw_edge": -0.04025078283608062,
+  "fee_adjusted_edge": -0.03850638603479255,
+  "blend_weight": -0.03590428244436921,
+  "uncertainty_adjusted_edge": -0.03404893933540324,
+  "log_n_matches_min": -0.028239704491102597,
+  "abs_disagreement": 0.02775383734191827
+ },
+ "validation": [
+  {
+   "rate": 0.01,
+   "subset": "top 1% by econ selector",
+   "n": 10,
+   "hit_rate": 0.7,
+   "avg_ask": 0.884,
+   "claimed_edge": -0.3043186349903114,
+   "realised_edge": -0.19599999999999998,
+   "roi": -0.21875,
+   "ci_realised": [
+    -0.48199999999999993,
+    0.06802500000000013
+   ],
+   "model_brier": 0.21389687587520262,
+   "market_brier": 0.21538999999999997
+  },
+  {
+   "rate": 0.02,
+   "subset": "top 2% by econ selector",
+   "n": 20,
+   "hit_rate": 0.75,
+   "avg_ask": 0.875,
+   "claimed_edge": -0.2925188070372993,
+   "realised_edge": -0.13699999999999998,
+   "roi": -0.15445321307779028,
+   "ci_realised": [
+    -0.3140124999999999,
+    0.01900000000000001
+   ],
+   "model_brier": 0.1900222306744916,
+   "market_brier": 0.16679125
+  },
+  {
+   "rate": 0.05,
+   "subset": "top 5% by econ selector",
+   "n": 50,
+   "hit_rate": 0.84,
+   "avg_ask": 0.8405999999999999,
+   "claimed_edge": -0.25410256244330337,
+   "realised_edge": -0.0146,
+   "roi": -0.01708401591387784,
+   "ci_realised": [
+    -0.113605,
+    0.07400500000000003
+   ],
+   "model_brier": 0.18842358569075987,
+   "market_brier": 0.1174365
+  },
+  {
+   "rate": 0.1,
+   "subset": "top 10% by econ selector",
+   "n": 99,
+   "hit_rate": 0.7676767676767676,
+   "avg_ask": 0.806868686868687,
+   "claimed_edge": -0.21133762593678862,
+   "realised_edge": -0.05434343434343434,
+   "roi": -0.06610960924059965,
+   "ci_realised": [
+    -0.13757828282828283,
+    0.024952020202020222
+   ],
+   "model_brier": 0.20567692124168532,
+   "market_brier": 0.17158181818181817
+  }
+ ]
+}

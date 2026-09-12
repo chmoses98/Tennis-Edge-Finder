@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-12T17:09:00.100622+00:00",
+ "window": [
+  "2026-08-25",
+  "2026-09-06"
+ ],
+ "n_rows": 3102,
+ "note": "discovery+validation only; the holdout is not read here",
+ "dependence_note": "Elo, Gen-1 structural and Gen-2 are all fundamental and share the same rating substrate, so they are NOT independent witnesses; a market-conditioned lane would be dependent on the market itself and is excluded from every consensus count below.",
+ "subsets": [
+  {
+   "subset": "positive edge, any consensus",
+   "n": 1297,
+   "hit_rate": 0.37779491133384735,
+   "avg_ask": 0.3690362374710871,
+   "claimed_edge": 0.10801332143580836,
+   "realised_edge": -0.008943716268311495,
+   "roi": -0.02312599681020736,
+   "ci_realised": [
+    -0.031527370855821135,
+    0.013711642251349274
+   ],
+   "model_brier": 0.20890043455141555,
+   "market_brier": 0.18542841171935237
+  },
+  {
+   "subset": "Gen-2 + Elo + Gen-1 agree",
+   "n": 1028,
+   "hit_rate": 0.3317120622568093,
+   "avg_ask": 0.33053501945525293,
+   "claimed_edge": 0.12199100451051115,
+   "realised_edge": -0.01613813229571985,
+   "roi": -0.04639391481864707,
+   "ci_realised": [
+    -0.042684824902723746,
+    0.009669503891050575
+   ],
+   "model_brier": 0.20864833518444809,
+   "market_brier": 0.1802437013618677
+  },
+  {
+   "subset": "Gen-2 + Elo agree, Gen-1 does not",
+   "n": 113,
+   "hit_rate": 0.6283185840707964,
+   "avg_ask": 0.5887610619469027,
+   "claimed_edge": 0.04974193540351441,
+   "realised_edge": 0.020442477876106185,
+   "roi": 0.03362934925025476,
+   "ci_realised": [
+    -0.0661128318584071,
+    0.10513716814159293
+   ],
+   "model_brier": 0.22033791113543735,
+   "market_brier": 0.2221652654867257
+  },
+  {
+   "subset": "Elo disagrees with Gen-2",
+   "n": 156,
+   "hit_rate": 0.5,
+   "avg_ask": 0.46358974358974353,
+   "claimed_edge": 0.05811337541564656,
+   "realised_edge": 0.017179487179487165,
+   "roi": 0.03558151885289429,
+   "ci_realised": [
+    -0.052310897435897445,
+    0.08576923076923075
+   ],
+   "model_brier": 0.20227686593121058,
+   "market_brier": 0.19298365384615382
+  },
+  {
+   "subset": "Gen-2 and Elo within 2c of each other",
+   "n": 468,
+   "hit_rate": 0.3269230769230769,
+   "avg_ask": 0.3292094017094017,
+   "claimed_edge": 0.12673906662690385,
+   "realised_edge": -0.01854700854700855,
+   "roi": -0.05368629391390402,
+   "ci_realised": [
+    -0.05269284188034187,
+    0.016987713675213678
+   ],
+   "model_brier": 0.19154169922377126,
+   "market_brier": 0.15569075854700856
+  },
+  {
+   "subset": "Gen-2 and Elo more than 8c apart",
+   "n": 340,
+   "hit_rate": 0.4088235294117647,
+   "avg_ask": 0.3940294117647059,
+   "claimed_edge": 0.11403737045505447,
+   "realised_edge": -0.004441176470588235,
+   "roi": -0.010746566080705998,
+   "ci_realised": [
+    -0.05258823529411766,
+    0.04453088235294116
+   ],
+   "model_brier": 0.22477197115382574,
+   "market_brier": 0.20478242647058822
+  }
+ ]
+}
