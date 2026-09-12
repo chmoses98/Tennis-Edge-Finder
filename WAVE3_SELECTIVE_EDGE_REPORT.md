@@ -174,6 +174,40 @@ current to 2026-09-01** via the TML Challenger mirror, at exactly the levels Kal
 statistics still stop at 2026-04-27** and nothing free and permitted was found to close that. TENNIS-14
 stays red.
 
+## First-ball truth crossed into B while this wave was running (Phase 16)
+
+The conductor was not touched, restarted or re-tuned. On 2026-09-12 it produced the project's **first
+confidence-B first-ball truths**: 8 market-level rows over 4 physical WTA Challenger matches, all by
+STATE_TRANSITION_BRACKET, brackets 188-190 seconds, contradiction status NONE.
+
+Audit:
+
+* The brackets are consistent with the polling cadence plus the 120-second feed-lag allowance, and all sit
+  just inside the 300-second B threshold rather than suspiciously far inside it.
+* Every lower bound falls 1.5-3 minutes AFTER the nominal scheduled time, which is what real matches do.
+  Nothing here looks like a scheduled time wearing a bracket.
+* **All 8 come from a single witness (`espn_wta`).** B does not require two providers, only a tight
+  bracket, so this is within spec -- but a systematic ESPN lag would not be caught by any of these rows.
+  The first two-provider B is still outstanding.
+
+And the consequence: **the first 6 strict CLV rows in the project's history**, from 2 physical matches,
+4 tickers, two entry horizons.
+
+| | value |
+|---|---|
+| strict rows | 6 |
+| mean strict executable CLV | **-1.0c** |
+| mean midpoint CLV | +0.02c |
+
+Read this as a channel opening, not as a measurement. Six rows from two matches says nothing, and the sign
+is partly structural: both sides of a binary are counted as separate observations, so the executable mean
+is pushed negative by roughly the spread while the midpoint mean is forced toward zero. The remaining 826
+rows in the same file are correctly excluded, 787 of them for having no executable close because no A/B
+truth existed for their match.
+
+Confidence C remains excluded from strict CLV. That was not relaxed to produce these rows; the rows
+appeared because the truth improved.
+
 ## What would change the answer
 
 Not a better selector. The binding constraints are, in order:
