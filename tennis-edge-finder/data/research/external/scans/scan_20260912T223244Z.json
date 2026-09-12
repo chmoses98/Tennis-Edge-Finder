@@ -1,0 +1,64 @@
+{
+ "generated_at": "2026-09-12T22:32:44.752991+00:00",
+ "run_id": "20260912T223244Z",
+ "external_parse": {
+  "events": 62,
+  "markets": 552,
+  "skipped_family": 151,
+  "skipped_period": 129,
+  "skipped_live": 10,
+  "one_sided": 43,
+  "rows": 829,
+  "devigged": 229
+ },
+ "kalshi_quotes_on_disk": 262,
+ "external_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Urrutia": 1,
+   "Nadia Kichenok": 1,
+   "Luca Lemaitre": 1,
+   "Maximilian Wuelfing": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8696,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Alexander Binda": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Artyom Nabokin": 1,
+   "Juan Ignacio Lombisano": 1,
+   "KIDLAT ESTOGERO": 1,
+   "George Margiev": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 16,
+ "external_mapped_matches": 40,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 7,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
