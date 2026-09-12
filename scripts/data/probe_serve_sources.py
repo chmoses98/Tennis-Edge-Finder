@@ -134,10 +134,47 @@ def main():
         results.append(rec)
         time.sleep(1.0)
 
+    # 5. the recently-pushed repositories the fork search surfaced. Wave 2's R-005 rejected "find a
+    # fresher fork" against the Sackmann forks specifically; these are different repositories, and the
+    # only question worth asking is whether any of them ships a CSV with serve-statistic COLUMNS and a
+    # 2026 date. Checked by file tree and one header line, then dropped.
+    repos = []
+    meta, body = get("https://api.github.com/search/repositories?q=tennis+wta+in:name&sort=updated"
+                     "&order=desc&per_page=8")
+    if body:
+        try:
+            repos = [r["full_name"] for r in json.loads(body).get("items", [])][:6]
+        except Exception:                                      # noqa: BLE001
+            repos = []
+    for full in repos:
+        m2, b2 = get(f"https://api.github.com/repos/{full}/git/trees/HEAD?recursive=1")
+        rec = {"candidate": f"repo:{full}", "url": full, **m2,
+               "why": "does it ship WTA match data with serve-statistic columns, dated 2026"}
+        if b2:
+            try:
+                tree = json.loads(b2).get("tree", [])
+            except Exception:                                  # noqa: BLE001
+                tree = []
+            csvs = [x["path"] for x in tree if x.get("path", "").lower().endswith((".csv", ".csv.gz"))]
+            rec["n_files"] = len(tree)
+            rec["csv_sample"] = csvs[:10]
+            hit = next((c for c in csvs if "2026" in c and "wta" in c.lower()), None) or (csvs[0] if csvs else None)
+            if hit:
+                m3, b3 = get(f"https://raw.githubusercontent.com/{full}/HEAD/{hit}")
+                header = b3[:600].decode("utf-8", "replace").splitlines()[:1]
+                rec["probed_csv"] = hit
+                rec["header"] = header[0][:400] if header else ""
+                rec["has_serve_columns"] = any(k in rec["header"] for k in
+                                               ("w_svpt", "l_svpt", "w_ace", "1stWon", "svpt"))
+        results.append(rec)
+        time.sleep(0.5)
+
     verdict = {"generated_at": datetime.now(timezone.utc).isoformat(), "run_id": run,
                "espn_event_probed": ev,
                "any_source_with_serve_stats": any(
-                   r.get("content", {}).get("looks_like_serve_stats") for r in results),
+                   r.get("content", {}).get("looks_like_serve_stats") or r.get("has_serve_columns")
+                   for r in results),
+               "repos_with_serve_columns": [r["url"] for r in results if r.get("has_serve_columns")],
                "candidates": results}
     json.dump(verdict, open(os.path.join(a.out, run, "manifest.json"), "w"), indent=1, default=str)
     print(json.dumps(verdict, indent=1, default=str)[:6000])
