@@ -81,6 +81,7 @@ jobs:
           # Wave 4 Phase 0. robots.txt is fetched FIRST for every host and a disallowed path is not
           # requested at all; a source we may not use is not a source.
           python3 scripts/external/probe_odds_sources.py
+          python3 scripts/external/probe_odds_round2.py
       - name: Publish external odds probe
         if: always()
         run: |
