@@ -1,0 +1,27 @@
+{
+ "candidate_id": "EC-2026-001-MKTCOND-EXACT-SCORE",
+ "hypothesis": "Anchoring the winner probability to the de-vigged market while keeping the Gen-2 service level improves EXACT SET SCORE prediction relative to the pure fundamental distribution.",
+ "inclusion_rule": "Singles match, ATP or WTA, with (a) a two-sided executable market quote on the match winner that de-vigs to a probability in [0.05, 0.95], (b) a Gen-2 state for both players, and (c) family EXACT_SET_SCORE. Best-of-3 and best-of-5 both admitted.",
+ "market_family": "EXACT_SET_SCORE",
+ "model_version": "market_conditioned_v1 + gen2_dyn_hier_sr_v1",
+ "discovery_window_start": "2020-01-01",
+ "discovery_window_end": "2026-09-01",
+ "frozen_at": "2026-09-12T06:30:00+00:00",
+ "confirmation_start": "2026-09-12T06:30:00+00:00",
+ "minimum_n": 400,
+ "required_accuracy_condition": "mean exact-score log loss below the pure fundamental lane by >= 0.010 with a paired bootstrap 95% CI excluding zero",
+ "required_clv_condition": "not applicable to a pricing-accuracy claim; no CLV condition is asserted, and no trade may be justified by this candidate alone",
+ "required_after_fee_condition": "any trade derived from it must clear the Kalshi taker fee on every leg at the executable ask",
+ "status": "PROSPECTIVE_PENDING",
+ "rationale": "On 12,946 ATP matches with a de-vigged Pinnacle price and a final score, exact-score log loss fell from 1.35038 (fundamental) to 1.32710 (market-conditioned), paired diff -0.02329, 95% CI [-0.02776, -0.01867]. The Elo-conditioned control was WORSE than the fundamental lane (1.37007), so the gain comes from the market's information rather than from conditioning on anything.",
+ "strongest_opposing_reason": "Kalshi lists almost no exact-score contracts: four were open across the entire captured board. A pricing improvement with nothing to trade against is a scientific result, not an edge.",
+ "prereg_dimensions": [
+  "market_family",
+  "tour",
+  "surface"
+ ],
+ "post_hoc": false,
+ "evidence": [],
+ "schema_version": 1,
+ "fingerprint": "d9d66120c8a30bbb"
+}

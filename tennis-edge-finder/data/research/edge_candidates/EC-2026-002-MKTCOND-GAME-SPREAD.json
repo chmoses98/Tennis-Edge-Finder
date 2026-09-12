@@ -1,0 +1,27 @@
+{
+ "candidate_id": "EC-2026-002-MKTCOND-GAME-SPREAD",
+ "hypothesis": "The same conditioning improves expected game differential and total-games prediction.",
+ "inclusion_rule": "As EC-2026-001 but for families GAME_SPREAD and TOTAL_GAMES, requiring a quoted line and a completed match (no retirement).",
+ "market_family": "GAME_SPREAD,TOTAL_GAMES",
+ "model_version": "market_conditioned_v1 + gen2_dyn_hier_sr_v1",
+ "discovery_window_start": "2020-01-01",
+ "discovery_window_end": "2026-09-01",
+ "frozen_at": "2026-09-12T06:30:00+00:00",
+ "confirmation_start": "2026-09-12T06:30:00+00:00",
+ "minimum_n": 400,
+ "required_accuracy_condition": "mean absolute error on game differential below the fundamental lane by >= 0.05 games with a paired bootstrap 95% CI excluding zero",
+ "required_clv_condition": "no CLV condition asserted",
+ "required_after_fee_condition": "as EC-2026-001",
+ "status": "PROSPECTIVE_PENDING",
+ "rationale": "Game-differential absolute error 4.10248 -> 4.00667, paired diff -0.09581, 95% CI [-0.11491, -0.07675]; squared error on total games -0.38276 with a CI excluding zero.",
+ "strongest_opposing_reason": "Three TOTAL_GAMES contracts were open across the whole captured board. The same liquidity objection as EC-2026-001, only sharper.",
+ "prereg_dimensions": [
+  "market_family",
+  "tour",
+  "surface"
+ ],
+ "post_hoc": false,
+ "evidence": [],
+ "schema_version": 1,
+ "fingerprint": "982b3fd7ae2bb31a"
+}
