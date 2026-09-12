@@ -346,3 +346,26 @@ def test_the_wave_two_and_three_candidates_are_untouched():
     assert {"EC-2026-001-MKTCOND-EXACT-SCORE", "EC-2026-002-MKTCOND-GAME-SPREAD",
             "EC-2026-003-GEN2-MODERATE-EVIDENCE", "EC-2026-004-COHERENCE-EXECUTABLE",
             "W3-2026-001-ABSTAIN-ITF", "W3-2026-002-NONITF-POSITIVE-EDGE"} <= ids
+
+
+# --------------------------------------------------------------------------- reviewed aliases
+def test_a_pending_alias_is_inert_and_an_accepted_one_never_reaches_full_confidence():
+    """The residue of unmapped names needs a person, not a looser matcher."""
+    import tempfile as _tf
+    from tennis_edge.identity.reviewed_aliases import ACCEPTED, ALIAS_CONFIDENCE, audit, load
+    doc = {"schema_version": 1, "aliases": [
+        {"tour": "WTA", "source_name": "Nick Name", "canonical_id": None,
+         "review_status": "PENDING_REVIEW", "provenance": "unverified"},
+        {"tour": "WTA", "source_name": "Real Alias", "canonical_id": "123",
+         "review_status": ACCEPTED, "provenance": "checked against the governing-body record"},
+        {"tour": "WTA", "source_name": "Bad Idea", "canonical_id": "999", "review_status": "REJECTED",
+         "provenance": "two different players"}]}
+    with _tf.NamedTemporaryFile("w", suffix=".json", delete=False) as f:
+        json.dump(doc, f); path = f.name
+    live = load(path)
+    assert list(live) == [("WTA", "real alias")], "only ACCEPTED entries with a canonical id are live"
+    assert audit(path)["by_status"]["PENDING_REVIEW"] == 1
+    # 0.95 is exactly the floor qualification requires: enough to price, never enough to be the reason
+    from tennis_edge.opportunity.qualify import QualificationPolicy
+    assert ALIAS_CONFIDENCE == QualificationPolicy().min_identity_confidence
+    os.unlink(path)

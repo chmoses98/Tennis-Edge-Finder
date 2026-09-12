@@ -77,3 +77,30 @@ D -- before the DATE, not the timestamp, so a player who plays twice in a day co
 
 `tennis_edge/selector/model.py` enforces the chronology in code: fitting outside the declared window
 raises, and fitting a frozen selector raises. There is no flag to turn either off.
+
+
+## Wave 4: the external witness
+
+```
+Bovada coupon ──► ExternalMarketObservation ──► de-vig ──► reference ─┐
+ (raw archived,     (immutable, hashed,          (whole      (median   │
+  robots checked)    venue timestamp kept)        markets     across   │
+                                                  only)       groups)  │
+                                                                       ▼
+Kalshi capture ──► parse_market ──► map_event ──────────────────► triangulate ──► Dislocation
+ (executable ask,                    (SAME registry as the        (direction,      (append-only,
+  displayed depth)                    external side; a match       not proximity)   hash-chained)
+                                      is common only when both              ▲
+                                      venues agree who is playing)          │
+asof_<tour>.json.gz ──► fair.py (FROZEN) ───────────────────────────────────┘
+                         a WITNESS, never the plaintiff
+```
+
+The asymmetry is the design. Wave 3 established that our model's disagreement with Kalshi does not
+identify Kalshi's errors, so in Wave 4 the external venue proposes and the model may only corroborate or
+object: `Dislocation.__post_init__` refuses a SHADOW_BET whose triangulation is anything but
+KALSHI_LONE_OUTLIER, and refuses one with no external reference at all.
+
+The scan runs inside the capture conductor, once per pass, immediately after the Kalshi quotes it reads
+are written and before they are cleaned up. It reads the rating artifacts published by `tennis-run`
+rather than rebuilding them, so a ten-minute loop never replays 1.6M matches.

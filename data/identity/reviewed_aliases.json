@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "purpose": "Player-name aliases that a HUMAN has reviewed and accepted. Nothing in this file is inferred by code.",
+  "rules": [
+    "An entry may only be added by a person, with provenance naming the evidence they checked.",
+    "review_status must be ACCEPTED for an entry to be used. PENDING_REVIEW entries are inert.",
+    "canonical_id must be a player id that already exists in the rating registry.",
+    "This file never loosens an automated threshold. It is an allowlist, not a matcher.",
+    "An accepted alias resolves at confidence 0.95: enough to price a board, and it is the floor a shadow bet requires, so an alias can never be the reason a decision was taken."
+  ],
+  "aliases": [
+    {
+      "tour": "WTA",
+      "source_name": "Mimi Xu",
+      "canonical_id": null,
+      "canonical_name": "Mingge Xu",
+      "review_status": "PENDING_REVIEW",
+      "provenance": "Kalshi lists 'Mimi Xu' on WTA and ITF boards; the registry holds 'Mingge Xu'. Mimi is widely used as this player's given name in press coverage. NOT VERIFIED against a governing-body record, and the registry also contains eleven other players surnamed Xu, so an automated match here is exactly the merge this project has already had to undo once.",
+      "blocked_contracts_when_unresolved": 6,
+      "added_at": "2026-09-12"
+    }
+  ]
+}

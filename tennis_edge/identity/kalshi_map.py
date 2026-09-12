@@ -13,6 +13,7 @@ import os
 from datetime import date, timedelta
 
 from tennis_edge.identity.names import normalize_name
+from tennis_edge.identity.reviewed_aliases import ALIAS_CONFIDENCE, load as load_reviewed_aliases
 
 PROJ = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 CACHE = os.path.join(PROJ, "config", "kalshi_competitor_map.json")
@@ -29,6 +30,11 @@ class KalshiPlayerMapper:
                 if nm:
                     idx.setdefault(nm, []).append((pid, rec))
             self.index[tour] = idx
+        self.index_by_id = {pid: rec for st in states.values() for pid, rec in st["players"].items()}
+        # Human-reviewed aliases only. Nothing here is inferred; an entry is inert until a person
+        # accepts it, and an accepted one resolves at 0.95 -- the floor a shadow bet requires and no
+        # more, so an alias can restore coverage without ever being the reason a decision was taken.
+        self.aliases = load_reviewed_aliases()
         self.cache_path = cache_path
         self.cache = json.load(open(cache_path)) if os.path.exists(cache_path) else {}
 
@@ -39,6 +45,16 @@ class KalshiPlayerMapper:
         nm = normalize_name(full_name or "")
         hits = self.index.get(tour, {}).get(nm, [])
         if not hits:
+            al = self.aliases.get((tour, nm))
+            if al:
+                rec = self.index_by_id.get(str(al["canonical_id"]), {})
+                out = {"status": "MAPPED", "player_id": str(al["canonical_id"]),
+                       "confidence": ALIAS_CONFIDENCE, "name": full_name, "tour": tour,
+                       "canonical_name": rec.get("name"), "last_date": rec.get("last_date"),
+                       "reason": f"human-reviewed alias: {al.get('provenance', '')[:120]}"}
+                if competitor_id:
+                    self.cache[competitor_id] = out
+                return out
             ext = self._compound_surname(tour, nm, today)
             if ext:
                 if competitor_id:

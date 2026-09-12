@@ -66,3 +66,20 @@ coverage does not exist yet, and that is the information they are meant to carry
 * **The opportunity store** (`data/research/opportunities/`) is append-only and hash-chained, and
   `OpportunityStore.verify_chain()` checks both the chain and each row's own fingerprint. It belongs in the
   same daily integrity sweep as the prediction ledger and the first-ball store.
+
+
+## Wave 4 additions
+
+* **The external dislocation ledger** (`data/research/external/dislocations/`) is append-only and
+  hash-chained; `DislocationLedger.verify_chain()` belongs in the same daily integrity sweep as the
+  prediction ledger, the first-ball store and the opportunity store.
+* **Single-witness reference.** Every reference value this system can currently build comes from ONE
+  independent group (Bovada). `Reference.n_independent_groups` is recorded on every row, and a second
+  venue is the single largest improvement available to this layer.
+* **The external witness is a recreational book.** Bovada is not a sharp reference. Health reporting
+  should never describe a Bovada/Kalshi gap as a mispricing.
+* **Staleness is bounded in both directions**: the venue's own timestamp against our fetch (15 min) and
+  our fetch against now (15 min). A venue that publishes no timestamp reads as unknown, never as zero.
+* **Model freeze.** `fair_v1`, `gen2_dyn_hier_sr_v1` and `selector_v1` are frozen for Wave 4 and a test
+  asserts their version strings. A bug fix that changes historical probabilities needs a new version;
+  frozen predictions are never retroactively replaced.
