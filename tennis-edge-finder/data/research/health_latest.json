@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260912T003216Z",
-   "age_hours": 10.6,
+   "age_hours": 15.2,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,28 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 209,
-   "projected": 167,
-   "not_projected": 42,
+   "projectable_open_pregame": 137,
+   "projected": 111,
+   "not_projected": 26,
    "missing_sample": [
-    "KXITFWMATCH-26SEP12SVELOM-SVE: Sveva Sveva Fumagalli: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP12SVELOM-LOM: Sveva Sveva Fumagalli: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP12KASHAR-KAS: Jay Friend: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP12KASHAR-HAR: Jay Friend: UNMAPPED (no exact full-name match)",
     "KXWTASETWINNER-26SEP12MIMDOL-2-MIM: Mimi Xu: UNMAPPED (no exact full-name match)",
     "KXWTASETWINNER-26SEP12MIMDOL-2-DOL: Mimi Xu: UNMAPPED (no exact full-name match)",
     "KXWTASETWINNER-26SEP12MIMDOL-1-MIM: Mimi Xu: UNMAPPED (no exact full-name match)",
     "KXWTASETWINNER-26SEP12MIMDOL-1-DOL: Mimi Xu: UNMAPPED (no exact full-name match)",
     "KXWTASETWINNER-26SEP12LEPMEL-2-MEL: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match",
-    "KXWTASETWINNER-26SEP12LEPMEL-2-LEP: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match"
+    "KXWTASETWINNER-26SEP12LEPMEL-2-LEP: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match",
+    "KXWTASETWINNER-26SEP12LEPMEL-1-MEL: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match",
+    "KXWTASETWINNER-26SEP12LEPMEL-1-LEP: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match",
+    "KXWTAMATCH-26SEP12LEPMEL-MEL: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match",
+    "KXWTAMATCH-26SEP12LEPMEL-LEP: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match"
    ],
    "excluded_by_policy": {
-    "past_nominal_start": 27,
+    "past_nominal_start": 25,
     "unsupported_family": 118,
-    "closed_since_discovery": 93,
+    "closed_since_discovery": 167,
     "tournament_scope_not_priced_tonight": 4
    },
-   "projection_run": "20260912T110622Z"
+   "projection_run": "20260912T154548Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260912T105053Z",
-   "age_min": 14.0,
+   "run": "20260912T153104Z",
+   "age_min": 13.0,
    "incomplete": [
     {
      "stage": "trades",
@@ -90,8 +90,8 @@
     "d599f316-38b0-4530-a412-ec9729b0e395",
     "d41485b4-0361-4b81-8a89-4b6279c9a1c2"
    ],
-   "n": 721,
-   "start_unknown_used_schedule": 717
+   "n": 832,
+   "start_unknown_used_schedule": 824
   }
  },
  {
@@ -101,7 +101,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 167
+   "MATCHED": 111
   }
  },
  {
@@ -112,32 +112,32 @@
    "reason": "no settled predictions yet",
    "first_ball": {
     "truths": 70,
-    "strict_truths": 1,
+    "strict_truths": 2,
     "no_play": 0,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 69,
-     "B": 1
+     "C": 68,
+     "B": 2
     },
-    "bracket_seconds_median": 188.118033,
-    "bracket_seconds_p90": 188.118033,
+    "bracket_seconds_median": 189.409191,
+    "bracket_seconds_p90": 189.409191,
     "chain_violations": [],
-    "observations": 19368,
+    "observations": 30220,
     "matches_observed": 70,
     "watchlist": {
-     "total": 131,
+     "total": 115,
      "levels_with_a_wired_source": 55,
-     "levels_without_any_source": 76,
+     "levels_without_any_source": 60,
      "watched_and_observed": 54,
      "covered_and_observed": 54,
      "pct_covered_with_source_mapping": 0.9818
     },
-    "pct_classifiable": 0.0055,
-    "pct_strict_pregame": 0.0028,
+    "pct_classifiable": 0.0096,
+    "pct_strict_pregame": 0.0072,
     "timing_classes": {
-     "START_UNKNOWN": 717,
-     "STRICT_PREGAME": 2,
+     "START_UNKNOWN": 824,
+     "STRICT_PREGAME": 6,
      "POST_START": 2
     }
    }
@@ -161,13 +161,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 2,
-   "executable_close_rows": 4,
-   "matches_with_strict_truth": 1,
-   "observations_classified": 721,
-   "pct_strict_pregame": 0.0028,
-   "horizons_populated": 26,
-   "horizons_total": 5768
+   "strict_clv_rows": 6,
+   "executable_close_rows": 8,
+   "matches_with_strict_truth": 2,
+   "observations_classified": 832,
+   "pct_strict_pregame": 0.0072,
+   "horizons_populated": 54,
+   "horizons_total": 6656
   }
  },
  {
@@ -193,7 +193,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-12T11:01:45.629460+00:00",
+   "built_at": "2026-09-12T15:41:08.531591+00:00",
    "rows": 1624759
   }
  },
@@ -203,7 +203,7 @@
   "status": "FAIL",
   "detail": {
    "run": "20260912T093416Z",
-   "snapshot_age_days": 0.06,
+   "snapshot_age_days": 0.26,
    "max_season_files": [
     2026,
     2026
