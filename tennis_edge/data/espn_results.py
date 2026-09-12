@@ -118,7 +118,16 @@ def parse_scoreboard(payload: dict, league: str) -> pd.DataFrame:
             continue
         when = (c.get("date") or ev.get("date") or "")[:10].replace("-", "")
         name = ev.get("name") or ""
-        tour_hint = "WTA" if (league.lower() == "wta" or "women" in slug.lower()) else "ATP"
+        # A combined event appears on BOTH league boards carrying BOTH draws, so the league alone is not
+        # the tour: the wta board returns Wimbledon's mens-singles too. The grouping decides when it
+        # names a draw, and "womens" contains "mens", so women are tested first.
+        sl = slug.lower()
+        if "women" in sl:
+            tour_hint = "WTA"
+        elif "men" in sl:
+            tour_hint = "ATP"
+        else:
+            tour_hint = "WTA" if league.lower() == "wta" else "ATP"
         info = classify_competition(name, tour_hint)
         tour = info["tour"] if info["tour"] in ("ATP", "WTA") else tour_hint
         # ESPN reports the EVENT's regulation length, so a men's slam says five sets even for a

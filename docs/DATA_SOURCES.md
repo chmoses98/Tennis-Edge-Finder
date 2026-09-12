@@ -71,3 +71,27 @@ fail rather than being relaxed. The knock-on cost is visible in the board accoun
 fixable coverage blocker is UNMAPPED_IDENTITY, and most of those are recent arrivals absent from a
 registry built on four-month-old data. **The coverage gap is largely the freshness gap wearing a
 different hat.**
+
+
+## ESPN results feed — operational notes (2026-09-12)
+
+Live and publishing to `tennis-data` under `data/sources/espn/<run>/`, 5,471 completed singles covering
+2026-03-28 to 2026-09-11 on both tours.
+
+Two defects were found on its first unattended runs and both are fixed:
+
+* The step died importing pandas (the sources job installs nothing, the Sackmann fetcher being
+  stdlib-only) and `continue-on-error` turned that into a green step that published nothing. The step now
+  installs pandas and fails loudly if the fetch produces no output.
+* A combined event is returned by BOTH league boards carrying BOTH draws. Taking the tour from the league
+  fetched filed 1,373 men's matches as WTA. `parse_scoreboard` now reads the tour from the grouping slug
+  (women tested first, since "womens" contains "mens") and falls back to the league only when the
+  grouping does not name a draw.
+
+**Snapshot `20260912T065821Z` is QUARANTINED** — it carries the mislabelled split (779 ATP / 4,692 WTA
+where the truth is 2,152 / 3,319). It is marked in place, not deleted; `tennis-data` is append-only
+evidence. Do not ingest it.
+
+The feed is **results-only**: no serve statistics, no reliable surface, no `best_of` (ESPN reports the
+event's regulation length, which is wrong for qualifying, so the field is deliberately left empty). It can
+refresh Elo-family ratings. It cannot feed Gen-2, so it does not close TENNIS-14.

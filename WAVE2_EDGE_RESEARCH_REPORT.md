@@ -111,8 +111,19 @@ fork choice. Two things changed as a result:
   mirror players crosswalked; 88,896 rows admitted.
 * **An ESPN results feed** for current results on both tours, which matters most for WTA where nothing
   else has moved since 2026-04-27. Verified against a saved payload (473 completed singles, 97% passing
-  canonical validation). **Its first unattended run published nothing and the cause is not yet
-  diagnosed** — see the blockers.
+  canonical validation). Its first two unattended runs published nothing: the sources job installs no
+  Python packages, because the Sackmann fetcher is stdlib-only, so the step died importing pandas and
+  `continue-on-error` reported it as SUCCESS. The step now installs pandas and fails loudly when the
+  fetch produces no output. It publishes: **5,471 completed singles, 2026-03-28 to 2026-09-11, both
+  tours current to yesterday.**
+* Its first real publish was **wrong**, and the check that caught it was arithmetic rather than a gate:
+  779 ATP rows against 4,692 WTA is not a plausible split. A combined event appears on BOTH league
+  boards carrying BOTH draws, and the parser took the tour from the league it fetched, so Wimbledon's
+  men's draw off the WTA board was filed as WTA — 1,373 men's matches mislabelled. The grouping slug now
+  decides the tour and the league is only a fallback; the corrected split is 2,152 ATP / 3,319 WTA.
+  Snapshot `20260912T065821Z` on `tennis-data` is quarantined in place rather than deleted.
+* The feed carries **no serve statistics**, so it can refresh Elo-family ratings and cannot feed Gen-2.
+  The WTA fundamental staleness that fails TENNIS-14 is therefore *not* closed by it.
 
 WTA history remains stale and TENNIS-14 continues to fail rather than being relaxed.
 
@@ -170,7 +181,9 @@ model predicts 0.50 for everything.
 ## What would actually move the needle next
 
 Not a better model. **More derivative liquidity**, which is outside our control, and **fresher WTA
-fundamentals**, which is the one blocker with a plausible path: the ESPN feed, once its unattended run is
-working.
+fundamentals**. The ESPN feed now publishes and is current to yesterday, but it is results-only: it can
+carry Elo forward and it cannot carry Gen-2, which needs serve statistics. Closing TENNIS-14 properly
+still needs a current source with point-level serve data, and nothing free that we have probed has one
+for the WTA.
 
 **REAL-MONEY AUTHORITY: OFF.**
