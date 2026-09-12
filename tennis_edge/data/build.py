@@ -114,6 +114,14 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
     manifest["cross_source_duplicates_dropped"] = int(dups.sum())
     df = df.loc[~dups].drop(columns=["_wn", "_ln", "_prio"]).reset_index(drop=True)
     df["season"] = df["tourney_date"].map(lambda d: d.year if d is not None else None)
+    # Cross-system player ids. Production used to drop every non-Sackmann row because merging id systems
+    # naively had produced duplicate rating entities. Since the Sackmann forks froze (upstream gone), that
+    # exclusion costs three months of ATP results, so the ids are now crosswalked explicitly and the rows
+    # that cannot be crosswalked stay excluded and visible. See identity/crosswalk.py.
+    from tennis_edge.identity.crosswalk import build_crosswalk, apply_crosswalk, summarise
+    crosswalk = build_crosswalk(df)
+    df = apply_crosswalk(df, crosswalk)
+    manifest["player_crosswalk"] = summarise(crosswalk, df)
     manifest["rows"] = int(len(df)); manifest["quarantine_rows"] = int(len(q))
     manifest["by_tour_level"] = {f"{k[0]}|{k[1]}": int(v) for k, v in df.groupby(["tour", "level_canonical"]).size().items()}
     manifest["by_id_system"] = {k: int(v) for k, v in df["id_system"].value_counts().items()}
@@ -125,6 +133,7 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
         if "set_scores" in q2:
             q2["set_scores"] = q2["set_scores"].map(json.dumps)
         df2.to_parquet(os.path.join(PROCESSED, "matches.parquet"), index=False)
+        crosswalk.to_parquet(os.path.join(PROCESSED, "player_crosswalk.parquet"), index=False)
         q2.to_parquet(os.path.join(PROCESSED, "matches_quarantine.parquet"), index=False)
         manifest["matches_sha256"] = hashlib.sha256(open(os.path.join(PROCESSED, "matches.parquet"), "rb").read()).hexdigest()
         json.dump(manifest, open(os.path.join(PROCESSED, "build_manifest.json"), "w"), indent=1, default=str)

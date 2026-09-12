@@ -22,6 +22,10 @@ on:
         description: 'skip Match Charting Project clone (true/false)'
         required: false
         default: 'false'
+      espn_since:
+        description: 'earliest date for the ESPN results backfill (YYYY-MM-DD)'
+        required: false
+        default: '2026-04-01'
 
 permissions:
   contents: write
@@ -54,6 +58,22 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources --message "tennis sources bootstrap (sackmann) $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           rm -rf data/sources
+      - name: Acquire current ESPN results
+        id: acquire_espn
+        continue-on-error: true
+        timeout-minutes: 25
+        run: |
+          if grep -q "jobs=kalshi" .bootstrap-trigger 2>/dev/null; then echo "trigger requests kalshi only; skipping espn"; exit 0; fi
+          # The Sackmann forks are frozen (upstream gone) and the mirror lags by days, so ESPN's public
+          # scoreboard is the only reachable feed carrying CURRENT results for both tours. Results only:
+          # no serve statistics, no surface, ESPN-local player ids bound by the name crosswalk.
+          python3 scripts/data/fetch_espn_results.py --since "${{ github.event.inputs.espn_since || '2026-04-01' }}"
+      - name: Publish ESPN results
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/espn --message "espn current results $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
       - name: Acquire tennis-data.co.uk (+ mirrors)
         id: acquire_td
         continue-on-error: true
