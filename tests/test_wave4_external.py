@@ -369,3 +369,37 @@ def test_a_pending_alias_is_inert_and_an_accepted_one_never_reaches_full_confide
     from tennis_edge.opportunity.qualify import QualificationPolicy
     assert ALIAS_CONFIDENCE == QualificationPolicy().min_identity_confidence
     os.unlink(path)
+
+
+# --------------------------------------------------------------------------- the live scan's gates
+def _gate(**kw):
+    from tennis_edge.external_market.dislocation import scan_gates
+    base = dict(external_fair=0.52, kalshi_bid=0.45, kalshi_ask=0.46, size=200.0, quote_age_s=120.0,
+                triangulation=KALSHI_LONE_OUTLIER, external_edge=0.04)
+    base.update(kw)
+    return scan_gates(**base)
+
+
+def test_the_shadow_bet_path_is_reachable_and_every_gate_can_close_it():
+    """A decision path that nothing can ever satisfy is not a filter, it is dead code."""
+    assert _gate()["decision"] == "SHADOW_BET"
+    for kw, gate in (({"external_fair": None, "external_edge": None}, "reference_exists"),
+                     ({"kalshi_bid": 0.30}, "spread_ok"),
+                     ({"size": 0.0}, "size_ok"),
+                     ({"quote_age_s": 7200.0}, "kalshi_quote_fresh"),
+                     ({"external_edge": 0.01}, "external_edge_material"),
+                     ({"triangulation": MODEL_LONE_OUTLIER}, "kalshi_is_the_outlier")):
+        r = _gate(**kw)
+        assert r["decision"] != "SHADOW_BET" and gate in r["failed"]
+
+
+def test_a_real_dislocation_with_a_bad_quote_is_a_watch_not_a_pass():
+    assert _gate(quote_age_s=7200.0)["decision"] == "WATCH"
+    assert _gate(triangulation=MODEL_LONE_OUTLIER)["decision"] == "WATCH"
+    assert _gate(external_edge=-0.01)["decision"] == "PASS"
+    assert _gate(external_fair=None, external_edge=None)["decision"] == "PASS"
+
+
+def test_a_crossed_or_one_sided_kalshi_quote_never_reaches_shadow_bet():
+    assert _gate(kalshi_bid=0.50, kalshi_ask=0.46)["decision"] != "SHADOW_BET"
+    assert _gate(kalshi_ask=None)["decision"] != "SHADOW_BET"

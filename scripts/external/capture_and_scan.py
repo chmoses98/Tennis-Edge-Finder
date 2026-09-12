@@ -33,7 +33,8 @@ sys.path.insert(0, PROJ)
 from tennis_edge.external_market.bovada import SOURCE as BOVADA, event_index, parse_coupon  # noqa: E402
 from tennis_edge.external_market.consensus import build_reference                            # noqa: E402
 from tennis_edge.external_market.dislocation import (Dislocation, DislocationLedger,          # noqa: E402
-                                                    KALSHI_LONE_OUTLIER, triangulate)
+                                                    KALSHI_LONE_OUTLIER, ScanPolicy, scan_gates,
+                                                    triangulate)
 from tennis_edge.external_market.mapping import MAPPED, audit, map_event, physical_key        # noqa: E402
 from tennis_edge.external_market.schema import ExternalStore                                  # noqa: E402
 from tennis_edge.identity.kalshi_map import KalshiPlayerMapper                                # noqa: E402
@@ -47,12 +48,10 @@ UA = "tennis-edge-finder/1.0 (research; +https://github.com/chmoses98/Tennis-Edg
 MATCH_SERIES = {tk for tk, (fam, tour, lvl, disc) in SERIES.items()
                 if fam == "MATCH_WINNER" and disc == "singles" and tour in ("ATP", "WTA")}
 
-#: a dislocation is only worth a row if the Kalshi side clears these. Same spirit as qualify_v1.
-MAX_SPREAD = 0.06
-MIN_SIZE = 1.0
-MAX_KALSHI_QUOTE_AGE_S = 3600.0
-MAX_EXTERNAL_STALENESS_S = 1800.0
-MIN_EXTERNAL_EDGE = 0.02
+#: the gates live in the library so the board and the tests share one copy
+POLICY = ScanPolicy()
+MAX_KALSHI_QUOTE_AGE_S = POLICY.max_kalshi_quote_age_s
+MAX_EXTERNAL_STALENESS_S = POLICY.max_external_staleness_s
 
 
 def _f(x):
@@ -246,22 +245,10 @@ def main():
             except (KeyError, TypeError, ValueError):
                 q_age = None
 
-            gates = {
-                "reference_exists": ref.value is not None,
-                "kalshi_two_sided": True,
-                "spread_ok": (ask - bid) <= MAX_SPREAD,
-                "size_ok": size is not None and size >= MIN_SIZE,
-                "kalshi_quote_fresh": q_age is not None and q_age <= MAX_KALSHI_QUOTE_AGE_S,
-                "external_edge_material": ext_edge is not None and ext_edge >= MIN_EXTERNAL_EDGE,
-                "kalshi_is_the_outlier": tri["class"] == KALSHI_LONE_OUTLIER,
-            }
-            failed = [k for k, v in gates.items() if not v]
-            if not failed:
-                decision = "SHADOW_BET"
-            elif gates["reference_exists"] and ext_edge is not None and ext_edge > 0:
-                decision = "WATCH"
-            else:
-                decision = "PASS"
+            res = scan_gates(external_fair=ref.value, kalshi_bid=bid, kalshi_ask=ask, size=size,
+                             quote_age_s=q_age, triangulation=tri["class"], external_edge=ext_edge,
+                             policy=POLICY)
+            gates, failed, decision = res["gates"], res["failed"], res["decision"]
 
             fors, against = [], []
             if ext_edge is not None:
@@ -300,7 +287,7 @@ def main():
                 model_vs_external=tri["model_vs_external"], triangulation=tri["class"],
                 external_edge=ext_edge, first_ball_classification="START_UNKNOWN",
                 first_ball_confidence="UNKNOWN", strict_pregame=False,
-                decision=decision if decision != "SHADOW_BET" or tri["class"] == KALSHI_LONE_OUTLIER else "WATCH",
+                decision=decision,
                 reason_for="; ".join(fors) or "nothing", reason_against="; ".join(against),
                 selector_version="external_v1")
             ledger.append(row)

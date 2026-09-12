@@ -198,3 +198,43 @@ class DislocationLedger:
                         problems.append(f"{fn}:{i}: row modified after the fact")
                     prev = r.get("row_hash")
         return problems
+
+
+@dataclass(frozen=True)
+class ScanPolicy:
+    """The gates the live scan applies. Frozen and versioned so the board and the tests share one copy."""
+    version: str = "external_v1"
+    max_spread: float = 0.06
+    min_size: float = 1.0
+    max_kalshi_quote_age_s: float = 3600.0
+    max_external_staleness_s: float = 1800.0
+    min_external_edge: float = 0.02
+
+
+def scan_gates(*, external_fair: float | None, kalshi_bid: float | None, kalshi_ask: float | None,
+               size: float | None, quote_age_s: float | None, triangulation: str,
+               external_edge: float | None, policy: ScanPolicy = ScanPolicy()) -> dict:
+    """PASS / WATCH / SHADOW_BET for one side of one contract.
+
+    A SHADOW_BET needs an external reference, a Kalshi price we could actually hit, and Kalshi to be the
+    one out of step. WATCH is the honest answer whenever the dislocation is real but something about the
+    execution, the timing or our own corroboration is not.
+    """
+    two_sided = (kalshi_bid is not None and kalshi_ask is not None and 0 < kalshi_bid <= kalshi_ask < 1)
+    gates = {
+        "reference_exists": external_fair is not None,
+        "kalshi_two_sided": bool(two_sided),
+        "spread_ok": bool(two_sided) and (kalshi_ask - kalshi_bid) <= policy.max_spread,
+        "size_ok": size is not None and size >= policy.min_size,
+        "kalshi_quote_fresh": quote_age_s is not None and quote_age_s <= policy.max_kalshi_quote_age_s,
+        "external_edge_material": external_edge is not None and external_edge >= policy.min_external_edge,
+        "kalshi_is_the_outlier": triangulation == KALSHI_LONE_OUTLIER,
+    }
+    failed = [k for k, v in gates.items() if not v]
+    if not failed:
+        decision = "SHADOW_BET"
+    elif gates["reference_exists"] and external_edge is not None and external_edge > 0:
+        decision = "WATCH"
+    else:
+        decision = "PASS"
+    return {"decision": decision, "gates": gates, "failed": failed, "policy_version": policy.version}
