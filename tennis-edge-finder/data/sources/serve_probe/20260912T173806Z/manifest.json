@@ -1,0 +1,64 @@
+{
+ "generated_at": "2026-09-12T17:38:11.329010+00:00",
+ "run_id": "20260912T173806Z",
+ "espn_event_probed": "184607",
+ "any_source_with_serve_stats": false,
+ "candidates": [
+  {
+   "candidate": "espn_wta_scoreboard",
+   "url": "site.api.espn.com .../wta/scoreboard",
+   "ok": true,
+   "status": 200,
+   "bytes": 2277270,
+   "ms": 96
+  },
+  {
+   "candidate": "espn_summary",
+   "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/summary?event=184607",
+   "why": "ESPN's own match page data; the scoreboard carries no statistics, so this is the only ESPN endpoint that could",
+   "ok": false,
+   "status": 400,
+   "error": "HTTP Error 400: Bad Request",
+   "ms": 142
+  },
+  {
+   "candidate": "tennisabstract_robots",
+   "url": "https://www.tennisabstract.com/robots.txt",
+   "why": "whether the site permits automated access at all -- checked BEFORE any data URL",
+   "ok": true,
+   "status": 200,
+   "bytes": 77,
+   "ms": 148,
+   "content": {
+    "parsed": true,
+    "serve_keys_present": [],
+    "looks_like_serve_stats": false
+   },
+   "robots_txt": "User-agent: *\nDisallow: /jsfrags/\nDisallow: /jsmatches/\nDisallow: /jsplayers/"
+  },
+  {
+   "candidate": "wta_official_stats",
+   "url": "https://api.wtatennis.com/tennis/stats/players?page=0&pageSize=5",
+   "why": "the tour's own public JSON, if it exists and is open",
+   "ok": false,
+   "status": 404,
+   "error": "HTTP Error 404: Not Found",
+   "ms": 175
+  },
+  {
+   "candidate": "github_wta_forks",
+   "url": "https://api.github.com/search/repositories?q=tennis_wta+in:name+fork:true&sort=updated&order=desc&per_page=5",
+   "why": "one more look for a live fork, three months after Wave 2 rejected the idea (R-005)",
+   "ok": true,
+   "status": 200,
+   "bytes": 27661,
+   "ms": 419,
+   "content": {
+    "parsed": true,
+    "serve_keys_present": [],
+    "looks_like_serve_stats": false,
+    "statistic_labels_sample": []
+   }
+  }
+ ]
+}
