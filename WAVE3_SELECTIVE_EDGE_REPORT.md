@@ -217,7 +217,10 @@ Not a better selector. The binding constraints are, in order:
 2. **Eighteen days.** Every interval in this report contains zero, and the two evaluation blocks are
    adjacent rather than independent -- the same players, tournaments and surfaces appear in both.
 3. **The WTA serve-data gap**, which is now the only remaining half of the fundamental staleness problem.
-4. **No A/B first-ball truth**, so no strict CLV, so the fastest-settling evidence channel is still shut.
+4. **The strict-CLV channel has just opened and is six rows deep.** The first 8 confidence-B truths
+   and the 6 strict CLV rows they produced arrived on the final day of this wave (see the Phase 16
+   audit above); all 8 are single-witness. Until that accumulates, the fastest-settling evidence
+   channel is technically open and practically empty.
 
 **REAL-MONEY AUTHORITY: OFF.** Nothing in this wave argues for changing that, and the one rule that
 replicated argues for doing less, not more.

@@ -73,6 +73,20 @@ jobs:
           python3 -m pip install --quiet pandas
           python3 scripts/data/fetch_espn_results.py --since "${{ github.event.inputs.espn_since || '2026-04-01' }}"
           ls -d data/sources/espn/* >/dev/null 2>&1 || { echo "::error::ESPN fetch produced no output"; exit 1; }
+      - name: Probe external odds sources
+        id: odds_probe
+        continue-on-error: true
+        timeout-minutes: 12
+        run: |
+          # Wave 4 Phase 0. robots.txt is fetched FIRST for every host and a disallowed path is not
+          # requested at all; a source we may not use is not a source.
+          python3 scripts/external/probe_odds_sources.py
+      - name: Publish external odds probe
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/external_odds_probe --message "external odds probe $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
       - name: Probe for a current serve-statistics source
         id: serve_probe
         continue-on-error: true
