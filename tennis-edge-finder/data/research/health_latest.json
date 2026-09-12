@@ -4,8 +4,8 @@
   "name": "kalshi_tennis_discovery",
   "status": "PASS",
   "detail": {
-   "run": "20260911T063759Z",
-   "age_hours": 13.9,
+   "run": "20260912T003216Z",
+   "age_hours": 4.3,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -17,7 +17,7 @@
   "status": "PASS",
   "detail": {
    "unknown_series": [],
-   "live_markets": 61592,
+   "live_markets": 61874,
    "unparsed": 1,
    "parse_rate": 0.99998
   }
@@ -27,7 +27,7 @@
   "name": "active_market_mapping",
   "status": "PASS",
   "detail": {
-   "active": 533,
+   "active": 451,
    "unparsed": [],
    "unsupported": 129
   }
@@ -37,28 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 75,
-   "projected": 48,
-   "not_projected": 27,
+   "projectable_open_pregame": 265,
+   "projected": 202,
+   "not_projected": 63,
    "missing_sample": [
-    "KXATPGSPREAD-26SEP11ZVEKHA-ZVE9: could not recover both competitors' full names from the even",
-    "KXATPGSPREAD-26SEP11ZVEKHA-ZVE6: could not recover both competitors' full names from the even",
-    "KXATPGSPREAD-26SEP11ZVEKHA-ZVE3: could not recover both competitors' full names from the even",
-    "KXATPGSPREAD-26SEP11TIASHE-SHE8: could not recover both competitors' full names from the even",
-    "KXATPGSPREAD-26SEP11TIASHE-SHE5: could not recover both competitors' full names from the even",
-    "KXATPGSPREAD-26SEP11TIASHE-SHE2: could not recover both competitors' full names from the even",
-    "KXITFDOUBLES-26SEP11BLANAGJAMLAL-JAMLAL: doubles: player 'Blancaneaux' unmapped/ambiguous in ['ATP']",
-    "KXITFDOUBLES-26SEP11BLANAGJAMLAL-BLANAG: doubles: player 'Blancaneaux' unmapped/ambiguous in ['ATP']",
-    "KXITFDOUBLES-26SEP11LEOMORMILSCH-MILSCH: doubles: player 'Leote Prata' unmapped/ambiguous in ['ATP']",
-    "KXITFDOUBLES-26SEP11LEOMORMILSCH-LEOMOR: doubles: player 'Leote Prata' unmapped/ambiguous in ['ATP']"
+    "KXITFWMATCH-26SEP12SVELOM-SVE: Sveva Sveva Fumagalli: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP12SVELOM-LOM: Sveva Sveva Fumagalli: UNMAPPED (no exact full-name match)",
+    "KXATPCHALLENGERMATCH-26SEP12KASHAR-KAS: Jay Friend: UNMAPPED (no exact full-name match)",
+    "KXATPCHALLENGERMATCH-26SEP12KASHAR-HAR: Jay Friend: UNMAPPED (no exact full-name match)",
+    "KXWTASETWINNER-26SEP12MIMDOL-2-MIM: Mimi Xu: UNMAPPED (no exact full-name match)",
+    "KXWTASETWINNER-26SEP12MIMDOL-2-DOL: Mimi Xu: UNMAPPED (no exact full-name match)",
+    "KXWTASETWINNER-26SEP12MIMDOL-1-MIM: Mimi Xu: UNMAPPED (no exact full-name match)",
+    "KXWTASETWINNER-26SEP12MIMDOL-1-DOL: Mimi Xu: UNMAPPED (no exact full-name match)",
+    "KXWTASETWINNER-26SEP12LEPMEL-2-MEL: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match",
+    "KXWTASETWINNER-26SEP12LEPMEL-2-LEP: Nicole Melichar-Martinez: UNMAPPED (no exact full-name match"
    ],
    "excluded_by_policy": {
-    "past_nominal_start": 39,
+    "past_nominal_start": 47,
     "unsupported_family": 118,
-    "closed_since_discovery": 291,
-    "tournament_scope_not_priced_tonight": 10
+    "tournament_scope_not_priced_tonight": 7,
+    "closed_since_discovery": 14
    },
-   "projection_run": "20260911T203222Z"
+   "projection_run": "20260912T045238Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260911T202001Z",
-   "age_min": 10.8,
+   "run": "20260912T044044Z",
+   "age_min": 9.9,
    "incomplete": [
     {
      "stage": "trades",
@@ -87,8 +87,8 @@
   "status": "PASS",
   "detail": {
    "violations": [],
-   "n": 352,
-   "start_unknown_used_schedule": 352
+   "n": 554,
+   "start_unknown_used_schedule": 554
   }
  },
  {
@@ -98,7 +98,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 48
+   "MATCHED": 202
   }
  },
  {
@@ -108,31 +108,31 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 4,
+    "truths": 42,
     "strict_truths": 0,
     "no_play": 0,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 4
+     "C": 42
     },
     "bracket_seconds_median": null,
     "bracket_seconds_p90": null,
     "chain_violations": [],
-    "observations": 44,
-    "matches_observed": 4,
+    "observations": 3864,
+    "matches_observed": 42,
     "watchlist": {
-     "total": 94,
-     "levels_with_a_wired_source": 12,
-     "levels_without_any_source": 82,
-     "watched_and_observed": 2,
-     "covered_and_observed": 0,
-     "pct_covered_with_source_mapping": 0.0
+     "total": 96,
+     "levels_with_a_wired_source": 27,
+     "levels_without_any_source": 69,
+     "watched_and_observed": 27,
+     "covered_and_observed": 27,
+     "pct_covered_with_source_mapping": 1.0
     },
     "pct_classifiable": 0.0,
     "pct_strict_pregame": 0.0,
     "timing_classes": {
-     "START_UNKNOWN": 352
+     "START_UNKNOWN": 554
     }
    }
   }
@@ -158,10 +158,10 @@
    "strict_clv_rows": 0,
    "executable_close_rows": 0,
    "matches_with_strict_truth": 0,
-   "observations_classified": 352,
+   "observations_classified": 554,
    "pct_strict_pregame": 0.0,
    "horizons_populated": 0,
-   "horizons_total": 2816
+   "horizons_total": 4432
   }
  },
  {
@@ -187,7 +187,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-11T20:28:27.124262+00:00",
+   "built_at": "2026-09-12T04:47:50.755679+00:00",
    "rows": 1624759
   }
  },
@@ -197,18 +197,18 @@
   "status": "FAIL",
   "detail": {
    "run": "20260911T184329Z",
-   "snapshot_age_days": 0.07,
+   "snapshot_age_days": 0.42,
    "max_season_files": [
     2026,
     2026
    ],
    "ratings_as_of": {
-    "ATP": "2026-06-01",
+    "ATP": "2026-09-01",
     "WTA": "2026-04-27"
    },
    "ratings_stale_days": {
-    "ATP": 102,
-    "WTA": 137
+    "ATP": 11,
+    "WTA": 138
    }
   }
  }
