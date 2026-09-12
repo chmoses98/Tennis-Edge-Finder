@@ -1,0 +1,33 @@
+{
+ "run_id": "20260912T045611Z",
+ "discovery": "20260912T003216Z",
+ "passes": 10,
+ "parsed_match_markets": 60826,
+ "book_quotes": 0,
+ "price_only": {},
+ "executable": {},
+ "quotes_seen": 2290,
+ "matches_scanned": 1179,
+ "contracts_scanned": 2290,
+ "board_shape": {
+  "open_quotes_by_family": {
+   "MATCH_WINNER": 206,
+   "SET_WINNER": 68,
+   "EXACT_SET_SCORE": 4,
+   "TOTAL_GAMES": 3
+  },
+  "contracts_per_match": {
+   "2": 136,
+   "9": 1
+  },
+  "two_sided_match_winner_pairs": 103,
+  "ask_sum_median": 1.02,
+  "ask_sum_min": 0.99,
+  "bid_sum_median": 0.98,
+  "bid_sum_max": 1.0,
+  "round_trip_spread_median": 0.03,
+  "pairs_ask_sum_below_1": 1,
+  "pairs_bid_sum_above_1": 0
+ },
+ "distinct_opportunities": 0
+}
