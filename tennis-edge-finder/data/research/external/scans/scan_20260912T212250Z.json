@@ -1,0 +1,60 @@
+{
+ "generated_at": "2026-09-12T21:22:50.098787+00:00",
+ "run_id": "20260912T212250Z",
+ "external_parse": {
+  "events": 40,
+  "markets": 396,
+  "skipped_family": 139,
+  "skipped_period": 93,
+  "skipped_live": 10,
+  "one_sided": 9,
+  "rows": 582,
+  "devigged": 155
+ },
+ "kalshi_quotes_on_disk": 240,
+ "external_mapping": {
+  "total": 34,
+  "by_status": {
+   "MAPPED": 30,
+   "UNMAPPED_PLAYER": 1,
+   "DOUBLES_UNSUPPORTED": 3
+  },
+  "mapped_rate": 0.8824,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 3,
+   "Maria Urrutia": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8431,
+  "top_refusal_subjects": {
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Juan Ignacio Lombisano": 1,
+   "KIDLAT ESTOGERO": 1,
+   "George Margiev": 1,
+   "Theodore Londol": 1,
+   "Victor Pagotto": 1,
+   "Romane MOREL": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 30,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MODEL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
