@@ -125,6 +125,38 @@ exists within twenty minutes without waiting for settlement.
 Nothing. Kalshi does not drift toward Bovada over twenty minutes, and the one Kalshi-lone-outlier with a
 follow-up did not move at all. At n=1 that is an anecdote, not a result.
 
+## The strict-CLV channel opened properly while this wave ran
+
+Wave 3 closed with 8 confidence-B first-ball truths and 6 strict CLV rows. By the end of Wave 4, on the
+same untouched conductor and the same unchanged confidence rules:
+
+| | end of Wave 3 | end of Wave 4 |
+|---|---|---|
+| confidence-B first-ball truths | 8 | **36** |
+| strict CLV rows | 6 | **238** (33 matches, 68 contracts) |
+
+All 238 classify STRICT_PREGAME. And they are now numerous enough to say something:
+
+| measure | n | mean | median | 95% CI |
+|---|---|---|---|---|
+| **strict executable CLV** | 238 | **−0.0995** | −0.0400 | **[−0.1217, −0.0792]** |
+| midpoint CLV | 238 | +0.0014 | 0.0000 | [−0.0110, +0.0135] |
+
+This is the project's first strict CLV measurement with a sample behind it, and it is decisive in a way
+that fits everything else in this report. **Midpoint CLV is indistinguishable from zero**: our entries
+are neither better nor worse than where the market eventually closed. **Executable CLV is −10c**, and the
+gap between the two is the cost of crossing the spread — these rows are dominated by SET_WINNER (136) and
+EXACT_SET_SCORE (28), families whose spreads are far wider than the 2c on match winner.
+
+So the same wall appears from a third direction. Wave 3 found no accuracy edge; Wave 4 found no
+cross-venue dislocation larger than the cost; and now the CLV ledger says our entries have no timing
+edge either, while the execution cost is roughly ten cents on the derivative families.
+
+The count of both sides of a market inflates the negative executable figure somewhat — buying both sides
+pays the spread twice — so read −10c as an upper bound on the cost, not a claim that a single one-sided
+entry loses that much. The midpoint figure, which is immune to that, is the one that says there is no
+edge: zero.
+
 ## Settlement economics
 
 **None yet.** No contract observed in this window had settled by the time of writing.
@@ -189,7 +221,9 @@ about 3c.
    counterpart.
 4. **The cost wall.** A 2c spread plus a ~1.75c fee against a sub-1c typical disagreement. This is the
    binding constraint on the entire external hypothesis, and no amount of data collection changes it.
-5. **Strict CLV is 6 rows deep** and every one predates this wave's dislocations.
+5. **Strict CLV now has 238 rows and says our entries have no timing edge** (midpoint CLV zero,
+   executable −10c). None of those rows is attached to a Wave 4 dislocation yet; that link starts
+   accumulating from now.
 6. **WTA serve statistics still stop at 2026-04-27.**
 
 ## The recommended next state
