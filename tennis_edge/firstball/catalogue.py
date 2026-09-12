@@ -186,4 +186,51 @@ ROUND3: tuple[Candidate, ...] = (
 
 CANDIDATES = CANDIDATES + ROUND3
 
+# ---------------------------------------------------------------------------------------------------
+# Round 4 (Wave 2, 2026-09-12): FUNDAMENTAL DATA freshness, not first-ball. TENNIS-14 fails because the
+# Sackmann forks in use end 2026-06-01 (ATP) and 2026-04-27 (WTA). No Gen-2 claim is worth anything on
+# four-month-old ratings, so before modelling anything this asks: which free source actually carries
+# CURRENT results, rankings and match statistics? ESPN is already proven reachable and its dated
+# scoreboard answers for past dates too, which would make backfill possible for the main tours.
+ROUND4: tuple[Candidate, ...] = (
+    C("espn_atp_rankings", "ESPN - ATP rankings", "broadcaster",
+      "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/rankings", ("ATP",), (),
+      notes="current rankings?"),
+    C("espn_wta_rankings", "ESPN - WTA rankings", "broadcaster",
+      "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/rankings", ("WTA",), ()),
+    C("espn_match_summary", "ESPN - completed match summary (serve stats?)", "broadcaster",
+      "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/summary?event=184607", ("ATP",), (5,),
+      notes="does a completed match carry serve/return statistics?"),
+    C("espn_core_athletes", "ESPN core - athlete index", "broadcaster",
+      "https://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/athletes?limit=100", ("ATP",), (),
+      notes="player identity source"),
+    C("sackmann_atp_repo", "JeffSackmann/tennis_atp repo metadata", "aggregator",
+      "https://api.github.com/repos/JeffSackmann/tennis_atp", ("ALL",), (),
+      notes="upstream 404'd during the overnight build; is it back?"),
+    C("sackmann_wta_repo", "JeffSackmann/tennis_wta repo metadata", "aggregator",
+      "https://api.github.com/repos/JeffSackmann/tennis_wta", ("ALL",), ()),
+    C("sackmann_atp_2026", "Sackmann ATP 2026 matches (raw)", "aggregator",
+      "https://raw.githubusercontent.com/JeffSackmann/tennis_atp/master/atp_matches_2026.csv",
+      ("ATP",), (), expect="html", accept="text/plain"),
+    C("sackmann_forks_recent", "GitHub search: most recently updated tennis_atp forks", "aggregator",
+      "https://api.github.com/search/repositories?q=tennis_atp+in:name+fork:only&sort=updated&order=desc&per_page=20",
+      ("ALL",), (), notes="find a fork fresher than the one in use"),
+    C("tml_repo", "Tennismylife/TML-Database metadata", "aggregator",
+      "https://api.github.com/repos/Tennismylife/TML-Database", ("ALL",), ()),
+    C("tml_2026", "TML 2026 season file (raw)", "aggregator",
+      "https://raw.githubusercontent.com/Tennismylife/TML-Database/master/2026.csv", ("ALL",), (),
+      expect="html", accept="text/plain"),
+    C("kadantte_fork_repo", "Kadantte/tennis_atp (the fork currently in use)", "aggregator",
+      "https://api.github.com/repos/Kadantte/tennis_atp", ("ATP",), ()),
+    C("victorsquid_fork_repo", "VictorSquidWei/tennis_wta (the WTA fork in use)", "aggregator",
+      "https://api.github.com/repos/VictorSquidWei/tennis_wta", ("WTA",), ()),
+    C("tennisdata_couk_2026", "tennis-data.co.uk 2026 ATP workbook", "aggregator",
+      "http://www.tennis-data.co.uk/2026/2026.xlsx", ("ATP",), (), expect="unknown", accept="*/*",
+      notes="503 for every request during the overnight build; recheck"),
+    C("gmalbert_mirror_repo", "gmalbert/tennis-predictions mirror metadata", "aggregator",
+      "https://api.github.com/repos/gmalbert/tennis-predictions", ("ALL",), ()),
+)
+
+CANDIDATES = CANDIDATES + ROUND4
+
 HOSTS = tuple(sorted({c.url.split("/")[2] for c in CANDIDATES}))
