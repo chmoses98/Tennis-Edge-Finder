@@ -1,5 +1,5 @@
 {
- "built_at": "2026-09-11T20:28:27.124262+00:00",
+ "built_at": "2026-09-12T04:47:50.755679+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
@@ -1286,6 +1286,18 @@
  },
  "min_year": 1990,
  "cross_source_duplicates_dropped": 142827,
+ "player_crosswalk": {
+  "foreign_players": 4991,
+  "by_status": {
+   "MAPPED": 4701,
+   "NO_CANONICAL_MATCH": 239,
+   "AMBIGUOUS_NAME": 51
+  },
+  "rows_total": 1624759,
+  "rows_canonical_id": 1616619,
+  "foreign_rows": 97036,
+  "foreign_rows_mapped": 88896
+ },
  "rows": 1624759,
  "quarantine_rows": 13729,
  "by_tour_level": {
@@ -1350,5 +1362,5 @@
   "2025": 56342,
   "2026": 23510
  },
- "matches_sha256": "caae89a51bbb1af057f25af004bcbdd02cf2e306320847c1e60b4c7635d325b3"
+ "matches_sha256": "f553b1aa296238f53fc10f09666982903de4158509f3e21905f990a750ecd68a"
 }
