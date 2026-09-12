@@ -1,0 +1,59 @@
+{
+ "run_id": "20260912T160502Z",
+ "started_at": "2026-09-12T16:05:02.131759+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 339,
+ "truths_written": 6,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP12PANSCO-2": {
+   "confidence": "B",
+   "bracket_s": 190.420285,
+   "first_ball": "2026-09-12T16:08:11.518727+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12PANSCO-1": {
+   "confidence": "B",
+   "bracket_s": 190.420285,
+   "first_ball": "2026-09-12T16:08:11.518727+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP12PANSCO": {
+   "confidence": "B",
+   "bracket_s": 190.420285,
+   "first_ball": "2026-09-12T16:08:11.518727+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12BIEHIB-2": {
+   "confidence": "B",
+   "bracket_s": 190.415099,
+   "first_ball": "2026-09-12T16:09:21.936420+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12BIEHIB-1": {
+   "confidence": "B",
+   "bracket_s": 190.415099,
+   "first_ball": "2026-09-12T16:09:21.936420+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP12BIEHIB": {
+   "confidence": "B",
+   "bracket_s": 190.415099,
+   "first_ball": "2026-09-12T16:09:21.936420+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "UNMATCHED": 90,
+  "MATCHED": 339
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-12T16:14:32.118388+00:00"
+}
