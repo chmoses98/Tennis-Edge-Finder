@@ -108,24 +108,37 @@ def describe(rows, label):
     return out
 
 
-def settlements_from_capture(capture_root: str) -> dict:
-    """{ticker: 1.0/0.0} from the capture stream itself.
+def settlements(capture_root: str, discovery_root: str) -> dict:
+    """{ticker: 1.0/0.0} for markets that have settled.
 
-    Kalshi writes the settled result onto the market record, and the capture publishes every CHANGED
-    market, so a settlement arrives in the ordinary quote stream. No separate settlement feed is needed
-    and, more to the point, no closing line is ever reconstructed after the fact.
+    NOT from the quote stream. The capture fetches the ACTIVE board, so a settled market simply stops
+    appearing there and its result is never written into a capture file -- 30,961 captured quote rows
+    across an evening contained exactly zero results, which is how this was found. Settlements live in
+    the discovery snapshot's `historical_markets`, refreshed daily by the conductor. The capture is still
+    scanned as a fallback in case that ever changes.
     """
     import gzip
     out = {}
+    for f in sorted(glob.glob(os.path.join(discovery_root, "*", "historical_markets", "*.json"))
+                    + sorted(glob.glob(os.path.join(discovery_root, "*", "markets", "*.json")))):
+        try:
+            obj = json.load(open(f))
+        except (OSError, json.JSONDecodeError):
+            continue
+        for blk in (obj.values() if isinstance(obj, dict) and "markets" not in obj else [obj]):
+            if not isinstance(blk, dict):
+                continue
+            for m in blk.get("markets") or []:
+                if m.get("result") in ("yes", "no"):
+                    out[m["ticker"]] = 1.0 if m["result"] == "yes" else 0.0
     for f in sorted(glob.glob(os.path.join(capture_root, "*", "*.quotes.jsonl.gz"))):
         with gzip.open(f, "rt") as fh:
             for line in fh:
                 if not line.strip():
                     continue
                 m = json.loads(line)
-                r = m.get("result")
-                if r in ("yes", "no"):
-                    out[m["ticker"]] = 1.0 if r == "yes" else 0.0
+                if m.get("result") in ("yes", "no"):
+                    out[m["ticker"]] = 1.0 if m["result"] == "yes" else 0.0
     return out
 
 
@@ -162,7 +175,9 @@ def main():
     ap.add_argument("--out", default=os.path.join(PROJ, "research", "external_market"))
     ap.add_argument("--min-gap-min", type=float, default=20.0)
     ap.add_argument("--capture", default=os.path.join(PROJ, "data", "kalshi", "capture"),
-                    help="capture root, read only to recover settlements from the quote stream")
+                    help="capture root; scanned for settlements only as a fallback")
+    ap.add_argument("--discovery", default=os.path.join(PROJ, "data", "kalshi", "discovery"),
+                    help="discovery root: where settled results actually live")
     a = ap.parse_args()
     rows = load(a.ledger)
     if not rows:
@@ -197,7 +212,8 @@ def main():
             buckets[keyfn(r)].append(r)
         res["scorecards"][name] = [describe(v, k) for k, v in sorted(buckets.items())]
 
-    settled = settlements_from_capture(a.capture) if os.path.isdir(a.capture) else {}
+    settled = settlements(a.capture if os.path.isdir(a.capture) else "",
+                          a.discovery if os.path.isdir(a.discovery) else "")
     res["settled_contracts_seen"] = len(settled)
     res["accuracy"] = accuracy(withref, settled)
     res["accuracy_kalshi_outlier"] = accuracy(

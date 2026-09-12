@@ -1,0 +1,252 @@
+{
+ "generated_at": "2026-09-12T21:08:54.111290+00:00",
+ "rows": 260,
+ "rows_with_reference": 148,
+ "distinct_tickers": 42,
+ "distinct_matches": 21,
+ "window": [
+  "2026-09-12T19:32:56.577741+00:00",
+  "2026-09-12T21:03:40.953810+00:00"
+ ],
+ "decisions": {
+  "PASS": 258,
+  "WATCH": 2,
+  "SHADOW_BET": 0
+ },
+ "triangulation": {
+  "ALL_THREE_DISAGREE": 3,
+  "INSUFFICIENT_INPUTS": 112,
+  "KALSHI_LONE_OUTLIER": 5,
+  "MARKETS_AGREE": 46,
+  "MODEL_LONE_OUTLIER": 94
+ },
+ "overall": {
+  "subset": "all rows with a reference",
+  "n": 148,
+  "ext_vs_kalshi_median": -0.00141,
+  "ext_vs_kalshi_mean": -0.00061,
+  "ext_vs_kalshi_p90_abs": 0.01903,
+  "share_over_2c": 0.0541,
+  "share_over_5c": 0.0,
+  "external_edge_median": -0.03125,
+  "external_edge_max": 0.00701,
+  "share_edge_over_2c": 0.0,
+  "n_with_follow_up": 88,
+  "move_toward_external_mean": 0.0004,
+  "move_toward_external_ci": [
+   -0.00051,
+   0.00136
+  ],
+  "share_moved_toward": 0.2045,
+  "median_follow_up_minutes": 21.0
+ },
+ "by_triangulation": [
+  {
+   "subset": "ALL_THREE_DISAGREE",
+   "n": 3,
+   "ext_vs_kalshi_median": -0.02075,
+   "ext_vs_kalshi_mean": -0.00692,
+   "ext_vs_kalshi_p90_abs": 0.02403,
+   "share_over_2c": 1.0,
+   "share_over_5c": 0.0,
+   "external_edge_median": -0.04575,
+   "external_edge_max": -0.00597,
+   "share_edge_over_2c": 0.0,
+   "n_with_follow_up": 3,
+   "move_toward_external_mean": 0.005,
+   "move_toward_external_ci": [
+    0.005,
+    0.005
+   ],
+   "share_moved_toward": 1.0,
+   "median_follow_up_minutes": 30.1
+  },
+  {
+   "subset": "INSUFFICIENT_INPUTS",
+   "n": 0
+  },
+  {
+   "subset": "KALSHI_LONE_OUTLIER",
+   "n": 5,
+   "ext_vs_kalshi_median": -0.02475,
+   "ext_vs_kalshi_mean": -0.00495,
+   "ext_vs_kalshi_p90_abs": 0.03201,
+   "share_over_2c": 1.0,
+   "share_over_5c": 0.0,
+   "external_edge_median": -0.04975,
+   "external_edge_max": 0.00701,
+   "share_edge_over_2c": 0.0,
+   "n_with_follow_up": 1,
+   "move_toward_external_mean": 0.0,
+   "move_toward_external_ci": [
+    null,
+    null
+   ],
+   "share_moved_toward": 0.0,
+   "median_follow_up_minutes": 21.0
+  },
+  {
+   "subset": "MARKETS_AGREE",
+   "n": 46,
+   "ext_vs_kalshi_median": -0.0052,
+   "ext_vs_kalshi_mean": -0.00234,
+   "ext_vs_kalshi_p90_abs": 0.01341,
+   "share_over_2c": 0.0,
+   "share_over_5c": 0.0,
+   "external_edge_median": -0.03341,
+   "external_edge_max": -0.00659,
+   "share_edge_over_2c": 0.0,
+   "n_with_follow_up": 28,
+   "move_toward_external_mean": 0.00143,
+   "move_toward_external_ci": [
+    -0.00036,
+    0.00375
+   ],
+   "share_moved_toward": 0.25,
+   "median_follow_up_minutes": 21.0
+  },
+  {
+   "subset": "MODEL_LONE_OUTLIER",
+   "n": 94,
+   "ext_vs_kalshi_median": -0.00073,
+   "ext_vs_kalshi_mean": 0.00067,
+   "ext_vs_kalshi_p90_abs": 0.01427,
+   "share_over_2c": 0.0,
+   "share_over_5c": 0.0,
+   "external_edge_median": -0.02713,
+   "external_edge_max": -0.00073,
+   "share_edge_over_2c": 0.0,
+   "n_with_follow_up": 56,
+   "move_toward_external_mean": -0.00036,
+   "move_toward_external_ci": [
+    -0.00134,
+    0.00063
+   ],
+   "share_moved_toward": 0.1429,
+   "median_follow_up_minutes": 21.0
+  }
+ ],
+ "scorecards": {
+  "by_day": [
+   {
+    "subset": "2026-09-12",
+    "n": 148,
+    "ext_vs_kalshi_median": -0.00141,
+    "ext_vs_kalshi_mean": -0.00061,
+    "ext_vs_kalshi_p90_abs": 0.01903,
+    "share_over_2c": 0.0541,
+    "share_over_5c": 0.0,
+    "external_edge_median": -0.03125,
+    "external_edge_max": 0.00701,
+    "share_edge_over_2c": 0.0,
+    "n_with_follow_up": 88,
+    "move_toward_external_mean": 0.0004,
+    "move_toward_external_ci": [
+     -0.00051,
+     0.00136
+    ],
+    "share_moved_toward": 0.2045,
+    "median_follow_up_minutes": 21.0
+   }
+  ],
+  "by_week": [
+   {
+    "subset": "2026-W37",
+    "n": 148,
+    "ext_vs_kalshi_median": -0.00141,
+    "ext_vs_kalshi_mean": -0.00061,
+    "ext_vs_kalshi_p90_abs": 0.01903,
+    "share_over_2c": 0.0541,
+    "share_over_5c": 0.0,
+    "external_edge_median": -0.03125,
+    "external_edge_max": 0.00701,
+    "share_edge_over_2c": 0.0,
+    "n_with_follow_up": 88,
+    "move_toward_external_mean": 0.0004,
+    "move_toward_external_ci": [
+     -0.00051,
+     0.00136
+    ],
+    "share_moved_toward": 0.2045,
+    "median_follow_up_minutes": 21.0
+   }
+  ],
+  "by_tour": [
+   {
+    "subset": "ATP",
+    "n": 12,
+    "ext_vs_kalshi_median": -0.0,
+    "ext_vs_kalshi_mean": -0.00042,
+    "ext_vs_kalshi_p90_abs": 0.00947,
+    "share_over_2c": 0.0833,
+    "share_over_5c": 0.0,
+    "external_edge_median": -0.025,
+    "external_edge_max": -0.01025,
+    "share_edge_over_2c": 0.0,
+    "n_with_follow_up": 12,
+    "move_toward_external_mean": -0.00042,
+    "move_toward_external_ci": [
+     -0.00125,
+     0.0
+    ],
+    "share_moved_toward": 0.0,
+    "median_follow_up_minutes": 25.4
+   },
+   {
+    "subset": "WTA",
+    "n": 136,
+    "ext_vs_kalshi_median": -0.00141,
+    "ext_vs_kalshi_mean": -0.00062,
+    "ext_vs_kalshi_p90_abs": 0.01903,
+    "share_over_2c": 0.0515,
+    "share_over_5c": 0.0,
+    "external_edge_median": -0.03125,
+    "external_edge_max": 0.00701,
+    "share_edge_over_2c": 0.0,
+    "n_with_follow_up": 76,
+    "move_toward_external_mean": 0.00053,
+    "move_toward_external_ci": [
+     -0.00053,
+     0.00171
+    ],
+    "share_moved_toward": 0.2368,
+    "median_follow_up_minutes": 21.0
+   }
+  ],
+  "by_family": [
+   {
+    "subset": "MATCH_WINNER",
+    "n": 148,
+    "ext_vs_kalshi_median": -0.00141,
+    "ext_vs_kalshi_mean": -0.00061,
+    "ext_vs_kalshi_p90_abs": 0.01903,
+    "share_over_2c": 0.0541,
+    "share_over_5c": 0.0,
+    "external_edge_median": -0.03125,
+    "external_edge_max": 0.00701,
+    "share_edge_over_2c": 0.0,
+    "n_with_follow_up": 88,
+    "move_toward_external_mean": 0.0004,
+    "move_toward_external_ci": [
+     -0.00051,
+     0.00136
+    ],
+    "share_moved_toward": 0.2045,
+    "median_follow_up_minutes": 21.0
+   }
+  ]
+ },
+ "settled_contracts_seen": 155777,
+ "accuracy": {
+  "n": 0,
+  "note": "no observed contract has settled yet"
+ },
+ "accuracy_kalshi_outlier": {
+  "n": 0,
+  "note": "no observed contract has settled yet"
+ },
+ "accuracy_model_outlier": {
+  "n": 0,
+  "note": "no observed contract has settled yet"
+ }
+}
