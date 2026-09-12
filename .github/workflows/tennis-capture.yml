@@ -50,6 +50,20 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Restore the artifacts the external scan prices from
+        run: |
+          # Wave 4. The scan needs the rating registry and the walk-forward states; both are published by
+          # tennis-run and are far cheaper to fetch than to rebuild inside a ten-minute loop.
+          python3 -m pip install --quiet pandas pyarrow
+          git fetch --depth=1 origin tennis-data || true
+          mkdir -p data/processed/asof
+          for f in ratings_ATP.json ratings_WTA.json; do
+            git show origin/tennis-data:tennis-edge-finder/data/processed/$f > data/processed/$f 2>/dev/null || echo "::warning::no $f on tennis-data"
+          done
+          for f in asof_ATP.json.gz asof_WTA.json.gz; do
+            git show origin/tennis-data:tennis-edge-finder/data/processed/asof/$f > data/processed/asof/$f 2>/dev/null || echo "::warning::no $f on tennis-data"
+          done
+          ls -la data/processed data/processed/asof || true
       - name: Loop capture + publish
         run: |
           git config user.name  "github-actions[bot]"
@@ -72,6 +86,11 @@ jobs:
               rm -rf data/kalshi/discovery
             fi
             python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/capture --message "kalshi tennis capture $(date -u +'%Y-%m-%dT%H:%M:%SZ') (conductor pass $PASS)" || echo "::warning::publish failed on pass $PASS"
+            # Wave 4: an independent venue against the same board, BEFORE the capture files are cleaned
+            # up, since the scan reads the quotes this pass just wrote.
+            python3 scripts/external/capture_and_scan.py || echo "::warning::external scan failed on pass $PASS"
+            python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/external --message "external market scan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (pass $PASS)" || echo "::warning::external publish failed on pass $PASS"
+            rm -rf data/research/external/raw/*
             rm -rf data/kalshi/capture/2*; find data/kalshi/capture -size +95M -delete
             PASS=$((PASS+1))
             ELAPSED=$(( $(date +%s) - T0 ))
