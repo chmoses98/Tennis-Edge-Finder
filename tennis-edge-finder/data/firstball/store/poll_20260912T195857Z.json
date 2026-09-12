@@ -1,0 +1,40 @@
+{
+ "run_id": "20260912T195857Z",
+ "started_at": "2026-09-12T19:58:57.656195+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 177,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP12MIKVER-2": {
+   "confidence": "B",
+   "bracket_s": 190.482377,
+   "first_ball": "2026-09-12T19:58:34.736809+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP12MIKVER-1": {
+   "confidence": "B",
+   "bracket_s": 190.482377,
+   "first_ball": "2026-09-12T19:58:34.736809+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP12MIKVER": {
+   "confidence": "B",
+   "bracket_s": 190.482377,
+   "first_ball": "2026-09-12T19:58:34.736809+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 177
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-12T20:08:23.682710+00:00"
+}
