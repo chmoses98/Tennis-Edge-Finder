@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-13T14:46:41.134522+00:00",
+ "run_id": "20260913T144641Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 980,
+  "skipped_family": 283,
+  "skipped_period": 276,
+  "skipped_live": 30,
+  "one_sided": 77,
+  "rows": 1323,
+  "devigged": 344
+ },
+ "smarkets_fetch": {
+  "events_seen": 182,
+  "events_priced": 80,
+  "markets": 1140,
+  "markets_mapped": 269,
+  "contracts": 574,
+  "quoted_contracts": 574,
+  "raw": "data/research/external/raw/20260913T144641Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 269,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 9,
+  "rows": 565,
+  "two_sided": 564,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 521,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.77,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Nadia Kichenok": 1,
+   "Mark Krupkin": 1,
+   "Alyson Shannon": 1,
+   "Maeve Thornton": 1,
+   "Egor Scherbakov": 1,
+   "Bogdan Seleznev": 1,
+   "Astrid Brune Olsen": 1,
+   "Sofia Cabezas Dominguez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Tessa Johanna Brockmann": 1,
+   "Nadiia Kichenok": 1,
+   "Alexander Binda": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 85,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8854,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Alexander Binda": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aran Teixido Garcia": 1,
+   "Bogdan Seleznev": 1,
+   "Egor Shcherbakov": 1,
+   "Victor Victor Joly": 1,
+   "Arthur Richard": 1,
+   "Jeremy Condere": 1,
+   "Romane MOREL": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 85,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 94,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 70,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
