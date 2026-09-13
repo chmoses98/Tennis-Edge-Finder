@@ -73,6 +73,20 @@ jobs:
           python3 -m pip install --quiet pandas
           python3 scripts/data/fetch_espn_results.py --since "${{ github.event.inputs.espn_since || '2026-04-01' }}"
           ls -d data/sources/espn/* >/dev/null 2>&1 || { echo "::error::ESPN fetch produced no output"; exit 1; }
+      - name: Probe Smarkets traversal
+        id: smarkets_probe
+        continue-on-error: true
+        timeout-minutes: 15
+        run: |
+          # Wave 5. Reverse the path from the public event tree to an executable tennis price. robots.txt
+          # first, bounded fan-out, spaced requests, and a stop on any 401/403 rather than a workaround.
+          python3 scripts/external/probe_smarkets.py
+      - name: Publish Smarkets probe
+        if: always()
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/smarkets_probe --message "smarkets probe $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
       - name: Probe external odds sources
         id: odds_probe
         continue-on-error: true
