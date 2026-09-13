@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-09-13T22:44:31.184910+00:00",
+ "run_id": "20260913T224431Z",
+ "external_parse": {
+  "events": 73,
+  "markets": 770,
+  "skipped_family": 126,
+  "skipped_period": 251,
+  "skipped_live": 6,
+  "one_sided": 11,
+  "rows": 1383,
+  "devigged": 382
+ },
+ "smarkets_fetch": {
+  "events_seen": 231,
+  "events_priced": 80,
+  "markets": 559,
+  "markets_mapped": 209,
+  "contracts": 424,
+  "quoted_contracts": 424,
+  "raw": "data/research/external/raw/20260913T224431Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 209,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 385,
+  "two_sided": 378,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 201,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6154,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Kim Dong Ju": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9194,
+  "top_refusal_subjects": {
+   "Aran Teixido Garcia": 1,
+   "Robin Eldin": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Juan Esteban Inostroza Alfaro": 1,
+   "Arno Guillet": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 71,
+  "tri:INSUFFICIENT_INPUTS": 57,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
