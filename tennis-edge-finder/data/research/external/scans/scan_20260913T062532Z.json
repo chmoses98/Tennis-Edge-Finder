@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-13T06:25:32.819650+00:00",
+ "run_id": "20260913T062532Z",
+ "external_parse": {
+  "events": 125,
+  "markets": 1574,
+  "skipped_family": 315,
+  "skipped_period": 466,
+  "skipped_live": 4,
+  "one_sided": 67,
+  "rows": 2460,
+  "devigged": 726
+ },
+ "smarkets_fetch": {
+  "events_seen": 178,
+  "events_priced": 80,
+  "markets": 542,
+  "markets_mapped": 184,
+  "contracts": 382,
+  "quoted_contracts": 382,
+  "raw": "data/research/external/raw/20260913T062532Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 184,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 361,
+  "two_sided": 356,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 321,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8621,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Nadia Kichenok": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "Hao Duan": 1,
+   "Stefano D'Agostino": 1,
+   "Cesare Carpano": 1,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Ziyu Liu": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tessa Johanna Brockmann": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 89,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8476,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Matthieu Roehrich": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Oleg Tyagunov": 1,
+   "Tom LEFEUVRE": 1,
+   "Juan Ignacio Lombisano": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 89,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 113,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:MARKETS_AGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 69,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 2,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
