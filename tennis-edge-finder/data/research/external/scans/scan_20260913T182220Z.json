@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-13T18:22:20.350318+00:00",
+ "run_id": "20260913T182220Z",
+ "external_parse": {
+  "events": 73,
+  "markets": 684,
+  "skipped_family": 140,
+  "skipped_period": 204,
+  "skipped_live": 13,
+  "one_sided": 17,
+  "rows": 1238,
+  "devigged": 323
+ },
+ "smarkets_fetch": {
+  "events_seen": 201,
+  "events_priced": 80,
+  "markets": 714,
+  "markets_mapped": 222,
+  "contracts": 462,
+  "quoted_contracts": 462,
+  "raw": "data/research/external/raw/20260913T182220Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 222,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 119,
+  "rows": 343,
+  "two_sided": 330,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 218,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6615,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Luca Lemaitre": 1,
+   "Pavel Bushuev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 48,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 1,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9583,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 46,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
