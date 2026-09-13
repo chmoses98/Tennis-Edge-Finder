@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-13T08:29:56.758891+00:00",
+ "run_id": "20260913T082956Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1582,
+  "skipped_family": 324,
+  "skipped_period": 460,
+  "skipped_live": 19,
+  "one_sided": 91,
+  "rows": 2415,
+  "devigged": 706
+ },
+ "smarkets_fetch": {
+  "events_seen": 172,
+  "events_priced": 80,
+  "markets": 721,
+  "markets_mapped": 250,
+  "contracts": 518,
+  "quoted_contracts": 518,
+  "raw": "data/research/external/raw/20260913T082956Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 250,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 497,
+  "two_sided": 493,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 416,
+ "external_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 115,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.8394,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Nadia Kichenok": 1,
+   "Cesare Carpano": 1,
+   "Stefano D'agostino": 1,
+   "Hao Duan": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1,
+   "Aleksandr Chistiakov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 2
+  },
+  "mapped_rate": 0.8875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 2,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Ziyu Liu": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tessa Johanna Brockmann": 1,
+   "Nadiia Kichenok": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 114,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8769,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Fedor Altukhov": 1,
+   "Jeremy Condere": 1,
+   "Juan Ignacio Lombisano": 1
+  }
+ },
+ "matched_both_venues": 95,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 114,
+ "model_witness_available": true,
+ "rows": 160,
+ "counts": {
+  "PASS": 152,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "tri:KALSHI_LONE_OUTLIER": 18,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 6,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
