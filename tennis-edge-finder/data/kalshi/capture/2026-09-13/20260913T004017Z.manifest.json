@@ -1,0 +1,65 @@
+{
+ "run_id": "20260913T004017Z",
+ "started_at": "2026-09-13T00:40:17.535342+00:00",
+ "incomplete": [
+  {
+   "stage": "trades",
+   "info": {
+    "pages": 250,
+    "error": null,
+    "truncated_by_max_pages": true
+   },
+   "scanned": 250000
+  }
+ ],
+ "counts": {
+  "open_markets": 538,
+  "quotes_written": 275,
+  "quotes_unchanged": 263,
+  "events_new": 1,
+  "books": 23,
+  "book_candidates": 23,
+  "trades_tennis": 5430,
+  "trades_global_scanned": 250000,
+  "settlements": 0,
+  "candles": 0
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 420,
+  "retries": 3,
+  "http_429": 3,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 29.640658410391193,
+  "by_path": {
+   "markets": 143,
+   "events/KXWTACHALLENGERMATCH-26SEP13KULRAP": 1,
+   "markets/KXITFDOUBLES-26SEP09BRIPAGBRUVAL-BRIPAG/orderbook": 1,
+   "markets/KXITFDOUBLES-26SEP09BRIPAGBRUVAL-BRUVAL/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26SEP11RECSINKARPAU-KARPAU/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26SEP11RECSINKARPAU-RECSIN/orderbook": 1,
+   "markets/KXWTAGTOTAL-26SEP12KINROD-15/orderbook": 1,
+   "markets/KXWTAGTOTAL-26SEP12KINROD-20/orderbook": 1,
+   "markets/KXWTAGTOTAL-26SEP12KINROD-25/orderbook": 1,
+   "markets/KXWTAMATCH-26SEP12KINROD-KIN/orderbook": 1,
+   "markets/KXWTAMATCH-26SEP12KINROD-ROD/orderbook": 1,
+   "markets/KXWTAMATCH-26SEP12URRTIK-TIK/orderbook": 1,
+   "markets/KXWTAMATCH-26SEP12URRTIK-URR/orderbook": 1,
+   "markets/KXWTASETWINNER-26SEP12URRTIK-1-TIK/orderbook": 1,
+   "markets/KXWTASETWINNER-26SEP12URRTIK-1-URR/orderbook": 1,
+   "markets/KXWTASETWINNER-26SEP12URRTIK-2-TIK/orderbook": 1,
+   "markets/KXWTASETWINNER-26SEP12URRTIK-2-URR/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12BALCHA-BAL/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12BALCHA-CHA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12DZHLOM-DZH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12DZHLOM-LOM/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12KAWBOR-BOR/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12KAWBOR-KAW/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12WEBSIM-SIM/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP12WEBSIM-WEB/orderbook": 1,
+   "markets/trades": 250
+  }
+ },
+ "finished_at": "2026-09-13T00:41:51.376144+00:00"
+}
