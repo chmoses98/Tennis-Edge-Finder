@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-13T04:02:57.234045+00:00",
+ "run_id": "20260913T040257Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1515,
+  "skipped_family": 281,
+  "skipped_period": 462,
+  "skipped_live": 6,
+  "one_sided": 65,
+  "rows": 2391,
+  "devigged": 707
+ },
+ "smarkets_fetch": {
+  "events_seen": 162,
+  "events_priced": 80,
+  "markets": 461,
+  "markets_mapped": 155,
+  "contracts": 312,
+  "quoted_contracts": 312,
+  "raw": "data/research/external/raw/20260913T040257Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 155,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 7,
+  "rows": 305,
+  "two_sided": 299,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 324,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8448,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "Hao Duan": 1,
+   "Stefano D'Agostino": 1,
+   "Cesare Carpano": 1,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Ziyu Liu": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tessa Johanna Brockmann": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8785,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Cesare Carpano": 1,
+   "Artyom Nabokin": 1,
+   "Jayson Blando": 1,
+   "Oleg Tyagunov": 1,
+   "Tom LEFEUVRE": 1,
+   "Juan Ignacio Lombisano": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 125,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 102,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
