@@ -1,0 +1,69 @@
+{
+ "generated_at": "2026-09-13T01:02:44.978517+00:00",
+ "run_id": "20260913T010244Z",
+ "external_parse": {
+  "events": 89,
+  "markets": 799,
+  "skipped_family": 165,
+  "skipped_period": 210,
+  "skipped_live": 12,
+  "one_sided": 55,
+  "rows": 1200,
+  "devigged": 368
+ },
+ "kalshi_quotes_on_disk": 355,
+ "external_mapping": {
+  "total": 81,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7654,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Urrutia": 1,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Pavel Bushuev": 1,
+   "Gregory Gamal": 1,
+   "Bentley Sparks": 1,
+   "JC Roddick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8295,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Jeremy Condere": 1,
+   "Romeo Nobili": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MODEL_LONE_OUTLIER": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
