@@ -2727,5 +2727,3183 @@
 "reason": "could not recover both competitors' full names from the event's markets"
 }
 ],
+"projections": [
+{
+"match_id": "KXWTADOUBLES-26SEP14DABSTEPERSOU",
+"ticker": "KXWTADOUBLES-26SEP14DABSTEPERSOU-PERSOU",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14DABSTEPERSOU",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Gabriela Dabrowski / Luisa Stefani",
+"player_b": "Rebeca Pereira / Marjorie Souza",
+"player_a_id": "202681|213604",
+"player_b_id": "215721|260455",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Rebeca Pereira / Marjorie Souza",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.1696321025946511,
+"MARKET_MID": 0.15000000000000002,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.1696321025946511
+},
+"inputs": {
+"rating_a": 1516.4609876931345,
+"rating_b": 1240.5559854953092,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.13,
+"yes_ask": 0.17,
+"no_bid": 0.83,
+"no_ask": 0.87,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:40.164800+00:00",
+"volume": "222.27",
+"open_interest": "181.27",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.587106,
+"ev": {
+"best_side": "YES",
+"price": 0.17,
+"raw_edge": -0.00036789740534889925,
+"fee_per_contract": 0.009899999999999999,
+"ev_after_fees": -0.010267897405348898,
+"bet_up_to": 0.15
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14DABSTEPERSOU",
+"ticker": "KXWTADOUBLES-26SEP14DABSTEPERSOU-DABSTE",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14DABSTEPERSOU",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Gabriela Dabrowski / Luisa Stefani",
+"player_b": "Rebeca Pereira / Marjorie Souza",
+"player_a_id": "202681|213604",
+"player_b_id": "215721|260455",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Gabriela Dabrowski / Luisa Stefani",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.8303678974053489,
+"MARKET_MID": 0.87,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.8303678974053489
+},
+"inputs": {
+"rating_a": 1516.4609876931345,
+"rating_b": 1240.5559854953092,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.83,
+"yes_ask": 0.91,
+"no_bid": 0.09,
+"no_ask": 0.17,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:11.556166+00:00",
+"volume": "153.24",
+"open_interest": "103.24",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.542189,
+"ev": {
+"best_side": "NO",
+"price": 0.17,
+"raw_edge": -0.00036789740534889925,
+"fee_per_contract": 0.009899999999999999,
+"ev_after_fees": -0.010267897405348898,
+"bet_up_to": 0.15
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14QUESALRIESIE",
+"ticker": "KXWTADOUBLES-26SEP14QUESALRIESIE-RIESIE",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14QUESALRIESIE",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Kaitlin Quevedo / Dominika Salkova",
+"player_b": "Julia Riera / Solana Sierra",
+"player_a_id": "259733|222966",
+"player_b_id": "220699|221333",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Julia Riera / Solana Sierra",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.5640221471016569,
+"MARKET_MID": 0.44,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.5640221471016569
+},
+"inputs": {
+"rating_a": 1830.952410314492,
+"rating_b": 1875.6851020125614,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.39,
+"yes_ask": 0.49,
+"no_bid": 0.51,
+"no_ask": 0.61,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.517919+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.497239,
+"ev": {
+"best_side": "YES",
+"price": 0.49,
+"raw_edge": 0.07402214710165689,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.056522147101656886,
+"bet_up_to": 0.54
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14QUESALRIESIE",
+"ticker": "KXWTADOUBLES-26SEP14QUESALRIESIE-QUESAL",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14QUESALRIESIE",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Kaitlin Quevedo / Dominika Salkova",
+"player_b": "Julia Riera / Solana Sierra",
+"player_a_id": "259733|222966",
+"player_b_id": "220699|221333",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Kaitlin Quevedo / Dominika Salkova",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.4359778528983432,
+"MARKET_MID": 0.56,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.4359778528983432
+},
+"inputs": {
+"rating_a": 1830.952410314492,
+"rating_b": 1875.6851020125614,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.51,
+"yes_ask": 0.61,
+"no_bid": 0.39,
+"no_ask": 0.49,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.517938+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.45227,
+"ev": {
+"best_side": "NO",
+"price": 0.49,
+"raw_edge": 0.07402214710165689,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.056522147101656886,
+"bet_up_to": 0.54
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14OVCPIGSTOVAL",
+"ticker": "KXWTADOUBLES-26SEP14OVCPIGSTOVAL-STOVAL",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14OVCPIGSTOVAL",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Ekaterina Ovcharenko / Laura Pigossi",
+"player_b": "Mary Stoiana / Vendula Valdmannova",
+"player_a_id": "215733|206007",
+"player_b_id": "223168|260203",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Mary Stoiana / Vendula Valdmannova",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.6818347880985356,
+"MARKET_MID": 0.55,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.6818347880985356
+},
+"inputs": {
+"rating_a": 1649.86461479945,
+"rating_b": 1782.2752001847439,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.5,
+"yes_ask": 0.6,
+"no_bid": 0.4,
+"no_ask": 0.5,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.517956+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.406733,
+"ev": {
+"best_side": "YES",
+"price": 0.6,
+"raw_edge": 0.08183478809853562,
+"fee_per_contract": 0.0168,
+"ev_after_fees": 0.06503478809853562,
+"bet_up_to": 0.66
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14OVCPIGSTOVAL",
+"ticker": "KXWTADOUBLES-26SEP14OVCPIGSTOVAL-OVCPIG",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14OVCPIGSTOVAL",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Ekaterina Ovcharenko / Laura Pigossi",
+"player_b": "Mary Stoiana / Vendula Valdmannova",
+"player_a_id": "215733|206007",
+"player_b_id": "223168|260203",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Ekaterina Ovcharenko / Laura Pigossi",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.31816521190146435,
+"MARKET_MID": 0.47,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.31816521190146435
+},
+"inputs": {
+"rating_a": 1649.86461479945,
+"rating_b": 1782.2752001847439,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.43,
+"yes_ask": 0.51,
+"no_bid": 0.49,
+"no_ask": 0.57,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.517975+00:00",
+"volume": "14.13",
+"open_interest": "14.13",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.361657,
+"ev": {
+"best_side": "NO",
+"price": 0.57,
+"raw_edge": 0.11183478809853564,
+"fee_per_contract": 0.0172,
+"ev_after_fees": 0.09463478809853565,
+"bet_up_to": 0.66
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14CANFULDANYOU",
+"ticker": "KXWTADOUBLES-26SEP14CANFULDANYOU-DANYOU",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14CANFULDANYOU",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Ana Candiotto / Luiza Fullana",
+"player_b": "Yiming Dang / Xiaodi You",
+"player_a_id": "252488|220351",
+"player_b_id": "222330|214646",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Yiming Dang / Xiaodi You",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.5529880130893681,
+"MARKET_MID": 0.6100000000000001,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.5529880130893681
+},
+"inputs": {
+"rating_a": 1444.485307529539,
+"rating_b": 1481.443926809479,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.56,
+"yes_ask": 0.66,
+"no_bid": 0.34,
+"no_ask": 0.44,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.518114+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.316413,
+"ev": {
+"best_side": "NO",
+"price": 0.44,
+"raw_edge": 0.007011986910631929,
+"fee_per_contract": 0.0173,
+"ev_after_fees": -0.01028801308936807,
+"bet_up_to": 0.42
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14CANFULDANYOU",
+"ticker": "KXWTADOUBLES-26SEP14CANFULDANYOU-CANFUL",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14CANFULDANYOU",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Ana Candiotto / Luiza Fullana",
+"player_b": "Yiming Dang / Xiaodi You",
+"player_a_id": "252488|220351",
+"player_b_id": "222330|214646",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Ana Candiotto / Luiza Fullana",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.447011986910632,
+"MARKET_MID": 0.395,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.447011986910632
+},
+"inputs": {
+"rating_a": 1444.485307529539,
+"rating_b": 1481.443926809479,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.35,
+"yes_ask": 0.44,
+"no_bid": 0.56,
+"no_ask": 0.65,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.518135+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.271059,
+"ev": {
+"best_side": "YES",
+"price": 0.44,
+"raw_edge": 0.007011986910631984,
+"fee_per_contract": 0.0173,
+"ev_after_fees": -0.010288013089368015,
+"bet_up_to": 0.42
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14MCAOSBBARLEM",
+"ticker": "KXWTADOUBLES-26SEP14MCAOSBBARLEM-MCAOSB",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14MCAOSBBARLEM",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Rasheeda McAdoo / Alexandra Osborne",
+"player_b": "Victoria Luiza Barros / Nauhany Vitoria Leme Da Silva",
+"player_a_id": "213771|213541",
+"player_b_id": "269259|267382",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Rasheeda McAdoo / Alexandra Osborne",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.45753757761906,
+"MARKET_MID": 0.62,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.45753757761906
+},
+"inputs": {
+"rating_a": 1442.202009551132,
+"rating_b": 1471.7791657341004,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.57,
+"yes_ask": 0.67,
+"no_bid": 0.33,
+"no_ask": 0.43,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:11.556283+00:00",
+"volume": "15.52",
+"open_interest": "0.53",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.225435,
+"ev": {
+"best_side": "NO",
+"price": 0.43,
+"raw_edge": 0.11246242238094001,
+"fee_per_contract": 0.0172,
+"ev_after_fees": 0.09526242238094002,
+"bet_up_to": 0.52
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14MCAOSBBARLEM",
+"ticker": "KXWTADOUBLES-26SEP14MCAOSBBARLEM-BARLEM",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14MCAOSBBARLEM",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Rasheeda McAdoo / Alexandra Osborne",
+"player_b": "Victoria Luiza Barros / Nauhany Vitoria Leme Da Silva",
+"player_a_id": "213771|213541",
+"player_b_id": "269259|267382",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Victoria Luiza Barros / Nauhany Vitoria Leme Da Silva",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.54246242238094,
+"MARKET_MID": 0.38,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.54246242238094
+},
+"inputs": {
+"rating_a": 1442.202009551132,
+"rating_b": 1471.7791657341004,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.33,
+"yes_ask": 0.43,
+"no_bid": 0.57,
+"no_ask": 0.67,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.518314+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.179991,
+"ev": {
+"best_side": "YES",
+"price": 0.43,
+"raw_edge": 0.11246242238094001,
+"fee_per_contract": 0.0172,
+"ev_after_fees": 0.09526242238094002,
+"bet_up_to": 0.52
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14MIKSMISTRTIK",
+"ticker": "KXWTADOUBLES-26SEP14MIKSMISTRTIK-STRTIK",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14MIKSMISTRTIK",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Justina Mikulskyte / Alana Smith",
+"player_b": "Valeriya Strakhova / Anastasia Tikhonova",
+"player_a_id": "212303|220673",
+"player_b_id": "211063|221073",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Valeriya Strakhova / Anastasia Tikhonova",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.4179550267009293,
+"MARKET_MID": 0.565,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.4179550267009293
+},
+"inputs": {
+"rating_a": 1598.2161202271766,
+"rating_b": 1540.6853241924805,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.52,
+"yes_ask": 0.61,
+"no_bid": 0.39,
+"no_ask": 0.48,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.518392+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.134464,
+"ev": {
+"best_side": "NO",
+"price": 0.48,
+"raw_edge": 0.1020449732990707,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.0845449732990707,
+"bet_up_to": 0.56
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP14MIKSMISTRTIK",
+"ticker": "KXWTADOUBLES-26SEP14MIKSMISTRTIK-MIKSMI",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP14MIKSMISTRTIK",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Justina Mikulskyte / Alana Smith",
+"player_b": "Valeriya Strakhova / Anastasia Tikhonova",
+"player_a_id": "212303|220673",
+"player_b_id": "211063|221073",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Sao Paulo",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Justina Mikulskyte / Alana Smith",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.5820449732990707,
+"MARKET_MID": 0.44,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.5820449732990707
+},
+"inputs": {
+"rating_a": 1598.2161202271766,
+"rating_b": 1540.6853241924805,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.39,
+"yes_ask": 0.49,
+"no_bid": 0.51,
+"no_ask": 0.61,
+"source": "capture",
+"quote_ts": "2026-09-13T20:08:55.518412+00:00",
+"volume": "3.14",
+"open_interest": "3.14",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T11:00:00Z",
+"seconds_to_scheduled_start": 50093.08904,
+"ev": {
+"best_side": "YES",
+"price": 0.49,
+"raw_edge": 0.09204497329907069,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.07454497329907069,
+"bet_up_to": 0.56
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP13KOZLUMDAYZAR",
+"ticker": "KXWTADOUBLES-26SEP13KOZLUMDAYZAR-KOZLUM",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP13KOZLUMDAYZAR",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Maria Kozyreva / Maia Lumsden",
+"player_b": "Kayla Day / Renata Zarazua",
+"player_a_id": "222297|211887",
+"player_b_id": "215037|213887",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Guadalajara",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Maria Kozyreva / Maia Lumsden",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.1244404483161963,
+"MARKET_MID": 0.97,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.1244404483161963
+},
+"inputs": {
+"rating_a": 1523.3888912529005,
+"rating_b": 1862.3185405162428,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.96,
+"yes_ask": 0.98,
+"no_bid": 0.02,
+"no_ask": 0.04,
+"source": "capture",
+"quote_ts": "2026-09-13T20:21:26.193394+00:00",
+"volume": "8178.65",
+"open_interest": "5125.94",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T21:20:00Z",
+"seconds_to_scheduled_start": 893.043599,
+"ev": {
+"best_side": "NO",
+"price": 0.04,
+"raw_edge": 0.8355595516838037,
+"fee_per_contract": 0.0027,
+"ev_after_fees": 0.8328595516838037,
+"bet_up_to": 0.86
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP13KOZLUMDAYZAR",
+"ticker": "KXWTADOUBLES-26SEP13KOZLUMDAYZAR-DAYZAR",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP13KOZLUMDAYZAR",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Maria Kozyreva / Maia Lumsden",
+"player_b": "Kayla Day / Renata Zarazua",
+"player_a_id": "222297|211887",
+"player_b_id": "215037|213887",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Guadalajara",
+"round": "R16",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Kayla Day / Renata Zarazua",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260913T094543Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.8755595516838037,
+"MARKET_MID": 0.03,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.8755595516838037
+},
+"inputs": {
+"rating_a": 1523.3888912529005,
+"rating_b": 1862.3185405162428,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.02,
+"yes_ask": 0.04,
+"no_bid": 0.96,
+"no_ask": 0.98,
+"source": "capture",
+"quote_ts": "2026-09-13T20:21:26.193426+00:00",
+"volume": "6784.44",
+"open_interest": "4192.67",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T21:20:00Z",
+"seconds_to_scheduled_start": 892.998271,
+"ev": {
+"best_side": "YES",
+"price": 0.04,
+"raw_edge": 0.8355595516838037,
+"fee_per_contract": 0.0027,
+"ev_after_fees": 0.8328595516838037,
+"bet_up_to": 0.86
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13ZHALUO",
+"ticker": "KXITFWMATCH-26SEP13ZHALUO-ZHA",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13ZHALUO",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Ying Zhang",
+"player_b": "Xi Luo",
+"player_a_id": "213947",
+"player_b_id": "264069",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Ying Zhang",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.5722675125566161,
+"STRUCTURAL": 0.46787982478298706,
+"ENSEMBLE": 0.5202948917846215,
+"ELO_DP_FAIR": 0.5202948917846215,
+"MARKET_MID": 0.46499999999999997,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1466.2360421258313,
+"elo_b": 1415.665480899835,
+"pa": 0.5587712433889591,
+"pb": 0.4450610372468746,
+"sr_pa": 0.5713600208882291,
+"sr_pb": 0.4225150745830125,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.5722672581210672,
+"p_sr_bo3": 0.46787982478298706,
+"p_ensemble_bo3": 0.5202950522516727,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.6197,
+"grade": "B",
+"pillars": {
+"experience": 0.659,
+"serve_return_evidence": 0.651,
+"recency": 0.762,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 327,
+"n_matches_b": 43,
+"serve_points_a": 3590.814108045848,
+"serve_points_b": 1578.1355940423598,
+"days_since_last_a": 139,
+"days_since_last_b": 139,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.46,
+"yes_ask": 0.47,
+"no_bid": 0.53,
+"no_ask": 0.54,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:37.605922+00:00",
+"volume": "30.82",
+"open_interest": "30.82",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.922401,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.47,
+"raw_edge": 0.05029489178462154,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.03279489178462154,
+"bet_up_to": 0.5
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13ZHALUO",
+"ticker": "KXITFWMATCH-26SEP13ZHALUO-LUO",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13ZHALUO",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Ying Zhang",
+"player_b": "Xi Luo",
+"player_a_id": "213947",
+"player_b_id": "264069",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Xi Luo",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.4277324874433839,
+"STRUCTURAL": 0.5321201752170129,
+"ENSEMBLE": 0.4797051082153785,
+"ELO_DP_FAIR": 0.4797051082153785,
+"MARKET_MID": 0.535,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1466.2360421258313,
+"elo_b": 1415.665480899835,
+"pa": 0.5587712433889591,
+"pb": 0.4450610372468746,
+"sr_pa": 0.5713600208882291,
+"sr_pb": 0.4225150745830125,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.5722672581210672,
+"p_sr_bo3": 0.46787982478298706,
+"p_ensemble_bo3": 0.5202950522516727,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.6197,
+"grade": "B",
+"pillars": {
+"experience": 0.659,
+"serve_return_evidence": 0.651,
+"recency": 0.762,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 327,
+"n_matches_b": 43,
+"serve_points_a": 3590.814108045848,
+"serve_points_b": 1578.1355940423598,
+"days_since_last_a": 139,
+"days_since_last_b": 139,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.53,
+"yes_ask": 0.54,
+"no_bid": 0.46,
+"no_ask": 0.47,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:08.951415+00:00",
+"volume": "6.79",
+"open_interest": "6.79",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.877158,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.47,
+"raw_edge": 0.05029489178462154,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.03279489178462154,
+"bet_up_to": 0.5
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13SAVZHA",
+"ticker": "KXITFWMATCH-26SEP13SAVZHA-ZHA",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13SAVZHA",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Valeria Savinykh",
+"player_b": "Zi Ye Zhang",
+"player_a_id": "202443",
+"player_b_id": "264143",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Zi Ye Zhang",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.14930108017975496,
+"STRUCTURAL": 0.11441927542595631,
+"ENSEMBLE": 0.13087631631631913,
+"ELO_DP_FAIR": 0.13087631631631913,
+"MARKET_MID": 0.11499999999999999,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1608.3998881886123,
+"elo_b": 1306.1145551536674,
+"pa": 0.599206795986005,
+"pb": 0.4854965898439205,
+"sr_pa": 0.5753263693965218,
+"sr_pb": 0.5146916814586782,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.8506990371073311,
+"p_sr_bo3": 0.8855807245740437,
+"p_ensemble_bo3": 0.8691238474721877,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.3039,
+"grade": "D",
+"pillars": {
+"experience": 0.667,
+"serve_return_evidence": 0.568,
+"recency": 0.203,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 733,
+"n_matches_b": 44,
+"serve_points_a": 1557.1535435991686,
+"serve_points_b": 1258.5896064200974,
+"days_since_last_a": 49,
+"days_since_last_b": 377,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.11,
+"yes_ask": 0.12,
+"no_bid": 0.88,
+"no_ask": 0.89,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:37.605944+00:00",
+"volume": "231.03",
+"open_interest": "224.74",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.801676,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.12,
+"raw_edge": 0.010876316316319135,
+"fee_per_contract": 0.0074,
+"ev_after_fees": 0.003476316316319134,
+"bet_up_to": 0.12
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13SAVZHA",
+"ticker": "KXITFWMATCH-26SEP13SAVZHA-SAV",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13SAVZHA",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Valeria Savinykh",
+"player_b": "Zi Ye Zhang",
+"player_a_id": "202443",
+"player_b_id": "264143",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Valeria Savinykh",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.850698919820245,
+"STRUCTURAL": 0.8855807245740437,
+"ENSEMBLE": 0.8691236836836809,
+"ELO_DP_FAIR": 0.8691236836836809,
+"MARKET_MID": 0.885,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1608.3998881886123,
+"elo_b": 1306.1145551536674,
+"pa": 0.599206795986005,
+"pb": 0.4854965898439205,
+"sr_pa": 0.5753263693965218,
+"sr_pb": 0.5146916814586782,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.8506990371073311,
+"p_sr_bo3": 0.8855807245740437,
+"p_ensemble_bo3": 0.8691238474721877,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.3039,
+"grade": "D",
+"pillars": {
+"experience": 0.667,
+"serve_return_evidence": 0.568,
+"recency": 0.203,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 733,
+"n_matches_b": 44,
+"serve_points_a": 1557.1535435991686,
+"serve_points_b": 1258.5896064200974,
+"days_since_last_a": 49,
+"days_since_last_b": 377,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.88,
+"yes_ask": 0.89,
+"no_bid": 0.11,
+"no_ask": 0.12,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:37.605963+00:00",
+"volume": "47.72",
+"open_interest": "47.47",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.75516,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.12,
+"raw_edge": 0.010876316316319135,
+"fee_per_contract": 0.0074,
+"ev_after_fees": 0.003476316316319134,
+"bet_up_to": 0.12
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13ZHUWAN",
+"ticker": "KXITFWMATCH-26SEP13ZHUWAN-ZHU",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13ZHUWAN",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Chenting Zhu",
+"player_b": "Yuhan Wang",
+"player_a_id": "264064",
+"player_b_id": "264205",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Chenting Zhu",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.6089247502865278,
+"STRUCTURAL": 0.5838380539203702,
+"ENSEMBLE": 0.5964445941390863,
+"ELO_DP_FAIR": 0.5964445941390863,
+"MARKET_MID": 0.495,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1487.2816028960879,
+"elo_b": 1410.3601094961036,
+"pa": 0.5660484936788761,
+"pb": 0.4523382875367916,
+"sr_pa": 0.5498690350710199,
+"sr_pb": 0.4659813587520294,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.6089249905020487,
+"p_sr_bo3": 0.5838380539203702,
+"p_ensemble_bo3": 0.5964445640352085,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.6026,
+"grade": "B",
+"pillars": {
+"experience": 0.65,
+"serve_return_evidence": 0.875,
+"recency": 0.558,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 96,
+"n_matches_b": 42,
+"serve_points_a": 3978.485882415585,
+"serve_points_b": 3117.9608254669865,
+"days_since_last_a": 195,
+"days_since_last_b": 139,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.49,
+"yes_ask": 0.5,
+"no_bid": 0.5,
+"no_ask": 0.51,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:08.951566+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.679237,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.5,
+"raw_edge": 0.09644459413908635,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.07894459413908635,
+"bet_up_to": 0.57
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13ZHUWAN",
+"ticker": "KXITFWMATCH-26SEP13ZHUWAN-WAN",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13ZHUWAN",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Chenting Zhu",
+"player_b": "Yuhan Wang",
+"player_a_id": "264064",
+"player_b_id": "264205",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Yuhan Wang",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.3910752497134722,
+"STRUCTURAL": 0.41616194607962975,
+"ENSEMBLE": 0.40355540586091365,
+"ELO_DP_FAIR": 0.40355540586091365,
+"MARKET_MID": 0.51,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1487.2816028960879,
+"elo_b": 1410.3601094961036,
+"pa": 0.5660484936788761,
+"pb": 0.4523382875367916,
+"sr_pa": 0.5498690350710199,
+"sr_pb": 0.4659813587520294,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.6089249905020487,
+"p_sr_bo3": 0.5838380539203702,
+"p_ensemble_bo3": 0.5964445640352085,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.6026,
+"grade": "B",
+"pillars": {
+"experience": 0.65,
+"serve_return_evidence": 0.875,
+"recency": 0.558,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 96,
+"n_matches_b": 42,
+"serve_points_a": 3978.485882415585,
+"serve_points_b": 3117.9608254669865,
+"days_since_last_a": 195,
+"days_since_last_b": 139,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.5,
+"yes_ask": 0.52,
+"no_bid": 0.48,
+"no_ask": 0.5,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:08.951585+00:00",
+"volume": "6.58",
+"open_interest": "6.58",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.632885,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.5,
+"raw_edge": 0.09644459413908635,
+"fee_per_contract": 0.0175,
+"ev_after_fees": 0.07894459413908635,
+"bet_up_to": 0.57
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13ZHAWUX",
+"ticker": "KXITFWMATCH-26SEP13ZHAWUX-ZHA",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13ZHAWUX",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Junhan Zhang",
+"player_b": "Ru Xi Wu",
+"player_a_id": "260694",
+"player_b_id": "270262",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Junhan Zhang",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.4294361444088375,
+"STRUCTURAL": 0.5395959372309966,
+"ENSEMBLE": 0.42943614440883765,
+"ELO_DP_FAIR": 0.42943614440883765,
+"MARKET_MID": 0.6200000000000001,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1385.0150249628532,
+"elo_b": 1434.3771614376487,
+"pa": 0.5501602199629032,
+"pb": 0.4364500138208187,
+"sr_pa": 0.5688669605189303,
+"sr_pb": 0.4386491051504897,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.42943632500765605,
+"p_sr_bo3": 0.5395959372309966,
+"p_ensemble_bo3": 0.42943632500765605,
+"structural_used": false
+},
+"quality": {
+"data_quality_score": 0.0934,
+"grade": "F",
+"pillars": {
+"experience": 0.049,
+"serve_return_evidence": 0.2,
+"recency": 0.228,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 94,
+"n_matches_b": 2,
+"serve_points_a": 3986.9356967172916,
+"serve_points_b": 334.0,
+"days_since_last_a": 139,
+"days_since_last_b": 356,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.56,
+"yes_ask": 0.68,
+"no_bid": 0.32,
+"no_ask": 0.44,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:08.951604+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.556703,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.44,
+"raw_edge": 0.1305638555911623,
+"fee_per_contract": 0.0173,
+"ev_after_fees": 0.1132638555911623,
+"bet_up_to": 0.55
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFWMATCH-26SEP13ZHAWUX",
+"ticker": "KXITFWMATCH-26SEP13ZHAWUX-WUX",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFWMATCH-26SEP13ZHAWUX",
+"series_ticker": "KXITFWMATCH",
+"player_a": "Junhan Zhang",
+"player_b": "Ru Xi Wu",
+"player_a_id": "260694",
+"player_b_id": "270262",
+"tour": "WTA",
+"level": "ITF",
+"competition": "W35 Shenyang",
+"round": "R16",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:w35 shenyang",
+"subject": "Ru Xi Wu",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:05:02.935969+00:00"
+},
+"models": {
+"ELO": 0.5705638555911625,
+"STRUCTURAL": 0.46040406276900336,
+"ENSEMBLE": 0.5705638555911623,
+"ELO_DP_FAIR": 0.5705638555911623,
+"MARKET_MID": 0.32999999999999996,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1385.0150249628532,
+"elo_b": 1434.3771614376487,
+"pa": 0.5501602199629032,
+"pb": 0.4364500138208187,
+"sr_pa": 0.5688669605189303,
+"sr_pb": 0.4386491051504897,
+"spw_baseline": 0.5568551030710422,
+"p_elo_bo3": 0.42943632500765605,
+"p_sr_bo3": 0.5395959372309966,
+"p_ensemble_bo3": 0.42943632500765605,
+"structural_used": false
+},
+"quality": {
+"data_quality_score": 0.0934,
+"grade": "F",
+"pillars": {
+"experience": 0.049,
+"serve_return_evidence": 0.2,
+"recency": 0.228,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 94,
+"n_matches_b": 2,
+"serve_points_a": 3986.9356967172916,
+"serve_points_b": 334.0,
+"days_since_last_a": 139,
+"days_since_last_b": 356,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.3,
+"yes_ask": 0.36,
+"no_bid": 0.64,
+"no_ask": 0.7,
+"source": "capture",
+"quote_ts": "2026-09-13T20:33:08.951676+00:00",
+"volume": "0.00",
+"open_interest": "0.00",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-14T07:30:00Z",
+"seconds_to_scheduled_start": 37492.510012,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.36,
+"raw_edge": 0.2105638555911623,
+"fee_per_contract": 0.016200000000000003,
+"ev_after_fees": 0.19436385559116232,
+"bet_up_to": 0.55
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13FENSEG",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13FENSEG-SEG",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13FENSEG",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Andrew Fenty",
+"player_b": "Ryan Seggerman",
+"player_a_id": "208649",
+"player_b_id": "202342",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Ryan Seggerman",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.548882957736631,
+"STRUCTURAL": 0.3944029168966291,
+"ENSEMBLE": 0.4709472330055806,
+"ELO_DP_FAIR": 0.4709472330055806,
+"MARKET_MID": 0.565,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1470.945772638415,
+"elo_b": 1505.021797165457,
+"pa": 0.6288162178912754,
+"pb": 0.37694570351451684,
+"sr_pa": 0.6688791688343598,
+"sr_pb": 0.35299685551948456,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.4511172994651858,
+"p_sr_bo3": 0.6055970831033709,
+"p_ensemble_bo3": 0.52905279972431,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.9634,
+"grade": "A",
+"pillars": {
+"experience": 0.97,
+"serve_return_evidence": 0.947,
+"recency": 1.0,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 186,
+"n_matches_b": 140,
+"serve_points_a": 6311.252006451396,
+"serve_points_b": 4398.42084081338,
+"days_since_last_a": 20,
+"days_since_last_b": 90,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.56,
+"yes_ask": 0.57,
+"no_bid": 0.43,
+"no_ask": 0.44,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835573+00:00",
+"volume": "7718.51",
+"open_interest": "7708.51",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T23:30:00Z",
+"seconds_to_scheduled_start": 8692.433303,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.44,
+"raw_edge": 0.08905276699441939,
+"fee_per_contract": 0.0173,
+"ev_after_fees": 0.07175276699441939,
+"bet_up_to": 0.5
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13FENSEG",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13FENSEG-FEN",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13FENSEG",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Andrew Fenty",
+"player_b": "Ryan Seggerman",
+"player_a_id": "208649",
+"player_b_id": "202342",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Andrew Fenty",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.451117042263369,
+"STRUCTURAL": 0.6055970831033709,
+"ENSEMBLE": 0.5290527669944194,
+"ELO_DP_FAIR": 0.5290527669944194,
+"MARKET_MID": 0.455,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1470.945772638415,
+"elo_b": 1505.021797165457,
+"pa": 0.6288162178912754,
+"pb": 0.37694570351451684,
+"sr_pa": 0.6688791688343598,
+"sr_pb": 0.35299685551948456,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.4511172994651858,
+"p_sr_bo3": 0.6055970831033709,
+"p_ensemble_bo3": 0.52905279972431,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.9634,
+"grade": "A",
+"pillars": {
+"experience": 0.97,
+"serve_return_evidence": 0.947,
+"recency": 1.0,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 186,
+"n_matches_b": 140,
+"serve_points_a": 6311.252006451396,
+"serve_points_b": 4398.42084081338,
+"days_since_last_a": 20,
+"days_since_last_b": 90,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.45,
+"yes_ask": 0.46,
+"no_bid": 0.54,
+"no_ask": 0.55,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835662+00:00",
+"volume": "1369.43",
+"open_interest": "1369.43",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T23:30:00Z",
+"seconds_to_scheduled_start": 8692.386839,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.46,
+"raw_edge": 0.06905276699441937,
+"fee_per_contract": 0.0174,
+"ev_after_fees": 0.05165276699441937,
+"bet_up_to": 0.5
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13MARRYB",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13MARRYB-RYB",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13MARRYB",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Dan Martin",
+"player_b": "Alex Rybakov",
+"player_a_id": "202297",
+"player_b_id": "126206",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Alex Rybakov",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.7122307032281392,
+"STRUCTURAL": 0.6494163013325764,
+"ENSEMBLE": 0.681648620113801,
+"ELO_DP_FAIR": 0.681648620113801,
+"MARKET_MID": 0.76,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1338.769279554402,
+"elo_b": 1496.199978929791,
+"pa": 0.6072594232478733,
+"pb": 0.35538890887111474,
+"sr_pa": 0.6316659375059367,
+"sr_pb": 0.33734788656876924,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.2877690549554674,
+"p_sr_bo3": 0.35058369866742356,
+"p_ensemble_bo3": 0.31835123765923873,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.9518,
+"grade": "A",
+"pillars": {
+"experience": 0.989,
+"serve_return_evidence": 0.986,
+"recency": 0.925,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 181,
+"n_matches_b": 549,
+"serve_points_a": 6739.6375532176435,
+"serve_points_b": 6449.951379210808,
+"days_since_last_a": 104,
+"days_since_last_b": 27,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.75,
+"yes_ask": 0.77,
+"no_bid": 0.23,
+"no_ask": 0.25,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835683+00:00",
+"volume": "149.87",
+"open_interest": "123.87",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T23:30:00Z",
+"seconds_to_scheduled_start": 8692.310087,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.25,
+"raw_edge": 0.06835137988619899,
+"fee_per_contract": 0.0132,
+"ev_after_fees": 0.05515137988619899,
+"bet_up_to": 0.29
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13MARRYB",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13MARRYB-MAR",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13MARRYB",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Dan Martin",
+"player_b": "Alex Rybakov",
+"player_a_id": "202297",
+"player_b_id": "126206",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Dan Martin",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.2877692967718608,
+"STRUCTURAL": 0.35058369866742356,
+"ENSEMBLE": 0.318351379886199,
+"ELO_DP_FAIR": 0.318351379886199,
+"MARKET_MID": 0.255,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1338.769279554402,
+"elo_b": 1496.199978929791,
+"pa": 0.6072594232478733,
+"pb": 0.35538890887111474,
+"sr_pa": 0.6316659375059367,
+"sr_pb": 0.33734788656876924,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.2877690549554674,
+"p_sr_bo3": 0.35058369866742356,
+"p_ensemble_bo3": 0.31835123765923873,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.9518,
+"grade": "A",
+"pillars": {
+"experience": 0.989,
+"serve_return_evidence": 0.986,
+"recency": 0.925,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 181,
+"n_matches_b": 549,
+"serve_points_a": 6739.6375532176435,
+"serve_points_b": 6449.951379210808,
+"days_since_last_a": 104,
+"days_since_last_b": 27,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.25,
+"yes_ask": 0.26,
+"no_bid": 0.74,
+"no_ask": 0.75,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835703+00:00",
+"volume": "51.49",
+"open_interest": "51.49",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T23:30:00Z",
+"seconds_to_scheduled_start": 8692.263511,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.26,
+"raw_edge": 0.058351379886198984,
+"fee_per_contract": 0.013500000000000002,
+"ev_after_fees": 0.044851379886198986,
+"bet_up_to": 0.29
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13GRUOST",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13GRUOST-OST",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13GRUOST",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Gus Grumet",
+"player_b": "Daniil Ostapenkov",
+"player_a_id": "214202",
+"player_b_id": "209867",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Daniil Ostapenkov",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.78460351646555,
+"STRUCTURAL": 0.8566259279139914,
+"ENSEMBLE": 0.78460351646555,
+"ELO_DP_FAIR": 0.78460351646555,
+"MARKET_MID": 0.8200000000000001,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1249.0764381134736,
+"elo_b": 1473.6412803958,
+"pa": 0.5947608060756321,
+"pb": 0.34289029169887353,
+"sr_pa": 0.5820995685697141,
+"sr_pb": 0.3336500785814136,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.21539630282031527,
+"p_sr_bo3": 0.14337407208600864,
+"p_ensemble_bo3": 0.21539630282031527,
+"structural_used": false
+},
+"quality": {
+"data_quality_score": 0.2487,
+"grade": "D",
+"pillars": {
+"experience": 0.118,
+"serve_return_evidence": 0.368,
+"recency": 0.627,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 5,
+"n_matches_b": 145,
+"serve_points_a": 688.4910657392174,
+"serve_points_b": 5183.877313203103,
+"days_since_last_a": 174,
+"days_since_last_b": 41,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.81,
+"yes_ask": 0.83,
+"no_bid": 0.17,
+"no_ask": 0.19,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835723+00:00",
+"volume": "7852.03",
+"open_interest": "7765.03",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T23:30:00Z",
+"seconds_to_scheduled_start": 8692.186702,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.19,
+"raw_edge": 0.025396483534449954,
+"fee_per_contract": 0.0108,
+"ev_after_fees": 0.014596483534449953,
+"bet_up_to": 0.19
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13GRUOST",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13GRUOST-GRU",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13GRUOST",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Gus Grumet",
+"player_b": "Daniil Ostapenkov",
+"player_a_id": "214202",
+"player_b_id": "209867",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Gus Grumet",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.21539648353444996,
+"STRUCTURAL": 0.14337407208600864,
+"ENSEMBLE": 0.2153964835344499,
+"ELO_DP_FAIR": 0.2153964835344499,
+"MARKET_MID": 0.18,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1249.0764381134736,
+"elo_b": 1473.6412803958,
+"pa": 0.5947608060756321,
+"pb": 0.34289029169887353,
+"sr_pa": 0.5820995685697141,
+"sr_pb": 0.3336500785814136,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.21539630282031527,
+"p_sr_bo3": 0.14337407208600864,
+"p_ensemble_bo3": 0.21539630282031527,
+"structural_used": false
+},
+"quality": {
+"data_quality_score": 0.2487,
+"grade": "D",
+"pillars": {
+"experience": 0.118,
+"serve_return_evidence": 0.368,
+"recency": 0.627,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 5,
+"n_matches_b": 145,
+"serve_points_a": 688.4910657392174,
+"serve_points_b": 5183.877313203103,
+"days_since_last_a": 174,
+"days_since_last_b": 41,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.17,
+"yes_ask": 0.19,
+"no_bid": 0.81,
+"no_ask": 0.83,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835802+00:00",
+"volume": "1977.50",
+"open_interest": "1952.50",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T23:30:00Z",
+"seconds_to_scheduled_start": 8692.139813,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.19,
+"raw_edge": 0.0253964835344499,
+"fee_per_contract": 0.0108,
+"ev_after_fees": 0.014596483534449898,
+"bet_up_to": 0.19
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13NAKBIG",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13NAKBIG-NAK",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13NAKBIG",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Bryce Nakashima Nakashima",
+"player_b": "Kaylan Bigun",
+"player_a_id": "210416",
+"player_b_id": "210744",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Bryce Nakashima Nakashima",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.4023328851950233,
+"STRUCTURAL": 0.4244678885629799,
+"ENSEMBLE": 0.4023328851950233,
+"ELO_DP_FAIR": 0.4023328851950233,
+"MARKET_MID": 0.595,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1284.3248764262232,
+"elo_b": 1353.074395155233,
+"pa": 0.6161591119685764,
+"pb": 0.36428859759181786,
+"sr_pa": 0.6048622148038016,
+"sr_pb": 0.3802615068228068,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.40233290292411655,
+"p_sr_bo3": 0.4244678885629799,
+"p_ensemble_bo3": 0.40233290292411655,
+"structural_used": false
+},
+"quality": {
+"data_quality_score": 0.2996,
+"grade": "D",
+"pillars": {
+"experience": 0.667,
+"serve_return_evidence": 0.431,
+"recency": 0.3,
+"level_familiarity": 1.0,
+"identity_confidence": 0.9,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 44,
+"n_matches_b": 106,
+"serve_points_a": 845.6359946685038,
+"serve_points_b": 4549.045387615204,
+"days_since_last_a": 307,
+"days_since_last_b": 20,
+"level_familiarity": 1.0,
+"identity_confidence": 0.9,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.58,
+"yes_ask": 0.61,
+"no_bid": 0.39,
+"no_ask": 0.42,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835822+00:00",
+"volume": "1248.23",
+"open_interest": "1248.23",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T22:20:00Z",
+"seconds_to_scheduled_start": 4492.056364,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.42,
+"raw_edge": 0.1776671148049767,
+"fee_per_contract": 0.0171,
+"ev_after_fees": 0.1605671148049767,
+"bet_up_to": 0.57
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13NAKBIG",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13NAKBIG-BIG",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13NAKBIG",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Bryce Nakashima Nakashima",
+"player_b": "Kaylan Bigun",
+"player_a_id": "210416",
+"player_b_id": "210744",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Kaylan Bigun",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.5976671148049767,
+"STRUCTURAL": 0.5755321114370201,
+"ENSEMBLE": 0.5976671148049767,
+"ELO_DP_FAIR": 0.5976671148049767,
+"MARKET_MID": 0.405,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1284.3248764262232,
+"elo_b": 1353.074395155233,
+"pa": 0.6161591119685764,
+"pb": 0.36428859759181786,
+"sr_pa": 0.6048622148038016,
+"sr_pb": 0.3802615068228068,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.40233290292411655,
+"p_sr_bo3": 0.4244678885629799,
+"p_ensemble_bo3": 0.40233290292411655,
+"structural_used": false
+},
+"quality": {
+"data_quality_score": 0.2996,
+"grade": "D",
+"pillars": {
+"experience": 0.667,
+"serve_return_evidence": 0.431,
+"recency": 0.3,
+"level_familiarity": 1.0,
+"identity_confidence": 0.9,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 44,
+"n_matches_b": 106,
+"serve_points_a": 845.6359946685038,
+"serve_points_b": 4549.045387615204,
+"days_since_last_a": 307,
+"days_since_last_b": 20,
+"level_familiarity": 1.0,
+"identity_confidence": 0.9,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.4,
+"yes_ask": 0.41,
+"no_bid": 0.59,
+"no_ask": 0.6,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835843+00:00",
+"volume": "168.96",
+"open_interest": "168.96",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T22:20:00Z",
+"seconds_to_scheduled_start": 4492.009684,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.41,
+"raw_edge": 0.18766711480497672,
+"fee_per_contract": 0.017,
+"ev_after_fees": 0.1706671148049767,
+"bet_up_to": 0.57
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13LEGBYN",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13LEGBYN-LEG",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13LEGBYN",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Timo Legout",
+"player_b": "Evan Bynoe",
+"player_a_id": "209355",
+"player_b_id": "208466",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Timo Legout",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.8416908840318855,
+"STRUCTURAL": 0.8197768048433375,
+"ENSEMBLE": 0.8310167777773676,
+"ELO_DP_FAIR": 0.8310167777773676,
+"MARKET_MID": 0.975,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1534.0381273713579,
+"elo_b": 1243.7793604027822,
+"pa": 0.6638709015765781,
+"pb": 0.4120003871998196,
+"sr_pa": 0.6236772559026817,
+"sr_pb": 0.44655634728665305,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.8416909507867885,
+"p_sr_bo3": 0.8197768048433375,
+"p_ensemble_bo3": 0.8310166886303794,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.7491,
+"grade": "B",
+"pillars": {
+"experience": 0.922,
+"serve_return_evidence": 0.703,
+"recency": 0.823,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 177,
+"n_matches_b": 102,
+"serve_points_a": 1820.5582449341114,
+"serve_points_b": 3478.760781440853,
+"days_since_last_a": 76,
+"days_since_last_b": 125,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.97,
+"yes_ask": 0.98,
+"no_bid": 0.02,
+"no_ask": 0.03,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835862+00:00",
+"volume": "20907.01",
+"open_interest": "20397.30",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T22:20:00Z",
+"seconds_to_scheduled_start": 4491.933471,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.03,
+"raw_edge": 0.1389832222226324,
+"fee_per_contract": 0.0021,
+"ev_after_fees": 0.1368832222226324,
+"bet_up_to": 0.15
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13LEGBYN",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13LEGBYN-BYN",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13LEGBYN",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Timo Legout",
+"player_b": "Evan Bynoe",
+"player_a_id": "209355",
+"player_b_id": "208466",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Evan Bynoe",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.15830911596811448,
+"STRUCTURAL": 0.18022319515666252,
+"ENSEMBLE": 0.1689832222226324,
+"ELO_DP_FAIR": 0.1689832222226324,
+"MARKET_MID": 0.025,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1534.0381273713579,
+"elo_b": 1243.7793604027822,
+"pa": 0.6638709015765781,
+"pb": 0.4120003871998196,
+"sr_pa": 0.6236772559026817,
+"sr_pb": 0.44655634728665305,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.8416909507867885,
+"p_sr_bo3": 0.8197768048433375,
+"p_ensemble_bo3": 0.8310166886303794,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.7491,
+"grade": "B",
+"pillars": {
+"experience": 0.922,
+"serve_return_evidence": 0.703,
+"recency": 0.823,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 177,
+"n_matches_b": 102,
+"serve_points_a": 1820.5582449341114,
+"serve_points_b": 3478.760781440853,
+"days_since_last_a": 76,
+"days_since_last_b": 125,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.02,
+"yes_ask": 0.03,
+"no_bid": 0.97,
+"no_ask": 0.98,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835977+00:00",
+"volume": "39574.67",
+"open_interest": "30935.63",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T22:20:00Z",
+"seconds_to_scheduled_start": 4491.887105,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.03,
+"raw_edge": 0.1389832222226324,
+"fee_per_contract": 0.0021,
+"ev_after_fees": 0.1368832222226324,
+"bet_up_to": 0.15
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13STAEXS",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13STAEXS-STA",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13STAEXS",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Luca Staeheli",
+"player_b": "Maxwell Exsted",
+"player_a_id": "207664",
+"player_b_id": "212142",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Luca Staeheli",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.5420667383889727,
+"STRUCTURAL": 0.6770411724931418,
+"ENSEMBLE": 0.6116936539235761,
+"ELO_DP_FAIR": 0.6116936539235761,
+"MARKET_MID": 0.54,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1374.1222158626124,
+"elo_b": 1344.8220914126296,
+"pa": 0.6371515698352451,
+"pb": 0.38528105545848657,
+"sr_pa": 0.6044875760948161,
+"sr_pb": 0.43071546306622444,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.5420665903257772,
+"p_sr_bo3": 0.6770411724931418,
+"p_ensemble_bo3": 0.6116934510527707,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.7288,
+"grade": "B",
+"pillars": {
+"experience": 0.613,
+"serve_return_evidence": 0.833,
+"recency": 0.89,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 124,
+"n_matches_b": 38,
+"serve_points_a": 4923.038966491538,
+"serve_points_b": 2686.8652207192154,
+"days_since_last_a": 27,
+"days_since_last_b": 111,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.53,
+"yes_ask": 0.55,
+"no_bid": 0.45,
+"no_ask": 0.47,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.835997+00:00",
+"volume": "990.15",
+"open_interest": "882.98",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T22:20:00Z",
+"seconds_to_scheduled_start": 4491.810865,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.55,
+"raw_edge": 0.061693653923576064,
+"fee_per_contract": 0.0174,
+"ev_after_fees": 0.044293653923576065,
+"bet_up_to": 0.59
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXATPCHALLENGERMATCH-26SEP13STAEXS",
+"ticker": "KXATPCHALLENGERMATCH-26SEP13STAEXS-EXS",
+"family": "MATCH_WINNER",
+"event_ticker": "KXATPCHALLENGERMATCH-26SEP13STAEXS",
+"series_ticker": "KXATPCHALLENGERMATCH",
+"player_a": "Luca Staeheli",
+"player_b": "Maxwell Exsted",
+"player_a_id": "207664",
+"player_b_id": "212142",
+"tour": "ATP",
+"level": "CHALLENGER",
+"competition": "ATP Challenger Tiburon",
+"round": "Q1",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:tiburon",
+"subject": "Maxwell Exsted",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-11",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:01934e47c4ec",
+"data_source_versions": {
+"discovery": "20260913T094543Z",
+"ratings_built_at": "2026-09-13T21:04:07.752712+00:00"
+},
+"models": {
+"ELO": 0.4579332616110273,
+"STRUCTURAL": 0.3229588275068582,
+"ENSEMBLE": 0.3883063460764239,
+"ELO_DP_FAIR": 0.3883063460764239,
+"MARKET_MID": 0.445,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1374.1222158626124,
+"elo_b": 1344.8220914126296,
+"pa": 0.6371515698352451,
+"pb": 0.38528105545848657,
+"sr_pa": 0.6044875760948161,
+"sr_pb": 0.43071546306622444,
+"spw_baseline": 0.6259352571883793,
+"p_elo_bo3": 0.5420665903257772,
+"p_sr_bo3": 0.6770411724931418,
+"p_ensemble_bo3": 0.6116934510527707,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.7288,
+"grade": "B",
+"pillars": {
+"experience": 0.613,
+"serve_return_evidence": 0.833,
+"recency": 0.89,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 124,
+"n_matches_b": 38,
+"serve_points_a": 4923.038966491538,
+"serve_points_b": 2686.8652207192154,
+"days_since_last_a": 27,
+"days_since_last_b": 111,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.44,
+"yes_ask": 0.45,
+"no_bid": 0.55,
+"no_ask": 0.56,
+"source": "capture",
+"quote_ts": "2026-09-13T20:44:36.836016+00:00",
+"volume": "1790.95",
+"open_interest": "1683.58",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-13T22:20:00Z",
+"seconds_to_scheduled_start": 4491.764063,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.56,
+"raw_edge": 0.051693653923576055,
+"fee_per_contract": 0.0173,
+"ev_after_fees": 0.03439365392357606,
+"bet_up_to": 0.59
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+}
+],
 "authority": "RESEARCH_ONLY_NO_REAL_MONEY"
 }
