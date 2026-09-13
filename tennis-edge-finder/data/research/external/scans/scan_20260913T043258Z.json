@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-13T04:32:58.267518+00:00",
+ "run_id": "20260913T043258Z",
+ "external_parse": {
+  "events": 121,
+  "markets": 1508,
+  "skipped_family": 286,
+  "skipped_period": 456,
+  "skipped_live": 3,
+  "one_sided": 71,
+  "rows": 2344,
+  "devigged": 694
+ },
+ "smarkets_fetch": {
+  "events_seen": 161,
+  "events_priced": 80,
+  "markets": 475,
+  "markets_mapped": 158,
+  "contracts": 322,
+  "quoted_contracts": 322,
+  "raw": "data/research/external/raw/20260913T043258Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 158,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 314,
+  "two_sided": 308,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 318,
+ "external_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8496,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "Hao Duan": 1,
+   "Stefano D'Agostino": 1,
+   "Cesare Carpano": 1,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Ziyu Liu": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tessa Johanna Brockmann": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8512,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Cesare Carpano": 1,
+   "Artyom Nabokin": 1,
+   "Romeo Nobili": 1,
+   "Jayson Blando": 1
+  }
+ },
+ "matched_both_venues": 68,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 130,
+ "counts": {
+  "PASS": 125,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 103,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
