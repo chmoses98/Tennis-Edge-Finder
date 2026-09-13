@@ -23,14 +23,16 @@ import json
 import os
 import sys
 import urllib.error
+import urllib.parse
 import urllib.request
-from datetime import datetime, timezone, date
+from datetime import datetime, timedelta, timezone, date
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PROJ = os.path.abspath(os.path.join(HERE, "..", ".."))
 sys.path.insert(0, PROJ)
 
 from tennis_edge.external_market.bovada import SOURCE as BOVADA, event_index, parse_coupon  # noqa: E402
+from tennis_edge.external_market import smarkets as sm                                       # noqa: E402
 from tennis_edge.external_market.consensus import build_reference                            # noqa: E402
 from tennis_edge.external_market.dislocation import (Dislocation, DislocationLedger,          # noqa: E402
                                                     KALSHI_LONE_OUTLIER, ScanPolicy, scan_gates,
@@ -44,6 +46,8 @@ from tennis_edge.pricing.competition import classify_competition                
 from tennis_edge.pricing.fees import FeeSchedule, taker_fee                                    # noqa: E402
 
 BOVADA_URL = ("https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis?lang=en")
+SMARKETS_PAGES = 3          # 100 matches a page; the whole upcoming board is ~160
+SMARKETS_PRICE_EVENTS = 80  # how many of the soonest matches to price each pass
 UA = "tennis-edge-finder/1.0 (research; +https://github.com/chmoses98/Tennis-Edge-Finder)"
 MATCH_SERIES = {tk for tk, (fam, tour, lvl, disc) in SERIES.items()
                 if fam == "MATCH_WINNER" and disc == "singles" and tour in ("ATP", "WTA")}
@@ -65,6 +69,75 @@ def fetch(url: str, timeout=40) -> bytes:
     req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": "application/json,*/*"})
     with urllib.request.urlopen(req, timeout=timeout) as r:
         return r.read()
+
+
+def _sm_json(path, timeout=30):
+    try:
+        return json.loads(fetch(sm.BASE + path, timeout=timeout).decode("utf-8", "replace"))
+    except Exception:                                                            # noqa: BLE001
+        return None
+
+
+def fetch_smarkets(now, raw_dir, stamp):
+    """The traversal Wave 5 reversed. Spaced requests; a failure degrades to no Smarkets, not a crash."""
+    import time as _t
+    events, cursor = [], None
+    for page in range(SMARKETS_PAGES):
+        q = "/v3/events/?type=tennis_match&state=upcoming&limit=100"
+        if cursor:
+            q += f"&pagination_last_id={cursor}"
+        obj = _sm_json(q)
+        if not obj:
+            break
+        evs = obj.get("events") or []
+        events += evs
+        nxt = (obj.get("pagination") or {}).get("next_page")
+        if not evs or not nxt:
+            break
+        cursor = (urllib.parse.parse_qs(nxt.lstrip("?")).get("pagination_last_id") or [None])[0]
+        if not cursor:
+            break
+        _t.sleep(0.3)
+    if not events:
+        return [], [], [], {}, {}, {"events": 0, "error": "no events returned"}
+
+    def soonest(e):
+        try:
+            return datetime.fromisoformat(str(e.get("start_datetime")).replace("Z", "+00:00"))
+        except (TypeError, ValueError):
+            return now + timedelta(days=999)
+    events.sort(key=soonest)
+    target = [e for e in events if soonest(e) - now <= timedelta(days=3)][:SMARKETS_PRICE_EVENTS]
+    ids = [str(e["id"]) for e in target]
+    markets = []
+    for i in range(0, len(ids), 20):
+        obj = _sm_json("/v3/events/{}/markets/".format(",".join(ids[i:i + 20])))
+        markets += (obj or {}).get("markets") or []
+        _t.sleep(0.3)
+    keep = [m for m in markets if sm.family_of(m.get("name"))[0]]
+    mids = [str(m["id"]) for m in keep]
+    contracts, quotes, lastex = [], {}, {"last_executed_prices": {}}
+    for i in range(0, len(mids), 20):
+        part = ",".join(mids[i:i + 20])
+        obj = _sm_json(f"/v3/markets/{part}/contracts/")
+        contracts += (obj or {}).get("contracts") or []
+        _t.sleep(0.25)
+        q = _sm_json(f"/v3/markets/{part}/quotes/")
+        if isinstance(q, dict):
+            quotes.update(q)
+        _t.sleep(0.25)
+        le = _sm_json(f"/v3/markets/{part}/last_executed_prices/")
+        if isinstance(le, dict):
+            lastex["last_executed_prices"].update(le.get("last_executed_prices") or {})
+        _t.sleep(0.25)
+    blob = json.dumps({"events": target, "markets": keep, "contracts": contracts, "quotes": quotes,
+                       "last_executed": lastex}, default=str).encode()
+    path = os.path.join(raw_dir, f"{stamp}.smarkets.json.gz")
+    open(path, "wb").write(gzip.compress(blob))
+    stats = {"events_seen": len(events), "events_priced": len(target), "markets": len(markets),
+             "markets_mapped": len(keep), "contracts": len(contracts), "quoted_contracts": len(quotes),
+             "raw": os.path.relpath(path, PROJ)}
+    return target, keep, contracts, quotes, lastex, stats
 
 
 def latest_kalshi_quotes(capture_root: str) -> dict:
@@ -108,8 +181,20 @@ def main():
     payload = json.loads(raw.decode("utf-8", "replace"))
     obs, pstats = parse_coupon(payload, observed_at=now.isoformat(),
                                evidence_location=os.path.relpath(raw_path, PROJ), raw_bytes=raw)
+    # ---------------------------------------------------------------- 2b. the exchange
+    sm_events, sm_markets, sm_contracts, sm_quotes, sm_lastex, sm_stats = fetch_smarkets(
+        now, a.raw, stamp)
+    sm_obs, sm_pstats = ([], {})
+    if sm_events:
+        sm_obs, sm_pstats = sm.observations(
+            events=sm_events, markets=sm_markets, contracts=sm_contracts, quotes=sm_quotes,
+            last_executed=sm_lastex, observed_at=now.isoformat(),
+            evidence_location=sm_stats.get("raw", ""))
+    obs = obs + sm_obs
     ExternalStore(a.external_store).append_many(obs)
     stats["external_parse"] = pstats
+    stats["smarkets_fetch"] = sm_stats
+    stats["smarkets_parse"] = sm_pstats
 
     # ---------------------------------------------------------------- 3. Kalshi
     quotes = latest_kalshi_quotes(a.capture)
@@ -122,6 +207,23 @@ def main():
 
     ext_index, ext_maps = event_index(payload), []
     ext_by_match = {}
+    #: (physical_match_id, family, canonical player id) -> observations, across BOTH venues
+    side_index: dict = {}
+
+    def _register(e, me, source, obs_pool):
+        """Attach a mapped event's canonical ids to that venue's observations for it."""
+        ext_by_match.setdefault(me.physical_match_id, []).append((e, me))
+        by_side = {e["a"]: me.player_a_id, e["b"]: me.player_b_id}
+        for o in obs_pool:
+            if o.source != source or o.source_event_id != e["source_event_id"]:
+                continue
+            pid = by_side.get(o.side)
+            if pid is None:
+                continue
+            side_index.setdefault((me.physical_match_id, o.market_family, pid), []).append(
+                o.evolve(physical_match_id=me.physical_match_id,
+                         mapping_confidence=me.confidence, mapping_status=me.status))
+
     for e in ext_index:
         path = " ".join(e["path"]).lower()
         tour = "WTA" if ("wta" in path or "women" in path) else "ATP"
@@ -129,8 +231,31 @@ def main():
                        name_a=e["a"], name_b=e["b"], start_utc=e["start_utc"])
         ext_maps.append(me)
         if me.status == MAPPED:
-            ext_by_match.setdefault(me.physical_match_id, []).append((e, me))
+            _register(e, me, BOVADA, obs)
     stats["external_mapping"] = audit(ext_maps)
+
+    # Smarkets names no tour, so both are tried and a match counts only if exactly one resolves --
+    # a name that maps in BOTH tours is an ambiguity, not a convenience.
+    sm_maps = []
+    for e in sm.event_index(sm_events):
+        hits = []
+        for tour in ("ATP", "WTA"):
+            me = map_event(mapper, source=sm.SOURCE, source_event_id=e["source_event_id"], tour=tour,
+                           name_a=e["a"], name_b=e["b"], start_utc=e["start_utc"])
+            if me.status == MAPPED:
+                hits.append(me)
+        if len(hits) == 1:
+            sm_maps.append(hits[0])
+            _register(e, hits[0], sm.SOURCE, sm_obs)
+        elif len(hits) > 1:
+            sm_maps.append(hits[0].__class__(sm.SOURCE, e["source_event_id"], None, None, None,
+                                             "AMBIGUOUS_TOUR", 0.0,
+                                             "the same two names resolve in both tours"))
+        else:
+            sm_maps.append(map_event(mapper, source=sm.SOURCE, source_event_id=e["source_event_id"],
+                                     tour="ATP", name_a=e["a"], name_b=e["b"],
+                                     start_utc=e["start_utc"]))
+    stats["smarkets_mapping"] = audit(sm_maps)
 
     kal_events, kal_maps = {}, []
     for tk, m in quotes.items():
@@ -181,18 +306,14 @@ def main():
     stats["model_witness_available"] = bool(model_ok)
 
     ledger = DislocationLedger(a.ledger)
-    by_family_side = {}
-    for o in obs:
-        by_family_side.setdefault((o.source_event_id, o.market_family), []).append(o)
-
     rows, counts, skips = [], {}, {}
     for pid_match, krec in sorted(overlap.items()):
         ext_events = ext_by_match.get(pid_match) or []
         if not ext_events:
             continue
         e_idx, e_map = ext_events[0]
-        ext_mw = [o for o in by_family_side.get((e_idx["source_event_id"], "MATCH_WINNER"), [])]
-        if not ext_mw:
+        has_mw = any(k[0] == pid_match and k[1] == "MATCH_WINNER" for k in side_index)
+        if not has_mw:
             skips["external_has_no_match_winner"] = skips.get("external_has_no_match_winner", 0) + 1
             continue
         # our model's probability that player A (the Kalshi A side) wins
@@ -227,10 +348,8 @@ def main():
             if ask is None or bid is None or not (0 < bid <= ask < 1):
                 skips["kalshi_not_two_sided"] = skips.get("kalshi_not_two_sided", 0) + 1
                 continue
-            # which external side is this Kalshi side? match on the canonical player id we mapped
-            want_a = pid == e_map.player_a_id
-            side_name = e_idx["a"] if want_a else e_idx["b"]
-            side_obs = [o for o in ext_mw if o.side == side_name]
+            # every venue's observation of THIS player on THIS match, whatever each venue calls them
+            side_obs = side_index.get((pid_match, "MATCH_WINNER", pid), [])
             ref = build_reference(side_obs, now=now.isoformat(),
                                   max_source_staleness_s=MAX_EXTERNAL_STALENESS_S,
                                   max_capture_age_s=MAX_KALSHI_QUOTE_AGE_S)

@@ -403,3 +403,115 @@ def test_a_real_dislocation_with_a_bad_quote_is_a_watch_not_a_pass():
 def test_a_crossed_or_one_sided_kalshi_quote_never_reaches_shadow_bet():
     assert _gate(kalshi_bid=0.50, kalshi_ask=0.46)["decision"] != "SHADOW_BET"
     assert _gate(kalshi_ask=None)["decision"] != "SHADOW_BET"
+
+
+# --------------------------------------------------------------------------- Smarkets (Wave 5)
+def _sm_market(name="Match winner", mid="1", ev="9"):
+    return {"id": mid, "event_id": ev, "name": name, "state": "open"}
+
+
+def _sm_fixture(bid=3472, ask=4348, other_bid=5495, other_ask=6536):
+    from tennis_edge.external_market import smarkets as sm
+    events = [{"id": "9", "name": "Alpha Player vs Beta Player",
+               "start_datetime": "2026-09-13T18:05:00Z", "state": "upcoming", "bettable": True}]
+    markets = [_sm_market(), _sm_market(name="Set 1 winner", mid="2")]
+    contracts = [{"id": "c1", "market_id": "1", "name": "Alpha Player"},
+                 {"id": "c2", "market_id": "1", "name": "Beta Player"},
+                 {"id": "c3", "market_id": "2", "name": "Alpha Player"}]
+    quotes = {"c1": {"bids": [{"price": bid, "quantity": 2916191}],
+                     "offers": [{"price": ask, "quantity": 12637800}]},
+              "c2": {"bids": [{"price": other_bid, "quantity": 1842586}],
+                     "offers": [{"price": other_ask, "quantity": 2922927}]},
+              "c3": {"bids": [], "offers": []}}
+    lastex = {"last_executed_prices": {"1": [{"contract_id": "c1", "last_executed_price": "45.45",
+                                              "timestamp": "2026-09-13T02:34:39Z"}]}}
+    return sm, events, markets, contracts, quotes, lastex
+
+
+def test_smarkets_prices_are_hundredths_of_a_percent():
+    from tennis_edge.external_market.smarkets import price_to_prob
+    assert price_to_prob(3472) == pytest.approx(0.3472)      # order book integer
+    assert price_to_prob("45.45") == pytest.approx(0.4545)   # last-traded decimal percent
+    assert price_to_prob(0) is None and price_to_prob(None) is None
+
+
+def test_only_match_scope_smarkets_markets_are_mapped():
+    from tennis_edge.external_market.smarkets import family_of
+    assert family_of("Match winner") == ("MATCH_WINNER", None)
+    assert family_of("Over/under 21.5") == ("TOTAL_GAMES", 21.5)
+    assert family_of("A B +2.5 / C D -2.5 games")[0] == "GAME_SPREAD"
+    # a set-scoped market prices a different question than a match-scope Kalshi contract
+    assert family_of("Set 1 winner") == (None, None)
+    assert family_of("Correct score Set 1") == (None, None)
+
+
+def test_an_exchange_midpoint_is_the_reference_and_the_spread_is_the_margin():
+    sm, events, markets, contracts, quotes, lastex = _sm_fixture()
+    rows, stats = sm.observations(events=events, markets=markets, contracts=contracts, quotes=quotes,
+                                  last_executed=lastex, observed_at=NOW)
+    # the set-scoped market is skipped by family, so its contract is never priced at all
+    assert stats["skipped_family"] == 1 and stats["rows"] == 2
+    by_side = {r.side: r for r in rows}
+    a = by_side["Alpha Player"]
+    assert a.source_kind == EXCHANGE and a.devig_method == "exchange_midpoint"
+    assert a.devigged_probability == pytest.approx(0.5 * (0.3472 + 0.4348))
+    assert a.source_margin == pytest.approx(0.0876)      # for an exchange the margin IS the spread
+    assert a.lay_price == pytest.approx(0.3472) and a.back_price == pytest.approx(0.4348)
+
+
+def test_smarkets_publishes_no_quote_timestamp_and_we_do_not_invent_one():
+    sm, events, markets, contracts, quotes, lastex = _sm_fixture()
+    rows, _ = sm.observations(events=events, markets=markets, contracts=contracts, quotes=quotes,
+                              last_executed=lastex, observed_at=NOW)
+    a = next(r for r in rows if r.side == "Alpha Player")
+    assert a.source_timestamp is None and a.staleness_seconds is None
+    # the last TRADED price does carry a time, and it is a different fact, kept as such
+    assert "last traded 0.4545 at 2026-09-13T02:34:39Z" in a.line
+
+
+def test_a_one_sided_smarkets_book_yields_no_reference_and_an_empty_one_yields_no_row():
+    sm, events, markets, contracts, quotes, lastex = _sm_fixture()
+    quotes["c2"] = {"bids": [], "offers": []}
+    rows, stats = sm.observations(events=events, markets=markets, contracts=contracts, quotes=quotes,
+                                  last_executed=lastex, observed_at=NOW)
+    assert stats["no_book"] == 1 and not any(r.side == "Beta Player" for r in rows)
+
+    sm, events, markets, contracts, quotes, lastex = _sm_fixture()
+    quotes["c1"] = {"bids": [{"price": 3472, "quantity": 100}], "offers": []}
+    rows, _ = sm.observations(events=events, markets=markets, contracts=contracts, quotes=quotes,
+                              last_executed=lastex, observed_at=NOW)
+    a = next(r for r in rows if r.side == "Alpha Player")
+    assert a.devigged_probability is None and a.n_sides_in_market == 1
+
+
+def test_a_wide_exchange_book_is_stored_but_cannot_drive_a_decision():
+    """Smarkets quotes tennis at a median 10c spread. That midpoint is an opinion, not a price."""
+    from tennis_edge.external_market.consensus import DEFAULT_MAX_EXCHANGE_SPREAD
+    wide = _obs(source="smarkets", source_kind=EXCHANGE, devigged_probability=0.55, source_margin=0.10,
+                devig_method="exchange_midpoint")
+    tight = _obs(source="smarkets", source_kind=EXCHANGE, devigged_probability=0.55, source_margin=0.02,
+                 devig_method="exchange_midpoint")
+    book = _obs(source="bovada", devigged_probability=0.52, source_margin=0.045)
+    r = build_reference([wide, book], now=NOW)
+    assert r.excluded_wide_book == 1 and r.groups == ("bovada",) and r.value == pytest.approx(0.52)
+    r2 = build_reference([tight, book], now=NOW)
+    assert r2.n_independent_groups == 2 and r2.kind == "SHARP_REFERENCE"
+    # a sportsbook's overround is a different quantity and is never judged by this bound
+    assert build_reference([_obs(source="bovada", source_margin=0.12)], now=NOW).excluded_wide_book == 0
+    assert DEFAULT_MAX_EXCHANGE_SPREAD < 0.10
+
+
+def test_the_two_venues_are_separate_witness_groups():
+    from tennis_edge.external_market.consensus import group_of
+    assert group_of("bovada") != group_of("smarkets")
+    r = build_reference([_obs(source="bovada", devigged_probability=0.50),
+                         _obs(source="smarkets", source_kind=EXCHANGE, devigged_probability=0.60,
+                              source_margin=0.02, devig_method="exchange_midpoint")], now=NOW)
+    assert r.n_independent_groups == 2 and r.value == pytest.approx(0.55)
+
+
+def test_the_smarkets_traversal_is_recorded_in_code():
+    """The path is not discoverable from the docs; losing it would cost another wave to rediscover."""
+    from tennis_edge.external_market.smarkets import TRAVERSAL
+    joined = " ".join(TRAVERSAL)
+    assert "type=tennis_match" in joined and "/quotes/" in joined and "/contracts/" in joined

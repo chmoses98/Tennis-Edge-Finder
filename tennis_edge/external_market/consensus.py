@@ -39,6 +39,13 @@ INADMISSIBLE = ("kalshi",)
 DEFAULT_MAX_SOURCE_STALENESS_S = 900.0     # the venue's own timestamp vs when we fetched
 DEFAULT_MAX_CAPTURE_AGE_S = 900.0          # when we fetched vs now
 
+#: An exchange midpoint is only as precise as its book is tight. Smarkets quotes tennis with a median
+#: 10c spread -- five cents of uncertainty on the midpoint, larger than any cross-venue gap this project
+#: has measured -- so a wide-book midpoint is stored and reported but must not drive a decision. For an
+#: exchange row `source_margin` carries the SPREAD; for a sportsbook it carries the overround, which is a
+#: different quantity, so this bound applies only to exchange rows.
+DEFAULT_MAX_EXCHANGE_SPREAD = 0.06
+
 
 def group_of(source: str) -> str:
     return INDEPENDENCE_GROUPS.get(source, source)
@@ -59,6 +66,7 @@ class Reference:
     excluded_stale: int = 0
     excluded_inadmissible: int = 0
     excluded_no_devig: int = 0
+    excluded_wide_book: int = 0
     reason: str = ""
     aggregation: str = "median_across_independent_groups"
 
@@ -77,13 +85,14 @@ def _age(iso_a: str | None, iso_b: str | None) -> float | None:
 def build_reference(observations, *, now: str, min_groups: int = 1,
                     max_source_staleness_s: float = DEFAULT_MAX_SOURCE_STALENESS_S,
                     max_capture_age_s: float = DEFAULT_MAX_CAPTURE_AGE_S,
-                    require_source_timestamp: bool = False) -> Reference:
+                    require_source_timestamp: bool = False,
+                    max_exchange_spread: float = DEFAULT_MAX_EXCHANGE_SPREAD) -> Reference:
     """One reference value for one (match, family, side) from a list of ExternalMarketObservation."""
     obs = list(observations)
     if not obs:
         return Reference("", "", "", None, "NONE", reason="no observations")
     head = obs[0]
-    excl_stale = excl_inadm = excl_nodevig = 0
+    excl_stale = excl_inadm = excl_nodevig = excl_wide = 0
     usable = []
     for o in obs:
         if o.source.lower() in INADMISSIBLE:
@@ -91,6 +100,10 @@ def build_reference(observations, *, now: str, min_groups: int = 1,
             continue
         if o.devigged_probability is None:
             excl_nodevig += 1
+            continue
+        if (o.source_kind in SHARP_KINDS and o.source_margin is not None
+                and o.source_margin > max_exchange_spread):
+            excl_wide += 1
             continue
         cap_age = _age(o.observed_at, now)
         if cap_age is None or cap_age > max_capture_age_s:
@@ -110,7 +123,9 @@ def build_reference(observations, *, now: str, min_groups: int = 1,
         return Reference(head.physical_match_id or "", head.market_family, head.side, None, "NONE",
                          n_observations=len(obs), excluded_stale=excl_stale,
                          excluded_inadmissible=excl_inadm, excluded_no_devig=excl_nodevig,
-                         reason="every observation was stale, inadmissible or un-de-viggable")
+                         excluded_wide_book=excl_wide,
+                         reason="every observation was stale, inadmissible, un-de-viggable, or came "
+                                "from a book too wide for its midpoint to mean anything")
 
     per_group: dict = {}
     for o in usable:
@@ -121,7 +136,7 @@ def build_reference(observations, *, now: str, min_groups: int = 1,
                          n_observations=len(obs), n_independent_groups=len(collapsed),
                          groups=tuple(sorted(collapsed)), per_group=collapsed,
                          excluded_stale=excl_stale, excluded_inadmissible=excl_inadm,
-                         excluded_no_devig=excl_nodevig,
+                         excluded_no_devig=excl_nodevig, excluded_wide_book=excl_wide,
                          reason=f"{len(collapsed)} independent group(s), {min_groups} required")
 
     vals = sorted(collapsed.values())
@@ -133,4 +148,4 @@ def build_reference(observations, *, now: str, min_groups: int = 1,
                      groups=tuple(sorted(collapsed)), per_group=collapsed,
                      dispersion=(vals[-1] - vals[0]) if len(vals) > 1 else 0.0,
                      excluded_stale=excl_stale, excluded_inadmissible=excl_inadm,
-                     excluded_no_devig=excl_nodevig)
+                     excluded_no_devig=excl_nodevig, excluded_wide_book=excl_wide)
