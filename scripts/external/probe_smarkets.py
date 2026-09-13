@@ -252,5 +252,22 @@ def main():
     return 0
 
 
+def _guarded():
+    """Write a manifest even when the walk dies, so a failure is evidence rather than an absence."""
+    import traceback
+    try:
+        return main()
+    except Exception:                                                           # noqa: BLE001
+        import glob as _g
+        run = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ") + "-crash"
+        root = os.path.join(PROJ, "data", "sources", "smarkets_probe", run)
+        os.makedirs(root, exist_ok=True)
+        json.dump({"generated_at": datetime.now(timezone.utc).isoformat(), "crashed": True,
+                   "traceback": traceback.format_exc()[-4000:]},
+                  open(os.path.join(root, "manifest.json"), "w"), indent=1)
+        traceback.print_exc()
+        return 1
+
+
 if __name__ == "__main__":
-    raise SystemExit(main())
+    raise SystemExit(_guarded())

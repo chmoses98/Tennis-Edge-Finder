@@ -1,0 +1,53 @@
+name: Tennis Smarkets Probe
+
+# A small, fast, dispatch-only job. The Smarkets traversal used to ride along in tennis-bootstrap, which
+# meant a twenty-minute wait behind source acquisition to see the result of a one-minute probe -- and,
+# worse, it inherited that workflow's continue-on-error, which has now hidden a crash three times in this
+# project. Here a probe that writes no manifest FAILS the run.
+
+on:
+  workflow_dispatch:
+    inputs:
+      script:
+        description: 'which probe to run: r1, r2, or both'
+        required: false
+        default: 'r2'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-smarkets-probe
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Probe
+        run: |
+          set -euo pipefail
+          WHICH="${{ github.event.inputs.script || 'r2' }}"
+          BEFORE=$(find data/sources/smarkets_probe -name manifest.json 2>/dev/null | wc -l)
+          if [ "$WHICH" = "r1" ] || [ "$WHICH" = "both" ]; then
+            python3 scripts/external/probe_smarkets.py
+          fi
+          if [ "$WHICH" = "r2" ] || [ "$WHICH" = "both" ]; then
+            python3 scripts/external/probe_smarkets2.py
+          fi
+          AFTER=$(find data/sources/smarkets_probe -name manifest.json 2>/dev/null | wc -l)
+          echo "manifests before=$BEFORE after=$AFTER"
+          [ "$AFTER" -gt "$BEFORE" ] || { echo "::error::the probe wrote no manifest"; exit 1; }
+      - name: Publish
+        if: always()
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/smarkets_probe \
+            --message "smarkets probe $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
