@@ -169,6 +169,36 @@ def accuracy(rows, settled: dict) -> dict:
             "model_minus_kalshi_ci": boot_ci(paired_model) if paired_model else [None, None]}
 
 
+def per_source(rows, source: str, label: str) -> dict:
+    """The gap between Kalshi and ONE venue, whether or not that venue drove the reference.
+
+    Smarkets is usually excluded from the reference by the exchange spread bound, and its opinion is
+    still worth measuring: the question this wave exists to answer is whether an exchange ever prices
+    tennis far enough from Kalshi to clear the cost of acting.
+    """
+    d = []
+    for r in rows:
+        p = (r.get("external_prices") or {}).get(source)
+        if p is None or r.get("kalshi_mid") is None:
+            continue
+        d.append({"gap": p - r["kalshi_mid"], "ask": r.get("kalshi_ask"), "fee": r.get("kalshi_fee"),
+                  "edge": (p - (r.get("kalshi_ask") or 1) - (r.get("kalshi_fee") or 0))})
+    if not d:
+        return {"source": label, "n": 0}
+    g = sorted(abs(x["gap"]) for x in d)
+    def share(c):
+        return round(sum(1 for v in g if v > c) / len(g), 4)
+    def pct(q):
+        return round(g[min(int(q * (len(g) - 1)), len(g) - 1)], 5)
+    e = [x["edge"] for x in d]
+    return {"source": label, "n": len(d), "median_abs_gap": pct(0.5), "p75": pct(0.75), "p90": pct(0.90),
+            "p95": pct(0.95), "max": round(g[-1], 5),
+            "share_over_1c": share(0.01), "share_over_2c": share(0.02), "share_over_3c": share(0.03),
+            "share_over_5c": share(0.05), "share_over_10c": share(0.10),
+            "median_after_fee_edge": round(st.median(e), 5), "max_after_fee_edge": round(max(e), 5),
+            "n_edges_over_2c": sum(1 for x in e if x >= 0.02)}
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--ledger", default=os.path.join(PROJ, "data", "research", "external", "dislocations"))
@@ -212,6 +242,12 @@ def main():
             buckets[keyfn(r)].append(r)
         res["scorecards"][name] = [describe(v, k) for k, v in sorted(buckets.items())]
 
+    res["by_source"] = [per_source(rows, "bovada", "Bovada (sportsbook, de-vigged)"),
+                        per_source(rows, "smarkets", "Smarkets (exchange midpoint)")]
+    res["three_venue_rows"] = sum(1 for r in rows
+                                  if (r.get("external_prices") or {}).get("bovada") is not None
+                                  and (r.get("external_prices") or {}).get("smarkets") is not None)
+
     settled = settlements(a.capture if os.path.isdir(a.capture) else "",
                           a.discovery if os.path.isdir(a.discovery) else "")
     res["settled_contracts_seen"] = len(settled)
@@ -239,6 +275,18 @@ def main():
                  f"{s.get('ext_vs_kalshi_mean', float('nan')):+.4f} | {s.get('share_over_2c', 0):.3f} | "
                  f"{s.get('share_over_5c', 0):.3f} | {s.get('external_edge_median', float('nan')):+.4f} | "
                  f"{s.get('share_edge_over_2c', 0):.3f} |")
+    if any(s.get("n") for s in res["by_source"]):
+        L += ["", "## Kalshi against each venue separately", "",
+              f"{res['three_venue_rows']} observations had BOTH venues quoting.", "",
+              "| venue | n | median abs gap | p90 | p95 | max | >2c | >3c | >5c | >10c | max edge after fees |",
+              "|---|---|---|---|---|---|---|---|---|---|---|"]
+        for s in res["by_source"]:
+            if not s.get("n"):
+                continue
+            L.append(f"| {s['source']} | {s['n']} | {s['median_abs_gap']:.4f} | {s['p90']:.4f} | "
+                     f"{s['p95']:.4f} | {s['max']:.4f} | {s['share_over_2c']:.3f} | "
+                     f"{s['share_over_3c']:.3f} | {s['share_over_5c']:.3f} | {s['share_over_10c']:.3f} | "
+                     f"{s['max_after_fee_edge']:+.4f} |")
     L += ["", "## Did Kalshi move toward the external reference", "",
           "| subset | n | mean move toward | 95% CI | share moved toward | median gap (min) |",
           "|---|---|---|---|---|---|"]
