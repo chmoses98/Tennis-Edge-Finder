@@ -1,0 +1,69 @@
+{
+ "generated_at": "2026-09-13T00:52:42.269293+00:00",
+ "run_id": "20260913T005242Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 801,
+  "skipped_family": 165,
+  "skipped_period": 211,
+  "skipped_live": 13,
+  "one_sided": 55,
+  "rows": 1205,
+  "devigged": 370
+ },
+ "kalshi_quotes_on_disk": 287,
+ "external_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7561,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Urrutia": 1,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Pavel Bushuev": 1,
+   "Gregory Gamal": 1,
+   "Jesse Gothelf": 1,
+   "Bentley Sparks": 1,
+   "JC Roddick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8495,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Oleg Tyagunov": 1,
+   "KIDLAT ESTOGERO": 1
+  }
+ },
+ "matched_both_venues": 17,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MODEL_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
