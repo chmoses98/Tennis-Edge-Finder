@@ -1,0 +1,68 @@
+{
+ "generated_at": "2026-09-13T01:25:58.213277+00:00",
+ "run_id": "20260913T012558Z",
+ "external_parse": {
+  "events": 92,
+  "markets": 921,
+  "skipped_family": 209,
+  "skipped_period": 244,
+  "skipped_live": 10,
+  "one_sided": 58,
+  "rows": 1348,
+  "devigged": 410
+ },
+ "kalshi_quotes_on_disk": 276,
+ "external_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7738,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Urrutia": 1,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Gregory Gamal": 1,
+   "Russell Soohoo": 1,
+   "Bentley Sparks": 1,
+   "JC Roddick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8681,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Ziyu Liu": 1,
+   "Cesare Carpano": 1,
+   "Artyom Nabokin": 1,
+   "Juan Ignacio Lombisano": 1,
+   "KIDLAT ESTOGERO": 1,
+   "Aleksandr Chistiakov": 1,
+   "George Margiev": 1,
+   "Jack Dermenjyan": 1,
+   "Junjie Sun": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
