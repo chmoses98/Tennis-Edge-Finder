@@ -1,0 +1,69 @@
+{
+ "generated_at": "2026-09-13T00:32:38.997251+00:00",
+ "run_id": "20260913T003238Z",
+ "external_parse": {
+  "events": 85,
+  "markets": 708,
+  "skipped_family": 150,
+  "skipped_period": 173,
+  "skipped_live": 13,
+  "one_sided": 55,
+  "rows": 1071,
+  "devigged": 330
+ },
+ "kalshi_quotes_on_disk": 221,
+ "external_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Urrutia": 1,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Pavel Bushuev": 1,
+   "Gregory Gamal": 1,
+   "Jesse Gothelf": 1,
+   "My-Anh Holmes": 1,
+   "Bentley Sparks": 1,
+   "JC Roddick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8947,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Romeo Nobili": 1,
+   "Tom LEFEUVRE": 1,
+   "George Margiev": 1,
+   "Jack Dermenjyan": 1,
+   "Romane MOREL": 1
+  }
+ },
+ "matched_both_venues": 16,
+ "external_mapped_matches": 56,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:MODEL_LONE_OUTLIER": 7,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
