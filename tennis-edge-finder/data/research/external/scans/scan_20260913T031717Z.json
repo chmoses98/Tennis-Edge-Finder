@@ -1,0 +1,72 @@
+{
+ "generated_at": "2026-09-13T03:17:17.857388+00:00",
+ "run_id": "20260913T031717Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1514,
+  "skipped_family": 280,
+  "skipped_period": 462,
+  "skipped_live": 6,
+  "one_sided": 65,
+  "rows": 2385,
+  "devigged": 706
+ },
+ "kalshi_quotes_on_disk": 569,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8448,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Nadia Kichenok": 1,
+   "Kim Dong Ju": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1,
+   "JC Roddick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 180,
+  "by_status": {
+   "MAPPED": 148,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.8222,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Matthieu Roehrich": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 148,
+ "model_witness_available": true,
+ "rows": 142,
+ "counts": {
+  "PASS": 136,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 82,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 3,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
