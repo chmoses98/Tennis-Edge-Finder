@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-09-13T19:49:08.875897+00:00",
+ "run_id": "20260913T194908Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 588,
+  "skipped_family": 117,
+  "skipped_period": 177,
+  "skipped_live": 12,
+  "one_sided": 10,
+  "rows": 1088,
+  "devigged": 284
+ },
+ "smarkets_fetch": {
+  "events_seen": 207,
+  "events_priced": 80,
+  "markets": 556,
+  "markets_mapped": 189,
+  "contracts": 388,
+  "quoted_contracts": 388,
+  "raw": "data/research/external/raw/20260913T194908Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 189,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 66,
+  "rows": 322,
+  "two_sided": 321,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 220,
+ "external_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6316,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Darren Wei": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 36,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.973,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 36,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 39,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
