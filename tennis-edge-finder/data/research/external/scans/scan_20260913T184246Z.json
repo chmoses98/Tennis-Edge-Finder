@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-09-13T18:42:46.008300+00:00",
+ "run_id": "20260913T184246Z",
+ "external_parse": {
+  "events": 72,
+  "markets": 664,
+  "skipped_family": 137,
+  "skipped_period": 199,
+  "skipped_live": 14,
+  "one_sided": 17,
+  "rows": 1200,
+  "devigged": 311
+ },
+ "smarkets_fetch": {
+  "events_seen": 202,
+  "events_priced": 80,
+  "markets": 719,
+  "markets_mapped": 225,
+  "contracts": 466,
+  "quoted_contracts": 466,
+  "raw": "data/research/external/raw/20260913T184246Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 225,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 98,
+  "rows": 368,
+  "two_sided": 357,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 231,
+ "external_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Luca Lemaitre": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 44,
+  "by_status": {
+   "MAPPED": 43,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9773,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 39,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
