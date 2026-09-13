@@ -9,9 +9,9 @@ on:
   workflow_dispatch:
     inputs:
       script:
-        description: 'which probe to run: r1, r2, or both'
+        description: 'which probe to run: r1, r2, r3, or both'
         required: false
-        default: 'r2'
+        default: 'r3'
 
 permissions:
   contents: write
@@ -39,6 +39,9 @@ jobs:
           fi
           if [ "$WHICH" = "r2" ] || [ "$WHICH" = "both" ]; then
             python3 scripts/external/probe_smarkets2.py
+          fi
+          if [ "$WHICH" = "r3" ] || [ "$WHICH" = "both" ]; then
+            python3 scripts/external/probe_smarkets3.py
           fi
           AFTER=$(find data/sources/smarkets_probe -name manifest.json 2>/dev/null | wc -l)
           echo "manifests before=$BEFORE after=$AFTER"
