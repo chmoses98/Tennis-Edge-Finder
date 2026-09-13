@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-09-13T20:00:38.589461+00:00",
+ "run_id": "20260913T200038Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 588,
+  "skipped_family": 117,
+  "skipped_period": 177,
+  "skipped_live": 12,
+  "one_sided": 10,
+  "rows": 1088,
+  "devigged": 284
+ },
+ "smarkets_fetch": {
+  "events_seen": 213,
+  "events_priced": 80,
+  "markets": 543,
+  "markets_mapped": 183,
+  "contracts": 376,
+  "quoted_contracts": 376,
+  "raw": "data/research/external/raw/20260913T200038Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 183,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 62,
+  "rows": 314,
+  "two_sided": 311,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 210,
+ "external_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6316,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Darren Wei": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 34,
+  "by_status": {
+   "MAPPED": 33,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9706,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 33,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
