@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-13T10:30:28.020145+00:00",
+ "run_id": "20260913T103028Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1335,
+  "skipped_family": 293,
+  "skipped_period": 399,
+  "skipped_live": 28,
+  "one_sided": 99,
+  "rows": 2019,
+  "devigged": 544
+ },
+ "smarkets_fetch": {
+  "events_seen": 155,
+  "events_priced": 80,
+  "markets": 1215,
+  "markets_mapped": 279,
+  "contracts": 594,
+  "quoted_contracts": 594,
+  "raw": "data/research/external/raw/20260913T103028Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 279,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 567,
+  "two_sided": 567,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 551,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.8254,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Nadia Kichenok": 1,
+   "Nikita Mashtakov": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Juan Ignacio Lombisano": 1,
+   "George Margiev": 1,
+   "Monika Gospodinova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.8875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Tessa Johanna Brockmann": 1,
+   "Nadiia Kichenok": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 122,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.8243,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Matthieu Roehrich": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Aran Teixido Garcia": 1,
+   "Sviatoslav Lutkovskii": 1,
+   "Fedor Altukhov": 1
+  }
+ },
+ "matched_both_venues": 89,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 122,
+ "model_witness_available": true,
+ "rows": 138,
+ "counts": {
+  "PASS": 134,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 10,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
