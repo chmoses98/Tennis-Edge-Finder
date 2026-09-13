@@ -1,0 +1,35 @@
+{
+ "run_id": "20260913T114716Z",
+ "started_at": "2026-09-13T11:47:16.411664+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 560,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP13PIEROU": {
+   "confidence": "B",
+   "bracket_s": 196.094295,
+   "first_ball": "2026-09-13T11:46:58.693635+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP13LUKSIE": {
+   "confidence": "B",
+   "bracket_s": 196.31822,
+   "first_ball": "2026-09-13T11:52:03.256634+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "UNMATCHED": 768,
+  "MATCHED": 560
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-13T11:56:25.322065+00:00"
+}
