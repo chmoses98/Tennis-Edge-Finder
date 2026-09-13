@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-13T23:26:00.448104+00:00",
+ "run_id": "20260913T232600Z",
+ "external_parse": {
+  "events": 105,
+  "markets": 1328,
+  "skipped_family": 189,
+  "skipped_period": 467,
+  "skipped_live": 7,
+  "one_sided": 11,
+  "rows": 2359,
+  "devigged": 661
+ },
+ "smarkets_fetch": {
+  "events_seen": 232,
+  "events_priced": 80,
+  "markets": 546,
+  "markets_mapped": 209,
+  "contracts": 426,
+  "quoted_contracts": 426,
+  "raw": "data/research/external/raw/20260913T232600Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 209,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 370,
+  "two_sided": 359,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 501,
+ "external_mapping": {
+  "total": 97,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6907,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Kim Dong Ju": 1,
+   "Nikita Mashtakov": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Grace Cadwallader": 1,
+   "Nikita Desai": 1,
+   "Nathan Boniel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8978,
+  "top_refusal_subjects": {
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Aran Teixido Garcia": 1,
+   "Raluca Georgiana Serban": 1,
+   "Adrian Oltean Achacollo": 1,
+   "Robin Eldin": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Juan Esteban Inostroza Alfaro": 1,
+   "Arno Guillet": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 123,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 113,
+  "tri:MODEL_LONE_OUTLIER": 53,
+  "tri:INSUFFICIENT_INPUTS": 51,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 5,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
