@@ -1,0 +1,656 @@
+{
+ "generated_at": "2026-09-13T03:36:34.933063+00:00",
+ "run_id": "20260913T033634Z-r3",
+ "traversal": [
+  "GET /v3/events/?type=tennis_match&state=upcoming&limit=N (+pagination)",
+  "GET /v3/events/{ids}/markets/",
+  "GET /v3/markets/{ids}/contracts/",
+  "GET /v3/markets/{ids}/quotes/",
+  "GET /v3/markets/{ids}/last_executed_prices/",
+  "GET /v3/events/{parent_ids}/ to name the competition"
+ ],
+ "board": {
+  "events": 162,
+  "horizons": {
+   "within_24h": 105,
+   "within_7d": 57
+  },
+  "keys": [
+   "bet_allowed",
+   "bettable",
+   "chart_time_period",
+   "created",
+   "description",
+   "display_order",
+   "end_date",
+   "full_slug",
+   "hidden",
+   "id",
+   "inplay_enabled",
+   "modified",
+   "name",
+   "parent_id",
+   "seo_description",
+   "short_name",
+   "slug",
+   "special_rules",
+   "start_date",
+   "start_datetime",
+   "state",
+   "super_sub_enabled",
+   "type",
+   "venue"
+  ],
+  "sample": [
+   {
+    "id": "45315874",
+    "name": "Alexander Zverev vs Ben Shelton",
+    "start_datetime": "2026-09-13T18:05:00Z",
+    "state": "upcoming",
+    "bettable": true,
+    "bet_allowed": true,
+    "parent_id": "41830091"
+   },
+   {
+    "id": "45315883",
+    "name": "Panna Udvardy vs Lois Boisson",
+    "start_datetime": "2026-09-13T20:10:00Z",
+    "state": "upcoming",
+    "bettable": true,
+    "bet_allowed": true,
+    "parent_id": "42107740"
+   },
+   {
+    "id": "45315884",
+    "name": "Cristina Bucsa vs Bianca Andreescu",
+    "start_datetime": "2026-09-13T23:00:00Z",
+    "state": "upcoming",
+    "bettable": true,
+    "bet_allowed": true,
+    "parent_id": "42107740"
+   },
+   {
+    "id": "45315885",
+    "name": "Darja Vidmanova vs Janice Tjen",
+    "start_datetime": "2026-09-13T19:10:00Z",
+    "state": "upcoming",
+    "bettable": true,
+    "bet_allowed": true,
+    "parent_id": "42107740"
+   },
+   {
+    "id": "45315886",
+    "name": "Peyton Stearns vs Emiliana Arango",
+    "start_datetime": "2026-09-13T19:00:00Z",
+    "state": "upcoming",
+    "bettable": true,
+    "bet_allowed": true,
+    "parent_id": "42107740"
+   },
+   {
+    "id": "45315887",
+    "name": "Elsa Jacquemot vs Liudmila Samsonova",
+    "start_datetime": "2026-09-14T16:00:00Z",
+    "state": "upcoming",
+    "bettable": true,
+    "bet_allowed": true,
+    "parent_id": "42107740"
+   }
+  ]
+ },
+ "coverage_by_category": {
+  "Tennis": 162
+ },
+ "doubles_matches": 6,
+ "sample_tournaments": [
+  "ATP",
+  "Challenger",
+  "WTA",
+  "WTA 125K"
+ ],
+ "markets": {
+  "n": 715,
+  "for_events": 120,
+  "keys": [
+   "bet_delay",
+   "cashout_enabled",
+   "categories",
+   "category",
+   "complete",
+   "contract_selections",
+   "created",
+   "description",
+   "display_order",
+   "display_type",
+   "event_id",
+   "hidden",
+   "id",
+   "info",
+   "inplay_enabled",
+   "market_type",
+   "modified",
+   "name",
+   "slug",
+   "state",
+   "winner_count"
+  ],
+  "families": {
+   "Match winner": 120,
+   "Set 1 winner": 81,
+   "Correct score Set 1": 68,
+   "Set 1 over/under 9.5": 9,
+   "Set betting": 7,
+   "Over/under 21.5": 7,
+   "Odd or even games": 6,
+   "Any set to nil": 6,
+   "Exact sets best of 3": 6,
+   "Over/under 21.0": 6,
+   "Over/under 22.0": 6,
+   "Set 2 winner": 6,
+   "Over/under 22.5": 5,
+   "Over/under 20.5": 4,
+   "Over/under 23.0": 3
+  },
+  "states": {
+   "open": 715
+  },
+  "sample": [
+   {
+    "id": "163889874",
+    "event_id": "45316927",
+    "name": "Match winner",
+    "state": "open",
+    "settled": null,
+    "bet_allowed": null
+   },
+   {
+    "id": "164011422",
+    "event_id": "45316927",
+    "name": "Set 1 winner",
+    "state": "open",
+    "settled": null,
+    "bet_allowed": null
+   },
+   {
+    "id": "164068653",
+    "event_id": "45316927",
+    "name": "Wishaya Trongcharoenchaikul +2.5 / Jesse Flores -2.5 games",
+    "state": "open",
+    "settled": null,
+    "bet_allowed": null
+   },
+   {
+    "id": "164011423",
+    "event_id": "45316927",
+    "name": "Wishaya Trongcharoenchaikul +1.5 / Jesse Flores -1.5 sets",
+    "state": "open",
+    "settled": null,
+    "bet_allowed": null
+   },
+   {
+    "id": "164059650",
+    "event_id": "45316927",
+    "name": "Correct score Set 1",
+    "state": "open",
+    "settled": null,
+    "bet_allowed": null
+   }
+  ]
+ },
+ "contracts": {
+  "n": 242,
+  "keys": [
+   "competitor_id",
+   "contract_type",
+   "created",
+   "display_order",
+   "hidden",
+   "id",
+   "info",
+   "market_id",
+   "modified",
+   "name",
+   "outcome_timestamp",
+   "slug",
+   "state_or_outcome"
+  ],
+  "sample": [
+   {
+    "id": "453195965",
+    "market_id": "163889874",
+    "name": "Wishaya Trongcharoenchaikul",
+    "slug": "wishaya-trongcharoenchaikul"
+   },
+   {
+    "id": "453195966",
+    "market_id": "163889874",
+    "name": "Jesse Flores",
+    "slug": "jesse-flores"
+   },
+   {
+    "id": "453196081",
+    "market_id": "163889932",
+    "name": "Hanyi Liu",
+    "slug": "hanyi-liu"
+   },
+   {
+    "id": "453196082",
+    "market_id": "163889932",
+    "name": "Yaroslav Demin",
+    "slug": "yaroslav-demin"
+   },
+   {
+    "id": "453200111",
+    "market_id": "163891504",
+    "name": "Mitsuki Wei Kang Leong",
+    "slug": "mitsuki-wei-kang-leong"
+   },
+   {
+    "id": "453200112",
+    "market_id": "163891504",
+    "name": "Ye Hongyu",
+    "slug": "ye-hongyu"
+   }
+  ]
+ },
+ "order_books": {
+  "contracts_returned": 242,
+  "two_sided": 215,
+  "one_sided": 4,
+  "empty": 23,
+  "two_sided_share": 0.8884,
+  "median_spread": 0.1026,
+  "p25_spread": 0.0969,
+  "median_min_depth": 4256840.0,
+  "depth_over_100": 215,
+  "samples": [
+   {
+    "contract": "453195965",
+    "best_bid": 0.3472,
+    "best_ask": 0.4348,
+    "bid_levels": 3,
+    "ask_levels": 3,
+    "raw_first_bid": {
+     "price": 3472,
+     "quantity": 2916191
+    },
+    "raw_first_offer": {
+     "price": 4348,
+     "quantity": 12637800
+    }
+   },
+   {
+    "contract": "453195966",
+    "best_bid": 0.5495,
+    "best_ask": 0.6536,
+    "bid_levels": 3,
+    "ask_levels": 2,
+    "raw_first_bid": {
+     "price": 5495,
+     "quantity": 1842586
+    },
+    "raw_first_offer": {
+     "price": 6536,
+     "quantity": 2922927
+    }
+   },
+   {
+    "contract": "453196081",
+    "best_bid": 0.2439,
+    "best_ask": 0.3279,
+    "bid_levels": 2,
+    "ask_levels": 3,
+    "raw_first_bid": {
+     "price": 2439,
+     "quantity": 5284900
+    },
+    "raw_first_offer": {
+     "price": 3279,
+     "quantity": 10627700
+    }
+   },
+   {
+    "contract": "453196082",
+    "best_bid": 0.6579,
+    "best_ask": 0.7634,
+    "bid_levels": 2,
+    "ask_levels": 3,
+    "raw_first_bid": {
+     "price": 6579,
+     "quantity": 1538989
+    },
+    "raw_first_offer": {
+     "price": 7634,
+     "quantity": 4279385
+    }
+   }
+  ]
+ },
+ "last_executed": {
+  "entries": 1,
+  "sample": {
+   "last_executed_prices": {
+    "163889473": [
+     {
+      "contract_id": "453194982",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T12:36:00.791896583Z"
+     },
+     {
+      "contract_id": "453194983",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T12:36:00.791896583Z"
+     }
+    ],
+    "163942060": [
+     {
+      "contract_id": "453419375",
+      "last_executed_price": "45.45",
+      "timestamp": "2026-09-13T02:34:39.513430032Z"
+     },
+     {
+      "contract_id": "453419374",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T15:17:37.552091748Z"
+     }
+    ],
+    "163980586": [
+     {
+      "contract_id": "453536427",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:27:25.547049949Z"
+     },
+     {
+      "contract_id": "453536426",
+      "last_executed_price": "51.81",
+      "timestamp": "2026-09-12T20:24:07.346341293Z"
+     }
+    ],
+    "163980698": [
+     {
+      "contract_id": "453536731",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:28:24.231245728Z"
+     },
+     {
+      "contract_id": "453536732",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:28:24.231245728Z"
+     }
+    ],
+    "163984903": [
+     {
+      "contract_id": "453547929",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:49:39.545521567Z"
+     },
+     {
+      "contract_id": "453547928",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:49:39.545521567Z"
+     }
+    ],
+    "163985198": [
+     {
+      "contract_id": "453548694",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:51:42.185444081Z"
+     },
+     {
+      "contract_id": "453548695",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:51:42.185444081Z"
+     }
+    ],
+    "163985214": [
+     {
+      "contract_id": "453548727",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:51:48.183864282Z"
+     },
+     {
+      "contract_id": "453548728",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:51:48.183864282Z"
+     }
+    ],
+    "163986177": [
+     {
+      "contract_id": "453551298",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:57:40.075781497Z"
+     },
+     {
+      "contract_id": "453551297",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T17:57:40.075781497Z"
+     }
+    ],
+    "163987010": [
+     {
+      "contract_id": "453553753",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:01:07.455834612Z"
+     },
+     {
+      "contract_id": "453553752",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:01:07.455834612Z"
+     }
+    ],
+    "163987052": [
+     {
+      "contract_id": "453553841",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:01:15.329411092Z"
+     },
+     {
+      "contract_id": "453553840",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:01:15.329411092Z"
+     }
+    ],
+    "163996696": [
+     {
+      "contract_id": "453576296",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:43:42.534583011Z"
+     },
+     {
+      "contract_id": "453576295",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:43:42.534583011Z"
+     }
+    ],
+    "163999131": [
+     {
+      "contract_id": "453582236",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:55:34.311680512Z"
+     },
+     {
+      "contract_id": "453582237",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T18:55:34.311680512Z"
+     }
+    ],
+    "164033017": [
+     {
+      "contract_id": "453664386",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T22:20:25.059026807Z"
+     },
+     {
+      "contract_id": "453664387",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T22:20:25.059026807Z"
+     }
+    ],
+    "164033021": [
+     {
+      "contract_id": "453664394",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T22:20:25.236023409Z"
+     },
+     {
+      "contract_id": "453664395",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T22:20:25.236023409Z"
+     }
+    ],
+    "164043042": [
+     {
+      "contract_id": "453687286",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:20:23.218463594Z"
+     },
+     {
+      "contract_id": "453687287",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:20:23.218463594Z"
+     }
+    ],
+    "164046547": [
+     {
+      "contract_id": "453699933",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:30:28.639846407Z"
+     },
+     {
+      "contract_id": "453699932",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:30:28.639846407Z"
+     }
+    ],
+    "164046550": [
+     {
+      "contract_id": "453699939",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:30:28.751513620Z"
+     },
+     {
+      "contract_id": "453699938",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:30:28.751513620Z"
+     }
+    ],
+    "164046555": [
+     {
+      "contract_id": "453699950",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:30:29.156925215Z"
+     },
+     {
+      "contract_id": "453699949",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-12T23:30:29.156925215Z"
+     }
+    ],
+    "164054969": [
+     {
+      "contract_id": "453719799",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-13T00:20:22.658091419Z"
+     },
+     {
+      "contract_id": "453719798",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-13T00:20:22.658091419Z"
+     }
+    ],
+    "164076896": [
+     {
+      "contract_id": "453842202",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-13T03:01:47.342708735Z"
+     },
+     {
+      "contract_id": "453842203",
+      "last_executed_price": "0",
+      "timestamp": "2026-09-13T03:01:47.342708735Z"
+     }
+    ]
+   }
+  }
+ },
+ "freshness": {
+  "market_record_keys": [
+   "bet_delay",
+   "cashout_enabled",
+   "categories",
+   "category",
+   "complete",
+   "contract_selections",
+   "created",
+   "description",
+   "display_order",
+   "display_type",
+   "event_id",
+   "hidden",
+   "id",
+   "info",
+   "inplay_enabled",
+   "market_type",
+   "modified",
+   "name",
+   "slug",
+   "state",
+   "winner_count"
+  ],
+  "timestamp_fields": {
+   "created": 60,
+   "modified": 60
+  },
+  "sample": {
+   "id": "163963688",
+   "name": "Match winner",
+   "state": "open",
+   "created": "2026-09-12T16:41:11.795Z",
+   "modified": "2026-09-12T16:41:56.868Z",
+   "settled": null,
+   "bet_allowed": null,
+   "market_type": {
+    "name": "WINNER_2_WAY"
+   }
+  }
+ },
+ "requests_made": 33,
+ "non_200": [],
+ "trace_tail": [
+  {
+   "hop": 29,
+   "url": "https://api.smarkets.com/v3/markets/163900530,163960710,163967574,163967575,163980454,164040392,163981302,164040395,163988025,164037188,163988183,163989307,163997676,164046560,1639",
+   "note": "what actually traded",
+   "status": 200,
+   "bytes": 4526
+  },
+  {
+   "hop": 30,
+   "url": "https://api.smarkets.com/v3/markets/163996696,164046555,163999131,164043042,163985198,164046550,163985214,164046547,163986177,164033021,163984903,164033017,163889473,163987052,1639",
+   "note": "what actually traded",
+   "status": 200,
+   "bytes": 4534
+  },
+  {
+   "hop": 31,
+   "url": "https://api.smarkets.com/v3/markets/163889874,164011422,163891523,163889932,164011424,163891504,164011440,163963693,163993364,163899100,163978998,163899438,163898024,163979001,1639",
+   "note": "market records, for timestamps",
+   "status": 200,
+   "bytes": 10902
+  },
+  {
+   "hop": 32,
+   "url": "https://api.smarkets.com/v3/markets/163899136,163954259,163889544,163923556,164072011,163988050,164017456,163987432,164017455,163996687,164011459,163997707,163996686,164012807,1639",
+   "note": "market records, for timestamps",
+   "status": 200,
+   "bytes": 10945
+  },
+  {
+   "hop": 33,
+   "url": "https://api.smarkets.com/v3/markets/163888002,164023856,163887999,164023838,163890714,164033034,163889908,164023846,163980462,163980444,164030684,163987970,164027957,163988029,1640",
+   "note": "market records, for timestamps",
+   "status": 200,
+   "bytes": 10903
+  }
+ ]
+}
