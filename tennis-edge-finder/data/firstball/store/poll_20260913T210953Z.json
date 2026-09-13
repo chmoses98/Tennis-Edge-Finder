@@ -1,0 +1,41 @@
+{
+ "run_id": "20260913T210953Z",
+ "started_at": "2026-09-13T21:09:53.446772+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 96,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP13VIDTJE-2": {
+   "confidence": "B",
+   "bracket_s": 188.524889,
+   "first_ball": "2026-09-13T21:09:30.763439+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP13VIDTJE-1": {
+   "confidence": "B",
+   "bracket_s": 188.524889,
+   "first_ball": "2026-09-13T21:09:30.763439+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP13VIDTJE": {
+   "confidence": "B",
+   "bracket_s": 188.524889,
+   "first_ball": "2026-09-13T21:09:30.763439+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 96,
+  "UNMATCHED": 81
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-13T21:18:59.271879+00:00"
+}
