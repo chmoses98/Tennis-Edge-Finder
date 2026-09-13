@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-13T06:43:26.442340+00:00",
+ "run_id": "20260913T064326Z",
+ "external_parse": {
+  "events": 127,
+  "markets": 1573,
+  "skipped_family": 319,
+  "skipped_period": 466,
+  "skipped_live": 7,
+  "one_sided": 65,
+  "rows": 2454,
+  "devigged": 723
+ },
+ "smarkets_fetch": {
+  "events_seen": 180,
+  "events_priced": 80,
+  "markets": 553,
+  "markets_mapped": 193,
+  "contracts": 398,
+  "quoted_contracts": 398,
+  "raw": "data/research/external/raw/20260913T064326Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 193,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 20,
+  "rows": 378,
+  "two_sided": 373,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 574,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.839,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Nadia Kichenok": 1,
+   "Aruzhan Sagandikova": 1,
+   "Junjie Sun": 1,
+   "Ke Ren": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "Hao Duan": 1,
+   "Stefano D'Agostino": 1,
+   "Cesare Carpano": 1,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Ziyu Liu": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tessa Johanna Brockmann": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 140,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Ziyu Liu": 1,
+   "Matthieu Roehrich": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Hao Duan": 1,
+   "Cesare Carpano": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 92,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 140,
+ "model_witness_available": true,
+ "rows": 174,
+ "counts": {
+  "PASS": 168,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 120,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
