@@ -1,9 +1,14 @@
 name: Tennis Smarkets Probe
 
-# A small, fast, dispatch-only job. The Smarkets traversal used to ride along in tennis-bootstrap, which
-# meant a twenty-minute wait behind source acquisition to see the result of a one-minute probe -- and,
-# worse, it inherited that workflow's continue-on-error, which has now hidden a crash three times in this
-# project. Here a probe that writes no manifest FAILS the run.
+# A small, fast, dispatch-only job. The Smarkets traversal used to ride along in tennis-bootstrap, where a
+# one-minute probe waited twenty minutes behind source acquisition before its result appeared, and where
+# it inherited that workflow's continue-on-error -- the same masking that hid the ESPN crash twice.
+#
+# (For the record: the bootstrap run that prompted this had NOT silently failed. Its probe published
+# normally, several minutes after I first looked for the output. The iteration speed was the real reason
+# to split it out; the loud-failure check below is insurance, not a fix for a bug that existed.)
+#
+# A probe that writes no manifest FAILS the run.
 
 on:
   workflow_dispatch:
@@ -33,7 +38,10 @@ jobs:
         run: |
           set -euo pipefail
           WHICH="${{ github.event.inputs.script || 'r2' }}"
-          BEFORE=$(find data/sources/smarkets_probe -name manifest.json 2>/dev/null | wc -l)
+          # `find` on a missing directory exits 1, and under `set -e` that killed the step before the
+          # probe ever ran. The guard caught it, which is the point of the guard.
+          mkdir -p data/sources/smarkets_probe
+          BEFORE=$(find data/sources/smarkets_probe -name manifest.json | wc -l)
           if [ "$WHICH" = "r1" ] || [ "$WHICH" = "both" ]; then
             python3 scripts/external/probe_smarkets.py
           fi
@@ -43,7 +51,7 @@ jobs:
           if [ "$WHICH" = "r3" ] || [ "$WHICH" = "both" ]; then
             python3 scripts/external/probe_smarkets3.py
           fi
-          AFTER=$(find data/sources/smarkets_probe -name manifest.json 2>/dev/null | wc -l)
+          AFTER=$(find data/sources/smarkets_probe -name manifest.json | wc -l)
           echo "manifests before=$BEFORE after=$AFTER"
           [ "$AFTER" -gt "$BEFORE" ] || { echo "::error::the probe wrote no manifest"; exit 1; }
       - name: Publish
