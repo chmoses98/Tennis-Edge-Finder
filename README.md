@@ -5,13 +5,15 @@ Real-money authority OFF. No model has shown edge against bookmaker prices, and 
 Kalshi tennis markets where our probability is more accurate than the price -- including the subsets that
 returned a profit. See WAVE3_SELECTIVE_EDGE_REPORT.md and MORNING_REPORT.md.**
 
-### External reference market
+### External reference markets
 
 `scripts/external/capture_and_scan.py` runs inside the capture conductor: it fetches Bovada's public
-tennis coupon, de-vigs it, maps both venues through the same player registry, and records where Kalshi
-and an independent venue disagree. See `docs/EXTERNAL_MARKET_SOURCES.md` for what was probed and rejected
-(Pinnacle answers 451; Polymarket lists tennis and does not trade it) and
-`docs/EXTERNAL_MARKET_PROTOCOL.md` for how a disagreement is allowed to become an opinion.
+tennis coupon and Smarkets' exchange order books, de-vigs the book, maps every venue through the same
+player registry, and records where Kalshi and an independent venue disagree. Two separate witness groups,
+neither of them Kalshi and neither of them our model. See `docs/EXTERNAL_MARKET_SOURCES.md` for what was probed and rejected
+(Pinnacle answers 451; Polymarket lists tennis and does not trade it; Smarkets is a genuine exchange
+whose tennis books are five times wider than Kalshi's) and `docs/EXTERNAL_MARKET_PROTOCOL.md` for how a
+disagreement is allowed to become an opinion.
 
 ### Selective mispricing detector
 

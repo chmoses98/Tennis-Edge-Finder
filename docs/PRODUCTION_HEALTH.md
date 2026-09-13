@@ -83,3 +83,20 @@ coverage does not exist yet, and that is the information they are meant to carry
 * **Model freeze.** `fair_v1`, `gen2_dyn_hier_sr_v1` and `selector_v1` are frozen for Wave 4 and a test
   asserts their version strings. A bug fix that changes historical probabilities needs a new version;
   frozen predictions are never retroactively replaced.
+
+
+## Wave 5 additions
+
+* **Two external witness groups now exist** (`bovada`, `smarkets`). `Reference.n_independent_groups` is
+  still the number to watch: a reference built from one group is one venue's opinion.
+* **The exchange spread bound is load-bearing.** Smarkets quotes tennis at a median 10c spread, so most
+  of its rows are excluded from the reference by design and counted in `excluded_wide_book`. A sudden
+  fall in that count means either the books tightened or the bound was changed; only the first is good
+  news.
+* **Smarkets publishes no order-book timestamp.** Its rows carry `source_timestamp: None` and are
+  therefore bounded only by capture age. If a future Smarkets change starts supplying one, the
+  `require_source_timestamp` path already exists to use it.
+* **The Smarkets traversal is undocumented upstream** and recorded only in
+  `tennis_edge/external_market/smarkets.py:TRAVERSAL`, asserted by a test. If that query ever stops
+  accepting `type=tennis_match`, capture silently returns an empty board -- the scan's
+  `smarkets_fetch.events_seen` is the canary.
