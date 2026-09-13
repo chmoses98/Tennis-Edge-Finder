@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-13T05:54:11.835331+00:00",
+ "run_id": "20260913T055411Z",
+ "external_parse": {
+  "events": 127,
+  "markets": 1536,
+  "skipped_family": 287,
+  "skipped_period": 466,
+  "skipped_live": 4,
+  "one_sided": 73,
+  "rows": 2420,
+  "devigged": 709
+ },
+ "smarkets_fetch": {
+  "events_seen": 170,
+  "events_priced": 80,
+  "markets": 492,
+  "markets_mapped": 163,
+  "contracts": 332,
+  "quoted_contracts": 332,
+  "raw": "data/research/external/raw/20260913T055411Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 163,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 10,
+  "rows": 322,
+  "two_sided": 317,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 338,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8475,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Nadia Kichenok": 1,
+   "Xiaowei Li": 1,
+   "Kim Dong Ju": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Noma Akugue Noha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "Hao Duan": 1,
+   "Stefano D'Agostino": 1,
+   "Cesare Carpano": 1,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Ziyu Liu": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tessa Johanna Brockmann": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8545,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Nikita Mashtakov": 1,
+   "Cesare Carpano": 1,
+   "Aran Teixido Garcia": 1,
+   "Oleg Tyagunov": 1,
+   "Juan Ignacio Lombisano": 1,
+   "KIDLAT ESTOGERO": 1,
+   "George Margiev": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 115,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 76,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
