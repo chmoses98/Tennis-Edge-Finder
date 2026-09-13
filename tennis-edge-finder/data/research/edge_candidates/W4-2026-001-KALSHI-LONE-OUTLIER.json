@@ -1,0 +1,26 @@
+{
+ "candidate_id": "W4-2026-001-KALSHI-LONE-OUTLIER",
+ "hypothesis": "When an independent venue and our frozen fundamental model sit on the SAME side of the Kalshi price, the Kalshi price is the one that is wrong, and it moves toward the external reference before the match starts.",
+ "inclusion_rule": "MATCH_WINNER contracts where: a reference value exists from at least one admissible external group whose venue timestamp is under 30 minutes old; triangulation is KALSHI_LONE_OUTLIER; external fair minus the executable Kalshi ask minus the taker fee is >= 0.02; the Kalshi quote is two-sided, under an hour old, inside a 6c spread and backed by at least one contract of displayed size. Measured on the FIRST such observation of each contract; later observations of the same contract are follow-up, not new evidence.",
+ "market_family": "MATCH_WINNER",
+ "model_version": "external_v1 + fair_v1 (frozen) + gen2_dyn_hier_sr_v1 (frozen)",
+ "discovery_window_start": "2026-09-12",
+ "discovery_window_end": "2026-09-12",
+ "frozen_at": "2026-09-12T21:09:38.644348+00:00",
+ "confirmation_start": "2026-09-12T21:09:38.644348+00:00",
+ "minimum_n": 200,
+ "required_accuracy_condition": "on the flagged contracts, the external reference's Brier must beat the Kalshi mid's with a 95% interval excluding zero. Our own model's accuracy is NOT part of the test; Wave 3 settled what it is worth.",
+ "required_clv_condition": "mean strict executable CLV > 0 with a 95% interval excluding zero, computed only against A/B first-ball truth. Confidence C is excluded and this condition may not be met with midpoint CLV.",
+ "required_after_fee_condition": "realised after-fee P&L per contract > 0 at the executable ask with a 95% interval excluding zero, one contract, no assumed depth",
+ "status": "PROSPECTIVE_PENDING",
+ "rationale": "PRE-REGISTRATION, NOT A FINDING. Discovery produced 5 KALSHI_LONE_OUTLIER observations out of 148 with a reference, none of which cleared 2c after fees, so there is nothing here to support. The rule is frozen now precisely because there is nothing to support: when instances do accumulate, the threshold and the pass conditions will already be fixed, and nobody will be able to choose them after seeing the outcomes.",
+ "strongest_opposing_reason": "The premise looks weak before the test starts. The two venues agreed to within a median of 0.8c across every observation, never differed by more than 4.1c even including stale lines, and the round-trip cost is about 3c -- so a dislocation large enough to pay may simply not occur. The single external witness is also a recreational sportsbook, which is the venue more likely to be wrong when the two disagree, and the only KALSHI_LONE_OUTLIER with a follow-up observation saw Kalshi not move at all.",
+ "prereg_dimensions": [
+  "triangulation",
+  "external_edge"
+ ],
+ "post_hoc": false,
+ "evidence": [],
+ "schema_version": 1,
+ "fingerprint": "667020b6ff23e388"
+}
