@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-09-13T19:15:36.985149+00:00",
+ "run_id": "20260913T191536Z",
+ "external_parse": {
+  "events": 69,
+  "markets": 631,
+  "skipped_family": 127,
+  "skipped_period": 191,
+  "skipped_live": 13,
+  "one_sided": 15,
+  "rows": 1154,
+  "devigged": 298
+ },
+ "smarkets_fetch": {
+  "events_seen": 201,
+  "events_priced": 80,
+  "markets": 661,
+  "markets_mapped": 215,
+  "contracts": 444,
+  "quoted_contracts": 444,
+  "raw": "data/research/external/raw/20260913T191536Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 215,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 100,
+  "rows": 344,
+  "two_sided": 334,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 214,
+ "external_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6393,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Luca Lemaitre": 1,
+   "Darren Wei": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 9,
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 38,
+  "by_status": {
+   "MAPPED": 38
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 38,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 41,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
