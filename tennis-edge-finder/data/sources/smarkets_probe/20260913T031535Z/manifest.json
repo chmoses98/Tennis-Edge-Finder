@@ -1,0 +1,1015 @@
+{
+ "generated_at": "2026-09-13T03:15:35.860956+00:00",
+ "run_id": "20260913T031535Z",
+ "base": "https://api.smarkets.com",
+ "robots": [
+  {
+   "host": "https://api.smarkets.com",
+   "status": 404,
+   "disallow_for_star": [],
+   "blocks_api_root": false
+  },
+  {
+   "host": "https://smarkets.com",
+   "status": 200,
+   "disallow_for_star": [
+    "/portfolio/*",
+    "/settings/*",
+    "/native-app/*",
+    "/cftc/*"
+   ],
+   "blocks_api_root": false
+  }
+ ],
+ "tennis_node": {
+  "bet_allowed": true,
+  "bettable": false,
+  "chart_time_period": null,
+  "created": "2010-05-17T17:45:37.845704Z",
+  "description": "Trade and bet on a variety of tennis betting markets, including those on the French Open and Wimbledon.",
+  "display_order": 20,
+  "end_date": null,
+  "full_slug": "/sport/tennis",
+  "hidden": false,
+  "id": "102016",
+  "inplay_enabled": true,
+  "modified": "2024-04-18T11:16:52.417909Z",
+  "name": "Tennis",
+  "parent_id": null,
+  "seo_description": "With the Smarkets betting exchange, you\u2019ll find the best tennis betting odds, including Wimbledon betting, ATP odds, WTA betting, French Open betting, Australian Open betting, and much more.",
+  "short_name": null,
+  "slug": "tennis",
+  "special_rules": "",
+  "start_date": "2019-03-11",
+  "start_datetime": "2019-03-11T00:00:00Z",
+  "state": "upcoming",
+  "super_sub_enabled": false,
+  "type": "top_level_event",
+  "venue": null
+ },
+ "level1": {
+  "n": 19,
+  "types": {
+   "generic": 19
+  },
+  "sample": [
+   {
+    "id": "778449",
+    "name": "ITF Women",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "778453",
+    "name": "Challenger",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "778457",
+    "name": "ITF Men",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "778517",
+    "name": "ATP",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "778606",
+    "name": "Fed Cup",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "782130",
+    "name": "WTA 125K",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "782538",
+    "name": "Davis Cup",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   },
+   {
+    "id": "783584",
+    "name": "WTA",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null
+   }
+  ]
+ },
+ "level2": {
+  "n": 2626,
+  "parents_walked": 12,
+  "types": {
+   "generic": 2622,
+   "tennis_outright": 4
+  },
+  "sample": [
+   {
+    "id": "23455322",
+    "name": "ITF Australia 14A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "23458227",
+    "name": "ITF Australia 14A, Women Doubles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "23463051",
+    "name": "ITF USA 42A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "23463160",
+    "name": "ITF USA 42A, Women Doubles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "23464115",
+    "name": "ITF Canada 03A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "41982241",
+    "name": "ITF United Arab Emirates 01A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "41982251",
+    "name": "ITF Egypt 27A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "41989193",
+    "name": "ITF Italy 39A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "41989727",
+    "name": "ITF Turkey 25A, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   },
+   {
+    "id": "42000679",
+    "name": "Itf Turkey 26a, Women Singles",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Women"
+   }
+  ]
+ },
+ "level3": {
+  "n": 72,
+  "types": {
+   "generic": 72
+  },
+  "sample": [
+   {
+    "id": "23455323",
+    "name": "Round of 32",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "23455325",
+    "name": "Qualification",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "42948551",
+    "name": "Fixtures",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "42953702",
+    "name": "Round of 16",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "42955643",
+    "name": "Quarterfinals",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "42957232",
+    "name": "Semifinals",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "43528030",
+    "name": "Final",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Singles"
+   },
+   {
+    "id": "42949854",
+    "name": "Fixtures",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Doubles"
+   },
+   {
+    "id": "42953724",
+    "name": "Quarterfinals",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Doubles"
+   },
+   {
+    "id": "42957259",
+    "name": "Final",
+    "type": "generic",
+    "state": "upcoming",
+    "start_datetime": null,
+    "_parent_name": "ITF Australia 14A, Women Doubles"
+   }
+  ]
+ },
+ "candidate_events": {
+  "n": 0,
+  "sample": []
+ },
+ "markets": {
+  "n": 0,
+  "name_sample": [],
+  "keys": [],
+  "by_event": {}
+ },
+ "contracts": {
+  "n": 0,
+  "keys": [],
+  "sample": []
+ },
+ "quotes": {
+  "top_level_keys": [],
+  "n_entries": 0
+ },
+ "last_executed_prices": {
+  "present": false,
+  "sample": {}
+ },
+ "trace": [
+  {
+   "hop": 1,
+   "url": "https://api.smarkets.com/robots.txt",
+   "note": "robots.txt, fetched before anything else",
+   "status": 404,
+   "error": "HTTP Error 404: Not Found",
+   "body": "{\"data\":{\"description\":\"Nothing matches the given URI\"},\"error_type\":\"NOT_FOUND\"}\n",
+   "ms": 402
+  },
+  {
+   "hop": 2,
+   "url": "https://smarkets.com/robots.txt",
+   "note": "robots.txt, fetched before anything else",
+   "status": 200,
+   "bytes": 153,
+   "content_type": "text/plain",
+   "rate_limit": {},
+   "ms": 332,
+   "not_json": true
+  },
+  {
+   "hop": 3,
+   "url": "https://api.smarkets.com/v3/events/102016/",
+   "note": "the Tennis top-level node itself",
+   "status": 200,
+   "bytes": 889,
+   "content_type": "application/json",
+   "rate_limit": {},
+   "ms": 285
+  },
+  {
+   "hop": 4,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=102016&limit=100",
+   "note": "children of 102016",
+   "status": 200,
+   "bytes": 10994,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1999",
+    "x-ratelimit-reset": "59"
+   },
+   "ms": 289
+  },
+  {
+   "hop": 5,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778449&limit=100",
+   "note": "children of 778449",
+   "status": 200,
+   "bytes": 64554,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1998",
+    "x-ratelimit-reset": "59"
+   },
+   "ms": 367
+  },
+  {
+   "hop": 6,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778449&limit=100&pagination_last_id=42776704",
+   "note": "children of 778449",
+   "status": 200,
+   "bytes": 64401,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1997",
+    "x-ratelimit-reset": "58"
+   },
+   "ms": 314
+  },
+  {
+   "hop": 7,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778449&limit=100&pagination_last_id=42826529",
+   "note": "children of 778449",
+   "status": 200,
+   "bytes": 64466,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1996",
+    "x-ratelimit-reset": "57"
+   },
+   "ms": 279
+  },
+  {
+   "hop": 8,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778449&limit=100&pagination_last_id=42871523",
+   "note": "children of 778449",
+   "status": 200,
+   "bytes": 64579,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1995",
+    "x-ratelimit-reset": "57"
+   },
+   "ms": 307
+  },
+  {
+   "hop": 9,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778449&limit=100&pagination_last_id=42924284",
+   "note": "children of 778449",
+   "status": 200,
+   "bytes": 64245,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1994",
+    "x-ratelimit-reset": "56"
+   },
+   "ms": 372
+  },
+  {
+   "hop": 10,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778449&limit=100&pagination_last_id=42963508",
+   "note": "children of 778449",
+   "status": 200,
+   "bytes": 64309,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1993",
+    "x-ratelimit-reset": "55"
+   },
+   "ms": 277
+  },
+  {
+   "hop": 11,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778453&limit=100",
+   "note": "children of 778453",
+   "status": 200,
+   "bytes": 68641,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1992",
+    "x-ratelimit-reset": "55"
+   },
+   "ms": 303
+  },
+  {
+   "hop": 12,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778453&limit=100&pagination_last_id=42198190",
+   "note": "children of 778453",
+   "status": 200,
+   "bytes": 68627,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1991",
+    "x-ratelimit-reset": "54"
+   },
+   "ms": 310
+  },
+  {
+   "hop": 13,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778453&limit=100&pagination_last_id=42665599",
+   "note": "children of 778453",
+   "status": 200,
+   "bytes": 68367,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1990",
+    "x-ratelimit-reset": "53"
+   },
+   "ms": 288
+  },
+  {
+   "hop": 14,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778453&limit=100&pagination_last_id=42811234",
+   "note": "children of 778453",
+   "status": 200,
+   "bytes": 68971,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1989",
+    "x-ratelimit-reset": "53"
+   },
+   "ms": 337
+  },
+  {
+   "hop": 15,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778453&limit=100&pagination_last_id=42988410",
+   "note": "children of 778453",
+   "status": 200,
+   "bytes": 68679,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1988",
+    "x-ratelimit-reset": "52"
+   },
+   "ms": 355
+  },
+  {
+   "hop": 16,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778453&limit=100&pagination_last_id=43511461",
+   "note": "children of 778453",
+   "status": 200,
+   "bytes": 68905,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1987",
+    "x-ratelimit-reset": "51"
+   },
+   "ms": 311
+  },
+  {
+   "hop": 17,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778457&limit=100",
+   "note": "children of 778457",
+   "status": 200,
+   "bytes": 63579,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1986",
+    "x-ratelimit-reset": "51"
+   },
+   "ms": 276
+  },
+  {
+   "hop": 18,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778457&limit=100&pagination_last_id=42768262",
+   "note": "children of 778457",
+   "status": 200,
+   "bytes": 63483,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1985",
+    "x-ratelimit-reset": "50"
+   },
+   "ms": 279
+  },
+  {
+   "hop": 19,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778457&limit=100&pagination_last_id=42818304",
+   "note": "children of 778457",
+   "status": 200,
+   "bytes": 63428,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1984",
+    "x-ratelimit-reset": "50"
+   },
+   "ms": 281
+  },
+  {
+   "hop": 20,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778457&limit=100&pagination_last_id=42858282",
+   "note": "children of 778457",
+   "status": 200,
+   "bytes": 63488,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1983",
+    "x-ratelimit-reset": "49"
+   },
+   "ms": 295
+  },
+  {
+   "hop": 21,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778457&limit=100&pagination_last_id=42901215",
+   "note": "children of 778457",
+   "status": 200,
+   "bytes": 63491,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1982",
+    "x-ratelimit-reset": "48"
+   },
+   "ms": 285
+  },
+  {
+   "hop": 22,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778457&limit=100&pagination_last_id=42950615",
+   "note": "children of 778457",
+   "status": 200,
+   "bytes": 63342,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1981",
+    "x-ratelimit-reset": "48"
+   },
+   "ms": 302
+  },
+  {
+   "hop": 23,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778517&limit=100",
+   "note": "children of 778517",
+   "status": 200,
+   "bytes": 64088,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1980",
+    "x-ratelimit-reset": "47"
+   },
+   "ms": 261
+  },
+  {
+   "hop": 24,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778517&limit=100&pagination_last_id=42345986",
+   "note": "children of 778517",
+   "status": 200,
+   "bytes": 64402,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1979",
+    "x-ratelimit-reset": "46"
+   },
+   "ms": 270
+  },
+  {
+   "hop": 25,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778517&limit=100&pagination_last_id=43622123",
+   "note": "children of 778517",
+   "status": 200,
+   "bytes": 62983,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1978",
+    "x-ratelimit-reset": "46"
+   },
+   "ms": 289
+  },
+  {
+   "hop": 26,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778517&limit=100&pagination_last_id=44619661",
+   "note": "children of 778517",
+   "status": 200,
+   "bytes": 11502,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1977",
+    "x-ratelimit-reset": "45"
+   },
+   "ms": 256
+  },
+  {
+   "hop": 27,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=778606&limit=100",
+   "note": "children of 778606",
+   "status": 200,
+   "bytes": 681,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1976",
+    "x-ratelimit-reset": "44"
+   },
+   "ms": 267
+  },
+  {
+   "hop": 28,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=782130&limit=100",
+   "note": "children of 782130",
+   "status": 200,
+   "bytes": 66778,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1975",
+    "x-ratelimit-reset": "44"
+   },
+   "ms": 311
+  },
+  {
+   "hop": 29,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=782130&limit=100&pagination_last_id=43971137",
+   "note": "children of 782130",
+   "status": 200,
+   "bytes": 67205,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1974",
+    "x-ratelimit-reset": "43"
+   },
+   "ms": 291
+  },
+  {
+   "hop": 30,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=782130&limit=100&pagination_last_id=45194079",
+   "note": "children of 782130",
+   "status": 200,
+   "bytes": 5451,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1973",
+    "x-ratelimit-reset": "43"
+   },
+   "ms": 264
+  },
+  {
+   "hop": 31,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=782538&limit=100",
+   "note": "children of 782538",
+   "status": 200,
+   "bytes": 1883,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1972",
+    "x-ratelimit-reset": "42"
+   },
+   "ms": 247
+  },
+  {
+   "hop": 32,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=783584&limit=100",
+   "note": "children of 783584",
+   "status": 200,
+   "bytes": 64927,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1971",
+    "x-ratelimit-reset": "41"
+   },
+   "ms": 331
+  },
+  {
+   "hop": 33,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=783584&limit=100&pagination_last_id=42551535",
+   "note": "children of 783584",
+   "status": 200,
+   "bytes": 64835,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1970",
+    "x-ratelimit-reset": "41"
+   },
+   "ms": 281
+  },
+  {
+   "hop": 34,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=783584&limit=100&pagination_last_id=43947255",
+   "note": "children of 783584",
+   "status": 200,
+   "bytes": 18295,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1969",
+    "x-ratelimit-reset": "40"
+   },
+   "ms": 250
+  },
+  {
+   "hop": 35,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=786552&limit=100",
+   "note": "children of 786552",
+   "status": 200,
+   "bytes": 657,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1968",
+    "x-ratelimit-reset": "39"
+   },
+   "ms": 248
+  },
+  {
+   "hop": 36,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=857477&limit=100",
+   "note": "children of 857477",
+   "status": 200,
+   "bytes": 40434,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1967",
+    "x-ratelimit-reset": "39"
+   },
+   "ms": 341
+  },
+  {
+   "hop": 37,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=954934&limit=100",
+   "note": "children of 954934",
+   "status": 200,
+   "bytes": 49,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1966",
+    "x-ratelimit-reset": "38"
+   },
+   "ms": 251
+  },
+  {
+   "hop": 38,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=1598115&limit=100",
+   "note": "children of 1598115",
+   "status": 200,
+   "bytes": 2755,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1965",
+    "x-ratelimit-reset": "38"
+   },
+   "ms": 268
+  },
+  {
+   "hop": 39,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=23455322&limit=100",
+   "note": "children of 23455322",
+   "status": 200,
+   "bytes": 4383,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1964",
+    "x-ratelimit-reset": "37"
+   },
+   "ms": 247
+  },
+  {
+   "hop": 40,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=23458227&limit=100",
+   "note": "children of 23458227",
+   "status": 200,
+   "bytes": 1892,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1963",
+    "x-ratelimit-reset": "36"
+   },
+   "ms": 250
+  },
+  {
+   "hop": 41,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=23463051&limit=100",
+   "note": "children of 23463051",
+   "status": 200,
+   "bytes": 4341,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1962",
+    "x-ratelimit-reset": "36"
+   },
+   "ms": 242
+  },
+  {
+   "hop": 42,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=23463160&limit=100",
+   "note": "children of 23463160",
+   "status": 200,
+   "bytes": 3103,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1961",
+    "x-ratelimit-reset": "35"
+   },
+   "ms": 252
+  },
+  {
+   "hop": 43,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=23464115&limit=100",
+   "note": "children of 23464115",
+   "status": 200,
+   "bytes": 4362,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1960",
+    "x-ratelimit-reset": "35"
+   },
+   "ms": 238
+  },
+  {
+   "hop": 44,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=41982241&limit=100",
+   "note": "children of 41982241",
+   "status": 200,
+   "bytes": 4460,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1959",
+    "x-ratelimit-reset": "34"
+   },
+   "ms": 238
+  },
+  {
+   "hop": 45,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=41982251&limit=100",
+   "note": "children of 41982251",
+   "status": 200,
+   "bytes": 3731,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1958",
+    "x-ratelimit-reset": "33"
+   },
+   "ms": 239
+  },
+  {
+   "hop": 46,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=41989193&limit=100",
+   "note": "children of 41989193",
+   "status": 200,
+   "bytes": 3122,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1957",
+    "x-ratelimit-reset": "33"
+   },
+   "ms": 252
+  },
+  {
+   "hop": 47,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=41989727&limit=100",
+   "note": "children of 41989727",
+   "status": 200,
+   "bytes": 3761,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1956",
+    "x-ratelimit-reset": "32"
+   },
+   "ms": 257
+  },
+  {
+   "hop": 48,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=42000679&limit=100",
+   "note": "children of 42000679",
+   "status": 200,
+   "bytes": 4362,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1955",
+    "x-ratelimit-reset": "32"
+   },
+   "ms": 255
+  },
+  {
+   "hop": 49,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=42001724&limit=100",
+   "note": "children of 42001724",
+   "status": 200,
+   "bytes": 3743,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1954",
+    "x-ratelimit-reset": "31"
+   },
+   "ms": 336
+  },
+  {
+   "hop": 50,
+   "url": "https://api.smarkets.com/v3/events/?parent_id=42010943&limit=100",
+   "note": "children of 42010943",
+   "status": 200,
+   "bytes": 3743,
+   "content_type": "application/json",
+   "rate_limit": {
+    "x-ratelimit-limit": "2000",
+    "x-ratelimit-remaining": "1953",
+    "x-ratelimit-reset": "30"
+   },
+   "ms": 256
+  },
+  {
+   "hop": 51,
+   "url": "https://api.smarkets.com/v3/markets//last_executed_prices/",
+   "note": "last traded price",
+   "status": 404,
+   "error": "HTTP Error 404: Not Found",
+   "body": "{\"data\":{\"description\":\"Nothing matches the given URI\"},\"error_type\":\"NOT_FOUND\"}\n",
+   "ms": 236
+  }
+ ],
+ "requests_made": 51
+}
