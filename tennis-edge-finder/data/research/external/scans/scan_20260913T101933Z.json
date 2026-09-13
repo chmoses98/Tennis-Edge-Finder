@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-13T10:19:33.293185+00:00",
+ "run_id": "20260913T101933Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1335,
+  "skipped_family": 293,
+  "skipped_period": 399,
+  "skipped_live": 28,
+  "one_sided": 99,
+  "rows": 2019,
+  "devigged": 544
+ },
+ "smarkets_fetch": {
+  "events_seen": 160,
+  "events_priced": 80,
+  "markets": 1256,
+  "markets_mapped": 298,
+  "contracts": 634,
+  "quoted_contracts": 634,
+  "raw": "data/research/external/raw/20260913T101933Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 298,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 598,
+  "two_sided": 596,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 269,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.8254,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Nadia Kichenok": 1,
+   "Nikita Mashtakov": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Juan Ignacio Lombisano": 1,
+   "George Margiev": 1,
+   "Monika Gospodinova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 2
+  },
+  "mapped_rate": 0.9125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 2,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Tessa Johanna Brockmann": 1,
+   "Nadiia Kichenok": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "Nadiia Kichenok": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Ziyu Liu": 1,
+   "Matthieu Roehrich": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Jeremy Condere": 1,
+   "Jayson Blando": 1,
+   "Tom LEFEUVRE": 1,
+   "Juan Ignacio Lombisano": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 123,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 10,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
