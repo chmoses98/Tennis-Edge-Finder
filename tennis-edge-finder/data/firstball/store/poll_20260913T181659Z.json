@@ -1,0 +1,65 @@
+{
+ "run_id": "20260913T181659Z",
+ "started_at": "2026-09-13T18:16:59.242364+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 309,
+ "truths_written": 7,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPGSPREAD-26SEP13ZVESHE": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP13ZVESHE": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  },
+  "KXATPSSPREAD-26SEP13ZVESHE": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP13ZVESHE": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP13ZVESHE-3": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP13ZVESHE-2": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP13ZVESHE-1": {
+   "confidence": "B",
+   "bracket_s": 208.456557,
+   "first_ball": "2026-09-13T18:18:07.723408+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "UNMATCHED": 176,
+  "MATCHED": 309
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-13T18:26:40.548466+00:00"
+}
