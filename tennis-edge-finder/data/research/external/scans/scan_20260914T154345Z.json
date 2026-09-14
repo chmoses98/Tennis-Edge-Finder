@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-09-14T15:43:45.167635+00:00",
+ "run_id": "20260914T154345Z",
+ "external_parse": {
+  "events": 98,
+  "markets": 1012,
+  "skipped_family": 210,
+  "skipped_period": 315,
+  "skipped_live": 22,
+  "one_sided": 12,
+  "rows": 1761,
+  "devigged": 475
+ },
+ "smarkets_fetch": {
+  "events_seen": 190,
+  "events_priced": 80,
+  "markets": 1419,
+  "markets_mapped": 430,
+  "contracts": 918,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260914T154345Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 430,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 96,
+  "rows": 822,
+  "two_sided": 820,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 230,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Robin Eldin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9828,
+  "top_refusal_subjects": {
+   "Ivan Dorokhov": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
