@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-14T09:48:04.710254+00:00",
+ "run_id": "20260914T094804Z",
+ "external_parse": {
+  "events": 143,
+  "markets": 1540,
+  "skipped_family": 293,
+  "skipped_period": 497,
+  "skipped_live": 33,
+  "one_sided": 21,
+  "rows": 2617,
+  "devigged": 729
+ },
+ "smarkets_fetch": {
+  "events_seen": 221,
+  "events_priced": 80,
+  "markets": 1227,
+  "markets_mapped": 417,
+  "contracts": 902,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20260914T094804Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 417,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 62,
+  "rows": 840,
+  "two_sided": 836,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 320,
+ "external_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 103,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7744,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Nikita Mashtakov": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Tristan McCormick": 1,
+   "Arno Guillet": 1,
+   "Amarissa Toth": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8889,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Giorgia Pedone": 1,
+   "Aran Teixido Garcia": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Arno Guillet": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 103,
+  "tri:MODEL_LONE_OUTLIER": 78,
+  "tri:MARKETS_AGREE": 6,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:EXTERNAL_LONE_OUTLIER": 6,
+  "WATCH": 5,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
