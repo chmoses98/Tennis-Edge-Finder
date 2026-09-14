@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-14T15:13:55.262200+00:00",
+ "run_id": "20260914T151355Z",
+ "external_parse": {
+  "events": 101,
+  "markets": 1010,
+  "skipped_family": 213,
+  "skipped_period": 314,
+  "skipped_live": 24,
+  "one_sided": 18,
+  "rows": 1729,
+  "devigged": 465
+ },
+ "smarkets_fetch": {
+  "events_seen": 192,
+  "events_priced": 80,
+  "markets": 1424,
+  "markets_mapped": 430,
+  "contracts": 918,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260914T151355Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 430,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 92,
+  "rows": 826,
+  "two_sided": 823,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 277,
+ "external_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7253,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Adrian Oltean Achacollo": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9275,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Giorgia Pedone": 1,
+   "Adrian Oltean Achacollo": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 64,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 49,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
