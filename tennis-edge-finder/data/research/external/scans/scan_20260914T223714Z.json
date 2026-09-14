@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-14T22:37:14.222989+00:00",
+ "run_id": "20260914T223714Z",
+ "external_parse": {
+  "events": 154,
+  "markets": 1799,
+  "skipped_family": 260,
+  "skipped_period": 593,
+  "skipped_live": 10,
+  "one_sided": 27,
+  "rows": 2981,
+  "devigged": 918
+ },
+ "smarkets_fetch": {
+  "events_seen": 195,
+  "events_priced": 80,
+  "markets": 825,
+  "markets_mapped": 337,
+  "contracts": 706,
+  "quoted_contracts": 706,
+  "raw": "data/research/external/raw/20260914T223714Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 337,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 681,
+  "two_sided": 672,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 1114,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7192,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Diego Dedura": 1,
+   "Noma Akugue Noha": 1,
+   "Saul Berdullas Calvino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 249,
+  "by_status": {
+   "MAPPED": 206,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8273,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Thanh Minh Truong": 1,
+   "Benjamin O'Connell": 1,
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Abdullah Shelbayh": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Maria Carle": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 121,
+ "kalshi_mapped_matches": 206,
+ "model_witness_available": true,
+ "rows": 166,
+ "counts": {
+  "PASS": 159,
+  "tri:MODEL_LONE_OUTLIER": 88,
+  "tri:MARKETS_AGREE": 12,
+  "tri:INSUFFICIENT_INPUTS": 49,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
