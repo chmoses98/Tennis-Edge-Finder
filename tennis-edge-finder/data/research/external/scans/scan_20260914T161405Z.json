@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-14T16:14:05.555408+00:00",
+ "run_id": "20260914T161405Z",
+ "external_parse": {
+  "events": 89,
+  "markets": 951,
+  "skipped_family": 197,
+  "skipped_period": 294,
+  "skipped_live": 16,
+  "one_sided": 12,
+  "rows": 1658,
+  "devigged": 448
+ },
+ "smarkets_fetch": {
+  "events_seen": 188,
+  "events_priced": 80,
+  "markets": 1384,
+  "markets_mapped": 418,
+  "contracts": 894,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260914T161405Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 418,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 91,
+  "rows": 803,
+  "two_sided": 796,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 258,
+ "external_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.7342,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9062,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Hua-Yu Wei": 1,
+   "Yaoyu Yang": 1,
+   "Hien Pham": 1,
+   "Yile Li": 1,
+   "Ivan Dorokhov": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
