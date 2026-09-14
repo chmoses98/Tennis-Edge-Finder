@@ -1,0 +1,41 @@
+{
+ "run_id": "20260914T091029Z",
+ "started_at": "2026-09-14T09:10:29.083249+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 484,
+ "truths_written": 6,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP14MALDA": {
+   "confidence": "B",
+   "bracket_s": 227.867199,
+   "first_ball": "2026-09-14T09:08:42.313075+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP14ROUSIE": {
+   "confidence": "B",
+   "bracket_s": 227.867199,
+   "first_ball": "2026-09-14T09:08:42.313075+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP14VOLARS": {
+   "confidence": "B",
+   "bracket_s": 223.446554,
+   "first_ball": "2026-09-14T09:10:27.969951+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 484,
+  "UNMATCHED": 558
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-14T09:19:48.064542+00:00"
+}
