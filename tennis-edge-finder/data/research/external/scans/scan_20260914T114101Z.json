@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-14T11:41:01.294137+00:00",
+ "run_id": "20260914T114101Z",
+ "external_parse": {
+  "events": 126,
+  "markets": 1324,
+  "skipped_family": 257,
+  "skipped_period": 426,
+  "skipped_live": 29,
+  "one_sided": 21,
+  "rows": 2264,
+  "devigged": 620
+ },
+ "smarkets_fetch": {
+  "events_seen": 206,
+  "events_priced": 80,
+  "markets": 1521,
+  "markets_mapped": 446,
+  "contracts": 970,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20260914T114101Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 446,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 130,
+  "rows": 840,
+  "two_sided": 839,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 267,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 87,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Nikita Mashtakov": 1,
+   "Raluca Georgiana Serban": 1,
+   "Tristan McCormick": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Aleksandra Rangelova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8409,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Giorgia Pedone": 1,
+   "Aran Teixido Garcia": 1,
+   "Raluca Georgiana Serban": 1,
+   "Hua-Yu Wei": 1,
+   "Yaoyu Yang": 1,
+   "Adrian Oltean Achacollo": 1,
+   "Nacho Cepeda Martinez": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 99,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
