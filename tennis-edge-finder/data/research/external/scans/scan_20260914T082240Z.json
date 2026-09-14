@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-14T08:22:40.117195+00:00",
+ "run_id": "20260914T082240Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1443,
+  "skipped_family": 287,
+  "skipped_period": 444,
+  "skipped_live": 25,
+  "one_sided": 57,
+  "rows": 2363,
+  "devigged": 655
+ },
+ "smarkets_fetch": {
+  "events_seen": 226,
+  "events_priced": 80,
+  "markets": 937,
+  "markets_mapped": 345,
+  "contracts": 748,
+  "quoted_contracts": 748,
+  "raw": "data/research/external/raw/20260914T082240Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 345,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 725,
+  "two_sided": 724,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 368,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 98,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7778,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Nikita Mashtakov": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 115,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9055,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Giorgia Pedone": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Juan Esteban Inostroza Alfaro": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 115,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 119,
+  "tri:MODEL_LONE_OUTLIER": 69,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MARKETS_AGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 5,
+  "WATCH": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
