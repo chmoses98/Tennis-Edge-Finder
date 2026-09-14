@@ -1,0 +1,29 @@
+{
+ "run_id": "20260914T144106Z",
+ "started_at": "2026-09-14T14:41:06.108341+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 379,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP14BRAPAP": {
+   "confidence": "B",
+   "bracket_s": 237.169461,
+   "first_ball": "2026-09-14T14:39:12.446757+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 379,
+  "UNMATCHED": 198
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-14T14:50:19.693487+00:00"
+}
