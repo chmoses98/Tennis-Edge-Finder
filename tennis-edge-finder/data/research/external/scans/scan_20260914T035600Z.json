@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-14T03:56:00.760474+00:00",
+ "run_id": "20260914T035600Z",
+ "external_parse": {
+  "events": 128,
+  "markets": 1684,
+  "skipped_family": 295,
+  "skipped_period": 558,
+  "skipped_live": 7,
+  "one_sided": 45,
+  "rows": 2745,
+  "devigged": 786
+ },
+ "smarkets_fetch": {
+  "events_seen": 240,
+  "events_priced": 80,
+  "markets": 678,
+  "markets_mapped": 255,
+  "contracts": 530,
+  "quoted_contracts": 530,
+  "raw": "data/research/external/raw/20260914T035600Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 255,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 511,
+  "two_sided": 503,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 602,
+ "external_mapping": {
+  "total": 120,
+  "by_status": {
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Kim Dong Ju": 1,
+   "Nikita Mashtakov": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Tristan McCormick": 1,
+   "Jingjing Lu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 7,
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Kenta (2004) Miyoshi": 1,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 135,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.894,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Giorgia Pedone": 1,
+   "Aran Teixido Garcia": 1,
+   "Raluca Georgiana Serban": 1,
+   "Adrian Oltean Achacollo": 1,
+   "Robin Eldin": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Juan Esteban Inostroza Alfaro": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 135,
+ "model_witness_available": true,
+ "rows": 138,
+ "counts": {
+  "PASS": 132,
+  "tri:INSUFFICIENT_INPUTS": 83,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 3,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
