@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-14T17:56:35.088060+00:00",
+ "run_id": "20260914T175635Z",
+ "external_parse": {
+  "events": 75,
+  "markets": 786,
+  "skipped_family": 163,
+  "skipped_period": 243,
+  "skipped_live": 11,
+  "one_sided": 12,
+  "rows": 1351,
+  "devigged": 368
+ },
+ "smarkets_fetch": {
+  "events_seen": 199,
+  "events_priced": 80,
+  "markets": 1404,
+  "markets_mapped": 430,
+  "contracts": 916,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20260914T175635Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 430,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 113,
+  "rows": 803,
+  "two_sided": 793,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 301,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6923,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Maia Loureiro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 7,
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 72,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Benjamin O'Connell": 1,
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Renaud Lefevre": 1,
+   "Vito Dell'elba": 1,
+   "David Munoz Molina": 1,
+   "Vedant Gundu": 1,
+   "Hua-Yu Wei": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 46,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
