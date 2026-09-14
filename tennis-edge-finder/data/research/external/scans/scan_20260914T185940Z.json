@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-14T18:59:40.394579+00:00",
+ "run_id": "20260914T185940Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 764,
+  "skipped_family": 153,
+  "skipped_period": 240,
+  "skipped_live": 16,
+  "one_sided": 11,
+  "rows": 1315,
+  "devigged": 360
+ },
+ "smarkets_fetch": {
+  "events_seen": 204,
+  "events_priced": 80,
+  "markets": 1358,
+  "markets_mapped": 445,
+  "contracts": 940,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20260914T185940Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 445,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 167,
+  "rows": 773,
+  "two_sided": 754,
+  "one_sided": 19
+ },
+ "kalshi_quotes_on_disk": 390,
+ "external_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6912,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Maia Loureiro": 1,
+   "Matei Gavrea": 1,
+   "Rithvik Katpelly": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Thanh Minh Truong": 1,
+   "Khumoyun Sultanov": 1,
+   "Jeffrey John Wolf": 1,
+   "Milledge Galphin Cossu": 1,
+   "Sacha Grandvincent": 1,
+   "Pedro Montero Nicolau": 1,
+   "Alvaro De Miguel Montero": 1,
+   "Billy Williams": 1,
+   "Rishit Dakhane": 1,
+   "Maurice-Noel Kaserer": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "PASS": 42,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
