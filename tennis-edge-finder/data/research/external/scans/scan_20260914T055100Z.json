@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-14T05:51:00.715715+00:00",
+ "run_id": "20260914T055100Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 1669,
+  "skipped_family": 296,
+  "skipped_period": 545,
+  "skipped_live": 7,
+  "one_sided": 39,
+  "rows": 2733,
+  "devigged": 789
+ },
+ "smarkets_fetch": {
+  "events_seen": 236,
+  "events_priced": 80,
+  "markets": 785,
+  "markets_mapped": 286,
+  "contracts": 610,
+  "quoted_contracts": 610,
+  "raw": "data/research/external/raw/20260914T055100Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 286,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 579,
+  "two_sided": 575,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 356,
+ "external_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7563,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Nikita Mashtakov": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Tristan McCormick": 1,
+   "Jingjing Lu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Alexander Binda": 1,
+   "Lea Boskovic": 1,
+   "Aran Teixido Garcia": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 112,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.918,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Giorgia Pedone": 1,
+   "Aran Teixido Garcia": 1,
+   "Raluca Georgiana Serban": 1,
+   "Adrian Oltean Achacollo": 1,
+   "Robin Eldin": 1,
+   "Arno Guillet": 1,
+   "Tristan McCormick": 1,
+   "Maria Moraes": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 112,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "WATCH": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
