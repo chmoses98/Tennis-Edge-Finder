@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-14T19:51:17.188662+00:00",
+ "run_id": "20260914T195117Z",
+ "external_parse": {
+  "events": 73,
+  "markets": 691,
+  "skipped_family": 140,
+  "skipped_period": 213,
+  "skipped_live": 16,
+  "one_sided": 11,
+  "rows": 1187,
+  "devigged": 327
+ },
+ "smarkets_fetch": {
+  "events_seen": 201,
+  "events_priced": 80,
+  "markets": 1299,
+  "markets_mapped": 436,
+  "contracts": 920,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20260914T195117Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 135,
+  "rows": 785,
+  "two_sided": 772,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 419,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6769,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Matei Gavrea": 1,
+   "Rithvik Katpelly": 1,
+   "Jacob Golden": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 6,
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8455,
+  "top_refusal_subjects": {
+   "Thanh Minh Truong": 1,
+   "Khumoyun Sultanov": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Milledge Galphin Cossu": 1,
+   "Valerio Bracci": 1,
+   "Renaud Lefevre": 1,
+   "Vedant Gundu": 1,
+   "Pedro Montero Nicolau": 1,
+   "Alvaro De Miguel Montero": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
