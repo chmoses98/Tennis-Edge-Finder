@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260914T031039Z",
-   "age_hours": 2.1,
+   "age_hours": 10.0,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,27 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 440,
-   "projected": 392,
-   "not_projected": 48,
+   "projectable_open_pregame": 298,
+   "projected": 256,
+   "not_projected": 42,
    "missing_sample": [
     "KXWTADOUBLES-26SEP14HARHEWSHYSKO-SHYSKO: doubles: player 'Miriam Skoch' unmapped/ambiguous in ['WTA']",
     "KXWTADOUBLES-26SEP14HARHEWSHYSKO-HARHEW: doubles: player 'Miriam Skoch' unmapped/ambiguous in ['WTA']",
     "KXWTADOUBLES-26SEP14ARAUDVCAVSAL-CAVSAL: doubles: player 'Yvonne Cavalle-Reimers' unmapped/ambiguous ",
     "KXWTADOUBLES-26SEP14ARAUDVCAVSAL-ARAUDV: doubles: player 'Yvonne Cavalle-Reimers' unmapped/ambiguous ",
-    "KXWTADOUBLES-26SEP14MARORTNAVROD-NAVROD: doubles: player 'Ingrid Martins' unmapped/ambiguous in ['WTA",
-    "KXWTADOUBLES-26SEP14MARORTNAVROD-MARORT: doubles: player 'Ingrid Martins' unmapped/ambiguous in ['WTA",
-    "KXWTADOUBLES-26SEP14BAYZIMROGZAM-ROGZAM: doubles: player 'Anna Rogers' unmapped/ambiguous in ['WTA']",
-    "KXWTADOUBLES-26SEP14BAYZIMROGZAM-BAYZIM: doubles: player 'Anna Rogers' unmapped/ambiguous in ['WTA']",
     "KXITFWMATCH-26SEP14MORELL-MOR: Maria Moraes: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP14MORELL-ELL: Maria Moraes: UNMAPPED (no exact full-name match)"
+    "KXITFWMATCH-26SEP14MORELL-ELL: Maria Moraes: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP14MAIROB-ROB: Manuela Maia Citolino: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP14MAIROB-MAI: Manuela Maia Citolino: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP14TORDEO-TOR: Ana Cristina De Oliveira: UNMAPPED (no exact full-name match",
+    "KXITFWMATCH-26SEP14TORDEO-DEO: Ana Cristina De Oliveira: UNMAPPED (no exact full-name match"
    ],
    "excluded_by_policy": {
     "unsupported_family": 85,
-    "past_nominal_start": 31,
+    "past_nominal_start": 113,
+    "closed_since_discovery": 60,
     "tournament_scope_not_priced_tonight": 50
    },
-   "projection_run": "20260914T051843Z"
+   "projection_run": "20260914T131255Z"
   }
  },
  {
@@ -65,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260914T045451Z",
-   "age_min": 22.1,
+   "run": "20260914T124216Z",
+   "age_min": 28.9,
    "incomplete": [
     {
      "stage": "trades",
@@ -107,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 1876,
-   "start_unknown_used_schedule": 1364
+   "n": 2132,
+   "start_unknown_used_schedule": 1582
   }
  },
  {
@@ -118,7 +119,7 @@
   "detail": {
    "ambiguous": 2,
    "ambiguous_used": 0,
-   "MATCHED": 392
+   "MATCHED": 256
   }
  },
  {
@@ -128,34 +129,34 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 213,
-    "strict_truths": 103,
+    "truths": 234,
+    "strict_truths": 119,
     "no_play": 0,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 110,
-     "B": 103
+     "C": 115,
+     "B": 119
     },
-    "bracket_seconds_median": 190.9346,
-    "bracket_seconds_p90": 199.70427,
+    "bracket_seconds_median": 192.134543,
+    "bracket_seconds_p90": 220.391221,
     "chain_violations": [],
-    "observations": 64761,
-    "matches_observed": 213,
+    "observations": 85246,
+    "matches_observed": 234,
     "watchlist": {
-     "total": 182,
-     "levels_with_a_wired_source": 72,
-     "levels_without_any_source": 110,
-     "watched_and_observed": 71,
-     "covered_and_observed": 71,
-     "pct_covered_with_source_mapping": 0.9861
+     "total": 197,
+     "levels_with_a_wired_source": 93,
+     "levels_without_any_source": 104,
+     "watched_and_observed": 92,
+     "covered_and_observed": 92,
+     "pct_covered_with_source_mapping": 0.9892
     },
-    "pct_classifiable": 0.2729,
-    "pct_strict_pregame": 0.2559,
+    "pct_classifiable": 0.258,
+    "pct_strict_pregame": 0.2392,
     "timing_classes": {
-     "START_UNKNOWN": 1364,
-     "STRICT_PREGAME": 480,
-     "POST_START": 32
+     "START_UNKNOWN": 1582,
+     "STRICT_PREGAME": 510,
+     "POST_START": 40
     }
    }
   }
@@ -178,13 +179,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 480,
-   "executable_close_rows": 512,
-   "matches_with_strict_truth": 103,
-   "observations_classified": 1876,
-   "pct_strict_pregame": 0.2559,
-   "horizons_populated": 3563,
-   "horizons_total": 15008
+   "strict_clv_rows": 510,
+   "executable_close_rows": 550,
+   "matches_with_strict_truth": 119,
+   "observations_classified": 2132,
+   "pct_strict_pregame": 0.2392,
+   "horizons_populated": 3800,
+   "horizons_total": 17056
   }
  },
  {
@@ -210,8 +211,8 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-14T05:13:40.194650+00:00",
-   "rows": 1630119
+   "built_at": "2026-09-14T13:07:54.444112+00:00",
+   "rows": 1630153
   }
  },
  {
@@ -219,19 +220,19 @@
   "name": "data_source_freshness",
   "status": "PASS",
   "detail": {
-   "run": "20260913T103634Z",
-   "snapshot_age_days": 0.78,
+   "run": "20260914T105811Z",
+   "snapshot_age_days": 0.09,
    "max_season_files": [
     2026,
     2026
    ],
    "ratings_as_of": {
-    "ATP": "2026-09-11",
-    "WTA": "2026-09-13"
+    "ATP": "2026-09-13",
+    "WTA": "2026-09-14"
    },
    "ratings_stale_days": {
-    "ATP": 3,
-    "WTA": 1
+    "ATP": 1,
+    "WTA": 0
    }
   }
  }
