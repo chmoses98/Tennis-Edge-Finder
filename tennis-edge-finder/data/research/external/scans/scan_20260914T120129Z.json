@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-14T12:01:29.210915+00:00",
+ "run_id": "20260914T120129Z",
+ "external_parse": {
+  "events": 125,
+  "markets": 1293,
+  "skipped_family": 251,
+  "skipped_period": 414,
+  "skipped_live": 30,
+  "one_sided": 18,
+  "rows": 2228,
+  "devigged": 610
+ },
+ "smarkets_fetch": {
+  "events_seen": 201,
+  "events_priced": 80,
+  "markets": 1463,
+  "markets_mapped": 431,
+  "contracts": 934,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20260914T120129Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 431,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 110,
+  "rows": 824,
+  "two_sided": 821,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 317,
+ "external_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 86,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7478,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Nikita Mashtakov": 1,
+   "Tristan McCormick": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Juan Esteban Inostroza Alfaro": 1,
+   "Aleksandra Rangelova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Santiago Rodriguez Taverna": 1,
+   "Giorgia Pedone": 1,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 102,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Alexander Binda": 1,
+   "Giorgia Pedone": 1,
+   "Aran Teixido Garcia": 1,
+   "Yaoyu Yang": 1,
+   "Hien Pham": 1,
+   "Yile Li": 1,
+   "Ivan Dorokhov": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 100,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
