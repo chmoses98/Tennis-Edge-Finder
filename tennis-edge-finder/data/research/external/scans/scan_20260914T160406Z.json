@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-09-14T16:04:06.659594+00:00",
+ "run_id": "20260914T160406Z",
+ "external_parse": {
+  "events": 89,
+  "markets": 951,
+  "skipped_family": 197,
+  "skipped_period": 294,
+  "skipped_live": 16,
+  "one_sided": 12,
+  "rows": 1658,
+  "devigged": 448
+ },
+ "smarkets_fetch": {
+  "events_seen": 186,
+  "events_priced": 80,
+  "markets": 1255,
+  "markets_mapped": 389,
+  "contracts": 830,
+  "quoted_contracts": 830,
+  "raw": "data/research/external/raw/20260914T160406Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 389,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 85,
+  "rows": 745,
+  "two_sided": 741,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 297,
+ "external_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.7342,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9394,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Hua-Yu Wei": 1,
+   "Yaoyu Yang": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 87,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
