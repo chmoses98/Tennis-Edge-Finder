@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-14T22:26:34.469516+00:00",
+ "run_id": "20260914T222634Z",
+ "external_parse": {
+  "events": 75,
+  "markets": 769,
+  "skipped_family": 133,
+  "skipped_period": 241,
+  "skipped_live": 10,
+  "one_sided": 12,
+  "rows": 1314,
+  "devigged": 383
+ },
+ "smarkets_fetch": {
+  "events_seen": 195,
+  "events_priced": 80,
+  "markets": 820,
+  "markets_mapped": 334,
+  "contracts": 700,
+  "quoted_contracts": 700,
+  "raw": "data/research/external/raw/20260914T222634Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 334,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 676,
+  "two_sided": 670,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 422,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6866,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Saul Berdullas Calvino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 125,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.784,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Benjamin O'Connell": 1,
+   "Khumoyun Sultanov": 1,
+   "Abdullah Shelbayh": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Maria Carle": 1,
+   "Aran Teixido Garcia": 1,
+   "Milledge Galphin Cossu": 1,
+   "Sacha Grandvincent": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 98,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 69,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
