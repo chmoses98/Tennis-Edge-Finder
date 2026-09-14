@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-14T20:08:55.405305+00:00",
+ "run_id": "20260914T200855Z",
+ "external_parse": {
+  "events": 68,
+  "markets": 671,
+  "skipped_family": 136,
+  "skipped_period": 206,
+  "skipped_live": 12,
+  "one_sided": 11,
+  "rows": 1155,
+  "devigged": 318
+ },
+ "smarkets_fetch": {
+  "events_seen": 199,
+  "events_priced": 80,
+  "markets": 1284,
+  "markets_mapped": 430,
+  "contracts": 904,
+  "quoted_contracts": 844,
+  "raw": "data/research/external/raw/20260914T200855Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 430,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 114,
+  "rows": 790,
+  "two_sided": 771,
+  "one_sided": 19
+ },
+ "kalshi_quotes_on_disk": 468,
+ "external_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6833,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Rithvik Katpelly": 1,
+   "Jacob Golden": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.8248,
+  "top_refusal_subjects": {
+   "Thanh Minh Truong": 1,
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Milledge Galphin Cossu": 1,
+   "Sacha Grandvincent": 1,
+   "Valerio Bracci": 1,
+   "Renaud Lefevre": 1,
+   "Vito Dell'elba": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 113,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 50,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
