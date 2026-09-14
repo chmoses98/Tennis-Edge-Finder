@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-14T22:51:25.858690+00:00",
+ "run_id": "20260914T225125Z",
+ "external_parse": {
+  "events": 167,
+  "markets": 1978,
+  "skipped_family": 290,
+  "skipped_period": 649,
+  "skipped_live": 10,
+  "one_sided": 33,
+  "rows": 3282,
+  "devigged": 1006
+ },
+ "smarkets_fetch": {
+  "events_seen": 195,
+  "events_priced": 80,
+  "markets": 817,
+  "markets_mapped": 332,
+  "contracts": 696,
+  "quoted_contracts": 696,
+  "raw": "data/research/external/raw/20260914T225125Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 332,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 671,
+  "two_sided": 661,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 415,
+ "external_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 114,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.717,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Diego Dedura": 1,
+   "Noma Akugue Noha": 1,
+   "Saul Berdullas Calvino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Benjamin O'Connell": 1,
+   "Digvijay Pratap Singh": 1,
+   "Abdullah Shelbayh": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Maria Carle": 1,
+   "Aran Teixido Garcia": 1,
+   "Milledge Galphin Cossu": 1,
+   "Sacha Grandvincent": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 130,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 89,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
