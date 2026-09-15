@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-15T08:36:27.313014+00:00",
+ "run_id": "20260915T083627Z",
+ "external_parse": {
+  "events": 197,
+  "markets": 1874,
+  "skipped_family": 307,
+  "skipped_period": 588,
+  "skipped_live": 38,
+  "one_sided": 45,
+  "rows": 2975,
+  "devigged": 934
+ },
+ "smarkets_fetch": {
+  "events_seen": 181,
+  "events_priced": 80,
+  "markets": 1579,
+  "markets_mapped": 491,
+  "contracts": 1108,
+  "quoted_contracts": 914,
+  "raw": "data/research/external/raw/20260915T083627Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 491,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 235,
+  "rows": 873,
+  "two_sided": 870,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 414,
+ "external_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 140,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.7487,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Irene Burillo": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Maurice-Noel Kaserer": 1,
+   "Rohan Sachdev": 1,
+   "Alvaro de Miguel Montero": 1,
+   "Pedro Montero Nicolau": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1,
+   "Maria Carle": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8867,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Benjamin O'Connell": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Aran Teixido Garcia": 1,
+   "Eric Von Marton Martins": 1,
+   "Milledge Galphin Cossu": 1,
+   "Valerio Bracci": 1,
+   "Renaud Lefevre": 1,
+   "Vito Dell'elba": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 159,
+ "kalshi_mapped_matches": 133,
+ "model_witness_available": true,
+ "rows": 132,
+ "counts": {
+  "PASS": 127,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 49,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
