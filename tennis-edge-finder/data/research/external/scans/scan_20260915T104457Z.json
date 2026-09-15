@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-15T10:44:57.356280+00:00",
+ "run_id": "20260915T104457Z",
+ "external_parse": {
+  "events": 237,
+  "markets": 2102,
+  "skipped_family": 320,
+  "skipped_period": 644,
+  "skipped_live": 49,
+  "one_sided": 47,
+  "rows": 3349,
+  "devigged": 1091
+ },
+ "smarkets_fetch": {
+  "events_seen": 164,
+  "events_priced": 80,
+  "markets": 1705,
+  "markets_mapped": 515,
+  "contracts": 1132,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20260915T104457Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 515,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 286,
+  "rows": 846,
+  "two_sided": 843,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 451,
+ "external_mapping": {
+  "total": 227,
+  "by_status": {
+   "MAPPED": 171,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7533,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Caroline Werner": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Irene Burillo": 1,
+   "Guiomar Maristany": 1,
+   "Vito Dell'elba": 1,
+   "Vedant Gundu": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Maria Carle": 1,
+   "Caroline Werner": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 116,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8992,
+  "top_refusal_subjects": {
+   "Riccardo Carpano": 1,
+   "Alexander Binda": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Maria Carle": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Milledge Galphin Cossu": 1,
+   "Sacha Grandvincent": 1,
+   "Vito Dell'elba": 1,
+   "David Munoz Molina": 1
+  }
+ },
+ "matched_both_venues": 95,
+ "external_mapped_matches": 180,
+ "kalshi_mapped_matches": 116,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 105,
+  "tri:MODEL_LONE_OUTLIER": 64,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 3,
+  "tri:INSUFFICIENT_INPUTS": 27
+ },
+ "skips": {
+  "external_has_no_match_winner": 40
+ }
+}
