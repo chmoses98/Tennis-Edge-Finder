@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-15T09:34:32.111121+00:00",
+ "run_id": "20260915T093432Z",
+ "external_parse": {
+  "events": 210,
+  "markets": 1886,
+  "skipped_family": 312,
+  "skipped_period": 602,
+  "skipped_live": 55,
+  "one_sided": 36,
+  "rows": 3053,
+  "devigged": 936
+ },
+ "smarkets_fetch": {
+  "events_seen": 176,
+  "events_priced": 80,
+  "markets": 1644,
+  "markets_mapped": 506,
+  "contracts": 1132,
+  "quoted_contracts": 908,
+  "raw": "data/research/external/raw/20260915T093432Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 506,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 261,
+  "rows": 871,
+  "two_sided": 868,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 457,
+ "external_mapping": {
+  "total": 200,
+  "by_status": {
+   "MAPPED": 153,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.765,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Irene Burillo": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Pedro Montero Nicolau": 1,
+   "Rohan Sachdev": 1,
+   "Jacopo Denitto": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Alexander Binda": 1,
+   "Maria Carle": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8562,
+  "top_refusal_subjects": {
+   "Riccardo Carpano": 1,
+   "Alexander Binda": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Maria Carle": 1,
+   "Aran Teixido Garcia": 1,
+   "Eric Von Marton Martins": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Valerio Bracci": 1
+  }
+ },
+ "matched_both_venues": 102,
+ "external_mapped_matches": 165,
+ "kalshi_mapped_matches": 137,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 109,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:MARKETS_AGREE": 10,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
