@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-15T09:20:36.137528+00:00",
+ "run_id": "20260915T092036Z",
+ "external_parse": {
+  "events": 208,
+  "markets": 1855,
+  "skipped_family": 307,
+  "skipped_period": 594,
+  "skipped_live": 55,
+  "one_sided": 39,
+  "rows": 2997,
+  "devigged": 915
+ },
+ "smarkets_fetch": {
+  "events_seen": 177,
+  "events_priced": 80,
+  "markets": 1652,
+  "markets_mapped": 508,
+  "contracts": 1138,
+  "quoted_contracts": 910,
+  "raw": "data/research/external/raw/20260915T092036Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 508,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 272,
+  "rows": 866,
+  "two_sided": 863,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 465,
+ "external_mapping": {
+  "total": 198,
+  "by_status": {
+   "MAPPED": 150,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.7576,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Irene Burillo": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Alvaro de Miguel Montero": 1,
+   "Pedro Montero Nicolau": 1,
+   "Rohan Sachdev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Alexander Binda": 1,
+   "Maria Carle": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 149,
+  "by_status": {
+   "MAPPED": 131,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8792,
+  "top_refusal_subjects": {
+   "Riccardo Carpano": 1,
+   "Alexander Binda": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Aran Teixido Garcia": 1,
+   "Milledge Galphin Cossu": 1,
+   "Valerio Bracci": 1,
+   "Renaud Lefevre": 1,
+   "Vedant Gundu": 1,
+   "Jacopo Denitto": 1
+  }
+ },
+ "matched_both_venues": 97,
+ "external_mapped_matches": 162,
+ "kalshi_mapped_matches": 131,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 97,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "WATCH": 6,
+  "tri:MARKETS_AGREE": 11,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
