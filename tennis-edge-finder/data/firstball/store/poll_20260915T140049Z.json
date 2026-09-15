@@ -1,0 +1,29 @@
+{
+ "run_id": "20260915T140049Z",
+ "started_at": "2026-09-15T14:00:49.791538+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 162,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP15LOVGAL": {
+   "confidence": "B",
+   "bracket_s": 198.593119,
+   "first_ball": "2026-09-15T14:00:34.726087+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "UNMATCHED": 1152,
+  "MATCHED": 162
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-15T14:10:15.222333+00:00"
+}
