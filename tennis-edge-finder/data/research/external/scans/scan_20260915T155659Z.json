@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-15T15:56:59.825857+00:00",
+ "run_id": "20260915T155659Z",
+ "external_parse": {
+  "events": 164,
+  "markets": 1411,
+  "skipped_family": 209,
+  "skipped_period": 419,
+  "skipped_live": 28,
+  "one_sided": 29,
+  "rows": 2177,
+  "devigged": 753
+ },
+ "smarkets_fetch": {
+  "events_seen": 141,
+  "events_priced": 80,
+  "markets": 1429,
+  "markets_mapped": 443,
+  "contracts": 962,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20260915T155659Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 443,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 151,
+  "rows": 811,
+  "two_sided": 805,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 842,
+ "external_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 106,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.6839,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Bruno Vieira Alves Malacarne": 1,
+   "Gabriel Tumasonis": 1,
+   "Mukund Sasikumar": 1,
+   "Isadora Sigrist": 1,
+   "Maria Moraes": 1,
+   "Tiphanie Lemaitre": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 118,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.9219,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Adam Martin Espinar": 1,
+   "Ivan Dorokhov": 1,
+   "Sasikumar Mukund": 1,
+   "Daniel Pessoa": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Novak Milosevic": 1,
+   "Milan Ristov": 1,
+   "Maria Moraes": 1,
+   "Isadora Sigrist": 1
+  }
+ },
+ "matched_both_venues": 70,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 118,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 105,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:INSUFFICIENT_INPUTS": 55,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
