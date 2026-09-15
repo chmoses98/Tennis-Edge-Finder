@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-15T14:29:04.879134+00:00",
+ "run_id": "20260915T142904Z",
+ "external_parse": {
+  "events": 187,
+  "markets": 1628,
+  "skipped_family": 244,
+  "skipped_period": 493,
+  "skipped_live": 37,
+  "one_sided": 29,
+  "rows": 2614,
+  "devigged": 862
+ },
+ "smarkets_fetch": {
+  "events_seen": 147,
+  "events_priced": 80,
+  "markets": 1657,
+  "markets_mapped": 482,
+  "contracts": 1058,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20260915T142904Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 482,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 245,
+  "rows": 813,
+  "two_sided": 808,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 408,
+ "external_mapping": {
+  "total": 178,
+  "by_status": {
+   "MAPPED": 124,
+   "DOUBLES_UNSUPPORTED": 42,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.6966,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Irene Burillo": 1,
+   "Guiomar Maristany": 1,
+   "Sacha Grandvincent": 1,
+   "Bruno Vieira Alves Malacarne": 1,
+   "Gabriel Tumasonis": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8864,
+  "top_refusal_subjects": {
+   "Riccardo Carpano": 1,
+   "Ivan Dorokhov": 1,
+   "Eric Von Marton Martins": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Sacha Grandvincent": 1,
+   "Valerio Bracci": 1,
+   "Maria Moraes": 1,
+   "Manuela Maia Citolino": 1,
+   "Isadora Sigrist": 1,
+   "Sophia Santos": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 133,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
