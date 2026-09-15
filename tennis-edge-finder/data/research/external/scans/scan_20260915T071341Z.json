@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-15T07:13:41.983905+00:00",
+ "run_id": "20260915T071341Z",
+ "external_parse": {
+  "events": 191,
+  "markets": 2059,
+  "skipped_family": 323,
+  "skipped_period": 647,
+  "skipped_live": 20,
+  "one_sided": 55,
+  "rows": 3299,
+  "devigged": 1033
+ },
+ "smarkets_fetch": {
+  "events_seen": 192,
+  "events_priced": 80,
+  "markets": 1331,
+  "markets_mapped": 449,
+  "contracts": 990,
+  "quoted_contracts": 926,
+  "raw": "data/research/external/raw/20260915T071341Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 449,
+  "skipped_family": 0,
+  "no_contracts": 20,
+  "no_book": 94,
+  "rows": 896,
+  "two_sided": 894,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 587,
+ "external_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 132,
+   "DOUBLES_UNSUPPORTED": 38,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7293,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Benjamin O'Connell": 1,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Irene Burillo": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Billy Williams": 1,
+   "Rishit Dakhane": 1,
+   "Maurice-Noel Kaserer": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1,
+   "Maria Carle": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 197,
+  "by_status": {
+   "MAPPED": 171,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.868,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Thanh Minh Truong": 1,
+   "Benjamin O'Connell": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Maria Carle": 1,
+   "Aran Teixido Garcia": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 105,
+ "external_mapped_matches": 146,
+ "kalshi_mapped_matches": 171,
+ "model_witness_available": true,
+ "rows": 182,
+ "counts": {
+  "PASS": 171,
+  "tri:MODEL_LONE_OUTLIER": 89,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "WATCH": 10,
+  "tri:KALSHI_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 59,
+  "tri:MARKETS_AGREE": 14,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
