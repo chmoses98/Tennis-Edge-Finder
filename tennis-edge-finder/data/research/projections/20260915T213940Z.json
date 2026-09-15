@@ -5924,5 +5924,207 @@
 "reason": "doubles: player 'Ramirez' unmapped/ambiguous in ['WTA']"
 }
 ],
+"projections": [
+{
+"match_id": "KXITFMATCH-26SEP15FAUFRE",
+"ticker": "KXITFMATCH-26SEP15FAUFRE-FRE",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFMATCH-26SEP15FAUFRE",
+"series_ticker": "KXITFMATCH",
+"player_a": "Thomas Faurel",
+"player_b": "Adan Freire Da Silva",
+"player_a_id": "212225",
+"player_b_id": "207676",
+"tour": "ATP",
+"level": "ITF",
+"competition": "M25 Nevers",
+"round": "R32",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:m25 nevers",
+"subject": "Adan Freire Da Silva",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:2d5eb864eb45",
+"data_source_versions": {
+"discovery": "20260915T022857Z",
+"ratings_built_at": "2026-09-15T21:38:54.077042+00:00"
+},
+"models": {
+"ELO": 0.16599218353639367,
+"STRUCTURAL": 0.23527523387357807,
+"ENSEMBLE": 0.19836725867310911,
+"ELO_DP_FAIR": 0.19836725867310911,
+"MARKET_MID": null,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1522.6204799555148,
+"elo_b": 1242.1876007755545,
+"pa": 0.659473341981394,
+"pb": 0.40760650010921273,
+"sr_pa": 0.6286205604384385,
+"sr_pb": 0.4272569532084064,
+"spw_baseline": 0.6259334209360906,
+"p_elo_bo3": 0.8340077255795451,
+"p_sr_bo3": 0.7647247661264219,
+"p_ensemble_bo3": 0.8016327832486334,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.8623,
+"grade": "A",
+"pillars": {
+"experience": 0.907,
+"serve_return_evidence": 0.901,
+"recency": 0.88,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 136,
+"n_matches_b": 95,
+"serve_points_a": 7240.173988111635,
+"serve_points_b": 3472.5879546821448,
+"days_since_last_a": 15,
+"days_since_last_b": 113,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": null,
+"yes_ask": 0.01,
+"no_bid": 0.99,
+"no_ask": null,
+"source": "capture",
+"quote_ts": "2026-09-15T20:16:53.980436+00:00",
+"volume": "927123.13",
+"open_interest": "397371.76",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-15T22:00:00Z",
+"seconds_to_scheduled_start": 1218.099554,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.01,
+"raw_edge": 0.1883672586731091,
+"fee_per_contract": 0.0007000000000000001,
+"ev_after_fees": 0.1876672586731091,
+"bet_up_to": 0.17
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFMATCH-26SEP15FAUFRE",
+"ticker": "KXITFMATCH-26SEP15FAUFRE-FAU",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFMATCH-26SEP15FAUFRE",
+"series_ticker": "KXITFMATCH",
+"player_a": "Thomas Faurel",
+"player_b": "Adan Freire Da Silva",
+"player_a_id": "212225",
+"player_b_id": "207676",
+"tour": "ATP",
+"level": "ITF",
+"competition": "M25 Nevers",
+"round": "R32",
+"format": "tour_singles_bo3",
+"surface": "Hard",
+"surface_source": "table:m25 nevers",
+"subject": "Thomas Faurel",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:2d5eb864eb45",
+"data_source_versions": {
+"discovery": "20260915T022857Z",
+"ratings_built_at": "2026-09-15T21:38:54.077042+00:00"
+},
+"models": {
+"ELO": 0.8340078164636063,
+"STRUCTURAL": 0.7647247661264219,
+"ENSEMBLE": 0.8016327413268909,
+"ELO_DP_FAIR": 0.8016327413268909,
+"MARKET_MID": null,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1522.6204799555148,
+"elo_b": 1242.1876007755545,
+"pa": 0.659473341981394,
+"pb": 0.40760650010921273,
+"sr_pa": 0.6286205604384385,
+"sr_pb": 0.4272569532084064,
+"spw_baseline": 0.6259334209360906,
+"p_elo_bo3": 0.8340077255795451,
+"p_sr_bo3": 0.7647247661264219,
+"p_ensemble_bo3": 0.8016327832486334,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.8623,
+"grade": "A",
+"pillars": {
+"experience": 0.907,
+"serve_return_evidence": 0.901,
+"recency": 0.88,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 136,
+"n_matches_b": 95,
+"serve_points_a": 7240.173988111635,
+"serve_points_b": 3472.5879546821448,
+"days_since_last_a": 15,
+"days_since_last_b": 113,
+"level_familiarity": 1.0,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.99,
+"yes_ask": null,
+"no_bid": null,
+"no_ask": 0.01,
+"source": "capture",
+"quote_ts": "2026-09-15T20:16:53.980458+00:00",
+"volume": "995981.64",
+"open_interest": "408893.20",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-15T22:00:00Z",
+"seconds_to_scheduled_start": 1218.032091,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.01,
+"raw_edge": 0.1883672586731091,
+"fee_per_contract": 0.0007000000000000001,
+"ev_after_fees": 0.1876672586731091,
+"bet_up_to": 0.17
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+}
+],
 "authority": "RESEARCH_ONLY_NO_REAL_MONEY"
 }
