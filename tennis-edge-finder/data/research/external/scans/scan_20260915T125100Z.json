@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-15T12:51:00.335918+00:00",
+ "run_id": "20260915T125100Z",
+ "external_parse": {
+  "events": 211,
+  "markets": 1858,
+  "skipped_family": 277,
+  "skipped_period": 575,
+  "skipped_live": 41,
+  "one_sided": 29,
+  "rows": 3012,
+  "devigged": 977
+ },
+ "smarkets_fetch": {
+  "events_seen": 158,
+  "events_priced": 80,
+  "markets": 1951,
+  "markets_mapped": 554,
+  "contracts": 1218,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20260915T125100Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 554,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 380,
+  "rows": 838,
+  "two_sided": 831,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 601,
+ "external_mapping": {
+  "total": 201,
+  "by_status": {
+   "MAPPED": 143,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7114,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Irene Burillo": 1,
+   "Guiomar Maristany": 1,
+   "Caroline Werner": 1,
+   "Sacha Grandvincent": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 138,
+  "by_status": {
+   "MAPPED": 122,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8841,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Riccardo Carpano": 1,
+   "Alexander Binda": 1,
+   "Caroline Werner": 1,
+   "Maria Carle": 1,
+   "Ivan Dorokhov": 1,
+   "Sasikumar Mukund": 1,
+   "Eric Von Marton Martins": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Milledge Galphin Cossu": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 150,
+ "kalshi_mapped_matches": 122,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 98,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 66,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
