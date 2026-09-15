@@ -1,0 +1,115 @@
+{
+ "generated_at": "2026-09-15T00:55:26.510919+00:00",
+ "run_id": "20260915T005526Z",
+ "external_parse": {
+  "events": 180,
+  "markets": 2060,
+  "skipped_family": 298,
+  "skipped_period": 665,
+  "skipped_live": 11,
+  "one_sided": 39,
+  "rows": 3360,
+  "devigged": 1058
+ },
+ "smarkets_fetch": {
+  "events_seen": 191,
+  "events_priced": 80,
+  "markets": 684,
+  "markets_mapped": 310,
+  "contracts": 650,
+  "quoted_contracts": 650,
+  "raw": "data/research/external/raw/20260915T005526Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 16,
+  "rows": 634,
+  "two_sided": 633,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1188,
+ "external_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 124,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7251,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Diego Dedura": 1,
+   "Irene Burillo": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 6,
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Digvijay Pratap Singh": 1,
+   "Khumoyun Sultanov": 1,
+   "Benjamin O'Connell": 1,
+   "Thanh Minh Truong": 1,
+   "Maria Carle": 1,
+   "Anastasiia Sobolieva": 1,
+   "Clara Burel": 1,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 264,
+  "by_status": {
+   "MAPPED": 219,
+   "UNMAPPED_PLAYER": 44,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8295,
+  "top_refusal_subjects": {
+   "Riccardo Carpano": 1,
+   "Alexander Binda": 1,
+   "Thanh Minh Truong": 1,
+   "Benjamin O'Connell": 1,
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Maria Carle": 1
+  }
+ },
+ "matched_both_venues": 105,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 219,
+ "model_witness_available": true,
+ "rows": 202,
+ "counts": {
+  "PASS": 196,
+  "tri:MODEL_LONE_OUTLIER": 91,
+  "tri:INSUFFICIENT_INPUTS": 91,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
