@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-15T08:26:19.513754+00:00",
+ "run_id": "20260915T082619Z",
+ "external_parse": {
+  "events": 187,
+  "markets": 1955,
+  "skipped_family": 313,
+  "skipped_period": 612,
+  "skipped_live": 24,
+  "one_sided": 52,
+  "rows": 3145,
+  "devigged": 978
+ },
+ "smarkets_fetch": {
+  "events_seen": 181,
+  "events_priced": 80,
+  "markets": 1562,
+  "markets_mapped": 488,
+  "contracts": 1102,
+  "quoted_contracts": 914,
+  "raw": "data/research/external/raw/20260915T082619Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 488,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 239,
+  "rows": 863,
+  "two_sided": 861,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 620,
+ "external_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 130,
+   "DOUBLES_UNSUPPORTED": 38,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7345,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Irene Burillo": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Noma Akugue Noha": 1,
+   "Billy Williams": 1,
+   "Rishit Dakhane": 1,
+   "Maurice-Noel Kaserer": 1,
+   "Fiorillo Alessandra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Alexander Binda": 1,
+   "Aoi Ito": 1,
+   "Maria Carle": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 196,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8878,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Alexander Binda": 1,
+   "Thanh Minh Truong": 1,
+   "Benjamin O'Connell": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Maria Carle": 1,
+   "Aran Teixido Garcia": 1,
+   "Eric Von Marton Martins": 1
+  }
+ },
+ "matched_both_venues": 107,
+ "external_mapped_matches": 148,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 180,
+ "counts": {
+  "PASS": 178,
+  "tri:MODEL_LONE_OUTLIER": 59,
+  "tri:MARKETS_AGREE": 11,
+  "tri:INSUFFICIENT_INPUTS": 106,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
