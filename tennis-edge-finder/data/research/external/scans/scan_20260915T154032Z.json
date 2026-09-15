@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-15T15:40:32.673385+00:00",
+ "run_id": "20260915T154032Z",
+ "external_parse": {
+  "events": 168,
+  "markets": 1473,
+  "skipped_family": 219,
+  "skipped_period": 442,
+  "skipped_live": 27,
+  "one_sided": 29,
+  "rows": 2342,
+  "devigged": 783
+ },
+ "smarkets_fetch": {
+  "events_seen": 140,
+  "events_priced": 80,
+  "markets": 1516,
+  "markets_mapped": 452,
+  "contracts": 986,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20260915T154032Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 452,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 156,
+  "rows": 830,
+  "two_sided": 813,
+  "one_sided": 17
+ },
+ "kalshi_quotes_on_disk": 352,
+ "external_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 109,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.6855,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Diego Dedura": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Bruno Vieira Alves Malacarne": 1,
+   "Gabriel Tumasonis": 1,
+   "Mukund Sasikumar": 1,
+   "Manuela Maia Citolino": 1,
+   "Isadora Sigrist": 1,
+   "Tiphanie Lemaitre": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9176,
+  "top_refusal_subjects": {
+   "Ivan Dorokhov": 1,
+   "Sasikumar Mukund": 1,
+   "Daniel Pessoa": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Milan Ristov": 1,
+   "Maria Moraes": 1,
+   "Isadora Sigrist": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 127,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 74,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
