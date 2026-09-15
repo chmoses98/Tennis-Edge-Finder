@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-15T16:29:20.608503+00:00",
+ "run_id": "20260915T162920Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1386,
+  "skipped_family": 205,
+  "skipped_period": 418,
+  "skipped_live": 23,
+  "one_sided": 29,
+  "rows": 2170,
+  "devigged": 734
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1390,
+  "markets_mapped": 427,
+  "contracts": 926,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20260915T162920Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 427,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 119,
+  "rows": 807,
+  "two_sided": 802,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 409,
+ "external_mapping": {
+  "total": 149,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6846,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Gabriel Tumasonis": 1,
+   "Mukund Sasikumar": 1,
+   "Maria Moraes": 1,
+   "Tiphanie Lemaitre": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 24,
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 110,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.9322,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Rohan SACHDEV": 1,
+   "Gabriele Leccisi": 1,
+   "Adam Martin Espinar": 1,
+   "Daniel Pessoa": 1,
+   "Kateryna Diatlova": 1,
+   "Maria Herazo": 1,
+   "Maria Moraes": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 123,
+ "kalshi_mapped_matches": 110,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
