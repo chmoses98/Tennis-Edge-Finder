@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-09-15T23:04:19.209425+00:00",
+ "run_id": "20260915T230419Z",
+ "external_parse": {
+  "events": 131,
+  "markets": 1110,
+  "skipped_family": 137,
+  "skipped_period": 304,
+  "skipped_live": 6,
+  "one_sided": 31,
+  "rows": 1684,
+  "devigged": 638
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 698,
+  "markets_mapped": 267,
+  "contracts": 558,
+  "quoted_contracts": 558,
+  "raw": "data/research/external/raw/20260915T230419Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 267,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 530,
+  "two_sided": 515,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 389,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 86,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6992,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Igor Marcondes": 1,
+   "Mukund Sasikumar": 1,
+   "Hao Yu Lin": 1,
+   "Zhu Chenting": 1,
+   "Tiphanie Lemaitre": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.525,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Kenta (2004) Miyoshi": 1,
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9381,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Eric Von Marton Martins": 1,
+   "Rohan SACHDEV": 1,
+   "Adam Martin Espinar": 1,
+   "Sasikumar Mukund": 1,
+   "Daniel Pessoa": 1,
+   "Ana Clara Furlan Britzki": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 106,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 81,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
