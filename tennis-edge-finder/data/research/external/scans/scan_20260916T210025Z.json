@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-16T21:00:25.106248+00:00",
+ "run_id": "20260916T210025Z",
+ "external_parse": {
+  "events": 60,
+  "markets": 351,
+  "skipped_family": 88,
+  "skipped_period": 82,
+  "skipped_live": 14,
+  "one_sided": 17,
+  "rows": 446,
+  "devigged": 164
+ },
+ "smarkets_fetch": {
+  "events_seen": 74,
+  "events_priced": 74,
+  "markets": 552,
+  "markets_mapped": 251,
+  "contracts": 524,
+  "quoted_contracts": 524,
+  "raw": "data/research/external/raw/20260916T210025Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 251,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 72,
+  "rows": 452,
+  "two_sided": 447,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 285,
+ "external_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 28,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.5385,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Taym Alazmeh": 1,
+   "Guiomar Maristany": 1,
+   "Saul Berdullas Calvino": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 74,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 19,
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7027,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9296,
+  "top_refusal_subjects": {
+   "Anastasiia Sobolieva": 1,
+   "Denis Klok": 1,
+   "Matias Reyniak": 1,
+   "Sasikumar Mukund": 1,
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 75,
+ "kalshi_mapped_matches": 66,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
