@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-16T13:13:15.331482+00:00",
+ "run_id": "20260916T131315Z",
+ "external_parse": {
+  "events": 173,
+  "markets": 1231,
+  "skipped_family": 227,
+  "skipped_period": 357,
+  "skipped_live": 44,
+  "one_sided": 45,
+  "rows": 1809,
+  "devigged": 601
+ },
+ "smarkets_fetch": {
+  "events_seen": 105,
+  "events_priced": 80,
+  "markets": 1269,
+  "markets_mapped": 366,
+  "contracts": 790,
+  "quoted_contracts": 790,
+  "raw": "data/research/external/raw/20260916T131315Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 366,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 81,
+  "rows": 709,
+  "two_sided": 703,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 834,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 46
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Milan Ristov": 1,
+   "Denis Klok": 1,
+   "Robin Eldin": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Gabriel Tumasonis": 1,
+   "Eric Von Marton Martins": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Alexander Binda": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8897,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Sasikumar Mukund": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Nicholas Matos": 1,
+   "Robin Eldin": 1,
+   "Eric Von Marton Martins": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Vedant Gundu": 1,
+   "Milan Ristov": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 121,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 82,
+  "tri:INSUFFICIENT_INPUTS": 49,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:MARKETS_AGREE": 5,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
