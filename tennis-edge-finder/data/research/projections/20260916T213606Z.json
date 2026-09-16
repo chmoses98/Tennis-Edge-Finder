@@ -5637,5 +5637,375 @@
 "reason": "doubles: player 'Fiorella Britez Risso' unmapped/ambiguous in ['WTA']"
 }
 ],
+"projections": [
+{
+"match_id": "KXWTADOUBLES-26SEP16BUCMELDOLKHR",
+"ticker": "KXWTADOUBLES-26SEP16BUCMELDOLKHR-DOLKHR",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP16BUCMELDOLKHR",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Cristina Bucsa / Nicole Melichar-Martinez",
+"player_b": "Caroline Dolehide / Irina Khromacheva",
+"player_a_id": "213710|203414",
+"player_b_id": "214452|202701",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Guadalajara",
+"round": "QF",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Caroline Dolehide / Irina Khromacheva",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260916T020352Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.6452429863193092,
+"MARKET_MID": 0.33499999999999996,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.6452429863193092
+},
+"inputs": {
+"rating_a": 1665.0972207577533,
+"rating_b": 1769.0141416193446,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.32,
+"yes_ask": 0.35,
+"no_bid": 0.65,
+"no_ask": 0.68,
+"source": "capture",
+"quote_ts": "2026-09-16T21:17:42.453090+00:00",
+"volume": "38.99",
+"open_interest": "38.99",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-17T00:30:00Z",
+"seconds_to_scheduled_start": 10430.903769,
+"ev": {
+"best_side": "YES",
+"price": 0.35,
+"raw_edge": 0.29524298631930923,
+"fee_per_contract": 0.016,
+"ev_after_fees": 0.2792429863193092,
+"bet_up_to": 0.62
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXWTADOUBLES-26SEP16BUCMELDOLKHR",
+"ticker": "KXWTADOUBLES-26SEP16BUCMELDOLKHR-BUCMEL",
+"family": "MATCH_WINNER",
+"event_ticker": "KXWTADOUBLES-26SEP16BUCMELDOLKHR",
+"series_ticker": "KXWTADOUBLES",
+"player_a": "Cristina Bucsa / Nicole Melichar-Martinez",
+"player_b": "Caroline Dolehide / Irina Khromacheva",
+"player_a_id": "213710|203414",
+"player_b_id": "214452|202701",
+"tour": "WTA",
+"level": "TOUR_500_250",
+"competition": "WTA Guadalajara",
+"round": "QF",
+"format": "tour_doubles_noad_matchtb",
+"surface": null,
+"surface_source": "n/a",
+"subject": "Cristina Bucsa / Nicole Melichar-Martinez",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "doubles_baseline_prior_v0",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "doubles_prior",
+"data_source_versions": {
+"discovery": "20260916T020352Z"
+},
+"models": {
+"ELO": null,
+"STRUCTURAL": null,
+"ENSEMBLE": null,
+"ELO_DP_FAIR": 0.3547570136806908,
+"MARKET_MID": 0.665,
+"HYBRID_MARKET_MODEL": null,
+"DOUBLES_BASELINE": 0.3547570136806908
+},
+"inputs": {
+"rating_a": 1665.0972207577533,
+"rating_b": 1769.0141416193446,
+"basis_a": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+},
+"basis_b": {
+"basis": "SINGLES_ONLY",
+"doubles_known": 0,
+"singles_known": 2
+}
+},
+"quality": {
+"data_quality_score": 0.3,
+"grade": "C",
+"pillars": {
+"note": "doubles baseline prior; unvalidated"
+}
+},
+"market_quote": {
+"yes_bid": 0.65,
+"yes_ask": 0.68,
+"no_bid": 0.32,
+"no_ask": 0.35,
+"source": "capture",
+"quote_ts": "2026-09-16T21:17:42.453144+00:00",
+"volume": "161.58",
+"open_interest": "161.58",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-17T00:30:00Z",
+"seconds_to_scheduled_start": 10430.801441,
+"ev": {
+"best_side": "NO",
+"price": 0.35,
+"raw_edge": 0.29524298631930923,
+"fee_per_contract": 0.016,
+"ev_after_fees": 0.2792429863193092,
+"bet_up_to": 0.62
+},
+"notes": "doubles baseline is a documented prior; no walk-forward validation yet",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFMATCH-26SEP16WENTOS",
+"ticker": "KXITFMATCH-26SEP16WENTOS-WEN",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFMATCH-26SEP16WENTOS",
+"series_ticker": "KXITFMATCH",
+"player_a": "Jefferson Wendler Filho",
+"player_b": "Rafael Tosetto",
+"player_a_id": "136648",
+"player_b_id": "208006",
+"tour": "ATP",
+"level": "ITF",
+"competition": "M15 Bel\u00e9m",
+"round": "R32",
+"format": "tour_singles_bo3",
+"surface": null,
+"surface_source": "unknown",
+"subject": "Jefferson Wendler Filho",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:caba48f9862e",
+"data_source_versions": {
+"discovery": "20260916T020352Z",
+"ratings_built_at": "2026-09-16T21:35:12.407960+00:00"
+},
+"models": {
+"ELO": 0.4879133530460111,
+"STRUCTURAL": 0.5630412000494046,
+"ENSEMBLE": 0.525622382348539,
+"ELO_DP_FAIR": 0.525622382348539,
+"MARKET_MID": 0.025,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1207.1023198678226,
+"elo_b": 1215.502504797801,
+"pa": 0.6425751888751984,
+"pb": 0.36257518887519835,
+"sr_pa": 0.6271343910770848,
+"sr_pb": 0.3853522776705234,
+"spw_baseline": 0.64,
+"p_elo_bo3": 0.4879135171258693,
+"p_sr_bo3": 0.5630412000494046,
+"p_ensemble_bo3": 0.5256223540840246,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.6171,
+"grade": "B",
+"pillars": {
+"experience": 0.675,
+"serve_return_evidence": 0.783,
+"recency": 0.842,
+"level_familiarity": 0.5,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 45,
+"n_matches_b": 107,
+"serve_points_a": 2290.5578610255016,
+"serve_points_b": 3558.2351840407064,
+"days_since_last_a": 121,
+"days_since_last_b": 107,
+"level_familiarity": 0.5,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.02,
+"yes_ask": 0.03,
+"no_bid": 0.97,
+"no_ask": 0.98,
+"source": "capture",
+"quote_ts": "2026-09-16T20:37:39.549738+00:00",
+"volume": "304000.38",
+"open_interest": "205052.14",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-16T22:30:00Z",
+"seconds_to_scheduled_start": 3230.669232,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "YES",
+"price": 0.03,
+"raw_edge": 0.49562238234853895,
+"fee_per_contract": 0.0021,
+"ev_after_fees": 0.49352238234853896,
+"bet_up_to": 0.5
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+},
+{
+"match_id": "KXITFMATCH-26SEP16WENTOS",
+"ticker": "KXITFMATCH-26SEP16WENTOS-TOS",
+"family": "MATCH_WINNER",
+"event_ticker": "KXITFMATCH-26SEP16WENTOS",
+"series_ticker": "KXITFMATCH",
+"player_a": "Jefferson Wendler Filho",
+"player_b": "Rafael Tosetto",
+"player_a_id": "136648",
+"player_b_id": "208006",
+"tour": "ATP",
+"level": "ITF",
+"competition": "M15 Bel\u00e9m",
+"round": "R32",
+"format": "tour_singles_bo3",
+"surface": null,
+"surface_source": "unknown",
+"subject": "Rafael Tosetto",
+"line": null,
+"set_index": null,
+"exact_score": null,
+"model_version": "elo_surface_k_lo+sr_v0.1",
+"ratings_as_of": "2026-09-13",
+"git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
+"feature_snapshot_id": "ratings:caba48f9862e",
+"data_source_versions": {
+"discovery": "20260916T020352Z",
+"ratings_built_at": "2026-09-16T21:35:12.407960+00:00"
+},
+"models": {
+"ELO": 0.5120866469539889,
+"STRUCTURAL": 0.4369587999505954,
+"ENSEMBLE": 0.474377617651461,
+"ELO_DP_FAIR": 0.474377617651461,
+"MARKET_MID": 0.975,
+"HYBRID_MARKET_MODEL": null
+},
+"inputs": {
+"elo_a": 1207.1023198678226,
+"elo_b": 1215.502504797801,
+"pa": 0.6425751888751984,
+"pb": 0.36257518887519835,
+"sr_pa": 0.6271343910770848,
+"sr_pb": 0.3853522776705234,
+"spw_baseline": 0.64,
+"p_elo_bo3": 0.4879135171258693,
+"p_sr_bo3": 0.5630412000494046,
+"p_ensemble_bo3": 0.5256223540840246,
+"structural_used": true
+},
+"quality": {
+"data_quality_score": 0.6171,
+"grade": "B",
+"pillars": {
+"experience": 0.675,
+"serve_return_evidence": 0.783,
+"recency": 0.842,
+"level_familiarity": 0.5,
+"identity_confidence": 1.0,
+"format_known": 1.0
+},
+"inputs": {
+"n_matches_a": 45,
+"n_matches_b": 107,
+"serve_points_a": 2290.5578610255016,
+"serve_points_b": 3558.2351840407064,
+"days_since_last_a": 121,
+"days_since_last_b": 107,
+"level_familiarity": 0.5,
+"identity_confidence": 1.0,
+"format_known": true
+}
+},
+"market_quote": {
+"yes_bid": 0.97,
+"yes_ask": 0.98,
+"no_bid": 0.02,
+"no_ask": 0.03,
+"source": "capture",
+"quote_ts": "2026-09-16T20:37:39.549760+00:00",
+"volume": "100397.43",
+"open_interest": "77130.58",
+"liquidity": "0.0000"
+},
+"scheduled_start": "2026-09-16T22:30:00Z",
+"seconds_to_scheduled_start": 3230.567575,
+"start_basis": "NOMINAL_UNRELIABLE",
+"ev": {
+"best_side": "NO",
+"price": 0.03,
+"raw_edge": 0.49562238234853895,
+"fee_per_contract": 0.0021,
+"ev_after_fees": 0.49352238234853896,
+"bet_up_to": 0.5
+},
+"notes": "P(win | match starts)",
+"conditional_yes": null,
+"p_played": null,
+"authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+}
+],
 "authority": "RESEARCH_ONLY_NO_REAL_MONEY"
 }
