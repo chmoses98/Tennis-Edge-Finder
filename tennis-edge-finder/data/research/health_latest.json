@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260916T020352Z",
-   "age_hours": 3.1,
+   "age_hours": 9.9,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,9 +37,9 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 641,
-   "projected": 483,
-   "not_projected": 158,
+   "projectable_open_pregame": 483,
+   "projected": 363,
+   "not_projected": 120,
    "missing_sample": [
     "KXWTADOUBLES-26SEP16CAVSALKOBPLI-KOBPLI: doubles: player 'Yvonne Cavalle-Reimers' unmapped/ambiguous ",
     "KXWTADOUBLES-26SEP16CAVSALKOBPLI-CAVSAL: doubles: player 'Yvonne Cavalle-Reimers' unmapped/ambiguous ",
@@ -54,10 +54,11 @@
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 164,
+    "past_nominal_start": 209,
+    "closed_since_discovery": 113,
     "tournament_scope_not_priced_tonight": 191
    },
-   "projection_run": "20260916T050801Z"
+   "projection_run": "20260916T115907Z"
   }
  },
  {
@@ -65,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260916T045010Z",
-   "age_min": 16.8,
+   "run": "20260916T113331Z",
+   "age_min": 23.9,
    "incomplete": [
     {
      "stage": "trades",
@@ -107,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 3501,
-   "start_unknown_used_schedule": 2687
+   "n": 3864,
+   "start_unknown_used_schedule": 3020
   }
  },
  {
@@ -118,7 +119,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 483
+   "MATCHED": 363
   }
  },
  {
@@ -128,34 +129,35 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 297,
-    "strict_truths": 183,
-    "no_play": 0,
+    "truths": 315,
+    "strict_truths": 194,
+    "no_play": 1,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 114,
-     "B": 183
+     "C": 121,
+     "B": 193,
+     "A": 1
     },
-    "bracket_seconds_median": 194.424543,
-    "bracket_seconds_p90": 220.391221,
+    "bracket_seconds_median": 196.525136,
+    "bracket_seconds_p90": 219.019416,
     "chain_violations": [],
-    "observations": 131060,
-    "matches_observed": 297,
+    "observations": 137827,
+    "matches_observed": 315,
     "watchlist": {
-     "total": 266,
-     "levels_with_a_wired_source": 16,
-     "levels_without_any_source": 250,
-     "watched_and_observed": 14,
-     "covered_and_observed": 14,
-     "pct_covered_with_source_mapping": 0.875
+     "total": 309,
+     "levels_with_a_wired_source": 34,
+     "levels_without_any_source": 275,
+     "watched_and_observed": 32,
+     "covered_and_observed": 32,
+     "pct_covered_with_source_mapping": 0.9412
     },
-    "pct_classifiable": 0.2325,
-    "pct_strict_pregame": 0.2142,
+    "pct_classifiable": 0.2195,
+    "pct_strict_pregame": 0.1998,
     "timing_classes": {
-     "START_UNKNOWN": 2687,
-     "STRICT_PREGAME": 750,
-     "POST_START": 60,
+     "START_UNKNOWN": 3016,
+     "STRICT_PREGAME": 772,
+     "POST_START": 72,
      "AMBIGUOUS": 4
     }
    }
@@ -179,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 750,
-   "executable_close_rows": 814,
-   "matches_with_strict_truth": 183,
-   "observations_classified": 3501,
-   "pct_strict_pregame": 0.2142,
-   "horizons_populated": 5553,
-   "horizons_total": 28008
+   "strict_clv_rows": 768,
+   "executable_close_rows": 844,
+   "matches_with_strict_truth": 194,
+   "observations_classified": 3864,
+   "pct_strict_pregame": 0.1998,
+   "horizons_populated": 5723,
+   "horizons_total": 30912
   }
  },
  {
@@ -211,8 +213,8 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-16T05:02:51.397831+00:00",
-   "rows": 1630404
+   "built_at": "2026-09-16T11:54:03.127267+00:00",
+   "rows": 1630441
   }
  },
  {
@@ -220,19 +222,19 @@
   "name": "data_source_freshness",
   "status": "PASS",
   "detail": {
-   "run": "20260915T102637Z",
-   "snapshot_age_days": 0.78,
+   "run": "20260916T101702Z",
+   "snapshot_age_days": 0.07,
    "max_season_files": [
     2026,
     2026
    ],
    "ratings_as_of": {
     "ATP": "2026-09-13",
-    "WTA": "2026-09-15"
+    "WTA": "2026-09-16"
    },
    "ratings_stale_days": {
     "ATP": 3,
-    "WTA": 1
+    "WTA": 0
    }
   }
  }
