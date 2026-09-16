@@ -1,0 +1,40 @@
+{
+ "run_id": "20260916T011251Z",
+ "started_at": "2026-09-16T01:12:51.859137+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 18,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP15STETJE-2": {
+   "confidence": "B",
+   "bracket_s": 184.882775,
+   "first_ball": "2026-09-16T01:16:50.079935+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP15STETJE-1": {
+   "confidence": "B",
+   "bracket_s": 184.882775,
+   "first_ball": "2026-09-16T01:16:50.079935+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP15STETJE": {
+   "confidence": "B",
+   "bracket_s": 184.882775,
+   "first_ball": "2026-09-16T01:16:50.079935+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "mapping": {
+  "MATCHED": 18
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-16T01:19:27.516789+00:00"
+}
