@@ -1,0 +1,29 @@
+{
+ "run_id": "20260916T193757Z",
+ "started_at": "2026-09-16T19:37:57.284970+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 91,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTADOUBLES-26SEP16HARHEWGLEPIT": {
+   "confidence": "B",
+   "bracket_s": 197.660525,
+   "first_ball": "2026-09-16T19:36:21.735246+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 91,
+  "UNMATCHED": 54
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-16T19:47:35.860970+00:00"
+}
