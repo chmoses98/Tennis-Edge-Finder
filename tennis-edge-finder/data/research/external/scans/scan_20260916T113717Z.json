@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-16T11:37:17.681410+00:00",
+ "run_id": "20260916T113717Z",
+ "external_parse": {
+  "events": 219,
+  "markets": 1538,
+  "skipped_family": 252,
+  "skipped_period": 444,
+  "skipped_live": 52,
+  "one_sided": 68,
+  "rows": 2222,
+  "devigged": 772
+ },
+ "smarkets_fetch": {
+  "events_seen": 113,
+  "events_priced": 80,
+  "markets": 1338,
+  "markets_mapped": 382,
+  "contracts": 824,
+  "quoted_contracts": 824,
+  "raw": "data/research/external/raw/20260916T113717Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 382,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 115,
+  "rows": 709,
+  "two_sided": 700,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 407,
+ "external_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 141,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 49
+  },
+  "mapped_rate": 0.6746,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Robin Eldin": 1,
+   "Nazim Makhlouf": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Matias Reyniak": 1,
+   "Vedant Gundu": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 39,
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.475,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8947,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Sasikumar Mukund": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Eric Von Marton Martins": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Vedant Gundu": 1,
+   "Nazim Makhlouf": 1,
+   "Matias Reyniak": 1,
+   "Milan Ristov": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 150,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 96,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:MARKETS_AGREE": 6,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
