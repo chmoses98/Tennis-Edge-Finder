@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-16T17:57:12.163093+00:00",
+ "run_id": "20260916T175712Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 568,
+  "skipped_family": 135,
+  "skipped_period": 150,
+  "skipped_live": 19,
+  "one_sided": 19,
+  "rows": 828,
+  "devigged": 264
+ },
+ "smarkets_fetch": {
+  "events_seen": 82,
+  "events_priced": 80,
+  "markets": 912,
+  "markets_mapped": 302,
+  "contracts": 646,
+  "quoted_contracts": 646,
+  "raw": "data/research/external/raw/20260916T175712Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 302,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 68,
+  "rows": 578,
+  "two_sided": 570,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 235,
+ "external_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.5493,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Mariana Manyoma": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Robin Eldin": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8906,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Nazim Makhlouf": 1,
+   "Sasikumar Mukund": 1,
+   "Nicholas Matos": 1,
+   "Robin Eldin": 1,
+   "Amahee Charrier": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 77,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
