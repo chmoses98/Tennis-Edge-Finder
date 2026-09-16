@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-09-16T22:00:22.573436+00:00",
+ "run_id": "20260916T220022Z",
+ "external_parse": {
+  "events": 52,
+  "markets": 333,
+  "skipped_family": 84,
+  "skipped_period": 79,
+  "skipped_live": 8,
+  "one_sided": 15,
+  "rows": 424,
+  "devigged": 155
+ },
+ "smarkets_fetch": {
+  "events_seen": 76,
+  "events_priced": 76,
+  "markets": 584,
+  "markets_mapped": 265,
+  "contracts": 522,
+  "quoted_contracts": 562,
+  "raw": "data/research/external/raw/20260916T220022Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 265,
+  "skipped_family": 0,
+  "no_contracts": 20,
+  "no_book": 56,
+  "rows": 466,
+  "two_sided": 463,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 340,
+ "external_mapping": {
+  "total": 44,
+  "by_status": {
+   "MAPPED": 23,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.5227,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Taym Alazmeh": 1,
+   "Guiomar Maristany": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 76,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 19,
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7105,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9789,
+  "top_refusal_subjects": {
+   "Vitor Machado De Melo Cunha": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 37,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
