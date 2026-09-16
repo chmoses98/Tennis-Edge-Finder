@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-16T12:24:32.387273+00:00",
+ "run_id": "20260916T122432Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1303,
+  "skipped_family": 236,
+  "skipped_period": 376,
+  "skipped_live": 46,
+  "one_sided": 51,
+  "rows": 1905,
+  "devigged": 639
+ },
+ "smarkets_fetch": {
+  "events_seen": 109,
+  "events_priced": 80,
+  "markets": 1330,
+  "markets_mapped": 383,
+  "contracts": 828,
+  "quoted_contracts": 828,
+  "raw": "data/research/external/raw/20260916T122432Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 383,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 107,
+  "rows": 721,
+  "two_sided": 715,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 395,
+ "external_mapping": {
+  "total": 174,
+  "by_status": {
+   "MAPPED": 111,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 46
+  },
+  "mapped_rate": 0.6379,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Matias Reyniak": 1,
+   "Vedant Gundu": 1,
+   "Milan Ristov": 1,
+   "Denis Klok": 1,
+   "Robin Eldin": 1,
+   "Lorenzo Sverzut Corsini": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.9015,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Sasikumar Mukund": 1,
+   "Robin Eldin": 1,
+   "Eric Von Marton Martins": 1,
+   "Vedant Gundu": 1,
+   "Nazim Makhlouf": 1,
+   "Matias Reyniak": 1,
+   "Milan Ristov": 1,
+   "Ana Clara Furlan Britzki": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 124,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 75,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:MARKETS_AGREE": 14,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
