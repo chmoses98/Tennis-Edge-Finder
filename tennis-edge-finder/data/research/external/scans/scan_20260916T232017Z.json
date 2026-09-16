@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-09-16T23:20:17.259702+00:00",
+ "run_id": "20260916T232017Z",
+ "external_parse": {
+  "events": 75,
+  "markets": 540,
+  "skipped_family": 91,
+  "skipped_period": 136,
+  "skipped_live": 5,
+  "one_sided": 37,
+  "rows": 695,
+  "devigged": 275
+ },
+ "smarkets_fetch": {
+  "events_seen": 74,
+  "events_priced": 74,
+  "markets": 749,
+  "markets_mapped": 271,
+  "contracts": 574,
+  "quoted_contracts": 574,
+  "raw": "data/research/external/raw/20260916T232017Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 271,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 59,
+  "rows": 515,
+  "two_sided": 509,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 354,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.6119,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Taym Alazmeh": 1,
+   "Emily Johnson": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 54,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7297,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9135,
+  "top_refusal_subjects": {
+   "Anastasiia Sobolieva": 1,
+   "Robin Eldin": 1,
+   "Nikita Belozertsev": 1,
+   "Daniel Salazar": 1,
+   "Denis Klok": 1,
+   "Nazim Makhlouf": 1,
+   "Matias Reyniak": 1,
+   "Amahee Charrier": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 87,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 52,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
