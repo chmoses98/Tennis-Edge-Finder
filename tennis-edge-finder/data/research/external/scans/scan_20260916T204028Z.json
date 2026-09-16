@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-16T20:40:28.577772+00:00",
+ "run_id": "20260916T204028Z",
+ "external_parse": {
+  "events": 61,
+  "markets": 381,
+  "skipped_family": 97,
+  "skipped_period": 90,
+  "skipped_live": 13,
+  "one_sided": 17,
+  "rows": 498,
+  "devigged": 177
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 545,
+  "markets_mapped": 247,
+  "contracts": 516,
+  "quoted_contracts": 516,
+  "raw": "data/research/external/raw/20260916T204028Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 478,
+  "two_sided": 472,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 281,
+ "external_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 28,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.5283,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Taym Alazmeh": 1,
+   "Guiomar Maristany": 1,
+   "Saul Berdullas Calvino": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6986,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9512,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Matias Reyniak": 1,
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 74,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 34,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
