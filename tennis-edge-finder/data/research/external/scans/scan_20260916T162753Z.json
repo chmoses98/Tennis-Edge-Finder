@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-16T16:27:53.351336+00:00",
+ "run_id": "20260916T162753Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 814,
+  "skipped_family": 172,
+  "skipped_period": 231,
+  "skipped_live": 32,
+  "one_sided": 27,
+  "rows": 1172,
+  "devigged": 384
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1043,
+  "markets_mapped": 338,
+  "contracts": 724,
+  "quoted_contracts": 724,
+  "raw": "data/research/external/raw/20260916T162753Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 338,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 82,
+  "rows": 642,
+  "two_sided": 634,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 712,
+ "external_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.5963,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Chad Miller": 1,
+   "Douglas Yaffa": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Eric Von Marton Martins": 1,
+   "Gabriel Tumasonis": 1,
+   "Vitor Machado de Melo Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 89,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.899,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Matias Reyniak": 1,
+   "Sasikumar Mukund": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Nicholas Matos": 1,
+   "Robin Eldin": 1,
+   "Lara Spinato Freire De Jesus": 1,
+   "Julia Castellanos Alem": 1,
+   "Amahee Charrier": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 89,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
