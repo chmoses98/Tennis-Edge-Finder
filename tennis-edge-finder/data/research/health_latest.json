@@ -4,8 +4,8 @@
   "name": "kalshi_tennis_discovery",
   "status": "PASS",
   "detail": {
-   "run": "20260915T022857Z",
-   "age_hours": 19.2,
+   "run": "20260916T020352Z",
+   "age_hours": 3.1,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -17,7 +17,7 @@
   "status": "PASS",
   "detail": {
    "unknown_series": [],
-   "live_markets": 61775,
+   "live_markets": 61215,
    "unparsed": 1,
    "parse_rate": 0.99998
   }
@@ -27,7 +27,7 @@
   "name": "active_market_mapping",
   "status": "PASS",
   "detail": {
-   "active": 1183,
+   "active": 1127,
    "unparsed": [],
    "unsupported": 131
   }
@@ -37,24 +37,27 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 8,
-   "projected": 2,
-   "not_projected": 6,
+   "projectable_open_pregame": 641,
+   "projected": 483,
+   "not_projected": 158,
    "missing_sample": [
-    "KXITFWDOUBLES-26SEP15BERROSDEMJOS-DEMJOS: doubles: player 'Bernardes' unmapped/ambiguous in ['WTA']",
-    "KXITFWDOUBLES-26SEP15BERROSDEMJOS-BERROS: doubles: player 'Bernardes' unmapped/ambiguous in ['WTA']",
-    "KXITFWDOUBLES-26SEP15SANMACCASINS-SANMAC: doubles: player 'Santos' unmapped/ambiguous in ['WTA']",
-    "KXITFWDOUBLES-26SEP15SANMACCASINS-CASINS: doubles: player 'Santos' unmapped/ambiguous in ['WTA']",
-    "KXITFWDOUBLES-26SEP15RAMSOACATLOP-RAMSOA: doubles: player 'Ramirez' unmapped/ambiguous in ['WTA']",
-    "KXITFWDOUBLES-26SEP15RAMSOACATLOP-CATLOP: doubles: player 'Ramirez' unmapped/ambiguous in ['WTA']"
+    "KXWTADOUBLES-26SEP16CAVSALKOBPLI-KOBPLI: doubles: player 'Yvonne Cavalle-Reimers' unmapped/ambiguous ",
+    "KXWTADOUBLES-26SEP16CAVSALKOBPLI-CAVSAL: doubles: player 'Yvonne Cavalle-Reimers' unmapped/ambiguous ",
+    "KXITFWMATCH-26SEP16GARSPI-SPI: Lara Spinato Freire De Jesus: UNMAPPED (no exact full-name m",
+    "KXITFWMATCH-26SEP16GARSPI-GAR: Lara Spinato Freire De Jesus: UNMAPPED (no exact full-name m",
+    "KXITFWMATCH-26SEP16DEMCAS-DEM: Julia Castellanos Alem: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP16DEMCAS-CAS: Julia Castellanos Alem: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP16DIAMEL-MEL: Beatriz Dias: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP16DIAMEL-DIA: Beatriz Dias: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP16KONFUR-KON: Ana Clara Furlan Britzki: UNMAPPED (no exact full-name match",
+    "KXITFWMATCH-26SEP16KONFUR-FUR: Ana Clara Furlan Britzki: UNMAPPED (no exact full-name match"
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 201,
-    "closed_since_discovery": 668,
-    "tournament_scope_not_priced_tonight": 175
+    "past_nominal_start": 164,
+    "tournament_scope_not_priced_tonight": 191
    },
-   "projection_run": "20260915T213940Z"
+   "projection_run": "20260916T050801Z"
   }
  },
  {
@@ -62,8 +65,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260915T212847Z",
-   "age_min": 8.9,
+   "run": "20260916T045010Z",
+   "age_min": 16.8,
    "incomplete": [
     {
      "stage": "trades",
@@ -104,8 +107,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 3018,
-   "start_unknown_used_schedule": 2240
+   "n": 3501,
+   "start_unknown_used_schedule": 2687
   }
  },
  {
@@ -115,7 +118,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 2
+   "MATCHED": 483
   }
  },
  {
@@ -125,33 +128,33 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 283,
-    "strict_truths": 177,
+    "truths": 297,
+    "strict_truths": 183,
     "no_play": 0,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 106,
-     "B": 177
+     "C": 114,
+     "B": 183
     },
-    "bracket_seconds_median": 196.31822,
-    "bracket_seconds_p90": 222.913105,
+    "bracket_seconds_median": 194.424543,
+    "bracket_seconds_p90": 220.391221,
     "chain_violations": [],
-    "observations": 128768,
-    "matches_observed": 283,
+    "observations": 131060,
+    "matches_observed": 297,
     "watchlist": {
-     "total": 152,
-     "levels_with_a_wired_source": 24,
-     "levels_without_any_source": 128,
-     "watched_and_observed": 23,
-     "covered_and_observed": 23,
-     "pct_covered_with_source_mapping": 0.9583
+     "total": 266,
+     "levels_with_a_wired_source": 16,
+     "levels_without_any_source": 250,
+     "watched_and_observed": 14,
+     "covered_and_observed": 14,
+     "pct_covered_with_source_mapping": 0.875
     },
-    "pct_classifiable": 0.2578,
-    "pct_strict_pregame": 0.2366,
+    "pct_classifiable": 0.2325,
+    "pct_strict_pregame": 0.2142,
     "timing_classes": {
-     "START_UNKNOWN": 2240,
-     "STRICT_PREGAME": 714,
+     "START_UNKNOWN": 2687,
+     "STRICT_PREGAME": 750,
      "POST_START": 60,
      "AMBIGUOUS": 4
     }
@@ -176,13 +179,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 714,
-   "executable_close_rows": 778,
-   "matches_with_strict_truth": 177,
-   "observations_classified": 3018,
-   "pct_strict_pregame": 0.2366,
-   "horizons_populated": 5289,
-   "horizons_total": 24144
+   "strict_clv_rows": 750,
+   "executable_close_rows": 814,
+   "matches_with_strict_truth": 183,
+   "observations_classified": 3501,
+   "pct_strict_pregame": 0.2142,
+   "horizons_populated": 5553,
+   "horizons_total": 28008
   }
  },
  {
@@ -208,7 +211,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-15T21:35:36.932827+00:00",
+   "built_at": "2026-09-16T05:02:51.397831+00:00",
    "rows": 1630404
   }
  },
@@ -218,7 +221,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260915T102637Z",
-   "snapshot_age_days": 0.47,
+   "snapshot_age_days": 0.78,
    "max_season_files": [
     2026,
     2026
@@ -228,8 +231,8 @@
     "WTA": "2026-09-15"
    },
    "ratings_stale_days": {
-    "ATP": 2,
-    "WTA": 0
+    "ATP": 3,
+    "WTA": 1
    }
   }
  }
