@@ -1,0 +1,29 @@
+{
+ "run_id": "20260916T112536Z",
+ "started_at": "2026-09-16T11:25:36.247773+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 178,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP16GARKAB": {
+   "confidence": "B",
+   "bracket_s": 197.689036,
+   "first_ball": "2026-09-16T11:25:20.184914+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 178,
+  "UNMATCHED": 1336
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-16T11:34:54.669804+00:00"
+}
