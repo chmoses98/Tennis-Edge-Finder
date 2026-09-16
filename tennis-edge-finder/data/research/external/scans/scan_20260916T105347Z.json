@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-09-16T10:53:47.223774+00:00",
+ "run_id": "20260916T105347Z",
+ "external_parse": {
+  "events": 226,
+  "markets": 1614,
+  "skipped_family": 261,
+  "skipped_period": 466,
+  "skipped_live": 52,
+  "one_sided": 70,
+  "rows": 2338,
+  "devigged": 815
+ },
+ "smarkets_fetch": {
+  "events": 0,
+  "error": "no events returned"
+ },
+ "smarkets_parse": {},
+ "kalshi_quotes_on_disk": 936,
+ "external_mapping": {
+  "total": 216,
+  "by_status": {
+   "MAPPED": 148,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 49
+  },
+  "mapped_rate": 0.6852,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Robin Eldin": 1,
+   "Nazim Makhlouf": 1,
+   "Nacho Cepeda Martinez": 1,
+   "Matias Reyniak": 1,
+   "Vedant Gundu": 1,
+   "Rohan Sachdev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "kalshi_mapping": {
+  "total": 175,
+  "by_status": {
+   "MAPPED": 153,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8743,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Sasikumar Mukund": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Nicholas Matos": 1,
+   "Robin Eldin": 1,
+   "Eric Von Marton Martins": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Vedant Gundu": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 112,
+ "external_mapped_matches": 148,
+ "kalshi_mapped_matches": 153,
+ "model_witness_available": true,
+ "rows": 138,
+ "counts": {
+  "PASS": 136,
+  "tri:INSUFFICIENT_INPUTS": 120,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
