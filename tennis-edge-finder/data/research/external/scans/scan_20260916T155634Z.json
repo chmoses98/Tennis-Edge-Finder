@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-16T15:56:34.647238+00:00",
+ "run_id": "20260916T155634Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 814,
+  "skipped_family": 172,
+  "skipped_period": 231,
+  "skipped_live": 32,
+  "one_sided": 27,
+  "rows": 1172,
+  "devigged": 384
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1023,
+  "markets_mapped": 329,
+  "contracts": 706,
+  "quoted_contracts": 706,
+  "raw": "data/research/external/raw/20260916T155634Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 329,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 103,
+  "rows": 603,
+  "two_sided": 594,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 242,
+ "external_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.5963,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Taym Alazmeh": 1,
+   "Diego Dedura": 1,
+   "Guiomar Maristany": 1,
+   "Chad Miller": 1,
+   "Douglas Yaffa": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Eric Von Marton Martins": 1,
+   "Gabriel Tumasonis": 1,
+   "Vitor Machado de Melo Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8939,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Eric Von Marton Martins": 1,
+   "Lara Spinato Freire De Jesus": 1,
+   "Julia Castellanos Alem": 1,
+   "Beatriz Dias": 1,
+   "Amahee Charrier": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
