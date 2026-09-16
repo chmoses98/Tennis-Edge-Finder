@@ -1,0 +1,29 @@
+{
+ "run_id": "20260916T102301Z",
+ "started_at": "2026-09-16T10:23:01.292172+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 192,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP16TREBUR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 192,
+  "UNMATCHED": 1592
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-16T10:32:48.836294+00:00"
+}
