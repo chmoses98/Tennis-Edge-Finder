@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-17T06:03:44.384862+00:00",
+ "run_id": "20260917T060344Z",
+ "external_parse": {
+  "events": 177,
+  "markets": 1525,
+  "skipped_family": 233,
+  "skipped_period": 382,
+  "skipped_live": 10,
+  "one_sided": 76,
+  "rows": 2115,
+  "devigged": 833
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 950,
+  "markets_mapped": 362,
+  "contracts": 782,
+  "quoted_contracts": 782,
+  "raw": "data/research/external/raw/20260917T060344Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 362,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 750,
+  "two_sided": 747,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 930,
+ "external_mapping": {
+  "total": 167,
+  "by_status": {
+   "MAPPED": 127,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7605,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Denis Klok": 1,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "William Vinciguerra": 1,
+   "Robin Eldin": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 44
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 167,
+  "by_status": {
+   "MAPPED": 154,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.9222,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Robin Eldin": 1,
+   "Nikita Belozertsev": 1,
+   "Daniel Salazar": 1,
+   "Denis Klok": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 129,
+ "external_mapped_matches": 145,
+ "kalshi_mapped_matches": 154,
+ "model_witness_available": true,
+ "rows": 240,
+ "counts": {
+  "PASS": 238,
+  "tri:INSUFFICIENT_INPUTS": 191,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
