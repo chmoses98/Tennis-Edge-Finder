@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-17T21:01:29.132963+00:00",
+ "run_id": "20260917T210129Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 639,
+  "skipped_family": 131,
+  "skipped_period": 183,
+  "skipped_live": 11,
+  "one_sided": 14,
+  "rows": 908,
+  "devigged": 310
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 528,
+  "markets_mapped": 237,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20260917T210129Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 237,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 458,
+  "two_sided": 449,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 167,
+ "external_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.6944,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "South Korea": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Vitor Machado de Melo Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1,
+   "Finland": 1,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Czechia": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9556,
+  "top_refusal_subjects": {
+   "Anastasiia Sobolieva": 1,
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 22,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 14
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
