@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-09-17T02:17:26.495211+00:00",
+ "run_id": "20260917T021726Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1610,
+  "skipped_family": 236,
+  "skipped_period": 422,
+  "skipped_live": 14,
+  "one_sided": 79,
+  "rows": 2187,
+  "devigged": 872
+ },
+ "smarkets_fetch": {
+  "events_seen": 76,
+  "events_priced": 76,
+  "markets": 821,
+  "markets_mapped": 327,
+  "contracts": 694,
+  "quoted_contracts": 694,
+  "raw": "data/research/external/raw/20260917T021726Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 327,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 618,
+  "two_sided": 614,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 342,
+ "external_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.7727,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Luca Ostovany": 1,
+   "Pavel Bushuev": 1,
+   "Parkinson lubold Montana": 1,
+   "Olive Maunupau": 1,
+   "Tiffany Papazian": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7237,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9545,
+  "top_refusal_subjects": {
+   "Anastasiia Sobolieva": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Matias Reyniak": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 163,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 79,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
