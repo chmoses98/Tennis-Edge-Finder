@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-09-17T03:03:13.072604+00:00",
+ "run_id": "20260917T030313Z",
+ "external_parse": {
+  "events": 189,
+  "markets": 1553,
+  "skipped_family": 232,
+  "skipped_period": 395,
+  "skipped_live": 20,
+  "one_sided": 86,
+  "rows": 2097,
+  "devigged": 840
+ },
+ "smarkets_fetch": {
+  "events_seen": 76,
+  "events_priced": 76,
+  "markets": 807,
+  "markets_mapped": 320,
+  "contracts": 680,
+  "quoted_contracts": 680,
+  "raw": "data/research/external/raw/20260917T030313Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 320,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 626,
+  "two_sided": 620,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 271,
+ "external_mapping": {
+  "total": 180,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.7611,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "James Girdler": 1,
+   "Luca Ostovany": 1,
+   "Pavel Bushuev": 1,
+   "Nathan Boniel": 1,
+   "Tiffany Papazian": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6842,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.961,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 163,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 94,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
