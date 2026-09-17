@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260916T020352Z",
-   "age_hours": 19.5,
+   "age_hours": 27.1,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -35,22 +35,19 @@
  {
   "gate": "TENNIS-4",
   "name": "active_market_projection",
-  "status": "FAIL",
+  "status": "PASS",
   "detail": {
-   "projectable_open_pregame": 6,
-   "projected": 4,
-   "not_projected": 2,
-   "missing_sample": [
-    "KXITFWDOUBLES-26SEP16FIOESTMELNAH-MELNAH: doubles: player 'Fiorella Britez Risso' unmapped/ambiguous i",
-    "KXITFWDOUBLES-26SEP16FIOESTMELNAH-FIOEST: doubles: player 'Fiorella Britez Risso' unmapped/ambiguous i"
-   ],
+   "projectable_open_pregame": 0,
+   "projected": 0,
+   "not_projected": 0,
+   "missing_sample": [],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 101,
-    "closed_since_discovery": 698,
+    "closed_since_discovery": 780,
+    "past_nominal_start": 25,
     "tournament_scope_not_priced_tonight": 191
    },
-   "projection_run": "20260916T213606Z"
+   "projection_run": "20260917T051048Z"
   }
  },
  {
@@ -58,8 +55,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260916T211738Z",
-   "age_min": 17.0,
+   "run": "20260917T045454Z",
+   "age_min": 13.8,
    "incomplete": [
     {
      "stage": "trades",
@@ -101,7 +98,7 @@
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
    "n": 3957,
-   "start_unknown_used_schedule": 3041
+   "start_unknown_used_schedule": 3015
   }
  },
  {
@@ -111,7 +108,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 4
+   "MATCHED": 0
   }
  },
  {
@@ -122,33 +119,33 @@
    "reason": "no settled predictions yet",
    "first_ball": {
     "truths": 315,
-    "strict_truths": 211,
+    "strict_truths": 215,
     "no_play": 4,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 104,
-     "B": 207,
+     "C": 100,
+     "B": 211,
      "A": 4
     },
-    "bracket_seconds_median": 194.996802,
-    "bracket_seconds_p90": 218.979411,
+    "bracket_seconds_median": 194.424543,
+    "bracket_seconds_p90": 217.458203,
     "chain_violations": [],
-    "observations": 144467,
+    "observations": 145135,
     "matches_observed": 315,
     "watchlist": {
-     "total": 111,
-     "levels_with_a_wired_source": 21,
-     "levels_without_any_source": 90,
-     "watched_and_observed": 19,
-     "covered_and_observed": 19,
-     "pct_covered_with_source_mapping": 0.9048
+     "total": 1,
+     "levels_with_a_wired_source": 1,
+     "levels_without_any_source": 0,
+     "watched_and_observed": 1,
+     "covered_and_observed": 1,
+     "pct_covered_with_source_mapping": 1.0
     },
-    "pct_classifiable": 0.237,
-    "pct_strict_pregame": 0.2178,
+    "pct_classifiable": 0.2436,
+    "pct_strict_pregame": 0.2244,
     "timing_classes": {
-     "START_UNKNOWN": 3019,
-     "STRICT_PREGAME": 862,
+     "START_UNKNOWN": 2993,
+     "STRICT_PREGAME": 888,
      "POST_START": 72,
      "AMBIGUOUS": 4
     }
@@ -173,12 +170,12 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 840,
-   "executable_close_rows": 916,
-   "matches_with_strict_truth": 211,
+   "strict_clv_rows": 866,
+   "executable_close_rows": 942,
+   "matches_with_strict_truth": 215,
    "observations_classified": 3957,
-   "pct_strict_pregame": 0.2178,
-   "horizons_populated": 6219,
+   "pct_strict_pregame": 0.2244,
+   "horizons_populated": 6416,
    "horizons_total": 31656
   }
  },
@@ -205,7 +202,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-16T21:31:15.058515+00:00",
+   "built_at": "2026-09-17T05:05:44.370743+00:00",
    "rows": 1630441
   }
  },
@@ -215,7 +212,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260916T101702Z",
-   "snapshot_age_days": 0.47,
+   "snapshot_age_days": 0.79,
    "max_season_files": [
     2026,
     2026
@@ -225,8 +222,8 @@
     "WTA": "2026-09-16"
    },
    "ratings_stale_days": {
-    "ATP": 3,
-    "WTA": 0
+    "ATP": 4,
+    "WTA": 1
    }
   }
  }
