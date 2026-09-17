@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-17T07:44:12.085264+00:00",
+ "run_id": "20260917T074412Z",
+ "external_parse": {
+  "events": 173,
+  "markets": 1476,
+  "skipped_family": 244,
+  "skipped_period": 377,
+  "skipped_live": 18,
+  "one_sided": 57,
+  "rows": 2098,
+  "devigged": 798
+ },
+ "smarkets_fetch": {
+  "events_seen": 91,
+  "events_priced": 80,
+  "markets": 937,
+  "markets_mapped": 353,
+  "contracts": 764,
+  "quoted_contracts": 764,
+  "raw": "data/research/external/raw/20260917T074412Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 353,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 742,
+  "two_sided": 738,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 81,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 32
+  },
+  "mapped_rate": 0.7423,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Denis Klok": 1,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "William Vinciguerra": 1,
+   "Robin Eldin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 34
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 12,
+  "by_status": {
+   "MAPPED": 10,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "matched_both_venues": 9,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 10,
+ "model_witness_available": true,
+ "rows": 16,
+ "counts": {
+  "PASS": 16,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:MODEL_LONE_OUTLIER": 6,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "kalshi_not_two_sided": 2
+ }
+}
