@@ -1,0 +1,29 @@
+{
+ "run_id": "20260917T141620Z",
+ "started_at": "2026-09-17T14:16:20.851946+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 306,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP17JORJIM": {
+   "confidence": "B",
+   "bracket_s": 216.357806,
+   "first_ball": "2026-09-17T14:21:03.985476+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "mapping": {
+  "MATCHED": 306,
+  "UNMATCHED": 623
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-17T14:26:33.950126+00:00"
+}
