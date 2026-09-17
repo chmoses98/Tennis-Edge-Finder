@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-17T21:42:16.825029+00:00",
+ "run_id": "20260917T214216Z",
+ "external_parse": {
+  "events": 78,
+  "markets": 639,
+  "skipped_family": 131,
+  "skipped_period": 183,
+  "skipped_live": 9,
+  "one_sided": 14,
+  "rows": 907,
+  "devigged": 311
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 513,
+  "markets_mapped": 233,
+  "contracts": 490,
+  "quoted_contracts": 490,
+  "raw": "data/research/external/raw/20260917T214216Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 233,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 454,
+  "two_sided": 447,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 704,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.6857,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "South Korea": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Vitor Machado de Melo Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6456,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1,
+   "Finland": 1,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Malaika Rapolu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9537,
+  "top_refusal_subjects": {
+   "Anastasiia Sobolieva": 1,
+   "Nazim Makhlouf": 1,
+   "Nikita Belozertsev": 1,
+   "Denis Klok": 1,
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 63,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MODEL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
