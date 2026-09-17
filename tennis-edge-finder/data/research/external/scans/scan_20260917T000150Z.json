@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-17T00:01:50.979675+00:00",
+ "run_id": "20260917T000150Z",
+ "external_parse": {
+  "events": 143,
+  "markets": 1198,
+  "skipped_family": 157,
+  "skipped_period": 307,
+  "skipped_live": 7,
+  "one_sided": 72,
+  "rows": 1647,
+  "devigged": 661
+ },
+ "smarkets_fetch": {
+  "events_seen": 72,
+  "events_priced": 72,
+  "markets": 719,
+  "markets_mapped": 264,
+  "contracts": 556,
+  "quoted_contracts": 556,
+  "raw": "data/research/external/raw/20260917T000150Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 55,
+  "rows": 501,
+  "two_sided": 496,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 362,
+ "external_mapping": {
+  "total": 135,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Taym Alazmeh": 1,
+   "Emily Johnson": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1,
+   "Caijsa Hennemann": 1,
+   "Amahee Charrier": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 72,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7361,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9495,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Robin Eldin": 1,
+   "Nazim Makhlouf": 1,
+   "Matias Reyniak": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 138,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 100,
+  "tri:MODEL_LONE_OUTLIER": 64,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 5,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
