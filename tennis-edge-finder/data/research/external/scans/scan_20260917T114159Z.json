@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-17T11:41:59.242431+00:00",
+ "run_id": "20260917T114159Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 955,
+  "skipped_family": 217,
+  "skipped_period": 278,
+  "skipped_live": 34,
+  "one_sided": 33,
+  "rows": 1392,
+  "devigged": 427
+ },
+ "smarkets_fetch": {
+  "events_seen": 87,
+  "events_priced": 80,
+  "markets": 1177,
+  "markets_mapped": 358,
+  "contracts": 780,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20260917T114159Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 358,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 749,
+  "two_sided": 746,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 308,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6818,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Nazim Makhlouf": 1,
+   "William Vinciguerra": 1,
+   "Robin Eldin": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9302,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Nikita Belozertsev": 1,
+   "Daniel Salazar": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
