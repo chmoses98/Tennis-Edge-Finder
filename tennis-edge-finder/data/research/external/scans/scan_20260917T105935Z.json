@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-09-17T10:59:35.382351+00:00",
+ "run_id": "20260917T105935Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1080,
+  "skipped_family": 230,
+  "skipped_period": 316,
+  "skipped_live": 34,
+  "one_sided": 42,
+  "rows": 1562,
+  "devigged": 492
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 1222,
+  "markets_mapped": 366,
+  "contracts": 796,
+  "quoted_contracts": 796,
+  "raw": "data/research/external/raw/20260917T105935Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 366,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 770,
+  "two_sided": 764,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 261,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.7154,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Nazim Makhlouf": 1,
+   "William Vinciguerra": 1,
+   "Robin Eldin": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9773,
+  "top_refusal_subjects": {
+   "Lorenzo Sverzut Corsini": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 5,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
