@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-17T21:21:27.694586+00:00",
+ "run_id": "20260917T212127Z",
+ "external_parse": {
+  "events": 78,
+  "markets": 639,
+  "skipped_family": 131,
+  "skipped_period": 183,
+  "skipped_live": 9,
+  "one_sided": 14,
+  "rows": 907,
+  "devigged": 311
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 525,
+  "markets_mapped": 237,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20260917T212127Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 237,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 454,
+  "two_sided": 443,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 198,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.6857,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "South Korea": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Vitor Machado de Melo Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 16,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1,
+   "Finland": 1,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Czechia": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9808,
+  "top_refusal_subjects": {
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 76,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MODEL_LONE_OUTLIER": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
