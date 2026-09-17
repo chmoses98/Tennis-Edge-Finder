@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-17T10:05:14.829677+00:00",
+ "run_id": "20260917T100514Z",
+ "external_parse": {
+  "events": 152,
+  "markets": 1220,
+  "skipped_family": 258,
+  "skipped_period": 343,
+  "skipped_live": 39,
+  "one_sided": 42,
+  "rows": 1727,
+  "devigged": 577
+ },
+ "smarkets_fetch": {
+  "events_seen": 90,
+  "events_priced": 80,
+  "markets": 1199,
+  "markets_mapped": 359,
+  "contracts": 782,
+  "quoted_contracts": 782,
+  "raw": "data/research/external/raw/20260917T100514Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 359,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 755,
+  "two_sided": 752,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 339,
+ "external_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7254,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "William Vinciguerra": 1,
+   "Robin Eldin": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Amahee Charrier": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.913,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Robin Eldin": 1,
+   "Nikita Belozertsev": 1,
+   "Daniel Salazar": 1,
+   "Nazim Makhlouf": 1,
+   "Amahee Charrier": 1
+  }
+ },
+ "matched_both_venues": 84,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 105,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 100,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
