@@ -1,0 +1,87 @@
+{
+ "generated_at": "2026-09-17T08:24:14.693571+00:00",
+ "run_id": "20260917T082414Z",
+ "external_parse": {
+  "events": 167,
+  "markets": 1350,
+  "skipped_family": 241,
+  "skipped_period": 356,
+  "skipped_live": 30,
+  "one_sided": 39,
+  "rows": 1938,
+  "devigged": 714
+ },
+ "smarkets_fetch": {
+  "events_seen": 91,
+  "events_priced": 80,
+  "markets": 951,
+  "markets_mapped": 361,
+  "contracts": 784,
+  "quoted_contracts": 784,
+  "raw": "data/research/external/raw/20260917T082414Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 361,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 759,
+  "two_sided": 754,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 10,
+ "external_mapping": {
+  "total": 157,
+  "by_status": {
+   "MAPPED": 116,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.7389,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Denis Klok": 1,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "William Vinciguerra": 1,
+   "Robin Eldin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 2,
+  "by_status": {
+   "MAPPED": 2
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 2,
+ "external_mapped_matches": 135,
+ "kalshi_mapped_matches": 2,
+ "model_witness_available": true,
+ "rows": 4,
+ "counts": {
+  "PASS": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {}
+}
