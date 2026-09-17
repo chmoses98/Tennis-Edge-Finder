@@ -1,0 +1,29 @@
+{
+ "run_id": "20260917T133233Z",
+ "started_at": "2026-09-17T13:32:33.785851+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 287,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP17SCHBUR": {
+   "confidence": "B",
+   "bracket_s": 213.891609,
+   "first_ball": "2026-09-17T13:40:12.256632+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "mapping": {
+  "UNMATCHED": 651,
+  "MATCHED": 287
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-17T13:42:27.400654+00:00"
+}
