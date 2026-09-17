@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-17T03:47:10.922583+00:00",
+ "run_id": "20260917T034710Z",
+ "external_parse": {
+  "events": 182,
+  "markets": 1525,
+  "skipped_family": 225,
+  "skipped_period": 390,
+  "skipped_live": 15,
+  "one_sided": 90,
+  "rows": 2041,
+  "devigged": 820
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 832,
+  "markets_mapped": 328,
+  "contracts": 698,
+  "quoted_contracts": 698,
+  "raw": "data/research/external/raw/20260917T034710Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 328,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 648,
+  "two_sided": 645,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 922,
+ "external_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 132,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.763,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Taym Alazmeh": 1,
+   "Noma Akugue Noha": 1,
+   "Nastasja Mariana Schunk": 1,
+   "James Girdler": 1,
+   "Pavel Bushuev": 1,
+   "Nathan Boniel": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1,
+   "Matias Reyniak": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Anouk Koevermans": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 162,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.9205,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Robin Eldin": 1,
+   "Nikita Belozertsev": 1,
+   "Daniel Salazar": 1,
+   "Denis Klok": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 128,
+ "external_mapped_matches": 158,
+ "kalshi_mapped_matches": 162,
+ "model_witness_available": true,
+ "rows": 232,
+ "counts": {
+  "PASS": 231,
+  "tri:INSUFFICIENT_INPUTS": 167,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
