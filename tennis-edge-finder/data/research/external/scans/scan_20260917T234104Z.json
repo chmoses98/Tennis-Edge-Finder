@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-17T23:41:04.048937+00:00",
+ "run_id": "20260917T234104Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 967,
+  "skipped_family": 168,
+  "skipped_period": 273,
+  "skipped_live": 8,
+  "one_sided": 6,
+  "rows": 1410,
+  "devigged": 519
+ },
+ "smarkets_fetch": {
+  "events_seen": 80,
+  "events_priced": 80,
+  "markets": 532,
+  "markets_mapped": 236,
+  "contracts": 498,
+  "quoted_contracts": 498,
+  "raw": "data/research/external/raw/20260917T234104Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 236,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 471,
+  "two_sided": 468,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 219,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.78,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "South Korea": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Roger Rogowski": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1,
+   "Finland": 1,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Malaika Rapolu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9344,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Nazim Makhlouf": 1,
+   "Denis Klok": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 67,
+  "tri:INSUFFICIENT_INPUTS": 55,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
