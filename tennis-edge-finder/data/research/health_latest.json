@@ -4,8 +4,8 @@
   "name": "kalshi_tennis_discovery",
   "status": "PASS",
   "detail": {
-   "run": "20260916T020352Z",
-   "age_hours": 27.1,
+   "run": "20260917T071854Z",
+   "age_hours": 4.7,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -17,7 +17,7 @@
   "status": "PASS",
   "detail": {
    "unknown_series": [],
-   "live_markets": 61215,
+   "live_markets": 61914,
    "unparsed": 1,
    "parse_rate": 0.99998
   }
@@ -27,7 +27,7 @@
   "name": "active_market_mapping",
   "status": "PASS",
   "detail": {
-   "active": 1127,
+   "active": 924,
    "unparsed": [],
    "unsupported": 131
   }
@@ -35,19 +35,30 @@
  {
   "gate": "TENNIS-4",
   "name": "active_market_projection",
-  "status": "PASS",
+  "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 0,
-   "projected": 0,
-   "not_projected": 0,
-   "missing_sample": [],
+   "projectable_open_pregame": 475,
+   "projected": 347,
+   "not_projected": 128,
+   "missing_sample": [
+    "KXWTADOUBLES-26SEP17MARORTROGZAM-ROGZAM: doubles: player 'Ingrid Martins' unmapped/ambiguous in ['WTA",
+    "KXWTADOUBLES-26SEP17MARORTROGZAM-MARORT: doubles: player 'Ingrid Martins' unmapped/ambiguous in ['WTA",
+    "KXITFWMATCH-26SEP17MIXCHA-MIX: Amahee Charrier: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP17MIXCHA-CHA: Amahee Charrier: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP17CUNSAK-SAK: Vitor Machado De Melo Cunha: UNMAPPED (no exact full-name ma",
+    "KXITFMATCH-26SEP17CUNSAK-CUN: Vitor Machado De Melo Cunha: UNMAPPED (no exact full-name ma",
+    "KXITFMATCH-26SEP17PINSVE-SVE: Lorenzo Sverzut Corsini: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP17PINSVE-PIN: Lorenzo Sverzut Corsini: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP17BANELD-ELD: Robin Eldin: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP17BANELD-BAN: Robin Eldin: UNMAPPED (no exact full-name match)"
+   ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "closed_since_discovery": 780,
-    "past_nominal_start": 25,
-    "tournament_scope_not_priced_tonight": 191
+    "past_nominal_start": 38,
+    "closed_since_discovery": 74,
+    "tournament_scope_not_priced_tonight": 206
    },
-   "projection_run": "20260917T051048Z"
+   "projection_run": "20260917T120004Z"
   }
  },
  {
@@ -55,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260917T045454Z",
-   "age_min": 13.8,
+   "run": "20260917T113855Z",
+   "age_min": 19.7,
    "incomplete": [
     {
      "stage": "trades",
@@ -97,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 3957,
-   "start_unknown_used_schedule": 3015
+   "n": 4304,
+   "start_unknown_used_schedule": 3362
   }
  },
  {
@@ -108,7 +119,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 0
+   "MATCHED": 347
   }
  },
  {
@@ -134,17 +145,17 @@
     "observations": 145135,
     "matches_observed": 315,
     "watchlist": {
-     "total": 1,
-     "levels_with_a_wired_source": 1,
-     "levels_without_any_source": 0,
-     "watched_and_observed": 1,
-     "covered_and_observed": 1,
-     "pct_covered_with_source_mapping": 1.0
+     "total": 266,
+     "levels_with_a_wired_source": 46,
+     "levels_without_any_source": 220,
+     "watched_and_observed": 0,
+     "covered_and_observed": 0,
+     "pct_covered_with_source_mapping": 0.0
     },
-    "pct_classifiable": 0.2436,
-    "pct_strict_pregame": 0.2244,
+    "pct_classifiable": 0.224,
+    "pct_strict_pregame": 0.2063,
     "timing_classes": {
-     "START_UNKNOWN": 2993,
+     "START_UNKNOWN": 3340,
      "STRICT_PREGAME": 888,
      "POST_START": 72,
      "AMBIGUOUS": 4
@@ -173,10 +184,10 @@
    "strict_clv_rows": 866,
    "executable_close_rows": 942,
    "matches_with_strict_truth": 215,
-   "observations_classified": 3957,
-   "pct_strict_pregame": 0.2244,
+   "observations_classified": 4304,
+   "pct_strict_pregame": 0.2063,
    "horizons_populated": 6416,
-   "horizons_total": 31656
+   "horizons_total": 34432
   }
  },
  {
@@ -202,8 +213,8 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-17T05:05:44.370743+00:00",
-   "rows": 1630441
+   "built_at": "2026-09-17T11:57:14.813997+00:00",
+   "rows": 1630469
   }
  },
  {
@@ -211,19 +222,19 @@
   "name": "data_source_freshness",
   "status": "PASS",
   "detail": {
-   "run": "20260916T101702Z",
-   "snapshot_age_days": 0.79,
+   "run": "20260917T102447Z",
+   "snapshot_age_days": 0.06,
    "max_season_files": [
     2026,
     2026
    ],
    "ratings_as_of": {
     "ATP": "2026-09-13",
-    "WTA": "2026-09-16"
+    "WTA": "2026-09-17"
    },
    "ratings_stale_days": {
     "ATP": 4,
-    "WTA": 1
+    "WTA": 0
    }
   }
  }
