@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-18T01:01:44.472763+00:00",
+ "run_id": "20260918T010144Z",
+ "external_parse": {
+  "events": 122,
+  "markets": 1124,
+  "skipped_family": 171,
+  "skipped_period": 326,
+  "skipped_live": 7,
+  "one_sided": 14,
+  "rows": 1692,
+  "devigged": 613
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 494,
+  "markets_mapped": 234,
+  "contracts": 492,
+  "quoted_contracts": 492,
+  "raw": "data/research/external/raw/20260918T010144Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 234,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 29,
+  "rows": 463,
+  "two_sided": 460,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 193,
+ "external_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "South Korea": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Diego Dedura": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6582,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Malaika Rapolu": 1,
+   "Czechia": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 44,
+  "by_status": {
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9545,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 60,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 31
+ },
+ "skips": {}
+}
