@@ -1,0 +1,35 @@
+{
+ "run_id": "20260918T105900Z",
+ "started_at": "2026-09-18T10:59:00.783291+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 153,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP18POHCOL": {
+   "confidence": "B",
+   "bracket_s": 193.314687,
+   "first_ball": "2026-09-18T11:07:15.623273+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP18BURMAR": {
+   "confidence": "B",
+   "bracket_s": 193.314687,
+   "first_ball": "2026-09-18T11:07:15.623273+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 153,
+  "UNMATCHED": 630
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-18T11:09:02.573657+00:00"
+}
