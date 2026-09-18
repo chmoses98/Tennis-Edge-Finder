@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-18T18:43:55.061401+00:00",
+ "run_id": "20260918T184355Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 623,
+  "skipped_family": 183,
+  "skipped_period": 160,
+  "skipped_live": 15,
+  "one_sided": 7,
+  "rows": 1021,
+  "devigged": 273
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 639,
+  "markets_mapped": 230,
+  "contracts": 442,
+  "quoted_contracts": 482,
+  "raw": "data/research/external/raw/20260918T184355Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 230,
+  "skipped_family": 0,
+  "no_contracts": 20,
+  "no_book": 22,
+  "rows": 420,
+  "two_sided": 417,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 184,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.7313,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yexin Ma": 1,
+   "Canada": 1,
+   "Peru": 1,
+   "New Zealand": 1,
+   "Australia": 1,
+   "Chinese Taipei": 1,
+   "Cyprus": 1,
+   "Germany": 1,
+   "Serbia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 53
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Republic of Korea": 1,
+   "Denmark": 1,
+   "Canada": 1,
+   "Peru": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1,
+   "New Zealand": 1,
+   "Australia": 1,
+   "Chinese Taipei": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 31,
+  "by_status": {
+   "MAPPED": 28,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9032,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Jeffrey John Wolf": 1,
+   "Lorenzo Sverzut Corsini": 1
+  }
+ },
+ "matched_both_venues": 18,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 28,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "PASS": 16,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 1,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
