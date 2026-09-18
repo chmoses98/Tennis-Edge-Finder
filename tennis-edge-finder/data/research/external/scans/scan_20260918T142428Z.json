@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-18T14:24:28.748802+00:00",
+ "run_id": "20260918T142428Z",
+ "external_parse": {
+  "events": 88,
+  "markets": 784,
+  "skipped_family": 226,
+  "skipped_period": 207,
+  "skipped_live": 21,
+  "one_sided": 20,
+  "rows": 1211,
+  "devigged": 328
+ },
+ "smarkets_fetch": {
+  "events_seen": 101,
+  "events_priced": 80,
+  "markets": 818,
+  "markets_mapped": 273,
+  "contracts": 582,
+  "quoted_contracts": 582,
+  "raw": "data/research/external/raw/20260918T142428Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 273,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 48,
+  "rows": 534,
+  "two_sided": 534,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 200,
+ "external_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.7949,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Yexin Ma": 1,
+   "Dominican Republic": 1,
+   "Norway": 1,
+   "Dominic Stephan Stricker": 1,
+   "Irene Burillo": 1,
+   "Mariana Manyoma": 1,
+   "Maia Loureiro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 15,
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Republic of Korea": 1,
+   "Denmark": 1,
+   "Finland": 1,
+   "Norway": 1,
+   "Brazil": 1,
+   "Canada": 1,
+   "Peru": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9444,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 43,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
