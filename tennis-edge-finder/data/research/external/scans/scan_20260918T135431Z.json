@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-18T13:54:31.547174+00:00",
+ "run_id": "20260918T135431Z",
+ "external_parse": {
+  "events": 93,
+  "markets": 834,
+  "skipped_family": 236,
+  "skipped_period": 223,
+  "skipped_live": 22,
+  "one_sided": 20,
+  "rows": 1282,
+  "devigged": 353
+ },
+ "smarkets_fetch": {
+  "events_seen": 100,
+  "events_priced": 80,
+  "markets": 823,
+  "markets_mapped": 276,
+  "contracts": 586,
+  "quoted_contracts": 586,
+  "raw": "data/research/external/raw/20260918T135431Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 276,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 552,
+  "two_sided": 550,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 261,
+ "external_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7952,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Yexin Ma": 1,
+   "Denmark": 1,
+   "Dominican Republic": 1,
+   "Norway": 1,
+   "Dominic Stephan Stricker": 1,
+   "Irene Burillo": 1,
+   "Mariana Manyoma": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 15,
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Republic of Korea": 1,
+   "Denmark": 1,
+   "Finland": 1,
+   "Norway": 1,
+   "Brazil": 1,
+   "Canada": 1,
+   "Peru": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9385,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 61,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 59,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "WATCH": 5,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
