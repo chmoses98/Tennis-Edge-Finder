@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-18T14:54:27.087173+00:00",
+ "run_id": "20260918T145427Z",
+ "external_parse": {
+  "events": 85,
+  "markets": 724,
+  "skipped_family": 217,
+  "skipped_period": 185,
+  "skipped_live": 23,
+  "one_sided": 19,
+  "rows": 1105,
+  "devigged": 300
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 774,
+  "markets_mapped": 258,
+  "contracts": 548,
+  "quoted_contracts": 548,
+  "raw": "data/research/external/raw/20260918T145427Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 258,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 511,
+  "two_sided": 505,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 187,
+ "external_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.7895,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Yexin Ma": 1,
+   "Dominican Republic": 1,
+   "Norway": 1,
+   "Dominic Stephan Stricker": 1,
+   "Irene Burillo": 1,
+   "Mariana Manyoma": 1,
+   "Maia Loureiro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 15,
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Republic of Korea": 1,
+   "Denmark": 1,
+   "Finland": 1,
+   "Norway": 1,
+   "Brazil": 1,
+   "Canada": 1,
+   "Peru": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9804,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 50,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 46,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
