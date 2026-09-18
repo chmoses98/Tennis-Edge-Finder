@@ -1,0 +1,29 @@
+{
+ "run_id": "20260918T155544Z",
+ "started_at": "2026-09-18T15:55:44.253492+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 139,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTADOUBLES-26SEP18DABSTEQUESAL": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 139,
+  "UNMATCHED": 208
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-18T16:05:13.191605+00:00"
+}
