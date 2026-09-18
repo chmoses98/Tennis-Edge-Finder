@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-18T06:58:28.395922+00:00",
+ "run_id": "20260918T065828Z",
+ "external_parse": {
+  "events": 137,
+  "markets": 1342,
+  "skipped_family": 243,
+  "skipped_period": 391,
+  "skipped_live": 10,
+  "one_sided": 24,
+  "rows": 2008,
+  "devigged": 683
+ },
+ "smarkets_fetch": {
+  "events_seen": 98,
+  "events_priced": 80,
+  "markets": 634,
+  "markets_mapped": 274,
+  "contracts": 590,
+  "quoted_contracts": 590,
+  "raw": "data/research/external/raw/20260918T065828Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 274,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 53,
+  "rows": 537,
+  "two_sided": 534,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 275,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7734,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Dominican Republic": 1,
+   "Dominic Stephan Stricker": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Malaika Rapolu": 1,
+   "Czechia": 1,
+   "Finland": 1,
+   "Norway": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9494,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Anastasiia Sobolieva": 1,
+   "Nazim Makhlouf": 1,
+   "Nikita Belozertsev": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 102,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
