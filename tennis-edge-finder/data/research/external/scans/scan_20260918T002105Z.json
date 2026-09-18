@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-18T00:21:05.330165+00:00",
+ "run_id": "20260918T002105Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 1056,
+  "skipped_family": 161,
+  "skipped_period": 311,
+  "skipped_live": 6,
+  "one_sided": 10,
+  "rows": 1567,
+  "devigged": 572
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 477,
+  "markets_mapped": 223,
+  "contracts": 470,
+  "quoted_contracts": 470,
+  "raw": "data/research/external/raw/20260918T002105Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 223,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 437,
+  "two_sided": 434,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 208,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 87,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8131,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "South Korea": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Diego Dedura": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6582,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Soonwoo Kwon": 1,
+   "Republic of Korea": 1,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Malaika Rapolu": 1,
+   "Czechia": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9787,
+  "top_refusal_subjects": {
+   "Anastasiia Sobolieva": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 55,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {}
+}
