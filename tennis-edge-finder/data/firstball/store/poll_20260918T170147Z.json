@@ -1,0 +1,29 @@
+{
+ "run_id": "20260918T170147Z",
+ "started_at": "2026-09-18T17:01:47.922985+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 111,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTADOUBLES-26SEP18BARLEMSTRTIK": {
+   "confidence": "B",
+   "bracket_s": 195.505197,
+   "first_ball": "2026-09-18T17:07:48.882814+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 111,
+  "UNMATCHED": 120
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-18T17:10:53.219392+00:00"
+}
