@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-18T07:08:32.642712+00:00",
+ "run_id": "20260918T070832Z",
+ "external_parse": {
+  "events": 137,
+  "markets": 1342,
+  "skipped_family": 243,
+  "skipped_period": 391,
+  "skipped_live": 10,
+  "one_sided": 24,
+  "rows": 2008,
+  "devigged": 683
+ },
+ "smarkets_fetch": {
+  "events_seen": 99,
+  "events_priced": 80,
+  "markets": 652,
+  "markets_mapped": 278,
+  "contracts": 602,
+  "quoted_contracts": 602,
+  "raw": "data/research/external/raw/20260918T070832Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 278,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 55,
+  "rows": 547,
+  "two_sided": 542,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 267,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7734,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Denmark": 1,
+   "Kazakhstan": 1,
+   "Norway": 1,
+   "Rafalentino Ali da Costa": 1,
+   "Austria": 1,
+   "Slovenia": 1,
+   "Netherlands": 1,
+   "Dominican Republic": 1,
+   "Dominic Stephan Stricker": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Anastasiia Sobolieva": 1,
+   "Denmark": 1,
+   "Alexander Binda": 1,
+   "Austria": 1,
+   "Netherlands": 1,
+   "Malaika Rapolu": 1,
+   "Czechia": 1,
+   "Finland": 1,
+   "Norway": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9114,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Gabriela Knutson": 1,
+   "Anastasiia Sobolieva": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Nazim Makhlouf": 1,
+   "Nikita Belozertsev": 1,
+   "Denis Klok": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 94,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
