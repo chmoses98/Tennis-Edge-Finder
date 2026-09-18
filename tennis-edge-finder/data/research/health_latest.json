@@ -4,8 +4,8 @@
   "name": "kalshi_tennis_discovery",
   "status": "PASS",
   "detail": {
-   "run": "20260917T071854Z",
-   "age_hours": 14.4,
+   "run": "20260918T005150Z",
+   "age_hours": 4.2,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -17,7 +17,7 @@
   "status": "PASS",
   "detail": {
    "unknown_series": [],
-   "live_markets": 61914,
+   "live_markets": 61008,
    "unparsed": 1,
    "parse_rate": 0.99998
   }
@@ -27,7 +27,7 @@
   "name": "active_market_mapping",
   "status": "PASS",
   "detail": {
-   "active": 924,
+   "active": 716,
    "unparsed": [],
    "unsupported": 131
   }
@@ -37,28 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 57,
-   "projected": 41,
-   "not_projected": 16,
+   "projectable_open_pregame": 323,
+   "projected": 263,
+   "not_projected": 60,
    "missing_sample": [
-    "KXWTADOUBLES-26SEP17MARORTROGZAM-ROGZAM: doubles: player 'Ingrid Martins' unmapped/ambiguous in ['WTA",
-    "KXWTADOUBLES-26SEP17MARORTROGZAM-MARORT: doubles: player 'Ingrid Martins' unmapped/ambiguous in ['WTA",
-    "KXITFMATCH-26SEP17CUNSAK-SAK: Vitor Machado De Melo Cunha: UNMAPPED (no exact full-name ma",
-    "KXITFMATCH-26SEP17CUNSAK-CUN: Vitor Machado De Melo Cunha: UNMAPPED (no exact full-name ma",
-    "KXITFMATCH-26SEP17PINSVE-SVE: Lorenzo Sverzut Corsini: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP17PINSVE-PIN: Lorenzo Sverzut Corsini: UNMAPPED (no exact full-name match)",
-    "KXITFDOUBLES-26SEP17ECHSEBBRAMOU-ECHSEB: doubles: player 'Echazu' unmapped/ambiguous in ['ATP']",
-    "KXITFDOUBLES-26SEP17ECHSEBBRAMOU-BRAMOU: doubles: player 'Echazu' unmapped/ambiguous in ['ATP']",
-    "KXITFDOUBLES-26SEP17BRATOSAUGEMA-BRATOS: doubles: player 'Braga' unmapped/ambiguous in ['ATP']",
-    "KXITFDOUBLES-26SEP17BRATOSAUGEMA-AUGEMA: doubles: player 'Braga' unmapped/ambiguous in ['ATP']"
+    "KXATPCHALLENGERMATCH-26SEP18TOMBIN-TOM: Alexander Binda: UNMAPPED (no exact full-name match)",
+    "KXATPCHALLENGERMATCH-26SEP18TOMBIN-BIN: Alexander Binda: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP18MAKRAH-RAH: Nazim Makhlouf: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP18MAKRAH-MAK: Nazim Makhlouf: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP18TOPBEL-TOP: Nikita Belozertsev: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP18TOPBEL-BEL: Nikita Belozertsev: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP18GIMKLO-KLO: Denis Klok: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP18GIMKLO-GIM: Denis Klok: UNMAPPED (no exact full-name match)",
+    "KXITFDOUBLES-26SEP18CHOMERFRYGLO-FRYGLO: doubles: player 'Chopra' unmapped/ambiguous in ['ATP']",
+    "KXITFDOUBLES-26SEP18CHOMERFRYGLO-CHOMER: doubles: player 'Chopra' unmapped/ambiguous in ['ATP']"
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 57,
-    "closed_since_discovery": 476,
-    "tournament_scope_not_priced_tonight": 203
+    "past_nominal_start": 34,
+    "closed_since_discovery": 4,
+    "tournament_scope_not_priced_tonight": 224
    },
-   "projection_run": "20260917T213957Z"
+   "projection_run": "20260918T050257Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260917T212831Z",
-   "age_min": 10.1,
+   "run": "20260918T044256Z",
+   "age_min": 19.0,
    "incomplete": [
     {
      "stage": "trades",
@@ -108,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 4502,
-   "start_unknown_used_schedule": 3436
+   "n": 4765,
+   "start_unknown_used_schedule": 3669
   }
  },
  {
@@ -119,7 +119,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 41
+   "MATCHED": 263
   }
  },
  {
@@ -130,33 +130,33 @@
    "reason": "no settled predictions yet",
    "first_ball": {
     "truths": 360,
-    "strict_truths": 245,
+    "strict_truths": 252,
     "no_play": 4,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 115,
-     "B": 241,
+     "C": 108,
+     "B": 248,
      "A": 4
     },
-    "bracket_seconds_median": 196.834988,
+    "bracket_seconds_median": 196.523424,
     "bracket_seconds_p90": 216.624027,
     "chain_violations": [],
-    "observations": 153592,
+    "observations": 155059,
     "matches_observed": 360,
     "watchlist": {
-     "total": 150,
-     "levels_with_a_wired_source": 40,
+     "total": 141,
+     "levels_with_a_wired_source": 31,
      "levels_without_any_source": 110,
-     "watched_and_observed": 39,
-     "covered_and_observed": 39,
-     "pct_covered_with_source_mapping": 0.975
+     "watched_and_observed": 2,
+     "covered_and_observed": 2,
+     "pct_covered_with_source_mapping": 0.0645
     },
-    "pct_classifiable": 0.2417,
-    "pct_strict_pregame": 0.2181,
+    "pct_classifiable": 0.2346,
+    "pct_strict_pregame": 0.2124,
     "timing_classes": {
-     "START_UNKNOWN": 3414,
-     "STRICT_PREGAME": 982,
+     "START_UNKNOWN": 3647,
+     "STRICT_PREGAME": 1012,
      "POST_START": 102,
      "AMBIGUOUS": 4
     }
@@ -181,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 960,
-   "executable_close_rows": 1066,
-   "matches_with_strict_truth": 245,
-   "observations_classified": 4502,
-   "pct_strict_pregame": 0.2181,
-   "horizons_populated": 7274,
-   "horizons_total": 36016
+   "strict_clv_rows": 990,
+   "executable_close_rows": 1096,
+   "matches_with_strict_truth": 252,
+   "observations_classified": 4765,
+   "pct_strict_pregame": 0.2124,
+   "horizons_populated": 7476,
+   "horizons_total": 38120
   }
  },
  {
@@ -213,7 +213,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-17T21:34:55.425773+00:00",
+   "built_at": "2026-09-18T04:59:06.349880+00:00",
    "rows": 1630469
   }
  },
@@ -223,7 +223,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260917T102447Z",
-   "snapshot_age_days": 0.47,
+   "snapshot_age_days": 0.77,
    "max_season_files": [
     2026,
     2026
@@ -233,8 +233,8 @@
     "WTA": "2026-09-17"
    },
    "ratings_stale_days": {
-    "ATP": 4,
-    "WTA": 0
+    "ATP": 5,
+    "WTA": 1
    }
   }
  }
