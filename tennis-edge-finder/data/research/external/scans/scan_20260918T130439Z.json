@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-09-18T13:04:39.506333+00:00",
+ "run_id": "20260918T130439Z",
+ "external_parse": {
+  "events": 97,
+  "markets": 869,
+  "skipped_family": 236,
+  "skipped_period": 232,
+  "skipped_live": 22,
+  "one_sided": 19,
+  "rows": 1364,
+  "devigged": 380
+ },
+ "smarkets_fetch": {
+  "events_seen": 99,
+  "events_priced": 80,
+  "markets": 878,
+  "markets_mapped": 291,
+  "contracts": 624,
+  "quoted_contracts": 618,
+  "raw": "data/research/external/raw/20260918T130439Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 291,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 598,
+  "two_sided": 597,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 220,
+ "external_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7931,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Yexin Ma": 1,
+   "Czechia": 1,
+   "Denmark": 1,
+   "Dominican Republic": 1,
+   "Norway": 1,
+   "Dominic Stephan Stricker": 1,
+   "Irene Burillo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 15,
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Republic of Korea": 1,
+   "Denmark": 1,
+   "Finland": 1,
+   "Norway": 1,
+   "Brazil": 1,
+   "Canada": 1,
+   "Peru": 1,
+   "Abdullah Shelbayh": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9516,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alexander Binda": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 84,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 57,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
