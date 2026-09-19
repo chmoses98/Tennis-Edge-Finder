@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-19T23:39:55.410096+00:00",
+ "run_id": "20260919T233955Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 1060,
+  "skipped_family": 203,
+  "skipped_period": 290,
+  "skipped_live": 9,
+  "one_sided": 32,
+  "rows": 1946,
+  "devigged": 535
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 518,
+  "markets_mapped": 212,
+  "contracts": 460,
+  "quoted_contracts": 460,
+  "raw": "data/research/external/raw/20260919T233955Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 212,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 74,
+  "rows": 386,
+  "two_sided": 383,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 234,
+ "external_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.6696,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Ovarelli, Arianna": 1,
+   "Dalle Molle, Silvia": 1,
+   "Pavel Bushuev": 1,
+   "Matei Gavrea": 1,
+   "Andre Filep": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Eunhye (2000) Lee": 1,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Nikita Mashtakov": 1,
+   "Duru Arslan": 1,
+   "Silvia Dalle Molle": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8861,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Jeffrey John Wolf": 1,
+   "Erik Johansson": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Manuel Frank": 1,
+   "Nicolas GRY": 1,
+   "Michael Wright": 1,
+   "Romeo Elfving": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
