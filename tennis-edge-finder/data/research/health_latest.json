@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260919T002341Z",
-   "age_hours": 11.0,
+   "age_hours": 15.7,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,9 +37,9 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 165,
-   "projected": 133,
-   "not_projected": 32,
+   "projectable_open_pregame": 69,
+   "projected": 53,
+   "not_projected": 16,
    "missing_sample": [
     "KXWTADOUBLES-26SEP19ROGZAMSTRTIK-STRTIK: doubles: player 'Anna Rogers' unmapped/ambiguous in ['WTA']",
     "KXWTADOUBLES-26SEP19ROGZAMSTRTIK-ROGZAM: doubles: player 'Anna Rogers' unmapped/ambiguous in ['WTA']",
@@ -54,11 +54,11 @@
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "closed_since_discovery": 139,
-    "past_nominal_start": 64,
+    "closed_since_discovery": 253,
+    "past_nominal_start": 46,
     "tournament_scope_not_priced_tonight": 240
    },
-   "projection_run": "20260919T112337Z"
+   "projection_run": "20260919T160512Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260919T105521Z",
-   "age_min": 27.2,
+   "run": "20260919T154101Z",
+   "age_min": 22.8,
    "incomplete": [
     {
      "stage": "trades",
@@ -108,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 5452,
-   "start_unknown_used_schedule": 4194
+   "n": 5505,
+   "start_unknown_used_schedule": 4239
   }
  },
  {
@@ -119,7 +119,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 133
+   "MATCHED": 53
   }
  },
  {
@@ -130,33 +130,33 @@
    "reason": "no settled predictions yet",
    "first_ball": {
     "truths": 422,
-    "strict_truths": 299,
+    "strict_truths": 301,
     "no_play": 5,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 123,
-     "B": 294,
+     "C": 121,
+     "B": 296,
      "A": 5
     },
-    "bracket_seconds_median": 196.31822,
+    "bracket_seconds_median": 196.523424,
     "bracket_seconds_p90": 213.891609,
     "chain_violations": [],
-    "observations": 169662,
+    "observations": 170978,
     "matches_observed": 422,
     "watchlist": {
-     "total": 140,
-     "levels_with_a_wired_source": 81,
-     "levels_without_any_source": 59,
-     "watched_and_observed": 40,
-     "covered_and_observed": 40,
-     "pct_covered_with_source_mapping": 0.4938
+     "total": 84,
+     "levels_with_a_wired_source": 35,
+     "levels_without_any_source": 49,
+     "watched_and_observed": 9,
+     "covered_and_observed": 9,
+     "pct_covered_with_source_mapping": 0.2571
     },
-    "pct_classifiable": 0.2359,
-    "pct_strict_pregame": 0.2142,
+    "pct_classifiable": 0.2351,
+    "pct_strict_pregame": 0.2136,
     "timing_classes": {
-     "START_UNKNOWN": 4166,
-     "STRICT_PREGAME": 1168,
+     "START_UNKNOWN": 4211,
+     "STRICT_PREGAME": 1176,
      "POST_START": 114,
      "AMBIGUOUS": 4
     }
@@ -181,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1140,
-   "executable_close_rows": 1258,
-   "matches_with_strict_truth": 299,
-   "observations_classified": 5452,
-   "pct_strict_pregame": 0.2142,
-   "horizons_populated": 8556,
-   "horizons_total": 43616
+   "strict_clv_rows": 1148,
+   "executable_close_rows": 1266,
+   "matches_with_strict_truth": 301,
+   "observations_classified": 5505,
+   "pct_strict_pregame": 0.2136,
+   "horizons_populated": 8616,
+   "horizons_total": 44040
   }
  },
  {
@@ -213,7 +213,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-19T11:18:29.957812+00:00",
+   "built_at": "2026-09-19T16:01:21.417483+00:00",
    "rows": 1630517
   }
  },
@@ -223,7 +223,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260919T094233Z",
-   "snapshot_age_days": 0.07,
+   "snapshot_age_days": 0.26,
    "max_season_files": [
     2026,
     2026
