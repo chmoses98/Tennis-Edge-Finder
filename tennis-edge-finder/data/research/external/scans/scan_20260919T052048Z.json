@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-19T05:20:48.921601+00:00",
+ "run_id": "20260919T052048Z",
+ "external_parse": {
+  "events": 149,
+  "markets": 1322,
+  "skipped_family": 243,
+  "skipped_period": 375,
+  "skipped_live": 8,
+  "one_sided": 12,
+  "rows": 2236,
+  "devigged": 692
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 787,
+  "markets_mapped": 228,
+  "contracts": 488,
+  "quoted_contracts": 488,
+  "raw": "data/research/external/raw/20260919T052048Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 228,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 48,
+  "rows": 440,
+  "two_sided": 440,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 265,
+ "external_mapping": {
+  "total": 141,
+  "by_status": {
+   "MAPPED": 109,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.773,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Yexin Ma": 1,
+   "Cyprus": 1,
+   "Slovakia": 1,
+   "Germany": 1,
+   "Great Britain": 1,
+   "Serbia": 1,
+   "South Africa": 1,
+   "Argentina": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 11,
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Republic of Korea": 1,
+   "Denmark": 1,
+   "Soonwoo Kwon": 1,
+   "Carol Zhao": 1,
+   "Mia Pohankova": 1,
+   "Serbia": 1,
+   "Germany": 1,
+   "Great Britain": 1,
+   "Argentina": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9733,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Soonwoo Kwon": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 113,
+  "tri:KALSHI_LONE_OUTLIER": 20,
+  "SHADOW_BET": 1,
+  "tri:INSUFFICIENT_INPUTS": 55,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 5,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
