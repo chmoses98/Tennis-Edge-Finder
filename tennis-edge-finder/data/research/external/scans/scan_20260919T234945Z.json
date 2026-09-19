@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-19T23:49:45.902790+00:00",
+ "run_id": "20260919T234945Z",
+ "external_parse": {
+  "events": 126,
+  "markets": 1105,
+  "skipped_family": 210,
+  "skipped_period": 295,
+  "skipped_live": 12,
+  "one_sided": 31,
+  "rows": 2068,
+  "devigged": 568
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 518,
+  "markets_mapped": 212,
+  "contracts": 460,
+  "quoted_contracts": 460,
+  "raw": "data/research/external/raw/20260919T234945Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 212,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 384,
+  "two_sided": 380,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 195,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.6695,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Ovarelli, Arianna": 1,
+   "Dalle Molle, Silvia": 1,
+   "Pavel Bushuev": 1,
+   "Matei Gavrea": 1,
+   "Andre Filep": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Eunhye (2000) Lee": 1,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Nikita Mashtakov": 1,
+   "Duru Arslan": 1,
+   "Silvia Dalle Molle": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8507,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1,
+   "Jeffrey John Wolf": 1,
+   "Erik Johansson": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Nicolas GRY": 1,
+   "Michael Wright": 1,
+   "Romeo Elfving": 1,
+   "Kelvin Walltin": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 63,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 7,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
