@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-19T22:07:46.050465+00:00",
+ "run_id": "20260919T220746Z",
+ "external_parse": {
+  "events": 107,
+  "markets": 914,
+  "skipped_family": 199,
+  "skipped_period": 240,
+  "skipped_live": 15,
+  "one_sided": 13,
+  "rows": 1702,
+  "devigged": 462
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 495,
+  "markets_mapped": 206,
+  "contracts": 440,
+  "quoted_contracts": 440,
+  "raw": "data/research/external/raw/20260919T220746Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 206,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 79,
+  "rows": 361,
+  "two_sided": 356,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 252,
+ "external_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.7071,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Aleksandar Tolev": 1,
+   "Ovarelli, Arianna": 1,
+   "Pavel Bushuev": 1,
+   "Matei Gavrea": 1,
+   "Dania Deaifi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jeffrey John Wolf": 1,
+   "Eunhye (2000) Lee": 1,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Nikita Mashtakov": 1,
+   "Duru Arslan": 1,
+   "Silvia Dalle Molle": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.6966,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Elia Ruffino": 1,
+   "Jeffrey John Wolf": 1,
+   "Arianna Ovarelli": 1,
+   "Tom-Felix Fusenig": 1,
+   "Alexandre Brecko": 1,
+   "William Kaltenecker": 1,
+   "Erik Johansson": 1,
+   "Linus Andersson": 1,
+   "Maximus Muller": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "PASS": 37,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 9
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
