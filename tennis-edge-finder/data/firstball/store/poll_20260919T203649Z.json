@@ -1,0 +1,29 @@
+{
+ "run_id": "20260919T203649Z",
+ "started_at": "2026-09-19T20:36:49.242842+00:00",
+ "passes": 10,
+ "requests": 20,
+ "observations": 4,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTADOUBLES-26SEP19BUCMELKOBPLI": {
+   "confidence": "B",
+   "bracket_s": 184.121845,
+   "first_ball": "2026-09-19T20:38:32.955688+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 20
+ },
+ "mapping": {
+  "MATCHED": 4,
+  "UNMATCHED": 120
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-19T20:46:25.633372+00:00"
+}
