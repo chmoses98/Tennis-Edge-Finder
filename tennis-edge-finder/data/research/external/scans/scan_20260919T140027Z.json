@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-09-19T14:00:27.699973+00:00",
+ "run_id": "20260919T140027Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 858,
+  "skipped_family": 184,
+  "skipped_period": 220,
+  "skipped_live": 19,
+  "one_sided": 45,
+  "rows": 1393,
+  "devigged": 407
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 558,
+  "markets_mapped": 199,
+  "contracts": 444,
+  "quoted_contracts": 444,
+  "raw": "data/research/external/raw/20260919T140027Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 199,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 62,
+  "rows": 382,
+  "two_sided": 376,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 181,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7664,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Yexin Ma": 1,
+   "Argentina": 1,
+   "Alex Hernandez": 1,
+   "Chile": 1,
+   "Amr Elsayed": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Dominic Stephan Stricker": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 58
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Denmark": 1,
+   "Argentina": 1,
+   "Daniel Merida": 1,
+   "Chile": 1,
+   "Jeffrey John Wolf": 1,
+   "Eunhye (2000) Lee": 1,
+   "Donna Vekic": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9455,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Jeffrey John Wolf": 1,
+   "Daniel Merida": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 46,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "WATCH": 4,
+  "tri:MARKETS_AGREE": 3,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
