@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-19T13:10:07.239317+00:00",
+ "run_id": "20260919T131007Z",
+ "external_parse": {
+  "events": 112,
+  "markets": 940,
+  "skipped_family": 213,
+  "skipped_period": 246,
+  "skipped_live": 16,
+  "one_sided": 30,
+  "rows": 1587,
+  "devigged": 451
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 445,
+  "markets_mapped": 157,
+  "contracts": 356,
+  "quoted_contracts": 356,
+  "raw": "data/research/external/raw/20260919T131007Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 157,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 317,
+  "two_sided": 317,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 190,
+ "external_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 77,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7476,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Argentina": 1,
+   "Alex Hernandez": 1,
+   "Chile": 1,
+   "Amr Elsayed": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Dominic Stephan Stricker": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 16,
+   "MAPPED": 58
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Denmark": 1,
+   "Argentina": 1,
+   "Daniel Merida": 1,
+   "Chile": 1,
+   "Jeffrey John Wolf": 1,
+   "Eunhye (2000) Lee": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9692,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Daniel Merida": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 50,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "tri:MARKETS_AGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "SHADOW_BET": 1,
+  "WATCH": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
