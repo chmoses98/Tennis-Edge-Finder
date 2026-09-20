@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-20T18:23:38.087797+00:00",
+ "run_id": "20260920T182338Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 885,
+  "skipped_family": 186,
+  "skipped_period": 271,
+  "skipped_live": 14,
+  "one_sided": 4,
+  "rows": 1558,
+  "devigged": 423
+ },
+ "smarkets_fetch": {
+  "events_seen": 192,
+  "events_priced": 80,
+  "markets": 1055,
+  "markets_mapped": 320,
+  "contracts": 670,
+  "quoted_contracts": 670,
+  "raw": "data/research/external/raw/20260920T182338Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 320,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 628,
+  "two_sided": 623,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 273,
+ "external_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.5732,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Alafia Ayeni": 1,
+   "Tiffany Papazian": 1,
+   "Matei Gavrea": 1,
+   "Nicolas Calixto": 1,
+   "Pavel Bushuev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Daniel Merida": 1,
+   "Alafia Ayeni": 1,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7164,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Tristan McCormick": 1,
+   "Nikodije Trivunac": 1,
+   "John Gabelic": 1,
+   "Kiruthik Kalyaan  Annur Senthil Kumar": 1,
+   "Lorenzo Rocco": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 30,
+  "tri:INSUFFICIENT_INPUTS": 5,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
