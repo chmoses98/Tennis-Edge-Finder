@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-09-20T23:49:05.029818+00:00",
+ "run_id": "20260920T234905Z",
+ "external_parse": {
+  "events": 101,
+  "markets": 1172,
+  "skipped_family": 201,
+  "skipped_period": 397,
+  "skipped_live": 7,
+  "one_sided": 6,
+  "rows": 2063,
+  "devigged": 568
+ },
+ "smarkets_fetch": {
+  "events_seen": 195,
+  "events_priced": 80,
+  "markets": 1298,
+  "markets_mapped": 367,
+  "contracts": 766,
+  "quoted_contracts": 766,
+  "raw": "data/research/external/raw/20260920T234905Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 367,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 710,
+  "two_sided": 697,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 234,
+ "external_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.6374,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8679,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Aditya Kothari": 1,
+   "Maria Moraes": 1,
+   "Rena Tanaka": 1,
+   "Marika TANAKA": 1,
+   "Ichina Miyashita": 1,
+   "Miki Kuwabara": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 45,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
