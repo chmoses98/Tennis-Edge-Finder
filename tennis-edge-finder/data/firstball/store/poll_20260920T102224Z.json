@@ -1,0 +1,22 @@
+{
+ "run_id": "20260920T102224Z",
+ "started_at": "2026-09-20T10:22:24.738282+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 168,
+ "truths_written": 0,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 168,
+  "UNMATCHED": 1040
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-20T10:32:43.631590+00:00"
+}
