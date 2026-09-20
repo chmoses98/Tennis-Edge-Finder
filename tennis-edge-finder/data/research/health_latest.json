@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260920T053010Z",
-   "age_hours": 6.3,
+   "age_hours": 11.0,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,9 +37,9 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 500,
-   "projected": 397,
-   "not_projected": 103,
+   "projectable_open_pregame": 269,
+   "projected": 226,
+   "not_projected": 43,
    "missing_sample": [
     "KXWTADOUBLES-26SEP20FERFRUTANYIF-TANYIF: doubles: player 'Yifan Xu' unmapped/ambiguous in ['WTA']",
     "KXWTADOUBLES-26SEP20FERFRUTANYIF-FERFRU: doubles: player 'Yifan Xu' unmapped/ambiguous in ['WTA']",
@@ -54,11 +54,11 @@
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 36,
-    "closed_since_discovery": 38,
+    "closed_since_discovery": 227,
+    "past_nominal_start": 78,
     "tournament_scope_not_priced_tonight": 237
    },
-   "projection_run": "20260920T114714Z"
+   "projection_run": "20260920T162633Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260920T112456Z",
-   "age_min": 21.6,
+   "run": "20260920T160352Z",
+   "age_min": 20.9,
    "incomplete": [
     {
      "stage": "trades",
@@ -108,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 5916,
-   "start_unknown_used_schedule": 4608
+   "n": 6142,
+   "start_unknown_used_schedule": 4816
   }
  },
  {
@@ -119,7 +119,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 397
+   "MATCHED": 226
   }
  },
  {
@@ -129,35 +129,35 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 450,
-    "strict_truths": 316,
+    "truths": 496,
+    "strict_truths": 326,
     "no_play": 5,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 134,
-     "B": 311,
+     "C": 170,
+     "B": 321,
      "A": 5
     },
-    "bracket_seconds_median": 196.89378,
-    "bracket_seconds_p90": 216.624027,
+    "bracket_seconds_median": 196.834988,
+    "bracket_seconds_p90": 216.357806,
     "chain_violations": [],
-    "observations": 174264,
-    "matches_observed": 450,
+    "observations": 176466,
+    "matches_observed": 496,
     "watchlist": {
-     "total": 178,
-     "levels_with_a_wired_source": 51,
-     "levels_without_any_source": 127,
-     "watched_and_observed": 28,
-     "covered_and_observed": 28,
-     "pct_covered_with_source_mapping": 0.549
+     "total": 239,
+     "levels_with_a_wired_source": 115,
+     "levels_without_any_source": 124,
+     "watched_and_observed": 74,
+     "covered_and_observed": 74,
+     "pct_covered_with_source_mapping": 0.6435
     },
-    "pct_classifiable": 0.2258,
-    "pct_strict_pregame": 0.2028,
+    "pct_classifiable": 0.2204,
+    "pct_strict_pregame": 0.1977,
     "timing_classes": {
-     "START_UNKNOWN": 4580,
-     "STRICT_PREGAME": 1200,
-     "POST_START": 132,
+     "START_UNKNOWN": 4788,
+     "STRICT_PREGAME": 1214,
+     "POST_START": 136,
      "AMBIGUOUS": 4
     }
    }
@@ -181,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1172,
-   "executable_close_rows": 1308,
-   "matches_with_strict_truth": 316,
-   "observations_classified": 5916,
-   "pct_strict_pregame": 0.2028,
-   "horizons_populated": 8861,
-   "horizons_total": 47328
+   "strict_clv_rows": 1186,
+   "executable_close_rows": 1326,
+   "matches_with_strict_truth": 326,
+   "observations_classified": 6142,
+   "pct_strict_pregame": 0.1977,
+   "horizons_populated": 9001,
+   "horizons_total": 49136
   }
  },
  {
@@ -213,7 +213,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-20T11:42:17.100308+00:00",
+   "built_at": "2026-09-20T16:23:06.485975+00:00",
    "rows": 1630539
   }
  },
@@ -223,7 +223,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260920T100550Z",
-   "snapshot_age_days": 0.07,
+   "snapshot_age_days": 0.26,
    "max_season_files": [
     2026,
     2026
