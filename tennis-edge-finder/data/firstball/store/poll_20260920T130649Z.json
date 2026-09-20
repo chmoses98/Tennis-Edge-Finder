@@ -1,0 +1,35 @@
+{
+ "run_id": "20260920T130649Z",
+ "started_at": "2026-09-20T13:06:49.022674+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 87,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP20DASTE": {
+   "confidence": "B",
+   "bracket_s": 196.214204,
+   "first_ball": "2026-09-20T13:07:48.994911+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP20SANBAI": {
+   "confidence": "B",
+   "bracket_s": 196.20322,
+   "first_ball": "2026-09-20T13:09:05.203623+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 87,
+  "UNMATCHED": 632
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-20T13:15:50.645205+00:00"
+}
