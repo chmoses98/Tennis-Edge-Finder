@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260919T002341Z",
-   "age_hours": 20.6,
+   "age_hours": 28.8,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,17 +37,17 @@
   "name": "active_market_projection",
   "status": "PASS",
   "detail": {
-   "projectable_open_pregame": 14,
-   "projected": 14,
+   "projectable_open_pregame": 0,
+   "projected": 0,
    "not_projected": 0,
    "missing_sample": [],
    "excluded_by_policy": {
     "unsupported_family": 131,
+    "closed_since_discovery": 349,
     "past_nominal_start": 22,
-    "closed_since_discovery": 332,
-    "tournament_scope_not_priced_tonight": 240
+    "tournament_scope_not_priced_tonight": 237
    },
-   "projection_run": "20260919T205718Z"
+   "projection_run": "20260920T051231Z"
   }
  },
  {
@@ -55,8 +55,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260919T204531Z",
-   "age_min": 9.8,
+   "run": "20260920T044611Z",
+   "age_min": 24.3,
    "incomplete": [
     {
      "stage": "trades",
@@ -108,7 +108,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 14
+   "MATCHED": 0
   }
  },
  {
@@ -134,12 +134,12 @@
     "observations": 171424,
     "matches_observed": 422,
     "watchlist": {
-     "total": 49,
-     "levels_with_a_wired_source": 29,
-     "levels_without_any_source": 20,
-     "watched_and_observed": 5,
-     "covered_and_observed": 5,
-     "pct_covered_with_source_mapping": 0.1724
+     "total": 3,
+     "levels_with_a_wired_source": 3,
+     "levels_without_any_source": 0,
+     "watched_and_observed": 1,
+     "covered_and_observed": 1,
+     "pct_covered_with_source_mapping": 0.3333
     },
     "pct_classifiable": 0.2392,
     "pct_strict_pregame": 0.2174,
@@ -202,7 +202,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-19T20:54:22.779484+00:00",
+   "built_at": "2026-09-20T05:07:24.751080+00:00",
    "rows": 1630517
   }
  },
@@ -212,7 +212,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260919T094233Z",
-   "snapshot_age_days": 0.47,
+   "snapshot_age_days": 0.81,
    "max_season_files": [
     2026,
     2026
@@ -222,8 +222,8 @@
     "WTA": "2026-09-19"
    },
    "ratings_stale_days": {
-    "ATP": 6,
-    "WTA": 0
+    "ATP": 7,
+    "WTA": 1
    }
   }
  }
