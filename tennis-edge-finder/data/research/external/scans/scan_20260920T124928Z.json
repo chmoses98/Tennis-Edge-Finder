@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-20T12:49:28.363221+00:00",
+ "run_id": "20260920T124928Z",
+ "external_parse": {
+  "events": 147,
+  "markets": 1163,
+  "skipped_family": 198,
+  "skipped_period": 346,
+  "skipped_live": 33,
+  "one_sided": 41,
+  "rows": 1997,
+  "devigged": 576
+ },
+ "smarkets_fetch": {
+  "events_seen": 165,
+  "events_priced": 80,
+  "markets": 954,
+  "markets_mapped": 290,
+  "contracts": 610,
+  "quoted_contracts": 610,
+  "raw": "data/research/external/raw/20260920T124928Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 290,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 579,
+  "two_sided": 574,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 856,
+ "external_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 87,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 34
+  },
+  "mapped_rate": 0.6259,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Xinyu Wang": 1,
+   "Abubakar Yusuf": 1,
+   "Alex Hernandez": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Tomaso Calla": 1,
+   "Stefano D'agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Silvia Dalle Molle": 1,
+   "Stefano D'Agostino": 1,
+   "Gabriela Knutson": 1,
+   "Gabi Adrian Boitan": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Daniel Merida": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 147,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.7959,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Gabi Adrian Boitan": 1,
+   "Tomaso Calla": 1,
+   "Nikita Mashtakov": 1,
+   "Gabriela Knutson": 1,
+   "Silvia Dalle Molle": 1,
+   "Duru Arslan": 1,
+   "Romeo Nobili": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 105,
+ "counts": {
+  "PASS": 102,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 50,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16,
+  "kalshi_not_two_sided": 1
+ }
+}
