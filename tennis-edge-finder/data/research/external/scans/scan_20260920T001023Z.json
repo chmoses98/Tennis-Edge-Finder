@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-20T00:10:23.884775+00:00",
+ "run_id": "20260920T001023Z",
+ "external_parse": {
+  "events": 126,
+  "markets": 1106,
+  "skipped_family": 213,
+  "skipped_period": 295,
+  "skipped_live": 12,
+  "one_sided": 32,
+  "rows": 2065,
+  "devigged": 566
+ },
+ "smarkets_fetch": {
+  "events_seen": 95,
+  "events_priced": 80,
+  "markets": 503,
+  "markets_mapped": 207,
+  "contracts": 448,
+  "quoted_contracts": 448,
+  "raw": "data/research/external/raw/20260920T001023Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 207,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 57,
+  "rows": 391,
+  "two_sided": 386,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 786,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6864,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Ovarelli, Arianna": 1,
+   "Dalle Molle, Silvia": 1,
+   "Matei Gavrea": 1,
+   "Andre Filep": 1,
+   "James Girdler": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Eunhye (2000) Lee": 1,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Duru Arslan": 1,
+   "Silvia Dalle Molle": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 174,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 40
+  },
+  "mapped_rate": 0.7701,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Gabi Adrian Boitan": 1,
+   "Tomaso Calla": 1,
+   "Nikita Mashtakov": 1,
+   "Elia Ruffino": 1,
+   "Aleksandar Tolev": 1,
+   "Jeffrey John Wolf": 1,
+   "Catarina Gomes": 1,
+   "Arianna Ovarelli": 1,
+   "Romeo Nobili": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 111,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "SHADOW_BET": 3,
+  "tri:INSUFFICIENT_INPUTS": 69,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
