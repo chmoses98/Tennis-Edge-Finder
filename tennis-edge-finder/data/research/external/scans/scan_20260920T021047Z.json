@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-20T02:10:47.914469+00:00",
+ "run_id": "20260920T021047Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1298,
+  "skipped_family": 242,
+  "skipped_period": 344,
+  "skipped_live": 11,
+  "one_sided": 44,
+  "rows": 2360,
+  "devigged": 667
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 707,
+  "markets_mapped": 190,
+  "contracts": 396,
+  "quoted_contracts": 396,
+  "raw": "data/research/external/raw/20260920T021047Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 190,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 29,
+  "rows": 367,
+  "two_sided": 364,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 265,
+ "external_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abubakar Yusuf": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Ovarelli, Arianna": 1,
+   "Dalle Molle, Silvia": 1,
+   "Roger Rogowski": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Duru Arslan": 1,
+   "Stefano D'Agostino": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8132,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1,
+   "Elia Ruffino": 1,
+   "Gabriela Knutson": 1,
+   "Silvia Dalle Molle": 1,
+   "Romeo Nobili": 1,
+   "Tom-Felix Fusenig": 1,
+   "Alexandre Brecko": 1,
+   "Maximus Muller": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 90,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 52,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 7,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "SHADOW_BET": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
