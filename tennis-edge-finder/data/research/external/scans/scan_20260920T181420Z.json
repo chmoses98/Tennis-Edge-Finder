@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-20T18:14:20.514161+00:00",
+ "run_id": "20260920T181420Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 885,
+  "skipped_family": 186,
+  "skipped_period": 271,
+  "skipped_live": 14,
+  "one_sided": 4,
+  "rows": 1558,
+  "devigged": 423
+ },
+ "smarkets_fetch": {
+  "events_seen": 190,
+  "events_priced": 80,
+  "markets": 1055,
+  "markets_mapped": 320,
+  "contracts": 670,
+  "quoted_contracts": 670,
+  "raw": "data/research/external/raw/20260920T181420Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 320,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 628,
+  "two_sided": 621,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 851,
+ "external_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.5732,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Alafia Ayeni": 1,
+   "Tiffany Papazian": 1,
+   "Matei Gavrea": 1,
+   "Nicolas Calixto": 1,
+   "Pavel Bushuev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Daniel Merida": 1,
+   "Alafia Ayeni": 1,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 138,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 35,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7319,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "Valerio Bracci": 1,
+   "Nikodije Trivunac": 1,
+   "John Gabelic": 1,
+   "Linus Andersson": 1,
+   "Bahgat Bahgat": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 42,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
