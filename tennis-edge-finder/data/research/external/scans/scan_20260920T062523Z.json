@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-20T06:25:23.034880+00:00",
+ "run_id": "20260920T062523Z",
+ "external_parse": {
+  "events": 150,
+  "markets": 1501,
+  "skipped_family": 243,
+  "skipped_period": 434,
+  "skipped_live": 4,
+  "one_sided": 57,
+  "rows": 2574,
+  "devigged": 764
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 481,
+  "markets_mapped": 177,
+  "contracts": 364,
+  "quoted_contracts": 364,
+  "raw": "data/research/external/raw/20260920T062523Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 177,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 350,
+  "two_sided": 349,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 316,
+ "external_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.7394,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Xinyu Wang": 1,
+   "Germany (Doubles)": 1,
+   "Abubakar Yusuf": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Elia Ruffino": 1,
+   "Stefano D'agostino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Elia Ruffino": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Duru Arslan": 1,
+   "Stefano D'Agostino": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8387,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Gabriela Knutson": 1,
+   "Tom-Felix Fusenig": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "John Gabelic": 1,
+   "Filip Espegren": 1,
+   "jordan coudret": 1,
+   "Claudia Cairols Aparicio": 1,
+   "Aleksandra Rangelova": 1,
+   "Daniel Merida": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 68,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "SHADOW_BET": 2,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
