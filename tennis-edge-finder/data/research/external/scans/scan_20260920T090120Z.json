@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-20T09:01:20.777068+00:00",
+ "run_id": "20260920T090120Z",
+ "external_parse": {
+  "events": 168,
+  "markets": 1428,
+  "skipped_family": 253,
+  "skipped_period": 418,
+  "skipped_live": 23,
+  "one_sided": 44,
+  "rows": 2454,
+  "devigged": 711
+ },
+ "smarkets_fetch": {
+  "events_seen": 126,
+  "events_priced": 80,
+  "markets": 464,
+  "markets_mapped": 183,
+  "contracts": 380,
+  "quoted_contracts": 380,
+  "raw": "data/research/external/raw/20260920T090120Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 183,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 365,
+  "two_sided": 363,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 397,
+ "external_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 111,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 33
+  },
+  "mapped_rate": 0.6937,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Xinyu Wang": 1,
+   "Germany (Doubles)": 1,
+   "Abubakar Yusuf": 1,
+   "Alex Hernandez": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1,
+   "Elia Ruffino": 1,
+   "Stefano D'agostino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Lisa Zaar": 1,
+   "Elia Ruffino": 1,
+   "Catarina Gomes": 1,
+   "Tomaso Calla": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Duru Arslan": 1,
+   "Stefano D'Agostino": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7951,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tomaso Calla": 1,
+   "Nikita Mashtakov": 1,
+   "Elia Ruffino": 1,
+   "Gabriela Knutson": 1,
+   "Duru Arslan": 1,
+   "Catarina Gomes": 1,
+   "Arianna Ovarelli": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 121,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 103,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 5,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:MARKETS_AGREE": 8,
+  "SHADOW_BET": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
