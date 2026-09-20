@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-20T14:11:41.426818+00:00",
+ "run_id": "20260920T141141Z",
+ "external_parse": {
+  "events": 138,
+  "markets": 922,
+  "skipped_family": 171,
+  "skipped_period": 266,
+  "skipped_live": 47,
+  "one_sided": 23,
+  "rows": 1621,
+  "devigged": 462
+ },
+ "smarkets_fetch": {
+  "events_seen": 156,
+  "events_priced": 80,
+  "markets": 1047,
+  "markets_mapped": 329,
+  "contracts": 692,
+  "quoted_contracts": 692,
+  "raw": "data/research/external/raw/20260920T141141Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 329,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 98,
+  "rows": 594,
+  "two_sided": 593,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 318,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.6462,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Xinyu Wang": 1,
+   "Angel Veliz": 1,
+   "Alex Hernandez": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Gabi Adrian Boitan": 1,
+   "Alafia Ayeni": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 16,
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Silvia Dalle Molle": 1,
+   "Gabi Adrian Boitan": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Daniel Merida": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8539,
+  "top_refusal_subjects": {
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Gabi Adrian Boitan": 1,
+   "Gabriela Knutson": 1,
+   "Silvia Dalle Molle": 1,
+   "Tom-Felix Fusenig": 1,
+   "Alexandre Brecko": 1,
+   "William Kaltenecker": 1,
+   "Linus Andersson": 1,
+   "Maximus Muller": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
