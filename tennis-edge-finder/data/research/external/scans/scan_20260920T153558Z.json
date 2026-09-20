@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-20T15:35:58.824901+00:00",
+ "run_id": "20260920T153558Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 949,
+  "skipped_family": 198,
+  "skipped_period": 265,
+  "skipped_live": 25,
+  "one_sided": 16,
+  "rows": 1675,
+  "devigged": 470
+ },
+ "smarkets_fetch": {
+  "events_seen": 172,
+  "events_priced": 80,
+  "markets": 945,
+  "markets_mapped": 293,
+  "contracts": 616,
+  "quoted_contracts": 616,
+  "raw": "data/research/external/raw/20260920T153558Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 293,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 589,
+  "two_sided": 587,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 284,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.6355,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Tariq Simons": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Gabi Adrian Boitan": 1,
+   "Stefano D'agostino": 1,
+   "Alafia Ayeni": 1,
+   "Simon Pfau": 1,
+   "Tom-Felix Fusenig": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Gabi Adrian Boitan": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Daniel Merida": 1,
+   "Alafia Ayeni": 1,
+   "Katherine Sebov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.859,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Gabi Adrian Boitan": 1,
+   "Romeo Nobili": 1,
+   "Tom-Felix Fusenig": 1,
+   "Rena Tanaka": 1,
+   "Miku Suzuki": 1,
+   "Ichina Miyashita": 1,
+   "Bianca Martinez Puche": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 67,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 41,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 4,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
