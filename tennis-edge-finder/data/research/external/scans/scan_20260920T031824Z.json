@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-20T03:18:24.048922+00:00",
+ "run_id": "20260920T031824Z",
+ "external_parse": {
+  "events": 157,
+  "markets": 1540,
+  "skipped_family": 271,
+  "skipped_period": 416,
+  "skipped_live": 9,
+  "one_sided": 53,
+  "rows": 2820,
+  "devigged": 799
+ },
+ "smarkets_fetch": {
+  "events_seen": 114,
+  "events_priced": 80,
+  "markets": 708,
+  "markets_mapped": 195,
+  "contracts": 402,
+  "quoted_contracts": 402,
+  "raw": "data/research/external/raw/20260920T031824Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 195,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 389,
+  "two_sided": 381,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 331,
+ "external_mapping": {
+  "total": 149,
+  "by_status": {
+   "MAPPED": 112,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.7517,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abubakar Yusuf": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Stefano D'agostino": 1,
+   "Ovarelli, Arianna": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Elia Ruffino": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Duru Arslan": 1,
+   "Stefano D'Agostino": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 92,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8679,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Tomaso Calla": 1,
+   "Nikita Mashtakov": 1,
+   "Aleksandar Tolev": 1,
+   "Gabriela Knutson": 1,
+   "Dominik Matic": 1,
+   "Attila Hueller-Varga": 1,
+   "Arno Guillet": 1,
+   "Matiej Reiter": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 92,
+ "model_witness_available": true,
+ "rows": 152,
+ "counts": {
+  "PASS": 145,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "SHADOW_BET": 3,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 103,
+  "tri:MARKETS_AGREE": 6,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
