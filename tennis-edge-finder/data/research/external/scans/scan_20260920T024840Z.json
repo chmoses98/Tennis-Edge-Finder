@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-20T02:48:40.139388+00:00",
+ "run_id": "20260920T024840Z",
+ "external_parse": {
+  "events": 152,
+  "markets": 1475,
+  "skipped_family": 264,
+  "skipped_period": 399,
+  "skipped_live": 10,
+  "one_sided": 45,
+  "rows": 2711,
+  "devigged": 765
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 719,
+  "markets_mapped": 198,
+  "contracts": 410,
+  "quoted_contracts": 410,
+  "raw": "data/research/external/raw/20260920T024840Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 198,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 386,
+  "two_sided": 382,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 224,
+ "external_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.7292,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abubakar Yusuf": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Stefano D'agostino": 1,
+   "Ovarelli, Arianna": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 7,
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Duru Arslan": 1,
+   "Stefano D'Agostino": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8904,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Dominik Matic": 1,
+   "Attila Hueller-Varga": 1,
+   "Nicolas GRY": 1,
+   "Arno Guillet": 1,
+   "Aleksandra Rangelova": 1,
+   "Daniel Merida": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 65,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 74,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "SHADOW_BET": 1,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
