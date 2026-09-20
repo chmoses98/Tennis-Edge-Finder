@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-20T00:39:48.480920+00:00",
+ "run_id": "20260920T003948Z",
+ "external_parse": {
+  "events": 140,
+  "markets": 1220,
+  "skipped_family": 231,
+  "skipped_period": 325,
+  "skipped_live": 15,
+  "one_sided": 40,
+  "rows": 2213,
+  "devigged": 624
+ },
+ "smarkets_fetch": {
+  "events_seen": 102,
+  "events_priced": 80,
+  "markets": 399,
+  "markets_mapped": 174,
+  "contracts": 368,
+  "quoted_contracts": 368,
+  "raw": "data/research/external/raw/20260920T003948Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 174,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 341,
+  "two_sided": 335,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 185,
+ "external_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.7045,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Ovarelli, Arianna": 1,
+   "Dalle Molle, Silvia": 1,
+   "Matei Gavrea": 1,
+   "Andre Filep": 1,
+   "Siddharth Bharadwaj": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Eunhye (2000) Lee": 1,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Duru Arslan": 1,
+   "Silvia Dalle Molle": 1,
+   "Gabriela Knutson": 1,
+   "Daniel Merida": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9286,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Jeffrey John Wolf": 1,
+   "Erik Johansson": 1,
+   "Nicolas GRY": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 67,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "SHADOW_BET": 1,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
