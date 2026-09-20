@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-20T04:11:25.561975+00:00",
+ "run_id": "20260920T041125Z",
+ "external_parse": {
+  "events": 154,
+  "markets": 1614,
+  "skipped_family": 261,
+  "skipped_period": 478,
+  "skipped_live": 3,
+  "one_sided": 48,
+  "rows": 2829,
+  "devigged": 827
+ },
+ "smarkets_fetch": {
+  "events_seen": 119,
+  "events_priced": 80,
+  "markets": 592,
+  "markets_mapped": 190,
+  "contracts": 392,
+  "quoted_contracts": 392,
+  "raw": "data/research/external/raw/20260920T041125Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 190,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 373,
+  "two_sided": 369,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 366,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 109,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.7466,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Xinyu Wang": 1,
+   "Abubakar Yusuf": 1,
+   "Cesar Augustto Cruz Olivares": 1,
+   "Aleksandar Tolev": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Elia Ruffino": 1,
+   "Stefano D'agostino": 1,
+   "Arianna Ovarelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Aleksandar Tolev": 1,
+   "Lisa Zaar": 1,
+   "Elia Ruffino": 1,
+   "Catarina Gomes": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Duru Arslan": 1,
+   "Stefano D'Agostino": 1,
+   "Silvia Dalle Molle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7937,
+  "top_refusal_subjects": {
+   "Gabi Adrian Boitan": 1,
+   "Tomaso Calla": 1,
+   "Nikita Mashtakov": 1,
+   "Elia Ruffino": 1,
+   "Aleksandar Tolev": 1,
+   "Gabriela Knutson": 1,
+   "Silvia Dalle Molle": 1,
+   "Duru Arslan": 1,
+   "Catarina Gomes": 1,
+   "Arianna Ovarelli": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 116,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 154,
+ "counts": {
+  "PASS": 145,
+  "tri:INSUFFICIENT_INPUTS": 94,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:EXTERNAL_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "WATCH": 8,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
