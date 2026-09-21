@@ -1,0 +1,58 @@
+{
+ "run_id": "20260921T101334Z",
+ "started_at": "2026-09-21T10:13:34.728545+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 309,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP21COLSTE": {
+   "confidence": "B",
+   "bracket_s": 294.624612,
+   "first_ball": "2026-09-21T10:11:14.797030+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP21FALSMI": {
+   "confidence": "B",
+   "bracket_s": 235.427685,
+   "first_ball": "2026-09-21T10:13:39.823178+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "UNMATCHED": 678,
+  "MATCHED": 309,
+  "AMBIGUOUS": 18
+ },
+ "mapping_refusals": {
+  "KXWTASETWINNER-26SEP21OKAFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184089 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP21OKAFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184089 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTAMATCH-26SEP21OKAFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184089 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-21T10:23:58.223151+00:00"
+}
