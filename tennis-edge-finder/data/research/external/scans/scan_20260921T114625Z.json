@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-21T11:46:25.560219+00:00",
+ "run_id": "20260921T114625Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 982,
+  "skipped_family": 152,
+  "skipped_period": 334,
+  "skipped_live": 47,
+  "one_sided": 21,
+  "rows": 1664,
+  "devigged": 475
+ },
+ "smarkets_fetch": {
+  "events_seen": 178,
+  "events_priced": 80,
+  "markets": 1160,
+  "markets_mapped": 394,
+  "contracts": 854,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20260921T114625Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 394,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 830,
+  "two_sided": 817,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 329,
+ "external_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6198,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Stefano D'agostino": 1,
+   "Diego Dedura": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1,
+   "Jeremy Condere": 1,
+   "Simon Pfau": 1,
+   "Julius Seitz": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 104,
+  "by_status": {
+   "UNMAPPED_PLAYER": 18,
+   "MAPPED": 85,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8173,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Jilong Huang": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "Valerio Bracci": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 85,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
