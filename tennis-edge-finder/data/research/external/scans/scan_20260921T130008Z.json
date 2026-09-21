@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T13:00:08.065691+00:00",
+ "run_id": "20260921T130008Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 899,
+  "skipped_family": 144,
+  "skipped_period": 305,
+  "skipped_live": 34,
+  "one_sided": 16,
+  "rows": 1556,
+  "devigged": 434
+ },
+ "smarkets_fetch": {
+  "events_seen": 188,
+  "events_priced": 80,
+  "markets": 1167,
+  "markets_mapped": 365,
+  "contracts": 788,
+  "quoted_contracts": 788,
+  "raw": "data/research/external/raw/20260921T130008Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 365,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 20,
+  "rows": 768,
+  "two_sided": 763,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 592,
+ "external_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6139,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Stefano D'agostino": 1,
+   "Diego Dedura": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1,
+   "Cas de Ruiter": 1,
+   "Julius Seitz": 1,
+   "Kamalov Abdumalik": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.878,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kazuki Nakajima": 1,
+   "Jilong Huang": 1,
+   "Zhe Jiang": 1,
+   "Leonardo Vega": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 108,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
