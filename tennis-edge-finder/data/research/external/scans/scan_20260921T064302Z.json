@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T06:43:02.591916+00:00",
+ "run_id": "20260921T064302Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 1251,
+  "skipped_family": 201,
+  "skipped_period": 426,
+  "skipped_live": 18,
+  "one_sided": 9,
+  "rows": 2137,
+  "devigged": 615
+ },
+ "smarkets_fetch": {
+  "events_seen": 204,
+  "events_priced": 80,
+  "markets": 890,
+  "markets_mapped": 288,
+  "contracts": 616,
+  "quoted_contracts": 616,
+  "raw": "data/research/external/raw/20260921T064302Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 288,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 579,
+  "two_sided": 559,
+  "one_sided": 20
+ },
+ "kalshi_quotes_on_disk": 338,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6355,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Pavel Skvortcov": 1,
+   "Aditya Kothari": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 97,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8041,
+  "top_refusal_subjects": {
+   "Aneta Kucmova": 1,
+   "Tristan McCormick": 1,
+   "Bahgat Bahgat": 1,
+   "Attila Hueller-Varga": 1,
+   "Lorenzo Rocco": 1,
+   "Romeo Elfving": 1,
+   "Kelvin Walltin": 1,
+   "Maurice-Noel Kaserer": 1,
+   "Filippo Crippa": 1,
+   "Arthur Lenglet": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 10,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
