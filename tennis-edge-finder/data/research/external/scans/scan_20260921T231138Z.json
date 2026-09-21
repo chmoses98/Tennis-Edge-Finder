@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T23:11:38.582829+00:00",
+ "run_id": "20260921T231138Z",
+ "external_parse": {
+  "events": 205,
+  "markets": 2153,
+  "skipped_family": 395,
+  "skipped_period": 644,
+  "skipped_live": 6,
+  "one_sided": 10,
+  "rows": 3590,
+  "devigged": 1098
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1409,
+  "markets_mapped": 437,
+  "contracts": 912,
+  "quoted_contracts": 838,
+  "raw": "data/research/external/raw/20260921T231138Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 437,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 97,
+  "rows": 815,
+  "two_sided": 812,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 639,
+ "external_mapping": {
+  "total": 193,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 48
+  },
+  "mapped_rate": 0.6632,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Shanghui Li": 1,
+   "Ryoma Cogan": 1,
+   "Junxiong Dong": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 115,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8394,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Jakub Vrtilka": 1,
+   "Eduardo Lage": 1,
+   "Vito Dell'elba": 1,
+   "Didrik Liljekvist": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 149,
+ "kalshi_mapped_matches": 115,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 92,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
