@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T02:32:42.934971+00:00",
+ "run_id": "20260921T023242Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1421,
+  "skipped_family": 238,
+  "skipped_period": 485,
+  "skipped_live": 8,
+  "one_sided": 8,
+  "rows": 2465,
+  "devigged": 690
+ },
+ "smarkets_fetch": {
+  "events_seen": 211,
+  "events_priced": 80,
+  "markets": 1367,
+  "markets_mapped": 395,
+  "contracts": 828,
+  "quoted_contracts": 828,
+  "raw": "data/research/external/raw/20260921T023242Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 395,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 782,
+  "two_sided": 771,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 359,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6415,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7818,
+  "top_refusal_subjects": {
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Valerio Bracci": 1,
+   "Darsh Sachin Patel": 1,
+   "Michael Wright": 1,
+   "Maurice-Noel Kaserer": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 85,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 87,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 11,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
