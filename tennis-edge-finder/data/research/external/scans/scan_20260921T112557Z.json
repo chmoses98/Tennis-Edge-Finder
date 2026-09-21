@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T11:25:57.566151+00:00",
+ "run_id": "20260921T112557Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1057,
+  "skipped_family": 165,
+  "skipped_period": 358,
+  "skipped_live": 50,
+  "one_sided": 12,
+  "rows": 1840,
+  "devigged": 522
+ },
+ "smarkets_fetch": {
+  "events_seen": 179,
+  "events_priced": 80,
+  "markets": 1154,
+  "markets_mapped": 388,
+  "contracts": 840,
+  "quoted_contracts": 840,
+  "raw": "data/research/external/raw/20260921T112557Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 388,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 814,
+  "two_sided": 803,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 399,
+ "external_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6378,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Diego Dedura": 1,
+   "Stefano D'agostino": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1,
+   "Jeremy Condere": 1,
+   "Simon Pfau": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 120,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Alafia Ayeni": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kazuki Nakajima": 1,
+   "Jilong Huang": 1,
+   "Zhe Jiang": 1,
+   "Leonardo Vega": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 120,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:MARKETS_AGREE": 5,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
