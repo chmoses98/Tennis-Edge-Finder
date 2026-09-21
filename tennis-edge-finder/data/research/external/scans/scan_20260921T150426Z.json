@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T15:04:26.454043+00:00",
+ "run_id": "20260921T150426Z",
+ "external_parse": {
+  "events": 119,
+  "markets": 1225,
+  "skipped_family": 251,
+  "skipped_period": 360,
+  "skipped_live": 21,
+  "one_sided": 4,
+  "rows": 2186,
+  "devigged": 610
+ },
+ "smarkets_fetch": {
+  "events_seen": 187,
+  "events_priced": 80,
+  "markets": 1094,
+  "markets_mapped": 366,
+  "contracts": 780,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20260921T150426Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 366,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 717,
+  "two_sided": 712,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1289,
+ "external_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.7222,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Hanlei Lu": 1,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Alafia Ayeni": 1,
+   "Julius Seitz": 1,
+   "Kamalov Abdumalik": 1,
+   "Leonardo Vega": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 139,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8373,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Pedro Liborio": 1,
+   "Joao Deus": 1,
+   "Bogdan Seleznev": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 139,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
