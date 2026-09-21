@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-21T01:41:19.813465+00:00",
+ "run_id": "20260921T014119Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 1421,
+  "skipped_family": 238,
+  "skipped_period": 485,
+  "skipped_live": 7,
+  "one_sided": 8,
+  "rows": 2465,
+  "devigged": 690
+ },
+ "smarkets_fetch": {
+  "events_seen": 208,
+  "events_priced": 80,
+  "markets": 1357,
+  "markets_mapped": 391,
+  "contracts": 818,
+  "quoted_contracts": 818,
+  "raw": "data/research/external/raw/20260921T014119Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 391,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 55,
+  "rows": 763,
+  "two_sided": 746,
+  "one_sided": 17
+ },
+ "kalshi_quotes_on_disk": 267,
+ "external_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6381,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7342,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "Valerio Bracci": 1,
+   "John Gabelic": 1,
+   "Darsh Sachin Patel": 1,
+   "Kiruthik Kalyaan  Annur Senthil Kumar": 1,
+   "Arthur Lenglet": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 84,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 58,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
