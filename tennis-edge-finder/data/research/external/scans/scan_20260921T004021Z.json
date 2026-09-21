@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-21T00:40:21.330426+00:00",
+ "run_id": "20260921T004021Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 1363,
+  "skipped_family": 228,
+  "skipped_period": 464,
+  "skipped_live": 4,
+  "one_sided": 8,
+  "rows": 2365,
+  "devigged": 663
+ },
+ "smarkets_fetch": {
+  "events_seen": 201,
+  "events_priced": 80,
+  "markets": 1344,
+  "markets_mapped": 387,
+  "contracts": 806,
+  "quoted_contracts": 806,
+  "raw": "data/research/external/raw/20260921T004021Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 387,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 752,
+  "two_sided": 725,
+  "one_sided": 27
+ },
+ "kalshi_quotes_on_disk": 296,
+ "external_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7895,
+  "top_refusal_subjects": {
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "John Gabelic": 1,
+   "Darsh Sachin Patel": 1,
+   "Kelvin Walltin": 1,
+   "Maurice-Noel Kaserer": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 11,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1,
+  "WATCH": 1
+ },
+ "skips": {}
+}
