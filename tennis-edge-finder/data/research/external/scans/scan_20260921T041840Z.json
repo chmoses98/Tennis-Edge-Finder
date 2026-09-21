@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T04:18:40.168835+00:00",
+ "run_id": "20260921T041840Z",
+ "external_parse": {
+  "events": 112,
+  "markets": 1324,
+  "skipped_family": 219,
+  "skipped_period": 452,
+  "skipped_live": 10,
+  "one_sided": 8,
+  "rows": 2263,
+  "devigged": 645
+ },
+ "smarkets_fetch": {
+  "events_seen": 207,
+  "events_priced": 80,
+  "markets": 1130,
+  "markets_mapped": 343,
+  "contracts": 720,
+  "quoted_contracts": 720,
+  "raw": "data/research/external/raw/20260921T041840Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 343,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 688,
+  "two_sided": 679,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 491,
+ "external_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8561,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "Nikodije Trivunac": 1,
+   "Bahgat Bahgat": 1,
+   "Darsh Sachin Patel": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 87,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 107,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
