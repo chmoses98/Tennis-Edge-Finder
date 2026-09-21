@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T13:29:15.552681+00:00",
+ "run_id": "20260921T132915Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 1099,
+  "skipped_family": 215,
+  "skipped_period": 339,
+  "skipped_live": 37,
+  "one_sided": 11,
+  "rows": 1874,
+  "devigged": 534
+ },
+ "smarkets_fetch": {
+  "events_seen": 186,
+  "events_priced": 80,
+  "markets": 1085,
+  "markets_mapped": 346,
+  "contracts": 744,
+  "quoted_contracts": 744,
+  "raw": "data/research/external/raw/20260921T132915Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 346,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 725,
+  "two_sided": 719,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 468,
+ "external_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6942,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Hanlei Lu": 1,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Stefano D'agostino": 1,
+   "Diego Dedura": 1,
+   "Alafia Ayeni": 1,
+   "Cas de Ruiter": 1,
+   "Julius Seitz": 1,
+   "Kamalov Abdumalik": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8548,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Duarte Lima Sanches": 1,
+   "Sasikumar Mukund": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 106,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
