@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260920T053010Z",
-   "age_hours": 15.6,
+   "age_hours": 23.8,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -54,11 +54,11 @@
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 41,
-    "closed_since_discovery": 351,
+    "past_nominal_start": 21,
+    "closed_since_discovery": 371,
     "tournament_scope_not_priced_tonight": 237
    },
-   "projection_run": "20260920T210557Z"
+   "projection_run": "20260921T051754Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260920T205331Z",
-   "age_min": 11.6,
+   "run": "20260921T043804Z",
+   "age_min": 37.4,
    "incomplete": [
     {
      "stage": "trades",
@@ -108,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 6305,
-   "start_unknown_used_schedule": 4979
+   "n": 6468,
+   "start_unknown_used_schedule": 5070
   }
  },
  {
@@ -130,34 +130,34 @@
    "reason": "no settled predictions yet",
    "first_ball": {
     "truths": 521,
-    "strict_truths": 327,
+    "strict_truths": 336,
     "no_play": 5,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 194,
-     "B": 322,
+     "C": 185,
+     "B": 331,
      "A": 5
     },
-    "bracket_seconds_median": 196.834988,
-    "bracket_seconds_p90": 216.624027,
+    "bracket_seconds_median": 196.89378,
+    "bracket_seconds_p90": 219.019416,
     "chain_violations": [],
-    "observations": 184232,
+    "observations": 193238,
     "matches_observed": 521,
     "watchlist": {
-     "total": 149,
-     "levels_with_a_wired_source": 94,
-     "levels_without_any_source": 55,
-     "watched_and_observed": 82,
-     "covered_and_observed": 82,
-     "pct_covered_with_source_mapping": 0.8723
+     "total": 74,
+     "levels_with_a_wired_source": 74,
+     "levels_without_any_source": 0,
+     "watched_and_observed": 71,
+     "covered_and_observed": 71,
+     "pct_covered_with_source_mapping": 0.9595
     },
-    "pct_classifiable": 0.2148,
-    "pct_strict_pregame": 0.1925,
+    "pct_classifiable": 0.2205,
+    "pct_strict_pregame": 0.196,
     "timing_classes": {
-     "START_UNKNOWN": 4951,
-     "STRICT_PREGAME": 1214,
-     "POST_START": 136,
+     "START_UNKNOWN": 5042,
+     "STRICT_PREGAME": 1268,
+     "POST_START": 154,
      "AMBIGUOUS": 4
     }
    }
@@ -181,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1186,
-   "executable_close_rows": 1326,
-   "matches_with_strict_truth": 327,
-   "observations_classified": 6305,
-   "pct_strict_pregame": 0.1925,
-   "horizons_populated": 9001,
-   "horizons_total": 50440
+   "strict_clv_rows": 1236,
+   "executable_close_rows": 1398,
+   "matches_with_strict_truth": 336,
+   "observations_classified": 6468,
+   "pct_strict_pregame": 0.196,
+   "horizons_populated": 9473,
+   "horizons_total": 51744
   }
  },
  {
@@ -213,7 +213,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-20T21:00:56.904649+00:00",
+   "built_at": "2026-09-21T05:13:58.088207+00:00",
    "rows": 1630539
   }
  },
@@ -223,7 +223,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260920T100550Z",
-   "snapshot_age_days": 0.46,
+   "snapshot_age_days": 0.8,
    "max_season_files": [
     2026,
     2026
@@ -233,8 +233,8 @@
     "WTA": "2026-09-20"
    },
    "ratings_stale_days": {
-    "ATP": 7,
-    "WTA": 0
+    "ATP": 8,
+    "WTA": 1
    }
   }
  }
