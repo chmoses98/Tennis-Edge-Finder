@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T22:49:58.961147+00:00",
+ "run_id": "20260921T224958Z",
+ "external_parse": {
+  "events": 206,
+  "markets": 2155,
+  "skipped_family": 395,
+  "skipped_period": 646,
+  "skipped_live": 7,
+  "one_sided": 10,
+  "rows": 3590,
+  "devigged": 1098
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1376,
+  "markets_mapped": 428,
+  "contracts": 888,
+  "quoted_contracts": 832,
+  "raw": "data/research/external/raw/20260921T224958Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 428,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 72,
+  "rows": 816,
+  "two_sided": 816,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 541,
+ "external_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 129,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 48
+  },
+  "mapped_rate": 0.6649,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Shanghui Li": 1,
+   "Ryoma Cogan": 1,
+   "Junxiong Dong": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8492,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Pyotr Nesterov": 1,
+   "Maria Carle": 1,
+   "Eduardo Lage": 1,
+   "Attila Hueller-Varga": 1,
+   "Vito Dell'elba": 1,
+   "Nikodije Trivunac": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 71,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "WATCH": 7,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:MARKETS_AGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
