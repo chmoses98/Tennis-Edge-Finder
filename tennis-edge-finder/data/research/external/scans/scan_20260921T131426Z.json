@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-21T13:14:26.040946+00:00",
+ "run_id": "20260921T131426Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 872,
+  "skipped_family": 149,
+  "skipped_period": 289,
+  "skipped_live": 31,
+  "one_sided": 11,
+  "rows": 1512,
+  "devigged": 423
+ },
+ "smarkets_fetch": {
+  "events_seen": 187,
+  "events_priced": 80,
+  "markets": 1168,
+  "markets_mapped": 382,
+  "contracts": 822,
+  "quoted_contracts": 822,
+  "raw": "data/research/external/raw/20260921T131426Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 382,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 73,
+  "rows": 749,
+  "two_sided": 745,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 476,
+ "external_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6211,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Stefano D'agostino": 1,
+   "Diego Dedura": 1,
+   "Alafia Ayeni": 1,
+   "Cas de Ruiter": 1,
+   "Julius Seitz": 1,
+   "Kamalov Abdumalik": 1,
+   "Laurens Harnoth Manrubia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8889,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kazuki Nakajima": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 85,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
