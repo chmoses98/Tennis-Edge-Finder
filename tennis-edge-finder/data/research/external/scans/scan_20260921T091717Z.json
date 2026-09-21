@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-21T09:17:17.640113+00:00",
+ "run_id": "20260921T091717Z",
+ "external_parse": {
+  "events": 156,
+  "markets": 1438,
+  "skipped_family": 226,
+  "skipped_period": 491,
+  "skipped_live": 48,
+  "one_sided": 15,
+  "rows": 2462,
+  "devigged": 706
+ },
+ "smarkets_fetch": {
+  "events_seen": 187,
+  "events_priced": 80,
+  "markets": 1182,
+  "markets_mapped": 398,
+  "contracts": 858,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260921T091717Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 398,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 828,
+  "two_sided": 817,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 901,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 21,
+   "DOUBLES_UNSUPPORTED": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6689,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Diego Dedura": 1,
+   "Stefano D'agostino": 1,
+   "Alafia Ayeni": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Thiago Pernas": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 147,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8077,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 86,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 147,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 9,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:ALL_THREE_DISAGREE": 8,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
