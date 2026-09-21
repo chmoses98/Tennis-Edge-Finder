@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-21T21:54:41.760781+00:00",
+ "run_id": "20260921T215441Z",
+ "external_parse": {
+  "events": 143,
+  "markets": 1353,
+  "skipped_family": 285,
+  "skipped_period": 384,
+  "skipped_live": 13,
+  "one_sided": 3,
+  "rows": 2435,
+  "devigged": 677
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1397,
+  "markets_mapped": 434,
+  "contracts": 902,
+  "quoted_contracts": 834,
+  "raw": "data/research/external/raw/20260921T215441Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 434,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 99,
+  "rows": 803,
+  "two_sided": 803,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1630,
+ "external_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 39
+  },
+  "mapped_rate": 0.5878,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "William Landry": 1,
+   "Zechariah Hamrouni": 1,
+   "Adrian Solorzano": 1,
+   "Kamalov Abdumalik": 1,
+   "Shanghui Li": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 273,
+  "by_status": {
+   "MAPPED": 224,
+   "UNMAPPED_PLAYER": 49
+  },
+  "mapped_rate": 0.8205,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Love Nyqvist": 1,
+   "Dominik Dujka": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 224,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 77,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "WATCH": 7,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
