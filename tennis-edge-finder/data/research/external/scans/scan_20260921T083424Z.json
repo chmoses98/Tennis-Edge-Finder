@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-21T08:34:24.751897+00:00",
+ "run_id": "20260921T083424Z",
+ "external_parse": {
+  "events": 149,
+  "markets": 1323,
+  "skipped_family": 211,
+  "skipped_period": 446,
+  "skipped_live": 47,
+  "one_sided": 10,
+  "rows": 2287,
+  "devigged": 656
+ },
+ "smarkets_fetch": {
+  "events_seen": 192,
+  "events_priced": 80,
+  "markets": 951,
+  "markets_mapped": 333,
+  "contracts": 720,
+  "quoted_contracts": 720,
+  "raw": "data/research/external/raw/20260921T083424Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 333,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 60,
+  "rows": 660,
+  "two_sided": 656,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 405,
+ "external_mapping": {
+  "total": 141,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 21,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6454,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Alafia Ayeni": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Henry Dornbusch": 1,
+   "Thiago Pernas": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 143,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8322,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Tristan McCormick": 1,
+   "Valerio Bracci": 1,
+   "Nikodije Trivunac": 1,
+   "Linus Andersson": 1,
+   "Darsh Sachin Patel": 1,
+   "Kiruthik Kalyaan  Annur Senthil Kumar": 1
+  }
+ },
+ "matched_both_venues": 72,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 83,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "WATCH": 7,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
