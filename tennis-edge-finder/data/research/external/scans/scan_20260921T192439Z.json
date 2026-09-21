@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-21T19:24:39.344437+00:00",
+ "run_id": "20260921T192439Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1228,
+  "skipped_family": 262,
+  "skipped_period": 347,
+  "skipped_live": 17,
+  "one_sided": 0,
+  "rows": 2200,
+  "devigged": 615
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1399,
+  "markets_mapped": 438,
+  "contracts": 872,
+  "quoted_contracts": 840,
+  "raw": "data/research/external/raw/20260921T192439Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 438,
+  "skipped_family": 0,
+  "no_contracts": 20,
+  "no_book": 116,
+  "rows": 756,
+  "two_sided": 756,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 604,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 32
+  },
+  "mapped_rate": 0.6048,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Gordon Gallagher": 1,
+   "Filip Paroulek": 1,
+   "Gabriel Porras": 1,
+   "Christopher Thies": 1,
+   "Harrison Lee": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Pyotr Nesterov": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 149,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.8121,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Pyotr Nesterov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alafia Ayeni": 1,
+   "Dominik Dujka": 1,
+   "Jakub Vrtilka": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 121,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 44,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "SHADOW_BET": 2,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
