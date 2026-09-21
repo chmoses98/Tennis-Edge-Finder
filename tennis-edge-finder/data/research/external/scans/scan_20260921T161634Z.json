@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T16:16:34.777964+00:00",
+ "run_id": "20260921T161634Z",
+ "external_parse": {
+  "events": 112,
+  "markets": 1149,
+  "skipped_family": 237,
+  "skipped_period": 345,
+  "skipped_live": 20,
+  "one_sided": 3,
+  "rows": 2018,
+  "devigged": 564
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1215,
+  "markets_mapped": 410,
+  "contracts": 868,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20260921T161634Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 410,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 83,
+  "rows": 785,
+  "two_sided": 782,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1318,
+ "external_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.6832,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Arin R. Pallegar": 1,
+   "Felix Obermair": 1,
+   "Ben Stecker": 1,
+   "Julien Doitteau": 1,
+   "Wesley Cotton": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Pyotr Nesterov": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 33
+  },
+  "mapped_rate": 0.8207,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Filipe Bullamah": 1,
+   "Igor Ferreira De Souza": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 151,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 61,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
