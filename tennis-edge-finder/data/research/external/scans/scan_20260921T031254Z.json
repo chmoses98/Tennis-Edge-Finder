@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T03:12:54.576438+00:00",
+ "run_id": "20260921T031254Z",
+ "external_parse": {
+  "events": 114,
+  "markets": 1423,
+  "skipped_family": 240,
+  "skipped_period": 485,
+  "skipped_live": 6,
+  "one_sided": 8,
+  "rows": 2445,
+  "devigged": 690
+ },
+ "smarkets_fetch": {
+  "events_seen": 207,
+  "events_priced": 80,
+  "markets": 1130,
+  "markets_mapped": 343,
+  "contracts": 720,
+  "quoted_contracts": 720,
+  "raw": "data/research/external/raw/20260921T031254Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 343,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 674,
+  "two_sided": 667,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 443,
+ "external_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6346,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 89,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8165,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Valerio Bracci": 1,
+   "Darsh Sachin Patel": 1,
+   "Michael Wright": 1,
+   "Kelvin Walltin": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 89,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 95,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 9
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
