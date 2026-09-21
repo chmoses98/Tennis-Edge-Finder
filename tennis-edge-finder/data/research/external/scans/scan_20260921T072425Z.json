@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T07:24:25.168518+00:00",
+ "run_id": "20260921T072425Z",
+ "external_parse": {
+  "events": 132,
+  "markets": 1379,
+  "skipped_family": 213,
+  "skipped_period": 470,
+  "skipped_live": 24,
+  "one_sided": 12,
+  "rows": 2374,
+  "devigged": 683
+ },
+ "smarkets_fetch": {
+  "events_seen": 204,
+  "events_priced": 80,
+  "markets": 893,
+  "markets_mapped": 290,
+  "contracts": 624,
+  "quoted_contracts": 624,
+  "raw": "data/research/external/raw/20260921T072425Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 290,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 594,
+  "two_sided": 589,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 413,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6452,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Henry Dornbusch": 1,
+   "Thiago Pernas": 1,
+   "Kamalov Abdumalik": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8739,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Valerio Bracci": 1,
+   "Michael Wright": 1,
+   "Arthur Lenglet": 1,
+   "Andre Meinertz": 1,
+   "Denis Rasshchupkin": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 64,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 10,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
