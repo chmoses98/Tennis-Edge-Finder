@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T19:08:34.953602+00:00",
+ "run_id": "20260921T190834Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1222,
+  "skipped_family": 262,
+  "skipped_period": 347,
+  "skipped_live": 17,
+  "one_sided": 0,
+  "rows": 2140,
+  "devigged": 609
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1374,
+  "markets_mapped": 429,
+  "contracts": 898,
+  "quoted_contracts": 840,
+  "raw": "data/research/external/raw/20260921T190834Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 429,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 104,
+  "rows": 794,
+  "two_sided": 794,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 481,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 32
+  },
+  "mapped_rate": 0.6048,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Ryan Morgan": 1,
+   "Gordon Gallagher": 1,
+   "Filip Paroulek": 1,
+   "Gabriel Porras": 1,
+   "Christopher Thies": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Pyotr Nesterov": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8115,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alafia Ayeni": 1,
+   "Attila Hueller-Varga": 1,
+   "Filippo Alfano": 1,
+   "Didrik Liljekvist": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Arthur Lenglet": 1,
+   "Varchasva Thapliyag Sidh": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 99,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
