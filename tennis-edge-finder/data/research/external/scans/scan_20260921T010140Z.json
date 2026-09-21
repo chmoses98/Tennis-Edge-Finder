@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-21T01:01:40.225155+00:00",
+ "run_id": "20260921T010140Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 1363,
+  "skipped_family": 228,
+  "skipped_period": 464,
+  "skipped_live": 4,
+  "one_sided": 8,
+  "rows": 2365,
+  "devigged": 663
+ },
+ "smarkets_fetch": {
+  "events_seen": 208,
+  "events_priced": 80,
+  "markets": 1351,
+  "markets_mapped": 389,
+  "contracts": 810,
+  "quoted_contracts": 810,
+  "raw": "data/research/external/raw/20260921T010140Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 389,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 57,
+  "rows": 753,
+  "two_sided": 740,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 937,
+ "external_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 132,
+   "UNMAPPED_PLAYER": 43,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7458,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "Valerio Bracci": 1,
+   "Nikodije Trivunac": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 132,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 98,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 5
+ },
+ "skips": {}
+}
