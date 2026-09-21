@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T12:46:19.147767+00:00",
+ "run_id": "20260921T124619Z",
+ "external_parse": {
+  "events": 114,
+  "markets": 924,
+  "skipped_family": 148,
+  "skipped_period": 317,
+  "skipped_live": 39,
+  "one_sided": 15,
+  "rows": 1588,
+  "devigged": 444
+ },
+ "smarkets_fetch": {
+  "events_seen": 194,
+  "events_priced": 80,
+  "markets": 1197,
+  "markets_mapped": 369,
+  "contracts": 800,
+  "quoted_contracts": 800,
+  "raw": "data/research/external/raw/20260921T124619Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 369,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 775,
+  "two_sided": 769,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1252,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6132,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Stefano D'agostino": 1,
+   "Diego Dedura": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1,
+   "Mia Keuler": 1,
+   "Cas de Ruiter": 1,
+   "Julius Seitz": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8436,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kazuki Nakajima": 1,
+   "Jilong Huang": 1,
+   "Zhe Jiang": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 151,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 86,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
