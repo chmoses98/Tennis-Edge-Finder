@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T05:59:34.790267+00:00",
+ "run_id": "20260921T055934Z",
+ "external_parse": {
+  "events": 111,
+  "markets": 1299,
+  "skipped_family": 210,
+  "skipped_period": 442,
+  "skipped_live": 11,
+  "one_sided": 9,
+  "rows": 2221,
+  "devigged": 638
+ },
+ "smarkets_fetch": {
+  "events_seen": 206,
+  "events_priced": 80,
+  "markets": 936,
+  "markets_mapped": 306,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20260921T055934Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 620,
+  "two_sided": 618,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 326,
+ "external_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6117,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 85,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8252,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Bahgat Bahgat": 1,
+   "Darsh Sachin Patel": 1,
+   "Attila Hueller-Varga": 1,
+   "Michael Wright": 1,
+   "Maurice-Noel Kaserer": 1,
+   "Filippo Crippa": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 85,
+ "kalshi_mapped_matches": 85,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 88,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 9,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
