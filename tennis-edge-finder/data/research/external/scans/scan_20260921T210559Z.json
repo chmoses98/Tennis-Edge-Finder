@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-21T21:05:59.903622+00:00",
+ "run_id": "20260921T210559Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1384,
+  "skipped_family": 288,
+  "skipped_period": 398,
+  "skipped_live": 14,
+  "one_sided": 3,
+  "rows": 2499,
+  "devigged": 691
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1406,
+  "markets_mapped": 436,
+  "contracts": 908,
+  "quoted_contracts": 836,
+  "raw": "data/research/external/raw/20260921T210559Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 102,
+  "rows": 806,
+  "two_sided": 806,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 751,
+ "external_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 39
+  },
+  "mapped_rate": 0.5896,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Harrison Lee": 1,
+   "William Landry": 1,
+   "Zechariah Hamrouni": 1,
+   "Adrian Solorzano": 1,
+   "Kamalov Abdumalik": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 180,
+  "by_status": {
+   "MAPPED": 146,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.8111,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Love Nyqvist": 1,
+   "Dominik Dujka": 1,
+   "Jakub Vrtilka": 1,
+   "Eduardo Lage": 1,
+   "Attila Hueller-Varga": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 146,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 53,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "SHADOW_BET": 2,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
