@@ -1,0 +1,29 @@
+{
+ "run_id": "20260921T164118Z",
+ "started_at": "2026-09-21T16:41:18.768114+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 82,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP21URGSEL": {
+   "confidence": "B",
+   "bracket_s": 223.315154,
+   "first_ball": "2026-09-21T16:39:32.215313+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "UNMATCHED": 315,
+  "MATCHED": 82
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-21T16:51:29.876546+00:00"
+}
