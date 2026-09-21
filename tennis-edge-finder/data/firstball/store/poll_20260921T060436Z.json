@@ -1,0 +1,47 @@
+{
+ "run_id": "20260921T060436Z",
+ "started_at": "2026-09-21T06:04:36.505693+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 322,
+ "truths_written": 4,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP20YUABAC-2": {
+   "confidence": "B",
+   "bracket_s": 236.925196,
+   "first_ball": "2026-09-21T06:08:34.523694+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP20YUABAC-1": {
+   "confidence": "B",
+   "bracket_s": 236.925196,
+   "first_ball": "2026-09-21T06:08:34.523694+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP20GIBFER": {
+   "confidence": "B",
+   "bracket_s": 236.925196,
+   "first_ball": "2026-09-21T06:08:34.523694+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP20YUABAC": {
+   "confidence": "B",
+   "bracket_s": 236.925196,
+   "first_ball": "2026-09-21T06:08:34.523694+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 322,
+  "UNMATCHED": 18
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-21T06:15:13.514362+00:00"
+}
