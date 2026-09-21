@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-21T19:42:53.963451+00:00",
+ "run_id": "20260921T194253Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1220,
+  "skipped_family": 263,
+  "skipped_period": 342,
+  "skipped_live": 15,
+  "one_sided": 0,
+  "rows": 2241,
+  "devigged": 610
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1407,
+  "markets_mapped": 433,
+  "contracts": 904,
+  "quoted_contracts": 838,
+  "raw": "data/research/external/raw/20260921T194253Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 433,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 108,
+  "rows": 796,
+  "two_sided": 796,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1529,
+ "external_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 32
+  },
+  "mapped_rate": 0.6033,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Gordon Gallagher": 1,
+   "Filip Paroulek": 1,
+   "Gabriel Porras": 1,
+   "Christopher Thies": 1,
+   "Harrison Lee": 1,
+   "Kamalov Abdumalik": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Pyotr Nesterov": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 253,
+  "by_status": {
+   "MAPPED": 205,
+   "UNMAPPED_PLAYER": 48
+  },
+  "mapped_rate": 0.8103,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Pyotr Nesterov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Dominik Dujka": 1,
+   "Jakub Vrtilka": 1,
+   "Eduardo Lage": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 205,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 56,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
