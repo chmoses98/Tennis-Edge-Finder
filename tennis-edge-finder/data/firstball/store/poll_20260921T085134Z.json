@@ -1,0 +1,52 @@
+{
+ "run_id": "20260921T085134Z",
+ "started_at": "2026-09-21T08:51:34.461858+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 341,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTADOUBLES-26SEP20BONSTOJOIRUS": {
+   "confidence": "B",
+   "bracket_s": 298.189969,
+   "first_ball": "2026-09-21T08:49:12.913074+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 341,
+  "UNMATCHED": 701,
+  "AMBIGUOUS": 18
+ },
+ "mapping_refusals": {
+  "KXWTASETWINNER-26SEP21OKAFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184089 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP21OKAFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184089 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTAMATCH-26SEP21OKAFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184089 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-21T09:02:30.159562+00:00"
+}
