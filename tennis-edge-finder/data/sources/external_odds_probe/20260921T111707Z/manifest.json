@@ -1,0 +1,419 @@
+{
+ "generated_at": "2026-09-21T11:17:22.050005+00:00",
+ "run_id": "20260921T111707Z",
+ "n_candidates": 9,
+ "reachable_with_prices": [
+  "polymarket_gamma",
+  "polymarket_gamma_search",
+  "bovada_tennis"
+ ],
+ "refused_by_robots": [],
+ "candidates": [
+  {
+   "candidate": "espn_odds_atp",
+   "host": "https://site.api.espn.com",
+   "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/atp/scoreboard",
+   "why": "ESPN's scoreboard sometimes carries an `odds` block from a book; we already use this host for results and first-ball, so its terms are already assessed",
+   "independence_if_usable": "a sportsbook line, dependent on whichever book ESPN sources",
+   "robots": {
+    "robots_status": 403,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": true,
+   "status": 200,
+   "bytes": 170142,
+   "ms": 151,
+   "rate_limit_headers": {},
+   "content_type": "application/json;charset=UTF-8",
+   "content": {
+    "json": true,
+    "price_keys": [],
+    "has_prices": false,
+    "name_sample": [
+     "2026",
+     "A. Bolt",
+     "A. Davidovich Fokina",
+     "A. Erler",
+     "A. Galarneau",
+     "A. Goransson",
+     "A. Ilagan",
+     "A. Kovacevic",
+     "A. Mannarino",
+     "A. Muller",
+     "A. Olivetti",
+     "A. Rublev"
+    ],
+    "family_sample": [
+     "atp",
+     "mens-doubles",
+     "mens-singles"
+    ],
+    "timestamp_sample": [
+     "date=2026-09-22",
+     "date=2026-09-22T04:00Z",
+     "date=2026-09-22T05:00Z",
+     "date=2026-09-22T05:30Z",
+     "date=2026-09-22T06:30Z",
+     "date=2026-09-22T07:00Z"
+    ],
+    "mentions_tennis": true,
+    "hints": {
+     "atp": false,
+     "wta": false,
+     "challenger": false,
+     "itf": false,
+     "qualif": true,
+     "doubles": true,
+     "set": false,
+     "games": false,
+     "spread": false
+    }
+   }
+  },
+  {
+   "candidate": "espn_odds_wta",
+   "host": "https://site.api.espn.com",
+   "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/scoreboard",
+   "why": "same, women's board",
+   "independence_if_usable": "as above",
+   "robots": {
+    "robots_status": 403,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": true,
+   "status": 200,
+   "bytes": 666380,
+   "ms": 199,
+   "rate_limit_headers": {},
+   "content_type": "application/json;charset=UTF-8",
+   "content": {
+    "json": true,
+    "price_keys": [],
+    "has_prices": false,
+    "name_sample": [
+     "2026",
+     "A. Akli",
+     "A. Aksu",
+     "A. Altinel",
+     "A. Anisimova",
+     "A. Arseneault",
+     "A. Blinkova",
+     "A. Bondar",
+     "A. Candiotto",
+     "A. Charaeva",
+     "A. Detiuc",
+     "A. Eala"
+    ],
+    "family_sample": [
+     "womens-doubles",
+     "womens-singles",
+     "wta"
+    ],
+    "timestamp_sample": [
+     "date=2026-09-12T04:00Z",
+     "date=2026-09-12T18:10Z",
+     "date=2026-09-12T18:35Z",
+     "date=2026-09-12T19:55Z",
+     "date=2026-09-12T21:10Z",
+     "date=2026-09-12T21:35Z"
+    ],
+    "mentions_tennis": true,
+    "hints": {
+     "atp": false,
+     "wta": false,
+     "challenger": false,
+     "itf": false,
+     "qualif": true,
+     "doubles": true,
+     "set": false,
+     "games": false,
+     "spread": false
+    }
+   }
+  },
+  {
+   "candidate": "polymarket_gamma",
+   "host": "https://gamma-api.polymarket.com",
+   "url": "https://gamma-api.polymarket.com/events?closed=false&limit=100&tag_slug=tennis",
+   "why": "a public, keyless prediction-market API; genuinely a different venue from Kalshi with different participants",
+   "independence_if_usable": "an independent prediction market -- the strongest available independence",
+   "robots": {
+    "robots_status": 404,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": true,
+   "status": 200,
+   "bytes": 6619790,
+   "ms": 269,
+   "rate_limit_headers": {},
+   "content_type": "application/json",
+   "content": {
+    "json": true,
+    "price_keys": [
+     "bestAsk",
+     "bestBid",
+     "outcomePrices",
+     "outcomes"
+    ],
+    "has_prices": true,
+    "name_sample": [
+     "2026 Men\u2019s US Open Winner (Tennis)",
+     "ATP 2026 End of Year Rankings: Player to Make Top 10",
+     "ATP 2026 End of Year Rankings: Player to be Number 1",
+     "ATP Doubles",
+     "ATP Tour",
+     "Agostini/Robinson",
+     "Aguilar/Fuente",
+     "Alexander Vasilev",
+     "Alina Charaeva",
+     "Alina Charaeva vs. Sofia Kenin: Total Sets O/U 2.5",
+     "Anastasia Zakharova",
+     "Andrea Guerrieri"
+    ],
+    "family_sample": [
+     "2026-mens-us-open-winner-tennis",
+     "atp",
+     "atp-2026-end-of-year-rankings-player-to-be-number-1-20260728190252631",
+     "atp-2026-end-of-year-rankings-player-to-make-top-10-20260728185850893",
+     "atp-arnabol-broska-2026-09-21",
+     "atp-arnabol-broska-2026-09-21-completed-match",
+     "atp-arnabol-broska-2026-09-21-first-set-total-10pt5",
+     "atp-arnabol-broska-2026-09-21-first-set-total-8pt5",
+     "atp-arnabol-broska-2026-09-21-first-set-total-9pt5",
+     "atp-arnabol-broska-2026-09-21-first-set-winner-Arnaboldi-vs-Broska",
+     "atp-arnabol-broska-2026-09-21-game-handicap-away-1pt5",
+     "atp-arnabol-broska-2026-09-21-match-total-21pt5",
+     "atp-arnabol-broska-2026-09-21-match-total-22pt5",
+     "atp-arnabol-broska-2026-09-21-match-total-23pt5",
+     "atp-arnabol-broska-2026-09-21-set-2-total-10pt5"
+    ],
+    "timestamp_sample": [
+     "startDate=2026-01-02T20:36:54.374167Z",
+     "startDate=2026-01-02T20:36:55.283939Z",
+     "startDate=2026-01-02T20:36:55.538507Z",
+     "startDate=2026-01-02T20:36:55.792452Z",
+     "startDate=2026-01-02T20:36:57.14487Z",
+     "startDate=2026-01-02T20:36:57.399288Z"
+    ],
+    "mentions_tennis": true,
+    "hints": {
+     "atp": true,
+     "wta": true,
+     "challenger": false,
+     "itf": false,
+     "qualif": true,
+     "doubles": true,
+     "set": true,
+     "games": true,
+     "spread": true
+    }
+   }
+  },
+  {
+   "candidate": "polymarket_gamma_search",
+   "host": "https://gamma-api.polymarket.com",
+   "url": "https://gamma-api.polymarket.com/markets?closed=false&limit=100",
+   "why": "the market-level endpoint, in case tennis is not tagged as an event",
+   "independence_if_usable": "as above",
+   "robots": {
+    "robots_status": 404,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": true,
+   "status": 200,
+   "bytes": 556597,
+   "ms": 139,
+   "rate_limit_headers": {},
+   "content_type": "application/json",
+   "content": {
+    "json": true,
+    "price_keys": [
+     "bestAsk",
+     "bestBid",
+     "outcomePrices",
+     "outcomes"
+    ],
+    "has_prices": true,
+    "name_sample": [
+     "Democratic Presidential Nominee 2028",
+     "Presidential Election Winner 2028",
+     "Putin out as President",
+     "Putin out as President of Russia by December 31, 2026?",
+     "Putin out as President of Russia by...?",
+     "Will Abigail Spanberger win the 2028 Democratic presidential nomination?",
+     "Will Abigail Spanberger win the 2028 US Presidential Election?",
+     "Will Adam Schiff win the 2028 Democratic presidential nomination?",
+     "Will Adam Schiff win the 2028 US Presidential Election?",
+     "Will Alex Padilla win the 2028 Democratic presidential nomination?",
+     "Will Alex Padilla win the 2028 US Presidential Election?",
+     "Will Alexandria Ocasio-Cortez win the 2028 Democratic presidential nomination?"
+    ],
+    "family_sample": [
+     "democratic-presidential-nominee-2028",
+     "presidential-election-winner-2028",
+     "putin-out-as-president",
+     "putin-out-before-2027",
+     "putin-out-before-2027-346",
+     "will-abigail-spanberger-win-the-2028-democratic-presidential-nomination",
+     "will-abigail-spanberger-win-the-2028-us-presidential-election",
+     "will-adam-schiff-win-the-2028-democratic-presidential-nomination",
+     "will-adam-schiff-win-the-2028-us-presidential-election",
+     "will-alex-padilla-win-the-2028-democratic-presidential-nomination",
+     "will-alex-padilla-win-the-2028-us-presidential-election",
+     "will-alexandria-ocasio-cortez-win-the-2028-us-presidential-election",
+     "will-andrew-yang-win-the-2028-democratic-presidential-nomination",
+     "will-andy-beshear-win-the-2028-democratic-presidential-nomination-832",
+     "will-andy-beshear-win-the-2028-us-presidential-election"
+    ],
+    "timestamp_sample": [
+     "startDate=2025-07-03T20:37:00.228Z",
+     "startDate=2025-07-06T22:30:10.584Z",
+     "startDate=2025-07-11T18:35:56.805Z",
+     "startDate=2025-07-11T18:35:58.818Z",
+     "startDate=2025-07-11T18:35:59.075Z",
+     "startDate=2025-07-11T18:36:00.839Z"
+    ],
+    "mentions_tennis": false,
+    "hints": {
+     "atp": false,
+     "wta": false,
+     "challenger": false,
+     "itf": false,
+     "qualif": false,
+     "doubles": false,
+     "set": true,
+     "games": false,
+     "spread": false
+    }
+   }
+  },
+  {
+   "candidate": "bovada_tennis",
+   "host": "https://www.bovada.lv",
+   "url": "https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis?marketFilterId=def&preMatchOnly=true&lang=en",
+   "why": "a public sportsbook JSON coupon endpoint that needs no key",
+   "independence_if_usable": "a recreational book: useful as a second opinion, NOT as a sharp reference",
+   "robots": {
+    "robots_status": 200,
+    "verdict": "ALLOWED",
+    "matched_disallow": [],
+    "disallow_rules": []
+   },
+   "ok": true,
+   "status": 200,
+   "bytes": 207202,
+   "ms": 512,
+   "rate_limit_headers": {},
+   "content_type": "application/json",
+   "content": {
+    "json": true,
+    "price_keys": [
+     "handicap",
+     "outcomes",
+     "price"
+    ],
+    "has_prices": true,
+    "name_sample": [
+     "A. Charaeva/K. Rakhimova",
+     "Aboian",
+     "Adrienn Nagy / Ivana Sebestova",
+     "Adrienn Nagy / Ivana Sebestova vs Carmen Corley / Ivana Corley",
+     "Aidan Mayo",
+     "Aidan Mayo vs Sebastian Gorzny",
+     "Akli",
+     "Aksu",
+     "Alafia Ayeni",
+     "Alafia Ayeni vs Evan Zhu",
+     "Alevtina Ibragimova",
+     "Alevtina Ibragimova vs Yeon Woo Ku"
+    ],
+    "family_sample": [
+     "Handicap - Asian - Games",
+     "Head To Head",
+     "Main Dynamic Over/Under"
+    ],
+    "timestamp_sample": [],
+    "mentions_tennis": true,
+    "hints": {
+     "atp": false,
+     "wta": true,
+     "challenger": true,
+     "itf": true,
+     "qualif": false,
+     "doubles": true,
+     "set": false,
+     "games": false,
+     "spread": true
+    }
+   }
+  },
+  {
+   "candidate": "theoddsapi_keyless",
+   "host": "https://api.the-odds-api.com",
+   "url": "https://api.the-odds-api.com/v4/sports/?apiKey=",
+   "why": "an aggregator with a free tier; checked to establish whether it works without a key at all",
+   "independence_if_usable": "many books at once, if it were usable unattended",
+   "robots": {
+    "robots_status": 404,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": false,
+   "status": 401,
+   "error": "HTTP Error 401: Unauthorized",
+   "ms": 99
+  },
+  {
+   "candidate": "betfair_public",
+   "host": "https://www.betfair.com",
+   "url": "https://www.betfair.com/sport/tennis",
+   "why": "the largest tennis exchange; checked only to record whether anything is publicly reachable without an application key",
+   "independence_if_usable": "a true exchange with two-sided prices",
+   "robots": {
+    "robots_status": 403,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": false,
+   "status": 403,
+   "error": "HTTP Error 403: Forbidden",
+   "ms": 103
+  },
+  {
+   "candidate": "smarkets_public",
+   "host": "https://api.smarkets.com",
+   "url": "https://api.smarkets.com/v3/events/?type=sport&sport_id=8&state=upcoming&limit=50",
+   "why": "an exchange with a documented public API",
+   "independence_if_usable": "a second true exchange",
+   "robots": {
+    "robots_status": 404,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": false,
+   "status": 400,
+   "error": "HTTP Error 400: Bad Request",
+   "ms": 216
+  },
+  {
+   "candidate": "pinnacle_public",
+   "host": "https://api.pinnacle.com",
+   "url": "https://api.pinnacle.com/v1/sports",
+   "why": "the classic sharp book; the mandate says do not assume it is available, so this asks",
+   "independence_if_usable": "the sharpest single reference, if it were open",
+   "robots": {
+    "robots_status": 451,
+    "verdict": "NO_ROBOTS_SERVED",
+    "disallow_rules": []
+   },
+   "ok": false,
+   "status": 451,
+   "error": "HTTP Error 451: Unavailable For Legal Reasons",
+   "ms": 74
+  }
+ ]
+}
