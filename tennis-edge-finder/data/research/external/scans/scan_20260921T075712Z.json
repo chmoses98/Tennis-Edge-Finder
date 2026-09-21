@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T07:57:12.502281+00:00",
+ "run_id": "20260921T075712Z",
+ "external_parse": {
+  "events": 140,
+  "markets": 1516,
+  "skipped_family": 241,
+  "skipped_period": 519,
+  "skipped_live": 26,
+  "one_sided": 15,
+  "rows": 2579,
+  "devigged": 741
+ },
+ "smarkets_fetch": {
+  "events_seen": 202,
+  "events_priced": 80,
+  "markets": 887,
+  "markets_mapped": 286,
+  "contracts": 614,
+  "quoted_contracts": 614,
+  "raw": "data/research/external/raw/20260921T075712Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 286,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 61,
+  "rows": 553,
+  "two_sided": 546,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 950,
+ "external_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 85,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6439,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Alafia Ayeni": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Henry Dornbusch": 1,
+   "Thiago Pernas": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 197,
+  "by_status": {
+   "MAPPED": 155,
+   "UNMAPPED_PLAYER": 40,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7868,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Alafia Ayeni": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 100,
+ "kalshi_mapped_matches": 155,
+ "model_witness_available": true,
+ "rows": 136,
+ "counts": {
+  "PASS": 131,
+  "tri:MODEL_LONE_OUTLIER": 80,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MARKETS_AGREE": 12,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
