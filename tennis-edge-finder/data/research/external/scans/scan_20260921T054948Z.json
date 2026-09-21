@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-21T05:49:48.784846+00:00",
+ "run_id": "20260921T054948Z",
+ "external_parse": {
+  "events": 112,
+  "markets": 1313,
+  "skipped_family": 214,
+  "skipped_period": 447,
+  "skipped_live": 11,
+  "one_sided": 9,
+  "rows": 2239,
+  "devigged": 643
+ },
+ "smarkets_fetch": {
+  "events_seen": 206,
+  "events_priced": 80,
+  "markets": 971,
+  "markets_mapped": 306,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20260921T054948Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 621,
+  "two_sided": 613,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 979,
+ "external_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6154,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'agostino": 1,
+   "Aneta Kucmova": 1,
+   "Guiomar Maristany": 1,
+   "Kamalov Abdumalik": 1,
+   "Valerio Bracci": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 10,
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jessica Pieri": 1,
+   "Nikita Mashtakov": 1,
+   "Stefano D'Agostino": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 199,
+  "by_status": {
+   "MAPPED": 156,
+   "UNMAPPED_PLAYER": 41,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7839,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Aneta Kucmova": 1,
+   "Varchasva Thapliyag Sidh": 1,
+   "Leonardo Vega": 1,
+   "Laurens Harnoth Manrubia": 1,
+   "Tristan McCormick": 1,
+   "Valerio Bracci": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 156,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 116,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 56,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
