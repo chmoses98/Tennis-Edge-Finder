@@ -1,9 +1,9 @@
 {
- "built_at": "2026-09-22T05:15:51.659558+00:00",
+ "built_at": "2026-09-22T11:59:03.320154+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
-   "run": "20260921T110520Z",
+   "run": "20260922T101856Z",
    "files": {
     "atp_matches_1990.csv.gz": {
      "raw": 3681,
@@ -194,7 +194,7 @@
   },
   "sackmann_ATP_qual_chall": {
    "status": "OK",
-   "run": "20260921T110520Z",
+   "run": "20260922T101856Z",
    "files": {
     "atp_matches_qual_chall_1990.csv.gz": {
      "raw": 2233,
@@ -385,7 +385,7 @@
   },
   "sackmann_ATP_futures": {
    "status": "OK",
-   "run": "20260921T110520Z",
+   "run": "20260922T101856Z",
    "files": {
     "atp_matches_futures_1991.csv.gz": {
      "raw": 9059,
@@ -571,7 +571,7 @@
   },
   "sackmann_WTA_main": {
    "status": "OK",
-   "run": "20260921T110520Z",
+   "run": "20260922T101856Z",
    "files": {
     "wta_matches_1990.csv.gz": {
      "raw": 2728,
@@ -762,7 +762,7 @@
   },
   "sackmann_WTA_qual_itf": {
    "status": "OK",
-   "run": "20260921T110520Z",
+   "run": "20260922T101856Z",
    "files": {
     "wta_matches_qual_itf_1990.csv.gz": {
      "raw": 7763,
@@ -953,7 +953,7 @@
   },
   "tml_ATP_main": {
    "status": "OK",
-   "run": "20260921T110520Z",
+   "run": "20260922T101856Z",
    "files": {
     "1990.csv.gz": {
      "raw": 3683,
@@ -1144,7 +1144,7 @@
   },
   "tml_ATP_challenger": {
    "status": "OK",
-   "run": "20260921T112304Z",
+   "run": "20260922T103503Z",
    "files": {
     "2000_challenger.csv.gz": {
      "raw": 3534,
@@ -1277,30 +1277,30 @@
      "quarantine": 8
     },
     "2026_challenger.csv.gz": {
-     "raw": 5605,
-     "clean": 5603,
+     "raw": 5790,
+     "clean": 5788,
      "quarantine": 2
     }
    }
   },
   "espn_ATP": {
    "status": "OK",
-   "run": "20260921T111418Z",
+   "run": "20260922T102627Z",
    "files": {
     "espn_matches_ATP_2026.csv.gz": {
-     "raw": 2153,
-     "clean": 2102,
+     "raw": 2166,
+     "clean": 2115,
      "quarantine": 51
     }
    }
   },
   "espn_WTA": {
    "status": "OK",
-   "run": "20260921T111418Z",
+   "run": "20260922T102627Z",
    "files": {
     "espn_matches_WTA_2026.csv.gz": {
-     "raw": 3588,
-     "clean": 3507,
+     "raw": 3625,
+     "clean": 3544,
      "quarantine": 81
     }
    }
@@ -1309,45 +1309,45 @@
  "min_year": 1990,
  "cross_source_duplicates_dropped": 142833,
  "player_crosswalk": {
-  "foreign_players": 6099,
+  "foreign_players": 6119,
   "by_status": {
-   "MAPPED": 5702,
-   "NO_CANONICAL_MATCH": 338,
+   "MAPPED": 5718,
+   "NO_CANONICAL_MATCH": 342,
    "AMBIGUOUS_NAME": 59
   },
-  "rows_total": 1630578,
-  "rows_canonical_id": 1621696,
-  "foreign_rows": 102855,
-  "foreign_rows_mapped": 93973
+  "rows_total": 1630813,
+  "rows_canonical_id": 1621905,
+  "foreign_rows": 103090,
+  "foreign_rows_mapped": 94182
  },
  "player_crosswalk_by_system": {
   "tml": {
-   "foreign_players": 5005,
+   "foreign_players": 5012,
    "by_status": {
-    "MAPPED": 4712,
-    "NO_CANONICAL_MATCH": 241,
+    "MAPPED": 4717,
+    "NO_CANONICAL_MATCH": 243,
     "AMBIGUOUS_NAME": 52
    }
   },
   "espn": {
-   "foreign_players": 1094,
+   "foreign_players": 1107,
    "by_status": {
-    "MAPPED": 990,
-    "NO_CANONICAL_MATCH": 97,
+    "MAPPED": 1001,
+    "NO_CANONICAL_MATCH": 99,
     "AMBIGUOUS_NAME": 7
    }
   }
  },
- "rows": 1630578,
+ "rows": 1630813,
  "quarantine_rows": 13861,
  "by_tour_level": {
-  "ATP|CHALLENGER": 281929,
+  "ATP|CHALLENGER": 282114,
   "ATP|GRAND_SLAM": 30991,
   "ATP|ITF": 518952,
   "ATP|MASTERS_1000": 25862,
   "ATP|OLYMPICS": 70,
   "ATP|TEAM": 11471,
-  "ATP|TOUR_500_250": 85922,
+  "ATP|TOUR_500_250": 85935,
   "ATP|TOUR_FINALS": 556,
   "WTA|GRAND_SLAM": 31067,
   "WTA|ITF": 467977,
@@ -1355,14 +1355,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 69520,
+  "WTA|TOUR_500_250": 69557,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
   "sackmann": 1527723,
-  "tml": 97252,
-  "espn": 5603
+  "tml": 97437,
+  "espn": 5653
  },
  "seasons": {
   "1990": 15737,
@@ -1401,7 +1401,7 @@
   "2023": 73151,
   "2024": 79627,
   "2025": 56342,
-  "2026": 29329
+  "2026": 29564
  },
- "matches_sha256": "7714b87be468d94787bbff54b2e779dcfa76bf9ef4b3d0cf227a3cf3ab84c724"
+ "matches_sha256": "642d376f4a81d40676eb19859aecc36813a9ef1c0d49cb2bf96c0a42b60efa95"
 }
