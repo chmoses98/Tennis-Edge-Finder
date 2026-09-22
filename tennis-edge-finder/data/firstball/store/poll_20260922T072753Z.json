@@ -1,0 +1,101 @@
+{
+ "run_id": "20260922T072753Z",
+ "started_at": "2026-09-22T07:27:53.750364+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 442,
+ "truths_written": 8,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPGSPREAD-26SEP22WEBMAT": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26SEP22YMEGAL": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP22YMEGAL": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP22WEBMAT": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP22WEBMAT": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP22YMEGAL": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP22YMEGAL-2": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP22WEBMAT-2": {
+   "confidence": "B",
+   "bracket_s": 264.143618,
+   "first_ball": "2026-09-22T07:33:06.104317+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "mapping": {
+  "UNMATCHED": 1547,
+  "MATCHED": 442,
+  "AMBIGUOUS": 20
+ },
+ "mapping_refusals": {
+  "KXATPEXACTMATCH-26SEP22HARMIY": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPMATCH-26SEP22HARMIY": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP22HARMIY-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP22HARMIY-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  }
+ },
+ "finished_at": "2026-09-22T07:38:46.426773+00:00"
+}
