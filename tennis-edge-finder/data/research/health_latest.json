@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260922T043600Z",
-   "age_hours": 7.5,
+   "age_hours": 12.6,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,28 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 817,
-   "projected": 501,
-   "not_projected": 316,
+   "projectable_open_pregame": 375,
+   "projected": 209,
+   "not_projected": 166,
    "missing_sample": [
-    "KXWTACHALLENGERMATCH-26SEP22PIEDE-PIE: Ginevra de Angelis: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22PIEDE-DE: Ginevra de Angelis: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22ALTSHI-SHI: Alya Naz Altinel: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22ALTSHI-ALT: Alya Naz Altinel: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22STEWER-WER: Caroline Werner: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22STEWER-STE: Caroline Werner: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22SEBKNU-SEB: Gabriela Knutson: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22SEBKNU-KNU: Gabriela Knutson: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22BRACAR-CAR: Maria Carle: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP22BRACAR-BRA: Maria Carle: UNMAPPED (no exact full-name match)"
+    "KXITFWMATCH-26SEP22BRELUT-LUT: Anne Christine Lutkemeyer: UNMAPPED (no exact full-name matc",
+    "KXITFWMATCH-26SEP22BRELUT-BRE: Anne Christine Lutkemeyer: UNMAPPED (no exact full-name matc",
+    "KXITFWMATCH-26SEP22GARMAI-MAI: Manuela Maia Citolino: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP22GARMAI-GAR: Manuela Maia Citolino: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP22ALBMOR-MOR: Maria Moraes: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP22ALBMOR-ALB: Maria Moraes: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP22DIASHA-SHA: Beatriz Dias: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP22DIASHA-DIA: Beatriz Dias: UNMAPPED (no exact full-name match)",
+    "KXITFWMATCH-26SEP22MARTRA-TRA: Thea Marcu: UNMAPPED (no exact full-name match); Alla Trayst",
+    "KXITFWMATCH-26SEP22MARTRA-MAR: Thea Marcu: UNMAPPED (no exact full-name match); Alla Trayst"
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 448,
-    "closed_since_discovery": 244,
+    "closed_since_discovery": 781,
+    "past_nominal_start": 353,
     "tournament_scope_not_priced_tonight": 232
    },
-   "projection_run": "20260922T120258Z"
+   "projection_run": "20260922T171338Z"
   }
  },
  {
@@ -66,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260922T113816Z",
-   "age_min": 23.8,
+   "run": "20260922T165844Z",
+   "age_min": 13.9,
    "incomplete": [
     {
      "stage": "trades",
@@ -108,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 8042,
-   "start_unknown_used_schedule": 6340
+   "n": 8251,
+   "start_unknown_used_schedule": 6489
   }
  },
  {
@@ -119,7 +119,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 501
+   "MATCHED": 209
   }
  },
  {
@@ -129,36 +129,36 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 662,
-    "strict_truths": 441,
+    "truths": 682,
+    "strict_truths": 459,
     "no_play": 5,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 221,
-     "B": 436,
+     "C": 223,
+     "B": 454,
      "A": 5
     },
-    "bracket_seconds_median": 200.623737,
+    "bracket_seconds_median": 201.833814,
     "bracket_seconds_p90": 256.211888,
     "chain_violations": [],
-    "observations": 218023,
-    "matches_observed": 662,
+    "observations": 220412,
+    "matches_observed": 682,
     "watchlist": {
-     "total": 472,
-     "levels_with_a_wired_source": 104,
-     "levels_without_any_source": 368,
-     "watched_and_observed": 85,
-     "covered_and_observed": 85,
-     "pct_covered_with_source_mapping": 0.8173
+     "total": 390,
+     "levels_with_a_wired_source": 61,
+     "levels_without_any_source": 329,
+     "watched_and_observed": 50,
+     "covered_and_observed": 50,
+     "pct_covered_with_source_mapping": 0.8197
     },
-    "pct_classifiable": 0.2151,
-    "pct_strict_pregame": 0.1912,
+    "pct_classifiable": 0.2169,
+    "pct_strict_pregame": 0.1929,
     "timing_classes": {
-     "START_UNKNOWN": 6312,
-     "STRICT_PREGAME": 1538,
-     "POST_START": 186,
-     "AMBIGUOUS": 6
+     "START_UNKNOWN": 6461,
+     "STRICT_PREGAME": 1592,
+     "POST_START": 190,
+     "AMBIGUOUS": 8
     }
    }
   }
@@ -181,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1500,
-   "executable_close_rows": 1702,
-   "matches_with_strict_truth": 441,
-   "observations_classified": 8042,
-   "pct_strict_pregame": 0.1912,
-   "horizons_populated": 11337,
-   "horizons_total": 64336
+   "strict_clv_rows": 1554,
+   "executable_close_rows": 1762,
+   "matches_with_strict_truth": 459,
+   "observations_classified": 8251,
+   "pct_strict_pregame": 0.1929,
+   "horizons_populated": 11723,
+   "horizons_total": 66008
   }
  },
  {
@@ -213,7 +213,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-22T11:59:03.320154+00:00",
+   "built_at": "2026-09-22T17:10:10.998460+00:00",
    "rows": 1630813
   }
  },
@@ -223,7 +223,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260922T101856Z",
-   "snapshot_age_days": 0.07,
+   "snapshot_age_days": 0.29,
    "max_season_files": [
     2026,
     2026
