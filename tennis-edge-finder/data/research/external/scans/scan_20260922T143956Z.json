@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-22T14:39:56.008453+00:00",
+ "run_id": "20260922T143956Z",
+ "external_parse": {
+  "events": 204,
+  "markets": 1699,
+  "skipped_family": 269,
+  "skipped_period": 535,
+  "skipped_live": 46,
+  "one_sided": 57,
+  "rows": 2789,
+  "devigged": 838
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 981,
+  "markets_mapped": 356,
+  "contracts": 790,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20260922T143956Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 356,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 740,
+  "two_sided": 740,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1358,
+ "external_mapping": {
+  "total": 193,
+  "by_status": {
+   "MAPPED": 134,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.6943,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Ginevra De Angelis": 1,
+   "Caroline Werner": 1,
+   "Aditya Vyas": 1,
+   "Bautista Durrels Rojo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Murkel Dellien": 1,
+   "Valentina Steiner": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jessica Pieri": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Kazakhstan": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 188,
+  "by_status": {
+   "MAPPED": 161,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8564,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Ginevra de Angelis": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 104,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 161,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 121,
+  "tri:MODEL_LONE_OUTLIER": 76,
+  "tri:INSUFFICIENT_INPUTS": 37,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
