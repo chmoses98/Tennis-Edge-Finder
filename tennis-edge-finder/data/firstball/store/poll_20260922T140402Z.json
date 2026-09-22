@@ -1,0 +1,29 @@
+{
+ "run_id": "20260922T140402Z",
+ "started_at": "2026-09-22T14:04:02.246027+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 70,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP22KUZBUY": {
+   "confidence": "B",
+   "bracket_s": 198.826518,
+   "first_ball": "2026-09-22T14:09:07.807927+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 70,
+  "UNMATCHED": 1432
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-22T14:13:32.457874+00:00"
+}
