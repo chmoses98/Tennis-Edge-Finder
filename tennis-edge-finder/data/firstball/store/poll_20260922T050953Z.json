@@ -1,0 +1,41 @@
+{
+ "run_id": "20260922T050953Z",
+ "started_at": "2026-09-22T05:09:53.689284+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 60,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTASETWINNER-26SEP21PARYAM-2": {
+   "confidence": "B",
+   "bracket_s": 192.681762,
+   "first_ball": "2026-09-22T05:09:34.330070+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26SEP21PARYAM-1": {
+   "confidence": "B",
+   "bracket_s": 192.681762,
+   "first_ball": "2026-09-22T05:09:34.330070+00:00",
+   "no_play": false
+  },
+  "KXWTAMATCH-26SEP21PARYAM": {
+   "confidence": "B",
+   "bracket_s": 192.681762,
+   "first_ball": "2026-09-22T05:09:34.330070+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 60,
+  "UNMATCHED": 27
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-22T05:19:26.902579+00:00"
+}
