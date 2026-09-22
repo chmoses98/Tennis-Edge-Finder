@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-22T11:16:00.989731+00:00",
+ "run_id": "20260922T111600Z",
+ "external_parse": {
+  "events": 254,
+  "markets": 1922,
+  "skipped_family": 289,
+  "skipped_period": 605,
+  "skipped_live": 76,
+  "one_sided": 58,
+  "rows": 3219,
+  "devigged": 970
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1091,
+  "markets_mapped": 393,
+  "contracts": 882,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20260922T111600Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 393,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 860,
+  "two_sided": 857,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 706,
+ "external_mapping": {
+  "total": 244,
+  "by_status": {
+   "MAPPED": 166,
+   "UNMAPPED_PLAYER": 30,
+   "DOUBLES_UNSUPPORTED": 48
+  },
+  "mapped_rate": 0.6803,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Hanlei Lu": 1,
+   "Marie Bouzkova": 1,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Stefano D'agostino": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Valentina Steiner": 1,
+   "Murkel Dellien": 1,
+   "Jessica Pieri": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 168,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.866,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Maria Carle": 1
+  }
+ },
+ "matched_both_venues": 109,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 168,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 111,
+  "tri:MODEL_LONE_OUTLIER": 75,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 6,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 49
+ }
+}
