@@ -1,0 +1,29 @@
+{
+ "run_id": "20260922T135243Z",
+ "started_at": "2026-09-22T13:52:43.389291+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 80,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP22JORPOH": {
+   "confidence": "B",
+   "bracket_s": 200.314504,
+   "first_ball": "2026-09-22T14:00:33.395157+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 80,
+  "UNMATCHED": 1496
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-22T14:02:24.563927+00:00"
+}
