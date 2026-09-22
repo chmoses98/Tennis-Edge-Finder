@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-22T10:33:25.874303+00:00",
+ "run_id": "20260922T103325Z",
+ "external_parse": {
+  "events": 271,
+  "markets": 2101,
+  "skipped_family": 314,
+  "skipped_period": 666,
+  "skipped_live": 77,
+  "one_sided": 57,
+  "rows": 3479,
+  "devigged": 1064
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1146,
+  "markets_mapped": 406,
+  "contracts": 916,
+  "quoted_contracts": 904,
+  "raw": "data/research/external/raw/20260922T103325Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 406,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 43,
+  "rows": 873,
+  "two_sided": 868,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 997,
+ "external_mapping": {
+  "total": 261,
+  "by_status": {
+   "MAPPED": 182,
+   "UNMAPPED_PLAYER": 30,
+   "DOUBLES_UNSUPPORTED": 49
+  },
+  "mapped_rate": 0.6973,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Hanlei Lu": 1,
+   "Marie Bouzkova": 1,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Stefano D'agostino": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 8,
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Hanlei Lu": 1,
+   "Katherine Sebov": 1,
+   "Valentina Steiner": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1,
+   "Jessica Pieri": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 255,
+  "by_status": {
+   "MAPPED": 220,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.8627,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Nikita Mashtakov": 1,
+   "Ginevra de Angelis": 1
+  }
+ },
+ "matched_both_venues": 143,
+ "external_mapped_matches": 184,
+ "kalshi_mapped_matches": 220,
+ "model_witness_available": true,
+ "rows": 176,
+ "counts": {
+  "PASS": 169,
+  "tri:MODEL_LONE_OUTLIER": 107,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 15,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 52
+ }
+}
