@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-22T15:26:43.522894+00:00",
+ "run_id": "20260922T152643Z",
+ "external_parse": {
+  "events": 196,
+  "markets": 1665,
+  "skipped_family": 265,
+  "skipped_period": 517,
+  "skipped_live": 41,
+  "one_sided": 45,
+  "rows": 2769,
+  "devigged": 838
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 930,
+  "markets_mapped": 340,
+  "contracts": 742,
+  "quoted_contracts": 742,
+  "raw": "data/research/external/raw/20260922T152643Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 340,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 44,
+  "rows": 698,
+  "two_sided": 695,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 685,
+ "external_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 47
+  },
+  "mapped_rate": 0.6576,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Caroline Werner": 1,
+   "Ginevra De Angelis": 1,
+   "Bautista Durrels Rojo": 1,
+   "Gordon Gallagher": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Murkel Dellien": 1,
+   "Jessica Pieri": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Kazakhstan": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 153,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8497,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Ginevra de Angelis": 1,
+   "Caroline Werner": 1,
+   "Fares Zakaria": 1,
+   "Ryoma Cogan": 1
+  }
+ },
+ "matched_both_venues": 74,
+ "external_mapped_matches": 132,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 86,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
