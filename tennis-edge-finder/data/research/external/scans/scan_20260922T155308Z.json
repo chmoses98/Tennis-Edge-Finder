@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-22T15:53:08.099326+00:00",
+ "run_id": "20260922T155308Z",
+ "external_parse": {
+  "events": 195,
+  "markets": 1650,
+  "skipped_family": 262,
+  "skipped_period": 510,
+  "skipped_live": 40,
+  "one_sided": 47,
+  "rows": 2737,
+  "devigged": 831
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1015,
+  "markets_mapped": 346,
+  "contracts": 758,
+  "quoted_contracts": 758,
+  "raw": "data/research/external/raw/20260922T155308Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 346,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 712,
+  "two_sided": 710,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1339,
+ "external_mapping": {
+  "total": 183,
+  "by_status": {
+   "MAPPED": 118,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 48
+  },
+  "mapped_rate": 0.6448,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Ginevra De Angelis": 1,
+   "Caroline Werner": 1,
+   "Filip Paroulek": 1,
+   "Gordon Gallagher": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Jessica Pieri": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Kazakhstan": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 201,
+  "by_status": {
+   "MAPPED": 169,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.8408,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Ginevra de Angelis": 1,
+   "Caroline Werner": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 87,
+ "external_mapped_matches": 129,
+ "kalshi_mapped_matches": 169,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 109,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:INSUFFICIENT_INPUTS": 45,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
