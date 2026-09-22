@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-22T05:50:12.465589+00:00",
+ "run_id": "20260922T055012Z",
+ "external_parse": {
+  "events": 226,
+  "markets": 2357,
+  "skipped_family": 388,
+  "skipped_period": 739,
+  "skipped_live": 21,
+  "one_sided": 32,
+  "rows": 3935,
+  "devigged": 1196
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1217,
+  "markets_mapped": 425,
+  "contracts": 934,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20260922T055012Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 425,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 858,
+  "two_sided": 854,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 817,
+ "external_mapping": {
+  "total": 218,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 53
+  },
+  "mapped_rate": 0.6927,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Caroline Werner": 1,
+   "Kotaro Mochizuki": 1,
+   "Zhe Jiang": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 204,
+  "by_status": {
+   "MAPPED": 175,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8578,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Murkel Dellien": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 91,
+ "external_mapped_matches": 166,
+ "kalshi_mapped_matches": 175,
+ "model_witness_available": true,
+ "rows": 152,
+ "counts": {
+  "PASS": 148,
+  "tri:MODEL_LONE_OUTLIER": 58,
+  "tri:INSUFFICIENT_INPUTS": 70,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
