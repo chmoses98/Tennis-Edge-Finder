@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-22T16:42:11.547519+00:00",
+ "run_id": "20260922T164211Z",
+ "external_parse": {
+  "events": 185,
+  "markets": 1540,
+  "skipped_family": 247,
+  "skipped_period": 471,
+  "skipped_live": 39,
+  "one_sided": 37,
+  "rows": 2573,
+  "devigged": 784
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 983,
+  "markets_mapped": 343,
+  "contracts": 744,
+  "quoted_contracts": 744,
+  "raw": "data/research/external/raw/20260922T164211Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 343,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 29,
+  "rows": 715,
+  "two_sided": 710,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 458,
+ "external_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 111,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 46
+  },
+  "mapped_rate": 0.6416,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Ginevra De Angelis": 1,
+   "Caroline Werner": 1,
+   "Filip Paroulek": 1,
+   "Gordon Gallagher": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Kazakhstan": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 135,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8667,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Murkel Dellien": 1,
+   "Ginevra de Angelis": 1,
+   "Caroline Werner": 1,
+   "Jakub Kusy": 1,
+   "Fares Zakaria": 1,
+   "Ryoma Cogan": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
