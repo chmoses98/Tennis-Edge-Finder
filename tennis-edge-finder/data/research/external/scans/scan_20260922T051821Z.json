@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-22T05:18:21.736416+00:00",
+ "run_id": "20260922T051821Z",
+ "external_parse": {
+  "events": 232,
+  "markets": 2386,
+  "skipped_family": 394,
+  "skipped_period": 751,
+  "skipped_live": 24,
+  "one_sided": 41,
+  "rows": 3962,
+  "devigged": 1199
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1401,
+  "markets_mapped": 463,
+  "contracts": 1016,
+  "quoted_contracts": 890,
+  "raw": "data/research/external/raw/20260922T051821Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 463,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 164,
+  "rows": 852,
+  "two_sided": 849,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1863,
+ "external_mapping": {
+  "total": 224,
+  "by_status": {
+   "MAPPED": 157,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 53
+  },
+  "mapped_rate": 0.7009,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Caroline Werner": 1,
+   "Kotaro Mochizuki": 1,
+   "Zhe Jiang": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 10,
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 337,
+  "by_status": {
+   "MAPPED": 284,
+   "UNMAPPED_PLAYER": 53
+  },
+  "mapped_rate": 0.8427,
+  "top_refusal_subjects": {
+   "Beatriz Dias": 2,
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1
+  }
+ },
+ "matched_both_venues": 136,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 284,
+ "model_witness_available": true,
+ "rows": 228,
+ "counts": {
+  "PASS": 215,
+  "tri:MODEL_LONE_OUTLIER": 96,
+  "tri:INSUFFICIENT_INPUTS": 90,
+  "WATCH": 12,
+  "tri:ALL_THREE_DISAGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 10,
+  "SHADOW_BET": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
