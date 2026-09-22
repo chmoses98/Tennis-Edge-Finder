@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-22T01:31:16.383820+00:00",
+ "run_id": "20260922T013116Z",
+ "external_parse": {
+  "events": 222,
+  "markets": 2349,
+  "skipped_family": 416,
+  "skipped_period": 707,
+  "skipped_live": 7,
+  "one_sided": 14,
+  "rows": 3936,
+  "devigged": 1207
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1506,
+  "markets_mapped": 473,
+  "contracts": 1000,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20260922T013116Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 473,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 171,
+  "rows": 829,
+  "two_sided": 829,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1769,
+ "external_mapping": {
+  "total": 210,
+  "by_status": {
+   "MAPPED": 143,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 51
+  },
+  "mapped_rate": 0.681,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Shanghui Li": 1,
+   "Ryoma Cogan": 1,
+   "Junxiong Dong": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 315,
+  "by_status": {
+   "MAPPED": 262,
+   "UNMAPPED_PLAYER": 53
+  },
+  "mapped_rate": 0.8317,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 109,
+ "external_mapped_matches": 162,
+ "kalshi_mapped_matches": 262,
+ "model_witness_available": true,
+ "rows": 204,
+ "counts": {
+  "PASS": 200,
+  "tri:INSUFFICIENT_INPUTS": 126,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
