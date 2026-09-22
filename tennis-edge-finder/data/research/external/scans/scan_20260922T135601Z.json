@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-22T13:56:01.398765+00:00",
+ "run_id": "20260922T135601Z",
+ "external_parse": {
+  "events": 201,
+  "markets": 1620,
+  "skipped_family": 264,
+  "skipped_period": 482,
+  "skipped_live": 45,
+  "one_sided": 46,
+  "rows": 2769,
+  "devigged": 828
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1065,
+  "markets_mapped": 370,
+  "contracts": 822,
+  "quoted_contracts": 822,
+  "raw": "data/research/external/raw/20260922T135601Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 796,
+  "two_sided": 796,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 700,
+ "external_mapping": {
+  "total": 190,
+  "by_status": {
+   "MAPPED": 132,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 45
+  },
+  "mapped_rate": 0.6947,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Linda Noskova": 1,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Ginevra De Angelis": 1,
+   "Caroline Werner": 1,
+   "Thiago Pernas": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Murkel Dellien": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Valentina Steiner": 1,
+   "Jessica Pieri": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.8679,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Ginevra de Angelis": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Kazuki Nakajima": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "matched_both_venues": 93,
+ "external_mapped_matches": 134,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 110,
+  "tri:MODEL_LONE_OUTLIER": 76,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 4,
+  "tri:MARKETS_AGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
