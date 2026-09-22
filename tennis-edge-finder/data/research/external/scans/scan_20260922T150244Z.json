@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-22T15:02:44.288571+00:00",
+ "run_id": "20260922T150244Z",
+ "external_parse": {
+  "events": 203,
+  "markets": 1704,
+  "skipped_family": 273,
+  "skipped_period": 532,
+  "skipped_live": 42,
+  "one_sided": 57,
+  "rows": 2784,
+  "devigged": 841
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 950,
+  "markets_mapped": 346,
+  "contracts": 758,
+  "quoted_contracts": 758,
+  "raw": "data/research/external/raw/20260922T150244Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 346,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 45,
+  "rows": 713,
+  "two_sided": 707,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 777,
+ "external_mapping": {
+  "total": 191,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 47
+  },
+  "mapped_rate": 0.6806,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Kazakhstan (W)": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Ginevra De Angelis": 1,
+   "Caroline Werner": 1,
+   "Aditya Vyas": 1,
+   "Bautista Durrels Rojo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 6,
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Murkel Dellien": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jessica Pieri": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Kazakhstan": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 146,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.8538,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Murkel Dellien": 1,
+   "Ginevra de Angelis": 1,
+   "Caroline Werner": 1,
+   "Richard Lacis": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 146,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 62,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
