@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-22T05:04:37.617489+00:00",
+ "run_id": "20260922T050437Z",
+ "external_parse": {
+  "events": 237,
+  "markets": 2502,
+  "skipped_family": 424,
+  "skipped_period": 782,
+  "skipped_live": 21,
+  "one_sided": 41,
+  "rows": 4127,
+  "devigged": 1250
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1479,
+  "markets_mapped": 486,
+  "contracts": 1066,
+  "quoted_contracts": 890,
+  "raw": "data/research/external/raw/20260922T050437Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 486,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 224,
+  "rows": 842,
+  "two_sided": 839,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 798,
+ "external_mapping": {
+  "total": 228,
+  "by_status": {
+   "MAPPED": 161,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 51
+  },
+  "mapped_rate": 0.7061,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Caroline Werner": 1,
+   "Masaki Ishikawa": 1,
+   "Kotaro Mochizuki": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 204,
+  "by_status": {
+   "MAPPED": 182,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8922,
+  "top_refusal_subjects": {
+   "Beatriz Dias": 2,
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Attila Hueller-Varga": 1,
+   "Vito Dell'elba": 1,
+   "Nikodije Trivunac": 1,
+   "Kiruthik Kalyaan  Annur Senthil Kumar": 1
+  }
+ },
+ "matched_both_venues": 104,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 182,
+ "model_witness_available": true,
+ "rows": 174,
+ "counts": {
+  "PASS": 163,
+  "tri:INSUFFICIENT_INPUTS": 80,
+  "tri:KALSHI_LONE_OUTLIER": 22,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "WATCH": 9,
+  "tri:MARKETS_AGREE": 5,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
