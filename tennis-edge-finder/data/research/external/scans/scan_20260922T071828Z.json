@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-22T07:18:28.329071+00:00",
+ "run_id": "20260922T071828Z",
+ "external_parse": {
+  "events": 242,
+  "markets": 2210,
+  "skipped_family": 367,
+  "skipped_period": 700,
+  "skipped_live": 39,
+  "one_sided": 33,
+  "rows": 3507,
+  "devigged": 1110
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1128,
+  "markets_mapped": 416,
+  "contracts": 928,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20260922T071828Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 416,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 74,
+  "rows": 854,
+  "two_sided": 846,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 954,
+ "external_mapping": {
+  "total": 234,
+  "by_status": {
+   "MAPPED": 163,
+   "UNMAPPED_PLAYER": 20,
+   "DOUBLES_UNSUPPORTED": 51
+  },
+  "mapped_rate": 0.6966,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Stefano D'agostino": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Hanlei Lu": 1,
+   "Nikita Mashtakov": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 251,
+  "by_status": {
+   "MAPPED": 215,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.8566,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Ginevra de Angelis": 1
+  }
+ },
+ "matched_both_venues": 110,
+ "external_mapped_matches": 176,
+ "kalshi_mapped_matches": 215,
+ "model_witness_available": true,
+ "rows": 154,
+ "counts": {
+  "PASS": 148,
+  "tri:MODEL_LONE_OUTLIER": 63,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 68,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
