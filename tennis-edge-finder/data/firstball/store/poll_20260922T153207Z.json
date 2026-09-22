@@ -1,0 +1,29 @@
+{
+ "run_id": "20260922T153207Z",
+ "started_at": "2026-09-22T15:32:07.702420+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 28,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP22PODMAT": {
+   "confidence": "B",
+   "bracket_s": 229.687757,
+   "first_ball": "2026-09-22T15:30:20.308081+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 28,
+  "UNMATCHED": 1116
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-22T15:41:43.946669+00:00"
+}
