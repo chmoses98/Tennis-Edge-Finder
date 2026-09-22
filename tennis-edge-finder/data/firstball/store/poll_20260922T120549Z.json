@@ -1,0 +1,35 @@
+{
+ "run_id": "20260922T120549Z",
+ "started_at": "2026-09-22T12:05:49.084982+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 131,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP22JORCER": {
+   "confidence": "B",
+   "bracket_s": 230.517158,
+   "first_ball": "2026-09-22T12:04:02.109503+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP22CRAMON": {
+   "confidence": "B",
+   "bracket_s": 204.377736,
+   "first_ball": "2026-09-22T12:05:39.556950+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "UNMATCHED": 1720,
+  "MATCHED": 131
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-22T12:15:48.162337+00:00"
+}
