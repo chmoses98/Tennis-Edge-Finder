@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-22T00:00:01.259351+00:00",
+ "run_id": "20260922T000001Z",
+ "external_parse": {
+  "events": 221,
+  "markets": 2340,
+  "skipped_family": 413,
+  "skipped_period": 704,
+  "skipped_live": 6,
+  "one_sided": 17,
+  "rows": 3874,
+  "devigged": 1199
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1417,
+  "markets_mapped": 441,
+  "contracts": 922,
+  "quoted_contracts": 840,
+  "raw": "data/research/external/raw/20260922T000001Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 441,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 99,
+  "rows": 823,
+  "two_sided": 820,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 799,
+ "external_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 142,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 51
+  },
+  "mapped_rate": 0.6794,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Shanghui Li": 1,
+   "Ryoma Cogan": 1,
+   "Junxiong Dong": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 159,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.8196,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Maria Carle": 1,
+   "Augusto Land": 1,
+   "Dominik Dujka": 1
+  }
+ },
+ "matched_both_venues": 68,
+ "external_mapped_matches": 160,
+ "kalshi_mapped_matches": 159,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 123,
+  "tri:INSUFFICIENT_INPUTS": 63,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
