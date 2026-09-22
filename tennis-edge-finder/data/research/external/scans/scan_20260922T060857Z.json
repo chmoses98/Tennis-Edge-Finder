@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-22T06:08:57.291061+00:00",
+ "run_id": "20260922T060857Z",
+ "external_parse": {
+  "events": 223,
+  "markets": 2290,
+  "skipped_family": 370,
+  "skipped_period": 721,
+  "skipped_live": 23,
+  "one_sided": 29,
+  "rows": 3822,
+  "devigged": 1169
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1212,
+  "markets_mapped": 417,
+  "contracts": 920,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20260922T060857Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 417,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 68,
+  "rows": 852,
+  "two_sided": 848,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 864,
+ "external_mapping": {
+  "total": 215,
+  "by_status": {
+   "MAPPED": 152,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 52
+  },
+  "mapped_rate": 0.707,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Caroline Werner": 1,
+   "Mukund Sasikumar": 1,
+   "Filippo Alfano": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 212,
+  "by_status": {
+   "MAPPED": 175,
+   "UNMAPPED_PLAYER": 37
+  },
+  "mapped_rate": 0.8255,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Alya Naz Altinel": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "matched_both_venues": 103,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 175,
+ "model_witness_available": true,
+ "rows": 168,
+ "counts": {
+  "PASS": 159,
+  "tri:MODEL_LONE_OUTLIER": 76,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "WATCH": 7,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 10,
+  "tri:ALL_THREE_DISAGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
