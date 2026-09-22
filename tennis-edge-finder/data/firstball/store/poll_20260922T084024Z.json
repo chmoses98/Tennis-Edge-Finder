@@ -1,0 +1,59 @@
+{
+ "run_id": "20260922T084024Z",
+ "started_at": "2026-09-22T08:40:24.979948+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 347,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP22ZAAMAS": {
+   "confidence": "B",
+   "bracket_s": 253.285573,
+   "first_ball": "2026-09-22T08:40:44.514764+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "mapping": {
+  "UNMATCHED": 1795,
+  "MATCHED": 347,
+  "AMBIGUOUS": 20
+ },
+ "mapping_refusals": {
+  "KXATPEXACTMATCH-26SEP22HARMIY": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPMATCH-26SEP22HARMIY": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP22HARMIY-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXATPSETWINNER-26SEP22HARMIY-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186133 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  }
+ },
+ "finished_at": "2026-09-22T08:50:27.134365+00:00"
+}
