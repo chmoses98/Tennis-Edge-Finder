@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-22T00:33:52.006632+00:00",
+ "run_id": "20260922T003352Z",
+ "external_parse": {
+  "events": 221,
+  "markets": 2356,
+  "skipped_family": 416,
+  "skipped_period": 709,
+  "skipped_live": 6,
+  "one_sided": 14,
+  "rows": 3963,
+  "devigged": 1212
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1446,
+  "markets_mapped": 454,
+  "contracts": 952,
+  "quoted_contracts": 844,
+  "raw": "data/research/external/raw/20260922T003352Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 454,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 127,
+  "rows": 825,
+  "two_sided": 825,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 690,
+ "external_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 142,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 51
+  },
+  "mapped_rate": 0.6794,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Hanlei Lu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Czech Republic (W)": 1,
+   "Nikita Mashtakov": 1,
+   "Joel Josef Schwarzler": 1,
+   "Shanghui Li": 1,
+   "Ryoma Cogan": 1,
+   "Junxiong Dong": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Emerson Jones": 1,
+   "Donna Vekic": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Pyotr Nesterov": 1,
+   "Hanlei Lu": 1,
+   "Nuria Brancaccio": 1,
+   "Katherine Sebov": 1,
+   "Alya Naz Altinel": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 156,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.8205,
+  "top_refusal_subjects": {
+   "Hanlei Lu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nikita Mashtakov": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Gabriela Knutson": 1,
+   "Maria Carle": 1,
+   "Eduardo Lage": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 161,
+ "kalshi_mapped_matches": 128,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 89,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 5,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:KALSHI_LONE_OUTLIER": 13
+ },
+ "skips": {}
+}
