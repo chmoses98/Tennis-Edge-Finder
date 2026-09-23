@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-23T06:09:24.127105+00:00",
+ "run_id": "20260923T060924Z",
+ "external_parse": {
+  "events": 257,
+  "markets": 2086,
+  "skipped_family": 239,
+  "skipped_period": 578,
+  "skipped_live": 16,
+  "one_sided": 48,
+  "rows": 3380,
+  "devigged": 1217
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 884,
+  "markets_mapped": 321,
+  "contracts": 704,
+  "quoted_contracts": 704,
+  "raw": "data/research/external/raw/20260923T060924Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 321,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 692,
+  "two_sided": 687,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 770,
+ "external_mapping": {
+  "total": 249,
+  "by_status": {
+   "MAPPED": 165,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 64,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6627,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 64,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Kazuki Nakajima": 1,
+   "Amr Elsayed": 1,
+   "Jakub Kusy": 1,
+   "Piening Claus": 1,
+   "Marko Bekeni": 1,
+   "Matias Reyniak": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 41,
+   "MAPPED": 35,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Kazakhstan": 1,
+   "Ayana Akli": 1,
+   "Murkel Dellien": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 171,
+   "UNMAPPED_PLAYER": 31,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8424,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Eduardo Lage": 1,
+   "Martin Riu": 1,
+   "Victor Pagotto": 1,
+   "Alexander Gammariello": 1,
+   "Nicolas Robert": 1,
+   "Darsh Sachin Patel": 1,
+   "Nicolas Ulrich": 1
+  }
+ },
+ "matched_both_venues": 89,
+ "external_mapped_matches": 174,
+ "kalshi_mapped_matches": 171,
+ "model_witness_available": true,
+ "rows": 158,
+ "counts": {
+  "PASS": 155,
+  "tri:INSUFFICIENT_INPUTS": 107,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
