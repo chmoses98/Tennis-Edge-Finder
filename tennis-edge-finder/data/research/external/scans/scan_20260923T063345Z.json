@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-23T06:33:45.248620+00:00",
+ "run_id": "20260923T063345Z",
+ "external_parse": {
+  "events": 297,
+  "markets": 2296,
+  "skipped_family": 259,
+  "skipped_period": 631,
+  "skipped_live": 23,
+  "one_sided": 43,
+  "rows": 3691,
+  "devigged": 1360
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 538,
+  "markets_mapped": 200,
+  "contracts": 430,
+  "quoted_contracts": 430,
+  "raw": "data/research/external/raw/20260923T063345Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 200,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 418,
+  "two_sided": 416,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1568,
+ "external_mapping": {
+  "total": 289,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 29,
+   "DOUBLES_UNSUPPORTED": 68,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6609,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 68,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Kazakhstan (W)": 1,
+   "Murkel Dellien": 1,
+   "Guiomar Maristany": 1,
+   "Kazuki Nakajima": 1,
+   "Ryoma Cogan": 1,
+   "Pavel Skvortcov": 1,
+   "Amr Elsayed": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 33,
+   "DOUBLES_UNSUPPORTED": 42,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.4125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Kazakhstan": 1,
+   "Ayana Akli": 1,
+   "Murkel Dellien": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 305,
+  "by_status": {
+   "MAPPED": 258,
+   "UNMAPPED_PLAYER": 46,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8459,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1,
+   "Murkel Dellien": 1,
+   "Gabriela Knutson": 1,
+   "Giovanni Branchetti": 1,
+   "Eduardo Lage": 1
+  }
+ },
+ "matched_both_venues": 163,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 258,
+ "model_witness_available": true,
+ "rows": 298,
+ "counts": {
+  "PASS": 294,
+  "tri:INSUFFICIENT_INPUTS": 257,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
