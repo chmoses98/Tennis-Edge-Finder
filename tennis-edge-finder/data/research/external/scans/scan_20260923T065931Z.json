@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-23T06:59:31.079030+00:00",
+ "run_id": "20260923T065931Z",
+ "external_parse": {
+  "events": 287,
+  "markets": 2182,
+  "skipped_family": 240,
+  "skipped_period": 597,
+  "skipped_live": 23,
+  "one_sided": 35,
+  "rows": 3520,
+  "devigged": 1307
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 697,
+  "markets_mapped": 272,
+  "contracts": 592,
+  "quoted_contracts": 592,
+  "raw": "data/research/external/raw/20260923T065931Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 272,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 579,
+  "two_sided": 574,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 777,
+ "external_mapping": {
+  "total": 279,
+  "by_status": {
+   "MAPPED": 181,
+   "UNMAPPED_PLAYER": 30,
+   "DOUBLES_UNSUPPORTED": 67,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6487,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 67,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Kazakhstan (W)": 1,
+   "Murkel Dellien": 1,
+   "Guiomar Maristany": 1,
+   "Kazuki Nakajima": 1,
+   "Ryoma Cogan": 1,
+   "Pavel Skvortcov": 1,
+   "Amr Elsayed": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 43,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.4,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Kazakhstan": 1,
+   "Ayana Akli": 1,
+   "Murkel Dellien": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 216,
+  "by_status": {
+   "MAPPED": 177,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8194,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1,
+   "Gabriela Knutson": 1,
+   "Giovanni Branchetti": 1,
+   "Eduardo Lage": 1,
+   "Martin Riu": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 115,
+ "external_mapped_matches": 186,
+ "kalshi_mapped_matches": 177,
+ "model_witness_available": true,
+ "rows": 200,
+ "counts": {
+  "PASS": 195,
+  "tri:INSUFFICIENT_INPUTS": 151,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
