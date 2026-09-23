@@ -1,0 +1,29 @@
+{
+ "run_id": "20260923T051017Z",
+ "started_at": "2026-09-23T05:10:17.773528+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 137,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPGSPREAD-26SEP21BAEBRO": {
+   "confidence": "B",
+   "bracket_s": 236.029551,
+   "first_ball": "2026-09-23T05:08:24.290838+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 137,
+  "UNMATCHED": 40
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-23T05:20:27.691454+00:00"
+}
