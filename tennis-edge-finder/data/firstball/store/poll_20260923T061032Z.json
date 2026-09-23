@@ -1,0 +1,64 @@
+{
+ "run_id": "20260923T061032Z",
+ "started_at": "2026-09-23T06:10:32.430178+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 408,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPGSPREAD-26SEP23BOLSAN": {
+   "confidence": "B",
+   "bracket_s": 296.522643,
+   "first_ball": "2026-09-23T06:08:12.183115+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP23BOLSAN": {
+   "confidence": "B",
+   "bracket_s": 296.522643,
+   "first_ball": "2026-09-23T06:08:12.183115+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP23BOLSAN": {
+   "confidence": "B",
+   "bracket_s": 296.522643,
+   "first_ball": "2026-09-23T06:08:12.183115+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "mapping": {
+  "MATCHED": 408,
+  "UNMATCHED": 1195,
+  "AMBIGUOUS": 15
+ },
+ "mapping_refusals": {
+  "KXWTASETWINNER-26SEP22PARFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP22PARFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTAMATCH-26SEP22PARFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-23T06:19:37.943806+00:00"
+}
