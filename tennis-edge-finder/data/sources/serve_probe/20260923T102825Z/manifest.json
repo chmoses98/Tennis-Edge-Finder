@@ -1,0 +1,159 @@
+{
+ "generated_at": "2026-09-23T10:28:35.927024+00:00",
+ "run_id": "20260923T102825Z",
+ "espn_event_probed": "186069",
+ "any_source_with_serve_stats": true,
+ "repos_with_serve_columns": [
+  "filmo90/tennis_v2_wta",
+  "saraygarcia/wta-tennis-analytics"
+ ],
+ "candidates": [
+  {
+   "candidate": "espn_wta_scoreboard",
+   "url": "site.api.espn.com .../wta/scoreboard",
+   "ok": true,
+   "status": 200,
+   "bytes": 612033,
+   "ms": 131
+  },
+  {
+   "candidate": "espn_summary",
+   "url": "https://site.api.espn.com/apis/site/v2/sports/tennis/wta/summary?event=186069",
+   "why": "ESPN's own match page data; the scoreboard carries no statistics, so this is the only ESPN endpoint that could",
+   "ok": false,
+   "status": 400,
+   "error": "HTTP Error 400: Bad Request",
+   "ms": 76
+  },
+  {
+   "candidate": "tennisabstract_robots",
+   "url": "https://www.tennisabstract.com/robots.txt",
+   "why": "whether the site permits automated access at all -- checked BEFORE any data URL",
+   "ok": true,
+   "status": 200,
+   "bytes": 77,
+   "ms": 137,
+   "content": {
+    "parsed": true,
+    "serve_keys_present": [],
+    "looks_like_serve_stats": false
+   },
+   "robots_txt": "User-agent: *\nDisallow: /jsfrags/\nDisallow: /jsmatches/\nDisallow: /jsplayers/"
+  },
+  {
+   "candidate": "wta_official_stats",
+   "url": "https://api.wtatennis.com/tennis/stats/players?page=0&pageSize=5",
+   "why": "the tour's own public JSON, if it exists and is open",
+   "ok": false,
+   "status": 404,
+   "error": "HTTP Error 404: Not Found",
+   "ms": 117
+  },
+  {
+   "candidate": "github_wta_forks",
+   "url": "https://api.github.com/search/repositories?q=tennis_wta+in:name+fork:true&sort=updated&order=desc&per_page=5",
+   "why": "one more look for a live fork, three months after Wave 2 rejected the idea (R-005)",
+   "ok": true,
+   "status": 200,
+   "bytes": 27661,
+   "ms": 343,
+   "content": {
+    "parsed": true,
+    "serve_keys_present": [],
+    "looks_like_serve_stats": false,
+    "statistic_labels_sample": []
+   }
+  },
+  {
+   "candidate": "repo:thekasser/tennis-wta-atp",
+   "url": "thekasser/tennis-wta-atp",
+   "ok": true,
+   "status": 200,
+   "bytes": 15976,
+   "ms": 270,
+   "why": "does it ship WTA match data with serve-statistic columns, dated 2026",
+   "n_files": 67,
+   "csv_sample": []
+  },
+  {
+   "candidate": "repo:filmo90/tennis_v2_wta",
+   "url": "filmo90/tennis_v2_wta",
+   "ok": true,
+   "status": 200,
+   "bytes": 35246,
+   "ms": 407,
+   "why": "does it ship WTA match data with serve-statistic columns, dated 2026",
+   "n_files": 145,
+   "csv_sample": [
+    "atp_players.csv",
+    "data/odds_cleaned.csv",
+    "src/2015_wta.csv",
+    "src/2016_wta.csv",
+    "src/2017_wta.csv",
+    "src/2018_wta.csv",
+    "src/2019_wta.csv",
+    "src/2020_wta.csv",
+    "src/2021_wta.csv",
+    "src/2022_wta.csv"
+   ],
+   "probed_csv": "src/2026_wta.csv",
+   "header": "tourney_id,tourney_name,surface,draw_size,tourney_level,indoor,tourney_date,match_num,winner_id,winner_seed,winner_entry,winner_name,winner_hand,winner_ht,winner_ioc,winner_age,winner_rank,winner_rank_points,loser_id,loser_seed,loser_entry,loser_name,loser_hand,loser_ht,loser_ioc,loser_age,loser_rank,loser_rank_points,score,best_of,round,minutes,w_ace,w_df,w_svpt,w_1stIn,w_1stWon,w_2ndWon,w_SvGms,",
+   "has_serve_columns": true
+  },
+  {
+   "candidate": "repo:wik-sul/wta-tennis-data-warehouse",
+   "url": "wik-sul/wta-tennis-data-warehouse",
+   "ok": true,
+   "status": 200,
+   "bytes": 8652,
+   "ms": 279,
+   "why": "does it ship WTA match data with serve-statistic columns, dated 2026",
+   "n_files": 34,
+   "csv_sample": []
+  },
+  {
+   "candidate": "repo:ProjectYaka/WTA-Tennis-Predictor",
+   "url": "ProjectYaka/WTA-Tennis-Predictor",
+   "ok": true,
+   "status": 200,
+   "bytes": 5140,
+   "ms": 659,
+   "why": "does it ship WTA match data with serve-statistic columns, dated 2026",
+   "n_files": 21,
+   "csv_sample": []
+  },
+  {
+   "candidate": "repo:hailale1/bot-tennis-wta",
+   "url": "hailale1/bot-tennis-wta",
+   "ok": true,
+   "status": 200,
+   "bytes": 639,
+   "ms": 293,
+   "why": "does it ship WTA match data with serve-statistic columns, dated 2026",
+   "n_files": 2,
+   "csv_sample": []
+  },
+  {
+   "candidate": "repo:saraygarcia/wta-tennis-analytics",
+   "url": "saraygarcia/wta-tennis-analytics",
+   "ok": true,
+   "status": 200,
+   "bytes": 8703,
+   "ms": 225,
+   "why": "does it ship WTA match data with serve-statistic columns, dated 2026",
+   "n_files": 34,
+   "csv_sample": [
+    "data/wta_matches_2020.csv",
+    "data/wta_matches_2021.csv",
+    "data/wta_matches_2022.csv",
+    "data/wta_matches_2023.csv",
+    "data/wta_matches_2024.csv",
+    "data/wta_matches_2025.csv",
+    "data/wta_matches_2026.csv"
+   ],
+   "probed_csv": "data/wta_matches_2026.csv",
+   "header": "tourney_id,tourney_name,surface,draw_size,tourney_level,tourney_date,match_num,winner_id,winner_seed,winner_entry,winner_name,winner_hand,winner_ht,winner_ioc,winner_age,loser_id,loser_seed,loser_entry,loser_name,loser_hand,loser_ht,loser_ioc,loser_age,score,best_of,round,minutes,w_ace,w_df,w_svpt,w_1stIn,w_1stWon,w_2ndWon,w_SvGms,w_bpSaved,w_bpFaced,l_ace,l_df,l_svpt,l_1stIn,l_1stWon,l_2ndWon,l_S",
+   "has_serve_columns": true
+  }
+ ]
+}
