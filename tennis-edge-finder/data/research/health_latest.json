@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260923T041448Z",
-   "age_hours": 0.9,
+   "age_hours": 7.8,
    "complete": true,
    "failures": 0,
    "series_tennis": 143
@@ -37,27 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 1033,
-   "projected": 789,
-   "not_projected": 244,
+   "projectable_open_pregame": 631,
+   "projected": 461,
+   "not_projected": 170,
    "missing_sample": [
-    "KXWTADOUBLES-26SEP23HUNKRATANYIF-TANYIF: doubles: player 'Yifan Xu' unmapped/ambiguous in ['WTA']",
-    "KXWTADOUBLES-26SEP23HUNKRATANYIF-HUNKRA: doubles: player 'Yifan Xu' unmapped/ambiguous in ['WTA']",
-    "KXITFWMATCH-26SEP23BARCAB-CAB: Yara Bartashevich: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23BARCAB-BAR: Yara Bartashevich: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23SIGEST-SIG: Isadora Sigrist: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23SIGEST-EST: Isadora Sigrist: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23SANINS-SAN: Sophia Santos: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23SANINS-INS: Sophia Santos: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23SHOROG-SHO: Anna Rogers: UNMAPPED (no exact full-name match)",
-    "KXITFWMATCH-26SEP23SHOROG-ROG: Anna Rogers: UNMAPPED (no exact full-name match)"
+    "KXWTACHALLENGERMATCH-26SEP23AKLKNU-KNU: Gabriela Knutson: UNMAPPED (no exact full-name match)",
+    "KXWTACHALLENGERMATCH-26SEP23AKLKNU-AKL: Gabriela Knutson: UNMAPPED (no exact full-name match)",
+    "KXATPCHALLENGERMATCH-26SEP23DEVVAR-VAR: Murkel Dellien: UNMAPPED (no exact full-name match)",
+    "KXATPCHALLENGERMATCH-26SEP23DEVVAR-DEV: Murkel Dellien: UNMAPPED (no exact full-name match)",
+    "KXWTAGTOTAL-26SEP23YEXBIR-26: Yexin Ma: UNMAPPED (no exact full-name match)",
+    "KXWTAGTOTAL-26SEP23YEXBIR-21: Yexin Ma: UNMAPPED (no exact full-name match)",
+    "KXWTAGTOTAL-26SEP23YEXBIR-16: Yexin Ma: UNMAPPED (no exact full-name match)",
+    "KXWTAGTOTAL-26SEP22WANGAR-26: could not recover both competitors' full names from the even",
+    "KXWTAGTOTAL-26SEP22WANGAR-21: could not recover both competitors' full names from the even",
+    "KXWTAGTOTAL-26SEP22WANGAR-16: could not recover both competitors' full names from the even"
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "past_nominal_start": 238,
-    "tournament_scope_not_priced_tonight": 244
+    "past_nominal_start": 367,
+    "closed_since_discovery": 275,
+    "tournament_scope_not_priced_tonight": 242
    },
-   "projection_run": "20260923T050528Z"
+   "projection_run": "20260923T120013Z"
   }
  },
  {
@@ -65,8 +66,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260923T043853Z",
-   "age_min": 27.0,
+   "run": "20260923T114818Z",
+   "age_min": 11.0,
    "incomplete": [
     {
      "stage": "trades",
@@ -107,8 +108,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 9195,
-   "start_unknown_used_schedule": 7433
+   "n": 9656,
+   "start_unknown_used_schedule": 7690
   }
  },
  {
@@ -118,7 +119,7 @@
   "detail": {
    "ambiguous": 2,
    "ambiguous_used": 0,
-   "MATCHED": 789
+   "MATCHED": 461
   }
  },
  {
@@ -128,36 +129,36 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 694,
-    "strict_truths": 459,
-    "no_play": 5,
+    "truths": 770,
+    "strict_truths": 511,
+    "no_play": 8,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 235,
-     "B": 454,
-     "A": 5
+     "C": 259,
+     "B": 503,
+     "A": 8
     },
-    "bracket_seconds_median": 201.833814,
-    "bracket_seconds_p90": 256.211888,
+    "bracket_seconds_median": 204.770097,
+    "bracket_seconds_p90": 255.734436,
     "chain_violations": [],
-    "observations": 231258,
-    "matches_observed": 694,
+    "observations": 241152,
+    "matches_observed": 770,
     "watchlist": {
-     "total": 392,
-     "levels_with_a_wired_source": 111,
-     "levels_without_any_source": 281,
-     "watched_and_observed": 31,
-     "covered_and_observed": 31,
-     "pct_covered_with_source_mapping": 0.2793
+     "total": 398,
+     "levels_with_a_wired_source": 69,
+     "levels_without_any_source": 329,
+     "watched_and_observed": 68,
+     "covered_and_observed": 68,
+     "pct_covered_with_source_mapping": 0.9855
     },
-    "pct_classifiable": 0.1947,
-    "pct_strict_pregame": 0.1731,
+    "pct_classifiable": 0.2071,
+    "pct_strict_pregame": 0.1851,
     "timing_classes": {
-     "START_UNKNOWN": 7405,
-     "STRICT_PREGAME": 1592,
-     "POST_START": 190,
-     "AMBIGUOUS": 8
+     "START_UNKNOWN": 7656,
+     "STRICT_PREGAME": 1787,
+     "POST_START": 196,
+     "AMBIGUOUS": 17
     }
    }
   }
@@ -180,13 +181,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1554,
-   "executable_close_rows": 1762,
-   "matches_with_strict_truth": 459,
-   "observations_classified": 9195,
-   "pct_strict_pregame": 0.1731,
-   "horizons_populated": 11731,
-   "horizons_total": 73560
+   "strict_clv_rows": 1741,
+   "executable_close_rows": 1966,
+   "matches_with_strict_truth": 511,
+   "observations_classified": 9656,
+   "pct_strict_pregame": 0.1851,
+   "horizons_populated": 12990,
+   "horizons_total": 77248
   }
  },
  {
@@ -212,8 +213,8 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-23T05:00:34.243759+00:00",
-   "rows": 1630813
+   "built_at": "2026-09-23T11:57:09.897026+00:00",
+   "rows": 1630866
   }
  },
  {
@@ -221,19 +222,19 @@
   "name": "data_source_freshness",
   "status": "PASS",
   "detail": {
-   "run": "20260922T101856Z",
-   "snapshot_age_days": 0.78,
+   "run": "20260923T101627Z",
+   "snapshot_age_days": 0.07,
    "max_season_files": [
     2026,
     2026
    ],
    "ratings_as_of": {
-    "ATP": "2026-09-22",
-    "WTA": "2026-09-22"
+    "ATP": "2026-09-23",
+    "WTA": "2026-09-23"
    },
    "ratings_stale_days": {
-    "ATP": 1,
-    "WTA": 1
+    "ATP": 0,
+    "WTA": 0
    }
   }
  }
