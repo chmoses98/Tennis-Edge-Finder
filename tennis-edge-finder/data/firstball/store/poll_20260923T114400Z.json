@@ -1,0 +1,45 @@
+{
+ "run_id": "20260923T114400Z",
+ "started_at": "2026-09-23T11:44:00.524950+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 180,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "UNMATCHED": 1362,
+  "MATCHED": 180,
+  "AMBIGUOUS": 18
+ },
+ "mapping_refusals": {
+  "KXWTASETWINNER-26SEP22PARFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP22PARFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTAMATCH-26SEP22PARFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-23T11:53:13.116457+00:00"
+}
