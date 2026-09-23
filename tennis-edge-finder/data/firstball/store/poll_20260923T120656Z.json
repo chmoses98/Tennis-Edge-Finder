@@ -1,0 +1,35 @@
+{
+ "run_id": "20260923T120656Z",
+ "started_at": "2026-09-23T12:06:56.538290+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 94,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP23JORKRA": {
+   "confidence": "B",
+   "bracket_s": 278.960902,
+   "first_ball": "2026-09-23T12:04:46.062016+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP23PRIZAY": {
+   "confidence": "B",
+   "bracket_s": 201.682045,
+   "first_ball": "2026-09-23T12:10:53.179744+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "UNMATCHED": 1560,
+  "MATCHED": 94
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-23T12:16:48.638208+00:00"
+}
