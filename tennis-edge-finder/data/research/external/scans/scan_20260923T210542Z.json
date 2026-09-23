@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-23T21:05:42.752622+00:00",
+ "run_id": "20260923T210542Z",
+ "external_parse": {
+  "events": 168,
+  "markets": 1644,
+  "skipped_family": 314,
+  "skipped_period": 497,
+  "skipped_live": 24,
+  "one_sided": 24,
+  "rows": 2625,
+  "devigged": 809
+ },
+ "smarkets_fetch": {
+  "events_seen": 121,
+  "events_priced": 80,
+  "markets": 1358,
+  "markets_mapped": 550,
+  "contracts": 1160,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20260923T210542Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 550,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 336,
+  "rows": 824,
+  "two_sided": 821,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 716,
+ "external_mapping": {
+  "total": 156,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.609,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Ukraine (W)": 1,
+   "Italy (W)": 1,
+   "Noble Renfrow": 1,
+   "Zechariah Hamrouni": 1,
+   "Arin R. Pallegar": 1,
+   "Camille Chantron": 1,
+   "Noemie Oliveras": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Ukraine": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Yunchaokete Bu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 169,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8935,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Nazim Makhlouf": 1,
+   "Claus Piening": 1,
+   "Fares Zakaria": 1,
+   "Jakub Kusy": 1,
+   "Jakub Vrtilka": 1,
+   "Marko Bekeni": 1,
+   "Denis Klok": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 151,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 66,
+  "tri:INSUFFICIENT_INPUTS": 46,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
