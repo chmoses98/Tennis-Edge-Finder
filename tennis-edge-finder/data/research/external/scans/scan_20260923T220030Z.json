@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-23T22:00:30.125064+00:00",
+ "run_id": "20260923T220030Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1681,
+  "skipped_family": 358,
+  "skipped_period": 499,
+  "skipped_live": 18,
+  "one_sided": 15,
+  "rows": 2643,
+  "devigged": 809
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1353,
+  "markets_mapped": 547,
+  "contracts": 1154,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20260923T220030Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 547,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 325,
+  "rows": 829,
+  "two_sided": 825,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 521,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 89,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 40
+  },
+  "mapped_rate": 0.6096,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Ukraine (W)": 1,
+   "Italy (W)": 1,
+   "Zechariah Hamrouni": 1,
+   "Arin R. Pallegar": 1,
+   "Gordon Gallagher": 1,
+   "Ben Stecker": 1,
+   "Pedro Dietrich": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Ukraine": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Yunchaokete Bu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8835,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Claus Piening": 1,
+   "Marko Bekeni": 1,
+   "Denis Klok": 1,
+   "Sasikumar Mukund": 1,
+   "Giovanni Branchetti": 1,
+   "Tiphanie Lemaitre": 1,
+   "Thea Marcu": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 91,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 25
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
