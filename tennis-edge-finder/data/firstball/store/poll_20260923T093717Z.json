@@ -1,0 +1,52 @@
+{
+ "run_id": "20260923T093717Z",
+ "started_at": "2026-09-23T09:37:17.302186+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 256,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTADOUBLES-26SEP23DETKHRLIAYUA": {
+   "confidence": "B",
+   "bracket_s": 212.258642,
+   "first_ball": "2026-09-23T09:40:15.622711+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "mapping": {
+  "MATCHED": 256,
+  "UNMATCHED": 1925,
+  "AMBIGUOUS": 21
+ },
+ "mapping_refusals": {
+  "KXWTASETWINNER-26SEP22PARFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP22PARFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTAMATCH-26SEP22PARFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184094 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-23T09:47:01.289437+00:00"
+}
