@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-23T22:20:28.880660+00:00",
+ "run_id": "20260923T222028Z",
+ "external_parse": {
+  "events": 163,
+  "markets": 1707,
+  "skipped_family": 358,
+  "skipped_period": 512,
+  "skipped_live": 15,
+  "one_sided": 55,
+  "rows": 2603,
+  "devigged": 782
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1376,
+  "markets_mapped": 557,
+  "contracts": 1178,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260923T222028Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 557,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 357,
+  "rows": 821,
+  "two_sided": 816,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 419,
+ "external_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 41
+  },
+  "mapped_rate": 0.6225,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Ukraine (W)": 1,
+   "Italy (W)": 1,
+   "Arin R. Pallegar": 1,
+   "Gordon Gallagher": 1,
+   "Ben Stecker": 1,
+   "Pedro Dietrich": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Ukraine": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Yunchaokete Bu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8778,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Claus Piening": 1,
+   "Jakub Vrtilka": 1,
+   "Alexander Binda": 1,
+   "Sasikumar Mukund": 1,
+   "Giovanni Branchetti": 1,
+   "Ekaterina Dotsenko": 1,
+   "Thea Marcu": 1,
+   "Gabriela Guapindaia Soares": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
