@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-23T11:20:42.959610+00:00",
+ "run_id": "20260923T112042Z",
+ "external_parse": {
+  "events": 242,
+  "markets": 1617,
+  "skipped_family": 235,
+  "skipped_period": 483,
+  "skipped_live": 56,
+  "one_sided": 166,
+  "rows": 2368,
+  "devigged": 733
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1053,
+  "markets_mapped": 457,
+  "contracts": 988,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20260923T112042Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 457,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 135,
+  "rows": 853,
+  "two_sided": 845,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 1367,
+ "external_mapping": {
+  "total": 232,
+  "by_status": {
+   "MAPPED": 156,
+   "UNMAPPED_PLAYER": 20,
+   "DOUBLES_UNSUPPORTED": 55,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6724,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 55,
+   "Xinyu Wang": 1,
+   "Yexin Ma": 1,
+   "Yulia Putintseva": 1,
+   "Ukraine (W)": 1,
+   "Murkel Dellien": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Noey Do": 1,
+   "Zechariah Hamrouni": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Ayana Akli": 1,
+   "Murkel Dellien": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1,
+   "Ukraine": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Yunchaokete Bu": 1,
+   "Aleksandr Shevchenko": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 202,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8745,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1,
+   "Murkel Dellien": 1,
+   "Gabriela Knutson": 1,
+   "Giovanni Branchetti": 1,
+   "Eduardo Lage": 1
+  }
+ },
+ "matched_both_venues": 138,
+ "external_mapped_matches": 162,
+ "kalshi_mapped_matches": 202,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 72,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:MARKETS_AGREE": 9
+ },
+ "skips": {
+  "external_has_no_match_winner": 91
+ }
+}
