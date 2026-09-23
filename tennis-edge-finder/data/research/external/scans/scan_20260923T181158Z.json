@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-23T18:11:58.655095+00:00",
+ "run_id": "20260923T181158Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1740,
+  "skipped_family": 316,
+  "skipped_period": 523,
+  "skipped_live": 25,
+  "one_sided": 50,
+  "rows": 2749,
+  "devigged": 851
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 1145,
+  "markets_mapped": 527,
+  "contracts": 1116,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20260923T181158Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 527,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 305,
+  "rows": 811,
+  "two_sided": 811,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1196,
+ "external_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 48
+  },
+  "mapped_rate": 0.6163,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Ukraine (W)": 1,
+   "Italy (W)": 1,
+   "Igor Marcondes": 1,
+   "Zechariah Hamrouni": 1,
+   "Eduardo Lage": 1,
+   "Eric Von Marton Martins": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 25,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Ukraine": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Yunchaokete Bu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 186,
+  "by_status": {
+   "MAPPED": 156,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8387,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Igor Marcondes": 1,
+   "Murkel Dellien": 1,
+   "Paul Colin": 1,
+   "Nazim Makhlouf": 1,
+   "Claus Piening": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 156,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
