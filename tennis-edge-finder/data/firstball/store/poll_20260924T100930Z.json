@@ -1,0 +1,53 @@
+{
+ "run_id": "20260924T100930Z",
+ "started_at": "2026-09-24T10:09:30.306763+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 164,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP24PODPOH": {
+   "confidence": "B",
+   "bracket_s": 273.883743,
+   "first_ball": "2026-09-24T10:07:22.000692+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP24SUNSAF-2": {
+   "confidence": "B",
+   "bracket_s": 219.705193,
+   "first_ball": "2026-09-24T10:12:49.321200+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP24SUNSAF-1": {
+   "confidence": "B",
+   "bracket_s": 219.705193,
+   "first_ball": "2026-09-24T10:12:49.321200+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP24SUNSAF": {
+   "confidence": "B",
+   "bracket_s": 219.705193,
+   "first_ball": "2026-09-24T10:12:49.321200+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP24SUNSAF": {
+   "confidence": "B",
+   "bracket_s": 219.705193,
+   "first_ball": "2026-09-24T10:12:49.321200+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "mapping": {
+  "MATCHED": 164,
+  "UNMATCHED": 1183
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-24T10:19:53.528673+00:00"
+}
