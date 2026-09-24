@@ -1,0 +1,29 @@
+{
+ "run_id": "20260924T135147Z",
+ "started_at": "2026-09-24T13:51:47.529398+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 23,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP24STESWA": {
+   "confidence": "B",
+   "bracket_s": 190.186669,
+   "first_ball": "2026-09-24T13:55:00.344134+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 23,
+  "UNMATCHED": 1053
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-24T14:01:15.541480+00:00"
+}
