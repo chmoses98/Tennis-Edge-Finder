@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260924T035437Z",
-   "age_hours": 1.4,
+   "age_hours": 8.3,
    "complete": true,
    "failures": 0,
    "series_tennis": 144
@@ -39,27 +39,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 741,
-   "projected": 543,
-   "not_projected": 198,
+   "projectable_open_pregame": 432,
+   "projected": 294,
+   "not_projected": 138,
    "missing_sample": [
-    "KXWTAGTOTAL-26SEP22GIBMOR-24: could not recover both competitors' full names from the even",
-    "KXWTAGTOTAL-26SEP22GIBMOR-19: could not recover both competitors' full names from the even",
-    "KXWTAGTOTAL-26SEP23YEXBIR-26: Yexin Ma: UNMAPPED (no exact full-name match)",
-    "KXWTAGTOTAL-26SEP23YEXBIR-21: Yexin Ma: UNMAPPED (no exact full-name match)",
-    "KXWTAGTOTAL-26SEP23YEXBIR-16: Yexin Ma: UNMAPPED (no exact full-name match)",
-    "KXWTAGTOTAL-26SEP22WANGAR-26: could not recover both competitors' full names from the even",
-    "KXWTAGTOTAL-26SEP22WANGAR-21: could not recover both competitors' full names from the even",
-    "KXWTAGTOTAL-26SEP22WANGAR-16: could not recover both competitors' full names from the even",
-    "KXWTAGTOTAL-26SEP22PROEAL-24: could not recover both competitors' full names from the even",
-    "KXWTAGTOTAL-26SEP22PROEAL-19: could not recover both competitors' full names from the even"
+    "KXITFMATCH-26SEP24BRASCH-SCH: Giovanni Branchetti: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24BRASCH-BRA: Giovanni Branchetti: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24AVRGOO-GOO: Gabe Avram: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24AVRGOO-AVR: Gabe Avram: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24LEIPAG-PAG: Victor Pagotto: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24LEIPAG-LEI: Victor Pagotto: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24COLVER-VER: Paul Colin: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24COLVER-COL: Paul Colin: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24MAKMAR-MAR: Nazim Makhlouf: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP24MAKMAR-MAK: Nazim Makhlouf: UNMAPPED (no exact full-name match)"
    ],
    "excluded_by_policy": {
     "unsupported_family": 133,
-    "past_nominal_start": 246,
-    "tournament_scope_not_priced_tonight": 236
+    "past_nominal_start": 277,
+    "closed_since_discovery": 279,
+    "tournament_scope_not_priced_tonight": 235
    },
-   "projection_run": "20260924T051527Z"
+   "projection_run": "20260924T121032Z"
   }
  },
  {
@@ -67,8 +68,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260924T044909Z",
-   "age_min": 26.3,
+   "run": "20260924T115404Z",
+   "age_min": 15.8,
    "incomplete": [
     {
      "stage": "trades",
@@ -109,8 +110,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 10417,
-   "start_unknown_used_schedule": 8391
+   "n": 10711,
+   "start_unknown_used_schedule": 8550
   }
  },
  {
@@ -120,7 +121,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 543
+   "MATCHED": 294
   }
  },
  {
@@ -130,35 +131,35 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 783,
-    "strict_truths": 526,
+    "truths": 837,
+    "strict_truths": 571,
     "no_play": 8,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 257,
-     "B": 518,
+     "C": 266,
+     "B": 563,
      "A": 8
     },
-    "bracket_seconds_median": 204.932326,
+    "bracket_seconds_median": 207.481354,
     "bracket_seconds_p90": 256.211888,
     "chain_violations": [],
-    "observations": 247484,
-    "matches_observed": 783,
+    "observations": 254515,
+    "matches_observed": 837,
     "watchlist": {
-     "total": 275,
-     "levels_with_a_wired_source": 74,
-     "levels_without_any_source": 201,
-     "watched_and_observed": 13,
-     "covered_and_observed": 13,
-     "pct_covered_with_source_mapping": 0.1757
+     "total": 305,
+     "levels_with_a_wired_source": 53,
+     "levels_without_any_source": 252,
+     "watched_and_observed": 51,
+     "covered_and_observed": 51,
+     "pct_covered_with_source_mapping": 0.9623
     },
-    "pct_classifiable": 0.1978,
-    "pct_strict_pregame": 0.1765,
+    "pct_classifiable": 0.2049,
+    "pct_strict_pregame": 0.1839,
     "timing_classes": {
-     "START_UNKNOWN": 8357,
-     "STRICT_PREGAME": 1839,
-     "POST_START": 204,
+     "START_UNKNOWN": 8516,
+     "STRICT_PREGAME": 1970,
+     "POST_START": 208,
      "AMBIGUOUS": 17
     }
    }
@@ -182,13 +183,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1793,
-   "executable_close_rows": 2026,
-   "matches_with_strict_truth": 526,
-   "observations_classified": 10417,
-   "pct_strict_pregame": 0.1765,
-   "horizons_populated": 13366,
-   "horizons_total": 83336
+   "strict_clv_rows": 1924,
+   "executable_close_rows": 2161,
+   "matches_with_strict_truth": 571,
+   "observations_classified": 10711,
+   "pct_strict_pregame": 0.1839,
+   "horizons_populated": 14198,
+   "horizons_total": 85688
   }
  },
  {
@@ -214,8 +215,8 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-24T05:10:20.993021+00:00",
-   "rows": 1630866
+   "built_at": "2026-09-24T12:05:23.801126+00:00",
+   "rows": 1630903
   }
  },
  {
@@ -223,19 +224,19 @@
   "name": "data_source_freshness",
   "status": "PASS",
   "detail": {
-   "run": "20260923T101627Z",
-   "snapshot_age_days": 0.79,
+   "run": "20260924T103012Z",
+   "snapshot_age_days": 0.07,
    "max_season_files": [
     2026,
     2026
    ],
    "ratings_as_of": {
-    "ATP": "2026-09-23",
-    "WTA": "2026-09-23"
+    "ATP": "2026-09-24",
+    "WTA": "2026-09-24"
    },
    "ratings_stale_days": {
-    "ATP": 1,
-    "WTA": 1
+    "ATP": 0,
+    "WTA": 0
    }
   }
  }
