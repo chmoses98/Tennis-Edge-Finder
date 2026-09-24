@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-24T11:44:53.304365+00:00",
+ "run_id": "20260924T114453Z",
+ "external_parse": {
+  "events": 155,
+  "markets": 1025,
+  "skipped_family": 193,
+  "skipped_period": 282,
+  "skipped_live": 47,
+  "one_sided": 62,
+  "rows": 1480,
+  "devigged": 488
+ },
+ "smarkets_fetch": {
+  "events_seen": 100,
+  "events_priced": 80,
+  "markets": 966,
+  "markets_mapped": 378,
+  "contracts": 816,
+  "quoted_contracts": 816,
+  "raw": "data/research/external/raw/20260924T114453Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 378,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 774,
+  "two_sided": 769,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1141,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 37
+  },
+  "mapped_rate": 0.6575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Elisabetta Cocciaretto": 1,
+   "Spain (W)": 1,
+   "Noey Do": 1,
+   "Marko Bekeni": 1,
+   "Jakub Kusy": 1,
+   "Jakub Vrtilka": 1,
+   "Nazim Makhlouf": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 38,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Spain": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 140,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8805,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Sasikumar Mukund": 1,
+   "Alexander Binda": 1,
+   "Giovanni Branchetti": 1,
+   "Gabe Avram": 1,
+   "Victor Pagotto": 1,
+   "Paul Colin": 1,
+   "Nazim Makhlouf": 1,
+   "Claus Piening": 1,
+   "Jakub Kusy": 1
+  }
+ },
+ "matched_both_venues": 97,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 140,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 91,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 11,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
