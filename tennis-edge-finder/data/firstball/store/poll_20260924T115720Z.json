@@ -1,0 +1,35 @@
+{
+ "run_id": "20260924T115720Z",
+ "started_at": "2026-09-24T11:57:20.862395+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 49,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP24BAIBRA": {
+   "confidence": "B",
+   "bracket_s": 200.278802,
+   "first_ball": "2026-09-24T11:58:29.313653+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP24VOLTAN": {
+   "confidence": "B",
+   "bracket_s": 193.902404,
+   "first_ball": "2026-09-24T12:02:15.397809+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 49,
+  "UNMATCHED": 1320
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-24T12:06:23.572107+00:00"
+}
