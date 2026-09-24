@@ -1,0 +1,47 @@
+{
+ "run_id": "20260924T090047Z",
+ "started_at": "2026-09-24T09:00:47.250163+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 219,
+ "truths_written": 4,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP24TIAMIC": {
+   "confidence": "B",
+   "bracket_s": 235.887472,
+   "first_ball": "2026-09-24T09:06:43.813057+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP24KOSBER": {
+   "confidence": "B",
+   "bracket_s": 235.887472,
+   "first_ball": "2026-09-24T09:06:43.813057+00:00",
+   "no_play": false
+  },
+  "KXWTADOUBLES-26SEP23COSGIBMLAPAN": {
+   "confidence": "B",
+   "bracket_s": 235.887472,
+   "first_ball": "2026-09-24T09:06:43.813057+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP24MONGAS": {
+   "confidence": "B",
+   "bracket_s": 235.6899,
+   "first_ball": "2026-09-24T09:08:39.601743+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 219,
+  "UNMATCHED": 1308
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-24T09:11:19.766109+00:00"
+}
