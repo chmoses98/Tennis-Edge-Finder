@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-24T12:25:14.464301+00:00",
+ "run_id": "20260924T122514Z",
+ "external_parse": {
+  "events": 151,
+  "markets": 996,
+  "skipped_family": 209,
+  "skipped_period": 267,
+  "skipped_live": 47,
+  "one_sided": 66,
+  "rows": 1368,
+  "devigged": 454
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 978,
+  "markets_mapped": 388,
+  "contracts": 840,
+  "quoted_contracts": 840,
+  "raw": "data/research/external/raw/20260924T122514Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 388,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 801,
+  "two_sided": 798,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 463,
+ "external_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.662,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Spain (W)": 1,
+   "Noey Do": 1,
+   "Marko Bekeni": 1,
+   "Jakub Kusy": 1,
+   "Jakub Vrtilka": 1,
+   "Nazim Makhlouf": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Spain": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 97,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9072,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Giovanni Branchetti": 1,
+   "Paul Colin": 1,
+   "Nazim Makhlouf": 1,
+   "Jakub Vrtilka": 1,
+   "Marko Bekeni": 1,
+   "Tiphanie Lemaitre": 1,
+   "Ekaterina Dotsenko": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 58,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 26
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
