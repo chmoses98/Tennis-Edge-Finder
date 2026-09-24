@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-24T00:37:32.003855+00:00",
+ "run_id": "20260924T003732Z",
+ "external_parse": {
+  "events": 185,
+  "markets": 2014,
+  "skipped_family": 379,
+  "skipped_period": 574,
+  "skipped_live": 3,
+  "one_sided": 37,
+  "rows": 3094,
+  "devigged": 1024
+ },
+ "smarkets_fetch": {
+  "events_seen": 119,
+  "events_priced": 80,
+  "markets": 1371,
+  "markets_mapped": 556,
+  "contracts": 1170,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20260924T003732Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 556,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 318,
+  "rows": 852,
+  "two_sided": 851,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 461,
+ "external_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.6994,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Ukraine (W)": 1,
+   "Italy (W)": 1,
+   "Noey Do": 1,
+   "Mukund Sasikumar": 1,
+   "Denis Klok": 1,
+   "Jakub Kusy": 1,
+   "Marko Bekeni": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 27,
+   "MAPPED": 47
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Ukraine": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Yunchaokete Bu": 1,
+   "Aleksandr Shevchenko": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9167,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Victor Pagotto": 1,
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Fares Zakaria": 1,
+   "Jakub Vrtilka": 1,
+   "Alexander Binda": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 121,
+ "model_witness_available": true,
+ "rows": 122,
+ "counts": {
+  "PASS": 117,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:MARKETS_AGREE": 12,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 5
+ },
+ "skips": {}
+}
