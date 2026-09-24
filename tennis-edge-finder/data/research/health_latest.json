@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260924T035437Z",
-   "age_hours": 13.7,
+   "age_hours": 17.9,
    "complete": true,
    "failures": 0,
    "series_tennis": 144
@@ -39,28 +39,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 136,
-   "projected": 88,
-   "not_projected": 48,
+   "projectable_open_pregame": 70,
+   "projected": 48,
+   "not_projected": 22,
    "missing_sample": [
     "KXITFMATCH-26SEP24BRASCH-SCH: Giovanni Branchetti: UNMAPPED (no exact full-name match)",
     "KXITFMATCH-26SEP24BRASCH-BRA: Giovanni Branchetti: UNMAPPED (no exact full-name match)",
     "KXITFMATCH-26SEP24AVRGOO-GOO: Gabe Avram: UNMAPPED (no exact full-name match)",
     "KXITFMATCH-26SEP24AVRGOO-AVR: Gabe Avram: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP24LEIPAG-PAG: Victor Pagotto: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP24LEIPAG-LEI: Victor Pagotto: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERDOUBLES-26SEP24OLIRODKESROD-OLIROD: doubles: player 'Bruno (2002) Oliveira' unmapped/ambiguous i",
-    "KXATPCHALLENGERDOUBLES-26SEP24OLIRODKESROD-KESROD: doubles: player 'Bruno (2002) Oliveira' unmapped/ambiguous i",
-    "KXITFWDOUBLES-26SEP24TANTOMBRAVAG-TANTOM: doubles: player 'Tanguilig' unmapped/ambiguous in ['WTA']",
-    "KXITFWDOUBLES-26SEP24TANTOMBRAVAG-BRAVAG: doubles: player 'Tanguilig' unmapped/ambiguous in ['WTA']"
+    "KXITFDOUBLES-26SEP24ROBROVBRAMOU-ROBROV: doubles: player 'Roberts' unmapped/ambiguous in ['ATP']",
+    "KXITFDOUBLES-26SEP24ROBROVBRAMOU-BRAMOU: doubles: player 'Roberts' unmapped/ambiguous in ['ATP']",
+    "KXITFDOUBLES-26SEP24TOSZANAUGEMA-TOSZAN: doubles: player 'Tosetto' unmapped/ambiguous in ['ATP']",
+    "KXITFDOUBLES-26SEP24TOSZANAUGEMA-AUGEMA: doubles: player 'Tosetto' unmapped/ambiguous in ['ATP']",
+    "KXITFDOUBLES-26SEP24VICPAGBINCRE-VICPAG: doubles: player 'Victor Couto Loureiro' unmapped/ambiguous i",
+    "KXITFDOUBLES-26SEP24VICPAGBINCRE-BINCRE: doubles: player 'Victor Couto Loureiro' unmapped/ambiguous i"
    ],
    "excluded_by_policy": {
     "unsupported_family": 133,
-    "past_nominal_start": 100,
-    "closed_since_discovery": 756,
+    "past_nominal_start": 94,
+    "closed_since_discovery": 828,
     "tournament_scope_not_priced_tonight": 231
    },
-   "projection_run": "20260924T173459Z"
+   "projection_run": "20260924T215024Z"
   }
  },
  {
@@ -68,8 +68,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260924T171710Z",
-   "age_min": 16.8,
+   "run": "20260924T212819Z",
+   "age_min": 21.0,
    "incomplete": [
     {
      "stage": "trades",
@@ -110,8 +110,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 10799,
-   "start_unknown_used_schedule": 8612
+   "n": 10847,
+   "start_unknown_used_schedule": 8660
   }
  },
  {
@@ -121,7 +121,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 88
+   "MATCHED": 48
   }
  },
  {
@@ -144,20 +144,20 @@
     "bracket_seconds_median": 207.268179,
     "bracket_seconds_p90": 256.211888,
     "chain_violations": [],
-    "observations": 255236,
+    "observations": 256298,
     "matches_observed": 844,
     "watchlist": {
-     "total": 244,
-     "levels_with_a_wired_source": 21,
-     "levels_without_any_source": 223,
-     "watched_and_observed": 19,
-     "covered_and_observed": 19,
-     "pct_covered_with_source_mapping": 0.9048
+     "total": 120,
+     "levels_with_a_wired_source": 12,
+     "levels_without_any_source": 108,
+     "watched_and_observed": 10,
+     "covered_and_observed": 10,
+     "pct_covered_with_source_mapping": 0.8333
     },
-    "pct_classifiable": 0.2057,
-    "pct_strict_pregame": 0.1843,
+    "pct_classifiable": 0.2048,
+    "pct_strict_pregame": 0.1835,
     "timing_classes": {
-     "START_UNKNOWN": 8578,
+     "START_UNKNOWN": 8626,
      "STRICT_PREGAME": 1990,
      "POST_START": 214,
      "AMBIGUOUS": 17
@@ -186,10 +186,10 @@
    "strict_clv_rows": 1944,
    "executable_close_rows": 2187,
    "matches_with_strict_truth": 577,
-   "observations_classified": 10799,
-   "pct_strict_pregame": 0.1843,
+   "observations_classified": 10847,
+   "pct_strict_pregame": 0.1835,
    "horizons_populated": 14373,
-   "horizons_total": 86392
+   "horizons_total": 86776
   }
  },
  {
@@ -215,7 +215,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-24T17:29:50.369391+00:00",
+   "built_at": "2026-09-24T21:45:19.573927+00:00",
    "rows": 1630903
   }
  },
@@ -225,7 +225,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260924T103012Z",
-   "snapshot_age_days": 0.29,
+   "snapshot_age_days": 0.47,
    "max_season_files": [
     2026,
     2026
