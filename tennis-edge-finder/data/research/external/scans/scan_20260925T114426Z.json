@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-25T11:44:26.305905+00:00",
+ "run_id": "20260925T114426Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1146,
+  "skipped_family": 269,
+  "skipped_period": 316,
+  "skipped_live": 28,
+  "one_sided": 32,
+  "rows": 1710,
+  "devigged": 529
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 966,
+  "markets_mapped": 364,
+  "contracts": 808,
+  "quoted_contracts": 808,
+  "raw": "data/research/external/raw/20260925T114426Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 364,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 800,
+  "two_sided": 799,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 321,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.6983,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Europe": 1,
+   "Team Europe": 1,
+   "Cristina Bucsa": 1,
+   "Spain (W)": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Gabe Avram": 1,
+   "Mukund Sasikumar": 1,
+   "Tiphanie Lemaitre": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 21,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6377,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Maria Timofeeva": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 79,
+  "by_status": {
+   "UNMAPPED_PLAYER": 6,
+   "MAPPED": 73
+  },
+  "mapped_rate": 0.9241,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Gabriela Knutson": 1,
+   "Gabe Avram": 1,
+   "Tiphanie Lemaitre": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 66,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
