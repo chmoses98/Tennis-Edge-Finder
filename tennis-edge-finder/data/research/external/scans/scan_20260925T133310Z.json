@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-09-25T13:33:10.611180+00:00",
+ "run_id": "20260925T133310Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 850,
+  "skipped_family": 214,
+  "skipped_period": 221,
+  "skipped_live": 29,
+  "one_sided": 26,
+  "rows": 1215,
+  "devigged": 389
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 797,
+  "markets_mapped": 310,
+  "contracts": 686,
+  "quoted_contracts": 686,
+  "raw": "data/research/external/raw/20260925T133310Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 29,
+  "rows": 657,
+  "two_sided": 655,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 305,
+ "external_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7021,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Europe": 1,
+   "Team Europe": 1,
+   "Igor Marcondes": 1,
+   "Noey Do": 1,
+   "Gabe Avram": 1,
+   "Mukund Sasikumar": 1,
+   "Ekaterina Dotsenko": 1,
+   "Tiphanie Lemaitre": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 18,
+   "MAPPED": 39
+  },
+  "mapped_rate": 0.6393,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Maria Timofeeva": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "UNMAPPED_PLAYER": 9,
+   "MAPPED": 55
+  },
+  "mapped_rate": 0.8594,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Gabriela Knutson": 1,
+   "Alexander Binda": 1,
+   "Sasikumar Mukund": 1,
+   "Gabe Avram": 1,
+   "Anna Rogers": 1,
+   "Tiphanie Lemaitre": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 80,
+ "kalshi_mapped_matches": 55,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 26
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
