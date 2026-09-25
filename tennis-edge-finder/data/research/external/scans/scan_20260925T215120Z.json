@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-09-25T21:51:20.876320+00:00",
+ "run_id": "20260925T215120Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 886,
+  "skipped_family": 258,
+  "skipped_period": 235,
+  "skipped_live": 8,
+  "one_sided": 5,
+  "rows": 1292,
+  "devigged": 388
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 792,
+  "markets_mapped": 299,
+  "contracts": 636,
+  "quoted_contracts": 636,
+  "raw": "data/research/external/raw/20260925T215120Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 57,
+  "rows": 579,
+  "two_sided": 573,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 176,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7015,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Team Europe": 1,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Mukund Sasikumar": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 44,
+  "by_status": {
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9091,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Alexander Binda": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 40,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
