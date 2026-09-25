@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-09-25T16:16:16.668393+00:00",
+ "run_id": "20260925T161616Z",
+ "external_parse": {
+  "events": 87,
+  "markets": 688,
+  "skipped_family": 186,
+  "skipped_period": 175,
+  "skipped_live": 26,
+  "one_sided": 29,
+  "rows": 960,
+  "devigged": 298
+ },
+ "smarkets_fetch": {
+  "events_seen": 56,
+  "events_priced": 56,
+  "markets": 725,
+  "markets_mapped": 283,
+  "contracts": 618,
+  "quoted_contracts": 618,
+  "raw": "data/research/external/raw/20260925T161616Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 283,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 610,
+  "two_sided": 608,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 234,
+ "external_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.6923,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Team Europe": 1,
+   "Igor Marcondes": 1,
+   "Paula Cerda": 1,
+   "Kasper Kulpa": 1,
+   "Harrison Lee": 1,
+   "Ben Stecker": 1,
+   "William Landry": 1,
+   "Gabe Avram": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 56,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 18,
+   "MAPPED": 35,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 53
+  },
+  "mapped_rate": 0.9298,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Claus Piening": 1,
+   "Gabe Avram": 1,
+   "Anna Rogers": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 72,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 16
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
