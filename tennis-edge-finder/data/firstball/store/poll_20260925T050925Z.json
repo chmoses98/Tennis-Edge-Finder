@@ -1,0 +1,100 @@
+{
+ "run_id": "20260925T050925Z",
+ "started_at": "2026-09-25T05:09:25.856365+00:00",
+ "passes": 4,
+ "requests": 8,
+ "observations": 284,
+ "truths_written": 12,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPSETWINNER-26SEP25KOPSHA-2": {
+   "confidence": "B",
+   "bracket_s": 278.264604,
+   "first_ball": "2026-09-25T05:09:52.143362+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP25KOPSHA-1": {
+   "confidence": "B",
+   "bracket_s": 278.264604,
+   "first_ball": "2026-09-25T05:09:52.143362+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP25KOPSHA": {
+   "confidence": "B",
+   "bracket_s": 278.264604,
+   "first_ball": "2026-09-25T05:09:52.143362+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP25KOPSHA": {
+   "confidence": "B",
+   "bracket_s": 278.264604,
+   "first_ball": "2026-09-25T05:09:52.143362+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP25BROSON-2": {
+   "confidence": "B",
+   "bracket_s": 273.484122,
+   "first_ball": "2026-09-25T05:15:05.676873+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP25BROSON-1": {
+   "confidence": "B",
+   "bracket_s": 273.484122,
+   "first_ball": "2026-09-25T05:15:05.676873+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP25BROSON": {
+   "confidence": "B",
+   "bracket_s": 273.484122,
+   "first_ball": "2026-09-25T05:15:05.676873+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26SEP25BROSON": {
+   "confidence": "B",
+   "bracket_s": 273.484122,
+   "first_ball": "2026-09-25T05:15:05.676873+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP25BROSON": {
+   "confidence": "B",
+   "bracket_s": 273.484122,
+   "first_ball": "2026-09-25T05:15:05.676873+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 8
+ },
+ "mapping": {
+  "MATCHED": 284,
+  "UNMATCHED": 308,
+  "AMBIGUOUS": 12
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26SEP24ANDFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184106 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP24ANDFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184106 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP24ANDFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184106 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-25T05:18:48.179907+00:00"
+}
