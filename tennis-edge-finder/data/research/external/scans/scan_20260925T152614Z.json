@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-09-25T15:26:14.160050+00:00",
+ "run_id": "20260925T152614Z",
+ "external_parse": {
+  "events": 93,
+  "markets": 755,
+  "skipped_family": 197,
+  "skipped_period": 198,
+  "skipped_live": 28,
+  "one_sided": 29,
+  "rows": 1072,
+  "devigged": 331
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 734,
+  "markets_mapped": 289,
+  "contracts": 634,
+  "quoted_contracts": 634,
+  "raw": "data/research/external/raw/20260925T152614Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 289,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 609,
+  "two_sided": 606,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 190,
+ "external_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6786,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Team Europe": 1,
+   "Igor Marcondes": 1,
+   "Aditya Vyas": 1,
+   "Lathan Skrobarcek": 1,
+   "Noey Do": 1,
+   "Kasper Kulpa": 1,
+   "Harrison Lee": 1,
+   "Ben Stecker": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6727,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9444,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Anna Rogers": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 41,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 18
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
