@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-25T17:17:33.699021+00:00",
+ "run_id": "20260925T171733Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 991,
+  "skipped_family": 243,
+  "skipped_period": 270,
+  "skipped_live": 23,
+  "one_sided": 33,
+  "rows": 1491,
+  "devigged": 444
+ },
+ "smarkets_fetch": {
+  "events_seen": 52,
+  "events_priced": 52,
+  "markets": 726,
+  "markets_mapped": 279,
+  "contracts": 606,
+  "quoted_contracts": 606,
+  "raw": "data/research/external/raw/20260925T171733Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 279,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 579,
+  "two_sided": 576,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 232,
+ "external_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.7041,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Team Europe": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Paula Cerda": 1,
+   "William Landry": 1,
+   "Johnson Cooper": 1,
+   "Michael Chan": 1,
+   "Ilan Hediger": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 33,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6346,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 52
+  },
+  "mapped_rate": 0.9123,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Paul Colin": 1,
+   "Sasikumar Mukund": 1,
+   "Ekaterina Dotsenko": 1,
+   "Anna Rogers": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
