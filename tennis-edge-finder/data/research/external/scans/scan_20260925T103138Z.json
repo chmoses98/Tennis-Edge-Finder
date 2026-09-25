@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-09-25T10:31:38.121007+00:00",
+ "run_id": "20260925T103138Z",
+ "external_parse": {
+  "events": 132,
+  "markets": 1284,
+  "skipped_family": 312,
+  "skipped_period": 352,
+  "skipped_live": 30,
+  "one_sided": 26,
+  "rows": 1910,
+  "devigged": 594
+ },
+ "smarkets_fetch": {
+  "events_seen": 70,
+  "events_priced": 70,
+  "markets": 1061,
+  "markets_mapped": 392,
+  "contracts": 874,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20260925T103138Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 392,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 842,
+  "two_sided": 841,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 311,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.7097,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Europe": 1,
+   "Team Europe": 1,
+   "Jessica Bouzas Maneiro": 1,
+   "Spain (W)": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1,
+   "Gabe Avram": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Maria Timofeeva": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8824,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Gabriela Knutson": 1,
+   "Gabe Avram": 1,
+   "Paul Colin": 1,
+   "Anna Rogers": 1,
+   "Tiphanie Lemaitre": 1,
+   "Ekaterina Dotsenko": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
