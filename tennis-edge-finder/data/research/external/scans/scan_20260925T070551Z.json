@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-25T07:05:51.604010+00:00",
+ "run_id": "20260925T070551Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1619,
+  "skipped_family": 327,
+  "skipped_period": 447,
+  "skipped_live": 11,
+  "one_sided": 32,
+  "rows": 2450,
+  "devigged": 813
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 1168,
+  "markets_mapped": 446,
+  "contracts": 986,
+  "quoted_contracts": 890,
+  "raw": "data/research/external/raw/20260925T070551Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 446,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 154,
+  "rows": 832,
+  "two_sided": 832,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 532,
+ "external_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.7034,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Xinyu Wang": 1,
+   "Europe": 1,
+   "Team Europe": 1,
+   "Spain (W)": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Mukund Sasikumar": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Spain": 1,
+   "Maria Timofeeva": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 111,
+  "by_status": {
+   "UNMAPPED_PLAYER": 14,
+   "MAPPED": 97
+  },
+  "mapped_rate": 0.8739,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Gabriela Knutson": 1,
+   "Gabe Avram": 1,
+   "Paul Colin": 1,
+   "Fares Zakaria": 1,
+   "Sasikumar Mukund": 1,
+   "Claus Piening": 1,
+   "Jakub Kusy": 1,
+   "Jakub Vrtilka": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 124,
+  "tri:INSUFFICIENT_INPUTS": 68,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
