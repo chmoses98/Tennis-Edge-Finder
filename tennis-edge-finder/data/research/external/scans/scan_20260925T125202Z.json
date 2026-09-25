@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-09-25T12:52:02.553168+00:00",
+ "run_id": "20260925T125202Z",
+ "external_parse": {
+  "events": 107,
+  "markets": 936,
+  "skipped_family": 225,
+  "skipped_period": 253,
+  "skipped_live": 27,
+  "one_sided": 34,
+  "rows": 1335,
+  "devigged": 424
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 792,
+  "markets_mapped": 303,
+  "contracts": 672,
+  "quoted_contracts": 672,
+  "raw": "data/research/external/raw/20260925T125202Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 303,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 7,
+  "rows": 665,
+  "two_sided": 662,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 289,
+ "external_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.697,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Europe": 1,
+   "Team Europe": 1,
+   "Cristina Bucsa": 1,
+   "Igor Marcondes": 1,
+   "Gabe Avram": 1,
+   "Mukund Sasikumar": 1,
+   "Ekaterina Dotsenko": 1,
+   "Tiphanie Lemaitre": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 40
+  },
+  "mapped_rate": 0.6349,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Maria Timofeeva": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9123,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Alexander Binda": 1,
+   "Gabe Avram": 1,
+   "Tiphanie Lemaitre": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
