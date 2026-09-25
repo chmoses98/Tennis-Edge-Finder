@@ -1,55 +1,440 @@
 {
-"run_id": "20260924T215024Z",
-"generated_at": "2026-09-24T21:50:39.822967+00:00",
-"discovery_run": "20260924T035437Z",
+"run_id": "20260925T051822Z",
+"generated_at": "2026-09-25T05:20:26.994372+00:00",
+"discovery_run": "20260925T032454Z",
 "git_sha": "625bc557567a856414ae5b960c81a373a377b1e4",
 "coverage": {
-"active": 1356,
+"active": 1044,
 "unsupported_family": 133,
-"past_nominal_start": 94,
-"closed_since_discovery": 828,
-"tournament_scope_not_priced_tonight": 231,
-"unmapped_player": 10,
-"excluded_event": 12,
-"projected": 48
+"past_nominal_start": 104,
+"tournament_scope_not_priced_tonight": 263,
+"closed_since_discovery": 8,
+"unmapped_player": 27,
+"names_recovered_from_sibling_event": 40,
+"projected_doubles": 14,
+"excluded_event": 78,
+"projected": 431
 },
 "projected_tickers": [
-"KXITFMATCH-26SEP24ALVCHA-CHA",
-"KXITFMATCH-26SEP24ALVCHA-ALV",
-"KXITFMATCH-26SEP24NOVBON-NOV",
-"KXITFMATCH-26SEP24NOVBON-BON",
-"KXITFMATCH-26SEP24WITROL-WIT",
-"KXITFMATCH-26SEP24WITROL-ROL",
+"KXWTACHALLENGERMATCH-26SEP25DILGAS-GAS",
+"KXWTACHALLENGERMATCH-26SEP25DILGAS-DIL",
+"KXWTACHALLENGERMATCH-26SEP25POHSWA-SWA",
+"KXWTACHALLENGERMATCH-26SEP25POHSWA-POH",
+"KXWTACHALLENGERMATCH-26SEP25MALKRA-MAL",
+"KXWTACHALLENGERMATCH-26SEP25MALKRA-KRA",
+"KXWTACHALLENGERMATCH-26SEP25BRAVOL-VOL",
+"KXWTACHALLENGERMATCH-26SEP25BRAVOL-BRA",
+"KXWTACHALLENGERMATCH-26SEP25RISPIE-RIS",
+"KXWTACHALLENGERMATCH-26SEP25RISPIE-PIE",
+"KXWTACHALLENGERMATCH-26SEP25CENSHI-SHI",
+"KXWTACHALLENGERMATCH-26SEP25CENSHI-CEN",
+"KXWTACHALLENGERMATCH-26SEP25MARMAS-MAS",
+"KXWTACHALLENGERMATCH-26SEP25MARMAS-MAR",
+"KXWTACHALLENGERMATCH-26SEP25KOSTIA-TIA",
+"KXWTACHALLENGERMATCH-26SEP25KOSTIA-KOS",
+"KXWTACHALLENGERMATCH-26SEP25ZAYIAT-ZAY",
+"KXWTACHALLENGERMATCH-26SEP25ZAYIAT-IAT",
+"KXATPCHALLENGERMATCH-26SEP25BOSRIB-RIB",
+"KXATPCHALLENGERMATCH-26SEP25BOSRIB-BOS",
+"KXATPCHALLENGERMATCH-26SEP25ANDALM-AND",
+"KXATPCHALLENGERMATCH-26SEP25ANDALM-ALM",
+"KXATPCHALLENGERMATCH-26SEP25PETFOR-PET",
+"KXATPCHALLENGERMATCH-26SEP25PETFOR-FOR",
+"KXATPCHALLENGERMATCH-26SEP25GILFOR-GIL",
+"KXATPCHALLENGERMATCH-26SEP25GILFOR-FOR",
+"KXATPCHALLENGERMATCH-26SEP25PRIGLI-PRI",
+"KXATPCHALLENGERMATCH-26SEP25PRIGLI-GLI",
+"KXATPCHALLENGERMATCH-26SEP25NEUMIK-NEU",
+"KXATPCHALLENGERMATCH-26SEP25NEUMIK-MIK",
+"KXATPCHALLENGERMATCH-26SEP25MOEBLA-MOE",
+"KXATPCHALLENGERMATCH-26SEP25MOEBLA-BLA",
+"KXATPCHALLENGERMATCH-26SEP25MAYDEJ-MAY",
+"KXATPCHALLENGERMATCH-26SEP25MAYDEJ-DEJ",
+"KXATPCHALLENGERMATCH-26SEP25HEMTAB-TAB",
+"KXATPCHALLENGERMATCH-26SEP25HEMTAB-HEM",
+"KXATPCHALLENGERMATCH-26SEP25ALCMAR-MAR",
+"KXATPCHALLENGERMATCH-26SEP25ALCMAR-ALC",
+"KXATPCHALLENGERMATCH-26SEP25CASMAS-MAS",
+"KXATPCHALLENGERMATCH-26SEP25CASMAS-CAS",
+"KXWTAGTOTAL-26SEP25SAKGIB-27",
+"KXWTAGTOTAL-26SEP25SAKGIB-22",
+"KXWTAGTOTAL-26SEP25SAKGIB-17",
+"KXWTAGTOTAL-26SEP25PREKOR-26",
+"KXWTAGTOTAL-26SEP25PREKOR-21",
+"KXWTAGTOTAL-26SEP25PREKOR-16",
+"KXWTAGTOTAL-26SEP24BONRUS-27",
+"KXWTAGTOTAL-26SEP24BONRUS-22",
+"KXWTAGTOTAL-26SEP24BONRUS-17",
+"KXWTAGTOTAL-26SEP24VOLBIR-26",
+"KXWTAGTOTAL-26SEP24VOLBIR-21",
+"KXWTAGTOTAL-26SEP24VOLBIR-16",
+"KXWTAGTOTAL-26SEP24TARJOI-27",
+"KXWTAGTOTAL-26SEP24TARJOI-22",
+"KXWTAGTOTAL-26SEP24TARJOI-17",
+"KXWTAGTOTAL-26SEP24MERCHW-27",
+"KXWTAGTOTAL-26SEP24MERCHW-22",
+"KXWTAGTOTAL-26SEP24MERCHW-17",
+"KXWTAGTOTAL-26SEP24ANDFER-26",
+"KXWTAGTOTAL-26SEP24ANDFER-21",
+"KXWTAGTOTAL-26SEP24ANDFER-16",
+"KXWTADOUBLES-26SEP25COSGIBROUSUT-ROUSUT",
+"KXWTADOUBLES-26SEP25COSGIBROUSUT-COSGIB",
+"KXWTADOUBLES-26SEP25CHAFANLIAYUA-LIAYUA",
+"KXWTADOUBLES-26SEP25CHAFANLIAYUA-CHAFAN",
+"KXATPSETWINNER-26SEP25VACHAR-2-VAC",
+"KXATPSETWINNER-26SEP25VACHAR-2-HAR",
+"KXATPSETWINNER-26SEP25VACHAR-1-VAC",
+"KXATPSETWINNER-26SEP25VACHAR-1-HAR",
+"KXATPSETWINNER-26SEP25DAMHUR-2-HUR",
+"KXATPSETWINNER-26SEP25DAMHUR-2-DAM",
+"KXATPSETWINNER-26SEP25DAMHUR-1-HUR",
+"KXATPSETWINNER-26SEP25DAMHUR-1-DAM",
+"KXATPSETWINNER-26SEP25CERDAV-2-DAV",
+"KXATPSETWINNER-26SEP25CERDAV-2-CER",
+"KXATPSETWINNER-26SEP25CERDAV-1-DAV",
+"KXATPSETWINNER-26SEP25CERDAV-1-CER",
+"KXATPSETWINNER-26SEP25TABMAN-2-TAB",
+"KXATPSETWINNER-26SEP25TABMAN-2-MAN",
+"KXATPSETWINNER-26SEP25TABMAN-1-TAB",
+"KXATPSETWINNER-26SEP25TABMAN-1-MAN",
+"KXATPSETWINNER-26SEP25CINMUL-2-MUL",
+"KXATPSETWINNER-26SEP25CINMUL-2-CIN",
+"KXATPSETWINNER-26SEP25CINMUL-1-MUL",
+"KXATPSETWINNER-26SEP25CINMUL-1-CIN",
+"KXATPSETWINNER-26SEP25BASVAN-2-VAN",
+"KXATPSETWINNER-26SEP25BASVAN-2-BAS",
+"KXATPSETWINNER-26SEP25BASVAN-1-VAN",
+"KXATPSETWINNER-26SEP25BASVAN-1-BAS",
+"KXATPSETWINNER-26SEP25HIJRUB-2-RUB",
+"KXATPSETWINNER-26SEP25HIJRUB-2-HIJ",
+"KXATPSETWINNER-26SEP25HIJRUB-1-RUB",
+"KXATPSETWINNER-26SEP25HIJRUB-1-HIJ",
+"KXATPSETWINNER-26SEP25BROSON-2-SON",
+"KXATPSETWINNER-26SEP25BROSON-2-BRO",
+"KXATPSETWINNER-26SEP25BROSON-1-SON",
+"KXATPSETWINNER-26SEP25BROSON-1-BRO",
+"KXATPSETWINNER-26SEP25KOPSHA-2-SHA",
+"KXATPSETWINNER-26SEP25KOPSHA-2-KOP",
+"KXATPSETWINNER-26SEP25KOPSHA-1-SHA",
+"KXATPSETWINNER-26SEP25KOPSHA-1-KOP",
+"KXATPSETWINNER-26SEP25MEDROY-2-ROY",
+"KXATPSETWINNER-26SEP25MEDROY-2-MED",
+"KXATPSETWINNER-26SEP25MEDROY-1-ROY",
+"KXATPSETWINNER-26SEP25MEDROY-1-MED",
+"KXATPSETWINNER-26SEP25JACETC-2-JAC",
+"KXATPSETWINNER-26SEP25JACETC-2-ETC",
+"KXATPSETWINNER-26SEP25JACETC-1-JAC",
+"KXATPSETWINNER-26SEP25JACETC-1-ETC",
+"KXATPEXACTMATCH-26SEP25VACHAR-VAC21",
+"KXATPEXACTMATCH-26SEP25VACHAR-VAC20",
+"KXATPEXACTMATCH-26SEP25VACHAR-HAR21",
+"KXATPEXACTMATCH-26SEP25VACHAR-HAR20",
+"KXATPEXACTMATCH-26SEP25DAMHUR-HUR21",
+"KXATPEXACTMATCH-26SEP25DAMHUR-HUR20",
+"KXATPEXACTMATCH-26SEP25DAMHUR-DAM21",
+"KXATPEXACTMATCH-26SEP25DAMHUR-DAM20",
+"KXATPEXACTMATCH-26SEP25CERDAV-DAV21",
+"KXATPEXACTMATCH-26SEP25CERDAV-DAV20",
+"KXATPEXACTMATCH-26SEP25CERDAV-CER21",
+"KXATPEXACTMATCH-26SEP25CERDAV-CER20",
+"KXATPEXACTMATCH-26SEP25TABMAN-TAB21",
+"KXATPEXACTMATCH-26SEP25TABMAN-TAB20",
+"KXATPEXACTMATCH-26SEP25TABMAN-MAN21",
+"KXATPEXACTMATCH-26SEP25TABMAN-MAN20",
+"KXATPEXACTMATCH-26SEP25CINMUL-MUL21",
+"KXATPEXACTMATCH-26SEP25CINMUL-MUL20",
+"KXATPEXACTMATCH-26SEP25CINMUL-CIN21",
+"KXATPEXACTMATCH-26SEP25CINMUL-CIN20",
+"KXATPEXACTMATCH-26SEP25BASVAN-VAN21",
+"KXATPEXACTMATCH-26SEP25BASVAN-VAN20",
+"KXATPEXACTMATCH-26SEP25BASVAN-BAS21",
+"KXATPEXACTMATCH-26SEP25BASVAN-BAS20",
+"KXATPEXACTMATCH-26SEP25HIJRUB-RUB21",
+"KXATPEXACTMATCH-26SEP25HIJRUB-RUB20",
+"KXATPEXACTMATCH-26SEP25HIJRUB-HIJ21",
+"KXATPEXACTMATCH-26SEP25HIJRUB-HIJ20",
+"KXATPEXACTMATCH-26SEP25BROSON-SON21",
+"KXATPEXACTMATCH-26SEP25BROSON-SON20",
+"KXATPEXACTMATCH-26SEP25BROSON-BRO21",
+"KXATPEXACTMATCH-26SEP25BROSON-BRO20",
+"KXATPEXACTMATCH-26SEP25KOPSHA-SHA21",
+"KXATPEXACTMATCH-26SEP25KOPSHA-SHA20",
+"KXATPEXACTMATCH-26SEP25KOPSHA-KOP21",
+"KXATPEXACTMATCH-26SEP25KOPSHA-KOP20",
+"KXATPEXACTMATCH-26SEP25MEDROY-ROY21",
+"KXATPEXACTMATCH-26SEP25MEDROY-ROY20",
+"KXATPEXACTMATCH-26SEP25MEDROY-MED21",
+"KXATPEXACTMATCH-26SEP25MEDROY-MED20",
+"KXATPEXACTMATCH-26SEP25JACETC-JAC21",
+"KXATPEXACTMATCH-26SEP25JACETC-JAC20",
+"KXATPEXACTMATCH-26SEP25JACETC-ETC21",
+"KXATPEXACTMATCH-26SEP25JACETC-ETC20",
+"KXITFMATCH-26SEP25SWABON-SWA",
+"KXITFMATCH-26SEP25SWABON-BON",
+"KXITFMATCH-26SEP25DARCHA-DAR",
+"KXITFMATCH-26SEP25DARCHA-CHA",
+"KXITFMATCH-26SEP25BYNJAN-JAN",
+"KXITFMATCH-26SEP25BYNJAN-BYN",
+"KXITFMATCH-26SEP25LEIPER-PER",
+"KXITFMATCH-26SEP25LEIPER-LEI",
+"KXITFMATCH-26SEP25ALVCOU-COU",
+"KXITFMATCH-26SEP25ALVCOU-ALV",
+"KXITFMATCH-26SEP25OSOSAK-SAK",
+"KXITFMATCH-26SEP25OSOSAK-OSO",
+"KXITFMATCH-26SEP25ZANSCH-ZAN",
+"KXITFMATCH-26SEP25ZANSCH-SCH",
+"KXITFMATCH-26SEP25BERPET-PET",
+"KXITFMATCH-26SEP25BERPET-BER",
+"KXITFMATCH-26SEP25VASBAN-VAS",
+"KXITFMATCH-26SEP25VASBAN-BAN",
+"KXITFMATCH-26SEP25THOHER-THO",
+"KXITFMATCH-26SEP25THOHER-HER",
+"KXITFMATCH-26SEP25GAKPAR-PAR",
+"KXITFMATCH-26SEP25GAKPAR-GAK",
+"KXITFMATCH-26SEP25BOUDJO-DJO",
+"KXITFMATCH-26SEP25BOUDJO-BOU",
+"KXITFMATCH-26SEP25JONXIL-XIL",
+"KXITFMATCH-26SEP25JONXIL-JON",
+"KXITFMATCH-26SEP25NAGTRU-TRU",
+"KXITFMATCH-26SEP25NAGTRU-NAG",
+"KXITFMATCH-26SEP25BERHEN-HEN",
+"KXITFMATCH-26SEP25BERHEN-BER",
+"KXITFMATCH-26SEP25MONMAX-MON",
+"KXITFMATCH-26SEP25MONMAX-MAX",
+"KXITFMATCH-26SEP25MARTAL-TAL",
+"KXITFMATCH-26SEP25MARTAL-MAR",
+"KXITFMATCH-26SEP25GIUCAM-GIU",
+"KXITFMATCH-26SEP25GIUCAM-CAM",
+"KXITFMATCH-26SEP25BRADON-DON",
+"KXITFMATCH-26SEP25BRADON-BRA",
+"KXITFMATCH-26SEP25MURAGW-MUR",
+"KXITFMATCH-26SEP25MURAGW-AGW",
+"KXITFMATCH-26SEP25DECMOR-MOR",
+"KXITFMATCH-26SEP25DECMOR-DEC",
+"KXITFMATCH-26SEP25SEIDEJ-SEI",
+"KXITFMATCH-26SEP25SEIDEJ-DEJ",
+"KXITFMATCH-26SEP25MARLUM-MAR",
+"KXITFMATCH-26SEP25MARLUM-LUM",
+"KXITFMATCH-26SEP25VINCOL-VIN",
+"KXITFMATCH-26SEP25VINCOL-COL",
+"KXITFMATCH-26SEP25POPMON-POP",
+"KXITFMATCH-26SEP25POPMON-MON",
+"KXITFMATCH-26SEP25MADFUM-MAD",
+"KXITFMATCH-26SEP25MADFUM-FUM",
+"KXITFMATCH-26SEP25FILBRO-FIL",
+"KXITFMATCH-26SEP25FILBRO-BRO",
+"KXITFMATCH-26SEP25NORHUR-NOR",
+"KXITFMATCH-26SEP25NORHUR-HUR",
+"KXITFMATCH-26SEP25DJUDUH-DUH",
+"KXITFMATCH-26SEP25DJUDUH-DJU",
+"KXITFMATCH-26SEP25SINFAU-SIN",
+"KXITFMATCH-26SEP25SINFAU-FAU",
+"KXITFMATCH-26SEP25FELJUB-JUB",
+"KXITFMATCH-26SEP25FELJUB-FEL",
+"KXITFMATCH-26SEP25CHEMEC-MEC",
+"KXITFMATCH-26SEP25CHEMEC-CHE",
+"KXITFMATCH-26SEP25PAAFER-PAA",
+"KXITFMATCH-26SEP25PAAFER-FER",
+"KXITFMATCH-26SEP25SINKIR-SIN",
+"KXITFMATCH-26SEP25SINKIR-KIR",
+"KXITFMATCH-26SEP25DOLMAJ-MAJ",
+"KXITFMATCH-26SEP25DOLMAJ-DOL",
+"KXITFMATCH-26SEP24CHEPEL-PEL",
+"KXITFMATCH-26SEP24CHEPEL-CHE",
+"KXITFMATCH-26SEP24TANKAC-TAN",
+"KXITFMATCH-26SEP24TANKAC-KAC",
+"KXATPGSPREAD-26SEP24HALSAF-SAF5",
+"KXATPGSPREAD-26SEP24HALSAF-SAF2",
+"KXATPGSPREAD-26SEP24HALSAF-HAL2",
+"KXATPGSPREAD-26SEP25CINMUL-MUL2",
+"KXATPGSPREAD-26SEP25CINMUL-CIN5",
+"KXATPGSPREAD-26SEP25CINMUL-CIN2",
+"KXATPGSPREAD-26SEP25BASVAN-VAN7",
+"KXATPGSPREAD-26SEP25BASVAN-VAN4",
+"KXATPGSPREAD-26SEP25BASVAN-BAS2",
+"KXATPGSPREAD-26SEP25TABMAN-TAB6",
+"KXATPGSPREAD-26SEP25TABMAN-TAB3",
+"KXATPGSPREAD-26SEP25TABMAN-MAN2",
+"KXATPGSPREAD-26SEP25BROSON-SON2",
+"KXATPGSPREAD-26SEP25BROSON-BRO5",
+"KXATPGSPREAD-26SEP25BROSON-BRO2",
+"KXATPGSPREAD-26SEP25HIJRUB-RUB7",
+"KXATPGSPREAD-26SEP25HIJRUB-RUB4",
+"KXATPGSPREAD-26SEP25HIJRUB-HIJ2",
+"KXATPGSPREAD-26SEP25KOPSHA-SHA8",
+"KXATPGSPREAD-26SEP25KOPSHA-SHA5",
+"KXATPGSPREAD-26SEP25KOPSHA-SHA2",
+"KXATPGSPREAD-26SEP24MARDAN-MAR7",
+"KXATPGSPREAD-26SEP24MARDAN-MAR4",
+"KXATPGSPREAD-26SEP24MARDAN-DAN2",
+"KXATPGSPREAD-26SEP24FARGAS-GAS2",
+"KXATPGSPREAD-26SEP24FARGAS-FAR7",
+"KXATPGSPREAD-26SEP24FARGAS-FAR4",
+"KXATPGSPREAD-26SEP25MEDROY-MED8",
+"KXATPGSPREAD-26SEP25MEDROY-MED5",
+"KXATPGSPREAD-26SEP25MEDROY-MED2",
+"KXATPGSPREAD-26SEP25JACETC-JAC2",
+"KXATPGSPREAD-26SEP25JACETC-ETC5",
+"KXATPGSPREAD-26SEP25JACETC-ETC2",
+"KXATPGTOTAL-26SEP24HALSAF-30",
+"KXATPGTOTAL-26SEP24HALSAF-25",
+"KXATPGTOTAL-26SEP24HALSAF-20",
+"KXATPGTOTAL-26SEP25CINMUL-28",
+"KXATPGTOTAL-26SEP25CINMUL-23",
+"KXATPGTOTAL-26SEP25CINMUL-18",
+"KXATPGTOTAL-26SEP25BASVAN-28",
+"KXATPGTOTAL-26SEP25BASVAN-23",
+"KXATPGTOTAL-26SEP25BASVAN-18",
+"KXATPGTOTAL-26SEP25TABMAN-28",
+"KXATPGTOTAL-26SEP25TABMAN-23",
+"KXATPGTOTAL-26SEP25TABMAN-18",
+"KXATPGTOTAL-26SEP25BROSON-29",
+"KXATPGTOTAL-26SEP25BROSON-24",
+"KXATPGTOTAL-26SEP25BROSON-19",
+"KXATPGTOTAL-26SEP25HIJRUB-28",
+"KXATPGTOTAL-26SEP25HIJRUB-23",
+"KXATPGTOTAL-26SEP25HIJRUB-18",
+"KXATPGTOTAL-26SEP25KOPSHA-26",
+"KXATPGTOTAL-26SEP25KOPSHA-21",
+"KXATPGTOTAL-26SEP25KOPSHA-16",
+"KXATPGTOTAL-26SEP24MARDAN-28",
+"KXATPGTOTAL-26SEP24MARDAN-23",
+"KXATPGTOTAL-26SEP24MARDAN-18",
+"KXATPGTOTAL-26SEP24FARGAS-27",
+"KXATPGTOTAL-26SEP24FARGAS-22",
+"KXATPGTOTAL-26SEP24FARGAS-17",
+"KXATPGTOTAL-26SEP25MEDROY-27",
+"KXATPGTOTAL-26SEP25MEDROY-22",
+"KXATPGTOTAL-26SEP25MEDROY-17",
+"KXATPGTOTAL-26SEP25JACETC-29",
+"KXATPGTOTAL-26SEP25JACETC-24",
+"KXATPGTOTAL-26SEP25JACETC-19",
+"KXWTAMATCH-26SEP25SAKGIB-SAK",
+"KXWTAMATCH-26SEP25SAKGIB-GIB",
+"KXWTAMATCH-26SEP25PREKOR-PRE",
+"KXWTAMATCH-26SEP25PREKOR-KOR",
+"KXWTAMATCH-26SEP24BONRUS-RUS",
+"KXWTAMATCH-26SEP24BONRUS-BON",
+"KXWTAMATCH-26SEP24VOLBIR-VOL",
+"KXWTAMATCH-26SEP24VOLBIR-BIR",
 "KXWTAMATCH-26SEP24MERCHW-MER",
 "KXWTAMATCH-26SEP24MERCHW-CHW",
 "KXWTAMATCH-26SEP24ANDFER-FER",
 "KXWTAMATCH-26SEP24ANDFER-AND",
 "KXWTAMATCH-26SEP24TARJOI-TAR",
 "KXWTAMATCH-26SEP24TARJOI-JOI",
-"KXITFWMATCH-26SEP24DAYLAS-LAS",
-"KXITFWMATCH-26SEP24DAYLAS-DAY",
-"KXITFWMATCH-26SEP24KAMBRA-KAM",
-"KXITFWMATCH-26SEP24KAMBRA-BRA",
-"KXITFWMATCH-26SEP24GARREI-REI",
-"KXITFWMATCH-26SEP24GARREI-GAR",
-"KXITFWMATCH-26SEP24SANCAT-SAN",
-"KXITFWMATCH-26SEP24SANCAT-CAT",
-"KXITFWMATCH-26SEP24CHASHC-SHC",
-"KXITFWMATCH-26SEP24CHASHC-CHA",
-"KXITFWMATCH-26SEP24MCDBRO-MCD",
-"KXITFWMATCH-26SEP24MCDBRO-BRO",
-"KXITFWMATCH-26SEP24PERGOT-PER",
-"KXITFWMATCH-26SEP24PERGOT-GOT",
-"KXITFWMATCH-26SEP24DOUGOM-GOM",
-"KXITFWMATCH-26SEP24DOUGOM-DOU",
-"KXITFWMATCH-26SEP24DIALOP-LOP",
-"KXITFWMATCH-26SEP24DIALOP-DIA",
-"KXITFWMATCH-26SEP24ALBSHA-SHA",
-"KXITFWMATCH-26SEP24ALBSHA-ALB",
-"KXITFWMATCH-26SEP24PREMAX-PRE",
-"KXITFWMATCH-26SEP24PREMAX-MAX",
-"KXITFWMATCH-26SEP24BREMAK-MAK",
-"KXITFWMATCH-26SEP24BREMAK-BRE",
+"KXATPCHALLENGERDOUBLES-26SEP25MARWALNIKVRB-NIKVRB",
+"KXATPCHALLENGERDOUBLES-26SEP25MARWALNIKVRB-MARWAL",
+"KXATPCHALLENGERDOUBLES-26SEP25BITMASARNKIT-BITMAS",
+"KXATPCHALLENGERDOUBLES-26SEP25BITMASARNKIT-ARNKIT",
+"KXATPCHALLENGERDOUBLES-26SEP25CUKROMPAUVOC-PAUVOC",
+"KXATPCHALLENGERDOUBLES-26SEP25CUKROMPAUVOC-CUKROM",
+"KXATPCHALLENGERDOUBLES-26SEP25MANPERPAVWIN-PAVWIN",
+"KXATPCHALLENGERDOUBLES-26SEP25MANPERPAVWIN-MANPER",
+"KXATPMATCH-26SEP25DAMHUR-HUR",
+"KXATPMATCH-26SEP25DAMHUR-DAM",
+"KXATPMATCH-26SEP25VACHAR-VAC",
+"KXATPMATCH-26SEP25VACHAR-HAR",
+"KXATPMATCH-26SEP25CERDAV-DAV",
+"KXATPMATCH-26SEP25CERDAV-CER",
+"KXATPMATCH-26SEP25TABMAN-TAB",
+"KXATPMATCH-26SEP25TABMAN-MAN",
+"KXATPMATCH-26SEP25CINMUL-MUL",
+"KXATPMATCH-26SEP25CINMUL-CIN",
+"KXATPMATCH-26SEP25BASVAN-VAN",
+"KXATPMATCH-26SEP25BASVAN-BAS",
+"KXATPMATCH-26SEP25HIJRUB-RUB",
+"KXATPMATCH-26SEP25HIJRUB-HIJ",
+"KXATPMATCH-26SEP25BROSON-SON",
+"KXATPMATCH-26SEP25BROSON-BRO",
+"KXATPMATCH-26SEP25KOPSHA-SHA",
+"KXATPMATCH-26SEP25KOPSHA-KOP",
+"KXATPMATCH-26SEP25MEDROY-ROY",
+"KXATPMATCH-26SEP25MEDROY-MED",
+"KXATPMATCH-26SEP25JACETC-JAC",
+"KXATPMATCH-26SEP25JACETC-ETC",
+"KXATPDOUBLES-26SEP25BAYFANMELSEG-MELSEG",
+"KXATPDOUBLES-26SEP25BAYFANMELSEG-BAYFAN",
+"KXITFWMATCH-26SEP25CINLOP-LOP",
+"KXITFWMATCH-26SEP25CINLOP-CIN",
+"KXITFWMATCH-26SEP25BREMCD-MCD",
+"KXITFWMATCH-26SEP25BREMCD-BRE",
+"KXITFWMATCH-26SEP25PERKAM-PER",
+"KXITFWMATCH-26SEP25PERKAM-KAM",
+"KXITFWMATCH-26SEP25GARKON-KON",
+"KXITFWMATCH-26SEP25GARKON-GAR",
+"KXITFWMATCH-26SEP25DOUEST-EST",
+"KXITFWMATCH-26SEP25DOUEST-DOU",
+"KXITFWMATCH-26SEP25SANSHA-SHA",
+"KXITFWMATCH-26SEP25SANSHA-SAN",
+"KXITFWMATCH-26SEP25CHAPRE-PRE",
+"KXITFWMATCH-26SEP25CHAPRE-CHA",
+"KXITFWMATCH-26SEP25PAVFIT-PAV",
+"KXITFWMATCH-26SEP25PAVFIT-FIT",
+"KXITFWMATCH-26SEP25LAZBER-LAZ",
+"KXITFWMATCH-26SEP25LAZBER-BER",
+"KXITFWMATCH-26SEP25GALGAR-GAR",
+"KXITFWMATCH-26SEP25GALGAR-GAL",
+"KXITFWMATCH-26SEP25MALDAN-MAL",
+"KXITFWMATCH-26SEP25MALDAN-DAN",
+"KXITFWMATCH-26SEP25EBEMAZ-MAZ",
+"KXITFWMATCH-26SEP25EBEMAZ-EBE",
+"KXITFWMATCH-26SEP25MINAMA-MIN",
+"KXITFWMATCH-26SEP25MINAMA-AMA",
+"KXITFWMATCH-26SEP25MIXKRO-MIX",
+"KXITFWMATCH-26SEP25MIXKRO-KRO",
+"KXITFWMATCH-26SEP25RUCKUR-RUC",
+"KXITFWMATCH-26SEP25RUCKUR-KUR",
+"KXITFWMATCH-26SEP25HENSTA-STA",
+"KXITFWMATCH-26SEP25HENSTA-HEN",
+"KXITFWMATCH-26SEP25YANENC-YAN",
+"KXITFWMATCH-26SEP25YANENC-ENC",
+"KXITFWMATCH-26SEP25LUKOKT-OKT",
+"KXITFWMATCH-26SEP25LUKOKT-LUK",
+"KXITFWMATCH-26SEP25METVAL-VAL",
+"KXITFWMATCH-26SEP25METVAL-MET",
+"KXITFWMATCH-26SEP25BURSCH-SCH",
+"KXITFWMATCH-26SEP25BURSCH-BUR",
+"KXITFWMATCH-26SEP25MILSAM-SAM",
+"KXITFWMATCH-26SEP25MILSAM-MIL",
+"KXITFWMATCH-26SEP25HRAGOL-HRA",
+"KXITFWMATCH-26SEP25HRAGOL-GOL",
+"KXITFWMATCH-26SEP25HATGUT-HAT",
+"KXITFWMATCH-26SEP25HATGUT-GUT",
+"KXITFWMATCH-26SEP25PAWADE-PAW",
+"KXITFWMATCH-26SEP25PAWADE-ADE",
+"KXITFWMATCH-26SEP25SEVBRE-SEV",
+"KXITFWMATCH-26SEP25SEVBRE-BRE",
+"KXITFWMATCH-26SEP25PRITOD-TOD",
+"KXITFWMATCH-26SEP25PRITOD-PRI",
+"KXITFWMATCH-26SEP24YEXJIA-YEX",
+"KXITFWMATCH-26SEP24YEXJIA-JIA",
+"KXITFWMATCH-26SEP24ISHITA-ITA",
+"KXITFWMATCH-26SEP24ISHITA-ISH",
+"KXITFWMATCH-26SEP24KHOZHA-ZHA",
+"KXITFWMATCH-26SEP24KHOZHA-KHO",
+"KXITFWMATCH-26SEP24LIXKUB-LIX",
+"KXITFWMATCH-26SEP24LIXKUB-KUB",
+"KXITFWMATCH-26SEP24DENOZE-OZE",
+"KXITFWMATCH-26SEP24DENOZE-DEN",
+"KXITFWMATCH-26SEP24HOSSAT-SAT",
+"KXITFWMATCH-26SEP24HOSSAT-HOS",
+"KXWTASETWINNER-26SEP25SAKGIB-2-SAK",
+"KXWTASETWINNER-26SEP25SAKGIB-2-GIB",
+"KXWTASETWINNER-26SEP25SAKGIB-1-SAK",
+"KXWTASETWINNER-26SEP25SAKGIB-1-GIB",
+"KXWTASETWINNER-26SEP25PREKOR-2-PRE",
+"KXWTASETWINNER-26SEP25PREKOR-2-KOR",
+"KXWTASETWINNER-26SEP25PREKOR-1-PRE",
+"KXWTASETWINNER-26SEP25PREKOR-1-KOR",
+"KXWTASETWINNER-26SEP24BONRUS-2-RUS",
+"KXWTASETWINNER-26SEP24BONRUS-2-BON",
+"KXWTASETWINNER-26SEP24BONRUS-1-RUS",
+"KXWTASETWINNER-26SEP24BONRUS-1-BON",
+"KXWTASETWINNER-26SEP24VOLBIR-2-VOL",
+"KXWTASETWINNER-26SEP24VOLBIR-2-BIR",
+"KXWTASETWINNER-26SEP24VOLBIR-1-VOL",
+"KXWTASETWINNER-26SEP24VOLBIR-1-BIR",
 "KXWTASETWINNER-26SEP24TARJOI-2-TAR",
 "KXWTASETWINNER-26SEP24TARJOI-2-JOI",
 "KXWTASETWINNER-26SEP24TARJOI-1-TAR",
@@ -101,359 +486,14 @@
 "reason": "CAREER_OR_NOVELTY: not priced"
 },
 {
-"ticker": "KXWTACHALLENGERMATCH-26SEP24DESEL-SEL",
+"ticker": "KXATPCHALLENGERMATCH-26SEP24BASHAN-HAN",
 "stage": "pregame",
-"reason": "nominal start 2026-09-24T18:30:00Z is <= 5 min away or past (no first-ball truth available)"
+"reason": "nominal start 2026-09-25T01:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTACHALLENGERMATCH-26SEP24DESEL-DE",
+"ticker": "KXATPCHALLENGERMATCH-26SEP24BASHAN-BAS",
 "stage": "pregame",
-"reason": "nominal start 2026-09-24T18:30:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24DILBUY-DIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24DILBUY-BUY",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24STESWA-SWA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24STESWA-STE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24VOLTAN-VOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24VOLTAN-TAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24GORPAL-PAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24GORPAL-GOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24BAIBRA-BRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24BAIBRA-BAI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24TUBGRA-TUB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24TUBGRA-GRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24PODPOH-POH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24PODPOH-POD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24TIAMIC-TIA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24TIAMIC-MIC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24KOSBER-KOS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24KOSBER-BER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24MONGAS-MON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26SEP24MONGAS-GAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24GUEDEJ-GUE",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T18:30:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24GUEDEJ-DEJ",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T18:30:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24RONBOS-RON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24RONBOS-BOS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24GILRAD-RAD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24GILRAD-GIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24CLALA-LA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24CLALA-CLA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24FORJUA-JUA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24FORJUA-FOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24FORCHA-FOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24FORCHA-CHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24BRAPET-PET",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24BRAPET-BRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24BUTMAY-MAY",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24BUTMAY-BUT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24ALMMRV-MRV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24ALMMRV-ALM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24IVAAND-IVA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24IVAAND-AND",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24MARMAS-MAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24MARMAS-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24HARCAS-HAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26SEP24HARCAS-CAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22GIBMOR-24",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22GIBMOR-19",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23YEXBIR-26",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23YEXBIR-21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23YEXBIR-16",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23YEORUS-25",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23YEORUS-20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23YEORUS-15",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23SAKHIB-24",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23SAKHIB-19",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23OSTPRE-25",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23OSTPRE-20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23OSTPRE-15",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23BONCHA-27",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23BONCHA-22",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP23BONCHA-17",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22WANGAR-26",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22WANGAR-21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22WANGAR-16",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22PROEAL-24",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAGTOTAL-26SEP22PROEAL-19",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTADOUBLES-26SEP24ROUSUTGARHSI-ROUSUT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTADOUBLES-26SEP24ROUSUTGARHSI-GARHSI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTADOUBLES-26SEP24CHAFANBACJAN-CHAFAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTADOUBLES-26SEP24CHAFANBACJAN-BACJAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"reason": "nominal start 2026-09-25T01:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXWTADOUBLES-26SEP23KATPERLANPRO-LANPRO",
@@ -466,834 +506,124 @@
 "reason": "nominal start 2026-09-24T06:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTADOUBLES-26SEP23COSGIBMLAPAN-MLAPAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24HALSAF-2-SAF",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTADOUBLES-26SEP23COSGIBMLAPAN-COSGIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24HALSAF-2-HAL",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTADOUBLES-26SEP23MARZARCHOHOZ-MARZAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24HALSAF-1-SAF",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTADOUBLES-26SEP23MARZARCHOHOZ-CHOHOZ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24HALSAF-1-HAL",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTADOUBLES-26SEP23HUNKRATANYIF-TANYIF",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24MARDAN-2-MAR",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXWTADOUBLES-26SEP23HUNKRATANYIF-HUNKRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24MARDAN-2-DAN",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KOUMUL-2-MUL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24MARDAN-1-MAR",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KOUMUL-2-KOU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24MARDAN-1-DAN",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KOUMUL-1-MUL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24FARGAS-2-GAS",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KOUMUL-1-KOU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24FARGAS-2-FAR",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24HARKOV-2-KOV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24FARGAS-1-GAS",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24HARKOV-2-HAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPSETWINNER-26SEP24FARGAS-1-FAR",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24HARKOV-1-KOV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24HALSAF-SAF21",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24HARKOV-1-HAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24HALSAF-SAF20",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24DAMMOC-2-MOC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24HALSAF-HAL21",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24DAMMOC-2-DAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24HALSAF-HAL20",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24DAMMOC-1-MOC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24MARDAN-MAR21",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24DAMMOC-1-DAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24MARDAN-MAR20",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KECBAS-2-KEC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24MARDAN-DAN21",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KECBAS-2-BAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24MARDAN-DAN20",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KECBAS-1-KEC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24FARGAS-GAS21",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24KECBAS-1-BAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24FARGAS-GAS20",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24SWEDAN-2-SWE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24FARGAS-FAR21",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPSETWINNER-26SEP24SWEDAN-2-DAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24SWEDAN-1-SWE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24SWEDAN-1-DAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24SUNSAF-2-SUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24SUNSAF-2-SAF",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24SUNSAF-1-SUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24SUNSAF-1-SAF",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24MARBOL-2-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24MARBOL-2-BOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24MARBOL-1-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24MARBOL-1-BOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24HIJSVR-2-SVR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24HIJSVR-2-HIJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24HIJSVR-1-SVR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP24HIJSVR-1-HIJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHEHUR-2-SHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHEHUR-2-HUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHEHUR-1-SHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHEHUR-1-HUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHAMAN-2-SHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHAMAN-2-MAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHAMAN-1-SHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHAMAN-1-MAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21GRISHA-2-SHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21GRISHA-2-GRI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21GRISHA-1-SHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21GRISHA-1-GRI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21DUCSON-2-SON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21DUCSON-2-DUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21DUCSON-1-SON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21DUCSON-1-DUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CERZHO-2-ZHO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CERZHO-2-CER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CERZHO-1-ZHO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CERZHO-1-CER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BORUGO-2-UGO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BORUGO-2-BOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BORUGO-1-UGO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BORUGO-1-BOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21ZHAWON-2-ZHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21ZHAWON-2-WON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21ZHAWON-1-ZHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21ZHAWON-1-WON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21YUNZHE-2-ZHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21YUNZHE-2-YUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21YUNZHE-1-ZHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21YUNZHE-1-YUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHIGAS-2-SHI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHIGAS-2-GAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHIGAS-1-SHI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21SHIGAS-1-GAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21FARATM-2-FAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21FARATM-2-ATM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21FARATM-1-FAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21FARATM-1-ATM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CUIVAL-2-VAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CUIVAL-2-CUI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CUIVAL-1-VAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21CUIVAL-1-CUI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BELMAJ-2-MAJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BELMAJ-2-BEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BELMAJ-1-MAJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPSETWINNER-26SEP21BELMAJ-1-BEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KOUMUL-MUL21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KOUMUL-MUL20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KOUMUL-KOU21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KOUMUL-KOU20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HARKOV-KOV21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HARKOV-KOV20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HARKOV-HAR21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HARKOV-HAR20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24DAMMOC-MOC21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24DAMMOC-MOC20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24DAMMOC-DAM21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24DAMMOC-DAM20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KECBAS-KEC21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KECBAS-KEC20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KECBAS-BAS21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24KECBAS-BAS20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SWEDAN-SWE21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SWEDAN-SWE20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SWEDAN-DAN21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SWEDAN-DAN20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SUNSAF-SUN21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SUNSAF-SUN20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SUNSAF-SAF21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24SUNSAF-SAF20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24MARBOL-MAR21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24MARBOL-MAR20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24MARBOL-BOL21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24MARBOL-BOL20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HIJSVR-SVR21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HIJSVR-SVR20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HIJSVR-HIJ21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP24HIJSVR-HIJ20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHEHUR-SHE21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHEHUR-SHE20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHEHUR-HUR21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHEHUR-HUR20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHAMAN-SHA21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHAMAN-SHA20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHAMAN-MAN21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHAMAN-MAN20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21GRISHA-SHA21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21GRISHA-SHA20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21GRISHA-GRI21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21GRISHA-GRI20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21DUCSON-SON21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21DUCSON-SON20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21DUCSON-DUC21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21DUCSON-DUC20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CERZHO-ZHO21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CERZHO-ZHO20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CERZHO-CER21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CERZHO-CER20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BORUGO-UGO21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BORUGO-UGO20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BORUGO-BOR21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BORUGO-BOR20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21ZHAWON-ZHA21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21ZHAWON-ZHA20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21ZHAWON-WON21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21ZHAWON-WON20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21YUNZHE-ZHE21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21YUNZHE-ZHE20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21YUNZHE-YUN21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21YUNZHE-YUN20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHIGAS-SHI21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHIGAS-SHI20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHIGAS-GAS21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21SHIGAS-GAS20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21FARATM-FAR21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21FARATM-FAR20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21FARATM-ATM21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21FARATM-ATM20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CUIVAL-VAL21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CUIVAL-VAL20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CUIVAL-CUI21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21CUIVAL-CUI20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BELMAJ-MAJ21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BELMAJ-MAJ20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BELMAJ-BEL21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPEXACTMATCH-26SEP21BELMAJ-BEL20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPEXACTMATCH-26SEP24FARGAS-FAR20",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-ZVE",
@@ -1426,386 +756,6 @@
 "reason": "SEASON_QUALIFICATION: not priced"
 },
 {
-"ticker": "KXITFMATCH-26SEP24SCHHER-SCH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24SCHHER-HER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CRAJAN-JAN",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CRAJAN-CRA",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BYNMIG-MIG",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BYNMIG-BYN",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24HALSWA-SWA",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24HALSWA-HAL",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CHABAS-CHA",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CHABAS-BAS",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PIEDAR-PIE",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PIEDAR-DAR",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24LEIPAG-PAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24LEIPAG-LEI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TOSCOU-TOS",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TOSCOU-COU",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24ROBPER-ROB",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24ROBPER-PER",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24ZANAUG-ZAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24ZANAUG-AUG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24OSOECH-OSO",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24OSOECH-ECH",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24ZEUBOU-ZEU",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24ZEUBOU-BOU",
-"stage": "pregame",
-"reason": "nominal start 2026-09-24T21:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24GAKGUT-GUT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24GAKGUT-GAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PARMAR-PAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PARMAR-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24FRIBER-FRI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24FRIBER-BER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PETREN-REN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PETREN-PET",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BANPOU-POU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BANPOU-BAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VASMAR-VAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VASMAR-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DECFEL-FEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DECFEL-DEC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MONTAB-TAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MONTAB-MON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DJOMCH-MCH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DJOMCH-DJO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TRUVAN-VAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TRUVAN-TRU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BERDOM-DOM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BERDOM-BER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24JONCEK-JON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24JONCEK-CEK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24RODXIL-XIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24RODXIL-ROD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24GIUPON-PON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24GIUPON-GIU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24AGWROC-ROC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24AGWROC-AGW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24STIMAX-STI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24STIMAX-MAX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CURHEN-HEN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CURHEN-CUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PERMOR-PER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24PERMOR-MOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TABMUR-TAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TABMUR-MUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24COLVER-VER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24COLVER-COL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24OGUDON-OGU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24OGUDON-DON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MAKMAR-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MAKMAR-MAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24WEECOL-WEE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24WEECOL-COL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DOMHER-HER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DOMHER-DOM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24FILMEH-MEH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24FILMEH-FIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DELKIR-KIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DELKIR-DEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFMATCH-26SEP24SCIRAP-SCI",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -1824,86 +774,6 @@
 "ticker": "KXITFMATCH-26SEP24MICCAR-CAR",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24NAGTHE-THE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24NAGTHE-NAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24HOFDEJ-HOF",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24HOFDEJ-DEJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TALVIV-VIV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24TALVIV-TAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MARPUJ-PUJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MARPUJ-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24GARCAM-GAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24GARCAM-CAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24LUMMAL-MAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24LUMMAL-LUM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MAKBRA-MAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MAKBRA-BRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VINVAN-VIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VINVAN-VAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXITFMATCH-26SEP24GUNPOK-POK",
@@ -1946,176 +816,6 @@
 "reason": "nominal start 2026-09-24T14:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24MADSAB-SAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MADSAB-MAD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24POPMAN-POP",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24POPMAN-MAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24COVSEI-SEI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24COVSEI-COV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VANTHO-VAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VANTHO-THO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VANFER-VAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24VANFER-FER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DEMLOK-LOK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DEMLOK-DEM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24HAMFAU-HAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24HAMFAU-FAU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DZHDUH-DZH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DZHDUH-DUH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CASZAK-ZAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24CASZAK-CAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24FELIBR-IBR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24FELIBR-FEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DJUSAF-SAF",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24DJUSAF-DJU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24EHAJUB-JUB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24EHAJUB-EHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24SIN2WAL2-WAL2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24SIN2WAL2-SIN2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24STRKRA-STR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24STRKRA-KRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24SINWAL-WAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24SINWAL-SIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24NORCON-NOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24NORCON-CON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MORHUR-MOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24MORHUR-HUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFMATCH-26SEP24RECKUS-REC",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T13:30:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -2146,464 +846,164 @@
 "reason": "nominal start 2026-09-24T13:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24DOMBEK-DOM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-YUN",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24DOMBEK-BEK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-WON",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24CHEDIM-DIM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-VAL",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24CHEDIM-CHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-SAF",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24GRIFUM-GRI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-RUB",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24GRIFUM-FUM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-ROY",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24GSCMON-MON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-MED",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24GSCMON-GSC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-MAR",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24TIUMEC-TIU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-MAJ",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24TIUMEC-MEC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-JAC",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24KHOFER-KHO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-HIJ",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24KHOFER-FER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-HAL",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24KLOPAA-PAA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-GAS",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24KLOPAA-KLO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-FAR",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23CHELIU-LIU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-ETC",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23CHELIU-CHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26HANGZH-DAN",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23BINBAR-BIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-VAN",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23BINBAR-BAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-VAC",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23PELAGU-PEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-TAB",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23PELAGU-AGU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-SON",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23FLOKOM-KOM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-SHA",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23FLOKOM-FLO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-MUL",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23YANOHX-YAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-MAN",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23YANOHX-OHX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-KOP",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23BEAMUK-MUK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-HUR",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP23BEAMUK-BEA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-HAR",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24GREMAJ-MAJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-DAV",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24GREMAJ-GRE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-DAM",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24DOLBAL-DOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-CIN",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24DOLBAL-BAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-CER",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24BROYIL-YIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-BRO",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24BROYIL-BRO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24DAMMOC-MOC2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24DAMMOC-DAM6",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24DAMMOC-DAM3",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24KOUMUL-MUL2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24KOUMUL-KOU5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24KOUMUL-KOU2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24HARKOV-KOV2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24HARKOV-HAR5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24HARKOV-HAR2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24KECBAS-KEC7",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24KECBAS-KEC4",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24KECBAS-BAS2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24SWEDAN-SWE2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24SWEDAN-DAN7",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24SWEDAN-DAN4",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24SUNSAF-SAF8",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24SUNSAF-SAF5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24SUNSAF-SAF2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24MARBOL-MAR8",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24MARBOL-MAR5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24MARBOL-MAR2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24HIJSVR-SVR6",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24HIJSVR-SVR3",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP24HIJSVR-HIJ2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHEHUR-HUR8",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHEHUR-HUR5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHEHUR-HUR2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHAMAN-SHA7",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHAMAN-SHA4",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHAMAN-MAN2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21DUCSON-SON5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21DUCSON-SON2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21DUCSON-DUC2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21CERZHO-ZHO2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21CERZHO-CER7",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21CERZHO-CER4",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21BORUGO-BOR8",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21BORUGO-BOR5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21BORUGO-BOR2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21ZHAWON-ZHA2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21ZHAWON-WON6",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21ZHAWON-WON3",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21YUNZHE-ZHE6",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21YUNZHE-ZHE3",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21YUNZHE-YUN2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHIGAS-SHI2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHIGAS-GAS5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21SHIGAS-GAS2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21GRISHA-SHA5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21GRISHA-SHA2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21GRISHA-GRI2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21FARATM-FAR5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21FARATM-FAR2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21FARATM-ATM2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21CUIVAL-VAL8",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21CUIVAL-VAL5",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21CUIVAL-VAL2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21BELMAJ-MAJ6",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21BELMAJ-MAJ3",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGSPREAD-26SEP21BELMAJ-BEL2",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATP-26CHENGD-BAS",
+"stage": "scope",
+"reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
 "ticker": "KXATP-27USO-ZVE",
@@ -3351,409 +1751,9 @@
 "reason": "SEASON_MAJORS: not priced"
 },
 {
-"ticker": "KXATPGTOTAL-26SEP24DAMMOC-29",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24DAMMOC-24",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24DAMMOC-19",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24KOUMUL-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24KOUMUL-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24KOUMUL-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24HARKOV-30",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24HARKOV-25",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24HARKOV-20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24KECBAS-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24KECBAS-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24KECBAS-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24SWEDAN-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24SWEDAN-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24SWEDAN-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24SUNSAF-27",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24SUNSAF-22",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24SUNSAF-17",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24MARBOL-27",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24MARBOL-22",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24MARBOL-17",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24HIJSVR-27",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24HIJSVR-22",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP24HIJSVR-17",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHEHUR-26",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHEHUR-21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHEHUR-16",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHAMAN-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHAMAN-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHAMAN-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21DUCSON-30",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21DUCSON-25",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21DUCSON-20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21CERZHO-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21CERZHO-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21CERZHO-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21BORUGO-27",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21BORUGO-22",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21BORUGO-17",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21ZHAWON-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21ZHAWON-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21ZHAWON-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21YUNZHE-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21YUNZHE-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21YUNZHE-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHIGAS-30",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHIGAS-25",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21SHIGAS-20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21GRISHA-29",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21GRISHA-24",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21GRISHA-19",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21FARATM-30",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21FARATM-25",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21FARATM-20",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21CUIVAL-26",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21CUIVAL-21",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21CUIVAL-16",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21BELMAJ-28",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21BELMAJ-23",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPGTOTAL-26SEP21BELMAJ-18",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXATPNOVAK25-DJO-28",
 "stage": "family",
 "reason": "CAREER_OR_NOVELTY: not priced"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23SVIMIN-SVI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23SVIMIN-MIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23KALOTZ-OTZ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23KALOTZ-KAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23SAKHIB-SAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23SAKHIB-HIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23OSTPRE-PRE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23OSTPRE-OST",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23YEXBIR-YEX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23YEXBIR-BIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23YEORUS-YEO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23YEORUS-RUS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23BONCHA-CHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP23BONCHA-BON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP22PROEAL-PRO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP22PROEAL-EAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP22WANGAR-WAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP22WANGAR-GAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP22GIBMOR-MOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTAMATCH-26SEP22GIBMOR-GIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXLAVERCUP-26-WOR",
@@ -3764,136 +1764,6 @@
 "ticker": "KXLAVERCUP-26-EUR",
 "stage": "family",
 "reason": "TEAM_COMPETITION_WINNER: team-tie model not built"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24OLIRODKESROD-OLIROD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24OLIRODKESROD-KESROD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24BROORAARNIAN-BROORA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24BROORAARNIAN-ARNIAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24CERMOLBIAPEA-CERMOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24CERMOLBIAPEA-BIAPEA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24REYSANBITMAS-REYSAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24REYSANBITMAS-BITMAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24SAKUZVNIKVRB-SAKUZV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24SAKUZVNIKVRB-NIKVRB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24KARPAUROCSAN-ROCSAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24KARPAUROCSAN-KARPAU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24SABSABPAVWIN-SABSAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24SABSABPAVWIN-PAVWIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24HARJORPAUVOC-PAUVOC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24HARJORPAUVOC-HARJOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24MARRADMARWAL-MARWAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24MARRADMARWAL-MARRAD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24ARNKITGREHEI-GREHEI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24ARNKITGREHEI-ARNKIT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24ALCLOPMANPER-MANPER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24ALCLOPMANPER-ALCLOP",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24CORNEUPIETAB-PIETAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24CORNEUPIETAB-CORNEU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24CUKROMDONPIE-DONPIE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPCHALLENGERDOUBLES-26SEP24CUKROMDONPIE-CUKROM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-RL",
@@ -3926,16 +1796,6 @@
 "reason": "CAREER_OR_NOVELTY: not priced"
 },
 {
-"ticker": "KXWTA-26SEOUL-YEX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTA-26SEOUL-YEO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXWTA-26SEOUL-VOL",
 "stage": "scope",
 "reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
@@ -3956,11 +1816,6 @@
 "reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
-"ticker": "KXWTA-26SEOUL-OST",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXWTA-26SEOUL-KOR",
 "stage": "scope",
 "reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
@@ -3969,11 +1824,6 @@
 "ticker": "KXWTA-26SEOUL-JOI",
 "stage": "scope",
 "reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
-},
-{
-"ticker": "KXWTA-26SEOUL-CHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXWTA-26SEOUL-BON",
@@ -4009,11 +1859,6 @@
 "ticker": "KXWTA-26SINGAPS-GIB",
 "stage": "scope",
 "reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
-},
-{
-"ticker": "KXWTA-26SINGAPS-EAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXWTA-26SINGAPS-CHW",
@@ -4606,6 +2451,36 @@
 "reason": "TOURNAMENT_WINNER: draw simulation needs a draw feed (not wired)"
 },
 {
+"ticker": "KXLAVERCUPMATCH-26SEP25JODBUB-JOD",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXLAVERCUPMATCH-26SEP25JODBUB-BUB",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXLAVERCUPMATCH-26SEP25MENNAK-NAK",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXLAVERCUPMATCH-26SEP25MENNAK-MEN",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXLAVERCUPMATCH-26SEP25RUUCER-RUU",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXLAVERCUPMATCH-26SEP25RUUCER-CER",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
 "ticker": "KXWTA1RANK-26DEC31-SWI",
 "stage": "family",
 "reason": "SEASON_RANKING: not priced"
@@ -4646,204 +2521,44 @@
 "reason": "SEASON_RANKING: not priced"
 },
 {
-"ticker": "KXATPMATCH-26SEP24KOUMUL-MUL",
+"ticker": "KXLAVERCUPDOUBLESMATCH-26SEP25ALCMENBUBFRI-BUBFRI",
 "stage": "lifecycle",
 "reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24KOUMUL-KOU",
+"ticker": "KXLAVERCUPDOUBLESMATCH-26SEP25ALCMENBUBFRI-ALCMEN",
 "stage": "lifecycle",
 "reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24HARKOV-KOV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPMATCH-26SEP24HALSAF-SAF",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24HARKOV-HAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPMATCH-26SEP24HALSAF-HAL",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24DAMMOC-MOC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPMATCH-26SEP24MARDAN-MAR",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24DAMMOC-DAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPMATCH-26SEP24MARDAN-DAN",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24KECBAS-KEC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPMATCH-26SEP24FARGAS-GAS",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPMATCH-26SEP24KECBAS-BAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24SUNSAF-SUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24SUNSAF-SAF",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24MARBOL-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24MARBOL-BOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24SWEDAN-SWE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24SWEDAN-DAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24HIJSVR-SVR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP24HIJSVR-HIJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21SHEHUR-SHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21SHEHUR-HUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21SHAMAN-SHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21SHAMAN-MAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21GRISHA-SHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21GRISHA-GRI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21DUCSON-SON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21DUCSON-DUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21BORUGO-UGO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21BORUGO-BOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21CERZHO-ZHO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21CERZHO-CER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21ZHAWON-ZHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21ZHAWON-WON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21CUIVAL-VAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21CUIVAL-CUI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21YUNZHE-ZHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21YUNZHE-YUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21BELMAJ-MAJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21BELMAJ-BEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21FARATM-FAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21FARATM-ATM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21SHIGAS-SHI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPMATCH-26SEP21SHIGAS-GAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXATPMATCH-26SEP24FARGAS-FAR",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXSINNERFINISH-29-JSIN",
@@ -4904,16 +2619,6 @@
 "ticker": "KXATPDOUBLES-26SEP23CASERLFRAHAA-CASERL",
 "stage": "pregame",
 "reason": "nominal start 2026-09-23T08:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXATPDOUBLES-26SEP23GRIVANMELSEG-MELSEG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPDOUBLES-26SEP23GRIVANMELSEG-GRIVAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXATPDOUBLES-26SEP23BORCERSCHWAL-SCHWAL",
@@ -5006,16 +2711,6 @@
 "reason": "nominal start 2026-09-23T07:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPDOUBLES-26SEP23AREPELREYSTA-REYSTA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXATPDOUBLES-26SEP23AREPELREYSTA-AREPEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXATPDOUBLES-26SEP23LIUSAFNOUOBE-NOUOBE",
 "stage": "pregame",
 "reason": "nominal start 2026-09-23T07:00:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -5024,116 +2719,6 @@
 "ticker": "KXATPDOUBLES-26SEP23LIUSAFNOUOBE-LIUSAF",
 "stage": "pregame",
 "reason": "nominal start 2026-09-23T07:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KALKICKEMSAL-KEMSAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KALKICKEMSAL-KALKIC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24TANTOMBRAVAG-TANTOM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24TANTOMBRAVAG-BRAVAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24GALGIBHESROU-HESROU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24GALGIBHESROU-GALGIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24ADEPAWRABMAR-RABMAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24ADEPAWRABMAR-ADEPAW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24OLIPAOPANSEM-PANSEM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24OLIPAOPANSEM-OLIPAO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KURMIXBOURUC-KURMIX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KURMIXBOURUC-BOURUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24JIALIUBERSHI-JIALIU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24JIALIUBERSHI-BERSHI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24FONNILGARMIL-GARMIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24FONNILGARMIL-FONNIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24DENSTAAIKWAN-DENSTA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24DENSTAAIKWAN-AIKWAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24RASVELENCIVA-RASVEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24RASVELENCIVA-ENCIVA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24GAVSAKYANZEL-YANZEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24GAVSAKYANZEL-GAVSAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXITFWDOUBLES-26SEP24IVAPETOKUYES-OKUYES",
@@ -5156,36 +2741,6 @@
 "reason": "nominal start 2026-09-24T16:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFWDOUBLES-26SEP24PAGTURFIONOS-PAGTUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24PAGTURFIONOS-FIONOS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24BIEYINCASMAS-CASMAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24BIEYINCASMAS-BIEYIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24MAQVANWILTAR-WILTAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24MAQVANWILTAR-MAQVAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFWDOUBLES-26SEP24MERYEMBOESZA-MERYEM",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -5194,76 +2749,6 @@
 "ticker": "KXITFWDOUBLES-26SEP24MERYEMBOESZA-BOESZA",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24WANYUCYICWAN-YICWAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24WANYUCYICWAN-WANYUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KHOKUBLUOXIW-LUOXIW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KHOKUBLUOXIW-KHOKUB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24HOUZHAANXTIA-HOUZHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24HOUZHAANXTIA-ANXTIA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24HOSKITNAGSAT-NAGSAT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24HOSKITNAGSAT-HOSKIT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KAWOHWMIYYOS-MIYYOS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24KAWOHWMIYYOS-KAWOHW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24ABEYAMHAYSAW-HAYSAW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP24ABEYAMHAYSAW-ABEYAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP23CHOKOZCHEXUX-CHOKOZ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWDOUBLES-26SEP23CHOKOZCHEXUX-CHEXUX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-ZHE",
@@ -5366,154 +2851,14 @@
 "reason": "SEASON_QUALIFICATION: not priced"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24FRYLAKVASVAS-VASVAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXITFDOUBLES-26SEP24MATPECCOZGOO-MATPEC",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T00:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24FRYLAKVASVAS-FRYLAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BROSLAELFRYD-ELFRYD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BROSLAELFRYD-BROSLA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24GARNAGELDHUE-GARNAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24GARNAGELDHUE-ELDHUE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HOFTHEVISWAG-VISWAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HOFTHEVISWAG-HOFTHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HANMARGARVIV-HANMAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HANMARGARVIV-GARVIV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24LEOMORTABTAB-TABTAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24LEOMORTABTAB-LEOMOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24MOLSEMMURSTI-MURSTI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24MOLSEMMURSTI-MOLSEM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BARIZQAGWMIS-BARIZQ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BARIZQAGWMIS-AGWMIS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24GANMAEGONCES-GONCES",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24GANMAEGONCES-GANMAE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CORMAKLIUWAT-LIUWAT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CORMAKLIUWAT-CORMAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CHANIRBILVIN-CHANIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CHANIRBILVIN-BILVIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CURGONPERSAU-PERSAU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CURGONPERSAU-CURGON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24MAJWALIAKNEI-MAJWAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24MAJWALIAKNEI-IAKNEI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CONHASAGADOL-CONHAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CONHASAGADOL-AGADOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24DUBLARSARYIL-SARYIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24DUBLARSARYIL-DUBLAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+"ticker": "KXITFDOUBLES-26SEP24MATPECCOZGOO-COZGOO",
+"stage": "pregame",
+"reason": "nominal start 2026-09-25T00:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXITFDOUBLES-26SEP24CATCRIFRAVAN-FRAVAN",
@@ -5526,36 +2871,6 @@
 "reason": "nominal start 2026-09-24T16:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24BRADEMCOOVAN-COOVAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BRADEMCOOVAN-BRADEM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24ANANACRIVTES-RIVTES",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24ANANACRIVTES-ANANAC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BLANOLDECTOR-DECTOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BLANOLDECTOR-BLANOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFDOUBLES-26SEP24POKTSIBIESME-POKTSI",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T16:30:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -5566,36 +2881,6 @@
 "reason": "nominal start 2026-09-24T16:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24BETZAKLORQAB-LORQAB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BETZAKLORQAB-BETZAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CASFONFAUVEG-FAUVEG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CASFONFAUVEG-CASFON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HAMOUAELSIBR-HAMOUA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HAMOUAELSIBR-ELSIBR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFDOUBLES-26SEP24PETVRTBAUCER-PETVRT",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T16:00:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -5604,26 +2889,6 @@
 "ticker": "KXITFDOUBLES-26SEP24PETVRTBAUCER-BAUCER",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T16:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HORRECCIZFIL-HORREC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24HORRECCIZFIL-CIZFIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24KOLSAVALEAZI-KOLSAV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24KOLSAVALEAZI-ALEAZI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXITFDOUBLES-26SEP24MARPECDOMJEF-MARPEC",
@@ -5646,306 +2911,6 @@
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24KRAPORCHODUH-KRAPOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24KRAPORCHODUH-CHODUH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BOSFIODERPAA-DERPAA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BOSFIODERPAA-BOSFIO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BEASHEHSISIN-HSISIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BEASHEHSISIN-BEASHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24KACPALYANZEN-YANZEN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24KACPALYANZEN-KACPAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BINPANLIXZOU-LIXZOU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24BINPANLIXZOU-BINPAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CATFLOBAREHR-CATFLO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP24CATFLOBAREHR-BAREHR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP22ANDFELBASPIE-BASPIE",
-"stage": "pregame",
-"reason": "nominal start 2026-09-23T01:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFDOUBLES-26SEP22ANDFELBASPIE-ANDFEL",
-"stage": "pregame",
-"reason": "nominal start 2026-09-23T01:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ESQGIA-GIA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ESQGIA-ESQ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PAVTOM-TOM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PAVTOM-PAV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PAWSMI-SMI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PAWSMI-PAW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24JAMADE-JAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24JAMADE-ADE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24LIZSAM-SAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24LIZSAM-LIZ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PERHRA-PER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PERHRA-HRA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ABOGOL-GOL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ABOGOL-ABO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MILSAC-SAC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MILSAC-MIL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24SEDGUT-SED",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24SEDGUT-GUT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24HATEFR-HAT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24HATEFR-EFR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ROJFIT-ROJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ROJFIT-FIT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ROUGAL-ROU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24ROUGAL-GAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24LEMBOS-LEM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24LEMBOS-BOS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BOJBRE-BRE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BOJBRE-BOJ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24JAETOD-TOD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24JAETOD-JAE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24EBENIE-NIE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24EBENIE-EBE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24OZXAMA-OZX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24OZXAMA-AMA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24DAPDOT-DOT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24DAPDOT-DAP",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24DANBER-DAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24DANBER-BER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MATCIR-MAT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MATCIR-CIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24TONBER-TON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24TONBER-BER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24APPLAZ-LAZ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24APPLAZ-APP",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24CHEGAR-GAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24CHEGAR-CHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFWMATCH-26SEP24HORCOL-HOR",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -5956,16 +2921,6 @@
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24LUKCAK-LUK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24LUKCAK-CAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
 "ticker": "KXITFWMATCH-26SEP24FERGEN-GEN",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
@@ -5974,306 +2929,6 @@
 "ticker": "KXITFWMATCH-26SEP24FERGEN-FER",
 "stage": "pregame",
 "reason": "nominal start 2026-09-24T15:00:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MIXSEM-SEM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MIXSEM-MIX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BOUKUR-KUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BOUKUR-BOU",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24DEKKRO-KRO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24DEKKRO-DEK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MALMDL-MDL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MALMDL-MAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24RUCSAS-SAS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24RUCSAS-RUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24YESOKT-YES",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24YESOKT-OKT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24KOVPIS-PIS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24KOVPIS-KOV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24STEMET-STE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24STEMET-MET",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24VALPET-VAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24VALPET-PET",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PAGLON-PAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PAGLON-LON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BIRHER-HER",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BIRHER-BIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24POPMAR-POP",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24POPMAR-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BUCSEV-SEV",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BUCSEV-BUC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24YANMAI-YAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24YANMAI-MAI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24SAKENC-SAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24SAKENC-ENC",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24GARSTA-STA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24GARSTA-GAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24SCHBAR-SCH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24SCHBAR-BAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PRIPOP-PRI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24PRIPOP-POP",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BURZHE-ZHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24BURZHE-BUR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MARMAZ-MAZ",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MARMAZ-MAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MINZEL-ZEL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24MINZEL-MIN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24HENMAD-MAD",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP24HENMAD-HEN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23SAGSUN-SUN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23SAGSUN-SAG",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23JIAZHA-ZHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23JIAZHA-JIA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23TANWAN-WAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23TANWAN-TAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23CHEZHA-ZHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23CHEZHA-CHE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23KAWISH-KAW",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23KAWISH-ISH",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23SHIONO-SHI",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23SHIONO-ONO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23HOSMAT-MAT",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23HOSMAT-HOS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23TAMOZE-TAM",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFWMATCH-26SEP23TAMOZE-OZE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-TFRI",
@@ -6336,274 +2991,529 @@
 "reason": "SEASON_RANKING: not priced"
 },
 {
-"ticker": "KXWTASETWINNER-26SEP23YEXBIR-2-YEX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEXBIR-2-BIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEXBIR-1-YEX",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEXBIR-1-BIR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEORUS-2-YEO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEORUS-2-RUS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEORUS-1-YEO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23YEORUS-1-RUS",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23SAKHIB-2-SAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23SAKHIB-2-HIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23SAKHIB-1-SAK",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23SAKHIB-1-HIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23OSTPRE-2-PRE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23OSTPRE-2-OST",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23OSTPRE-1-PRE",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23OSTPRE-1-OST",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23BONCHA-2-CHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23BONCHA-2-BON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23BONCHA-1-CHA",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP23BONCHA-1-BON",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22PROEAL-2-PRO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22PROEAL-2-EAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22PROEAL-1-PRO",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22PROEAL-1-EAL",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22WANGAR-2-WAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22WANGAR-2-GAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22WANGAR-1-WAN",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22WANGAR-1-GAR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22GIBMOR-2-MOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22GIBMOR-2-GIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22GIBMOR-1-MOR",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXWTASETWINNER-26SEP22GIBMOR-1-GIB",
-"stage": "lifecycle",
-"reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFMATCH-26SEP24BRASCH-SCH",
+"ticker": "KXWTACHALLENGERMATCH-26SEP25TIMKNU-TIM",
 "stage": "identity",
-"reason": "Giovanni Branchetti: UNMAPPED (no exact full-name match)"
+"reason": "Gabriela Knutson: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24BRASCH-BRA",
+"ticker": "KXWTACHALLENGERMATCH-26SEP25TIMKNU-KNU",
 "stage": "identity",
-"reason": "Giovanni Branchetti: UNMAPPED (no exact full-name match)"
+"reason": "Gabriela Knutson: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24AVRGOO-GOO",
+"ticker": "KXWTAGTOTAL-26SEP24WANPRO-27",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTAGTOTAL-26SEP24WANPRO-22",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTAGTOTAL-26SEP24WANPRO-17",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTADOUBLES-26SEP24CHOHOZLEEQIU-LEEQIU",
+"stage": "doubles",
+"reason": "doubles: player 'Eudice Chong' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXWTADOUBLES-26SEP24CHOHOZLEEQIU-CHOHOZ",
+"stage": "doubles",
+"reason": "doubles: player 'Eudice Chong' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFMATCH-26SEP25AVRWIT-WIT",
 "stage": "identity",
 "reason": "Gabe Avram: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFMATCH-26SEP24AVRGOO-AVR",
+"ticker": "KXITFMATCH-26SEP25AVRWIT-AVR",
 "stage": "identity",
 "reason": "Gabe Avram: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24ROBROVBRAMOU-ROBROV",
-"stage": "doubles",
-"reason": "doubles: player 'Roberts' unmapped/ambiguous in ['ATP']"
+"ticker": "KXITFMATCH-26SEP25COLDOM-DOM",
+"stage": "identity",
+"reason": "Paul Colin: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24ROBROVBRAMOU-BRAMOU",
-"stage": "doubles",
-"reason": "doubles: player 'Roberts' unmapped/ambiguous in ['ATP']"
+"ticker": "KXITFMATCH-26SEP25COLDOM-COL",
+"stage": "identity",
+"reason": "Paul Colin: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24TOSZANAUGEMA-TOSZAN",
-"stage": "doubles",
-"reason": "doubles: player 'Tosetto' unmapped/ambiguous in ['ATP']"
+"ticker": "KXITFMATCH-26SEP25STRZAK-ZAK",
+"stage": "identity",
+"reason": "Fares Zakaria: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24TOSZANAUGEMA-AUGEMA",
-"stage": "doubles",
-"reason": "doubles: player 'Tosetto' unmapped/ambiguous in ['ATP']"
+"ticker": "KXITFMATCH-26SEP25STRZAK-STR",
+"stage": "identity",
+"reason": "Fares Zakaria: UNMAPPED (no exact full-name match)"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24VICPAGBINCRE-VICPAG",
+"ticker": "KXITFMATCH-26SEP24OHXMUK-OHX",
+"stage": "identity",
+"reason": "Sasikumar Mukund: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFMATCH-26SEP24OHXMUK-MUK",
+"stage": "identity",
+"reason": "Sasikumar Mukund: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFMATCH-26SEP24BINFLO-FLO",
+"stage": "identity",
+"reason": "Alexander Binda: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFMATCH-26SEP24BINFLO-BIN",
+"stage": "identity",
+"reason": "Alexander Binda: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTAMATCH-26SEP24WANPRO-WAN",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTAMATCH-26SEP24WANPRO-PRO",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXATPCHALLENGERDOUBLES-26SEP25DEVZEBDELRAT-DEVZEB",
+"stage": "doubles",
+"reason": "doubles: player 'Murkel Dellien' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXATPCHALLENGERDOUBLES-26SEP25DEVZEBDELRAT-DELRAT",
+"stage": "doubles",
+"reason": "doubles: player 'Murkel Dellien' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXATPCHALLENGERDOUBLES-26SEP25BROORACERMOL-CERMOL",
+"stage": "doubles",
+"reason": "doubles: player 'Inigo Cervantes' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXATPCHALLENGERDOUBLES-26SEP25BROORACERMOL-BROORA",
+"stage": "doubles",
+"reason": "doubles: player 'Inigo Cervantes' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXATPCHALLENGERDOUBLES-26SEP25KARPAUCORNEU-KARPAU",
+"stage": "doubles",
+"reason": "doubles: player 'Victor Vlad Cornea' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXATPCHALLENGERDOUBLES-26SEP25KARPAUCORNEU-CORNEU",
+"stage": "doubles",
+"reason": "doubles: player 'Victor Vlad Cornea' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25MAKMAMGOTLAS-MAKMAM",
+"stage": "doubles",
+"reason": "doubles: player 'Maklakova' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25MAKMAMGOTLAS-GOTLAS",
+"stage": "doubles",
+"reason": "doubles: player 'Maklakova' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25TANTOMGALGIB-TANTOM",
+"stage": "doubles",
+"reason": "doubles: player 'Tanguilig' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25TANTOMGALGIB-GALGIB",
+"stage": "doubles",
+"reason": "doubles: player 'Tanguilig' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25BERSHIGARMIL-GARMIL",
+"stage": "doubles",
+"reason": "doubles: player 'Berecoechea' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25BERSHIGARMIL-BERSHI",
+"stage": "doubles",
+"reason": "doubles: player 'Berecoechea' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25BOURUCBIEYIN-BOURUC",
+"stage": "doubles",
+"reason": "doubles: player 'Boullay' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25BOURUCBIEYIN-BIEYIN",
+"stage": "doubles",
+"reason": "doubles: player 'Boullay' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25WILTARENCIVA-WILTAR",
+"stage": "doubles",
+"reason": "doubles: player 'Wilda Hennemann' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25WILTARENCIVA-ENCIVA",
+"stage": "doubles",
+"reason": "doubles: player 'Wilda Hennemann' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25GAVSAKDENSTA-GAVSAK",
+"stage": "doubles",
+"reason": "doubles: player 'Gavrila' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25GAVSAKDENSTA-DENSTA",
+"stage": "doubles",
+"reason": "doubles: player 'Gavrila' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25SCHTAMHERSEV-SCHTAM",
+"stage": "doubles",
+"reason": "doubles: player 'Schaefer' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25SCHTAMHERSEV-HERSEV",
+"stage": "doubles",
+"reason": "doubles: player 'Schaefer' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25BRENICCUCPRI-CUCPRI",
+"stage": "doubles",
+"reason": "doubles: player 'Breaz' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25BRENICCUCPRI-BRENIC",
+"stage": "doubles",
+"reason": "doubles: player 'Breaz' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25CASKAEOLIPAO-OLIPAO",
+"stage": "doubles",
+"reason": "doubles: player 'Casari' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25CASKAEOLIPAO-CASKAE",
+"stage": "doubles",
+"reason": "doubles: player 'Casari' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25KHAZANSEDSMI-SEDSMI",
+"stage": "doubles",
+"reason": "doubles: player 'Kharlanova' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25KHAZANSEDSMI-KHAZAN",
+"stage": "doubles",
+"reason": "doubles: player 'Kharlanova' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25YICWANCHOKOZ-YICWAN",
+"stage": "doubles",
+"reason": "doubles: player 'Wang' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25YICWANCHOKOZ-CHOKOZ",
+"stage": "doubles",
+"reason": "doubles: player 'Wang' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25LUOXIWHOUZHA-LUOXIW",
+"stage": "doubles",
+"reason": "doubles: player 'Luo' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25LUOXIWHOUZHA-HOUZHA",
+"stage": "doubles",
+"reason": "doubles: player 'Luo' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25MIYYOSNAGSAT-NAGSAT",
+"stage": "doubles",
+"reason": "doubles: player 'Miyamoto' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25MIYYOSNAGSAT-MIYYOS",
+"stage": "doubles",
+"reason": "doubles: player 'Miyamoto' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25TIANAKABEYAM-TIANAK",
+"stage": "doubles",
+"reason": "doubles: player 'Tian Deng' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFWDOUBLES-26SEP25TIANAKABEYAM-ABEYAM",
+"stage": "doubles",
+"reason": "doubles: player 'Tian Deng' unmapped/ambiguous in ['WTA']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25VICPAGTOSZAN-VICPAG",
 "stage": "doubles",
 "reason": "doubles: player 'Victor Couto Loureiro' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24VICPAGBINCRE-BINCRE",
+"ticker": "KXITFDOUBLES-26SEP25VICPAGTOSZAN-TOSZAN",
 "stage": "doubles",
 "reason": "doubles: player 'Victor Couto Loureiro' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24MATPECCOZGOO-MATPEC",
+"ticker": "KXITFDOUBLES-26SEP25BOWSHEBOBCOX-BOWSHE",
 "stage": "doubles",
-"reason": "doubles: player 'Matta' unmapped/ambiguous in ['ATP']"
+"reason": "doubles: player 'Bowers' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24MATPECCOZGOO-COZGOO",
+"ticker": "KXITFDOUBLES-26SEP25BOWSHEBOBCOX-BOBCOX",
 "stage": "doubles",
-"reason": "doubles: player 'Matta' unmapped/ambiguous in ['ATP']"
+"reason": "doubles: player 'Bowers' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24GURNICBOBCOX-GURNIC",
+"ticker": "KXITFDOUBLES-26SEP25DARSTEJARLIE-JARLIE",
 "stage": "doubles",
-"reason": "doubles: player 'Gurenko' unmapped/ambiguous in ['ATP']"
+"reason": "doubles: player 'Daryabeigi' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24GURNICBOBCOX-BOBCOX",
+"ticker": "KXITFDOUBLES-26SEP25DARSTEJARLIE-DARSTE",
 "stage": "doubles",
-"reason": "doubles: player 'Gurenko' unmapped/ambiguous in ['ATP']"
+"reason": "doubles: player 'Daryabeigi' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24PINSCHLEIPER-PINSCH",
+"ticker": "KXITFDOUBLES-26SEP25ANDFELHALNOV-HALNOV",
 "stage": "doubles",
-"reason": "doubles: player 'Pinheiro da Cruz Junior' unmapped/ambiguous in ['ATP']"
+"reason": "doubles: player 'Andre' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFDOUBLES-26SEP24PINSCHLEIPER-LEIPER",
+"ticker": "KXITFDOUBLES-26SEP25ANDFELHALNOV-ANDFEL",
 "stage": "doubles",
-"reason": "doubles: player 'Pinheiro da Cruz Junior' unmapped/ambiguous in ['ATP']"
+"reason": "doubles: player 'Andre' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24BARROG-ROG",
-"stage": "identity",
-"reason": "Yara Bartashevich: UNMAPPED (no exact full-name match); Anna Rogers: UNMAPPED (no exact full-name match)"
+"ticker": "KXITFDOUBLES-26SEP25ROBROVPINSCH-ROBROV",
+"stage": "doubles",
+"reason": "doubles: player 'Roberts' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24BARROG-BAR",
-"stage": "identity",
-"reason": "Yara Bartashevich: UNMAPPED (no exact full-name match); Anna Rogers: UNMAPPED (no exact full-name match)"
+"ticker": "KXITFDOUBLES-26SEP25ROBROVPINSCH-PINSCH",
+"stage": "doubles",
+"reason": "doubles: player 'Roberts' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24AZAEST-EST",
-"stage": "identity",
-"reason": "Antonella Azambuja Werner: UNMAPPED (no exact full-name match)"
+"ticker": "KXITFDOUBLES-26SEP25BROSLAVASVAS-VASVAS",
+"stage": "doubles",
+"reason": "doubles: player 'Brostrom Poulsen' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24AZAEST-AZA",
-"stage": "identity",
-"reason": "Antonella Azambuja Werner: UNMAPPED (no exact full-name match)"
+"ticker": "KXITFDOUBLES-26SEP25BROSLAVASVAS-BROSLA",
+"stage": "doubles",
+"reason": "doubles: player 'Brostrom Poulsen' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24CINSAN-SAN",
-"stage": "identity",
-"reason": "Sophia Santos: UNMAPPED (no exact full-name match)"
+"ticker": "KXITFDOUBLES-26SEP25GARNAGHOFTHE-HOFTHE",
+"stage": "doubles",
+"reason": "doubles: player 'Garcian' unmapped/ambiguous in ['ATP']"
 },
 {
-"ticker": "KXITFWMATCH-26SEP24CINSAN-CIN",
+"ticker": "KXITFDOUBLES-26SEP25GARNAGHOFTHE-GARNAG",
+"stage": "doubles",
+"reason": "doubles: player 'Garcian' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25GONCESGARVIV-GONCES",
+"stage": "doubles",
+"reason": "doubles: player 'Gonzalez-Galino' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25GONCESGARVIV-GARVIV",
+"stage": "doubles",
+"reason": "doubles: player 'Gonzalez-Galino' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25COOVANANGCAR-COOVAN",
+"stage": "doubles",
+"reason": "doubles: player 'Cooper' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25COOVANANGCAR-ANGCAR",
+"stage": "doubles",
+"reason": "doubles: player 'Cooper' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25BLANOLBILVIN-BLANOL",
+"stage": "doubles",
+"reason": "doubles: player 'Blaydes' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25BLANOLBILVIN-BILVIN",
+"stage": "doubles",
+"reason": "doubles: player 'Blaydes' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25LEOMORMURSTI-MURSTI",
+"stage": "doubles",
+"reason": "doubles: player 'Leote Prata' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25LEOMORMURSTI-LEOMOR",
+"stage": "doubles",
+"reason": "doubles: player 'Leote Prata' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25BARIZQCURGON-CURGON",
+"stage": "doubles",
+"reason": "doubles: player 'Barroso Campos' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25BARIZQCURGON-BARIZQ",
+"stage": "doubles",
+"reason": "doubles: player 'Barroso Campos' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25MAJWALKOLSAV-MAJWAL",
+"stage": "doubles",
+"reason": "doubles: player 'Majdandzic' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25MAJWALKOLSAV-KOLSAV",
+"stage": "doubles",
+"reason": "doubles: player 'Majdandzic' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25AGADOLDUBLAR-DUBLAR",
+"stage": "doubles",
+"reason": "doubles: player 'Agafonov' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25AGADOLDUBLAR-AGADOL",
+"stage": "doubles",
+"reason": "doubles: player 'Agafonov' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25RIVTESCORMAK-RIVTES",
+"stage": "doubles",
+"reason": "doubles: player 'Rivet' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25RIVTESCORMAK-CORMAK",
+"stage": "doubles",
+"reason": "doubles: player 'Rivet' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25KHOTIUDERPAA-KHOTIU",
+"stage": "doubles",
+"reason": "doubles: player 'Khotchenkov' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25KHOTIUDERPAA-DERPAA",
+"stage": "doubles",
+"reason": "doubles: player 'Khotchenkov' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25ANGCHEFUMGSC-FUMGSC",
+"stage": "doubles",
+"reason": "doubles: player 'Angeloni' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25ANGCHEFUMGSC-ANGCHE",
+"stage": "doubles",
+"reason": "doubles: player 'Angeloni' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25LORQABHAMOUA-LORQAB",
+"stage": "doubles",
+"reason": "doubles: player 'Lorusso' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25LORQABHAMOUA-HAMOUA",
+"stage": "doubles",
+"reason": "doubles: player 'Lorusso' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25FAUVEGKRAPOR-KRAPOR",
+"stage": "doubles",
+"reason": "doubles: player 'Faucon' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25FAUVEGKRAPOR-FAUVEG",
+"stage": "doubles",
+"reason": "doubles: player 'Faucon' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25KACPALBEASHE-KACPAL",
+"stage": "doubles",
+"reason": "doubles: player 'Kachmazov' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25KACPALBEASHE-BEASHE",
+"stage": "doubles",
+"reason": "doubles: player 'Kachmazov' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25BINPANBAREHR-BINPAN",
+"stage": "doubles",
+"reason": "doubles: player 'Binda' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26SEP25BINPANBAREHR-BAREHR",
+"stage": "doubles",
+"reason": "doubles: player 'Binda' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFWMATCH-26SEP25ESQLEM-LEM",
 "stage": "identity",
-"reason": "Sophia Santos: UNMAPPED (no exact full-name match)"
+"reason": "Tiphanie Lemaitre: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP25ESQLEM-ESQ",
+"stage": "identity",
+"reason": "Tiphanie Lemaitre: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP25DOTCIR-DOT",
+"stage": "identity",
+"reason": "Ekaterina Dotsenko: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP25DOTCIR-CIR",
+"stage": "identity",
+"reason": "Ekaterina Dotsenko: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP25POPHER-POP",
+"stage": "identity",
+"reason": "Maria Herazo: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP25POPHER-HER",
+"stage": "identity",
+"reason": "Maria Herazo: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTASETWINNER-26SEP24WANPRO-2-WAN",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTASETWINNER-26SEP24WANPRO-2-PRO",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTASETWINNER-26SEP24WANPRO-1-WAN",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
+},
+{
+"ticker": "KXWTASETWINNER-26SEP24WANPRO-1-PRO",
+"stage": "identity",
+"reason": "Xinyu Wang: UNMAPPED (no exact full-name match)"
 }
 ],
 "authority": "RESEARCH_ONLY_NO_REAL_MONEY"
