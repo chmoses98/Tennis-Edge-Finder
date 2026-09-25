@@ -1,0 +1,35 @@
+{
+ "run_id": "20260925T121332Z",
+ "started_at": "2026-09-25T12:13:32.067338+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 100,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPGSPREAD-26SEP24FARGAS": {
+   "confidence": "B",
+   "bracket_s": 267.144283,
+   "first_ball": "2026-09-25T12:11:24.554203+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP25RISPIE": {
+   "confidence": "B",
+   "bracket_s": 202.560527,
+   "first_ball": "2026-09-25T12:14:43.355350+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 100,
+  "UNMATCHED": 576
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-25T12:23:28.437465+00:00"
+}
