@@ -1,0 +1,76 @@
+{
+ "run_id": "20260925T083756Z",
+ "started_at": "2026-09-25T08:37:56.991596+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 270,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPSETWINNER-26SEP25BASVAN-2": {
+   "confidence": "B",
+   "bracket_s": 257.302633,
+   "first_ball": "2026-09-25T08:42:48.539797+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP25BASVAN-1": {
+   "confidence": "B",
+   "bracket_s": 257.302633,
+   "first_ball": "2026-09-25T08:42:48.539797+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP25BASVAN": {
+   "confidence": "B",
+   "bracket_s": 257.302633,
+   "first_ball": "2026-09-25T08:42:48.539797+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26SEP25BASVAN": {
+   "confidence": "B",
+   "bracket_s": 257.302633,
+   "first_ball": "2026-09-25T08:42:48.539797+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP25BASVAN": {
+   "confidence": "B",
+   "bracket_s": 257.302633,
+   "first_ball": "2026-09-25T08:42:48.539797+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "mapping": {
+  "MATCHED": 270,
+  "UNMATCHED": 495,
+  "AMBIGUOUS": 15
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26SEP24ANDFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184106 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP24ANDFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184106 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP24ANDFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184106 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-25T08:48:20.004493+00:00"
+}
