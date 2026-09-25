@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-09-25T21:11:21.658148+00:00",
+ "run_id": "20260925T211121Z",
+ "external_parse": {
+  "events": 82,
+  "markets": 914,
+  "skipped_family": 261,
+  "skipped_period": 243,
+  "skipped_live": 8,
+  "one_sided": 9,
+  "rows": 1340,
+  "devigged": 401
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 811,
+  "markets_mapped": 305,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20260925T211121Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 305,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 58,
+  "rows": 590,
+  "two_sided": 585,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 209,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Team Europe": 1,
+   "Italy (W)": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Mukund Sasikumar": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6935,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 44,
+  "by_status": {
+   "UNMAPPED_PLAYER": 6,
+   "MAPPED": 38
+  },
+  "mapped_rate": 0.8636,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Claus Piening": 1,
+   "Sasikumar Mukund": 1,
+   "Ekaterina Dotsenko": 1,
+   "Anna Rogers": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 67,
+ "kalshi_mapped_matches": 38,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 18
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
