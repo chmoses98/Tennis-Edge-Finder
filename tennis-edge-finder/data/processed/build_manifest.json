@@ -1,9 +1,9 @@
 {
- "built_at": "2026-09-25T05:13:28.940011+00:00",
+ "built_at": "2026-09-25T12:06:05.923859+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
-   "run": "20260924T103012Z",
+   "run": "20260925T103244Z",
    "files": {
     "atp_matches_1990.csv.gz": {
      "raw": 3681,
@@ -194,7 +194,7 @@
   },
   "sackmann_ATP_qual_chall": {
    "status": "OK",
-   "run": "20260924T103012Z",
+   "run": "20260925T103244Z",
    "files": {
     "atp_matches_qual_chall_1990.csv.gz": {
      "raw": 2233,
@@ -385,7 +385,7 @@
   },
   "sackmann_ATP_futures": {
    "status": "OK",
-   "run": "20260924T103012Z",
+   "run": "20260925T103244Z",
    "files": {
     "atp_matches_futures_1991.csv.gz": {
      "raw": 9059,
@@ -571,7 +571,7 @@
   },
   "sackmann_WTA_main": {
    "status": "OK",
-   "run": "20260924T103012Z",
+   "run": "20260925T103244Z",
    "files": {
     "wta_matches_1990.csv.gz": {
      "raw": 2728,
@@ -762,7 +762,7 @@
   },
   "sackmann_WTA_qual_itf": {
    "status": "OK",
-   "run": "20260924T103012Z",
+   "run": "20260925T103244Z",
    "files": {
     "wta_matches_qual_itf_1990.csv.gz": {
      "raw": 7763,
@@ -953,7 +953,7 @@
   },
   "tml_ATP_main": {
    "status": "OK",
-   "run": "20260924T103012Z",
+   "run": "20260925T103244Z",
    "files": {
     "1990.csv.gz": {
      "raw": 3683,
@@ -1144,7 +1144,7 @@
   },
   "tml_ATP_challenger": {
    "status": "OK",
-   "run": "20260924T104730Z",
+   "run": "20260925T105032Z",
    "files": {
     "2000_challenger.csv.gz": {
      "raw": 3534,
@@ -1285,23 +1285,23 @@
   },
   "espn_ATP": {
    "status": "OK",
-   "run": "20260924T103812Z",
+   "run": "20260925T104110Z",
    "files": {
     "espn_matches_ATP_2026.csv.gz": {
-     "raw": 2193,
-     "clean": 2142,
+     "raw": 2207,
+     "clean": 2156,
      "quarantine": 51
     }
    }
   },
   "espn_WTA": {
    "status": "OK",
-   "run": "20260924T103812Z",
+   "run": "20260925T104110Z",
    "files": {
     "espn_matches_WTA_2026.csv.gz": {
-     "raw": 3689,
-     "clean": 3607,
-     "quarantine": 82
+     "raw": 3703,
+     "clean": 3620,
+     "quarantine": 83
     }
    }
   }
@@ -1309,16 +1309,16 @@
  "min_year": 1990,
  "cross_source_duplicates_dropped": 142833,
  "player_crosswalk": {
-  "foreign_players": 6128,
+  "foreign_players": 6129,
   "by_status": {
    "MAPPED": 5723,
-   "NO_CANONICAL_MATCH": 346,
+   "NO_CANONICAL_MATCH": 347,
    "AMBIGUOUS_NAME": 59
   },
-  "rows_total": 1630903,
-  "rows_canonical_id": 1621981,
-  "foreign_rows": 103180,
-  "foreign_rows_mapped": 94258
+  "rows_total": 1630930,
+  "rows_canonical_id": 1622000,
+  "foreign_rows": 103207,
+  "foreign_rows_mapped": 94277
  },
  "player_crosswalk_by_system": {
   "tml": {
@@ -1330,16 +1330,16 @@
    }
   },
   "espn": {
-   "foreign_players": 1116,
+   "foreign_players": 1117,
    "by_status": {
     "MAPPED": 1006,
-    "NO_CANONICAL_MATCH": 103,
+    "NO_CANONICAL_MATCH": 104,
     "AMBIGUOUS_NAME": 7
    }
   }
  },
- "rows": 1630903,
- "quarantine_rows": 13862,
+ "rows": 1630930,
+ "quarantine_rows": 13863,
  "by_tour_level": {
   "ATP|CHALLENGER": 282114,
   "ATP|GRAND_SLAM": 30991,
@@ -1347,7 +1347,7 @@
   "ATP|MASTERS_1000": 25862,
   "ATP|OLYMPICS": 70,
   "ATP|TEAM": 11471,
-  "ATP|TOUR_500_250": 85962,
+  "ATP|TOUR_500_250": 85976,
   "ATP|TOUR_FINALS": 556,
   "WTA|GRAND_SLAM": 31067,
   "WTA|ITF": 467977,
@@ -1355,14 +1355,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 69620,
+  "WTA|TOUR_500_250": 69633,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
   "sackmann": 1527723,
   "tml": 97437,
-  "espn": 5743
+  "espn": 5770
  },
  "seasons": {
   "1990": 15737,
@@ -1401,7 +1401,7 @@
   "2023": 73151,
   "2024": 79627,
   "2025": 56342,
-  "2026": 29654
+  "2026": 29681
  },
- "matches_sha256": "e1565f94402fd8840615c5047bc531401f00c13cc15474bebf1814c8e50e6fd9"
+ "matches_sha256": "d7c34f119745fd39d0f48c8a0d259659a2f0291b5fe0438dbcac87296e242614"
 }
