@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-09-25T16:46:13.677874+00:00",
+ "run_id": "20260925T164613Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 798,
+  "skipped_family": 194,
+  "skipped_period": 209,
+  "skipped_live": 28,
+  "one_sided": 27,
+  "rows": 1138,
+  "devigged": 368
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 742,
+  "markets_mapped": 290,
+  "contracts": 632,
+  "quoted_contracts": 632,
+  "raw": "data/research/external/raw/20260925T164613Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 290,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 617,
+  "two_sided": 613,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 273,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.663,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Team Europe": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Paula Cerda": 1,
+   "Harrison Lee": 1,
+   "Ben Stecker": 1,
+   "William Landry": 1,
+   "Johnson Cooper": 1,
+   "Michael Chan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 36,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6545,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "UNMAPPED_PLAYER": 7,
+   "MAPPED": 64
+  },
+  "mapped_rate": 0.9014,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Paul Colin": 1,
+   "Alexander Binda": 1,
+   "Sasikumar Mukund": 1,
+   "Ekaterina Dotsenko": 1,
+   "Anna Rogers": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 64,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 58,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
