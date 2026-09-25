@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-25T16:36:13.142174+00:00",
+ "run_id": "20260925T163613Z",
+ "external_parse": {
+  "events": 87,
+  "markets": 663,
+  "skipped_family": 183,
+  "skipped_period": 167,
+  "skipped_live": 27,
+  "one_sided": 29,
+  "rows": 918,
+  "devigged": 284
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 54,
+  "markets": 735,
+  "markets_mapped": 286,
+  "contracts": 624,
+  "quoted_contracts": 624,
+  "raw": "data/research/external/raw/20260925T163613Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 286,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 9,
+  "rows": 615,
+  "two_sided": 612,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 260,
+ "external_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Team Europe": 1,
+   "Igor Marcondes": 1,
+   "Paula Cerda": 1,
+   "Kasper Kulpa": 1,
+   "Harrison Lee": 1,
+   "Ben Stecker": 1,
+   "William Landry": 1,
+   "Gabe Avram": 1,
+   "Mukund Sasikumar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 35,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6481,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 54
+  },
+  "mapped_rate": 0.9474,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Anna Rogers": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 21
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
