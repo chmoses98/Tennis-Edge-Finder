@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260925T032454Z",
-   "age_hours": 8.8,
+   "age_hours": 14.1,
    "complete": true,
    "failures": 0,
    "series_tennis": 145
@@ -49,28 +49,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 269,
-   "projected": 195,
-   "not_projected": 74,
+   "projectable_open_pregame": 114,
+   "projected": 86,
+   "not_projected": 28,
    "missing_sample": [
-    "KXWTACHALLENGERMATCH-26SEP25TIMKNU-TIM: Gabriela Knutson: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP25TIMKNU-KNU: Gabriela Knutson: UNMAPPED (no exact full-name match)",
     "KXITFMATCH-26SEP25AVRWIT-WIT: Gabe Avram: UNMAPPED (no exact full-name match)",
     "KXITFMATCH-26SEP25AVRWIT-AVR: Gabe Avram: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP25COLDOM-DOM: Paul Colin: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP25COLDOM-COL: Paul Colin: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP25STRZAK-ZAK: Fares Zakaria: UNMAPPED (no exact full-name match)",
-    "KXITFMATCH-26SEP25STRZAK-STR: Fares Zakaria: UNMAPPED (no exact full-name match)",
     "KXATPCHALLENGERDOUBLES-26SEP25DEVZEBDELRAT-DEVZEB: doubles: player 'Murkel Dellien' unmapped/ambiguous in ['ATP",
-    "KXATPCHALLENGERDOUBLES-26SEP25DEVZEBDELRAT-DELRAT: doubles: player 'Murkel Dellien' unmapped/ambiguous in ['ATP"
+    "KXATPCHALLENGERDOUBLES-26SEP25DEVZEBDELRAT-DELRAT: doubles: player 'Murkel Dellien' unmapped/ambiguous in ['ATP",
+    "KXITFWDOUBLES-26SEP25MAKMAMGOTLAS-MAKMAM: doubles: player 'Maklakova' unmapped/ambiguous in ['WTA']",
+    "KXITFWDOUBLES-26SEP25MAKMAMGOTLAS-GOTLAS: doubles: player 'Maklakova' unmapped/ambiguous in ['WTA']",
+    "KXITFWDOUBLES-26SEP25TANTOMGALGIB-TANTOM: doubles: player 'Tanguilig' unmapped/ambiguous in ['WTA']",
+    "KXITFWDOUBLES-26SEP25TANTOMGALGIB-GALGIB: doubles: player 'Tanguilig' unmapped/ambiguous in ['WTA']",
+    "KXITFDOUBLES-26SEP25VICPAGTOSZAN-VICPAG: doubles: player 'Victor Couto Loureiro' unmapped/ambiguous i",
+    "KXITFDOUBLES-26SEP25VICPAGTOSZAN-TOSZAN: doubles: player 'Victor Couto Loureiro' unmapped/ambiguous i"
    ],
    "excluded_by_policy": {
     "unsupported_family": 133,
-    "past_nominal_start": 190,
-    "closed_since_discovery": 189,
-    "tournament_scope_not_priced_tonight": 263
+    "past_nominal_start": 90,
+    "closed_since_discovery": 451,
+    "tournament_scope_not_priced_tonight": 256
    },
-   "projection_run": "20260925T121111Z"
+   "projection_run": "20260925T173150Z"
   }
  },
  {
@@ -78,8 +78,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260925T115353Z",
-   "age_min": 16.6,
+   "run": "20260925T171406Z",
+   "age_min": 16.9,
    "incomplete": [
     {
      "stage": "trades",
@@ -120,8 +120,8 @@
     "a42c219a-d74f-496e-b568-5830ed4afd66",
     "72a352f1-4b6e-49f8-95af-45004746b535"
    ],
-   "n": 11473,
-   "start_unknown_used_schedule": 9216
+   "n": 11559,
+   "start_unknown_used_schedule": 9264
   }
  },
  {
@@ -131,7 +131,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 195
+   "MATCHED": 86
   }
  },
  {
@@ -141,36 +141,36 @@
   "detail": {
    "reason": "no settled predictions yet",
    "first_ball": {
-    "truths": 921,
-    "strict_truths": 607,
+    "truths": 936,
+    "strict_truths": 617,
     "no_play": 8,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 314,
-     "B": 599,
+     "C": 319,
+     "B": 609,
      "A": 8
     },
     "bracket_seconds_median": 208.380665,
     "bracket_seconds_p90": 263.144458,
     "chain_violations": [],
-    "observations": 266887,
-    "matches_observed": 921,
+    "observations": 269069,
+    "matches_observed": 936,
     "watchlist": {
-     "total": 186,
-     "levels_with_a_wired_source": 56,
-     "levels_without_any_source": 130,
-     "watched_and_observed": 56,
-     "covered_and_observed": 56,
+     "total": 143,
+     "levels_with_a_wired_source": 29,
+     "levels_without_any_source": 114,
+     "watched_and_observed": 29,
+     "covered_and_observed": 29,
      "pct_covered_with_source_mapping": 1.0
     },
-    "pct_classifiable": 0.1997,
-    "pct_strict_pregame": 0.1774,
+    "pct_classifiable": 0.2015,
+    "pct_strict_pregame": 0.1787,
     "timing_classes": {
-     "START_UNKNOWN": 9182,
-     "STRICT_PREGAME": 2035,
-     "POST_START": 239,
-     "AMBIGUOUS": 17
+     "START_UNKNOWN": 9230,
+     "STRICT_PREGAME": 2066,
+     "POST_START": 243,
+     "AMBIGUOUS": 20
     }
    }
   }
@@ -193,13 +193,13 @@
    "settled": null,
    "with_close": null,
    "actual_first_ball_basis": null,
-   "strict_clv_rows": 1989,
-   "executable_close_rows": 2257,
-   "matches_with_strict_truth": 607,
-   "observations_classified": 11473,
-   "pct_strict_pregame": 0.1774,
-   "horizons_populated": 14825,
-   "horizons_total": 91784
+   "strict_clv_rows": 2020,
+   "executable_close_rows": 2295,
+   "matches_with_strict_truth": 617,
+   "observations_classified": 11559,
+   "pct_strict_pregame": 0.1787,
+   "horizons_populated": 15098,
+   "horizons_total": 92472
   }
  },
  {
@@ -225,7 +225,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-25T12:06:05.923859+00:00",
+   "built_at": "2026-09-25T17:26:45.588811+00:00",
    "rows": 1630930
   }
  },
@@ -235,7 +235,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260925T103244Z",
-   "snapshot_age_days": 0.07,
+   "snapshot_age_days": 0.29,
    "max_season_files": [
     2026,
     2026
