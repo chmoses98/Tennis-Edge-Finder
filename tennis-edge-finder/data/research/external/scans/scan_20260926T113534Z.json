@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-09-26T11:35:34.026692+00:00",
+ "run_id": "20260926T113534Z",
+ "external_parse": {
+  "events": 60,
+  "markets": 596,
+  "skipped_family": 210,
+  "skipped_period": 146,
+  "skipped_live": 14,
+  "one_sided": 10,
+  "rows": 780,
+  "devigged": 230
+ },
+ "smarkets_fetch": {
+  "events_seen": 35,
+  "events_priced": 35,
+  "markets": 437,
+  "markets_mapped": 197,
+  "contracts": 442,
+  "quoted_contracts": 442,
+  "raw": "data/research/external/raw/20260926T113534Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 197,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 421,
+  "two_sided": 419,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 201,
+ "external_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6923,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Jasmine Paolini": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 35,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 23,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.6571,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 34
+  },
+  "mapped_rate": 0.9189,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Piraye Ozdemir": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 43,
+ "kalshi_mapped_matches": 34,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
