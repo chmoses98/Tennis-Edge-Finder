@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-09-25T23:51:07.942476+00:00",
+ "run_id": "20260925T235107Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 968,
+  "skipped_family": 305,
+  "skipped_period": 248,
+  "skipped_live": 3,
+  "one_sided": 5,
+  "rows": 1362,
+  "devigged": 410
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 814,
+  "markets_mapped": 308,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20260925T235107Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 308,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 51,
+  "rows": 607,
+  "two_sided": 602,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 224,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.6716,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Team Europe": 1,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Mukund Sasikumar": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6885,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Yunchaokete Bu": 1,
+   "Italy": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "UNMAPPED_PLAYER": 7,
+   "MAPPED": 54
+  },
+  "mapped_rate": 0.8852,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Piraye Ozdemir": 1,
+   "Gabe Avram": 1,
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Alexander Binda": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 29
+ },
+ "skips": {}
+}
