@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-26T00:54:40.204573+00:00",
+ "run_id": "20260926T005440Z",
+ "external_parse": {
+  "events": 105,
+  "markets": 1253,
+  "skipped_family": 330,
+  "skipped_period": 333,
+  "skipped_live": 2,
+  "one_sided": 5,
+  "rows": 1810,
+  "devigged": 585
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 838,
+  "markets_mapped": 324,
+  "contracts": 692,
+  "quoted_contracts": 692,
+  "raw": "data/research/external/raw/20260926T005440Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 324,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 53,
+  "rows": 639,
+  "two_sided": 632,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 203,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7419,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Team Europe": 1,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Mukund Sasikumar": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Yunchaokete Bu": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 42
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Alexander Binda": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 66,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
