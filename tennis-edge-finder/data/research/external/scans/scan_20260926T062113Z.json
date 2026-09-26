@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-09-26T06:21:13.204944+00:00",
+ "run_id": "20260926T062113Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 1133,
+  "skipped_family": 313,
+  "skipped_period": 293,
+  "skipped_live": 10,
+  "one_sided": 4,
+  "rows": 1578,
+  "devigged": 523
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 58,
+  "markets": 786,
+  "markets_mapped": 332,
+  "contracts": 730,
+  "quoted_contracts": 730,
+  "raw": "data/research/external/raw/20260926T062113Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 332,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 72,
+  "rows": 658,
+  "two_sided": 653,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 790,
+ "external_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7128,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Italy (W)": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1,
+   "Caijsa Hennemann": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6552,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.9024,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Piraye Ozdemir": 1,
+   "Melis Keser": 1,
+   "Gabe Avram": 1,
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Alexander Binda": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 66,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 119,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 69,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
