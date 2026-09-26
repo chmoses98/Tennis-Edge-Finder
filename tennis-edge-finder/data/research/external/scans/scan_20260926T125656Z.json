@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-09-26T12:56:56.731769+00:00",
+ "run_id": "20260926T125656Z",
+ "external_parse": {
+  "events": 63,
+  "markets": 603,
+  "skipped_family": 203,
+  "skipped_period": 151,
+  "skipped_live": 16,
+  "one_sided": 13,
+  "rows": 814,
+  "devigged": 236
+ },
+ "smarkets_fetch": {
+  "events_seen": 37,
+  "events_priced": 37,
+  "markets": 488,
+  "markets_mapped": 215,
+  "contracts": 474,
+  "quoted_contracts": 474,
+  "raw": "data/research/external/raw/20260926T125656Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 215,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 457,
+  "two_sided": 455,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 649,
+ "external_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7222,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 37,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 22
+  },
+  "mapped_rate": 0.5946,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 44
+  },
+  "mapped_rate": 0.898,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Piraye Ozdemir": 1,
+   "Melis Keser": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 46,
+ "kalshi_mapped_matches": 44,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
