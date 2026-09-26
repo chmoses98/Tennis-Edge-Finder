@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-09-26T19:16:20.906294+00:00",
+ "run_id": "20260926T191620Z",
+ "external_parse": {
+  "events": 56,
+  "markets": 658,
+  "skipped_family": 270,
+  "skipped_period": 150,
+  "skipped_live": 12,
+  "one_sided": 3,
+  "rows": 792,
+  "devigged": 235
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 538,
+  "markets_mapped": 244,
+  "contracts": 522,
+  "quoted_contracts": 522,
+  "raw": "data/research/external/raw/20260926T191620Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 244,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 500,
+  "two_sided": 490,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 172,
+ "external_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 31,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6739,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Igor Marcondes": 1,
+   "Michael Chan": 1,
+   "Jean Karim Olivier De Sardan": 1,
+   "Filip Paroulek": 1,
+   "Zechariah Hamrouni": 1,
+   "Felix Obermair": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8082,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Riccardo Trione": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 36,
+  "by_status": {
+   "MAPPED": 33,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9167,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 75,
+ "kalshi_mapped_matches": 33,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 31,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
