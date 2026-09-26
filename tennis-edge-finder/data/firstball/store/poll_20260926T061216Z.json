@@ -1,0 +1,45 @@
+{
+ "run_id": "20260926T061216Z",
+ "started_at": "2026-09-26T06:12:16.084859+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 240,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 240,
+  "UNMATCHED": 306,
+  "AMBIGUOUS": 18
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26SEP26FERCHW": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184102 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP26FERCHW-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184102 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP26FERCHW-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184102 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-26T06:23:13.651062+00:00"
+}
