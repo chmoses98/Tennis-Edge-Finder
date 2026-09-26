@@ -1,0 +1,29 @@
+{
+ "run_id": "20260926T142917Z",
+ "started_at": "2026-09-26T14:29:17.834330+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 20,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP26MARPIE": {
+   "confidence": "B",
+   "bracket_s": 189.072359,
+   "first_ball": "2026-09-26T14:28:57.282456+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 20,
+  "UNMATCHED": 172
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-26T14:38:30.008117+00:00"
+}
