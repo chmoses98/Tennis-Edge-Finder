@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-09-26T03:31:02.141642+00:00",
+ "run_id": "20260926T033102Z",
+ "external_parse": {
+  "events": 104,
+  "markets": 1103,
+  "skipped_family": 271,
+  "skipped_period": 296,
+  "skipped_live": 9,
+  "one_sided": 1,
+  "rows": 1614,
+  "devigged": 535
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 728,
+  "markets_mapped": 305,
+  "contracts": 664,
+  "quoted_contracts": 664,
+  "raw": "data/research/external/raw/20260926T033102Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 305,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 610,
+  "two_sided": 598,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 212,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7527,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Mukund Sasikumar": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6452,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 41
+  },
+  "mapped_rate": 0.9111,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Alexander Binda": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 41,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 55,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 1,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
