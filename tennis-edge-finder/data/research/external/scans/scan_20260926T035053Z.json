@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-09-26T03:50:53.432925+00:00",
+ "run_id": "20260926T035053Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 1096,
+  "skipped_family": 269,
+  "skipped_period": 294,
+  "skipped_live": 8,
+  "one_sided": 2,
+  "rows": 1596,
+  "devigged": 531
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 729,
+  "markets_mapped": 306,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20260926T035053Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 612,
+  "two_sided": 606,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 194,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7609,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6508,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 44,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 40
+  },
+  "mapped_rate": 0.9091,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Claus Piening": 1,
+   "Alexander Binda": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 40,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
