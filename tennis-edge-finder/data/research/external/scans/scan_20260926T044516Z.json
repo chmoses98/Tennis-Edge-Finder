@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-09-26T04:45:16.291100+00:00",
+ "run_id": "20260926T044516Z",
+ "external_parse": {
+  "events": 100,
+  "markets": 1083,
+  "skipped_family": 269,
+  "skipped_period": 287,
+  "skipped_live": 6,
+  "one_sided": 1,
+  "rows": 1586,
+  "devigged": 526
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 740,
+  "markets_mapped": 306,
+  "contracts": 672,
+  "quoted_contracts": 672,
+  "raw": "data/research/external/raw/20260926T044516Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 631,
+  "two_sided": 631,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 274,
+ "external_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7528,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 18,
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6393,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 53
+  },
+  "mapped_rate": 0.9298,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Piraye Ozdemir": 1,
+   "Alexander Binda": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 80,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 77,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
