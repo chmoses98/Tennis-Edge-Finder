@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-09-26T12:44:36.425402+00:00",
+ "run_id": "20260926T124436Z",
+ "external_parse": {
+  "events": 62,
+  "markets": 554,
+  "skipped_family": 190,
+  "skipped_period": 135,
+  "skipped_live": 16,
+  "one_sided": 15,
+  "rows": 709,
+  "devigged": 213
+ },
+ "smarkets_fetch": {
+  "events_seen": 36,
+  "events_priced": 36,
+  "markets": 461,
+  "markets_mapped": 196,
+  "contracts": 436,
+  "quoted_contracts": 436,
+  "raw": "data/research/external/raw/20260926T124436Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 196,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 415,
+  "two_sided": 415,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 207,
+ "external_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6981,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 36,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 22,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.6111,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 33,
+  "by_status": {
+   "UNMAPPED_PLAYER": 1,
+   "MAPPED": 32
+  },
+  "mapped_rate": 0.9697,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 45,
+ "kalshi_mapped_matches": 32,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:MARKETS_AGREE": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
