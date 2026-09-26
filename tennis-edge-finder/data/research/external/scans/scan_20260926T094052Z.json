@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-09-26T09:40:52.259190+00:00",
+ "run_id": "20260926T094052Z",
+ "external_parse": {
+  "events": 81,
+  "markets": 813,
+  "skipped_family": 278,
+  "skipped_period": 206,
+  "skipped_live": 25,
+  "one_sided": 4,
+  "rows": 1106,
+  "devigged": 325
+ },
+ "smarkets_fetch": {
+  "events_seen": 42,
+  "events_priced": 42,
+  "markets": 587,
+  "markets_mapped": 238,
+  "contracts": 532,
+  "quoted_contracts": 532,
+  "raw": "data/research/external/raw/20260926T094052Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 238,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 509,
+  "two_sided": 507,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 715,
+ "external_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7222,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Tyra Caterina Grant": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 42,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 29
+  },
+  "mapped_rate": 0.6905,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8806,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Piraye Ozdemir": 1,
+   "Melis Keser": 1,
+   "Gabe Avram": 1,
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 59,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 65,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
