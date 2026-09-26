@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-09-26T16:18:33.626542+00:00",
+ "run_id": "20260926T161833Z",
+ "external_parse": {
+  "events": 67,
+  "markets": 704,
+  "skipped_family": 285,
+  "skipped_period": 158,
+  "skipped_live": 20,
+  "one_sided": 5,
+  "rows": 856,
+  "devigged": 256
+ },
+ "smarkets_fetch": {
+  "events_seen": 35,
+  "events_priced": 35,
+  "markets": 460,
+  "markets_mapped": 185,
+  "contracts": 406,
+  "quoted_contracts": 406,
+  "raw": "data/research/external/raw/20260926T161833Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 185,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 383,
+  "two_sided": 377,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 137,
+ "external_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6897,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Igor Marcondes": 1,
+   "Ilan Hediger": 1,
+   "Julien Doitteau": 1,
+   "Aditya Vyas": 1,
+   "Johnson Cooper": 1,
+   "William Landry": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 35,
+  "by_status": {
+   "MAPPED": 22,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Ukraine": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 27,
+  "by_status": {
+   "MAPPED": 25,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9259,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 45,
+ "kalshi_mapped_matches": 25,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
