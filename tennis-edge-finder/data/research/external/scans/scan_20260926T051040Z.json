@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-09-26T05:10:40.362623+00:00",
+ "run_id": "20260926T051040Z",
+ "external_parse": {
+  "events": 99,
+  "markets": 1008,
+  "skipped_family": 258,
+  "skipped_period": 263,
+  "skipped_live": 10,
+  "one_sided": 1,
+  "rows": 1440,
+  "devigged": 486
+ },
+ "smarkets_fetch": {
+  "events_seen": 57,
+  "events_priced": 57,
+  "markets": 751,
+  "markets_mapped": 312,
+  "contracts": 686,
+  "quoted_contracts": 686,
+  "raw": "data/research/external/raw/20260926T051040Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 312,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 58,
+  "rows": 628,
+  "two_sided": 626,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 741,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Italy (W)": 1,
+   "Guiomar Maristany": 1,
+   "Piening Claus": 1,
+   "Paul Colin": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6491,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Yunchaokete Bu": 1,
+   "Melis Keser": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.9,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Piraye Ozdemir": 1,
+   "Melis Keser": 1,
+   "Gabe Avram": 1,
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Alexander Binda": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 112,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 78,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
