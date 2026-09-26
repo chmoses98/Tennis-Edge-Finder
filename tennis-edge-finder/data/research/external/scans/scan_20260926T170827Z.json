@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-09-26T17:08:27.152022+00:00",
+ "run_id": "20260926T170827Z",
+ "external_parse": {
+  "events": 61,
+  "markets": 699,
+  "skipped_family": 291,
+  "skipped_period": 154,
+  "skipped_live": 15,
+  "one_sided": 2,
+  "rows": 850,
+  "devigged": 252
+ },
+ "smarkets_fetch": {
+  "events_seen": 41,
+  "events_priced": 41,
+  "markets": 501,
+  "markets_mapped": 208,
+  "contracts": 454,
+  "quoted_contracts": 454,
+  "raw": "data/research/external/raw/20260926T170827Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 208,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 432,
+  "two_sided": 422,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 134,
+ "external_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 34,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Igor Marcondes": 1,
+   "Aditya Vyas": 1,
+   "Johnson Cooper": 1,
+   "William Landry": 1,
+   "Noble Renfrow": 1,
+   "Drew Hedgecoe": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 41,
+  "by_status": {
+   "MAPPED": 27,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6585,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 28,
+  "by_status": {
+   "MAPPED": 25,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8929,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Paul Colin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 44,
+ "kalshi_mapped_matches": 25,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
