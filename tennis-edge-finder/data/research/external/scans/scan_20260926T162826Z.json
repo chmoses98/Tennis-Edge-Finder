@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-09-26T16:28:26.043814+00:00",
+ "run_id": "20260926T162826Z",
+ "external_parse": {
+  "events": 64,
+  "markets": 695,
+  "skipped_family": 287,
+  "skipped_period": 154,
+  "skipped_live": 19,
+  "one_sided": 2,
+  "rows": 848,
+  "devigged": 252
+ },
+ "smarkets_fetch": {
+  "events_seen": 35,
+  "events_priced": 35,
+  "markets": 460,
+  "markets_mapped": 185,
+  "contracts": 406,
+  "quoted_contracts": 406,
+  "raw": "data/research/external/raw/20260926T162826Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 185,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 387,
+  "two_sided": 377,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 135,
+ "external_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6727,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Igor Marcondes": 1,
+   "Ilan Hediger": 1,
+   "Aditya Vyas": 1,
+   "Johnson Cooper": 1,
+   "William Landry": 1,
+   "Noble Renfrow": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 35,
+  "by_status": {
+   "MAPPED": 22,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Ukraine": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 28,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 25
+  },
+  "mapped_rate": 0.8929,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 42,
+ "kalshi_mapped_matches": 25,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
