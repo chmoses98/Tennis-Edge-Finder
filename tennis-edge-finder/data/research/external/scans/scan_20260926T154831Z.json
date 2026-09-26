@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-09-26T15:48:31.163619+00:00",
+ "run_id": "20260926T154831Z",
+ "external_parse": {
+  "events": 68,
+  "markets": 706,
+  "skipped_family": 287,
+  "skipped_period": 158,
+  "skipped_live": 21,
+  "one_sided": 5,
+  "rows": 856,
+  "devigged": 256
+ },
+ "smarkets_fetch": {
+  "events_seen": 37,
+  "events_priced": 37,
+  "markets": 458,
+  "markets_mapped": 186,
+  "contracts": 408,
+  "quoted_contracts": 408,
+  "raw": "data/research/external/raw/20260926T154831Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 186,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 396,
+  "two_sided": 392,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 133,
+ "external_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.678,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Ilan Hediger": 1,
+   "Julien Doitteau": 1,
+   "Aditya Vyas": 1,
+   "William Landry": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 37,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 23,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6216,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Ukraine": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 22,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 19
+  },
+  "mapped_rate": 0.8636,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "matched_both_venues": 17,
+ "external_mapped_matches": 45,
+ "kalshi_mapped_matches": 19,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
