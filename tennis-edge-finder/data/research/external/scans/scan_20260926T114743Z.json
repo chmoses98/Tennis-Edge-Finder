@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-26T11:47:43.376182+00:00",
+ "run_id": "20260926T114743Z",
+ "external_parse": {
+  "events": 64,
+  "markets": 605,
+  "skipped_family": 213,
+  "skipped_period": 146,
+  "skipped_live": 16,
+  "one_sided": 9,
+  "rows": 782,
+  "devigged": 237
+ },
+ "smarkets_fetch": {
+  "events_seen": 36,
+  "events_priced": 36,
+  "markets": 437,
+  "markets_mapped": 197,
+  "contracts": 440,
+  "quoted_contracts": 440,
+  "raw": "data/research/external/raw/20260926T114743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 197,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 426,
+  "two_sided": 425,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 658,
+ "external_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6786,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Jasmine Paolini": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 36,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 22
+  },
+  "mapped_rate": 0.6111,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 49
+  },
+  "mapped_rate": 0.9074,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Piraye Ozdemir": 1,
+   "Melis Keser": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 44,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
