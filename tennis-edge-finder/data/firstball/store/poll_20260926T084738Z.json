@@ -1,0 +1,52 @@
+{
+ "run_id": "20260926T084738Z",
+ "started_at": "2026-09-26T08:47:38.295258+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 143,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP26MERTIK": {
+   "confidence": "B",
+   "bracket_s": 215.103712,
+   "first_ball": "2026-09-26T08:49:06.388957+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "mapping": {
+  "MATCHED": 143,
+  "UNMATCHED": 448,
+  "AMBIGUOUS": 21
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26SEP26FERCHW": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184102 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP26FERCHW-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184102 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP26FERCHW-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184102 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-26T08:57:36.723090+00:00"
+}
