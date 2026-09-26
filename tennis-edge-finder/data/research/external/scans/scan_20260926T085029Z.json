@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-09-26T08:50:29.740174+00:00",
+ "run_id": "20260926T085029Z",
+ "external_parse": {
+  "events": 88,
+  "markets": 850,
+  "skipped_family": 285,
+  "skipped_period": 215,
+  "skipped_live": 25,
+  "one_sided": 5,
+  "rows": 1152,
+  "devigged": 345
+ },
+ "smarkets_fetch": {
+  "events_seen": 46,
+  "events_priced": 46,
+  "markets": 640,
+  "markets_mapped": 252,
+  "contracts": 558,
+  "quoted_contracts": 558,
+  "raw": "data/research/external/raw/20260926T085029Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 252,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 29,
+  "rows": 529,
+  "two_sided": 524,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 242,
+ "external_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7308,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Italy (W)": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Piening Claus": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 46,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 31
+  },
+  "mapped_rate": 0.6739,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Melis Keser": 1,
+   "Italy": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 48,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 44
+  },
+  "mapped_rate": 0.9167,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Paul Colin": 1,
+   "Claus Piening": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 44,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
