@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-09-26T17:59:08.299871+00:00",
+ "run_id": "20260926T175908Z",
+ "external_parse": {
+  "events": 59,
+  "markets": 678,
+  "skipped_family": 271,
+  "skipped_period": 154,
+  "skipped_live": 13,
+  "one_sided": 2,
+  "rows": 836,
+  "devigged": 251
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 58,
+  "markets": 523,
+  "markets_mapped": 230,
+  "contracts": 498,
+  "quoted_contracts": 498,
+  "raw": "data/research/external/raw/20260926T175908Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 230,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 460,
+  "two_sided": 449,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 590,
+ "external_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 33,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6735,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Igor Marcondes": 1,
+   "Noble Renfrow": 1,
+   "Michael Chan": 1,
+   "Drew Hedgecoe": 1,
+   "Jean Karim Olivier De Sardan": 1,
+   "Filip Paroulek": 1,
+   "Paula Cerda": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7414,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Riccardo Trione": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 41,
+  "by_status": {
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9024,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Paul Colin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 59,
+ "kalshi_mapped_matches": 37,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
