@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-09-26T11:59:00.017820+00:00",
+ "run_id": "20260926T115900Z",
+ "external_parse": {
+  "events": 66,
+  "markets": 588,
+  "skipped_family": 196,
+  "skipped_period": 145,
+  "skipped_live": 17,
+  "one_sided": 12,
+  "rows": 782,
+  "devigged": 235
+ },
+ "smarkets_fetch": {
+  "events_seen": 38,
+  "events_priced": 38,
+  "markets": 431,
+  "markets_mapped": 197,
+  "contracts": 440,
+  "quoted_contracts": 440,
+  "raw": "data/research/external/raw/20260926T115900Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 197,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 427,
+  "two_sided": 425,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 202,
+ "external_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7018,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Jasmine Paolini": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Gabe Avram": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 38,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 24,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.6316,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 37
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 47,
+ "kalshi_mapped_matches": 37,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 34,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 18
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
