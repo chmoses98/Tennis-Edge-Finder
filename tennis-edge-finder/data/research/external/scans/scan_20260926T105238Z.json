@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-09-26T10:52:38.899010+00:00",
+ "run_id": "20260926T105238Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 663,
+  "skipped_family": 224,
+  "skipped_period": 167,
+  "skipped_live": 16,
+  "one_sided": 7,
+  "rows": 892,
+  "devigged": 265
+ },
+ "smarkets_fetch": {
+  "events_seen": 35,
+  "events_priced": 35,
+  "markets": 434,
+  "markets_mapped": 193,
+  "contracts": 432,
+  "quoted_contracts": 432,
+  "raw": "data/research/external/raw/20260926T105238Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 193,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 417,
+  "two_sided": 415,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 194,
+ "external_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7193,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Tyra Caterina Grant": 1,
+   "Igor Marcondes": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 35,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 23,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.6571,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Melis Keser": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 40,
+  "by_status": {
+   "MAPPED": 36,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Piraye Ozdemir": 1,
+   "Paul Colin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 46,
+ "kalshi_mapped_matches": 36,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
