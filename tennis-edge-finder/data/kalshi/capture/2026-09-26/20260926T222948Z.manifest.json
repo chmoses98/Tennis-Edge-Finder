@@ -1,0 +1,59 @@
+{
+ "run_id": "20260926T222948Z",
+ "started_at": "2026-09-26T22:29:48.358023+00:00",
+ "incomplete": [
+  {
+   "stage": "trades",
+   "info": {
+    "pages": 250,
+    "error": null,
+    "truncated_by_max_pages": true
+   },
+   "scanned": 250000
+  }
+ ],
+ "counts": {
+  "open_markets": 629,
+  "quotes_written": 143,
+  "quotes_unchanged": 486,
+  "events_new": 0,
+  "books": 18,
+  "book_candidates": 18,
+  "trades_tennis": 5993,
+  "trades_global_scanned": 250000,
+  "settlements": 0,
+  "candles": 0
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 413,
+  "retries": 2,
+  "http_429": 2,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 40.96585615466684,
+  "by_path": {
+   "markets": 143,
+   "markets/KXATPDOUBLES-26SEP23CABTRASUNZHA-CABTRA/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP23CABTRASUNZHA-SUNZHA/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26CABTRAGONJEB-CABTRA/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26CABTRAGONJEB-GONJEB/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26REYWATKINSTE-KINSTE/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26REYWATKINSTE-REYWAT/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26HALMIEROJWIN-HALMIE/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26HALMIEROJWIN-ROJWIN/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26AREPELNOUOBE-AREPEL/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP26AREPELNOUOBE-NOUOBE/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP26LEGMAR-LEG/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP26LEGMAR-MAR/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP26BASDIE-BAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP26BASDIE-DIE/orderbook": 1,
+   "markets/KXITFWDOUBLES-26SEP26GOTLASOSUURH-GOTLAS/orderbook": 1,
+   "markets/KXITFWDOUBLES-26SEP26GOTLASOSUURH-OSUURH/orderbook": 1,
+   "markets/KXITFWDOUBLES-26SEP26ELEHUICROCHR-CROCHR/orderbook": 1,
+   "markets/KXITFWDOUBLES-26SEP26ELEHUICROCHR-ELEHUI/orderbook": 1,
+   "markets/trades": 250
+  }
+ },
+ "finished_at": "2026-09-26T22:31:16.021467+00:00"
+}
