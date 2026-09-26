@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-09-26T20:06:11.781952+00:00",
+ "run_id": "20260926T200611Z",
+ "external_parse": {
+  "events": 59,
+  "markets": 723,
+  "skipped_family": 276,
+  "skipped_period": 169,
+  "skipped_live": 9,
+  "one_sided": 0,
+  "rows": 904,
+  "devigged": 278
+ },
+ "smarkets_fetch": {
+  "events_seen": 88,
+  "events_priced": 80,
+  "markets": 553,
+  "markets_mapped": 253,
+  "contracts": 538,
+  "quoted_contracts": 538,
+  "raw": "data/research/external/raw/20260926T200611Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 253,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 506,
+  "two_sided": 494,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 593,
+ "external_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 33,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6735,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Ukraine": 1,
+   "Igor Marcondes": 1,
+   "Filip Paroulek": 1,
+   "Zechariah Hamrouni": 1,
+   "Felix Obermair": 1,
+   "Ryan Morgan": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 6,
+   "MAPPED": 65
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Igor Marcondes": 1,
+   "Yunchaokete Bu": 1,
+   "Riccardo Trione": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9111,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Paul Colin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 41,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 49,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
