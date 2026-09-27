@@ -1,0 +1,76 @@
+{
+ "run_id": "20260927T083311Z",
+ "started_at": "2026-09-27T08:33:11.772722+00:00",
+ "passes": 6,
+ "requests": 12,
+ "observations": 145,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPSETWINNER-26SEP27MANSHA-2": {
+   "confidence": "B",
+   "bracket_s": 221.620047,
+   "first_ball": "2026-09-27T08:38:12.986113+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP27MANSHA-1": {
+   "confidence": "B",
+   "bracket_s": 221.620047,
+   "first_ball": "2026-09-27T08:38:12.986113+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP27MANSHA": {
+   "confidence": "B",
+   "bracket_s": 221.620047,
+   "first_ball": "2026-09-27T08:38:12.986113+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26SEP27MANSHA": {
+   "confidence": "B",
+   "bracket_s": 221.620047,
+   "first_ball": "2026-09-27T08:38:12.986113+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP27MANSHA": {
+   "confidence": "B",
+   "bracket_s": 221.620047,
+   "first_ball": "2026-09-27T08:38:12.986113+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 12
+ },
+ "mapping": {
+  "MATCHED": 145,
+  "UNMATCHED": 396,
+  "AMBIGUOUS": 18
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26SEP27FERGIB": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184107 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP27FERGIB-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184107 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26SEP27FERGIB-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184107 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-09-27T08:42:11.975660+00:00"
+}
