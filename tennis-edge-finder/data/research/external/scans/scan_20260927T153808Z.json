@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-27T15:38:08.697972+00:00",
+ "run_id": "20260927T153808Z",
+ "external_parse": {
+  "events": 96,
+  "markets": 936,
+  "skipped_family": 219,
+  "skipped_period": 282,
+  "skipped_live": 27,
+  "one_sided": 48,
+  "rows": 1355,
+  "devigged": 386
+ },
+ "smarkets_fetch": {
+  "events_seen": 136,
+  "events_priced": 80,
+  "markets": 561,
+  "markets_mapped": 171,
+  "contracts": 348,
+  "quoted_contracts": 348,
+  "raw": "data/research/external/raw/20260927T153808Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 171,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 344,
+  "two_sided": 343,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 357,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Europe": 1,
+   "Francesco G Colasanto": 1,
+   "Andres Martin (RAC)": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Felipe Meligeni Rodrigues Alves": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Alevtina Ibragimova": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8605,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Aristotelis Bezianis": 1,
+   "Leon Giorgi Sarishvili": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 86,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
