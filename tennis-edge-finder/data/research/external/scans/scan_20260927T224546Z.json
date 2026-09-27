@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-27T22:45:46.619942+00:00",
+ "run_id": "20260927T224546Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 1541,
+  "skipped_family": 355,
+  "skipped_period": 444,
+  "skipped_live": 2,
+  "one_sided": 28,
+  "rows": 2529,
+  "devigged": 714
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 788,
+  "markets_mapped": 266,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20260927T224546Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 266,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 115,
+  "rows": 473,
+  "two_sided": 467,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1133,
+ "external_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7963,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Alafia Ayeni": 1,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Alafia Ayeni": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 191,
+  "by_status": {
+   "MAPPED": 156,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.8168,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Pyotr Nesterov": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Alexander Binda": 1,
+   "Jilong Huang": 1,
+   "Alafia Ayeni": 1,
+   "Darya Khomutsianskaya": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 156,
+ "model_witness_available": true,
+ "rows": 134,
+ "counts": {
+  "PASS": 130,
+  "tri:MODEL_LONE_OUTLIER": 54,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
