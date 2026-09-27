@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-27T10:29:52.366677+00:00",
+ "run_id": "20260927T102952Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 1312,
+  "skipped_family": 316,
+  "skipped_period": 399,
+  "skipped_live": 22,
+  "one_sided": 78,
+  "rows": 1804,
+  "devigged": 518
+ },
+ "smarkets_fetch": {
+  "events_seen": 123,
+  "events_priced": 80,
+  "markets": 652,
+  "markets_mapped": 266,
+  "contracts": 558,
+  "quoted_contracts": 558,
+  "raw": "data/research/external/raw/20260927T102952Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 266,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 537,
+  "two_sided": 533,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 269,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 83,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.83,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Anhelina Kalinina": 1,
+   "Elina Svitolina": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Bruno Milani": 1,
+   "Murkel Dellien": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Yunchaokete Bu": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Alafia Ayeni": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8506,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Pyotr Nesterov": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Zaccharie Cado": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
