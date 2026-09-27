@@ -1,0 +1,70 @@
+{
+ "run_id": "20260927T215133Z",
+ "started_at": "2026-09-27T21:51:33.522410+00:00",
+ "incomplete": [
+  {
+   "stage": "trades",
+   "info": {
+    "pages": 250,
+    "error": null,
+    "truncated_by_max_pages": true
+   },
+   "scanned": 250000
+  }
+ ],
+ "counts": {
+  "open_markets": 1113,
+  "quotes_written": 317,
+  "quotes_unchanged": 796,
+  "events_new": 1,
+  "books": 28,
+  "book_candidates": 28,
+  "trades_tennis": 5838,
+  "trades_global_scanned": 250000,
+  "settlements": 0,
+  "candles": 0
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 425,
+  "retries": 3,
+  "http_429": 3,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 44.579430488012,
+  "by_path": {
+   "markets": 143,
+   "events/KXWTACHALLENGERMATCH-26SEP28JEALAM": 1,
+   "markets/KXATPDOUBLES-26SEP23CABTRASUNZHA-CABTRA/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP23CABTRASUNZHA-SUNZHA/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-SAF20/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-SAF21/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-YUN20/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-YUN21/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-1-SAF/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-1-YUN/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-2-SAF/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-2-YUN/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27BERSTE-BER/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27BERSTE-STE/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27HRUGAS-GAS/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27HRUGAS-HRU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27OLITUL-OLI/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27OLITUL-TUL/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27PALOST-OST/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27PALOST-PAL/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27VANSTE-STE/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27VANSTE-VAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27AVEBAS-AVE/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27AVEBAS-BAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27ZAMBIG-BIG/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27ZAMBIG-ZAM/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27BASMAR-BAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27BASMAR-MAR/orderbook": 1,
+   "markets/KXITFWMATCH-26SEP27DAYPRE-DAY/orderbook": 1,
+   "markets/KXITFWMATCH-26SEP27DAYPRE-PRE/orderbook": 1,
+   "markets/trades": 250
+  }
+ },
+ "finished_at": "2026-09-27T21:53:05.070054+00:00"
+}
