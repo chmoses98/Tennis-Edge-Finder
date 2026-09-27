@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-27T08:04:17.252114+00:00",
+ "run_id": "20260927T080417Z",
+ "external_parse": {
+  "events": 100,
+  "markets": 1272,
+  "skipped_family": 264,
+  "skipped_period": 405,
+  "skipped_live": 12,
+  "one_sided": 22,
+  "rows": 1950,
+  "devigged": 580
+ },
+ "smarkets_fetch": {
+  "events_seen": 120,
+  "events_priced": 80,
+  "markets": 743,
+  "markets_mapped": 296,
+  "contracts": 624,
+  "quoted_contracts": 624,
+  "raw": "data/research/external/raw/20260927T080417Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 296,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 596,
+  "two_sided": 594,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 690,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 75,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8152,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Ukraine": 1,
+   "Riccardo Trione": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 4,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Yunchaokete Bu": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8957,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Pyotr Nesterov": 1,
+   "Zaccharie Cado": 1,
+   "Riccardo Trione": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 84,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 150,
+ "counts": {
+  "PASS": 145,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:MODEL_LONE_OUTLIER": 68,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
