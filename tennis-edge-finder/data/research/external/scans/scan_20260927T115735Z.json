@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-27T11:57:35.298166+00:00",
+ "run_id": "20260927T115735Z",
+ "external_parse": {
+  "events": 106,
+  "markets": 1189,
+  "skipped_family": 262,
+  "skipped_period": 371,
+  "skipped_live": 23,
+  "one_sided": 64,
+  "rows": 1687,
+  "devigged": 490
+ },
+ "smarkets_fetch": {
+  "events_seen": 114,
+  "events_priced": 80,
+  "markets": 574,
+  "markets_mapped": 231,
+  "contracts": 482,
+  "quoted_contracts": 482,
+  "raw": "data/research/external/raw/20260927T115735Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 231,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 11,
+  "rows": 471,
+  "two_sided": 469,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 255,
+ "external_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 79,
+   "DOUBLES_UNSUPPORTED": 5,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8061,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Elina Svitolina": 1,
+   "Francesco G Colasanto": 1,
+   "Manas Manoj Dhamne": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Andres Martin (RAC)": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 4,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Alafia Ayeni": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8806,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Pyotr Nesterov": 1,
+   "Joao Goncalves": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Gabriela Clavero Canton": 1,
+   "Malkia Ngounoue": 1,
+   "Carmelle Vial": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 60,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
