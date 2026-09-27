@@ -1,0 +1,35 @@
+{
+ "run_id": "20260927T120250Z",
+ "started_at": "2026-09-27T12:02:50.065821+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 38,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP27HRUTIK": {
+   "confidence": "B",
+   "bracket_s": 194.385037,
+   "first_ball": "2026-09-27T12:06:16.410023+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP27CENKOS": {
+   "confidence": "B",
+   "bracket_s": 194.333347,
+   "first_ball": "2026-09-27T12:07:30.769216+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 38,
+  "UNMATCHED": 423
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-27T12:12:47.880939+00:00"
+}
