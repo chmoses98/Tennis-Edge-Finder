@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-27T21:33:41.659148+00:00",
+ "run_id": "20260927T213341Z",
+ "external_parse": {
+  "events": 104,
+  "markets": 1264,
+  "skipped_family": 306,
+  "skipped_period": 357,
+  "skipped_live": 5,
+  "one_sided": 25,
+  "rows": 2017,
+  "devigged": 576
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 703,
+  "markets_mapped": 242,
+  "contracts": 522,
+  "quoted_contracts": 522,
+  "raw": "data/research/external/raw/20260927T213341Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 242,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 94,
+  "rows": 428,
+  "two_sided": 420,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 1091,
+ "external_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.766,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Dominic Stephan Stricker": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Alafia Ayeni": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.8242,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Alexander Binda": 1,
+   "Jilong Huang": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Darya Khomutsianskaya": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 122,
+ "counts": {
+  "PASS": 115,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:MODEL_LONE_OUTLIER": 58,
+  "tri:MARKETS_AGREE": 12,
+  "WATCH": 6,
+  "tri:ALL_THREE_DISAGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
