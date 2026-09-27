@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-27T14:18:19.362019+00:00",
+ "run_id": "20260927T141819Z",
+ "external_parse": {
+  "events": 91,
+  "markets": 785,
+  "skipped_family": 196,
+  "skipped_period": 227,
+  "skipped_live": 33,
+  "one_sided": 42,
+  "rows": 1116,
+  "devigged": 320
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 535,
+  "markets_mapped": 245,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20260927T141819Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 245,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 83,
+  "rows": 421,
+  "two_sided": 417,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 191,
+ "external_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.7711,
+  "top_refusal_subjects": {
+   "Europe": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Francesco G Colasanto": 1,
+   "Manas Manoj Dhamne": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Andres Martin (RAC)": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 3
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 3,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Alafia Ayeni": 1,
+   "Igor Marcondes": 1,
+   "Alevtina Ibragimova": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9014,
+  "top_refusal_subjects": {
+   "Pyotr Nesterov": 1,
+   "Joao Goncalves": 1,
+   "Augusto Scheidt": 1,
+   "Bruno Milani": 1,
+   "Darya Khomutsianskaya": 1,
+   "Bogdan Seleznev": 1,
+   "Gabriela Clavero Canton": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 100,
+ "kalshi_mapped_matches": 64,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
