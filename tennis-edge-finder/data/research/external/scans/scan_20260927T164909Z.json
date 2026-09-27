@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-27T16:49:09.322110+00:00",
+ "run_id": "20260927T164909Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 1165,
+  "skipped_family": 258,
+  "skipped_period": 339,
+  "skipped_live": 20,
+  "one_sided": 51,
+  "rows": 1719,
+  "devigged": 517
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 485,
+  "markets_mapped": 141,
+  "contracts": 284,
+  "quoted_contracts": 284,
+  "raw": "data/research/external/raw/20260927T164909Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 141,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 280,
+  "two_sided": 279,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 337,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7636,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "Jodie Anna Burrage": 1,
+   "Europe": 1,
+   "Francesco G Colasanto": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Felipe Meligeni Rodrigues Alves": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Alevtina Ibragimova": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8444,
+  "top_refusal_subjects": {
+   "Chuan Ding": 1,
+   "Jilong Huang": 1,
+   "Igor Marcondes": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Chetanna Amadike": 1,
+   "AUM HIREN THAKKAR": 1,
+   "Ioannis Stamatopoulos": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 72,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
