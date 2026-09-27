@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-27T12:36:55.597241+00:00",
+ "run_id": "20260927T123655Z",
+ "external_parse": {
+  "events": 99,
+  "markets": 1172,
+  "skipped_family": 297,
+  "skipped_period": 359,
+  "skipped_live": 23,
+  "one_sided": 71,
+  "rows": 1561,
+  "devigged": 444
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 464,
+  "markets_mapped": 193,
+  "contracts": 398,
+  "quoted_contracts": 398,
+  "raw": "data/research/external/raw/20260927T123655Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 193,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 394,
+  "two_sided": 389,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 602,
+ "external_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 76,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8352,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Anhelina Kalinina": 1,
+   "Elina Svitolina": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 3,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 3,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Alafia Ayeni": 1,
+   "Igor Marcondes": 1,
+   "Alevtina Ibragimova": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8901,
+  "top_refusal_subjects": {
+   "Pyotr Nesterov": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Gabriela Clavero Canton": 1,
+   "Carmelle Vial": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 81,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 104,
+  "tri:INSUFFICIENT_INPUTS": 55,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "SHADOW_BET": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4,
+  "kalshi_not_two_sided": 2
+ }
+}
