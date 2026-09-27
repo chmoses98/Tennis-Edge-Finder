@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-27T23:36:04.191003+00:00",
+ "run_id": "20260927T233604Z",
+ "external_parse": {
+  "events": 125,
+  "markets": 1680,
+  "skipped_family": 380,
+  "skipped_period": 494,
+  "skipped_live": 2,
+  "one_sided": 28,
+  "rows": 2799,
+  "devigged": 778
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1027,
+  "markets_mapped": 357,
+  "contracts": 786,
+  "quoted_contracts": 786,
+  "raw": "data/research/external/raw/20260927T233604Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 357,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 130,
+  "rows": 656,
+  "two_sided": 649,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 539,
+ "external_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 92,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Alafia Ayeni": 1,
+   "Dominic Stephan Stricker": 1,
+   "Manas Manoj Dhamne": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 8,
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Alafia Ayeni": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Pyotr Nesterov": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Alexander Binda": 1,
+   "Jilong Huang": 1,
+   "Alafia Ayeni": 1,
+   "Jure Siftar": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 108,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MARKETS_AGREE": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
