@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-27T06:02:34.239970+00:00",
+ "run_id": "20260927T060234Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 1172,
+  "skipped_family": 308,
+  "skipped_period": 321,
+  "skipped_live": 6,
+  "one_sided": 15,
+  "rows": 1748,
+  "devigged": 528
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 746,
+  "markets_mapped": 291,
+  "contracts": 612,
+  "quoted_contracts": 612,
+  "raw": "data/research/external/raw/20260927T060234Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 291,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 576,
+  "two_sided": 565,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 264,
+ "external_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8049,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Ukraine": 1,
+   "Riccardo Trione": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yunchaokete Bu": 1,
+   "Riccardo Trione": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Joao Goncalves": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8644,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Bruno Milani": 1,
+   "Pyotr Nesterov": 1,
+   "Riccardo Trione": 1,
+   "Paul Colin": 1,
+   "Carmelle Vial": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 84,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
