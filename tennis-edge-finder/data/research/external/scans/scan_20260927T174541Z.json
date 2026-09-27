@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-27T17:45:41.049043+00:00",
+ "run_id": "20260927T174541Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 1105,
+  "skipped_family": 253,
+  "skipped_period": 318,
+  "skipped_live": 14,
+  "one_sided": 50,
+  "rows": 1615,
+  "devigged": 484
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 496,
+  "markets_mapped": 144,
+  "contracts": 292,
+  "quoted_contracts": 292,
+  "raw": "data/research/external/raw/20260927T174541Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 144,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 3,
+  "rows": 289,
+  "two_sided": 289,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 487,
+ "external_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7677,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "Jodie Anna Burrage": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Felipe Meligeni Rodrigues Alves": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Alevtina Ibragimova": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.813,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Chuan Ding": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Denis Klok": 1,
+   "Rafael Behr": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 100,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
