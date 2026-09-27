@@ -1,0 +1,61 @@
+{
+ "run_id": "20260927T225803Z",
+ "started_at": "2026-09-27T22:58:03.648537+00:00",
+ "incomplete": [
+  {
+   "stage": "trades",
+   "info": {
+    "pages": 250,
+    "error": null,
+    "truncated_by_max_pages": true
+   },
+   "scanned": 250000
+  }
+ ],
+ "counts": {
+  "open_markets": 1131,
+  "quotes_written": 408,
+  "quotes_unchanged": 723,
+  "events_new": 0,
+  "books": 20,
+  "book_candidates": 20,
+  "trades_tennis": 3933,
+  "trades_global_scanned": 250000,
+  "settlements": 0,
+  "candles": 0
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 416,
+  "retries": 3,
+  "http_429": 3,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 42.08330829746742,
+  "by_path": {
+   "markets": 143,
+   "markets/KXATPDOUBLES-26SEP23CABTRASUNZHA-CABTRA/orderbook": 1,
+   "markets/KXATPDOUBLES-26SEP23CABTRASUNZHA-SUNZHA/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-SAF20/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-SAF21/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-YUN20/orderbook": 1,
+   "markets/KXATPEXACTMATCH-26SEP26SAFYUN-YUN21/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-1-SAF/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-1-YUN/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-2-SAF/orderbook": 1,
+   "markets/KXATPSETWINNER-26SEP26SAFYUN-2-YUN/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27BERSTE-BER/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27BERSTE-STE/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27HRUGAS-GAS/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26SEP27HRUGAS-HRU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27PALOST-OST/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27PALOST-PAL/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27AVEBAS-AVE/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27AVEBAS-BAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27ZAMBIG-BIG/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26SEP27ZAMBIG-ZAM/orderbook": 1,
+   "markets/trades": 250
+  }
+ },
+ "finished_at": "2026-09-27T22:59:33.627445+00:00"
+}
