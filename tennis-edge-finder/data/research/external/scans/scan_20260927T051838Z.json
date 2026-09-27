@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-27T05:18:38.603130+00:00",
+ "run_id": "20260927T051838Z",
+ "external_parse": {
+  "events": 59,
+  "markets": 723,
+  "skipped_family": 276,
+  "skipped_period": 169,
+  "skipped_live": 9,
+  "one_sided": 0,
+  "rows": 904,
+  "devigged": 278
+ },
+ "smarkets_fetch": {
+  "events_seen": 114,
+  "events_priced": 80,
+  "markets": 722,
+  "markets_mapped": 292,
+  "contracts": 614,
+  "quoted_contracts": 614,
+  "raw": "data/research/external/raw/20260927T051838Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 292,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 589,
+  "two_sided": 579,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 246,
+ "external_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 33,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6735,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Ukraine": 1,
+   "Igor Marcondes": 1,
+   "Filip Paroulek": 1,
+   "Zechariah Hamrouni": 1,
+   "Felix Obermair": 1,
+   "Ryan Morgan": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yunchaokete Bu": 1,
+   "Riccardo Trione": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Joao Goncalves": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8833,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Bruno Milani": 1,
+   "Pyotr Nesterov": 1,
+   "Zaccharie Cado": 1,
+   "Riccardo Trione": 1,
+   "Carmelle Vial": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 87,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 79,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 43,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {}
+}
