@@ -1,0 +1,29 @@
+{
+ "run_id": "20260927T141231Z",
+ "started_at": "2026-09-27T14:12:31.237201+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 7,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP27MARGRA": {
+   "confidence": "B",
+   "bracket_s": 187.592902,
+   "first_ball": "2026-09-27T14:17:49.710469+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 7,
+  "UNMATCHED": 297
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-27T14:21:37.328382+00:00"
+}
