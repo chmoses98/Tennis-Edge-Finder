@@ -25,6 +25,14 @@ FAMILIES = {
     "ANY_SET_WINNER": {"scope": "MATCH", "projectable": True},
     "PLAYER_ACES": {"scope": "MATCH", "projectable": False, "note": "needs ace-rate model; not built"},
     "GAME_WINNER_INPLAY": {"scope": "MATCH_INPLAY", "projectable": False, "note": "in-play game markets; pregame engine does not price"},
+    # A binary on ONE rubber of a team event (Laver Cup): "If X wins the A vs B professional tennis match in
+    # the 2026 Laver Cup ... after a ball has been played". Payoff semantics are exactly a match winner,
+    # singles or doubles as the series says. Deliberately NOT priced: the contract does not state the
+    # scoring format, config/formats.json has no Laver Cup entry (the generic team_events_bo3 row assumes a
+    # final-set tiebreak at 6-6, which is not something to guess), and team-event rubbers carry selection
+    # and incentive effects no rating here has seen.
+    "TEAM_EVENT_MATCH_WINNER": {"scope": "MATCH", "projectable": False,
+                                "note": "team-event rubber (Laver Cup): match-winner semantics, scoring format not in config and not stated by the contract; not priced"},
     "TOURNAMENT_WINNER": {"scope": "TOURNAMENT", "projectable": True},
     "ROUND_ADVANCE": {"scope": "TOURNAMENT", "projectable": True},
     "ROUND_OF_ELIMINATION": {"scope": "TOURNAMENT", "projectable": True},
@@ -57,6 +65,8 @@ SERIES = {
     "KXWTAGAME": ("MATCH_WINNER", "WTA", "TOUR", "singles"),
     "KXUNITEDCUPMATCH": ("MATCH_WINNER", "MIXED", "TEAM", "singles"),
     "KXDAVISCUPMATCH": ("MATCH_WINNER", "ATP", "TEAM", "singles"),
+    "KXLAVERCUPMATCH": ("TEAM_EVENT_MATCH_WINNER", "ATP", "TEAM", "singles"),
+    "KXLAVERCUPDOUBLESMATCH": ("TEAM_EVENT_MATCH_WINNER", "ATP", "TEAM", "doubles"),
     "KXTENNISEXHIBITION": ("MATCH_WINNER", "ANY", "EXHIBITION", "singles"),
     "KXEXHIBITIONMEN": ("MATCH_WINNER", "ATP", "EXHIBITION", "singles"),
     "KXEXHIBITIONWOMEN": ("MATCH_WINNER", "WTA", "EXHIBITION", "singles"),

@@ -47,6 +47,16 @@ jobs:
         run: |
           PYTHONPATH=. python3 scripts/run_tennis.py | tail -20
           PYTHONPATH=. python3 scripts/ops/settle_ledger.py | tail -10
+          # prospective confirmation: score the FROZEN candidates on post-freeze evidence (derived,
+          # append-only layer; never writes a candidate definition). Non-fatal so a harvest problem cannot
+          # block settlement or health, but it is surfaced as a warning.
+          if ! EVIDENCE_SOURCE_LABEL="tennis-data@$(git rev-parse --short origin/tennis-data)" \
+               PYTHONPATH=. python3 scripts/research/harvest_candidate_evidence.py --data-root data \
+               --evidence-out data/research/candidate_evidence \
+               --report-out data/research/candidate_confirmation > harvest.log 2>&1; then
+            echo "::warning::candidate evidence harvest failed"
+          fi
+          tail -12 harvest.log
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"
           cat data/research/health_latest.json | python3 -c "import json,sys; [print(g['gate'], g['status']) for g in json.load(sys.stdin)]"
       - name: Publish research outputs

@@ -1,0 +1,107 @@
+{
+ "candidate_id": "EC-2026-002-MKTCOND-GAME-SPREAD",
+ "kind": "PRICING_ACCURACY",
+ "status": "UNSCORABLE_MISSING_HISTORICAL_FIELDS",
+ "status_reason": "1004 post-freeze observations could not be evaluated because a field the frozen rule needs was not preserved at capture; 0 scorable of 400 required",
+ "universe": {
+  "kalshi_listed_after_freeze": {
+   "contracts_listed": 1004,
+   "physical_matches": 254,
+   "by_family": {
+    "TOTAL_GAMES": 732,
+    "GAME_SPREAD": 272
+   },
+   "contracts_settled": 890
+  },
+  "ledger_rows_after_freeze (Gen-1 DP lane)": {
+   "rows": 1394,
+   "model_versions": {
+    "elo_surface_k_lo+sr_v0.1": 1394
+   },
+   "tickers": 661,
+   "matches": 166
+  }
+ },
+ "metrics": {
+  "eligible_n": 0,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "missing_fields": [
+   "market_conditioned_v1 game-differential / total-games expectation",
+   "fundamental-lane expectation",
+   "completed-match game differential (no retirement)"
+  ],
+  "note": "no metric is computed: the probability the frozen rule decides on was not preserved at capture time, and reconstructing it now would be synthesising historical state"
+ },
+ "exclusion_counts": {
+  "MISSING_HISTORICAL_FIELD": 1004
+ },
+ "summary": {
+  "kind": "PRICING_ACCURACY",
+  "minimum_n": 400,
+  "eligible_n": 0,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "unsettled_n": 0,
+  "clv_pending_n": 0,
+  "unscorable_n": 1004,
+  "accuracy_pass": null,
+  "clv_pass": null,
+  "economics_pass": null,
+  "clv_required": false,
+  "notes": []
+ },
+ "notes": [
+  "Kalshi listed 1004 spread/total contracts on 254 physical matches after the freeze; no games-level sports truth exists to compute a game-differential MAE even for those, and the metric is scored per match, so 254 matches could not reach 400",
+  "The unscorable count is the listed contracts; ledger rows are reported separately."
+ ],
+ "field_audit": [
+  {
+   "field": "market family GAME_SPREAD / TOTAL_GAMES with a quoted line",
+   "source": "capture quote records",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "market_conditioned_v1 game-differential / total-games expectation",
+   "source": "none",
+   "class": "NOT_AVAILABLE",
+   "note": "never computed prospectively"
+  },
+  {
+   "field": "fundamental-lane expectation",
+   "source": "none",
+   "class": "NOT_AVAILABLE",
+   "note": "the ledger's spread/total rows are Gen-1 DP prices, not the frozen lanes"
+  },
+  {
+   "field": "completed-match game differential (no retirement)",
+   "source": "no games-level sports truth is wired into settlement",
+   "class": "NOT_AVAILABLE",
+   "note": "Kalshi settles each line as yes/no; games won by each player are not captured"
+  },
+  {
+   "field": "settlement result",
+   "source": "capture settlements sweep (Kalshi status=settled), discovery settled block",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  }
+ ],
+ "harvester_version": 1,
+ "harvest_run": "20260927T195248Z",
+ "evidence_rows_this_run": 0,
+ "evidence_rows_appended": 0,
+ "evidence_chain_violations": [],
+ "frozen_definition": {
+  "frozen_at": "2026-09-12T06:30:00+00:00",
+  "confirmation_start": "2026-09-12T06:30:00+00:00",
+  "minimum_n": 400,
+  "inclusion_rule": "As EC-2026-001 but for families GAME_SPREAD and TOTAL_GAMES, requiring a quoted line and a completed match (no retirement).",
+  "required_accuracy_condition": "mean absolute error on game differential below the fundamental lane by >= 0.05 games with a paired bootstrap 95% CI excluding zero",
+  "required_clv_condition": "no CLV condition asserted",
+  "required_after_fee_condition": "as EC-2026-001",
+  "model_version": "market_conditioned_v1 + gen2_dyn_hier_sr_v1",
+  "status": "PROSPECTIVE_PENDING"
+ },
+ "frozen_definition_fingerprint": "982b3fd7ae2bb31a"
+}

@@ -64,3 +64,6 @@ Docs: docs/ARCHITECTURE.md, DATA_SOURCES.md, KALSHI_MARKET_TAXONOMY.md, IDENTITY
 VALIDATION.md, CLV_AND_SETTLEMENT.md, PROSPECTIVE_RESEARCH_PROTOCOL.md, PRODUCTION_HEALTH.md,
 KNOWN_LIMITATIONS.md, DECISION_LOG.md, FIRST_BALL_SOURCES.md, FIRST_BALL_TRUTH.md.
 Reports: MORNING_REPORT.md, FIRST_BALL_WAVE_REPORT.md. Migration record: MIGRATION_AUDIT.md.
+Prospective confirmation of the frozen candidates: PROSPECTIVE_CONFIRMATION_REPORT.md,
+research/PROSPECTIVE_EVIDENCE_AUDIT.md, `scripts/research/harvest_candidate_evidence.py` (derived,
+append-only evidence layer in `data/research/candidate_evidence/`; candidate definitions are never written).

@@ -1,0 +1,303 @@
+{
+ "ledger_rows": 12372,
+ "strict_rows": 2312,
+ "timing_classes": {
+  "START_UNKNOWN": 9684,
+  "STRICT_PREGAME": 2358,
+  "POST_START": 297,
+  "AMBIGUOUS": 33
+ },
+ "close_basis": {
+  "NO_FIRST_BALL_TRUTH": 9718,
+  "FIRST_BALL_BRACKET_LOWER": 2654
+ },
+ "views": {
+  "A_all_strict_observations": {
+   "label": "every strict row; BOTH sides of each binary pair and every re-pricing run are included, so the mean is the average cost of crossing the spread in both directions, not a strategy",
+   "by_family": {
+    "EXACT_SET_SCORE": {
+     "n": 210,
+     "mean_exec_clv": -0.010333333333333333,
+     "median_exec_clv": -0.02999999999999997,
+     "ci95": [
+      -0.028715476190476194,
+      0.009048809523809506
+     ],
+     "excludes_zero": false,
+     "share_positive": 0.17142857142857143,
+     "mean_mid_clv": 0.021619047619047618,
+     "mean_entry_spread": 0.020476190476190436,
+     "mean_entry_fee": 0.017999999999999995,
+     "median_hours_entry_to_first_ball": 5.08916923625
+    },
+    "GAME_SPREAD": {
+     "n": 142,
+     "mean_exec_clv": -0.08126760563380282,
+     "median_exec_clv": -0.040000000000000036,
+     "ci95": [
+      -0.10936619718309858,
+      -0.05253521126760564
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.15492957746478872,
+     "mean_mid_clv": 0.01288732394366197,
+     "mean_entry_spread": 0.07640845070422518,
+     "mean_entry_fee": 0.019718309859154938,
+     "median_hours_entry_to_first_ball": 5.166416406527778
+    },
+    "MATCH_WINNER": {
+     "n": 920,
+     "mean_exec_clv": -0.015260869565217388,
+     "median_exec_clv": -0.010000000000000009,
+     "ci95": [
+      -0.01977173913043478,
+      -0.010901902173913049
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.13260869565217392,
+     "mean_mid_clv": 0.0013478260869565241,
+     "mean_entry_spread": 0.018858695652173848,
+     "mean_entry_fee": 0.018521739130434492,
+     "median_hours_entry_to_first_ball": 5.688336169027778
+    },
+    "MATCH_WINNER (doubles)": {
+     "n": 92,
+     "mean_exec_clv": -0.11369565217391302,
+     "median_exec_clv": -0.050000000000000044,
+     "ci95": [
+      -0.14326086956521736,
+      -0.08684510869565219
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.06521739130434782,
+     "mean_mid_clv": 0.015271739130434779,
+     "mean_entry_spread": 0.1367391304347825,
+     "mean_entry_fee": 0.019021739130434794,
+     "median_hours_entry_to_first_ball": 10.479594146111111
+    },
+    "SET_WINNER": {
+     "n": 944,
+     "mean_exec_clv": -0.08099576271186441,
+     "median_exec_clv": -0.040000000000000036,
+     "ci95": [
+      -0.0893646716101695,
+      -0.07278575211864409
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.045550847457627115,
+     "mean_mid_clv": -0.0009322033898305112,
+     "mean_entry_spread": 0.10039194915254274,
+     "mean_entry_fee": 0.01891949152542342,
+     "median_hours_entry_to_first_ball": 7.323283105416667
+    },
+    "other: SET_SPREAD": {
+     "n": 4,
+     "mean_exec_clv": -0.009999999999999981,
+     "median_exec_clv": -0.009999999999999981,
+     "ci95": [
+      -0.010000000000000009,
+      -0.009999999999999953
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.0,
+     "mean_mid_clv": 0.0012500000000000289,
+     "mean_entry_spread": 0.012499999999999983,
+     "mean_entry_fee": 0.02,
+     "median_hours_entry_to_first_ball": 3.8323554566666664
+    }
+   }
+  },
+  "B_one_row_per_physical_decision": {
+   "label": "earliest STRICT_PREGAME observation of each physical question; for paired families only the side-A contract is kept, so each question counts once; a YES-at-the-ask entry",
+   "by_family": {
+    "EXACT_SET_SCORE": {
+     "n": 136,
+     "mean_exec_clv": -0.004191176470588234,
+     "median_exec_clv": -0.02999999999999997,
+     "ci95": [
+      -0.03235294117647059,
+      0.025590073529411738
+     ],
+     "excludes_zero": false,
+     "share_positive": 0.20588235294117646,
+     "mean_mid_clv": 0.03198529411764706,
+     "mean_entry_spread": 0.022058823529411766,
+     "mean_entry_fee": 0.017499999999999998,
+     "median_hours_entry_to_first_ball": 3.6031279018055558
+    },
+    "GAME_SPREAD": {
+     "n": 95,
+     "mean_exec_clv": -0.09263157894736843,
+     "median_exec_clv": -0.06,
+     "ci95": [
+      -0.1346315789473684,
+      -0.05063157894736842
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.18947368421052632,
+     "mean_mid_clv": 0.014736842105263145,
+     "mean_entry_spread": 0.08452631578947362,
+     "mean_entry_fee": 0.0196842105263158,
+     "median_hours_entry_to_first_ball": 3.3529187569444447
+    },
+    "MATCH_WINNER": {
+     "n": 270,
+     "mean_exec_clv": -0.016185185185185184,
+     "median_exec_clv": -0.010000000000000009,
+     "ci95": [
+      -0.027777777777777776,
+      -0.005222222222222221
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.16296296296296298,
+     "mean_mid_clv": 0.002648148148148148,
+     "mean_entry_spread": 0.024111111111110906,
+     "mean_entry_fee": 0.01844444444444436,
+     "median_hours_entry_to_first_ball": 6.104579784027778
+    },
+    "MATCH_WINNER (doubles)": {
+     "n": 19,
+     "mean_exec_clv": -0.10789473684210525,
+     "median_exec_clv": -0.050000000000000044,
+     "ci95": [
+      -0.16421052631578945,
+      -0.06210526315789473
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.0,
+     "mean_mid_clv": 0.04,
+     "mean_entry_spread": 0.18105263157894738,
+     "mean_entry_fee": 0.01842105263157895,
+     "median_hours_entry_to_first_ball": 14.444201671944445
+    },
+    "SET_WINNER": {
+     "n": 209,
+     "mean_exec_clv": -0.1,
+     "median_exec_clv": -0.04999999999999999,
+     "ci95": [
+      -0.12282535885167464,
+      -0.07832535885167463
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.06220095693779904,
+     "mean_mid_clv": 0.0014114832535885129,
+     "mean_entry_spread": 0.14669856459330158,
+     "mean_entry_fee": 0.01832535885167464,
+     "median_hours_entry_to_first_ball": 8.823321893055557
+    },
+    "other: SET_SPREAD": {
+     "n": 2,
+     "mean_exec_clv": -0.009999999999999981,
+     "median_exec_clv": -0.009999999999999981,
+     "ci95": [
+      null,
+      null
+     ],
+     "excludes_zero": null,
+     "share_positive": 0.0,
+     "mean_mid_clv": 2.7755575615628914e-17,
+     "mean_entry_spread": 0.009999999999999981,
+     "mean_entry_fee": 0.02,
+     "median_hours_entry_to_first_ball": 6.011505928611111
+    }
+   }
+  },
+  "C_model_directed_descriptive": {
+   "label": "DESCRIPTIVE ONLY: the side the Gen-1 ledger row named at capture (ev.best_side), whatever its EV; not a selection rule, not a candidate, and not evidence for any frozen claim",
+   "by_family": {
+    "EXACT_SET_SCORE": {
+     "n": 136,
+     "mean_exec_clv": -0.0018382352941176535,
+     "median_exec_clv": -0.03,
+     "ci95": [
+      -0.029779411764705888,
+      0.02838235294117646
+     ],
+     "excludes_zero": false,
+     "share_positive": 0.20588235294117646,
+     "mean_mid_clv": 0.03198529411764706,
+     "mean_entry_spread": 0.022058823529411766,
+     "mean_entry_fee": 0.017499999999999998,
+     "median_hours_entry_to_first_ball": 3.6031279018055558
+    },
+    "GAME_SPREAD": {
+     "n": 95,
+     "mean_exec_clv": -0.09336842105263157,
+     "median_exec_clv": -0.06,
+     "ci95": [
+      -0.136,
+      -0.04926052631578951
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.16842105263157894,
+     "mean_mid_clv": 0.014736842105263145,
+     "mean_entry_spread": 0.08452631578947362,
+     "mean_entry_fee": 0.0196842105263158,
+     "median_hours_entry_to_first_ball": 3.3529187569444447
+    },
+    "MATCH_WINNER": {
+     "n": 270,
+     "mean_exec_clv": -0.007444444444444444,
+     "median_exec_clv": -0.010000000000000009,
+     "ci95": [
+      -0.015370370370370371,
+      0.0016296296296296323
+     ],
+     "excludes_zero": false,
+     "share_positive": 0.17407407407407408,
+     "mean_mid_clv": 0.002648148148148148,
+     "mean_entry_spread": 0.024111111111110906,
+     "mean_entry_fee": 0.01844444444444436,
+     "median_hours_entry_to_first_ball": 6.104579784027778
+    },
+    "MATCH_WINNER (doubles)": {
+     "n": 19,
+     "mean_exec_clv": -0.13052631578947368,
+     "median_exec_clv": -0.04999999999999993,
+     "ci95": [
+      -0.20789473684210524,
+      -0.06421052631578948
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.0,
+     "mean_mid_clv": 0.04,
+     "mean_entry_spread": 0.18105263157894738,
+     "mean_entry_fee": 0.01842105263157895,
+     "median_hours_entry_to_first_ball": 14.444201671944445
+    },
+    "SET_WINNER": {
+     "n": 209,
+     "mean_exec_clv": -0.0876555023923445,
+     "median_exec_clv": -0.040000000000000036,
+     "ci95": [
+      -0.1061244019138756,
+      -0.06918660287081341
+     ],
+     "excludes_zero": true,
+     "share_positive": 0.06698564593301436,
+     "mean_mid_clv": 0.0014114832535885129,
+     "mean_entry_spread": 0.14669856459330158,
+     "mean_entry_fee": 0.01832535885167464,
+     "median_hours_entry_to_first_ball": 8.823321893055557
+    },
+    "other: SET_SPREAD": {
+     "n": 2,
+     "mean_exec_clv": -0.010000000000000009,
+     "median_exec_clv": -0.010000000000000009,
+     "ci95": [
+      null,
+      null
+     ],
+     "excludes_zero": null,
+     "share_positive": 0.0,
+     "mean_mid_clv": 2.7755575615628914e-17,
+     "mean_entry_spread": 0.009999999999999981,
+     "mean_entry_fee": 0.02,
+     "median_hours_entry_to_first_ball": 6.011505928611111
+    }
+   }
+  }
+ },
+ "published_clv_run": "20260927T171659Z.jsonl",
+ "published_strict_rows": 2312
+}
