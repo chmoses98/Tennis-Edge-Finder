@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-27T07:30:50.034224+00:00",
+ "run_id": "20260927T073050Z",
+ "external_parse": {
+  "events": 88,
+  "markets": 1032,
+  "skipped_family": 251,
+  "skipped_period": 291,
+  "skipped_live": 12,
+  "one_sided": 15,
+  "rows": 1580,
+  "devigged": 475
+ },
+ "smarkets_fetch": {
+  "events_seen": 126,
+  "events_priced": 80,
+  "markets": 747,
+  "markets_mapped": 297,
+  "contracts": 624,
+  "quoted_contracts": 624,
+  "raw": "data/research/external/raw/20260927T073050Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 297,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 592,
+  "two_sided": 589,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 305,
+ "external_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Ukraine": 1,
+   "Riccardo Trione": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Guiomar Maristany": 1,
+   "Paul Colin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 3,
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 3,
+   "Riccardo Trione": 1,
+   "Yunchaokete Bu": 1,
+   "Ukraine": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8721,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Zaccharie Cado": 1,
+   "Riccardo Trione": 1,
+   "Paul Colin": 1,
+   "Carmelle Vial": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 123,
+  "tri:INSUFFICIENT_INPUTS": 70,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
