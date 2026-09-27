@@ -1,0 +1,53 @@
+{
+ "run_id": "20260927T112612Z",
+ "started_at": "2026-09-27T11:26:12.591291+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 75,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPSETWINNER-26SEP27HARHUR-2": {
+   "confidence": "B",
+   "bracket_s": 201.337304,
+   "first_ball": "2026-09-27T11:32:48.106587+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26SEP27HARHUR-1": {
+   "confidence": "B",
+   "bracket_s": 201.337304,
+   "first_ball": "2026-09-27T11:32:48.106587+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26SEP27HARHUR": {
+   "confidence": "B",
+   "bracket_s": 201.337304,
+   "first_ball": "2026-09-27T11:32:48.106587+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26SEP27HARHUR": {
+   "confidence": "B",
+   "bracket_s": 201.337304,
+   "first_ball": "2026-09-27T11:32:48.106587+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26SEP27HARHUR": {
+   "confidence": "B",
+   "bracket_s": 201.337304,
+   "first_ball": "2026-09-27T11:32:48.106587+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 75,
+  "UNMATCHED": 408
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-27T11:35:57.524693+00:00"
+}
