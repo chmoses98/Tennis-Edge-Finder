@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-27T09:31:48.493815+00:00",
+ "run_id": "20260927T093148Z",
+ "external_parse": {
+  "events": 96,
+  "markets": 1137,
+  "skipped_family": 284,
+  "skipped_period": 348,
+  "skipped_live": 23,
+  "one_sided": 18,
+  "rows": 1695,
+  "devigged": 486
+ },
+ "smarkets_fetch": {
+  "events_seen": 117,
+  "events_priced": 80,
+  "markets": 657,
+  "markets_mapped": 272,
+  "contracts": 570,
+  "quoted_contracts": 570,
+  "raw": "data/research/external/raw/20260927T093148Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 272,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 539,
+  "two_sided": 534,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 288,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Anhelina Kalinina": 1,
+   "Elina Svitolina": 1,
+   "Riccardo Trione": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Yunchaokete Bu": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8636,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Pyotr Nesterov": 1,
+   "Zaccharie Cado": 1,
+   "Riccardo Trione": 1,
+   "Paul Colin": 1,
+   "Gabriela Clavero Canton": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 80,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
