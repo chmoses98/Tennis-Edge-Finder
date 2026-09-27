@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-27T09:19:07.893121+00:00",
+ "run_id": "20260927T091907Z",
+ "external_parse": {
+  "events": 96,
+  "markets": 1137,
+  "skipped_family": 284,
+  "skipped_period": 348,
+  "skipped_live": 23,
+  "one_sided": 18,
+  "rows": 1695,
+  "devigged": 486
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 637,
+  "markets_mapped": 262,
+  "contracts": 548,
+  "quoted_contracts": 548,
+  "raw": "data/research/external/raw/20260927T091907Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 262,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 536,
+  "two_sided": 533,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 302,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Anhelina Kalinina": 1,
+   "Elina Svitolina": 1,
+   "Riccardo Trione": 1,
+   "Francesco G Colasanto": 1,
+   "Zaccharie Cado": 1,
+   "Manas Manoj Dhamne": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Guiomar Maristany": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 10,
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Yunchaokete Bu": 1,
+   "Zaccharie Cado": 1,
+   "Pyotr Nesterov": 1,
+   "Bruno Milani": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Alafia Ayeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8796,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Alafia Ayeni": 1,
+   "Augusto Scheidt": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Bruno Milani": 1,
+   "Pyotr Nesterov": 1,
+   "Zaccharie Cado": 1,
+   "Riccardo Trione": 1,
+   "Paul Colin": 1,
+   "Gabriela Clavero Canton": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 104,
+  "tri:MODEL_LONE_OUTLIER": 59,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 8,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
