@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260927T020550Z",
-   "age_hours": 15.2,
+   "age_hours": 19.6,
    "complete": true,
    "failures": 0,
    "series_tennis": 145
@@ -49,17 +49,17 @@
   "name": "active_market_projection",
   "status": "PASS",
   "detail": {
-   "projectable_open_pregame": 12,
-   "projected": 12,
+   "projectable_open_pregame": 0,
+   "projected": 0,
    "not_projected": 0,
    "missing_sample": [],
    "excluded_by_policy": {
     "unsupported_family": 133,
-    "past_nominal_start": 46,
-    "closed_since_discovery": 294,
-    "tournament_scope_not_priced_tonight": 210
+    "closed_since_discovery": 342,
+    "past_nominal_start": 12,
+    "tournament_scope_not_priced_tonight": 208
    },
-   "projection_run": "20260927T171626Z"
+   "projection_run": "20260927T213926Z"
   }
  },
  {
@@ -67,8 +67,8 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260927T165855Z",
-   "age_min": 15.8,
+   "run": "20260927T211936Z",
+   "age_min": 18.8,
    "incomplete": [
     {
      "stage": "trades",
@@ -120,7 +120,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 12
+   "MATCHED": 0
   }
  },
  {
@@ -146,11 +146,11 @@
     "observations": 288456,
     "matches_observed": 1031,
     "watchlist": {
-     "total": 78,
-     "levels_with_a_wired_source": 11,
-     "levels_without_any_source": 67,
-     "watched_and_observed": 11,
-     "covered_and_observed": 11,
+     "total": 28,
+     "levels_with_a_wired_source": 3,
+     "levels_without_any_source": 25,
+     "watched_and_observed": 3,
+     "covered_and_observed": 3,
      "pct_covered_with_source_mapping": 1.0
     },
     "pct_classifiable": 0.2173,
@@ -214,7 +214,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-27T17:11:16.326632+00:00",
+   "built_at": "2026-09-27T21:34:16.208928+00:00",
    "rows": 1630988
   }
  },
@@ -224,7 +224,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260927T104415Z",
-   "snapshot_age_days": 0.27,
+   "snapshot_age_days": 0.45,
    "max_season_files": [
     2026,
     2026
