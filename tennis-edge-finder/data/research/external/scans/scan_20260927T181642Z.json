@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-09-27T18:16:42.094598+00:00",
+ "run_id": "20260927T181642Z",
+ "external_parse": {
+  "events": 105,
+  "markets": 1094,
+  "skipped_family": 252,
+  "skipped_period": 311,
+  "skipped_live": 11,
+  "one_sided": 49,
+  "rows": 1649,
+  "devigged": 482
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 486,
+  "markets_mapped": 142,
+  "contracts": 288,
+  "quoted_contracts": 288,
+  "raw": "data/research/external/raw/20260927T181642Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 142,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 274,
+  "two_sided": 267,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1059,
+ "external_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7579,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "Jodie Anna Burrage": 1,
+   "Henrique Pissetti Vialle": 1,
+   "Augusto Scheidt": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Alexander Okonkwo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Augusto Scheidt": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Joao Goncalves": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Alevtina Ibragimova": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 165,
+  "by_status": {
+   "MAPPED": 132,
+   "UNMAPPED_PLAYER": 33
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Alexander Binda": 1,
+   "Jilong Huang": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1
+  }
+ },
+ "matched_both_venues": 72,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 132,
+ "model_witness_available": true,
+ "rows": 128,
+ "counts": {
+  "PASS": 124,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
