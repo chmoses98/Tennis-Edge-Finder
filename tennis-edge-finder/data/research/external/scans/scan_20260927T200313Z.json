@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-09-27T20:03:13.279847+00:00",
+ "run_id": "20260927T200313Z",
+ "external_parse": {
+  "events": 98,
+  "markets": 1072,
+  "skipped_family": 253,
+  "skipped_period": 305,
+  "skipped_live": 6,
+  "one_sided": 41,
+  "rows": 1629,
+  "devigged": 473
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 496,
+  "markets_mapped": 160,
+  "contracts": 328,
+  "quoted_contracts": 328,
+  "raw": "data/research/external/raw/20260927T200313Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 160,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 324,
+  "two_sided": 313,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 270,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7727,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "Jodie Anna Burrage": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Alexander Okonkwo": 1,
+   "Alafia Ayeni": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Alafia Ayeni": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8308,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Joao Goncalves": 1,
+   "Alexander Ikenna Okonkwo": 1,
+   "Darya Khomutsianskaya": 1,
+   "Bogdan Seleznev": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 66,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
