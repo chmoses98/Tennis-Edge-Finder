@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-27T21:23:03.773789+00:00",
+ "run_id": "20260927T212303Z",
+ "external_parse": {
+  "events": 106,
+  "markets": 1250,
+  "skipped_family": 287,
+  "skipped_period": 357,
+  "skipped_live": 7,
+  "one_sided": 25,
+  "rows": 2029,
+  "devigged": 581
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 699,
+  "markets_mapped": 240,
+  "contracts": 518,
+  "quoted_contracts": 518,
+  "raw": "data/research/external/raw/20260927T212303Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 240,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 102,
+  "rows": 416,
+  "two_sided": 408,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 301,
+ "external_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7708,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Alafia Ayeni": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Alafia Ayeni": 1,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8243,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Chuan Ding": 1,
+   "Igor Marcondes": 1,
+   "Alafia Ayeni": 1,
+   "Darya Khomutsianskaya": 1,
+   "Rafael Behr": 1,
+   "Jure Siftar": 1,
+   "Maxim Khorozov": 1,
+   "Andrea Brignacca": 1,
+   "Iulius Maximus Stoica": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 61,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
