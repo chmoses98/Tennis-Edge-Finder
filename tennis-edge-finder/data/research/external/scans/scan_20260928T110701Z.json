@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-28T11:07:01.625428+00:00",
+ "run_id": "20260928T110701Z",
+ "external_parse": {
+  "events": 121,
+  "markets": 1065,
+  "skipped_family": 210,
+  "skipped_period": 333,
+  "skipped_live": 43,
+  "one_sided": 23,
+  "rows": 1759,
+  "devigged": 499
+ },
+ "smarkets_fetch": {
+  "events_seen": 158,
+  "events_priced": 80,
+  "markets": 681,
+  "markets_mapped": 272,
+  "contracts": 582,
+  "quoted_contracts": 582,
+  "raw": "data/research/external/raw/20260928T110701Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 272,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 565,
+  "two_sided": 560,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 734,
+ "external_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.823,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Manas Manoj Dhamne": 1,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alafia Ayeni": 1,
+   "Bertea Ruxandra": 1,
+   "Noma Akugue Noha": 1,
+   "Mayank Sharma": 1,
+   "Denis Klok": 1,
+   "Iulius Maximus Stoica": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 4,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Alafia Ayeni": 1,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 145,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.9006,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Alafia Ayeni": 1,
+   "Pyotr Nesterov": 1,
+   "Darya Khomutsianskaya": 1,
+   "Denis Klok": 1,
+   "Rafael Behr": 1,
+   "Jure Siftar": 1,
+   "Mayank Sharma": 1,
+   "Trishan Dhawan": 1,
+   "Iulius Maximus Stoica": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 145,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
