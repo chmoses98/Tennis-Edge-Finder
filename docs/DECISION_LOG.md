@@ -19,3 +19,15 @@
 | 13:45 | Pregame policy in `run_tennis`: fresh capture universe, refuse ≤ 5 min to nominal start, flag ITF/Challenger as NOMINAL_UNRELIABLE and never actionable | no first-ball truth | price everything |
 | 13:47 | Doubles priced with the singles-Elo baseline, grade capped C, unvalidated | coverage over silence; explicit uncertainty | exclude doubles |
 | 13:50 | Report every model beside the market and state "no edge" | Pinnacle and Kalshi beat every model; hybrid weight on model negative | present model-only numbers |
+
+## 2026-09-27 prospective-evidence harvest
+
+| decision | why | alternative rejected |
+|---|---|---|
+| Score frozen candidates in a separate append-only layer (`data/research/candidate_evidence/`), never in the candidate JSON | the definition files are fingerprinted; an `evidence` list inside them invites edits next to the thresholds | writing into `evidence` |
+| Report W3-001/002, EC-001/002/003 as UNSCORABLE_MISSING_HISTORICAL_FIELDS | the probability each rule decides on was never computed after its freeze; recomputing it now from today's artifacts would synthesise historical state | back-filling fair_v1 / market-conditioned predictions retrospectively |
+| Do not use the dislocation scan's `model_fair` as the W3 probability | it is fair_v1 computed with `surface=None` on only the externally listed matches: a different number from a different population | treating it as a proxy |
+| W4 freshness read literally: every venue contributing to the stored reference must publish a timestamp under 30 minutes old | "whose venue timestamp is under 30 minutes old" cannot be satisfied by a venue with no timestamp (Smarkets); mixed cases are excluded as ambiguous, and every reading was checked to reach the same status | counting untimestamped venues as fresh |
+| Protocol binding: only STRICT_PREGAME rows are eligible for any pregame claim | `docs/PROSPECTIVE_RESEARCH_PROTOCOL.md` | using START_UNKNOWN rows for P&L |
+| Trade tape: new window since the last one + queued backlog inside the SAME 250-page budget | the old cursor re-read ~12 minutes of tape every pass and skipped the unread older end for good | raising the page cap |
+| Laver Cup: explicit family, parsed, not priced | the contract states no scoring format and none is configured | reusing the generic team-event format |

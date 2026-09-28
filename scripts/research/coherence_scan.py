@@ -58,7 +58,12 @@ def parsed_universe(disc: str) -> dict:
 
 
 def book_sizes(capture_root: str) -> dict:
-    """(run_id, ticker) -> (yes_bid_size, yes_ask_size) from the captured order books."""
+    """(run_id, ticker) -> (yes_bid_size, yes_ask_size) from the captured order books.
+
+    Reads both the legacy cent-denominated book and the current `orderbook_fp` shape through
+    `tennis_edge.ledger.quotes.book_top`. Before 2026-09-27 only the legacy keys were read, and since
+    every captured book is in the current shape, the size-verified scan never had a single size."""
+    from tennis_edge.ledger.quotes import book_top
     sizes = {}
     for f in sorted(glob.glob(os.path.join(capture_root, "*", "*.books.jsonl.gz"))):
         with gzip.open(f, "rt") as fh:
@@ -70,23 +75,10 @@ def book_sizes(capture_root: str) -> dict:
                     r = json.loads(line)
                 except ValueError:
                     continue
-                ob = ((r.get("orderbook") or {}).get("orderbook") or r.get("orderbook") or {})
-                if not isinstance(ob, dict):
-                    continue
-
-                def top(levels):
-                    best = None
-                    for lv in levels or []:
-                        try:
-                            p, s = float(lv[0]), float(lv[1])
-                        except (TypeError, ValueError, IndexError):
-                            continue
-                        if best is None or p > best[0]:
-                            best = (p, s)
-                    return best
-                ty, tn = top(ob.get("yes")), top(ob.get("no"))
-                if ty and tn:
-                    sizes[(r.get("run_id"), r.get("ticker"))] = (ty[1], tn[1])
+                top = book_top(r)
+                if top is not None:
+                    # YES bid size, and the YES ask size, which is the size of the best NO bid
+                    sizes[(r.get("run_id"), r.get("ticker"))] = (top[1], top[3])
     return sizes
 
 

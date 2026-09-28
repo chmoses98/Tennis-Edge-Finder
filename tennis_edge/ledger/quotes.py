@@ -57,6 +57,50 @@ def _iter(root: str, kind: str):
                         continue                     # a truncated tail must never poison the timeline
 
 
+def book_top(record: dict) -> tuple[float, float, float, float] | None:
+    """(best YES bid, its size, best NO bid, its size) in DOLLARS from one captured order-book record.
+
+    Kalshi has served two shapes, and the capture stores whichever it got, verbatim:
+
+      legacy   {"orderbook": {"yes": [[cents, size], ...], "no": [[cents, size], ...]}}
+      current  {"orderbook_fp": {"yes_dollars": [["0.2200", "9474.65"], ...], "no_dollars": [...]}}
+
+    Every capture pass since 2026-09-11 is the CURRENT shape. Until 2026-09-27 this module read only the
+    legacy keys, so every captured book was silently skipped: the close timeline had no order-book
+    quotes and the size-verified coherence scan had no sizes. Both shapes are read now, the unit is
+    carried by the key (cents vs dollars) rather than guessed from the magnitude, and a book with an
+    empty side returns None -- a one-sided book is not an executable quote.
+    """
+    body = record.get("orderbook") if isinstance(record.get("orderbook"), dict) else record
+    body = body or {}
+    if isinstance(body.get("orderbook_fp"), dict):
+        ob, yes_k, no_k, scale = body["orderbook_fp"], "yes_dollars", "no_dollars", 1.0
+    elif isinstance(body.get("orderbook"), dict):
+        ob, yes_k, no_k, scale = body["orderbook"], "yes", "no", 0.01
+    elif "yes" in body or "no" in body:
+        ob, yes_k, no_k, scale = body, "yes", "no", 0.01
+    else:
+        return None
+
+    def best(levels):
+        out = None
+        for lv in levels or []:
+            try:
+                p, sz = float(lv[0]) * scale, float(lv[1])
+            except (TypeError, ValueError, IndexError):
+                continue
+            if not (0.0 < p < 1.0) or sz <= 0:
+                continue
+            if out is None or p > out[0]:
+                out = (p, sz)
+        return out
+
+    y, n = best(ob.get(yes_k)), best(ob.get(no_k))
+    if y is None or n is None:
+        return None
+    return y[0], y[1], n[0], n[1]
+
+
 def quotes_from_capture(capture_root: str, tickers: set[str] | None = None) -> dict[str, list[Quote]]:
     """ticker -> chronologically sorted executable quotes from every capture stream."""
     out: dict[str, list[Quote]] = {}
@@ -79,25 +123,15 @@ def quotes_from_capture(capture_root: str, tickers: set[str] | None = None) -> d
 
     for r in _iter(capture_root, "books"):
         t, ts = r.get("ticker"), _ts(r.get("captured_at"))
-        ob = ((r.get("orderbook") or {}).get("orderbook") or r.get("orderbook") or {})
-        if not t or ts is None or not isinstance(ob, dict):
+        if not t or ts is None:
             continue
-        yes, no = ob.get("yes") or [], ob.get("no") or []
-        def top(levels):
-            best = None
-            for lv in levels:
-                try:
-                    p, sz = float(lv[0]), float(lv[1])
-                except (TypeError, ValueError, IndexError):
-                    continue
-                if best is None or p > best[0]:
-                    best = (p, sz)
-            return best
-        ty, tn = top(yes), top(no)
-        if ty and tn:
-            # Kalshi books quote each side's BID in cents; the YES ask is 100 minus the NO bid.
-            add(t, Quote(ts, ty[0] / 100.0, 1.0 - tn[0] / 100.0, yes_bid_size=ty[1], yes_ask_size=tn[1],
-                         no_bid=tn[0] / 100.0, no_ask=1.0 - ty[0] / 100.0, source="orderbook"))
+        top = book_top(r)
+        if top is None:
+            continue
+        yb, yb_sz, nb, nb_sz = top
+        # the book quotes each side's BID; the YES ask is 1 minus the best NO bid
+        add(t, Quote(ts, yb, 1.0 - nb, yes_bid_size=yb_sz, yes_ask_size=nb_sz,
+                     no_bid=nb, no_ask=1.0 - yb, source="orderbook"))
 
     for r in _iter(capture_root, "candles"):
         t = r.get("ticker")

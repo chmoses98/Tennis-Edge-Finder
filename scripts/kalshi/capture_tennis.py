@@ -8,8 +8,10 @@ What one pass records (all raw API objects, stamped with run_id and retrieval ti
                      full snapshot, so silence never means "unchanged" only when the fingerprint says so.
   books.jsonl        orderbook (depth 10) for open MATCH-scope markets whose scheduled start is within
                      --book-horizon-hours (budgeted, nearest start first).
-  trades.jsonl       the GLOBAL trade tape since the last cursor, filtered to tennis tickers -- every tennis
-                     trade on the exchange, no per-ticker polling.
+  trades.jsonl       the GLOBAL trade tape, filtered to tennis tickers -- every tennis trade on the exchange,
+                     no per-ticker polling. Each pass reads the new window since the last one and then a
+                     backlog of any older window it could not finish, inside a fixed page budget
+                     (tennis_edge/kalshi/trade_tape.py); an abandoned gap is reported as incomplete.
   events.jsonl       events first seen this pass (event ticker, title, product_metadata) for lifecycle tracking.
   settlements.jsonl  (hourly sweep) markets settled in the last 3 days per series: ticker, result,
                      settlement_value_dollars, settlement_ts, expiration_value -- EXCHANGE TRUTH, verbatim.
@@ -18,7 +20,7 @@ What one pass records (all raw API objects, stamped with run_id and retrieval ti
                      the 10-minute polling missed it.
   manifest.json      counts, client stats, incomplete flags (fail-closed reporting).
 
-State (state.json) carries: quote fingerprints, trades cursor, settled tickers already candled, last hourly
+State (state.json) carries: quote fingerprints, trade-tape cursor and backlog, settled tickers already candled, last hourly
 sweep time, last discovery time. It is republished with the data so the next runner continues.
 """
 from __future__ import annotations
@@ -36,6 +38,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); PROJ = os.path.abspath(os.pat
 sys.path.insert(0, PROJ)
 from tennis_edge.kalshi.client import KalshiClient  # noqa: E402
 from tennis_edge.kalshi.families import SERIES, FAMILIES  # noqa: E402
+from tennis_edge.kalshi.trade_tape import TradeTape, scan as scan_trade_tape  # noqa: E402
 
 MATCH_SCOPE_SERIES = [tk for tk, (fam, *_r) in SERIES.items() if FAMILIES[fam]["scope"] == "MATCH"]
 ALL_SERIES = list(SERIES)
@@ -147,24 +150,21 @@ def main():
             manifest["incomplete"].append({"stage": "orderbook", "ticker": t, "error": err})
     manifest["counts"]["books"] = n_b; manifest["counts"]["book_candidates"] = len(cands)
 
-    # ---- 4. global trade tape since cursor, filtered to tennis
-    min_ts = state["trades_cursor_ts"] or (t_now - 3600)
-    trades, ok, info = c.trades(min_ts=min_ts, max_ts=t_now, limit=1000, max_pages=250)
-    if not ok:
-        # the global tape can exceed the page budget on busy days; the pass is then incomplete for trades and the
-        # cursor is NOT advanced past what was actually scanned, so nothing is silently skipped
-        manifest["incomplete"].append({"stage": "trades", "info": info, "scanned": len(trades)})
+    # ---- 4. global trade tape, filtered to tennis: bounded new window + gap backlog (see trade_tape.py)
+    tape = TradeTape.from_state(state)
+    trades, tape_report = scan_trade_tape(c, tape, t_now, parse=ts)
+    tape.to_state(state)
+    for e in tape_report["errors"]:
+        manifest["incomplete"].append({"stage": "trades", "info": e, "scanned": len(trades)})
+    for g in tape_report["abandoned"]:
+        # a gap older than the backlog horizon is given up on EXPLICITLY: that is lost tape, and it fails TENNIS-5
+        manifest["incomplete"].append({"stage": "trades_gap_abandoned", "info": {"lo": g[0], "hi": g[1]}})
+    manifest["trades"] = tape_report
     prefixes = tuple(s + "-" for s in ALL_SERIES)
     n_t = 0
     for tr in trades:
         if (tr.get("ticker") or "").startswith(prefixes):
             w("trades", tr); n_t += 1
-    if ok:
-        state["trades_cursor_ts"] = t_now
-    elif trades:
-        seen = [ts(tr.get("created_time")) for tr in trades if tr.get("created_time")]
-        if seen:
-            state["trades_cursor_ts"] = min(seen)   # resume from the oldest scanned trade (tape is newest-first)
     manifest["counts"]["trades_tennis"] = n_t; manifest["counts"]["trades_global_scanned"] = len(trades)
 
     # ---- 5. hourly: settlements + candles for newly settled match-scope markets

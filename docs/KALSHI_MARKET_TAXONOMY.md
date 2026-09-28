@@ -27,6 +27,7 @@ UNSUPPORTED family, 146 UNPARSED (0.09%, almost all 2025-vintage same-surname ti
 | TIEBREAK_OCCURS, ANY_SET_WINNER | match | KXATPTIEBREAK, KXATPANYSET (no markets yet) | 0 | from DP tiebreak / set-score distribution | yes |
 | PLAYER_ACES | match | KXATPACES, KXWTAACES | 110 | aces >= n | no (no ace model) |
 | GAME_WINNER_INPLAY | in-play | KXATPS1GWINNER..S5, KXATPGWINNER | 480 | game g of set s | no (in-play) |
+| TEAM_EVENT_MATCH_WINNER | match | KXLAVERCUPMATCH (singles), KXLAVERCUPDOUBLESMATCH (doubles) -- added 2026-09-27 | 26 | P(subject side wins this rubber \| ball played); binary per rubber, walkover resolves to a fair price | no: the contract states no scoring format and `config/formats.json` has no Laver Cup row; the generic `team_events_bo3` row (final-set tiebreak at 6-6) is not assumed to apply. Parsed for competitors, side and competition, never priced |
 | TOURNAMENT_WINNER | tournament | KXATP, KXWTA, slam/1000 winner series (KXUSOMENSINGLES, KXIWMEN, ...) | 2,787 | reach title | draw DP built (`tennis_edge/futures/draw.py`), draw feed not wired |
 | ROUND_ADVANCE / ROUND_OF_ELIMINATION | tournament | KXATPADVANCE, KXWTAADVANCE, KXWTAROE | 541 | reach round | as above |
 | NATIONALITY_*, SET_SWEEP, COMBO_TOURNAMENT_WINNERS, TEAM_* | tournament combos | KXATPNATSTAGE, KXATPWTA, KXDAVISCUP, KXUNITEDCUP ... | ~170 | derived from draws/team ties | no |

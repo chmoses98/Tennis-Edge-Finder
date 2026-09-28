@@ -1,0 +1,123 @@
+{
+ "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
+ "kind": "TRADE",
+ "status": "UNSCORABLE_MISSING_HISTORICAL_FIELDS",
+ "status_reason": "23768 post-freeze observations could not be evaluated because a field the frozen rule needs was not preserved at capture; 0 scorable of 600 required",
+ "universe": {
+  "shadow-board opportunities (the frozen lane)": {
+   "rows_total": 502,
+   "rows_after_confirmation_start": 0,
+   "first": "2026-09-12T17:13:17.596741+00:00",
+   "last": "2026-09-12T17:14:41.568546+00:00",
+   "model_versions": {
+    "gen2_dyn_hier_sr_v1+fair_v1": 502
+   }
+  },
+  "ledger (Gen-1 lane, not the frozen model)": {
+   "rows": 7830,
+   "model_versions": {
+    "elo_surface_k_lo+sr_v0.1": 7830
+   },
+   "tickers": 4222,
+   "matches": 2111
+  },
+  "dislocations (fair_v1 WITHOUT surface, externally listed subset only)": {
+   "rows": 15938,
+   "contracts": 2182
+  }
+ },
+ "metrics": {
+  "eligible_n": 0,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "missing_fields": [
+   "frozen decision probability (fair_v1, with surface)",
+   "selector_v1 qualification checklist",
+   "Kalshi mid on the selected rows"
+  ],
+  "note": "no metric is computed: the probability the frozen rule decides on was not preserved at capture time, and reconstructing it now would be synthesising historical state"
+ },
+ "exclusion_counts": {
+  "MISSING_HISTORICAL_FIELD": 23768
+ },
+ "summary": {
+  "kind": "TRADE",
+  "minimum_n": 600,
+  "eligible_n": 0,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "unsettled_n": 0,
+  "clv_pending_n": 0,
+  "unscorable_n": 23768,
+  "accuracy_pass": null,
+  "clv_pass": null,
+  "economics_pass": null,
+  "clv_required": true,
+  "notes": []
+ },
+ "notes": [
+  "The frozen decision probability is produced only by scripts/ops/shadow_board.py, which last ran at 2026-09-12T17:14:41.568546+00:00 -- before this candidate's freeze at 2026-09-12T17:24:04.826616+00:00 -- and is not scheduled by any workflow. After the freeze it was never computed.",
+  "The dislocation scan's model_fair is fair_v1's Gen-2 blend computed with surface=None on only the matches an external venue also lists; it is a different number from a different population, so using it would be substituting a proxy for the frozen rule."
+ ],
+ "field_audit": [
+  {
+   "field": "MATCH_WINNER contract, level != ITF",
+   "source": "every stream",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "frozen decision probability (fair_v1, with surface)",
+   "source": "shadow-board opportunities only",
+   "class": "NOT_AVAILABLE",
+   "note": "as W3-2026-001"
+  },
+  {
+   "field": "selector_v1 qualification checklist",
+   "source": "shadow-board opportunities only",
+   "class": "NOT_AVAILABLE",
+   "note": "twelve checks (staleness, spread, size, tail, data quality, ...) evaluated only by the shadow board"
+  },
+  {
+   "field": "Kalshi mid on the selected rows",
+   "source": "would come from the same rows",
+   "class": "NOT_AVAILABLE",
+   "note": ""
+  },
+  {
+   "field": "first-ball truth (A/B)",
+   "source": "firstball/store truths, keyed by Kalshi event ticker",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  },
+  {
+   "field": "strict executable close",
+   "source": "capture quotes + order books + candles, cut at the first-ball lower bound",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  },
+  {
+   "field": "settlement result",
+   "source": "capture settlements sweep (Kalshi status=settled), discovery settled block",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  }
+ ],
+ "harvester_version": 1,
+ "harvest_run": "20260927T195248Z",
+ "evidence_rows_this_run": 0,
+ "evidence_rows_appended": 0,
+ "evidence_chain_violations": [],
+ "frozen_definition": {
+  "frozen_at": "2026-09-12T17:24:04.826616+00:00",
+  "confirmation_start": "2026-09-12T17:24:04.826616+00:00",
+  "minimum_n": 600,
+  "inclusion_rule": "MATCH_WINNER contracts, level != 'ITF', fee-adjusted edge at the executable ask > 0, qualification passes, one contract at the displayed ask, taker fee.",
+  "required_accuracy_condition": "on the SELECTED rows our Brier must be no worse than the Kalshi mid's. This condition currently FAILS and is the reason the candidate is not a claim.",
+  "required_clv_condition": "mean strict executable CLV > 0 with a 95% interval excluding zero, once A/B first-ball truth exists to compute it; none exists today",
+  "required_after_fee_condition": "realised after-fee P&L per contract > 0 with a 95% interval excluding zero",
+  "model_version": "gen2_dyn_hier_sr_v1+fair_v1+selector_v1",
+  "status": "PROSPECTIVE_PENDING"
+ },
+ "frozen_definition_fingerprint": "d14460d3db1bb488"
+}

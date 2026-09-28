@@ -1,0 +1,129 @@
+{
+ "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
+ "kind": "TRADE",
+ "status": "UNSCORABLE_MISSING_HISTORICAL_FIELDS",
+ "status_reason": "24414 post-freeze observations could not be evaluated because a field the frozen rule needs was not preserved at capture; 0 scorable of 1000 required",
+ "universe": {
+  "ledger (Gen-1 only)": {
+   "rows": 7974,
+   "model_versions": {
+    "elo_surface_k_lo+sr_v0.1": 7974
+   },
+   "tickers": 4320,
+   "matches": 2160
+  },
+  "shadow-board opportunities (Gen-2, no Gen-1 on the row)": {
+   "rows_total": 502,
+   "rows_after_confirmation_start": 502,
+   "first": "2026-09-12T17:13:17.596741+00:00",
+   "last": "2026-09-12T17:14:41.568546+00:00",
+   "model_versions": {
+    "gen2_dyn_hier_sr_v1+fair_v1": 502
+   }
+  },
+  "dislocations (Gen-2 blend without surface, no serve points, no Gen-1)": {
+   "rows": 15938,
+   "contracts": 2182
+  }
+ },
+ "metrics": {
+  "eligible_n": 0,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "missing_fields": [
+   "Gen-2 (gen2_dyn_hier_sr_v1) probability at prediction time",
+   "thinner player's observed serve points in the Gen-2 state",
+   "Gen-1 Elo probability at the same decision"
+  ],
+  "note": "no metric is computed: the probability the frozen rule decides on was not preserved at capture time, and reconstructing it now would be synthesising historical state"
+ },
+ "exclusion_counts": {
+  "MISSING_HISTORICAL_FIELD": 24414
+ },
+ "summary": {
+  "kind": "TRADE",
+  "minimum_n": 1000,
+  "eligible_n": 0,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "unsettled_n": 0,
+  "clv_pending_n": 0,
+  "unscorable_n": 24414,
+  "accuracy_pass": null,
+  "clv_pass": null,
+  "economics_pass": null,
+  "clv_required": true,
+  "notes": []
+ },
+ "notes": [
+  "No single preserved row carries a Gen-2 probability, a Gen-1 Elo probability and the thinner player's Gen-2 serve points for the same decision. Joining rows from different streams, instants and rating artifacts would construct a comparison nobody made.",
+  "The only rows with Gen-2 serve evidence are one shadow-board run (502 rows, both sides of each contract, one afternoon); even paired generously they could not reach the frozen minimum of 1000."
+ ],
+ "field_audit": [
+  {
+   "field": "MATCH_WINNER singles, ATP or WTA",
+   "source": "every stream",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "Gen-2 (gen2_dyn_hier_sr_v1) probability at prediction time",
+   "source": "shadow-board opportunities (fair_prob); dislocation rows (model_fair, surface=None)",
+   "class": "AMBIGUOUS",
+   "note": "preserved only in one shadow-board run (2026-09-12 17:13, 502 rows); dislocation rows carry a Gen-2 blend computed WITHOUT surface, a different input set"
+  },
+  {
+   "field": "thinner player's observed serve points in the Gen-2 state",
+   "source": "shadow-board serve_evidence_points",
+   "class": "AMBIGUOUS",
+   "note": "same single run; absent from the ledger (which holds Gen-1 SR points) and from dislocation rows"
+  },
+  {
+   "field": "Gen-1 Elo probability at the same decision",
+   "source": "prediction ledger models.ELO",
+   "class": "AMBIGUOUS",
+   "note": "preserved in the ledger, but never on the same row, instant or rating artifact as a Gen-2 probability"
+  },
+  {
+   "field": "Kalshi executable ask / mid at decision",
+   "source": "ledger market_quote; opportunities; dislocations",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "first-ball truth (A/B)",
+   "source": "firstball/store truths, keyed by Kalshi event ticker",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  },
+  {
+   "field": "strict executable close",
+   "source": "capture quotes + order books + candles, cut at the first-ball lower bound",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  },
+  {
+   "field": "settlement result",
+   "source": "capture settlements sweep (Kalshi status=settled), discovery settled block",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  }
+ ],
+ "harvester_version": 1,
+ "harvest_run": "20260927T195248Z",
+ "evidence_rows_this_run": 0,
+ "evidence_rows_appended": 0,
+ "evidence_chain_violations": [],
+ "frozen_definition": {
+  "frozen_at": "2026-09-12T06:30:00+00:00",
+  "confirmation_start": "2026-09-12T06:30:00+00:00",
+  "minimum_n": 1000,
+  "inclusion_rule": "Singles match where the THINNER of the two players has between 1,000 and 20,000 observed serve points in the Gen-2 state at prediction time, tour ATP or WTA.",
+  "required_accuracy_condition": "Brier below Gen-1 Elo by >= 0.0015 with a paired bootstrap 95% CI excluding zero, AND not worse than the market by more than 0.005",
+  "required_clv_condition": "mean strict executable CLV > 0 with a 95% CI excluding zero, on rows classified STRICT_PREGAME",
+  "required_after_fee_condition": "after-fee expected value per contract > 0 at the executable ask",
+  "model_version": "gen2_dyn_hier_sr_v1",
+  "status": "PROSPECTIVE_PENDING"
+ },
+ "frozen_definition_fingerprint": "533327bdfd235561"
+}

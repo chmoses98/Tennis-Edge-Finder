@@ -169,39 +169,79 @@ def gate_3_4_active_coverage(projections_path=None) -> tuple[GateResult, GateRes
     need = len(have) + len(hard)
     g4 = GateResult("TENNIS-4", "active_market_projection", "PASS" if not hard else "FAIL",
                     {"projectable_open_pregame": need, "projected": len(have), "not_projected": len(hard), "missing_sample": [e["ticker"] + ": " + e["reason"][:60] for e in hard[:10]],
-                     "excluded_by_policy": {k: v for k, v in pj.get("coverage", {}).items() if k in ("closed_since_discovery", "past_nominal_start", "unsupported_family", "tournament_scope_not_priced_tonight")},
+                     "excluded_by_policy": {k: v for k, v in pj.get("coverage", {}).items() if k in ("closed_since_discovery", "past_nominal_start", "unsupported_family", "tournament_scope_not_priced_tonight", "first_ball_already_observed")},
                      "projection_run": pj.get("run_id")})
     return g3, g4
 
 
-def gate_5_capture_freshness(max_age_min=30, now=None) -> GateResult:
-    """TENNIS-5: latest capture manifest younger than max_age_min and without incomplete stages."""
+def gate_5_capture_freshness(max_age_min=30, now=None, max_trade_backlog_age_h=2.0) -> GateResult:
+    """TENNIS-5: latest capture manifest younger than max_age_min, without incomplete stages, and with the
+    trade-tape backlog (tennis_edge/kalshi/trade_tape.py) no older than max_trade_backlog_age_h.
+
+    A truncated tape window whose unread remainder is QUEUED is not an incomplete stage: nothing has been
+    lost yet. A queue that stays behind for hours is a failure, and an abandoned gap is an incomplete stage."""
     mans = sorted(glob.glob(os.path.join(PROJ, "data", "kalshi", "capture", "*", "*.manifest.json")))
     if not mans:
         return GateResult("TENNIS-5", "market_capture_freshness", "UNKNOWN", {"reason": "no capture manifests"})
     m = json.load(open(mans[-1]))
     age = ((now or datetime.now(timezone.utc)) - datetime.fromisoformat(m["finished_at"])).total_seconds() / 60
-    ok = age <= max_age_min and not m.get("incomplete")
-    return GateResult("TENNIS-5", "market_capture_freshness", "PASS" if ok else "FAIL", {"run": m["run_id"], "age_min": round(age, 1), "incomplete": m.get("incomplete", [])[:5]})
+    backlog = ((m.get("trades") or {}).get("backlog") or {})
+    oldest = backlog.get("oldest_gap_age_s")
+    backlog_ok = oldest is None or oldest <= max_trade_backlog_age_h * 3600
+    ok = age <= max_age_min and not m.get("incomplete") and backlog_ok
+    return GateResult("TENNIS-5", "market_capture_freshness", "PASS" if ok else "FAIL",
+                      {"run": m["run_id"], "age_min": round(age, 1), "incomplete": m.get("incomplete", [])[:5],
+                       "trade_backlog": backlog or None, "trade_backlog_ok": backlog_ok})
 
 
-def gate_6_no_post_start_leakage(ledger_rows, starts: dict) -> GateResult:
+def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows=None) -> GateResult:
     """TENNIS-6: every pregame prediction was generated strictly before the match's actual first ball
-    (or, when unknown, before scheduled_start - 5 min, flagged). `starts` maps match_id -> (actual_first_ball, scheduled_start)."""
+    (or, when unknown, before scheduled_start - 5 min, flagged).
+
+    `starts` maps match_id -> (earliest possible first ball, scheduled_start[, latest possible first ball]).
+    Any violation FAILS the gate, exactly as before. What changed on 2026-09-27 is that the detail no
+    longer lets two different things read as one:
+
+      post_start_confirmed      generated at/after the LATEST possible first ball (A/B truth): the row
+                                really was priced in play. A pipeline defect.
+      inside_first_ball_bracket generated between the earliest and latest possible first ball.
+      schedule_fallback         no A/B truth; generated inside 5 minutes of the nominal start.
+      no_start_information      no truth and no schedule at all (fail closed).
+      start_unknown_passed      no A/B truth, generated safely before the nominal start. NOT a violation:
+                                this is the conservative START_UNKNOWN accounting, reported as a count.
+
+    A TRUE LEAK is a post-start row being USED as pregame evidence. `strict_research_rows` (CLV rows from
+    the settle job) lets the gate check that directly: every row flagged strict must carry the
+    STRICT_PREGAME timing class. That count is reported as `post_start_rows_in_strict_research`."""
     viol = []; unknown = 0
+    cats = {"post_start_confirmed": 0, "inside_first_ball_bracket": 0, "schedule_fallback": 0,
+            "no_start_information": 0}
     for r in ledger_rows:
         gen = datetime.fromisoformat(r["generated_at_utc"])
-        afb, sched = starts.get(r["match_id"], (None, None))
+        st = starts.get(r["match_id"], (None, None))
+        afb, sched = st[0], st[1]
+        upper = st[2] if len(st) > 2 else None
         if afb is not None:
             if gen >= afb:
                 viol.append(r["prediction_id"])
+                cats["post_start_confirmed" if (upper is None or gen >= upper) else "inside_first_ball_bracket"] += 1
         elif sched is not None:
             unknown += 1
             if gen >= sched - timedelta(minutes=5):
                 viol.append(r["prediction_id"])
+                cats["schedule_fallback"] += 1
         else:
             viol.append(r["prediction_id"])
-    return GateResult("TENNIS-6", "no_post_start_leakage", "PASS" if not viol else "FAIL", {"violations": viol[:20], "n": len(ledger_rows), "start_unknown_used_schedule": unknown})
+            cats["no_start_information"] += 1
+    detail = {"violations": viol[:20], "n_violations": len(viol), "violation_classes": cats,
+              "n": len(ledger_rows), "start_unknown_used_schedule": unknown,
+              "start_unknown_passed_schedule_check": unknown - cats["schedule_fallback"]}
+    if strict_research_rows is not None:
+        detail["post_start_rows_in_strict_research"] = sum(
+            1 for c in strict_research_rows if c.get("strict") and c.get("timing_class") != "STRICT_PREGAME")
+        detail["strict_research_rows_checked"] = sum(1 for c in strict_research_rows if c.get("strict"))
+    leaked = detail.get("post_start_rows_in_strict_research", 0)
+    return GateResult("TENNIS-6", "no_post_start_leakage", "PASS" if not viol and not leaked else "FAIL", detail)
 
 
 def gate_7_identity(links_summary: dict | None) -> GateResult:
@@ -213,11 +253,16 @@ def gate_7_identity(links_summary: dict | None) -> GateResult:
 
 
 def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_conflicts: int | None,
-                   rules_id_changes: list | None, first_ball: dict | None = None) -> tuple[GateResult, GateResult]:
+                   rules_id_changes: list | None, first_ball: dict | None = None,
+                   settlement: dict | None = None) -> tuple[GateResult, GateResult]:
     """TENNIS-8: sports truth health, which since the first-ball wave explicitly INCLUDES first-ball
     coverage: sports truth for >= 98% of settled predictions, an intact first-ball hash chain, and every
     match we are watching at a level with a wired source actually bound to that source. TENNIS-9: no
-    unexplained exchange/sports conflicts and no unreviewed settlement-rule text changes."""
+    unexplained exchange/sports conflicts and no unreviewed settlement-rule text changes.
+
+    `sports_ok` counts settled predictions whose sports truth comes from a source INDEPENDENT of the
+    exchange. A "sports truth" copied from Kalshi's own result cannot be reconciled against Kalshi's
+    result, so it is reported (`settlement.sports_truth_kalshi_derived`) but never counted as ok."""
     fb = first_ball if first_ball is not None else first_ball_metrics()
     wl = fb.get("watchlist") or {}
     pct_mapped = wl.get("pct_covered_with_source_mapping")
@@ -227,6 +272,8 @@ def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_con
                                  "by_confidence", "bracket_seconds_median", "bracket_seconds_p90",
                                  "chain_violations", "observations", "matches_observed", "watchlist",
                                  "pct_classifiable", "pct_strict_pregame", "timing_classes")}}
+    if settlement:
+        detail_fb["settlement"] = settlement
     if sports_total is None:
         status = "UNKNOWN"
         g8 = GateResult("TENNIS-8", "sports_truth_health", status,
@@ -238,23 +285,30 @@ def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_con
                         {"ok": sports_ok, "total": sports_total, "rate": round(rate, 4),
                          "first_ball_ok": fb_ok, **detail_fb})
     if exchange_conflicts is None:
-        g9 = GateResult("TENNIS-9", "exchange_settlement_health", "UNKNOWN", {"reason": "no settled predictions yet", "rules_id_changes": rules_id_changes or []})
+        reason = ("no settled predictions yet" if sports_total is None else
+                  "no sports truth independent of the exchange to reconcile the exchange result against")
+        g9 = GateResult("TENNIS-9", "exchange_settlement_health", "UNKNOWN", {"reason": reason, "rules_id_changes": rules_id_changes or []})
     else:
         g9 = GateResult("TENNIS-9", "exchange_settlement_health", "PASS" if exchange_conflicts == 0 and not rules_id_changes else "FAIL", {"conflicts": exchange_conflicts, "rules_id_changes": rules_id_changes or []})
     return g8, g9
 
 
 def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actual_start_basis: int | None,
-                         first_ball: dict | None = None) -> GateResult:
+                         first_ball: dict | None = None, n_strict_settled: int | None = None) -> GateResult:
     """TENNIS-10: CLV close coverage, measured against STRICT first-ball-anchored closes.
 
     The denominator is deliberately the predictions whose match HAS A/B first-ball truth. A close cut off
     at `scheduled_start - margin` no longer counts: it is not evidence that the quote preceded the first
     ball, and counting it would let the gate go green on exactly the rows this wave exists to distrust.
-    Predictions with no first-ball truth are reported, not averaged away."""
+    Predictions with no first-ball truth are reported, not averaged away.
+
+    `n_actual_start_basis` is that denominator (settled predictions whose match has A/B truth) and
+    `n_strict_settled` the numerator from the same population (those with a strict CLV record). When the
+    numerator is not supplied the older all-ledger strict count is used, as before."""
     fb = first_ball if first_ball is not None else first_ball_metrics()
     strict_rows = fb.get("strict_clv_rows")
     detail = {"settled": n_settled, "with_close": n_with_close, "actual_first_ball_basis": n_actual_start_basis,
+              "strict_settled": n_strict_settled,
               "strict_clv_rows": strict_rows, "executable_close_rows": fb.get("executable_close_rows"),
               "matches_with_strict_truth": fb.get("strict_truths"),
               "observations_classified": fb.get("observations_classified"),
@@ -266,7 +320,10 @@ def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actu
     if n_settled is None:
         return GateResult("TENNIS-10", "clv_close_coverage", "UNKNOWN",
                           {"reason": "no settled predictions yet", **detail})
-    rate = (strict_rows or 0) / n_settled if n_settled else 0
+    if n_strict_settled is not None and n_actual_start_basis:
+        rate = n_strict_settled / n_actual_start_basis
+    else:
+        rate = (strict_rows or 0) / n_settled if n_settled else 0
     detail["strict_rate"] = round(rate, 4)
     return GateResult("TENNIS-10", "clv_close_coverage", "PASS" if rate >= 0.95 else "FAIL", detail)
 
@@ -328,8 +385,59 @@ def gate_14_source_freshness(max_age_days=8, now=None) -> GateResult:
                       {"run": best["run_id"], "snapshot_age_days": round(age, 2), "max_season_files": seasons, "ratings_as_of": as_of, "ratings_stale_days": stale_days})
 
 
+def settlement_stats(research_root=None) -> dict | None:
+    """What the settle job has actually written, read straight from its tables.
+
+    Until 2026-09-27 nothing computed these, so `run_all()` passed `None` to TENNIS-8/9/10 and every one
+    of them reported "no settled predictions yet" while the settlement table held 12,000+ rows. The gate
+    was reading the wrong layer (nothing), not the settlement path failing."""
+    root = research_root or os.path.join(PROJ, "data", "research")
+    files = sorted(glob.glob(os.path.join(root, "settlements", "*.jsonl")))
+    if not files:
+        return None
+    seen, rows = set(), []
+    for f in files:
+        with open(f) as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                if r.get("prediction_id") in seen:
+                    continue
+                seen.add(r.get("prediction_id"))
+                rows.append(r)
+    binary = [r for r in rows if r.get("gradeable")]
+    sports = [r for r in binary if r.get("sports")]
+    kalshi_derived = [r for r in sports if (r["sports"].get("source") or "") == "kalshi_result"]
+    independent = [r for r in sports if (r["sports"].get("source") or "") not in ("", "kalshi_result")
+                   and (r["sports"].get("confidence") or 0) >= 0.9]
+    out = {"settled": len(rows), "settled_binary": len(binary), "settled_scalar": len(rows) - len(binary),
+           "sports_truth_rows": len(sports), "sports_truth_kalshi_derived": len(kalshi_derived),
+           "sports_truth_independent": len(independent), "settlement_files": len(files)}
+    clvs = sorted(glob.glob(os.path.join(root, "clv", "*.jsonl")))
+    if clvs:
+        latest = {}
+        with open(clvs[-1]) as fh:
+            for line in fh:
+                try:
+                    c = json.loads(line)
+                except ValueError:
+                    continue
+                latest[c.get("prediction_id")] = c
+        settled_clv = [latest[r["prediction_id"]] for r in rows if r.get("prediction_id") in latest]
+        out.update(clv_run=os.path.basename(clvs[-1]),
+                   settled_with_ab_truth=sum(1 for c in settled_clv if c.get("truth_confidence") in ("A", "B")),
+                   settled_with_close=sum(1 for c in settled_clv if c.get("close_ts")),
+                   settled_strict_clv=sum(1 for c in settled_clv if c.get("strict")))
+        out["_strict_research_rows"] = [{"strict": c.get("strict"), "timing_class": c.get("timing_class")}
+                                        for c in latest.values()]
+    return out
+
+
 def _auto_extra() -> dict:
-    """Evidence the gates can read for themselves: latest projection run (consistency, mapping) and ledger rows."""
+    """Evidence the gates can read for themselves: latest projection run (consistency, mapping), ledger
+    rows, first-ball truth, and the settle job's own settlement and CLV tables."""
     extra = {}
     latest = os.path.join(PROJ, "data", "research", "projections", "latest.json")
     if os.path.exists(latest):
@@ -355,7 +463,20 @@ def _auto_extra() -> dict:
         from tennis_edge.firstball.store import FirstBallStore
         for mid, t in FirstBallStore(fbroot).latest_truths().items():
             if mid in extra.get("starts", {}) and t.strict_eligible and not t.no_play:
-                extra["starts"][mid] = (t.lower_bound_utc, extra["starts"][mid][1])
+                extra["starts"][mid] = (t.lower_bound_utc, extra["starts"][mid][1], t.upper_bound_utc)
+    st = settlement_stats()
+    if st:
+        strict_rows = st.pop("_strict_research_rows", None)
+        if strict_rows is not None:
+            extra["strict_research_rows"] = strict_rows
+        extra["settlement"] = st
+        extra.setdefault("n_settled", st["settled"])
+        extra.setdefault("sports_total", st["settled_binary"])
+        extra.setdefault("sports_ok", st["sports_truth_independent"])
+        if st.get("settled_with_ab_truth") is not None:
+            extra.setdefault("n_actual_start_basis", st["settled_with_ab_truth"])
+            extra.setdefault("n_with_close", st["settled_with_close"])
+            extra.setdefault("n_strict_settled", st["settled_strict_clv"])
     return extra
 
 
@@ -364,13 +485,16 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
     out = [gate_1_discovery(), gate_2_taxonomy()]
     out += list(gate_3_4_active_coverage())
     out.append(gate_5_capture_freshness())
-    out.append(gate_6_no_post_start_leakage(extra.get("ledger_rows", []), extra.get("starts", {})) if extra.get("ledger_rows") else GateResult("TENNIS-6", "no_post_start_leakage", "UNKNOWN", {"reason": "no ledger rows supplied"}))
+    out.append(gate_6_no_post_start_leakage(extra.get("ledger_rows", []), extra.get("starts", {}),
+                                            extra.get("strict_research_rows"))
+               if extra.get("ledger_rows") else GateResult("TENNIS-6", "no_post_start_leakage", "UNKNOWN", {"reason": "no ledger rows supplied"}))
     out.append(gate_7_identity(extra.get("links_summary")))
     fb = extra.get("first_ball") if extra.get("first_ball") is not None else first_ball_metrics()
     out += list(gate_8_9_truth(extra.get("sports_ok"), extra.get("sports_total"), extra.get("exchange_conflicts"),
-                               extra.get("rules_id_changes"), first_ball=fb))
+                               extra.get("rules_id_changes"), first_ball=fb, settlement=extra.get("settlement")))
     out.append(gate_10_clv_coverage(extra.get("n_settled"), extra.get("n_with_close"),
-                                    extra.get("n_actual_start_basis"), first_ball=fb))
+                                    extra.get("n_actual_start_basis"), first_ball=fb,
+                                    n_strict_settled=extra.get("n_strict_settled")))
     out.append(gate_11_consistency(extra.get("consistency_violations")))
     out.append(gate_12_ledger()); out.append(gate_13_reproducible()); out.append(gate_14_source_freshness())
     return out

@@ -99,3 +99,16 @@ classifier version and the truth's derivation version. The ledger row itself, an
 ## Bookmaker benchmark vs Kalshi close
 tennis-data.co.uk prices are a separate, pre-match reference benchmark (capture time undocumented) used for
 historical model-vs-market research; they are never substituted for Kalshi closes or CLV.
+
+
+## Order-book quotes were silently absent until 2026-09-27
+
+Every captured order book is in Kalshi's current shape, `{"orderbook_fp": {"yes_dollars": [[price, size]],
+"no_dollars": [...]}}`, with prices in DOLLARS. `quotes_from_capture` and the coherence scan read only the
+legacy cent-denominated `{"orderbook": {"yes": ..., "no": ...}}` keys, so no book ever reached the close
+timeline and the size-verified coherence scan never saw a size. `tennis_edge.ledger.quotes.book_top` reads
+both shapes, taking the unit from the key rather than guessing it from the magnitude. Recomputed against
+the same first-ball truth, the strict CLV count is unchanged (2,312 before and after; none gained, none
+lost). For 1,640 of them the close is now a book captured later in the same pass (seconds to a minute
+closer to the first ball), which changed the executable CLV of 361 rows, by 0.9c on average in absolute
+terms and by 0.00c on average in sign: a precision fix, not a change of conclusion.

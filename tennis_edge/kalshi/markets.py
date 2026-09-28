@@ -229,6 +229,16 @@ def parse_market(m: dict) -> ParsedMarket:
                 pm.opponent_unknown = True
             else:
                 raise ValueError("match-winner rules text not recognised")
+        elif fam == "TEAM_EVENT_MATCH_WINNER":
+            # parsed for its semantics (competitors, subject, competition), never priced
+            g = RE_MATCH_WINNER.match(rp)
+            if not g:
+                raise ValueError("team-event match rules text not recognised")
+            try:
+                fill_match(g)
+            except ValueError as e:
+                pm.reason += f"; side not resolved from the rules text ({e})"
+            return pm
         elif fam == "SET_WINNER":
             g = RE_SET_WINNER.match(rp)
             if not g:

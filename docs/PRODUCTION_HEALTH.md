@@ -100,3 +100,35 @@ coverage does not exist yet, and that is the information they are meant to carry
   `tennis_edge/external_market/smarkets.py:TRAVERSAL`, asserted by a test. If that query ever stops
   accepting `type=tennis_match`, capture silently returns an empty board -- the scan's
   `smarkets_fetch.events_seen` is the canary.
+
+
+## Prospective-evidence audit (2026-09-27)
+
+What the gates were reading, and what changed. No threshold moved; see `research/PROSPECTIVE_EVIDENCE_AUDIT.md`.
+
+* **TENNIS-8/9/10 said "no settled predictions yet" for sixteen days while the settlement table held
+  12,330 settled rows.** Settlement ingestion was healthy; the health step called `run_all()` with no
+  settlement inputs, so `sports_total` and `n_settled` were always `None`. `settlement_stats()` now reads
+  `data/research/settlements/*.jsonl` and the latest `data/research/clv/<run>.jsonl` directly.
+* **TENNIS-8 counts only sports truth INDEPENDENT of the exchange.** Every settled row's "sports truth" is
+  copied from Kalshi's own result (`source: kalshi_result`). That cannot be reconciled against Kalshi, so
+  it is reported (`settlement.sports_truth_kalshi_derived`) but not counted as ok. Result: FAIL, 0 of
+  12,066 -- the honest state, and the gap to close is an independent results feed in the settle job.
+* **TENNIS-9** reports UNKNOWN with the reason "no sports truth independent of the exchange" instead of
+  the stale "no settled predictions yet".
+* **TENNIS-10** now uses one population for numerator and denominator: settled predictions whose match has
+  A/B first-ball truth (2,688), of which 2,312 have a strict CLV record (86%). FAIL at the unchanged 95%.
+  The shortfall is the 330 rows priced after the first ball (below) plus rows with no quote before it.
+* **TENNIS-6** still FAILS on every violation. Its detail now separates `post_start_confirmed` (297),
+  `inside_first_ball_bracket` (33), `schedule_fallback` (0) and `no_start_information` (0), reports
+  `n_violations` (330; the list is still truncated to 20), and counts the conservative START_UNKNOWN rows
+  that passed the schedule check (9,718) as what they are: not violations. It also checks the thing that
+  would be a true leak -- a post-start row used as strict evidence -- directly: `post_start_rows_in_strict_research` = 0.
+  The 330 rows are real: Challenger/WTA-125 matches whose nominal start was hours after the actual first
+  ball were priced in play. `run_tennis.py` now refuses any match the first-ball store has already seen
+  start (`matches_already_started`), across every series of the same physical match.
+* **TENNIS-5** no longer fails merely because a trade-tape window was truncated and its remainder QUEUED
+  (`tennis_edge/kalshi/trade_tape.py`); it fails on fetch errors, on an ABANDONED gap, and when the oldest
+  queued gap is more than two hours old. Before the fix every one of 1,689 passes truncated and the cursor
+  silently skipped ~2.75 hours of tape.
+* **TENNIS-2/3** pass: the two Laver Cup series are now explicit (`TEAM_EVENT_MATCH_WINNER`, unpriced).
