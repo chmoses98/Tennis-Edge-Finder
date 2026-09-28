@@ -1,0 +1,141 @@
+{
+ "candidate_id": "W3-2026-001-ABSTAIN-ITF",
+ "kind": "ABSTENTION",
+ "status": "INSUFFICIENT_N",
+ "status_reason": "56 eligible of 400 required",
+ "universe": {
+  "experiment_start": {
+   "candidate_id": "W3-2026-001-ABSTAIN-ITF",
+   "original_frozen_at": "2026-09-12T17:24:04.826616+00:00",
+   "original_confirmation_start": "2026-09-12T17:24:04.826616+00:00",
+   "producer_missing_period_start": "2026-09-12T17:24:04.826616+00:00",
+   "producer_missing_period_end": "2026-09-28T03:33:22.503933+00:00",
+   "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
+   "model_version": "gen2_dyn_hier_sr_v1+fair_v1+selector_v1",
+   "producer": "shadow_board_v1",
+   "producer_entrypoint": "scripts/ops/shadow_board.py",
+   "producer_version": "shadow_board_v1@ca241d01e58a",
+   "activating_main_sha": "ca241d01e58a41af8974729ae247d10c4aa3c616",
+   "timing_admission": "rows not confirmed POST_START/AMBIGUOUS (the frozen rule has no first-ball condition and ITF has no first-ball source)",
+   "reason_prior_period_unscorable": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
+   "candidate_definition_fingerprint": "b2bc4e45ed8ea3bb",
+   "written_at": "2026-09-28T03:33:37.602766+00:00",
+   "authority": "RESEARCH_ONLY_NO_REAL_MONEY",
+   "fingerprint": "16ad2f8243944afb0dc9d3ea85aba845880a345ae261f9890f714646e24da11d",
+   "_fingerprint_ok": true
+  },
+  "history": {
+   "permanently_unscorable_period": [
+    "2026-09-12T17:24:04.826616+00:00",
+    "2026-09-28T03:33:22.503933+00:00"
+   ],
+   "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
+   "producer_rows_before_effective_start": 0
+  },
+  "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
+  "rows_after_effective_start": 260,
+  "contracts_first_observed": 260
+ },
+ "metrics": {
+  "eligible_itf_n": 56,
+  "eligible_all_n": 92,
+  "settled_itf_n": 0,
+  "settled_non_itf_n": 2,
+  "itf_after_fee_pnl": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "non_itf_after_fee_pnl": {
+   "n": 2,
+   "mean": -0.065,
+   "median": -0.065,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "combined_after_fee_pnl": {
+   "n": 2,
+   "mean": -0.065,
+   "median": -0.065,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "minimum_n_applies_to": "ITF positive-edge rows (the subset the abstention is about)"
+ },
+ "exclusion_counts": {
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 0,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 168
+ },
+ "summary": {
+  "kind": "ABSTENTION",
+  "minimum_n": 400,
+  "eligible_n": 56,
+  "settled_n": 0,
+  "strict_clv_n": 0,
+  "unsettled_n": 56,
+  "clv_pending_n": 0,
+  "unscorable_n": 0,
+  "accuracy_pass": null,
+  "clv_pass": null,
+  "economics_pass": false,
+  "clv_required": false,
+  "notes": []
+ },
+ "notes": [],
+ "field_audit": [
+  {
+   "field": "MATCH_WINNER contract, level",
+   "source": "every stream; level from the series ticker",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "frozen decision probability gen2_dyn_hier_sr_v1+fair_v1 (with surface) at decision time",
+   "source": "shadow-board opportunities only",
+   "class": "NOT_AVAILABLE",
+   "note": "the shadow board ran once, at 2026-09-12 17:13, eleven minutes BEFORE this freeze, and is scheduled in no workflow; the ledger holds Gen-1; the dislocation scan computes fair_v1 with surface=None on the externally-listed subset only"
+  },
+  {
+   "field": "fee-adjusted edge at the executable ask",
+   "source": "would be derivable from the probability above",
+   "class": "NOT_AVAILABLE",
+   "note": "no probability, no edge"
+  },
+  {
+   "field": "settlement result",
+   "source": "capture settlements sweep (Kalshi status=settled), discovery settled block",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  }
+ ],
+ "harvester_version": 1,
+ "harvest_run": "20260928T033418Z",
+ "evidence_rows_this_run": 260,
+ "evidence_rows_appended": 260,
+ "last_evidence_at": "2026-09-28T03:33:22.503933+00:00",
+ "harvest_run_at": "2026-09-28T03:35:22.059543+00:00",
+ "evidence_chain_violations": [],
+ "frozen_definition": {
+  "frozen_at": "2026-09-12T17:24:04.826616+00:00",
+  "confirmation_start": "2026-09-12T17:24:04.826616+00:00",
+  "minimum_n": 400,
+  "inclusion_rule": "MATCH_WINNER contracts where fee-adjusted edge at the executable ask is > 0. Compare the realised after-fee P&L per contract of rows with level == 'ITF' against rows with level != 'ITF'. One contract at the displayed ask, taker fee.",
+  "required_accuracy_condition": "ITF realised after-fee P&L per contract < 0 with a bootstrap 95% interval excluding zero, AND below the non-ITF subset's",
+  "required_clv_condition": "not required: this is an abstention rule and generates no position",
+  "required_after_fee_condition": "the non-ITF subset's realised after-fee P&L per contract exceeds the combined set's",
+  "model_version": "gen2_dyn_hier_sr_v1+fair_v1+selector_v1",
+  "status": "PROSPECTIVE_PENDING"
+ },
+ "frozen_definition_fingerprint": "b2bc4e45ed8ea3bb"
+}

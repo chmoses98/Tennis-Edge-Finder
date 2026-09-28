@@ -1,0 +1,19 @@
+{
+ "candidate_id": "EC-2026-002-MKTCOND-GAME-SPREAD",
+ "original_frozen_at": "2026-09-12T06:30:00+00:00",
+ "original_confirmation_start": "2026-09-12T06:30:00+00:00",
+ "producer_missing_period_start": "2026-09-12T06:30:00+00:00",
+ "producer_missing_period_end": "2026-09-28T03:33:38.085450+00:00",
+ "effective_scorable_start": "2026-09-28T03:33:38.085450+00:00",
+ "model_version": "market_conditioned_v1 + gen2_dyn_hier_sr_v1",
+ "producer": "model4_board_v1",
+ "producer_entrypoint": "scripts/ops/model4_board.py",
+ "producer_version": "model4_board_v1@ca241d01e58a",
+ "activating_main_sha": "ca241d01e58a41af8974729ae247d10c4aa3c616",
+ "timing_admission": "as EC-2026-001",
+ "reason_prior_period_unscorable": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
+ "candidate_definition_fingerprint": "982b3fd7ae2bb31a",
+ "written_at": "2026-09-28T03:33:40.560542+00:00",
+ "authority": "RESEARCH_ONLY_NO_REAL_MONEY",
+ "fingerprint": "ff52931938dfd6e5b0b002e64a5af43e614f25a8aa2bc0a92037fd431714b0af"
+}

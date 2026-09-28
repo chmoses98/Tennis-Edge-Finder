@@ -1,0 +1,19 @@
+{
+ "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
+ "original_frozen_at": "2026-09-12T17:24:04.826616+00:00",
+ "original_confirmation_start": "2026-09-12T17:24:04.826616+00:00",
+ "producer_missing_period_start": "2026-09-12T17:24:04.826616+00:00",
+ "producer_missing_period_end": "2026-09-28T03:33:22.503933+00:00",
+ "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
+ "model_version": "gen2_dyn_hier_sr_v1+fair_v1+selector_v1",
+ "producer": "shadow_board_v1",
+ "producer_entrypoint": "scripts/ops/shadow_board.py",
+ "producer_version": "shadow_board_v1@ca241d01e58a",
+ "activating_main_sha": "ca241d01e58a41af8974729ae247d10c4aa3c616",
+ "timing_admission": "accuracy and P&L on rows not confirmed POST_START/AMBIGUOUS; strict CLV on STRICT_PREGAME (A/B) only",
+ "reason_prior_period_unscorable": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
+ "candidate_definition_fingerprint": "d14460d3db1bb488",
+ "written_at": "2026-09-28T03:33:37.602903+00:00",
+ "authority": "RESEARCH_ONLY_NO_REAL_MONEY",
+ "fingerprint": "b89520a6883bea00c35c6a473650058833b4f354fe28aaf520d177d38427660b"
+}

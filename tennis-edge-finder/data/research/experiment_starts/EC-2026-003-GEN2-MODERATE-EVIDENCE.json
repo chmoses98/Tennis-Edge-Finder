@@ -1,0 +1,19 @@
+{
+ "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
+ "original_frozen_at": "2026-09-12T06:30:00+00:00",
+ "original_confirmation_start": "2026-09-12T06:30:00+00:00",
+ "producer_missing_period_start": "2026-09-12T06:30:00+00:00",
+ "producer_missing_period_end": "2026-09-28T03:33:22.503933+00:00",
+ "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
+ "model_version": "gen2_dyn_hier_sr_v1",
+ "producer": "shadow_board_v1",
+ "producer_entrypoint": "scripts/ops/shadow_board.py",
+ "producer_version": "shadow_board_v1@ca241d01e58a",
+ "activating_main_sha": "ca241d01e58a41af8974729ae247d10c4aa3c616",
+ "timing_admission": "accuracy on rows not confirmed POST_START/AMBIGUOUS; strict CLV on STRICT_PREGAME (A/B) only",
+ "reason_prior_period_unscorable": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
+ "candidate_definition_fingerprint": "533327bdfd235561",
+ "written_at": "2026-09-28T03:33:37.602585+00:00",
+ "authority": "RESEARCH_ONLY_NO_REAL_MONEY",
+ "fingerprint": "28590dba975e5a36f512ceb1c55be55e37dff0e2fa41d084e7dd30b37e83a9dd"
+}

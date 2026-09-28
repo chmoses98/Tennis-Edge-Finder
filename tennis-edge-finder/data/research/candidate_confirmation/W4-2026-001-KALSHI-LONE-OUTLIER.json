@@ -1,0 +1,207 @@
+{
+ "candidate_id": "W4-2026-001-KALSHI-LONE-OUTLIER",
+ "kind": "TRADE",
+ "status": "INSUFFICIENT_N",
+ "status_reason": "1 eligible of 200 required",
+ "universe": {
+  "stream": "research/external/dislocations (external_v1)",
+  "rows_total": 16494,
+  "rows_before_confirmation_start": 260,
+  "rows_after": 16234,
+  "failed_gate_counts": {
+   "reference_exists": 8218,
+   "kalshi_lone_outlier": 15351,
+   "external_edge_ge_2c": 16084,
+   "displayed_size_ge_1": 123,
+   "spread_within_6c": 1047
+  },
+  "freshness_of_gate_passing_rows": {
+   "VERIFIED_FRESH": 13,
+   "UNVERIFIABLE": 51,
+   "UNRESOLVED": 4,
+   "MIXED": 6
+  },
+  "scanner_shadow_bet_rows": 74,
+  "rule_gates_pass_rows": 74,
+  "rule_and_freshness_pass_rows": 13,
+  "first_qualifying_observations": 11,
+  "reobservations_removed": 2,
+  "first_qualifying_by_timing": {
+   "START_UNKNOWN": 10,
+   "STRICT_PREGAME": 1
+  },
+  "first_qualifying_sample": {
+   "n": 11,
+   "first": "2026-09-13T22:54:29.058817+00:00",
+   "last": "2026-09-26T23:53:05.456857+00:00",
+   "physical_matches": 11,
+   "calendar_days": 8,
+   "tournaments": 7,
+   "tour_level": {
+    "ATP/CHALLENGER": 2,
+    "ATP/ITF": 3,
+    "ATP/TEAM": 4,
+    "WTA/TOUR": 1,
+    "WTA/ITF": 1
+   }
+  },
+  "eligible_sample": {
+   "n": 1,
+   "first": "2026-09-18T23:26:07.068809+00:00",
+   "last": "2026-09-18T23:26:07.068809+00:00",
+   "physical_matches": 1,
+   "calendar_days": 1,
+   "tournaments": 1,
+   "tour_level": {
+    "WTA/TOUR": 1
+   }
+  }
+ },
+ "metrics": {
+  "eligible_n": 1,
+  "settled_n": 1,
+  "binary_settled_n": 1,
+  "strict_clv_n": 1,
+  "unresolved_n": 0,
+  "brier_external_reference": 0.30955540879811616,
+  "brier_kalshi_mid": 0.366025,
+  "brier_diff_external_minus_mid": {
+   "n": 1,
+   "mean": -0.05646959120188383,
+   "median": -0.05646959120188383,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "strict_executable_clv": {
+   "n": 1,
+   "mean": 0.0,
+   "median": 0.0,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "strict_midpoint_clv": {
+   "n": 1,
+   "mean": 0.010000000000000009,
+   "median": 0.010000000000000009,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "after_fee_pnl_per_contract": {
+   "n": 1,
+   "mean": 0.58,
+   "median": 0.58,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null,
+   "seed": 20260927,
+   "n_boot": 10000
+  },
+  "conditions": {
+   "accuracy": "external Brier beats Kalshi mid with a 95% CI excluding zero (paired diff < 0)",
+   "clv": "mean strict executable CLV > 0, CI excluding zero, A/B truth only",
+   "economics": "realised after-fee P&L per contract > 0, CI excluding zero"
+  }
+ },
+ "exclusion_counts": {
+  "OBSERVED_BEFORE_CONFIRMATION_START": 260,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 16160,
+  "EXTERNAL_FRESHNESS_UNVERIFIABLE": 51,
+  "EXTERNAL_FRESHNESS_AMBIGUOUS": 10,
+  "TIMING_START_UNKNOWN": 10,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 2
+ },
+ "summary": {
+  "kind": "TRADE",
+  "minimum_n": 200,
+  "eligible_n": 1,
+  "settled_n": 1,
+  "strict_clv_n": 1,
+  "unsettled_n": 0,
+  "clv_pending_n": 0,
+  "unscorable_n": 0,
+  "accuracy_pass": false,
+  "clv_pass": false,
+  "economics_pass": false,
+  "clv_required": true,
+  "notes": []
+ },
+ "notes": [],
+ "field_audit": [
+  {
+   "field": "MATCH_WINNER, triangulation, external fair, external edge",
+   "source": "dislocation ledger (external_v1)",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "Kalshi bid/ask/spread/displayed size/quote age",
+   "source": "dislocation ledger",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "taker fee",
+   "source": "dislocation ledger kalshi_fee (quadratic taker at the ask)",
+   "class": "PRESERVED_AT_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "external venue timestamp < 30 minutes",
+   "source": "external market store (venue source_timestamp per observation)",
+   "class": "DERIVABLE_FROM_IMMUTABLE_CAPTURE",
+   "note": "joined on scan instant + source + de-vigged value; Smarkets publishes no venue timestamp, so a Smarkets contribution can never be VERIFIED fresh"
+  },
+  {
+   "field": "first qualifying observation per contract",
+   "source": "dislocation ledger order by generated_at",
+   "class": "DERIVABLE_FROM_IMMUTABLE_CAPTURE",
+   "note": ""
+  },
+  {
+   "field": "first-ball truth (A/B)",
+   "source": "firstball/store truths, keyed by Kalshi event ticker",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  },
+  {
+   "field": "strict executable close",
+   "source": "capture quotes + order books + candles, cut at the first-ball lower bound",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  },
+  {
+   "field": "settlement result",
+   "source": "capture settlements sweep (Kalshi status=settled), discovery settled block",
+   "class": "LATER_TRUTH_ATTACHMENT_ALLOWED",
+   "note": ""
+  }
+ ],
+ "harvester_version": 1,
+ "harvest_run": "20260928T033418Z",
+ "evidence_rows_this_run": 13,
+ "evidence_rows_appended": 0,
+ "last_evidence_at": "2026-09-26T23:53:05.456857+00:00",
+ "harvest_run_at": "2026-09-28T03:35:55.146979+00:00",
+ "evidence_chain_violations": [],
+ "frozen_definition": {
+  "frozen_at": "2026-09-12T21:09:38.644348+00:00",
+  "confirmation_start": "2026-09-12T21:09:38.644348+00:00",
+  "minimum_n": 200,
+  "inclusion_rule": "MATCH_WINNER contracts where: a reference value exists from at least one admissible external group whose venue timestamp is under 30 minutes old; triangulation is KALSHI_LONE_OUTLIER; external fair minus the executable Kalshi ask minus the taker fee is >= 0.02; the Kalshi quote is two-sided, under an hour old, inside a 6c spread and backed by at least one contract of displayed size. Measured on the FIRST such observation of each contract; later observations of the same contract are follow-up, not new evidence.",
+  "required_accuracy_condition": "on the flagged contracts, the external reference's Brier must beat the Kalshi mid's with a 95% interval excluding zero. Our own model's accuracy is NOT part of the test; Wave 3 settled what it is worth.",
+  "required_clv_condition": "mean strict executable CLV > 0 with a 95% interval excluding zero, computed only against A/B first-ball truth. Confidence C is excluded and this condition may not be met with midpoint CLV.",
+  "required_after_fee_condition": "realised after-fee P&L per contract > 0 at the executable ask with a 95% interval excluding zero, one contract, no assumed depth",
+  "model_version": "external_v1 + fair_v1 (frozen) + gen2_dyn_hier_sr_v1 (frozen)",
+  "status": "PROSPECTIVE_PENDING"
+ },
+ "frozen_definition_fingerprint": "667020b6ff23e388"
+}
