@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-09-28T17:11:19.791465+00:00",
+ "run_id": "20260928T171119Z",
+ "external_parse": {
+  "events": 95,
+  "markets": 927,
+  "skipped_family": 165,
+  "skipped_period": 296,
+  "skipped_live": 23,
+  "one_sided": 18,
+  "rows": 1627,
+  "devigged": 448
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 632,
+  "markets_mapped": 241,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20260928T171119Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 241,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 68,
+  "rows": 436,
+  "two_sided": 432,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 589,
+ "external_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8118,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Yexin Ma": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Dominic Stephan Stricker": 1,
+   "Alafia Ayeni": 1,
+   "Maddox Lundell": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alafia Ayeni": 1,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 102,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9118,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Alafia Ayeni": 1,
+   "Kazuki Nakajima": 1,
+   "Thomas Linley": 1,
+   "Anna Bazderova": 1,
+   "Tereza Tsybulska": 1,
+   "Charlotte Maurey": 1,
+   "Agustina Tarantola": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 100,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 55,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
