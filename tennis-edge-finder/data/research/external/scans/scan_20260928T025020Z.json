@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-09-28T02:50:20.807577+00:00",
+ "run_id": "20260928T025020Z",
+ "external_parse": {
+  "events": 149,
+  "markets": 2183,
+  "skipped_family": 463,
+  "skipped_period": 692,
+  "skipped_live": 4,
+  "one_sided": 17,
+  "rows": 3674,
+  "devigged": 1008
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1034,
+  "markets_mapped": 394,
+  "contracts": 880,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20260928T025020Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 394,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 839,
+  "two_sided": 836,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 542,
+ "external_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 114,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.8201,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Chuan Ding": 1,
+   "Jilong Huang": 1,
+   "Zhiheng Xia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 111,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.8102,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Pyotr Nesterov": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Jilong Huang": 1,
+   "Darya Khomutsianskaya": 1,
+   "Denis Klok": 1,
+   "Rafael Behr": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 121,
+ "kalshi_mapped_matches": 111,
+ "model_witness_available": true,
+ "rows": 156,
+ "counts": {
+  "PASS": 152,
+  "tri:MODEL_LONE_OUTLIER": 75,
+  "tri:MARKETS_AGREE": 24,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
