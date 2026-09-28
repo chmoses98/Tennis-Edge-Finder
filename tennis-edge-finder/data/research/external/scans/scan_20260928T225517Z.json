@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-28T22:55:17.109518+00:00",
+ "run_id": "20260928T225517Z",
+ "external_parse": {
+  "events": 206,
+  "markets": 2449,
+  "skipped_family": 552,
+  "skipped_period": 694,
+  "skipped_live": 10,
+  "one_sided": 25,
+  "rows": 4313,
+  "devigged": 1176
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 743,
+  "markets_mapped": 291,
+  "contracts": 612,
+  "quoted_contracts": 612,
+  "raw": "data/research/external/raw/20260928T225517Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 291,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 79,
+  "rows": 533,
+  "two_sided": 526,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 767,
+ "external_mapping": {
+  "total": 195,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.7641,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Yexin Ma": 1,
+   "Jodie Anna Burrage": 1,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Dominic Stephan Stricker": 1,
+   "Gregory Bernadsky": 1,
+   "Orzechowski Athena": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 146,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8957,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Alexander Binda": 1,
+   "Nikita Mashtakov": 1,
+   "Mayank Sharma": 1,
+   "Cadence Benchetrit": 1,
+   "Har Abir Sekhon": 1,
+   "Aleksandar Govedarica": 1,
+   "Kazuki Nakajima": 1,
+   "LIANGXUAN LIU": 1,
+   "Thomas Linley": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 163,
+ "kalshi_mapped_matches": 146,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 97,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
