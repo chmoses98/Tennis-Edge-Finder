@@ -137,12 +137,21 @@ def _main():
     store = EvidenceStore(a.evidence_out)
     os.makedirs(a.report_out, exist_ok=True)
     results = {}
+    failures = []
     for cid in sorted(cands):
         h = C.HARVESTERS.get(cid)
         if h is None:
             print(f"{cid}: no harvester (not one of the seven audited candidates)")
             continue
-        res = h(ctx, cands[cid])
+        try:
+            res = h(ctx, cands[cid])
+        except Exception:                                            # noqa: BLE001
+            # one candidate's harvester must not take the others down; the failure is recorded and the
+            # run exits non-zero at the end, so TENNIS-15 FAILS and the next run retries
+            import traceback
+            failures.append(f"{cid}: {traceback.format_exc()[-1500:]}")
+            print(f"{cid:36s} HARVEST_FAILED")
+            continue
         written = store.append_new(cid, res.evidence_rows, run)
         if res.exclusions:
             C.write_exclusions(os.path.join(a.evidence_out, f"{cid}.exclusions.{run}.jsonl.gz"), res.exclusions)
@@ -174,7 +183,8 @@ def _main():
 
     w4 = cands.get("W4-2026-001-KALSHI-LONE-OUTLIER")
     ext = SC.external_scorecard(a.data_root, w4["confirmation_start"] if w4 else "",
-                                results["W4-2026-001-KALSHI-LONE-OUTLIER"].evidence_rows if w4 else None)
+                                results["W4-2026-001-KALSHI-LONE-OUTLIER"].evidence_rows
+                                if "W4-2026-001-KALSHI-LONE-OUTLIER" in results else None)
     json.dump(ext, open(os.path.join(a.report_out, "EXTERNAL_SCORECARD.json"), "w"), indent=1, default=str)
 
     audit = SC.settlement_audit(a.data_root, ctx.settlements, ledger)
@@ -214,6 +224,10 @@ def _main():
               indent=1, default=str)
 
     write_summary(os.path.join(a.report_out, "SUMMARY.md"), run, results, clv, ext, audit)
+    if failures:
+        record_status(a.report_out, success=False, run=run, detail="\n".join(failures))
+        print("::error::candidate harvest failed for " + ", ".join(f.split(":", 1)[0] for f in failures))
+        return 1
     record_status(a.report_out, success=True, run=run, statuses={cid: r.status for cid, r in results.items()})
     return 0
 

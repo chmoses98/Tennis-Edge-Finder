@@ -498,3 +498,27 @@ def test_ec4_size_integrity_and_economics(tmp_path):
     assert abs(x["guaranteed_profit_per_set"] - 0.01) < 1e-9 and abs(x["guaranteed_profit_total"] - 0.12) < 1e-9
     assert abs(x["locked_capital_roi"] - 0.01 / 0.99) < 1e-9 and x["persisted_into_next_capture"] is True
     assert {l["size"] for l in x["leg_prices_sizes_fees"]} == {12.0, 30.0}
+
+
+def test_model4_truth_join_handles_date_objects_from_the_canonical_table(tmp_path):
+    """Regression: the canonical table stores tourney_date as datetime.date; the 2026-09-28 05:46Z harvest
+    crashed comparing it with a Timestamp. The join must work on exactly that storage."""
+    import datetime as _dt
+    import pandas as pd
+    proc = tmp_path / "processed"; proc.mkdir()
+    pd.DataFrame({"winner_id": ["Walton", "X"], "loser_id": ["Tien", "Y"],
+                  "tourney_date": [_dt.date(2026, 9, 24), _dt.date(2026, 9, 24)],
+                  "games_w": [13, 12], "games_l": [9, 4], "sets_w": [2, 2], "sets_l": [1, 0],
+                  "outcome_type": ["COMPLETED", "RETIRED"], "completed": [True, False]}).to_parquet(proc / "matches.parquet")
+    ctx = C.Context(data_root=str(tmp_path), candidates={}, truths={}, settlements={}, capture_root=str(tmp_path))
+    res, why = L._find_result(ctx, "Tien", "Walton", "2026-09-30")
+    assert why == "OK" and res == {"sets_a": 1, "sets_b": 2, "games_a": 9, "games_b": 13}
+    assert L._find_result(ctx, "X", "Y", "2026-09-30")[1] == "NOT_COMPLETED"       # retirement excluded
+    assert L._find_result(ctx, "Walton", "Tien", "2026-11-30")[1] == "NO_RESULT"     # outside the window
+
+
+def test_one_failing_harvester_does_not_block_the_others(tmp_path, monkeypatch):
+    sys.path.insert(0, os.path.join(REPO, "scripts", "research"))
+    import harvest_candidate_evidence as H
+    src_text = open(H.__file__).read()
+    assert "failures.append" in src_text and "return 1" in src_text and "HARVEST_FAILED" in src_text
