@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-28T15:25:07.050324+00:00",
+ "run_id": "20260928T152507Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1749,
+  "skipped_family": 397,
+  "skipped_period": 540,
+  "skipped_live": 28,
+  "one_sided": 10,
+  "rows": 2829,
+  "devigged": 802
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 678,
+  "markets_mapped": 258,
+  "contracts": 538,
+  "quoted_contracts": 538,
+  "raw": "data/research/external/raw/20260928T152507Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 258,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 106,
+  "rows": 432,
+  "two_sided": 426,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1540,
+ "external_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7941,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Manas Manoj Dhamne": 1,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alafia Ayeni": 1,
+   "Noma Akugue Noha": 1,
+   "Kirill Kistanov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Alafia Ayeni": 1,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 206,
+  "by_status": {
+   "MAPPED": 183,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8883,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Alexander Binda": 1,
+   "Alafia Ayeni": 1,
+   "Darya Khomutsianskaya": 1,
+   "Maxim Khorozov": 1,
+   "Yahor Slizevich": 1,
+   "Pavel Skvortcov": 1,
+   "Har Abir Sekhon": 1,
+   "Aleksandar Govedarica": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 183,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 65,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "kalshi_not_two_sided": 2
+ }
+}
