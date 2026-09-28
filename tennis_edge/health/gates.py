@@ -480,6 +480,124 @@ def _auto_extra() -> dict:
     return extra
 
 
+# ---------------------------------------------------------------------------------------------------
+# TENNIS-15: is every frozen experiment actually being fed, harvested and scored?
+HEALTHY_NO_QUALIFYING_MARKETS = "HEALTHY_NO_QUALIFYING_MARKETS"
+PRODUCER_NOT_RUNNING = "PRODUCER_NOT_RUNNING"
+HARVEST_FAILED = "HARVEST_FAILED"
+SCORING_ACTIVE = "SCORING_ACTIVE"
+#: a producer that has not reported inside this window is dead, not quiet
+PRODUCER_MAX_SILENCE_H = {"shadow_board_v1": 13.0, "model4_board_v1": 13.0, "external_scan": 2.0, "capture_books": 2.0}
+CANDIDATE_PRODUCERS = {
+    "EC-2026-001-MKTCOND-EXACT-SCORE": "model4_board_v1", "EC-2026-002-MKTCOND-GAME-SPREAD": "model4_board_v1",
+    "EC-2026-003-GEN2-MODERATE-EVIDENCE": "shadow_board_v1", "W3-2026-001-ABSTAIN-ITF": "shadow_board_v1",
+    "W3-2026-002-NONITF-POSITIVE-EDGE": "shadow_board_v1", "W4-2026-001-KALSHI-LONE-OUTLIER": "external_scan",
+    "EC-2026-004-COHERENCE-EXECUTABLE": "capture_books"}
+
+
+def _iso_dt(x):
+    try:
+        return datetime.fromisoformat(str(x).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return None
+
+
+def producer_last_seen(research_root: str, capture_root: str) -> dict:
+    """producer -> last time it demonstrably ran (heartbeat, scan file or capture manifest)."""
+    out = {}
+    hb = os.path.join(research_root, "frozen_producers", "heartbeats.jsonl")
+    if os.path.exists(hb):
+        for line in open(hb):
+            try:
+                r = json.loads(line)
+            except ValueError:
+                continue
+            t = _iso_dt(r.get("ran_at"))
+            if t and (r.get("producer") not in out or t > out[r["producer"]]):
+                out[r["producer"]] = t
+    scans = sorted(glob.glob(os.path.join(research_root, "external", "scans", "scan_*.json")))
+    if scans:
+        try:
+            out["external_scan"] = datetime.strptime(os.path.basename(scans[-1])[5:21], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc)
+        except ValueError:
+            pass
+    mans = sorted(glob.glob(os.path.join(capture_root, "*", "*.manifest.json")))
+    if mans:
+        try:
+            out["capture_books"] = _iso_dt(json.load(open(mans[-1])).get("finished_at"))
+        except (OSError, ValueError):
+            pass
+    return out
+
+
+def gate_15_prospective_confirmation(research_root=None, capture_root=None, report_dir=None, now=None) -> GateResult:
+    """TENNIS-15: per frozen candidate, is its producer alive, is the harvest succeeding, and where does
+    scoring stand. Zero evidence because no qualifying market was listed is HEALTHY; a producer that has
+    stopped reporting, or a harvest whose last failure is newer than its last success, is a FAILURE."""
+    now = now or datetime.now(timezone.utc)
+    research_root = research_root or os.path.join(PROJ, "data", "research")
+    capture_root = capture_root or os.path.join(PROJ, "data", "kalshi", "capture")
+    report_dir = report_dir or os.path.join(research_root, "candidate_confirmation")
+    reports = {}
+    for p in glob.glob(os.path.join(report_dir, "*.json")):
+        try:
+            r = json.load(open(p))
+        except (OSError, ValueError):
+            continue
+        if isinstance(r, dict) and r.get("candidate_id"):
+            reports[r["candidate_id"]] = r
+    try:
+        hs = json.load(open(os.path.join(report_dir, "HARVEST_STATUS.json")))
+    except (OSError, ValueError):
+        hs = {}
+    if not reports and not hs:
+        return GateResult("TENNIS-15", "prospective_confirmation_health", "UNKNOWN",
+                          {"reason": "no candidate harvest has ever run"})
+    last_ok, last_bad = _iso_dt(hs.get("last_success")), _iso_dt(hs.get("last_failure"))
+    harvest_failed = last_ok is None or (last_bad is not None and last_bad > last_ok)
+    seen = producer_last_seen(research_root, capture_root)
+    starts_dir = os.path.join(research_root, "experiment_starts")
+    per, bad = {}, []
+    for cid, prod in CANDIDATE_PRODUCERS.items():
+        rep = reports.get(cid) or {}
+        summ = rep.get("summary") or {}
+        start = None
+        sp = os.path.join(starts_dir, f"{cid}.json")
+        if os.path.exists(sp):
+            start = json.load(open(sp)).get("effective_scorable_start")
+        last = seen.get(prod)
+        active = last is not None and (now - last).total_seconds() / 3600 <= PRODUCER_MAX_SILENCE_H[prod]
+        needs_start = prod in ("shadow_board_v1", "model4_board_v1")
+        status = rep.get("status")
+        eligible = summ.get("eligible_n") or 0
+        if harvest_failed:
+            health = HARVEST_FAILED
+        elif not active or (needs_start and start is None):
+            health = PRODUCER_NOT_RUNNING
+        elif eligible == 0:
+            health = HEALTHY_NO_QUALIFYING_MARKETS
+        elif status in ("INSUFFICIENT_N", "PENDING_SETTLEMENT", "PENDING_STRICT_CLV"):
+            health = status
+        else:
+            health = SCORING_ACTIVE
+        if health in (HARVEST_FAILED, PRODUCER_NOT_RUNNING):
+            bad.append(cid)
+        harvested = _iso_dt(rep.get("harvest_run_at")) or (
+            datetime.strptime(rep["harvest_run"], "%Y%m%dT%H%M%SZ").replace(tzinfo=timezone.utc) if rep.get("harvest_run") else None)
+        per[cid] = {"health": health, "producer": prod, "producer_required": True, "producer_active": active,
+                    "producer_last_seen": last.isoformat() if last else None,
+                    "effective_scorable_start": start, "eligible_n": eligible,
+                    "settled_n": summ.get("settled_n"), "strict_clv_n": summ.get("strict_clv_n"),
+                    "candidate_status": status, "last_evidence_at": rep.get("last_evidence_at"),
+                    "evidence_age_h": round((now - _iso_dt(rep["last_evidence_at"])).total_seconds() / 3600, 1)
+                    if _iso_dt(rep.get("last_evidence_at")) else None,
+                    "harvest_age_h": round((now - harvested).total_seconds() / 3600, 1) if harvested else None}
+    detail = {"last_harvest_success": hs.get("last_success"), "last_harvest_failure": hs.get("last_failure"),
+              "last_harvest_failure_detail": (hs.get("last_failure_detail") or "")[-400:] or None,
+              "harvest_failed": harvest_failed, "failing": bad, "candidates": per}
+    return GateResult("TENNIS-15", "prospective_confirmation_health", "FAIL" if bad else "PASS", detail)
+
+
 def run_all(extra: dict | None = None) -> list[GateResult]:
     extra = {**_auto_extra(), **(extra or {})}
     out = [gate_1_discovery(), gate_2_taxonomy()]
@@ -497,4 +615,5 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
                                     n_strict_settled=extra.get("n_strict_settled")))
     out.append(gate_11_consistency(extra.get("consistency_violations")))
     out.append(gate_12_ledger()); out.append(gate_13_reproducible()); out.append(gate_14_source_freshness())
+    out.append(gate_15_prospective_confirmation())
     return out

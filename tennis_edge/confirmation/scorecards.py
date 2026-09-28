@@ -197,3 +197,133 @@ def settlement_audit(data_root: str, settlements: dict, ledger: list[dict]) -> d
             "strict_clv_embedded_in_settlement_rows": embedded_strict,
             "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that "
                     "arrives later updates data/research/clv/<run>.jsonl but not the embedded copy"}
+
+
+# ------------------------------------------------------------------------------------------------------
+# Versioned derived view: strict CLV through a SIBLING event of the same canonical physical match.
+CLV_JOIN_VERSION = 1
+JOIN_METHOD = "CANONICAL_PHYSICAL_MATCH"
+#: two sibling truths whose earliest-possible first balls differ by more than this are a disagreement
+SIBLING_TRUTH_TOLERANCE_S = 300.0
+
+
+def _code_date(event_ticker: str) -> str | None:
+    """'KXATPMATCH-26SEP11ZVEKHA' -> '2026-09-11' (the date is part of the exchange's own match code)."""
+    import re
+    from datetime import datetime as _dt
+    parts = (event_ticker or "").split("-")
+    m = re.match(r"^(\d{2})([A-Z]{3})(\d{2})", parts[1]) if len(parts) > 1 else None
+    if not m:
+        return None
+    try:
+        return _dt.strptime(f"20{m.group(1)}{m.group(2)}{m.group(3)}", "%Y%b%d").date().isoformat()
+    except ValueError:
+        return None
+
+
+def physical_match_id(row: dict) -> str | None:
+    """Canonical physical match identity of a ledger row: tour, discipline, BOTH canonical player ids and
+    the exchange's match date. Names, event titles and dates alone are never used."""
+    a, b, tour = row.get("player_a_id"), row.get("player_b_id"), row.get("tour")
+    d = _code_date(row.get("match_id") or row.get("event_ticker") or "")
+    if not a or not b or not tour or not d:
+        return None
+    disc = "doubles" if ("|" in str(a) or "|" in str(b)) else "singles"
+    return f"{tour}:{disc}:{min(str(a), str(b))}:{max(str(a), str(b))}:{d}"
+
+
+def _is_match_level(event_ticker: str) -> bool:
+    """SERIES-CODE only. An event with a third part is a LEG of the match (set n, game n) and is refused
+    as a truth source, whatever it shares with the target."""
+    return len((event_ticker or "").split("-")) == 2
+
+
+def sibling_join_clv(ctx, rows: list[dict], exact_pairs: list) -> dict:
+    """Strict CLV for ledger rows whose own event has no A/B truth but whose canonical physical match does.
+
+    Never rewrites the exact-join CLV history: this is a separate, versioned view with provenance on every
+    row. Refused: a source that is a match leg, a different discipline or physical match, a no-play truth,
+    or siblings that disagree about when the first ball could have been struck."""
+    exact_strict = {r["prediction_id"] for r, rec in exact_pairs if rec.strict}
+    pm_of_event, rejected = {}, Counter()
+    for r in rows:
+        pm = physical_match_id(r)
+        if pm is None:
+            continue
+        prev = pm_of_event.setdefault(r["match_id"], pm)
+        if prev != pm:
+            pm_of_event[r["match_id"]] = "CONFLICT"
+    truth_by_pm = defaultdict(list)
+    for ev_id, t in ctx.truths.items():
+        if not (t.strict_eligible and not t.no_play and t.lower_bound_utc is not None):
+            continue
+        pm = pm_of_event.get(ev_id)
+        if pm is None or pm == "CONFLICT":
+            continue
+        if not _is_match_level(ev_id):
+            rejected["source_is_a_match_leg"] += 1
+            continue
+        truth_by_pm[pm].append((ev_id, t))
+
+    def own_ab(r):
+        t = ctx.truths.get(r["match_id"])
+        return bool(t and t.strict_eligible and not t.no_play)
+
+    need = [r for r in rows if not own_ab(r)]
+    qmap = ctx.quotes({r["ticker"] for r in need})
+    out, fam = [], Counter()
+    for r in need:
+        pm = pm_of_event.get(r["match_id"])
+        if pm in (None, "CONFLICT"):
+            if pm == "CONFLICT":
+                rejected["target_event_maps_to_several_physical_matches"] += 1
+            continue
+        srcs = [(e, t) for e, t in truth_by_pm.get(pm, []) if e != r["match_id"]]
+        if not srcs:
+            continue
+        lows = [t.lower_bound_utc for _e, t in srcs]
+        if (max(lows) - min(lows)).total_seconds() > SIBLING_TRUTH_TOLERANCE_S:
+            rejected["sibling_truths_disagree"] += 1
+            continue
+        src_ev, truth = min(srcs, key=lambda x: x[1].lower_bound_utc)   # earliest first ball: conservative
+        gen = src.iso(r["generated_at_utc"])
+        tc = classify(gen, truth)
+        cc = canonical_close(qmap.get(r["ticker"], []), truth)
+        dq = r.get("market_quote") or {}
+        entry = Quote(gen, dq.get("yes_bid"), dq.get("yes_ask"), no_bid=dq.get("no_bid"), no_ask=dq.get("no_ask"))
+        rec = clv_record(prediction_id=r["prediction_id"], ticker=r["ticker"], match_id=r["match_id"],
+                         family=r["family"], entry=entry, close=cc, truth=truth, timing=tc,
+                         tour=r.get("tour", ""), level=r.get("level", ""),
+                         model_prob=(r.get("models") or {}).get("ELO_DP_FAIR"),
+                         fee_schedule=FeeSchedule(fee_type=r.get("fee_type") or "quadratic"))
+        d = rec.to_dict()
+        d.update(target_event_id=r["match_id"], truth_source_event_id=src_ev, physical_match_id=pm,
+                 join_method=JOIN_METHOD, clv_join_version=CLV_JOIN_VERSION)
+        out.append(d)
+        if rec.strict:
+            fam[r["family"]] += 1
+    recovered = [d for d in out if d["strict"] and d["prediction_id"] not in exact_strict]
+    return {"clv_join_version": CLV_JOIN_VERSION, "join_method": JOIN_METHOD,
+            "strict_before": len(exact_strict), "strict_after": len(exact_strict) + len(recovered),
+            "rows_given_a_sibling_truth": len(out), "rows_recovered_strict": len(recovered),
+            "families_recovered": dict(fam), "rejected": dict(rejected),
+            "rows": out}
+
+
+def weekly_match_winner_clv(pairs: list) -> dict:
+    """The one-decision-per-physical-match MATCH_WINNER baseline (view B), by fixed ISO calendar week of
+    the entry. Every week is reported; nothing is pooled selectively."""
+    strict = [(r, rec) for r, rec in pairs if rec.strict and r.get("family") == "MATCH_WINNER"
+              and not (r.get("model_version") or "").startswith("doubles")]
+    first = {}
+    for r, rec in sorted(strict, key=lambda x: x[0]["generated_at_utc"]):
+        if r.get("subject") != r.get("player_a"):
+            continue
+        first.setdefault(_physical_key(r), (r, rec))
+    weeks = defaultdict(list)
+    for r, rec in first.values():
+        y, w, _ = src.iso(r["generated_at_utc"]).isocalendar()
+        weeks[f"{y}-W{w:02d}"].append((r, rec))
+    return {"baseline": _cell(list(first.values())),
+            "weeks": {k: _cell(v) for k, v in sorted(weeks.items())},
+            "note": "descriptive; never used to edit a candidate"}

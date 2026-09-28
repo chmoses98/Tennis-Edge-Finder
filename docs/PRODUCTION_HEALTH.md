@@ -132,3 +132,21 @@ What the gates were reading, and what changed. No threshold moved; see `research
   queued gap is more than two hours old. Before the fix every one of 1,689 passes truncated and the cursor
   silently skipped ~2.75 hours of tape.
 * **TENNIS-2/3** pass: the two Laver Cup series are now explicit (`TEAM_EVENT_MATCH_WINNER`, unpriced).
+
+## TENNIS-15 prospective_confirmation_health (2026-09-28)
+
+Per frozen candidate: producer required / active (last heartbeat, scan or capture manifest), effective
+scorable start, eligible / settled / strict-CLV N, last evidence and its age, candidate status, last
+harvest success and failure. Health labels, deliberately distinct:
+
+| label | meaning | gate |
+|---|---|---|
+| HEALTHY_NO_QUALIFYING_MARKETS | producer alive, harvest fine, nothing qualified | PASS |
+| INSUFFICIENT_N / PENDING_SETTLEMENT / PENDING_STRICT_CLV | scoring, not yet decidable | PASS |
+| SCORING_ACTIVE | enough to evaluate the frozen conditions | PASS |
+| PRODUCER_NOT_RUNNING | no heartbeat inside 13 h (shadow board, Model 4) or 2 h (external scan, capture books), or no experiment-start record | FAIL |
+| HARVEST_FAILED | the last harvest failure is newer than the last success (`candidate_confirmation/HARVEST_STATUS.json`) | FAIL |
+
+A harvest failure is an `::error::` annotation in RUN TENNIS, is recorded by `--record-failure`, and
+FAILS TENNIS-15; settlement and capture outputs still publish, and the next run retries from the immutable
+inputs. Zero evidence because Kalshi listed nothing qualifying is healthy; a silent producer is not.

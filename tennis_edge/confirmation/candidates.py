@@ -356,6 +356,7 @@ def harvest_w4(ctx: Context, cand: dict) -> HarvestResult:
     res.universe["rule_and_freshness_pass_rows"] = len(qualifying)
 
     qualifying.sort(key=lambda x: (x[2]["generated_at"], x[2]["kalshi_ticker"]))
+    ctx.quotes({x[2]["kalshi_ticker"] for x in qualifying})        # one capture pass for every contract
     seen = set()
     parsed = ctx.parsed_markets()
     rows = []
@@ -514,8 +515,10 @@ def harvest_ec4(ctx: Context, cand: dict) -> HarvestResult:
                     key = (o.kind, sfx, tuple(sorted(l["ticker"] for l in o.legs)))
                     qual = o.size >= EC4_MIN_LEG_SIZE and o.executable_margin > 0
                     s = structures.get(key)
+                    if s is not None:
+                        s.setdefault("runs", set()).add(run)
                     if s is None:
-                        structures[key] = {"first": o, "first_run": run, "first_ts": ts, "last_ts": ts, "passes": 1,
+                        structures[key] = {"runs": {run}, "first": o, "first_run": run, "first_ts": ts, "last_ts": ts, "passes": 1,
                                            "qualifying_passes": int(qual), "max_margin": o.executable_margin,
                                            "max_size": o.size, "qualifying_first_ts": ts if qual else None}
                     else:
@@ -526,9 +529,12 @@ def harvest_ec4(ctx: Context, cand: dict) -> HarvestResult:
                         s["max_size"] = max(s["max_size"], o.size)
                         if qual and s["qualifying_first_ts"] is None:
                             s["qualifying_first_ts"] = ts
+    run_order = sorted(by_run)
+    next_run = {r: run_order[i + 1] for i, r in enumerate(run_order[:-1])}
     rows = []
     for key, s in structures.items():
         o = s["first"]
+        capital = o.capital_per_set + o.fees_per_set
         qual = s["qualifying_passes"] > 0
         dur = (src.iso(s["last_ts"]) - src.iso(s["first_ts"])).total_seconds()
         reasons = () if qual else (ev.R_RULE_FAILED, f"min leg size {s['max_size']:.0f} < {EC4_MIN_LEG_SIZE:.0f} on every pass")
@@ -542,7 +548,15 @@ def harvest_ec4(ctx: Context, cand: dict) -> HarvestResult:
                    "worst_case_payoff": o.worst_case_payoff, "theoretical_margin": o.theoretical_margin,
                    "executable_margin_first": o.executable_margin, "max_executable_margin": s["max_margin"],
                    "max_size": s["max_size"], "passes_seen": s["passes"], "qualifying_passes": s["qualifying_passes"],
-                   "duration_s": dur, "total_executable_profit_first": o.total_executable_profit},
+                   "duration_s": dur, "total_executable_profit_first": o.total_executable_profit,
+                   "leg_prices_sizes_fees": [{"ticker": l["ticker"], "side": l["side"], "price": l["price"],
+                                              "size": l["size"], "fee": l["fee"]} for l in o.legs],
+                   "capital_required_per_set": capital, "capital_required_total": capital * o.size,
+                   "guaranteed_payoff_per_set": o.worst_case_payoff,
+                   "guaranteed_profit_per_set": o.executable_margin,
+                   "guaranteed_profit_total": o.executable_margin * o.size,
+                   "locked_capital_roi": (o.executable_margin / capital) if capital > 0 else None,
+                   "persisted_into_next_capture": next_run.get(s["first_run"]) in s["runs"]},
             inclusion_result=ev.INCLUDED if qual else ev.EXCLUDED, exclusion_reasons=reasons,
             source_hashes={"first_capture_run": s["first_run"]}, harvester_version=HARVESTER_VERSION))
     res.evidence_rows = rows
@@ -561,6 +575,10 @@ def harvest_ec4(ctx: Context, cand: dict) -> HarvestResult:
         "qualifying": [{"kind": r.extra["kind"], "family": r.market_family, "match": r.physical_match_id,
                         "first_seen": r.captured_at, "duration_s": r.extra["duration_s"],
                         "capital_per_set": r.extra["capital_per_set"], "worst_case_payoff": r.extra["worst_case_payoff"],
+                        "capital_required_total": r.extra["capital_required_total"],
+                        "guaranteed_profit_total": r.extra["guaranteed_profit_total"],
+                        "locked_capital_roi": r.extra["locked_capital_roi"],
+                        "persisted_into_next_capture": r.extra["persisted_into_next_capture"],
                         "max_executable_margin": r.extra["max_executable_margin"], "max_size": r.extra["max_size"]}
                        for r in qual_rows],
         "sub_threshold": [{"kind": r.extra["kind"], "family": r.market_family, "match": r.physical_match_id,
@@ -730,6 +748,19 @@ HARVESTERS = {
     "W3-2026-002-NONITF-POSITIVE-EDGE": harvest_w3,
     "W4-2026-001-KALSHI-LONE-OUTLIER": harvest_w4,
 }
+
+
+# The five candidates whose frozen producers started on 2026-09-28: each harvester falls back to the
+# historical UNSCORABLE verdict above until its producer has written an experiment-start record.
+from tennis_edge.confirmation import started_candidates as _live  # noqa: E402
+
+HARVESTERS.update({
+    "EC-2026-001-MKTCOND-EXACT-SCORE": _live.harvest_ec1_live,
+    "EC-2026-002-MKTCOND-GAME-SPREAD": _live.harvest_ec2_live,
+    "EC-2026-003-GEN2-MODERATE-EVIDENCE": _live.harvest_ec3_live,
+    "W3-2026-001-ABSTAIN-ITF": _live.harvest_w3_live,
+    "W3-2026-002-NONITF-POSITIVE-EDGE": _live.harvest_w3_live,
+})
 
 
 def write_exclusions(path: str, rows: list[dict]) -> None:
