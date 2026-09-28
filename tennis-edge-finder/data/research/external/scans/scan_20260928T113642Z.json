@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-28T11:36:42.558773+00:00",
+ "run_id": "20260928T113642Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 959,
+  "skipped_family": 149,
+  "skipped_period": 312,
+  "skipped_live": 40,
+  "one_sided": 23,
+  "rows": 1651,
+  "devigged": 475
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 600,
+  "markets_mapped": 250,
+  "contracts": 536,
+  "quoted_contracts": 536,
+  "raw": "data/research/external/raw/20260928T113642Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 250,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 499,
+  "two_sided": 498,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 660,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8037,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Manas Manoj Dhamne": 1,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alafia Ayeni": 1,
+   "Bertea Ruxandra": 1,
+   "Noma Akugue Noha": 1,
+   "Mayank Sharma": 1,
+   "Nicholas van Aken": 1,
+   "Iulius Maximus Stoica": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 70,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Alafia Ayeni": 1,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 143,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8882,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Darya Khomutsianskaya": 1,
+   "LIANGXUAN LIU": 1,
+   "Thomas Linley": 1,
+   "Nicholas Van Aken": 1,
+   "Denis Klok": 1,
+   "Rafael Behr": 1,
+   "Jure Siftar": 1,
+   "Mayank Sharma": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 143,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
