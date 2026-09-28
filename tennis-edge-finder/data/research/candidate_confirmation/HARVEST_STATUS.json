@@ -1,5 +1,5 @@
 {
- "last_attempt": "2026-09-28T03:36:27.977214+00:00",
+ "last_attempt": "2026-09-28T05:46:56.386723+00:00",
  "last_success": "2026-09-28T03:36:27.977214+00:00",
  "last_success_run": "20260928T033418Z",
  "statuses": {
@@ -10,5 +10,7 @@
   "W3-2026-001-ABSTAIN-ITF": "INSUFFICIENT_N",
   "W3-2026-002-NONITF-POSITIVE-EDGE": "INSUFFICIENT_N",
   "W4-2026-001-KALSHI-LONE-OUTLIER": "INSUFFICIENT_N"
- }
+ },
+ "last_failure": "2026-09-28T05:46:56.386723+00:00",
+ "last_failure_detail": "^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/ops/common.py\", line 85, in new_method\n    return method(self, other)\n           ^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/arraylike.py\", line 62, in __ge__\n    return self._cmp_method(other, operator.ge)\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/series.py\", line 6735, in _cmp_method\n    res_values = ops.comparison_op(lvalues, rvalues, op)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/ops/array_ops.py\", line 356, in comparison_op\n    res_values = comp_method_OBJECT_ARRAY(op, lvalues, rvalues)\n                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/hostedtoolcache/Python/3.11.16/x64/lib/python3.11/site-packages/pandas/core/ops/array_ops.py\", line 131, in comp_method_OBJECT_ARRAY\n    result = libops.scalar_compare(x.ravel(), y, op)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/ops.pyx\", line 107, in pandas._libs.ops.scalar_compare\n  File \"pandas/_libs/tslibs/timestamps.pyx\", line 492, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__\nTypeError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead."
 }

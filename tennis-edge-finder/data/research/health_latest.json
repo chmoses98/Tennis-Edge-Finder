@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260928T013039Z",
-   "age_hours": 2.1,
+   "age_hours": 4.3,
    "complete": true,
    "failures": 0,
    "series_tennis": 145
@@ -37,28 +37,28 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 284,
-   "projected": 216,
-   "not_projected": 68,
+   "projectable_open_pregame": 256,
+   "projected": 198,
+   "not_projected": 58,
    "missing_sample": [
-    "KXWTACHALLENGERMATCH-26SEP27IBRKHO-KHO: Darya Khomutsianskaya: UNMAPPED (no exact full-name match)",
-    "KXWTACHALLENGERMATCH-26SEP27IBRKHO-IBR: Darya Khomutsianskaya: UNMAPPED (no exact full-name match)",
     "KXATPCHALLENGERMATCH-26SEP28NESTOP-TOP: Pyotr Nesterov: UNMAPPED (no exact full-name match)",
     "KXATPCHALLENGERMATCH-26SEP28NESTOP-NES: Pyotr Nesterov: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP27DINAGU-DIN: Chuan Ding: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP27DINAGU-AGU: Chuan Ding: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP27XIAZHU-ZHU: Zhiheng Xia: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP27XIAZHU-XIA: Zhiheng Xia: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP27RAWBIN-RAW: Alexander Binda: UNMAPPED (no exact full-name match)",
-    "KXATPCHALLENGERMATCH-26SEP27RAWBIN-BIN: Alexander Binda: UNMAPPED (no exact full-name match)"
+    "KXITFMATCH-26SEP28KLOVIL-VIL: Denis Klok: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28KLOVIL-KLO: Denis Klok: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28BILBEH-BIL: Rafael Behr: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28BILBEH-BEH: Rafael Behr: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28CHASIF-SIF: Jure Siftar: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28CHASIF-CHA: Jure Siftar: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28TERSHA-TER: Mayank Sharma: UNMAPPED (no exact full-name match)",
+    "KXITFMATCH-26SEP28TERSHA-SHA: Mayank Sharma: UNMAPPED (no exact full-name match)"
    ],
    "excluded_by_policy": {
     "unsupported_family": 131,
-    "first_ball_already_observed": 542,
-    "past_nominal_start": 14,
+    "first_ball_already_observed": 342,
+    "past_nominal_start": 242,
     "tournament_scope_not_priced_tonight": 208
    },
-   "projection_run": "20260928T033214Z"
+   "projection_run": "20260928T054534Z"
   }
  },
  {
@@ -66,20 +66,14 @@
   "name": "market_capture_freshness",
   "status": "FAIL",
   "detail": {
-   "run": "20260928T030704Z",
-   "age_min": 26.8,
-   "incomplete": [
-    {
-     "stage": "trades",
-     "info": {
-      "pages": 250,
-      "error": null,
-      "truncated_by_max_pages": true
-     },
-     "scanned": 250000
-    }
-   ],
-   "trade_backlog": null,
+   "run": "20260928T051315Z",
+   "age_min": 31.1,
+   "incomplete": [],
+   "trade_backlog": {
+    "gaps": 0,
+    "pending_seconds": 0,
+    "oldest_gap_age_s": null
+   },
    "trade_backlog_ok": true
   }
  },
@@ -117,9 +111,9 @@
     "schedule_fallback": 0,
     "no_start_information": 0
    },
-   "n": 12588,
-   "start_unknown_used_schedule": 9934,
-   "start_unknown_passed_schedule_check": 9934,
+   "n": 12786,
+   "start_unknown_used_schedule": 10132,
+   "start_unknown_passed_schedule_check": 10132,
    "post_start_rows_in_strict_research": 0,
    "strict_research_rows_checked": 2312
   }
@@ -131,7 +125,7 @@
   "detail": {
    "ambiguous": 0,
    "ambiguous_used": 0,
-   "MATCHED": 216
+   "MATCHED": 198
   }
  },
  {
@@ -140,7 +134,7 @@
   "status": "FAIL",
   "detail": {
    "ok": 0,
-   "total": 12100,
+   "total": 12106,
    "rate": 0.0,
    "first_ball_ok": true,
    "first_ball": {
@@ -157,34 +151,34 @@
     "bracket_seconds_median": 209.59985,
     "bracket_seconds_p90": 263.144458,
     "chain_violations": [],
-    "observations": 290760,
+    "observations": 296661,
     "matches_observed": 1218,
     "watchlist": {
-     "total": 312,
+     "total": 318,
      "levels_with_a_wired_source": 189,
-     "levels_without_any_source": 123,
+     "levels_without_any_source": 129,
      "watched_and_observed": 187,
      "covered_and_observed": 187,
      "pct_covered_with_source_mapping": 0.9894
     },
-    "pct_classifiable": 0.2135,
-    "pct_strict_pregame": 0.1873,
+    "pct_classifiable": 0.2102,
+    "pct_strict_pregame": 0.1844,
     "timing_classes": {
-     "START_UNKNOWN": 9900,
+     "START_UNKNOWN": 10098,
      "STRICT_PREGAME": 2358,
      "POST_START": 297,
      "AMBIGUOUS": 33
     }
    },
    "settlement": {
-    "settled": 12364,
-    "settled_binary": 12100,
+    "settled": 12370,
+    "settled_binary": 12106,
     "settled_scalar": 264,
-    "sports_truth_rows": 8744,
-    "sports_truth_kalshi_derived": 8744,
+    "sports_truth_rows": 8750,
+    "sports_truth_kalshi_derived": 8750,
     "sports_truth_independent": 0,
-    "settlement_files": 68,
-    "clv_run": "20260928T033411Z.jsonl",
+    "settlement_files": 69,
+    "clv_run": "20260928T054650Z.jsonl",
     "settled_with_ab_truth": 2688,
     "settled_with_close": 2654,
     "settled_strict_clv": 2312
@@ -205,17 +199,17 @@
   "name": "clv_close_coverage",
   "status": "FAIL",
   "detail": {
-   "settled": 12364,
+   "settled": 12370,
    "with_close": 2654,
    "actual_first_ball_basis": 2688,
    "strict_settled": 2312,
    "strict_clv_rows": 2312,
    "executable_close_rows": 2654,
    "matches_with_strict_truth": 706,
-   "observations_classified": 12588,
-   "pct_strict_pregame": 0.1873,
+   "observations_classified": 12786,
+   "pct_strict_pregame": 0.1844,
    "horizons_populated": 18189,
-   "horizons_total": 100704,
+   "horizons_total": 102288,
    "strict_rate": 0.8601
   }
  },
@@ -242,7 +236,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-09-28T03:27:08.041965+00:00",
+   "built_at": "2026-09-28T05:42:38.709109+00:00",
    "rows": 1630988
   }
  },
@@ -252,7 +246,7 @@
   "status": "PASS",
   "detail": {
    "run": "20260927T104415Z",
-   "snapshot_age_days": 0.7,
+   "snapshot_age_days": 0.79,
    "max_season_files": [
     2026,
     2026
@@ -270,20 +264,28 @@
  {
   "gate": "TENNIS-15",
   "name": "prospective_confirmation_health",
-  "status": "PASS",
+  "status": "FAIL",
   "detail": {
    "last_harvest_success": "2026-09-28T03:36:27.977214+00:00",
-   "last_harvest_failure": null,
-   "last_harvest_failure_detail": null,
-   "harvest_failed": false,
-   "failing": [],
+   "last_harvest_failure": "2026-09-28T05:46:56.386723+00:00",
+   "last_harvest_failure_detail": "lt = libops.scalar_compare(x.ravel(), y, op)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/ops.pyx\", line 107, in pandas._libs.ops.scalar_compare\n  File \"pandas/_libs/tslibs/timestamps.pyx\", line 492, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__\nTypeError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.",
+   "harvest_failed": true,
+   "failing": [
+    "EC-2026-001-MKTCOND-EXACT-SCORE",
+    "EC-2026-002-MKTCOND-GAME-SPREAD",
+    "EC-2026-003-GEN2-MODERATE-EVIDENCE",
+    "W3-2026-001-ABSTAIN-ITF",
+    "W3-2026-002-NONITF-POSITIVE-EDGE",
+    "W4-2026-001-KALSHI-LONE-OUTLIER",
+    "EC-2026-004-COHERENCE-EXECUTABLE"
+   ],
    "candidates": {
     "EC-2026-001-MKTCOND-EXACT-SCORE": {
-     "health": "HEALTHY_NO_QUALIFYING_MARKETS",
+     "health": "HARVEST_FAILED",
      "producer": "model4_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T03:33:38.085450+00:00",
+     "producer_last_seen": "2026-09-28T05:46:30.516039+00:00",
      "effective_scorable_start": "2026-09-28T03:33:38.085450+00:00",
      "eligible_n": 0,
      "settled_n": 0,
@@ -291,14 +293,14 @@
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": null,
      "evidence_age_h": null,
-     "harvest_age_h": 0.0
+     "harvest_age_h": 2.2
     },
     "EC-2026-002-MKTCOND-GAME-SPREAD": {
-     "health": "HEALTHY_NO_QUALIFYING_MARKETS",
+     "health": "HARVEST_FAILED",
      "producer": "model4_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T03:33:38.085450+00:00",
+     "producer_last_seen": "2026-09-28T05:46:30.516039+00:00",
      "effective_scorable_start": "2026-09-28T03:33:38.085450+00:00",
      "eligible_n": 0,
      "settled_n": 0,
@@ -306,82 +308,82 @@
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": null,
      "evidence_age_h": null,
-     "harvest_age_h": 0.0
+     "harvest_age_h": 2.2
     },
     "EC-2026-003-GEN2-MODERATE-EVIDENCE": {
-     "health": "INSUFFICIENT_N",
+     "health": "HARVEST_FAILED",
      "producer": "shadow_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T03:33:22.503933+00:00",
+     "producer_last_seen": "2026-09-28T05:46:18.089302+00:00",
      "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
      "eligible_n": 54,
      "settled_n": 1,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-09-28T03:33:22.503933+00:00",
-     "evidence_age_h": 0.1,
-     "harvest_age_h": 0.0
+     "evidence_age_h": 2.2,
+     "harvest_age_h": 2.2
     },
     "W3-2026-001-ABSTAIN-ITF": {
-     "health": "INSUFFICIENT_N",
+     "health": "HARVEST_FAILED",
      "producer": "shadow_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T03:33:22.503933+00:00",
+     "producer_last_seen": "2026-09-28T05:46:18.089302+00:00",
      "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
      "eligible_n": 56,
      "settled_n": 0,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-09-28T03:33:22.503933+00:00",
-     "evidence_age_h": 0.1,
-     "harvest_age_h": 0.0
+     "evidence_age_h": 2.2,
+     "harvest_age_h": 2.2
     },
     "W3-2026-002-NONITF-POSITIVE-EDGE": {
-     "health": "INSUFFICIENT_N",
+     "health": "HARVEST_FAILED",
      "producer": "shadow_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T03:33:22.503933+00:00",
+     "producer_last_seen": "2026-09-28T05:46:18.089302+00:00",
      "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
      "eligible_n": 33,
      "settled_n": 0,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-09-28T03:33:22.503933+00:00",
-     "evidence_age_h": 0.1,
-     "harvest_age_h": 0.0
+     "evidence_age_h": 2.2,
+     "harvest_age_h": 2.2
     },
     "W4-2026-001-KALSHI-LONE-OUTLIER": {
-     "health": "INSUFFICIENT_N",
+     "health": "HARVEST_FAILED",
      "producer": "external_scan",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T02:50:20+00:00",
+     "producer_last_seen": "2026-09-28T05:18:13+00:00",
      "effective_scorable_start": null,
      "eligible_n": 1,
      "settled_n": 1,
      "strict_clv_n": 1,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-09-26T23:53:05.456857+00:00",
-     "evidence_age_h": 27.7,
-     "harvest_age_h": 0.0
+     "evidence_age_h": 29.9,
+     "harvest_age_h": 2.2
     },
     "EC-2026-004-COHERENCE-EXECUTABLE": {
-     "health": "INSUFFICIENT_N",
+     "health": "HARVEST_FAILED",
      "producer": "capture_books",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-09-28T03:09:47.216336+00:00",
+     "producer_last_seen": "2026-09-28T05:15:51.283019+00:00",
      "effective_scorable_start": null,
      "eligible_n": 3,
      "settled_n": 0,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-09-22T20:19:24.784629+00:00",
-     "evidence_age_h": 127.3,
-     "harvest_age_h": 0.0
+     "evidence_age_h": 129.5,
+     "harvest_age_h": 2.2
     }
    }
   }
