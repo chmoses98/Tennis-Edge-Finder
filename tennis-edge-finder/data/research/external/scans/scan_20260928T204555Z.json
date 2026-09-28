@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-28T20:45:55.826301+00:00",
+ "run_id": "20260928T204555Z",
+ "external_parse": {
+  "events": 85,
+  "markets": 909,
+  "skipped_family": 204,
+  "skipped_period": 273,
+  "skipped_live": 18,
+  "one_sided": 12,
+  "rows": 1535,
+  "devigged": 420
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 664,
+  "markets_mapped": 262,
+  "contracts": 536,
+  "quoted_contracts": 536,
+  "raw": "data/research/external/raw/20260928T204555Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 262,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 47,
+  "rows": 489,
+  "two_sided": 481,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 717,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7733,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Yexin Ma": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Dominic Stephan Stricker": 1,
+   "Naresh Bharathy": 1,
+   "Yike Liu": 1,
+   "Tanika Saravanan": 1,
+   "Thompson Martha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 129,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8958,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Alexander Binda": 1,
+   "Vito Dell'elba": 1,
+   "Jou-George Gnjidic": 1,
+   "Mayank Sharma": 1,
+   "Cadence Benchetrit": 1,
+   "Pavel Skvortcov": 1,
+   "LIANGXUAN LIU": 1,
+   "Anna Bazderova": 1,
+   "Tereza Tsybulska": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 129,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 67,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
