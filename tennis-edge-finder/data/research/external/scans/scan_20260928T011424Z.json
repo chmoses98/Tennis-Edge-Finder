@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-28T01:14:24.274647+00:00",
+ "run_id": "20260928T011424Z",
+ "external_parse": {
+  "events": 138,
+  "markets": 1989,
+  "skipped_family": 433,
+  "skipped_period": 606,
+  "skipped_live": 1,
+  "one_sided": 32,
+  "rows": 3364,
+  "devigged": 918
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1109,
+  "markets_mapped": 385,
+  "contracts": 858,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260928T011424Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 385,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 101,
+  "rows": 757,
+  "two_sided": 755,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 451,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Alafia Ayeni": 1,
+   "Dominic Stephan Stricker": 1,
+   "Manas Manoj Dhamne": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8475,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Pyotr Nesterov": 1,
+   "Zhiheng Xia": 1,
+   "Jilong Huang": 1,
+   "Alafia Ayeni": 1,
+   "Darya Khomutsianskaya": 1,
+   "Denis Klok": 1,
+   "Rafael Behr": 1,
+   "Mayank Sharma": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 121,
+  "tri:MODEL_LONE_OUTLIER": 71,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 12,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {}
+}
