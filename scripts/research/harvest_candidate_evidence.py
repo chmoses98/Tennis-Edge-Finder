@@ -61,8 +61,52 @@ def _ci(m, pct=True):
     return s + ")"
 
 
+STATUS_FILE = "HARVEST_STATUS.json"
+
+
+def record_status(report_out: str, *, success: bool, run: str, detail: str = "", statuses: dict | None = None):
+    """Keep the last success and the last failure side by side. A failure never erases the last success,
+    and a success never erases the record of the last failure: TENNIS-15 compares the two."""
+    os.makedirs(report_out, exist_ok=True)
+    path = os.path.join(report_out, STATUS_FILE)
+    try:
+        st = json.load(open(path))
+    except (OSError, ValueError):
+        st = {}
+    now = datetime.now(timezone.utc).isoformat()
+    st["last_attempt"] = now
+    if success:
+        st["last_success"] = now
+        st["last_success_run"] = run
+        st["statuses"] = statuses or {}
+    else:
+        st["last_failure"] = now
+        st["last_failure_detail"] = detail[-2000:]
+    json.dump(st, open(path, "w"), indent=1)
+    return st
+
+
 def main():
+    import traceback
+    ap_ = argparse.ArgumentParser(add_help=False)
+    ap_.add_argument("--report-out", default=os.path.join(PROJ, "research", "candidate_confirmation"))
+    ap_.add_argument("--record-failure", default=None)
+    known, _ = ap_.parse_known_args()
+    if known.record_failure is not None:
+        record_status(known.report_out, success=False, run="", detail=known.record_failure)
+        return 0
+    try:
+        return _main()
+    except BaseException as e:                                       # noqa: BLE001
+        if isinstance(e, SystemExit) and e.code in (0, None):
+            raise
+        record_status(known.report_out, success=False, run="", detail=traceback.format_exc())
+        raise
+
+
+def _main():
     ap = argparse.ArgumentParser()
+    ap.add_argument("--record-failure", default=None)
     ap.add_argument("--data-root", default=os.path.join(PROJ, "data"))
     ap.add_argument("--candidates", default=None, help="frozen candidate dir (default <data-root>/research/edge_candidates)")
     ap.add_argument("--discovery", default=None, help="discovery snapshot for the settled-market fallback")
@@ -103,7 +147,10 @@ def main():
         if res.exclusions:
             C.write_exclusions(os.path.join(a.evidence_out, f"{cid}.exclusions.{run}.jsonl.gz"), res.exclusions)
         rep = res.report()
+        caps = [r.captured_at for r in res.evidence_rows if r.captured_at]
         rep.update(harvest_run=run, evidence_rows_this_run=len(res.evidence_rows), evidence_rows_appended=written,
+                   last_evidence_at=max(caps) if caps else None,
+                   harvest_run_at=datetime.now(timezone.utc).isoformat(),
                    evidence_chain_violations=store.verify_chain(cid),
                    frozen_definition={k: cands[cid][k] for k in (
                        "frozen_at", "confirmation_start", "minimum_n", "inclusion_rule",
@@ -154,7 +201,20 @@ def main():
     with open(os.path.join(a.evidence_out, "harvest_runs.jsonl"), "a") as f:
         f.write(json.dumps(log, default=str) + "\n")
 
+    # versioned derived view: strict CLV through a sibling event of the same canonical physical match
+    sib = SC.sibling_join_clv(ctx, ledger, pairs)
+    sib_rows = sib.pop("rows")
+    sib_dir = os.path.join(os.path.dirname(os.path.abspath(a.evidence_out)), "clv_physical_join")
+    os.makedirs(sib_dir, exist_ok=True)
+    with open(os.path.join(sib_dir, f"{run}.jsonl"), "w") as f:
+        for d in sib_rows:
+            f.write(json.dumps(d, default=str) + "\n")
+    json.dump(sib, open(os.path.join(a.report_out, "CLV_SIBLING_JOIN.json"), "w"), indent=1, default=str)
+    json.dump(SC.weekly_match_winner_clv(pairs), open(os.path.join(a.report_out, "MATCH_WINNER_WEEKLY_CLV.json"), "w"),
+              indent=1, default=str)
+
     write_summary(os.path.join(a.report_out, "SUMMARY.md"), run, results, clv, ext, audit)
+    record_status(a.report_out, success=True, run=run, statuses={cid: r.status for cid, r in results.items()})
     return 0
 
 

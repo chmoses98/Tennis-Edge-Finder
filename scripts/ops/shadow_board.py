@@ -39,6 +39,12 @@ from tennis_edge.pricing.competition import classify_competition, build_surface_
 from tennis_edge.pricing.fees import taker_fee, breakeven_price, FeeSchedule   # noqa: E402
 from tennis_edge.rules.formats import resolve_format, FormatResolutionError    # noqa: E402
 from tennis_edge.selector.decide import decide, DecisionInputs, DecisionPolicy, SELECTOR_VERSION  # noqa: E402
+from tennis_edge.models.fair import FAIR_VERSION                         # noqa: E402
+from tennis_edge.firstball.started import match_code, matches_already_started  # noqa: E402
+from tennis_edge.producers.records import ProducerStore, code_sha, ensure_experiment_starts  # noqa: E402
+
+PRODUCER = "shadow_board_v1"
+GEN2_VERSION = "gen2_dyn_hier_sr_v1"
 
 MATCH_SERIES = {tk for tk, (fam, tour, lvl, disc) in SERIES.items()
                 if fam == "MATCH_WINNER" and disc == "singles" and tour in ("ATP", "WTA")}
@@ -104,6 +110,11 @@ def main():
     ap.add_argument("--store", default=os.path.join(PROJ, "data", "research", "opportunities"))
     ap.add_argument("--out", default=os.path.join(PROJ, "research", "selector", "SHADOW_BOARD.md"))
     ap.add_argument("--no-store", action="store_true", help="render without appending to the store")
+    ap.add_argument("--producer-store", default=os.path.join(PROJ, "data", "research", "frozen_producers", "shadow_board"),
+                    help="append-only companion records: every probability the frozen lanes gave, at prediction time")
+    ap.add_argument("--starts", default=os.path.join(PROJ, "data", "research", "experiment_starts"))
+    ap.add_argument("--firstball", default=os.path.join(PROJ, "data", "firstball", "store"))
+    ap.add_argument("--candidates", default=os.path.join(PROJ, "data", "research", "edge_candidates"))
     a = ap.parse_args()
 
     quotes = latest_quotes(a.capture)
@@ -127,8 +138,14 @@ def main():
 
     now = datetime.now(timezone.utc)
     store = OpportunityStore(a.store)
+    pstore = ProducerStore(a.producer_store)
+    started = matches_already_started(a.firstball, now)
+    sha = code_sha(PROJ)
     rows, counts, skipped = [], {}, {}
     for ev, ms in by_event.items():
+        if match_code(ev) in started:
+            # the first-ball store has seen this match under way: nothing here is a pregame price
+            skipped["first_ball_already_observed"] = skipped.get("first_ball_already_observed", 0) + 1; continue
         pms = [(parse_market(m), m) for m in ms]
         pms = [x for x in pms if x[0].status == "PARSED"]
         if len(pms) != 2:
@@ -230,7 +247,52 @@ def main():
             counts[opp.decision] = counts.get(opp.decision, 0) + 1
             if not a.no_store:
                 store.append(opp)
+                is_a = pm is pm_a
 
+                def _o(p):
+                    return p if is_a else 1 - p
+                pstore.append({
+                    "producer": PRODUCER, "code_sha": sha, "predicted_at": opp.generated_at,
+                    "opportunity_id": opp.opportunity_id, "opportunity_fingerprint": opp.fingerprint,
+                    "physical_match_id": opp.physical_match_id, "event": ev, "ticker": pm.ticker,
+                    "market_family": "MATCH_WINNER", "side": "YES", "strike": None, "subject": pm.subject,
+                    "subject_is_a": is_a, "tour": tour, "level": info["level"], "competition": pm_a.competition,
+                    "surface": surface, "format": fmt.name, "match_date": str(on),
+                    "player_a_id": ma["player_id"], "player_b_id": mb["player_id"],
+                    "model_versions": {"fair": FAIR_VERSION, "gen2": GEN2_VERSION, "selector": SELECTOR_VERSION,
+                                       "gen1_elo": "fair_v1:MODEL_1_ELO (walk-forward as-of Elo, base config)"},
+                    "asof_base_date": {t: str(asof[t].base_date) for t in asof},
+                    "gen1_elo_probability": _o(base.p_elo), "gen1_sr_probability": _o(base.p_sr),
+                    "gen2_probability": _o(base.p_gen2), "gen2_blend_probability": _o(base.p_gen2_blend),
+                    "fair_v1_probability": fair_p, "blend_weight": base.blend_weight,
+                    "serve_evidence_a": base.evidence_a, "serve_evidence_b": base.evidence_b,
+                    "thinner_serve_points": min(base.evidence_a, base.evidence_b),
+                    "fair_envelope": {k: _o(f.p_gen2_blend) for k, f in fairs.items()},
+                    "model_uncertainty": opp.uncertainty,
+                    "qualification": q.checks, "qualification_ok": q.ok,
+                    "selector_decision": dec["decision"], "selector_version": SELECTOR_VERSION,
+                    "fee_adjusted_edge": feeadj, "robust_edge": robust, "raw_edge": raw,
+                    "kalshi_bid": bid, "kalshi_ask": ask, "kalshi_mid": 0.5 * (ask + bid), "spread": ask - bid,
+                    "fee": fee, "displayed_size": size, "quote_captured_at": m.get("captured_at"),
+                    "quote_age_seconds": quote_age, "scheduled_start": sched_s,
+                    "identity_confidence": min(ma["confidence"], mb["confidence"]),
+                    "identity_confidence_a": ma["confidence"], "identity_confidence_b": mb["confidence"],
+                    "data_quality_score": dq["data_quality_score"], "data_quality_grade": dq["grade"],
+                    "first_ball_status_at_prediction": "NOT_OBSERVED_STARTED"})
+
+    if not a.no_store:
+        # the first production run fixes each served experiment's effective start; later runs are no-ops
+        import json as _json
+        cdefs = {}
+        for fn in glob.glob(os.path.join(a.candidates, "*.json")):
+            c = _json.load(open(fn)); cdefs[c["candidate_id"]] = c
+        ensure_experiment_starts(a.starts, PRODUCER, started_at=now.isoformat(), main_sha=sha,
+                                 candidate_defs=cdefs, producer_version=f"{PRODUCER}@{sha[:12]}")
+        os.makedirs(os.path.dirname(a.producer_store), exist_ok=True)
+        with open(os.path.join(os.path.dirname(a.producer_store), "heartbeats.jsonl"), "a") as hf:
+            hf.write(_json.dumps({"producer": PRODUCER, "ran_at": now.isoformat(), "code_sha": sha,
+                                  "rows": len(rows), "counts": counts, "skipped": skipped,
+                                  "authority": "RESEARCH_ONLY_NO_REAL_MONEY"}, default=str) + "\n")
     meta = {"generated_at": now.isoformat(), "n_markets": len(rows), "counts": counts,
             "skipped": skipped, "selector_version": SELECTOR_VERSION,
             "authority": "RESEARCH_ONLY_NO_REAL_MONEY"}

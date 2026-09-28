@@ -46,15 +46,32 @@ jobs:
       - name: Project, settle, health
         run: |
           PYTHONPATH=. python3 scripts/run_tennis.py | tail -20
+          # FROZEN research producers, run live (no model is fitted or changed here). Each writes an
+          # append-only store, a heartbeat, and -- on its first production run only -- the write-once
+          # experiment-start records. A failure is loud (::error::) and shows up as PRODUCER_NOT_RUNNING
+          # in TENNIS-15, but never blocks settlement or publication.
+          if ! PYTHONPATH=. python3 scripts/ops/shadow_board.py --out data/research/shadow_board/SHADOW_BOARD.md > shadow.log 2>&1; then
+            echo "::error::frozen shadow-board producer failed"
+          fi
+          tail -20 shadow.log
+          if ! PYTHONPATH=. python3 scripts/ops/model4_board.py > model4.log 2>&1; then
+            echo "::error::frozen Model 4 producer failed"
+          fi
+          tail -20 model4.log
           PYTHONPATH=. python3 scripts/ops/settle_ledger.py | tail -10
           # prospective confirmation: score the FROZEN candidates on post-freeze evidence (derived,
-          # append-only layer; never writes a candidate definition). Non-fatal so a harvest problem cannot
-          # block settlement or health, but it is surfaced as a warning.
+          # append-only layer; never writes a candidate definition). A harvest failure cannot block
+          # settlement or publication, and it cannot stay invisible either (see below).
           if ! EVIDENCE_SOURCE_LABEL="tennis-data@$(git rev-parse --short origin/tennis-data)" \
                PYTHONPATH=. python3 scripts/research/harvest_candidate_evidence.py --data-root data \
                --evidence-out data/research/candidate_evidence \
                --report-out data/research/candidate_confirmation > harvest.log 2>&1; then
-            echo "::warning::candidate evidence harvest failed"
+            # never invisible: an error annotation, a recorded failure (TENNIS-15 then FAILS), and the next
+            # run retries from the immutable inputs. Settlement and capture outputs still publish below.
+            echo "::error::candidate evidence harvest failed -- TENNIS-15 will FAIL until a harvest succeeds"
+            PYTHONPATH=. python3 scripts/research/harvest_candidate_evidence.py \
+              --report-out data/research/candidate_confirmation \
+              --record-failure "$(tail -c 1500 harvest.log)" || true
           fi
           tail -12 harvest.log
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"

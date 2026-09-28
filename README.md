@@ -67,3 +67,4 @@ Reports: MORNING_REPORT.md, FIRST_BALL_WAVE_REPORT.md. Migration record: MIGRATI
 Prospective confirmation of the frozen candidates: PROSPECTIVE_CONFIRMATION_REPORT.md,
 research/PROSPECTIVE_EVIDENCE_AUDIT.md, `scripts/research/harvest_candidate_evidence.py` (derived,
 append-only evidence layer in `data/research/candidate_evidence/`; candidate definitions are never written).
+Frozen producers run live since 2026-09-28 (shadow board, Model 4): docs/FROZEN_PRODUCERS.md; health gate TENNIS-15.
