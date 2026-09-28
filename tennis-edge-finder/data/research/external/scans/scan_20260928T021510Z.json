@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-09-28T02:15:10.751782+00:00",
+ "run_id": "20260928T021510Z",
+ "external_parse": {
+  "events": 147,
+  "markets": 2173,
+  "skipped_family": 462,
+  "skipped_period": 691,
+  "skipped_live": 4,
+  "one_sided": 15,
+  "rows": 3667,
+  "devigged": 1003
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1156,
+  "markets_mapped": 398,
+  "contracts": 888,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20260928T021510Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 398,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 83,
+  "rows": 805,
+  "two_sided": 802,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1188,
+ "external_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8248,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Irene Burillo": 1,
+   "O. Nicholls": 1,
+   "Jodie Anna Burrage": 1,
+   "A. Panova": 1,
+   "Chuan Ding": 1,
+   "Jilong Huang": 1,
+   "Zhiheng Xia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yufei Ren": 1,
+   "Harriet Dart": 1,
+   "Jilong Huang": 1,
+   "Chuan Ding": 1,
+   "Alexander Binda": 1,
+   "Zhiheng Xia": 1,
+   "Robin Montgomery": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 172,
+   "UNMAPPED_PLAYER": 37
+  },
+  "mapped_rate": 0.823,
+  "top_refusal_subjects": {
+   "Tiphanie Lemaitre": 1,
+   "Yexin Ma": 1,
+   "Aran Teixido Garcia": 1,
+   "Pyotr Nesterov": 1,
+   "Chuan Ding": 1,
+   "Zhiheng Xia": 1,
+   "Alexander Binda": 1,
+   "Jilong Huang": 1,
+   "Darya Khomutsianskaya": 1,
+   "Denis Klok": 1
+  }
+ },
+ "matched_both_venues": 94,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 172,
+ "model_witness_available": true,
+ "rows": 180,
+ "counts": {
+  "PASS": 169,
+  "tri:MODEL_LONE_OUTLIER": 99,
+  "tri:INSUFFICIENT_INPUTS": 37,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "WATCH": 10,
+  "tri:MARKETS_AGREE": 25,
+  "tri:ALL_THREE_DISAGREE": 9,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
