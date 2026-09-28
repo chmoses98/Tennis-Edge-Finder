@@ -303,7 +303,10 @@ def _match_truth(ctx):
         cols = ["winner_id", "loser_id", "tourney_date", "games_w", "games_l", "sets_w", "sets_l",
                 "outcome_type", "completed"]
         df = pd.read_parquet(path, columns=cols)
-        df = df[df.tourney_date >= pd.Timestamp("2026-09-01")] if "tourney_date" in df else df
+        # the canonical table stores tourney_date as datetime.date objects: normalise once, never compare
+        # a Timestamp with a date (that TypeError took the 2026-09-28 05:46Z harvest down)
+        df["tourney_date"] = pd.to_datetime(df["tourney_date"], errors="coerce")
+        df = df[df.tourney_date >= pd.Timestamp("2026-09-01")]
         for r in df.itertuples(index=False):
             key = tuple(sorted((str(r.winner_id), str(r.loser_id))))
             idx[key].append(r)
@@ -317,7 +320,7 @@ def _find_result(ctx, a_id, b_id, match_date):
     import pandas as pd
     day = pd.Timestamp(match_date)
     cands = [r for r in _match_truth(ctx).get(tuple(sorted((str(a_id), str(b_id)))), [])
-             if r.tourney_date is not None and day - timedelta(days=21) <= r.tourney_date <= day]
+             if not pd.isna(r.tourney_date) and day - timedelta(days=21) <= pd.Timestamp(r.tourney_date) <= day]
     if len(cands) != 1:
         return None, ("NO_RESULT" if not cands else "AMBIGUOUS_RESULT")
     r = cands[0]
