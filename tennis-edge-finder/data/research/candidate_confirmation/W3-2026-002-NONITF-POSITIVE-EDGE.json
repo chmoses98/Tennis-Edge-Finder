@@ -2,7 +2,7 @@
  "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
  "kind": "TRADE",
  "status": "INSUFFICIENT_N",
- "status_reason": "125 eligible of 600 required",
+ "status_reason": "144 eligible of 600 required",
  "universe": {
   "experiment_start": {
    "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
@@ -33,17 +33,17 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 3351,
-  "contracts_first_observed": 1058
+  "rows_after_effective_start": 4163,
+  "contracts_first_observed": 1378
  },
  "metrics": {
-  "eligible_n": 125,
-  "settled_n": 66,
-  "strict_clv_n": 1,
-  "brier_fair_v1": 0.24200975235847483,
-  "brier_kalshi_mid": 0.2164655303030303,
+  "eligible_n": 144,
+  "settled_n": 88,
+  "strict_clv_n": 2,
+  "brier_fair_v1": 0.23208474290324177,
+  "brier_kalshi_mid": 0.21919166666666667,
   "strict_executable_clv": {
-   "n": 1,
+   "n": 2,
    "mean": -0.010000000000000009,
    "median": -0.010000000000000009,
    "ci_low": null,
@@ -53,11 +53,11 @@
    "n_boot": 10000
   },
   "after_fee_pnl": {
-   "n": 66,
-   "mean": -0.043030303030303044,
-   "median": -0.135,
-   "ci_low": -0.15364015151515156,
-   "ci_high": 0.07060984848484841,
+   "n": 88,
+   "mean": -0.00704545454545456,
+   "median": -0.105,
+   "ci_low": -0.10272727272727274,
+   "ci_high": 0.09079545454545454,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
@@ -65,17 +65,17 @@
   "accuracy_condition_binding": "selected-row Brier must be no worse than the Kalshi mid's"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 2293,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 933
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 2785,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 1234
  },
  "summary": {
   "kind": "TRADE",
   "minimum_n": 600,
-  "eligible_n": 125,
-  "settled_n": 66,
-  "strict_clv_n": 1,
-  "unsettled_n": 59,
-  "clv_pending_n": 58,
+  "eligible_n": 144,
+  "settled_n": 88,
+  "strict_clv_n": 2,
+  "unsettled_n": 56,
+  "clv_pending_n": 56,
   "unscorable_n": 0,
   "accuracy_pass": false,
   "clv_pass": false,
@@ -129,11 +129,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20260929T132336Z",
- "evidence_rows_this_run": 1058,
- "evidence_rows_appended": 426,
- "last_evidence_at": "2026-09-29T13:22:09.902188+00:00",
- "harvest_run_at": "2026-09-29T13:24:40.187307+00:00",
+ "harvest_run": "20260929T224145Z",
+ "evidence_rows_this_run": 1378,
+ "evidence_rows_appended": 580,
+ "last_evidence_at": "2026-09-29T22:39:00.797912+00:00",
+ "harvest_run_at": "2026-09-29T22:43:06.662243+00:00",
  "evidence_chain_violations": [],
  "frozen_definition": {
   "frozen_at": "2026-09-12T17:24:04.826616+00:00",
