@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-29T19:26:14.375358+00:00",
+ "run_id": "20260929T192614Z",
+ "external_parse": {
+  "events": 203,
+  "markets": 2250,
+  "skipped_family": 484,
+  "skipped_period": 691,
+  "skipped_live": 34,
+  "one_sided": 26,
+  "rows": 3760,
+  "devigged": 1049
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1323,
+  "markets_mapped": 489,
+  "contracts": 1038,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20260929T192614Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 489,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 245,
+  "rows": 793,
+  "two_sided": 789,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 872,
+ "external_mapping": {
+  "total": 192,
+  "by_status": {
+   "MAPPED": 140,
+   "UNMAPPED_PLAYER": 17,
+   "DOUBLES_UNSUPPORTED": 34,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7292,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Zhu Chenting": 1,
+   "Maddox Lundell": 1,
+   "Luca Ostovany": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 26
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 247,
+  "by_status": {
+   "MAPPED": 222,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8988,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Yahor Slizevich": 1,
+   "Nazim Makhlouf": 1,
+   "Renaud Lefevre": 1,
+   "Ryan Zuberbuehler": 1,
+   "Fares Zakaria": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 70,
+ "external_mapped_matches": 152,
+ "kalshi_mapped_matches": 222,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 82,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
