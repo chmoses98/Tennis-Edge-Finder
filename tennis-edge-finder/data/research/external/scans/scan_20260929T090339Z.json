@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-29T09:03:39.878657+00:00",
+ "run_id": "20260929T090339Z",
+ "external_parse": {
+  "events": 265,
+  "markets": 2439,
+  "skipped_family": 434,
+  "skipped_period": 710,
+  "skipped_live": 51,
+  "one_sided": 72,
+  "rows": 4052,
+  "devigged": 1223
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1236,
+  "markets_mapped": 569,
+  "contracts": 1242,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20260929T090339Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 569,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 402,
+  "rows": 840,
+  "two_sided": 837,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 626,
+ "external_mapping": {
+  "total": 254,
+  "by_status": {
+   "MAPPED": 189,
+   "UNMAPPED_PLAYER": 23,
+   "DOUBLES_UNSUPPORTED": 41,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7441,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Joel Josef Schwarzler": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Luca Stefan Prunescu Nita": 1,
+   "Zichen Shao": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8728,
+  "top_refusal_subjects": {
+   "Agustina Tarantola": 2,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Abdullah Shelbayh": 1,
+   "Pyotr Nesterov": 1,
+   "Darya Khomutsianskaya": 1,
+   "Rudy Ceccon": 1,
+   "Jack Davison": 1,
+   "Mauro Mavracic": 1,
+   "Vito Dell'elba": 1
+  }
+ },
+ "matched_both_venues": 94,
+ "external_mapped_matches": 195,
+ "kalshi_mapped_matches": 151,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 112,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 37
+ }
+}
