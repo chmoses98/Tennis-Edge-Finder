@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-29T10:34:01.044997+00:00",
+ "run_id": "20260929T103401Z",
+ "external_parse": {
+  "events": 251,
+  "markets": 2563,
+  "skipped_family": 467,
+  "skipped_period": 791,
+  "skipped_live": 54,
+  "one_sided": 41,
+  "rows": 4242,
+  "devigged": 1264
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1604,
+  "markets_mapped": 622,
+  "contracts": 1356,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20260929T103401Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 622,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 523,
+  "rows": 833,
+  "two_sided": 828,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1705,
+ "external_mapping": {
+  "total": 240,
+  "by_status": {
+   "MAPPED": 184,
+   "UNMAPPED_PLAYER": 21,
+   "DOUBLES_UNSUPPORTED": 34,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 275,
+  "by_status": {
+   "MAPPED": 245,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8909,
+  "top_refusal_subjects": {
+   "Agustina Tarantola": 2,
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Murkel Dellien": 1,
+   "Pyotr Nesterov": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 125,
+ "external_mapped_matches": 190,
+ "kalshi_mapped_matches": 245,
+ "model_witness_available": true,
+ "rows": 152,
+ "counts": {
+  "PASS": 145,
+  "tri:MODEL_LONE_OUTLIER": 53,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 7,
+  "tri:MARKETS_AGREE": 18,
+  "tri:KALSHI_LONE_OUTLIER": 18,
+  "tri:ALL_THREE_DISAGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
