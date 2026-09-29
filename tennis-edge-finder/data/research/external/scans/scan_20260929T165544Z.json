@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-29T16:55:44.339082+00:00",
+ "run_id": "20260929T165544Z",
+ "external_parse": {
+  "events": 182,
+  "markets": 1973,
+  "skipped_family": 419,
+  "skipped_period": 598,
+  "skipped_live": 32,
+  "one_sided": 17,
+  "rows": 3300,
+  "devigged": 939
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1285,
+  "markets_mapped": 467,
+  "contracts": 1006,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20260929T165544Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 467,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 207,
+  "rows": 799,
+  "two_sided": 798,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 636,
+ "external_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7485,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Micah Ward": 1,
+   "Isac Str\u00f6mberg": 1,
+   "Matthew Michibata": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 160,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.904,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Renaud Lefevre": 1,
+   "Chetanna Amadike": 1,
+   "Fares Zakaria": 1,
+   "Gabi Adrian Boitan": 1,
+   "Amr Elsayed": 1,
+   "David Perret": 1,
+   "Matthew Michibata": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 145,
+ "kalshi_mapped_matches": 160,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 6,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
