@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-29T03:34:12.079917+00:00",
+ "run_id": "20260929T033412Z",
+ "external_parse": {
+  "events": 266,
+  "markets": 2752,
+  "skipped_family": 554,
+  "skipped_period": 780,
+  "skipped_live": 28,
+  "one_sided": 48,
+  "rows": 4708,
+  "devigged": 1367
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 907,
+  "markets_mapped": 411,
+  "contracts": 890,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20260929T033412Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 411,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 87,
+  "rows": 803,
+  "two_sided": 790,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 819,
+ "external_mapping": {
+  "total": 258,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 23,
+   "DOUBLES_UNSUPPORTED": 44
+  },
+  "mapped_rate": 0.7403,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Yexin Ma": 1,
+   "Jodie Anna Burrage": 1,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Joel Josef Schwarzler": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alevtina Ibragimova": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 200,
+  "by_status": {
+   "MAPPED": 182,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.91,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Pyotr Nesterov": 1,
+   "Alexander Binda": 1,
+   "Mauro Mavracic": 1,
+   "Vito Dell'elba": 1,
+   "Mayank Sharma": 1,
+   "Cadence Benchetrit": 1,
+   "Pavel Skvortcov": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 196,
+ "kalshi_mapped_matches": 182,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:MARKETS_AGREE": 15,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
