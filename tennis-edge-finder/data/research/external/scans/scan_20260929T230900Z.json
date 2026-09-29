@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-29T23:09:00.192514+00:00",
+ "run_id": "20260929T230900Z",
+ "external_parse": {
+  "events": 181,
+  "markets": 2255,
+  "skipped_family": 497,
+  "skipped_period": 679,
+  "skipped_live": 13,
+  "one_sided": 12,
+  "rows": 3800,
+  "devigged": 1067
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1594,
+  "markets_mapped": 545,
+  "contracts": 1162,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20260929T230900Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 545,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 337,
+  "rows": 825,
+  "two_sided": 825,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 943,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Nikita Samuel Filin": 1,
+   "Dominic Stephan Stricker": 1,
+   "Zhu Chenting": 1,
+   "Brian Windsor": 1,
+   "Jack Casciato": 1,
+   "Michelle Ryndin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 199,
+  "by_status": {
+   "MAPPED": 180,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9045,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Yahor Slizevich": 1,
+   "Nazim Makhlouf": 1,
+   "Fares Zakaria": 1,
+   "Gabi Adrian Boitan": 1,
+   "Amr Elsayed": 1,
+   "Benjamin O'Connell": 1,
+   "Zihao Liu": 1,
+   "Francesca Dell'Edera": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 129,
+ "kalshi_mapped_matches": 180,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 76,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
