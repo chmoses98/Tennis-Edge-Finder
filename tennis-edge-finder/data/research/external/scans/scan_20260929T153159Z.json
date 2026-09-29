@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-29T15:31:59.517087+00:00",
+ "run_id": "20260929T153159Z",
+ "external_parse": {
+  "events": 198,
+  "markets": 2074,
+  "skipped_family": 410,
+  "skipped_period": 635,
+  "skipped_live": 39,
+  "one_sided": 21,
+  "rows": 3488,
+  "devigged": 1008
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1295,
+  "markets_mapped": 460,
+  "contracts": 992,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20260929T153159Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 460,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 218,
+  "rows": 774,
+  "two_sided": 774,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 696,
+ "external_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 139,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7433,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Addy Rogin": 1,
+   "Jack Davison": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 167,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.893,
+  "top_refusal_subjects": {
+   "Agustina Tarantola": 2,
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Gabi Adrian Boitan": 1,
+   "Amr Elsayed": 1,
+   "Benjamin O'Connell": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 156,
+ "kalshi_mapped_matches": 167,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 108,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:INSUFFICIENT_INPUTS": 51,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
