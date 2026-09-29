@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-29T00:40:50.198061+00:00",
+ "run_id": "20260929T004050Z",
+ "external_parse": {
+  "events": 254,
+  "markets": 2848,
+  "skipped_family": 589,
+  "skipped_period": 808,
+  "skipped_live": 12,
+  "one_sided": 49,
+  "rows": 4945,
+  "devigged": 1400
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 839,
+  "markets_mapped": 311,
+  "contracts": 672,
+  "quoted_contracts": 672,
+  "raw": "data/research/external/raw/20260929T004050Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 311,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 74,
+  "rows": 598,
+  "two_sided": 590,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 595,
+ "external_mapping": {
+  "total": 243,
+  "by_status": {
+   "MAPPED": 181,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 44
+  },
+  "mapped_rate": 0.7449,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Yexin Ma": 1,
+   "Jodie Anna Burrage": 1,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1,
+   "Dominic Stephan Stricker": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1,
+   "Murkel Dellien": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 157,
+  "by_status": {
+   "MAPPED": 139,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8854,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Pyotr Nesterov": 1,
+   "Alexander Binda": 1,
+   "Jack Davison": 1,
+   "Renaud Lefevre": 1,
+   "Vito Dell'elba": 1,
+   "Nikita Mashtakov": 1,
+   "Maxim Khorozov": 1,
+   "Har Abir Sekhon": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 186,
+ "kalshi_mapped_matches": 139,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:INSUFFICIENT_INPUTS": 49,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
