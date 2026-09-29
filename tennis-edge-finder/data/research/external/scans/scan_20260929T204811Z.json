@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-29T20:48:11.133933+00:00",
+ "run_id": "20260929T204811Z",
+ "external_parse": {
+  "events": 198,
+  "markets": 2303,
+  "skipped_family": 486,
+  "skipped_period": 704,
+  "skipped_live": 24,
+  "one_sided": 24,
+  "rows": 3860,
+  "devigged": 1089
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1328,
+  "markets_mapped": 490,
+  "contracts": 1036,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20260929T204811Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 490,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 236,
+  "rows": 800,
+  "two_sided": 798,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 592,
+ "external_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 135,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7219,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Dominic Stephan Stricker": 1,
+   "Zhu Chenting": 1,
+   "Luca Ostovany": 1,
+   "Gregory Bernadsky": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 165,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.903,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Jure Siftar": 1,
+   "Chetanna Amadike": 1,
+   "Gabi Adrian Boitan": 1,
+   "Amr Elsayed": 1,
+   "Sasikumar Mukund": 1,
+   "Zihao Liu": 1,
+   "Francesca Dell'Edera": 1,
+   "Eloise Newberry": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 145,
+ "kalshi_mapped_matches": 149,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 1,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
