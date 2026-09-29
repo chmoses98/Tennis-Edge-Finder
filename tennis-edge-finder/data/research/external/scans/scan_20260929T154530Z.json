@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-09-29T15:45:30.350581+00:00",
+ "run_id": "20260929T154530Z",
+ "external_parse": {
+  "events": 196,
+  "markets": 2023,
+  "skipped_family": 407,
+  "skipped_period": 617,
+  "skipped_live": 39,
+  "one_sided": 29,
+  "rows": 3364,
+  "devigged": 970
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1272,
+  "markets_mapped": 454,
+  "contracts": 980,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20260929T154530Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 454,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 184,
+  "rows": 796,
+  "two_sided": 784,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 575,
+ "external_mapping": {
+  "total": 185,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 16,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7351,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Dominic Stephan Stricker": 1,
+   "Addy Rogin": 1,
+   "Jack Davison": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8929,
+  "top_refusal_subjects": {
+   "Agustina Tarantola": 2,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Gabi Adrian Boitan": 1,
+   "Zihao Liu": 1,
+   "David Perret": 1,
+   "Matthew Michibata": 1,
+   "Rudy Ceccon": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 151,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 91,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:INSUFFICIENT_INPUTS": 37,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
