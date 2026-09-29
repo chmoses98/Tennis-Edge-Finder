@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-09-29T16:01:34.165516+00:00",
+ "run_id": "20260929T160134Z",
+ "external_parse": {
+  "events": 192,
+  "markets": 2029,
+  "skipped_family": 406,
+  "skipped_period": 617,
+  "skipped_live": 35,
+  "one_sided": 25,
+  "rows": 3378,
+  "devigged": 981
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1261,
+  "markets_mapped": 453,
+  "contracts": 976,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20260929T160134Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 453,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 186,
+  "rows": 790,
+  "two_sided": 789,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1628,
+ "external_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7348,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Dominic Stephan Stricker": 1,
+   "Jack Davison": 1,
+   "Matthew Michibata": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 244,
+  "by_status": {
+   "MAPPED": 222,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.9098,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Gabi Adrian Boitan": 1,
+   "Amr Elsayed": 1,
+   "Benjamin O'Connell": 1,
+   "Sasikumar Mukund": 1,
+   "Zihao Liu": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 148,
+ "kalshi_mapped_matches": 222,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 58,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
