@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-09-29T01:21:39.897648+00:00",
+ "run_id": "20260929T012139Z",
+ "external_parse": {
+  "events": 254,
+  "markets": 2873,
+  "skipped_family": 590,
+  "skipped_period": 815,
+  "skipped_live": 9,
+  "one_sided": 54,
+  "rows": 4971,
+  "devigged": 1414
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 825,
+  "markets_mapped": 305,
+  "contracts": 660,
+  "quoted_contracts": 660,
+  "raw": "data/research/external/raw/20260929T012139Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 305,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 44,
+  "rows": 616,
+  "two_sided": 605,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 927,
+ "external_mapping": {
+  "total": 243,
+  "by_status": {
+   "MAPPED": 181,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 44
+  },
+  "mapped_rate": 0.7449,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Yexin Ma": 1,
+   "Jodie Anna Burrage": 1,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Murkel Dellien": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alexander Binda": 1,
+   "Harriet Dart": 1,
+   "Alevtina Ibragimova": 1,
+   "Murkel Dellien": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 248,
+  "by_status": {
+   "MAPPED": 221,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8911,
+  "top_refusal_subjects": {
+   "Agustina Tarantola": 2,
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Murkel Dellien": 1,
+   "Pyotr Nesterov": 1,
+   "Alexander Binda": 1,
+   "David Perret": 1,
+   "Jack Davison": 1,
+   "Mauro Mavracic": 1,
+   "Renaud Lefevre": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 186,
+ "kalshi_mapped_matches": 221,
+ "model_witness_available": true,
+ "rows": 180,
+ "counts": {
+  "PASS": 178,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 97,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:MARKETS_AGREE": 21,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
