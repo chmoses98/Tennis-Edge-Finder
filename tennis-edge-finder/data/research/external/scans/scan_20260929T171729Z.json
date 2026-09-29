@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-29T17:17:29.418307+00:00",
+ "run_id": "20260929T171729Z",
+ "external_parse": {
+  "events": 181,
+  "markets": 1949,
+  "skipped_family": 422,
+  "skipped_period": 587,
+  "skipped_live": 32,
+  "one_sided": 30,
+  "rows": 3212,
+  "devigged": 910
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1283,
+  "markets_mapped": 473,
+  "contracts": 1016,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20260929T171729Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 473,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 203,
+  "rows": 813,
+  "two_sided": 812,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1671,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 126,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7412,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Micah Ward": 1,
+   "Matthew Michibata": 1,
+   "David Perret": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 261,
+  "by_status": {
+   "MAPPED": 238,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9119,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Renaud Lefevre": 1,
+   "Ryan Zuberbuehler": 1,
+   "Chetanna Amadike": 1,
+   "Fares Zakaria": 1,
+   "Gabi Adrian Boitan": 1,
+   "Amr Elsayed": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 238,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 108,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
