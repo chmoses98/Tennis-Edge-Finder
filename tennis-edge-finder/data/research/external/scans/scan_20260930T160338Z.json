@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-09-30T16:03:38.824713+00:00",
+ "run_id": "20260930T160338Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1369,
+  "skipped_family": 286,
+  "skipped_period": 400,
+  "skipped_live": 29,
+  "one_sided": 18,
+  "rows": 2210,
+  "devigged": 663
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 1702,
+  "markets_mapped": 629,
+  "contracts": 1346,
+  "quoted_contracts": 1220,
+  "raw": "data/research/external/raw/20260930T160338Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 629,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 381,
+  "rows": 965,
+  "two_sided": 947,
+  "one_sided": 18
+ },
+ "kalshi_quotes_on_disk": 561,
+ "external_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.7279,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kamalov Abdumalik": 1,
+   "Addy Rogin": 1,
+   "JC Roddick": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 23,
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 132,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9635,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Diego Esteban Torres": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 132,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 68,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 37,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
