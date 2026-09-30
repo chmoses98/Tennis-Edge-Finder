@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-30T01:47:07.564252+00:00",
+ "run_id": "20260930T014707Z",
+ "external_parse": {
+  "events": 290,
+  "markets": 3209,
+  "skipped_family": 583,
+  "skipped_period": 933,
+  "skipped_live": 8,
+  "one_sided": 27,
+  "rows": 5173,
+  "devigged": 1665
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1632,
+  "markets_mapped": 554,
+  "contracts": 1190,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20260930T014707Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 554,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 341,
+  "rows": 849,
+  "two_sided": 849,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1931,
+ "external_mapping": {
+  "total": 281,
+  "by_status": {
+   "MAPPED": 200,
+   "UNMAPPED_PLAYER": 26,
+   "DOUBLES_UNSUPPORTED": 54,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7117,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 54,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Nikita Samuel Filin": 1,
+   "Dominic Stephan Stricker": 1,
+   "Zhu Chenting": 1,
+   "Kenta Kawada": 1,
+   "Matteo Huarte": 1,
+   "Yulia Zhytelna": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 341,
+  "by_status": {
+   "MAPPED": 312,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.915,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Diego Esteban Torres": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Yahor Slizevich": 1,
+   "Jure Siftar": 1,
+   "Nicolas Robert": 1,
+   "Nazim Makhlouf": 1,
+   "Renaud Lefevre": 1
+  }
+ },
+ "matched_both_venues": 142,
+ "external_mapped_matches": 204,
+ "kalshi_mapped_matches": 312,
+ "model_witness_available": true,
+ "rows": 274,
+ "counts": {
+  "PASS": 269,
+  "tri:INSUFFICIENT_INPUTS": 146,
+  "tri:MODEL_LONE_OUTLIER": 94,
+  "tri:MARKETS_AGREE": 13,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 15,
+  "WATCH": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
