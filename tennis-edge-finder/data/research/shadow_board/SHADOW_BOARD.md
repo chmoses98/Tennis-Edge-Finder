@@ -1,331 +1,331 @@
-# TENNIS -- SHADOW ONLY (2026-09-30T13:05Z)
+# TENNIS -- SHADOW ONLY (2026-09-30T22:38Z)
 
-**REAL-MONEY AUTHORITY: OFF.** selector selector_v1. 443 contracts priced, 384 PASS, 43 WATCH, 16 SHADOW BET.
+**REAL-MONEY AUTHORITY: OFF.** selector selector_v1. 549 contracts priced, 483 PASS, 57 WATCH, 9 SHADOW BET.
 
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30SHIROT
+## SHADOW_BET -- KXWTAMATCH-26SEP28PARZHU
 
-* Market: `KXATPCHALLENGERMATCH-26SEP30SHIROT-SHI` YES at **0.38** (bid 0.37, spread 1c, size 3422)
-* Fair: **54.1%** (envelope 50.5-56.1%)
-* Raw edge +16.1c / after fees +14.1c / robust +10.5c
-* Bet up to **0.52**; EV per contract at +1c/+2c/+3c: +13.1c / +12.1c / +11.1c
-* Data quality A (0.87), serve evidence 2398 points on the thinner player
+* Market: `KXWTAMATCH-26SEP28PARZHU-ZHU` YES at **0.49** (bid 0.48, spread 1c, size 452)
+* Fair: **62.8%** (envelope 52.1-66.6%)
+* Raw edge +13.8c / after fees +11.8c / robust +1.1c
+* Bet up to **0.60**; EV per contract at +1c/+2c/+3c: +10.8c / +9.8c / +8.8c
+* Data quality B (0.79), serve evidence 3182 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +14.1c at the executable ask; the edge survives every configuration in the defensible parameter set
+**For:** fee-adjusted edge +11.8c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** reasonable reparameterisations move our fair price by 5.6c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** reasonable reparameterisations move our fair price by 14.5c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## SHADOW_BET -- KXWTACHALLENGERMATCH-26SEP30BUYSTE
+## SHADOW_BET -- KXATPCHALLENGERMATCH-26OCT01SCHWEN
 
-* Market: `KXWTACHALLENGERMATCH-26SEP30BUYSTE-BUY` YES at **0.13** (bid 0.12, spread 1c, size 788)
-* Fair: **26.8%** (envelope 23.0-29.5%)
-* Raw edge +13.8c / after fees +12.8c / robust +9.0c
-* Bet up to **0.24**; EV per contract at +1c/+2c/+3c: +11.8c / +10.8c / +9.8c
-* Data quality A (0.83), serve evidence 1622 points on the thinner player
+* Market: `KXATPCHALLENGERMATCH-26OCT01SCHWEN-WEN` YES at **0.56** (bid 0.55, spread 1c, size 1318)
+* Fair: **69.2%** (envelope 63.3-73.1%)
+* Raw edge +13.2c / after fees +11.2c / robust +5.3c
+* Bet up to **0.67**; EV per contract at +1c/+2c/+3c: +10.2c / +9.2c / +8.2c
+* Data quality A (0.96), serve evidence 4008 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +12.8c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +11.2c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** reasonable reparameterisations move our fair price by 6.5c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** reasonable reparameterisations move our fair price by 9.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30POUBER
+## SHADOW_BET -- KXATPCHALLENGERMATCH-26OCT01YMECIN
 
-* Market: `KXATPCHALLENGERMATCH-26SEP30POUBER-POU` YES at **0.42** (bid 0.41, spread 1c, size 5122)
-* Fair: **54.6%** (envelope 47.4-57.6%)
-* Raw edge +12.6c / after fees +10.6c / robust +3.4c
-* Bet up to **0.52**; EV per contract at +1c/+2c/+3c: +9.6c / +8.6c / +7.6c
-* Data quality A (0.98), serve evidence 4684 points on the thinner player
+* Market: `KXATPCHALLENGERMATCH-26OCT01YMECIN-YME` YES at **0.26** (bid 0.25, spread 1c, size 2960)
+* Fair: **39.1%** (envelope 37.7-40.6%)
+* Raw edge +13.1c / after fees +11.1c / robust +9.7c
+* Bet up to **0.37**; EV per contract at +1c/+2c/+3c: +10.1c / +9.1c / +8.1c
+* Data quality A (0.95), serve evidence 3635 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +10.6c at the executable ask; the edge survives every configuration in the defensible parameter set
-
-**Against:** reasonable reparameterisations move our fair price by 10.2c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30FENDIE
-
-* Market: `KXATPCHALLENGERMATCH-26SEP30FENDIE-FEN` YES at **0.20** (bid 0.19, spread 1c, size 5339)
-* Fair: **31.1%** (envelope 28.5-33.7%)
-* Raw edge +11.1c / after fees +9.1c / robust +6.5c
-* Bet up to **0.29**; EV per contract at +1c/+2c/+3c: +8.1c / +7.1c / +6.1c
-* Data quality B (0.73), serve evidence 1313 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +9.1c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** reasonable reparameterisations move our fair price by 5.1c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP29HERSCH
-
-* Market: `KXATPCHALLENGERMATCH-26SEP29HERSCH-SCH` YES at **0.61** (bid 0.60, spread 1c, size 1775)
-* Fair: **71.3%** (envelope 70.0-72.1%)
-* Raw edge +10.3c / after fees +8.3c / robust +7.0c
-* Bet up to **0.69**; EV per contract at +1c/+2c/+3c: +7.3c / +6.3c / +5.3c
-* Data quality B (0.77), serve evidence 3018 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +8.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +11.1c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
 **Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30TABFAU
+## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30BOLZHU
 
-* Market: `KXATPCHALLENGERMATCH-26SEP30TABFAU-FAU` YES at **0.28** (bid 0.27, spread 1c, size 4623)
-* Fair: **38.0%** (envelope 35.6-39.5%)
-* Raw edge +10.0c / after fees +8.0c / robust +5.6c
-* Bet up to **0.36**; EV per contract at +1c/+2c/+3c: +7.0c / +6.0c / +5.0c
-* Data quality A (0.95), serve evidence 3883 points on the thinner player
+* Market: `KXATPCHALLENGERMATCH-26SEP30BOLZHU-BOL` YES at **0.68** (bid 0.67, spread 1c, size 16030)
+* Fair: **80.8%** (envelope 79.1-82.8%)
+* Raw edge +12.8c / after fees +10.8c / robust +9.1c
+* Bet up to **0.78**; EV per contract at +1c/+2c/+3c: +9.8c / +8.8c / +7.8c
+* Data quality A (0.96), serve evidence 3955 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +10.8c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## SHADOW_BET -- KXWTACHALLENGERMATCH-26SEP30IBROKA
+
+* Market: `KXWTACHALLENGERMATCH-26SEP30IBROKA-OKA` YES at **0.25** (bid 0.24, spread 1c, size 4410)
+* Fair: **36.2%** (envelope 34.7-38.1%)
+* Raw edge +11.2c / after fees +9.2c / robust +7.7c
+* Bet up to **0.34**; EV per contract at +1c/+2c/+3c: +8.2c / +7.2c / +6.2c
+* Data quality A (0.92), serve evidence 2867 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +9.2c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## SHADOW_BET -- KXWTACHALLENGERMATCH-26SEP30LANCOS
+
+* Market: `KXWTACHALLENGERMATCH-26SEP30LANCOS-LAN` YES at **0.27** (bid 0.26, spread 1c, size 221)
+* Fair: **37.5%** (envelope 33.0-39.0%)
+* Raw edge +10.5c / after fees +8.5c / robust +4.0c
+* Bet up to **0.35**; EV per contract at +1c/+2c/+3c: +7.5c / +6.5c / +5.5c
+* Data quality A (0.94), serve evidence 3253 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +8.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** reasonable reparameterisations move our fair price by 6.0c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## SHADOW_BET -- KXATPMATCH-26SEP30FARFER
+
+* Market: `KXATPMATCH-26SEP30FARFER-FER` YES at **0.50** (bid 0.49, spread 1c, size 43657)
+* Fair: **60.0%** (envelope 53.0-62.9%)
+* Raw edge +10.0c / after fees +8.0c / robust +1.0c
+* Bet up to **0.57**; EV per contract at +1c/+2c/+3c: +7.0c / +6.0c / +5.0c
+* Data quality A (0.97), serve evidence 4203 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
 **For:** fee-adjusted edge +8.0c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP29BUTGEE
-
-* Market: `KXATPCHALLENGERMATCH-26SEP29BUTGEE-GEE` YES at **0.21** (bid 0.20, spread 1c, size 3252)
-* Fair: **30.9%** (envelope 30.5-32.2%)
-* Raw edge +9.9c / after fees +7.9c / robust +7.5c
-* Bet up to **0.28**; EV per contract at +1c/+2c/+3c: +6.9c / +5.9c / +4.9c
-* Data quality A (0.98), serve evidence 5015 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +7.9c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30BLAMIL
-
-* Market: `KXATPCHALLENGERMATCH-26SEP30BLAMIL-MIL` YES at **0.33** (bid 0.32, spread 1c, size 205)
-* Fair: **42.7%** (envelope 38.8-44.6%)
-* Raw edge +9.7c / after fees +7.7c / robust +3.8c
-* Bet up to **0.40**; EV per contract at +1c/+2c/+3c: +6.7c / +5.7c / +4.7c
-* Data quality A (0.95), serve evidence 3905 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +7.7c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** reasonable reparameterisations move our fair price by 5.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30PIRDAL
-
-* Market: `KXATPCHALLENGERMATCH-26SEP30PIRDAL-DAL` YES at **0.30** (bid 0.29, spread 1c, size 4859)
-* Fair: **39.1%** (envelope 35.8-41.6%)
-* Raw edge +9.1c / after fees +7.1c / robust +3.8c
-* Bet up to **0.37**; EV per contract at +1c/+2c/+3c: +6.1c / +5.1c / +4.1c
-* Data quality A (0.99), serve evidence 5437 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +7.1c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** reasonable reparameterisations move our fair price by 5.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPMATCH-26SEP30FARFER
-
-* Market: `KXATPMATCH-26SEP30FARFER-FER` YES at **0.51** (bid 0.49, spread 2c, size 107)
-* Fair: **60.0%** (envelope 53.0-62.9%)
-* Raw edge +9.0c / after fees +7.0c / robust +0.0c
-* Bet up to **0.57**; EV per contract at +1c/+2c/+3c: +6.0c / +5.0c / +4.0c
-* Data quality A (0.97), serve evidence 4203 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +7.0c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
 **Against:** reasonable reparameterisations move our fair price by 9.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30REIPDA
+
+* Market: `KXATPCHALLENGERMATCH-26SEP30REIPDA-PDA` YES at **0.53** (bid 0.52, spread 1c, size 36335)
+* Fair: **62.2%** (envelope 58.7-64.7%)
+* Raw edge +9.2c / after fees +7.2c / robust +3.7c
+* Bet up to **0.60**; EV per contract at +1c/+2c/+3c: +6.2c / +5.2c / +4.2c
+* Data quality A (0.98), serve evidence 5213 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +7.2c at the executable ask; the edge survives every configuration in the defensible parameter set
+
+**Against:** reasonable reparameterisations move our fair price by 5.9c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
 ## SHADOW_BET -- KXWTAMATCH-26SEP28BADKAS
 
-* Market: `KXWTAMATCH-26SEP28BADKAS-KAS` YES at **0.32** (bid 0.31, spread 1c, size 7503)
+* Market: `KXWTAMATCH-26SEP28BADKAS-KAS` YES at **0.33** (bid 0.32, spread 1c, size 714)
 * Fair: **40.0%** (envelope 37.4-42.0%)
-* Raw edge +8.0c / after fees +6.0c / robust +3.4c
-* Bet up to **0.37**; EV per contract at +1c/+2c/+3c: +5.0c / +4.0c / +3.0c
+* Raw edge +7.0c / after fees +5.0c / robust +2.4c
+* Bet up to **0.37**; EV per contract at +1c/+2c/+3c: +4.0c / +3.0c / +2.0c
 * Data quality A (0.95), serve evidence 3479 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +6.0c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +5.0c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
 **Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP30FERMID
+## WATCH -- KXITFWMATCH-26SEP30VANDAY
 
-* Market: `KXATPCHALLENGERMATCH-26SEP30FERMID-FER` YES at **0.12** (bid 0.11, spread 1c, size 3235)
-* Fair: **18.4%** (envelope 16.8-19.9%)
-* Raw edge +6.4c / after fees +5.4c / robust +3.8c
-* Bet up to **0.17**; EV per contract at +1c/+2c/+3c: +4.4c / +3.4c / +2.4c
-* Data quality A (0.87), serve evidence 2296 points on the thinner player
+* Market: `KXITFWMATCH-26SEP30VANDAY-DAY` YES at **0.06** (bid 0.04, spread 2c, size 266)
+* Fair: **87.5%** (envelope 84.0-90.0%)
+* Raw edge +81.5c / after fees +80.5c / robust +77.0c
+* Bet up to **0.86**; EV per contract at +1c/+2c/+3c: +79.5c / +78.5c / +77.5c
+* Data quality B (0.67), serve evidence 1949 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +5.4c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +80.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 81c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 6.0c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP29RIBSAK
+## WATCH -- KXITFWMATCH-26SEP30BRAKUH
 
-* Market: `KXATPCHALLENGERMATCH-26SEP29RIBSAK-SAK` YES at **0.35** (bid 0.34, spread 1c, size 1060)
-* Fair: **41.4%** (envelope 38.9-46.4%)
-* Raw edge +6.4c / after fees +4.4c / robust +1.9c
-* Bet up to **0.39**; EV per contract at +1c/+2c/+3c: +3.4c / +2.4c / +1.4c
-* Data quality A (0.94), serve evidence 3452 points on the thinner player
+* Market: `KXITFWMATCH-26SEP30BRAKUH-BRA` YES at **0.17** (bid 0.16, spread 1c, size 3955)
+* Fair: **82.0%** (envelope 80.5-85.0%)
+* Raw edge +65.0c / after fees +64.0c / robust +62.5c
+* Bet up to **0.79**; EV per contract at +1c/+2c/+3c: +62.0c / +61.0c / +60.0c
+* Data quality B (0.61), serve evidence 1139 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +4.4c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +64.0c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** reasonable reparameterisations move our fair price by 7.5c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 64c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP29POTMON
+## WATCH -- KXITFMATCH-26SEP30NIEMAR
 
-* Market: `KXATPCHALLENGERMATCH-26SEP29POTMON-MON` YES at **0.69** (bid 0.67, spread 2c, size 59)
-* Fair: **74.6%** (envelope 73.3-75.4%)
-* Raw edge +5.6c / after fees +3.6c / robust +2.3c
-* Bet up to **0.72**; EV per contract at +1c/+2c/+3c: +2.6c / +1.6c / +0.6c
-* Data quality A (0.96), serve evidence 3947 points on the thinner player
+* Market: `KXITFMATCH-26SEP30NIEMAR-MAR` YES at **0.07** (bid 0.06, spread 1c, size 2815)
+* Fair: **56.3%** (envelope 47.4-63.3%)
+* Raw edge +49.3c / after fees +48.3c / robust +39.4c
+* Bet up to **0.54**; EV per contract at +1c/+2c/+3c: +47.3c / +46.3c / +45.3c
+* Data quality C (0.41), serve evidence 335 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +3.6c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +48.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXATPCHALLENGERMATCH-26SEP28JUSRON
-
-* Market: `KXATPCHALLENGERMATCH-26SEP28JUSRON-JUS` YES at **0.55** (bid 0.53, spread 2c, size 5385)
-* Fair: **60.5%** (envelope 59.4-62.0%)
-* Raw edge +5.5c / after fees +3.5c / robust +2.4c
-* Bet up to **0.58**; EV per contract at +1c/+2c/+3c: +2.5c / +1.5c / +0.5c
-* Data quality A (0.97), serve evidence 4132 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +3.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## SHADOW_BET -- KXWTAMATCH-26SEP28STACHA
-
-* Market: `KXWTAMATCH-26SEP28STACHA-STA` YES at **0.59** (bid 0.58, spread 1c, size 9988)
-* Fair: **64.4%** (envelope 61.4-64.8%)
-* Raw edge +5.4c / after fees +3.4c / robust +0.4c
-* Bet up to **0.62**; EV per contract at +1c/+2c/+3c: +2.4c / +1.4c / +0.4c
-* Data quality A (0.96), serve evidence 3668 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +3.4c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## WATCH -- KXATPCHALLENGERMATCH-26SEP29GREOVE
-
-* Market: `KXATPCHALLENGERMATCH-26SEP29GREOVE-OVE` YES at **0.03** (bid 0.02, spread 1c, size 7573)
-* Fair: **52.0%** (envelope 39.1-57.9%)
-* Raw edge +49.0c / after fees +48.0c / robust +35.1c
-* Bet up to **0.49**; EV per contract at +1c/+2c/+3c: +47.0c / +46.0c / +45.0c
-* Data quality B (0.80), serve evidence 2814 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +48.0c at the executable ask; the edge survives every configuration in the defensible parameter set
-
-**Against:** fails: edge_is_plausible, fair_price_is_pinned; a claimed 48c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; reasonable reparameterisations move our fair price by 18.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## WATCH -- KXATPCHALLENGERMATCH-26SEP30GUEONC
-
-* Market: `KXATPCHALLENGERMATCH-26SEP30GUEONC-ONC` YES at **0.14** (bid 0.13, spread 1c, size 11635)
-* Fair: **58.1%** (envelope 57.1-59.1%)
-* Raw edge +44.1c / after fees +43.1c / robust +42.1c
-* Bet up to **0.56**; EV per contract at +1c/+2c/+3c: +42.1c / +41.1c / +40.1c
-* Data quality A (0.98), serve evidence 4960 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +43.1c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
-
-**Against:** fails: edge_is_plausible; a claimed 43c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, fair_price_is_pinned, data_quality_ok, level_not_abstained; a claimed 48c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 15.9c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
 ## WATCH -- KXITFWMATCH-26SEP30SATARA
 
-* Market: `KXITFWMATCH-26SEP30SATARA-ARA` YES at **0.19** (bid 0.15, spread 4c, size 24)
+* Market: `KXITFWMATCH-26SEP30SATARA-ARA` YES at **0.16** (bid 0.15, spread 1c, size 4295)
 * Fair: **61.1%** (envelope 55.3-65.2%)
-* Raw edge +42.1c / after fees +40.1c / robust +34.3c
-* Bet up to **0.59**; EV per contract at +1c/+2c/+3c: +39.1c / +38.1c / +37.1c
+* Raw edge +45.1c / after fees +44.1c / robust +38.3c
+* Bet up to **0.59**; EV per contract at +1c/+2c/+3c: +43.1c / +41.1c / +40.1c
 * Data quality C (0.42), serve evidence 1522 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +40.1c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +44.1c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 40c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 9.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
-
-## WATCH -- KXITFWMATCH-26SEP30MARPER
-
-* Market: `KXITFWMATCH-26SEP30MARPER-PER` YES at **0.23** (bid 0.21, spread 2c, size 3243)
-* Fair: **65.1%** (envelope 31.1-80.0%)
-* Raw edge +42.1c / after fees +40.1c / robust +6.1c
-* Bet up to **0.63**; EV per contract at +1c/+2c/+3c: +39.1c / +38.1c / +37.1c
-* Data quality C (0.44), serve evidence 1408 points on the thinner player
-* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
-
-**For:** fee-adjusted edge +40.1c at the executable ask; the edge survives every configuration in the defensible parameter set
-
-**Against:** fails: edge_is_plausible, fair_price_is_pinned, data_quality_ok, level_not_abstained; a claimed 40c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 48.9c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 44c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 9.8c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
 ## WATCH -- KXITFWMATCH-26SEP30DESKOY
 
-* Market: `KXITFWMATCH-26SEP30DESKOY-KOY` YES at **0.16** (bid 0.12, spread 4c, size 2)
+* Market: `KXITFWMATCH-26SEP30DESKOY-KOY` YES at **0.15** (bid 0.14, spread 1c, size 4156)
 * Fair: **55.3%** (envelope 53.2-56.4%)
-* Raw edge +39.3c / after fees +38.3c / robust +36.2c
-* Bet up to **0.53**; EV per contract at +1c/+2c/+3c: +37.3c / +35.3c / +34.3c
+* Raw edge +40.3c / after fees +39.3c / robust +37.2c
+* Bet up to **0.53**; EV per contract at +1c/+2c/+3c: +38.3c / +37.3c / +35.3c
 * Data quality C (0.42), serve evidence 626 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +38.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +39.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 38c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 39c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## WATCH -- KXITFWMATCH-26SEP30LOPESQ
+## WATCH -- KXITFWMATCH-26OCT01ESQZEL
 
-* Market: `KXITFWMATCH-26SEP30LOPESQ-LOP` YES at **0.12** (bid 0.10, spread 2c, size 6)
-* Fair: **50.5%** (envelope 44.7-55.9%)
-* Raw edge +38.5c / after fees +37.5c / robust +31.7c
-* Bet up to **0.48**; EV per contract at +1c/+2c/+3c: +36.5c / +35.5c / +34.5c
-* Data quality C (0.58), serve evidence 1005 points on the thinner player
+* Market: `KXITFWMATCH-26OCT01ESQZEL-ZEL` YES at **0.26** (bid 0.21, spread 5c, size 34)
+* Fair: **64.4%** (envelope 61.0-66.9%)
+* Raw edge +38.4c / after fees +36.4c / robust +33.0c
+* Bet up to **0.62**; EV per contract at +1c/+2c/+3c: +35.4c / +34.4c / +33.4c
+* Data quality B (0.61), serve evidence 1005 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +37.5c at the executable ask; the edge survives every configuration in the defensible parameter set
+**For:** fee-adjusted edge +36.4c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 38c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 11.2c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 36c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 5.9c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## WATCH -- KXITFMATCH-26SEP30VUJSIN
+## WATCH -- KXITFWMATCH-26OCT01SERWEC
 
-* Market: `KXITFMATCH-26SEP30VUJSIN-VUJ` YES at **0.05** (bid 0.04, spread 1c, size 5427)
-* Fair: **35.5%** (envelope 24.6-42.3%)
-* Raw edge +30.5c / after fees +29.5c / robust +18.6c
-* Bet up to **0.33**; EV per contract at +1c/+2c/+3c: +28.5c / +27.5c / +26.5c
-* Data quality B (0.78), serve evidence 2059 points on the thinner player
+* Market: `KXITFWMATCH-26OCT01SERWEC-WEC` YES at **0.29** (bid 0.25, spread 4c, size 36)
+* Fair: **57.5%** (envelope 52.7-60.1%)
+* Raw edge +28.5c / after fees +26.5c / robust +21.7c
+* Bet up to **0.55**; EV per contract at +1c/+2c/+3c: +25.5c / +24.5c / +23.5c
+* Data quality B (0.70), serve evidence 1952 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +29.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +26.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** fails: edge_is_plausible, fair_price_is_pinned, level_not_abstained; a claimed 30c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 17.7c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 26c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 7.4c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## WATCH -- KXATPCHALLENGERMATCH-26SEP29SANFEA
+## WATCH -- KXITFWMATCH-26OCT01KLIDUD
 
-* Market: `KXATPCHALLENGERMATCH-26SEP29SANFEA-SAN` YES at **0.07** (bid 0.03, spread 4c, size 2300)
-* Fair: **36.2%** (envelope 31.1-39.2%)
-* Raw edge +29.2c / after fees +28.2c / robust +23.1c
-* Bet up to **0.34**; EV per contract at +1c/+2c/+3c: +27.2c / +26.2c / +25.2c
-* Data quality A (0.95), serve evidence 3639 points on the thinner player
+* Market: `KXITFWMATCH-26OCT01KLIDUD-DUD` YES at **0.38** (bid 0.35, spread 3c, size 14)
+* Fair: **63.3%** (envelope 47.9-69.5%)
+* Raw edge +25.3c / after fees +23.3c / robust +7.9c
+* Bet up to **0.61**; EV per contract at +1c/+2c/+3c: +22.3c / +21.3c / +20.3c
+* Data quality A (0.88), serve evidence 2873 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +28.2c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +23.3c at the executable ask; the edge survives every configuration in the defensible parameter set
 
-**Against:** fails: edge_is_plausible; a claimed 28c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; reasonable reparameterisations move our fair price by 8.1c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible, fair_price_is_pinned, level_not_abstained; a claimed 23c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 21.6c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
-## WATCH -- KXATPCHALLENGERMATCH-26SEP28VILPRA
+## WATCH -- KXATPCHALLENGERMATCH-26OCT01ZHEERE
 
-* Market: `KXATPCHALLENGERMATCH-26SEP28VILPRA-VIL` YES at **0.19** (bid 0.16, spread 3c, size 5)
-* Fair: **47.9%** (envelope 44.8-50.0%)
-* Raw edge +28.9c / after fees +26.9c / robust +23.8c
-* Bet up to **0.45**; EV per contract at +1c/+2c/+3c: +25.9c / +24.9c / +23.9c
-* Data quality A (0.98), serve evidence 4826 points on the thinner player
+* Market: `KXATPCHALLENGERMATCH-26OCT01ZHEERE-ERE` YES at **0.17** (bid 0.16, spread 1c, size 1198)
+* Fair: **40.5%** (envelope 32.8-46.5%)
+* Raw edge +23.5c / after fees +22.5c / robust +14.8c
+* Bet up to **0.38**; EV per contract at +1c/+2c/+3c: +20.5c / +19.5c / +18.5c
+* Data quality A (0.89), serve evidence 2389 points on the thinner player
 * FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
 
-**For:** fee-adjusted edge +26.9c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+**For:** fee-adjusted edge +22.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
 
-**Against:** fails: edge_is_plausible; a claimed 27c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; reasonable reparameterisations move our fair price by 5.2c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+**Against:** fails: edge_is_plausible; a claimed 22c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; reasonable reparameterisations move our fair price by 13.6c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXITFMATCH-26OCT01FALHOE
+
+* Market: `KXITFMATCH-26OCT01FALHOE-HOE` YES at **0.49** (bid 0.48, spread 1c, size 35)
+* Fair: **72.7%** (envelope 69.8-74.4%)
+* Raw edge +23.7c / after fees +21.7c / robust +18.8c
+* Bet up to **0.70**; EV per contract at +1c/+2c/+3c: +20.7c / +19.7c / +18.7c
+* Data quality B (0.63), serve evidence 1394 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +21.7c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 22c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXITFWMATCH-26SEP30LIUSIM
+
+* Market: `KXITFWMATCH-26SEP30LIUSIM-SIM` YES at **0.42** (bid 0.40, spread 2c, size 1550)
+* Fair: **65.5%** (envelope 63.5-68.8%)
+* Raw edge +23.5c / after fees +21.5c / robust +19.5c
+* Bet up to **0.63**; EV per contract at +1c/+2c/+3c: +20.5c / +19.5c / +18.5c
+* Data quality C (0.44), serve evidence 942 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +21.5c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 21c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 5.3c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXITFWMATCH-26SEP30LEEHOU
+
+* Market: `KXITFWMATCH-26SEP30LEEHOU-HOU` YES at **0.24** (bid 0.22, spread 2c, size 4284)
+* Fair: **47.3%** (envelope 43.6-48.9%)
+* Raw edge +23.3c / after fees +21.3c / robust +17.6c
+* Bet up to **0.45**; EV per contract at +1c/+2c/+3c: +20.3c / +19.3c / +18.3c
+* Data quality C (0.40), serve evidence 995 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +21.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible, data_quality_ok, level_not_abstained; a claimed 21c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 5.3c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXITFWMATCH-26SEP30CHASTO
+
+* Market: `KXITFWMATCH-26SEP30CHASTO-CHA` YES at **0.19** (bid 0.18, spread 1c, size 9)
+* Fair: **40.0%** (envelope 31.6-43.1%)
+* Raw edge +21.0c / after fees +19.0c / robust +10.6c
+* Bet up to **0.38**; EV per contract at +1c/+2c/+3c: +18.0c / +17.0c / +16.0c
+* Data quality B (0.75), serve evidence 2840 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +19.0c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 19c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; reasonable reparameterisations move our fair price by 11.6c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXITFWMATCH-26OCT01MALSWA
+
+* Market: `KXITFWMATCH-26OCT01MALSWA-MAL` YES at **0.19** (bid 0.16, spread 3c, size 19)
+* Fair: **39.6%** (envelope 38.5-41.1%)
+* Raw edge +20.6c / after fees +18.6c / robust +17.5c
+* Bet up to **0.37**; EV per contract at +1c/+2c/+3c: +17.6c / +16.6c / +15.6c
+* Data quality A (0.89), serve evidence 2298 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +18.6c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible, level_not_abstained; a claimed 19c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; ITF is a level where our disagreement measured NEGATIVE in both Wave 3 blocks; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXWTAMATCH-26SEP28GAOUDV
+
+* Market: `KXWTAMATCH-26SEP28GAOUDV-GAO` YES at **0.38** (bid 0.37, spread 1c, size 300)
+* Fair: **58.3%** (envelope 51.6-60.9%)
+* Raw edge +20.3c / after fees +18.3c / robust +11.6c
+* Bet up to **0.56**; EV per contract at +1c/+2c/+3c: +17.3c / +16.3c / +15.3c
+* Data quality B (0.79), serve evidence 3203 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +18.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible; a claimed 18c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; reasonable reparameterisations move our fair price by 9.3c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
+
+## WATCH -- KXWTACHALLENGERMATCH-26OCT01FALSID
+
+* Market: `KXWTACHALLENGERMATCH-26OCT01FALSID-FAL` YES at **0.61** (bid 0.60, spread 1c, size 505)
+* Fair: **81.3%** (envelope 76.7-83.3%)
+* Raw edge +20.3c / after fees +18.3c / robust +13.7c
+* Bet up to **0.79**; EV per contract at +1c/+2c/+3c: +17.3c / +16.3c / +15.3c
+* Data quality A (0.90), serve evidence 2506 points on the thinner player
+* FIRST BALL: START_UNKNOWN (confidence UNKNOWN)
+
+**For:** fee-adjusted edge +18.3c at the executable ask; the edge survives every configuration in the defensible parameter set; Elo and Gen-2 disagree with the price in the same direction
+
+**Against:** fails: edge_is_plausible; a claimed 18c edge against a two-sided market is far more likely to be our error than a mispricing; this band realised NEGATIVE; reasonable reparameterisations move our fair price by 6.6c; Wave 3 found no subset where our probability was MORE accurate than the price; a positive realised return on a small sample is not evidence that it is
 
 ---
 

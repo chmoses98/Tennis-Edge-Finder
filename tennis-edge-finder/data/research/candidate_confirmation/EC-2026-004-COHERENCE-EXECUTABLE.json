@@ -5,12 +5,12 @@
  "status_reason": "3 eligible of 10 required",
  "universe": {
   "stream": "kalshi/capture/*/books (order books, orderbook_fp)",
-  "books_read": 347187,
+  "books_read": 361987,
   "books_before_confirmation_start": 7818,
   "books_unparsed_or_not_match_scope": 0,
-  "books_one_sided": 15199,
-  "capture_runs_scanned": 1803,
-  "match_passes_scanned": 127045,
+  "books_one_sided": 15412,
+  "capture_runs_scanned": 1840,
+  "match_passes_scanned": 131024,
   "note": "books are captured only for match-scope markets within 6h of their nominal start (budget 400 per pass), so the scan sees the near-start board, not every listing"
  },
  "metrics": {
@@ -172,11 +172,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20260930T130649Z",
+ "harvest_run": "20260930T224035Z",
  "evidence_rows_this_run": 9,
  "evidence_rows_appended": 0,
  "last_evidence_at": "2026-09-22T20:19:24.784629+00:00",
- "harvest_run_at": "2026-09-30T13:08:08.290180+00:00",
+ "harvest_run_at": "2026-09-30T22:41:56.706722+00:00",
  "evidence_chain_violations": [],
  "frozen_definition": {
   "frozen_at": "2026-09-12T06:30:00+00:00",
