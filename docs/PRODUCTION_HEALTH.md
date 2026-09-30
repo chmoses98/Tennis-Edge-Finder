@@ -150,3 +150,20 @@ harvest success and failure. Health labels, deliberately distinct:
 A harvest failure is an `::error::` annotation in RUN TENNIS, is recorded by `--record-failure`, and
 FAILS TENNIS-15; settlement and capture outputs still publish, and the next run retries from the immutable
 inputs. Zero evidence because Kalshi listed nothing qualifying is healthy; a silent producer is not.
+
+## TENNIS-16 assisted_decision_pipeline_health (2026-09-30)
+
+The ChatGPT-assisted lane's OPERATIONS gate (`tennis_edge/assisted/health.py`), separate from TENNIS-15 and
+from any authority: it says whether the lane is recording, settling and scoring correctly, never whether it
+makes money. Reported: latest slate build and age, latest assisted decision, settlement freshness,
+unsettled decisions (and those stalled over 7 days), strict CLV coverage, schema validity, duplicate
+decisions (ids and content), post-start decision violations, integrity violations (record fingerprints,
+canonical hash chains, compile checks), TRACK_START fingerprint.
+
+| label | meaning | gate |
+|---|---|---|
+| HEALTHY_NO_DECISIONS_YET | slate and pipeline fresh, nothing recorded yet | PASS |
+| HEALTHY | fresh, every record valid, nothing overdue | PASS |
+| UNHEALTHY | any of SLATE_STALE, PIPELINE_STALE, PIPELINE_ERROR, INTEGRITY_VIOLATION, SCHEMA_INVALID, DUPLICATE_DECISIONS, POST_START_DECISIONS (last 7 d), SETTLEMENT_STALLED, TRACK_START_MODIFIED | FAIL |
+| (no TRACK_START or no slate yet) | the lane has not run in production | UNKNOWN |
+

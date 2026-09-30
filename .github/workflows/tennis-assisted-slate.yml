@@ -1,0 +1,49 @@
+name: TENNIS assisted slate
+
+# Rebuilds the assisted handicapping slate (data/research/assisted_slates/latest.{json,md}) on demand, from
+# the latest capture and the frozen producers' latest rows, and publishes it to `tennis-data`. RUN TENNIS
+# also builds it every six hours; this is for "RUN TENNIS" moments between those runs. It selects nothing.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-assisted-slate
+  cancel-in-progress: true
+
+jobs:
+  slate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pull the latest producer rows, capture and first-ball truth
+        run: |
+          git fetch --depth=1 --filter=blob:none origin tennis-data
+          T=$(date -u +%F); Y=$(date -u -d yesterday +%F)
+          for path in research/assisted_slates firstball/store/truths "kalshi/capture/$Y" "kalshi/capture/$T" \
+                      "research/ledger/$Y.jsonl" "research/ledger/$T.jsonl" \
+                      "research/frozen_producers/shadow_board/$Y.jsonl" "research/frozen_producers/shadow_board/$T.jsonl" \
+                      "research/frozen_producers/model4/$Y.jsonl" "research/frozen_producers/model4/$T.jsonl" \
+                      "research/external/dislocations/$T.jsonl"; do
+            # evidence keeps its historical prefix on the branch; --strip-components=1 lands it at ./data/
+            if [ -n "$(git ls-tree origin/tennis-data "tennis-edge-finder/data/$path")" ]; then
+              git archive origin/tennis-data "tennis-edge-finder/data/$path" | tar -x --strip-components=1
+            else
+              echo "::warning::$path is not on tennis-data"
+            fi
+          done
+      - name: Build the slate
+        run: PYTHONPATH=. python3 scripts/research/build_assisted_slate.py
+      - name: Publish
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/assisted_slates \
+            --message "assisted slate $(date -u +'%Y-%m-%dT%H:%M:%SZ')"

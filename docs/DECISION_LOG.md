@@ -31,3 +31,19 @@
 | Protocol binding: only STRICT_PREGAME rows are eligible for any pregame claim | `docs/PROSPECTIVE_RESEARCH_PROTOCOL.md` | using START_UNKNOWN rows for P&L |
 | Trade tape: new window since the last one + queued backlog inside the SAME 250-page budget | the old cursor re-read ~12 minutes of tape every pass and skipped the unread older end for good | raising the page cap |
 | Laver Cup: explicit family, parsed, not priced | the contract states no scoring format and none is configured | reusing the generic team-event format |
+
+## 2026-09-30 ChatGPT-assisted handicapping lane
+
+| decision | why | alternative rejected |
+|---|---|---|
+| A separate lane (`tennis_edge/assisted/`) whose unit is a person's recorded decision, beside the frozen experiments | the question is whether the repo's data helps a handicapper, not whether a model beats Kalshi; mixing the two would let thousands of model rows swamp a few dozen decisions | scoring ChatGPT decisions inside the candidate harvest |
+| One write-once file per record, canonical JSONL compiled by RUN TENNIS | `publish_branch.py` copies a tree over the branch tip, so two jobs appending to one JSONL can overwrite each other's rows | a single shared append-only JSONL written by both the recorder and RUN TENNIS |
+| `publish_branch.py --no-overwrite` for the recorder | a record that already exists on the branch must never be replaced, even by a race between two dispatches | trusting job concurrency (GitHub cancels queued runs of a group) |
+| Only RUN TENNIS writes TRACK_START (`--write-track-start`) | one writer fixes the effective start; local and test runs cannot start the production track | writing it from whichever job runs first |
+| Refuse decisions after any observed first ball (any confidence); admit made-before/recorded-after with a flag and exclude them from the headline | refusal on an indirect bound is the conservative direction; a late write-up is contamination risk, not a lost fact | refusing on scheduled start (Challenger/ITF times are unreliable) |
+| Decisions must be recorded within 3 h and after the track start | prospective only; older write-ups are reconstructions | allowing back-dated decisions |
+| All probabilities stored as P(ticker YES) | one Brier convention for every family and side | side-oriented probabilities |
+| "Model prefers a side" = fee-adjusted executable edge > 0 on the decision's own quote | the pass-quality question is about apparent edges a taker could have bought | model-minus-mid |
+| CEO answers are INSUFFICIENT_EVIDENCE below N = 30 and never "profitable" unless the 95% CI excludes zero; fixed bootstrap seed | no hindsight re-drawing, no early claims | reporting raw means as findings |
+| Postmortems are hypothesis generation only | results must not tune a frozen model or create rules without their own pre-registered test | feeding postmortems into weights |
+

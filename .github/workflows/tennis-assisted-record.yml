@@ -1,0 +1,67 @@
+name: TENNIS assisted record
+
+# Writes ONE ChatGPT-assisted record (a decision, the wager a person actually placed, a postmortem, or
+# evidence discovered after a decision) to the `tennis-data` branch. Records are write-once files named by
+# their id, so this job can run in parallel with itself and with RUN TENNIS without either overwriting the
+# other (publish --no-overwrite fails loudly instead of replacing an existing record).
+#
+# Nothing here places, routes or sizes an order: it records what a person decided or did.
+# The payload travels through an environment variable, never interpolated into the shell.
+
+on:
+  workflow_dispatch:
+    inputs:
+      kind:
+        description: 'record kind'
+        type: choice
+        options: [decision, wager, postmortem, evidence]
+        default: decision
+      payload:
+        description: 'the JSON object (see docs/ASSISTED_HANDICAPPING.md; `record_assisted_decision.py --template <kind>`)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  record:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pull the evidence the recorder validates against
+        run: |
+          git fetch --depth=1 --filter=blob:none origin tennis-data
+          for path in research/assisted_decisions research/assisted_slates firstball/store/truths \
+                      "kalshi/capture/$(date -u -d yesterday +%F)" "kalshi/capture/$(date -u +%F)"; do
+            # evidence keeps its historical prefix on the branch; --strip-components=1 lands it at ./data/
+            if [ -n "$(git ls-tree origin/tennis-data "tennis-edge-finder/data/$path")" ]; then
+              git archive origin/tennis-data "tennis-edge-finder/data/$path" | tar -x --strip-components=1
+            else
+              echo "::warning::$path is not on tennis-data yet"
+            fi
+          done
+          ls data data/research || true
+      - name: Validate and record
+        env:
+          KIND: ${{ inputs.kind }}
+          PAYLOAD: ${{ inputs.payload }}
+        run: |
+          printf '%s' "$PAYLOAD" > "$RUNNER_TEMP/payload.json"
+          set +e
+          PYTHONPATH=. python3 scripts/research/record_assisted_decision.py --kind "$KIND" \
+            --input "$RUNNER_TEMP/payload.json" | tee "$RUNNER_TEMP/result.jsonl"
+          rc=${PIPESTATUS[0]}
+          set -e
+          { echo '```json'; cat "$RUNNER_TEMP/result.jsonl"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+          if [ "$rc" != "0" ]; then echo "::error::record refused or failed (exit $rc)"; exit "$rc"; fi
+      - name: Publish the new record (write-once)
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --no-overwrite \
+            --src data/research/assisted_decisions/records \
+            --message "assisted ${{ inputs.kind }} $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
