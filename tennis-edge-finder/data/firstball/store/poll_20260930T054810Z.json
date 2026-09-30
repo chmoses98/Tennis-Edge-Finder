@@ -1,0 +1,28 @@
+{
+ "run_id": "20260930T054810Z",
+ "started_at": "2026-09-30T05:48:10.483481+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 109,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPGSPREAD-26SEP28STRTIR": {
+   "confidence": "B",
+   "bracket_s": 198.099989,
+   "first_ball": "2026-09-30T05:51:48.567032+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 109
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-30T05:57:32.876294+00:00"
+}
