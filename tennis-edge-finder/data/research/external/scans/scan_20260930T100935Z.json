@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-09-30T10:09:35.827550+00:00",
+ "run_id": "20260930T100935Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1376,
+  "markets_mapped": 481,
+  "contracts": 1064,
+  "quoted_contracts": 892,
+  "raw": "data/research/external/raw/20260930T100935Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 481,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 248,
+  "rows": 816,
+  "two_sided": 815,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 690,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 165,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.9066,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Diego Esteban Torres": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Nicolas Robert": 1,
+   "Nazim Makhlouf": 1,
+   "Renaud Lefevre": 1,
+   "Ryan Zuberbuehler": 1,
+   "Chetanna Amadike": 1,
+   "Fares Zakaria": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 17,
+ "external_mapped_matches": 47,
+ "kalshi_mapped_matches": 165,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
