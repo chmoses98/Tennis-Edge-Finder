@@ -1,0 +1,35 @@
+{
+ "run_id": "20260930T110244Z",
+ "started_at": "2026-09-30T11:02:44.208687+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 55,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP30CRAPRI": {
+   "confidence": "B",
+   "bracket_s": 206.357137,
+   "first_ball": "2026-09-30T11:04:06.927789+00:00",
+   "no_play": false
+  },
+  "KXWTACHALLENGERMATCH-26SEP30HRUBLI": {
+   "confidence": "B",
+   "bracket_s": 206.219218,
+   "first_ball": "2026-09-30T11:05:33.215967+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 55,
+  "UNMATCHED": 1720
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-30T11:12:58.825102+00:00"
+}
