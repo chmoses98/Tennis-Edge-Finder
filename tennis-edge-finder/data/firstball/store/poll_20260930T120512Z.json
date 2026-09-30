@@ -1,0 +1,29 @@
+{
+ "run_id": "20260930T120512Z",
+ "started_at": "2026-09-30T12:05:12.218872+00:00",
+ "passes": 9,
+ "requests": 18,
+ "observations": 13,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26SEP30KOSGAL": {
+   "confidence": "B",
+   "bracket_s": 195.443816,
+   "first_ball": "2026-09-30T12:07:32.064212+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 18
+ },
+ "mapping": {
+  "MATCHED": 13,
+  "UNMATCHED": 1638
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-09-30T12:15:21.124617+00:00"
+}
