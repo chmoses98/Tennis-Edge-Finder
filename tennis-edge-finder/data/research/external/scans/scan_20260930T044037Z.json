@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-09-30T04:40:37.215347+00:00",
+ "run_id": "20260930T044037Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2964,
+  "skipped_family": 505,
+  "skipped_period": 833,
+  "skipped_live": 26,
+  "one_sided": 38,
+  "rows": 4675,
+  "devigged": 1587
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1268,
+  "markets_mapped": 440,
+  "contracts": 962,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20260930T044037Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 440,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 123,
+  "rows": 839,
+  "two_sided": 837,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 873,
+ "external_mapping": {
+  "total": 302,
+  "by_status": {
+   "MAPPED": 221,
+   "UNMAPPED_PLAYER": 25,
+   "DOUBLES_UNSUPPORTED": 55,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7318,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 55,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Shotaro Yamamoto": 1,
+   "Sota Kambara": 1,
+   "Mukund Sasikumar": 1,
+   "Kim Dong Ju": 1,
+   "Benjamin O'Connell": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 38,
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 213,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9221,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Jure Siftar": 1,
+   "Nicolas Robert": 1,
+   "Renaud Lefevre": 1,
+   "Ryan Zuberbuehler": 1,
+   "Chetanna Amadike": 1,
+   "Fares Zakaria": 1
+  }
+ },
+ "matched_both_venues": 117,
+ "external_mapped_matches": 224,
+ "kalshi_mapped_matches": 213,
+ "model_witness_available": true,
+ "rows": 204,
+ "counts": {
+  "PASS": 201,
+  "tri:INSUFFICIENT_INPUTS": 151,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 9
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
