@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-09-30T00:27:19.591479+00:00",
+ "run_id": "20260930T002719Z",
+ "external_parse": {
+  "events": 216,
+  "markets": 2586,
+  "skipped_family": 528,
+  "skipped_period": 777,
+  "skipped_live": 11,
+  "one_sided": 14,
+  "rows": 4329,
+  "devigged": 1266
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1627,
+  "markets_mapped": 555,
+  "contracts": 1190,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20260930T002719Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 555,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 365,
+  "rows": 825,
+  "two_sided": 825,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 807,
+ "external_mapping": {
+  "total": 205,
+  "by_status": {
+   "MAPPED": 141,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 50,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6878,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Nikita Samuel Filin": 1,
+   "Dominic Stephan Stricker": 1,
+   "Zhu Chenting": 1,
+   "Victoria Zhao": 1,
+   "Benjamin O'Connell": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Nikita Samuel Filin": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 223,
+  "by_status": {
+   "MAPPED": 199,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8924,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Nikita Samuel Filin": 1,
+   "Diego Esteban Torres": 1,
+   "Yahor Slizevich": 1,
+   "Jure Siftar": 1,
+   "Nicolas Robert": 1,
+   "Nazim Makhlouf": 1,
+   "Renaud Lefevre": 1,
+   "Chetanna Amadike": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 145,
+ "kalshi_mapped_matches": 199,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 106,
+  "tri:INSUFFICIENT_INPUTS": 70,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
