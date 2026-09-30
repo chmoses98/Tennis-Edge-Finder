@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-09-30T06:46:11.314363+00:00",
+ "run_id": "20260930T064611Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2807,
+  "skipped_family": 487,
+  "skipped_period": 784,
+  "skipped_live": 33,
+  "one_sided": 33,
+  "rows": 4394,
+  "devigged": 1497
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1090,
+  "markets_mapped": 394,
+  "contracts": 874,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20260930T064611Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 394,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 820,
+  "two_sided": 811,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 1841,
+ "external_mapping": {
+  "total": 302,
+  "by_status": {
+   "MAPPED": 221,
+   "UNMAPPED_PLAYER": 23,
+   "DOUBLES_UNSUPPORTED": 57,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7318,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 57,
+   "Yexin Ma": 1,
+   "Maria Camila Osorio": 1,
+   "Yulia Starodubtseva": 1,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Benjamin O'Connell": 1,
+   "Chetanna Amadike": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 39
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 319,
+  "by_status": {
+   "MAPPED": 293,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.9185,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Yexin Ma": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Diego Esteban Torres": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Yahor Slizevich": 1,
+   "Jure Siftar": 1,
+   "Nicolas Robert": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 171,
+ "external_mapped_matches": 224,
+ "kalshi_mapped_matches": 293,
+ "model_witness_available": true,
+ "rows": 284,
+ "counts": {
+  "PASS": 283,
+  "tri:INSUFFICIENT_INPUTS": 210,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
