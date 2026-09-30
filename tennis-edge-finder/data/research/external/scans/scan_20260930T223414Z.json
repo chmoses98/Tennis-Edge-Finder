@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-09-30T22:34:14.433173+00:00",
+ "run_id": "20260930T223414Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1550,
+  "skipped_family": 332,
+  "skipped_period": 462,
+  "skipped_live": 12,
+  "one_sided": 30,
+  "rows": 2506,
+  "devigged": 726
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 1889,
+  "markets_mapped": 720,
+  "contracts": 1542,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20260930T223414Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 720,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 700,
+  "rows": 842,
+  "two_sided": 841,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 593,
+ "external_mapping": {
+  "total": 125,
+  "by_status": {
+   "MAPPED": 89,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 28
+  },
+  "mapped_rate": 0.712,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Joel Josef Schwarzler": 1,
+   "Kamalov Abdumalik": 1,
+   "Nathan Gold": 1,
+   "Jack Casciato": 1,
+   "Tanika Saravanan": 1,
+   "Herman H\u00f8yeraal": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 17,
+   "MAPPED": 63
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17
+  }
+ },
+ "kalshi_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9604,
+  "top_refusal_subjects": {
+   "Amr Elsayed": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
