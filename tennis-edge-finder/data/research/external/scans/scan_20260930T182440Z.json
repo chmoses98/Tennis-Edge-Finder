@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-09-30T18:24:40.405811+00:00",
+ "run_id": "20260930T182440Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1222,
+  "skipped_family": 286,
+  "skipped_period": 361,
+  "skipped_live": 37,
+  "one_sided": 21,
+  "rows": 1974,
+  "devigged": 554
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 1759,
+  "markets_mapped": 669,
+  "contracts": 1420,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20260930T182440Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 669,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 630,
+  "rows": 790,
+  "two_sided": 786,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 714,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 89,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.7177,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Kamalov Abdumalik": 1,
+   "Xavier Calvelo": 1,
+   "Diego Herrera": 1,
+   "George Hakopian": 1,
+   "Conley Raidt": 1,
+   "Yulia Zhytelna": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9786,
+  "top_refusal_subjects": {
+   "Nikita Mashtakov": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 137,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
