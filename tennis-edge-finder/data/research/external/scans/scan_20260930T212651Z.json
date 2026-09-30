@@ -1,0 +1,87 @@
+{
+ "generated_at": "2026-09-30T21:26:51.801795+00:00",
+ "run_id": "20260930T212651Z",
+ "external_parse": {
+  "events": 96,
+  "markets": 1099,
+  "skipped_family": 280,
+  "skipped_period": 323,
+  "skipped_live": 15,
+  "one_sided": 5,
+  "rows": 1820,
+  "devigged": 491
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 1842,
+  "markets_mapped": 701,
+  "contracts": 1494,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20260930T212651Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 701,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 679,
+  "rows": 815,
+  "two_sided": 809,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 561,
+ "external_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7412,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Kamalov Abdumalik": 1,
+   "Naresh Bharathy": 1,
+   "Nathan Gold": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17
+  }
+ },
+ "kalshi_mapping": {
+  "total": 102,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9902,
+  "top_refusal_subjects": {
+   "Fares Zakaria": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
