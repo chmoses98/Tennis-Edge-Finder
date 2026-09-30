@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-09-30T20:25:23.408209+00:00",
+ "run_id": "20260930T202523Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 1119,
+  "skipped_family": 280,
+  "skipped_period": 330,
+  "skipped_live": 24,
+  "one_sided": 14,
+  "rows": 1828,
+  "devigged": 495
+ },
+ "smarkets_fetch": {
+  "events_seen": 127,
+  "events_priced": 80,
+  "markets": 1772,
+  "markets_mapped": 683,
+  "contracts": 1442,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20260930T202523Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 683,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 655,
+  "rows": 787,
+  "two_sided": 782,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 384,
+ "external_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7449,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Kamalov Abdumalik": 1,
+   "George Hakopian": 1,
+   "Naresh Bharathy": 1,
+   "Nathan Gold": 1,
+   "Yulia Zhytelna": 1,
+   "Laurie Barendse": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17
+  }
+ },
+ "kalshi_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9518,
+  "top_refusal_subjects": {
+   "Fares Zakaria": 1,
+   "Amr Elsayed": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 16,
+ "counts": {
+  "PASS": 16,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
