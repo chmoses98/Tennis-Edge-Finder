@@ -5,6 +5,18 @@ Real-money authority OFF. No model has shown edge against bookmaker prices, and 
 Kalshi tennis markets where our probability is more accurate than the price -- including the subsets that
 returned a profit. See WAVE3_SELECTIVE_EDGE_REPORT.md and MORNING_REPORT.md.**
 
+### ChatGPT-assisted handicapping lane (new, 2026-09-30)
+
+A separate prospective lane measures the workflow that is actually used: repo data + Kalshi prices +
+external prices -> ChatGPT handicapping -> market selection -> a person's betting decision.
+`scripts/research/build_assisted_slate.py` writes the handicapping packet (`assisted_slates/latest.{md,json}`),
+`scripts/research/record_assisted_decision.py` (or the `TENNIS assisted record` workflow) records each
+BET / PASS / WATCH before the first ball and, separately, any wager a person actually placed;
+`scripts/research/run_assisted_pipeline.py` settles, measures strict CLV and builds the scorecard and CEO
+scoreboard; TENNIS-16 watches the pipeline. **AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF;
+CHATGPT_ASSISTED_TRACK = ACTIVE;** no frozen model or candidate is touched and no profitability is implied.
+See `docs/ASSISTED_HANDICAPPING.md`.
+
 ### External reference markets
 
 `scripts/external/capture_and_scan.py` runs inside the capture conductor: it fetches Bovada's public

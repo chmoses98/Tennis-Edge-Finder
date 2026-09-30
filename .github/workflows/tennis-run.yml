@@ -74,6 +74,18 @@ jobs:
               --record-failure "$(tail -c 1500 harvest.log)" || true
           fi
           tail -12 harvest.log
+          # ChatGPT-assisted lane, BESIDE the frozen experiments (it reads their outputs and writes none of
+          # them): the handicapping slate, then track start / canonical ledgers / settlement / scorecard.
+          # A failure is loud and recorded (TENNIS-16 then FAILS); it never blocks settlement or publication.
+          if ! PYTHONPATH=. python3 scripts/research/build_assisted_slate.py > slate.log 2>&1; then
+            echo "::error::assisted slate build failed"
+          fi
+          tail -12 slate.log
+          if ! PYTHONPATH=. python3 scripts/research/run_assisted_pipeline.py --write-track-start \
+               --scorecard-out data/research/assisted_handicapping > assisted.log 2>&1; then
+            echo "::error::assisted pipeline failed -- TENNIS-16 will FAIL until it succeeds"
+          fi
+          tail -12 assisted.log
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"
           cat data/research/health_latest.json | python3 -c "import json,sys; [print(g['gate'], g['status']) for g in json.load(sys.stdin)]"
       - name: Publish research outputs

@@ -28,3 +28,8 @@ data/research/horizons/
 data/research/segments/
 research/gen2/predictions_*.parquet
 research/market_conditioned/scored_*.parquet
+# ChatGPT-assisted lane: decisions, wagers, settlements and slates are prospective evidence and live only on
+# `tennis-data`. A decision recorded in a sandbox and committed here would look exactly like a real one.
+data/research/assisted_decisions/
+data/research/assisted_slates/
+data/research/assisted_handicapping/

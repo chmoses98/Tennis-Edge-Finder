@@ -39,6 +39,9 @@ def main():
     ap.add_argument("--branch", default="tennis-data")
     ap.add_argument("--repo", default=os.getcwd())
     ap.add_argument("--attempts", type=int, default=8)
+    ap.add_argument("--no-overwrite", action="store_true",
+                    help="write-once trees (assisted decision records): a file that already exists on the branch is "
+                         "never replaced; if its content differs the publish fails loudly (exit 4) instead")
     a = ap.parse_args()
     repo = os.path.abspath(a.repo)
     src = os.path.join(repo, a.src)
@@ -77,7 +80,13 @@ def main():
                     # GitHub rejects files > 100 MB and the whole push with them; never let one file block the rest
                     print(f"::warning::skipping oversized file {srcp} ({os.path.getsize(srcp) / 1e6:.1f} MB)")
                     continue
-                shutil.copy2(srcp, os.path.join(dest, rel, fn))
+                dstp = os.path.join(dest, rel, fn)
+                if a.no_overwrite and os.path.exists(dstp):
+                    if open(srcp, "rb").read() != open(dstp, "rb").read():
+                        print(f"::error::write-once file already on {a.branch} with different content: {os.path.join(rel, fn)}")
+                        return 4
+                    continue
+                shutil.copy2(srcp, dstp)
         sh(["git", "add", "-A", "--", dest_rel], cwd=wt)
         if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=wt).returncode == 0:
             print("no changes to publish"); return 0
