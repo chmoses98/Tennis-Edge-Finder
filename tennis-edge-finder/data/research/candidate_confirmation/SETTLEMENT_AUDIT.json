@@ -1,9 +1,9 @@
 {
- "ledger_rows": 14604,
- "settlement_files": 76,
- "settlement_rows_unique": 13969,
+ "ledger_rows": 14878,
+ "settlement_files": 77,
+ "settlement_rows_unique": 14289,
  "settlement_rows_duplicate_prediction_ids": 0,
- "ledger_rows_settled": 13967,
+ "ledger_rows_settled": 14287,
  "settlement_rows_not_in_ledger": 2,
  "settlement_rows_not_in_ledger_sample": [
   [
@@ -15,33 +15,33 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 637,
+ "ledger_rows_without_settlement_row": 591,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 637,
+ "of_which_not_yet_settled_or_not_swept": 591,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
-  "yes": 6743,
-  "no": 6948,
+  "yes": 6898,
+  "no": 7113,
   "scalar": 278
  },
- "gradeable_binary": 13691,
+ "gradeable_binary": 14011,
  "sports_truth_sources": {
-  "kalshi_result": 10254,
-  "none": 3715
+  "kalshi_result": 10536,
+  "none": 3753
  },
- "strict_clv_embedded_in_settlement_rows": 2344,
+ "strict_clv_embedded_in_settlement_rows": 2349,
  "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that arrives later updates data/research/clv/<run>.jsonl but not the embedded copy",
  "health_layer_view_after_fix": {
-  "settled": 13969,
-  "settled_binary": 13691,
+  "settled": 14289,
+  "settled_binary": 14011,
   "settled_scalar": 278,
-  "sports_truth_rows": 10254,
-  "sports_truth_kalshi_derived": 10254,
+  "sports_truth_rows": 10536,
+  "sports_truth_kalshi_derived": 10536,
   "sports_truth_independent": 0,
-  "settlement_files": 76,
-  "clv_run": "20260930T055926Z.jsonl",
-  "settled_with_ab_truth": 2720,
-  "settled_with_close": 2686,
-  "settled_strict_clv": 2344
+  "settlement_files": 77,
+  "clv_run": "20260930T130641Z.jsonl",
+  "settled_with_ab_truth": 2725,
+  "settled_with_close": 2691,
+  "settled_strict_clv": 2349
  }
 }
