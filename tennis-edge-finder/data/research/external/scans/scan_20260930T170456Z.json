@@ -1,0 +1,77 @@
+{
+ "generated_at": "2026-09-30T17:04:56.395055+00:00",
+ "run_id": "20260930T170456Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 1694,
+  "markets_mapped": 632,
+  "contracts": 1344,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20260930T170456Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 632,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 554,
+  "rows": 790,
+  "two_sided": 787,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 496,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 23,
+   "MAPPED": 57
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9762,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Diego Esteban Torres": 1,
+   "Johan Alexander Rodriguez": 1
+  }
+ },
+ "matched_both_venues": 13,
+ "external_mapped_matches": 57,
+ "kalshi_mapped_matches": 123,
+ "model_witness_available": true,
+ "rows": 16,
+ "counts": {
+  "PASS": 16,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
