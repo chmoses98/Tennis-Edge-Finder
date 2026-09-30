@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-09-30T16:44:04.515401+00:00",
+ "run_id": "20260930T164404Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1320,
+  "skipped_family": 282,
+  "skipped_period": 385,
+  "skipped_live": 34,
+  "one_sided": 21,
+  "rows": 2130,
+  "devigged": 632
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 1705,
+  "markets_mapped": 634,
+  "contracts": 1350,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20260930T164404Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 634,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 562,
+  "rows": 788,
+  "two_sided": 785,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 583,
+ "external_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7206,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kamalov Abdumalik": 1,
+   "Addy Rogin": 1,
+   "JC Roddick": 1,
+   "Diego Esteban Torres": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 23,
+   "MAPPED": 57
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9714,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Diego Esteban Torres": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 136,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
