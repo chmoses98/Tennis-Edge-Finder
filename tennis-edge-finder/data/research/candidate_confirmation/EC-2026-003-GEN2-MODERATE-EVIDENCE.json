@@ -2,7 +2,7 @@
  "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
  "kind": "TRADE",
  "status": "INSUFFICIENT_N",
- "status_reason": "318 eligible of 1000 required",
+ "status_reason": "343 eligible of 1000 required",
  "universe": {
   "experiment_start": {
    "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
@@ -32,31 +32,31 @@
    "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
    "producer_rows_before_effective_start": 0
   },
-  "rows_after_effective_start": 4163
+  "rows_after_effective_start": 4748
  },
  "metrics": {
-  "eligible_n": 318,
-  "settled_n": 177,
+  "eligible_n": 343,
+  "settled_n": 194,
   "strict_clv_n": 2,
-  "brier_gen2_blend": 0.2054530508796456,
-  "brier_gen1_elo": 0.20922358899336907,
-  "brier_kalshi_mid": 0.1989223163841809,
+  "brier_gen2_blend": 0.20525049989576954,
+  "brier_gen1_elo": 0.20812315519396277,
+  "brier_kalshi_mid": 0.20003634020618566,
   "paired_gen2_minus_gen1": {
-   "n": 177,
-   "mean": -0.0037705381137233367,
-   "median": 0.001508979404791208,
-   "ci_low": -0.01651263637670928,
-   "ci_high": 0.008611344676601133,
+   "n": 194,
+   "mean": -0.0028726552981930154,
+   "median": 0.0013728927310436984,
+   "ci_low": -0.01477466595567311,
+   "ci_high": 0.00884515727630501,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
   },
   "paired_gen2_minus_market": {
-   "n": 177,
-   "mean": 0.006530734495464896,
-   "median": 0.0035817517991891534,
-   "ci_low": -0.00986340527966883,
-   "ci_high": 0.022955481365681204,
+   "n": 194,
+   "mean": 0.005214159689584163,
+   "median": 0.003958744131848817,
+   "ci_low": -0.010353019571568095,
+   "ci_high": 0.02080834237669543,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
@@ -72,28 +72,28 @@
    "n_boot": 10000
   },
   "after_fee_ev_of_positions": {
-   "n": 211,
-   "mean": 0.08200018313855523,
-   "median": 0.06769760467223819,
-   "ci_low": 0.07262708511307579,
-   "ci_high": 0.09179312745246533,
+   "n": 228,
+   "mean": 0.08481925069343979,
+   "median": 0.0682852999287643,
+   "ci_low": 0.07533421623792853,
+   "ci_high": 0.09484133357647297,
    "excludes_zero": true,
    "seed": 20260927,
    "n_boot": 10000
   },
-  "positions": 211
+  "positions": 228
  },
  "exclusion_counts": {
-  "FROZEN_INCLUSION_RULE_NOT_MET": 371
+  "FROZEN_INCLUSION_RULE_NOT_MET": 414
  },
  "summary": {
   "kind": "TRADE",
   "minimum_n": 1000,
-  "eligible_n": 318,
-  "settled_n": 177,
+  "eligible_n": 343,
+  "settled_n": 194,
   "strict_clv_n": 2,
-  "unsettled_n": 141,
-  "clv_pending_n": 137,
+  "unsettled_n": 149,
+  "clv_pending_n": 143,
   "unscorable_n": 0,
   "accuracy_pass": false,
   "clv_pass": false,
@@ -153,11 +153,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20260929T224145Z",
- "evidence_rows_this_run": 689,
- "evidence_rows_appended": 290,
- "last_evidence_at": "2026-09-29T22:39:00.797912+00:00",
- "harvest_run_at": "2026-09-29T22:42:22.169459+00:00",
+ "harvest_run": "20260930T055932Z",
+ "evidence_rows_this_run": 757,
+ "evidence_rows_appended": 99,
+ "last_evidence_at": "2026-09-30T05:58:29.713364+00:00",
+ "harvest_run_at": "2026-09-30T05:59:59.766669+00:00",
  "evidence_chain_violations": [],
  "frozen_definition": {
   "frozen_at": "2026-09-12T06:30:00+00:00",
