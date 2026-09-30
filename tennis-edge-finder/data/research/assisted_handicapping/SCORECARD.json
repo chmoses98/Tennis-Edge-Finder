@@ -1,0 +1,299 @@
+{
+ "scorecard_version": "assisted_scorecard_v1",
+ "track": "CHATGPT_ASSISTED_HANDICAPPING",
+ "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
+ "CHATGPT_ASSISTED_TRACK": "ACTIVE",
+ "track_effective_start": "2026-09-30T23:08:40.025222+00:00",
+ "primary_unit": "the recorded decision; money questions use the person's reported wagers",
+ "evidence_state": "NO_DECISIONS_YET",
+ "total_decisions": {
+  "recorded": 0,
+  "headline": 0,
+  "bets": 0,
+  "passes": 0,
+  "watches": 0,
+  "excluded": {}
+ },
+ "actual_wagers": {
+  "number": 0,
+  "settled": 0,
+  "open": 0,
+  "stake_dollars": 0,
+  "fees_dollars": 0,
+  "wins": 0,
+  "losses": 0,
+  "pushes_voids": 0,
+  "net_pnl_dollars": 0,
+  "roi": null,
+  "net_pnl_per_wager": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "strict_executable_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "cancelled_not_counted": 0
+ },
+ "pricing": {
+  "unit": "BET decisions, one contract of the decision's side at its executable price",
+  "strict_executable_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "strict_clv_coverage": null,
+  "mean_midpoint_clv": null,
+  "midpoint_clv_n": 0
+ },
+ "probability_quality": {
+  "chatgpt": {
+   "n": 0,
+   "brier": null
+  },
+  "model": {
+   "n": 0,
+   "brier": null
+  },
+  "kalshi_mid": {
+   "n": 0,
+   "brier": null
+  },
+  "external": {
+   "n": 0,
+   "brier": null
+  },
+  "gen1": {
+   "n": 0,
+   "brier": null
+  },
+  "gen2": {
+   "n": 0,
+   "brier": null
+  },
+  "fair_v1": {
+   "n": 0,
+   "brier": null
+  },
+  "model4": {
+   "n": 0,
+   "brier": null
+  },
+  "chatgpt_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  },
+  "model_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  },
+  "external_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  },
+  "gen1_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  },
+  "gen2_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  },
+  "fair_v1_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  },
+  "model4_minus_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  }
+ },
+ "selective_disagreement": {
+  "n": 0,
+  "settled": 0,
+  "strict_clv_n": 0,
+  "strict_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "unit_net_per_contract": null,
+  "units_pnl": 0.0,
+  "wins": 0,
+  "losses": 0,
+  "actual_wager_net_pnl": 0.0,
+  "brier_vs_kalshi": {
+   "n": 0,
+   "mean_brier_diff": null,
+   "ci_low": null,
+   "ci_high": null,
+   "note": "negative = better calibrated than Kalshi on these rows"
+  }
+ },
+ "agreement": {
+  "n": 0,
+  "settled": 0,
+  "strict_clv_n": 0,
+  "strict_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "unit_net_per_contract": null,
+  "units_pnl": 0.0,
+  "wins": 0,
+  "losses": 0,
+  "actual_wager_net_pnl": 0.0
+ },
+ "overrides": {
+  "n": 0,
+  "settled": 0,
+  "strict_clv_n": 0,
+  "strict_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "unit_net_per_contract": null,
+  "units_pnl": 0.0,
+  "wins": 0,
+  "losses": 0,
+  "actual_wager_net_pnl": 0.0
+ },
+ "model_follow": {
+  "n": 0,
+  "settled": 0,
+  "strict_clv_n": 0,
+  "strict_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "unit_net_per_contract": null,
+  "units_pnl": 0.0,
+  "wins": 0,
+  "losses": 0,
+  "actual_wager_net_pnl": 0.0
+ },
+ "by_agreement_state": {},
+ "passes": {
+  "passes": 0,
+  "watches": 0,
+  "passed_positive_model_edge": 0,
+  "settled": 0,
+  "hypothetical_model_side_net_per_contract": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "hypothetical_model_side_strict_clv": {
+   "n": 0,
+   "mean": null,
+   "median": null,
+   "ci_low": null,
+   "ci_high": null,
+   "excludes_zero": null
+  },
+  "both_pass": 0,
+  "note": "negative hypothetical P&L on declined model edges = passing them helped"
+ },
+ "expression": {},
+ "factors": {},
+ "level": {},
+ "surface": {},
+ "confidence": {},
+ "ceo": [
+  {
+   "q": "1. Are ChatGPT-assisted bets profitable after fees?",
+   "a": "INSUFFICIENT_EVIDENCE (n=0, need 30)",
+   "net_pnl_dollars": 0,
+   "roi": null
+  },
+  {
+   "q": "2. Is strict executable CLV positive?",
+   "a": "INSUFFICIENT_EVIDENCE (n=0, need 30)"
+  },
+  {
+   "q": "3. Are our probabilities better calibrated than Kalshi on the bets we select?",
+   "a": "INSUFFICIENT_EVIDENCE (n=0, need 30)"
+  },
+  {
+   "q": "4. Does using model information improve our decisions?",
+   "a": "INSUFFICIENT_EVIDENCE (n=0)"
+  },
+  {
+   "q": "5. Do model-agreement bets outperform model-overrides?",
+   "a": "INSUFFICIENT_EVIDENCE (agreement n=0 CLV None units 0.0; overrides n=0 CLV None units 0.0)"
+  },
+  {
+   "q": "6. Are overrides adding value?",
+   "a": "INSUFFICIENT_EVIDENCE (n=0, need 30)"
+  },
+  {
+   "q": "7. Which model inputs appear most useful?",
+   "a": "INSUFFICIENT_EVIDENCE (largest n=0)"
+  },
+  {
+   "q": "8. Which market families are most profitable?",
+   "a": "INSUFFICIENT_EVIDENCE: no bets"
+  },
+  {
+   "q": "9. Which levels/surfaces are harmful?",
+   "a": "NONE_IDENTIFIED_AT_MIN_N_30"
+  },
+  {
+   "q": "10. Does the model help us PASS bad apparent edges?",
+   "a": "INSUFFICIENT_EVIDENCE (n=0, need 30)"
+  }
+ ],
+ "inputs_sha256": "5ae1625b488b3935122d8dd627fe575b388a5aa360378fa4407aad08baaed1e2",
+ "content_sha256": "2c31d7fef412ef54738413ec4fc761412dbb1f6bb2b99d2224df76728d0aef0e",
+ "generated_at": "2026-09-30T23:08:40.025222+00:00"
+}
