@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-01T08:27:55.890657+00:00",
+ "run_id": "20261001T082755Z",
+ "external_parse": {
+  "events": 229,
+  "markets": 1824,
+  "skipped_family": 302,
+  "skipped_period": 485,
+  "skipped_live": 46,
+  "one_sided": 89,
+  "rows": 2766,
+  "devigged": 948
+ },
+ "smarkets_fetch": {
+  "events_seen": 105,
+  "events_priced": 80,
+  "markets": 1191,
+  "markets_mapped": 501,
+  "contracts": 1090,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261001T082755Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 501,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 248,
+  "rows": 842,
+  "two_sided": 841,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 140,
+ "external_mapping": {
+  "total": 221,
+  "by_status": {
+   "MAPPED": 173,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 37
+  },
+  "mapped_rate": 0.7828,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Maria Camila Osorio": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Kenta Kawada": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Amr Elsayed": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1,
+   "Liv Zingg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 23,
+  "by_status": {
+   "MAPPED": 22,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9565,
+  "top_refusal_subjects": {
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 13,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 22,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 5,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
