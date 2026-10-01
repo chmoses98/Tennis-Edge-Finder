@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-01T08:14:14.488385+00:00",
+ "run_id": "20261001T081414Z",
+ "external_parse": {
+  "events": 230,
+  "markets": 1855,
+  "skipped_family": 307,
+  "skipped_period": 487,
+  "skipped_live": 42,
+  "one_sided": 99,
+  "rows": 2798,
+  "devigged": 962
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 1181,
+  "markets_mapped": 494,
+  "contracts": 1076,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261001T081414Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 494,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 240,
+  "rows": 836,
+  "two_sided": 831,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 167,
+ "external_mapping": {
+  "total": 222,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 37
+  },
+  "mapped_rate": 0.7838,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Maria Camila Osorio": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Kenta Kawada": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Amr Elsayed": 1,
+   "Gabi Adrian Boitan": 1,
+   "Astrid Brune Olsen": 1,
+   "Liv Zingg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 40,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.975,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 178,
+ "kalshi_mapped_matches": 39,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:KALSHI_LONE_OUTLIER": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
