@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-01T10:52:50.628526+00:00",
+ "run_id": "20261001T105250Z",
+ "external_parse": {
+  "events": 185,
+  "markets": 1398,
+  "skipped_family": 227,
+  "skipped_period": 403,
+  "skipped_live": 54,
+  "one_sided": 46,
+  "rows": 2214,
+  "devigged": 722
+ },
+ "smarkets_fetch": {
+  "events_seen": 104,
+  "events_priced": 80,
+  "markets": 1328,
+  "markets_mapped": 578,
+  "contracts": 1256,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261001T105250Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 578,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 388,
+  "rows": 868,
+  "two_sided": 865,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 603,
+ "external_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 137,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.774,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Dominic Stephan Stricker": 1,
+   "Gregory Bernadsky": 1,
+   "Naresh Bharathy": 1,
+   "Astrid Brune Olsen": 1,
+   "Liv Zingg": 1,
+   "Caira Delfina Vega Guidino": 1,
+   "Pilar Da Silva": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Abdullah Shelbayh": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9781,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Johan Alexander Rodriguez": 1
+  }
+ },
+ "matched_both_venues": 101,
+ "external_mapped_matches": 155,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 109,
+  "tri:MODEL_LONE_OUTLIER": 55,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
