@@ -1,17 +1,17 @@
 {
-"run_id": "20261001T060225Z",
-"generated_at": "2026-10-01T06:04:48.385383+00:00",
+"run_id": "20261001T063034Z",
+"generated_at": "2026-10-01T06:33:02.211088+00:00",
 "discovery_run": "20261001T015107Z",
 "git_sha": "3601df7ab01c4c21a629ce12a3e28f8705358c64",
 "coverage": {
 "active": 1488,
 "unsupported_family": 131,
-"past_nominal_start": 554,
+"past_nominal_start": 556,
 "tournament_scope_not_priced_tonight": 255,
 "unmapped_player": 20,
 "projected_doubles": 20,
 "excluded_event": 138,
-"projected": 390
+"projected": 388
 },
 "projected_tickers": [
 "KXWTACHALLENGERMATCH-26OCT01BOIBLI-BOI",
@@ -394,8 +394,6 @@
 "KXITFWMATCH-26SEP30SUNCHE-CHE",
 "KXITFWMATCH-26SEP30SAWBEC-SAW",
 "KXITFWMATCH-26SEP30SAWBEC-BEC",
-"KXITFWMATCH-26SEP30SATARA-SAT",
-"KXITFWMATCH-26SEP30SATARA-ARA",
 "KXITFWMATCH-26SEP30BARKIT-KIT",
 "KXITFWMATCH-26SEP30BARKIT-BAR",
 "KXITFWMATCH-26SEP30KOKUEM-UEM",
@@ -4716,6 +4714,16 @@
 "ticker": "KXITFDOUBLES-26SEP30FERVALPURSHV-FERVAL",
 "stage": "pregame",
 "reason": "nominal start 2026-09-30T15:30:00Z is <= 5 min away or past (no first-ball truth available)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP30SATARA-SAT",
+"stage": "pregame",
+"reason": "nominal start 2026-10-01T06:30:00Z is <= 5 min away or past (no first-ball truth available)"
+},
+{
+"ticker": "KXITFWMATCH-26SEP30SATARA-ARA",
+"stage": "pregame",
+"reason": "nominal start 2026-10-01T06:30:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXITFWMATCH-26SEP30LIUSIM-SIM",
