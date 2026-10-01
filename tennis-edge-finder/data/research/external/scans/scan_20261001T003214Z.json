@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-01T00:32:14.568035+00:00",
+ "run_id": "20261001T003214Z",
+ "external_parse": {
+  "events": 201,
+  "markets": 2275,
+  "skipped_family": 446,
+  "skipped_period": 637,
+  "skipped_live": 6,
+  "one_sided": 87,
+  "rows": 3600,
+  "devigged": 1105
+ },
+ "smarkets_fetch": {
+  "events_seen": 129,
+  "events_priced": 80,
+  "markets": 1948,
+  "markets_mapped": 744,
+  "contracts": 1598,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261001T003214Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 744,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 753,
+  "rows": 845,
+  "two_sided": 844,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 738,
+ "external_mapping": {
+  "total": 190,
+  "by_status": {
+   "MAPPED": 152,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 28
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Yulia Starodubtseva": 1,
+   "Maria Camila Osorio": 1,
+   "Joel Josef Schwarzler": 1,
+   "Tanika Saravanan": 1,
+   "Thompson Martha": 1,
+   "Kim Dong Ju": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16
+  }
+ },
+ "kalshi_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 171,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9716,
+  "top_refusal_subjects": {
+   "Fares Zakaria": 1,
+   "Nikita Mashtakov": 1,
+   "Pilar Da Silva": 1,
+   "Liv Zingg": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 93,
+ "external_mapped_matches": 164,
+ "kalshi_mapped_matches": 171,
+ "model_witness_available": true,
+ "rows": 166,
+ "counts": {
+  "PASS": 153,
+  "tri:INSUFFICIENT_INPUTS": 72,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:KALSHI_LONE_OUTLIER": 23,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 15,
+  "WATCH": 12,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
