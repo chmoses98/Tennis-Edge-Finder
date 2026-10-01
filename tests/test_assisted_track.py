@@ -590,7 +590,7 @@ def test_tennis_16_operations_gate(world):
 def test_tennis_16_is_in_the_health_run_and_separate_from_tennis_15():
     from tennis_edge.health import gates as G
     names = [g.gate for g in G.run_all()]
-    assert names[-2:] == ["TENNIS-15", "TENNIS-16"]
+    assert names[-3:] == ["TENNIS-15", "TENNIS-16", "TENNIS-17"]          # TENNIS-17: discrepancy integrity
     assert "TENNIS-16" not in G.CANDIDATE_PRODUCERS.values()
 
 

@@ -3,6 +3,7 @@ name: TENNIS assisted slate
 # Rebuilds the assisted handicapping slate (data/research/assisted_slates/latest.{json,md}) on demand, from
 # the latest capture and the frozen producers' latest rows, and publishes it to `tennis-data`. RUN TENNIS
 # also builds it every six hours; this is for "RUN TENNIS" moments between those runs. It selects nothing.
+# The rating tables feed only the discrepancy layer's namesake and surface-sample checks (no model is run).
 
 on:
   workflow_dispatch:
@@ -31,7 +32,8 @@ jobs:
                       "research/ledger/$Y.jsonl" "research/ledger/$T.jsonl" \
                       "research/frozen_producers/shadow_board/$Y.jsonl" "research/frozen_producers/shadow_board/$T.jsonl" \
                       "research/frozen_producers/model4/$Y.jsonl" "research/frozen_producers/model4/$T.jsonl" \
-                      "research/external/dislocations/$T.jsonl"; do
+                      "research/external/dislocations/$T.jsonl" \
+                      processed/ratings_ATP.json processed/ratings_WTA.json; do
             # evidence keeps its historical prefix on the branch; --strip-components=1 lands it at ./data/
             if [ -n "$(git ls-tree origin/tennis-data "tennis-edge-finder/data/$path")" ]; then
               git archive origin/tennis-data "tennis-edge-finder/data/$path" | tar -x --strip-components=1

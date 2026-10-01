@@ -167,3 +167,25 @@ canonical hash chains, compile checks), TRACK_START fingerprint.
 | UNHEALTHY | any of SLATE_STALE, PIPELINE_STALE, PIPELINE_ERROR, INTEGRITY_VIOLATION, SCHEMA_INVALID, DUPLICATE_DECISIONS, POST_START_DECISIONS (last 7 d), SETTLEMENT_STALLED, TRACK_START_MODIFIED | FAIL |
 | (no TRACK_START or no slate yet) | the lane has not run in production | UNKNOWN |
 
+
+## TENNIS-17 model_market_discrepancy_integrity (2026-10-01)
+
+An INTEGRITY gate over the assisted discrepancy sanity layer (`tennis_edge/assisted/health.py::gate_17`), not
+a profitability gate: a model-market disagreement on its own never fails it. It reads the latest assisted
+slate and every schema-v2 assisted decision, recomputes each priced contract's band from its own model number
+and Kalshi mid, and checks that no large disagreement escapes the layer.
+
+| failure | meaning |
+|---|---|
+| SLATE_LACKS_DISCREPANCY_CLASSIFICATION | the slate predates the layer, or a priced row / v2 decision carries no classification |
+| BAND_MISMATCH | a row's band is not the band of its own gap (the layer was bypassed or edited) |
+| MALFORMED_PROBABILITY | a model or market probability outside [0, 1], NaN, or not a number |
+| TICKER_ORIENTATION_MISMATCH | a contract whose YES side contradicts our player A/B orientation (or a BET recorded on one) |
+| EXTREME_UNRESOLVED_IDENTITY | an EXTREME gap with ambiguous/failed identity surfaced as anything but DATA_WARNING |
+| EXTREME_STALE_PRICE_ACTIONABLE | an EXTREME gap on a STALE quote surfaced as anything but DATA_WARNING |
+| EXTREME_BYPASS | an EXTREME gap not at DATA_WARNING on the slate, or a recorded BET on one that is not ELIGIBLE_FOR_HUMAN_REVIEW with all nine Part J conditions met and an explanation |
+| HIGH_REVIEW_BYPASS | a HIGH_REVIEW gap surfaced without the explanation requirement, or a recorded BET on one with no `discrepancy_explanation` |
+
+UNKNOWN when no slate exists yet. EXTREME rows held at DATA_WARNING with ambiguous identity or stale quotes
+are the layer working, and PASS. The detail reports counts by band, status, freshness, identity and
+orientation and a sample of the EXTREME rows.
