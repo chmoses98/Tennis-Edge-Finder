@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-01T13:01:31.464710+00:00",
+ "run_id": "20261001T130131Z",
+ "external_parse": {
+  "events": 145,
+  "markets": 1124,
+  "skipped_family": 183,
+  "skipped_period": 325,
+  "skipped_live": 37,
+  "one_sided": 32,
+  "rows": 1780,
+  "devigged": 584
+ },
+ "smarkets_fetch": {
+  "events_seen": 101,
+  "events_priced": 80,
+  "markets": 1166,
+  "markets_mapped": 459,
+  "contracts": 996,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261001T130131Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 459,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 146,
+  "rows": 850,
+  "two_sided": 849,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 609,
+ "external_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 103,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7518,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gregory Bernadsky": 1,
+   "Naresh Bharathy": 1,
+   "Liv Zingg": 1,
+   "Caira Delfina Vega Guidino": 1,
+   "Pilar Da Silva": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Abdullah Shelbayh": 1,
+   "Yunchaokete Bu": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9597,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Pilar Da Silva": 1,
+   "Liv Zingg": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 113,
+  "tri:MARKETS_AGREE": 14,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
