@@ -2,7 +2,7 @@
  "candidate_id": "W3-2026-001-ABSTAIN-ITF",
  "kind": "ABSTENTION",
  "status": "PENDING_SETTLEMENT",
- "status_reason": "361 settled of 400 required (45 awaiting settlement)",
+ "status_reason": "376 settled of 400 required (42 awaiting settlement)",
  "universe": {
   "experiment_start": {
    "candidate_id": "W3-2026-001-ABSTAIN-ITF",
@@ -33,8 +33,8 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 8143,
-  "contracts_first_observed": 2110,
+  "rows_after_effective_start": 8666,
+  "contracts_first_observed": 2160,
   "post_settlement_first_observations_excluded": 14,
   "post_settlement_first_observations_by_level": {
    "ATP": 4,
@@ -43,36 +43,36 @@
   }
  },
  "metrics": {
-  "eligible_itf_n": 406,
-  "eligible_all_n": 638,
-  "settled_itf_n": 361,
-  "settled_non_itf_n": 198,
+  "eligible_itf_n": 418,
+  "eligible_all_n": 655,
+  "settled_itf_n": 376,
+  "settled_non_itf_n": 203,
   "itf_after_fee_pnl": {
-   "n": 361,
-   "mean": -0.02074792243767314,
-   "median": -0.15000000000000002,
-   "ci_low": -0.06393490304709143,
-   "ci_high": 0.022243767313019375,
+   "n": 376,
+   "mean": -0.02531914893617022,
+   "median": -0.15500000000000003,
+   "ci_low": -0.06640957446808511,
+   "ci_high": 0.017341090425531887,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
   },
   "non_itf_after_fee_pnl": {
-   "n": 198,
-   "mean": -0.01681818181818183,
+   "n": 203,
+   "mean": -0.011182266009852228,
    "median": -0.15000000000000002,
-   "ci_low": -0.08106060606060608,
-   "ci_high": 0.04788005050505048,
+   "ci_low": -0.0733497536945813,
+   "ci_high": 0.05192118226600983,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
   },
   "combined_after_fee_pnl": {
-   "n": 559,
-   "mean": -0.019355992844364955,
+   "n": 579,
+   "mean": -0.020362694300518153,
    "median": -0.15000000000000002,
-   "ci_low": -0.054741949910554574,
-   "ci_high": 0.01615429338103755,
+   "ci_low": -0.05613212435233163,
+   "ci_high": 0.015215889464594113,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
@@ -80,17 +80,17 @@
   "minimum_n_applies_to": "ITF positive-edge rows (the subset the abstention is about)"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 6033,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 1465,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 6506,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 1498,
   "MARKET_SETTLED_BEFORE_OBSERVATION": 14
  },
  "summary": {
   "kind": "ABSTENTION",
   "minimum_n": 400,
-  "eligible_n": 406,
-  "settled_n": 361,
+  "eligible_n": 418,
+  "settled_n": 376,
   "strict_clv_n": 0,
-  "unsettled_n": 45,
+  "unsettled_n": 42,
   "clv_pending_n": 0,
   "unscorable_n": 0,
   "accuracy_pass": false,
@@ -127,11 +127,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261001T173718Z",
- "evidence_rows_this_run": 2110,
- "evidence_rows_appended": 208,
- "last_evidence_at": "2026-10-01T17:35:04.340157+00:00",
- "harvest_run_at": "2026-10-01T17:38:17.713180+00:00",
+ "harvest_run": "20261001T230215Z",
+ "evidence_rows_this_run": 2160,
+ "evidence_rows_appended": 106,
+ "last_evidence_at": "2026-10-01T23:00:04.764724+00:00",
+ "harvest_run_at": "2026-10-01T23:03:38.126492+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -141,76 +141,22 @@
    "CHALLENGER": 8,
    "WTA": 2
   },
-  "corrected_included_to_excluded": 7,
-  "corrected_by_level": {
-   "ATP": 2,
-   "CHALLENGER": 4,
-   "WTA": 1
-  },
-  "corrected_settled_rows": 7,
+  "corrected_included_to_excluded": 0,
+  "corrected_by_level": {},
+  "corrected_settled_rows": 0,
   "corrected_strict_clv_rows": 0,
-  "previously_excluded_for_other_reasons": 7,
-  "already_marked_by_an_earlier_corrected_harvest": 0,
+  "previously_excluded_for_other_reasons": 0,
+  "already_marked_by_an_earlier_corrected_harvest": 14,
   "first_harvested_this_run": 0,
-  "corrected_observations": [
-   {
-    "observation_id": "7837a0a078d068748b7d1ac98ab8608117615d9dd7b9a44c184f3583dd43eaef",
-    "ticker": "KXATPCHALLENGERMATCH-26SEP27JASFER-FER",
-    "captured_at": "2026-09-28T03:33:22.503933+00:00",
-    "settled_at": "2026-09-28T03:17:36.453171Z",
-    "level": "CHALLENGER"
-   },
-   {
-    "observation_id": "52b50eafe26e60a6cc4eee627b03768c53bbf9e95bbcae81e884f8dc1719368b",
-    "ticker": "KXATPCHALLENGERMATCH-26SEP27PALOST-PAL",
-    "captured_at": "2026-09-28T03:33:22.503933+00:00",
-    "settled_at": "2026-09-28T00:22:16.41785Z",
-    "level": "CHALLENGER"
-   },
-   {
-    "observation_id": "62b33889f61f3cd74890ab577c7dd4913a0683100c6d9977d30404ac3b398ace",
-    "ticker": "KXATPCHALLENGERMATCH-26SEP27ZAMBIG-ZAM",
-    "captured_at": "2026-09-28T03:33:22.503933+00:00",
-    "settled_at": "2026-09-28T00:43:16.459732Z",
-    "level": "CHALLENGER"
-   },
-   {
-    "observation_id": "7f9789600e45b7add9fb1623c68fd7c5be0fe2d4be9a7cf1883af99867e7bfdd",
-    "ticker": "KXATPMATCH-26SEP27RIGGEA-RIG",
-    "captured_at": "2026-09-28T05:46:18.089302+00:00",
-    "settled_at": "2026-09-28T05:32:36.49857Z",
-    "level": "ATP"
-   },
-   {
-    "observation_id": "e288aa26514f7fd67466738fb6814e6576c60fe45f7b101b6e983acb6312900e",
-    "ticker": "KXWTAMATCH-26SEP27GLEWAN-GLE",
-    "captured_at": "2026-09-28T05:46:18.089302+00:00",
-    "settled_at": "2026-09-28T04:52:46.448298Z",
-    "level": "WTA"
-   },
-   {
-    "observation_id": "3206786fb7db1d27731dc9211dac61f1dde85044140a3f2df31a0ea2292aed26",
-    "ticker": "KXATPCHALLENGERMATCH-26SEP29KOZTRO-TRO",
-    "captured_at": "2026-09-29T22:39:00.797912+00:00",
-    "settled_at": "2026-09-29T22:32:26.403527Z",
-    "level": "CHALLENGER"
-   },
-   {
-    "observation_id": "44d2fe7e45718098c472cc61c17237bc6954982d5a60593f48b67baa445409f8",
-    "ticker": "KXATPMATCH-26SEP30MOLMAC-MAC",
-    "captured_at": "2026-10-01T06:04:51.615565+00:00",
-    "settled_at": "2026-10-01T04:22:26.448069Z",
-    "level": "ATP"
-   }
-  ],
+  "corrected_observations": [],
   "history": "the earlier INCLUDED version of every corrected observation remains in the evidence file; the newer EXCLUDED version (same observation_id) is authoritative for scoring",
   "summary_previous_harvest": {
    "kind": "ABSTENTION",
    "minimum_n": 400,
-   "eligible_n": 390,
-   "settled_n": 331,
+   "eligible_n": 406,
+   "settled_n": 361,
    "strict_clv_n": 0,
-   "unsettled_n": 59,
+   "unsettled_n": 45,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": false,
@@ -222,10 +168,10 @@
   "summary_this_harvest": {
    "kind": "ABSTENTION",
    "minimum_n": 400,
-   "eligible_n": 406,
-   "settled_n": 361,
+   "eligible_n": 418,
+   "settled_n": 376,
    "strict_clv_n": 0,
-   "unsettled_n": 45,
+   "unsettled_n": 42,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": false,
