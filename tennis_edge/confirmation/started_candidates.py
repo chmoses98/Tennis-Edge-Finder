@@ -12,13 +12,20 @@ Each one does exactly what the Wave harvesters do, on the producer's own append-
     selected on edge at that moment); EC-003 = the first observation of each physical match; EC-001/002 =
     the first prediction run for each physical match.
 
+Prospective invariant (evidence accounting, 2026-10-01): an observation timestamped AT OR AFTER the
+exchange's own recorded settlement of its contract cannot be prospective pregame evidence. Where no
+first-ball source exists (Challenger / WTA125 / ITF, and some main-tour matches) the timing class is
+START_UNKNOWN, so the first-ball checks alone let such a row through. The decision unit is unchanged: a
+contaminated FIRST observation makes the unit EXCLUDED (MARKET_SETTLED_BEFORE_OBSERVATION); a later
+observation is never substituted for it.
+
 Thresholds are transcribed from the frozen text as constants beside it, never taken as arguments.
 """
 from __future__ import annotations
 
 import os
 from collections import Counter, defaultdict
-from datetime import timedelta
+from datetime import timedelta, timezone
 
 from tennis_edge.confirmation import evidence as ev
 from tennis_edge.confirmation import sources as src
@@ -53,6 +60,31 @@ def _producer_rows(ctx, producer: str, since: str) -> tuple[list, int]:
 
 def _start(ctx, cid: str):
     return load_start_records(os.path.join(ctx.data_root, "research", "experiment_starts")).get(cid)
+
+
+def _utc(d):
+    return d.replace(tzinfo=timezone.utc) if (d is not None and d.tzinfo is None) else d
+
+
+def _settled_before_observation(ctx, ticker, predicted_at) -> tuple[bool, str | None]:
+    """(was the contract already terminal when observed?, the recorded settlement_ts).
+
+    Reads ONLY the exchange's preserved settlement timestamp via sources.settlement_payout; nothing is
+    inferred from a schedule, a price, a result, file order or the current time. True only when a real,
+    parseable settlement_ts exists and settlement_ts <= predicted_at (the same instant fails closed). A
+    missing or malformed timestamp never declares a row post-settlement on its own."""
+    if not ticker:
+        return False, None
+    _res, _pay, sat = src.settlement_payout(ctx.settlements.get(ticker))
+    st, obs = _utc(src.iso(sat)), _utc(src.iso(predicted_at))
+    if st is None or obs is None:
+        return False, sat if st is not None else None
+    return st <= obs, sat
+
+
+def _level_bucket(ticker) -> str:
+    from tennis_edge.assisted.schema import level_bucket
+    return level_bucket((ticker or "").split("-")[0])
 
 
 def _not_post_start(truth, tc) -> bool:
@@ -137,6 +169,7 @@ def harvest_w3_live(ctx, cand):
     res.universe["contracts_first_observed"] = len(first)
     ctx.quotes(set(first))                         # ONE pass over the capture for every contract
     res.exclusion_counts[ev.R_REOBSERVATION] = sum(1 for r in rows if r.get("market_family") == "MATCH_WINNER") - len(first)
+    post_settled = Counter()
     out = []
     for tk, r in first.items():
         reasons = []
@@ -147,6 +180,10 @@ def harvest_w3_live(ctx, cand):
         truth, tc = _timing(r["predicted_at"], r["event"], ctx.truths)
         if not _not_post_start(truth, tc):
             reasons.append(ev.R_TIMING_POST if tc.timing_class == POST_START else ev.R_TIMING_AMBIG)
+        post_settle, settled_at = _settled_before_observation(ctx, tk, r["predicted_at"])
+        if post_settle:                     # the FIRST observation is the unit: excluded, never replaced
+            reasons.append(ev.R_SETTLED_BEFORE_OBSERVATION)
+            post_settled[_level_bucket(tk)] += 1
         sres, payout, pnl = _pnl(ctx, tk, r["kalshi_ask"], r["fee"])
         cc, clv = _strict_close(ctx, tk, truth, r["predicted_at"], r["kalshi_bid"], r["kalshi_ask"],
                                 r.get("displayed_size"), tc)
@@ -165,9 +202,12 @@ def harvest_w3_live(ctx, cand):
                          close_basis=cc.close_basis,
                          strict_clv_executable=clv.clv_executable if clv.strict else None,
                          strict_clv_midpoint=clv.clv_midpoint if clv.strict else None,
-                         settlement_result=sres, settlement_value=payout, after_fee_pnl=pnl,
+                         settlement_result=sres, settlement_value=payout,
+                         settled_at=settled_at if post_settle else None, after_fee_pnl=pnl,
                          inclusion_result=ev.EXCLUDED if reasons else ev.INCLUDED, exclusion_reasons=reasons))
     res.evidence_rows = out
+    res.universe["post_settlement_first_observations_excluded"] = sum(post_settled.values())
+    res.universe["post_settlement_first_observations_by_level"] = dict(sorted(post_settled.items()))
     inc = [r for r in out if r.inclusion_result == ev.INCLUDED]
     settled = [r for r in inc if r.after_fee_pnl is not None]
     if is_001:
@@ -225,6 +265,7 @@ def harvest_ec3_live(ctx, cand):
         if r["predicted_at"] == first_run[pm]:
             runs[pm][bool(r.get("subject_is_a"))] = r
     ctx.quotes({s["ticker"] for sides in runs.values() for s in sides.values()})   # one capture pass
+    post_settled = Counter()
     out = []
     for pmid, sides in runs.items():
         a = sides.get(True)
@@ -237,6 +278,15 @@ def harvest_ec3_live(ctx, cand):
         truth, tc = _timing(a["predicted_at"], a["event"], ctx.truths)
         if not _not_post_start(truth, tc):
             reasons.append(ev.R_TIMING_POST if tc.timing_class == POST_START else ev.R_TIMING_AMBIG)
+        # the unit is the FIRST run of the physical match: if ANY of its match-winner contracts was already
+        # terminal at that run's own timestamp, the whole observation is contaminated (no later run instead)
+        settled_at = None
+        hits = sorted(sat for s in sides.values()
+                      for post, sat in [_settled_before_observation(ctx, s["ticker"], a["predicted_at"])] if post)
+        if hits:
+            reasons.append(ev.R_SETTLED_BEFORE_OBSERVATION)
+            settled_at = hits[0]
+            post_settled[_level_bucket(a["ticker"])] += 1
         sres, payout, _ = _pnl(ctx, a["ticker"], a["kalshi_ask"], a["fee"])
         # the position, if any: the side whose frozen fee-adjusted edge is positive at the ask
         pos = max((s for s in sides.values() if (s.get("fee_adjusted_edge") or -1) > 0),
@@ -259,9 +309,11 @@ def harvest_ec3_live(ctx, cand):
                                 "position_pnl": p_pnl},
                          first_ball_confidence=truth.confidence if truth else None, timing_class=tc.timing_class,
                          strict_clv_executable=p_clv, settlement_result=sres, settlement_value=payout,
-                         after_fee_pnl=p_pnl,
+                         settled_at=settled_at, after_fee_pnl=p_pnl,
                          inclusion_result=ev.EXCLUDED if reasons else ev.INCLUDED, exclusion_reasons=reasons))
     res.evidence_rows = out
+    res.universe["post_settlement_first_runs_excluded"] = sum(post_settled.values())
+    res.universe["post_settlement_first_runs_by_level"] = dict(sorted(post_settled.items()))
     inc = [r for r in out if r.inclusion_result == ev.INCLUDED]
     binary = [r for r in inc if r.settlement_result in ("yes", "no")]
     y = [_y(r.settlement_result) for r in binary]
@@ -347,6 +399,7 @@ def _model4(ctx, cand, families, legacy, kind_metric):
     first = {}
     for r in fam_rows:
         first.setdefault(r["physical_match_id"], r)       # first prediction run per physical match
+    post_settled = Counter()
     out = []
     for pmid, r in first.items():
         reasons = []
@@ -358,6 +411,13 @@ def _model4(ctx, cand, families, legacy, kind_metric):
         truth, tc = _timing(r["predicted_at"], r.get("event") or "", ctx.truths)
         if not _not_post_start(truth, tc):
             reasons.append(ev.R_TIMING_POST if tc.timing_class == POST_START else ev.R_TIMING_AMBIG)
+        # generic prospective invariant: the derivative or either conditioning match-winner contract already
+        # terminal (exchange settlement_ts <= predicted_at) -> not prospective. Proven chronology only.
+        hits = sorted(sat for t in (r.get("ticker"), c.get("mw_ticker_a"), c.get("mw_ticker_b"))
+                      for post, sat in [_settled_before_observation(ctx, t, r["predicted_at"])] if post)
+        if hits:
+            reasons.append(ev.R_SETTLED_BEFORE_OBSERVATION)
+            post_settled[_level_bucket(r.get("ticker"))] += 1
         result, why = _find_result(ctx, r["player_a_id"], r["player_b_id"], r["match_date"])
         m_fund = m_mc = None
         if result is not None and not reasons:
@@ -375,8 +435,11 @@ def _model4(ctx, cand, families, legacy, kind_metric):
                                 "p_market_a": pm, "best_of": r.get("best_of")},
                          first_ball_confidence=truth.confidence if truth else None, timing_class=tc.timing_class,
                          settlement_result="COMPLETED" if result else None,
+                         settled_at=hits[0] if hits else None,
                          inclusion_result=ev.EXCLUDED if reasons else ev.INCLUDED, exclusion_reasons=reasons))
     res.evidence_rows = out
+    res.universe["post_settlement_first_runs_excluded"] = sum(post_settled.values())
+    res.universe["post_settlement_first_runs_by_level"] = dict(sorted(post_settled.items()))
     inc = [r for r in out if r.inclusion_result == ev.INCLUDED]
     scored = [r for r in inc if r.extra["metric_fundamental"] is not None]
     d = stats.paired_ci([r.extra["metric_conditioned"] for r in scored], [r.extra["metric_fundamental"] for r in scored])

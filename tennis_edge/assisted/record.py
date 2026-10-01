@@ -9,7 +9,12 @@ INVALID_TICKER, INVALID_TIMESTAMP, DECISION_IN_FUTURE, RECORDED_TOO_LATE, BEFORE
 UNSUPPORTED_MARKET_FAMILY, MARKET_NOT_FOUND, MARKET_NOT_OPEN, IDENTIFIER_MISMATCH, POST_START_DECISION,
 INVALID_FIELD, MISSING_FIELD, INVALID_FACTOR_TAG, EXPRESSION_MISMATCH, MARKET_PRICE_UNAVAILABLE,
 DUPLICATE_ID, DUPLICATE_SUBMISSION, UNKNOWN_DECISION, WAGER_MARKET_MISMATCH, STAKE_MISMATCH,
-DISCREPANCY_EXPLANATION_REQUIRED, DISCREPANCY_DATA_WARNING.
+DISCREPANCY_EXPLANATION_REQUIRED, DISCREPANCY_DATA_WARNING, UNVALIDATED_MODEL_PROBABILITY.
+
+Doubles: the current Gen-1 doubles model failed its no-skill validation, so a doubles decision never carries a
+model probability (gen1/gen2/fair_v1/Model 4 stay null; agreement is MODEL_NEUTRAL or MODEL_AND_CHATGPT_BOTH_PASS)
+and a payload that supplies one is refused as UNVALIDATED_MODEL_PROBABILITY. Manual doubles decisions,
+including BETs, remain allowed.
 
 Discrepancy sanity (schema v2, tennis_edge.assisted.discrepancy): every decision carries the model-market gap
 on its own quote, its band and the identity / orientation / freshness / external / data checks. A BET on a
@@ -69,6 +74,7 @@ DECISION_INPUT_KEYS = {
     # decision
     "recommended_price", "bet_up_to_probability", "bet_up_to_price", "stake_units_if_bet", "actual_wagered",
 }
+_PROB_KEYS = ("gen1_probability", "gen2_probability", "model4_probability_if_applicable", "fair_v1_probability")
 MODEL_INPUT_KEYS = ("gen1_probability", "gen2_probability", "model4_probability_if_applicable", "fair_v1_probability",
                     "selector_state", "model_uncertainty", "serve_evidence_player_a", "serve_evidence_player_b",
                     "rating_state", "surface_adjustment", "recent_form_inputs", "additional_model_inputs")
@@ -315,6 +321,16 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
     for k in ("gen1_probability", "gen2_probability", "model4_probability_if_applicable", "fair_v1_probability"):
         if k in from_input and model[k] is not None:
             model[k] = _prob(payload, k)
+    if SERIES[series][3] != "singles":
+        # no validated doubles model exists: nothing may stand in as one, from the slate, the payload or elsewhere
+        typed = [k for k in _PROB_KEYS if payload.get(k) is not None]
+        if typed:
+            raise AssistedValidationError("UNVALIDATED_MODEL_PROBABILITY", (
+                f"{typed} supplied for a doubles contract: the current Gen-1 doubles model failed its no-skill "
+                "validation and no other producer models doubles. Record the decision without model probabilities"))
+        for k in _PROB_KEYS:
+            model[k] = None
+        warnings.append("GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE: no model probability is recorded for a doubles contract")
     if model["fair_v1_probability"] is not None:
         mp, msrc = model["fair_v1_probability"], "fair_v1"
     elif model["model4_probability_if_applicable"] is not None:

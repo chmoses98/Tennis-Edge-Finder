@@ -41,6 +41,10 @@ R_TRUTH_C = "FIRST_BALL_CONFIDENCE_C_ONLY"
 R_MISSING_FIELD = "MISSING_HISTORICAL_FIELD"
 R_FRESHNESS_UNVERIFIED = "EXTERNAL_FRESHNESS_UNVERIFIABLE"
 R_FRESHNESS_MIXED = "EXTERNAL_FRESHNESS_AMBIGUOUS"
+#: the exchange's own recorded settlement_ts is at or before the observation: the contract was already
+#: terminal when the producer priced it, so the row cannot be prospective pregame evidence. Distinct from
+#: TIMING_POST_START (play known to have begun): this needs no first-ball source, only Kalshi's settlement.
+R_SETTLED_BEFORE_OBSERVATION = "MARKET_SETTLED_BEFORE_OBSERVATION"
 
 
 def canonical_hash(obj) -> str:
