@@ -1,0 +1,29 @@
+{
+ "run_id": "20261001T103249Z",
+ "started_at": "2026-10-01T10:32:49.007693+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 19,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26OCT01BOIBLI": {
+   "confidence": "B",
+   "bracket_s": 196.955759,
+   "first_ball": "2026-10-01T10:33:57.135153+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 16
+ },
+ "mapping": {
+  "MATCHED": 19,
+  "UNMATCHED": 1616
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-01T10:41:57.951733+00:00"
+}
