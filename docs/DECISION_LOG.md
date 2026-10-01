@@ -61,3 +61,14 @@
 | Decision schema v2 (the discrepancy group); v1 records keep validating against v1 | no decision existed under v1; versioning rather than editing a fixed schema | silently adding fields to v1 |
 | Audit uses settlement timing and first-ball truth ONLY as hindsight diagnostics (`pregame_clean`), never as live inputs; tests prove outcomes change no ex-ante classification | diagnose without leaking | filtering live rows by later settlement |
 | MODEL_CHANGE_RECOMMENDED uses two generic, pre-stated criteria (too extreme; no skill) | avoid post-hoc slicing; lower-tour "worse than Kalshi" slices are listed as hypotheses | recommending changes from any slice that looked bad |
+
+## 2026-10-01 Post-settlement evidence correction; Gen-1 doubles suppressed from assisted handicapping
+
+| decision | why | alternative rejected |
+|---|---|---|
+| A producer observation at or after Kalshi's recorded `settlement_ts` of its contract is EXCLUDED as `MARKET_SETTLED_BEFORE_OBSERVATION` | START_UNKNOWN rows (no first-ball source) let already-settled markets count as prospective evidence | inferring settlement from schedule, price or result |
+| Exclude the contaminated FIRST observation; never promote the next one | the first observation is the pre-registered decision unit | skipping to the first clean observation |
+| Repair by appending a newer EXCLUDED version | the store is append-only; history must stay auditable | rewriting or deleting the old INCLUDED line |
+| `settled_at` attached only to contaminated observations | keeps the correction to exactly the rows it changes (no re-versioning of thousands of clean rows) | attaching it to every settled row |
+| Gen-1 doubles probabilities removed from the assisted slate and from assisted decisions; doubles markets stay | the model failed a pre-stated no-skill test; a person may still handicap doubles manually | deleting doubles rows, or showing the number with a warning |
+| A typed doubles model probability is refused, not silently dropped | the recorder refuses rather than repairs | discarding payload fields quietly |

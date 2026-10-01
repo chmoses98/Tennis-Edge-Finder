@@ -44,6 +44,17 @@ WIDE_SPREAD = 0.06
 THIN_SIZE = 10.0
 STALE_MODEL_H = 13.0
 DROP_PAST_SCHEDULED_H = 24.0
+#: Gen-1 doubles (ELO_DP_FAIR on team ratings) failed the discrepancy audit's pre-stated no-skill test
+#: (research/model_market_discrepancy/AUDIT.md: pregame-clean Brier ~0.32 vs Kalshi ~0.22 vs coin flip 0.25,
+#: outcome correlation ~-0.06). It keeps running as research; on the assisted slate it contributes nothing.
+GEN1_DOUBLES_WARNING = "GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE"
+DOUBLES_MODEL_VALIDITY = {
+    "gen1": "UNVALIDATED_DO_NOT_USE", "gen2": "NOT_PRODUCED_FOR_DOUBLES", "fair_v1": "NOT_PRODUCED_FOR_DOUBLES",
+    "model4": "NOT_PRODUCED_FOR_DOUBLES",
+    "reason": ("Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping "
+               "pending a validated replacement. No model probability is shown for doubles; prices, liquidity and "
+               "external markets remain for manual handicapping."),
+}
 #: first-ball truth sources exist for these levels only (README: ATP/WTA main tour and the Slams)
 FIRST_BALL_COVERED = ("ATP", "WTA")
 
@@ -236,6 +247,12 @@ def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, 
     pm0, m0 = mws[0]
     series = series_of(pm0.ticker)
     fam_tour, fam_level, disc = SERIES[series][1], SERIES[series][2], SERIES[series][3]
+    model_validity = None
+    if disc != "singles":
+        # no model row of any producer may speak for a doubles contract: the Gen-1 doubles model failed its
+        # no-skill test, and no singles producer (shadow board, Model 4) is a doubles model. Raw markets stay.
+        ledger, shadow, model4 = {}, {}, {}
+        model_validity = dict(DOUBLES_MODEL_VALIDITY)
     info = classify_competition(pm0.competition, pm0.tour or fam_tour)
     sh = next((shadow[pm.ticker] for pm, _ in mws if pm.ticker in shadow), None)
     lg = next((ledger[pm.ticker] for pm, _ in mws if pm.ticker in ledger), None)
@@ -289,6 +306,7 @@ def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, 
         warnings.append("NO_MODEL_FOR_MATCH: no Gen-1 ledger or shadow-board row (identity unmapped, doubles, or unpriced format)")
     if disc != "singles":
         warnings.append("DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS")
+        warnings.append(f"{GEN1_DOUBLES_WARNING}: {DOUBLES_MODEL_VALIDITY['reason']}")
     if lb not in FIRST_BALL_COVERED:
         warnings.append("FIRST_BALL_SOURCE_UNAVAILABLE: Challenger/ITF/WTA125 starts are not observed; a nominal time is not a first ball")
     sched_dt = iso(sched)
@@ -303,7 +321,7 @@ def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, 
     markets = []
     for pm, m, fam in sorted(items, key=lambda x: (x[2] != "MATCH_WINNER", x[2], x[0].ticker)):
         markets.append(_market_row(pm, m, fam, ledger.get(pm.ticker), shadow.get(pm.ticker), model4.get(pm.ticker),
-                                   disloc.get(pm.ticker), now))
+                                   disloc.get(pm.ticker), now, model_validity=model_validity))
     mw_rows = [x for x in markets if x["market_family"] == "MATCH_WINNER"]
     identity_checks = _identity_checks(key, series, disc, level, fam_tour, players, per_player, mws, sh, lg, orient,
                                        shadow, mw_rows, ratings or {})
@@ -361,6 +379,7 @@ def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, 
             "model_rows_predicted_at": {"shadow_board": (sh or {}).get("predicted_at"),
                                         "gen1_ledger": (lg or {}).get("generated_at_utc")},
         },
+        "model_validity": model_validity,
         "external_context": {x["ticker"]: x["external"] for x in mw_rows},
         "identity_checks": identity_checks,
         "data_quality_check": dq,
@@ -513,7 +532,7 @@ def _sh_env(shadow, per_player, side, fn):
     return fn(env.values()) if env else None
 
 
-def _market_row(pm, m, fam, lg, sh, m4, dl, now) -> dict:
+def _market_row(pm, m, fam, lg, sh, m4, dl, now, model_validity=None) -> dict:
     bid, ask = fnum(m.get("yes_bid_dollars"), open_unit=True), fnum(m.get("yes_ask_dollars"), open_unit=True)
     two = bid is not None and ask is not None and bid <= ask
     mid = 0.5 * (bid + ask) if two else None
@@ -555,6 +574,8 @@ def _market_row(pm, m, fam, lg, sh, m4, dl, now) -> dict:
             w.append("NO_EXTERNAL_PRICE")
         elif ext["external_quote_age_s"] is not None and ext["external_quote_age_s"] > STALE_EXTERNAL_S:
             w.append("EXTERNAL_PRICE_STALE")
+    if model_validity:
+        w.append(GEN1_DOUBLES_WARNING)
     observed_by = [n for n, r in (("gen1_ledger", lg), ("shadow_board_v1", sh), ("model4_board_v1", m4), ("external_scan", dl)) if r]
     return {
         "ticker": pm.ticker, "event": m.get("event_ticker"), "market_family": fam,
@@ -576,7 +597,7 @@ def _market_row(pm, m, fam, lg, sh, m4, dl, now) -> dict:
                   "model_uncertainty": _r((sh or {}).get("model_uncertainty")),
                   "selector_v1": (sh or {}).get("selector_decision"),
                   "qualification_ok": (sh or {}).get("qualification_ok")},
-        "model_probability_yes": _r(p), "model_probability_source": src,
+        "model_probability_yes": _r(p), "model_probability_source": src, "model_validity": model_validity,
         "model_minus_mid": _r(p - mid) if (p is not None and mid is not None) else None,
         "model_side_edges": side_edges(p, bid, ask),
         "model_preferred_side": preferred_side(p, bid, ask),
@@ -634,6 +655,10 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
                      f"{_pct(mo['gen1'])} | {_pct(mo['gen2'])} | {_pct(mo['fair_v1'])} [{_pct(env[0])}-{_pct(env[1])}] | "
                      f"{_pct(e.get('bovada'))} | {_pct(e.get('smarkets'))} | {_pct(e.get('consensus'))} | "
                      f"{e.get('triangulation') or '--'} | {mo.get('selector_v1') or '--'} | {_disc_cells(r)} |")
+        if x.get("model_validity"):
+            mv = x["model_validity"]
+            L += ["", f"* **Model validity: GEN1 DOUBLES = {mv['gen1']}** -- {mv['reason']} Gen-1: --, Gen-2: --, "
+                      "fair_v1: -- (no model evidence; prices only)"]
         sv, rs, rf = mc["serve_evidence"], mc["rating_state"], mc["recent_form_inputs"]
         L += ["", f"* Serve evidence (points): A {sv['player_a_points']}, B {sv['player_b_points']}; "
                   f"serve-point win A {_pct(rs['serve_point_win_a'])}, B {_pct(rs['serve_point_win_b'])}; "

@@ -66,3 +66,34 @@ bucket, favourite/underdog and model-market disagreement bucket.
 It deliberately records **counts and coverage only** -- n, strict n, rows with a close, rows with CLV. No
 performance is reported by bucket, and no bucket is promoted. The purpose of this schema is to guarantee
 that when edge research does begin, it begins on rows whose pregame status can survive an audit.
+
+## Prospective invariant: no evidence from a contract that was already terminal (2026-10-01)
+
+**A producer observation timestamped at or after a known Kalshi terminal settlement timestamp of its contract
+cannot count as prospective evidence.** Only the exchange's own recorded `settlement_ts` (via
+`confirmation.sources.settlement_payout`) decides it: never a schedule, a price, a result, file order or the
+current time. A missing or unparsable `settlement_ts` never declares a row post-settlement by itself (the other
+timing rules still apply), and `settlement_ts == predicted_at` fails closed.
+
+Why it was needed: where no first-ball source exists (Challenger / WTA125 / ITF, and some main-tour matches) the
+timing class is START_UNKNOWN, so the first-ball checks alone let through shadow-board rows priced after Kalshi
+had already settled the market (at ~0.01 / 0.99).
+
+How it is applied (`confirmation/started_candidates.py::_settled_before_observation`):
+
+* W3-2026-001 / W3-2026-002: the FIRST observation of each contract, as before. If it was post-settlement the
+  contract is EXCLUDED with `MARKET_SETTLED_BEFORE_OBSERVATION` and `settled_at` attached. The second
+  observation is never substituted, because that would change the pre-registered decision unit.
+* EC-2026-003: the first prediction run per physical match; contaminated if ANY of its match-winner contracts
+  was already terminal at that run's timestamp. No later run is substituted.
+* EC-2026-001 / 002 (Model 4): the same generic invariant on the derivative and both conditioning match-winner
+  contracts of the first run (none affected at introduction).
+* W4 and EC-004: checked, not changed. W4 already requires STRICT_PREGAME first-ball truth, and no EC-004 or W4
+  observation showed the impossible chronology.
+
+The reason is distinct from `TIMING_POST_START` (play known to have begun). The repair is an
+**evidence-accounting correction, not a frozen-rule change**. The evidence store is append-only and versioned,
+so a previously INCLUDED observation gets a NEWER EXCLUDED version (same observation_id, same decision-time
+fields, `settled_at` populated). The old line stays forever, readers take the latest version, and the hash chain
+is verified on every harvest. Each candidate report carries `evidence_accounting_correction` (counts by level and
+by prior state), and `harvest_runs.jsonl` logs the per-candidate counts.

@@ -115,6 +115,8 @@ kept as supplied and listed in `model_context_source.fields_from_input`.
 | made before any first ball the store has observed (any confidence) | `POST_START_DECISION` |
 | made before but recorded after the first ball | admitted, `RECORDED_AFTER_FIRST_BALL`, excluded from the headline scorecard |
 | a BET has a two-sided price, confidence, thesis, bet-up-to, stake in (0, 10] units | `MARKET_PRICE_UNAVAILABLE`, `MISSING_FIELD`, `INVALID_FIELD` |
+| no model probability for a doubles contract (the Gen-1 doubles model is unvalidated) | `UNVALIDATED_MODEL_PROBABILITY` |
+| a HIGH_REVIEW BET explains the gap; an EXTREME BET meets all nine Part J conditions | `DISCREPANCY_EXPLANATION_REQUIRED`, `DISCREPANCY_DATA_WARNING` |
 | factor tags from the fixed vocabulary, no repeats (none is fine) | `INVALID_FACTOR_TAG` |
 | `chosen_expression` is the ticker's own family | `EXPRESSION_MISMATCH` |
 | decision id unique; the same decision resubmitted within 6 h | `DUPLICATE_ID`, `DUPLICATE_SUBMISSION` |
@@ -211,6 +213,25 @@ probabilities through the DP engine; there is no separate hold/break model), rec
 (external_v1 scan), model-minus-mid, model uncertainty, selector_v1 / external_v1 flags, frozen research
 context (e.g. W3-001's ITF abstention), and data-quality warnings. Every model number is the frozen
 producer's own output at its own prediction time. The slate ranks nothing as a bet.
+
+## Which model numbers may be used (2026-10-01)
+
+**SINGLES:** Gen-1, Gen-2 and fair_v1 (and Model 4 on listed derivatives) may be used as handicapping input,
+under their normal level and data-quality caveats and the discrepancy sanity layer below.
+
+**DOUBLES:** the current Gen-1 doubles model (ELO_DP_FAIR on team ratings) is **research-only and suppressed
+from assisted handicapping**. It failed the discrepancy audit's pre-stated no-skill test
+(`research/model_market_discrepancy/AUDIT.md`: pregame-clean Brier ~0.32 vs Kalshi ~0.22 vs a coin flip's
+0.25, outcome correlation ~-0.06) while quoting probabilities like 92% / 8%. No frozen producer models
+doubles. So for every doubles contract on the slate `model.gen1/gen1_elo_only/gen1_structural/gen2/fair_v1/
+model4_*`, `model_probability_yes`, `model_side_edges` and the model-market gap are null,
+`model_preferred_side` is NONE, the band is UNPRICED, `model_validity.gen1 = UNVALIDATED_DO_NOT_USE`, and the
+row and match carry `GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE`. Doubles matches STAY on the slate with names,
+every Kalshi market, bid/ask/spread/size, schedule and external prices, so a person can still handicap one
+manually. A recorded doubles decision carries no model probability (agreement MODEL_NEUTRAL or
+MODEL_AND_CHATGPT_BOTH_PASS); a payload that types one in is refused as `UNVALIDATED_MODEL_PROBABILITY`.
+Doubles BETs themselves are allowed. The Gen-1 ledger keeps producing doubles numbers for research; nothing
+was deleted, and a replacement needs its own validated, pre-registered mission.
 
 ## Discrepancy sanity layer (2026-10-01, decision schema v2)
 
