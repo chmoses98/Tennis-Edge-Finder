@@ -2,7 +2,7 @@
  "candidate_id": "W3-2026-001-ABSTAIN-ITF",
  "kind": "ABSTENTION",
  "status": "INSUFFICIENT_N",
- "status_reason": "340 eligible of 400 required",
+ "status_reason": "378 eligible of 400 required",
  "universe": {
   "experiment_start": {
    "candidate_id": "W3-2026-001-ABSTAIN-ITF",
@@ -33,40 +33,40 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 6307,
-  "contracts_first_observed": 1802
+  "rows_after_effective_start": 6765,
+  "contracts_first_observed": 1976
  },
  "metrics": {
-  "eligible_itf_n": 340,
-  "eligible_all_n": 541,
-  "settled_itf_n": 266,
-  "settled_non_itf_n": 162,
+  "eligible_itf_n": 378,
+  "eligible_all_n": 604,
+  "settled_itf_n": 278,
+  "settled_non_itf_n": 165,
   "itf_after_fee_pnl": {
-   "n": 266,
-   "mean": -0.004060150375939864,
+   "n": 278,
+   "mean": -0.00410071942446044,
    "median": -0.14,
-   "ci_low": -0.053872180451127835,
-   "ci_high": 0.04575375939849619,
+   "ci_low": -0.05316636690647484,
+   "ci_high": 0.046080035971222996,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
   },
   "non_itf_after_fee_pnl": {
-   "n": 162,
-   "mean": -0.03617283950617286,
-   "median": -0.17500000000000002,
-   "ci_low": -0.10370679012345681,
-   "ci_high": 0.030249999999999947,
+   "n": 165,
+   "mean": -0.040424242424242446,
+   "median": -0.18000000000000002,
+   "ci_low": -0.10733333333333334,
+   "ci_high": 0.02770151515151508,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
   },
   "combined_after_fee_pnl": {
-   "n": 428,
-   "mean": -0.01621495327102805,
-   "median": -0.14,
-   "ci_low": -0.05556133177570095,
-   "ci_high": 0.025046728971962598,
+   "n": 443,
+   "mean": -0.017629796839729133,
+   "median": -0.15000000000000002,
+   "ci_low": -0.05738205417607224,
+   "ci_high": 0.022595936794582376,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
@@ -74,16 +74,16 @@
   "minimum_n_applies_to": "ITF positive-edge rows (the subset the abstention is about)"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 4505,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 1261
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 4789,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 1372
  },
  "summary": {
   "kind": "ABSTENTION",
   "minimum_n": 400,
-  "eligible_n": 340,
-  "settled_n": 266,
+  "eligible_n": 378,
+  "settled_n": 278,
   "strict_clv_n": 0,
-  "unsettled_n": 74,
+  "unsettled_n": 100,
   "clv_pending_n": 0,
   "unscorable_n": 0,
   "accuracy_pass": false,
@@ -120,11 +120,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20260930T230555Z",
- "evidence_rows_this_run": 1802,
- "evidence_rows_appended": 18,
- "last_evidence_at": "2026-09-30T23:03:41.938238+00:00",
- "harvest_run_at": "2026-09-30T23:07:16.144278+00:00",
+ "harvest_run": "20261001T060613Z",
+ "evidence_rows_this_run": 1976,
+ "evidence_rows_appended": 228,
+ "last_evidence_at": "2026-10-01T06:04:51.615565+00:00",
+ "harvest_run_at": "2026-10-01T06:07:36.649800+00:00",
  "evidence_chain_violations": [],
  "frozen_definition": {
   "frozen_at": "2026-09-12T17:24:04.826616+00:00",
