@@ -120,7 +120,7 @@ kept as supplied and listed in `model_context_source.fields_from_input`.
 | decision id unique; the same decision resubmitted within 6 h | `DUPLICATE_ID`, `DUPLICATE_SUBMISSION` |
 | a wager links to a recorded decision on the same ticker/side, after it, stake = price x contracts | `UNKNOWN_DECISION`, `WAGER_MARKET_MISMATCH`, `INVALID_TIMESTAMP`, `STAKE_MISMATCH` |
 
-## Exact decision schema (schema_version 1, `tennis_edge/assisted/schema.py::DECISION_SCHEMA`)
+## Exact decision schema (schema_version 2, `tennis_edge/assisted/schema.py::DECISION_SCHEMA`; v1 = v2 without the discrepancy group)
 
 Probability convention: every probability is **P(ticker resolves YES)**; `side_entry_price`,
 `bet_up_to_price` and `bet_up_to_probability` are for the named contract side (NO ask = 1 - YES bid).
@@ -133,6 +133,7 @@ Probability convention: every probability is **P(ticker resolves YES)**; `side_e
 | market context | kalshi_bid, kalshi_ask, kalshi_mid, kalshi_spread, displayed_size, fee, market_implied_probability, side_entry_price, side_fee, market_quote_source, market_quote_observed_at, market_quote_age_seconds, repo_market_at_decision |
 | external context | bovada_probability_if_available, smarkets_probability_if_available, external_consensus, triangulation_state, external_freshness, external_context_source |
 | handicapping | chatgpt_fair_probability, chatgpt_confidence (LOW/MEDIUM/HIGH), chatgpt_thesis, key_supporting_factors, key_opposing_factors, factor_tags, model_agreement_state, model_preferred_side, chatgpt_preferred_side, model_side_edges, material_disagreement_with_kalshi, market_disagreement_reason, why_market_may_be_wrong, why_model_may_be_wrong, pass_reason_if_pass |
+| discrepancy sanity (v2) | model_market_gap_pp, discrepancy_band, discrepancy_sanity_status, discrepancy_reason_tags, identity_check_status, ticker_orientation_status, market_freshness_status, external_confirmation_status, data_quality_status, discrepancy_conditions, discrepancy_explanation, sample_asymmetry_justification, external_unavailable_reason, discrepancy_context_source |
 | expression | primary_match_thesis, available_expressions, chosen_expression, why_chosen_expression_best_matches_thesis |
 | decision | decision (BET/PASS/WATCH), recommended_price, bet_up_to_probability, bet_up_to_price, stake_units_if_bet, actual_wagered |
 | authority | authority (`ASSISTED_HUMAN_DECISION_NO_AUTOMATED_EXECUTION`), autonomous_real_money_authority (`OFF`), automated_execution (`false`), warnings |
@@ -210,6 +211,47 @@ probabilities through the DP engine; there is no separate hold/break model), rec
 (external_v1 scan), model-minus-mid, model uncertainty, selector_v1 / external_v1 flags, frozen research
 context (e.g. W3-001's ITF abstention), and data-quality warnings. Every model number is the frozen
 producer's own output at its own prediction time. The slate ranks nothing as a bet.
+
+## Discrepancy sanity layer (2026-10-01, decision schema v2)
+
+**The model should usually sit close to an efficient market.** The value is a strong independent estimate so
+that RARE, TRUSTWORTHY disagreements can be investigated. Small disagreement is normal, moderate may be
+interesting, large needs an explanation, extreme is a diagnostic alarm until proven otherwise: "model 80%,
+Kalshi 20%" first asks *why are we so different?* (`tennis_edge/assisted/discrepancy.py`, thresholds in
+`config/discrepancy_sanity.json`). The layer never changes a model probability; it only labels how a gap may
+be presented and what a BET on it must clear.
+
+| band | gap | slate status | a BET needs |
+|---|---|---|---|
+| NORMAL | < 10 pp | OK | nothing extra |
+| REVIEW | 10-15 pp | REVIEW_CONTEXT (context surfaced) | nothing extra |
+| HIGH_REVIEW | 15-25 pp | EXPLANATION_REQUIRED_BEFORE_BET (DATA_WARNING if identity is not verified) | `discrepancy_explanation` |
+| EXTREME | >= 25 pp | DATA_WARNING / PASS UNTIL RECHECKED | `discrepancy_explanation` and all nine conditions below; the record is then only ELIGIBLE_FOR_HUMAN_REVIEW |
+
+EXTREME conditions (Part J): (1) identity verified, (2) ticker orientation verified, (3) FRESH (<= 10 min)
+two-sided Kalshi price -- pass the live `kalshi_bid`/`kalshi_ask`, (4) ADEQUATE data quality, (5) no severe
+sample asymmetry or `sample_asymmetry_justification`, (6) the external market supports the model's direction,
+or it is unavailable/stale and `external_unavailable_reason` says why, (7) `why_market_may_be_wrong`,
+(8) `why_model_may_be_wrong`, (9) ChatGPT's own side probability clears the side's ask plus the taker fee
+and the ask is within `bet_up_to_price`. A BET whose identity or ticker orientation FAILED is refused at
+any gap. Refusal codes: `DISCREPANCY_EXPLANATION_REQUIRED`, `DISCREPANCY_DATA_WARNING`. PASS and WATCH are
+always admitted and carry the classification. The recorder measures the gap with the repository's own
+model number for the contract, so a typed model probability cannot move it.
+
+Every slate row carries `model_market_gap_pp`, `discrepancy_band`, `discrepancy_sanity_status`,
+`discrepancy_reason_tags`, `identity_check_status`, `ticker_orientation_status`, `market_freshness_status`,
+`external_confirmation_status`, `data_quality_status` and the full `discrepancy` block (evidence, identity
+checks, EXTREME preconditions); `latest.md` shows a MODEL-MARKET GAP / BAND / FRESHNESS / DATA QUALITY /
+EXTERNAL / IDENTITY column set and a `DISCREPANCY SANITY CHECK` block under every gap of 15 pp or more.
+
+Reason tags (each backed by a measured value): STALE_KALSHI_QUOTE, ONE_SIDED_BOOK, WIDE_SPREAD,
+LOW_DISPLAYED_LIQUIDITY, PLAYER_IDENTITY_RISK, TICKER_SIDE_RISK, EVENT_MAPPING_RISK, LOW_DATA_QUALITY,
+THIN_PLAYER_HISTORY, ASYMMETRIC_SAMPLE_SIZE, STALE_PLAYER_DATA, LEVEL_TRANSFER_RISK, SURFACE_DATA_THIN,
+MODEL_HIGH_UNCERTAINTY, MODEL_CALIBRATION_OUTLIER, EXTERNAL_MARKET_CONFIRMATION, EXTERNAL_MARKET_REJECTION,
+NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE (no first-ball source at HIGH_REVIEW+), SCHEDULED_START_PASSED,
+MODEL_INTERNAL_DISAGREEMENT, UNKNOWN. Health: TENNIS-17 (`docs/PRODUCTION_HEALTH.md`). Evidence behind it:
+`research/model_market_discrepancy/AUDIT.md` (rebuilt by RUN TENNIS into
+`data/research/model_market_discrepancy/` on `tennis-data`).
 
 ## Scorecard and CEO scoreboard
 

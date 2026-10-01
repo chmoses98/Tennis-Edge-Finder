@@ -47,3 +47,17 @@
 | CEO answers are INSUFFICIENT_EVIDENCE below N = 30 and never "profitable" unless the 95% CI excludes zero; fixed bootstrap seed | no hindsight re-drawing, no early claims | reporting raw means as findings |
 | Postmortems are hypothesis generation only | results must not tune a frozen model or create rules without their own pre-registered test | feeding postmortems into weights |
 
+
+## 2026-10-01 Discrepancy sanity layer (assisted track) and the model-market discrepancy audit
+
+| decision | why | alternative rejected |
+|---|---|---|
+| A large model-market gap is a QUESTION before it is an edge: bands NORMAL <10 / REVIEW 10-15 / HIGH_REVIEW 15-25 / EXTREME >=25 pp | the audit found most extreme gaps were fake: markets priced after Kalshi had settled, in-play prints, stale quotes | presenting raw model-minus-mid as edge |
+| The layer only CLASSIFIES; no model probability, weight, selector or frozen file changes | the defect is mostly in data/coverage, and a model change needs its own pre-registered prospective test | shrinking model numbers toward the market in the slate |
+| EXTREME defaults to DATA_WARNING; a BET needs all nine Part J conditions (incl. a FRESH executable price, external support or a documented reason, and ChatGPT's own why-market / why-model explanations) and is then only ELIGIBLE_FOR_HUMAN_REVIEW | an alarm until proven otherwise; never an automatic bet | allowing a BET with a warning |
+| The recorder measures the gap with the REPOSITORY's model number when the slate has one | a model probability typed into the payload must not be able to shrink a gap past the layer | trusting the payload's model numbers for the gate |
+| Ambiguous identity fails closed at HIGH_REVIEW and above; FAILED identity / orientation blocks a BET at any gap | a wrong player or side makes every number meaningless | fuzzy-matching names to resolve ambiguity |
+| Quote freshness from the capture's own `captured_at` (FRESH <=10, AGING <=30, STALE >30 min) | conservative: an unchanged market is not proven fresh | treating the last capture pass time as an observation of every market |
+| Decision schema v2 (the discrepancy group); v1 records keep validating against v1 | no decision existed under v1; versioning rather than editing a fixed schema | silently adding fields to v1 |
+| Audit uses settlement timing and first-ball truth ONLY as hindsight diagnostics (`pregame_clean`), never as live inputs; tests prove outcomes change no ex-ante classification | diagnose without leaking | filtering live rows by later settlement |
+| MODEL_CHANGE_RECOMMENDED uses two generic, pre-stated criteria (too extreme; no skill) | avoid post-hoc slicing; lower-tour "worse than Kalshi" slices are listed as hypotheses | recommending changes from any slice that looked bad |

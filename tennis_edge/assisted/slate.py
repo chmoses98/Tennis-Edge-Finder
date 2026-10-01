@@ -10,6 +10,9 @@ It JOINS what the repository already produces -- it computes no new probability 
   Model 4 board           frozen market_conditioned_v1 + fundamental Gen-2 on listed derivatives
   external_v1 scan        Bovada / Smarkets de-vigged prices, consensus, triangulation, venue freshness
   first-ball store        matches already seen under way are left off the slate
+  discrepancy sanity      every priced contract carries a model-market gap, a band (NORMAL / REVIEW /
+                          HIGH_REVIEW / EXTREME), identity / orientation / quote-freshness / external /
+                          data-quality checks and the reasons the gap may be fake (tennis_edge.assisted.discrepancy)
 
 Every model number is the frozen producer's own output at its own prediction time (carried with that
 time); nothing here re-prices, re-fits or re-orients a model.
@@ -28,12 +31,13 @@ from tennis_edge.pricing.competition import classify_competition
 from tennis_edge.pricing.fees import taker_fee
 
 from . import AUTONOMOUS_REAL_MONEY_AUTHORITY, CHATGPT_ASSISTED_TRACK, ASSISTED_AUTHORITY
+from . import discrepancy as DS
 from .market import capture_days, first_ball_bound, fnum, iso, load_truths, truth_for
 from .schema import (ASSISTED_SCHEMA_VERSION, expression_of_family, level_bucket, match_code_of, preferred_side,
                      series_of, side_edges, surface_bucket)
 from .store import canonical_hash
 
-SLATE_VERSION = "assisted_slate_v1"
+SLATE_VERSION = "assisted_slate_v2"          # v2: discrepancy sanity layer on every priced contract
 STALE_QUOTE_S = 30 * 60
 STALE_EXTERNAL_S = 30 * 60
 WIDE_SPREAD = 0.06
@@ -143,6 +147,7 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
     shadow = _latest_rows(os.path.join(research, "frozen_producers", "shadow_board"), ts_key="predicted_at")
     model4 = _latest_rows(os.path.join(research, "frozen_producers", "model4"), ts_key="predicted_at")
 
+    ratings = _ratings_context(data_root, now)
     groups: dict[str, list] = {}
     skipped = {}
     for tk, m in boardd.items():
@@ -155,6 +160,12 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
         groups.setdefault(key, []).append((pm, m, fam))
     mw_tickers = {pm.ticker for g in groups.values() for pm, _m, fam in g if fam == "MATCH_WINNER"}
     disloc = _latest_dislocations(os.path.join(research, "external", "dislocations"), mw_tickers)
+    pair_keys = {}                                  # the same two players listed under more than one match
+    for key, items in groups.items():
+        pk = _pair_key(items)
+        if pk:
+            pair_keys.setdefault(pk, set()).add(key)
+    ratings["pair_keys"] = pair_keys
 
     matches = []
     for key, items in groups.items():
@@ -173,10 +184,29 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
         if sched_dt and (now - sched_dt).total_seconds() > DROP_PAST_SCHEDULED_H * 3600:
             skipped["scheduled_start_over_24h_past"] = skipped.get("scheduled_start_over_24h_past", 0) + 1
             continue
-        matches.append(_match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, now, sched))
+        matches.append(_match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, now, sched, ratings))
 
     matches.sort(key=lambda x: (x["scheduled_start"] or "9999", x["match_key"]))
     n_markets = sum(len(x["markets"]) for x in matches)
+    rows = [r for x in matches for r in x["markets"]]
+    cfg = DS.load_config()
+    sanity = {
+        "version": cfg["version"],
+        "purpose": ("a large model-market gap is a question (WHY are we so different?), not an edge: stale or in-play "
+                    "quotes, mapping/orientation faults and thin data are ruled out before a disagreement is read"),
+        "bands_pp": cfg["bands_pp"], "freshness_minutes": cfg["freshness_minutes"],
+        "rules": {"NORMAL": "no additional restriction", "REVIEW": "discrepancy context surfaced",
+                  "HIGH_REVIEW": "an explicit discrepancy_explanation is required before any BET",
+                  "EXTREME": ("DATA_WARNING by default; a BET is refused unless all nine Part J conditions hold, and even "
+                              "then it is only ELIGIBLE_FOR_HUMAN_REVIEW, never an automatic bet")},
+        "model_probabilities_changed": False,
+        "namesake_registry_loaded": ratings.get("names") is not None,
+        "counts_by_band": _count(rows, "discrepancy_band"),
+        "counts_by_status": _count(rows, "discrepancy_sanity_status"),
+        "match_winner_counts_by_band": _count([r for r in rows if r["market_family"] == "MATCH_WINNER"], "discrepancy_band"),
+        "counts_by_freshness": _count([r for r in rows if r["model_market_gap_pp"] is not None], "market_freshness_status"),
+        "extreme": [r["ticker"] for r in rows if r["discrepancy_band"] == DS.EXTREME],
+    }
     body = {
         "slate_version": SLATE_VERSION, "schema_version": ASSISTED_SCHEMA_VERSION,
         "built_at": now.isoformat(),
@@ -194,6 +224,7 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
             "first_ball_truths": len(truths),
         },
         "counts": {"matches": len(matches), "markets": n_markets, "skipped_matches": skipped},
+        "discrepancy_sanity": sanity,
         "matches": matches,
     }
     body["content_sha256"] = canonical_hash({k: v for k, v in body.items() if k != "built_at"})
@@ -201,7 +232,7 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
     return body
 
 
-def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, now, sched) -> dict:
+def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, now, sched, ratings=None) -> dict:
     pm0, m0 = mws[0]
     series = series_of(pm0.ticker)
     fam_tour, fam_level, disc = SERIES[series][1], SERIES[series][2], SERIES[series][3]
@@ -274,6 +305,17 @@ def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, 
         markets.append(_market_row(pm, m, fam, ledger.get(pm.ticker), shadow.get(pm.ticker), model4.get(pm.ticker),
                                    disloc.get(pm.ticker), now))
     mw_rows = [x for x in markets if x["market_family"] == "MATCH_WINNER"]
+    identity_checks = _identity_checks(key, series, disc, level, fam_tour, players, per_player, mws, sh, lg, orient,
+                                       shadow, mw_rows, ratings or {})
+    sab = {"a": (sh or {}).get("player_a_id"), "b": (sh or {}).get("player_b_id")}
+    surf = _surface_counts(ratings or {}, sab, surface)
+    dq = DS.data_quality(grade=(sh or {}).get("data_quality_grade") or ((lg or {}).get("quality") or {}).get("grade"),
+                         serve_a=serve_a, serve_b=serve_b, n_a=n_a, n_b=n_b, days_a=d_a, days_b=d_b,
+                         level_familiarity=lp.get("level_familiarity"), surface_n_a=surf[0], surface_n_b=surf[1])
+    sched_passed = bool(iso(sched) and iso(sched) <= now)
+    for r in markets:
+        _apply_discrepancy(r, identity_checks, dq, model4.get(r["ticker"]), shadow.get(r["ticker"]),
+                           lb in FIRST_BALL_COVERED, sched_passed)
     model_age = _age_s(now, (sh or {}).get("predicted_at") or (lg or {}).get("generated_at_utc"))
     if model_age is not None and model_age > STALE_MODEL_H * 3600:
         warnings.append("MODEL_ROW_STALE: newest frozen-producer row is over 13h old")
@@ -320,11 +362,138 @@ def _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, 
                                         "gen1_ledger": (lg or {}).get("generated_at_utc")},
         },
         "external_context": {x["ticker"]: x["external"] for x in mw_rows},
+        "identity_checks": identity_checks,
+        "data_quality_check": dq,
         "frozen_rule_context": frozen_context,
         "warnings": warnings,
         "available_expressions": sorted({x["expression"] for x in markets}),
         "markets": markets,
     }
+
+
+# ---------------------------------------------------------------------------------------------- discrepancy
+def _ratings_context(data_root: str, now: datetime) -> dict:
+    """Rating-state tables (name, last_date, per-surface counts) for the namesake and surface-sample checks.
+    Missing tables leave both checks NA; nothing here reads or changes a rating."""
+    tables = {}
+    for tour in ("ATP", "WTA"):
+        p = os.path.join(data_root, "processed", f"ratings_{tour}.json")
+        try:
+            tables[tour] = (json.load(open(p)) or {}).get("players") or {}
+        except (OSError, ValueError):
+            continue
+    names = DS.namesake_index_from_players(list(tables.values()), as_of=now.date()) if tables else None
+    return {"tables": tables, "names": names}
+
+
+def _surface_counts(ratings: dict, ids: dict, surface) -> tuple:
+    if not surface or not ratings.get("tables"):
+        return None, None
+    out = []
+    for side in ("a", "b"):
+        pid = ids.get(side)
+        rec = next((t.get(str(pid)) for t in ratings["tables"].values() if pid and str(pid) in t), None)
+        if rec is None:
+            out.append(None)
+            continue
+        v = (rec.get("surfaces") or {}).get(surface)
+        out.append(v[1] if isinstance(v, list) and len(v) > 1 else 0)
+    return tuple(out)
+
+
+def _pair_key(items) -> frozenset | None:
+    from tennis_edge.identity.names import normalize_name
+    for pm, _m, fam in items:
+        if fam == "MATCH_WINNER" and pm.player_a and pm.player_b:
+            return frozenset((normalize_name(pm.player_a), normalize_name(pm.player_b)))
+    return None
+
+
+def _model_level_bucket(level, tour) -> str | None:
+    lv = (level or "").upper()
+    if not lv:
+        return None
+    if lv == "ITF":
+        return "ITF"
+    if lv == "CHALLENGER":
+        return "CHALLENGER"
+    if lv == "WTA_125":
+        return "WTA125"
+    if lv in ("OTHER", "TEAM", "EXHIBITION"):
+        return "OTHER"
+    return tour if tour in ("ATP", "WTA") else None
+
+
+def _identity_checks(key, series, disc, level, fam_tour, players, per_player, mws, sh, lg, orient, shadow,
+                     mw_rows, ratings) -> dict:
+    """Match-level identity evidence. PASS / AMBIGUOUS / FAIL / NA per check; nothing is loosened or guessed."""
+    lq = ((lg or {}).get("quality") or {})
+    c = {
+        "physical_match_id": DS.check_physical_match_id((sh or {}).get("physical_match_id")),
+        "player_ids": DS.check_player_ids((sh or lg or {}).get("player_a_id"), (sh or lg or {}).get("player_b_id")),
+        "identity_confidence": DS.check_identity_confidence(
+            *(((sh or {}).get("identity_confidence_a"), (sh or {}).get("identity_confidence_b")) if sh
+              else ((lq.get("pillars") or {}).get("identity_confidence"),))),
+        "namesake": DS.check_namesakes([players.get("a"), players.get("b")], ratings.get("names")),
+        "model_name_orientation": ("PASS" if orient else "AMBIGUOUS") if lg else "NA",
+        "both_sides_listed": "PASS" if per_player.get("a") and per_player.get("b") else "AMBIGUOUS",
+        "model_complement": DS.check_complement(_sh_p(shadow, per_player, "a", "fair_v1_probability"),
+                                                _sh_p(shadow, per_player, "b", "fair_v1_probability")),
+        "market_pair": DS.check_market_pair(*[next((r["kalshi"]["mid"] for r in mw_rows if r["ticker"] == per_player.get(sd)), None)
+                                              for sd in ("a", "b")]),
+        "level_mapping": DS.check_level(level_bucket(series, None, disc), _model_level_bucket(level, fam_tour)),
+        "same_pair_other_event": ("AMBIGUOUS" if len((ratings.get("pair_keys") or {}).get(_pair_key(
+            [(pm, None, "MATCH_WINNER") for pm, _m in mws]), ()) or ()) > 1 else "PASS"),
+        "discipline": "PASS" if disc == "singles" else "AMBIGUOUS",
+    }
+    if not (sh or lg):
+        c["model_row"] = "AMBIGUOUS"
+    return c
+
+
+def _apply_discrepancy(r: dict, checks: dict, dq: dict, m4, sh, first_ball_source: bool, sched_passed: bool):
+    """Attach the sanity block to one market row. Reads the row's numbers; changes none of them."""
+    k = r["kalshi"]
+    fam = r["market_family"]
+    if fam == "MATCH_WINNER":
+        orient, oev = DS.ticker_orientation(r["ticker"], r["event"], r["subject_is_a"])
+        if sh is not None and sh.get("subject_is_a") is not None:
+            m_orient, _ = DS.ticker_orientation(r["ticker"], r["event"], sh.get("subject_is_a"))
+            if m_orient == "FAILED":
+                orient = "FAILED"
+            elif m_orient != "VERIFIED" and orient == "VERIFIED":
+                orient = "UNKNOWN"
+        subj_ok = "PASS" if r["subject"] and r["subject_is_a"] is not None else "AMBIGUOUS"
+    else:
+        has_subject = bool(r["subject"]) or r["subject_is_a"] is not None
+        orient = DS.derivative_orientation(has_subject, r["subject_is_a"], (m4 or {}).get("subject_is_a"))
+        subj_ok = "NA"
+    checks = {**checks, "ticker_orientation": {"VERIFIED": "PASS", "FAILED": "FAIL", "NOT_APPLICABLE": "NA"}.get(orient, "AMBIGUOUS"),
+              "yes_side_meaning": subj_ok}
+    mo = r["model"]
+    probs = ({"gen1": mo["gen1"], "gen2": mo["gen2"], "fair_v1": mo["fair_v1"]} if fam == "MATCH_WINNER"
+             else {"gen1": mo["gen1"], "model4_conditioned": mo["model4_conditioned"], "model4_fundamental": mo["model4_fundamental"]})
+    edges = [v for v in (r["model_side_edges"] or {}).values() if isinstance(v, (int, float))]
+    e = r["external"] or {}
+    d = DS.assess(p_model=r["model_probability_yes"], bid=k["bid"], ask=k["ask"], bid_size=k["bid_size"],
+                  ask_size=k["ask_size"], quote_age_s=k["quote_age_s"], identity=DS.identity_status(checks),
+                  identity_checks=checks, orientation=orient, data=dq, p_ext=e.get("consensus"),
+                  ext_age_s=e.get("external_quote_age_s"), model_uncertainty=mo.get("model_uncertainty"),
+                  envelope=mo.get("fair_v1_envelope") if fam == "MATCH_WINNER" else None,
+                  model_probs={kk: v for kk, v in probs.items() if v is not None}, first_ball_source=first_ball_source,
+                  scheduled_start_passed=sched_passed, side_edge_after_fees=max(edges) if edges else None)
+    r["discrepancy"] = d
+    for f in ("model_market_gap_pp", "discrepancy_band", "discrepancy_sanity_status", "discrepancy_reason_tags",
+              "identity_check_status", "ticker_orientation_status", "market_freshness_status", "external_confirmation_status",
+              "data_quality_status"):
+        r[f] = d[f]
+
+
+def _count(rows, key) -> dict:
+    out: dict = {}
+    for r in rows:
+        out[r.get(key)] = out.get(r.get(key), 0) + 1
+    return dict(sorted(out.items(), key=lambda kv: str(kv[0])))
 
 
 def _ledger_p(ledger, per_player, side, key):
@@ -436,14 +605,26 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
          f"Skipped: {json.dumps(s['counts']['skipped_matches'])}. Sources: shadow board {s['sources'].get('shadow_last')}, "
          f"Model 4 {s['sources'].get('model4_last')}, Gen-1 ledger {s['sources'].get('ledger_last')}, "
          f"external {s['sources'].get('external_last')}, capture {s['sources'].get('last_capture_file')}.", ""]
+    ds = s.get("discrepancy_sanity") or {}
+    if ds:
+        L += ["**Discrepancy sanity layer** (`" + ds.get("version", "") + "`): the model should usually sit close to the "
+              "market. A big gap is a QUESTION -- stale or in-play quote? wrong player or side? thin data? -- before it is "
+              "ever an edge. NORMAL <10pp: no restriction · REVIEW 10-15pp: context below · HIGH_REVIEW 15-25pp: explain "
+              "the gap before any BET (`discrepancy_explanation`) · EXTREME >=25pp: DATA_WARNING / PASS UNTIL RECHECKED "
+              "unless all nine Part J conditions hold, and even then only eligible for human review. Model probabilities "
+              "are unchanged by this layer.", "",
+              f"Bands (all priced contracts): {json.dumps(ds.get('counts_by_band'))}; match winners: "
+              f"{json.dumps(ds.get('match_winner_counts_by_band'))}; quote freshness at build: "
+              f"{json.dumps(ds.get('counts_by_freshness'))}.", ""]
     for x in s["matches"]:
         mc = x["model_context"]
         L += [f"## {x['players']['a']} vs {x['players']['b']} -- {x['competition']} {x['round'] or ''}".rstrip(), "",
               f"{x['level_bucket']} ({x['level']}) · {x['surface'] or 'surface ?'} · scheduled {x['scheduled_start']} · "
               f"first ball: {x['first_ball']['status']} (source {x['first_ball']['source_coverage']}) · "
               f"match `{x['physical_match_id'] or x['match_key']}`", ""]
-        L += ["| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector |",
-              "|---|---|---|---|---|---|---|---|---|---|---|"]
+        L += ["| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector "
+              "| MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |",
+              "|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|"]
         for r in x["markets"]:
             if r["market_family"] != "MATCH_WINNER":
                 continue
@@ -452,7 +633,7 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
             L.append(f"| {r['subject']} (`{r['ticker']}`) | {_c(k['bid'])} / {_c(k['ask'])} ({k['ask_size'] or 0:.0f}) | {_pct(k['mid'])} | "
                      f"{_pct(mo['gen1'])} | {_pct(mo['gen2'])} | {_pct(mo['fair_v1'])} [{_pct(env[0])}-{_pct(env[1])}] | "
                      f"{_pct(e.get('bovada'))} | {_pct(e.get('smarkets'))} | {_pct(e.get('consensus'))} | "
-                     f"{e.get('triangulation') or '--'} | {mo.get('selector_v1') or '--'} |")
+                     f"{e.get('triangulation') or '--'} | {mo.get('selector_v1') or '--'} | {_disc_cells(r)} |")
         sv, rs, rf = mc["serve_evidence"], mc["rating_state"], mc["recent_form_inputs"]
         L += ["", f"* Serve evidence (points): A {sv['player_a_points']}, B {sv['player_b_points']}; "
                   f"serve-point win A {_pct(rs['serve_point_win_a'])}, B {_pct(rs['serve_point_win_b'])}; "
@@ -460,19 +641,23 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
               f"* Form inputs: days since last match A {rf['days_since_last_match_a']}, B {rf['days_since_last_match_b']}; "
               f"matches on record A {rf['matches_on_record_a']}, B {rf['matches_on_record_b']}; "
               f"data quality {mc['data_quality']['grade']}"]
+        for r in x["markets"]:
+            if r["market_family"] == "MATCH_WINNER" and DS.BAND_RANK.get(r.get("discrepancy_band"), -1) >= DS.BAND_RANK[DS.HIGH_REVIEW] \
+                    and (r.get("model_market_gap_pp") or 0) > 0:
+                L += [""] + DS.sanity_block_lines(r, subject=r["subject"])
         if mc.get("surface_adjustment"):
             L.append("* Surface-prior sensitivity (P(A) change): " + ", ".join(
                 f"{k} {v:+.3f}" for k, v in mc["surface_adjustment"].items() if isinstance(v, float)))
         der = [r for r in x["markets"] if r["market_family"] != "MATCH_WINNER"]
         if der:
             priced = sorted([r for r in der if r["model_minus_mid"] is not None],
-                            key=lambda r: -abs(r["model_minus_mid"]))[:max_derivatives]
+                            key=lambda r: -abs(r["model_minus_mid"]))
             L.append(f"* Derivatives listed: {len(der)} ({', '.join(x['available_expressions'])}); "
                      f"{sum(1 for r in der if r['model_probability_yes'] is not None)} carry a model probability")
             for r in priced:
                 k = r["kalshi"]
                 L.append(f"  * `{r['ticker']}` {r['description']}: {_c(k['bid'])}/{_c(k['ask'])} mid {_pct(k['mid'])}, "
-                         f"model {_pct(r['model_probability_yes'])} ({r['model_probability_source']})")
+                         f"model {_pct(r['model_probability_yes'])} ({r['model_probability_source']}) -- {_disc_inline(r)}")
         warn = x["warnings"] + sorted({w.split(':')[0] for r in x["markets"] for w in r["warnings"]})
         if warn:
             L.append(f"* Warnings: {'; '.join(w.split(':')[0] for w in warn)}")
@@ -485,6 +670,26 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
     return "\n".join(L)
 
 
+def _disc_cells(r) -> str:
+    g = r.get("model_market_gap_pp")
+    st = r.get("discrepancy_sanity_status")
+    band = r.get("discrepancy_band") or "--"
+    if st == DS.DATA_WARNING:
+        band += " (DATA_WARNING)"
+    return " | ".join([f"{g:+.1f} pp" if isinstance(g, (int, float)) else "--", band,
+                       r.get("market_freshness_status") or "--",
+                       f"{(r.get('discrepancy') or {}).get('evidence', {}).get('data_grade') or '?'} / {r.get('data_quality_status') or '--'}",
+                       r.get("external_confirmation_status") or "--",
+                       (r.get("identity_check_status") or "--").replace("IDENTITY_", "")])
+
+
+def _disc_inline(r) -> str:
+    g = r.get("model_market_gap_pp")
+    return (f"gap {g:+.1f} pp, {r.get('discrepancy_band')}" if isinstance(g, (int, float)) else "gap --") + \
+        f", {r.get('discrepancy_sanity_status')}, quote {r.get('market_freshness_status')}, " \
+        f"identity {(r.get('identity_check_status') or '').replace('IDENTITY_', '')}, data {r.get('data_quality_status')}"
+
+
 def write_slate(slate: dict, out_dir: str) -> dict:
     os.makedirs(out_dir, exist_ok=True)
     tmp = os.path.join(out_dir, "latest.json.tmp")
@@ -495,7 +700,10 @@ def write_slate(slate: dict, out_dir: str) -> dict:
         f.write(render_markdown(slate))
     run = {"slate_id": slate["slate_id"], "built_at": slate["built_at"], "content_sha256": slate["content_sha256"],
            "matches": slate["counts"]["matches"], "markets": slate["counts"]["markets"],
-           "skipped": slate["counts"]["skipped_matches"], "sources": slate["sources"]}
+           "skipped": slate["counts"]["skipped_matches"], "sources": slate["sources"],
+           "discrepancy_version": (slate.get("discrepancy_sanity") or {}).get("version"),
+           "discrepancy_counts_by_band": (slate.get("discrepancy_sanity") or {}).get("counts_by_band"),
+           "discrepancy_counts_by_status": (slate.get("discrepancy_sanity") or {}).get("counts_by_status")}
     with open(os.path.join(out_dir, "slate_runs.jsonl"), "a") as f:
         f.write(json.dumps(run, default=str) + "\n")
     return run

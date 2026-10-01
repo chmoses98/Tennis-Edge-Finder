@@ -17,6 +17,16 @@ scoreboard; TENNIS-16 watches the pipeline. **AUTONOMOUS_REAL_MONEY_AUTHORITY = 
 CHATGPT_ASSISTED_TRACK = ACTIVE;** no frozen model or candidate is touched and no profitability is implied.
 See `docs/ASSISTED_HANDICAPPING.md`.
 
+### Discrepancy sanity layer (new, 2026-10-01)
+
+A big model-vs-Kalshi gap is a question, not an edge. Every priced contract on the assisted slate carries
+its gap, a band (NORMAL <10 / REVIEW 10-15 / HIGH_REVIEW 15-25 / EXTREME >=25 pp) and identity, ticker
+orientation, quote freshness, external and data-quality checks; EXTREME gaps are DATA_WARNING by default and
+a BET on one is refused unless nine conditions hold (then only eligible for human review). TENNIS-17 guards
+it. The audit behind it (`research/model_market_discrepancy/AUDIT.md`) found most extreme gaps were
+ITF/Challenger markets priced after Kalshi had settled, in-play prints or stale quotes, not model insight.
+No model probability changed.
+
 ### External reference markets
 
 `scripts/external/capture_and_scan.py` runs inside the capture conductor: it fetches Bovada's public

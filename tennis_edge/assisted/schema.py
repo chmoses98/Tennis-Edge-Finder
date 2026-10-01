@@ -13,7 +13,11 @@ from __future__ import annotations
 
 import re
 
-ASSISTED_SCHEMA_VERSION = 1
+#: v1: the launch schema (2026-09-30; no decision was ever recorded under it).
+#: v2: adds the discrepancy-sanity group to decisions (model-market gap, band, identity / orientation /
+#:     freshness / external / data-quality status and the Part J conditions); wagers, postmortems and
+#:     evidence are unchanged apart from the version number. A v1 record keeps validating against v1.
+ASSISTED_SCHEMA_VERSION = 2
 
 DECISIONS = ("BET", "PASS", "WATCH")
 SIDES = ("YES", "NO")
@@ -89,6 +93,11 @@ DECISION_SCHEMA = {
                      "chatgpt_preferred_side", "model_side_edges", "material_disagreement_with_kalshi",
                      "market_disagreement_reason", "why_market_may_be_wrong", "why_model_may_be_wrong",
                      "pass_reason_if_pass"],
+    "discrepancy_sanity": ["model_market_gap_pp", "discrepancy_band", "discrepancy_sanity_status",
+                           "discrepancy_reason_tags", "identity_check_status", "ticker_orientation_status",
+                           "market_freshness_status", "external_confirmation_status", "data_quality_status",
+                           "discrepancy_conditions", "discrepancy_explanation", "sample_asymmetry_justification",
+                           "external_unavailable_reason", "discrepancy_context_source"],
     "expression": ["primary_match_thesis", "available_expressions", "chosen_expression",
                    "why_chosen_expression_best_matches_thesis"],
     "decision": ["decision", "recommended_price", "bet_up_to_probability", "bet_up_to_price",
@@ -96,6 +105,8 @@ DECISION_SCHEMA = {
     "authority": ["authority", "autonomous_real_money_authority", "automated_execution", "warnings"],
 }
 DECISION_FIELDS = [k for g in DECISION_SCHEMA.values() for k in g]
+DECISION_FIELDS_BY_VERSION = {1: [k for g, ks in DECISION_SCHEMA.items() if g != "discrepancy_sanity" for k in ks],
+                              2: DECISION_FIELDS}
 
 #: Once written these can never change. The whole record is fingerprinted; this list is what the
 #: integrity check names when a fingerprint breaks (Part 11).
@@ -105,6 +116,7 @@ IMMUTABLE_DECISION_FIELDS = (
     "chosen_expression", "why_chosen_expression_best_matches_thesis", "bet_up_to_probability", "bet_up_to_price",
     "recommended_price", "stake_units_if_bet", "kalshi_bid", "kalshi_ask", "kalshi_mid", "side_entry_price",
     "market_implied_probability", "model_agreement_state", "model_preferred_side", "chatgpt_preferred_side",
+    "model_market_gap_pp", "discrepancy_band", "discrepancy_sanity_status", "discrepancy_explanation",
 )
 
 WAGER_FIELDS = ["wager_id", "decision_id", "schema_version", "recorded_at", "placed_at", "ticker", "side",

@@ -86,6 +86,13 @@ jobs:
             echo "::error::assisted pipeline failed -- TENNIS-16 will FAIL until it succeeds"
           fi
           tail -12 assisted.log
+          # Model-vs-market discrepancy audit: DIAGNOSTIC only (reads producer rows, settlements, the external scan and
+          # first-ball truth; changes no model, candidate or experiment start). A failure warns and never blocks.
+          if ! PYTHONPATH=. python3 scripts/research/discrepancy_audit.py --data-root data \
+               --out data/research/model_market_discrepancy > discrepancy.log 2>&1; then
+            echo "::warning::model-market discrepancy audit failed (diagnostic only)"
+          fi
+          tail -12 discrepancy.log
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"
           cat data/research/health_latest.json | python3 -c "import json,sys; [print(g['gate'], g['status']) for g in json.load(sys.stdin)]"
       - name: Publish research outputs

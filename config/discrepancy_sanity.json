@@ -1,0 +1,18 @@
+{
+  "version": "discrepancy_sanity_v1",
+  "purpose": "Thresholds of the assisted-track discrepancy sanity layer and the historical discrepancy audit. Fixed before any assisted decision used them and never fitted to outcomes or P&L. A change is a new version, never an edit.",
+  "audit_buckets_pp": [0, 3, 5, 10, 15, 25, 40],
+  "bands_pp": {"REVIEW": 10, "HIGH_REVIEW": 15, "EXTREME": 25},
+  "freshness_minutes": {"FRESH": 10, "AGING": 30},
+  "external": {"agree_pp": 5, "max_age_minutes": 30},
+  "book": {"wide_spread": 0.06, "low_displayed_size": 10, "tail_mid": 0.07, "pair_mid_sum_tolerance": 0.15},
+  "model": {"complement_tolerance": 0.02, "high_uncertainty": 0.05, "wide_envelope": 0.08,
+            "internal_disagreement_pp": 15, "tail_probability": 0.10, "market_middle": [0.2, 0.8]},
+  "data": {"low_grades": ["C", "D", "F"], "poor_grades": ["D", "F"],
+           "thin_serve_points": 1000, "very_thin_serve_points": 300, "thin_matches": 30,
+           "asymmetry_ratio": 4.0, "severe_asymmetry_ratio": 10.0,
+           "stale_player_days": 60, "level_familiarity_low": 0.75, "thin_surface_matches": 10},
+  "identity": {"namesake_active_days": 730},
+  "audit": {"likely_in_play_settle_minutes": 45, "possible_in_play_settle_minutes": 120,
+            "external_lookback_minutes": 60, "ledger_join_minutes": 30}
+}

@@ -1,4 +1,4 @@
-"""Production health gates TENNIS-1 .. TENNIS-16. Each gate returns GateResult(status PASS|FAIL|UNKNOWN, detail).
+"""Production health gates TENNIS-1 .. TENNIS-17. Each gate returns GateResult(status PASS|FAIL|UNKNOWN, detail).
 
 UNKNOWN is a failure for production purposes (fail closed): a gate that cannot be evaluated because the
 evidence is missing does not turn green. Gates read the artifacts the pipeline produces; none of them may
@@ -613,6 +613,20 @@ def gate_16_assisted_pipeline(research_root=None, firstball_root=None, now=None)
     return GateResult("TENNIS-16", "assisted_decision_pipeline_health", status, detail)
 
 
+def gate_17_discrepancy_integrity(research_root=None, now=None) -> GateResult:
+    """TENNIS-17: model_market_discrepancy_integrity. Every model-market disagreement on the assisted slate and on
+    recorded decisions is classified, and no EXTREME/HIGH_REVIEW gap escapes the sanity layer. Integrity, not
+    profitability: a disagreement alone never fails it."""
+    from tennis_edge.assisted.health import gate_17
+    research_root = research_root or os.path.join(PROJ, "data", "research")
+    try:
+        status, detail = gate_17(research_root, now=now)
+    except Exception as e:                                                  # noqa: BLE001
+        return GateResult("TENNIS-17", "model_market_discrepancy_integrity", "FAIL",
+                          {"reason": f"gate raised {type(e).__name__}: {e}"})
+    return GateResult("TENNIS-17", "model_market_discrepancy_integrity", status, detail)
+
+
 def run_all(extra: dict | None = None) -> list[GateResult]:
     extra = {**_auto_extra(), **(extra or {})}
     out = [gate_1_discovery(), gate_2_taxonomy()]
@@ -632,4 +646,5 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
     out.append(gate_12_ledger()); out.append(gate_13_reproducible()); out.append(gate_14_source_freshness())
     out.append(gate_15_prospective_confirmation())
     out.append(gate_16_assisted_pipeline())
+    out.append(gate_17_discrepancy_integrity())
     return out

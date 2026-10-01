@@ -8,7 +8,14 @@ Refusal codes: INVALID_PAYLOAD, UNKNOWN_FIELD, TRACK_NOT_STARTED, INVALID_DECISI
 INVALID_TICKER, INVALID_TIMESTAMP, DECISION_IN_FUTURE, RECORDED_TOO_LATE, BEFORE_TRACK_START,
 UNSUPPORTED_MARKET_FAMILY, MARKET_NOT_FOUND, MARKET_NOT_OPEN, IDENTIFIER_MISMATCH, POST_START_DECISION,
 INVALID_FIELD, MISSING_FIELD, INVALID_FACTOR_TAG, EXPRESSION_MISMATCH, MARKET_PRICE_UNAVAILABLE,
-DUPLICATE_ID, DUPLICATE_SUBMISSION, UNKNOWN_DECISION, WAGER_MARKET_MISMATCH, STAKE_MISMATCH.
+DUPLICATE_ID, DUPLICATE_SUBMISSION, UNKNOWN_DECISION, WAGER_MARKET_MISMATCH, STAKE_MISMATCH,
+DISCREPANCY_EXPLANATION_REQUIRED, DISCREPANCY_DATA_WARNING.
+
+Discrepancy sanity (schema v2, tennis_edge.assisted.discrepancy): every decision carries the model-market gap
+on its own quote, its band and the identity / orientation / freshness / external / data checks. A BET on a
+HIGH_REVIEW gap (15-25pp) needs `discrepancy_explanation`; a BET on an EXTREME gap (>=25pp) is refused as
+DATA_WARNING unless all nine Part J conditions hold, and even then it is recorded only as
+ELIGIBLE_FOR_HUMAN_REVIEW. A BET whose identity or ticker orientation FAILED is refused at any gap.
 """
 from __future__ import annotations
 
@@ -21,6 +28,7 @@ from tennis_edge.kalshi.families import SERIES
 from tennis_edge.pricing.fees import taker_fee
 
 from . import ASSISTED_AUTHORITY, AUTONOMOUS_REAL_MONEY_AUTHORITY, TRACK_NAME
+from . import discrepancy as DS
 from .market import first_ball_bound, fnum, iso, load_truths, quote_record_at, truth_for
 from .schema import (ASSISTED_SCHEMA_VERSION, CONFIDENCE, DECISION_FIELDS, DECISIONS, EVIDENCE_FIELDS,
                      FACTOR_TAGS, LOSS_ATTRIBUTION, MARKET_EXPRESSIONS, MATERIAL_DISAGREEMENT,
@@ -31,7 +39,7 @@ from .schema import (ASSISTED_SCHEMA_VERSION, CONFIDENCE, DECISION_FIELDS, DECIS
 from .slate import FIRST_BALL_COVERED, load_slate, slate_market
 from .store import RecordStore, canonical_hash, load_track_start
 
-RECORDER_VERSION = "assisted_recorder_v1"
+RECORDER_VERSION = "assisted_recorder_v2"
 DUPLICATE_WINDOW_S = 6 * 3600
 SLATE_MAX_AGE_H = 13.0
 STALE_QUOTE_S = 30 * 60
@@ -54,6 +62,8 @@ DECISION_INPUT_KEYS = {
     "chatgpt_fair_probability", "chatgpt_confidence", "chatgpt_thesis", "key_supporting_factors",
     "key_opposing_factors", "factor_tags", "market_disagreement_reason", "why_market_may_be_wrong",
     "why_model_may_be_wrong", "pass_reason_if_pass",
+    # discrepancy sanity (Part J): the handicapper's explanations; every status is computed by the recorder
+    "discrepancy_explanation", "sample_asymmetry_justification", "external_unavailable_reason",
     # expression
     "primary_match_thesis", "available_expressions", "chosen_expression", "why_chosen_expression_best_matches_thesis",
     # decision
@@ -389,6 +399,12 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
     if not isinstance(actual, bool):
         raise AssistedValidationError("INVALID_FIELD", "actual_wagered must be true or false")
 
+    # ---- discrepancy sanity (Part J), on the decision's own quote. The model number is never changed.
+    disc, disc_warn = _discrepancy_at_decision(payload, decision=decision, side=side, mp=mp, srow=srow, slate=slate,
+                                               bid=bid, ask=ask, qage=qage, qsrc=qsrc, ext=ext, p_gpt=p_gpt,
+                                               s_ask=s_ask, bu_x=bu_x)
+    warnings += disc_warn
+
     # ---- model vs ChatGPT (Part 4), computed on the decision's own quote
     model_side = preferred_side(mp, bid, ask)
     if decision == "BET":
@@ -458,6 +474,7 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
         "why_market_may_be_wrong": _text(payload, "why_market_may_be_wrong"),
         "why_model_may_be_wrong": _text(payload, "why_model_may_be_wrong"),
         "pass_reason_if_pass": pass_reason,
+        **disc,
         "primary_match_thesis": _text(payload, "primary_match_thesis"), "available_expressions": avail,
         "chosen_expression": chosen,
         "why_chosen_expression_best_matches_thesis": _text(payload, "why_chosen_expression_best_matches_thesis"),
@@ -469,6 +486,96 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
     missing = [k for k in DECISION_FIELDS if k not in out]
     assert not missing, missing                       # the record always carries the whole schema
     return {k: out[k] for k in DECISION_FIELDS}
+
+
+def _discrepancy_at_decision(payload, *, decision, side, mp, srow, slate, bid, ask, qage, qsrc, ext, p_gpt, s_ask,
+                             bu_x) -> tuple[dict, list]:
+    """Classify the model-market gap at decision time and enforce the Part J rules (refusing, never repairing).
+
+    The gap uses the REPOSITORY's model number for the contract (the slate row) whenever one exists, so a
+    model probability typed into the payload cannot shrink an extreme disagreement past the layer; the
+    market side is the decision's own quote (a live quote the handicapper observed is FRESH)."""
+    sd = (srow or {}).get("discrepancy") or {}
+    repo_p = (srow or {}).get("model_probability_yes")
+    p = repo_p if repo_p is not None else mp
+    two = bid is not None and ask is not None
+    mid = 0.5 * (bid + ask) if two else None
+    fresh = DS.freshness_of(qage) if two else DS.UNKNOWN
+    identity = sd.get("identity_check_status") or DS.ID_AMBIGUOUS       # no slate evidence: fail closed
+    orient = sd.get("ticker_orientation_status") or "UNKNOWN"
+    data_status = sd.get("data_quality_status") or "UNKNOWN"
+    severe = bool(sd.get("severe_sample_asymmetry"))
+    ef = ext.get("external_freshness") if isinstance(ext.get("external_freshness"), dict) else {}
+    p_ext = ext.get("external_consensus") if DS.valid_probability(ext.get("external_consensus")) else None
+    ext_status, _tri = DS.external_confirmation(p, mid, p_ext, ef.get("external_quote_age_s"))
+    malformed = p is not None and not DS.valid_probability(p)
+    gap = DS.gap_pp(p, mid) if not malformed else None
+    band = DS.band_of(gap)
+    explanation = _text(payload, "discrepancy_explanation")
+    asym = _text(payload, "sample_asymmetry_justification")
+    unavail = _text(payload, "external_unavailable_reason")
+    p_side = (p_gpt if side == "YES" else 1.0 - p_gpt) if (p_gpt is not None and side in SIDES) else None
+    gpt_edge = (p_side - s_ask - taker_fee(s_ask, 1.0)) if (p_side is not None and s_ask is not None) else None
+    within = (s_ask <= bu_x + 1e-9) if (s_ask is not None and bu_x is not None) else None
+    conds = None
+    if band == DS.EXTREME:
+        conds = DS.extreme_preconditions(
+            identity=identity, orientation=orient, freshness=fresh, two_sided=two, data_status=data_status,
+            severe_asymmetry=severe, external_status=ext_status, asymmetry_justification=asym,
+            external_unavailable_reason=unavail, why_market=_text(payload, "why_market_may_be_wrong"),
+            why_model=_text(payload, "why_model_may_be_wrong"), chatgpt_side_edge_after_fees=gpt_edge,
+            entry_within_limit=within)
+        conds["chatgpt_side_edge_after_fees"] = round(gpt_edge, 6) if gpt_edge is not None else None
+    elif band == DS.HIGH_REVIEW:
+        conds = {"explanation_required": True, "explanation_provided": bool(explanation)}
+
+    if malformed:
+        status = DS.DATA_WARNING
+    elif gap is None:
+        status = DS.NOT_APPLICABLE
+    elif identity == DS.ID_FAILED or orient == "FAILED":
+        status = DS.DATA_WARNING
+    elif band == DS.EXTREME:
+        status = DS.ELIGIBLE if (conds["all_met"] and explanation) else DS.DATA_WARNING
+    elif band == DS.HIGH_REVIEW:
+        status = DS.DATA_WARNING if identity != DS.ID_VERIFIED else DS.EXPLANATION_REQUIRED
+    elif band == DS.REVIEW:
+        status = DS.REVIEW_CONTEXT
+    else:
+        status = DS.OK
+
+    warn = []
+    if decision == "BET":
+        if DS.BAND_RANK.get(band, -1) >= DS.BAND_RANK[DS.HIGH_REVIEW] and not explanation:
+            raise AssistedValidationError("DISCREPANCY_EXPLANATION_REQUIRED", (
+                f"the model-market gap is {gap:+.1f}pp ({band}); a BET needs discrepancy_explanation saying WHY the "
+                "model and the market are this far apart before it can be recorded"))
+        if status == DS.DATA_WARNING:
+            why = (f"unmet conditions {conds['failed']}" if band == DS.EXTREME and conds and conds["failed"]
+                   else f"identity {identity}, ticker orientation {orient}" + (", malformed model probability" if malformed else ""))
+            raise AssistedValidationError("DISCREPANCY_DATA_WARNING", (
+                f"gap {gap if gap is not None else '--'}pp ({band}) is classified DATA_WARNING / PASS UNTIL RECHECKED: {why}. "
+                "Record PASS or WATCH, or re-check (live quote, identity, external price) and resubmit"))
+    if status == DS.ELIGIBLE:
+        warn.append("EXTREME_DISCREPANCY_ELIGIBLE_FOR_HUMAN_REVIEW_ONLY: all Part J conditions hold; this is not an "
+                    "automatic bet and a person decides")
+    elif band == DS.REVIEW:
+        warn.append(f"DISCREPANCY_REVIEW: model-market gap {gap:+.1f}pp")
+    elif band in (DS.HIGH_REVIEW, DS.EXTREME):
+        warn.append(f"DISCREPANCY_{band}: model-market gap {gap:+.1f}pp, status {status}")
+    rec = {"model_market_gap_pp": gap, "discrepancy_band": band, "discrepancy_sanity_status": status,
+           "discrepancy_reason_tags": sd.get("discrepancy_reason_tags") or ([] if srow else ["UNKNOWN"]),
+           "identity_check_status": identity, "ticker_orientation_status": orient,
+           "market_freshness_status": fresh, "external_confirmation_status": ext_status,
+           "data_quality_status": data_status, "discrepancy_conditions": conds,
+           "discrepancy_explanation": explanation, "sample_asymmetry_justification": asym,
+           "external_unavailable_reason": unavail,
+           "discrepancy_context_source": {"config_version": DS.config_version(),
+                                          "model_probability_from": "slate" if repo_p is not None else ("decision" if mp is not None else None),
+                                          "model_probability_used": p, "quote_source": qsrc, "quote_age_seconds": qage,
+                                          "slate_id": (slate or {}).get("slate_id") if srow else None,
+                                          "slate_status": sd.get("discrepancy_sanity_status")}}
+    return rec, warn
 
 
 def record_decision(payload: dict, **kw) -> dict:
