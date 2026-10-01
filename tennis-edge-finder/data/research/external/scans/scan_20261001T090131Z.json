@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-01T09:01:31.490913+00:00",
+ "run_id": "20261001T090131Z",
+ "external_parse": {
+  "events": 236,
+  "markets": 1886,
+  "skipped_family": 291,
+  "skipped_period": 536,
+  "skipped_live": 58,
+  "one_sided": 74,
+  "rows": 2930,
+  "devigged": 985
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 1227,
+  "markets_mapped": 516,
+  "contracts": 1124,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261001T090131Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 516,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 294,
+  "rows": 830,
+  "two_sided": 828,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 74,
+ "external_mapping": {
+  "total": 228,
+  "by_status": {
+   "MAPPED": 178,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.7807,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Maria Camila Osorio": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Kenta Kawada": 1,
+   "Gregory Bernadsky": 1,
+   "Naresh Bharathy": 1,
+   "Amr Elsayed": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 14,
+  "by_status": {
+   "MAPPED": 14
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 11,
+ "external_mapped_matches": 182,
+ "kalshi_mapped_matches": 14,
+ "model_witness_available": true,
+ "rows": 12,
+ "counts": {
+  "PASS": 12,
+  "tri:MODEL_LONE_OUTLIER": 6,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
