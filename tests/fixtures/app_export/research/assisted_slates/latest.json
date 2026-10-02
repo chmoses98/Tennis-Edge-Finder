@@ -1,0 +1,4250 @@
+{
+ "slate_version": "assisted_slate_v2",
+ "schema_version": 3,
+ "built_at": "2026-10-02T13:37:19.215761+00:00",
+ "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
+ "CHATGPT_ASSISTED_TRACK": "ACTIVE",
+ "authority": "ASSISTED_HUMAN_DECISION_NO_AUTOMATED_EXECUTION",
+ "purpose": "handicapping packet for a human/ChatGPT decision; it selects nothing, ranks nothing as a bet, and makes no claim that any number here beats the market",
+ "probability_convention": "every probability is P(ticker resolves YES)",
+ "sources": {
+  "capture_files_read": 1,
+  "base_full_snapshot": "20261002T132128Z.quotes.jsonl.gz",
+  "last_capture_file": "20261002T132128Z.quotes.jsonl.gz",
+  "ledger_rows": 606,
+  "ledger_last": "2026-10-02T13:03:30.725568+00:00",
+  "shadow_rows": 732,
+  "shadow_last": "2026-10-02T13:03:34.326747+00:00",
+  "model4_rows": 270,
+  "model4_last": "2026-10-02T13:03:51.403894+00:00",
+  "external_rows": 84,
+  "external_last": "2026-10-02T13:08:15.567181+00:00",
+  "first_ball_truths": 1682
+ },
+ "counts": {
+  "matches": 6,
+  "markets": 18,
+  "skipped_matches": {
+   "first_ball_already_observed": 2,
+   "scheduled_start_over_24h_past": 1,
+   "no_match_winner_listed": 1
+  }
+ },
+ "discrepancy_sanity": {
+  "version": "discrepancy_sanity_v1",
+  "purpose": "a large model-market gap is a question (WHY are we so different?), not an edge: stale or in-play quotes, mapping/orientation faults and thin data are ruled out before a disagreement is read",
+  "bands_pp": {
+   "REVIEW": 10,
+   "HIGH_REVIEW": 15,
+   "EXTREME": 25
+  },
+  "freshness_minutes": {
+   "FRESH": 10,
+   "AGING": 30
+  },
+  "rules": {
+   "NORMAL": "no additional restriction",
+   "REVIEW": "discrepancy context surfaced",
+   "HIGH_REVIEW": "an explicit discrepancy_explanation is required before any BET",
+   "EXTREME": "DATA_WARNING by default; a BET is refused unless all nine Part J conditions hold, and even then it is only ELIGIBLE_FOR_HUMAN_REVIEW, never an automatic bet"
+  },
+  "model_probabilities_changed": false,
+  "namesake_registry_loaded": true,
+  "counts_by_band": {
+   "EXTREME": 9,
+   "HIGH_REVIEW": 24,
+   "NORMAL": 180,
+   "REVIEW": 50,
+   "UNPRICED": 208
+  },
+  "counts_by_status": {
+   "DATA_WARNING": 9,
+   "EXPLANATION_REQUIRED_BEFORE_BET": 24,
+   "NOT_APPLICABLE": 208,
+   "OK": 180,
+   "REVIEW_CONTEXT": 50
+  },
+  "match_winner_counts_by_band": {
+   "EXTREME": 8,
+   "HIGH_REVIEW": 22,
+   "NORMAL": 89,
+   "REVIEW": 19,
+   "UNPRICED": 94
+  },
+  "counts_by_freshness": {
+   "AGING": 263
+  },
+  "extreme": [
+   "KXATPCHALLENGERMATCH-26OCT02DALMAR-DAL",
+   "KXATPCHALLENGERMATCH-26OCT02DALMAR-MAR",
+   "KXITFMATCH-26OCT02TUDMOS-MOS",
+   "KXITFMATCH-26OCT02TUDMOS-TUD",
+   "KXITFWMATCH-26OCT02MARRAP-MAR",
+   "KXITFWMATCH-26OCT02MARRAP-RAP",
+   "KXWTAGTOTAL-26OCT02GAOSWI-17",
+   "KXITFWMATCH-26OCT02UEMMUS-MUS",
+   "KXITFWMATCH-26OCT02UEMMUS-UEM"
+  ]
+ },
+ "start_time_reconciliation": {
+  "authority": "STARTED is decided by first-ball truth, then live-score state; the expected start by the live source's own current time (ESPN timeValid), pulled earlier by court progression, else a Kalshi nominal at LOW confidence (never a day placeholder)",
+  "statuses": [
+   "VERIFIED_UPCOMING",
+   "ESTIMATED_UPCOMING",
+   "START_IMMINENT",
+   "STARTED",
+   "STATUS_AMBIGUOUS",
+   "START_UNKNOWN",
+   "NO_PLAY"
+  ],
+  "bet_rule": "BET blocked for STARTED / STATUS_AMBIGUOUS / NO_PLAY, and for live-source-covered matches without a live PRE reading in the last 30 min",
+  "counts_by_status": {
+   "ESTIMATED_UPCOMING": 20,
+   "START_UNKNOWN": 94,
+   "STATUS_AMBIGUOUS": 2
+  },
+  "bet_blocked_matches": 27
+ },
+ "next_actionable_window": {
+  "earliest_credible_first_ball": "2026-10-03T02:00:00+00:00",
+  "recommended_run_tennis_time": "2026-10-03T01:15:00+00:00",
+  "primary_refresh_window": [
+   "2026-10-03T01:15:00+00:00",
+   "2026-10-03T01:30:00+00:00"
+  ],
+  "final_status_price_check_time": "2026-10-03T01:50:00+00:00",
+  "final_refresh_window": [
+   "2026-10-03T01:50:00+00:00",
+   "2026-10-03T01:55:00+00:00"
+  ],
+  "primary_overdue": false,
+  "n_matches": 2,
+  "matches": [
+   {
+    "match_id": "KXATPMATCH-26OCT01SHATAB",
+    "label": "Denis Shapovalov vs Alejandro Tabilo",
+    "current_expected_start": "2026-10-03T02:00:00+00:00",
+    "start_status": "ESTIMATED_UPCOMING",
+    "start_time_source": "LIVE_SCHEDULE:espn_atp",
+    "start_time_confidence": "MEDIUM"
+   },
+   {
+    "match_id": "KXATPMATCH-26OCT01DEHAL",
+    "label": "Alex de Minaur vs Quentin Halys",
+    "current_expected_start": "2026-10-03T03:00:00+00:00",
+    "start_status": "ESTIMATED_UPCOMING",
+    "start_time_source": "LIVE_SCHEDULE:espn_atp",
+    "start_time_confidence": "MEDIUM"
+   }
+  ]
+ },
+ "upcoming_windows": [
+  {
+   "earliest_credible_first_ball": "2026-10-03T02:00:00+00:00",
+   "recommended_run_tennis_time": "2026-10-03T01:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-10-03T01:15:00+00:00",
+    "2026-10-03T01:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-10-03T01:50:00+00:00",
+   "final_refresh_window": [
+    "2026-10-03T01:50:00+00:00",
+    "2026-10-03T01:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 2,
+   "matches": [
+    {
+     "match_id": "KXATPMATCH-26OCT01SHATAB",
+     "label": "Denis Shapovalov vs Alejandro Tabilo",
+     "current_expected_start": "2026-10-03T02:00:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "MEDIUM"
+    },
+    {
+     "match_id": "KXATPMATCH-26OCT01DEHAL",
+     "label": "Alex de Minaur vs Quentin Halys",
+     "current_expected_start": "2026-10-03T03:00:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "MEDIUM"
+    }
+   ]
+  }
+ ],
+ "main_tour_status_unverified": [
+  {
+   "match_id": "KXATPMATCH-26OCT01YUNDJO",
+   "label": "Yunchaokete Bu vs Novak Djokovic",
+   "status": "STATUS_AMBIGUOUS",
+   "reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+390_MIN",
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+   ]
+  },
+  {
+   "match_id": "KXWTAMATCH-26OCT02GAOSWI",
+   "label": "Xinyu Gao vs Iga Swiatek",
+   "status": "START_UNKNOWN",
+   "reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)",
+    "NO_CREDIBLE_START_TIME"
+   ]
+  },
+  {
+   "match_id": "KXWTAMATCH-26OCT02GAUOSO",
+   "label": "Coco Gauff vs Camila Osorio",
+   "status": "START_UNKNOWN",
+   "reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)",
+    "NO_CREDIBLE_START_TIME"
+   ]
+  },
+  {
+   "match_id": "KXWTAMATCH-26OCT02JOVDAR",
+   "label": "Iva Jovic vs Harriet Dart",
+   "status": "START_UNKNOWN",
+   "reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)",
+    "NO_CREDIBLE_START_TIME"
+   ]
+  },
+  {
+   "match_id": "KXWTAMATCH-26OCT02SUNBUC",
+   "label": "Xinran Sun vs Cristina Bucsa",
+   "status": "START_UNKNOWN",
+   "reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)",
+    "NO_CREDIBLE_START_TIME"
+   ]
+  },
+  {
+   "match_id": "KXWTAMATCH-26OCT02VEKZHU",
+   "label": "Donna Vekic vs Lin Zhu",
+   "status": "START_UNKNOWN",
+   "reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)",
+    "NO_CREDIBLE_START_TIME"
+   ]
+  }
+ ],
+ "refresh_due_by": "2026-10-03T01:15:00+00:00",
+ "content_sha256": "11e40dc402b1f8b9522fca68a354ee92ecfa5aef4c871a8d3039351d2ace3f4b",
+ "slate_id": "SL-20261002T133719Z-11e40dc4",
+ "matches": [
+  {
+   "match_key": "ATP:26OCT02DIMPOP:singles",
+   "match_code": "26OCT02DIMPOP",
+   "physical_match_id": "ATP:122078:210174:2026-10-02",
+   "event_id": "KXITFMATCH-26OCT02DIMPOP",
+   "tour": "ATP",
+   "level": "ITF",
+   "level_bucket": "ITF",
+   "discipline": "singles",
+   "competition": "M15 Telavi",
+   "round": "SF",
+   "surface": "Clay",
+   "surface_bucket": "CLAY",
+   "players": {
+    "a": "Matic Dimic",
+    "b": "Dmitry Popko"
+   },
+   "match_winner_ticker": {
+    "b": "KXITFMATCH-26OCT02DIMPOP-POP",
+    "a": "KXITFMATCH-26OCT02DIMPOP-DIM"
+   },
+   "scheduled_start": "2026-10-02T12:00:00Z",
+   "first_ball": {
+    "status": "NO_FIRST_BALL_SOURCE",
+    "source_coverage": "NO_SOURCE",
+    "truth_confidence": null,
+    "earliest_possible_first_ball": null,
+    "first_ball_source": null,
+    "start_status": "START_UNKNOWN",
+    "current_expected_start": null
+   },
+   "model_context": {
+    "player_a_win": {
+     "gen1": 0.0556,
+     "gen2": 0.1703,
+     "fair_v1": 0.0741,
+     "fair_v1_envelope": [
+      0.0485,
+      0.0963
+     ]
+    },
+    "model_uncertainty": 0.0239,
+    "serve_evidence": {
+     "player_a_points": 459.0,
+     "player_b_points": 4384.0,
+     "thinner": 459.0
+    },
+    "rating_state": {
+     "elo_a": 1085.9,
+     "elo_b": 1577.9,
+     "serve_point_win_a": 0.5371,
+     "serve_point_win_b": 0.3392,
+     "structural_serve_a": 0.5593,
+     "structural_serve_b": 0.3863,
+     "tour_serve_baseline": 0.5989,
+     "hold_break_note": "hold/break probabilities follow from the serve-point probabilities through the frozen DP engine; no separate hold/break model exists",
+     "blend_weight": 0.2342,
+     "ratings_as_of": "2026-10-01",
+     "asof_base_date": {
+      "ATP": "2026-06-01",
+      "WTA": "2026-06-01"
+     }
+    },
+    "surface_adjustment": {
+     "basis": "change in fair_v1 P(player A wins) under the frozen surface-prior perturbations",
+     "surface_pool_low": -0.0149,
+     "surface_pool_high": 0.0222,
+     "surface_dev_loose": -0.0036,
+     "surface_dev_tight": 0.0019
+    },
+    "recent_form_inputs": {
+     "matches_on_record_a": 57,
+     "matches_on_record_b": 1042,
+     "days_since_last_match_a": 123,
+     "days_since_last_match_b": 88,
+     "recency_pillar": 0.832,
+     "experience_pillar": 0.759,
+     "note": "the repository holds recency/experience inputs, not a win-loss form model"
+    },
+    "data_quality": {
+     "score": 0.4989,
+     "grade": "C"
+    },
+    "selector_v1": {
+     "KXITFMATCH-26OCT02DIMPOP-POP": "PASS",
+     "KXITFMATCH-26OCT02DIMPOP-DIM": "PASS"
+    },
+    "model_rows_predicted_at": {
+     "shadow_board": "2026-10-02T13:03:34.326747+00:00",
+     "gen1_ledger": "2026-10-02T06:08:31.436078+00:00"
+    }
+   },
+   "model_validity": null,
+   "external_context": {
+    "KXITFMATCH-26OCT02DIMPOP-DIM": {
+     "bovada": null,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": null,
+     "n_independent_groups": null,
+     "triangulation": null,
+     "external_quote_age_s": null,
+     "external_v1_decision": null,
+     "scanned_at": null
+    },
+    "KXITFMATCH-26OCT02DIMPOP-POP": {
+     "bovada": null,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": null,
+     "n_independent_groups": null,
+     "triangulation": null,
+     "external_quote_age_s": null,
+     "external_v1_decision": null,
+     "scanned_at": null
+    }
+   },
+   "identity_checks": {
+    "physical_match_id": "PASS",
+    "player_ids": "PASS",
+    "identity_confidence": "PASS",
+    "namesake": "PASS",
+    "model_name_orientation": "PASS",
+    "both_sides_listed": "PASS",
+    "model_complement": "PASS",
+    "market_pair": "PASS",
+    "level_mapping": "PASS",
+    "same_pair_other_event": "PASS",
+    "discipline": "PASS"
+   },
+   "data_quality_check": {
+    "data_quality_status": "LIMITED",
+    "tags": [
+     "LOW_DATA_QUALITY",
+     "THIN_PLAYER_HISTORY",
+     "ASYMMETRIC_SAMPLE_SIZE",
+     "STALE_PLAYER_DATA"
+    ],
+    "severe_sample_asymmetry": false,
+    "evidence": {
+     "grade": "C",
+     "serve_points_a": 459.0,
+     "serve_points_b": 4384.0,
+     "thinner_serve_points": 459.0,
+     "sample_ratio": 9.56,
+     "matches_a": 57,
+     "matches_b": 1042,
+     "days_since_last_a": 123,
+     "days_since_last_b": 88,
+     "level_familiarity": 1.0,
+     "surface_matches_a": 40,
+     "surface_matches_b": 646
+    }
+   },
+   "frozen_rule_context": [
+    "W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)"
+   ],
+   "warnings": [
+    "FIRST_BALL_SOURCE_UNAVAILABLE: Challenger/ITF/WTA125 starts are not observed; a nominal time is not a first ball",
+    "SCHEDULED_START_PASSED: the match may already be under way",
+    "LOW_DATA_QUALITY"
+   ],
+   "available_expressions": [
+    "MATCH_WINNER"
+   ],
+   "markets": [
+    {
+     "ticker": "KXITFMATCH-26OCT02DIMPOP-DIM",
+     "event": "KXITFMATCH-26OCT02DIMPOP",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Matic Dimic wins",
+     "yes_means": "Matic Dimic",
+     "subject": "Matic Dimic",
+     "subject_is_a": true,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.16,
+      "ask": 0.2,
+      "mid": 0.18,
+      "spread": 0.04,
+      "bid_size": 6.0,
+      "ask_size": 37.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.84,
+      "quote_captured_at": "2026-10-02T13:21:29.943073+00:00",
+      "quote_age_s": 949.3,
+      "open_interest": 4067.53,
+      "volume_24h": 4783.95
+     },
+     "model": {
+      "gen1": 0.0556,
+      "gen1_elo_only": 0.0556,
+      "gen1_structural": 0.2391,
+      "gen2": 0.1703,
+      "fair_v1": 0.0741,
+      "fair_v1_envelope": [
+       0.0485,
+       0.0963
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0239,
+      "selector_v1": "PASS",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.0741,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.1059,
+     "model_side_edges": {
+      "YES": -0.145914,
+      "NO": 0.075914
+     },
+     "model_preferred_side": "NO",
+     "external": {
+      "bovada": null,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": null,
+      "n_independent_groups": null,
+      "triangulation": null,
+      "external_quote_age_s": null,
+      "external_v1_decision": null,
+      "scanned_at": null
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1"
+     ],
+     "warnings": [
+      "NO_EXTERNAL_PRICE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.0741,
+      "kalshi_mid": 0.18,
+      "model_market_gap_pp": -10.59,
+      "abs_model_market_gap_pp": 10.59,
+      "model_executable_gap_pp": 8.59,
+      "discrepancy_band": "REVIEW",
+      "audit_bucket": "10-15",
+      "discrepancy_sanity_status": "REVIEW_CONTEXT",
+      "discrepancy_reason_tags": [
+       "LOW_DISPLAYED_LIQUIDITY",
+       "LOW_DATA_QUALITY",
+       "THIN_PLAYER_HISTORY",
+       "ASYMMETRIC_SAMPLE_SIZE",
+       "STALE_PLAYER_DATA",
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "LIMITED",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "REVIEW / DISCREPANCY CONTEXT",
+      "evidence": {
+       "quote_age_s": 949.0,
+       "two_sided": true,
+       "bid": 0.16,
+       "ask": 0.2,
+       "bid_size": 6.0,
+       "ask_size": 37.0,
+       "spread": 0.04,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": 0.0239,
+       "fair_envelope_width": 0.0478,
+       "model_probability_range_pp": 11.47,
+       "model_probabilities": {
+        "gen1": 0.0556,
+        "gen2": 0.1703,
+        "fair_v1": 0.0741
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0759,
+       "data_grade": "C",
+       "data_serve_points_a": 459.0,
+       "data_serve_points_b": 4384.0,
+       "data_thinner_serve_points": 459.0,
+       "data_sample_ratio": 9.56,
+       "data_matches_a": 57,
+       "data_matches_b": 1042,
+       "data_days_since_last_a": 123,
+       "data_days_since_last_b": 88,
+       "data_level_familiarity": 1.0,
+       "data_surface_matches_a": 40,
+       "data_surface_matches_b": 646
+      }
+     },
+     "model_market_gap_pp": -10.59,
+     "discrepancy_band": "REVIEW",
+     "discrepancy_sanity_status": "REVIEW_CONTEXT",
+     "discrepancy_reason_tags": [
+      "LOW_DISPLAYED_LIQUIDITY",
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "ASYMMETRIC_SAMPLE_SIZE",
+      "STALE_PLAYER_DATA",
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "LIMITED"
+    },
+    {
+     "ticker": "KXITFMATCH-26OCT02DIMPOP-POP",
+     "event": "KXITFMATCH-26OCT02DIMPOP",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Dmitry Popko wins",
+     "yes_means": "Dmitry Popko",
+     "subject": "Dmitry Popko",
+     "subject_is_a": false,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.82,
+      "ask": 0.86,
+      "mid": 0.84,
+      "spread": 0.04,
+      "bid_size": 100.0,
+      "ask_size": 6.0,
+      "taker_fee_at_ask": 0.01,
+      "no_ask": 0.18,
+      "quote_captured_at": "2026-10-02T13:21:29.943058+00:00",
+      "quote_age_s": 949.3,
+      "open_interest": 607.28,
+      "volume_24h": 608.29
+     },
+     "model": {
+      "gen1": 0.9444,
+      "gen1_elo_only": 0.9444,
+      "gen1_structural": 0.7609,
+      "gen2": 0.8297,
+      "fair_v1": 0.9259,
+      "fair_v1_envelope": [
+       0.9037,
+       0.9515
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0239,
+      "selector_v1": "PASS",
+      "qualification_ok": false
+     },
+     "model_probability_yes": 0.9259,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.0859,
+     "model_side_edges": {
+      "YES": 0.055914,
+      "NO": -0.125914
+     },
+     "model_preferred_side": "YES",
+     "external": {
+      "bovada": null,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": null,
+      "n_independent_groups": null,
+      "triangulation": null,
+      "external_quote_age_s": null,
+      "external_v1_decision": null,
+      "scanned_at": null
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1"
+     ],
+     "warnings": [
+      "THIN_DISPLAYED_SIZE",
+      "NO_EXTERNAL_PRICE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.9259,
+      "kalshi_mid": 0.84,
+      "model_market_gap_pp": 8.59,
+      "abs_model_market_gap_pp": 8.59,
+      "model_executable_gap_pp": 6.59,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "5-10",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "LOW_DISPLAYED_LIQUIDITY",
+       "LOW_DATA_QUALITY",
+       "THIN_PLAYER_HISTORY",
+       "ASYMMETRIC_SAMPLE_SIZE",
+       "STALE_PLAYER_DATA",
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "LIMITED",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 949.0,
+       "two_sided": true,
+       "bid": 0.82,
+       "ask": 0.86,
+       "bid_size": 100.0,
+       "ask_size": 6.0,
+       "spread": 0.04,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": 0.0239,
+       "fair_envelope_width": 0.0478,
+       "model_probability_range_pp": 11.47,
+       "model_probabilities": {
+        "gen1": 0.9444,
+        "gen2": 0.8297,
+        "fair_v1": 0.9259
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0559,
+       "data_grade": "C",
+       "data_serve_points_a": 459.0,
+       "data_serve_points_b": 4384.0,
+       "data_thinner_serve_points": 459.0,
+       "data_sample_ratio": 9.56,
+       "data_matches_a": 57,
+       "data_matches_b": 1042,
+       "data_days_since_last_a": 123,
+       "data_days_since_last_b": 88,
+       "data_level_familiarity": 1.0,
+       "data_surface_matches_a": 40,
+       "data_surface_matches_b": 646
+      }
+     },
+     "model_market_gap_pp": 8.59,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "LOW_DISPLAYED_LIQUIDITY",
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "ASYMMETRIC_SAMPLE_SIZE",
+      "STALE_PLAYER_DATA",
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "LIMITED"
+    }
+   ],
+   "start": {
+    "match_id": "ATP:26OCT02DIMPOP:singles",
+    "evaluated_at": "2026-10-02T13:37:19.215761+00:00",
+    "nominal_scheduled_start": "2026-10-02T12:00:00+00:00",
+    "nominal_is_placeholder": false,
+    "live_source_covered": false,
+    "start_time_last_checked": null,
+    "current_expected_start": null,
+    "start_time_source": null,
+    "start_time_confidence": "NONE",
+    "start_time_candidates": [],
+    "earliest_safe_handicap_time": null,
+    "recommended_handicap_by": null,
+    "final_check_time": null,
+    "first_ball_status": "NO_FIRST_BALL_SOURCE",
+    "first_ball_source": null,
+    "first_ball_at": null,
+    "court": null,
+    "court_context": null,
+    "start_status": "START_UNKNOWN",
+    "status_reasons": [
+     "NOMINAL_UNRELIABLE_AT_THIS_LEVEL",
+     "NO_CREDIBLE_START_TIME"
+    ],
+    "bet_allowed": true
+   },
+   "start_status": "START_UNKNOWN"
+  },
+  {
+   "match_key": "ATP:26OCT02DALMAR:singles",
+   "match_code": "26OCT02DALMAR",
+   "physical_match_id": "ATP:133872:212305:2026-10-02",
+   "event_id": "KXATPCHALLENGERMATCH-26OCT02DALMAR",
+   "tour": "ATP",
+   "level": "CHALLENGER",
+   "level_bucket": "CHALLENGER",
+   "discipline": "singles",
+   "competition": "ATP Challenger Bari",
+   "round": "QF",
+   "surface": "Clay",
+   "surface_bucket": "CLAY",
+   "players": {
+    "a": "Enrico Dalla Valle",
+    "b": "Juan Cruz Martin Manzano"
+   },
+   "match_winner_ticker": {
+    "b": "KXATPCHALLENGERMATCH-26OCT02DALMAR-MAR",
+    "a": "KXATPCHALLENGERMATCH-26OCT02DALMAR-DAL"
+   },
+   "scheduled_start": "2026-10-02T13:40:00Z",
+   "first_ball": {
+    "status": "NO_FIRST_BALL_SOURCE",
+    "source_coverage": "NO_SOURCE",
+    "truth_confidence": null,
+    "earliest_possible_first_ball": null,
+    "first_ball_source": null,
+    "start_status": "START_UNKNOWN",
+    "current_expected_start": null
+   },
+   "model_context": {
+    "player_a_win": {
+     "gen1": 0.6726,
+     "gen2": 0.7621,
+     "fair_v1": 0.7374,
+     "fair_v1_envelope": [
+      0.7203,
+      0.7461
+     ]
+    },
+    "model_uncertainty": 0.0129,
+    "serve_evidence": {
+     "player_a_points": 5437.0,
+     "player_b_points": 3350.0,
+     "thinner": 3350.0
+    },
+    "rating_state": {
+     "elo_a": 1615.7,
+     "elo_b": 1491.1,
+     "serve_point_win_a": 0.6162,
+     "serve_point_win_b": 0.4183,
+     "structural_serve_a": 0.6107,
+     "structural_serve_b": 0.4239,
+     "tour_serve_baseline": 0.5989,
+     "hold_break_note": "hold/break probabilities follow from the serve-point probabilities through the frozen DP engine; no separate hold/break model exists",
+     "blend_weight": 0.6907,
+     "ratings_as_of": "2026-10-02",
+     "asof_base_date": {
+      "ATP": "2026-06-01",
+      "WTA": "2026-06-01"
+     }
+    },
+    "surface_adjustment": {
+     "basis": "change in fair_v1 P(player A wins) under the frozen surface-prior perturbations",
+     "surface_pool_low": 0.0084,
+     "surface_pool_high": -0.0085,
+     "surface_dev_loose": 0.0043,
+     "surface_dev_tight": -0.0172
+    },
+    "recent_form_inputs": {
+     "matches_on_record_a": 547,
+     "matches_on_record_b": 120,
+     "days_since_last_match_a": 11,
+     "days_since_last_match_b": 11,
+     "recency_pillar": 1.0,
+     "experience_pillar": 0.95,
+     "note": "the repository holds recency/experience inputs, not a win-loss form model"
+    },
+    "data_quality": {
+     "score": 0.9301,
+     "grade": "A"
+    },
+    "selector_v1": {
+     "KXATPCHALLENGERMATCH-26OCT02DALMAR-MAR": "PASS",
+     "KXATPCHALLENGERMATCH-26OCT02DALMAR-DAL": "WATCH"
+    },
+    "model_rows_predicted_at": {
+     "shadow_board": "2026-10-02T13:03:34.326747+00:00",
+     "gen1_ledger": "2026-10-02T13:02:59.272743+00:00"
+    }
+   },
+   "model_validity": null,
+   "external_context": {
+    "KXATPCHALLENGERMATCH-26OCT02DALMAR-DAL": {
+     "bovada": null,
+     "smarkets": 0.7225,
+     "consensus": 0.7225,
+     "reference_kind": "SHARP_REFERENCE",
+     "n_independent_groups": 1,
+     "triangulation": "MODEL_LONE_OUTLIER",
+     "external_quote_age_s": null,
+     "external_v1_decision": "PASS",
+     "scanned_at": "2026-10-02T11:59:34.991150+00:00"
+    },
+    "KXATPCHALLENGERMATCH-26OCT02DALMAR-MAR": {
+     "bovada": null,
+     "smarkets": 0.2744,
+     "consensus": 0.2744,
+     "reference_kind": "SHARP_REFERENCE",
+     "n_independent_groups": 1,
+     "triangulation": "MODEL_LONE_OUTLIER",
+     "external_quote_age_s": null,
+     "external_v1_decision": "PASS",
+     "scanned_at": "2026-10-02T11:59:34.991150+00:00"
+    }
+   },
+   "identity_checks": {
+    "physical_match_id": "PASS",
+    "player_ids": "PASS",
+    "identity_confidence": "PASS",
+    "namesake": "PASS",
+    "model_name_orientation": "PASS",
+    "both_sides_listed": "PASS",
+    "model_complement": "PASS",
+    "market_pair": "PASS",
+    "level_mapping": "PASS",
+    "same_pair_other_event": "PASS",
+    "discipline": "PASS"
+   },
+   "data_quality_check": {
+    "data_quality_status": "ADEQUATE",
+    "tags": [],
+    "severe_sample_asymmetry": false,
+    "evidence": {
+     "grade": "A",
+     "serve_points_a": 5437.0,
+     "serve_points_b": 3350.0,
+     "thinner_serve_points": 3350.0,
+     "sample_ratio": 1.62,
+     "matches_a": 547,
+     "matches_b": 120,
+     "days_since_last_a": 11,
+     "days_since_last_b": 11,
+     "level_familiarity": 1.0,
+     "surface_matches_a": 390,
+     "surface_matches_b": 112
+    }
+   },
+   "frozen_rule_context": [],
+   "warnings": [
+    "FIRST_BALL_SOURCE_UNAVAILABLE: Challenger/ITF/WTA125 starts are not observed; a nominal time is not a first ball"
+   ],
+   "available_expressions": [
+    "MATCH_WINNER"
+   ],
+   "markets": [
+    {
+     "ticker": "KXATPCHALLENGERMATCH-26OCT02DALMAR-DAL",
+     "event": "KXATPCHALLENGERMATCH-26OCT02DALMAR",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Enrico Dalla Valle wins",
+     "yes_means": "Enrico Dalla Valle",
+     "subject": "Enrico Dalla Valle",
+     "subject_is_a": true,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.06,
+      "ask": 0.07,
+      "mid": 0.065,
+      "spread": 0.01,
+      "bid_size": 26461.9,
+      "ask_size": 22340.51,
+      "taker_fee_at_ask": 0.01,
+      "no_ask": 0.94,
+      "quote_captured_at": "2026-10-02T13:21:29.376017+00:00",
+      "quote_age_s": 949.8,
+      "open_interest": 53328.49,
+      "volume_24h": 54453.47
+     },
+     "model": {
+      "gen1": 0.6726,
+      "gen1_elo_only": 0.672,
+      "gen1_structural": 0.6731,
+      "gen2": 0.7621,
+      "fair_v1": 0.7374,
+      "fair_v1_envelope": [
+       0.7203,
+       0.7461
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0129,
+      "selector_v1": "WATCH",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.7374,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.6724,
+     "model_side_edges": {
+      "YES": 0.657413,
+      "NO": -0.687413
+     },
+     "model_preferred_side": "YES",
+     "external": {
+      "bovada": null,
+      "smarkets": 0.7225,
+      "consensus": 0.7225,
+      "reference_kind": "SHARP_REFERENCE",
+      "n_independent_groups": 1,
+      "triangulation": "MODEL_LONE_OUTLIER",
+      "external_quote_age_s": null,
+      "external_v1_decision": "PASS",
+      "scanned_at": "2026-10-02T11:59:34.991150+00:00"
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1",
+      "external_scan"
+     ],
+     "warnings": [],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.7374,
+      "kalshi_mid": 0.065,
+      "model_market_gap_pp": 67.24,
+      "abs_model_market_gap_pp": 67.24,
+      "model_executable_gap_pp": 66.74,
+      "discrepancy_band": "EXTREME",
+      "audit_bucket": "40+",
+      "discrepancy_sanity_status": "DATA_WARNING",
+      "discrepancy_reason_tags": [
+       "EXTERNAL_MARKET_CONFIRMATION",
+       "START_UNVERIFIABLE"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "AGREES_WITH_MODEL",
+      "triangulation": "KALSHI_LONE_OUTLIER",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": {
+       "identity_verified": true,
+       "ticker_orientation_verified": true,
+       "fresh_executable_price": false,
+       "adequate_data_quality": true,
+       "no_severe_asymmetry_or_justified": true,
+       "external_supports_or_documented_unavailable": true,
+       "explains_why_market_may_be_wrong": false,
+       "explains_why_model_may_be_wrong": false,
+       "price_clears_fees_and_execution": false,
+       "all_met": false,
+       "failed": [
+        "fresh_executable_price",
+        "explains_why_market_may_be_wrong",
+        "explains_why_model_may_be_wrong",
+        "price_clears_fees_and_execution"
+       ],
+       "model_side_edge_after_fees": 0.6574
+      },
+      "display_status": "DATA_WARNING / PASS UNTIL RECHECKED",
+      "evidence": {
+       "quote_age_s": 950.0,
+       "two_sided": true,
+       "bid": 0.06,
+       "ask": 0.07,
+       "bid_size": 26461.9,
+       "ask_size": 22340.51,
+       "spread": 0.01,
+       "tail_price": true,
+       "external_probability": 0.7225,
+       "external_age_s": null,
+       "model_uncertainty": 0.0129,
+       "fair_envelope_width": 0.0258,
+       "model_probability_range_pp": 8.95,
+       "model_probabilities": {
+        "gen1": 0.6726,
+        "gen2": 0.7621,
+        "fair_v1": 0.7374
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": false,
+       "model_side_edge_after_fees": 0.6574,
+       "data_grade": "A",
+       "data_serve_points_a": 5437.0,
+       "data_serve_points_b": 3350.0,
+       "data_thinner_serve_points": 3350.0,
+       "data_sample_ratio": 1.62,
+       "data_matches_a": 547,
+       "data_matches_b": 120,
+       "data_days_since_last_a": 11,
+       "data_days_since_last_b": 11,
+       "data_level_familiarity": 1.0,
+       "data_surface_matches_a": 390,
+       "data_surface_matches_b": 112
+      }
+     },
+     "model_market_gap_pp": 67.24,
+     "discrepancy_band": "EXTREME",
+     "discrepancy_sanity_status": "DATA_WARNING",
+     "discrepancy_reason_tags": [
+      "EXTERNAL_MARKET_CONFIRMATION",
+      "START_UNVERIFIABLE"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "AGREES_WITH_MODEL",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPCHALLENGERMATCH-26OCT02DALMAR-MAR",
+     "event": "KXATPCHALLENGERMATCH-26OCT02DALMAR",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Juan Cruz Martin Manzano wins",
+     "yes_means": "Juan Cruz Martin Manzano",
+     "subject": "Juan Cruz Martin Manzano",
+     "subject_is_a": false,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.93,
+      "ask": 0.94,
+      "mid": 0.935,
+      "spread": 0.01,
+      "bid_size": 16858.99,
+      "ask_size": 31979.9,
+      "taker_fee_at_ask": 0.01,
+      "no_ask": 0.07,
+      "quote_captured_at": "2026-10-02T13:21:29.376001+00:00",
+      "quote_age_s": 949.8,
+      "open_interest": 41535.34,
+      "volume_24h": 39815.12
+     },
+     "model": {
+      "gen1": 0.3274,
+      "gen1_elo_only": 0.328,
+      "gen1_structural": 0.3269,
+      "gen2": 0.2379,
+      "fair_v1": 0.2626,
+      "fair_v1_envelope": [
+       0.2539,
+       0.2797
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0129,
+      "selector_v1": "PASS",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.2626,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.6724,
+     "model_side_edges": {
+      "YES": -0.687413,
+      "NO": 0.657413
+     },
+     "model_preferred_side": "NO",
+     "external": {
+      "bovada": null,
+      "smarkets": 0.2744,
+      "consensus": 0.2744,
+      "reference_kind": "SHARP_REFERENCE",
+      "n_independent_groups": 1,
+      "triangulation": "MODEL_LONE_OUTLIER",
+      "external_quote_age_s": null,
+      "external_v1_decision": "PASS",
+      "scanned_at": "2026-10-02T11:59:34.991150+00:00"
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1",
+      "external_scan"
+     ],
+     "warnings": [],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.2626,
+      "kalshi_mid": 0.935,
+      "model_market_gap_pp": -67.24,
+      "abs_model_market_gap_pp": 67.24,
+      "model_executable_gap_pp": 66.74,
+      "discrepancy_band": "EXTREME",
+      "audit_bucket": "40+",
+      "discrepancy_sanity_status": "DATA_WARNING",
+      "discrepancy_reason_tags": [
+       "EXTERNAL_MARKET_CONFIRMATION",
+       "START_UNVERIFIABLE"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "AGREES_WITH_MODEL",
+      "triangulation": "KALSHI_LONE_OUTLIER",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": {
+       "identity_verified": true,
+       "ticker_orientation_verified": true,
+       "fresh_executable_price": false,
+       "adequate_data_quality": true,
+       "no_severe_asymmetry_or_justified": true,
+       "external_supports_or_documented_unavailable": true,
+       "explains_why_market_may_be_wrong": false,
+       "explains_why_model_may_be_wrong": false,
+       "price_clears_fees_and_execution": false,
+       "all_met": false,
+       "failed": [
+        "fresh_executable_price",
+        "explains_why_market_may_be_wrong",
+        "explains_why_model_may_be_wrong",
+        "price_clears_fees_and_execution"
+       ],
+       "model_side_edge_after_fees": 0.6574
+      },
+      "display_status": "DATA_WARNING / PASS UNTIL RECHECKED",
+      "evidence": {
+       "quote_age_s": 950.0,
+       "two_sided": true,
+       "bid": 0.93,
+       "ask": 0.94,
+       "bid_size": 16858.99,
+       "ask_size": 31979.9,
+       "spread": 0.01,
+       "tail_price": true,
+       "external_probability": 0.2744,
+       "external_age_s": null,
+       "model_uncertainty": 0.0129,
+       "fair_envelope_width": 0.0258,
+       "model_probability_range_pp": 8.95,
+       "model_probabilities": {
+        "gen1": 0.3274,
+        "gen2": 0.2379,
+        "fair_v1": 0.2626
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": false,
+       "model_side_edge_after_fees": 0.6574,
+       "data_grade": "A",
+       "data_serve_points_a": 5437.0,
+       "data_serve_points_b": 3350.0,
+       "data_thinner_serve_points": 3350.0,
+       "data_sample_ratio": 1.62,
+       "data_matches_a": 547,
+       "data_matches_b": 120,
+       "data_days_since_last_a": 11,
+       "data_days_since_last_b": 11,
+       "data_level_familiarity": 1.0,
+       "data_surface_matches_a": 390,
+       "data_surface_matches_b": 112
+      }
+     },
+     "model_market_gap_pp": -67.24,
+     "discrepancy_band": "EXTREME",
+     "discrepancy_sanity_status": "DATA_WARNING",
+     "discrepancy_reason_tags": [
+      "EXTERNAL_MARKET_CONFIRMATION",
+      "START_UNVERIFIABLE"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "AGREES_WITH_MODEL",
+     "data_quality_status": "ADEQUATE"
+    }
+   ],
+   "start": {
+    "match_id": "ATP:26OCT02DALMAR:singles",
+    "evaluated_at": "2026-10-02T13:37:19.215761+00:00",
+    "nominal_scheduled_start": "2026-10-02T13:40:00+00:00",
+    "nominal_is_placeholder": false,
+    "live_source_covered": false,
+    "start_time_last_checked": null,
+    "current_expected_start": null,
+    "start_time_source": null,
+    "start_time_confidence": "NONE",
+    "start_time_candidates": [],
+    "earliest_safe_handicap_time": null,
+    "recommended_handicap_by": null,
+    "final_check_time": null,
+    "first_ball_status": "NO_FIRST_BALL_SOURCE",
+    "first_ball_source": null,
+    "first_ball_at": null,
+    "court": null,
+    "court_context": null,
+    "start_status": "START_UNKNOWN",
+    "status_reasons": [
+     "NOMINAL_UNRELIABLE_AT_THIS_LEVEL",
+     "NO_CREDIBLE_START_TIME"
+    ],
+    "bet_allowed": true
+   },
+   "start_status": "START_UNKNOWN"
+  },
+  {
+   "match_key": "ATP:26OCT02BONDJO:singles",
+   "match_code": "26OCT02BONDJO",
+   "physical_match_id": "ATP:212149:212839:2026-10-02",
+   "event_id": "KXITFMATCH-26OCT02BONDJO",
+   "tour": "ATP",
+   "level": "ITF",
+   "level_bucket": "ITF",
+   "discipline": "singles",
+   "competition": "M15 Ann Arbor MI",
+   "round": "QF",
+   "surface": "Hard",
+   "surface_bucket": "HARD",
+   "players": {
+    "a": "Oliver Bonding",
+    "b": "Nikola Djosic"
+   },
+   "match_winner_ticker": {
+    "b": "KXITFMATCH-26OCT02BONDJO-DJO",
+    "a": "KXITFMATCH-26OCT02BONDJO-BON"
+   },
+   "scheduled_start": "2026-10-02T21:00:00Z",
+   "first_ball": {
+    "status": "NO_FIRST_BALL_SOURCE",
+    "source_coverage": "NO_SOURCE",
+    "truth_confidence": null,
+    "earliest_possible_first_ball": null,
+    "first_ball_source": null,
+    "start_status": "START_UNKNOWN",
+    "current_expected_start": null
+   },
+   "model_context": {
+    "player_a_win": {
+     "gen1": 0.6641,
+     "gen2": 0.7082,
+     "fair_v1": 0.7039,
+     "fair_v1_envelope": [
+      0.6845,
+      0.7216
+     ]
+    },
+    "model_uncertainty": 0.0186,
+    "serve_evidence": {
+     "player_a_points": 1207.0,
+     "player_b_points": 1313.0,
+     "thinner": 1207.0
+    },
+    "rating_state": {
+     "elo_a": 1440.2,
+     "elo_b": 1289.1,
+     "serve_point_win_a": 0.6427,
+     "serve_point_win_b": 0.3908,
+     "structural_serve_a": 0.6147,
+     "structural_serve_b": 0.4091,
+     "tour_serve_baseline": 0.6259,
+     "hold_break_note": "hold/break probabilities follow from the serve-point probabilities through the frozen DP engine; no separate hold/break model exists",
+     "blend_weight": 0.4459,
+     "ratings_as_of": "2026-10-02",
+     "asof_base_date": {
+      "ATP": "2026-06-01",
+      "WTA": "2026-06-01"
+     }
+    },
+    "surface_adjustment": {
+     "basis": "change in fair_v1 P(player A wins) under the frozen surface-prior perturbations",
+     "surface_pool_low": -0.0046,
+     "surface_pool_high": 0.0133,
+     "surface_dev_loose": 0.0136,
+     "surface_dev_tight": -0.0142
+    },
+    "recent_form_inputs": {
+     "matches_on_record_a": 42,
+     "matches_on_record_b": 39,
+     "days_since_last_match_a": 39,
+     "days_since_last_match_b": 130,
+     "recency_pillar": 0.801,
+     "experience_pillar": 0.623,
+     "note": "the repository holds recency/experience inputs, not a win-loss form model"
+    },
+    "data_quality": {
+     "score": 0.5829,
+     "grade": "C"
+    },
+    "selector_v1": {
+     "KXITFMATCH-26OCT02BONDJO-DJO": "WATCH",
+     "KXITFMATCH-26OCT02BONDJO-BON": "PASS"
+    },
+    "model_rows_predicted_at": {
+     "shadow_board": "2026-10-02T13:03:34.326747+00:00",
+     "gen1_ledger": "2026-10-02T13:03:04.523747+00:00"
+    }
+   },
+   "model_validity": null,
+   "external_context": {
+    "KXITFMATCH-26OCT02BONDJO-BON": {
+     "bovada": 0.8901,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": "NONE",
+     "n_independent_groups": 0,
+     "triangulation": "INSUFFICIENT_INPUTS",
+     "external_quote_age_s": 14793.0,
+     "external_v1_decision": "PASS",
+     "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+    },
+    "KXITFMATCH-26OCT02BONDJO-DJO": {
+     "bovada": 0.1099,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": "NONE",
+     "n_independent_groups": 0,
+     "triangulation": "INSUFFICIENT_INPUTS",
+     "external_quote_age_s": 14793.0,
+     "external_v1_decision": "PASS",
+     "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+    }
+   },
+   "identity_checks": {
+    "physical_match_id": "PASS",
+    "player_ids": "PASS",
+    "identity_confidence": "PASS",
+    "namesake": "PASS",
+    "model_name_orientation": "PASS",
+    "both_sides_listed": "PASS",
+    "model_complement": "PASS",
+    "market_pair": "PASS",
+    "level_mapping": "PASS",
+    "same_pair_other_event": "PASS",
+    "discipline": "PASS"
+   },
+   "data_quality_check": {
+    "data_quality_status": "LIMITED",
+    "tags": [
+     "LOW_DATA_QUALITY",
+     "STALE_PLAYER_DATA"
+    ],
+    "severe_sample_asymmetry": false,
+    "evidence": {
+     "grade": "C",
+     "serve_points_a": 1207.0,
+     "serve_points_b": 1313.0,
+     "thinner_serve_points": 1207.0,
+     "sample_ratio": 1.09,
+     "matches_a": 42,
+     "matches_b": 39,
+     "days_since_last_a": 39,
+     "days_since_last_b": 130,
+     "level_familiarity": 1.0,
+     "surface_matches_a": 32,
+     "surface_matches_b": 15
+    }
+   },
+   "frozen_rule_context": [
+    "W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)"
+   ],
+   "warnings": [
+    "FIRST_BALL_SOURCE_UNAVAILABLE: Challenger/ITF/WTA125 starts are not observed; a nominal time is not a first ball",
+    "LOW_DATA_QUALITY",
+    "NOMINAL_START_IS_DAY_PLACEHOLDER: Kalshi lists the same time for many matches of this series; it is not this match's start"
+   ],
+   "available_expressions": [
+    "MATCH_WINNER"
+   ],
+   "markets": [
+    {
+     "ticker": "KXITFMATCH-26OCT02BONDJO-BON",
+     "event": "KXITFMATCH-26OCT02BONDJO",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Oliver Bonding wins",
+     "yes_means": "Oliver Bonding",
+     "subject": "Oliver Bonding",
+     "subject_is_a": true,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.89,
+      "ask": 0.91,
+      "mid": 0.9,
+      "spread": 0.02,
+      "bid_size": 5.0,
+      "ask_size": 3520.59,
+      "taker_fee_at_ask": 0.01,
+      "no_ask": 0.11,
+      "quote_captured_at": "2026-10-02T13:21:29.942585+00:00",
+      "quote_age_s": 949.3,
+      "open_interest": 6.1,
+      "volume_24h": 6.1
+     },
+     "model": {
+      "gen1": 0.6641,
+      "gen1_elo_only": 0.7048,
+      "gen1_structural": 0.6208,
+      "gen2": 0.7082,
+      "fair_v1": 0.7039,
+      "fair_v1_envelope": [
+       0.6845,
+       0.7216
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0186,
+      "selector_v1": "PASS",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.7039,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.1961,
+     "model_side_edges": {
+      "YES": -0.216145,
+      "NO": 0.176145
+     },
+     "model_preferred_side": "NO",
+     "external": {
+      "bovada": 0.8901,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": "NONE",
+      "n_independent_groups": 0,
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "external_quote_age_s": 14793.0,
+      "external_v1_decision": "PASS",
+      "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1",
+      "external_scan"
+     ],
+     "warnings": [
+      "EXTERNAL_PRICE_STALE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.7039,
+      "kalshi_mid": 0.9,
+      "model_market_gap_pp": -19.61,
+      "abs_model_market_gap_pp": 19.61,
+      "model_executable_gap_pp": 18.61,
+      "discrepancy_band": "HIGH_REVIEW",
+      "audit_bucket": "15-25",
+      "discrepancy_sanity_status": "EXPLANATION_REQUIRED_BEFORE_BET",
+      "discrepancy_reason_tags": [
+       "LOW_DISPLAYED_LIQUIDITY",
+       "LOW_DATA_QUALITY",
+       "STALE_PLAYER_DATA",
+       "NO_EXTERNAL_REFERENCE",
+       "START_UNVERIFIABLE"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "LIMITED",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "HIGH_REVIEW / EXPLAIN BEFORE ANY BET",
+      "evidence": {
+       "quote_age_s": 949.0,
+       "two_sided": true,
+       "bid": 0.89,
+       "ask": 0.91,
+       "bid_size": 5.0,
+       "ask_size": 3520.59,
+       "spread": 0.02,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": 14793.0,
+       "model_uncertainty": 0.0186,
+       "fair_envelope_width": 0.0371,
+       "model_probability_range_pp": 4.41,
+       "model_probabilities": {
+        "gen1": 0.6641,
+        "gen2": 0.7082,
+        "fair_v1": 0.7039
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": false,
+       "model_side_edge_after_fees": 0.1761,
+       "data_grade": "C",
+       "data_serve_points_a": 1207.0,
+       "data_serve_points_b": 1313.0,
+       "data_thinner_serve_points": 1207.0,
+       "data_sample_ratio": 1.09,
+       "data_matches_a": 42,
+       "data_matches_b": 39,
+       "data_days_since_last_a": 39,
+       "data_days_since_last_b": 130,
+       "data_level_familiarity": 1.0,
+       "data_surface_matches_a": 32,
+       "data_surface_matches_b": 15
+      }
+     },
+     "model_market_gap_pp": -19.61,
+     "discrepancy_band": "HIGH_REVIEW",
+     "discrepancy_sanity_status": "EXPLANATION_REQUIRED_BEFORE_BET",
+     "discrepancy_reason_tags": [
+      "LOW_DISPLAYED_LIQUIDITY",
+      "LOW_DATA_QUALITY",
+      "STALE_PLAYER_DATA",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "LIMITED"
+    },
+    {
+     "ticker": "KXITFMATCH-26OCT02BONDJO-DJO",
+     "event": "KXITFMATCH-26OCT02BONDJO",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Nikola Djosic wins",
+     "yes_means": "Nikola Djosic",
+     "subject": "Nikola Djosic",
+     "subject_is_a": false,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.1,
+      "ask": 0.11,
+      "mid": 0.105,
+      "spread": 0.01,
+      "bid_size": 100.0,
+      "ask_size": 3413.35,
+      "taker_fee_at_ask": 0.01,
+      "no_ask": 0.9,
+      "quote_captured_at": "2026-10-02T13:21:29.942569+00:00",
+      "quote_age_s": 949.3,
+      "open_interest": 128.77,
+      "volume_24h": 133.04
+     },
+     "model": {
+      "gen1": 0.3359,
+      "gen1_elo_only": 0.2952,
+      "gen1_structural": 0.3792,
+      "gen2": 0.2918,
+      "fair_v1": 0.2961,
+      "fair_v1_envelope": [
+       0.2784,
+       0.3155
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0186,
+      "selector_v1": "WATCH",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.2961,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.1911,
+     "model_side_edges": {
+      "YES": 0.176145,
+      "NO": -0.206145
+     },
+     "model_preferred_side": "YES",
+     "external": {
+      "bovada": 0.1099,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": "NONE",
+      "n_independent_groups": 0,
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "external_quote_age_s": 14793.0,
+      "external_v1_decision": "PASS",
+      "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1",
+      "external_scan"
+     ],
+     "warnings": [
+      "EXTERNAL_PRICE_STALE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.2961,
+      "kalshi_mid": 0.105,
+      "model_market_gap_pp": 19.11,
+      "abs_model_market_gap_pp": 19.11,
+      "model_executable_gap_pp": 18.61,
+      "discrepancy_band": "HIGH_REVIEW",
+      "audit_bucket": "15-25",
+      "discrepancy_sanity_status": "EXPLANATION_REQUIRED_BEFORE_BET",
+      "discrepancy_reason_tags": [
+       "LOW_DATA_QUALITY",
+       "STALE_PLAYER_DATA",
+       "NO_EXTERNAL_REFERENCE",
+       "START_UNVERIFIABLE"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "LIMITED",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "HIGH_REVIEW / EXPLAIN BEFORE ANY BET",
+      "evidence": {
+       "quote_age_s": 949.0,
+       "two_sided": true,
+       "bid": 0.1,
+       "ask": 0.11,
+       "bid_size": 100.0,
+       "ask_size": 3413.35,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": 14793.0,
+       "model_uncertainty": 0.0186,
+       "fair_envelope_width": 0.0371,
+       "model_probability_range_pp": 4.41,
+       "model_probabilities": {
+        "gen1": 0.3359,
+        "gen2": 0.2918,
+        "fair_v1": 0.2961
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": false,
+       "model_side_edge_after_fees": 0.1761,
+       "data_grade": "C",
+       "data_serve_points_a": 1207.0,
+       "data_serve_points_b": 1313.0,
+       "data_thinner_serve_points": 1207.0,
+       "data_sample_ratio": 1.09,
+       "data_matches_a": 42,
+       "data_matches_b": 39,
+       "data_days_since_last_a": 39,
+       "data_days_since_last_b": 130,
+       "data_level_familiarity": 1.0,
+       "data_surface_matches_a": 32,
+       "data_surface_matches_b": 15
+      }
+     },
+     "model_market_gap_pp": 19.11,
+     "discrepancy_band": "HIGH_REVIEW",
+     "discrepancy_sanity_status": "EXPLANATION_REQUIRED_BEFORE_BET",
+     "discrepancy_reason_tags": [
+      "LOW_DATA_QUALITY",
+      "STALE_PLAYER_DATA",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "LIMITED"
+    }
+   ],
+   "start": {
+    "match_id": "ATP:26OCT02BONDJO:singles",
+    "evaluated_at": "2026-10-02T13:37:19.215761+00:00",
+    "nominal_scheduled_start": "2026-10-02T21:00:00+00:00",
+    "nominal_is_placeholder": true,
+    "live_source_covered": false,
+    "start_time_last_checked": null,
+    "current_expected_start": null,
+    "start_time_source": null,
+    "start_time_confidence": "NONE",
+    "start_time_candidates": [],
+    "earliest_safe_handicap_time": null,
+    "recommended_handicap_by": null,
+    "final_check_time": null,
+    "first_ball_status": "NO_FIRST_BALL_SOURCE",
+    "first_ball_source": null,
+    "first_ball_at": null,
+    "court": null,
+    "court_context": null,
+    "start_status": "START_UNKNOWN",
+    "status_reasons": [
+     "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+     "NO_CREDIBLE_START_TIME"
+    ],
+    "bet_allowed": true
+   },
+   "start_status": "START_UNKNOWN"
+  },
+  {
+   "match_key": "WTA:26OCT02RUZKOS:singles",
+   "match_code": "26OCT02RUZKOS",
+   "physical_match_id": "WTA:222045:267439:2026-10-02",
+   "event_id": "KXWTACHALLENGERMATCH-26OCT02RUZKOS",
+   "tour": "WTA",
+   "level": "WTA_125",
+   "level_bucket": "WTA125",
+   "discipline": "singles",
+   "competition": "WTA 125K Adana",
+   "round": "QF",
+   "surface": null,
+   "surface_bucket": "OTHER",
+   "players": {
+    "a": "Antonia Ruzic",
+    "b": "Teodora Kostovic"
+   },
+   "match_winner_ticker": {
+    "a": "KXWTACHALLENGERMATCH-26OCT02RUZKOS-RUZ",
+    "b": "KXWTACHALLENGERMATCH-26OCT02RUZKOS-KOS"
+   },
+   "scheduled_start": "2026-10-02T16:10:00Z",
+   "first_ball": {
+    "status": "NOT_OBSERVED_STARTED",
+    "source_coverage": "NO_SOURCE",
+    "truth_confidence": "C",
+    "earliest_possible_first_ball": null,
+    "first_ball_source": null,
+    "start_status": "STATUS_AMBIGUOUS",
+    "current_expected_start": "2026-10-02T13:30:00+00:00"
+   },
+   "model_context": {
+    "player_a_win": {
+     "gen1": 0.6002,
+     "gen2": 0.5,
+     "fair_v1": 0.5632,
+     "fair_v1_envelope": [
+      0.5317,
+      0.6301
+     ]
+    },
+    "model_uncertainty": 0.0492,
+    "serve_evidence": {
+     "player_a_points": 4066.0,
+     "player_b_points": 3286.0,
+     "thinner": 3286.0
+    },
+    "rating_state": {
+     "elo_a": 1883.9,
+     "elo_b": 1738.1,
+     "serve_point_win_a": 0.5796,
+     "serve_point_win_b": 0.4396,
+     "structural_serve_a": 0.5792,
+     "structural_serve_b": 0.4195,
+     "tour_serve_baseline": 0.57,
+     "hold_break_note": "hold/break probabilities follow from the serve-point probabilities through the frozen DP engine; no separate hold/break model exists",
+     "blend_weight": 0.6866,
+     "ratings_as_of": "2026-10-01",
+     "asof_base_date": {
+      "ATP": "2026-06-01",
+      "WTA": "2026-06-01"
+     }
+    },
+    "surface_adjustment": {
+     "basis": "change in fair_v1 P(player A wins) under the frozen surface-prior perturbations",
+     "surface_pool_low": 0.0,
+     "surface_pool_high": 0.0,
+     "surface_dev_loose": 0.0,
+     "surface_dev_tight": 0.0
+    },
+    "recent_form_inputs": {
+     "matches_on_record_a": 358,
+     "matches_on_record_b": 110,
+     "days_since_last_match_a": 2,
+     "days_since_last_match_b": 2,
+     "recency_pillar": 1.0,
+     "experience_pillar": 0.936,
+     "note": "the repository holds recency/experience inputs, not a win-loss form model"
+    },
+    "data_quality": {
+     "score": 0.923,
+     "grade": "A"
+    },
+    "selector_v1": {
+     "KXWTACHALLENGERMATCH-26OCT02RUZKOS-RUZ": "WATCH",
+     "KXWTACHALLENGERMATCH-26OCT02RUZKOS-KOS": "PASS"
+    },
+    "model_rows_predicted_at": {
+     "shadow_board": "2026-10-02T06:09:12.133291+00:00",
+     "gen1_ledger": "2026-10-02T06:07:57.957588+00:00"
+    }
+   },
+   "model_validity": null,
+   "external_context": {
+    "KXWTACHALLENGERMATCH-26OCT02RUZKOS-KOS": {
+     "bovada": 0.4592,
+     "smarkets": 0.4654,
+     "consensus": 0.4654,
+     "reference_kind": "SHARP_REFERENCE",
+     "n_independent_groups": 1,
+     "triangulation": "MARKETS_AGREE",
+     "external_quote_age_s": 3316.0,
+     "external_v1_decision": "PASS",
+     "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+    },
+    "KXWTACHALLENGERMATCH-26OCT02RUZKOS-RUZ": {
+     "bovada": 0.5408,
+     "smarkets": 0.5335,
+     "consensus": 0.5335,
+     "reference_kind": "SHARP_REFERENCE",
+     "n_independent_groups": 1,
+     "triangulation": "MODEL_LONE_OUTLIER",
+     "external_quote_age_s": 3316.0,
+     "external_v1_decision": "PASS",
+     "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+    }
+   },
+   "identity_checks": {
+    "physical_match_id": "PASS",
+    "player_ids": "PASS",
+    "identity_confidence": "PASS",
+    "namesake": "PASS",
+    "model_name_orientation": "PASS",
+    "both_sides_listed": "PASS",
+    "model_complement": "PASS",
+    "market_pair": "PASS",
+    "level_mapping": "PASS",
+    "same_pair_other_event": "PASS",
+    "discipline": "PASS"
+   },
+   "data_quality_check": {
+    "data_quality_status": "LIMITED",
+    "tags": [
+     "LEVEL_TRANSFER_RISK"
+    ],
+    "severe_sample_asymmetry": false,
+    "evidence": {
+     "grade": "A",
+     "serve_points_a": 4066.0,
+     "serve_points_b": 3286.0,
+     "thinner_serve_points": 3286.0,
+     "sample_ratio": 1.24,
+     "matches_a": 358,
+     "matches_b": 110,
+     "days_since_last_a": 2,
+     "days_since_last_b": 2,
+     "level_familiarity": 0.5,
+     "surface_matches_a": null,
+     "surface_matches_b": null
+    }
+   },
+   "frozen_rule_context": [],
+   "warnings": [
+    "BET_BLOCKED_START_STATUS: STATUS_AMBIGUOUS -- NOMINAL_UNRELIABLE_AT_THIS_LEVEL; NO_RECENT_LIVE_STATUS; EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN",
+    "FIRST_BALL_SOURCE_UNAVAILABLE: Challenger/ITF/WTA125 starts are not observed; a nominal time is not a first ball",
+    "STATUS_AMBIGUOUS: re-check live status before any decision; not presented as pregame"
+   ],
+   "available_expressions": [
+    "MATCH_WINNER"
+   ],
+   "markets": [
+    {
+     "ticker": "KXWTACHALLENGERMATCH-26OCT02RUZKOS-KOS",
+     "event": "KXWTACHALLENGERMATCH-26OCT02RUZKOS",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Teodora Kostovic wins",
+     "yes_means": "Teodora Kostovic",
+     "subject": "Teodora Kostovic",
+     "subject_is_a": false,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.45,
+      "ask": 0.46,
+      "mid": 0.455,
+      "spread": 0.01,
+      "bid_size": 127.0,
+      "ask_size": 41348.45,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.55,
+      "quote_captured_at": "2026-10-02T13:21:29.768547+00:00",
+      "quote_age_s": 949.4,
+      "open_interest": 1856.52,
+      "volume_24h": 1722.63
+     },
+     "model": {
+      "gen1": 0.3998,
+      "gen1_elo_only": 0.3017,
+      "gen1_structural": 0.5066,
+      "gen2": 0.5,
+      "fair_v1": 0.4368,
+      "fair_v1_envelope": [
+       0.3699,
+       0.4683
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0492,
+      "selector_v1": "PASS",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.4368,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.0182,
+     "model_side_edges": {
+      "YES": -0.043214,
+      "NO": -0.006786
+     },
+     "model_preferred_side": "NEUTRAL",
+     "external": {
+      "bovada": 0.4592,
+      "smarkets": 0.4654,
+      "consensus": 0.4654,
+      "reference_kind": "SHARP_REFERENCE",
+      "n_independent_groups": 1,
+      "triangulation": "MARKETS_AGREE",
+      "external_quote_age_s": 3316.0,
+      "external_v1_decision": "PASS",
+      "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1",
+      "external_scan"
+     ],
+     "warnings": [
+      "EXTERNAL_PRICE_STALE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.4368,
+      "kalshi_mid": 0.455,
+      "model_market_gap_pp": -1.82,
+      "abs_model_market_gap_pp": 1.82,
+      "model_executable_gap_pp": 1.32,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "0-3",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "LEVEL_TRANSFER_RISK",
+       "MODEL_HIGH_UNCERTAINTY",
+       "NO_EXTERNAL_REFERENCE"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "EXTERNAL_STALE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "LIMITED",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 949.0,
+       "two_sided": true,
+       "bid": 0.45,
+       "ask": 0.46,
+       "bid_size": 127.0,
+       "ask_size": 41348.45,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": 0.4654,
+       "external_age_s": 3316.0,
+       "model_uncertainty": 0.0492,
+       "fair_envelope_width": 0.0984,
+       "model_probability_range_pp": 10.02,
+       "model_probabilities": {
+        "gen1": 0.3998,
+        "gen2": 0.5,
+        "fair_v1": 0.4368
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": false,
+       "model_side_edge_after_fees": -0.0068,
+       "data_grade": "A",
+       "data_serve_points_a": 4066.0,
+       "data_serve_points_b": 3286.0,
+       "data_thinner_serve_points": 3286.0,
+       "data_sample_ratio": 1.24,
+       "data_matches_a": 358,
+       "data_matches_b": 110,
+       "data_days_since_last_a": 2,
+       "data_days_since_last_b": 2,
+       "data_level_familiarity": 0.5,
+       "data_surface_matches_a": null,
+       "data_surface_matches_b": null
+      }
+     },
+     "model_market_gap_pp": -1.82,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "LEVEL_TRANSFER_RISK",
+      "MODEL_HIGH_UNCERTAINTY",
+      "NO_EXTERNAL_REFERENCE"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "EXTERNAL_STALE",
+     "data_quality_status": "LIMITED"
+    },
+    {
+     "ticker": "KXWTACHALLENGERMATCH-26OCT02RUZKOS-RUZ",
+     "event": "KXWTACHALLENGERMATCH-26OCT02RUZKOS",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Antonia Ruzic wins",
+     "yes_means": "Antonia Ruzic",
+     "subject": "Antonia Ruzic",
+     "subject_is_a": true,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.55,
+      "ask": 0.56,
+      "mid": 0.555,
+      "spread": 0.01,
+      "bid_size": 12302.19,
+      "ask_size": 450.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.45,
+      "quote_captured_at": "2026-10-02T13:21:29.768500+00:00",
+      "quote_age_s": 949.4,
+      "open_interest": 8287.76,
+      "volume_24h": 8296.89
+     },
+     "model": {
+      "gen1": 0.6002,
+      "gen1_elo_only": 0.6983,
+      "gen1_structural": 0.4934,
+      "gen2": 0.5,
+      "fair_v1": 0.5632,
+      "fair_v1_envelope": [
+       0.5317,
+       0.6301
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0492,
+      "selector_v1": "WATCH",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.5632,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.0082,
+     "model_side_edges": {
+      "YES": -0.016786,
+      "NO": -0.033214
+     },
+     "model_preferred_side": "NEUTRAL",
+     "external": {
+      "bovada": 0.5408,
+      "smarkets": 0.5335,
+      "consensus": 0.5335,
+      "reference_kind": "SHARP_REFERENCE",
+      "n_independent_groups": 1,
+      "triangulation": "MODEL_LONE_OUTLIER",
+      "external_quote_age_s": 3316.0,
+      "external_v1_decision": "PASS",
+      "scanned_at": "2026-10-02T13:08:15.567181+00:00"
+     },
+     "observed_by": [
+      "gen1_ledger",
+      "shadow_board_v1",
+      "external_scan"
+     ],
+     "warnings": [
+      "EXTERNAL_PRICE_STALE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.5632,
+      "kalshi_mid": 0.555,
+      "model_market_gap_pp": 0.82,
+      "abs_model_market_gap_pp": 0.82,
+      "model_executable_gap_pp": 0.32,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "0-3",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "LEVEL_TRANSFER_RISK",
+       "MODEL_HIGH_UNCERTAINTY",
+       "NO_EXTERNAL_REFERENCE"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "PASS",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "EXTERNAL_STALE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "LIMITED",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 949.0,
+       "two_sided": true,
+       "bid": 0.55,
+       "ask": 0.56,
+       "bid_size": 12302.19,
+       "ask_size": 450.0,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": 0.5335,
+       "external_age_s": 3316.0,
+       "model_uncertainty": 0.0492,
+       "fair_envelope_width": 0.0984,
+       "model_probability_range_pp": 10.02,
+       "model_probabilities": {
+        "gen1": 0.6002,
+        "gen2": 0.5,
+        "fair_v1": 0.5632
+       },
+       "first_ball_source": false,
+       "scheduled_start_passed": false,
+       "model_side_edge_after_fees": -0.0168,
+       "data_grade": "A",
+       "data_serve_points_a": 4066.0,
+       "data_serve_points_b": 3286.0,
+       "data_thinner_serve_points": 3286.0,
+       "data_sample_ratio": 1.24,
+       "data_matches_a": 358,
+       "data_matches_b": 110,
+       "data_days_since_last_a": 2,
+       "data_days_since_last_b": 2,
+       "data_level_familiarity": 0.5,
+       "data_surface_matches_a": null,
+       "data_surface_matches_b": null
+      }
+     },
+     "model_market_gap_pp": 0.82,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "LEVEL_TRANSFER_RISK",
+      "MODEL_HIGH_UNCERTAINTY",
+      "NO_EXTERNAL_REFERENCE"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "EXTERNAL_STALE",
+     "data_quality_status": "LIMITED"
+    }
+   ],
+   "start": {
+    "match_id": "WTA:26OCT02RUZKOS:singles",
+    "evaluated_at": "2026-10-02T13:37:19.215761+00:00",
+    "nominal_scheduled_start": "2026-10-02T16:10:00+00:00",
+    "nominal_is_placeholder": false,
+    "live_source_covered": true,
+    "start_time_last_checked": "2026-10-02T13:07:01.299473+00:00",
+    "current_expected_start": "2026-10-02T13:30:00+00:00",
+    "start_time_source": "LIVE_SCHEDULE:espn_wta",
+    "start_time_confidence": "MEDIUM",
+    "start_time_candidates": [
+     {
+      "time": "2026-10-02T13:30:00+00:00",
+      "source": "LIVE_SCHEDULE:espn_wta",
+      "confidence": "MEDIUM"
+     },
+     {
+      "time": "2026-10-02T13:47:01.299473+00:00",
+      "source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+      "confidence": "MEDIUM"
+     }
+    ],
+    "earliest_safe_handicap_time": "2026-10-02T12:45:00+00:00",
+    "recommended_handicap_by": "2026-10-02T12:45:00+00:00",
+    "final_check_time": "2026-10-02T13:20:00+00:00",
+    "first_ball_status": "NOT_OBSERVED_STARTED",
+    "first_ball_source": null,
+    "first_ball_at": null,
+    "court": "Centre Court",
+    "court_context": {
+     "court": "Centre Court",
+     "same_time_on_court": 0,
+     "queue_ahead_pre": 0,
+     "preceding": {
+      "source_match_id": "184147",
+      "players": [
+       "Lucrezia Stefanini",
+       "Leolia Jeanjean"
+      ],
+      "state": "IN",
+      "period": 1,
+      "best_of": 3,
+      "games_played": 8,
+      "scheduled_utc": "2026-10-02T12:10:00+00:00",
+      "time_valid": true
+     }
+    },
+    "start_status": "STATUS_AMBIGUOUS",
+    "status_reasons": [
+     "NOMINAL_UNRELIABLE_AT_THIS_LEVEL",
+     "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min",
+     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+    ],
+    "bet_allowed": false
+   },
+   "start_status": "STATUS_AMBIGUOUS"
+  },
+  {
+   "match_key": "WTA:26OCT01STETHOKITWEN:doubles",
+   "match_code": "26OCT01STETHOKITWEN",
+   "physical_match_id": null,
+   "event_id": "KXITFWDOUBLES-26OCT01STETHOKITWEN",
+   "tour": "WTA",
+   "level": "ITF",
+   "level_bucket": "DOUBLES",
+   "discipline": "doubles",
+   "competition": "W35 Wagga Wagga",
+   "round": "SF",
+   "surface": null,
+   "surface_bucket": "OTHER",
+   "players": {
+    "a": "Stevens / Thompson",
+    "b": "Kitahara / Wen Wan"
+   },
+   "match_winner_ticker": {
+    "a": "KXITFWDOUBLES-26OCT01STETHOKITWEN-STETHO",
+    "b": "KXITFWDOUBLES-26OCT01STETHOKITWEN-KITWEN"
+   },
+   "scheduled_start": "2026-10-02T08:00:00Z",
+   "first_ball": {
+    "status": "NO_FIRST_BALL_SOURCE",
+    "source_coverage": "NO_SOURCE",
+    "truth_confidence": null,
+    "earliest_possible_first_ball": null,
+    "first_ball_source": null,
+    "start_status": "START_UNKNOWN",
+    "current_expected_start": null
+   },
+   "model_context": {
+    "player_a_win": {
+     "gen1": null,
+     "gen2": null,
+     "fair_v1": null,
+     "fair_v1_envelope": [
+      null,
+      null
+     ]
+    },
+    "model_uncertainty": null,
+    "serve_evidence": {
+     "player_a_points": null,
+     "player_b_points": null,
+     "thinner": null
+    },
+    "rating_state": {
+     "elo_a": null,
+     "elo_b": null,
+     "serve_point_win_a": null,
+     "serve_point_win_b": null,
+     "structural_serve_a": null,
+     "structural_serve_b": null,
+     "tour_serve_baseline": null,
+     "hold_break_note": "hold/break probabilities follow from the serve-point probabilities through the frozen DP engine; no separate hold/break model exists",
+     "blend_weight": null,
+     "ratings_as_of": null,
+     "asof_base_date": null
+    },
+    "surface_adjustment": null,
+    "recent_form_inputs": {
+     "matches_on_record_a": null,
+     "matches_on_record_b": null,
+     "days_since_last_match_a": null,
+     "days_since_last_match_b": null,
+     "recency_pillar": null,
+     "experience_pillar": null,
+     "note": "the repository holds recency/experience inputs, not a win-loss form model"
+    },
+    "data_quality": {
+     "score": null,
+     "grade": null
+    },
+    "selector_v1": {
+     "KXITFWDOUBLES-26OCT01STETHOKITWEN-STETHO": null,
+     "KXITFWDOUBLES-26OCT01STETHOKITWEN-KITWEN": null
+    },
+    "model_rows_predicted_at": {
+     "shadow_board": null,
+     "gen1_ledger": null
+    }
+   },
+   "model_validity": {
+    "gen1": "UNVALIDATED_DO_NOT_USE",
+    "gen2": "NOT_PRODUCED_FOR_DOUBLES",
+    "fair_v1": "NOT_PRODUCED_FOR_DOUBLES",
+    "model4": "NOT_PRODUCED_FOR_DOUBLES",
+    "reason": "Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping."
+   },
+   "external_context": {
+    "KXITFWDOUBLES-26OCT01STETHOKITWEN-KITWEN": {
+     "bovada": null,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": null,
+     "n_independent_groups": null,
+     "triangulation": null,
+     "external_quote_age_s": null,
+     "external_v1_decision": null,
+     "scanned_at": null
+    },
+    "KXITFWDOUBLES-26OCT01STETHOKITWEN-STETHO": {
+     "bovada": null,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": null,
+     "n_independent_groups": null,
+     "triangulation": null,
+     "external_quote_age_s": null,
+     "external_v1_decision": null,
+     "scanned_at": null
+    }
+   },
+   "identity_checks": {
+    "physical_match_id": "AMBIGUOUS",
+    "player_ids": "AMBIGUOUS",
+    "identity_confidence": "AMBIGUOUS",
+    "namesake": "PASS",
+    "model_name_orientation": "NA",
+    "both_sides_listed": "PASS",
+    "model_complement": "NA",
+    "market_pair": "PASS",
+    "level_mapping": "AMBIGUOUS",
+    "same_pair_other_event": "PASS",
+    "discipline": "AMBIGUOUS",
+    "model_row": "AMBIGUOUS"
+   },
+   "data_quality_check": {
+    "data_quality_status": "UNKNOWN",
+    "tags": [],
+    "severe_sample_asymmetry": false,
+    "evidence": {
+     "grade": null,
+     "serve_points_a": null,
+     "serve_points_b": null,
+     "thinner_serve_points": null,
+     "sample_ratio": null,
+     "matches_a": null,
+     "matches_b": null,
+     "days_since_last_a": null,
+     "days_since_last_b": null,
+     "level_familiarity": null,
+     "surface_matches_a": null,
+     "surface_matches_b": null
+    }
+   },
+   "frozen_rule_context": [],
+   "warnings": [
+    "NO_MODEL_FOR_MATCH: no Gen-1 ledger or shadow-board row (identity unmapped, doubles, or unpriced format)",
+    "DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS",
+    "GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE: Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping.",
+    "FIRST_BALL_SOURCE_UNAVAILABLE: Challenger/ITF/WTA125 starts are not observed; a nominal time is not a first ball",
+    "SCHEDULED_START_PASSED: the match may already be under way"
+   ],
+   "available_expressions": [
+    "MATCH_WINNER"
+   ],
+   "markets": [
+    {
+     "ticker": "KXITFWDOUBLES-26OCT01STETHOKITWEN-KITWEN",
+     "event": "KXITFWDOUBLES-26OCT01STETHOKITWEN",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Kitahara / Wen Wan wins",
+     "yes_means": "Kitahara / Wen Wan",
+     "subject": "Kitahara / Wen Wan",
+     "subject_is_a": false,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.21,
+      "ask": 0.69,
+      "mid": 0.45,
+      "spread": 0.48,
+      "bid_size": 1.0,
+      "ask_size": 20.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.79,
+      "quote_captured_at": "2026-10-02T13:21:33.775890+00:00",
+      "quote_age_s": 945.4,
+      "open_interest": 336.07,
+      "volume_24h": 344.07
+     },
+     "model": {
+      "gen1": null,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": null,
+     "model_probability_source": null,
+     "model_validity": {
+      "gen1": "UNVALIDATED_DO_NOT_USE",
+      "gen2": "NOT_PRODUCED_FOR_DOUBLES",
+      "fair_v1": "NOT_PRODUCED_FOR_DOUBLES",
+      "model4": "NOT_PRODUCED_FOR_DOUBLES",
+      "reason": "Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping."
+     },
+     "model_minus_mid": null,
+     "model_side_edges": {
+      "YES": null,
+      "NO": null
+     },
+     "model_preferred_side": "NONE",
+     "external": {
+      "bovada": null,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": null,
+      "n_independent_groups": null,
+      "triangulation": null,
+      "external_quote_age_s": null,
+      "external_v1_decision": null,
+      "scanned_at": null
+     },
+     "observed_by": [],
+     "warnings": [
+      "WIDE_SPREAD",
+      "NO_EXTERNAL_PRICE",
+      "GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": null,
+      "kalshi_mid": 0.45,
+      "model_market_gap_pp": null,
+      "abs_model_market_gap_pp": null,
+      "model_executable_gap_pp": null,
+      "discrepancy_band": "UNPRICED",
+      "audit_bucket": null,
+      "discrepancy_sanity_status": "NOT_APPLICABLE",
+      "discrepancy_reason_tags": [
+       "WIDE_SPREAD",
+       "LOW_DISPLAYED_LIQUIDITY",
+       "PLAYER_IDENTITY_RISK",
+       "EVENT_MAPPING_RISK",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_AMBIGUOUS",
+      "identity_checks": {
+       "physical_match_id": "AMBIGUOUS",
+       "player_ids": "AMBIGUOUS",
+       "identity_confidence": "AMBIGUOUS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "NA",
+       "market_pair": "PASS",
+       "level_mapping": "AMBIGUOUS",
+       "same_pair_other_event": "PASS",
+       "discipline": "AMBIGUOUS",
+       "model_row": "AMBIGUOUS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "INSUFFICIENT_INPUTS",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "UNKNOWN",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NO MODEL-MARKET COMPARISON",
+      "evidence": {
+       "quote_age_s": 945.0,
+       "two_sided": true,
+       "bid": 0.21,
+       "ask": 0.69,
+       "bid_size": 1.0,
+       "ask_size": 20.0,
+       "spread": 0.48,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": null,
+       "model_probabilities": {},
+       "first_ball_source": false,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": null,
+       "data_grade": null,
+       "data_serve_points_a": null,
+       "data_serve_points_b": null,
+       "data_thinner_serve_points": null,
+       "data_sample_ratio": null,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": null,
+       "data_surface_matches_b": null
+      }
+     },
+     "model_market_gap_pp": null,
+     "discrepancy_band": "UNPRICED",
+     "discrepancy_sanity_status": "NOT_APPLICABLE",
+     "discrepancy_reason_tags": [
+      "WIDE_SPREAD",
+      "LOW_DISPLAYED_LIQUIDITY",
+      "PLAYER_IDENTITY_RISK",
+      "EVENT_MAPPING_RISK",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_AMBIGUOUS",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "INSUFFICIENT_INPUTS",
+     "data_quality_status": "UNKNOWN"
+    },
+    {
+     "ticker": "KXITFWDOUBLES-26OCT01STETHOKITWEN-STETHO",
+     "event": "KXITFWDOUBLES-26OCT01STETHOKITWEN",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Stevens / Thompson wins",
+     "yes_means": "Stevens / Thompson",
+     "subject": "Stevens / Thompson",
+     "subject_is_a": true,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.23,
+      "ask": 0.74,
+      "mid": 0.485,
+      "spread": 0.51,
+      "bid_size": 2.0,
+      "ask_size": 1.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.77,
+      "quote_captured_at": "2026-10-02T13:21:33.775820+00:00",
+      "quote_age_s": 945.4,
+      "open_interest": 46.44,
+      "volume_24h": 46.44
+     },
+     "model": {
+      "gen1": null,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": null,
+     "model_probability_source": null,
+     "model_validity": {
+      "gen1": "UNVALIDATED_DO_NOT_USE",
+      "gen2": "NOT_PRODUCED_FOR_DOUBLES",
+      "fair_v1": "NOT_PRODUCED_FOR_DOUBLES",
+      "model4": "NOT_PRODUCED_FOR_DOUBLES",
+      "reason": "Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping."
+     },
+     "model_minus_mid": null,
+     "model_side_edges": {
+      "YES": null,
+      "NO": null
+     },
+     "model_preferred_side": "NONE",
+     "external": {
+      "bovada": null,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": null,
+      "n_independent_groups": null,
+      "triangulation": null,
+      "external_quote_age_s": null,
+      "external_v1_decision": null,
+      "scanned_at": null
+     },
+     "observed_by": [],
+     "warnings": [
+      "WIDE_SPREAD",
+      "THIN_DISPLAYED_SIZE",
+      "NO_EXTERNAL_PRICE",
+      "GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": null,
+      "kalshi_mid": 0.485,
+      "model_market_gap_pp": null,
+      "abs_model_market_gap_pp": null,
+      "model_executable_gap_pp": null,
+      "discrepancy_band": "UNPRICED",
+      "audit_bucket": null,
+      "discrepancy_sanity_status": "NOT_APPLICABLE",
+      "discrepancy_reason_tags": [
+       "WIDE_SPREAD",
+       "LOW_DISPLAYED_LIQUIDITY",
+       "PLAYER_IDENTITY_RISK",
+       "EVENT_MAPPING_RISK",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_AMBIGUOUS",
+      "identity_checks": {
+       "physical_match_id": "AMBIGUOUS",
+       "player_ids": "AMBIGUOUS",
+       "identity_confidence": "AMBIGUOUS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "NA",
+       "market_pair": "PASS",
+       "level_mapping": "AMBIGUOUS",
+       "same_pair_other_event": "PASS",
+       "discipline": "AMBIGUOUS",
+       "model_row": "AMBIGUOUS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "INSUFFICIENT_INPUTS",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "UNKNOWN",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NO MODEL-MARKET COMPARISON",
+      "evidence": {
+       "quote_age_s": 945.0,
+       "two_sided": true,
+       "bid": 0.23,
+       "ask": 0.74,
+       "bid_size": 2.0,
+       "ask_size": 1.0,
+       "spread": 0.51,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": null,
+       "model_probabilities": {},
+       "first_ball_source": false,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": null,
+       "data_grade": null,
+       "data_serve_points_a": null,
+       "data_serve_points_b": null,
+       "data_thinner_serve_points": null,
+       "data_sample_ratio": null,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": null,
+       "data_surface_matches_b": null
+      }
+     },
+     "model_market_gap_pp": null,
+     "discrepancy_band": "UNPRICED",
+     "discrepancy_sanity_status": "NOT_APPLICABLE",
+     "discrepancy_reason_tags": [
+      "WIDE_SPREAD",
+      "LOW_DISPLAYED_LIQUIDITY",
+      "PLAYER_IDENTITY_RISK",
+      "EVENT_MAPPING_RISK",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_AMBIGUOUS",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "INSUFFICIENT_INPUTS",
+     "data_quality_status": "UNKNOWN"
+    }
+   ],
+   "start": {
+    "match_id": "WTA:26OCT01STETHOKITWEN:doubles",
+    "evaluated_at": "2026-10-02T13:37:19.215761+00:00",
+    "nominal_scheduled_start": "2026-10-02T08:00:00+00:00",
+    "nominal_is_placeholder": false,
+    "live_source_covered": false,
+    "start_time_last_checked": null,
+    "current_expected_start": null,
+    "start_time_source": null,
+    "start_time_confidence": "NONE",
+    "start_time_candidates": [],
+    "earliest_safe_handicap_time": null,
+    "recommended_handicap_by": null,
+    "final_check_time": null,
+    "first_ball_status": "NO_FIRST_BALL_SOURCE",
+    "first_ball_source": null,
+    "first_ball_at": null,
+    "court": null,
+    "court_context": null,
+    "start_status": "START_UNKNOWN",
+    "status_reasons": [
+     "NOMINAL_UNRELIABLE_AT_THIS_LEVEL",
+     "NO_CREDIBLE_START_TIME"
+    ],
+    "bet_allowed": true
+   },
+   "start_status": "START_UNKNOWN"
+  },
+  {
+   "match_key": "ATP:26OCT01SHATAB:singles",
+   "match_code": "26OCT01SHATAB",
+   "physical_match_id": "ATP:126214:133430:2026-10-02",
+   "event_id": "KXATPMATCH-26OCT01SHATAB",
+   "tour": "ATP",
+   "level": "TOUR_500_250",
+   "level_bucket": "ATP",
+   "discipline": "singles",
+   "competition": "ATP Tokyo",
+   "round": "R16",
+   "surface": "Hard",
+   "surface_bucket": "HARD",
+   "players": {
+    "a": "Denis Shapovalov",
+    "b": "Alejandro Tabilo"
+   },
+   "match_winner_ticker": {
+    "b": "KXATPMATCH-26OCT01SHATAB-TAB",
+    "a": "KXATPMATCH-26OCT01SHATAB-SHA"
+   },
+   "scheduled_start": "2026-10-02T05:00:00Z",
+   "first_ball": {
+    "status": "NOT_OBSERVED_STARTED",
+    "source_coverage": "COVERED",
+    "truth_confidence": "C",
+    "earliest_possible_first_ball": null,
+    "first_ball_source": null,
+    "start_status": "ESTIMATED_UPCOMING",
+    "current_expected_start": "2026-10-03T02:00:00+00:00"
+   },
+   "model_context": {
+    "player_a_win": {
+     "gen1": null,
+     "gen2": 0.4853,
+     "fair_v1": 0.5196,
+     "fair_v1_envelope": [
+      0.4951,
+      0.5343
+     ]
+    },
+    "model_uncertainty": 0.0196,
+    "serve_evidence": {
+     "player_a_points": 4723.0,
+     "player_b_points": 7913.0,
+     "thinner": 4723.0
+    },
+    "rating_state": {
+     "elo_a": null,
+     "elo_b": null,
+     "serve_point_win_a": null,
+     "serve_point_win_b": null,
+     "structural_serve_a": null,
+     "structural_serve_b": null,
+     "tour_serve_baseline": null,
+     "hold_break_note": "hold/break probabilities follow from the serve-point probabilities through the frozen DP engine; no separate hold/break model exists",
+     "blend_weight": 0.759,
+     "ratings_as_of": null,
+     "asof_base_date": {
+      "ATP": "2026-06-01",
+      "WTA": "2026-06-01"
+     }
+    },
+    "surface_adjustment": {
+     "basis": "change in fair_v1 P(player A wins) under the frozen surface-prior perturbations",
+     "surface_pool_low": -0.0196,
+     "surface_pool_high": 0.0098,
+     "surface_dev_loose": 0.0049,
+     "surface_dev_tight": -0.0147
+    },
+    "recent_form_inputs": {
+     "matches_on_record_a": null,
+     "matches_on_record_b": null,
+     "days_since_last_match_a": null,
+     "days_since_last_match_b": null,
+     "recency_pillar": null,
+     "experience_pillar": null,
+     "note": "the repository holds recency/experience inputs, not a win-loss form model"
+    },
+    "data_quality": {
+     "score": 0.9789,
+     "grade": "A"
+    },
+    "selector_v1": {
+     "KXATPMATCH-26OCT01SHATAB-TAB": "SHADOW_BET",
+     "KXATPMATCH-26OCT01SHATAB-SHA": "PASS"
+    },
+    "model_rows_predicted_at": {
+     "shadow_board": "2026-10-02T06:09:12.133291+00:00",
+     "gen1_ledger": null
+    }
+   },
+   "model_validity": null,
+   "external_context": {
+    "KXATPMATCH-26OCT01SHATAB-SHA": {
+     "bovada": null,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": null,
+     "n_independent_groups": null,
+     "triangulation": null,
+     "external_quote_age_s": null,
+     "external_v1_decision": null,
+     "scanned_at": null
+    },
+    "KXATPMATCH-26OCT01SHATAB-TAB": {
+     "bovada": null,
+     "smarkets": null,
+     "consensus": null,
+     "reference_kind": null,
+     "n_independent_groups": null,
+     "triangulation": null,
+     "external_quote_age_s": null,
+     "external_v1_decision": null,
+     "scanned_at": null
+    }
+   },
+   "identity_checks": {
+    "physical_match_id": "PASS",
+    "player_ids": "PASS",
+    "identity_confidence": "PASS",
+    "namesake": "PASS",
+    "model_name_orientation": "NA",
+    "both_sides_listed": "PASS",
+    "model_complement": "PASS",
+    "market_pair": "PASS",
+    "level_mapping": "PASS",
+    "same_pair_other_event": "PASS",
+    "discipline": "PASS"
+   },
+   "data_quality_check": {
+    "data_quality_status": "ADEQUATE",
+    "tags": [],
+    "severe_sample_asymmetry": false,
+    "evidence": {
+     "grade": "A",
+     "serve_points_a": 4723.0,
+     "serve_points_b": 7913.0,
+     "thinner_serve_points": 4723.0,
+     "sample_ratio": 1.68,
+     "matches_a": null,
+     "matches_b": null,
+     "days_since_last_a": null,
+     "days_since_last_b": null,
+     "level_familiarity": null,
+     "surface_matches_a": 452,
+     "surface_matches_b": 288
+    }
+   },
+   "frozen_rule_context": [],
+   "warnings": [
+    "BET_BLOCKED_START_STATUS: ESTIMATED_UPCOMING -- EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+1260_MIN; NO_RECENT_LIVE_STATUS",
+    "SCHEDULED_START_PASSED: the match may already be under way"
+   ],
+   "available_expressions": [
+    "GAME_SPREAD",
+    "MATCH_WINNER",
+    "TOTAL_GAMES"
+   ],
+   "markets": [
+    {
+     "ticker": "KXATPMATCH-26OCT01SHATAB-SHA",
+     "event": "KXATPMATCH-26OCT01SHATAB",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Denis Shapovalov wins",
+     "yes_means": "Denis Shapovalov",
+     "subject": "Denis Shapovalov",
+     "subject_is_a": true,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.58,
+      "ask": 0.59,
+      "mid": 0.585,
+      "spread": 0.01,
+      "bid_size": 3060.41,
+      "ask_size": 22901.53,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.42,
+      "quote_captured_at": "2026-10-02T13:21:29.052693+00:00",
+      "quote_age_s": 950.2,
+      "open_interest": 5311.18,
+      "volume_24h": 7992.28
+     },
+     "model": {
+      "gen1": null,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": 0.4853,
+      "fair_v1": 0.5196,
+      "fair_v1_envelope": [
+       0.4951,
+       0.5343
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0196,
+      "selector_v1": "PASS",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.5196,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.0654,
+     "model_side_edges": {
+      "YES": -0.090383,
+      "NO": 0.040383
+     },
+     "model_preferred_side": "NO",
+     "external": {
+      "bovada": null,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": null,
+      "n_independent_groups": null,
+      "triangulation": null,
+      "external_quote_age_s": null,
+      "external_v1_decision": null,
+      "scanned_at": null
+     },
+     "observed_by": [
+      "shadow_board_v1"
+     ],
+     "warnings": [
+      "NO_EXTERNAL_PRICE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.5196,
+      "kalshi_mid": 0.585,
+      "model_market_gap_pp": -6.54,
+      "abs_model_market_gap_pp": 6.54,
+      "model_executable_gap_pp": 6.04,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "5-10",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 950.0,
+       "two_sided": true,
+       "bid": 0.58,
+       "ask": 0.59,
+       "bid_size": 3060.41,
+       "ask_size": 22901.53,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": 0.0196,
+       "fair_envelope_width": 0.0392,
+       "model_probability_range_pp": 3.43,
+       "model_probabilities": {
+        "gen2": 0.4853,
+        "fair_v1": 0.5196
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0404,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": -6.54,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPMATCH-26OCT01SHATAB-TAB",
+     "event": "KXATPMATCH-26OCT01SHATAB",
+     "market_family": "MATCH_WINNER",
+     "expression": "MATCH_WINNER",
+     "description": "Alejandro Tabilo wins",
+     "yes_means": "Alejandro Tabilo",
+     "subject": "Alejandro Tabilo",
+     "subject_is_a": false,
+     "line": null,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.42,
+      "ask": 0.43,
+      "mid": 0.425,
+      "spread": 0.01,
+      "bid_size": 49.14,
+      "ask_size": 40494.98,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.58,
+      "quote_captured_at": "2026-10-02T13:21:29.052677+00:00",
+      "quote_age_s": 950.2,
+      "open_interest": 8003.45,
+      "volume_24h": 7869.03
+     },
+     "model": {
+      "gen1": null,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": 0.5147,
+      "fair_v1": 0.4804,
+      "fair_v1_envelope": [
+       0.4657,
+       0.5049
+      ],
+      "model4_conditioned": null,
+      "model4_fundamental": null,
+      "model_uncertainty": 0.0196,
+      "selector_v1": "SHADOW_BET",
+      "qualification_ok": true
+     },
+     "model_probability_yes": 0.4804,
+     "model_probability_source": "fair_v1 (shadow_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.0554,
+     "model_side_edges": {
+      "YES": 0.030383,
+      "NO": -0.080383
+     },
+     "model_preferred_side": "YES",
+     "external": {
+      "bovada": null,
+      "smarkets": null,
+      "consensus": null,
+      "reference_kind": null,
+      "n_independent_groups": null,
+      "triangulation": null,
+      "external_quote_age_s": null,
+      "external_v1_decision": null,
+      "scanned_at": null
+     },
+     "observed_by": [
+      "shadow_board_v1"
+     ],
+     "warnings": [
+      "NO_EXTERNAL_PRICE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.4804,
+      "kalshi_mid": 0.425,
+      "model_market_gap_pp": 5.54,
+      "abs_model_market_gap_pp": 5.54,
+      "model_executable_gap_pp": 5.04,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "5-10",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "PASS"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 950.0,
+       "two_sided": true,
+       "bid": 0.42,
+       "ask": 0.43,
+       "bid_size": 49.14,
+       "ask_size": 40494.98,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": 0.0196,
+       "fair_envelope_width": 0.0392,
+       "model_probability_range_pp": 3.43,
+       "model_probabilities": {
+        "gen2": 0.5147,
+        "fair_v1": 0.4804
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0304,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": 5.54,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPGSPREAD-26OCT01SHATAB-SHA3",
+     "event": "KXATPGSPREAD-26OCT01SHATAB",
+     "market_family": "GAME_SPREAD",
+     "expression": "GAME_SPREAD",
+     "description": "Will Denis Shapovalov win at least 2.5 more games than Alejandro Tabilo?",
+     "yes_means": "Denis Shapovalov -2.5 games",
+     "subject": "Denis Shapovalov",
+     "subject_is_a": true,
+     "line": 2.5,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.44,
+      "ask": 0.45,
+      "mid": 0.445,
+      "spread": 0.01,
+      "bid_size": 15812.62,
+      "ask_size": 4818.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.56,
+      "quote_captured_at": "2026-10-02T13:21:35.557314+00:00",
+      "quote_age_s": 943.7,
+      "open_interest": 46.6,
+      "volume_24h": 46.6
+     },
+     "model": {
+      "gen1": 0.3667,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": 0.4185,
+      "model4_fundamental": 0.3331,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": 0.4185,
+     "model_probability_source": "market_conditioned_v1 (model4_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.0265,
+     "model_side_edges": {
+      "YES": -0.051453,
+      "NO": 0.001453
+     },
+     "model_preferred_side": "NO",
+     "external": null,
+     "observed_by": [
+      "gen1_ledger",
+      "model4_board_v1"
+     ],
+     "warnings": [],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.4185,
+      "kalshi_mid": 0.445,
+      "model_market_gap_pp": -2.65,
+      "abs_model_market_gap_pp": 2.65,
+      "model_executable_gap_pp": 2.15,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "0-3",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "NA"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 944.0,
+       "two_sided": true,
+       "bid": 0.44,
+       "ask": 0.45,
+       "bid_size": 15812.62,
+       "ask_size": 4818.0,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": 8.54,
+       "model_probabilities": {
+        "gen1": 0.3667,
+        "model4_conditioned": 0.4185,
+        "model4_fundamental": 0.3331
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0015,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": -2.65,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPGSPREAD-26OCT01SHATAB-SHA6",
+     "event": "KXATPGSPREAD-26OCT01SHATAB",
+     "market_family": "GAME_SPREAD",
+     "expression": "GAME_SPREAD",
+     "description": "Will Denis Shapovalov win at least 5.5 more games than Alejandro Tabilo?",
+     "yes_means": "Denis Shapovalov -5.5 games",
+     "subject": "Denis Shapovalov",
+     "subject_is_a": true,
+     "line": 5.5,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.04,
+      "ask": 0.27,
+      "mid": 0.155,
+      "spread": 0.23,
+      "bid_size": 1.0,
+      "ask_size": 3139.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.96,
+      "quote_captured_at": "2026-10-02T13:21:35.557299+00:00",
+      "quote_age_s": 943.7,
+      "open_interest": 0.0,
+      "volume_24h": 0.0
+     },
+     "model": {
+      "gen1": 0.0986,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": 0.0961,
+      "model4_fundamental": 0.0677,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": 0.0961,
+     "model_probability_source": "market_conditioned_v1 (model4_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.0589,
+     "model_side_edges": {
+      "YES": -0.193939,
+      "NO": -0.066061
+     },
+     "model_preferred_side": "NEUTRAL",
+     "external": null,
+     "observed_by": [
+      "gen1_ledger",
+      "model4_board_v1"
+     ],
+     "warnings": [
+      "WIDE_SPREAD"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.0961,
+      "kalshi_mid": 0.155,
+      "model_market_gap_pp": -5.89,
+      "abs_model_market_gap_pp": 5.89,
+      "model_executable_gap_pp": 0.0,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "5-10",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "WIDE_SPREAD",
+       "LOW_DISPLAYED_LIQUIDITY",
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "NA"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 944.0,
+       "two_sided": true,
+       "bid": 0.04,
+       "ask": 0.27,
+       "bid_size": 1.0,
+       "ask_size": 3139.0,
+       "spread": 0.23,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": 3.09,
+       "model_probabilities": {
+        "gen1": 0.0986,
+        "model4_conditioned": 0.0961,
+        "model4_fundamental": 0.0677
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": -0.0661,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": -5.89,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "WIDE_SPREAD",
+      "LOW_DISPLAYED_LIQUIDITY",
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPGSPREAD-26OCT01SHATAB-TAB2",
+     "event": "KXATPGSPREAD-26OCT01SHATAB",
+     "market_family": "GAME_SPREAD",
+     "expression": "GAME_SPREAD",
+     "description": "Will Alejandro Tabilo win at least 1.5 more games than Denis Shapovalov?",
+     "yes_means": "Alejandro Tabilo -1.5 games",
+     "subject": "Alejandro Tabilo",
+     "subject_is_a": false,
+     "line": 1.5,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.35,
+      "ask": 0.39,
+      "mid": 0.37,
+      "spread": 0.04,
+      "bid_size": 1300.0,
+      "ask_size": 4392.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.65,
+      "quote_captured_at": "2026-10-02T13:21:35.557250+00:00",
+      "quote_age_s": 943.7,
+      "open_interest": 0.0,
+      "volume_24h": 0.0
+     },
+     "model": {
+      "gen1": 0.4203,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": 0.3458,
+      "model4_fundamental": 0.4356,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": 0.3458,
+     "model_probability_source": "market_conditioned_v1 (model4_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": -0.0242,
+     "model_side_edges": {
+      "YES": -0.064188,
+      "NO": -0.015812
+     },
+     "model_preferred_side": "NEUTRAL",
+     "external": null,
+     "observed_by": [
+      "gen1_ledger",
+      "model4_board_v1"
+     ],
+     "warnings": [],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.3458,
+      "kalshi_mid": 0.37,
+      "model_market_gap_pp": -2.42,
+      "abs_model_market_gap_pp": 2.42,
+      "model_executable_gap_pp": 0.42,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "0-3",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "PASS",
+       "yes_side_meaning": "NA"
+      },
+      "ticker_orientation_status": "VERIFIED",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 944.0,
+       "two_sided": true,
+       "bid": 0.35,
+       "ask": 0.39,
+       "bid_size": 1300.0,
+       "ask_size": 4392.0,
+       "spread": 0.04,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": 8.98,
+       "model_probabilities": {
+        "gen1": 0.4203,
+        "model4_conditioned": 0.3458,
+        "model4_fundamental": 0.4356
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": -0.0158,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": -2.42,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "VERIFIED",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPGTOTAL-26OCT01SHATAB-19",
+     "event": "KXATPGTOTAL-26OCT01SHATAB",
+     "market_family": "TOTAL_GAMES",
+     "expression": "TOTAL_GAMES",
+     "description": "Over 18.5 games",
+     "yes_means": "Over 18.5 games",
+     "subject": "",
+     "subject_is_a": null,
+     "line": 18.5,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.81,
+      "ask": 0.82,
+      "mid": 0.815,
+      "spread": 0.01,
+      "bid_size": 36.0,
+      "ask_size": 28.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.19,
+      "quote_captured_at": "2026-10-02T13:21:35.959858+00:00",
+      "quote_age_s": 943.3,
+      "open_interest": 0.74,
+      "volume_24h": 0.74
+     },
+     "model": {
+      "gen1": 0.8718,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": 0.9015,
+      "model4_fundamental": 0.9051,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": 0.9015,
+     "model_probability_source": "market_conditioned_v1 (model4_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.0865,
+     "model_side_edges": {
+      "YES": 0.061493,
+      "NO": -0.111493
+     },
+     "model_preferred_side": "YES",
+     "external": null,
+     "observed_by": [
+      "gen1_ledger",
+      "model4_board_v1"
+     ],
+     "warnings": [],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.9015,
+      "kalshi_mid": 0.815,
+      "model_market_gap_pp": 8.65,
+      "abs_model_market_gap_pp": 8.65,
+      "model_executable_gap_pp": 8.15,
+      "discrepancy_band": "NORMAL",
+      "audit_bucket": "5-10",
+      "discrepancy_sanity_status": "OK",
+      "discrepancy_reason_tags": [
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "NA",
+       "yes_side_meaning": "NA"
+      },
+      "ticker_orientation_status": "NOT_APPLICABLE",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "NORMAL",
+      "evidence": {
+       "quote_age_s": 943.0,
+       "two_sided": true,
+       "bid": 0.81,
+       "ask": 0.82,
+       "bid_size": 36.0,
+       "ask_size": 28.0,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": 3.33,
+       "model_probabilities": {
+        "gen1": 0.8718,
+        "model4_conditioned": 0.9015,
+        "model4_fundamental": 0.9051
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0615,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": 8.65,
+     "discrepancy_band": "NORMAL",
+     "discrepancy_sanity_status": "OK",
+     "discrepancy_reason_tags": [
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "NOT_APPLICABLE",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPGTOTAL-26OCT01SHATAB-24",
+     "event": "KXATPGTOTAL-26OCT01SHATAB",
+     "market_family": "TOTAL_GAMES",
+     "expression": "TOTAL_GAMES",
+     "description": "Over 23.5 games",
+     "yes_means": "Over 23.5 games",
+     "subject": "",
+     "subject_is_a": null,
+     "line": 23.5,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.43,
+      "ask": 0.44,
+      "mid": 0.435,
+      "spread": 0.01,
+      "bid_size": 6444.0,
+      "ask_size": 439.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.57,
+      "quote_captured_at": "2026-10-02T13:21:35.959843+00:00",
+      "quote_age_s": 943.3,
+      "open_interest": 37.06,
+      "volume_24h": 200.06
+     },
+     "model": {
+      "gen1": 0.5428,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": 0.5537,
+      "model4_fundamental": 0.5595,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": 0.5537,
+     "model_probability_source": "market_conditioned_v1 (model4_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.1187,
+     "model_side_edges": {
+      "YES": 0.093703,
+      "NO": -0.143703
+     },
+     "model_preferred_side": "YES",
+     "external": null,
+     "observed_by": [
+      "gen1_ledger",
+      "model4_board_v1"
+     ],
+     "warnings": [],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.5537,
+      "kalshi_mid": 0.435,
+      "model_market_gap_pp": 11.87,
+      "abs_model_market_gap_pp": 11.87,
+      "model_executable_gap_pp": 11.37,
+      "discrepancy_band": "REVIEW",
+      "audit_bucket": "10-15",
+      "discrepancy_sanity_status": "REVIEW_CONTEXT",
+      "discrepancy_reason_tags": [
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "NA",
+       "yes_side_meaning": "NA"
+      },
+      "ticker_orientation_status": "NOT_APPLICABLE",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "REVIEW / DISCREPANCY CONTEXT",
+      "evidence": {
+       "quote_age_s": 943.0,
+       "two_sided": true,
+       "bid": 0.43,
+       "ask": 0.44,
+       "bid_size": 6444.0,
+       "ask_size": 439.0,
+       "spread": 0.01,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": 1.67,
+       "model_probabilities": {
+        "gen1": 0.5428,
+        "model4_conditioned": 0.5537,
+        "model4_fundamental": 0.5595
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.0937,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": 11.87,
+     "discrepancy_band": "REVIEW",
+     "discrepancy_sanity_status": "REVIEW_CONTEXT",
+     "discrepancy_reason_tags": [
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "NOT_APPLICABLE",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    },
+    {
+     "ticker": "KXATPGTOTAL-26OCT01SHATAB-29",
+     "event": "KXATPGTOTAL-26OCT01SHATAB",
+     "market_family": "TOTAL_GAMES",
+     "expression": "TOTAL_GAMES",
+     "description": "Over 28.5 games",
+     "yes_means": "Over 28.5 games",
+     "subject": "",
+     "subject_is_a": null,
+     "line": 28.5,
+     "set_index": null,
+     "exact_score": null,
+     "kalshi": {
+      "bid": 0.25,
+      "ask": 0.27,
+      "mid": 0.26,
+      "spread": 0.02,
+      "bid_size": 72.0,
+      "ask_size": 4.0,
+      "taker_fee_at_ask": 0.02,
+      "no_ask": 0.75,
+      "quote_captured_at": "2026-10-02T13:21:35.959784+00:00",
+      "quote_age_s": 943.3,
+      "open_interest": 100.0,
+      "volume_24h": 200.0
+     },
+     "model": {
+      "gen1": 0.3493,
+      "gen1_elo_only": null,
+      "gen1_structural": null,
+      "gen2": null,
+      "fair_v1": null,
+      "fair_v1_envelope": null,
+      "model4_conditioned": 0.379,
+      "model4_fundamental": 0.3838,
+      "model_uncertainty": null,
+      "selector_v1": null,
+      "qualification_ok": null
+     },
+     "model_probability_yes": 0.379,
+     "model_probability_source": "market_conditioned_v1 (model4_board_v1)",
+     "model_validity": null,
+     "model_minus_mid": 0.119,
+     "model_side_edges": {
+      "YES": 0.088952,
+      "NO": -0.148952
+     },
+     "model_preferred_side": "YES",
+     "external": null,
+     "observed_by": [
+      "gen1_ledger",
+      "model4_board_v1"
+     ],
+     "warnings": [
+      "THIN_DISPLAYED_SIZE"
+     ],
+     "discrepancy": {
+      "discrepancy_version": "discrepancy_sanity_v1",
+      "model_probability_yes": 0.379,
+      "kalshi_mid": 0.26,
+      "model_market_gap_pp": 11.9,
+      "abs_model_market_gap_pp": 11.9,
+      "model_executable_gap_pp": 10.9,
+      "discrepancy_band": "REVIEW",
+      "audit_bucket": "10-15",
+      "discrepancy_sanity_status": "REVIEW_CONTEXT",
+      "discrepancy_reason_tags": [
+       "LOW_DISPLAYED_LIQUIDITY",
+       "NO_EXTERNAL_REFERENCE",
+       "SCHEDULED_START_PASSED"
+      ],
+      "identity_check_status": "IDENTITY_VERIFIED",
+      "identity_checks": {
+       "physical_match_id": "PASS",
+       "player_ids": "PASS",
+       "identity_confidence": "PASS",
+       "namesake": "PASS",
+       "model_name_orientation": "NA",
+       "both_sides_listed": "PASS",
+       "model_complement": "PASS",
+       "market_pair": "PASS",
+       "level_mapping": "PASS",
+       "same_pair_other_event": "PASS",
+       "discipline": "PASS",
+       "ticker_orientation": "NA",
+       "yes_side_meaning": "NA"
+      },
+      "ticker_orientation_status": "NOT_APPLICABLE",
+      "market_freshness_status": "AGING",
+      "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+      "triangulation": "INSUFFICIENT_INPUTS",
+      "data_quality_status": "ADEQUATE",
+      "severe_sample_asymmetry": false,
+      "malformed_probabilities": [],
+      "extreme_preconditions": null,
+      "display_status": "REVIEW / DISCREPANCY CONTEXT",
+      "evidence": {
+       "quote_age_s": 943.0,
+       "two_sided": true,
+       "bid": 0.25,
+       "ask": 0.27,
+       "bid_size": 72.0,
+       "ask_size": 4.0,
+       "spread": 0.02,
+       "tail_price": false,
+       "external_probability": null,
+       "external_age_s": null,
+       "model_uncertainty": null,
+       "fair_envelope_width": null,
+       "model_probability_range_pp": 3.45,
+       "model_probabilities": {
+        "gen1": 0.3493,
+        "model4_conditioned": 0.379,
+        "model4_fundamental": 0.3838
+       },
+       "first_ball_source": true,
+       "scheduled_start_passed": true,
+       "model_side_edge_after_fees": 0.089,
+       "data_grade": "A",
+       "data_serve_points_a": 4723.0,
+       "data_serve_points_b": 7913.0,
+       "data_thinner_serve_points": 4723.0,
+       "data_sample_ratio": 1.68,
+       "data_matches_a": null,
+       "data_matches_b": null,
+       "data_days_since_last_a": null,
+       "data_days_since_last_b": null,
+       "data_level_familiarity": null,
+       "data_surface_matches_a": 452,
+       "data_surface_matches_b": 288
+      }
+     },
+     "model_market_gap_pp": 11.9,
+     "discrepancy_band": "REVIEW",
+     "discrepancy_sanity_status": "REVIEW_CONTEXT",
+     "discrepancy_reason_tags": [
+      "LOW_DISPLAYED_LIQUIDITY",
+      "NO_EXTERNAL_REFERENCE",
+      "SCHEDULED_START_PASSED"
+     ],
+     "identity_check_status": "IDENTITY_VERIFIED",
+     "ticker_orientation_status": "NOT_APPLICABLE",
+     "market_freshness_status": "AGING",
+     "external_confirmation_status": "NO_EXTERNAL_REFERENCE",
+     "data_quality_status": "ADEQUATE"
+    }
+   ],
+   "start": {
+    "match_id": "ATP:26OCT01SHATAB:singles",
+    "evaluated_at": "2026-10-02T13:37:19.215761+00:00",
+    "nominal_scheduled_start": "2026-10-02T05:00:00+00:00",
+    "nominal_is_placeholder": false,
+    "live_source_covered": true,
+    "start_time_last_checked": "2026-10-02T10:57:49.657362+00:00",
+    "current_expected_start": "2026-10-03T02:00:00+00:00",
+    "start_time_source": "LIVE_SCHEDULE:espn_atp",
+    "start_time_confidence": "MEDIUM",
+    "start_time_candidates": [
+     {
+      "time": "2026-10-03T02:00:00+00:00",
+      "source": "LIVE_SCHEDULE:espn_atp",
+      "confidence": "MEDIUM"
+     },
+     {
+      "time": "2026-10-02T05:00:00+00:00",
+      "source": "KALSHI_NOMINAL",
+      "confidence": "LOW"
+     }
+    ],
+    "earliest_safe_handicap_time": "2026-10-03T01:15:00+00:00",
+    "recommended_handicap_by": "2026-10-03T01:15:00+00:00",
+    "final_check_time": "2026-10-03T01:50:00+00:00",
+    "first_ball_status": "NOT_OBSERVED_STARTED",
+    "first_ball_source": null,
+    "first_ball_at": null,
+    "court": null,
+    "court_context": null,
+    "start_status": "ESTIMATED_UPCOMING",
+    "status_reasons": [
+     "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+1260_MIN",
+     "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min"
+    ],
+    "bet_allowed": false
+   },
+   "start_status": "ESTIMATED_UPCOMING"
+  }
+ ]
+}
