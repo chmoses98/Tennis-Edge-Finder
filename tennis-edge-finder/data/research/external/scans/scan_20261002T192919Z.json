@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-02T19:29:19.384559+00:00",
+ "run_id": "20261002T192919Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1267,
+  "skipped_family": 264,
+  "skipped_period": 361,
+  "skipped_live": 18,
+  "one_sided": 7,
+  "rows": 2176,
+  "devigged": 634
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 1648,
+  "markets_mapped": 524,
+  "contracts": 1120,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261002T192919Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 524,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 308,
+  "rows": 812,
+  "two_sided": 805,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 295,
+ "external_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.6639,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Laurie Barendse": 1,
+   "Tina Marie Li": 1,
+   "Sophia Christodoulou": 1,
+   "George Hakopian": 1,
+   "Jack Casciato": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6849,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9194,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Darya Khomutsianskaya": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 53,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
