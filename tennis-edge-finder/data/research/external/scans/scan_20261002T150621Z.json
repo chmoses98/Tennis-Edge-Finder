@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-02T15:06:21.674094+00:00",
+ "run_id": "20261002T150621Z",
+ "external_parse": {
+  "events": 91,
+  "markets": 916,
+  "skipped_family": 174,
+  "skipped_period": 288,
+  "skipped_live": 17,
+  "one_sided": 22,
+  "rows": 1609,
+  "devigged": 431
+ },
+ "smarkets_fetch": {
+  "events_seen": 65,
+  "events_priced": 65,
+  "markets": 1533,
+  "markets_mapped": 463,
+  "contracts": 1012,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261002T150621Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 463,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 165,
+  "rows": 847,
+  "two_sided": 843,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 397,
+ "external_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7683,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Addy Rogin": 1,
+   "Aniss Rafiq": 1,
+   "Liv Zingg": 1,
+   "Pilar Da Silva": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8154,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Liv Zingg": 1,
+   "Pilar Da Silva": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 56,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
