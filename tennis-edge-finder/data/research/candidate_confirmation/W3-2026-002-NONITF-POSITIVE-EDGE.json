@@ -2,7 +2,7 @@
  "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
  "kind": "TRADE",
  "status": "INSUFFICIENT_N",
- "status_reason": "234 eligible of 600 required",
+ "status_reason": "236 eligible of 600 required",
  "universe": {
   "experiment_start": {
    "candidate_id": "W3-2026-002-NONITF-POSITIVE-EDGE",
@@ -33,8 +33,8 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 9374,
-  "contracts_first_observed": 2250,
+  "rows_after_effective_start": 9585,
+  "contracts_first_observed": 2304,
   "post_settlement_first_observations_excluded": 16,
   "post_settlement_first_observations_by_level": {
    "ATP": 4,
@@ -43,11 +43,11 @@
   }
  },
  "metrics": {
-  "eligible_n": 234,
-  "settled_n": 199,
+  "eligible_n": 236,
+  "settled_n": 216,
   "strict_clv_n": 11,
-  "brier_fair_v1": 0.22609493793912383,
-  "brier_kalshi_mid": 0.22669872448979586,
+  "brier_fair_v1": 0.22779858390685012,
+  "brier_kalshi_mid": 0.22617276995305158,
   "strict_executable_clv": {
    "n": 11,
    "mean": -0.012727272727272733,
@@ -59,11 +59,11 @@
    "n_boot": 10000
   },
   "after_fee_pnl": {
-   "n": 199,
-   "mean": 0.017437185929648224,
+   "n": 216,
+   "mean": 0.01657407407407406,
    "median": -0.14,
-   "ci_low": -0.04824120603015076,
-   "ci_high": 0.08351884422110549,
+   "ci_low": -0.045789351851851866,
+   "ci_high": 0.07921643518518513,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
@@ -71,20 +71,20 @@
   "accuracy_condition_binding": "selected-row Brier must be no worse than the Kalshi mid's"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 7124,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 2014,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 7281,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 2066,
   "MARKET_SETTLED_BEFORE_OBSERVATION": 16
  },
  "summary": {
   "kind": "TRADE",
   "minimum_n": 600,
-  "eligible_n": 234,
-  "settled_n": 199,
+  "eligible_n": 236,
+  "settled_n": 216,
   "strict_clv_n": 11,
-  "unsettled_n": 35,
-  "clv_pending_n": 33,
+  "unsettled_n": 20,
+  "clv_pending_n": 20,
   "unscorable_n": 0,
-  "accuracy_pass": true,
+  "accuracy_pass": false,
   "clv_pass": false,
   "economics_pass": false,
   "clv_required": true,
@@ -136,11 +136,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261002T133125Z",
- "evidence_rows_this_run": 2250,
- "evidence_rows_appended": 0,
- "last_evidence_at": "2026-10-02T13:03:34.326747+00:00",
- "harvest_run_at": "2026-10-02T13:32:57.776668+00:00",
+ "harvest_run": "20261002T223729Z",
+ "evidence_rows_this_run": 2304,
+ "evidence_rows_appended": 172,
+ "last_evidence_at": "2026-10-02T22:36:16.679747+00:00",
+ "harvest_run_at": "2026-10-02T22:38:57.834864+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -177,13 +177,13 @@
   "summary_this_harvest": {
    "kind": "TRADE",
    "minimum_n": 600,
-   "eligible_n": 234,
-   "settled_n": 199,
+   "eligible_n": 236,
+   "settled_n": 216,
    "strict_clv_n": 11,
-   "unsettled_n": 35,
-   "clv_pending_n": 33,
+   "unsettled_n": 20,
+   "clv_pending_n": 20,
    "unscorable_n": 0,
-   "accuracy_pass": true,
+   "accuracy_pass": false,
    "clv_pass": false,
    "economics_pass": false,
    "clv_required": true,

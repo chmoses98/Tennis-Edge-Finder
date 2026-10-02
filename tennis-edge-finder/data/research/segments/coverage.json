@@ -1,8 +1,8 @@
 {
- "run_id": "20261002T133116Z",
- "generated_at": "2026-10-02T13:31:24.032818+00:00",
+ "run_id": "20261002T223721Z",
+ "generated_at": "2026-10-02T22:37:28.310156+00:00",
  "ledger_rows": 16390,
- "matches_with_truth": 1682,
+ "matches_with_truth": 1739,
  "matches_with_strict_truth": 752,
  "timing_classes": {
   "START_UNKNOWN": 13634,
@@ -14,7 +14,7 @@
  "executable_close_rows": 2722,
  "strict_clv_rows": 2380,
  "contradictions": 0,
- "horizons_populated": 18608,
+ "horizons_populated": 18610,
  "horizons_total": 131120,
  "segments": {
   "tour": {
@@ -181,13 +181,13 @@
   },
   "truth_confidence": {
    "UNKNOWN": {
-    "n": 12143,
+    "n": 12116,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
    },
    "C": {
-    "n": 1491,
+    "n": 1518,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
@@ -299,13 +299,13 @@
   },
   "time_to_first_ball_bucket": {
    "UNKNOWN": {
-    "n": 12343,
+    "n": 12316,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
    },
    ">6h": {
-    "n": 1457,
+    "n": 1474,
     "strict": 1214,
     "with_close": 1219,
     "with_clv": 1214
@@ -317,7 +317,7 @@
     "with_clv": 575
    },
    "<=15m": {
-    "n": 1060,
+    "n": 1056,
     "strict": 22,
     "with_close": 352,
     "with_clv": 316
@@ -329,7 +329,7 @@
     "with_clv": 466
    },
    "<=1h": {
-    "n": 185,
+    "n": 199,
     "strict": 103,
     "with_close": 104,
     "with_clv": 103
