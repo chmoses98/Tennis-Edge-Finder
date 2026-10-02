@@ -443,3 +443,24 @@ def test_open_market_stays_watched_when_its_nominal_is_stale_or_a_placeholder(tm
     assert it.tier(T(13, 7), "PRE") == "HOT"                                  # nominal long past: hottest
     assert it.tier(T(13, 7), "PRE", live_start=T(2, d=3)) == "COLD"           # ESPN moved it to tomorrow
     assert it.tier(T(13, 7), "PRE", live_start=T(13, 20)) == "HOT"
+
+
+def test_relisted_match_under_two_date_codes_is_one_meeting_not_a_collision():
+    """Production 2026-10-02: KXATPMATCH-26OCT01SHATAB (nominal 10-02 05:00) and KXATPSETWINNER-26OCT02SHATAB-1
+    (nominal 10-03 05:00) both claim ESPN's Shapovalov-Tabilo row (10-03 02:00); the date in physical_key made
+    that a collision and nobody was observed."""
+    from tennis_edge.firstball.mapping import OurMatch, map_all
+    row = SourceMatch(source="espn_atp", source_match_id="77", player_a="Denis Shapovalov", player_b="Alejandro Tabilo",
+                      state="PRE", scheduled_utc=T(2, d=3), tournament="Japan Open")
+    ours = [OurMatch("KXATPMATCH-26OCT01SHATAB", "Denis Shapovalov", "Alejandro Tabilo", T(5)),
+            OurMatch("KXATPSETWINNER-26OCT02SHATAB-1", "Denis Shapovalov", "Alejandro Tabilo", T(5, d=3))]
+    mp, _ = map_all(ours, [row])
+    assert {m.status for m in mp.values()} == {"MATCHED"}
+    # a different pair claiming the same row is still a collision
+    clash = ours[:1] + [OurMatch("X", "Denis Shapovalov", "Someone Else", T(5))]
+    mp2, _ = map_all(clash, [SourceMatch(source="espn_atp", source_match_id="77", player_a="Denis Shapovalov",
+                                         player_b="Alejandro Tabilo", state="PRE", scheduled_utc=T(5))])
+    assert mp2["KXATPMATCH-26OCT01SHATAB"].status in ("MATCHED", "AMBIGUOUS")      # unchanged behaviour for pairs
+    far = [OurMatch("P", "Denis Shapovalov", "Alejandro Tabilo", T(15, d=1)),
+           OurMatch("Q", "Denis Shapovalov", "Alejandro Tabilo", T(13, d=4))]          # 70 h apart: two meetings
+    assert {m.status for m in map_all(far, [row])[0].values()} == {"AMBIGUOUS"}
