@@ -420,3 +420,26 @@ def test_planner_script_and_tennis_18(tmp_path):
     status, d = gate_18(w["research"], firstball_root=store, now=datetime(2026, 10, 1, 10, 30, tzinfo=UTC))
     assert status == "FAIL" and {"PLAN_STALE", "WINDOW_MISSED"} <= set(d["failing"])    # slate built 08:05 only
     assert gate_18(w["research"], firstball_root=str(tmp_path / "none"))[0] == "UNKNOWN"
+
+
+def test_open_market_stays_watched_when_its_nominal_is_stale_or_a_placeholder(tmp_path):
+    """Production 2026-10-02 13:07Z: Bu-Djokovic (nominal 06:00Z, ESPN 12:30Z) dropped off the watchlist at
+    ~12:00Z because its nominal fell outside -6 h; Shapovalov-Tabilo (nominal 05:00Z, moved to 10-03 02:00Z)
+    likewise. An event still open on the live board is watched; the nominal only bounds the far edges."""
+    from tennis_edge.firstball.watchlist import build_watchlist, WatchItem
+    cap = tmp_path / "capture" / "2026-10-02"
+    cap.mkdir(parents=True)
+    rows = [DW._mw("KXATPMATCH-26OCT01YUNDJO-YUN", "Yunchaokete Bu", 0.2, 0.22, T(12, 50)),
+            DW._mw("KXATPMATCH-26OCT01YUNDJO-DJO", "Novak Djokovic", 0.78, 0.8, T(12, 50))]
+    for r in rows:
+        r.update(event_ticker="KXATPMATCH-26OCT01YUNDJO", occurrence_datetime="2026-10-02T05:00:00Z")
+    with gzip.open(cap / "20261002T125000Z.quotes.jsonl.gz", "wt") as f:
+        for r in rows:
+            f.write(json.dumps(r) + "\n")
+    items, diag = build_watchlist(None, now=T(13, 7), capture_root=str(tmp_path / "capture"))
+    assert [i.match_id for i in items] == ["KXATPMATCH-26OCT01YUNDJO"] and diag["kept_open_outside_nominal_window"] == 1
+    # cadence follows the live source's current time, not the stale nominal
+    it = WatchItem("M", "a", "b", False, T(5), True, "ATP", "TOUR_500_250", "x", ())
+    assert it.tier(T(13, 7), "PRE") == "HOT"                                  # nominal long past: hottest
+    assert it.tier(T(13, 7), "PRE", live_start=T(2, d=3)) == "COLD"           # ESPN moved it to tomorrow
+    assert it.tier(T(13, 7), "PRE", live_start=T(13, 20)) == "HOT"
