@@ -1,0 +1,45 @@
+{
+ "run_id": "20261002T091829Z",
+ "started_at": "2026-10-02T09:18:29.071062+00:00",
+ "passes": 3,
+ "requests": 6,
+ "observations": 258,
+ "truths_written": 0,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 6
+ },
+ "mapping": {
+  "MATCHED": 258,
+  "UNMATCHED": 312,
+  "AMBIGUOUS": 9
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT01RAKFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184314 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXWTASETWINNER-26OCT01RAKFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184314 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  },
+  "KXWTASETWINNER-26OCT01RAKFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 184314 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_atp"
+  }
+ },
+ "finished_at": "2026-10-02T09:28:15.863791+00:00"
+}
