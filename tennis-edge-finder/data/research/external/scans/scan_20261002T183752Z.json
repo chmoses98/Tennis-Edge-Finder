@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-02T18:37:52.392041+00:00",
+ "run_id": "20261002T183752Z",
+ "external_parse": {
+  "events": 134,
+  "markets": 1215,
+  "skipped_family": 249,
+  "skipped_period": 353,
+  "skipped_live": 23,
+  "one_sided": 9,
+  "rows": 2086,
+  "devigged": 603
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 1630,
+  "markets_mapped": 509,
+  "contracts": 1048,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261002T183752Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 509,
+  "skipped_family": 0,
+  "no_contracts": 20,
+  "no_book": 282,
+  "rows": 766,
+  "two_sided": 762,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 322,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.6504,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Micah Ward": 1,
+   "George Hakopian": 1,
+   "Nathan Gold": 1,
+   "Laurie Barendse": 1,
+   "Tina Marie Li": 1,
+   "Sophia Christodoulou": 1,
+   "Herman H\u00f8yeraal": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9474,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
