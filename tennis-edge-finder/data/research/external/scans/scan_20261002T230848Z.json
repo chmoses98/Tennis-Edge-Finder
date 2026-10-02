@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-02T23:08:48.960051+00:00",
+ "run_id": "20261002T230848Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 1201,
+  "skipped_family": 259,
+  "skipped_period": 342,
+  "skipped_live": 9,
+  "one_sided": 12,
+  "rows": 2075,
+  "devigged": 587
+ },
+ "smarkets_fetch": {
+  "events_seen": 76,
+  "events_priced": 76,
+  "markets": 1711,
+  "markets_mapped": 550,
+  "contracts": 1180,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261002T230848Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 550,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 362,
+  "rows": 818,
+  "two_sided": 816,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 312,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6636,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Michelle Ryndin": 1,
+   "Chloe Fouhety": 1,
+   "Tanika Saravanan": 1,
+   "Thompson Martha": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6711,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9455,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Darya Khomutsianskaya": 1,
+   "Fares Zakaria": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
