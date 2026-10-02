@@ -2,7 +2,7 @@
  "candidate_id": "EC-2026-001-MKTCOND-EXACT-SCORE",
  "kind": "PRICING_ACCURACY",
  "status": "INSUFFICIENT_N",
- "status_reason": "51 eligible of 400 required",
+ "status_reason": "55 eligible of 400 required",
  "universe": {
   "experiment_start": {
    "candidate_id": "EC-2026-001-MKTCOND-EXACT-SCORE",
@@ -32,14 +32,14 @@
    "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
    "producer_rows_before_effective_start": 0
   },
-  "listed_contract_rows_after_effective_start": 808,
-  "listed_contracts": 204,
+  "listed_contract_rows_after_effective_start": 860,
+  "listed_contracts": 220,
   "note": "rows exist only for contracts Kalshi actually listed; zero is a valid count",
   "post_settlement_first_runs_excluded": 0,
   "post_settlement_first_runs_by_level": {}
  },
  "metrics": {
-  "eligible_matches": 51,
+  "eligible_matches": 55,
   "scored_matches": 0,
   "logloss_conditioned_minus_fundamental": {
    "n": 0,
@@ -57,10 +57,10 @@
  "summary": {
   "kind": "PRICING_ACCURACY",
   "minimum_n": 400,
-  "eligible_n": 51,
+  "eligible_n": 55,
   "settled_n": 0,
   "strict_clv_n": 0,
-  "unsettled_n": 51,
+  "unsettled_n": 55,
   "clv_pending_n": 0,
   "unscorable_n": 0,
   "accuracy_pass": null,
@@ -115,11 +115,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261001T230215Z",
- "evidence_rows_this_run": 51,
- "evidence_rows_appended": 0,
- "last_evidence_at": "2026-10-01T17:35:46.118220+00:00",
- "harvest_run_at": "2026-10-01T23:02:18.274838+00:00",
+ "harvest_run": "20261002T061016Z",
+ "evidence_rows_this_run": 55,
+ "evidence_rows_appended": 4,
+ "last_evidence_at": "2026-10-02T06:09:27.714667+00:00",
+ "harvest_run_at": "2026-10-02T06:10:18.583082+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -152,10 +152,10 @@
   "summary_this_harvest": {
    "kind": "PRICING_ACCURACY",
    "minimum_n": 400,
-   "eligible_n": 51,
+   "eligible_n": 55,
    "settled_n": 0,
    "strict_clv_n": 0,
-   "unsettled_n": 51,
+   "unsettled_n": 55,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": null,
