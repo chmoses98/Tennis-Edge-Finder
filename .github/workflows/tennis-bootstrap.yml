@@ -103,12 +103,16 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/serve_probe --message "serve-source probe $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
       - name: Publish ESPN results
+        id: publish_espn
         if: always()
-        # a green step that published nothing is worse than a red one, so say so out loud
+        # a green step that published nothing is worse than a red one, so say so out loud: the exit code is
+        # recorded here and judged ONCE by the last step (ESPN verdict), so the tennis-data snapshots below still run
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/espn --message "espn current results $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
+          RC=0
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/sources/espn --message "espn current results $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || RC=$?
+          echo "rc=$RC" >> "$GITHUB_OUTPUT"
       - name: Acquire tennis-data.co.uk (+ mirrors)
         id: acquire_td
         continue-on-error: true
@@ -123,6 +127,11 @@ jobs:
       - name: Report partial acquisition
         if: steps.acquire.outcome != 'success'
         run: echo "::warning::source acquisition reported failures (see manifest.json); data published for inspection"
+      - name: ESPN verdict (FAILED only when fetched results could not be published; a failed fetch is DEGRADED)
+        if: always() && steps.publish_espn.outcome == 'success'
+        run: |
+          python3 scripts/ci/run_state.py espn --acquire-outcome "${{ steps.acquire_espn.outcome }}" \
+            --publish-rc "${{ steps.publish_espn.outputs.rc }}"
 
   kalshi:
     runs-on: ubuntu-latest
