@@ -103,13 +103,15 @@ def main():
         items = [it for it in items if it.match_id not in resolved]
         # what a source last SAID about each match outranks what the exchange scheduled: a match seen
         # still not started, past its nominal time, is the most urgent thing on the board
-        last_state = {}
+        last_state, live_start = {}, {}
         for o in store.observations():
             cur = last_state.get(o.match_id)
             if cur is None or o.observed_at_utc > cur[1]:
                 last_state[o.match_id] = (o.state, o.observed_at_utc)
+                # the live source's current start time (not a timeValid=false placeholder) drives the cadence
+                live_start[o.match_id] = o.source_event_timestamp if o.source_time_valid is not False else None
         states = {k: v[0] for k, v in last_state.items()}
-        interval, tiers = poll_interval(items, now, states)
+        interval, tiers = poll_interval(items, now, states, {k: v for k, v in live_start.items() if v})
         interval = max(interval, a.min_interval)
         print(f"[{now:%H:%M:%S}] watch={len(items)} tiers={tiers} interval={interval}s "
               f"(discovery {os.path.basename(disc) if disc else None}, {diag})", flush=True)

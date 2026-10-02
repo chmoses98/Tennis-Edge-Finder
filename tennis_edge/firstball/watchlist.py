@@ -33,6 +33,11 @@ RELIABLE_NOMINAL_LEVELS = ("GRAND_SLAM", "MASTERS_1000", "TOUR_500_250", "TOUR_F
 SOURCE_COVERED_LEVELS = ("GRAND_SLAM", "MASTERS_1000", "TOUR_500_250", "TOUR_FINALS", "OLYMPICS", "TEAM",
                          "WTA_125")
 
+#: nominal window for events still open on the live capture board (the market itself proves the match is
+#: not settled; its nominal may be a placeholder or stale, so it only bounds the far edges)
+OPEN_LOOKBACK_H = 48
+OPEN_HORIZON_H = 30
+
 TIER_HOT, TIER_WARM, TIER_COLD = "HOT", "WARM", "COLD"
 TIER_SECONDS = {TIER_HOT: 60, TIER_WARM: 300, TIER_COLD: 900}
 
@@ -50,7 +55,7 @@ class WatchItem:
     competition: str
     tickers: tuple
 
-    def tier(self, now: datetime, observed_state: str | None = None) -> str:
+    def tier(self, now: datetime, observed_state: str | None = None, live_start: datetime | None = None) -> str:
         """How urgently to poll this match.
 
         `observed_state` is what a live-score source last said about it, and it dominates the schedule.
@@ -59,15 +64,20 @@ class WatchItem:
         worthless. Tiering that case off the nominal alone put a delayed Grand Slam semifinal on a
         five-minute cadence on 2026-09-11 and cost a confidence-B bracket by 61 seconds -- the exact
         failure this wave exists to prevent.
+
+        `live_start` is the live source's own CURRENT start time for the match (ESPN moves it as courts
+        progress); when known it replaces the exchange nominal, which may be a day placeholder or a time the
+        match was moved away from (2026-10-02).
         """
         if observed_state in ("IN", "POST", "NO_PLAY"):
             return TIER_COLD                       # nothing left to bracket; the poller drops it anyway
-        dt = (self.scheduled_utc - now).total_seconds() if self.scheduled_utc else None
+        start = live_start or self.scheduled_utc
+        dt = (start - now).total_seconds() if start else None
         if observed_state == "PRE" and (dt is None or dt <= 1800):
             return TIER_HOT                        # seen not-started, and due or overdue
         if dt is None:
             return TIER_WARM
-        if not self.nominal_reliable:
+        if not self.nominal_reliable and live_start is None:
             # the nominal is not a start time; play may already have begun, so stay warm across the window
             return TIER_HOT if -3600 <= dt <= 3 * 3600 else TIER_WARM
         if -1800 <= dt <= 3600:
@@ -188,6 +198,8 @@ def build_watchlist(discovery_dir: str | None, *, now: datetime | None = None, c
     from tennis_edge.pricing.competition import classify_competition
     now = now or datetime.now(timezone.utc)
     lo, hi = now - timedelta(hours=lookback_hours), now + timedelta(hours=horizon_hours)
+    # an event still OPEN on the live capture board is watched across a wider nominal window
+    lo_open, hi_open = now - timedelta(hours=OPEN_LOOKBACK_H), now + timedelta(hours=OPEN_HORIZON_H)
 
     fresh = _fresh_open_tickers(capture_root, now)
     by_event: dict[str, list] = {}
@@ -237,7 +249,14 @@ def build_watchlist(discovery_dir: str | None, *, now: datetime | None = None, c
         raw = raw_by_ticker.get(head.ticker, {})
         sched = _parse_ts(raw.get("occurrence_datetime") or raw.get("expected_expiration_time"))
         reliable = info["level"] in RELIABLE_NOMINAL_LEVELS
-        if sched is not None and not (lo <= sched <= hi):
+        open_now = bool(board) and any(pm.ticker in board for pm in pms)
+        if sched is not None and open_now and lo_open <= sched <= hi_open:
+            # still open on the live board: Kalshi's nominal is not a start time (a day placeholder, or a
+            # time the match was moved away from), so it must not drop the match from the watchlist.
+            # Polling cost scales with sources, not matches, so watching it costs nothing.
+            if not (lo <= sched <= hi):
+                diag["kept_open_outside_nominal_window"] = diag.get("kept_open_outside_nominal_window", 0) + 1
+        elif sched is not None and not (lo <= sched <= hi):
             diag["outside_window"] += 1
             continue
         if ev not in disc_events:
@@ -252,16 +271,17 @@ def build_watchlist(discovery_dir: str | None, *, now: datetime | None = None, c
 
 
 def poll_interval(items: list[WatchItem], now: datetime | None = None,
-                  states: dict | None = None) -> tuple[int, dict]:
+                  states: dict | None = None, live_starts: dict | None = None) -> tuple[int, dict]:
     """Cadence for the next pass: the most urgent tier any watched match is in.
 
     `states` maps match_id -> the last state a live-score source reported, so that what we have actually
     SEEN outranks what the exchange scheduled."""
     now = now or datetime.now(timezone.utc)
     states = states or {}
+    live_starts = live_starts or {}
     counts = {TIER_HOT: 0, TIER_WARM: 0, TIER_COLD: 0}
     for it in items:
-        counts[it.tier(now, states.get(it.match_id))] += 1
+        counts[it.tier(now, states.get(it.match_id), live_starts.get(it.match_id))] += 1
     for tier in (TIER_HOT, TIER_WARM, TIER_COLD):
         if counts[tier]:
             return TIER_SECONDS[tier], counts
