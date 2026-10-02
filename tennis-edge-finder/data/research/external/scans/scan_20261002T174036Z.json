@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-02T17:40:36.338472+00:00",
+ "run_id": "20261002T174036Z",
+ "external_parse": {
+  "events": 77,
+  "markets": 776,
+  "skipped_family": 187,
+  "skipped_period": 237,
+  "skipped_live": 17,
+  "one_sided": 5,
+  "rows": 1354,
+  "devigged": 346
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 1619,
+  "markets_mapped": 497,
+  "contracts": 1070,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261002T174036Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 497,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 256,
+  "rows": 814,
+  "two_sided": 808,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 328,
+ "external_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.7879,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Micah Ward": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8033,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9298,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 71,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 33,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
