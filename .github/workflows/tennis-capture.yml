@@ -7,6 +7,8 @@ name: Tennis Kalshi Capture Conductor
 # so the `schedule:` cron below is the primary driver and the self-dispatch is the belt-and-braces
 # continuation that keeps the 10-minute cadence unbroken between cron ticks. Either alone is sufficient;
 # `concurrency` guarantees only one conductor runs at a time. Stop the chain by disabling this workflow.
+# The hand-off (scripts/ci/conductor_chain.py) does not dispatch when a run is already queued (normally the cron
+# tick), because a second pending run would cancel the first: that race made ~every cron tick a CANCELLED run.
 #
 # Evidence paths on `tennis-data` keep the historical `tennis-edge-finder/` prefix (--dest-prefix): that is
 # what allowed every pre-migration commit to migrate with its ORIGINAL SHA. Do not "tidy" it.
@@ -46,6 +48,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
+      - name: Record job start (the loop budgets against timeout-minutes, see scripts/ci/conductor_clock.sh)
+        run: echo "JOB_T0=$(date +%s)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -70,9 +74,13 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           MINUTES="${{ github.event.inputs.minutes || '340' }}"
           INTERVAL="${{ github.event.inputs.interval || '600' }}"
-          END=$(( $(date +%s) + MINUTES * 60 ))
+          # END = min(loop start + MINUTES, job start + timeout-minutes - 10); a pass starts only if the longest
+          # pass so far still fits, so a normal conductor ends by itself instead of being cancelled by the timeout
+          source scripts/ci/conductor_clock.sh
+          END=$(conductor_end "$(date +%s)" "$MINUTES" "$JOB_T0" 355 10)
           PASS=0
-          while [ $(date +%s) -lt $END ]; do
+          LONGEST=0
+          while conductor_should_start "$(date +%s)" "$END" "$LONGEST"; do
             T0=$(date +%s)
             git fetch --depth=1 origin tennis-data || true
             mkdir -p data/kalshi/capture
@@ -94,14 +102,17 @@ jobs:
             rm -rf data/kalshi/capture/2*; find data/kalshi/capture -size +95M -delete
             PASS=$((PASS+1))
             ELAPSED=$(( $(date +%s) - T0 ))
-            SLEEP=$(( INTERVAL - ELAPSED )); [ $SLEEP -gt 0 ] && sleep $SLEEP
+            [ "$ELAPSED" -gt "$LONGEST" ] && LONGEST=$ELAPSED
+            SLEEP=$(conductor_sleep "$(date +%s)" "$END" "$INTERVAL" "$ELAPSED"); [ "$SLEEP" -gt 0 ] && sleep "$SLEEP"
           done
-          echo "conductor finished after $PASS passes"
-      - name: Dispatch successor
-        if: always() && (github.event.inputs.chain == 'true' || github.event_name == 'push')
+          echo "conductor finished after $PASS passes (longest pass ${LONGEST}s, $(( END - $(date +%s) ))s of budget left)"
+          echo "capture conductor: $PASS passes, longest ${LONGEST}s, ended within its budget" >> "$GITHUB_STEP_SUMMARY"
+      - name: Hand off to the successor (dispatch one unless a run is already queued)
+        # schedule-started conductors continue the chain too: with the hand-off below, the queued cron tick is
+        # usually the successor, so it must be able to hand off in turn (as the first-ball conductor already does)
+        if: always() && (github.event.inputs.chain == 'true' || github.event_name == 'push' || github.event_name == 'schedule')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/tennis-capture.yml/dispatches" \
-            -d '{"ref":"${{ github.ref_name }}","inputs":{"minutes":"340","interval":"600","chain":"true"}}' -w "\nHTTP %{http_code}\n"
+          python3 scripts/ci/conductor_chain.py --workflow tennis-capture.yml --ref "${{ github.ref_name }}" \
+            --inputs '{"minutes":"340","interval":"600","chain":"true"}'
