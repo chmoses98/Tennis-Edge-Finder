@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-02T06:56:48.913114+00:00",
+ "run_id": "20261002T065648Z",
+ "external_parse": {
+  "events": 159,
+  "markets": 1695,
+  "skipped_family": 316,
+  "skipped_period": 508,
+  "skipped_live": 22,
+  "one_sided": 26,
+  "rows": 2750,
+  "devigged": 845
+ },
+ "smarkets_fetch": {
+  "events_seen": 77,
+  "events_priced": 77,
+  "markets": 1568,
+  "markets_mapped": 662,
+  "contracts": 1430,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261002T065648Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 662,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 572,
+  "rows": 858,
+  "two_sided": 840,
+  "one_sided": 18
+ },
+ "kalshi_quotes_on_disk": 534,
+ "external_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.7881,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1,
+   "Astrid Brune Olsen": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9196,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1,
+   "Amr Elsayed": 1,
+   "Pilar Da Silva": 1,
+   "Ekaterina Dotsenko": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 118,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "tri:MARKETS_AGREE": 10,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
