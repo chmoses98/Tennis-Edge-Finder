@@ -19,6 +19,7 @@ jobs:
         with:
           python-version: '3.11'
       - name: Install
-        run: python -m pip install --quiet -e . pytest
+        # PyYAML: the workflow-shape tests (test_run_state, test_conductor_ci) parse the YAML files.
+        run: python -m pip install --quiet -e . pytest pyyaml
       - name: Test
         run: python -m pytest -q tests
