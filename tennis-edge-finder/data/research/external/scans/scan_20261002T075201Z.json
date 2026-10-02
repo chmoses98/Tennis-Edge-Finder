@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-02T07:52:01.538711+00:00",
+ "run_id": "20261002T075201Z",
+ "external_parse": {
+  "events": 156,
+  "markets": 1634,
+  "skipped_family": 296,
+  "skipped_period": 497,
+  "skipped_live": 23,
+  "one_sided": 33,
+  "rows": 2647,
+  "devigged": 807
+ },
+ "smarkets_fetch": {
+  "events_seen": 70,
+  "events_priced": 70,
+  "markets": 1366,
+  "markets_mapped": 593,
+  "contracts": 1282,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261002T075201Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 593,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 450,
+  "rows": 832,
+  "two_sided": 828,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 520,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7905,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kenta Kawada": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Amr Elsayed": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9204,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1,
+   "Amr Elsayed": 1,
+   "Pilar Da Silva": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 84,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 128,
+ "counts": {
+  "PASS": 125,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 73,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
