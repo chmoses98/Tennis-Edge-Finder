@@ -31,7 +31,8 @@ jobs:
         run: |
           git fetch --depth=1 --filter=blob:none origin tennis-data
           T=$(date -u +%F); Y=$(date -u -d yesterday +%F)
-          for path in research/assisted_slates firstball/store/truths firstball/store/schedule \
+          for path in research/assisted_slates research/health_latest.json research/frozen_producers/heartbeats.jsonl \
+                      research/assisted_decisions app/latest firstball/store/truths firstball/store/schedule \
                       "firstball/store/observations/$Y.jsonl" "firstball/store/observations/$T.jsonl" \
                       "kalshi/capture/$Y" "kalshi/capture/$T" \
                       "research/ledger/$Y.jsonl" "research/ledger/$T.jsonl" \
@@ -48,9 +49,33 @@ jobs:
           done
       - name: Build the slate
         run: PYTHONPATH=. python3 scripts/research/build_assisted_slate.py
+      - name: App export (Edge Finder contract)
+        # Same contract as RUN TENNIS: data/app/latest from the fresh slate. A failure writes health.json only,
+        # is recorded here, and fails the job AFTER the slate has been published (never blocks it, never silent).
+        run: |
+          ACC=""
+          if git ls-remote --exit-code --heads origin accounting-data >/dev/null 2>&1; then
+            git fetch --depth=1 origin accounting-data
+            rm -rf ../_accounting_data && mkdir -p ../_accounting_data
+            git archive origin/accounting-data | tar -x -C ../_accounting_data
+            ACC="--accounting-dir ../_accounting_data"
+          fi
+          if ! PYTHONPATH=. python3 scripts/app_export.py --data-root data --out data/app/latest $ACC \
+               --commit-sha "$GITHUB_SHA" --workflow-run-id "$GITHUB_RUN_ID" > app_export.log 2>&1; then
+            echo "::error::app export failed; health-only written, payload is last-known-good (job fails after publish)"
+            echo "APP_EXPORT_FAILED=1" >> "$GITHUB_ENV"
+          fi
+          tail -8 app_export.log
       - name: Publish
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/assisted_slates \
             --message "assisted slate $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/app \
+            --message "app export $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+      - name: Fail the job if the app export failed (after publish)
+        if: env.APP_EXPORT_FAILED == '1'
+        run: |
+          echo "::error::app export failed earlier in this run; the slate was published, app/latest carries health-only"
+          exit 1
