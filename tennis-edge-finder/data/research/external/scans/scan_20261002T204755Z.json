@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-02T20:47:55.500100+00:00",
+ "run_id": "20261002T204755Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1213,
+  "skipped_family": 259,
+  "skipped_period": 344,
+  "skipped_live": 14,
+  "one_sided": 7,
+  "rows": 2101,
+  "devigged": 602
+ },
+ "smarkets_fetch": {
+  "events_seen": 75,
+  "events_priced": 75,
+  "markets": 1648,
+  "markets_mapped": 525,
+  "contracts": 1122,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261002T204755Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 525,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 314,
+  "rows": 808,
+  "two_sided": 802,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 438,
+ "external_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6726,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "George Hakopian": 1,
+   "Jack Casciato": 1,
+   "Brian Windsor": 1,
+   "Loic Massotte": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.68,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9265,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Darya Khomutsianskaya": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
