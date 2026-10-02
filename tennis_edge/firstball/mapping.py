@@ -135,6 +135,23 @@ def map_match(ours: OurMatch, feed: list[SourceMatch], *, window_hours: int = DE
                    reason="" if status == "MATCHED" else "surname-only fit; no initial to verify")
 
 
+SAME_MEETING_SPAN_H = 48
+
+
+def same_meeting(ms: list[OurMatch]) -> bool:
+    """Several of our events claiming one feed row are ONE meeting when they name the same pair in the same
+    discipline and their nominal times lie within SAME_MEETING_SPAN_H of each other. Kalshi re-lists a
+    rescheduled match under a new date code (2026-10-02: Shapovalov-Tabilo's match winner under 26OCT01 with
+    a 10-02 nominal, its set winners under 26OCT02 with a 10-03 nominal), and the date in physical_key then
+    split one meeting in two and refused it as a collision. Two meetings of one pair 48 h apart do not happen
+    on a tour board; a different pair or a missing nominal is still a collision."""
+    keys = {tuple(sorted((normalize_name(m.player_a), normalize_name(m.player_b)))) + (m.doubles,) for m in ms}
+    times = [m.scheduled_utc for m in ms]
+    if len(keys) != 1 or any(t is None for t in times):
+        return False
+    return (max(times) - min(times)).total_seconds() <= SAME_MEETING_SPAN_H * 3600
+
+
 def map_all(ours: list[OurMatch], feed: list[SourceMatch], **kw) -> tuple[dict[str, Mapping], dict]:
     out = {m.match_id: map_match(m, feed, **kw) for m in ours}
     counts: dict[str, int] = {}
@@ -143,12 +160,13 @@ def map_all(ours: list[OurMatch], feed: list[SourceMatch], **kw) -> tuple[dict[s
     # A feed row claimed by two DIFFERENT physical matches is a collision: nobody gets it. Several event
     # tickers for the SAME physical match claiming one row is not a collision, it is the normal case.
     phys = {m.match_id: m.physical_key for m in ours}
+    by_id = {m.match_id: m for m in ours}
     claims: dict[tuple, list[str]] = {}
     for mid, m in out.items():
         if m.status in ("MATCHED", "WEAK"):
             claims.setdefault((m.source, m.source_match_id), []).append(mid)
     for key, mids in claims.items():
-        if len({phys.get(mid) for mid in mids}) > 1:
+        if len({phys.get(mid) for mid in mids}) > 1 and not same_meeting([by_id[x] for x in mids]):
             for mid in mids:
                 out[mid] = Mapping(mid, "AMBIGUOUS", source=key[0], score=out[mid].score,
                                    reason=f"feed match {key[1]} claimed by "

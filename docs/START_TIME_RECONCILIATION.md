@@ -16,6 +16,7 @@ Yastremska-Chwalinska, Alexandrova-Sasnovich) had started before the handicappin
 | RC3 a pregame-only first-ball truth (`upper_bound_utc` empty: "seen NOT started at t") was read as "may have started at t" | at 06:30Z replay this hid 15 ESPN-watched pregame main-tour matches from the slate and would have refused decisions on them | `assisted.market.first_ball_bound` returns a bound only when play was observed |
 | RC4 nothing computed when the next window opens; RUN TENNIS ran on a 6 h cron | | the planner below runs inside the first-ball conductor every ~10 min |
 | RC1b (found in production after the first fix) the watchlist still dropped an event whose Kalshi nominal was > 6 h past or > 14 h ahead | 13:07Z: Bu-Djokovic (nominal 06:00Z, ESPN 12:30Z) and Shapovalov-Tabilo (nominal 05:00Z, moved to 10-03 02:00Z) unwatched, so their status went stale (STATUS_AMBIGUOUS, failing closed) | an event still OPEN on the live board is watched across -48 h / +30 h of its nominal; polling cadence follows the live source's current start time, not the nominal |
+| RC1c the mapping collision guard keyed a physical match on its nominal DATE | Kalshi listed Shapovalov-Tabilo's match winner as 26OCT01 (nominal 10-02) and its set winners as 26OCT02 (nominal 10-03); both claimed ESPN's row and all were refused | same pair, same discipline, nominals within 48 h = one meeting (`mapping.same_meeting`); a different pair is still a collision |
 
 ## Authority order (highest first)
 
