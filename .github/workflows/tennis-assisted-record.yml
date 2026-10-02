@@ -35,7 +35,10 @@ jobs:
       - name: Pull the evidence the recorder validates against
         run: |
           git fetch --depth=1 --filter=blob:none origin tennis-data
+          # observations feed the start-status check: a main-tour BET needs a live PRE reading <= 30 min old
           for path in research/assisted_decisions research/assisted_slates firstball/store/truths \
+                      "firstball/store/observations/$(date -u -d yesterday +%F).jsonl" \
+                      "firstball/store/observations/$(date -u +%F).jsonl" \
                       "kalshi/capture/$(date -u -d yesterday +%F)" "kalshi/capture/$(date -u +%F)"; do
             # evidence keeps its historical prefix on the branch; --strip-components=1 lands it at ./data/
             if [ -n "$(git ls-tree origin/tennis-data "tennis-edge-finder/data/$path")" ]; then

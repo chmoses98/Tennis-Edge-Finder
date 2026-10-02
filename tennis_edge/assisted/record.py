@@ -9,7 +9,14 @@ INVALID_TICKER, INVALID_TIMESTAMP, DECISION_IN_FUTURE, RECORDED_TOO_LATE, BEFORE
 UNSUPPORTED_MARKET_FAMILY, MARKET_NOT_FOUND, MARKET_NOT_OPEN, IDENTIFIER_MISMATCH, POST_START_DECISION,
 INVALID_FIELD, MISSING_FIELD, INVALID_FACTOR_TAG, EXPRESSION_MISMATCH, MARKET_PRICE_UNAVAILABLE,
 DUPLICATE_ID, DUPLICATE_SUBMISSION, UNKNOWN_DECISION, WAGER_MARKET_MISMATCH, STAKE_MISMATCH,
-DISCREPANCY_EXPLANATION_REQUIRED, DISCREPANCY_DATA_WARNING, UNVALIDATED_MODEL_PROBABILITY.
+DISCREPANCY_EXPLANATION_REQUIRED, DISCREPANCY_DATA_WARNING, UNVALIDATED_MODEL_PROBABILITY, START_STATUS_NOT_VERIFIED.
+
+Start status (schema v3, tennis_edge.firstball.start_times): the recorder reconciles the match's start at
+created_at from first-ball truth, live-score readings, the live schedule, court progression and (last, LOW) the
+Kalshi nominal. Observed play -> POST_START_DECISION (any decision). STATUS_AMBIGUOUS, NO_PLAY, or a
+live-source-covered match (ATP / WTA main tour, WTA 125) without a live PRE reading in the last 30 minutes -> a
+BET is refused as START_STATUS_NOT_VERIFIED; PASS and WATCH are still recorded. A future scheduled time alone
+never makes a match pregame.
 
 Doubles: the current Gen-1 doubles model failed its no-skill validation, so a doubles decision never carries a
 model probability (gen1/gen2/fair_v1/Model 4 stay null; agreement is MODEL_NEUTRAL or MODEL_AND_CHATGPT_BOTH_PASS)
@@ -34,6 +41,7 @@ from tennis_edge.pricing.fees import taker_fee
 
 from . import ASSISTED_AUTHORITY, AUTONOMOUS_REAL_MONEY_AUTHORITY, TRACK_NAME
 from . import discrepancy as DS
+from tennis_edge.firstball import start_times as ST
 from .market import first_ball_bound, fnum, iso, load_truths, quote_record_at, truth_for
 from .schema import (ASSISTED_SCHEMA_VERSION, CONFIDENCE, DECISION_FIELDS, DECISIONS, EVIDENCE_FIELDS,
                      FACTOR_TAGS, LOSS_ATTRIBUTION, MARKET_EXPRESSIONS, MATERIAL_DISAGREEMENT,
@@ -44,7 +52,7 @@ from .schema import (ASSISTED_SCHEMA_VERSION, CONFIDENCE, DECISION_FIELDS, DECIS
 from .slate import FIRST_BALL_COVERED, load_slate, slate_market
 from .store import RecordStore, canonical_hash, load_track_start
 
-RECORDER_VERSION = "assisted_recorder_v2"
+RECORDER_VERSION = "assisted_recorder_v3"
 DUPLICATE_WINDOW_S = 6 * 3600
 SLATE_MAX_AGE_H = 13.0
 STALE_QUOTE_S = 30 * 60
@@ -256,6 +264,18 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
     lb = (smatch or {}).get("level_bucket") or level_bucket(series)
     sched = (rec or {}).get("occurrence_datetime") or (smatch or {}).get("scheduled_start")
     sched_passed = bool(iso(sched) and iso(sched) <= created)
+    start = _start_at_decision(data_root, truths, event or ticker, sched, lb, created, smatch)
+    if start["start_status"] == ST.STARTED:
+        raise AssistedValidationError("POST_START_DECISION", f"{event or ticker} was under way at created_at "
+                                      f"{created.isoformat()}: {'; '.join(start['status_reasons'])} "
+                                      f"(first ball: {start.get('first_ball_source')})")
+    if decision == "BET" and not start["bet_allowed"]:
+        raise AssistedValidationError("START_STATUS_NOT_VERIFIED", (
+            f"start status at created_at is {start['start_status']} ({'; '.join(start['status_reasons'])}); a BET needs a "
+            "verifiably pregame match -- re-check live status (dispatch TENNIS assisted slate) or record PASS / WATCH"))
+    if start["start_status"] in (ST.START_IMMINENT, ST.START_UNKNOWN, ST.ESTIMATED_UPCOMING):
+        warnings.append(f"START_STATUS_{start['start_status']}: expected start {start.get('current_expected_start') or 'UNKNOWN'} "
+                        f"({start.get('start_time_source') or 'no source'})")
     if sched_passed:
         warnings.append("SCHEDULED_START_PASSED_AT_DECISION: no first ball observed, but the nominal start had passed")
 
@@ -491,6 +511,12 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
         "why_model_may_be_wrong": _text(payload, "why_model_may_be_wrong"),
         "pass_reason_if_pass": pass_reason,
         **disc,
+        "start_status_at_decision": start["start_status"],
+        "current_expected_start_at_decision": start.get("current_expected_start"),
+        "start_time_source_at_decision": start.get("start_time_source"),
+        "start_time_confidence_at_decision": start.get("start_time_confidence"),
+        "start_time_last_checked_at_decision": start.get("start_time_last_checked"),
+        "start_status_reasons_at_decision": start.get("status_reasons") or [],
         "primary_match_thesis": _text(payload, "primary_match_thesis"), "available_expressions": avail,
         "chosen_expression": chosen,
         "why_chosen_expression_best_matches_thesis": _text(payload, "why_chosen_expression_best_matches_thesis"),
@@ -502,6 +528,19 @@ def build_decision(payload: dict, *, store_root: str, data_root: str, slate_dir:
     missing = [k for k in DECISION_FIELDS if k not in out]
     assert not missing, missing                       # the record always carries the whole schema
     return {k: out[k] for k in DECISION_FIELDS}
+
+
+def _start_at_decision(data_root, truths, event, sched, lb, created, smatch) -> dict:
+    """The reconciled start status at created_at, from the evidence on disk (observations stamped after
+    created_at are ignored; a later-learned truth that play had begun before created_at still counts)."""
+    from tennis_edge.firstball.start_evidence import governing_truth, load_recent_observations
+    code = match_code_of(event)
+    store = os.path.join(data_root, "firstball", "store")
+    obs = load_recent_observations(store, created).get(code, ())
+    tr = governing_truth([t for mid, t in truths.items() if match_code_of(mid) == code], created)
+    ph = bool(((smatch or {}).get("start") or {}).get("nominal_is_placeholder"))
+    return ST.reconcile_start(match_id=event, nominal=sched, level_bucket=lb, observations=obs, truth=tr,
+                              now=created, nominal_is_placeholder=ph)
 
 
 def _discrepancy_at_decision(payload, *, decision, side, mp, srow, slate, bid, ask, qage, qsrc, ext, p_gpt, s_ask,

@@ -151,25 +151,35 @@ def load_truths(store_root: str) -> dict:
 def truth_for(truths: dict, ticker_or_event: str):
     """The first-ball truth of the physical match a ticker belongs to. Truths are keyed by match-winner
     event ticker; every series of one match shares its date+players code. When several truths share the
-    code (the same match listed under two events), the EARLIEST possible first ball wins: that is the
-    conservative reading for "did this decision precede the first ball?"."""
+    code (the same match listed under several events), a truth that OBSERVED PLAY wins, the one with the
+    earliest possible first ball first: that is the conservative reading for "did this decision precede the
+    first ball?". Only when none observed play is a pregame-only truth returned (it bounds nothing)."""
     code = match_code_of(ticker_or_event)
     if not code:
         return None
-    best = None
+    played, other = None, None
     for mid, t in truths.items():
         if match_code_of(mid) != code or t.no_play:
             continue
-        lb = t.lower_bound_utc or t.upper_bound_utc
-        if lb is None:
+        b = first_ball_bound(t)
+        if b is not None:
+            if played is None or b < first_ball_bound(played):
+                played = t
             continue
-        if best is None or lb < (best.lower_bound_utc or best.upper_bound_utc):
-            best = t
-    return best
+        lb = t.lower_bound_utc
+        if lb is not None and (other is None or lb < other.lower_bound_utc):
+            other = t
+    return played or other
 
 
 def first_ball_bound(truth) -> datetime | None:
-    """Earliest instant the match may have started, from any-confidence truth (refusal direction)."""
-    if truth is None:
+    """Earliest instant the match may have started, from a truth that OBSERVED PLAY (refusal direction).
+
+    Only a truth with an upper bound (play seen, at any confidence) bounds the first ball. A pregame-only
+    truth -- a lower bound and no upper bound -- says the match had NOT started by that instant; reading it
+    as "may have started" (as this function did until 2026-10-02) hid every pregame match ESPN was
+    watching from the assisted slate and refused every decision on it. Whether such a match is still
+    pregame NOW is answered by tennis_edge.firstball.start_times, which needs a recent live reading."""
+    if truth is None or truth.upper_bound_utc is None:
         return None
     return truth.lower_bound_utc or truth.upper_bound_utc

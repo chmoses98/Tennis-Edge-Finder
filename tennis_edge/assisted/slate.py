@@ -32,6 +32,8 @@ from tennis_edge.pricing.fees import taker_fee
 
 from . import AUTONOMOUS_REAL_MONEY_AUTHORITY, CHATGPT_ASSISTED_TRACK, ASSISTED_AUTHORITY
 from . import discrepancy as DS
+from tennis_edge.firstball import start_times as ST
+from tennis_edge.firstball.start_evidence import board_statuses
 from .market import capture_days, first_ball_bound, fnum, iso, load_truths, truth_for
 from .schema import (ASSISTED_SCHEMA_VERSION, expression_of_family, level_bucket, match_code_of, preferred_side,
                      series_of, side_edges, surface_bucket)
@@ -63,12 +65,19 @@ MATCH_SCOPE_SERIES = {s for s, (fam, _t, _l, _d) in SERIES.items()
 
 
 # ---------------------------------------------------------------------------------------------- loading
-def open_board(capture_root: str) -> tuple[dict[str, dict], dict]:
-    """ticker -> current record: the latest FULL capture snapshot, then every CHANGED pass after it."""
-    days = capture_days(capture_root)[-2:]
+def open_board(capture_root: str, now: datetime | None = None) -> tuple[dict[str, dict], dict]:
+    """ticker -> current record: the latest FULL capture snapshot, then every CHANGED pass after it.
+    With `now`, nothing captured after `now` is read (replays reproduce the board as it was)."""
+    days = capture_days(capture_root)
+    if now is not None:
+        days = [d for d in days if d <= now.strftime("%Y-%m-%d")]
+    days = days[-2:]
     files = []
     for d in days:
         files += sorted(glob.glob(os.path.join(capture_root, d, "*.quotes.jsonl.gz")))
+    if now is not None:
+        stamp = now.strftime("%Y%m%dT%H%M%SZ")
+        files = [f for f in files if os.path.basename(f)[:16] <= stamp]
     start = 0
     for i in range(len(files) - 1, -1, -1):
         try:
@@ -90,7 +99,7 @@ def open_board(capture_root: str) -> tuple[dict[str, dict], dict]:
                         r = json.loads(line)
                     except ValueError:
                         continue
-                    if r.get("ticker"):
+                    if r.get("ticker") and not (now is not None and iso(r.get("captured_at")) and iso(r["captured_at"]) > now):
                         out[r["ticker"]] = r
         except (OSError, EOFError):
             continue
@@ -147,11 +156,13 @@ def _r(x, n=4):
 
 
 # ---------------------------------------------------------------------------------------------- build
-def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
+def build_slate(data_root: str, *, now: datetime | None = None, replay: bool = False) -> dict:
+    """`replay=True` rebuilds the slate exactly AS OF `now` (no capture file or record after `now` is read);
+    production builds at the real clock, where no later file can exist."""
     now = now or datetime.now(timezone.utc)
     capture_root = os.path.join(data_root, "kalshi", "capture")
     research = os.path.join(data_root, "research")
-    boardd, bmeta = open_board(capture_root)
+    boardd, bmeta = open_board(capture_root, now if replay else None)
     truths = load_truths(os.path.join(data_root, "firstball", "store"))
 
     ledger = _latest_rows(os.path.join(research, "ledger"), ts_key="generated_at_utc")
@@ -178,6 +189,18 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
             pair_keys.setdefault(pk, set()).add(key)
     ratings["pair_keys"] = pair_keys
 
+    # ---- start-time reconciliation for every match on the board: what the live sources and first-ball truth
+    # say, never the nominal alone (tennis_edge.firstball.start_times)
+    board_rows = []
+    for key, items in groups.items():
+        mws = [(pm, m) for pm, m, fam in items if fam == "MATCH_WINNER"]
+        if mws:
+            s0 = series_of(mws[0][0].ticker)
+            board_rows.append({"match_id": key, "code": key.split(":")[1], "series": s0,
+                               "nominal": mws[0][1].get("occurrence_datetime") or mws[0][1].get("expected_expiration_time"),
+                               "level_bucket": level_bucket(s0, None, SERIES[s0][3])})
+    starts = board_statuses(board_rows, store_root=os.path.join(data_root, "firstball", "store"), now=now)
+
     matches = []
     for key, items in groups.items():
         mws = [(pm, m) for pm, m, fam in items if fam == "MATCH_WINNER"]
@@ -186,18 +209,27 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
             continue
         code = key.split(":")[1]
         truth = truth_for(truths, mws[0][1].get("event_ticker") or mws[0][0].ticker)
-        fb = first_ball_bound(truth)
-        if fb is not None and fb <= now:
+        start = starts.get(key)
+        if start and start["start_status"] == ST.STARTED:
             skipped["first_ball_already_observed"] = skipped.get("first_ball_already_observed", 0) + 1
+            continue
+        if start and start["start_status"] == ST.NO_PLAY:
+            skipped["no_play_confirmed"] = skipped.get("no_play_confirmed", 0) + 1
             continue
         sched = mws[0][1].get("occurrence_datetime") or mws[0][1].get("expected_expiration_time")
         sched_dt = iso(sched)
         if sched_dt and (now - sched_dt).total_seconds() > DROP_PAST_SCHEDULED_H * 3600:
             skipped["scheduled_start_over_24h_past"] = skipped.get("scheduled_start_over_24h_past", 0) + 1
             continue
-        matches.append(_match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, now, sched, ratings))
+        x = _match_packet(key, code, items, mws, ledger, shadow, model4, disloc, truth, now, sched, ratings)
+        _apply_start(x, start)
+        matches.append(x)
 
-    matches.sort(key=lambda x: (x["scheduled_start"] or "9999", x["match_key"]))
+    matches.sort(key=lambda x: ((x.get("start") or {}).get("current_expected_start") or x["scheduled_start"] or "9999",
+                                x["match_key"]))
+    plan = ST.plan_windows([{"match_id": x["event_id"], "label": f"{x['players']['a']} vs {x['players']['b']}",
+                             "level_bucket": x["level_bucket"], "discipline": x["discipline"], "start": x["start"]}
+                            for x in matches], now)
     n_markets = sum(len(x["markets"]) for x in matches)
     rows = [r for x in matches for r in x["markets"]]
     cfg = DS.load_config()
@@ -236,6 +268,20 @@ def build_slate(data_root: str, *, now: datetime | None = None) -> dict:
         },
         "counts": {"matches": len(matches), "markets": n_markets, "skipped_matches": skipped},
         "discrepancy_sanity": sanity,
+        "start_time_reconciliation": {
+            "authority": ("STARTED is decided by first-ball truth, then live-score state; the expected start by the "
+                          "live source's own current time (ESPN timeValid), pulled earlier by court progression, "
+                          "else a Kalshi nominal at LOW confidence (never a day placeholder)"),
+            "statuses": list(ST.START_STATUSES),
+            "bet_rule": ("BET blocked for STARTED / STATUS_AMBIGUOUS / NO_PLAY, and for live-source-covered matches "
+                         f"without a live PRE reading in the last {ST.LIVE_STATUS_MAX_AGE_S // 60} min"),
+            "counts_by_status": _count([x for x in matches], "start_status"),
+            "bet_blocked_matches": sum(1 for x in matches if not (x.get("start") or {}).get("bet_allowed", True)),
+        },
+        "next_actionable_window": plan["next_window"],
+        "upcoming_windows": plan["windows"],
+        "main_tour_status_unverified": plan["main_tour_status_unverified"],
+        "refresh_due_by": (plan["next_window"] or {}).get("recommended_run_tennis_time"),
         "matches": matches,
     }
     body["content_sha256"] = canonical_hash({k: v for k, v in body.items() if k != "built_at"})
@@ -515,6 +561,24 @@ def _count(rows, key) -> dict:
     return dict(sorted(out.items(), key=lambda kv: str(kv[0])))
 
 
+def _apply_start(x: dict, start: dict | None):
+    """Attach the reconciled start status to a match packet. The nominal stays visible as a prior."""
+    st = start or {}
+    x["start"] = st
+    x["start_status"] = st.get("start_status")
+    x["first_ball"].update({"status": st.get("first_ball_status") or x["first_ball"]["status"],
+                            "first_ball_source": st.get("first_ball_source"), "start_status": st.get("start_status"),
+                            "current_expected_start": st.get("current_expected_start")})
+    if st and not st.get("bet_allowed", True):
+        x["warnings"].insert(0, f"BET_BLOCKED_START_STATUS: {st.get('start_status')} -- "
+                                + "; ".join(r.split(':')[0] for r in st.get("status_reasons") or []))
+    if st.get("nominal_is_placeholder"):
+        x["warnings"].append("NOMINAL_START_IS_DAY_PLACEHOLDER: Kalshi lists the same time for many matches of this "
+                             "series; it is not this match's start")
+    if st.get("start_status") == ST.STATUS_AMBIGUOUS:
+        x["warnings"].append("STATUS_AMBIGUOUS: re-check live status before any decision; not presented as pregame")
+
+
 def _ledger_p(ledger, per_player, side, key):
     t = per_player.get(side)
     r = ledger.get(t) if t else None
@@ -626,6 +690,23 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
          f"Skipped: {json.dumps(s['counts']['skipped_matches'])}. Sources: shadow board {s['sources'].get('shadow_last')}, "
          f"Model 4 {s['sources'].get('model4_last')}, Gen-1 ledger {s['sources'].get('ledger_last')}, "
          f"external {s['sources'].get('external_last')}, capture {s['sources'].get('last_capture_file')}.", ""]
+    w = s.get("next_actionable_window")
+    L += ["## NEXT ACTIONABLE MAIN-TOUR WINDOW", ""]
+    if w:
+        L += [f"* Earliest credible first ball: **{_hm(w['earliest_credible_first_ball'])}**",
+              f"* Recommended RUN TENNIS time: **{_hm(w['recommended_run_tennis_time'])}**"
+              + ("  (**OVERDUE -- run now**)" if w.get("primary_overdue") else ""),
+              f"* Final price/status check time: **{_hm(w['final_status_price_check_time'])}**",
+              f"* Number of matches in window: {w['n_matches']} "
+              f"({', '.join(m['label'] for m in w['matches'][:6])}{' ...' if w['n_matches'] > 6 else ''})", ""]
+    else:
+        L += ["* No main-tour singles match has a credible upcoming start time on this slate.", ""]
+    unv = s.get("main_tour_status_unverified") or []
+    if unv:
+        L += [f"* **{len(unv)} main-tour match(es) have NO verified start status** "
+              f"({', '.join(sorted({u['status'] for u in unv}))}): BET blocked until a live status check.", ""]
+    L += [f"Slate built {s['built_at'][:16]}Z. Refresh due by: {_hm(s.get('refresh_due_by'))}. A slate built before a "
+          "window's recommended time, or before a match's status changed, is NOT authoritative for that window.", ""]
     ds = s.get("discrepancy_sanity") or {}
     if ds:
         L += ["**Discrepancy sanity layer** (`" + ds.get("version", "") + "`): the model should usually sit close to the "
@@ -639,7 +720,17 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
               f"{json.dumps(ds.get('counts_by_freshness'))}.", ""]
     for x in s["matches"]:
         mc = x["model_context"]
+        st = x.get("start") or {}
         L += [f"## {x['players']['a']} vs {x['players']['b']} -- {x['competition']} {x['round'] or ''}".rstrip(), "",
+              f"**START STATUS: {st.get('start_status') or '--'}**" + ("" if st.get("bet_allowed", True) else " -- BET BLOCKED"),
+              f"* Nominal schedule: {_hm(st.get('nominal_scheduled_start'))}"
+              + (" (day placeholder, not a start time)" if st.get("nominal_is_placeholder") else ""),
+              f"* Current expected start: {_hm(st.get('current_expected_start')) if st.get('current_expected_start') else 'UNKNOWN'}",
+              f"* Source: {st.get('start_time_source') or 'none'}; confidence {st.get('start_time_confidence') or 'NONE'}",
+              f"* First ball: {st.get('first_ball_status') or '--'}" + (f" ({st['first_ball_source']})" if st.get("first_ball_source") else ""),
+              f"* Last status refresh: {_hm(st.get('start_time_last_checked')) if st.get('start_time_last_checked') else 'never (no live reading)'}",
+              f"* Recommended handicap-by time: {_hm(st.get('recommended_handicap_by')) if st.get('recommended_handicap_by') else 'UNKNOWN'}",
+              ""] + ([f"* Status notes: {'; '.join(st['status_reasons'])}", ""] if st.get("status_reasons") else []) + [
               f"{x['level_bucket']} ({x['level']}) · {x['surface'] or 'surface ?'} · scheduled {x['scheduled_start']} · "
               f"first ball: {x['first_ball']['status']} (source {x['first_ball']['source_coverage']}) · "
               f"match `{x['physical_match_id'] or x['match_key']}`", ""]
@@ -695,6 +786,11 @@ def render_markdown(s: dict, *, max_derivatives: int = 6) -> str:
     return "\n".join(L)
 
 
+def _hm(x) -> str:
+    d = iso(x)
+    return d.strftime("%Y-%m-%d %H:%MZ") if d else "--"
+
+
 def _disc_cells(r) -> str:
     g = r.get("model_market_gap_pp")
     st = r.get("discrepancy_sanity_status")
@@ -728,7 +824,10 @@ def write_slate(slate: dict, out_dir: str) -> dict:
            "skipped": slate["counts"]["skipped_matches"], "sources": slate["sources"],
            "discrepancy_version": (slate.get("discrepancy_sanity") or {}).get("version"),
            "discrepancy_counts_by_band": (slate.get("discrepancy_sanity") or {}).get("counts_by_band"),
-           "discrepancy_counts_by_status": (slate.get("discrepancy_sanity") or {}).get("counts_by_status")}
+           "discrepancy_counts_by_status": (slate.get("discrepancy_sanity") or {}).get("counts_by_status"),
+           "start_counts_by_status": (slate.get("start_time_reconciliation") or {}).get("counts_by_status"),
+           "next_window_earliest": (slate.get("next_actionable_window") or {}).get("earliest_credible_first_ball"),
+           "refresh_due_by": slate.get("refresh_due_by")}
     with open(os.path.join(out_dir, "slate_runs.jsonl"), "a") as f:
         f.write(json.dumps(run, default=str) + "\n")
     return run

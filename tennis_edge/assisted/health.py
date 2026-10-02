@@ -288,3 +288,87 @@ def gate_17(research_root: str, *, now: datetime | None = None) -> tuple[str, di
                  "the gate fails only when such a row escapes it"),
     })
     return ("FAIL" if fails else "PASS"), detail
+
+
+# ---------------------------------------------------------------------------------------------- TENNIS-18
+PLAN_MAX_AGE_H = 0.75
+WINDOW_LOOKBACK_H = 24
+#: a window counts as served when a slate was built in [first ball - 60 min, first ball - 5 min]
+WINDOW_SERVED = (60 * 60, 5 * 60)
+
+
+def gate_18(research_root: str, *, firstball_root: str, now: datetime | None = None) -> tuple[str, dict]:
+    """TENNIS-18 start_time_window_health: is the assisted workflow getting into position BEFORE real first balls?
+
+    An OPERATIONS gate (never profitability). It reads the window planner's output (first-ball conductor,
+    <firstball store>/schedule), the slate build log and the latest slate. It FAILS on
+      PLAN_STALE                       no window plan in the last 45 min: nobody is watching the clock
+      SLATE_LACKS_START_STATUS         the latest slate carries no reconciled start status
+      BET_ALLOWED_ON_BLOCKING_STATUS   a slate match STARTED / STATUS_AMBIGUOUS / NO_PLAY marked bet-allowed
+      BET_ON_UNVERIFIED_START          a recorded (schema v3) BET whose start status at decision blocked a BET
+      WINDOW_MISSED                    a planned ATP/WTA window whose first ball passed in the last 24 h with no
+                                       slate built 60->5 minutes before it
+    UNKNOWN until the planner has run in production."""
+    from tennis_edge.firstball import start_times as ST
+    from .slate import load_slate
+    now = now or datetime.now(timezone.utc)
+    sched = os.path.join(firstball_root, "schedule")
+    detail = {"gate_kind": "OPERATIONS (start-time reconciliation and window timing; not profitability)",
+              "AUTONOMOUS_REAL_MONEY_AUTHORITY": AUTONOMOUS_REAL_MONEY_AUTHORITY}
+    try:
+        plan = json.load(open(os.path.join(sched, "plan_latest.json")))
+    except (OSError, ValueError):
+        detail["reason"] = "the window planner has not run in production yet (no schedule/plan_latest.json)"
+        return "UNKNOWN", detail
+    fails: dict[str, list] = {}
+    plan_at = iso(plan.get("generated_at"))
+    age_h = (now - plan_at).total_seconds() / 3600 if plan_at else None
+    if age_h is None or age_h > PLAN_MAX_AGE_H:
+        fails["PLAN_STALE"] = [f"plan generated {plan.get('generated_at')} ({age_h if age_h is None else round(age_h, 2)} h old)"]
+    slate = load_slate(os.path.join(research_root, "assisted_slates"))
+    if slate is not None:
+        if not slate.get("start_time_reconciliation"):
+            fails["SLATE_LACKS_START_STATUS"] = [slate.get("slate_id")]
+        for x in slate.get("matches") or []:
+            st = x.get("start") or {}
+            if st.get("start_status") in ST.BET_BLOCKING and st.get("bet_allowed"):
+                fails.setdefault("BET_ALLOWED_ON_BLOCKING_STATUS", []).append(x.get("event_id"))
+    for d in RecordStore(os.path.join(research_root, "assisted_decisions")).records("decisions"):
+        if d.get("schema_version", 1) >= 3 and d.get("decision") == "BET" \
+                and d.get("start_status_at_decision") in ST.BET_BLOCKING:
+            fails.setdefault("BET_ON_UNVERIFIED_START", []).append(d.get("decision_id"))
+    builds = []
+    runs = os.path.join(research_root, "assisted_slates", "slate_runs.jsonl")
+    if os.path.exists(runs):
+        for line in open(runs):
+            try:
+                b = iso(json.loads(line).get("built_at"))
+            except ValueError:
+                continue
+            if b:
+                builds.append(b)
+    windows = set()
+    log = os.path.join(sched, "plan_log.jsonl")
+    if os.path.exists(log):
+        for line in open(log):
+            try:
+                r = json.loads(line)
+            except ValueError:
+                continue
+            e = iso(r.get("next_window"))
+            if e and timedelta(0) < now - e <= timedelta(hours=WINDOW_LOOKBACK_H):
+                windows.add(e)
+    missed = [e.isoformat() for e in sorted(windows)
+              if not any(e - timedelta(seconds=WINDOW_SERVED[0]) <= b <= e - timedelta(seconds=WINDOW_SERVED[1]) for b in builds)]
+    if missed:
+        fails["WINDOW_MISSED"] = missed
+    nw = plan.get("next_window") or {}
+    detail.update({"plan_generated_at": plan.get("generated_at"), "plan_age_h": round(age_h, 2) if age_h is not None else None,
+                   "next_window_first_ball": nw.get("earliest_credible_first_ball"),
+                   "recommended_run_tennis_time": nw.get("recommended_run_tennis_time"),
+                   "final_check_time": nw.get("final_status_price_check_time"), "next_window_matches": nw.get("n_matches"),
+                   "counts_by_status": plan.get("counts_by_status"),
+                   "main_tour_status_unverified": len(plan.get("main_tour_status_unverified") or []),
+                   "slate_freshness": plan.get("slate_freshness"), "windows_checked_24h": len(windows),
+                   "failures": {k: v[:10] for k, v in fails.items()}, "failing": sorted(fails)})
+    return ("FAIL" if fails else "PASS"), detail

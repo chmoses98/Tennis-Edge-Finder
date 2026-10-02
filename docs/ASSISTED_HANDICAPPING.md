@@ -64,7 +64,14 @@ JSONL ledgers are compiled from the records by a single writer (RUN TENNIS), app
 
 ## "RUN TENNIS" procedure
 
-1. Read `assisted_slates/latest.md` (for fresher quotes, dispatch `TENNIS assisted slate` first).
+0. **When:** open `firstball/store/schedule/NEXT_WINDOW.md` (or the slate's NEXT ACTIONABLE MAIN-TOUR WINDOW
+   block). Run at the *recommended RUN TENNIS time* (earliest credible first ball - 45 min) and re-check at the
+   *final price/status check time* (- 10 min). The first-ball conductor dispatches both slate refreshes itself;
+   it never relies on Kalshi's scheduled time, which is often a day placeholder. See
+   `docs/START_TIME_RECONCILIATION.md`.
+1. Read `assisted_slates/latest.md` (for fresher quotes, dispatch `TENNIS assisted slate` first). Check each
+   match's START STATUS block: only VERIFIED_UPCOMING / ESTIMATED_UPCOMING / START_IMMINENT with
+   `BET allowed` can take a BET; STARTED matches are not on the slate at all.
 2. For each match considered, decide BET / PASS / WATCH. Re-check the live Kalshi book; pass the live
    `kalshi_bid`/`kalshi_ask` in the decision when you have them.
 3. Record every decision **before the first ball**, within 3 h of making it: dispatch
@@ -112,7 +119,8 @@ kept as supplied and listed in `model_context_source.fields_from_input`.
 | market exists on the capture or the current slate and is open | `MARKET_NOT_FOUND`, `MARKET_NOT_OPEN` |
 | event / physical match ids consistent with the ticker and the slate | `IDENTIFIER_MISMATCH` |
 | `created_at` has a UTC offset, is not in the future, is recorded within 3 h, is after the track start | `INVALID_TIMESTAMP`, `DECISION_IN_FUTURE`, `RECORDED_TOO_LATE`, `BEFORE_TRACK_START` |
-| made before any first ball the store has observed (any confidence) | `POST_START_DECISION` |
+| made before any first ball the store has observed (any confidence), and not while a live source says the match is in play | `POST_START_DECISION` |
+| a BET's reconciled start status allows a BET: not STATUS_AMBIGUOUS / NO_PLAY / START_UNKNOWN, and for ATP/WTA/WTA125 a live pending reading <= 30 min old (2026-10-02) | `START_STATUS_NOT_VERIFIED` |
 | made before but recorded after the first ball | admitted, `RECORDED_AFTER_FIRST_BALL`, excluded from the headline scorecard |
 | a BET has a two-sided price, confidence, thesis, bet-up-to, stake in (0, 10] units | `MARKET_PRICE_UNAVAILABLE`, `MISSING_FIELD`, `INVALID_FIELD` |
 | no model probability for a doubles contract (the Gen-1 doubles model is unvalidated) | `UNVALIDATED_MODEL_PROBABILITY` |
@@ -122,7 +130,7 @@ kept as supplied and listed in `model_context_source.fields_from_input`.
 | decision id unique; the same decision resubmitted within 6 h | `DUPLICATE_ID`, `DUPLICATE_SUBMISSION` |
 | a wager links to a recorded decision on the same ticker/side, after it, stake = price x contracts | `UNKNOWN_DECISION`, `WAGER_MARKET_MISMATCH`, `INVALID_TIMESTAMP`, `STAKE_MISMATCH` |
 
-## Exact decision schema (schema_version 2, `tennis_edge/assisted/schema.py::DECISION_SCHEMA`; v1 = v2 without the discrepancy group)
+## Exact decision schema (schema_version 3, `tennis_edge/assisted/schema.py::DECISION_SCHEMA`; v2 = v3 without the start_status group, v1 = v2 without the discrepancy group)
 
 Probability convention: every probability is **P(ticker resolves YES)**; `side_entry_price`,
 `bet_up_to_price` and `bet_up_to_probability` are for the named contract side (NO ask = 1 - YES bid).
@@ -213,6 +221,12 @@ probabilities through the DP engine; there is no separate hold/break model), rec
 (external_v1 scan), model-minus-mid, model uncertainty, selector_v1 / external_v1 flags, frozen research
 context (e.g. W3-001's ITF abstention), and data-quality warnings. Every model number is the frozen
 producer's own output at its own prediction time. The slate ranks nothing as a bet.
+
+Since 2026-10-02 the slate opens with the NEXT ACTIONABLE MAIN-TOUR WINDOW, sorts matches by reconciled
+expected start, drops every STARTED / NO_PLAY match, and gives each match a START STATUS block (nominal,
+current expected start, source, confidence, first-ball status, last live check, recommended handicap-by time,
+whether a BET is allowed). An unknown start prints UNKNOWN, never a guessed time. See
+`docs/START_TIME_RECONCILIATION.md`.
 
 ## Which model numbers may be used (2026-10-01)
 

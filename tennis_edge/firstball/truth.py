@@ -101,6 +101,14 @@ class FirstBallObservation:
     #: scoreboards return the same combined event during a Grand Slam, so counting them as two agreeing
     #: sources would manufacture confidence that does not exist. Defaults to the source id.
     independence_group: str = ""
+    #: start-time evidence (2026-10-02). Optional, so rows written before these fields existed read back
+    #: unchanged. `source_time_valid`: whether the source vouches for source_event_timestamp as a real time
+    #: (ESPN timeValid; False = day placeholder). `court` / `court_context`: the order of play on this
+    #: match's court AT OBSERVATION TIME (the match before it on the same court, its state and set), which
+    #: start_times.py turns into a conservative early start estimate. Evidence, never a start claim.
+    source_time_valid: bool | None = None
+    court: str = ""
+    court_context: dict | None = None
 
     @property
     def group(self) -> str:

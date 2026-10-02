@@ -8,6 +8,13 @@ name: First-Ball Truth Conductor
 # append-only store to `tennis-data` after every segment, then dispatches its own successor; cron is the
 # backstop if a dispatch is ever lost, and `concurrency` guarantees at most one running plus one pending.
 #
+# The watchlist comes from the LIVE capture board (latest full capture snapshot + later passes), unioned with
+# the daily discovery snapshot. Until 2026-10-02 it came from discovery alone, loaded once per job, so any
+# market Kalshi listed after the daily snapshot was never watched (six WTA Beijing matches were first seen
+# finished). After every segment the window planner (scripts/firstball/plan_windows.py) reconciles start times
+# and dispatches `TENNIS assisted slate` ~45 and ~10 minutes before the earliest credible first ball of the next
+# ATP/WTA window (a full RUN TENNIS first when the producer rows are over 3 h old).
+#
 # Cadence is decided by the WATCHLIST, not by this file: 60 s when a match is near its expected start or
 # is an ITF/Challenger event whose nominal time is not a start time at all, 300 s when something is hours
 # away, 900 s otherwise. Request volume scales with the number of SOURCES, not matches, because every
@@ -55,7 +62,10 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - name: Poll for first ball, publish after every segment
+      - name: Poll for first ball, plan windows, publish after every segment
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DISPATCH_REF: ${{ github.ref_name }}
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -78,12 +88,23 @@ jobs:
             # republishes the open universe every ten minutes, so its freshest pass is the real one.
             git fetch --depth=1 origin tennis-data || true
             rm -rf data/kalshi/capture; mkdir -p data/kalshi/capture
-            for f in $(git ls-tree -r --name-only origin/tennis-data "tennis-edge-finder/data/kalshi/capture/$(date -u +%Y-%m-%d)/" 2>/dev/null | grep '\.quotes\.jsonl\.gz$' | sort | tail -2); do
+            # enough passes to reach back to the latest FULL snapshot (one every ~75 min): the live board is that
+            # snapshot plus every changed pass after it
+            for f in $(for d in "$(date -u -d yesterday +%Y-%m-%d)" "$(date -u +%Y-%m-%d)"; do \
+                         git ls-tree -r --name-only origin/tennis-data "tennis-edge-finder/data/kalshi/capture/$d/" 2>/dev/null; \
+                       done | grep '\.quotes\.jsonl\.gz$' | sort -t/ -k6 | tail -24); do
               git archive origin/tennis-data "$f" | tar -x --strip-components=1 || true
             done
             ls data/kalshi/capture/*/*.quotes.jsonl.gz 2>/dev/null | tail -1 || echo "::warning::no fresh capture pass for segment $SEG"
+            rm -rf data/research/assisted_slates; mkdir -p data/research
+            for f in latest.json slate_runs.jsonl; do
+              git archive origin/tennis-data "tennis-edge-finder/data/research/assisted_slates/$f" 2>/dev/null | tar -x --strip-components=1 || true
+            done
             python3 scripts/firstball/poll_first_ball.py --minutes "$SEGMENT" --sources "$SOURCES" \
               || echo "::warning::poll segment $SEG returned non-zero (partial)"
+            # plan the next ATP/WTA window from live start evidence; dispatch the assisted refresh when it is due
+            python3 scripts/firstball/plan_windows.py --dispatch \
+              || echo "::warning::window planner failed on segment $SEG (polling continues)"
             python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/store \
               --message "first-ball truth $(date -u +'%Y-%m-%dT%H:%M:%SZ') (segment $SEG)" \
               || echo "::warning::publish failed on segment $SEG"

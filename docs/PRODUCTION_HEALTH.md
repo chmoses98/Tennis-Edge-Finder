@@ -189,3 +189,22 @@ and Kalshi mid, and checks that no large disagreement escapes the layer.
 UNKNOWN when no slate exists yet. EXTREME rows held at DATA_WARNING with ambiguous identity or stale quotes
 are the layer working, and PASS. The detail reports counts by band, status, freshness, identity and
 orientation and a sample of the EXTREME rows.
+
+
+## TENNIS-18 start_time_window_health (2026-10-02)
+
+Guards the start-time reconciliation and the RUN TENNIS window planner (`tennis_edge/assisted/health.py::gate_18`,
+`docs/START_TIME_RECONCILIATION.md`). It reads `firstball/store/schedule/plan_latest.json`, the latest assisted
+slate, the slate run log and every schema-v3 assisted decision.
+
+| failure | meaning |
+|---|---|
+| PLAN_STALE | no window plan in the last 45 min: the conductor's planner is not watching the clock |
+| SLATE_LACKS_START_STATUS | the latest slate carries no reconciled start status |
+| BET_ALLOWED_ON_BLOCKING_STATUS | a slate match STARTED / STATUS_AMBIGUOUS / NO_PLAY is marked bet-allowed |
+| BET_ON_UNVERIFIED_START | a recorded (v3) BET whose start status at decision blocked a BET |
+| WINDOW_MISSED | a planned ATP/WTA window whose first ball passed in the last 24 h without a slate built 60-5 min before it |
+
+UNKNOWN until the planner has run in production (no `plan_latest.json`). The detail reports the next
+window, counts by status and the missed windows. Replayed on 2026-10-02's data it fails with
+SLATE_LACKS_START_STATUS and WINDOW_MISSED 06:00Z -- the miss that motivated it.

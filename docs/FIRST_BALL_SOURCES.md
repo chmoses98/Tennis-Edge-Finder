@@ -52,6 +52,14 @@ this whole wave exists to eliminate.
    and it would require HTML scraping of a page whose structure is not a contract. It is recorded here
    as a candidate and deliberately not implemented in this wave.
 
+### Start-time fields (2026-10-02)
+
+The ESPN adapter also keeps `timeValid` (false marks a placeholder time such as 04:00Z for an unscheduled
+round), `venue.court`, `status.period` (current set) and `format.regulation.periods` (best of). Observations
+store `source_time_valid`, `court` and the court context (the preceding match on the same court), which the
+start-time reconciliation uses for order-of-play estimates (`docs/START_TIME_RECONCILIATION.md`). The
+watchlist is now the discovery snapshot UNION the live capture board, re-read every segment.
+
 ## Coverage by level: the honest picture
 
 | level | first-ball source | status |

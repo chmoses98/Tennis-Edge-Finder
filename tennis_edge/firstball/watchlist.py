@@ -133,7 +133,56 @@ def _fresh_open_tickers(capture_root: str | None, now: datetime, max_age_min: in
     return tickers if age <= max_age_min else None
 
 
-def build_watchlist(discovery_dir: str, *, now: datetime | None = None, capture_root: str | None = None,
+def capture_board(capture_root: str | None, now: datetime, *, max_files: int = 24) -> dict[str, dict]:
+    """ticker -> the newest ACTIVE market record on the live capture board at `now`: the latest FULL capture
+    snapshot at or before `now`, then every changed pass after it. Records stamped after `now` are ignored
+    (replay-safe). Empty when no capture exists.
+
+    This is the root-cause fix of 2026-10-02: the watchlist used to come from the once-a-day discovery
+    snapshot, loaded once per 5h40m conductor job, so a market Kalshi listed after that snapshot was never
+    watched -- six WTA Beijing matches were first observed only after they had finished. The capture conductor
+    republishes the open board every ~10 minutes, and its full records carry rules text and nominal time."""
+    import glob as _glob
+    import gzip as _gzip
+    if not capture_root or not os.path.isdir(capture_root):
+        return {}
+    files = sorted(_glob.glob(os.path.join(capture_root, "*", "*.quotes.jsonl.gz")),
+                   key=lambda f: os.path.basename(f))
+    cutoff = now.strftime("%Y%m%dT%H%M%SZ")
+    files = [f for f in files if os.path.basename(f)[:16] <= cutoff][-max_files:]
+    start = None
+    for i in range(len(files) - 1, -1, -1):
+        try:
+            with _gzip.open(files[i], "rt") as fh:
+                first = fh.readline()
+            if first.strip() and json.loads(first).get("snapshot_kind") == "full":
+                start = i
+                break
+        except (OSError, EOFError, ValueError):
+            continue
+    if start is None:
+        return {}
+    out: dict[str, dict] = {}
+    for f in files[start:]:
+        try:
+            with _gzip.open(f, "rt") as fh:
+                for line in fh:
+                    if not line.strip():
+                        continue
+                    try:
+                        r = json.loads(line)
+                    except ValueError:
+                        continue
+                    t, ts = r.get("ticker"), _parse_ts(r.get("captured_at"))
+                    if not t or (ts is not None and ts > now):
+                        continue
+                    out[t] = r
+        except (OSError, EOFError):
+            continue
+    return {t: r for t, r in out.items() if (r.get("status") or "active") == "active"}
+
+
+def build_watchlist(discovery_dir: str | None, *, now: datetime | None = None, capture_root: str | None = None,
                     lookback_hours: int = 6, horizon_hours: int = 14) -> tuple[list[WatchItem], dict]:
     from tennis_edge.kalshi.markets import parse_market
     from tennis_edge.pricing.competition import classify_competition
@@ -143,17 +192,35 @@ def build_watchlist(discovery_dir: str, *, now: datetime | None = None, capture_
     fresh = _fresh_open_tickers(capture_root, now)
     by_event: dict[str, list] = {}
     raw_by_ticker: dict[str, dict] = {}
-    for p in glob.glob(os.path.join(discovery_dir, "markets", "*.json")):
+    disc_events: set = set()
+    for p in glob.glob(os.path.join(discovery_dir, "markets", "*.json")) if discovery_dir else []:
         for m in json.load(open(p)).get("open", {}).get("markets") or []:
             pm = parse_market(m)
             if pm.status != "PARSED" or pm.scope != "MATCH":
                 continue
             by_event.setdefault(pm.event_ticker, []).append(pm)
             raw_by_ticker[pm.ticker] = m
+            disc_events.add(pm.event_ticker)
+    # the live board: every open match-scope market the capture conductor saw in its latest passes,
+    # including everything Kalshi listed after the discovery snapshot was taken
+    board = capture_board(capture_root, now)
+    if board:
+        fresh = set(board)                                # the open universe AT `now` (replay-safe)
+    seen = {pm.ticker for pms in by_event.values() for pm in pms}
+    for t, m in board.items():
+        raw_by_ticker[t] = m                              # the capture record is fresher than discovery
+        if t in seen:
+            continue
+        pm = parse_market(m)
+        if pm.status != "PARSED" or pm.scope != "MATCH":
+            continue
+        by_event.setdefault(pm.event_ticker, []).append(pm)
 
     items, diag = [], {"events": len(by_event), "no_names": 0, "outside_window": 0, "selected": 0,
-                       "closed_since_discovery": 0,
-                       "universe": "freshest_capture" if fresh is not None else "discovery_snapshot"}
+                       "closed_since_discovery": 0, "capture_board_markets": len(board),
+                       "events_only_on_capture_board": len(set(by_event) - disc_events),
+                       "universe": ("freshest_capture" if fresh is not None else "discovery_snapshot")
+                       + ("+capture_board" if board else "")}
     for ev, pms in by_event.items():
         names = {True: None, False: None}
         for pm in pms:
@@ -173,6 +240,8 @@ def build_watchlist(discovery_dir: str, *, now: datetime | None = None, capture_
         if sched is not None and not (lo <= sched <= hi):
             diag["outside_window"] += 1
             continue
+        if ev not in disc_events:
+            diag["selected_from_capture_board"] = diag.get("selected_from_capture_board", 0) + 1
         items.append(WatchItem(match_id=ev, player_a=names[True], player_b=names[False],
                                doubles=(info["discipline"] != "singles" or head.discipline != "singles"),
                                scheduled_utc=sched, nominal_reliable=reliable, tour=info["tour"],
