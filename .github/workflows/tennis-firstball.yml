@@ -7,6 +7,8 @@ name: First-Ball Truth Conductor
 # Shape mirrors the capture conductor deliberately: one runner loops for ~5h40m, publishes its
 # append-only store to `tennis-data` after every segment, then dispatches its own successor; cron is the
 # backstop if a dispatch is ever lost, and `concurrency` guarantees at most one running plus one pending.
+# The hand-off (scripts/ci/conductor_chain.py) does not dispatch when a run is already queued (normally the cron
+# tick), because a second pending run would cancel the first: that race made ~every cron tick a CANCELLED run.
 #
 # The watchlist comes from the LIVE capture board (latest full capture snapshot + later passes), unioned with
 # the daily discovery snapshot. Until 2026-10-02 it came from discovery alone, loaded once per job, so any
@@ -58,6 +60,8 @@ jobs:
     runs-on: ubuntu-latest
     timeout-minutes: 355
     steps:
+      - name: Record job start (the loop budgets against timeout-minutes, see scripts/ci/conductor_clock.sh)
+        run: echo "JOB_T0=$(date +%s)" >> "$GITHUB_ENV"
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
@@ -80,9 +84,14 @@ jobs:
             git archive origin/tennis-data "$LATEST" | tar -x --strip-components=1 || true
           fi
           ls -d data/kalshi/discovery/* 2>/dev/null | tail -2 || echo "::warning::no discovery snapshot unpacked"
-          END=$(( $(date +%s) + MINUTES * 60 ))
+          # END = min(loop start + MINUTES, job start + timeout-minutes - 10); a segment starts only if the longest
+          # segment so far still fits, so a normal conductor ends by itself instead of being cancelled by the timeout
+          source scripts/ci/conductor_clock.sh
+          END=$(conductor_end "$(date +%s)" "$MINUTES" "$JOB_T0" 355 10)
           SEG=0
-          while [ $(date +%s) -lt $END ]; do
+          LONGEST=0
+          while conductor_should_start "$(date +%s)" "$END" "$LONGEST"; do
+            S0=$(date +%s)
             # Refresh the LIVE open universe before every segment. A discovery snapshot can be many hours
             # old and still list matches that have since been played out; the capture conductor
             # republishes the open universe every ten minutes, so its freshest pass is the real one.
@@ -113,13 +122,15 @@ jobs:
               --message "first-ball window plan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (segment $SEG)" \
               || echo "::warning::plan publish failed on segment $SEG"
             SEG=$((SEG+1))
+            ELAPSED=$(( $(date +%s) - S0 ))
+            [ "$ELAPSED" -gt "$LONGEST" ] && LONGEST=$ELAPSED
           done
-          echo "first-ball conductor finished after $SEG segments"
-      - name: Dispatch successor
+          echo "first-ball conductor finished after $SEG segments (longest ${LONGEST}s, $(( END - $(date +%s) ))s of budget left)"
+          echo "first-ball conductor: $SEG segments, longest ${LONGEST}s, ended within its budget" >> "$GITHUB_STEP_SUMMARY"
+      - name: Hand off to the successor (dispatch one unless a run is already queued)
         if: always() && (github.event.inputs.chain == 'true' || github.event_name == 'push' || github.event_name == 'schedule')
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          curl -sS -X POST -H "Authorization: Bearer $GH_TOKEN" -H "Accept: application/vnd.github+json" \
-            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/tennis-firstball.yml/dispatches" \
-            -d '{"ref":"${{ github.ref_name }}","inputs":{"minutes":"340","segment":"10","chain":"true"}}' -w "\nHTTP %{http_code}\n"
+          python3 scripts/ci/conductor_chain.py --workflow tennis-firstball.yml --ref "${{ github.ref_name }}" \
+            --inputs '{"minutes":"340","segment":"10","chain":"true"}'
