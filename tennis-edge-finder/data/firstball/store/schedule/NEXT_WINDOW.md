@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-02 22:54Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-02 23:09Z)
 
 * Earliest credible first ball: **2026-10-03 02:00Z**
 * Recommended RUN TENNIS time: **2026-10-03 01:15Z**
@@ -15,7 +15,7 @@
 | Donna Vekic vs Lin Zhu | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261002T133719Z-11e40dc4` built 2026-10-02 13:37Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
+Published slate: `SL-20261002T224027Z-158f8fb7` built 2026-10-02 22:40Z -- current
 
 Dispatched this pass: none
 
