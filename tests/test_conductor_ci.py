@@ -228,7 +228,7 @@ def test_conductor_workflows_use_the_budget_and_the_hand_off(wf, job):
     assert m and int(m.group(1)) == j["timeout-minutes"], "budget must use the job's timeout-minutes"
     assert int(m.group(2)) >= 5
     # the hand-off replaces the bare curl, keeps the successor inputs, and runs for schedule-started conductors
-    hand = steps[-1]
+    hand = next(s for s in steps if s.get("name", "").startswith("Hand off to the successor"))
     assert f"conductor_chain.py --workflow {wf}" in hand["run"]
     assert "curl" not in hand["run"]
     assert "github.event_name == 'schedule'" in hand["if"] and hand["if"].startswith("always()")

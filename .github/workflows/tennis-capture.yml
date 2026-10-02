@@ -69,6 +69,7 @@ jobs:
           done
           ls -la data/processed data/processed/asof || true
       - name: Loop capture + publish
+        id: loop
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -80,12 +81,15 @@ jobs:
           END=$(conductor_end "$(date +%s)" "$MINUTES" "$JOB_T0" 355 10)
           PASS=0
           LONGEST=0
+          # one JSON line per pass; the final verdict step judges the conductor from it (scripts/ci/run_state.py)
+          PASS_LOG="$RUNNER_TEMP/capture_passes.jsonl"; : > "$PASS_LOG"
           while conductor_should_start "$(date +%s)" "$END" "$LONGEST"; do
             T0=$(date +%s)
             git fetch --depth=1 origin tennis-data || true
             mkdir -p data/kalshi/capture
             git show origin/tennis-data:tennis-edge-finder/data/kalshi/capture/state.json > data/kalshi/capture/state.json 2>/dev/null || echo '{}' > data/kalshi/capture/state.json
-            python3 scripts/kalshi/capture_tennis.py || echo "::warning::capture pass $PASS returned non-zero (partial)"
+            CAP_RC=0; python3 scripts/kalshi/capture_tennis.py || CAP_RC=$?
+            [ "$CAP_RC" -ne 0 ] && echo "::warning::capture pass $PASS returned $CAP_RC (2 = partial, otherwise failed)"
             # daily taxonomy refresh (catalogue + events + markets + historical, no price history)
             LAST_DISC=$(git ls-tree --name-only origin/tennis-data tennis-edge-finder/data/kalshi/discovery/ 2>/dev/null | sort | tail -1 | grep -oE '[0-9]{8}T' | tr -d T || echo 0)
             if [ "$(date -u +%Y%m%d)" != "$LAST_DISC" ] && [ $PASS -eq 0 ]; then
@@ -93,11 +97,15 @@ jobs:
               python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/discovery --message "kalshi tennis daily discovery $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
               rm -rf data/kalshi/discovery
             fi
-            python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/capture --message "kalshi tennis capture $(date -u +'%Y-%m-%dT%H:%M:%SZ') (conductor pass $PASS)" || echo "::warning::publish failed on pass $PASS"
+            PUB_RC=0; python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/capture --message "kalshi tennis capture $(date -u +'%Y-%m-%dT%H:%M:%SZ') (conductor pass $PASS)" || PUB_RC=$?
+            [ "$PUB_RC" -ne 0 ] && echo "::warning::publish failed on pass $PASS (exit $PUB_RC)"
             # Wave 4: an independent venue against the same board, BEFORE the capture files are cleaned
             # up, since the scan reads the quotes this pass just wrote.
-            python3 scripts/external/capture_and_scan.py || echo "::warning::external scan failed on pass $PASS"
-            python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/external --message "external market scan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (pass $PASS)" || echo "::warning::external publish failed on pass $PASS"
+            SCAN_RC=0; python3 scripts/external/capture_and_scan.py || SCAN_RC=$?
+            [ "$SCAN_RC" -ne 0 ] && echo "::warning::external scan failed on pass $PASS (exit $SCAN_RC)"
+            SCAN_PUB_RC=0; python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/external --message "external market scan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (pass $PASS)" || SCAN_PUB_RC=$?
+            [ "$SCAN_PUB_RC" -ne 0 ] && echo "::warning::external publish failed on pass $PASS (exit $SCAN_PUB_RC)"
+            echo "{\"pass\":$PASS,\"capture_rc\":$CAP_RC,\"publish_rc\":$PUB_RC,\"scan_rc\":$SCAN_RC,\"scan_publish_rc\":$SCAN_PUB_RC}" >> "$PASS_LOG"
             rm -rf data/research/external/raw/*
             rm -rf data/kalshi/capture/2*; find data/kalshi/capture -size +95M -delete
             PASS=$((PASS+1))
@@ -116,3 +124,7 @@ jobs:
         run: |
           python3 scripts/ci/conductor_chain.py --workflow tennis-capture.yml --ref "${{ github.ref_name }}" \
             --inputs '{"minutes":"340","interval":"600","chain":"true"}'
+      - name: Conductor verdict (the single enforcement step; FAILED only when no pass captured and published)
+        # after the hand-off, so a failing conductor still passes the chain on: the successor is the retry
+        if: always() && steps.loop.outcome == 'success'
+        run: python3 scripts/ci/run_state.py capture --pass-log "$RUNNER_TEMP/capture_passes.jsonl"

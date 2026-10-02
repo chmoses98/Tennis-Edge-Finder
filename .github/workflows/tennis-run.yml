@@ -40,12 +40,20 @@ jobs:
           ls data
       - name: Build canonical table and rating states
         run: |
+          # without pipefail `| tail` reported tail's exit status and a crashed build looked green
+          set -o pipefail
           PYTHONPATH=. python3 tennis_edge/data/build.py | tail -5
           PYTHONPATH=. python3 -m tennis_edge.models.state --tour ATP
           PYTHONPATH=. python3 -m tennis_edge.models.state --tour WTA
       - name: Project, settle, health
+        id: project
         run: |
-          PYTHONPATH=. python3 scripts/run_tennis.py | tail -20
+          # pipefail: `| tail` used to hide a crashed projection or settlement script. A core-stage failure is
+          # recorded and enforced ONCE after publication (last step), so settlement and research outputs still publish.
+          set -o pipefail
+          CORE_FAILED=""
+          PYTHONPATH=. python3 scripts/run_tennis.py | tail -20 \
+            || { echo "run_tennis.py exited non-zero; enforced after publish"; CORE_FAILED="$CORE_FAILED run_tennis"; }
           # FROZEN research producers, run live (no model is fitted or changed here). Each writes an
           # append-only store, a heartbeat, and -- on its first production run only -- the write-once
           # experiment-start records. A failure is loud (::error::) and shows up as PRODUCER_NOT_RUNNING
@@ -58,7 +66,8 @@ jobs:
             echo "::error::frozen Model 4 producer failed"
           fi
           tail -20 model4.log
-          PYTHONPATH=. python3 scripts/ops/settle_ledger.py | tail -10
+          PYTHONPATH=. python3 scripts/ops/settle_ledger.py | tail -10 \
+            || { echo "settle_ledger.py exited non-zero; enforced after publish"; CORE_FAILED="$CORE_FAILED settle_ledger"; }
           # prospective confirmation: score the FROZEN candidates on post-freeze evidence (derived,
           # append-only layer; never writes a candidate definition). A harvest failure cannot block
           # settlement or publication, and it cannot stay invisible either (see below).
@@ -95,6 +104,7 @@ jobs:
           tail -12 discrepancy.log
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"
           cat data/research/health_latest.json | python3 -c "import json,sys; [print(g['gate'], g['status']) for g in json.load(sys.stdin)]"
+          echo "core_failed=$CORE_FAILED" >> "$GITHUB_OUTPUT"
       - name: Publish research outputs
         run: |
           git config user.name  "github-actions[bot]"
@@ -105,3 +115,6 @@ jobs:
           # has to replay 1.6M matches to price a board.
           python3 scripts/research/build_asof_states.py || echo "::warning::asof build failed"
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/processed --message "tennis processed artifacts $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
+      - name: Core verdict (the single enforcement step; FAILED when projections or settlement exited non-zero)
+        if: always() && steps.project.outcome == 'success'
+        run: python3 scripts/ci/run_state.py core --failed "${{ steps.project.outputs.core_failed }}"
