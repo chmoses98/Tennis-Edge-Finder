@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-02T08:52:46.816458+00:00",
+ "run_id": "20261002T085246Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1452,
+  "skipped_family": 277,
+  "skipped_period": 446,
+  "skipped_live": 29,
+  "one_sided": 29,
+  "rows": 2385,
+  "devigged": 699
+ },
+ "smarkets_fetch": {
+  "events_seen": 67,
+  "events_priced": 67,
+  "markets": 1250,
+  "markets_mapped": 568,
+  "contracts": 1234,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261002T085246Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 568,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 388,
+  "rows": 846,
+  "two_sided": 846,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1031,
+ "external_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.791,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kirill Kistanov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1,
+   "Astrid Brune Olsen": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 67,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7313,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 116,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8992,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1,
+   "Liv Zingg": 1
+  }
+ },
+ "matched_both_venues": 87,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 116,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 118,
+  "tri:MODEL_LONE_OUTLIER": 58,
+  "tri:INSUFFICIENT_INPUTS": 51,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
