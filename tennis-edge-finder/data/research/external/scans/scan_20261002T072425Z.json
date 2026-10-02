@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-02T07:24:25.664696+00:00",
+ "run_id": "20261002T072425Z",
+ "external_parse": {
+  "events": 159,
+  "markets": 1645,
+  "skipped_family": 298,
+  "skipped_period": 496,
+  "skipped_live": 24,
+  "one_sided": 34,
+  "rows": 2660,
+  "devigged": 817
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 1396,
+  "markets_mapped": 612,
+  "contracts": 1324,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261002T072425Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 612,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 489,
+  "rows": 835,
+  "two_sided": 816,
+  "one_sided": 19
+ },
+ "kalshi_quotes_on_disk": 1099,
+ "external_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.7881,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kenta Kawada": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Amr Elsayed": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 17,
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7123,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Sonay Kartal": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.9028,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Alexander Rozin": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1,
+   "Amr Elsayed": 1
+  }
+ },
+ "matched_both_venues": 100,
+ "external_mapped_matches": 121,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 152,
+ "counts": {
+  "PASS": 151,
+  "tri:INSUFFICIENT_INPUTS": 83,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 55,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
