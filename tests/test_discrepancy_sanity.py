@@ -91,6 +91,10 @@ def make_world(tmp_path, *, bid=0.47, ask=0.48, fair_a=0.56, ext=None, conf=1.0,
             {"generated_at": "2026-10-01T08:01:00+00:00", "kalshi_ticker": MW_A, "external_prices": {"smarkets": ext},
              "external_fair": ext, "reference_kind": "SHARP_REFERENCE", "triangulation": "x", "external_quote_age_s": 30,
              "n_independent_groups": 1, "decision": "PASS"}])
+    from tennis_edge.firstball.store import FirstBallStore
+    from tests.test_assisted_track import live_pre_readings
+    live_pre_readings(FirstBallStore(str(data / "firstball" / "store")), EV, datetime(2026, 10, 1, 7, 30, tzinfo=UTC),
+                      datetime(2026, 10, 1, 9, 59, tzinfo=UTC), datetime(2026, 10, 1, 10, 0, tzinfo=UTC))
     store = tmp_path / "research" / "assisted_decisions"
     ensure_track_start(str(store), started_at=T_START.isoformat(), main_sha="testsha")
     slate_dir = tmp_path / "research" / "assisted_slates"
@@ -244,7 +248,7 @@ def test_normal_discrepancies_are_unaffected(tmp_path):
     assert (r["discrepancy_band"], r["discrepancy_sanity_status"]) == ("NORMAL", "OK")
     assert r["identity_check_status"] == DS.ID_VERIFIED and r["ticker_orientation_status"] == "VERIFIED"
     rec = R.record_decision(_bet(), **_kw(w))
-    assert rec["schema_version"] == 2 and list(rec) == SC.DECISION_FIELDS
+    assert rec["schema_version"] == SC.ASSISTED_SCHEMA_VERSION >= 2 and list(rec) == SC.DECISION_FIELDS
     assert (rec["discrepancy_band"], rec["discrepancy_sanity_status"]) == ("NORMAL", "OK")
     assert rec["model_market_gap_pp"] == pytest.approx(8.5) and rec["discrepancy_conditions"] is None
     assert not any(x.startswith("DISCREPANCY") for x in rec["warnings"])

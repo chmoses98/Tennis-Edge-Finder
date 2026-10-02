@@ -5,6 +5,23 @@ inclusion rule, minimum N, pass condition, freeze timestamp or candidate definit
 every frozen model source and all seven candidate JSONs pinned in `tests/test_frozen_producers.py`). No
 historical Gen-2, fair_v1 or Model 4 probability was reconstructed.
 
+## 2026-10-02 update: start-time reconciliation and RUN TENNIS timing
+
+Six WTA Beijing matches had started before the handicapping run because (1) the first-ball watchlist came from
+a daily discovery snapshot that predated their listing, (2) Kalshi's 06:00Z time was a day placeholder for all
+27 matches, (3) a pregame-only first-ball truth was misread as a start bound, and (4) nothing planned the next
+window. Now: every slate match carries a reconciled START STATUS (truth > live state > ESPN live schedule >
+court progression > Kalshi nominal), main-tour BETs need a live pending reading <= 30 min old, and the
+first-ball conductor writes `firstball/store/schedule/NEXT_WINDOW.md` every ~10 min and dispatches the
+assisted slate 45 and 10 min before the earliest credible first ball (a full RUN TENNIS first only when the
+producer rows are > 3 h old). Decision schema v3. TENNIS-18 `start_time_window_health`. Full description and
+verification steps: `docs/START_TIME_RECONCILIATION.md`. No model, probability, candidate, staking or authority
+change; AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF.
+
+**Where to look before handicapping:** `tennis-data` ->
+`tennis-edge-finder/data/firstball/store/schedule/NEXT_WINDOW.md` (recommended RUN TENNIS time, final check
+time, matches in the window) and the START STATUS block of each match in `assisted_slates/latest.md`.
+
 ## What landed on `main`
 
 | PR | merge | content |

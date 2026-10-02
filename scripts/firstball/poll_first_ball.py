@@ -34,6 +34,7 @@ from tennis_edge.firstball.watchlist import build_watchlist, poll_interval # noq
 from tennis_edge.firstball.store import FirstBallStore                     # noqa: E402
 from tennis_edge.firstball.truth import FirstBallObservation               # noqa: E402
 from tennis_edge.firstball.reconcile import reconcile                      # noqa: E402
+from tennis_edge.firstball.start_times import court_context                # noqa: E402
 
 PROJ = os.path.abspath(os.path.join(os.path.dirname(__file__), "..", ".."))
 DEFAULT_SOURCES = "espn_atp,espn_wta"
@@ -79,8 +80,8 @@ def main():
     a = ap.parse_args()
 
     disc = a.discovery or latest_discovery()
-    if not disc:
-        print("::warning::no discovery snapshot available; nothing to watch")
+    if not disc and not os.path.isdir(a.capture):
+        print("::warning::no discovery snapshot and no capture board available; nothing to watch")
         return 0
     adapters = [REGISTRY[s] for s in a.sources.split(",") if s in REGISTRY]
     if not adapters:
@@ -111,7 +112,7 @@ def main():
         interval, tiers = poll_interval(items, now, states)
         interval = max(interval, a.min_interval)
         print(f"[{now:%H:%M:%S}] watch={len(items)} tiers={tiers} interval={interval}s "
-              f"(discovery {os.path.basename(disc)}, {diag})", flush=True)
+              f"(discovery {os.path.basename(disc) if disc else None}, {diag})", flush=True)
 
         feed = []
         for ad in adapters:
@@ -165,6 +166,7 @@ def main():
             mp, mdiag = map_all([OurMatch(it.match_id, it.player_a, it.player_b, it.scheduled_utc, it.doubles)
                                  for it in items], [m for m, _, _ in feed])
             by_key = {(m.source, m.source_match_id): (m, h, u) for m, h, u in feed}
+            feed_ms = [m for m, _, _ in feed]
             observed_at = datetime.now(timezone.utc)
             for mid, mapping in mp.items():
                 if mapping.status not in ("MATCHED", "WEAK"):
@@ -178,7 +180,8 @@ def main():
                     games_played=sm.games_played, payload_hash=digest,
                     independence_group=getattr(REGISTRY.get(sm.source), "independence_group", "") or sm.source,
                     raw_evidence_location=f"firstball/poll/{run_id}", mapping_status=mapping.status,
-                    mapping_score=mapping.score)
+                    mapping_score=mapping.score, source_time_valid=sm.time_valid, court=sm.court,
+                    court_context=court_context(sm, feed_ms))
                 if not a.dry_run:
                     store.add_observation(obs)
                 stats["observations"] += 1
@@ -196,6 +199,9 @@ def main():
                     stats["resolved"][mid] = {"confidence": t.confidence, "bracket_s": t.bracket_seconds,
                                               "first_ball": t.actual_first_ball_at_utc.isoformat() if t.actual_first_ball_at_utc else None,
                                               "no_play": t.no_play}
+            stats.setdefault("watchlist", {})
+            for k in ("capture_board_markets", "events_only_on_capture_board", "selected_from_capture_board"):
+                stats["watchlist"][k] = max(stats["watchlist"].get(k, 0), diag.get(k, 0) or 0)
             stats.setdefault("mapping", {})
             for k, v in mdiag["counts"].items():
                 stats["mapping"][k] = stats["mapping"].get(k, 0) + v

@@ -96,3 +96,13 @@ reachable first-ball source at all**, and doubles coverage is unverified. Those 
 `START_UNKNOWN` and are excluded from strict pregame research. Their start times are not guessed, not
 back-filled from the nominal time, and not inferred from market activity. See
 [FIRST_BALL_SOURCES.md](FIRST_BALL_SOURCES.md) for the evidence behind each of those statements.
+
+
+## Using a truth as a start bound (2026-10-02)
+
+A truth with no `upper_bound_utc` only says "seen NOT started at `lower_bound_utc`". It is not a first-ball
+bound: `assisted.market.first_ball_bound` returns None for it (it used to return the lower bound, which hid
+ESPN-watched pregame matches from the assisted slate and would have refused decisions on them). When several
+events of one physical match carry truths, the one that observed play governs. Start status for handicapping
+(truth > live state > live schedule > court progression > Kalshi nominal) is in
+`docs/START_TIME_RECONCILIATION.md`.

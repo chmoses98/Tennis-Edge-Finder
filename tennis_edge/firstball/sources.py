@@ -36,6 +36,12 @@ class SourceMatch:
     level_hint: str = ""
     doubles: bool = False
     time_interpretation: str = ""
+    #: does the source vouch for `scheduled_utc` as a real time? ESPN's `timeValid` is False for day
+    #: placeholders (future rounds read 04:00Z with timeValid=false). None = the source does not say.
+    time_valid: bool | None = None
+    court: str = ""                  # court name, when the source publishes the order of play
+    period: int | None = None        # current set while in progress (ESPN status.period)
+    best_of: int | None = None       # sets in the match format (ESPN format.regulation.periods)
 
     def to_dict(self):
         d = asdict(self)
@@ -146,6 +152,15 @@ class EspnAdapter(Adapter):
                 if len(names) != 2 or not all(names):
                     continue
                 state, desc = self._state(comp)
+                tv = comp.get("timeValid")
+                try:
+                    period = int((comp.get("status") or {}).get("period")) if (comp.get("status") or {}).get("period") is not None else None
+                except (TypeError, ValueError):
+                    period = None
+                try:
+                    best_of = int((((comp.get("format") or {}).get("regulation") or {}).get("periods")))
+                except (TypeError, ValueError):
+                    best_of = None
                 games = None
                 try:
                     games = sum(int(ls.get("value") or 0) for c in comp.get("competitors") or []
@@ -158,7 +173,9 @@ class EspnAdapter(Adapter):
                     scheduled_utc=_iso_utc(comp.get("date") or ev.get("date")), claimed_start_utc=None,
                     games_played=games, tournament=(ev.get("name") or ""),
                     level_hint=self.league.upper(), doubles=pair or "/" in names[0],
-                    time_interpretation=self.time_interpretation))
+                    time_interpretation=self.time_interpretation,
+                    time_valid=tv if isinstance(tv, bool) else None,
+                    court=str(((comp.get("venue") or {}).get("court")) or ""), period=period, best_of=best_of))
         return out
 
 

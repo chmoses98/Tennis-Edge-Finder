@@ -17,7 +17,10 @@ import re
 #: v2: adds the discrepancy-sanity group to decisions (model-market gap, band, identity / orientation /
 #:     freshness / external / data-quality status and the Part J conditions); wagers, postmortems and
 #:     evidence are unchanged apart from the version number. A v1 record keeps validating against v1.
-ASSISTED_SCHEMA_VERSION = 2
+#: v3 (2026-10-02): adds the start-status group -- the reconciled start status at decision time (first-ball
+#:     truth > live-score state > live schedule > court progression > Kalshi nominal), so a decision records
+#:     whether the match was verifiably pregame when it was made. v1 and v2 records keep validating.
+ASSISTED_SCHEMA_VERSION = 3
 
 DECISIONS = ("BET", "PASS", "WATCH")
 SIDES = ("YES", "NO")
@@ -98,6 +101,9 @@ DECISION_SCHEMA = {
                            "market_freshness_status", "external_confirmation_status", "data_quality_status",
                            "discrepancy_conditions", "discrepancy_explanation", "sample_asymmetry_justification",
                            "external_unavailable_reason", "discrepancy_context_source"],
+    "start_status": ["start_status_at_decision", "current_expected_start_at_decision",
+                     "start_time_source_at_decision", "start_time_confidence_at_decision",
+                     "start_time_last_checked_at_decision", "start_status_reasons_at_decision"],
     "expression": ["primary_match_thesis", "available_expressions", "chosen_expression",
                    "why_chosen_expression_best_matches_thesis"],
     "decision": ["decision", "recommended_price", "bet_up_to_probability", "bet_up_to_price",
@@ -105,8 +111,10 @@ DECISION_SCHEMA = {
     "authority": ["authority", "autonomous_real_money_authority", "automated_execution", "warnings"],
 }
 DECISION_FIELDS = [k for g in DECISION_SCHEMA.values() for k in g]
-DECISION_FIELDS_BY_VERSION = {1: [k for g, ks in DECISION_SCHEMA.items() if g != "discrepancy_sanity" for k in ks],
-                              2: DECISION_FIELDS}
+DECISION_FIELDS_BY_VERSION = {
+    1: [k for g, ks in DECISION_SCHEMA.items() if g not in ("discrepancy_sanity", "start_status") for k in ks],
+    2: [k for g, ks in DECISION_SCHEMA.items() if g != "start_status" for k in ks],
+    3: DECISION_FIELDS}
 
 #: Once written these can never change. The whole record is fingerprinted; this list is what the
 #: integrity check names when a fingerprint breaks (Part 11).

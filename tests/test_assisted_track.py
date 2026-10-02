@@ -118,6 +118,7 @@ def world(tmp_path):
          "external_fair": 0.495, "reference_kind": "CONSENSUS", "triangulation": "AGREE", "external_quote_age_s": 60,
          "n_independent_groups": 2, "decision": "PASS"}])
     fb = FirstBallStore(str(data / "firstball" / "store"))
+    live_pre_readings(fb, EV, datetime(2026, 10, 1, 7, 0, tzinfo=UTC), datetime(2026, 10, 1, 9, 59, tzinfo=UTC), FIRST_BALL)
     fb.add_truth(FirstBallTruth(OTHER_EV, None, datetime(2026, 10, 1, 7, 0, tzinfo=UTC), datetime(2026, 10, 1, 7, 3, tzinfo=UTC),
                                 "B", DERIVATION_EXPLICIT, created_at=datetime(2026, 10, 1, 7, 5, tzinfo=UTC)))
     store = tmp_path / "research" / "assisted_decisions"
@@ -126,6 +127,20 @@ def world(tmp_path):
     write_slate(build_slate(str(data), now=T_SLATE), str(slate_dir))
     return {"data": str(data), "store": str(store), "slate": str(slate_dir), "research": str(tmp_path / "research"),
             "cap": str(cap), "fb": fb}
+
+
+def live_pre_readings(fb, event, start, until, scheduled, *, every_min=5):
+    """What the first-ball conductor writes for a watched main-tour match before it starts: a live PRE reading
+    every few minutes carrying the source's own (valid) scheduled time. Since 2026-10-02 a main-tour BET needs
+    one no older than 30 minutes (tennis_edge.firstball.start_times)."""
+    from tennis_edge.firstball.truth import FirstBallObservation
+    t = start
+    while t <= until:
+        fb.add_observation(FirstBallObservation(
+            match_id=event, source="espn_atp", authority="secondary", observed_at_utc=t, state="PRE",
+            source_match_id="1", source_status="Scheduled", source_event_timestamp=scheduled,
+            source_time_interpretation="iso8601_explicit_utc", independence_group="espn", source_time_valid=True))
+        t += timedelta(minutes=every_min)
 
 
 def _kw(w, now=T_DEC):
@@ -590,7 +605,7 @@ def test_tennis_16_operations_gate(world):
 def test_tennis_16_is_in_the_health_run_and_separate_from_tennis_15():
     from tennis_edge.health import gates as G
     names = [g.gate for g in G.run_all()]
-    assert names[-3:] == ["TENNIS-15", "TENNIS-16", "TENNIS-17"]          # TENNIS-17: discrepancy integrity
+    assert names[-4:] == ["TENNIS-15", "TENNIS-16", "TENNIS-17", "TENNIS-18"]   # 17 discrepancy, 18 start windows
     assert "TENNIS-16" not in G.CANDIDATE_PRODUCERS.values()
 
 

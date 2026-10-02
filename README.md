@@ -27,6 +27,15 @@ it. The audit behind it (`research/model_market_discrepancy/AUDIT.md`) found mos
 ITF/Challenger markets priced after Kalshi had settled, in-play prints or stale quotes, not model insight.
 No model probability changed.
 
+### Start-time reconciliation (new, 2026-10-02)
+
+Kalshi's scheduled time is not a start time (on 2026-10-02 it was a 06:00Z placeholder for 27 WTA matches,
+six of which had started by 03:05-05:50Z). Every slate match now carries a reconciled START STATUS (first-ball
+truth > live state > ESPN live schedule > court progression > Kalshi nominal), BETs fail closed unless a live
+source recently saw the match pending, and the first-ball conductor plans the next main-tour window from the
+EARLIEST credible first ball, dispatching the slate refresh 45 and 10 minutes before it
+(`firstball/store/schedule/NEXT_WINDOW.md`). TENNIS-18 guards it. See `docs/START_TIME_RECONCILIATION.md`.
+
 ### External reference markets
 
 `scripts/external/capture_and_scan.py` runs inside the capture conductor: it fetches Bovada's public
@@ -84,7 +93,7 @@ branch under the historical `tennis-edge-finder/data/...` prefix; see MIGRATION_
 
 Docs: docs/ARCHITECTURE.md, DATA_SOURCES.md, KALSHI_MARKET_TAXONOMY.md, IDENTITY.md, MODELING.md,
 VALIDATION.md, CLV_AND_SETTLEMENT.md, PROSPECTIVE_RESEARCH_PROTOCOL.md, PRODUCTION_HEALTH.md,
-KNOWN_LIMITATIONS.md, DECISION_LOG.md, FIRST_BALL_SOURCES.md, FIRST_BALL_TRUTH.md.
+KNOWN_LIMITATIONS.md, DECISION_LOG.md, FIRST_BALL_SOURCES.md, FIRST_BALL_TRUTH.md, START_TIME_RECONCILIATION.md.
 Reports: MORNING_REPORT.md, FIRST_BALL_WAVE_REPORT.md. Migration record: MIGRATION_AUDIT.md.
 Prospective confirmation of the frozen candidates: PROSPECTIVE_CONFIRMATION_REPORT.md,
 research/PROSPECTIVE_EVIDENCE_AUDIT.md, `scripts/research/harvest_candidate_evidence.py` (derived,

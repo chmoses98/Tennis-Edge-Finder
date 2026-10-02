@@ -4,6 +4,9 @@ name: TENNIS assisted slate
 # the latest capture and the frozen producers' latest rows, and publishes it to `tennis-data`. RUN TENNIS
 # also builds it every six hours; this is for "RUN TENNIS" moments between those runs. It selects nothing.
 # The rating tables feed only the discrepancy layer's namesake and surface-sample checks (no model is run).
+# First-ball observations feed start-time reconciliation (live status, ESPN's current time, court progression).
+# The first-ball conductor's window planner dispatches this workflow ~45 and ~10 minutes before the earliest
+# credible first ball of each ATP/WTA window.
 
 on:
   workflow_dispatch:
@@ -28,7 +31,9 @@ jobs:
         run: |
           git fetch --depth=1 --filter=blob:none origin tennis-data
           T=$(date -u +%F); Y=$(date -u -d yesterday +%F)
-          for path in research/assisted_slates firstball/store/truths "kalshi/capture/$Y" "kalshi/capture/$T" \
+          for path in research/assisted_slates firstball/store/truths firstball/store/schedule \
+                      "firstball/store/observations/$Y.jsonl" "firstball/store/observations/$T.jsonl" \
+                      "kalshi/capture/$Y" "kalshi/capture/$T" \
                       "research/ledger/$Y.jsonl" "research/ledger/$T.jsonl" \
                       "research/frozen_producers/shadow_board/$Y.jsonl" "research/frozen_producers/shadow_board/$T.jsonl" \
                       "research/frozen_producers/model4/$Y.jsonl" "research/frozen_producers/model4/$T.jsonl" \

@@ -72,3 +72,17 @@
 | `settled_at` attached only to contaminated observations | keeps the correction to exactly the rows it changes (no re-versioning of thousands of clean rows) | attaching it to every settled row |
 | Gen-1 doubles probabilities removed from the assisted slate and from assisted decisions; doubles markets stay | the model failed a pre-stated no-skill test; a person may still handicap doubles manually | deleting doubles rows, or showing the number with a warning |
 | A typed doubles model probability is refused, not silently dropped | the recorder refuses rather than repairs | discarding payload fields quietly |
+
+
+## 2026-10-02 Start-time reconciliation; RUN TENNIS timed off the earliest credible first ball
+
+| decision | why | alternative rejected |
+|---|---|---|
+| Authority: first-ball truth > live state > live schedule (ESPN `date`, `timeValid`) > court progression > Kalshi nominal (LOW) | the Kalshi nominal was a 06:00Z day placeholder for 27 matches that ESPN had at 03:05-06:05Z | trusting one `scheduled_start` field |
+| A future scheduled time is never proof of pregame; a main-tour BET needs a live PRE reading <= 30 min old | fail closed: absence of evidence of play is not evidence of no play | allowing a BET until the nominal passes |
+| Sources disagree, a MATERIAL contradiction, or now >= expected start without a pending reading in 180 s -> STATUS_AMBIGUOUS, BET blocked | ambiguity must not resolve to "pregame" | "latest reading wins" |
+| Court progression only pulls an estimate earlier (fixed conservative remaining-time table) | bias the refresh early; a late estimate is the expensive error | a fitted duration model, or pushing estimates later |
+| The first-ball watchlist unions discovery with the live capture board each segment | the daily discovery snapshot missed matches listed after it (RC1) | a second discovery run per day |
+| A pregame-only truth (no upper bound) is not a first-ball bound | it says "not started at t"; reading it as "may have started" hid pregame matches | keeping the lower bound as a conservative cut-off |
+| Refreshes are dispatched by the existing first-ball conductor: slate at earliest - 45 and - 10 min, a full RUN TENNIS only when producer rows are > 3 h old (cap 6/day), each once per window | the conductor already polls every 10 min; no new frequent workflow and no unnecessary rebuild | an every-10-minute RUN TENNIS cron |
+| Decision schema v3 records the start status at decision; v1/v2 stay readable | versioning, not editing, a fixed schema | silently adding fields |
