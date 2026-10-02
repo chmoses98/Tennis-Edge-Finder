@@ -102,12 +102,16 @@ jobs:
             done
             python3 scripts/firstball/poll_first_ball.py --minutes "$SEGMENT" --sources "$SOURCES" \
               || echo "::warning::poll segment $SEG returned non-zero (partial)"
-            # plan the next ATP/WTA window from live start evidence; dispatch the assisted refresh when it is due
-            python3 scripts/firstball/plan_windows.py --dispatch \
-              || echo "::warning::window planner failed on segment $SEG (polling continues)"
             python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/store \
               --message "first-ball truth $(date -u +'%Y-%m-%dT%H:%M:%SZ') (segment $SEG)" \
               || echo "::warning::publish failed on segment $SEG"
+            # plan the next ATP/WTA window from live start evidence; dispatch the assisted refresh when it is due.
+            # AFTER the publish above, so a dispatched slate fetches the observations that triggered it.
+            python3 scripts/firstball/plan_windows.py --dispatch \
+              || echo "::warning::window planner failed on segment $SEG (polling continues)"
+            python3 scripts/ci/publish_branch.py --branch tennis-data --src data/firstball/store \
+              --message "first-ball window plan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (segment $SEG)" \
+              || echo "::warning::plan publish failed on segment $SEG"
             SEG=$((SEG+1))
           done
           echo "first-ball conductor finished after $SEG segments"

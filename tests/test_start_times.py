@@ -464,3 +464,14 @@ def test_relisted_match_under_two_date_codes_is_one_meeting_not_a_collision():
     far = [OurMatch("P", "Denis Shapovalov", "Alejandro Tabilo", T(15, d=1)),
            OurMatch("Q", "Denis Shapovalov", "Alejandro Tabilo", T(13, d=4))]          # 70 h apart: two meetings
     assert {m.status for m in map_all(far, [row])[0].values()} == {"AMBIGUOUS"}
+
+
+def test_court_queue_does_not_cross_into_the_next_days_order_of_play():
+    """Production 2026-10-02 13:44Z: Volynets-Mertens listed for 10-03 04:00Z on Brad Drewett was called
+    imminent because today's last match on that court had finished."""
+    today_last = _sm("1", "POST", T(10), court="Brad Drewett")
+    tomorrow_first = _sm("2", "PRE", T(4, d=3), court="Brad Drewett")
+    ctx = ST.court_context(tomorrow_first, [today_last, tomorrow_first])
+    assert ctx["preceding"] is None and ST.court_estimate(ctx, T(13, 44)) == (None, "")
+    same_day = _sm("3", "PRE", T(13), court="Brad Drewett")
+    assert ST.court_context(same_day, [today_last, same_day])["preceding"]["source_match_id"] == "1"

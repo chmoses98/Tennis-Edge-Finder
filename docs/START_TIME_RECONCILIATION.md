@@ -31,7 +31,7 @@ Yastremska-Chwalinska, Alexandrova-Sasnovich) had started before the handicappin
    same court is in progress, the target cannot start before it ends -- but it may start much sooner than
    its listed time, so the estimate is `observed + remaining(set) + 5 min` with
    remaining = 35/10/5 min (best of 3, in set 1/2/3) or 60/35/10/5/5 (best of 5). A finished preceding
-   match with no other pending match ahead -> `observed + 5 min`. Only ever pulls the estimate **earlier**.
+   match with no other pending match ahead -> `observed + 5 min`. Only ever pulls the estimate **earlier**. The preceding match must be listed within 6 h of the target (one day's order of play), so a court's queue never crosses midnight.
 5. **Kalshi nominal** (`occurrence_datetime`): LOW confidence, ATP/WTA only, never when it is a day
    placeholder.
 
@@ -83,6 +83,9 @@ readings, and it writes (published with the first-ball store on `tennis-data`):
 * `tennis-edge-finder/data/firstball/store/schedule/NEXT_WINDOW.md` -- the human-readable answer
 * `.../schedule/plan_latest.json` -- every main-tour match's start status, the windows, slate freshness
 * `.../schedule/plan_log.jsonl`, `.../schedule/dispatch_log.jsonl` -- append-only history
+
+Each segment publishes the new observations first and only then plans and dispatches, so a dispatched slate
+always sees the live readings that triggered it; the plan itself is published right after.
 
 The slate (`assisted_slates/latest.md`) opens with a **NEXT ACTIONABLE MAIN-TOUR WINDOW** block (earliest
 credible first ball, recommended RUN TENNIS time, final check time, number of matches, OVERDUE flag) and a

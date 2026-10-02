@@ -80,6 +80,10 @@ WINDOW_SPAN_S = 90 * 60
 #: estimate pulls the refresh forward; a late one would repeat the 2026-10-02 failure). best_of -> set -> min.
 COURT_REMAINING_MIN = {3: {1: 35, 2: 10, 3: 5}, 5: {1: 60, 2: 35, 3: 10, 4: 5, 5: 5}}
 COURT_TURNOVER_MIN = 5
+#: the match before the target on its court must be listed within this many hours of it: one day's order of
+#: play. 2026-10-02: an 18 h reach chained tomorrow's 04:00Z opener onto today's finished last match and
+#: called it imminent.
+COURT_SAME_SESSION_H = 6
 #: level buckets a wired live first-ball source (ESPN) covers; see firstball/watchlist.SOURCE_COVERED_LEVELS
 COVERED_BUCKETS = ("ATP", "WTA", "WTA125")
 MAIN_TOUR = ("ATP", "WTA")
@@ -117,7 +121,7 @@ def court_context(target, feed) -> dict | None:
     same = [m for m in feed if m is not target and m.source == target.source and m.tournament == target.tournament
             and getattr(m, "court", "") == target.court and m.source_match_id != target.source_match_id
             and m.scheduled_utc is not None
-            and timedelta(0) <= target.scheduled_utc - m.scheduled_utc <= timedelta(hours=18)]
+            and timedelta(0) <= target.scheduled_utc - m.scheduled_utc <= timedelta(hours=COURT_SAME_SESSION_H)]
     ahead = sorted((m for m in same if m.scheduled_utc < target.scheduled_utc), key=lambda m: m.scheduled_utc)
     ties = [m for m in same if m.scheduled_utc == target.scheduled_utc]
     if not ahead:
