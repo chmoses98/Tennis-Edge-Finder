@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-03T20:00:20.656418+00:00",
+ "run_id": "20261003T200020Z",
+ "external_parse": {
+  "events": 78,
+  "markets": 879,
+  "skipped_family": 287,
+  "skipped_period": 210,
+  "skipped_live": 8,
+  "one_sided": 7,
+  "rows": 1374,
+  "devigged": 375
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 837,
+  "markets_mapped": 287,
+  "contracts": 608,
+  "quoted_contracts": 608,
+  "raw": "data/research/external/raw/20261003T200020Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 568,
+  "two_sided": 568,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 210,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6418,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Brian Windsor": 1,
+   "Michelle Ryndin": 1,
+   "Tanika Saravanan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8077,
+  "top_refusal_subjects": {
+   "Yan Lang Chen": 1,
+   "Darya Khomutsianskaya": 1,
+   "Calvin Habiyambere": 1,
+   "Fred Barry Nimubona": 1,
+   "Fares Zakaria": 1,
+   "Ilina Ilieva": 1,
+   "Melanie Stoichkova": 1,
+   "Raya Markova": 1,
+   "Monika Gospodinova": 1,
+   "Ana Lungu": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
