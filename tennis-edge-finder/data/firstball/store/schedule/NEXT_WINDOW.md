@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 11:01Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 11:20Z)
 
-* Earliest credible first ball: **2026-10-03 11:09Z**
-* Recommended RUN TENNIS time: **2026-10-03 10:24Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-03 10:59Z**
+* Earliest credible first ball: **2026-10-03 11:29Z**
+* Recommended RUN TENNIS time: **2026-10-03 10:44Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-03 11:19Z**
 * Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Marie Bouzkova vs Kimberly Birrell | 2026-10-03 11:09Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Brad Drewett in progress (set 3 of best-of-5) | MEDIUM |
-| Francisco Cerundolo vs Jakub Mensik | 2026-10-03 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Sonay Kartal vs Xinyu Wang | 2026-10-03 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Marie Bouzkova vs Kimberly Birrell | 2026-10-03 11:29Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Brad Drewett in progress (set 3 of best-of-5) | MEDIUM |
+| Francisco Cerundolo vs Jakub Mensik | 2026-10-03 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Sonay Kartal vs Xinyu Wang | 2026-10-03 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Elena Rybakina vs Alina Charaeva | 2026-10-03 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **4 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Zverev vs Juncheng Shang, Maria Sakkari vs Elina Svitolina, Donna Vekic vs Iga Swiatek, Jelena Ostapenko vs Elise Mertens
 
-Published slate: `SL-20261003T103408Z-723da3f6` built 2026-10-03 10:34Z -- current
+Published slate: `SL-20261003T103408Z-723da3f6` built 2026-10-03 10:34Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-03T11:29:07.707024+00:00, slate built 2026-10-03T10:34:08.774779+00:00
 
 Dispatched this pass: slate_final (ok)
 
