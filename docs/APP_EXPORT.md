@@ -96,3 +96,65 @@ Real-data proof (tennis-data as of 2026-10-02T13:37Z, `--now 2026-10-02T13:45:00
   boolean would let a reader avoid string-matching the detail.
 - The manifest `freshness` map is free-form per key; the exporter uses `kalshi` and `model`, which other sports should
   mirror for the registry UI.
+
+## Explorer (research graph, contract 1.1.0)
+`scripts/research_export.py` (thin CLI) over `tennis_edge/research_export.py` (pure adapter: `load_inputs` ->
+`build_explorer` -> `export_explorer` = `research.publish_explorer`) publishes `app/latest/explorer/` beside the v1
+files. It runs AFTER the v1 export with the same `--data-root/--out`; `run_id` is the v1 manifest's, `generated_at`
+defaults to the v1 manifest's `generated_at` (the same `now`), `as_of` is the newest data timestamp read. It refuses
+(exit 1, previous `explorer/` untouched) when the v1 export of the run failed or when the slate on disk is not the one
+the v1 payload was built from. Stdlib only (the slate workflow installs nothing); no network; no model fitting.
+
+```
+python scripts/research_export.py --out data/app/latest [--data-root data] [--now <iso>] [--top-n 200] [--capture-days 3]
+```
+
+Workflows: in both `tennis-run.yml` and `tennis-assisted-slate.yml` the "App export + research export" step runs it as
+its own command right after the v1 export (skipped when the v1 export failed), logs to the step summary, records a
+failure as `RESEARCH_EXPORT_FAILED=1` with an `::error::research_export ...` annotation, and a final step fails the job
+AFTER the publish (which carries `data/app`, explorer included). The slate workflow additionally pulls
+`research/settlements/SCORECARD.md`, `research/candidate_confirmation` and yesterday's external dislocations; it
+only has yesterday's and today's ledger/capture, so its per-ticker history is two days deep (RUN TENNIS has everything).
+
+### What it publishes
+| file | content | source |
+|---|---|---|
+| `players/<prt_>.json` | overall + per-surface Elo with match counts (ranked), structural serve/return abilities, serve-point evidence, last match date, ratings_as_of, authority RESEARCH_ONLY; for slate players also the current game, opponent, markets, v1 model prices and per-matchup serve-point probabilities | `processed/ratings_{ATP,WTA}.json`; ledger inputs; Model 4 |
+| `rankings/<rnk_>.json` | Elo overall + Hard/Clay/Grass/Carpet, per tour (10 rankings) | rating state, arithmetic only |
+| `events/<evt_>.json` | v1 event, matchup rows (player A in the `home` slot, B in `away`), v1 markets, v1 model prices (fair_v1 / Model 4 = RESEARCH), the ledger's six model numbers per ticker per run (projections + `extensions.ledger` with mid, quality grade, start basis, settlement outcome and strict CLV where present), Model 4 set-score / games distributions and fair_v1 envelopes (RESEARCH), surface, first-ball / start status + truth row, Bovada/Smarkets de-vigged vs Kalshi vs model | v1 payload, slate, `research/ledger`, `research/settlements`, `frozen_producers/model4`, `firstball/store/truths`, `research/external/dislocations` |
+| `market_history/<evt_>.json` | every v1 ticker's Kalshi quote points (bid/ask/last/volume/OI, ~10-15 min) | `kalshi/capture/<day>/*.quotes.jsonl.gz`, now-3d..now |
+| `series/<ser_>.json` | per-ticker ledger model fair (ELO_DP_FAIR), x = RUN; one series per match-winner pair (side B is the exact complement) | `research/ledger` |
+| `metrics.json` | 18 metrics incl. settled Brier/log-loss/slope, strict CLV by family, Pinnacle benchmark + elo_study (RESEARCH) in `extensions` | `SCORECARD.md`, `CLV_SCORECARD.json`, `research/market_benchmark`, `research/elo_study` |
+
+Identity: v1 participants keep their `kalshi_player_name` `prt_` ids (same `build.participant` call); the rating id is
+attached as `source_ids.tennis_rating_id` (`ATP:104925`) only when the normalised full name identifies exactly one rated
+player of the tour (the `identity/crosswalk.py` rule) and agrees with the slate's own player ids; otherwise the profile
+keeps its v1 identity and carries no rating. Top-N players not on the slate use the `tennis_rating_id` namespace.
+Universe (stated in every ranking's `filter`): slate players with a rating + the top 200 by overall Elo among players
+whose last rated match is within 365 days of the ratings `as_of_date`. If `explorer/index.json` would exceed 300 KB the
+top-N tail (never a slate player) is shrunk and a warning says so.
+
+### Capabilities (audit 2026-10-03)
+VERIFIED: raw_projections, market_prices, market_price_history (window-limited), game_markets, search.
+PARTIAL: player_profiles, player_metrics, opponent_adjustment, situational_splits (surface), matchup_metrics,
+event_research, rankings, comparisons, time_series, calibration, historical_accuracy, clv (limitations verbatim from
+the audit: end-state ratings, sports truth 0%, TENNIS-10, first-ball coverage). RESEARCH: projection_distributions.
+UNAVAILABLE (with reasons): team_profiles/metrics/game_logs, team_props (no teams); player_game_logs,
+historical_results, opponents/H2H, usage, advanced_stats (the canonical `matches.parquet` is rebuilt per run and on no
+branch; it is not rebuilt here); schedule_strength, recent_form_windows, lineups/draws, injuries, player_props,
+play_by_play, weather, venue_effects beyond surface, wager_history (ledgers empty). A missing input in a run downgrades
+its capability to UNAVAILABLE instead of claiming it.
+
+### Sizes (tennis-data @ 23add39d9, slate SL-20261003T055612Z-8b35f7e8, `--now 2026-10-03T06:20:00Z`)
+135 events, 607 player profiles (270 slate: 170 rated, 90 doubles pairs, 9 NO_CANONICAL_MATCH, 1 AMBIGUOUS_NAME),
+10 rankings, 49 series, 135 market histories (17,895 quote points), 18 metrics; `research.tree_bytes`:
+players 5,824,150 · market_history 3,271,669 · events 2,492,223 · rankings 551,026 · index.json 295,301 ·
+search_index.json 269,249 · series 82,171 · metrics.json 46,865 · capabilities.json 17,878 (12.9 MB total). Largest
+files: profile 19.0 KB, event 36.1 KB, market history 204.5 KB, ranking 64.0 KB. Build 4.6 s; `verify_explorer` = [],
+every GAME packet validates with `quality.missing == []`.
+
+### Deliberately not published
+The canonical match table and anything derived from it (match logs, H2H, W-L, minutes, box serve stats); as-of rating
+checkpoints and the elo_study per-match parquet files (no rating trajectories); the raw trade tape, books and candles;
+official rankings (acquired, unused); doubles ratings (none exist; doubles ledger rows are RESEARCH). `publish_branch.py`
+never deletes, so explorer files that left the index stay on `tennis-data` unreferenced (clients follow `index.json`).

@@ -105,7 +105,7 @@ jobs:
           PYTHONPATH=. python3 -c "from tennis_edge.health.gates import run_all; import json; json.dump([g.to_dict() for g in run_all()], open('data/research/health_latest.json','w'), indent=1, default=str)"
           cat data/research/health_latest.json | python3 -c "import json,sys; [print(g['gate'], g['status']) for g in json.load(sys.stdin)]"
           echo "core_failed=$CORE_FAILED" >> "$GITHUB_OUTPUT"
-      - name: App export (Edge Finder contract)
+      - name: App export + research export (Edge Finder contract)
         # Edge Finder app payload -> data/app/latest, carried to tennis-data by the publish step below
         # (registry path tennis-edge-finder/data/app/latest). The exporter changes no production output.
         # On failure it writes health.json ONLY (export_failed, last-known-good payload left in place) and
@@ -123,8 +123,21 @@ jobs:
                --commit-sha "$GITHUB_SHA" --workflow-run-id "$GITHUB_RUN_ID" > app_export.log 2>&1; then
             echo "::error::app export failed; health-only written, payload is last-known-good (job fails after publish)"
             echo "APP_EXPORT_FAILED=1" >> "$GITHUB_ENV"
+            V1_FAILED=1
           fi
           tail -8 app_export.log
+          # Edge Finder research graph (app/latest/explorer): its OWN command, run only after a good v1 export, with the
+          # same --data-root/--out (its --now defaults to the v1 manifest's generated_at). A failure leaves the previous
+          # explorer/ and the whole v1 payload untouched, is RECORDED here and RAISED after publication (never blocks it).
+          if [ -n "${V1_FAILED:-}" ]; then
+            echo "research export skipped: the v1 export failed (explorer/ left as last-known-good)" | tee research_export.log
+          elif ! PYTHONPATH=. python3 scripts/research_export.py --data-root data --out data/app/latest \
+               --commit-sha "$GITHUB_SHA" > research_export.log 2>&1; then
+            echo "::error::research_export failed; explorer/ left as last-known-good (job fails after publish)"
+            echo "RESEARCH_EXPORT_FAILED=1" >> "$GITHUB_ENV"
+          fi
+          tail -8 research_export.log
+          { echo "### Edge Finder research export"; echo '```'; tail -12 research_export.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
       - name: Publish research outputs
         run: |
           git config user.name  "github-actions[bot]"
@@ -141,6 +154,11 @@ jobs:
         if: env.APP_EXPORT_FAILED == '1'
         run: |
           echo "::error::app export failed earlier in this run; research outputs were published, app/latest carries health-only"
+          exit 1
+      - name: Fail the job if the research export failed (after publish)
+        if: env.RESEARCH_EXPORT_FAILED == '1'
+        run: |
+          echo "::error::research_export failed earlier in this run; outputs were published, explorer/ is last-known-good"
           exit 1
       - name: Core verdict (the single enforcement step; FAILED when projections or settlement exited non-zero)
         if: always() && steps.project.outcome == 'success'
