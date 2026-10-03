@@ -1,24 +1,26 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 03:18Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 03:36Z)
 
-* Earliest credible first ball: **2026-10-03 03:30Z**
-* Recommended RUN TENNIS time: **2026-10-03 02:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-03 03:20Z**
+* Earliest credible first ball: **2026-10-03 04:00Z**
+* Recommended RUN TENNIS time: **2026-10-03 03:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-03 03:50Z**
 * Matches in window: 6
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Andrey Rublev vs Roman Safiullin | 2026-10-03 04:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Lotus in progress (set 1 of best-of-5) | MEDIUM |
-| Jelena Ostapenko vs Paula Badosa | 2026-10-03 04:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on HSBC Moon in progress (set 1 of best-of-5) | MEDIUM |
-| Maria Sakkari vs Storm Hunter | 2026-10-03 04:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 5 in progress (set 1 of best-of-5) | MEDIUM |
-| Katerina Siniakova vs Elina Svitolina | 2026-10-03 04:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Brad Drewett in progress (set 1 of best-of-5) | MEDIUM |
-| Xinyu Gao vs Iga Swiatek | 2026-10-03 04:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 1 of best-of-5) | MEDIUM |
+| Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Jelena Ostapenko vs Paula Badosa | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Maria Sakkari vs Storm Hunter | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Katerina Siniakova vs Elina Svitolina | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Andrey Rublev vs Roman Safiullin | 2026-10-03 04:35Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Lotus in progress (set 1 of best-of-5) | MEDIUM |
+| Xinyu Gao vs Iga Swiatek | 2026-10-03 04:35Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 1 of best-of-5) | MEDIUM |
 
-Published slate: `SL-20261003T025349Z-73376a3c` built 2026-10-03 02:53Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 8 match(es)
+**8 main-tour match(es) without a verified start status** (BET blocked until checked): Nikola Bartunkova vs Aryna Sabalenka, Sinja Kraus vs Dayana Yastremska, Sara Bejlek vs Naomi Osaka, Karolina Muchova vs Liudmila Samsonova, Polina Kudermetova vs Mirra Andreeva, Daria Snigur vs Taylah Preston, Ekaterina Alexandrova vs Diana Shnaider, Linda Noskova vs Viktorija Golubic
 
-Dispatched this pass: slate_final (ok)
+Published slate: `SL-20261003T030926Z-51de0ccb` built 2026-10-03 03:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-03T04:00:00+00:00, slate built 2026-10-03T03:09:26.258043+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-03 06:00Z, run by 2026-10-03 05:15Z, 7 match(es)
 * later window 3: first ball 2026-10-03 08:30Z, run by 2026-10-03 07:45Z, 3 match(es)
 * later window 4: first ball 2026-10-03 11:00Z, run by 2026-10-03 10:15Z, 3 match(es)
-* later window 5: first ball 2026-10-04 05:00Z, run by 2026-10-04 04:15Z, 2 match(es)
+* later window 5: first ball 2026-10-04 05:00Z, run by 2026-10-04 04:15Z, 3 match(es)
