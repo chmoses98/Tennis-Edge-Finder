@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-03T16:15:20.360861+00:00",
+ "run_id": "20261003T161520Z",
+ "external_parse": {
+  "events": 82,
+  "markets": 778,
+  "skipped_family": 191,
+  "skipped_period": 205,
+  "skipped_live": 12,
+  "one_sided": 11,
+  "rows": 1334,
+  "devigged": 371
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 54,
+  "markets": 853,
+  "markets_mapped": 274,
+  "contracts": 590,
+  "quoted_contracts": 590,
+  "raw": "data/research/external/raw/20261003T161520Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 274,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 62,
+  "rows": 528,
+  "two_sided": 523,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 286,
+ "external_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6389,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Brian Windsor": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 35,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6481,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8704,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Fares Zakaria": 1,
+   "Alexander Rozin": 1,
+   "Raya Markova": 1,
+   "Monika Gospodinova": 1,
+   "Ana Lungu": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 57,
+ "kalshi_mapped_matches": 47,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
