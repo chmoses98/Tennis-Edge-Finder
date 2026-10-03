@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 01:25Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 01:45Z)
 
 * Earliest credible first ball: **2026-10-03 02:00Z**
 * Recommended RUN TENNIS time: **2026-10-03 01:15Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Denis Shapovalov vs Alejandro Tabilo | 2026-10-03 02:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Denis Shapovalov vs Alejandro Tabilo | 2026-10-03 02:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Alex de Minaur vs Quentin Halys | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Ashlyn Krueger vs Ann Li | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Katie Volynets vs Elise Mertens | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -15,9 +15,9 @@
 | Donna Vekic vs Lin Zhu | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261002T224027Z-158f8fb7` built 2026-10-02 22:40Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-03T02:00:00+00:00, slate built 2026-10-02T22:40:27.518570+00:00
+Published slate: `SL-20261003T011624Z-f4da71a1` built 2026-10-03 01:16Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-03 04:30Z, run by 2026-10-03 03:45Z, 7 match(es)
 * later window 3: first ball 2026-10-03 06:30Z, run by 2026-10-03 05:45Z, 5 match(es)
