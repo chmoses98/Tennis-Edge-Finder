@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-03T20:10:14.112785+00:00",
+ "run_id": "20261003T201014Z",
+ "external_parse": {
+  "events": 78,
+  "markets": 879,
+  "skipped_family": 287,
+  "skipped_period": 210,
+  "skipped_live": 8,
+  "one_sided": 7,
+  "rows": 1374,
+  "devigged": 375
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 853,
+  "markets_mapped": 292,
+  "contracts": 620,
+  "quoted_contracts": 620,
+  "raw": "data/research/external/raw/20261003T201014Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 292,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 583,
+  "two_sided": 582,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 363,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6418,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Brian Windsor": 1,
+   "Michelle Ryndin": 1,
+   "Tanika Saravanan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.873,
+  "top_refusal_subjects": {
+   "Zicong Wang": 1,
+   "Yan Lang Chen": 1,
+   "Darya Khomutsianskaya": 1,
+   "Calvin Habiyambere": 1,
+   "Fred Barry Nimubona": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ilina Ilieva": 1,
+   "Melanie Stoichkova": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 55,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
