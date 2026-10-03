@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-03T12:51:01.460722+00:00",
+ "run_id": "20261003T125101Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 717,
+  "skipped_family": 183,
+  "skipped_period": 188,
+  "skipped_live": 16,
+  "one_sided": 2,
+  "rows": 1152,
+  "devigged": 344
+ },
+ "smarkets_fetch": {
+  "events_seen": 40,
+  "events_priced": 40,
+  "markets": 764,
+  "markets_mapped": 233,
+  "contracts": 506,
+  "quoted_contracts": 506,
+  "raw": "data/research/external/raw/20261003T125101Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 233,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 450,
+  "two_sided": 448,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 724,
+ "external_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.6528,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 40,
+  "by_status": {
+   "MAPPED": 23,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.918,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 49,
+ "kalshi_mapped_matches": 56,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 14
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
