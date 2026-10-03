@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-03T14:02:35.931661+00:00",
+ "run_id": "20261003T140235Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 831,
+  "skipped_family": 203,
+  "skipped_period": 215,
+  "skipped_live": 12,
+  "one_sided": 16,
+  "rows": 1380,
+  "devigged": 397
+ },
+ "smarkets_fetch": {
+  "events_seen": 49,
+  "events_priced": 49,
+  "markets": 747,
+  "markets_mapped": 233,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20261003T140235Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 233,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 476,
+  "two_sided": 471,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 700,
+ "external_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6531,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9286,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
