@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 02:16Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 02:32Z)
 
 * Earliest credible first ball: **2026-10-03 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-03 02:15Z**  (OVERDUE: run now)
@@ -12,7 +12,7 @@
 | Katie Volynets vs Elise Mertens | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Coco Gauff vs Camila Osorio | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Donna Vekic vs Lin Zhu | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:16Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Colosseum in progress (set 1 of best-of-5) | MEDIUM |
+| Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Jelena Ostapenko vs Paula Badosa | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Maria Sakkari vs Storm Hunter | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Katerina Siniakova vs Elina Svitolina | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
