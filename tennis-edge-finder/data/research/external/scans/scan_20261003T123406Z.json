@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-03T12:34:06.994264+00:00",
+ "run_id": "20261003T123406Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 736,
+  "skipped_family": 186,
+  "skipped_period": 195,
+  "skipped_live": 15,
+  "one_sided": 2,
+  "rows": 1184,
+  "devigged": 353
+ },
+ "smarkets_fetch": {
+  "events_seen": 41,
+  "events_priced": 41,
+  "markets": 783,
+  "markets_mapped": 243,
+  "contracts": 528,
+  "quoted_contracts": 528,
+  "raw": "data/research/external/raw/20261003T123406Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 243,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 57,
+  "rows": 471,
+  "two_sided": 462,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 220,
+ "external_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.6389,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Nikita Mashtakov": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 41,
+  "by_status": {
+   "MAPPED": 24,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5854,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 38,
+  "by_status": {
+   "MAPPED": 33,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8684,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 48,
+ "kalshi_mapped_matches": 33,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
