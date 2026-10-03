@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-03T18:09:59.352336+00:00",
+ "run_id": "20261003T180959Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 831,
+  "skipped_family": 221,
+  "skipped_period": 217,
+  "skipped_live": 14,
+  "one_sided": 8,
+  "rows": 1402,
+  "devigged": 385
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 871,
+  "markets_mapped": 300,
+  "contracts": 638,
+  "quoted_contracts": 638,
+  "raw": "data/research/external/raw/20261003T180959Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 300,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 575,
+  "two_sided": 573,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 791,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.64,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Brian Windsor": 1,
+   "Laurie Barendse": 1,
+   "Victoria Zhao": 1,
+   "Thompson Martha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7391,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.7889,
+  "top_refusal_subjects": {
+   "Yan Lang Chen": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Fred Barry Nimubona": 1,
+   "Edison Edison Nshimiyimana": 1,
+   "Ollie Knight": 1,
+   "Chetanna Amadike": 1,
+   "Harel Tarshish": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 76,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
