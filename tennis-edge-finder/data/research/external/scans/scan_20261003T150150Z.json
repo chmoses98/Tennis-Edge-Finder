@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-03T15:01:50.458966+00:00",
+ "run_id": "20261003T150150Z",
+ "external_parse": {
+  "events": 85,
+  "markets": 812,
+  "skipped_family": 192,
+  "skipped_period": 213,
+  "skipped_live": 13,
+  "one_sided": 11,
+  "rows": 1394,
+  "devigged": 396
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 51,
+  "markets": 799,
+  "markets_mapped": 261,
+  "contracts": 560,
+  "quoted_contracts": 560,
+  "raw": "data/research/external/raw/20261003T150150Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 261,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 53,
+  "rows": 507,
+  "two_sided": 505,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 692,
+ "external_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Brian Windsor": 1,
+   "Gregory Bernadsky": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 33,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6471,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9107,
+  "top_refusal_subjects": {
+   "Yan Lang Chen": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 60,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
