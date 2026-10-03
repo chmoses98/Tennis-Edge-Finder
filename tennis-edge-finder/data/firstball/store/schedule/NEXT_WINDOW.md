@@ -1,7 +1,7 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 02:01Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-03 02:16Z)
 
 * Earliest credible first ball: **2026-10-03 03:00Z**
-* Recommended RUN TENNIS time: **2026-10-03 02:15Z**
+* Recommended RUN TENNIS time: **2026-10-03 02:15Z**  (OVERDUE: run now)
 * Final price/status check time: **2026-10-03 02:50Z**
 * Matches in window: 9
 
@@ -12,16 +12,14 @@
 | Katie Volynets vs Elise Mertens | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Coco Gauff vs Camila Osorio | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Donna Vekic vs Lin Zhu | 2026-10-03 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Carlos Alcaraz vs Matteo Arnaldi | 2026-10-03 03:16Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Colosseum in progress (set 1 of best-of-5) | MEDIUM |
 | Jelena Ostapenko vs Paula Badosa | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Maria Sakkari vs Storm Hunter | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Katerina Siniakova vs Elina Svitolina | 2026-10-03 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Denis Shapovalov vs Alejandro Tabilo
+Published slate: `SL-20261003T015144Z-39b94d5b` built 2026-10-03 01:51Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-03T03:00:00+00:00, slate built 2026-10-03T01:51:44.489237+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Published slate: `SL-20261003T011624Z-f4da71a1` built 2026-10-03 01:16Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
-
-Dispatched this pass: run_tennis (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-03 05:00Z, run by 2026-10-03 04:15Z, 6 match(es)
 * later window 3: first ball 2026-10-03 07:00Z, run by 2026-10-03 06:15Z, 4 match(es)
