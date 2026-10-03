@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-03T11:46:44.763823+00:00",
+ "run_id": "20261003T114644Z",
+ "external_parse": {
+  "events": 89,
+  "markets": 808,
+  "skipped_family": 201,
+  "skipped_period": 218,
+  "skipped_live": 19,
+  "one_sided": 8,
+  "rows": 1296,
+  "devigged": 381
+ },
+ "smarkets_fetch": {
+  "events_seen": 44,
+  "events_priced": 44,
+  "markets": 764,
+  "markets_mapped": 287,
+  "contracts": 622,
+  "quoted_contracts": 622,
+  "raw": "data/research/external/raw/20261003T114644Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 71,
+  "rows": 551,
+  "two_sided": 550,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 759,
+ "external_mapping": {
+  "total": 81,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.6543,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Nikita Mashtakov": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 44,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 26,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.5909,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Sonay Kartal": 1,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9091,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 56,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
