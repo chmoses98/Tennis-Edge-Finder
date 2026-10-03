@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-03T01:10:56.587010+00:00",
+ "run_id": "20261003T011056Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1510,
+  "skipped_family": 356,
+  "skipped_period": 419,
+  "skipped_live": 5,
+  "one_sided": 12,
+  "rows": 2467,
+  "devigged": 717
+ },
+ "smarkets_fetch": {
+  "events_seen": 77,
+  "events_priced": 77,
+  "markets": 1750,
+  "markets_mapped": 565,
+  "contracts": 1216,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261003T011056Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 565,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 381,
+  "rows": 835,
+  "two_sided": 831,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 233,
+ "external_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.6885,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Kotaro Mochizuki": 1,
+   "Kenta Kawada": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6623,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Yujia Huang": 1,
+   "Sonay Kartal": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.94,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Gabi Adrian Boitan": 1,
+   "Fares Zakaria": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 47,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
