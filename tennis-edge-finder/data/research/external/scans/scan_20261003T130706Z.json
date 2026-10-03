@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-03T13:07:06.145508+00:00",
+ "run_id": "20261003T130706Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 717,
+  "skipped_family": 183,
+  "skipped_period": 188,
+  "skipped_live": 16,
+  "one_sided": 2,
+  "rows": 1152,
+  "devigged": 344
+ },
+ "smarkets_fetch": {
+  "events_seen": 41,
+  "events_priced": 41,
+  "markets": 785,
+  "markets_mapped": 241,
+  "contracts": 524,
+  "quoted_contracts": 524,
+  "raw": "data/research/external/raw/20261003T130706Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 241,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 468,
+  "two_sided": 464,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 256,
+ "external_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.6528,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 41,
+  "by_status": {
+   "MAPPED": 24,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5854,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.913,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 49,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
