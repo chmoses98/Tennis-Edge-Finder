@@ -1,14 +1,15 @@
 {
- "generated_at": "2026-10-03T02:14:22.919064+00:00",
- "n_markets": 84,
+ "generated_at": "2026-10-03T05:44:10.695635+00:00",
+ "n_markets": 96,
  "counts": {
-  "PASS": 61,
+  "PASS": 72,
   "SHADOW_BET": 4,
-  "WATCH": 19
+  "WATCH": 20
  },
  "skipped": {
-  "first_ball_already_observed": 36,
-  "unmapped_identity": 6
+  "first_ball_already_observed": 49,
+  "no_two_sided_quote": 4,
+  "unmapped_identity": 7
  },
  "selector_version": "selector_v1",
  "authority": "RESEARCH_ONLY_NO_REAL_MONEY"
