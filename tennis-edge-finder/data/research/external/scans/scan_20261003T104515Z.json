@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-03T10:45:15.678936+00:00",
+ "run_id": "20261003T104515Z",
+ "external_parse": {
+  "events": 100,
+  "markets": 916,
+  "skipped_family": 216,
+  "skipped_period": 254,
+  "skipped_live": 22,
+  "one_sided": 9,
+  "rows": 1462,
+  "devigged": 437
+ },
+ "smarkets_fetch": {
+  "events_seen": 48,
+  "events_priced": 48,
+  "markets": 754,
+  "markets_mapped": 316,
+  "contracts": 684,
+  "quoted_contracts": 684,
+  "raw": "data/research/external/raw/20261003T104515Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 316,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 621,
+  "two_sided": 617,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 795,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.6848,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 48,
+  "by_status": {
+   "MAPPED": 29,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.6042,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Sonay Kartal": 1,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9054,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Alexander Rozin": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 66,
+ "kalshi_mapped_matches": 67,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 26
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
