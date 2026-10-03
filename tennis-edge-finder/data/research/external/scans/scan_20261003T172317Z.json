@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-03T17:23:17.137683+00:00",
+ "run_id": "20261003T172317Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 823,
+  "skipped_family": 200,
+  "skipped_period": 221,
+  "skipped_live": 12,
+  "one_sided": 9,
+  "rows": 1396,
+  "devigged": 393
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 877,
+  "markets_mapped": 296,
+  "contracts": 632,
+  "quoted_contracts": 632,
+  "raw": "data/research/external/raw/20261003T172317Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 296,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 569,
+  "two_sided": 567,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 327,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.64,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Brian Windsor": 1,
+   "Laurie Barendse": 1,
+   "Tina Marie Li": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 16,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Abdullah Shelbayh": 1,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8689,
+  "top_refusal_subjects": {
+   "Yan Lang Chen": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Darya Khomutsianskaya": 1,
+   "Nikita Mashtakov": 1,
+   "Fares Zakaria": 1,
+   "Alexander Rozin": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 58,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
