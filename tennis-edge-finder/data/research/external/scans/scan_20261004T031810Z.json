@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-04T03:18:10.860159+00:00",
+ "run_id": "20261004T031810Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1582,
+  "skipped_family": 379,
+  "skipped_period": 430,
+  "skipped_live": 18,
+  "one_sided": 30,
+  "rows": 2557,
+  "devigged": 741
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1093,
+  "markets_mapped": 409,
+  "contracts": 866,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261004T031810Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 409,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 100,
+  "rows": 766,
+  "two_sided": 765,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 453,
+ "external_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 104,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.782,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Yan Lang Chen": 1,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kirill Kistanov": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Zicong Wang": 1,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8532,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Zicong Wang": 1,
+   "Yan Lang Chen": 1,
+   "Darya Khomutsianskaya": 1,
+   "Calvin Habiyambere": 1,
+   "Chetanna Amadike": 1,
+   "Harel Tarshish": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 107,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
