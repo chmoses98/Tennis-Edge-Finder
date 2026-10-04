@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 13:05Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 13:24Z)
 
-* Earliest credible first ball: **2026-10-04 13:15Z**
-* Recommended RUN TENNIS time: **2026-10-04 12:30Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-04 13:05Z**
+* Earliest credible first ball: **2026-10-04 13:30Z**
+* Recommended RUN TENNIS time: **2026-10-04 12:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-04 13:20Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Karolina Muchova vs Liudmila Samsonova | 2026-10-04 13:15Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 3 of best-of-5) | MEDIUM |
+| Karolina Muchova vs Liudmila Samsonova | 2026-10-04 13:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **24 main-tour match(es) without a verified start status** (BET blocked until checked): Lorenzo Sonego vs Aziz Dougaz, Linang Xiao vs Federico Cina, Roman Safiullin vs Alexis Galarneau, Taro Daniel vs Shintaro Mochizuki, Kyrian Jacquet vs Tianhui Zhang, Seongchan Hong vs Rei Sakamoto, Hugo Gaston vs Liam Draxl, Andre Ilagan vs Nikoloz Basilashvili, Mattia Bellucci vs Elias Ymer, Rio Noguchi vs Alexandre Muller, Michael Zheng vs Federico Agustin Gomez, Chun Hsin Tseng vs Nicolas Mejia
 
-Published slate: `SL-20261004T123536Z-7554ec2a` built 2026-10-04 12:35Z -- current
+Published slate: `SL-20261004T125507Z-72725a6a` built 2026-10-04 12:55Z -- current
 
 Dispatched this pass: slate_final (ok)
 
