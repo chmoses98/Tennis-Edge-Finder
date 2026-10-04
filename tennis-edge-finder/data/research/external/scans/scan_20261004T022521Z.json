@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-04T02:25:21.041203+00:00",
+ "run_id": "20261004T022521Z",
+ "external_parse": {
+  "events": 128,
+  "markets": 1439,
+  "skipped_family": 379,
+  "skipped_period": 387,
+  "skipped_live": 14,
+  "one_sided": 22,
+  "rows": 2260,
+  "devigged": 651
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1188,
+  "markets_mapped": 422,
+  "contracts": 894,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261004T022521Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 422,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 145,
+  "rows": 749,
+  "two_sided": 728,
+  "one_sided": 21
+ },
+ "kalshi_quotes_on_disk": 421,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7542,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Pol Masafret Hernandez": 1,
+   "Kotaro Mochizuki": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Zicong Wang": 1,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 102,
+  "by_status": {
+   "MAPPED": 92,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.902,
+  "top_refusal_subjects": {
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Zicong Wang": 1,
+   "Yan Lang Chen": 1,
+   "Caroline Werner": 1,
+   "Darya Khomutsianskaya": 1,
+   "Harel Tarshish": 1,
+   "Nikita Mashtakov": 1,
+   "Ilina Ilieva": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 92,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 108,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 58,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
