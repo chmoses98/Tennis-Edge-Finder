@@ -1,7 +1,7 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 01:06Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 01:24Z)
 
 * Earliest credible first ball: **2026-10-04 02:00Z**
-* Recommended RUN TENNIS time: **2026-10-04 01:15Z**
+* Recommended RUN TENNIS time: **2026-10-04 01:15Z**  (OVERDUE: run now)
 * Final price/status check time: **2026-10-04 01:50Z**
 * Matches in window: 3
 
@@ -13,7 +13,7 @@
 
 **3 main-tour match(es) without a verified start status** (BET blocked until checked): Maria Sakkari vs Elina Svitolina, Donna Vekic vs Iga Swiatek, Jelena Ostapenko vs Elise Mertens
 
-Published slate: `SL-20261003T215023Z-7a3e14cf` built 2026-10-03 21:50Z -- current
+Published slate: `SL-20261004T010219Z-5327fe98` built 2026-10-04 01:02Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-04T02:00:00+00:00, slate built 2026-10-04T01:02:19.945782+00:00
 
 Dispatched this pass: none
 
