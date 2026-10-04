@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-04T06:10:18.360424+00:00",
+ "run_id": "20261004T061018Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 1436,
+  "skipped_family": 325,
+  "skipped_period": 389,
+  "skipped_live": 17,
+  "one_sided": 23,
+  "rows": 2405,
+  "devigged": 696
+ },
+ "smarkets_fetch": {
+  "events_seen": 147,
+  "events_priced": 80,
+  "markets": 939,
+  "markets_mapped": 360,
+  "contracts": 758,
+  "quoted_contracts": 758,
+  "raw": "data/research/external/raw/20261004T061018Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 360,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 51,
+  "rows": 707,
+  "two_sided": 699,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 453,
+ "external_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 94,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7769,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Zicong Wang": 1,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 6,
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.8359,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Zicong Wang": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Darya Khomutsianskaya": 1,
+   "Vansh Janghu": 1,
+   "Calvin Habiyambere": 1
+  }
+ },
+ "matched_both_venues": 74,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 134,
+ "counts": {
+  "PASS": 126,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "WATCH": 6,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
