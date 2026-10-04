@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-04T00:18:13.959021+00:00",
+ "run_id": "20261004T001813Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 1343,
+  "skipped_family": 379,
+  "skipped_period": 351,
+  "skipped_live": 8,
+  "one_sided": 21,
+  "rows": 2076,
+  "devigged": 592
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 1074,
+  "markets_mapped": 381,
+  "contracts": 802,
+  "quoted_contracts": 802,
+  "raw": "data/research/external/raw/20261004T001813Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 381,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 111,
+  "rows": 691,
+  "two_sided": 672,
+  "one_sided": 19
+ },
+ "kalshi_quotes_on_disk": 313,
+ "external_mapping": {
+  "total": 97,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7113,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Dominic Stephan Stricker": 1,
+   "Caroline Werner": 1,
+   "Yulia Zhytelna": 1,
+   "Pol Masafret Hernandez": 1,
+   "Sota Kambara": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8636,
+  "top_refusal_subjects": {
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Zicong Wang": 1,
+   "Yan Lang Chen": 1,
+   "Darya Khomutsianskaya": 1,
+   "Trishan Dhawan": 1,
+   "Calvin Habiyambere": 1,
+   "Chetanna Amadike": 1,
+   "Ilina Ilieva": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 104,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {}
+}
