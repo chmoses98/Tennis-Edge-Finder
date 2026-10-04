@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-04T18:22:46.603079+00:00",
+ "run_id": "20261004T182246Z",
+ "external_parse": {
+  "events": 81,
+  "markets": 1028,
+  "skipped_family": 299,
+  "skipped_period": 301,
+  "skipped_live": 13,
+  "one_sided": 0,
+  "rows": 1712,
+  "devigged": 428
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 823,
+  "markets_mapped": 269,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20261004T182246Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 269,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 64,
+  "rows": 524,
+  "two_sided": 522,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 295,
+ "external_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7887,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Siddharth Bharadwaj": 1,
+   "Vansh Janghu": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Katarina Zavatska": 1,
+   "Elvina Kalieva": 1,
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9565,
+  "top_refusal_subjects": {
+   "LUCAS GONCALVES FRANCA": 1,
+   "Vansh Janghu": 1,
+   "Keira Blackbeard": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 66,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
