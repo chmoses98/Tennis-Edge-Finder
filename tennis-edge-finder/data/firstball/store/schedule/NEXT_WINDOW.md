@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 14:51Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 15:06Z)
 
 * Earliest credible first ball: **2026-10-05 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-05 02:15Z**
@@ -13,7 +13,7 @@
 
 **24 main-tour match(es) without a verified start status** (BET blocked until checked): Lorenzo Sonego vs Aziz Dougaz, Linang Xiao vs Federico Cina, Roman Safiullin vs Alexis Galarneau, Taro Daniel vs Shintaro Mochizuki, Kyrian Jacquet vs Tianhui Zhang, Seongchan Hong vs Rei Sakamoto, Hugo Gaston vs Liam Draxl, Andre Ilagan vs Nikoloz Basilashvili, Mattia Bellucci vs Elias Ymer, Rio Noguchi vs Alexandre Muller, Michael Zheng vs Federico Agustin Gomez, Chun Hsin Tseng vs Nicolas Mejia
 
-Published slate: `SL-20261004T133035Z-f1a47872` built 2026-10-04 13:30Z -- current
+Published slate: `SL-20261004T133035Z-f1a47872` built 2026-10-04 13:30Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
 Dispatched this pass: none
 
