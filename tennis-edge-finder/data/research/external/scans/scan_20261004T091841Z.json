@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-04T09:18:41.163074+00:00",
+ "run_id": "20261004T091841Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 1095,
+  "skipped_family": 212,
+  "skipped_period": 321,
+  "skipped_live": 33,
+  "one_sided": 15,
+  "rows": 1876,
+  "devigged": 544
+ },
+ "smarkets_fetch": {
+  "events_seen": 127,
+  "events_priced": 80,
+  "markets": 838,
+  "markets_mapped": 325,
+  "contracts": 682,
+  "quoted_contracts": 682,
+  "raw": "data/research/external/raw/20261004T091841Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 325,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 657,
+  "two_sided": 650,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 652,
+ "external_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 87,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.7768,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Diego Dedura": 1,
+   "Dominic Stephan Stricker": 1,
+   "Martim Bernardo": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Chetanna Amadike": 1,
+   "Nimubona, Barry": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 71,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 143,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8462,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Abdullah Shelbayh": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Caroline Werner": 1,
+   "Nicholas Van Aken": 1,
+   "Trishan Dhawan": 1,
+   "Calvin Habiyambere": 1,
+   "Joao Azzari Cabas": 1
+  }
+ },
+ "matched_both_venues": 70,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 121,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 101,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 49,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 6,
+  "tri:MARKETS_AGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
