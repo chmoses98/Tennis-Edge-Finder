@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-04T17:41:24.520745+00:00",
+ "run_id": "20261004T174124Z",
+ "external_parse": {
+  "events": 87,
+  "markets": 1048,
+  "skipped_family": 301,
+  "skipped_period": 304,
+  "skipped_live": 15,
+  "one_sided": 4,
+  "rows": 1712,
+  "devigged": 437
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 826,
+  "markets_mapped": 268,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20261004T174124Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 268,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 73,
+  "rows": 515,
+  "two_sided": 510,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1102,
+ "external_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8052,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Michelle Ryndin": 1,
+   "Vansh Janghu": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Katarina Zavatska": 1,
+   "Elvina Kalieva": 1,
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 125,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.856,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Darya Khomutsianskaya": 1,
+   "Lilian Chidekh": 1,
+   "Noah Malige": 1,
+   "Louis SALLARD": 1,
+   "Tom Jonio": 1,
+   "Martin SIMON": 1,
+   "Victor Bonnet Eymard": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 89,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "WATCH": 9,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
