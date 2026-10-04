@@ -3,7 +3,7 @@
   "commit_sha": "4bd491d34c8d85878fd2df7b901238568d1f09fd",
   "components": {
     "assisted_pipeline": {
-      "age_seconds": 12886.0,
+      "age_seconds": 13870.6,
       "as_of": "2026-10-04T06:23:42Z",
       "detail": "NO_DECISIONS_YET",
       "status": "OK"
@@ -15,26 +15,26 @@
       "status": "OK"
     },
     "export": {
-      "age_seconds": 0.1,
-      "as_of": "2026-10-04T09:58:28Z",
+      "age_seconds": 0.7,
+      "as_of": "2026-10-04T10:14:52Z",
       "detail": null,
       "status": "OK"
     },
     "frozen_producers": {
-      "age_seconds": 13145.0,
+      "age_seconds": 14129.5,
       "as_of": "2026-10-04T06:19:23Z",
       "detail": "model4_board_v1",
       "status": "OK"
     },
     "market_data": {
-      "age_seconds": 1545.1,
-      "as_of": "2026-10-04T09:32:43Z",
+      "age_seconds": 1395.7,
+      "as_of": "2026-10-04T09:51:37Z",
       "detail": null,
       "status": "OK"
     },
     "model": {
-      "age_seconds": 3.1,
-      "as_of": "2026-10-04T09:58:25Z",
+      "age_seconds": 2.7,
+      "as_of": "2026-10-04T10:14:50Z",
       "detail": null,
       "status": "OK"
     },
@@ -51,22 +51,22 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 1545.1,
+  "data_age_seconds": 1395.7,
   "errors": [],
   "freshness_status": "AGING",
-  "generated_at": "2026-10-04T09:58:28Z",
+  "generated_at": "2026-10-04T10:14:52Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-04T09:58:28Z",
-  "last_market_capture": "2026-10-04T09:32:43Z",
-  "last_model_generated": "2026-10-04T09:58:25Z",
-  "last_successful_run": "2026-10-04T09:58:28Z",
+  "last_export_attempt": "2026-10-04T10:14:52Z",
+  "last_market_capture": "2026-10-04T09:51:37Z",
+  "last_model_generated": "2026-10-04T10:14:50Z",
+  "last_successful_run": "2026-10-04T10:14:52Z",
   "market_data_status": "OK",
   "model_status": "OK",
-  "next_scheduled_run": "2026-10-04T09:41:11Z",
+  "next_scheduled_run": "2026-10-04T09:57:46Z",
   "overall_status": "HEALTHY",
-  "payload_run_id": "run_09323bf715ab1840e50c",
+  "payload_run_id": "run_2c62b39c3f4396da8b08",
   "router_status": "UNKNOWN",
-  "run_id": "run_09323bf715ab1840e50c",
+  "run_id": "run_2c62b39c3f4396da8b08",
   "schema_version": "edge_finder.app.v1",
   "settlement_status": "UNKNOWN",
   "sport": "TENNIS",
