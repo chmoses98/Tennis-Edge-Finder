@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-04T07:55:44.944473+00:00",
+ "run_id": "20261004T075544Z",
+ "external_parse": {
+  "events": 125,
+  "markets": 1287,
+  "skipped_family": 260,
+  "skipped_period": 363,
+  "skipped_live": 22,
+  "one_sided": 17,
+  "rows": 2194,
+  "devigged": 644
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 717,
+  "markets_mapped": 290,
+  "contracts": 602,
+  "quoted_contracts": 602,
+  "raw": "data/research/external/raw/20261004T075544Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 290,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 574,
+  "two_sided": 568,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 880,
+ "external_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 95,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.812,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "A. Huijsegoms": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 9,
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8176,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Nicholas Van Aken": 1,
+   "Trishan Dhawan": 1,
+   "Vansh Janghu": 1,
+   "AUM HIREN THAKKAR": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 154,
+ "counts": {
+  "PASS": 145,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 96,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 7,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
