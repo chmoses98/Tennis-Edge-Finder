@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-04T10:16:53.576223+00:00",
+ "run_id": "20261004T101653Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 1062,
+  "skipped_family": 197,
+  "skipped_period": 318,
+  "skipped_live": 33,
+  "one_sided": 19,
+  "rows": 1831,
+  "devigged": 525
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 816,
+  "markets_mapped": 312,
+  "contracts": 654,
+  "quoted_contracts": 654,
+  "raw": "data/research/external/raw/20261004T101653Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 312,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 628,
+  "two_sided": 621,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1050,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Diego Dedura": 1,
+   "Dominic Stephan Stricker": 1,
+   "Martim Bernardo": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ollie Knight": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1,
+   "Elvina Kalieva": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8667,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Abdullah Shelbayh": 1,
+   "Pyotr Nesterov": 1,
+   "Martim Bernardo": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Nicholas Van Aken": 1,
+   "Trishan Dhawan": 1,
+   "Vansh Janghu": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 110,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 70,
+  "WATCH": 7,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "SHADOW_BET": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
