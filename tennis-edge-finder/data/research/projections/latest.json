@@ -1,28 +1,18 @@
 {
-"run_id": "20261003T214548Z",
-"generated_at": "2026-10-03T21:45:54.207437+00:00",
+"run_id": "20261004T005940Z",
+"generated_at": "2026-10-04T00:59:42.271404+00:00",
 "discovery_run": "20261003T025410Z",
-"git_sha": "63b67392db0f566fa67ddbefbdcfcf3c7a237cf8",
+"git_sha": "4bd491d34c8d85878fd2df7b901238568d1f09fd",
 "coverage": {
 "active": 854,
 "unsupported_family": 131,
-"closed_since_discovery": 456,
+"closed_since_discovery": 466,
 "past_nominal_start": 18,
 "first_ball_already_observed": 20,
 "tournament_scope_not_priced_tonight": 219,
-"excluded_event": 2,
-"projected": 8
+"projected": 0
 },
-"projected_tickers": [
-"KXITFMATCH-26OCT03BRAMOS-MOS",
-"KXITFMATCH-26OCT03BRAMOS-BRA",
-"KXITFWMATCH-26OCT03BOWSHA-SHA",
-"KXITFWMATCH-26OCT03BOWSHA-BOW",
-"KXITFWMATCH-26OCT03REFNIJ-REF",
-"KXITFWMATCH-26OCT03REFNIJ-NIJ",
-"KXITFWMATCH-26OCT03SANMOY-SAN",
-"KXITFWMATCH-26OCT03SANMOY-MOY"
-],
+"projected_tickers": [],
 "consistency_violations": [],
 "excluded": [
 {
@@ -1129,6 +1119,16 @@
 "ticker": "KXATPFINALSQUAL-26NIT-ALC",
 "stage": "family",
 "reason": "SEASON_QUALIFICATION: not priced"
+},
+{
+"ticker": "KXITFMATCH-26OCT03BRAMOS-MOS",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFMATCH-26OCT03BRAMOS-BRA",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
 {
 "ticker": "KXITFMATCH-26OCT03PAPROZ-ROZ",
@@ -3596,6 +3596,16 @@
 "reason": "SEASON_QUALIFICATION: not priced"
 },
 {
+"ticker": "KXITFDOUBLES-26OCT03RODTOKARCROZ-RODTOK",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT03RODTOKARCROZ-ARCROZ",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
 "ticker": "KXITFDOUBLES-26OCT03FRAKUHSHESWE-SHESWE",
 "stage": "lifecycle",
 "reason": "not open in the freshest capture pass (closed/settled since discovery)"
@@ -3702,6 +3712,36 @@
 },
 {
 "ticker": "KXITFWMATCH-26OCT02SAWSAT-SAT",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT03BOWSHA-SHA",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT03BOWSHA-BOW",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT03REFNIJ-REF",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT03REFNIJ-NIJ",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT03SANMOY-SAN",
+"stage": "lifecycle",
+"reason": "not open in the freshest capture pass (closed/settled since discovery)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT03SANMOY-MOY",
 "stage": "lifecycle",
 "reason": "not open in the freshest capture pass (closed/settled since discovery)"
 },
@@ -4244,16 +4284,6 @@
 "ticker": "KXWTASETWINNER-26OCT01KRUANN-1-ANN",
 "stage": "lifecycle",
 "reason": "not open in the freshest capture pass (closed/settled since discovery)"
-},
-{
-"ticker": "KXITFDOUBLES-26OCT03RODTOKARCROZ-RODTOK",
-"stage": "doubles",
-"reason": "doubles: player 'Roddick' unmapped/ambiguous in ['ATP']"
-},
-{
-"ticker": "KXITFDOUBLES-26OCT03RODTOKARCROZ-ARCROZ",
-"stage": "doubles",
-"reason": "doubles: player 'Roddick' unmapped/ambiguous in ['ATP']"
 }
 ],
 "authority": "RESEARCH_ONLY_NO_REAL_MONEY"

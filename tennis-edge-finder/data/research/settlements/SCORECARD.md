@@ -1,12 +1,12 @@
-# Prospective scorecard (2026-10-03T21:47:10.502418+00:00)
+# Prospective scorecard (2026-10-04T01:00:23.484499+00:00)
 
-ledger rows: 16658; settled rows: 16642; gradeable with market mid: 15325
+ledger rows: 16658; settled rows: 16652; gradeable with market mid: 15333
 
 ## First-ball truth coverage
 
 | metric | value |
 |---|---|
-| matches with any first-ball truth | 1833 |
+| matches with any first-ball truth | 1837 |
 | matches with STRICT-eligible truth (A/B) | 752 |
 | STRICT_PREGAME observations | 2426 |
 | POST_START observations | 297 |
@@ -20,7 +20,7 @@ ledger rows: 16658; settled rows: 16642; gradeable with market mid: 15325
 
 | forecaster | n | brier | log_loss | cal_slope |
 |---|---|---|---|---|
-| market mid at decision | 15325 | 0.1775 | 0.5256 | 1.129 |
-| model fair | 15325 | 0.2192 | 0.6321 | 0.820 |
+| market mid at decision | 15333 | 0.1775 | 0.5255 | 1.129 |
+| model fair | 15333 | 0.2193 | 0.6322 | 0.819 |
 
 STRICT executable CLV rows: 2376; mean -0.0486
