@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-04T16:46:25.407317+00:00",
+ "run_id": "20261004T164625Z",
+ "external_parse": {
+  "events": 53,
+  "markets": 387,
+  "skipped_family": 101,
+  "skipped_period": 107,
+  "skipped_live": 15,
+  "one_sided": 4,
+  "rows": 634,
+  "devigged": 173
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 783,
+  "markets_mapped": 260,
+  "contracts": 566,
+  "quoted_contracts": 566,
+  "raw": "data/research/external/raw/20261004T164625Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 260,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 79,
+  "rows": 487,
+  "two_sided": 486,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 411,
+ "external_mapping": {
+  "total": 44,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Vansh Janghu": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Katarina Zavatska": 1,
+   "Elvina Kalieva": 1,
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9403,
+  "top_refusal_subjects": {
+   "Aleksandr Shevchenko": 1,
+   "Yexin Ma": 1,
+   "Vansh Janghu": 1,
+   "Guadalupe Rondinoni": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 84,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 71,
+  "tri:INSUFFICIENT_INPUTS": 52,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
