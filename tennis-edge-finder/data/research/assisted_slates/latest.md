@@ -1,23 +1,23 @@
-# ASSISTED SLATE -- 2026-10-04T04:10Z (`SL-20261004T041045Z-7ba7da13`)
+# ASSISTED SLATE -- 2026-10-04T04:25Z (`SL-20261004T042526Z-d8fd1d3e`)
 
 **AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF. CHATGPT_ASSISTED_TRACK = ACTIVE.** This is a handicapping packet: it selects nothing and claims no edge. Every probability is P(ticker resolves YES). Quotes are capture snapshots; re-check the live book before deciding.
 
-191 open matches not seen started, 561 markets. Skipped: {"first_ball_already_observed": 7}. Sources: shadow board 2026-10-04T00:59:44.456754+00:00, Model 4 2026-10-03T12:16:39.954681+00:00, Gen-1 ledger 2026-10-03T21:45:53.831770+00:00, external 2026-10-04T03:38:37.727688+00:00, capture 20261004T035607Z.quotes.jsonl.gz.
+190 open matches not seen started, 545 markets. Skipped: {"first_ball_already_observed": 8}. Sources: shadow board 2026-10-04T00:59:44.456754+00:00, Model 4 2026-10-03T12:16:39.954681+00:00, Gen-1 ledger 2026-10-03T21:45:53.831770+00:00, external 2026-10-04T03:38:37.727688+00:00, capture 20261004T035607Z.quotes.jsonl.gz.
 
 ## NEXT ACTIONABLE MAIN-TOUR WINDOW
 
 * Earliest credible first ball: **2026-10-04 04:30Z**
 * Recommended RUN TENNIS time: **2026-10-04 03:45Z**  (**OVERDUE -- run now**)
 * Final price/status check time: **2026-10-04 04:20Z**
-* Number of matches in window: 4 (Ekaterina Alexandrova vs Diana Shnaider, Polina Kudermetova vs Mirra Andreeva, Hubert Hurkacz vs Karen Khachanov, Daria Snigur vs Taylah Preston)
+* Number of matches in window: 5 (Ekaterina Alexandrova vs Diana Shnaider, Hubert Hurkacz vs Karen Khachanov, Polina Kudermetova vs Mirra Andreeva, Valentin Vacherot vs Arthur Fils, Daria Snigur vs Taylah Preston)
 
-* **9 main-tour match(es) have NO verified start status** (START_UNKNOWN, STATUS_AMBIGUOUS): BET blocked until a live status check.
+* **8 main-tour match(es) have NO verified start status** (START_UNKNOWN): BET blocked until a live status check.
 
-Slate built 2026-10-04T04:10Z. Refresh due by: 2026-10-04 03:45Z. A slate built before a window's recommended time, or before a match's status changed, is NOT authoritative for that window.
+Slate built 2026-10-04T04:25Z. Refresh due by: 2026-10-04 03:45Z. A slate built before a window's recommended time, or before a match's status changed, is NOT authoritative for that window.
 
 **Discrepancy sanity layer** (`discrepancy_sanity_v1`): the model should usually sit close to the market. A big gap is a QUESTION -- stale or in-play quote? wrong player or side? thin data? -- before it is ever an edge. NORMAL <10pp: no restriction · REVIEW 10-15pp: context below · HIGH_REVIEW 15-25pp: explain the gap before any BET (`discrepancy_explanation`) · EXTREME >=25pp: DATA_WARNING / PASS UNTIL RECHECKED unless all nine Part J conditions hold, and even then only eligible for human review. Model probabilities are unchanged by this layer.
 
-Bands (all priced contracts): {"EXTREME": 32, "HIGH_REVIEW": 27, "NORMAL": 92, "REVIEW": 31, "UNPRICED": 379}; match winners: {"EXTREME": 32, "HIGH_REVIEW": 26, "NORMAL": 91, "REVIEW": 29, "UNPRICED": 204}; quote freshness at build: {"AGING": 182}.
+Bands (all priced contracts): {"EXTREME": 32, "HIGH_REVIEW": 27, "NORMAL": 92, "REVIEW": 31, "UNPRICED": 363}; match winners: {"EXTREME": 32, "HIGH_REVIEW": 26, "NORMAL": 91, "REVIEW": 29, "UNPRICED": 202}; quote freshness at build: {"AGING": 182}.
 
 ## Yujia Huang vs Darya Khomutsianskaya -- WTA 125K Suzhou Q1
 
@@ -92,39 +92,15 @@ ITF (ITF) · surface ? · scheduled 2026-10-03T12:00:00Z · first ball: NO_FIRST
 * Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; SCHEDULED_START_PASSED; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
-## Carlos Alcaraz vs Denis Shapovalov -- ATP Tokyo QF
-
-**START STATUS: STATUS_AMBIGUOUS** -- BET BLOCKED
-* Nominal schedule: 2026-10-04 05:00Z
-* Current expected start: 2026-10-04 04:00Z
-* Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
-* First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
-* Recommended handicap-by time: 2026-10-04 03:15Z
-
-* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-60_MIN; EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN
-
-ATP (TOUR_500_250) · surface ? · scheduled 2026-10-04T05:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:26OCT03ALCSHA:singles`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Carlos Alcaraz (`KXATPMATCH-26OCT03ALCSHA-ALC`) | 0.88 / 0.89 (18726) | 88.5% | -- | -- | -- [-----] | 85.9% | 88.5% | 87.2% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Denis Shapovalov (`KXATPMATCH-26OCT03ALCSHA-SHA`) | 0.11 / 0.12 (22292) | 11.5% | -- | -- | -- [-----] | 14.1% | 11.6% | 12.9% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-
-* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
-* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
-* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; STATUS_AMBIGUOUS; WIDE_SPREAD
-
 ## Yidi Yang vs Rina Saigo -- WTA 125K Suzhou Q1
 
 **START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-03 06:00Z
-* Current expected start: 2026-10-04 04:13Z
+* Current expected start: 2026-10-04 04:27Z
 * Source: COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-3); confidence MEDIUM
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
-* Recommended handicap-by time: 2026-10-04 03:28Z
+* Last status refresh: 2026-10-04 04:12Z
+* Recommended handicap-by time: 2026-10-04 03:42Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
 
@@ -143,11 +119,11 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-03T06:00:00Z · first ball: N
 
 **START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-03 08:00Z
-* Current expected start: 2026-10-04 04:13Z
+* Current expected start: 2026-10-04 04:27Z
 * Source: COURT_PROGRESSION: preceding match on Court 3 in progress (set 2 of best-of-3); confidence MEDIUM
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
-* Recommended handicap-by time: 2026-10-04 03:28Z
+* Last status refresh: 2026-10-04 04:12Z
+* Recommended handicap-by time: 2026-10-04 03:42Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
 
@@ -164,12 +140,12 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-03T08:00:00Z · first ball: N
 
 ## Han Shi vs Chengyiyi Yuan -- WTA 125K Suzhou Q1
 
-**START STATUS: VERIFIED_UPCOMING**
+**START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-03 06:00Z
 * Current expected start: 2026-10-04 04:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 03:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -187,12 +163,12 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-03T06:00:00Z · first ball: N
 
 ## Ekaterina Alexandrova vs Diana Shnaider -- WTA Beijing R32
 
-**START STATUS: VERIFIED_UPCOMING**
+**START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-04 06:00Z (day placeholder, not a start time)
 * Current expected start: 2026-10-04 04:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 03:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -211,12 +187,12 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 
 ## Jessica Bouzas Maneiro vs Alexandra Shubladze -- WTA 125K Jingshan F
 
-**START STATUS: VERIFIED_UPCOMING**
+**START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-04 07:30Z
 * Current expected start: 2026-10-04 04:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 03:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -234,12 +210,12 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-04T07:30:00Z · first ball: N
 
 ## Zeynep Sonmez / Donna Vekic vs Ellen Perez / Demi Schuurs -- WTA Beijing R32
 
-**START STATUS: VERIFIED_UPCOMING**
+**START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-04 07:10Z
 * Current expected start: 2026-10-04 04:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 03:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -257,15 +233,39 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T07:10:00Z · first b
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
 * Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; WIDE_SPREAD
 
+## Hubert Hurkacz vs Karen Khachanov -- ATP Beijing QF
+
+**START STATUS: VERIFIED_UPCOMING**
+* Nominal schedule: 2026-10-04 06:00Z
+* Current expected start: 2026-10-04 04:52Z
+* Source: COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 2 of best-of-5); confidence MEDIUM
+* First ball: NOT_OBSERVED_STARTED
+* Last status refresh: 2026-10-04 04:12Z
+* Recommended handicap-by time: 2026-10-04 04:07Z
+
+* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-68_MIN
+
+ATP (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:26OCT03HURKHA:singles`
+
+| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Hubert Hurkacz (`KXATPMATCH-26OCT03HURKHA-HUR`) | 0.39 / 0.40 (245556) | 39.5% | -- | -- | -- [-----] | 41.7% | 40.5% | 41.1% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Karen Khachanov (`KXATPMATCH-26OCT03HURKHA-KHA`) | 0.59 / 0.60 (922) | 59.5% | -- | -- | -- [-----] | 58.3% | 59.6% | 58.9% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+
+* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
+* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
+* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
+* Warnings: NO_MODEL_FOR_MATCH; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+
 ## Polina Kudermetova vs Mirra Andreeva -- WTA Beijing R32
 
 **START STATUS: VERIFIED_UPCOMING**
 * Nominal schedule: 2026-10-04 06:00Z (day placeholder, not a start time)
-* Current expected start: 2026-10-04 04:38Z
+* Current expected start: 2026-10-04 04:52Z
 * Source: COURT_PROGRESSION: preceding match on Lotus in progress (set 2 of best-of-5); confidence MEDIUM
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
-* Recommended handicap-by time: 2026-10-04 03:53Z
+* Last status refresh: 2026-10-04 04:12Z
+* Recommended handicap-by time: 2026-10-04 04:07Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
 
@@ -280,30 +280,6 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
 * Derivatives listed: 6 (MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
 * Warnings: NO_MODEL_FOR_MATCH; NOMINAL_START_IS_DAY_PLACEHOLDER
-
-## Hubert Hurkacz vs Karen Khachanov -- ATP Beijing QF
-
-**START STATUS: VERIFIED_UPCOMING**
-* Nominal schedule: 2026-10-04 06:00Z
-* Current expected start: 2026-10-04 05:00Z
-* Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
-* First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
-* Recommended handicap-by time: 2026-10-04 04:15Z
-
-* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-60_MIN
-
-ATP (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:26OCT03HURKHA:singles`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hubert Hurkacz (`KXATPMATCH-26OCT03HURKHA-HUR`) | 0.39 / 0.40 (245556) | 39.5% | -- | -- | -- [-----] | 41.7% | 40.5% | 41.1% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Karen Khachanov (`KXATPMATCH-26OCT03HURKHA-KHA`) | 0.59 / 0.60 (922) | 59.5% | -- | -- | -- [-----] | 58.3% | 59.6% | 58.9% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-
-* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
-* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
-* Warnings: NO_MODEL_FOR_MATCH; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Naoya Honda vs Kristjan Tamm -- ATP Challenger Wuning 3 Q1
 
@@ -329,6 +305,30 @@ CHALLENGER (CHALLENGER) · Hard · scheduled 2026-10-04T05:00:00Z · first ball:
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.000, surface_pool_high -0.008, surface_dev_loose +0.011, surface_dev_tight -0.019
 * Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; ONE_SIDED_OR_NO_QUOTE
 
+## Valentin Vacherot vs Arthur Fils -- ATP Tokyo QF
+
+**START STATUS: VERIFIED_UPCOMING**
+* Nominal schedule: 2026-10-04 05:00Z
+* Current expected start: 2026-10-04 05:17Z
+* Source: COURT_PROGRESSION: preceding match on Colosseum in progress (set 1 of best-of-5); confidence MEDIUM
+* First ball: NOT_OBSERVED_STARTED
+* Last status refresh: 2026-10-04 04:12Z
+* Recommended handicap-by time: 2026-10-04 04:32Z
+
+* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+17_MIN
+
+ATP (TOUR_500_250) · surface ? · scheduled 2026-10-04T05:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:26OCT03VACFIL:singles`
+
+| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Arthur Fils (`KXATPMATCH-26OCT03VACFIL-FIL`) | 0.79 / 0.80 (44852) | 79.5% | -- | -- | -- [-----] | 76.2% | 79.1% | 79.1% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Valentin Vacherot (`KXATPMATCH-26OCT03VACFIL-VAC`) | 0.20 / 0.21 (69483) | 20.5% | -- | -- | -- [-----] | 23.8% | 20.8% | 20.8% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+
+* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
+* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
+* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
+* Warnings: NO_MODEL_FOR_MATCH; EXTERNAL_PRICE_STALE
+
 ## Rinky Hijikata / Kaito Uesugi vs Theo Arribage / Albano Olivetti -- ATP Tokyo SF
 
 **START STATUS: VERIFIED_UPCOMING**
@@ -336,7 +336,7 @@ CHALLENGER (CHALLENGER) · Hard · scheduled 2026-10-04T05:00:00Z · first ball:
 * Current expected start: 2026-10-04 05:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 04:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -361,7 +361,7 @@ DOUBLES (TOUR_500_250) · surface ? · scheduled 2026-10-04T05:00:00Z · first b
 * Current expected start: 2026-10-04 06:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 05:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -386,7 +386,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: 2026-10-04 06:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 05:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -409,7 +409,7 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-03T11:50:00Z · first ball: N
 * Current expected start: 2026-10-04 06:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 05:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -432,7 +432,7 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-03T08:00:00Z · first ball: N
 * Current expected start: 2026-10-04 06:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 05:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -480,7 +480,7 @@ CHALLENGER (CHALLENGER) · Hard · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -505,7 +505,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -530,7 +530,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -555,7 +555,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -580,7 +580,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -605,7 +605,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -655,7 +655,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -680,7 +680,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -704,7 +704,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -729,7 +729,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -753,7 +753,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -778,7 +778,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -802,7 +802,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: 2026-10-04 06:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 05:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+30_MIN
@@ -826,7 +826,7 @@ ATP (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: 2026-10-04 06:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 05:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -842,30 +842,6 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
 * Derivatives listed: 7 (MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
 * Warnings: NO_MODEL_FOR_MATCH; NOMINAL_START_IS_DAY_PLACEHOLDER
-
-## Valentin Vacherot vs Arthur Fils -- ATP Tokyo QF
-
-**START STATUS: VERIFIED_UPCOMING**
-* Nominal schedule: 2026-10-04 05:00Z
-* Current expected start: 2026-10-04 07:00Z
-* Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
-* First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
-* Recommended handicap-by time: 2026-10-04 06:15Z
-
-* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+120_MIN
-
-ATP (TOUR_500_250) · surface ? · scheduled 2026-10-04T05:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:26OCT03VACFIL:singles`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Arthur Fils (`KXATPMATCH-26OCT03VACFIL-FIL`) | 0.79 / 0.80 (44852) | 79.5% | -- | -- | -- [-----] | 76.2% | 79.1% | 79.1% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Valentin Vacherot (`KXATPMATCH-26OCT03VACFIL-VAC`) | 0.20 / 0.21 (69483) | 20.5% | -- | -- | -- [-----] | 23.8% | 20.8% | 20.8% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | AGING | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-
-* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
-* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 0 carry a model probability
-* Warnings: NO_MODEL_FOR_MATCH; EXTERNAL_PRICE_STALE
 
 ## Siddhant Banthia vs Yusuke Takahashi -- ATP Challenger Wuning 3 Q1
 
@@ -960,7 +936,7 @@ Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 * Current expected start: 2026-10-04 07:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 06:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -985,7 +961,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: 2026-10-04 07:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 06:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1010,7 +986,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first b
 * Current expected start: 2026-10-04 08:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 07:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1060,7 +1036,7 @@ ITF (ITF) · Hard · scheduled 2026-10-04T08:00:00Z · first ball: NO_FIRST_BALL
 * Current expected start: 2026-10-04 08:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 07:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-160_MIN
@@ -1089,7 +1065,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-04T11:10:00Z · first ball: NOT_
 * Current expected start: 2026-10-04 08:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 07:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -1153,7 +1129,7 @@ Unmet before human review: fresh_executable_price, adequate_data_quality, explai
 * Current expected start: 2026-10-04 09:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 08:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1248,7 +1224,7 @@ CHALLENGER (CHALLENGER) · surface ? · scheduled 2026-10-04T09:00:00Z · first 
 * Current expected start: 2026-10-04 09:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 08:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1273,7 +1249,7 @@ DOUBLES (MASTERS_1000) · surface ? · scheduled 2026-10-03T06:00:00Z · first b
 * Current expected start: 2026-10-04 10:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 09:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1296,7 +1272,7 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-04T13:30:00Z · first ball: N
 * Current expected start: 2026-10-04 11:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 10:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -1320,7 +1296,7 @@ ATP (MASTERS_1000) · surface ? · scheduled 2026-10-04T14:00:00Z · first ball:
 * Current expected start: 2026-10-04 11:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 10:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1344,7 +1320,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: 2026-10-04 11:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 10:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1367,7 +1343,7 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-04T14:00:00Z · first ball: N
 * Current expected start: 2026-10-04 11:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 10:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1893,7 +1869,7 @@ CHALLENGER (CHALLENGER) · surface ? · scheduled 2026-10-04T12:10:00Z · first 
 * Current expected start: 2026-10-04 12:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 11:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1917,7 +1893,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-04T06:00:00Z · first ball:
 * Current expected start: 2026-10-04 12:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 11:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1940,7 +1916,7 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-04T15:30:00Z · first ball: N
 * Current expected start: 2026-10-04 12:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 11:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1963,7 +1939,7 @@ WTA125 (WTA_125) · surface ? · scheduled 2026-10-04T15:30:00Z · first ball: N
 * Current expected start: 2026-10-04 12:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 11:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -3050,7 +3026,7 @@ CHALLENGER (CHALLENGER) · Clay · scheduled 2026-10-04T14:30:00Z · first ball:
 * Current expected start: 2026-10-04 15:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: 2026-10-04 14:15Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -4936,7 +4912,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-05T01:00:00Z · first ball: NO_FIRST
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_UNRELIABLE_AT_THIS_LEVEL; NO_CREDIBLE_START_TIME
@@ -4961,7 +4937,7 @@ DOUBLES (TOUR_500_250) · surface ? · scheduled 2026-10-05T05:00:00Z · first b
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -4985,7 +4961,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-05T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -5009,7 +4985,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-05T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -5033,7 +5009,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-05T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
@@ -5057,7 +5033,7 @@ WTA (MASTERS_1000) · surface ? · scheduled 2026-10-05T06:00:00Z · first ball:
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-04 03:58Z
+* Last status refresh: 2026-10-04 04:12Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_atp marks 2026-10-05T04:00:00+00:00 as not a valid time; NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; NO_CREDIBLE_START_TIME
