@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-04T02:59:08.046898+00:00",
+ "run_id": "20261004T025908Z",
+ "external_parse": {
+  "events": 139,
+  "markets": 1578,
+  "skipped_family": 378,
+  "skipped_period": 434,
+  "skipped_live": 18,
+  "one_sided": 22,
+  "rows": 2567,
+  "devigged": 744
+ },
+ "smarkets_fetch": {
+  "events_seen": 145,
+  "events_priced": 80,
+  "markets": 1174,
+  "markets_mapped": 455,
+  "contracts": 970,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261004T025908Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 455,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 224,
+  "rows": 746,
+  "two_sided": 728,
+  "one_sided": 18
+ },
+ "kalshi_quotes_on_disk": 945,
+ "external_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 100,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7752,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Yan Lang Chen": 1,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kotaro Mochizuki": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Yujia Huang": 1,
+   "Zicong Wang": 1,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 169,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.8166,
+  "top_refusal_subjects": {
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Zicong Wang": 1,
+   "Yan Lang Chen": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Darya Khomutsianskaya": 1,
+   "Nicholas Van Aken": 1,
+   "Trishan Dhawan": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 162,
+ "counts": {
+  "PASS": 154,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:INSUFFICIENT_INPUTS": 78,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "WATCH": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
