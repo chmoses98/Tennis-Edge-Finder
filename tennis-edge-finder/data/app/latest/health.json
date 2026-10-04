@@ -1,10 +1,10 @@
 {
   "bet_authority": "ASSISTED",
-  "commit_sha": "63b67392db0f566fa67ddbefbdcfcf3c7a237cf8",
+  "commit_sha": "4bd491d34c8d85878fd2df7b901238568d1f09fd",
   "components": {
     "assisted_pipeline": {
-      "age_seconds": 32.9,
-      "as_of": "2026-10-03T21:50:25Z",
+      "age_seconds": 20.8,
+      "as_of": "2026-10-04T01:02:21Z",
       "detail": "NO_DECISIONS_YET",
       "status": "OK"
     },
@@ -15,26 +15,26 @@
       "status": "OK"
     },
     "export": {
-      "age_seconds": 0.7,
-      "as_of": "2026-10-03T21:50:58Z",
+      "age_seconds": 1.0,
+      "as_of": "2026-10-04T01:02:41Z",
       "detail": null,
       "status": "OK"
     },
     "frozen_producers": {
-      "age_seconds": 283.2,
-      "as_of": "2026-10-03T21:46:15Z",
+      "age_seconds": 172.2,
+      "as_of": "2026-10-04T00:59:49Z",
       "detail": "model4_board_v1",
       "status": "OK"
     },
     "market_data": {
-      "age_seconds": 1837.7,
-      "as_of": "2026-10-03T21:20:21Z",
+      "age_seconds": 1712.0,
+      "as_of": "2026-10-04T00:34:10Z",
       "detail": null,
-      "status": "STALE"
+      "status": "OK"
     },
     "model": {
-      "age_seconds": 35.7,
-      "as_of": "2026-10-03T21:50:23Z",
+      "age_seconds": 23.0,
+      "as_of": "2026-10-04T01:02:19Z",
       "detail": null,
       "status": "OK"
     },
@@ -51,22 +51,22 @@
       "status": "UNKNOWN"
     }
   },
-  "data_age_seconds": 1837.7,
+  "data_age_seconds": 1712.0,
   "errors": [],
-  "freshness_status": "STALE",
-  "generated_at": "2026-10-03T21:50:58Z",
+  "freshness_status": "AGING",
+  "generated_at": "2026-10-04T01:02:41Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-03T21:50:58Z",
-  "last_market_capture": "2026-10-03T21:20:21Z",
-  "last_model_generated": "2026-10-03T21:50:23Z",
-  "last_successful_run": "2026-10-03T21:50:58Z",
-  "market_data_status": "STALE",
+  "last_export_attempt": "2026-10-04T01:02:41Z",
+  "last_market_capture": "2026-10-04T00:34:10Z",
+  "last_model_generated": "2026-10-04T01:02:19Z",
+  "last_successful_run": "2026-10-04T01:02:41Z",
+  "market_data_status": "OK",
   "model_status": "OK",
   "next_scheduled_run": "2026-10-04T01:15:00Z",
-  "overall_status": "STALE",
-  "payload_run_id": "run_f01c03582575f0b0ee28",
+  "overall_status": "HEALTHY",
+  "payload_run_id": "run_d3b1aaaa2d79e3bb4b87",
   "router_status": "UNKNOWN",
-  "run_id": "run_f01c03582575f0b0ee28",
+  "run_id": "run_d3b1aaaa2d79e3bb4b87",
   "schema_version": "edge_finder.app.v1",
   "settlement_status": "UNKNOWN",
   "sport": "TENNIS",
@@ -103,7 +103,6 @@
   "warnings": [
     "TENNIS-2 taxonomy_normalization FAIL",
     "TENNIS-3 active_market_mapping FAIL",
-    "TENNIS-4 active_market_projection FAIL",
     "TENNIS-6 no_post_start_leakage FAIL",
     "TENNIS-8 sports_truth_health FAIL",
     "TENNIS-10 clv_close_coverage FAIL"
