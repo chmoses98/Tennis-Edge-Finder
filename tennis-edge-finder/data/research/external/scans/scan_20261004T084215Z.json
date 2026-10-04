@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-04T08:42:15.899318+00:00",
+ "run_id": "20261004T084215Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1200,
+  "skipped_family": 224,
+  "skipped_period": 351,
+  "skipped_live": 27,
+  "one_sided": 15,
+  "rows": 2060,
+  "devigged": 607
+ },
+ "smarkets_fetch": {
+  "events_seen": 136,
+  "events_priced": 80,
+  "markets": 865,
+  "markets_mapped": 338,
+  "contracts": 704,
+  "quoted_contracts": 704,
+  "raw": "data/research/external/raw/20261004T084215Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 338,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 674,
+  "two_sided": 667,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 363,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.7759,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Chetanna Amadike": 1,
+   "Nimubona, Barry": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.7889,
+  "top_refusal_subjects": {
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Nicholas Van Aken": 1,
+   "Trishan Dhawan": 1,
+   "Joao Azzari Cabas": 1,
+   "Fred Barry Nimubona": 1,
+   "Chetanna Amadike": 1,
+   "Harel Tarshish": 1,
+   "Gabi Adrian Boitan": 1,
+   "Nikita Mashtakov": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
