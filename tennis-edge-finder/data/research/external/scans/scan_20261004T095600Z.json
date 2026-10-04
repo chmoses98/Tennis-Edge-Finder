@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-04T09:56:00.682261+00:00",
+ "run_id": "20261004T095600Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 1076,
+  "skipped_family": 196,
+  "skipped_period": 323,
+  "skipped_live": 35,
+  "one_sided": 15,
+  "rows": 1882,
+  "devigged": 539
+ },
+ "smarkets_fetch": {
+  "events_seen": 133,
+  "events_priced": 80,
+  "markets": 825,
+  "markets_mapped": 318,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20261004T095600Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 318,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 632,
+  "two_sided": 626,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 417,
+ "external_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 91,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Diego Dedura": 1,
+   "Dominic Stephan Stricker": 1,
+   "Martim Bernardo": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Nimubona, Barry": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1,
+   "Elvina Kalieva": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8644,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Nicholas Van Aken": 1,
+   "Vansh Janghu": 1,
+   "Joao Azzari Cabas": 1,
+   "Fred Barry Nimubona": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 102,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 104,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 1,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
