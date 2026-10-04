@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-04T07:41:01.282878+00:00",
+ "run_id": "20261004T074101Z",
+ "external_parse": {
+  "events": 130,
+  "markets": 1299,
+  "skipped_family": 261,
+  "skipped_period": 363,
+  "skipped_live": 24,
+  "one_sided": 21,
+  "rows": 2221,
+  "devigged": 651
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 714,
+  "markets_mapped": 288,
+  "contracts": 598,
+  "quoted_contracts": 598,
+  "raw": "data/research/external/raw/20261004T074101Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 288,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 576,
+  "two_sided": 569,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 390,
+ "external_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 97,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7951,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Martim Bernardo": 1,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Kanata Ozaki": 1,
+   "Nikita Mashtakov": 1,
+   "Gabi Adrian Boitan": 1,
+   "A. Huijsegoms": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 9,
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Martim Bernardo": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8151,
+  "top_refusal_subjects": {
+   "Pyotr Nesterov": 1,
+   "Tiago Esculcas": 1,
+   "Martim Bernardo": 1,
+   "Alya Naz Altinel": 1,
+   "Caroline Werner": 1,
+   "Vansh Janghu": 1,
+   "Joao Azzari Cabas": 1,
+   "Fred Barry Nimubona": 1,
+   "Edison Edison Nshimiyimana": 1,
+   "Ollie Knight": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 68,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
