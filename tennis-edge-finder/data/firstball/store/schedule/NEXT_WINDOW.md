@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 14:00Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-04 14:17Z)
 
 * Earliest credible first ball: **2026-10-05 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-05 02:15Z**
@@ -11,7 +11,7 @@
 | Marie Bouzkova vs Qinwen Zheng | 2026-10-05 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Iva Jovic vs Kamilla Rakhimova | 2026-10-05 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**25 main-tour match(es) without a verified start status** (BET blocked until checked): Lorenzo Sonego vs Aziz Dougaz, Linang Xiao vs Federico Cina, Roman Safiullin vs Alexis Galarneau, Taro Daniel vs Shintaro Mochizuki, Kyrian Jacquet vs Tianhui Zhang, Seongchan Hong vs Rei Sakamoto, Hugo Gaston vs Liam Draxl, Andre Ilagan vs Nikoloz Basilashvili, Mattia Bellucci vs Elias Ymer, Rio Noguchi vs Alexandre Muller, Michael Zheng vs Federico Agustin Gomez, Chun Hsin Tseng vs Nicolas Mejia
+**24 main-tour match(es) without a verified start status** (BET blocked until checked): Lorenzo Sonego vs Aziz Dougaz, Linang Xiao vs Federico Cina, Roman Safiullin vs Alexis Galarneau, Taro Daniel vs Shintaro Mochizuki, Kyrian Jacquet vs Tianhui Zhang, Seongchan Hong vs Rei Sakamoto, Hugo Gaston vs Liam Draxl, Andre Ilagan vs Nikoloz Basilashvili, Mattia Bellucci vs Elias Ymer, Rio Noguchi vs Alexandre Muller, Michael Zheng vs Federico Agustin Gomez, Chun Hsin Tseng vs Nicolas Mejia
 
 Published slate: `SL-20261004T133035Z-f1a47872` built 2026-10-04 13:30Z -- current
 
