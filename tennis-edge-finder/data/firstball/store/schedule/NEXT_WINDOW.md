@@ -1,20 +1,18 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 11:00Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 11:23Z)
 
-* Earliest credible first ball: **2026-10-05 11:05Z**
-* Recommended RUN TENNIS time: **2026-10-05 10:20Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-05 10:55Z**
-* Matches in window: 4
+* Earliest credible first ball: **2026-10-05 11:30Z**
+* Recommended RUN TENNIS time: **2026-10-05 10:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-05 11:20Z**
+* Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alex Bolt vs Lloyd Harris | 2026-10-05 11:05Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Show Court 3 in progress (set 3 of best-of-5) | MEDIUM |
-| Kimmer Coppejans vs Nishesh Basavareddy | 2026-10-05 11:05Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 6 in progress (set 3 of best-of-5) | MEDIUM |
-| Coleman Wong vs Cruz Hewitt | 2026-10-05 11:10Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Coleman Wong vs Cruz Hewitt | 2026-10-05 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Coco Gauff vs Xinran Sun | 2026-10-05 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**23 main-tour match(es) without a verified start status** (BET blocked until checked): Zhizhen Zhang vs Tomas Machac, Aleksandar Kovacevic vs Matteo Berrettini, Arthur Fery vs Marin Cilic, Holger Rune vs Daniel Altmaier, Arthur Gea vs Jaime Faria, Sho Shimabukuro vs Miomir Kecmanovic, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Yannick Hanfmann vs Kamil Majchrzak, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic
+**24 main-tour match(es) without a verified start status** (BET blocked until checked): Zhizhen Zhang vs Tomas Machac, Aleksandar Kovacevic vs Matteo Berrettini, Arthur Fery vs Marin Cilic, Holger Rune vs Daniel Altmaier, Arthur Gea vs Jaime Faria, Sho Shimabukuro vs Miomir Kecmanovic, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Yannick Hanfmann vs Kamil Majchrzak, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic
 
-Published slate: `SL-20261005T102325Z-48a1ca0b` built 2026-10-05 10:23Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
+Published slate: `SL-20261005T104620Z-834aae4c` built 2026-10-05 10:46Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
 Dispatched this pass: slate_final (ok)
 
