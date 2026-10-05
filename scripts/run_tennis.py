@@ -54,6 +54,21 @@ def load_open_markets(d):
     return out
 
 
+def market_universe(discovery_markets, snap, snapshot_authoritative):
+    """(markets, listed_after_discovery): discovery's open markets plus, when the full open snapshot is the
+    lifecycle authority, every open market the snapshot holds that discovery never listed.
+
+    Discovery runs once a day; the exchange lists most next-day matches (all of the tour board on 2026-10-05:
+    779 of 934 open markets) after it. Before this, those markets were invisible to pricing AND to TENNIS-3/4,
+    because both read discovery alone. Snapshot records carry the same market fields as discovery's, and every
+    added market goes through the identical lifecycle, pregame, parse, identity and format gates."""
+    if not (snapshot_authoritative and snap):
+        return list(discovery_markets), 0
+    known = {m["ticker"] for m in discovery_markets}
+    late = [r for t, r in sorted(snap.items()) if t not in known]
+    return list(discovery_markets) + late, len(late)
+
+
 def latest_quotes(capture_root):
     """ticker -> freshest captured market record (from quotes streams); may be empty."""
     q = {}
@@ -239,7 +254,7 @@ def main():
         for tk, r in snap.items():
             quotes[tk] = r
     settled_tickers = captured_settled_tickers(a.capture)
-    markets = load_open_markets(d)
+    markets, listed_after_discovery = market_universe(load_open_markets(d), snap, snapshot_authoritative)
     fee_types = {}
     for p in glob.glob(os.path.join(d, "series_detail", "*.json")):
         s = json.load(open(p)).get("series") or {}
@@ -257,6 +272,7 @@ def main():
     now = datetime.now(timezone.utc)
     started = matches_already_started(os.path.join(PROJ, "data", "firstball", "store"), now)
     parsed = {}; by_event = defaultdict(list); coverage = defaultdict(int); excluded = []
+    coverage["listed_after_discovery"] = listed_after_discovery     # part of "active"; visible, never silent
     for m in markets:
         pm = parse_market(m)
         parsed[pm.ticker] = (pm, m)

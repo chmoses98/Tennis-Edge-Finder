@@ -86,3 +86,31 @@ def test_latest_run_files_orders_plain_and_gzip_runs_by_run_id(tmp_path):
     (st / "r.jsonl").write_text(json.dumps({"prediction_id": "p1", "gradeable": True}) + "\n")
     s = settlement_stats(str(tmp_path))
     assert s["settled_strict_clv"] == 1 and s["clv_run"] == "20261005T200000Z.jsonl.gz"
+
+
+def test_universe_adds_markets_listed_after_discovery_only_from_an_authoritative_snapshot():
+    # 2026-10-05: discovery (once a day) missed 779 of 934 open markets, the whole tour board among them;
+    # they were neither priced nor counted by TENNIS-3/4. The fresh full snapshot now completes the universe.
+    disc = [{"ticker": "KXITFMATCH-26OCT05AB-A", "status": "active"}]
+    snap = {"KXITFMATCH-26OCT05AB-A": {"ticker": "KXITFMATCH-26OCT05AB-A", "status": "active"},
+            "KXATPMATCH-26OCT06CD-C": {"ticker": "KXATPMATCH-26OCT06CD-C", "status": "active"}}
+    markets, late = RT.market_universe(disc, snap, True)
+    assert late == 1 and sorted(m["ticker"] for m in markets) == ["KXATPMATCH-26OCT06CD-C", "KXITFMATCH-26OCT05AB-A"]
+    # discovery's own record wins for a ticker in both (no duplicates)
+    assert sum(m["ticker"] == "KXITFMATCH-26OCT05AB-A" for m in markets) == 1 and markets[0] is disc[0]
+    # a stale or incomplete snapshot is not the lifecycle authority and adds nothing
+    assert RT.market_universe(disc, snap, False) == (disc, 0)
+    assert RT.market_universe(disc, None, True) == (disc, 0)
+
+
+def test_tennis3_parses_the_markets_the_run_priced_from_its_snapshot(tmp_path):
+    from tennis_edge.health.gates import _run_snapshot_markets
+    now = datetime(2026, 10, 5, 15, 45, tzinfo=timezone.utc)
+    _snapshot(str(tmp_path / "snaps"), now, ["KXITFMATCH-26OCT05AB-A", "KXATPMATCH-26OCT06CD-C"])
+    rid = (now - timedelta(minutes=2)).strftime("%Y%m%dT%H%M%SZ")
+    proj = tmp_path / "latest.json"
+    proj.write_text(json.dumps({"lifecycle": {"snapshot_authoritative": True, "open_snapshot_run": rid}}))
+    late = _run_snapshot_markets(str(proj), {"KXITFMATCH-26OCT05AB-A"}, snapshots_root=str(tmp_path / "snaps"))
+    assert [m["ticker"] for m in late] == ["KXATPMATCH-26OCT06CD-C"]
+    proj.write_text(json.dumps({"lifecycle": {"snapshot_authoritative": False, "open_snapshot_run": rid}}))
+    assert _run_snapshot_markets(str(proj), set(), snapshots_root=str(tmp_path / "snaps")) == []
