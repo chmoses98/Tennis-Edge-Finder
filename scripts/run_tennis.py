@@ -197,7 +197,8 @@ def v2_payload(v2res, pm):
             "envelope_width": v2res["envelope_width"], "grade": v2res["grade"], "tags": v2res["tags"],
             "stale_days": v2res["stale_days"], "context_neutralised": v2res["context_neutralised"],
             "evidence": v2res["evidence"], "components": v2res["components"], "variants_p_a": v2res["variants"],
-            "model_version": v2res["model_version"], "state_built_at": v2res["state_built_at"],
+            "model_version": v2res["model_version"], "inference_version": v2res.get("inference_version"),
+            "state_built_at": v2res["state_built_at"],
             "state_last_date": v2res["state_last_date"], "matches_sha256": v2res["matches_sha256"],
             "coefficients_fingerprint": v2res["coefficients_fingerprint"], "spec_fingerprint": v2res["spec_fingerprint"]}
 

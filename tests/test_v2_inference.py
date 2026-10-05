@@ -77,3 +77,61 @@ def test_evidence_reports_true_staleness_and_old_players_grade_poor():
     r = pv.project("p1", "p2", on=on, level="ITF", surface="Clay")
     assert r["evidence"]["days_since_last_result_in_data_a"] >= 200          # not the neutralised placeholder
     assert r["grade"] == "POOR" and any(t.startswith("STALE_PLAYER_RATING") for t in r["tags"])
+
+
+def _itf_source_stopped(n=1200, stop_weeks_before_end=20):
+    """ITF results come from their own source, which stops `stop_weeks_before_end` weeks before the rest."""
+    m = synthetic(n=n)
+    m["source_label"] = np.where(m["level_canonical"] == "ITF", "futures", "main")
+    cut = m["tourney_date"].max() - timedelta(weeks=stop_weeks_before_end)
+    return m[(m["level_canonical"] != "ITF") | (m["tourney_date"] <= cut)].reset_index(drop=True), cut
+
+
+def test_horizon_is_source_freshness_not_the_last_match_of_a_seasonal_level():
+    from tennis_edge.v2.production import source_horizons
+    m, cut = _itf_source_stopped()
+    # Grand Slams are seasonal: drop the last 15 weeks of them; their source ("main") is still current
+    gs_cut = m["tourney_date"].max() - timedelta(weeks=15)
+    m = m[(m["level_canonical"] != "GRAND_SLAM") | (m["tourney_date"] <= gs_cut)]
+    horizon, activity = source_horizons(m)
+    last = str(m["tourney_date"].max())[:10]
+    assert horizon["GS"] == last and activity["GS"] <= str(gs_cut)[:10]       # not "15 weeks stale"
+    assert horizon["I"] == activity["I"] <= str(cut)[:10]                    # its only source stopped
+
+
+def test_player_with_results_at_a_stopped_source_is_flagged_widened_and_never_high():
+    import math
+    from tennis_edge.v2.inference import DRIFT_LOGIT_PER_SQRT_YEAR, MISSING_RESULTS_FLAG
+    m, cut = _itf_source_stopped()
+    coef = load_coefficients()
+    st = _roundtrip(build_state(m, "ATP", coef))
+    pv = ProjectionV2(st, coef)
+    on = m["tourney_date"].max() + timedelta(days=3)
+    # every synthetic player played ITF before the cut, so each is missing results at their own rate
+    miss, gap = pv.missing_results("p1", on)
+    n_pre = st["players"]["p1"]["pre_horizon"]["I"]
+    h_itf = pd.Timestamp(st["data_horizon_by_level_group"]["I"]).date()
+    assert h_itf <= cut and gap == (on - h_itf).days and abs(miss - n_pre / 365 * gap) < 1e-9 and miss >= MISSING_RESULTS_FLAG
+    r = pv.project("p1", "p2", on=on, level="TOUR_500_250", surface="Hard")
+    assert r["stale_days"] <= 10                                          # the MATCH's level is current
+    assert any(t.startswith("PLAYER_RESULTS_INCOMPLETE(") for t in r["tags"])
+    assert r["context_neutralised"] and r["features"]["rest"] == 0.0 and r["grade"] in ("LOW", "POOR")
+    ga, gb = r["evidence"]["missing_results_gap_days_a"], r["evidence"]["missing_results_gap_days_b"]
+    assert abs(r["rating_drift_logit_1p645"] - 1.645 * DRIFT_LOGIT_PER_SQRT_YEAR * math.sqrt((ga + gb) / 365)) < 1e-12
+    # a state without per-player activity (older artifacts) behaves exactly as before: nothing flagged
+    for rec in st["players"].values():
+        rec.pop("pre_horizon", None)
+    r0 = ProjectionV2(st, coef).project("p1", "p2", on=on, level="TOUR_500_250", surface="Hard")
+    assert not any(t.startswith("PLAYER_RESULTS_INCOMPLETE") for t in r0["tags"]) and not r0["context_neutralised"]
+
+
+def test_level_staleness_alone_keeps_the_original_drift():
+    import math
+    from tennis_edge.v2.inference import DRIFT_LOGIT_PER_SQRT_YEAR
+    m = synthetic(n=1200)
+    coef = load_coefficients()
+    pv = ProjectionV2(_roundtrip(build_state(m, "ATP", coef)), coef)
+    on = m["tourney_date"].max() + timedelta(days=200)
+    r = pv.project("p1", "p2", on=on, level="ITF", surface="Clay")
+    want = 1.645 * math.sqrt(2) * DRIFT_LOGIT_PER_SQRT_YEAR * math.sqrt(r["stale_days"] / 365.0)
+    assert abs(r["rating_drift_logit_1p645"] - want) < 1e-12

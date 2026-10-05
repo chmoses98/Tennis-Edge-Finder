@@ -38,7 +38,14 @@ from tennis_edge.v2.form import HORIZONS, ContextState, FormState, rest_feature
 from tennis_edge.v2.replay import BO5, REFERENCE_ELO
 from tennis_edge.v2.stacker import FittedStacker, LEVEL_GROUPS
 
+#: live-inference logic version (model_version / coefficients / frozen spec are unchanged by it). 2: source-based
+#: data horizons and the player-level missing-results guard (2026-10-05, after the first live run).
+INFERENCE_VERSION = "v2-inference-2"
 STALE_HORIZON_DAYS = 10
+#: a player is treated as having INCOMPLETE results when, at their own pre-horizon rate, this many or more of their
+#: results fall after the horizon of a level our sources no longer cover (2026-10-05: ITF-heavy Challenger players
+#: were missing ~4 months of ITF results yet graded HIGH, because only the MATCH's level horizon was checked)
+MISSING_RESULTS_FLAG = 3.0
 #: assumed rating drift per player while results are missing, logit units per sqrt(year). An ASSUMPTION, not
 #: a fitted quantity: it only widens the envelope (and is labelled so) when data are stale.
 DRIFT_LOGIT_PER_SQRT_YEAR = 0.30
@@ -186,12 +193,38 @@ class ProjectionV2:
         h = self.horizon.get(LEVEL_GROUPS.get(level, "O"))
         return max(0, (on - h).days) if h else 9999
 
+    def missing_results(self, p: str, on: _date) -> tuple[float, int]:
+        """(expected results missing from our data, longest gap in days among the levels they are missing from).
+
+        For every level group whose horizon is more than STALE_HORIZON_DAYS behind `on`, the player's own match
+        rate there in the PRE_HORIZON year times the days since the horizon. A gap only counts toward the
+        returned length when it accounts for at least one expected result."""
+        pre = (self.players.get(p) or {}).get("pre_horizon") or {}
+        days_window = float(self.state.get("pre_horizon_days", 365))
+        miss, gap = 0.0, 0
+        for g, n in pre.items():
+            h = self.horizon.get(g)
+            if h is None:
+                continue
+            d = (on - h).days
+            if d > STALE_HORIZON_DAYS:
+                mg = n / days_window * d
+                miss += mg
+                if mg >= 1.0:
+                    gap = max(gap, d)
+        return miss, gap
+
     def project(self, a: str, b: str, *, on: _date, level: str, surface: str | None, fmt: MatchFormat = TOUR_SINGLES_BO3,
                 identity_confidence: float = 1.0) -> dict:
         best_of = 5 if fmt.best_of == 5 else 3
         raw = self.frame(a, b, on=on, level=level, surface=surface, best_of=best_of)
         stale = self.stale_days(level, on)
-        neutralised = stale > STALE_HORIZON_DAYS
+        (miss_a, gap_a), (miss_b, gap_b) = self.missing_results(a, on), self.missing_results(b, on)
+        flag_a, flag_b = miss_a >= MISSING_RESULTS_FLAG, miss_b >= MISSING_RESULTS_FLAG
+        # a player's schedule features are computed from results we know to be incomplete: same treatment as a
+        # stale level (both players "have been playing normally"); the ratings stay, the envelope widens below
+        player_incomplete = flag_a or flag_b
+        neutralised = stale > STALE_HORIZON_DAYS or player_incomplete
         df = self._neutralise(raw) if neutralised else raw
         # TRUE days since each player's last result in our data (read before any neutralisation)
         days_raw = [None if np.isnan(raw[f"days_{s}"].iloc[0]) else int(raw[f"days_{s}"].iloc[0]) for s in ("a", "b")]
@@ -211,8 +244,12 @@ class ProjectionV2:
         p_fmt = to_fmt(p)
         vals = [to_fmt(v) for v in probs.values()]
         drift = 0.0
-        if neutralised:
-            drift = 1.645 * math.sqrt(2) * DRIFT_LOGIT_PER_SQRT_YEAR * math.sqrt(stale / 365.0)
+        # per-player staleness in days: the level's (both players) and each player's own missing-results gap.
+        # With only the level stale this is exactly the former 1.645 * sqrt(2) * c * sqrt(stale / 365).
+        level_gap = stale if stale > STALE_HORIZON_DAYS else 0
+        ga, gb = max(level_gap, gap_a if flag_a else 0), max(level_gap, gap_b if flag_b else 0)
+        if ga or gb:
+            drift = 1.645 * DRIFT_LOGIT_PER_SQRT_YEAR * math.sqrt((ga + gb) / 365.0)
             z = math.log(p_fmt / (1 - p_fmt))
             vals += [1 / (1 + math.exp(-(z - drift))), 1 / (1 + math.exp(-(z + drift)))]
         lo, hi = min(vals), max(vals)
@@ -223,8 +260,11 @@ class ProjectionV2:
             tags.append("THIN_RATING_HISTORY")
         if ev_min < 300:
             tags.append("NO_SERVE_EVIDENCE")
-        if neutralised:
+        if stale > STALE_HORIZON_DAYS:
             tags.append(f"CONTEXT_NEUTRALISED_STALE_DATA({stale}d)")
+        if player_incomplete:
+            tags.append("PLAYER_RESULTS_INCOMPLETE(" + ",".join(f"{s}~{m:.0f} over {g}d" for s, m, g, f in
+                                                              (("A", miss_a, gap_a, flag_a), ("B", miss_b, gap_b, flag_b)) if f) + ")")
         if player_stale > 180:
             tags.append(f"STALE_PLAYER_RATING({player_stale}d)")
         if identity_confidence < 0.95:
@@ -238,7 +278,7 @@ class ProjectionV2:
             grade = "POOR"
         elif identity_confidence >= 0.95 and n_min >= 40 and ev_min >= 1000 and not neutralised and width <= 0.08:
             grade = "HIGH"
-        elif identity_confidence >= 0.95 and n_min >= 15 and stale <= 60 and width <= 0.15:
+        elif identity_confidence >= 0.95 and n_min >= 15 and max(stale, ga, gb) <= 60 and width <= 0.15:
             grade = "MEDIUM"
         else:
             grade = "LOW"
@@ -251,9 +291,12 @@ class ProjectionV2:
                 "evidence": {"rated_matches_a": int(df["n_a"].iloc[0]), "rated_matches_b": int(df["n_b"].iloc[0]),
                              "serve_points_a": float(df["g2_ev_a"].iloc[0]), "serve_points_b": float(df["g2_ev_b"].iloc[0]),
                              "days_since_last_result_in_data_a": days_raw[0], "days_since_last_result_in_data_b": days_raw[1],
-                             "level_data_horizon_days_behind": stale},
+                             "level_data_horizon_days_behind": stale,
+                             "expected_missing_results_a": round(miss_a, 1), "expected_missing_results_b": round(miss_b, 1),
+                             "missing_results_gap_days_a": gap_a, "missing_results_gap_days_b": gap_b},
                 "features": dict(zip(names, map(float, feats[0]))), "spw": float(df["spw"].iloc[0]),
-                "model_version": self.state["model_version"], "state_built_at": self.state["built_at"],
+                "model_version": self.state["model_version"], "inference_version": INFERENCE_VERSION,
+                "state_built_at": self.state["built_at"],
                 "state_last_date": self.state["last_date"], "matches_sha256": self.state.get("matches_sha256"),
                 "coefficients_fingerprint": self.coef.get("fingerprint"),
                 "spec_fingerprint": self.coef.get("frozen_spec_fingerprint")}
