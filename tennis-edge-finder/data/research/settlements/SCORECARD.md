@@ -1,4 +1,4 @@
-# Prospective scorecard (2026-10-04T21:58:12.929158+00:00)
+# Prospective scorecard (2026-10-05T01:49:19.862724+00:00)
 
 ledger rows: 17296; settled rows: 17298; gradeable with market mid: 15929
 
@@ -6,7 +6,7 @@ ledger rows: 17296; settled rows: 17298; gradeable with market mid: 15929
 
 | metric | value |
 |---|---|
-| matches with any first-ball truth | 1899 |
+| matches with any first-ball truth | 2007 |
 | matches with STRICT-eligible truth (A/B) | 752 |
 | STRICT_PREGAME observations | 2426 |
 | POST_START observations | 297 |

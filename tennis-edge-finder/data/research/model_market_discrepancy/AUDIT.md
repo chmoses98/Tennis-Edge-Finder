@@ -1,26 +1,26 @@
 # Model-vs-market discrepancy audit
 
-`model_market_discrepancy_audit_v1` · config `discrepancy_sanity_v1` · generated 2026-10-04T22:01Z · **AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF** · no model probability was changed or reconstructed.
+`model_market_discrepancy_audit_v1` · config `discrepancy_sanity_v1` · generated 2026-10-05T01:52Z · **AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF** · no model probability was changed or reconstructed.
 
 > DIAGNOSTIC / DESCRIPTIVE. No probability reconstructed; outcomes, settlement times and first-ball truth are used only to score and diagnose (hindsight), never as model inputs; nothing here is a betting strategy or an optimised threshold.
 
 ## Executive summary
 
-* **Distribution** (primary match-winner comparisons, N = 12,270): 0-3 13.2%, 3-5 9.1%, 5-10 19.0%, 10-15 15.1%, 15-25 19.5%, 25-40 14.6%, 40+ 9.5%; median gap 12.66 pp.
-* **Where the extremes live**: 96.8% of >=25 pp gaps are off the ATP/WTA main tour (ITF 74.1%, Challenger 13.5%, doubles 6.2%). Main tour: ATP 5.5% and WTA 9.4% of comparisons are >=25 pp.
-* **Why >=25 pp gaps happen** (primary cause, N = 2,961): MARKET_ALREADY_SETTLED_WHEN_PRICED 46.9%, STALE_QUOTE 25.2%, POOR_DATA 5.7%, BOOK_QUALITY 5.6%, POSSIBLY_IN_PLAY_QUOTE 5.4%, IN_PLAY_QUOTE 3.6%, LIMITED_DATA 2.9%, IDENTITY_AMBIGUOUS 2.5%, UNEXPLAINED_MODEL_DISAGREEMENT 2.1%. By class: coverage 46.9%, market_freshness 25.2%, market_freshness/coverage 9.0%, data 8.6%, execution 5.6%, mapping 2.5%, model_calibration_or_unknown 2.1%.
-* **Stale / settled / in-play**: 71.6% of >=25 pp comparisons used a Kalshi quote over 30 min old at the model's own timestamp; 56.0% were priced after the market settled or on an in-play print. No quote in the producer rows was FRESH (<=10 min) at model time: the pipeline lag alone is 11+ minutes.
-* **Identity / ticker**: 0 of 2,961 >=25 pp comparisons failed identity or orientation; ticker orientation verified on all of them; 14.9% ambiguous (doubles, missing producer identity confidence).
-* **External triangulation**: external coverage of >=25 pp gaps is 0.5%; the agreement question cannot be answered for extremes. Across all fair_v1 rows with an external price, it sided with Kalshi 6.3% of the time and with the model 0.0%.
-* **Thin samples**: >=25 pp gaps have a median thinner-player serve sample of 824.0 points vs 1938.0 for <10 pp gaps.
+* **Distribution** (primary match-winner comparisons, N = 12,386): 0-3 13.2%, 3-5 9.1%, 5-10 19.0%, 10-15 15.1%, 15-25 19.6%, 25-40 14.7%, 40+ 9.4%; median gap 12.71 pp.
+* **Where the extremes live**: 96.8% of >=25 pp gaps are off the ATP/WTA main tour (ITF 74.2%, Challenger 13.4%, doubles 6.2%). Main tour: ATP 5.5% and WTA 9.4% of comparisons are >=25 pp.
+* **Why >=25 pp gaps happen** (primary cause, N = 2,986): MARKET_ALREADY_SETTLED_WHEN_PRICED 46.6%, STALE_QUOTE 25.8%, POOR_DATA 5.7%, BOOK_QUALITY 5.6%, POSSIBLY_IN_PLAY_QUOTE 5.4%, IN_PLAY_QUOTE 3.5%, LIMITED_DATA 2.9%, IDENTITY_AMBIGUOUS 2.5%, UNEXPLAINED_MODEL_DISAGREEMENT 2.0%. By class: coverage 46.6%, market_freshness 25.8%, market_freshness/coverage 8.9%, data 8.5%, execution 5.6%, mapping 2.5%, model_calibration_or_unknown 2.0%.
+* **Stale / settled / in-play**: 71.8% of >=25 pp comparisons used a Kalshi quote over 30 min old at the model's own timestamp; 55.5% were priced after the market settled or on an in-play print. No quote in the producer rows was FRESH (<=10 min) at model time: the pipeline lag alone is 11+ minutes.
+* **Identity / ticker**: 0 of 2,986 >=25 pp comparisons failed identity or orientation; ticker orientation verified on all of them; 14.9% ambiguous (doubles, missing producer identity confidence).
+* **External triangulation**: external coverage of >=25 pp gaps is 0.6%; the agreement question cannot be answered for extremes. Across all fair_v1 rows with an external price, it sided with Kalshi 6.9% of the time and with the model 0.0%.
+* **Thin samples**: >=25 pp gaps have a median thinner-player serve sample of 824.0 points vs 1937.0 for <10 pp gaps.
 * **Calibration (pregame-clean, first observation)**: fair_v1 slope 1.142, Gen-2 0.926, Gen-1 ledger 0.907 (1 = calibrated, <1 = too extreme). In the >=25 pp buckets Kalshi's Brier is far better: n 109 model 0.2293 vs Kalshi 0.1905; n 28 model 0.3342 vs Kalshi 0.1438.
 * **MODEL_CHANGE_RECOMMENDED = TRUE**: Gen-1 doubles match-winner probabilities (ELO_DP_FAIR on team ratings) carry no measurable skill on pregame-clean first observations -- Brier no better than a coin flip and far worse than Kalshi -- while being very confident (e.g. 92% / 8%). Not implemented here.
 
 ## 1. Observations
 
-* 40,002 model-market comparisons (69,626 producer rows before the mirrored match-winner pair was collapsed). one comparison per match-winner event per model per producer run (model-favoured side kept; the two YES contracts mirror each other); every listed derivative contract kept.
-* Inputs: Gen-1 ledger 17,296 rows ['2026-09-11T13:47:52.094820+00:00', '2026-10-04T12:50:25.421786+00:00'], shadow board 11,740 rows ['2026-09-28T03:33:22.503933+00:00', '2026-10-04T21:56:30.978039+00:00'], Model 4 3,323 rows, 8,482 settled tickers, 1,894 tickers with an external scan.
-* By model: {"gen1_ledger": 9971, "gen1_elo": 5904, "fair_v1": 5904, "gen2": 5904, "gen1_sr": 5904, "model4_fundamental": 3212, "model4_conditioned": 3203}
+* 40,466 model-market comparisons (70,554 producer rows before the mirrored match-winner pair was collapsed). one comparison per match-winner event per model per producer run (model-favoured side kept; the two YES contracts mirror each other); every listed derivative contract kept.
+* Inputs: Gen-1 ledger 17,296 rows ['2026-09-11T13:47:52.094820+00:00', '2026-10-04T12:50:25.421786+00:00'], shadow board 11,972 rows ['2026-09-28T03:33:22.503933+00:00', '2026-10-05T01:48:10.842462+00:00'], Model 4 3,323 rows, 8,482 settled tickers, 1,905 tickers with an external scan.
+* By model: {"gen1_ledger": 9971, "gen1_elo": 6020, "fair_v1": 6020, "gen2": 6020, "gen1_sr": 6020, "model4_fundamental": 3212, "model4_conditioned": 3203}
 * Pregame-clean (diagnostic, hindsight): hindsight filter for DIAGNOSIS ONLY: not priced after the market settled, quote not inside a first-ball bracket, quote not within 120 min of settlement, identity not FAILED.
 
 ## 2. Discrepancy histogram (% of comparisons per |model - Kalshi mid| bucket, pp)
@@ -29,17 +29,17 @@
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| PRIMARY (fair_v1 + Gen-1 ledger) | 12,270 | 13.2 | 9.1 | 19.0 | 15.1 | 19.5 | 14.6 | 9.5 | 12.66 | 43.7% | 24.1% |
-| MW fair_v1 | 5,904 | 13.2 | 8.5 | 18.2 | 15.4 | 18.6 | 15.4 | 10.7 | 13.09 | 44.7% | 26.1% |
-| MW gen1_elo | 5,904 | 13.3 | 8.8 | 19.6 | 14.8 | 18.3 | 15.1 | 10.1 | 12.52 | 43.5% | 25.2% |
+| PRIMARY (fair_v1 + Gen-1 ledger) | 12,386 | 13.2 | 9.1 | 19.0 | 15.1 | 19.6 | 14.7 | 9.4 | 12.71 | 43.7% | 24.1% |
+| MW fair_v1 | 6,020 | 13.2 | 8.5 | 18.2 | 15.4 | 18.7 | 15.4 | 10.6 | 13.09 | 44.7% | 26.0% |
+| MW gen1_elo | 6,020 | 13.3 | 8.8 | 19.7 | 14.7 | 18.4 | 15.2 | 9.9 | 12.53 | 43.5% | 25.2% |
 | MW gen1_ledger | 6,366 | 13.2 | 9.6 | 19.8 | 14.7 | 20.4 | 14.0 | 8.3 | 12.23 | 42.7% | 22.3% |
-| MW gen1_sr | 5,904 | 9.3 | 7.2 | 16.4 | 13.7 | 22.1 | 18.4 | 12.9 | 16.43 | 53.4% | 31.3% |
-| MW gen2 | 5,904 | 11.1 | 6.6 | 16.5 | 14.1 | 20.3 | 17.3 | 14.1 | 15.67 | 51.7% | 31.4% |
+| MW gen1_sr | 6,020 | 9.3 | 7.2 | 16.4 | 13.7 | 22.2 | 18.5 | 12.8 | 16.44 | 53.4% | 31.3% |
+| MW gen2 | 6,020 | 11.1 | 6.6 | 16.4 | 14.1 | 20.5 | 17.3 | 14.0 | 15.77 | 51.8% | 31.4% |
 | all families model4_conditioned | 3,203 | 18.6 | 15.9 | 28.7 | 22.3 | 10.7 | 2.2 | 1.7 | 7.34 | 14.5% | 3.9% |
 | all families model4_fundamental | 3,212 | 14.4 | 10.3 | 28.4 | 21.6 | 16.0 | 6.5 | 2.8 | 9.46 | 25.3% | 9.3% |
 
-Configurable thresholds (primary): >=5pp 77.8%, >=10pp 58.7%, >=15pp 43.7%, >=20pp 33.2%, >=25pp 24.1%, >=30pp 17.7%, >=40pp 9.5%, >=50pp 4.3%
-Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8%, >=25pp 21.3%.
+Configurable thresholds (primary): >=5pp 77.8%, >=10pp 58.8%, >=15pp 43.7%, >=20pp 33.2%, >=25pp 24.1%, >=30pp 17.6%, >=40pp 9.4%, >=50pp 4.3%
+Executable gap (model outside the book, before fees): median 10.27pp; >=10pp 50.7%, >=25pp 21.3%.
 
 ## 3. Discrepancy by level
 
@@ -48,33 +48,33 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ATP | 308 | 19.8 | 15.9 | 25.0 | 15.9 | 16.6 | 3.2 | 3.6 | 7.34 | 23.4% | 6.8% |
-| CHALLENGER | 1,228 | 15.5 | 10.8 | 16.9 | 16.4 | 15.1 | 14.2 | 11.2 | 12.3 | 40.6% | 25.5% |
-| ITF_MEN | 1,739 | 11.8 | 8.3 | 19.4 | 15.0 | 17.8 | 15.0 | 12.6 | 13.02 | 45.4% | 27.6% |
-| ITF_WOMEN | 2,099 | 10.0 | 6.0 | 15.4 | 15.3 | 21.6 | 20.0 | 11.8 | 16.45 | 53.3% | 31.7% |
+| CHALLENGER | 1,262 | 15.8 | 10.7 | 16.9 | 16.5 | 15.1 | 14.0 | 10.9 | 12.21 | 40.1% | 25.0% |
+| ITF_MEN | 1,757 | 11.8 | 8.3 | 19.5 | 14.9 | 17.9 | 15.1 | 12.5 | 13.02 | 45.5% | 27.7% |
+| ITF_WOMEN | 2,162 | 9.8 | 6.1 | 15.4 | 15.3 | 21.8 | 20.1 | 11.5 | 16.48 | 53.4% | 31.6% |
 | WTA | 435 | 23.0 | 10.6 | 25.8 | 12.6 | 18.9 | 6.7 | 2.5 | 8.16 | 28.1% | 9.2% |
-| WTA125 | 95 | 12.6 | 4.2 | 16.8 | 26.3 | 17.9 | 13.7 | 8.4 | 12.82 | 40.0% | 22.1% |
+| WTA125 | 96 | 12.5 | 4.2 | 16.7 | 27.1 | 17.7 | 13.5 | 8.3 | 12.84 | 39.6% | 21.9% |
 
 ### gen2 -- all observations
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ATP | 308 | 19.8 | 12.7 | 23.7 | 15.9 | 18.8 | 5.2 | 3.9 | 8.77 | 27.9% | 9.1% |
-| CHALLENGER | 1,228 | 13.7 | 6.3 | 19.5 | 14.7 | 18.1 | 16.4 | 11.4 | 13.52 | 45.9% | 27.9% |
-| ITF_MEN | 1,739 | 9.4 | 6.9 | 17.5 | 15.2 | 20.2 | 16.7 | 14.0 | 15.41 | 50.9% | 30.7% |
-| ITF_WOMEN | 2,099 | 8.1 | 6.0 | 12.8 | 12.0 | 21.3 | 20.1 | 19.6 | 19.89 | 61.0% | 39.7% |
+| CHALLENGER | 1,262 | 13.9 | 6.3 | 19.4 | 14.5 | 18.6 | 16.2 | 11.1 | 13.46 | 45.9% | 27.3% |
+| ITF_MEN | 1,757 | 9.3 | 6.9 | 17.4 | 15.4 | 20.3 | 16.7 | 14.0 | 15.45 | 51.0% | 30.7% |
+| ITF_WOMEN | 2,162 | 8.0 | 6.0 | 12.7 | 12.0 | 21.5 | 20.4 | 19.4 | 19.93 | 61.3% | 39.8% |
 | WTA | 435 | 20.5 | 5.5 | 16.8 | 15.6 | 22.3 | 16.8 | 2.5 | 12.98 | 41.6% | 19.3% |
-| WTA125 | 95 | 5.3 | 5.3 | 14.7 | 18.9 | 24.2 | 15.8 | 15.8 | 18.99 | 55.8% | 31.6% |
+| WTA125 | 96 | 5.2 | 5.2 | 14.6 | 18.8 | 24.0 | 16.7 | 15.6 | 19.03 | 56.2% | 32.3% |
 
 ### gen1_elo -- all observations
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ATP | 308 | 26.9 | 13.0 | 28.2 | 9.4 | 10.1 | 8.4 | 3.9 | 7.03 | 22.4% | 12.3% |
-| CHALLENGER | 1,228 | 16.3 | 9.6 | 22.1 | 13.7 | 13.2 | 13.1 | 12.0 | 10.59 | 38.3% | 25.1% |
-| ITF_MEN | 1,739 | 10.3 | 9.3 | 18.1 | 15.8 | 18.9 | 15.1 | 12.5 | 13.53 | 46.5% | 27.6% |
-| ITF_WOMEN | 2,099 | 10.0 | 6.2 | 16.0 | 14.4 | 23.5 | 19.8 | 10.1 | 16.99 | 53.4% | 29.9% |
+| CHALLENGER | 1,262 | 16.4 | 9.9 | 22.3 | 13.7 | 13.2 | 12.9 | 11.7 | 10.48 | 37.7% | 24.6% |
+| ITF_MEN | 1,757 | 10.4 | 9.2 | 18.2 | 15.7 | 18.9 | 15.2 | 12.4 | 13.53 | 46.6% | 27.7% |
+| ITF_WOMEN | 2,162 | 9.9 | 6.3 | 16.1 | 14.2 | 23.7 | 19.9 | 9.8 | 16.99 | 53.5% | 29.8% |
 | WTA | 435 | 23.4 | 14.0 | 29.4 | 15.6 | 11.5 | 4.4 | 1.6 | 6.99 | 17.5% | 6.0% |
-| WTA125 | 95 | 15.8 | 5.3 | 23.2 | 29.5 | 14.7 | 9.5 | 2.1 | 11.29 | 26.3% | 11.6% |
+| WTA125 | 96 | 15.6 | 5.2 | 22.9 | 30.2 | 14.6 | 9.4 | 2.1 | 11.29 | 26.0% | 11.5% |
 
 ### gen1_ledger -- all observations
 
@@ -94,22 +94,22 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ATP | 307 | 19.5 | 16.0 | 25.1 | 16.0 | 16.6 | 3.3 | 3.6 | 7.34 | 23.4% | 6.8% |
-| CHALLENGER | 910 | 19.7 | 13.2 | 19.8 | 18.6 | 16.1 | 8.7 | 4.0 | 9.28 | 28.8% | 12.6% |
-| ITF_MEN | 1,090 | 15.6 | 11.8 | 24.6 | 16.7 | 17.8 | 9.4 | 4.0 | 9.63 | 31.3% | 13.5% |
-| ITF_WOMEN | 1,421 | 13.3 | 7.7 | 18.5 | 17.8 | 22.5 | 15.6 | 4.6 | 12.94 | 42.7% | 20.2% |
+| CHALLENGER | 944 | 20.0 | 13.0 | 19.7 | 18.6 | 16.2 | 8.6 | 3.8 | 9.22 | 28.6% | 12.4% |
+| ITF_MEN | 1,108 | 15.5 | 11.7 | 24.6 | 16.5 | 17.9 | 9.8 | 4.1 | 9.65 | 31.7% | 13.8% |
+| ITF_WOMEN | 1,484 | 12.9 | 7.8 | 18.3 | 17.6 | 22.8 | 16.0 | 4.5 | 13.18 | 43.3% | 20.5% |
 | WTA | 434 | 23.0 | 10.6 | 25.8 | 12.7 | 18.9 | 6.5 | 2.5 | 8.16 | 27.9% | 9.0% |
-| WTA125 | 89 | 13.5 | 4.5 | 18.0 | 28.1 | 18.0 | 12.4 | 5.6 | 11.65 | 36.0% | 18.0% |
+| WTA125 | 90 | 13.3 | 4.4 | 17.8 | 28.9 | 17.8 | 12.2 | 5.6 | 11.83 | 35.6% | 17.8% |
 
 ### gen2 -- pregame-clean (hindsight-filtered)
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ATP | 307 | 19.9 | 12.4 | 23.8 | 16.0 | 18.9 | 5.2 | 3.9 | 8.82 | 28.0% | 9.1% |
-| CHALLENGER | 910 | 17.1 | 7.7 | 23.4 | 17.1 | 18.8 | 12.5 | 3.3 | 10.53 | 34.6% | 15.8% |
-| ITF_MEN | 1,090 | 12.8 | 8.7 | 21.7 | 17.8 | 21.5 | 12.0 | 5.5 | 11.71 | 39.0% | 17.5% |
-| ITF_WOMEN | 1,421 | 9.7 | 8.0 | 14.5 | 11.5 | 24.4 | 18.7 | 13.2 | 17.2 | 56.2% | 31.9% |
+| CHALLENGER | 944 | 17.4 | 7.6 | 23.2 | 16.8 | 19.5 | 12.3 | 3.2 | 10.53 | 35.0% | 15.5% |
+| ITF_MEN | 1,108 | 12.6 | 8.8 | 21.5 | 18.0 | 21.5 | 12.1 | 5.7 | 11.83 | 39.3% | 17.8% |
+| ITF_WOMEN | 1,484 | 9.5 | 7.8 | 14.3 | 11.6 | 24.5 | 19.1 | 13.2 | 17.31 | 56.8% | 32.3% |
 | WTA | 434 | 20.5 | 5.5 | 16.8 | 15.7 | 22.4 | 16.6 | 2.5 | 12.96 | 41.5% | 19.1% |
-| WTA125 | 89 | 5.6 | 5.6 | 14.6 | 20.2 | 25.8 | 16.9 | 11.2 | 16.64 | 53.9% | 28.1% |
+| WTA125 | 90 | 5.6 | 5.6 | 14.4 | 20.0 | 25.6 | 17.8 | 11.1 | 17.56 | 54.4% | 28.9% |
 
 ### gen1_ledger -- pregame-clean (hindsight-filtered)
 
@@ -135,9 +135,9 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| Clay | 1,335 | 15.2 | 8.9 | 19.2 | 15.2 | 15.8 | 13.6 | 12.1 | 12.11 | 41.5% | 25.7% |
-| Hard | 4,122 | 12.5 | 8.6 | 18.1 | 15.1 | 19.5 | 15.8 | 10.4 | 13.47 | 45.7% | 26.1% |
-| UNKNOWN | 447 | 13.4 | 6.0 | 15.7 | 19.5 | 18.3 | 17.0 | 10.1 | 13.42 | 45.4% | 27.1% |
+| Clay | 1,364 | 15.2 | 8.9 | 19.1 | 15.2 | 16.1 | 13.5 | 11.9 | 12.13 | 41.5% | 25.4% |
+| Hard | 4,180 | 12.5 | 8.5 | 18.2 | 15.1 | 19.6 | 15.8 | 10.3 | 13.5 | 45.7% | 26.1% |
+| UNKNOWN | 476 | 13.0 | 6.7 | 15.6 | 19.3 | 18.5 | 17.4 | 9.4 | 13.38 | 45.4% | 26.9% |
 
 ## 4. Discrepancy by data quality
 
@@ -145,11 +145,11 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| A | 1,800 | 16.8 | 10.1 | 20.7 | 15.6 | 16.7 | 11.8 | 8.3 | 10.57 | 36.9% | 20.2% |
-| B | 918 | 15.8 | 10.2 | 16.7 | 18.0 | 16.8 | 10.7 | 11.9 | 11.82 | 39.3% | 22.6% |
-| C | 932 | 13.1 | 8.9 | 22.0 | 13.1 | 16.3 | 15.3 | 11.3 | 12.57 | 42.9% | 26.6% |
-| D | 1,039 | 11.3 | 8.8 | 16.8 | 14.4 | 20.5 | 15.8 | 12.4 | 14.42 | 48.7% | 28.2% |
-| F | 1,215 | 7.6 | 4.3 | 13.9 | 16.0 | 22.9 | 23.8 | 11.6 | 18.47 | 58.3% | 35.4% |
+| A | 1,825 | 16.9 | 10.0 | 20.7 | 15.7 | 16.8 | 11.8 | 8.2 | 10.55 | 36.8% | 20.0% |
+| B | 924 | 16.0 | 10.2 | 16.6 | 18.0 | 16.8 | 10.7 | 11.8 | 11.82 | 39.3% | 22.5% |
+| C | 942 | 12.9 | 9.0 | 22.0 | 13.4 | 16.2 | 15.3 | 11.2 | 12.57 | 42.7% | 26.4% |
+| D | 1,065 | 11.2 | 8.7 | 16.8 | 14.3 | 20.9 | 16.0 | 12.2 | 14.44 | 49.0% | 28.2% |
+| F | 1,264 | 7.6 | 4.4 | 14.0 | 15.8 | 23.0 | 23.8 | 11.3 | 18.45 | 58.1% | 35.1% |
 
 ### gen1_ledger by grade
 
@@ -165,9 +165,9 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| ADEQUATE | 2,271 | 16.2 | 9.5 | 19.3 | 16.4 | 16.9 | 11.9 | 9.8 | 11.21 | 38.6% | 21.8% |
-| LIMITED | 1,361 | 14.5 | 10.4 | 21.4 | 14.2 | 15.9 | 13.3 | 10.4 | 11.32 | 39.5% | 23.7% |
-| POOR | 2,272 | 9.4 | 6.3 | 15.2 | 15.3 | 22.0 | 20.0 | 11.9 | 16.62 | 53.9% | 31.9% |
+| ADEQUATE | 2,302 | 16.4 | 9.5 | 19.2 | 16.4 | 16.9 | 11.9 | 9.7 | 11.2 | 38.5% | 21.6% |
+| LIMITED | 1,371 | 14.4 | 10.5 | 21.4 | 14.4 | 15.8 | 13.3 | 10.3 | 11.32 | 39.4% | 23.6% |
+| POOR | 2,347 | 9.3 | 6.3 | 15.2 | 15.1 | 22.2 | 20.1 | 11.6 | 16.64 | 54.0% | 31.8% |
 
 ## 5. Discrepancy by model and family
 
@@ -203,10 +203,10 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 
 | model | N | >=15 all | >=25 all | median all | >=15 clean | >=25 clean | median clean |
 |---|---|---|---|---|---|---|---|
-| fair_v1 | 5,904 | 44.7% | 26.1% | 13.09 | 33.8% | 14.7% | 10.24 |
-| gen1_elo | 5,904 | 43.5% | 25.2% | 12.52 | 32.1% | 14.5% | 9.54 |
-| gen1_sr | 5,904 | 53.4% | 31.3% | 16.43 | 43.6% | 20.2% | 13.03 |
-| gen2 | 5,904 | 51.7% | 31.4% | 15.67 | 43.6% | 21.7% | 12.86 |
+| fair_v1 | 6,020 | 44.7% | 26.0% | 13.09 | 34.1% | 14.9% | 10.34 |
+| gen1_elo | 6,020 | 43.5% | 25.2% | 12.53 | 32.5% | 14.7% | 9.56 |
+| gen1_sr | 6,020 | 53.4% | 31.3% | 16.44 | 43.9% | 20.4% | 13.17 |
+| gen2 | 6,020 | 51.8% | 31.4% | 15.77 | 44.0% | 22.0% | 13.0 |
 
 ## 6. Discrepancy by quote freshness (at the model's own timestamp)
 
@@ -215,7 +215,7 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | AGING | 2,085 | 17.5 | 12.0 | 23.0 | 15.8 | 18.3 | 10.1 | 3.3 | 9.48 | 31.8% | 13.4% |
-| STALE | 3,819 | 10.8 | 6.6 | 15.6 | 15.2 | 18.8 | 18.2 | 14.8 | 16.02 | 51.8% | 33.0% |
+| STALE | 3,935 | 10.9 | 6.6 | 15.6 | 15.2 | 18.9 | 18.2 | 14.4 | 15.97 | 51.6% | 32.7% |
 
 ### gen1_ledger
 
@@ -226,12 +226,12 @@ Executable gap (model outside the book, before fees): median 10.3pp; >=10pp 50.8
 
 | set | N | FRESH | AGING | STALE | median age (min) | p90 | max |
 |---|---|---|---|---|---|---|---|
-| all_primary | 12,270 | 0 | 5445 | 6825 | 32.1 | 225.8 | 1400.4 |
-| ge_15pp | 5,357 | 0 | 1894 | 3463 | 39.9 | 516.7 | 1380.4 |
-| ge_25pp | 2,961 | 0 | 841 | 2120 | 54.4 | 636.1 | 1380.4 |
-| lt_10pp | 5,064 | 0 | 2687 | 2377 | 29.1 | 56.9 | 1201.9 |
+| all_primary | 12,386 | 0 | 5445 | 6941 | 32.4 | 217.7 | 1400.4 |
+| ge_15pp | 5,411 | 0 | 1894 | 3517 | 39.9 | 506.6 | 1380.4 |
+| ge_25pp | 2,986 | 0 | 841 | 2145 | 54.3 | 626.3 | 1380.4 |
+| lt_10pp | 5,108 | 0 | 2687 | 2421 | 29.1 | 59.8 | 1201.9 |
 
-Current slate `SL-20261004T220133Z-b9fcc96f`: 436 priced rows, quote age at build {'median': 39.7, 'max': 71.4}, freshness {'STALE': 436}. Quote age at assisted decision time: no decisions recorded yet.
+Current slate `SL-20261005T015239Z-ca590a7a`: 492 priced rows, quote age at build {'median': 44.3, 'max': 103.9}, freshness {'STALE': 492}. Quote age at assisted decision time: no decisions recorded yet.
 
 ## 7. Discrepancy by external triangulation
 
@@ -240,17 +240,17 @@ Current slate `SL-20261004T220133Z-b9fcc96f`: 436 priced rows, quote age at buil
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | EXTERNAL_LONE_OUTLIER | 1 | 100.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 2.56 | 0.0% | 0.0% |
-| INSUFFICIENT_INPUTS | 170 | 20.0 | 12.3 | 19.4 | 23.5 | 20.0 | 4.1 | 0.6 | 9.56 | 24.7% | 4.7% |
+| INSUFFICIENT_INPUTS | 154 | 23.4 | 11.7 | 18.8 | 21.4 | 18.2 | 5.8 | 0.7 | 7.76 | 24.7% | 6.5% |
 | MARKETS_AGREE | 8 | 50.0 | 50.0 | 0.0 | 0.0 | 0.0 | 0.0 | 0.0 | 2.96 | 0.0% | 0.0% |
 | MODEL_LONE_OUTLIER | 12 | 0.0 | 0.0 | 8.3 | 50.0 | 41.7 | 0.0 | 0.0 | 14.32 | 41.7% | 0.0% |
 
 | set | N | with external | AGREES_WITH_KALSHI | supports model | statuses |
 |---|---|---|---|---|---|
-| fair_v1_all | 5,904 | 191 (3.2%) | 6.3% | 0.0% | {"EXTERNAL_STALE": 170, "AGREES_WITH_KALSHI": 12, "ALL_AGREE": 8, "EXTERNAL_OUTLIER": 1} |
-| fair_v1_ge_15pp | 2,639 | 47 (1.8%) | 10.6% | 0.0% | {"EXTERNAL_STALE": 42, "AGREES_WITH_KALSHI": 5} |
-| fair_v1_ge_25pp | 1,541 | 8 (0.5%) | 0.0% | 0.0% | {"EXTERNAL_STALE": 8} |
-| fair_v1_ge_25pp_pregame_clean | 625 | 8 (1.3%) | 0.0% | 0.0% | {"EXTERNAL_STALE": 8} |
-| fair_v1_lt_10pp | 2,353 | 98 (4.2%) | 1.0% | 0.0% | {"EXTERNAL_STALE": 88, "ALL_AGREE": 8, "EXTERNAL_OUTLIER": 1, "AGREES_WITH_KALSHI": 1} |
+| fair_v1_all | 6,020 | 175 (2.9%) | 6.9% | 0.0% | {"EXTERNAL_STALE": 154, "AGREES_WITH_KALSHI": 12, "ALL_AGREE": 8, "EXTERNAL_OUTLIER": 1} |
+| fair_v1_ge_15pp | 2,693 | 43 (1.6%) | 11.6% | 0.0% | {"EXTERNAL_STALE": 38, "AGREES_WITH_KALSHI": 5} |
+| fair_v1_ge_25pp | 1,566 | 10 (0.6%) | 0.0% | 0.0% | {"EXTERNAL_STALE": 10} |
+| fair_v1_ge_25pp_pregame_clean | 650 | 10 (1.5%) | 0.0% | 0.0% | {"EXTERNAL_STALE": 10} |
+| fair_v1_lt_10pp | 2,397 | 93 (3.9%) | 1.1% | 0.0% | {"EXTERNAL_STALE": 83, "ALL_AGREE": 8, "EXTERNAL_OUTLIER": 1, "AGREES_WITH_KALSHI": 1} |
 
 ## 8. Discrepancy by player sample asymmetry
 
@@ -258,19 +258,19 @@ Current slate `SL-20261004T220133Z-b9fcc96f`: 436 priced rows, quote age at buil
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 2-4x | 1,192 | 12.6 | 7.2 | 19.5 | 16.5 | 20.1 | 14.8 | 9.3 | 12.86 | 44.2% | 24.2% |
-| 4-10x | 771 | 12.7 | 11.0 | 17.0 | 14.4 | 17.8 | 15.9 | 11.2 | 13.44 | 44.9% | 27.1% |
-| <2x | 3,193 | 14.1 | 9.2 | 18.9 | 15.3 | 17.9 | 13.5 | 11.0 | 12.29 | 42.5% | 24.6% |
-| >=10x | 748 | 10.7 | 5.1 | 14.3 | 15.2 | 19.9 | 23.4 | 11.4 | 17.05 | 54.7% | 34.8% |
+| 2-4x | 1,219 | 12.5 | 7.4 | 19.6 | 16.4 | 20.1 | 14.9 | 9.1 | 12.82 | 44.1% | 24.0% |
+| 4-10x | 789 | 12.9 | 11.3 | 16.9 | 14.2 | 17.9 | 16.0 | 10.9 | 13.37 | 44.7% | 26.9% |
+| <2x | 3,252 | 14.1 | 9.0 | 18.9 | 15.4 | 18.2 | 13.6 | 10.8 | 12.39 | 42.6% | 24.4% |
+| >=10x | 760 | 10.7 | 5.0 | 14.1 | 15.4 | 19.7 | 23.7 | 11.4 | 17.1 | 54.9% | 35.1% |
 
 ### fair_v1 by thinner player's serve points
 
 | slice | N | 0-3 | 3-5 | 5-10 | 10-15 | 15-25 | 25-40 | 40+ | median | >=15 | >=25 |
 |---|---|---|---|---|---|---|---|---|---|---|---|
-| 1000-3000 | 1,692 | 14.1 | 8.7 | 20.3 | 16.1 | 16.7 | 12.4 | 11.6 | 11.94 | 40.7% | 24.1% |
-| 300-1000 | 1,367 | 13.5 | 8.7 | 16.0 | 15.6 | 19.9 | 15.6 | 10.8 | 13.76 | 46.2% | 26.3% |
-| <300 | 1,438 | 8.3 | 5.5 | 14.9 | 14.5 | 21.9 | 22.7 | 12.2 | 18.3 | 56.8% | 34.9% |
-| >=3000 | 1,407 | 16.7 | 11.1 | 21.1 | 15.5 | 16.3 | 11.2 | 8.1 | 10.39 | 35.6% | 19.3% |
+| 1000-3000 | 1,710 | 14.2 | 8.7 | 20.2 | 16.3 | 16.7 | 12.5 | 11.5 | 11.95 | 40.6% | 24.0% |
+| 300-1000 | 1,398 | 13.3 | 8.7 | 16.2 | 15.4 | 20.2 | 15.7 | 10.5 | 13.79 | 46.4% | 26.2% |
+| <300 | 1,489 | 8.3 | 5.6 | 14.8 | 14.4 | 22.0 | 22.8 | 12.0 | 18.3 | 56.8% | 34.8% |
+| >=3000 | 1,423 | 16.9 | 11.0 | 21.1 | 15.5 | 16.3 | 11.1 | 8.0 | 10.34 | 35.4% | 19.1% |
 
 fair_v1 match winners, pregame-clean, first observation per match. 'model_minus_observed' > 0 on the model-favoured side means the model over-stated that side (overconfidence in the disagreement)
 
@@ -406,65 +406,65 @@ Strict executable CLV exists only where first-ball truth exists (ATP/WTA main to
 
 ## 11. Root causes of large gaps (primary match-winner models)
 
-### >= ge_15 pp (N = 5,357)
+### >= ge_15 pp (N = 5,411)
 
 | primary cause | class | N | share |
 |---|---|---|---|
-| MARKET_ALREADY_SETTLED_WHEN_PRICED | coverage | 1,791 | 33.4% |
-| STALE_QUOTE | market_freshness | 1,655 | 30.9% |
-| POOR_DATA | data | 401 | 7.5% |
+| MARKET_ALREADY_SETTLED_WHEN_PRICED | coverage | 1,791 | 33.1% |
+| STALE_QUOTE | market_freshness | 1,709 | 31.6% |
+| POOR_DATA | data | 401 | 7.4% |
 | BOOK_QUALITY | execution | 339 | 6.3% |
 | LIMITED_DATA | data | 317 | 5.9% |
-| POSSIBLY_IN_PLAY_QUOTE | market_freshness/coverage | 308 | 5.8% |
+| POSSIBLY_IN_PLAY_QUOTE | market_freshness/coverage | 308 | 5.7% |
 | UNEXPLAINED_MODEL_DISAGREEMENT | model_calibration_or_unknown | 257 | 4.8% |
 | IN_PLAY_QUOTE | market_freshness/coverage | 181 | 3.4% |
-| IDENTITY_AMBIGUOUS | mapping | 105 | 2.0% |
+| IDENTITY_AMBIGUOUS | mapping | 105 | 1.9% |
 | MODEL_LONE_OUTLIER_VS_EXTERNAL | model_calibration | 3 | 0.1% |
 
-Cause class: coverage 33.4%, market_freshness 30.9%, data 13.4%, market_freshness/coverage 9.1%, execution 6.3%, model_calibration_or_unknown 4.8%, mapping 2.0%, model_calibration 0.1%
+Cause class: coverage 33.1%, market_freshness 31.6%, data 13.3%, market_freshness/coverage 9.0%, execution 6.3%, model_calibration_or_unknown 4.8%, mapping 1.9%, model_calibration 0.1%
 
-Ex-ante reason tags (multi-label, available at the observation's own time): NO_EXTERNAL_REFERENCE 99.9%, START_UNVERIFIABLE 94.4%, STALE_KALSHI_QUOTE 64.6%, LOW_DATA_QUALITY 63.3%, STALE_PLAYER_DATA 53.0%, THIN_PLAYER_HISTORY 51.7%, MODEL_INTERNAL_DISAGREEMENT 34.0%, ASYMMETRIC_SAMPLE_SIZE 28.8%, MODEL_HIGH_UNCERTAINTY 14.8%, WIDE_SPREAD 14.7%, PLAYER_IDENTITY_RISK 10.9%, LEVEL_TRANSFER_RISK 8.1%, EVENT_MAPPING_RISK 6.2%, LOW_DISPLAYED_LIQUIDITY 5.1%, MODEL_CALIBRATION_OUTLIER 2.0%, UNKNOWN 0.7%, EXTERNAL_MARKET_REJECTION 0.1%
+Ex-ante reason tags (multi-label, available at the observation's own time): NO_EXTERNAL_REFERENCE 99.9%, START_UNVERIFIABLE 94.5%, STALE_KALSHI_QUOTE 65.0%, LOW_DATA_QUALITY 63.5%, STALE_PLAYER_DATA 52.4%, THIN_PLAYER_HISTORY 52.0%, MODEL_INTERNAL_DISAGREEMENT 34.0%, ASYMMETRIC_SAMPLE_SIZE 28.8%, WIDE_SPREAD 15.2%, MODEL_HIGH_UNCERTAINTY 14.8%, PLAYER_IDENTITY_RISK 10.9%, LEVEL_TRANSFER_RISK 8.0%, EVENT_MAPPING_RISK 6.2%, LOW_DISPLAYED_LIQUIDITY 5.2%, MODEL_CALIBRATION_OUTLIER 2.0%, UNKNOWN 0.7%, EXTERNAL_MARKET_REJECTION 0.1%
 
-Hindsight tags (diagnosis only): LIKELY_IN_PLAY_QUOTE 36.0%, POST_SETTLEMENT_OBSERVATION 33.4%, POSSIBLE_IN_PLAY_QUOTE 6.5%, CONFIRMED_IN_PLAY_QUOTE 1.1%
+Hindsight tags (diagnosis only): LIKELY_IN_PLAY_QUOTE 35.6%, POST_SETTLEMENT_OBSERVATION 33.1%, POSSIBLE_IN_PLAY_QUOTE 6.4%, CONFIRMED_IN_PLAY_QUOTE 1.1%
 
-### >= ge_25 pp (N = 2,961)
+### >= ge_25 pp (N = 2,986)
 
 | primary cause | class | N | share |
 |---|---|---|---|
-| MARKET_ALREADY_SETTLED_WHEN_PRICED | coverage | 1,390 | 46.9% |
-| STALE_QUOTE | market_freshness | 746 | 25.2% |
+| MARKET_ALREADY_SETTLED_WHEN_PRICED | coverage | 1,390 | 46.6% |
+| STALE_QUOTE | market_freshness | 771 | 25.8% |
 | POOR_DATA | data | 169 | 5.7% |
 | BOOK_QUALITY | execution | 167 | 5.6% |
 | POSSIBLY_IN_PLAY_QUOTE | market_freshness/coverage | 161 | 5.4% |
-| IN_PLAY_QUOTE | market_freshness/coverage | 106 | 3.6% |
+| IN_PLAY_QUOTE | market_freshness/coverage | 106 | 3.5% |
 | LIMITED_DATA | data | 86 | 2.9% |
 | IDENTITY_AMBIGUOUS | mapping | 75 | 2.5% |
-| UNEXPLAINED_MODEL_DISAGREEMENT | model_calibration_or_unknown | 61 | 2.1% |
+| UNEXPLAINED_MODEL_DISAGREEMENT | model_calibration_or_unknown | 61 | 2.0% |
 
-Cause class: coverage 46.9%, market_freshness 25.2%, market_freshness/coverage 9.0%, data 8.6%, execution 5.6%, mapping 2.5%, model_calibration_or_unknown 2.1%
+Cause class: coverage 46.6%, market_freshness 25.8%, market_freshness/coverage 8.9%, data 8.5%, execution 5.6%, mapping 2.5%, model_calibration_or_unknown 2.0%
 
-Ex-ante reason tags (multi-label, available at the observation's own time): NO_EXTERNAL_REFERENCE 100.0%, START_UNVERIFIABLE 96.8%, STALE_KALSHI_QUOTE 71.6%, LOW_DATA_QUALITY 67.0%, THIN_PLAYER_HISTORY 54.0%, STALE_PLAYER_DATA 50.9%, MODEL_INTERNAL_DISAGREEMENT 35.1%, ASYMMETRIC_SAMPLE_SIZE 31.4%, MODEL_HIGH_UNCERTAINTY 16.0%, PLAYER_IDENTITY_RISK 13.7%, WIDE_SPREAD 13.6%, LEVEL_TRANSFER_RISK 7.9%, EVENT_MAPPING_RISK 7.4%, LOW_DISPLAYED_LIQUIDITY 5.5%, MODEL_CALIBRATION_OUTLIER 2.9%, UNKNOWN 0.2%
+Ex-ante reason tags (multi-label, available at the observation's own time): NO_EXTERNAL_REFERENCE 100.0%, START_UNVERIFIABLE 96.8%, STALE_KALSHI_QUOTE 71.8%, LOW_DATA_QUALITY 67.2%, THIN_PLAYER_HISTORY 54.2%, STALE_PLAYER_DATA 50.5%, MODEL_INTERNAL_DISAGREEMENT 35.2%, ASYMMETRIC_SAMPLE_SIZE 31.4%, MODEL_HIGH_UNCERTAINTY 16.0%, WIDE_SPREAD 14.0%, PLAYER_IDENTITY_RISK 13.7%, LEVEL_TRANSFER_RISK 7.9%, EVENT_MAPPING_RISK 7.4%, LOW_DISPLAYED_LIQUIDITY 5.7%, MODEL_CALIBRATION_OUTLIER 2.9%, UNKNOWN 0.2%
 
-Hindsight tags (diagnosis only): LIKELY_IN_PLAY_QUOTE 49.6%, POST_SETTLEMENT_OBSERVATION 46.9%, POSSIBLE_IN_PLAY_QUOTE 6.3%, CONFIRMED_IN_PLAY_QUOTE 1.2%
+Hindsight tags (diagnosis only): LIKELY_IN_PLAY_QUOTE 49.2%, POST_SETTLEMENT_OBSERVATION 46.6%, POSSIBLE_IN_PLAY_QUOTE 6.2%, CONFIRMED_IN_PLAY_QUOTE 1.2%
 
 ### Identity / side integrity audit, every >= 25 pp comparison
 
-Status: {"IDENTITY_VERIFIED": 2520, "IDENTITY_AMBIGUOUS": 441}; ticker orientation: {"VERIFIED": 2961}.
+Status: {"IDENTITY_VERIFIED": 2540, "IDENTITY_AMBIGUOUS": 446}; ticker orientation: {"VERIFIED": 2986}.
 
-Checks: discipline:AMBIGUOUS 185, discipline:PASS 2776, identity_confidence:AMBIGUOUS 406, identity_confidence:PASS 2555, level_mapping:NA 197, level_mapping:PASS 2764, market_pair:AMBIGUOUS 65, market_pair:NA 83, market_pair:PASS 2813, model_complement:NA 52, model_complement:PASS 2909, namesake:PASS 2961, physical_match_id:NA 1420, physical_match_id:PASS 1541, player_ids:PASS 2961, same_pair_other_event:PASS 2961, ticker_orientation:PASS 2961
+Checks: discipline:AMBIGUOUS 185, discipline:PASS 2801, identity_confidence:AMBIGUOUS 410, identity_confidence:PASS 2576, level_mapping:NA 197, level_mapping:PASS 2789, market_pair:AMBIGUOUS 66, market_pair:NA 83, market_pair:PASS 2837, model_complement:NA 52, model_complement:PASS 2934, namesake:PASS 2986, physical_match_id:NA 1420, physical_match_id:PASS 1566, player_ids:PASS 2986, same_pair_other_event:PASS 2986, ticker_orientation:PASS 2986
 
 ## 12. Level analysis
 
 | level | N | >=25 all | >=25 clean | share of all >=25 | >=25 cause classes | median clean | clean Brier model / Kalshi (n) | stale | data POOR | identity not verified | settled/in-play |
 |---|---|---|---|---|---|---|---|---|---|---|---|
 | ATP | 380 | 5.5% | 5.7% | 0.7% | {"market_freshness": 20, "execution": 1} | 6.88 | 0.1791 / 0.1823 (49) | 47.6% | 0.0% | 0.5% | 2.9% |
-| CHALLENGER | 2,166 | 18.4% | 8.1% | 13.5% | {"coverage": 215, "market_freshness": 95, "market_freshness/coverage": 49, "data": 21, "model_calibration_or_unknown": 15, "execution": 4} | 7.48 | 0.2155 / 0.2008 (625) | 56.9% | 5.5% | 1.2% | 22.7% |
+| CHALLENGER | 2,200 | 18.2% | 8.0% | 13.4% | {"coverage": 215, "market_freshness": 97, "market_freshness/coverage": 49, "data": 21, "model_calibration_or_unknown": 15, "execution": 4} | 7.51 | 0.2155 / 0.2008 (625) | 57.6% | 5.5% | 1.2% | 22.3% |
 | DOUBLES | 384 | 48.2% | 48.1% | 6.2% | {"market_freshness": 106, "execution": 32, "mapping": 28, "market_freshness/coverage": 12, "coverage": 7} | 24.1 | 0.3208 / 0.2301 (163) | 60.9% | 0.0% | 100.0% | 10.2% |
-| ITF_MEN | 3,826 | 25.1% | 13.5% | 32.5% | {"coverage": 541, "market_freshness": 174, "data": 88, "market_freshness/coverage": 74, "execution": 74, "mapping": 10, "model_calibration_or_unknown": 1} | 9.78 | 0.2136 / 0.188 (1350) | 56.2% | 49.1% | 5.3% | 32.9% |
-| ITF_WOMEN | 4,132 | 29.8% | 18.9% | 41.6% | {"coverage": 610, "market_freshness": 303, "data": 126, "market_freshness/coverage": 92, "execution": 47, "mapping": 35, "model_calibration_or_unknown": 19} | 12.67 | 0.2031 / 0.1856 (1257) | 60.7% | 56.7% | 8.2% | 32.2% |
+| ITF_MEN | 3,844 | 25.2% | 13.7% | 32.4% | {"coverage": 541, "market_freshness": 180, "data": 88, "market_freshness/coverage": 74, "execution": 74, "mapping": 10, "model_calibration_or_unknown": 1} | 9.79 | 0.2136 / 0.188 (1350) | 56.4% | 49.3% | 5.3% | 32.7% |
+| ITF_WOMEN | 4,195 | 29.8% | 19.1% | 41.8% | {"coverage": 610, "market_freshness": 320, "data": 126, "market_freshness/coverage": 92, "execution": 47, "mapping": 35, "model_calibration_or_unknown": 19} | 12.8 | 0.2031 / 0.1856 (1257) | 61.3% | 57.1% | 8.3% | 31.7% |
 | OTHER | 149 | 8.1% | 7.3% | 0.4% | {"execution": 5, "market_freshness": 2, "model_calibration_or_unknown": 2, "coverage": 1, "mapping": 1, "market_freshness/coverage": 1} | 7.41 | 0.1411 / 0.1522 (42) | 28.2% | 4.0% | 4.0% | 8.1% |
 | WTA | 798 | 9.4% | 8.1% | 2.5% | {"market_freshness": 34, "model_calibration_or_unknown": 12, "data": 11, "market_freshness/coverage": 9, "execution": 4, "coverage": 4, "mapping": 1} | 8.66 | 0.2006 / 0.1964 (129) | 40.5% | 2.6% | 1.5% | 3.8% |
-| WTA125 | 435 | 17.2% | 9.4% | 2.5% | {"market_freshness/coverage": 30, "model_calibration_or_unknown": 12, "market_freshness": 12, "coverage": 12, "data": 9} | 10.27 | 0.2273 / 0.204 (221) | 35.6% | 8.7% | 0.5% | 19.5% |
+| WTA125 | 436 | 17.2% | 9.4% | 2.5% | {"market_freshness/coverage": 30, "model_calibration_or_unknown": 12, "market_freshness": 12, "coverage": 12, "data": 9} | 10.36 | 0.2273 / 0.204 (221) | 35.8% | 8.7% | 0.5% | 19.5% |
 
 ## 13. Top 50 largest discrepancies (one per event)
 
@@ -477,7 +477,7 @@ Checks: discipline:AMBIGUOUS 185, discipline:PASS 2776, identity_confidence:AMBI
 | 5 | `KXITFMATCH-26SEP23MORPOU-POU` | ITF_MEN | gen1_ledger | 85% / 4% | +81 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.1h before the model priced it (a finished match); the quote was captured 6 min before settlement (in-play print); quote age at model time 73 min (STALE); data POOR (grade F, thinner serve sample 590.0, ratio 13.93); no external reference |
 | 6 | `KXITFMATCH-26OCT01CHAVAN-CHA` | ITF_MEN | fair_v1 | 84% / 4% | +80 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | ADEQUATE | NO | Kalshi had settled this market 4.5h before the model priced it (a finished match); the quote was captured 11 min before settlement (in-play print); quote age at model time 278 min (STALE); no external reference |
 | 7 | `KXITFWMATCH-26SEP23PISLIZ-PIS` | ITF_WOMEN | gen1_ledger | 19% / 98% | -79 | IN_PLAY_QUOTE | VERIFIED | AGING | NO_EXTERNAL_REFERENCE | POOR | YES | the quote was captured 15 min before settlement (in-play print); quote age at model time 13 min (AGING); data POOR (grade F, thinner serve sample 242.0, ratio 7.19); no external reference |
-| 8 | `KXITFWMATCH-26SEP30BARGAR-BAR` | ITF_WOMEN | fair_v1 | 80% / 2% | +77 | IN_PLAY_QUOTE | VERIFIED | AGING | NO_EXTERNAL_REFERENCE | POOR | NO | the quote was captured 37 min before settlement (in-play print); quote age at model time 29 min (AGING); data POOR (grade F, thinner serve sample 149.0, ratio 14.2); no external reference |
+| 8 | `KXITFWMATCH-26SEP30BARGAR-BAR` | ITF_WOMEN | fair_v1 | 80% / 2% | +77 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 9.4h before the model priced it (a finished match); the quote was captured 6 min before settlement (in-play print); quote age at model time 571 min (STALE); data POOR (grade F, thinner serve sample 149.0, ratio 14.2); no external reference |
 | 9 | `KXWTADOUBLES-26SEP18DABSTEQUESAL-QUESAL` | DOUBLES | gen1_ledger | 86% / 9% | +77 | STALE_QUOTE | AMBIGUOUS | STALE | NO_EXTERNAL_REFERENCE | LIMITED | -- | quote age at model time 48 min (STALE); identity AMBIGUOUS (identity_confidence, discipline); data LIMITED (grade C, thinner serve sample None, ratio None); no external reference |
 | 10 | `KXITFMATCH-26SEP17TIUBES-TIU` | ITF_MEN | gen1_ledger | 87% / 10% | +77 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.5h before the model priced it (a finished match); the quote was captured 13 min before settlement (in-play print); quote age at model time 105 min (STALE); data LIMITED (grade B, thinner serve sample 1868.0, ratio 1.45); no external reference |
 | 11 | `KXITFWMATCH-26SEP17HUAKHO-KHO` | ITF_WOMEN | gen1_ledger | 82% / 6% | +76 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.1h before the model priced it (a finished match); the quote was captured 8 min before settlement (in-play print); quote age at model time 74 min (STALE); data LIMITED (grade C, thinner serve sample 2526.0, ratio 2.48); no external reference |
@@ -489,50 +489,50 @@ Checks: discipline:AMBIGUOUS 185, discipline:PASS 2776, identity_confidence:AMBI
 | 17 | `KXITFWMATCH-26SEP25KHOWAN-KHO` | ITF_WOMEN | gen1_ledger | 87% / 12% | +75 | LIMITED_DATA | VERIFIED | AGING | NO_EXTERNAL_REFERENCE | LIMITED | NO | quote age at model time 17 min (AGING); data LIMITED (grade C, thinner serve sample 3118.0, ratio 2.01); no external reference |
 | 18 | `KXITFMATCH-26OCT04SURLOK-LOK` | ITF_MEN | gen1_ledger | 76% / 2% | +74 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.1h before the model priced it (a finished match); the quote was captured 8 min before settlement (in-play print); quote age at model time 76 min (STALE); data POOR (grade F, thinner serve sample 75.0, ratio 16.01); no external reference |
 | 19 | `KXITFWMATCH-26SEP22SAMMES-SAM` | ITF_WOMEN | gen1_ledger | 82% / 8% | +74 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 2.8h before the model priced it (a finished match); the quote was captured 33 min before settlement (in-play print); quote age at model time 204 min (STALE); data LIMITED (grade C, thinner serve sample 688.0, ratio 3.53); no external reference |
-| 20 | `KXITFMATCH-26OCT03HOULOC-HOU` | ITF_MEN | fair_v1 | 78% / 4% | +74 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 6.7h before the model priced it (a finished match); the quote was captured 5 min before settlement (in-play print); quote age at model time 408 min (STALE); data POOR (grade F, thinner serve sample 4430.0, ratio 1.14); no external reference |
+| 20 | `KXITFMATCH-26OCT03HOULOC-HOU` | ITF_MEN | fair_v1 | 78% / 4% | +74 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.8h before the model priced it (a finished match); the quote was captured 5 min before settlement (in-play print); quote age at model time 110 min (STALE); data POOR (grade F, thinner serve sample 4430.0, ratio 1.14); no external reference |
 | 21 | `KXWTADOUBLES-26SEP24CHAFANBACJAN-BACJAN` | DOUBLES | gen1_ledger | 95% / 21% | +74 | STALE_QUOTE | AMBIGUOUS | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | quote age at model time 43 min (STALE); identity AMBIGUOUS (identity_confidence, discipline); data LIMITED (grade C, thinner serve sample None, ratio None); no external reference |
 | 22 | `KXITFMATCH-26SEP16KOLGRI-KOL` | ITF_MEN | gen1_ledger | 77% / 4% | +73 | IN_PLAY_QUOTE | AMBIGUOUS | AGING | NO_EXTERNAL_REFERENCE | POOR | NO | the quote was captured 34 min before settlement (in-play print); quote age at model time 26 min (AGING); identity AMBIGUOUS (identity_confidence); data POOR (grade F, thinner serve sample 0.0, ratio 1395.78); no external reference |
-| 23 | `KXATPCHALLENGERMATCH-26OCT04BAYICH-ICH` | CHALLENGER | fair_v1 | 82% / 9% | +73 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 13.2h before the model priced it (a finished match); the quote was captured 10 min before settlement (in-play print); quote age at model time 799 min (STALE); data POOR (grade D, thinner serve sample 357.0, ratio 8.77); no external reference |
+| 23 | `KXATPCHALLENGERMATCH-26OCT04BAYICH-ICH` | CHALLENGER | fair_v1 | 82% / 9% | +73 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 2.4h before the model priced it (a finished match); the quote was captured 10 min before settlement (in-play print); quote age at model time 153 min (STALE); data POOR (grade D, thinner serve sample 357.0, ratio 8.77); no external reference |
 | 24 | `KXITFWMATCH-26SEP23KAMABB-ABB` | ITF_WOMEN | gen1_ledger | 76% / 2% | +73 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.0h before the model priced it (a finished match); the quote was captured 12 min before settlement (in-play print); quote age at model time 75 min (STALE); data POOR (grade D, thinner serve sample 1000.0, ratio 2.78); no external reference |
 | 25 | `KXATPCHALLENGERMATCH-26OCT01NAKSMI-SMI` | CHALLENGER | fair_v1 | 86% / 12% | +73 | STALE_QUOTE | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | -- | quote age at model time 347 min (STALE); data POOR (grade D, thinner serve sample 451.0, ratio 12.18); no external reference |
 | 26 | `KXITFWMATCH-26SEP13HADLUK-LUK` | ITF_WOMEN | gen1_ledger | 76% / 3% | +72 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.6h before the model priced it (a finished match); the quote was captured 16 min before settlement (in-play print); quote age at model time 109 min (STALE); data POOR (grade F, thinner serve sample 0.0, ratio 3326.68); no external reference |
 | 27 | `KXITFMATCH-26SEP12NAWBRO-NAW` | ITF_MEN | gen1_ledger | 76% / 4% | +72 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 0.7h before the model priced it (a finished match); the quote was captured 6 min before settlement (in-play print); quote age at model time 46 min (STALE); data POOR (grade D, thinner serve sample 802.0, ratio 5.29); no external reference |
-| 28 | `KXITFWMATCH-26OCT03ZELSUS-ZEL` | ITF_WOMEN | fair_v1 | 76% / 4% | +72 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 4.1h before the model priced it (a finished match); the quote was captured 12 min before settlement (in-play print); quote age at model time 256 min (STALE); data POOR (grade D, thinner serve sample 527.0, ratio 4.73); no external reference |
-| 29 | `KXITFMATCH-26OCT02ZGOPAP-PAP` | ITF_MEN | fair_v1 | 94% / 22% | +72 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.8h before the model priced it (a finished match); the quote was captured 8 min before settlement (in-play print); quote age at model time 114 min (STALE); data POOR (grade D, thinner serve sample 63.0, ratio 48.25); no external reference |
+| 28 | `KXITFWMATCH-26OCT03ZELSUS-ZEL` | ITF_WOMEN | fair_v1 | 76% / 4% | +72 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 3.6h before the model priced it (a finished match); the quote was captured 12 min before settlement (in-play print); quote age at model time 230 min (STALE); data POOR (grade D, thinner serve sample 527.0, ratio 4.73); no external reference |
+| 29 | `KXITFMATCH-26OCT02ZGOPAP-PAP` | ITF_MEN | fair_v1 | 94% / 22% | +72 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 2.2h before the model priced it (a finished match); the quote was captured 8 min before settlement (in-play print); quote age at model time 141 min (STALE); data POOR (grade D, thinner serve sample 63.0, ratio 48.25); no external reference |
 | 30 | `KXITFWMATCH-26SEP25GALGAR-GAR` | ITF_WOMEN | gen1_ledger | 73% / 2% | +72 | IN_PLAY_QUOTE | VERIFIED | AGING | NO_EXTERNAL_REFERENCE | LIMITED | NO | the quote was captured 23 min before settlement (in-play print); quote age at model time 18 min (AGING); data LIMITED (grade C, thinner serve sample 576.0, ratio 4.5); no external reference |
 | 31 | `KXITFMATCH-26SEP24PIEDAR-PIE` | ITF_MEN | gen1_ledger | 86% / 14% | +72 | POOR_DATA | VERIFIED | AGING | NO_EXTERNAL_REFERENCE | POOR | NO | quote age at model time 18 min (AGING); data POOR (grade F, thinner serve sample 300.0, ratio 13.88); no external reference |
 | 32 | `KXATPCHALLENGERDOUBLES-26SEP30REYSANDOMTOR-DOMTOR` | DOUBLES | gen1_ledger | 86% / 15% | +71 | IDENTITY_AMBIGUOUS | AMBIGUOUS | AGING | NO_EXTERNAL_REFERENCE | LIMITED | NO | quote age at model time 28 min (AGING); identity AMBIGUOUS (identity_confidence, discipline); data LIMITED (grade C, thinner serve sample None, ratio None); no external reference |
-| 33 | `KXATPCHALLENGERMATCH-26SEP28MARLAN-LAN` | CHALLENGER | fair_v1 | 74% / 2% | +71 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 2.5h before the model priced it (a finished match); the quote was captured 5 min before settlement (in-play print); quote age at model time 156 min (STALE); data LIMITED (grade C, thinner serve sample 897.0, ratio 5.46); no external reference |
+| 33 | `KXATPCHALLENGERMATCH-26SEP28MARLAN-LAN` | CHALLENGER | fair_v1 | 74% / 2% | +71 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 11.7h before the model priced it (a finished match); the quote was captured 5 min before settlement (in-play print); quote age at model time 708 min (STALE); data LIMITED (grade C, thinner serve sample 897.0, ratio 5.46); no external reference |
 | 34 | `KXITFWMATCH-26SEP26KRODAN-KRO` | ITF_WOMEN | gen1_ledger | 86% / 14% | +71 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.6h before the model priced it (a finished match); the quote was captured 7 min before settlement (in-play print); quote age at model time 100 min (STALE); data LIMITED (grade C, thinner serve sample 851.0, ratio 5.62); no external reference |
 | 35 | `KXATPCHALLENGERMATCH-26SEP28BONHOL-BON` | CHALLENGER | gen1_ledger | 72% / 2% | +71 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | ADEQUATE | NO | Kalshi had settled this market 1.1h before the model priced it (a finished match); the quote was captured 7 min before settlement (in-play print); quote age at model time 73 min (STALE); no external reference |
 | 36 | `KXITFMATCH-26SEP28SUSCHE-CHE` | ITF_MEN | gen1_ledger | 72% / 2% | +71 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 2.5h before the model priced it (a finished match); the quote was captured 10 min before settlement (in-play print); quote age at model time 159 min (STALE); data POOR (grade F, thinner serve sample 126.0, ratio 9.06); no external reference |
 | 37 | `KXWTADOUBLES-26SEP20GARHSIMIHNIC-GARHSI` | DOUBLES | gen1_ledger | 96% / 25% | +71 | STALE_QUOTE | AMBIGUOUS | STALE | NO_EXTERNAL_REFERENCE | LIMITED | YES | quote age at model time 40 min (STALE); identity AMBIGUOUS (identity_confidence, discipline); data LIMITED (grade C, thinner serve sample None, ratio None); no external reference |
 | 38 | `KXITFWMATCH-26SEP29LOLANS-ANS` | ITF_WOMEN | fair_v1 | 77% / 6% | +70 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.6h before the model priced it (a finished match); the quote was captured 16 min before settlement (in-play print); quote age at model time 114 min (STALE); data LIMITED (grade B, thinner serve sample 2163.0, ratio 2.0); no external reference |
-| 39 | `KXITFMATCH-26OCT01KROKUP-KUP` | ITF_MEN | fair_v1 | 74% / 4% | +70 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 3.0h before the model priced it (a finished match); the quote was captured 5 min before settlement (in-play print); quote age at model time 183 min (STALE); data POOR (grade D, thinner serve sample 442.0, ratio 3.44); no external reference |
+| 39 | `KXITFMATCH-26OCT01KROKUP-KUP` | ITF_MEN | fair_v1 | 74% / 4% | +70 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 12.1h before the model priced it (a finished match); the quote was captured 5 min before settlement (in-play print); quote age at model time 732 min (STALE); data POOR (grade D, thinner serve sample 442.0, ratio 3.44); no external reference |
 | 40 | `KXWTAMATCH-26OCT01YASCHW-CHW` | WTA | fair_v1 | 73% / 2% | +70 | STALE_QUOTE | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | ADEQUATE | -- | quote age at model time 51 min (STALE); no external reference |
 | 41 | `KXITFMATCH-26SEP22OVCPOR-OVC` | ITF_MEN | gen1_ledger | 72% / 2% | +70 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.3h before the model priced it (a finished match); the quote was captured 9 min before settlement (in-play print); quote age at model time 85 min (STALE); data POOR (grade F, thinner serve sample 0.0, ratio 441.42); no external reference |
 | 42 | `KXATPCHALLENGERMATCH-26SEP28FERREM-FER` | CHALLENGER | fair_v1 | 77% / 8% | +70 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | ADEQUATE | NO | Kalshi had settled this market 7.9h before the model priced it (a finished match); the quote was captured 3 min before settlement (in-play print); quote age at model time 476 min (STALE); no external reference |
 | 43 | `KXWTADOUBLES-26SEP20CHAFANCHARAK-CHARAK` | DOUBLES | gen1_ledger | 98% / 29% | +70 | STALE_QUOTE | AMBIGUOUS | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | quote age at model time 40 min (STALE); identity AMBIGUOUS (identity_confidence, market_pair, discipline); data LIMITED (grade C, thinner serve sample None, ratio None); no external reference |
 | 44 | `KXITFMATCH-26SEP23BIDGRI-BID` | ITF_MEN | gen1_ledger | 71% / 2% | +69 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.0h before the model priced it (a finished match); the quote was captured 11 min before settlement (in-play print); quote age at model time 73 min (STALE); data POOR (grade D, thinner serve sample 351.0, ratio 3.98); no external reference |
-| 45 | `KXITFWMATCH-26SEP30KOKUEM-KOK` | ITF_WOMEN | fair_v1 | 79% / 10% | +69 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.2h before the model priced it (a finished match); the quote was captured 15 min before settlement (in-play print); quote age at model time 86 min (STALE); data LIMITED (grade C, thinner serve sample 824.0, ratio 2.35); no external reference |
+| 45 | `KXITFWMATCH-26SEP30KOKUEM-KOK` | ITF_WOMEN | fair_v1 | 79% / 10% | +69 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 12.7h before the model priced it (a finished match); the quote was captured 15 min before settlement (in-play print); quote age at model time 776 min (STALE); data LIMITED (grade C, thinner serve sample 824.0, ratio 2.35); no external reference |
 | 46 | `KXITFMATCH-26SEP20WILRAH-RAH` | ITF_MEN | gen1_ledger | 72% / 4% | +69 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.2h before the model priced it (a finished match); the quote was captured 12 min before settlement (in-play print); quote age at model time 83 min (STALE); data LIMITED (grade B, thinner serve sample 2782.0, ratio 1.84); no external reference |
 | 47 | `KXITFMATCH-26SEP26NAGTHO-NAG` | ITF_MEN | gen1_ledger | 76% / 7% | +69 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 1.4h before the model priced it (a finished match); the quote was captured 7 min before settlement (in-play print); quote age at model time 89 min (STALE); data LIMITED (grade C, thinner serve sample 1323.0, ratio 4.45); no external reference |
 | 48 | `KXITFWMATCH-26SEP26PERPRE-PER` | ITF_WOMEN | gen1_ledger | 78% / 10% | +68 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 1.6h before the model priced it (a finished match); the quote was captured 8 min before settlement (in-play print); quote age at model time 102 min (STALE); data POOR (grade D, thinner serve sample 1020.0, ratio 2.77); no external reference |
 | 49 | `KXITFMATCH-26SEP22YILAGA-AGA` | ITF_MEN | gen1_ledger | 70% / 2% | +68 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | LIMITED | NO | Kalshi had settled this market 3.3h before the model priced it (a finished match); the quote was captured 8 min before settlement (in-play print); quote age at model time 203 min (STALE); data LIMITED (grade B, thinner serve sample 2786.0, ratio 2.08); no external reference |
-| 50 | `KXITFMATCH-26SEP30DIMURA-URA` | ITF_MEN | fair_v1 | 71% / 2% | +68 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 13.5h before the model priced it (a finished match); the quote was captured 9 min before settlement (in-play print); quote age at model time 819 min (STALE); data POOR (grade F, thinner serve sample 174.0, ratio 2.63); no external reference |
+| 50 | `KXITFMATCH-26SEP30DIMURA-URA` | ITF_MEN | fair_v1 | 71% / 2% | +68 | MARKET_ALREADY_SETTLED_WHEN_PRICED | VERIFIED | STALE | NO_EXTERNAL_REFERENCE | POOR | NO | Kalshi had settled this market 13.1h before the model priced it (a finished match); the quote was captured 9 min before settlement (in-play print); quote age at model time 793 min (STALE); data POOR (grade F, thinner serve sample 174.0, ratio 2.63); no external reference |
 
 ## 14. Answers (Part M)
 
-* **1_huge_gaps_mostly_lower_tour**: `{"answer": "YES", "share_of_ge_25pp_from_non_main_tour": 0.9677, "by_level_share_of_ge_25pp": {"ATP": 0.0071, "CHALLENGER": 0.1348, "DOUBLES": 0.0625, "ITF_MEN": 0.3249, "ITF_WOMEN": 0.4161, "OTHER": 0.0041, "WTA": 0.0253, "WTA125": 0.0253}}`
-* **2_ge_25pp_caused_by_stale_prices**: `{"share_quote_older_than_30min_at_model_time": 0.716, "share_primary_cause_market_settled_or_in_play": 0.5596, "share_primary_cause_stale_quote_only": 0.2519}`
-* **3_ge_25pp_identity_or_ticker_problems**: `{"identity_or_orientation_FAILED": 0, "n_ge_25pp": 2961, "identity_ambiguous_share": 0.1489, "ticker_orientation": {"VERIFIED": 2961}}`
-* **4_external_agrees_with_kalshi_not_model**: `{"all_ge_25pp": {"n": 1541, "with_external": 8, "coverage": 0.0052, "external_status": {"EXTERNAL_STALE": 8}, "triangulation": {"INSUFFICIENT_INPUTS": 8}, "share_external_agrees_with_kalshi": 0.0, "share_external_supports_model": 0.0}, "pregame_clean_ge_25pp": {"n": 625, "with_external": 8, "coverage": 0.0128, "external_status": {"EXTERNAL_STALE": 8}, "triangulation": {"INSUFFICIENT_INPUTS": 8}, "share_external_agrees_with_kalshi": 0.0, "share_external_supports_model": 0.0}}`
-* **5_extreme_gaps_and_thin_samples**: `{"median_thinner_serve_points": 824.0, "median_sample_ratio": 2.27, "median_min_matches": 28.0, "median_max_days_since_last": 173.0, "share_severe_asymmetry": 0.1807, "data_status": {"POOR": 1384, "LIMITED": 967, "ADEQUATE": 610}, "comparison_lt_10pp": {"median_thinner_serve_points": 1938.0, "median_sample_ratio": 1.74, "median_min_matches": 77.0}}`
+* **1_huge_gaps_mostly_lower_tour**: `{"answer": "YES", "share_of_ge_25pp_from_non_main_tour": 0.9679, "by_level_share_of_ge_25pp": {"ATP": 0.007, "CHALLENGER": 0.1343, "DOUBLES": 0.062, "ITF_MEN": 0.3242, "ITF_WOMEN": 0.4183, "OTHER": 0.004, "WTA": 0.0251, "WTA125": 0.0251}}`
+* **2_ge_25pp_caused_by_stale_prices**: `{"share_quote_older_than_30min_at_model_time": 0.7184, "share_primary_cause_market_settled_or_in_play": 0.5549, "share_primary_cause_stale_quote_only": 0.2582}`
+* **3_ge_25pp_identity_or_ticker_problems**: `{"identity_or_orientation_FAILED": 0, "n_ge_25pp": 2986, "identity_ambiguous_share": 0.1494, "ticker_orientation": {"VERIFIED": 2986}}`
+* **4_external_agrees_with_kalshi_not_model**: `{"all_ge_25pp": {"n": 1566, "with_external": 10, "coverage": 0.0064, "external_status": {"EXTERNAL_STALE": 10}, "triangulation": {"INSUFFICIENT_INPUTS": 10}, "share_external_agrees_with_kalshi": 0.0, "share_external_supports_model": 0.0}, "pregame_clean_ge_25pp": {"n": 650, "with_external": 10, "coverage": 0.0154, "external_status": {"EXTERNAL_STALE": 10}, "triangulation": {"INSUFFICIENT_INPUTS": 10}, "share_external_agrees_with_kalshi": 0.0, "share_external_supports_model": 0.0}}`
+* **5_extreme_gaps_and_thin_samples**: `{"median_thinner_serve_points": 824.0, "median_sample_ratio": 2.27, "median_min_matches": 28.0, "median_max_days_since_last": 173.0, "share_severe_asymmetry": 0.1815, "data_status": {"POOR": 1405, "LIMITED": 968, "ADEQUATE": 613}, "comparison_lt_10pp": {"median_thinner_serve_points": 1937.0, "median_sample_ratio": 1.75, "median_min_matches": 77.0}}`
 * **6_sample_asymmetry_overconfidence**: `{"2-4x": {"n": 224, "model_minus_observed": 0.0844, "kalshi_minus_observed": -0.0469, "brier_diff_model_minus_kalshi": 0.0064}, "4-10x": {"n": 153, "model_minus_observed": 0.1025, "kalshi_minus_observed": -0.038, "brier_diff_model_minus_kalshi": 0.0142}, "<2x": {"n": 444, "model_minus_observed": 0.0646, "kalshi_minus_observed": -0.0548, "brier_diff_model_minus_kalshi": 0.0099}, ">=10x": {"n": 162, "model_minus_observed": 0.0771, "kalshi_minus_observed": -0.0887, "brier_diff_model_minus_kalshi": 0.0106}}`
 * **7_gen2_too_extreme**: `{"gen2": {"n": 983, "model": {"intercept": -0.607, "slope": 0.926, "slope_se": 0.08}, "kalshi_mid_same_rows": {"intercept": 0.226, "slope": 1.178, "slope_se": 0.09}, "mean_extremity_model": 0.1887, "mean_extremity_kalshi": 0.1811, "model_brier": 0.2238, "kalshi_brier": 0.194, "brier_diff_model_minus_kalshi": 0.0298, "brier_diff_se": 0.0061, "model_logloss": 0.6405, "kalshi_logloss": 0.5671}, "fair_v1": {"n": 983, "model": {"intercept": -0.391, "slope": 1.142, "slope_se": 0.091}, "kalshi_mid_same_rows": {"intercept": 0.394, "slope": 1.27, "slope_se": 0.094}, "mean_extremity_model": 0.1739, "mean_extremity_kalshi": 0.182, "model_brier": 0.2038, "kalshi_brier": 0.1939, "brier_diff_model_minus_kalshi": 0.0099, "brier_diff_se": 0.0048, "model_logloss": 0.592, "kalshi_logloss": 0.5668}, "gen1_elo": {"n": 983, "model": {"intercept": -0.413, "slope": 1.139, "slope_se": 0.09}, "kalshi_mid_same_rows": {"intercept": 0.345, "slope": 1.23, "slope_se": 0.092}, "mean_extremity_model": 0.1783, "mean_extremity_kalshi": 0.1823, "model_brier": 0.2026, "kalshi_brier": 0.1939, "brier_diff_model_minus_kalshi": 0.0088, "brier_diff_se": 0.0047, "model_logloss": 0.5909, "kalshi_logloss": 0.5667}}`
-* **8_fair_v1_reduces_pathological_gaps**: `{"all": {"fair_v1": {"share_ge_25": 0.261, "share_ge_15": 0.447, "median_abs_gap": 13.09, "n": 5904}, "gen1_elo": {"share_ge_25": 0.2524, "share_ge_15": 0.435, "median_abs_gap": 12.52, "n": 5904}, "gen1_sr": {"share_ge_25": 0.3132, "share_ge_15": 0.5339, "median_abs_gap": 16.43, "n": 5904}, "gen2": {"share_ge_25": 0.3137, "share_ge_15": 0.5168, "median_abs_gap": 15.67, "n": 5904}}, "pregame_clean": {"fair_v1": {"share_ge_25": 0.147, "share_ge_15": 0.3376, "median_abs_gap": 10.24, "n": 4251}, "gen1_elo": {"share_ge_25": 0.1454, "share_ge_15": 0.3213, "median_abs_gap": 9.54, "n": 4251}, "gen1_sr": {"share_ge_25": 0.2016, "share_ge_15": 0.4361, "median_abs_gap": 13.03, "n": 4251}, "gen2": {"share_ge_25": 0.2174, "share_ge_15": 0.4359, "median_abs_gap": 12.86, "n": 4251}}}`
+* **8_fair_v1_reduces_pathological_gaps**: `{"all": {"fair_v1": {"share_ge_25": 0.2601, "share_ge_15": 0.4473, "median_abs_gap": 13.09, "n": 6020}, "gen1_elo": {"share_ge_25": 0.2517, "share_ge_15": 0.4354, "median_abs_gap": 12.53, "n": 6020}, "gen1_sr": {"share_ge_25": 0.3126, "share_ge_15": 0.5342, "median_abs_gap": 16.44, "n": 6020}, "gen2": {"share_ge_25": 0.3135, "share_ge_15": 0.5184, "median_abs_gap": 15.77, "n": 6020}}, "pregame_clean": {"fair_v1": {"share_ge_25": 0.1488, "share_ge_15": 0.341, "median_abs_gap": 10.34, "n": 4367}, "gen1_elo": {"share_ge_25": 0.1472, "share_ge_15": 0.3249, "median_abs_gap": 9.56, "n": 4367}, "gen1_sr": {"share_ge_25": 0.2038, "share_ge_15": 0.4392, "median_abs_gap": 13.17, "n": 4367}, "gen2": {"share_ge_25": 0.2196, "share_ge_15": 0.4403, "median_abs_gap": 13.0, "n": 4367}}}`
 * **9_main_tour_gaps_small**: `{"ATP": {"median_abs_gap_pregame_clean": 6.88, "share_ge_25_all": 0.0553, "share_ge_25_pregame_clean": 0.0569}, "WTA": {"median_abs_gap_pregame_clean": 8.66, "share_ge_25_all": 0.094, "share_ge_25_pregame_clean": 0.0807}}`
-* **10_strong_independent_market_proxy**: `{"share_within_5pp_all": 0.2224, "share_within_10pp_all": 0.4127, "share_within_10pp_pregame_clean": 0.4928, "corr_model_vs_mid_pregame_clean": 0.8323}`
+* **10_strong_independent_market_proxy**: `{"share_within_5pp_all": 0.2223, "share_within_10pp_all": 0.4124, "share_within_10pp_pregame_clean": 0.4914, "corr_model_vs_mid_pregame_clean": 0.8321}`
 * **11_most_trustworthy_range_as_handicapping_input**: `{"basis": "DESCRIPTIVE ONLY: where the model's Brier is closest to Kalshi's on pregame-clean first observations; not a strategy and not an optimised cutoff", "fair_v1_by_bucket": {"0-3": {"n_settled": 159, "model_brier": 0.1766, "kalshi_brier": 0.1778, "brier_diff_model_minus_kalshi": -0.0012}, "10-15": {"n_settled": 170, "model_brier": 0.2103, "kalshi_brier": 0.2073, "brier_diff_model_minus_kalshi": 0.003}, "15-25": {"n_settled": 212, "model_brier": 0.2136, "kalshi_brier": 0.2104, "brier_diff_model_minus_kalshi": 0.0032}, "25-40": {"n_settled": 109, "model_brier": 0.2293, "kalshi_brier": 0.1905, "brier_diff_model_minus_kalshi": 0.0388}, "3-5": {"n_settled": 100, "model_brier": 0.1692, "kalshi_brier": 0.1677, "brier_diff_model_minus_kalshi": 0.0014}, "40+": {"n_settled": 28, "model_brier": 0.3342, "kalshi_brier": 0.1438, "brier_diff_model_minus_kalshi": 0.1903}, "5-10": {"n_settled": 205, "model_brier": 0.1946, "kalshi_brier": 0.1995, "brier_diff_model_minus_kalshi": -0.0049}}}`
 
 ## 15. Model change recommendation
