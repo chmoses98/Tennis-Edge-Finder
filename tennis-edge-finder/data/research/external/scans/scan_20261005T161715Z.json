@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-05T16:17:15.404517+00:00",
+ "run_id": "20261005T161715Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 1142,
+  "skipped_family": 286,
+  "skipped_period": 329,
+  "skipped_live": 22,
+  "one_sided": 7,
+  "rows": 2069,
+  "devigged": 519
+ },
+ "smarkets_fetch": {
+  "events_seen": 123,
+  "events_priced": 80,
+  "markets": 669,
+  "markets_mapped": 268,
+  "contracts": 570,
+  "quoted_contracts": 570,
+  "raw": "data/research/external/raw/20261005T161715Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 268,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 70,
+  "rows": 500,
+  "two_sided": 495,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 462,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 70,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "James Newton": 1,
+   "Jose David Segovia Perez": 1,
+   "Jules Alias": 1,
+   "Yannick Baluska": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Thea Marcu": 1,
+   "Amparo Corvalan Mitilli": 1,
+   "Isabella Mai": 1,
+   "Victoria C. Osuigwe": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Diego Dedura-Palomero": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 114,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8321,
+  "top_refusal_subjects": {
+   "Martin SIMON": 1,
+   "Georgios Dimitriou": 1,
+   "Theofanis Kontopoulos": 1,
+   "James McGloughlin": 1,
+   "Chetanna Amadike": 1,
+   "Sacha Bouillard": 1,
+   "Bogdan Seleznev": 1,
+   "Jeremy LAUMON": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Diego Giraldo": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 114,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
