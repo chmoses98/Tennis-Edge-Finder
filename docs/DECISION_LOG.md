@@ -105,3 +105,13 @@
 | Given-name transliteration aliases (Pyotr/Petr) map at 0.85; dropped-name and spelling variants are review candidates only | measured false-match risk; Hispanic double surnames make token drops unsafe | auto-mapping every near match |
 | `analytic.py` advantage-tail bug documented, not fixed in place | it is a frozen source of the prospective experiments; no live format affected | editing frozen code |
 | Blobless + sparse evidence pulls and publishes | full 8 GB checkouts made publishing take 13.5 min and capture passes slip | deleting or rewriting evidence |
+
+## 2026-10-05 First live V2 run (RUN TENNIS #101): three defects found and repaired before verification
+
+| decision | why | alternative rejected |
+|---|---|---|
+| The RUN TENNIS universe is discovery PLUS every market in the fresh full open snapshot that discovery never listed | discovery runs once a day; 779 of 934 open markets (the entire tour board and every derivative) were invisible to pricing and to TENNIS-3/4 | waiting for the next daily discovery; a second discovery per run |
+| `matches_already_started` counts an actual first ball or an UPPER bound only | a lower bound alone means "not started when last polled"; every polled "Scheduled" tour match (552 markets on 6-7 Oct) was refused as under way | keeping the refusal because it is "conservative" -- it silently dropped the best-evidenced matches |
+| V2 data horizon per level = freshness of the sources covering it | the last match of a seasonal level is not data staleness (every Slam row would have been POOR) | per-level last match date |
+| Player-level missing-results guard (tag, neutralised schedule features, per-player drift, no HIGH; MEDIUM only with gaps <= 60d) | ITF-heavy Challenger players missing ~4 months of results were graded HIGH; it also downgrades Kicker-Cigarran, which AGREES with the market | leaving grades on the match level only; changing coefficients; using the market |
+| No coefficient, feature, or frozen-source change | the defects were in inputs, lifecycle and the quality envelope, not in the fitted model | a refit after seeing live disagreements |

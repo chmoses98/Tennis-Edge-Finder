@@ -60,7 +60,9 @@ the incumbent are within a few thousandths of Brier.
 5. **Context features need complete data.** The layoff signal is the single largest gain in the backtest;
    live it is only usable where results are current (tour level). Where it is neutralised the model is
    calibrated as if both players had been active, which is the best available assumption, not a measurement.
-6. **Rating drift under stale data** is an assumed 0.30 logits per sqrt(year), used only to widen the envelope.
+6. **Rating drift under stale data** is an assumed 0.30 logits per sqrt(year), used only to widen the envelope --
+   per level when the match's level is stale, and per player when a player is probably missing results from a
+   level whose source stopped (PLAYER_RESULTS_INCOMPLETE; never graded HIGH).
 7. **Frozen scoring-engine bug** (advantage-set tail, `docs/PROJECTION_ENGINE_V2.md` section 5): affects only
    pre-2022 formats; documented, not fixed in place because the file is a frozen source.
 8. **2026 is not virgin territory** for the Elo family in general (earlier waves studied it); it was virgin for

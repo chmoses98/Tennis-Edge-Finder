@@ -70,3 +70,10 @@
 * The frozen scoring engine mis-splits the advantage-set tail (pre-2022 formats only); see PROJECTION_ENGINE_V2.md.
 * The market remains more accurate than V2 and V2 adds little information beyond it at tour level.
 * Independent sports truth cannot cover ITF (no source) and covers Challenger only up to the mirror's horizon.
+* Players who split their schedule with ITF (or WTA 125) carry results we cannot see after those sources stopped;
+  their projections are tagged PLAYER_RESULTS_INCOMPLETE, never HIGH, and their point estimates rest on stale
+  ratings. The fix is data (a permitted ITF / WTA 125 results source), not modelling.
+* Minted ids for ESPN-only players carry a doubled prefix (`espn:espn:<id>`); cosmetic, unique and stable, left
+  as is because ledger rows already reference it.
+* The open-market snapshot and capture cannot be exercised from outside GitHub Actions in this environment
+  (the Kalshi API is not on the sandbox's network allow-list); live verification relies on production runs.

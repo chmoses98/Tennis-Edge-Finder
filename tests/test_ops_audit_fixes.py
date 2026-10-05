@@ -185,7 +185,14 @@ def test_run_tennis_refuses_matches_the_first_ball_store_has_seen_start(tmp_path
                                 DERIVATION_SCORE_BACKCAST, created_at=now))
     st.add_truth(FirstBallTruth("KXATPMATCH-26SEP12NOPLAY", None, None, None, "A", DERIVATION_NO_PLAY,
                                 no_play=True, created_at=now))
+    # seen "Scheduled" (lower bound only: NOT started when last polled) -- the 2026-10-05 false refusals
+    st.add_truth(FirstBallTruth("KXATPMATCH-26SEP13SCHEDL", None, now - timedelta(hours=3), None, "C",
+                                DERIVATION_SCORE_BACKCAST, created_at=now))
+    # bracketed: last seen not started, then seen under way
+    st.add_truth(FirstBallTruth("KXATPMATCH-26SEP12BRACKT", None, now - timedelta(hours=2), now - timedelta(minutes=90), "B",
+                                DERIVATION_SCORE_BACKCAST, created_at=now))
     started = matches_already_started(str(tmp_path), now)
     assert _match_code("KXWTASETWINNER-26SEP12DENBUR-2") in started       # every series of the same match
     assert "26SEP12NOPLAY" not in started
+    assert "26SEP13SCHEDL" not in started and "26SEP12BRACKT" in started
     assert matches_already_started(str(tmp_path / "missing"), now) == set()

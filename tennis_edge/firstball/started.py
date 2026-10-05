@@ -17,10 +17,15 @@ def match_code(event_ticker: str) -> str:
 
 
 def matches_already_started(store_root: str, now) -> set[str]:
-    """Match codes whose first ball the store has already bracketed or bounded before `now`.
+    """Match codes the store has seen START before `now`: an actual first ball, or an UPPER bound (the first
+    ball happened at or before it), at or before `now`.
 
     Any confidence counts here, including C: this set is only ever used to REFUSE a pregame price, and a
-    refusal on an indirect bound is the conservative direction. A no-play truth never counts as started."""
+    refusal on an indirect bound is the conservative direction. A no-play truth never counts as started.
+
+    A LOWER bound alone is not evidence of a start -- it says the match had NOT started when last seen. Until
+    2026-10-05 it was read as one, so every match the first-ball conductor had polled while still "Scheduled"
+    was refused as under way: 552 of the 2026-10-05 tour board's open markets (matches on 6-7 October)."""
     if not os.path.isdir(store_root):
         return set()
     from tennis_edge.firstball.store import FirstBallStore
@@ -28,7 +33,7 @@ def matches_already_started(store_root: str, now) -> set[str]:
     for mid, t in FirstBallStore(store_root).latest_truths().items():
         if t.no_play:
             continue
-        bound = t.lower_bound_utc or t.upper_bound_utc
+        bound = t.actual_first_ball_at_utc or t.upper_bound_utc
         if bound is not None and bound <= now:
             out.add(match_code(mid))
     return out

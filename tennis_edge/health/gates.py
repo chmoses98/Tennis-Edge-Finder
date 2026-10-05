@@ -143,6 +143,27 @@ def gate_2_taxonomy() -> GateResult:
     return GateResult("TENNIS-2", "taxonomy_normalization", "PASS" if ok else "FAIL", {"unknown_series": unk, "live_markets": n, "unparsed": bad, "parse_rate": round(rate, 5)})
 
 
+def _run_snapshot_markets(proj_path, known: set, snapshots_root=None) -> list:
+    """Open-market records from the full snapshot the latest projection run treated as authoritative, minus
+    `known` tickers. Empty when the run had no authoritative snapshot (then discovery alone is the universe)."""
+    if not os.path.exists(proj_path):
+        return []
+    lc = (json.load(open(proj_path)).get("lifecycle") or {})
+    if not (lc.get("snapshot_authoritative") and lc.get("open_snapshot_run")):
+        return []
+    root = snapshots_root or os.path.join(PROJ, "data", "kalshi", "run_snapshots")
+    hits = glob.glob(os.path.join(root, "*", f"{lc['open_snapshot_run']}.open_snapshot.jsonl.gz"))
+    if not hits:
+        return []
+    out, seen = [], set(known)
+    with gzip.open(hits[0], "rt") as fh:
+        for line in fh:
+            r = json.loads(line)
+            if r.get("ticker") and r["ticker"] not in seen:
+                out.append(r); seen.add(r["ticker"])
+    return out
+
+
 def gate_3_4_active_coverage(projections_path=None) -> tuple[GateResult, GateResult]:
     """TENNIS-3: every ACTIVE market is mapped (parsed or explicitly unsupported);
     TENNIS-4: every active PROJECTABLE market has a projection in the latest projection run."""
@@ -155,10 +176,15 @@ def gate_3_4_active_coverage(projections_path=None) -> tuple[GateResult, GateRes
     for p in glob.glob(os.path.join(d, "markets", "*.json")):
         for m in json.load(open(p)).get("open", {}).get("markets") or []:
             active.append(parse_market(m))
+    proj_path = projections_path or os.path.join(PROJ, "data", "research", "projections", "latest.json")
+    # markets listed after the daily discovery: the open snapshot the projection run priced from (2026-10-05;
+    # 779 of 934 open markets on that day were absent from discovery and so invisible to this gate)
+    late = _run_snapshot_markets(proj_path, {x.ticker for x in active})
+    active += [parse_market(m) for m in late]
     unparsed = [x.ticker for x in active if x.status == "UNPARSED"]
     g3 = GateResult("TENNIS-3", "active_market_mapping", "PASS" if not unparsed and active else ("UNKNOWN" if not active else "FAIL"),
-                    {"active": len(active), "unparsed": unparsed[:20], "unsupported": sum(x.status == "UNSUPPORTED_FAMILY" for x in active)})
-    proj_path = projections_path or os.path.join(PROJ, "data", "research", "projections", "latest.json")
+                    {"active": len(active), "listed_after_discovery": len(late), "unparsed": unparsed[:20],
+                     "unsupported": sum(x.status == "UNSUPPORTED_FAMILY" for x in active)})
     if not os.path.exists(proj_path):
         return g3, GateResult("TENNIS-4", "active_market_projection", "UNKNOWN", {"reason": "no projection run", "projectable_active": sum(x.projectable and x.status == "PARSED" for x in active)})
     pj = json.load(open(proj_path))
