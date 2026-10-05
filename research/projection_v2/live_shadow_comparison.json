@@ -1,0 +1,2776 @@
+{
+ "run_id": "20261005T185003Z",
+ "n_events": 230,
+ "grades": {
+  "MASTERS_1000|LOW": 8,
+  "MASTERS_1000|HIGH": 22,
+  "ITF|POOR": 174,
+  "CHALLENGER|LOW": 12,
+  "MASTERS_1000|MEDIUM": 7,
+  "TOUR_500_250|HIGH": 1,
+  "WTA_125|POOR": 6
+ },
+ "mean_abs_v2_minus_incumbent": 0.07034704242660275,
+ "events": [
+  {
+   "match": "Sinja Kraus v Nikola Bartunkova",
+   "level": "MASTERS_1000",
+   "v2": 0.2641143119268573,
+   "incumbent": 0.37991780385228013,
+   "market_mid": 0.185,
+   "grade": "LOW",
+   "envelope": [
+    0.18419010123630622,
+    0.3632761890709393
+   ]
+  },
+  {
+   "match": "Karolina Muchova v Naomi Osaka",
+   "level": "MASTERS_1000",
+   "v2": 0.47539826000576874,
+   "incumbent": 0.5126986104579412,
+   "market_mid": 0.565,
+   "grade": "HIGH",
+   "envelope": [
+    0.4451395573703136,
+    0.5115899096189501
+   ]
+  },
+  {
+   "match": "Daria Snigur v Mirra Andreeva",
+   "level": "MASTERS_1000",
+   "v2": 0.2989956780260675,
+   "incumbent": 0.3252960290217689,
+   "market_mid": 0.14500000000000002,
+   "grade": "LOW",
+   "envelope": [
+    0.2350803891917268,
+    0.3718410735299499
+   ]
+  },
+  {
+   "match": "Linda Noskova v Ekaterina Alexandrova",
+   "level": "MASTERS_1000",
+   "v2": 0.7363830437847744,
+   "incumbent": 0.615187531853905,
+   "market_mid": 0.755,
+   "grade": "HIGH",
+   "envelope": [
+    0.7035008377384799,
+    0.7469652288190728
+   ]
+  },
+  {
+   "match": "Mia Slama v Kate Sharabura",
+   "level": "ITF",
+   "v2": 0.8362746951440675,
+   "incumbent": 0.6604858158417358,
+   "market_mid": 0.88,
+   "grade": "POOR",
+   "envelope": [
+    0.7626470183456413,
+    0.8903466918500227
+   ]
+  },
+  {
+   "match": "Jensen Diianni v Diae El Jardi",
+   "level": "ITF",
+   "v2": 0.5505511632456006,
+   "incumbent": 0.5719302434145048,
+   "market_mid": 0.255,
+   "grade": "POOR",
+   "envelope": [
+    0.43521073222788564,
+    0.6607006398847268
+   ]
+  },
+  {
+   "match": "Astra Sharma v Lavinia Tanasie",
+   "level": "ITF",
+   "v2": 0.6916316859863901,
+   "incumbent": 0.522012239999204,
+   "market_mid": 0.865,
+   "grade": "POOR",
+   "envelope": [
+    0.5852197315770451,
+    0.7809615907721592
+   ]
+  },
+  {
+   "match": "Marina Bulbarella v Abril Pajello",
+   "level": "ITF",
+   "v2": 0.7660377564882097,
+   "incumbent": 0.40944776670639127,
+   "market_mid": 0.825,
+   "grade": "POOR",
+   "envelope": [
+    0.6731686302215154,
+    0.8388358874849715
+   ]
+  },
+  {
+   "match": "Briley Rhoden v Katherine Hui",
+   "level": "ITF",
+   "v2": 0.12028609175244045,
+   "incumbent": 0.29669259147113375,
+   "market_mid": 0.15,
+   "grade": "POOR",
+   "envelope": [
+    0.07920164937286933,
+    0.17854983063929028
+   ]
+  },
+  {
+   "match": "Sol Ailin Larraya Guidi v Ana Victoria Gobbi Monllau",
+   "level": "ITF",
+   "v2": 0.6506920563041373,
+   "incumbent": 0.6678048602094326,
+   "market_mid": 0.795,
+   "grade": "POOR",
+   "envelope": [
+    0.539557757021599,
+    0.7475527962204473
+   ]
+  },
+  {
+   "match": "Tatum Evans v Helena Buchwald",
+   "level": "ITF",
+   "v2": 0.5497727729345977,
+   "incumbent": 0.5100243353882201,
+   "market_mid": 0.565,
+   "grade": "POOR",
+   "envelope": [
+    0.4344377883487045,
+    0.6599952036673061
+   ]
+  },
+  {
+   "match": "Francoise Abanda v Charlotte Narti",
+   "level": "ITF",
+   "v2": 0.8985082666659973,
+   "incumbent": 0.8561926525373722,
+   "market_mid": 0.805,
+   "grade": "POOR",
+   "envelope": [
+    0.8477727777731627,
+    0.9336574876382072
+   ]
+  },
+  {
+   "match": "Jonas Forejtek v Sandro Kopp",
+   "level": "CHALLENGER",
+   "v2": 0.58900911514564,
+   "incumbent": 0.554294955841538,
+   "market_mid": 0.625,
+   "grade": "LOW",
+   "envelope": [
+    0.4874568015568192,
+    0.6835045761722893
+   ]
+  },
+  {
+   "match": "Masamichi Imamura v Kaichi Uchida",
+   "level": "CHALLENGER",
+   "v2": 0.5612558865425854,
+   "incumbent": 0.534968890913099,
+   "market_mid": 0.625,
+   "grade": "LOW",
+   "envelope": [
+    0.4591429587127091,
+    0.6584320100590639
+   ]
+  },
+  {
+   "match": "Omar Jasika v Martin Borisiouk",
+   "level": "CHALLENGER",
+   "v2": 0.5800648235509079,
+   "incumbent": 0.559849642001852,
+   "market_mid": 0.495,
+   "grade": "LOW",
+   "envelope": [
+    0.4782601049594648,
+    0.6754837414952953
+   ]
+  },
+  {
+   "match": "Genaro Alberto Olivieri v Valerio Aboian",
+   "level": "CHALLENGER",
+   "v2": 0.5516214333436769,
+   "incumbent": 0.5312941767414194,
+   "market_mid": 0.61,
+   "grade": "LOW",
+   "envelope": [
+    0.4793298337932526,
+    0.6217954602808409
+   ]
+  },
+  {
+   "match": "Max Purcell v Filip Peliwo",
+   "level": "CHALLENGER",
+   "v2": 0.9090692796939567,
+   "incumbent": 0.8242932204533922,
+   "market_mid": 0.945,
+   "grade": "LOW",
+   "envelope": [
+    0.8820898969959597,
+    0.9303627754228339
+   ]
+  },
+  {
+   "match": "Keisuke Saitoh v Dominik Palan",
+   "level": "CHALLENGER",
+   "v2": 0.6381523866093287,
+   "incumbent": 0.5599305499955349,
+   "market_mid": 0.665,
+   "grade": "LOW",
+   "envelope": [
+    0.5392441128003821,
+    0.7265935814458027
+   ]
+  },
+  {
+   "match": "Keegan Smith v Hiroki Moriya",
+   "level": "CHALLENGER",
+   "v2": 0.7461139334277995,
+   "incumbent": 0.6774472947848752,
+   "market_mid": 0.705,
+   "grade": "LOW",
+   "envelope": [
+    0.6610414593392843,
+    0.8157849044631638
+   ]
+  },
+  {
+   "match": "Fajing Sun v Aoran Wang",
+   "level": "CHALLENGER",
+   "v2": 0.8051280994204142,
+   "incumbent": 0.791531602415254,
+   "market_mid": 0.905,
+   "grade": "LOW",
+   "envelope": [
+    0.7327470618985258,
+    0.8616083272817023
+   ]
+  },
+  {
+   "match": "Gonzalo Villanueva v Nick Hardt",
+   "level": "CHALLENGER",
+   "v2": 0.4601892408525998,
+   "incumbent": 0.4401218385821942,
+   "market_mid": 0.505,
+   "grade": "LOW",
+   "envelope": [
+    0.361321101790683,
+    0.5622929463463067
+   ]
+  },
+  {
+   "match": "Mitsuki Wei Kang Leong v Sidharth Rawat",
+   "level": "CHALLENGER",
+   "v2": 0.7228108655777571,
+   "incumbent": 0.5973794125277149,
+   "market_mid": 0.79,
+   "grade": "LOW",
+   "envelope": [
+    0.6337628082624892,
+    0.7971379352772976
+   ]
+  },
+  {
+   "match": "Ryan Seggerman v Hikaru Shiraishi",
+   "level": "CHALLENGER",
+   "v2": 0.6098623265129538,
+   "incumbent": 0.5319521143988308,
+   "market_mid": 0.775,
+   "grade": "LOW",
+   "envelope": [
+    0.5391153165516248,
+    0.6762706365952574
+   ]
+  },
+  {
+   "match": "Evan Zhu v Koki Matsuda",
+   "level": "CHALLENGER",
+   "v2": 0.3736296054579933,
+   "incumbent": 0.3583806631033395,
+   "market_mid": 0.72,
+   "grade": "LOW",
+   "envelope": [
+    0.283588418603925,
+    0.47336947720645783
+   ]
+  },
+  {
+   "match": "Mattia Bellucci v Alexandre Muller",
+   "level": "MASTERS_1000",
+   "v2": 0.5870518011061271,
+   "incumbent": 0.6252219291698516,
+   "market_mid": 0.715,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.5504510300509823,
+    0.6704769159408197
+   ]
+  },
+  {
+   "match": "Kyrian Jacquet v Rei Sakamoto",
+   "level": "MASTERS_1000",
+   "v2": 0.5520331137876374,
+   "incumbent": 0.5106150412184634,
+   "market_mid": 0.545,
+   "grade": "HIGH",
+   "envelope": [
+    0.5238225747098462,
+    0.5894570155760812
+   ]
+  },
+  {
+   "match": "Pavel Kotov v Aleksandar Vukic",
+   "level": "MASTERS_1000",
+   "v2": 0.5202491953368289,
+   "incumbent": 0.5480338116639721,
+   "market_mid": 0.585,
+   "grade": "HIGH",
+   "envelope": [
+    0.4825266532075197,
+    0.5214209844092539
+   ]
+  },
+  {
+   "match": "Yoshihito Nishioka v Dalibor Svrcina",
+   "level": "MASTERS_1000",
+   "v2": 0.46007507655107627,
+   "incumbent": 0.4783343500688212,
+   "market_mid": 0.395,
+   "grade": "HIGH",
+   "envelope": [
+    0.4457243409994605,
+    0.4888856689814073
+   ]
+  },
+  {
+   "match": "Coleman Wong v Lloyd Harris",
+   "level": "MASTERS_1000",
+   "v2": 0.3527678248919307,
+   "incumbent": 0.36584577073887314,
+   "market_mid": 0.415,
+   "grade": "HIGH",
+   "envelope": [
+    0.35194646836138455,
+    0.3691754880113816
+   ]
+  },
+  {
+   "match": "Carlos Alcaraz v Jiri Lehecka",
+   "level": "TOUR_500_250",
+   "v2": 0.8033280364402086,
+   "incumbent": 0.8274472577627647,
+   "market_mid": 0.78,
+   "grade": "HIGH",
+   "envelope": [
+    0.7837888219408266,
+    0.8199261834677347
+   ]
+  },
+  {
+   "match": "Nuno Borges v Facundo Diaz Acosta",
+   "level": "MASTERS_1000",
+   "v2": 0.6962948488604183,
+   "incumbent": 0.6357708354983582,
+   "market_mid": 0.75,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.6266193396009664,
+    0.7502278684389643
+   ]
+  },
+  {
+   "match": "Novak Djokovic v Alex de Minaur",
+   "level": "MASTERS_1000",
+   "v2": 0.5562105366088653,
+   "incumbent": 0.6532794580346065,
+   "market_mid": 0.635,
+   "grade": "HIGH",
+   "envelope": [
+    0.5379980522548794,
+    0.613221495166985
+   ]
+  },
+  {
+   "match": "Aziz Dougaz v Federico Cina",
+   "level": "MASTERS_1000",
+   "v2": 0.42189531389814056,
+   "incumbent": 0.4604262751631278,
+   "market_mid": 0.325,
+   "grade": "LOW",
+   "envelope": [
+    0.3532121022600126,
+    0.493738869160582
+   ]
+  },
+  {
+   "match": "Liam Draxl v Nikoloz Basilashvili",
+   "level": "MASTERS_1000",
+   "v2": 0.5610042504362318,
+   "incumbent": 0.5417514912524743,
+   "market_mid": 0.425,
+   "grade": "HIGH",
+   "envelope": [
+    0.5273648847950732,
+    0.5971834977559863
+   ]
+  },
+  {
+   "match": "Arthur Fery v Marin Cilic",
+   "level": "MASTERS_1000",
+   "v2": 0.6241819541402875,
+   "incumbent": 0.5107594160996449,
+   "market_mid": 0.585,
+   "grade": "HIGH",
+   "envelope": [
+    0.566211798967335,
+    0.6260324194435685
+   ]
+  },
+  {
+   "match": "Arthur Gea v Jaime Faria",
+   "level": "MASTERS_1000",
+   "v2": 0.6302270103095401,
+   "incumbent": 0.5638027805632263,
+   "market_mid": 0.615,
+   "grade": "LOW",
+   "envelope": [
+    0.555050420075137,
+    0.6949030486196982
+   ]
+  },
+  {
+   "match": "Marcos Giron v Sebastian Baez",
+   "level": "MASTERS_1000",
+   "v2": 0.5156285699560321,
+   "incumbent": 0.5702060722603255,
+   "market_mid": 0.485,
+   "grade": "HIGH",
+   "envelope": [
+    0.4703537879594775,
+    0.5219438678945175
+   ]
+  },
+  {
+   "match": "Yannick Hanfmann v Kamil Majchrzak",
+   "level": "MASTERS_1000",
+   "v2": 0.38765287394365344,
+   "incumbent": 0.4819771646348816,
+   "market_mid": 0.385,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.3563813915276788,
+    0.44029045578077014
+   ]
+  },
+  {
+   "match": "Hubert Hurkacz v James Duckworth",
+   "level": "MASTERS_1000",
+   "v2": 0.8237855409438266,
+   "incumbent": 0.7297990580633649,
+   "market_mid": 0.71,
+   "grade": "HIGH",
+   "envelope": [
+    0.811035754770764,
+    0.8378685015360778
+   ]
+  },
+  {
+   "match": "Vit Kopriva v Zizou Bergs",
+   "level": "MASTERS_1000",
+   "v2": 0.3639462593910302,
+   "incumbent": 0.3287441949503047,
+   "market_mid": 0.275,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.31284648800970327,
+    0.3991533177838005
+   ]
+  },
+  {
+   "match": "Aleksandar Kovacevic v Matteo Berrettini",
+   "level": "MASTERS_1000",
+   "v2": 0.3443189948263958,
+   "incumbent": 0.31180044222804365,
+   "market_mid": 0.325,
+   "grade": "HIGH",
+   "envelope": [
+    0.3045875185010895,
+    0.3551453435687419
+   ]
+  },
+  {
+   "match": "Martin Landaluce v Jan-Lennard Struff",
+   "level": "MASTERS_1000",
+   "v2": 0.5824166871972142,
+   "incumbent": 0.49933593569968615,
+   "market_mid": 0.51,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.5540780855900127,
+    0.6645449570852581
+   ]
+  },
+  {
+   "match": "Fabian Marozsan v Zachary Svajda",
+   "level": "MASTERS_1000",
+   "v2": 0.5273208126667943,
+   "incumbent": 0.4813928575316685,
+   "market_mid": 0.525,
+   "grade": "HIGH",
+   "envelope": [
+    0.5137896399064721,
+    0.5661856001927942
+   ]
+  },
+  {
+   "match": "Jaume Munar v Jenson Brooksby",
+   "level": "MASTERS_1000",
+   "v2": 0.5427520121030429,
+   "incumbent": 0.5438388749664222,
+   "market_mid": 0.595,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.524406411589663,
+    0.6197701885154578
+   ]
+  },
+  {
+   "match": "Mariano Navone v Pablo Carreno Busta",
+   "level": "MASTERS_1000",
+   "v2": 0.5496064609977623,
+   "incumbent": 0.4493734847341541,
+   "market_mid": 0.485,
+   "grade": "HIGH",
+   "envelope": [
+    0.5416877810475408,
+    0.613544792543388
+   ]
+  },
+  {
+   "match": "Cameron Norrie v Denis Shapovalov",
+   "level": "MASTERS_1000",
+   "v2": 0.4109397007800908,
+   "incumbent": 0.47516962354838854,
+   "market_mid": 0.505,
+   "grade": "HIGH",
+   "envelope": [
+    0.41067515850603376,
+    0.43624498032857817
+   ]
+  },
+  {
+   "match": "Rigele TE v Ilia Simakin",
+   "level": "MASTERS_1000",
+   "v2": 0.10269276851804712,
+   "incumbent": 0.12229860236938916,
+   "market_mid": 0.135,
+   "grade": "LOW",
+   "envelope": [
+    0.07058678050182515,
+    0.14709084314055434
+   ]
+  },
+  {
+   "match": "Holger Rune v Daniel Altmaier",
+   "level": "MASTERS_1000",
+   "v2": 0.776928091118554,
+   "incumbent": 0.7520880654437243,
+   "market_mid": 0.705,
+   "grade": "HIGH",
+   "envelope": [
+    0.7477998387256917,
+    0.7782035576576483
+   ]
+  },
+  {
+   "match": "Roman Safiullin v Shintaro Mochizuki",
+   "level": "MASTERS_1000",
+   "v2": 0.7925034303528883,
+   "incumbent": 0.7647947300576939,
+   "market_mid": 0.815,
+   "grade": "HIGH",
+   "envelope": [
+    0.7625846165990761,
+    0.7961647142840209
+   ]
+  },
+  {
+   "match": "Sho Shimabukuro v Miomir Kecmanovic",
+   "level": "MASTERS_1000",
+   "v2": 0.3766005136062189,
+   "incumbent": 0.38287688328666025,
+   "market_mid": 0.35,
+   "grade": "HIGH",
+   "envelope": [
+    0.35516735284909157,
+    0.3921808299922192
+   ]
+  },
+  {
+   "match": "Dane Sweeny v Kimmer Coppejans",
+   "level": "MASTERS_1000",
+   "v2": 0.5741505588215,
+   "incumbent": 0.517155921195114,
+   "market_mid": 0.565,
+   "grade": "LOW",
+   "envelope": [
+    0.5022134541791117,
+    0.643080059575679
+   ]
+  },
+  {
+   "match": "Thiago Agustin Tirante v Hamad Medjedovic",
+   "level": "MASTERS_1000",
+   "v2": 0.5308401017471174,
+   "incumbent": 0.5241997137403933,
+   "market_mid": 0.575,
+   "grade": "HIGH",
+   "envelope": [
+    0.4896715767453099,
+    0.5329300398472145
+   ]
+  },
+  {
+   "match": "Bernard Tomic v Timofey Skatov",
+   "level": "MASTERS_1000",
+   "v2": 0.4769830265836844,
+   "incumbent": 0.580995322319116,
+   "market_mid": 0.555,
+   "grade": "MEDIUM",
+   "envelope": [
+    0.4255066596885025,
+    0.5315190539252584
+   ]
+  },
+  {
+   "match": "Adolfo Daniel Vallejo v Valentin Royer",
+   "level": "MASTERS_1000",
+   "v2": 0.48676901630218694,
+   "incumbent": 0.49615137416464,
+   "market_mid": 0.525,
+   "grade": "HIGH",
+   "envelope": [
+    0.4743258513204368,
+    0.516970615800434
+   ]
+  },
+  {
+   "match": "Zhizhen Zhang v Tomas Machac",
+   "level": "MASTERS_1000",
+   "v2": 0.31169235681866536,
+   "incumbent": 0.2896222161283582,
+   "market_mid": 0.305,
+   "grade": "HIGH",
+   "envelope": [
+    0.2800563567597904,
+    0.34574922150972365
+   ]
+  },
+  {
+   "match": "Michael Zheng v Nicolas Mejia",
+   "level": "MASTERS_1000",
+   "v2": 0.764569433899756,
+   "incumbent": 0.6882773425427058,
+   "market_mid": 0.805,
+   "grade": "HIGH",
+   "envelope": [
+    0.7306613872893835,
+    0.7668040564387572
+   ]
+  },
+  {
+   "match": "Boris Butulija v Siu Chi Nicholas Cheng",
+   "level": "ITF",
+   "v2": 0.46001457007827706,
+   "incumbent": 0.3920164124722907,
+   "market_mid": 0.72,
+   "grade": "POOR",
+   "envelope": [
+    0.3611588505780313,
+    0.5621198772165843
+   ]
+  },
+  {
+   "match": "Tin Chen v Yua Taka",
+   "level": "ITF",
+   "v2": 0.48129998406469077,
+   "incumbent": 0.5137909298981836,
+   "market_mid": 0.19,
+   "grade": "POOR",
+   "envelope": [
+    0.38109834573543533,
+    0.5830286897915069
+   ]
+  },
+  {
+   "match": "Jordan Chiu v Lin Hao-Yu",
+   "level": "ITF",
+   "v2": 0.2724143209810825,
+   "incumbent": 0.21096986091002196,
+   "market_mid": 0.655,
+   "grade": "POOR",
+   "envelope": [
+    0.199015073033463,
+    0.3606939048795154
+   ]
+  },
+  {
+   "match": "Jake Dembo v Lingxi Zhao",
+   "level": "ITF",
+   "v2": 0.33719836148272164,
+   "incumbent": 0.398257662594192,
+   "market_mid": 0.245,
+   "grade": "POOR",
+   "envelope": [
+    0.25239898265929483,
+    0.4339506505380498
+   ]
+  },
+  {
+   "match": "Nicolas Hollender v Alberto Odiseo Alvarado Berrospi",
+   "level": "ITF",
+   "v2": 0.3608219222098631,
+   "incumbent": 0.43143641631934393,
+   "market_mid": 0.46,
+   "grade": "POOR",
+   "envelope": [
+    0.2725243624756071,
+    0.4596517738507281
+   ]
+  },
+  {
+   "match": "Tomas Jordi Leston v Jose Luis Claro",
+   "level": "ITF",
+   "v2": 0.36971849690041747,
+   "incumbent": 0.3740881221346496,
+   "market_mid": 0.7949999999999999,
+   "grade": "POOR",
+   "envelope": [
+    0.2801982176976699,
+    0.4691963833578607
+   ]
+  },
+  {
+   "match": "Markus Malaszszak v Ko Suzuki",
+   "level": "ITF",
+   "v2": 0.7149821583241573,
+   "incumbent": 0.6229918687592801,
+   "market_mid": 0.73,
+   "grade": "POOR",
+   "envelope": [
+    0.6247248593998161,
+    0.7908008925007767
+   ]
+  },
+  {
+   "match": "Tyler Mercier v Gonzalo Zeitune",
+   "level": "ITF",
+   "v2": 0.6078660143112197,
+   "incumbent": 0.585991798374276,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.507073767798534,
+    0.7002324164500351
+   ]
+  },
+  {
+   "match": "Maxim Shin v Tomohiro Masabayashi",
+   "level": "ITF",
+   "v2": 0.6129902706116543,
+   "incumbent": 0.6547419756785477,
+   "market_mid": 0.6000000000000001,
+   "grade": "POOR",
+   "envelope": [
+    0.5124587418569542,
+    0.7047359549009996
+   ]
+  },
+  {
+   "match": "James Van Herzeele v Anthony Susanto",
+   "level": "ITF",
+   "v2": 0.7013101901545435,
+   "incumbent": 0.6355528232274756,
+   "market_mid": 0.595,
+   "grade": "POOR",
+   "envelope": [
+    0.6090904868995765,
+    0.7796449684204292
+   ]
+  },
+  {
+   "match": "Mohamed Ali Abibsi v Alessandro Mondazzi",
+   "level": "ITF",
+   "v2": 0.6113270512754592,
+   "incumbent": 0.5067922638229698,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.5107083376434352,
+    0.7032761645385767
+   ]
+  },
+  {
+   "match": "Luis Carlos Alvarez Valdes v Giorgio Tabacco",
+   "level": "ITF",
+   "v2": 0.59582605392655,
+   "incumbent": 0.6154982667138934,
+   "market_mid": 0.44,
+   "grade": "POOR",
+   "envelope": [
+    0.4945125898515205,
+    0.689580186667215
+   ]
+  },
+  {
+   "match": "Mateo Luis Alvarez Sarmiento v Daniel Verbeek",
+   "level": "ITF",
+   "v2": 0.422341817749648,
+   "incumbent": 0.47893285388820817,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.32668403027302223,
+    0.5242027235870768
+   ]
+  },
+  {
+   "match": "Daniel Aleksandar Amarandei v Giammarco Gandolfi",
+   "level": "ITF",
+   "v2": 0.7628754427478357,
+   "incumbent": 0.7561831282643006,
+   "market_mid": 0.375,
+   "grade": "POOR",
+   "envelope": [
+    0.6810182610709091,
+    0.8290009295346272
+   ]
+  },
+  {
+   "match": "Adrian Arcon v Luca Connaughton",
+   "level": "ITF",
+   "v2": 0.1493760474438329,
+   "incumbent": 0.16731997270455168,
+   "market_mid": 0.585,
+   "grade": "POOR",
+   "envelope": [
+    0.10437261276223166,
+    0.20925047840706887
+   ]
+  },
+  {
+   "match": "Nikolas Baker v Alec Braund",
+   "level": "ITF",
+   "v2": 0.4957109390104444,
+   "incumbent": 0.4687407353166687,
+   "market_mid": 0.415,
+   "grade": "POOR",
+   "envelope": [
+    0.39479260837078645,
+    0.5969799656893983
+   ]
+  },
+  {
+   "match": "Tobia Costanzo Baragiola Mordini v Jannik Maute",
+   "level": "ITF",
+   "v2": 0.6511941372526144,
+   "incumbent": 0.599495266964155,
+   "market_mid": 0.28,
+   "grade": "POOR",
+   "envelope": [
+    0.5533556704914957,
+    0.7377576403594999
+   ]
+  },
+  {
+   "match": "Alessandro Bellifemine v Filippo Francesco Garbero",
+   "level": "ITF",
+   "v2": 0.5561096370173493,
+   "incumbent": 0.46258552758532445,
+   "market_mid": 0.43500000000000005,
+   "grade": "POOR",
+   "envelope": [
+    0.4539642290911199,
+    0.6537223494377072
+   ]
+  },
+  {
+   "match": "Maxence Bertimon v Arthur Laborde",
+   "level": "ITF",
+   "v2": 0.7527516400322442,
+   "incumbent": 0.7492772135351504,
+   "market_mid": 0.375,
+   "grade": "POOR",
+   "envelope": [
+    0.6689163744871469,
+    0.821038007899221
+   ]
+  },
+  {
+   "match": "Lorenzo Berto v Manuel Mazza",
+   "level": "ITF",
+   "v2": 0.2967766563160358,
+   "incumbent": 0.36007067584666247,
+   "market_mid": 0.205,
+   "grade": "POOR",
+   "envelope": [
+    0.2187870949046401,
+    0.3887330903154533
+   ]
+  },
+  {
+   "match": "Vlad Cristian Breazu v Antoni Fabre",
+   "level": "ITF",
+   "v2": 0.46482060250581403,
+   "incumbent": 0.46999089783498255,
+   "market_mid": 0.39,
+   "grade": "POOR",
+   "envelope": [
+    0.3656314052684375,
+    0.5668727931261144
+   ]
+  },
+  {
+   "match": "Ian Lucca Cervantes Tomas v Mario Arce Fernandez",
+   "level": "ITF",
+   "v2": 0.5292249281622767,
+   "incumbent": 0.4669407298325362,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.4272644781063959,
+    0.628803458320709
+   ]
+  },
+  {
+   "match": "Andrea Colombo v Luca Wiedenmann",
+   "level": "ITF",
+   "v2": 0.1615499391245823,
+   "incumbent": 0.15658950038207098,
+   "market_mid": 0.44999999999999996,
+   "grade": "POOR",
+   "envelope": [
+    0.11336761784613368,
+    0.2250132294911037
+   ]
+  },
+  {
+   "match": "Ethan Cook v Reece Falck",
+   "level": "ITF",
+   "v2": 0.5573214643839881,
+   "incumbent": 0.4815220989790977,
+   "market_mid": 0.44,
+   "grade": "POOR",
+   "envelope": [
+    0.4551817184535916,
+    0.6548330943997777
+   ]
+  },
+  {
+   "match": "Samuel De Felipe Garcia v Kylian Collignon",
+   "level": "ITF",
+   "v2": 0.4178690239140925,
+   "incumbent": 0.3434829114289434,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.32265843864838717,
+    0.5196215486366585
+   ]
+  },
+  {
+   "match": "Matthew Dellavedova v Zhao Zhao",
+   "level": "ITF",
+   "v2": 0.862278464899025,
+   "incumbent": 0.8288762666059484,
+   "market_mid": 0.865,
+   "grade": "POOR",
+   "envelope": [
+    0.8060101555725144,
+    0.9041662582645277
+   ]
+  },
+  {
+   "match": "Jose Dominguez Alonso v Dylan Leeman",
+   "level": "ITF",
+   "v2": 0.3188668885659924,
+   "incumbent": 0.31782910696331756,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.23702892174462417,
+    0.4136419009333404
+   ]
+  },
+  {
+   "match": "Filip Drab v Alberto Garcia Garcia",
+   "level": "ITF",
+   "v2": 0.5804618173525264,
+   "incumbent": 0.5975037071775632,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.47866684338709464,
+    0.6758409392903045
+   ]
+  },
+  {
+   "match": "John Echeverria v Thiago Agustin Pernas",
+   "level": "ITF",
+   "v2": 0.8462987961833145,
+   "incumbent": 0.777673124735457,
+   "market_mid": 0.8,
+   "grade": "POOR",
+   "envelope": [
+    0.7851286403895826,
+    0.8924405273753252
+   ]
+  },
+  {
+   "match": "Gianmarco Ferrari v Stefano D'Agostino",
+   "level": "ITF",
+   "v2": 0.7509639009018186,
+   "incumbent": 0.6262798988440013,
+   "market_mid": 0.45499999999999996,
+   "grade": "POOR",
+   "envelope": [
+    0.6667907871275532,
+    0.8196257043804893
+   ]
+  },
+  {
+   "match": "Viktor Frydrych v Dominique Graf",
+   "level": "ITF",
+   "v2": 0.6248527935504947,
+   "incumbent": 0.5288764641101333,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.5250150093544438,
+    0.7150933555027171
+   ]
+  },
+  {
+   "match": "Axel Garcian v Ruslan Serazhetdinov",
+   "level": "ITF",
+   "v2": 0.7888493365803924,
+   "incumbent": 0.7667016947096851,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.7125803794786565,
+    0.8491637678910582
+   ]
+  },
+  {
+   "match": "Jordan Hasson v James Pikkaart",
+   "level": "ITF",
+   "v2": 0.5580300010468099,
+   "incumbent": 0.4371246033272516,
+   "market_mid": 0.56,
+   "grade": "POOR",
+   "envelope": [
+    0.45589413170420073,
+    0.6554820369607548
+   ]
+  },
+  {
+   "match": "Sean HODKIN v Thomas Gerbaud",
+   "level": "ITF",
+   "v2": 0.5075032885589759,
+   "incumbent": 0.49358881634489316,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.40611760216280546,
+    0.6082755560938982
+   ]
+  },
+  {
+   "match": "Mihail Ivanov v Alexander Vasilev",
+   "level": "ITF",
+   "v2": 0.10672942126906855,
+   "incumbent": 0.18542052688381466,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.07346473436172918,
+    0.15257594785064094
+   ]
+  },
+  {
+   "match": "Dev Javia v Rafael De Alba",
+   "level": "ITF",
+   "v2": 0.7541730488170961,
+   "incumbent": 0.7283357381474188,
+   "market_mid": 0.5650000000000001,
+   "grade": "POOR",
+   "envelope": [
+    0.6706088467031577,
+    0.8221595911116664
+   ]
+  },
+  {
+   "match": "Dimitar Kisimov v Alessandro Spadola",
+   "level": "ITF",
+   "v2": 0.6323586833236725,
+   "incumbent": 0.6584348411488621,
+   "market_mid": 0.72,
+   "grade": "POOR",
+   "envelope": [
+    0.5330256073760453,
+    0.7215981709678339
+   ]
+  },
+  {
+   "match": "Kirill Kivattsev v Ivan Ivanov",
+   "level": "ITF",
+   "v2": 0.4442694877401082,
+   "incumbent": 0.5390281947206681,
+   "market_mid": 0.22999999999999998,
+   "grade": "POOR",
+   "envelope": [
+    0.3466253699579919,
+    0.5464164163292554
+   ]
+  },
+  {
+   "match": "Kacper Knitter v Andrei Kunitsyn",
+   "level": "ITF",
+   "v2": 0.7074966782225613,
+   "incumbent": 0.6361076761869753,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.6161415746868361,
+    0.7847070588488243
+   ]
+  },
+  {
+   "match": "Alex Kobelt v Romain Andres",
+   "level": "ITF",
+   "v2": 0.4373502959245255,
+   "incumbent": 0.4302138150594812,
+   "market_mid": 0.35,
+   "grade": "POOR",
+   "envelope": [
+    0.34029570906664197,
+    0.5394506206995606
+   ]
+  },
+  {
+   "match": "Cem Christopher Kucukhuseyin v Manuel Plunger",
+   "level": "ITF",
+   "v2": 0.538284832108392,
+   "incumbent": 0.5570362154769718,
+   "market_mid": 0.175,
+   "grade": "POOR",
+   "envelope": [
+    0.4361961747616996,
+    0.637260508742716
+   ]
+  },
+  {
+   "match": "Linus Lagerbohm v Ruben Hartig",
+   "level": "ITF",
+   "v2": 0.7547475750760145,
+   "incumbent": 0.6721232448172239,
+   "market_mid": 0.43000000000000005,
+   "grade": "POOR",
+   "envelope": [
+    0.671293551022594,
+    0.8226125976455693
+   ]
+  },
+  {
+   "match": "Vasco Leote Prata v Ziga Sesko",
+   "level": "ITF",
+   "v2": 0.3208983791365006,
+   "incumbent": 0.40137692465462393,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.23872175965829923,
+    0.4159085068919419
+   ]
+  },
+  {
+   "match": "LUCCA LIU v Sebastian Heinrich",
+   "level": "ITF",
+   "v2": 0.6427808853315402,
+   "incumbent": 0.5645089231583198,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.5442342008119501,
+    0.7305684346290824
+   ]
+  },
+  {
+   "match": "Courtney John Lock v Marlon Vankan",
+   "level": "ITF",
+   "v2": 0.12467409465999568,
+   "incumbent": 0.14188048154736654,
+   "market_mid": 0.135,
+   "grade": "POOR",
+   "envelope": [
+    0.08635722892623329,
+    0.17670407778858763
+   ]
+  },
+  {
+   "match": "Laurent Lokoli v Matteo Sciahbasi",
+   "level": "ITF",
+   "v2": 0.8357812730217623,
+   "incumbent": 0.7890882114909509,
+   "market_mid": 0.6799999999999999,
+   "grade": "POOR",
+   "envelope": [
+    0.7715552255938121,
+    0.8846500558300752
+   ]
+  },
+  {
+   "match": "Toby Martin v Marco Furlanetto",
+   "level": "ITF",
+   "v2": 0.5139761869772722,
+   "incumbent": 0.5109230042012425,
+   "market_mid": 0.615,
+   "grade": "POOR",
+   "envelope": [
+    0.412380144256526,
+    0.6144302394250107
+   ]
+  },
+  {
+   "match": "Arjun Mehrotra v David Qariaqus",
+   "level": "ITF",
+   "v2": 0.4050468784027741,
+   "incumbent": 0.3050240753951554,
+   "market_mid": 0.81,
+   "grade": "POOR",
+   "envelope": [
+    0.3111960150521033,
+    0.5063931865572284
+   ]
+  },
+  {
+   "match": "Axel Nefve v Alec Beckley",
+   "level": "ITF",
+   "v2": 0.3358758190226421,
+   "incumbent": 0.29467242866611654,
+   "market_mid": 0.25,
+   "grade": "POOR",
+   "envelope": [
+    0.2512829415218521,
+    0.43249625024239585
+   ]
+  },
+  {
+   "match": "Rihards Neimanis v Davide Profili",
+   "level": "ITF",
+   "v2": 0.6640144937048719,
+   "incumbent": 0.5435487831316331,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.5673830632683171,
+    0.7486245403139635
+   ]
+  },
+  {
+   "match": "Etienne Niyigena v Claude ISHIMWE",
+   "level": "ITF",
+   "v2": 0.7160613135493314,
+   "incumbent": 0.5218447961714585,
+   "market_mid": 0.55,
+   "grade": "POOR",
+   "envelope": [
+    0.6259669774680556,
+    0.7916766206447114
+   ]
+  },
+  {
+   "match": "Yshai Oliel v Louis Van Herck",
+   "level": "ITF",
+   "v2": 0.8304153201338237,
+   "incumbent": 0.707079132963727,
+   "market_mid": 0.69,
+   "grade": "POOR",
+   "envelope": [
+    0.7646815244346197,
+    0.8806529009166025
+   ]
+  },
+  {
+   "match": "Gabriele Pennaforti v Matteo Vavassori",
+   "level": "ITF",
+   "v2": 0.8641905901703067,
+   "incumbent": 0.7981051161906045,
+   "market_mid": 0.69,
+   "grade": "POOR",
+   "envelope": [
+    0.8085300370061449,
+    0.905560508971151
+   ]
+  },
+  {
+   "match": "Rocco Piatti v OLUWASEUN PETER OGUNSAKIN",
+   "level": "ITF",
+   "v2": 0.7722939903737049,
+   "incumbent": 0.6045844334473034,
+   "market_mid": 0.76,
+   "grade": "POOR",
+   "envelope": [
+    0.6923770820579863,
+    0.8363563902263577
+   ]
+  },
+  {
+   "match": "Mathys Picard v Maxime Chazal",
+   "level": "ITF",
+   "v2": 0.24975592885707298,
+   "incumbent": 0.289837590768593,
+   "market_mid": 0.115,
+   "grade": "POOR",
+   "envelope": [
+    0.17963353934653234,
+    0.33406411095217653
+   ]
+  },
+  {
+   "match": "Hugo Pierre v Marwan Ehab",
+   "level": "ITF",
+   "v2": 0.3845523642722689,
+   "incumbent": 0.35238029392095815,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.29311067495926674,
+    0.4849505589378154
+   ]
+  },
+  {
+   "match": "Leonardo Primucci v Oliwier Sterniczuk",
+   "level": "ITF",
+   "v2": 0.2738790098506617,
+   "incumbent": 0.2938538594602616,
+   "market_mid": 0.56,
+   "grade": "POOR",
+   "envelope": [
+    0.20019370236521214,
+    0.3623968306816498
+   ]
+  },
+  {
+   "match": "Frederic Schlossmann v Victor Ryden",
+   "level": "ITF",
+   "v2": 0.4353328185815178,
+   "incumbent": 0.41558339949069856,
+   "market_mid": 0.36500000000000005,
+   "grade": "POOR",
+   "envelope": [
+    0.3384566253823981,
+    0.5374120173302732
+   ]
+  },
+  {
+   "match": "Nicola Senn v Mustapha El Natour",
+   "level": "ITF",
+   "v2": 0.43187854638282225,
+   "incumbent": 0.3172158441563788,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.3353145750718653,
+    0.5339136312664281
+   ]
+  },
+  {
+   "match": "Kael Shalin Shah v Lenny Petit",
+   "level": "ITF",
+   "v2": 0.6008308376305161,
+   "incumbent": 0.5992996789961513,
+   "market_mid": 0.28500000000000003,
+   "grade": "POOR",
+   "envelope": [
+    0.4997185470799306,
+    0.6940202211342501
+   ]
+  },
+  {
+   "match": "Mustafa Ege Sik v Philip Sekulic",
+   "level": "ITF",
+   "v2": 0.1019451676975952,
+   "incumbent": 0.16021452738710473,
+   "market_mid": 0.1,
+   "grade": "POOR",
+   "envelope": [
+    0.07005466262665484,
+    0.1460726419088469
+   ]
+  },
+  {
+   "match": "Zane Stevens v Petar Jovic",
+   "level": "ITF",
+   "v2": 0.5537578387090251,
+   "incumbent": 0.5043829779871598,
+   "market_mid": 0.89,
+   "grade": "POOR",
+   "envelope": [
+    0.45160492330662255,
+    0.6515636816984361
+   ]
+  },
+  {
+   "match": "Tyler Stice v Fabio Luis Guth",
+   "level": "ITF",
+   "v2": 0.48483828364458303,
+   "incumbent": 0.4950489807187513,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.3844459830911568,
+    0.586469279424533
+   ]
+  },
+  {
+   "match": "Stefan Storch v Wihan Van Der Merwe",
+   "level": "ITF",
+   "v2": 0.39085314811996996,
+   "incumbent": 0.3298329985504638,
+   "market_mid": 0.56,
+   "grade": "POOR",
+   "envelope": [
+    0.2986402223265068,
+    0.4915824154092911
+   ]
+  },
+  {
+   "match": "Darrshan Suresh v Preston Brown",
+   "level": "ITF",
+   "v2": 0.425653585395826,
+   "incumbent": 0.5254790484611039,
+   "market_mid": 0.215,
+   "grade": "POOR",
+   "envelope": [
+    0.32967378779357853,
+    0.5275837298825926
+   ]
+  },
+  {
+   "match": "Luka Talan Lopatic v Matei Florin Breazu",
+   "level": "ITF",
+   "v2": 0.5245866108670234,
+   "incumbent": 0.5209676181465837,
+   "market_mid": 0.325,
+   "grade": "POOR",
+   "envelope": [
+    0.42271738317598223,
+    0.6244500299187891
+   ]
+  },
+  {
+   "match": "Zaharije-Zak Talic v Alex Bulte",
+   "level": "ITF",
+   "v2": 0.416054410890571,
+   "incumbent": 0.3857973609761177,
+   "market_mid": 0.27,
+   "grade": "POOR",
+   "envelope": [
+    0.321029271883855,
+    0.5177580735927317
+   ]
+  },
+  {
+   "match": "Gian Luca Tanner v David Eichenseher",
+   "level": "ITF",
+   "v2": 0.7020305874890274,
+   "incumbent": 0.7433563211130323,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.6099095877107479,
+    0.7802356377364554
+   ]
+  },
+  {
+   "match": "Yuta Tomida v ZHENGYU SUN",
+   "level": "ITF",
+   "v2": 0.7494811434798552,
+   "incumbent": 0.6256219562694312,
+   "market_mid": 0.865,
+   "grade": "POOR",
+   "envelope": [
+    0.6650304104881127,
+    0.8184529273662846
+   ]
+  },
+  {
+   "match": "Justas Trainauskas v Louis Herman",
+   "level": "ITF",
+   "v2": 0.60035778813746,
+   "incumbent": 0.5735572735174058,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.4992255428446888,
+    0.6936012905486744
+   ]
+  },
+  {
+   "match": "Zen David Uehling v Jip Van Assendelft",
+   "level": "ITF",
+   "v2": 0.4985479914201894,
+   "incumbent": 0.5241378454041076,
+   "market_mid": 0.44,
+   "grade": "POOR",
+   "envelope": [
+    0.39750736085358707,
+    0.5997073532151092
+   ]
+  },
+  {
+   "match": "Caheer Warik v Corentin Denolly",
+   "level": "ITF",
+   "v2": 0.04224409468386769,
+   "incumbent": 0.07647270633641866,
+   "market_mid": 0.475,
+   "grade": "POOR",
+   "envelope": [
+    0.028437902878609873,
+    0.06232303333944278
+   ]
+  },
+  {
+   "match": "Anuj Watane v Nicholas Campbell",
+   "level": "ITF",
+   "v2": 0.5976387509470642,
+   "incumbent": 0.6204242894894691,
+   "market_mid": 0.48,
+   "grade": "POOR",
+   "envelope": [
+    0.4963956163777601,
+    0.6911903326232876
+   ]
+  },
+  {
+   "match": "Yaojie ZENG v Nikolai Barsukov",
+   "level": "ITF",
+   "v2": 0.4579960705241235,
+   "incumbent": 0.48427147760505285,
+   "market_mid": 0.515,
+   "grade": "POOR",
+   "envelope": [
+    0.35928550695888084,
+    0.5601180818104257
+   ]
+  },
+  {
+   "match": "Jasmine Adams v Ai Maruyama",
+   "level": "ITF",
+   "v2": 0.5275424876670366,
+   "incumbent": 0.4879856912009993,
+   "market_mid": 0.74,
+   "grade": "POOR",
+   "envelope": [
+    0.4125972876428536,
+    0.6396399525863586
+   ]
+  },
+  {
+   "match": "Catherine Aulia v Nana Onozawa",
+   "level": "ITF",
+   "v2": 0.8348619324271705,
+   "incumbent": 0.6988020484068097,
+   "market_mid": 0.625,
+   "grade": "POOR",
+   "envelope": [
+    0.760780669083387,
+    0.8893387680002841
+   ]
+  },
+  {
+   "match": "Ava Beck v Sara Mickoska",
+   "level": "ITF",
+   "v2": 0.8528623274282061,
+   "incumbent": 0.6485997655297912,
+   "market_mid": 0.88,
+   "grade": "POOR",
+   "envelope": [
+    0.7847743555932284,
+    0.9020974216591766
+   ]
+  },
+  {
+   "match": "Yiru Chen v Meiling Wang",
+   "level": "ITF",
+   "v2": 0.09925968336260894,
+   "incumbent": 0.21747791183733617,
+   "market_mid": 0.195,
+   "grade": "POOR",
+   "envelope": [
+    0.06482770576567147,
+    0.14906448862650587
+   ]
+  },
+  {
+   "match": "Sydney-Nicole Clarke v Xiao Tang",
+   "level": "ITF",
+   "v2": 0.3607199430194769,
+   "incumbent": 0.4534947739353816,
+   "market_mid": 0.095,
+   "grade": "POOR",
+   "envelope": [
+    0.2619687490188901,
+    0.4728466009472648
+   ]
+  },
+  {
+   "match": "Daria Egorova v Guyu Xu",
+   "level": "ITF",
+   "v2": 0.9952278155723938,
+   "incumbent": 0.9747471011842428,
+   "market_mid": 0.91,
+   "grade": "POOR",
+   "envelope": [
+    0.99243513628671,
+    0.9969926608224565
+   ]
+  },
+  {
+   "match": "Meiqi Guo v Sarah Ye",
+   "level": "ITF",
+   "v2": 0.9179236046586532,
+   "incumbent": 0.8275639775466477,
+   "market_mid": 0.85,
+   "grade": "POOR",
+   "envelope": [
+    0.8755494853936084,
+    0.9467473096527085
+   ]
+  },
+  {
+   "match": "Albina Kakenova v Kanna Soeda",
+   "level": "ITF",
+   "v2": 0.49080959939753904,
+   "incumbent": 0.5308654222447844,
+   "market_mid": 0.6799999999999999,
+   "grade": "POOR",
+   "envelope": [
+    0.37747347458236336,
+    0.6050983957725283
+   ]
+  },
+  {
+   "match": "Mana Kawamura v Gurmanat Kaur Sandhu",
+   "level": "ITF",
+   "v2": 0.9294012878930357,
+   "incumbent": 0.8103504812274573,
+   "market_mid": 0.71,
+   "grade": "POOR",
+   "envelope": [
+    0.8922572940836231,
+    0.9543945048102808
+   ]
+  },
+  {
+   "match": "Riko Kikawada v Himari Sato",
+   "level": "ITF",
+   "v2": 0.5184684518161805,
+   "incumbent": 0.5807400103188807,
+   "market_mid": 0.625,
+   "grade": "POOR",
+   "envelope": [
+    0.403810523344961,
+    0.6312138153585882
+   ]
+  },
+  {
+   "match": "Ekaterina Kuznetsova v Soo Ha Jang",
+   "level": "ITF",
+   "v2": 0.2762067096316239,
+   "incumbent": 0.3965100786427217,
+   "market_mid": 0.33999999999999997,
+   "grade": "POOR",
+   "envelope": [
+    0.19358582785580494,
+    0.37757918370011656
+   ]
+  },
+  {
+   "match": "Sera Nishimoto v Rira Kosaka",
+   "level": "ITF",
+   "v2": 0.732711625936392,
+   "incumbent": 0.6129400665340738,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.6329524471768265,
+    0.8133527264134213
+   ]
+  },
+  {
+   "match": "Remika Ohashi v Yuka Hosoki",
+   "level": "ITF",
+   "v2": 0.6843159375434862,
+   "incumbent": 0.6360155022312386,
+   "market_mid": 0.655,
+   "grade": "POOR",
+   "envelope": [
+    0.5769237294802271,
+    0.7750759076463144
+   ]
+  },
+  {
+   "match": "Junlu Sun v Fang An Lin",
+   "level": "ITF",
+   "v2": 0.26120233534774595,
+   "incumbent": 0.4464117429763127,
+   "market_mid": 0.28500000000000003,
+   "grade": "POOR",
+   "envelope": [
+    0.18194145518790775,
+    0.3598054711407898
+   ]
+  },
+  {
+   "match": "I Wen Wan v Maiko Uchijima",
+   "level": "ITF",
+   "v2": 0.4396279804526721,
+   "incumbent": 0.3925464902607269,
+   "market_mid": 0.755,
+   "grade": "POOR",
+   "envelope": [
+    0.33044076817716195,
+    0.5549887255638492
+   ]
+  },
+  {
+   "match": "Ani Amiraghyan v Juliette Mazzoni",
+   "level": "ITF",
+   "v2": 0.9659291112086529,
+   "incumbent": 0.924626782393465,
+   "market_mid": 0.88,
+   "grade": "POOR",
+   "envelope": [
+    0.9469055492395884,
+    0.9782928491658494
+   ]
+  },
+  {
+   "match": "Maria Andrienko v Annemarie Lazar",
+   "level": "ITF",
+   "v2": 0.8353531176061083,
+   "incumbent": 0.7422139348423888,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.7614292344840675,
+    0.8896893275801924
+   ]
+  },
+  {
+   "match": "Alessia Antici v Eleonora Alvisi",
+   "level": "ITF",
+   "v2": 0.17597576882589755,
+   "incumbent": 0.36723846455882136,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.11843088923296465,
+    0.2534429227975058
+   ]
+  },
+  {
+   "match": "Annika Barth v Sveva Pieroni",
+   "level": "ITF",
+   "v2": 0.531706196818182,
+   "incumbent": 0.5236812604846821,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.416653841460547,
+    0.64348339059901
+   ]
+  },
+  {
+   "match": "Eva Bennemann v Yasmin Ezzat",
+   "level": "ITF",
+   "v2": 0.8735322988137464,
+   "incumbent": 0.7548989433149194,
+   "market_mid": 0.575,
+   "grade": "POOR",
+   "envelope": [
+    0.8129111168283601,
+    0.9165277689376475
+   ]
+  },
+  {
+   "match": "Jessica Bertoldo v Leticia Romanova",
+   "level": "ITF",
+   "v2": 0.8460793813224224,
+   "incumbent": 0.718523473239983,
+   "market_mid": 0.72,
+   "grade": "POOR",
+   "envelope": [
+    0.7756781773305993,
+    0.8973108954279191
+   ]
+  },
+  {
+   "match": "Polina Berezina v Camila Zouein Yanez",
+   "level": "ITF",
+   "v2": 0.8385366751632439,
+   "incumbent": 0.6614513842864669,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.7656411497258301,
+    0.8919581428621906
+   ]
+  },
+  {
+   "match": "Kate Bierhoff v Parneet Kaur",
+   "level": "ITF",
+   "v2": 0.624961085228476,
+   "incumbent": 0.5501405451435993,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.5117826671502577,
+    0.7259518333846199
+   ]
+  },
+  {
+   "match": "Coco Bosman v Isabel Pascual Montalvo",
+   "level": "ITF",
+   "v2": 0.7941893413173335,
+   "incumbent": 0.67991417015568,
+   "market_mid": 0.41000000000000003,
+   "grade": "POOR",
+   "envelope": [
+    0.7082386809505543,
+    0.8598308142333223
+   ]
+  },
+  {
+   "match": "Astrid Wanja Brune Olsen v Anna Lena Ebster",
+   "level": "ITF",
+   "v2": 0.8083519707220966,
+   "incumbent": 0.7232139986101989,
+   "market_mid": 0.72,
+   "grade": "POOR",
+   "envelope": [
+    0.7262774032548606,
+    0.8702145691129125
+   ]
+  },
+  {
+   "match": "Sara Cakarevic v Carolina Bohrer Martins",
+   "level": "ITF",
+   "v2": 0.7709249671387055,
+   "incumbent": 0.6240246569468635,
+   "market_mid": 0.44999999999999996,
+   "grade": "POOR",
+   "envelope": [
+    0.6791833295512646,
+    0.8483588210346011
+   ]
+  },
+  {
+   "match": "Ana Candiotto v Pia Lovric",
+   "level": "ITF",
+   "v2": 0.2807739055924638,
+   "incumbent": 0.3935809047029154,
+   "market_mid": 0.16999999999999998,
+   "grade": "POOR",
+   "envelope": [
+    0.19715899303349843,
+    0.3829357736051738
+   ]
+  },
+  {
+   "match": "Midori Castillo Meza v Tereza Krejcova",
+   "level": "ITF",
+   "v2": 0.4736453455856038,
+   "incumbent": 0.42016129289778714,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.361459153395434,
+    0.588557121478651
+   ]
+  },
+  {
+   "match": "Gabriela Ce v Marie Mettraux",
+   "level": "ITF",
+   "v2": 0.7291716265193746,
+   "incumbent": 0.6137362546035977,
+   "market_mid": 0.725,
+   "grade": "POOR",
+   "envelope": [
+    0.6277567110062322,
+    0.8112637369100865
+   ]
+  },
+  {
+   "match": "Kei Yau Cheung v Florentine Dekkers",
+   "level": "ITF",
+   "v2": 0.23702399549023057,
+   "incumbent": 0.3658652819136037,
+   "market_mid": 0.175,
+   "grade": "POOR",
+   "envelope": [
+    0.16347649589477167,
+    0.33058397766748354
+   ]
+  },
+  {
+   "match": "Enola Chiesa v Anna Cabassers Morros",
+   "level": "ITF",
+   "v2": 0.9124309385159808,
+   "incumbent": 0.7546200111663417,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.867630014101075,
+    0.9430639204704974
+   ]
+  },
+  {
+   "match": "Agustina Chlpac v Aurora Corvi",
+   "level": "ITF",
+   "v2": 0.7669687456201342,
+   "incumbent": 0.6379463515675998,
+   "market_mid": 0.44499999999999995,
+   "grade": "POOR",
+   "envelope": [
+    0.674312050321414,
+    0.8395378756695567
+   ]
+  },
+  {
+   "match": "Mia Chudejova v Anastasija Cvetkovic",
+   "level": "ITF",
+   "v2": 0.10460695363500597,
+   "incumbent": 0.23307612992528054,
+   "market_mid": 0.055,
+   "grade": "POOR",
+   "envelope": [
+    0.06846105547931,
+    0.1566282665363318
+   ]
+  },
+  {
+   "match": "Defne Cirpanli v Anastasia Safta",
+   "level": "ITF",
+   "v2": 0.37793764329850665,
+   "incumbent": 0.38359805237933153,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.2765116844597019,
+    0.49130314536415526
+   ]
+  },
+  {
+   "match": "Francesca Curmi v Maayan Laron",
+   "level": "ITF",
+   "v2": 0.852340890611664,
+   "incumbent": 0.7580741345648967,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.783344065121258,
+    0.9021106146771527
+   ]
+  },
+  {
+   "match": "Josy Daems v Noa Krznaric Uygungul",
+   "level": "ITF",
+   "v2": 0.8353512079132005,
+   "incumbent": 0.7134643311297051,
+   "market_mid": 0.59,
+   "grade": "POOR",
+   "envelope": [
+    0.7614267122449827,
+    0.8896879648930245
+   ]
+  },
+  {
+   "match": "Cristina Diaz Adrover v Lorena Solar Donoso",
+   "level": "ITF",
+   "v2": 0.6615721008083993,
+   "incumbent": 0.6351347551922963,
+   "market_mid": 0.505,
+   "grade": "POOR",
+   "envelope": [
+    0.5504500216579914,
+    0.7573355290021717
+   ]
+  },
+  {
+   "match": "Gina Marie Dittmann v Madelief Hageman",
+   "level": "ITF",
+   "v2": 0.682074863054599,
+   "incumbent": 0.599284894015636,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.5743944287070227,
+    0.7732656670705088
+   ]
+  },
+  {
+   "match": "Anna Dvorackova v Lea Belanska",
+   "level": "ITF",
+   "v2": 0.4079899037829409,
+   "incumbent": 0.4144335128480027,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.3024197820800268,
+    0.5227939233702246
+   ]
+  },
+  {
+   "match": "Ainara Fernandez Sanchez v Carlota Martinez Cirez",
+   "level": "ITF",
+   "v2": 0.054984082869998965,
+   "incumbent": 0.17211745359156072,
+   "market_mid": 0.055,
+   "grade": "POOR",
+   "envelope": [
+    0.03530871826863892,
+    0.08466112450580443
+   ]
+  },
+  {
+   "match": "Francesca Gandolfi v Federica Bilardo",
+   "level": "ITF",
+   "v2": 0.2764069739958793,
+   "incumbent": 0.26546750055335233,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.19374222274492295,
+    0.3778145817991336
+   ]
+  },
+  {
+   "match": "Valeria Garnevska v Sonja Zhenikhova",
+   "level": "ITF",
+   "v2": 0.1354911650826576,
+   "incumbent": 0.3025793475553016,
+   "market_mid": 0.25,
+   "grade": "POOR",
+   "envelope": [
+    0.08974313587820268,
+    0.19945008290972654
+   ]
+  },
+  {
+   "match": "Ariana Geerlings v Laura Boehner",
+   "level": "ITF",
+   "v2": 0.94986884264822,
+   "incumbent": 0.8644636942411162,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.922596573078339,
+    0.9678666967705113
+   ]
+  },
+  {
+   "match": "Oriana Gniewkowska v nour sahnoun",
+   "level": "ITF",
+   "v2": 0.6054705698467702,
+   "incumbent": 0.5713108467526214,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.4911989149801549,
+    0.7092681735952148
+   ]
+  },
+  {
+   "match": "Ella Haavisto v Ingrid Carolina Millan Acosta",
+   "level": "ITF",
+   "v2": 0.7995265021105576,
+   "incumbent": 0.6426572296429285,
+   "market_mid": 0.42500000000000004,
+   "grade": "POOR",
+   "envelope": [
+    0.7150049037553822,
+    0.8637577524576541
+   ]
+  },
+  {
+   "match": "Jessica Hinojosa Gomez v Anna Kmiecik",
+   "level": "ITF",
+   "v2": 0.4994281201683678,
+   "incumbent": 0.4774549158833157,
+   "market_mid": 0.7749999999999999,
+   "grade": "POOR",
+   "envelope": [
+    0.3856089799065314,
+    0.6133065600823061
+   ]
+  },
+  {
+   "match": "Aleksandra Iankovskaia v Matylda Burylo",
+   "level": "ITF",
+   "v2": 0.28355848516783055,
+   "incumbent": 0.36314417835583057,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.19934415993596935,
+    0.3861895102051392
+   ]
+  },
+  {
+   "match": "Iva Ivanova v Diana-Ioana Simionescu",
+   "level": "ITF",
+   "v2": 0.6508123202071026,
+   "incumbent": 0.6282858825571089,
+   "market_mid": 0.43,
+   "grade": "POOR",
+   "envelope": [
+    0.5396892159134627,
+    0.7476526447111832
+   ]
+  },
+  {
+   "match": "Mirjana Jovanovic v Emma Slavikova",
+   "level": "ITF",
+   "v2": 0.29729507811467887,
+   "incumbent": 0.34662782699516326,
+   "market_mid": 0.23,
+   "grade": "POOR",
+   "envelope": [
+    0.21019804226481442,
+    0.4021074551205061
+   ]
+  },
+  {
+   "match": "Victoria Kapcia v Valeria Monko",
+   "level": "ITF",
+   "v2": 0.40893856826576946,
+   "incumbent": 0.4578197588997036,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.3032487134573415,
+    0.523773356576196
+   ]
+  },
+  {
+   "match": "Julia Khramtsova v Sabastiani Leon",
+   "level": "ITF",
+   "v2": 0.6052046148164282,
+   "incumbent": 0.5540287936149983,
+   "market_mid": 0.365,
+   "grade": "POOR",
+   "envelope": [
+    0.49092069651947384,
+    0.7090385645426394
+   ]
+  },
+  {
+   "match": "Nikola Koprivova v Alexandra Biot",
+   "level": "ITF",
+   "v2": 0.2673035287259611,
+   "incumbent": 0.4257597168619247,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.1866590208416895,
+    0.36706553006980963
+   ]
+  },
+  {
+   "match": "Elena Korokozidi v Elena Ruxandra Bertea",
+   "level": "ITF",
+   "v2": 0.26223073436999456,
+   "incumbent": 0.3395205553619224,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.1820938895413858,
+    0.3620245971575883
+   ]
+  },
+  {
+   "match": "Yelyzaveta Kotliar v Elizabeth Jurna",
+   "level": "ITF",
+   "v2": 0.9853754609666078,
+   "incumbent": 0.944231962398863,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.9769507200101573,
+    0.99075003105062
+   ]
+  },
+  {
+   "match": "Alena Kovackova v Polona Hercog",
+   "level": "ITF",
+   "v2": 0.49668268148013384,
+   "incumbent": 0.4006050284609075,
+   "market_mid": 0.6000000000000001,
+   "grade": "POOR",
+   "envelope": [
+    0.38301048538096605,
+    0.6106988447154977
+   ]
+  },
+  {
+   "match": "Katarina Kujovic v Carlotta Moccia",
+   "level": "ITF",
+   "v2": 0.30844638228628596,
+   "incumbent": 0.4231805782562848,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.21910102649292465,
+    0.41486911691790496
+   ]
+  },
+  {
+   "match": "Ksenia Laskutova v Ushna Suhail",
+   "level": "ITF",
+   "v2": 0.9354289488535991,
+   "incumbent": 0.8639633206536753,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.9011188747858407,
+    0.9583838156661041
+   ]
+  },
+  {
+   "match": "Nauhany Vitoria Leme Da Silva v Ruth Roura Llaverias",
+   "level": "ITF",
+   "v2": 0.6893948456255566,
+   "incumbent": 0.5389646500861291,
+   "market_mid": 0.43000000000000005,
+   "grade": "POOR",
+   "envelope": [
+    0.5826767513075581,
+    0.7791658345090333
+   ]
+  },
+  {
+   "match": "Manon Leonard v Mariella Thamm",
+   "level": "ITF",
+   "v2": 0.47049573653586546,
+   "incumbent": 0.5341480435840745,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.3585473789818214,
+    0.5854933665817933
+   ]
+  },
+  {
+   "match": "Romane Longueville v Charlotte Pikkaart",
+   "level": "ITF",
+   "v2": 0.4682844693117328,
+   "incumbent": 0.4013556901765643,
+   "market_mid": 0.72,
+   "grade": "POOR",
+   "envelope": [
+    0.3565080096295615,
+    0.5833370473469065
+   ]
+  },
+  {
+   "match": "Sophie Luescher v Sara Victoria Balan",
+   "level": "ITF",
+   "v2": 0.24842393939414434,
+   "incumbent": 0.40491401421025475,
+   "market_mid": 0.26,
+   "grade": "POOR",
+   "envelope": [
+    0.1721371595065951,
+    0.3444522885223684
+   ]
+  },
+  {
+   "match": "Emma Mazzoni v Dunja Maric",
+   "level": "ITF",
+   "v2": 0.022077183255327856,
+   "incumbent": 0.08505885754345871,
+   "market_mid": 0.255,
+   "grade": "POOR",
+   "envelope": [
+    0.01400266063613247,
+    0.03464421690697841
+   ]
+  },
+  {
+   "match": "Warona Mdlulwa v Sabrina Olimjanova",
+   "level": "ITF",
+   "v2": 0.23329133560029727,
+   "incumbent": 0.2623412056983083,
+   "market_mid": 0.11,
+   "grade": "POOR",
+   "envelope": [
+    0.1606581783952031,
+    0.32600748672231045
+   ]
+  },
+  {
+   "match": "NICOLE ANDREA Molaro v Lavinia Luciano",
+   "level": "ITF",
+   "v2": 0.29513910676573757,
+   "incumbent": 0.4673818400936117,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.20848629771283805,
+    0.3996236498097371
+   ]
+  },
+  {
+   "match": "Miyu Nakashima v Milla Sequeira",
+   "level": "ITF",
+   "v2": 0.895657646855326,
+   "incumbent": 0.8546263881160533,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.8437449573093248,
+    0.9317190872070273
+   ]
+  },
+  {
+   "match": "Maria Oliver sanchez v Aurora Zantedeschi",
+   "level": "ITF",
+   "v2": 0.17847972938473317,
+   "incumbent": 0.31408762625193326,
+   "market_mid": 0.065,
+   "grade": "POOR",
+   "envelope": [
+    0.12023551744980658,
+    0.2567057739047861
+   ]
+  },
+  {
+   "match": "Amelia Paszun v Alina Granwehr",
+   "level": "ITF",
+   "v2": 0.13249854465334177,
+   "incumbent": 0.22454959457531393,
+   "market_mid": 0.42000000000000004,
+   "grade": "POOR",
+   "envelope": [
+    0.08765850524332758,
+    0.19536402881427675
+   ]
+  },
+  {
+   "match": "Maja Pawelska v Simona Wirglerova",
+   "level": "ITF",
+   "v2": 0.5105104943697473,
+   "incumbent": 0.5163332138894066,
+   "market_mid": 0.315,
+   "grade": "POOR",
+   "envelope": [
+    0.3961645615737584,
+    0.6237670229592378
+   ]
+  },
+  {
+   "match": "Lucie Petruzelova v Jana Kovackova",
+   "level": "ITF",
+   "v2": 0.06460497350567684,
+   "incumbent": 0.1244094390961936,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.04163858416355583,
+    0.09893116604424307
+   ]
+  },
+  {
+   "match": "Anna Petkovic v Giulia Paterno",
+   "level": "ITF",
+   "v2": 0.7363551181463421,
+   "incumbent": 0.6803648696540039,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.6372826164241808,
+    0.8161727595567625
+   ]
+  },
+  {
+   "match": "Ema Lina Picorusevic v Aleksandra Janiszewska",
+   "level": "ITF",
+   "v2": 0.2850266215127164,
+   "incumbent": 0.35372604200647395,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.20049829538903793,
+    0.3879013211009795
+   ]
+  },
+  {
+   "match": "Aneta Poborilova v Lana Virc",
+   "level": "ITF",
+   "v2": 0.14596682210854406,
+   "incumbent": 0.36372333444740784,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.09707892070530406,
+    0.21364871073248817
+   ]
+  },
+  {
+   "match": "Barakat Oyinlomo Quadre v Anastasia Bertacchi",
+   "level": "ITF",
+   "v2": 0.23208661635575417,
+   "incumbent": 0.39389629067574944,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.1597503867919443,
+    0.32452663763348827
+   ]
+  },
+  {
+   "match": "Angelica Raggi v Isabel Skoog",
+   "level": "ITF",
+   "v2": 0.8345001589800671,
+   "incumbent": 0.6925670050864134,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.7603031990112202,
+    0.8890804827275957
+   ]
+  },
+  {
+   "match": "Andrea Roots v Carola Cavelli",
+   "level": "ITF",
+   "v2": 0.1880772949834851,
+   "incumbent": 0.23385618076753664,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.1271859527984802,
+    0.26913179847845903
+   ]
+  },
+  {
+   "match": "Sabine Rutlauka v Denisa Zoldakova",
+   "level": "ITF",
+   "v2": 0.3244043281225908,
+   "incumbent": 0.4246523648805177,
+   "market_mid": 0.42000000000000004,
+   "grade": "POOR",
+   "envelope": [
+    0.2319871808271905,
+    0.4328864930539104
+   ]
+  },
+  {
+   "match": "Serife Pelin Sari v Gloria Levinsky",
+   "level": "ITF",
+   "v2": 0.5704002808653719,
+   "incumbent": 0.5285470972023043,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.4551122488470366,
+    0.6785256811572734
+   ]
+  },
+  {
+   "match": "Nastasja Schunk v Marie Weckerle",
+   "level": "ITF",
+   "v2": 0.6184308847017514,
+   "incumbent": 0.5407971132174534,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.5048431591059731,
+    0.7203933589116662
+   ]
+  },
+  {
+   "match": "Julia Stusek v Kaat Coppez",
+   "level": "ITF",
+   "v2": 0.9193307867448036,
+   "incumbent": 0.7788899423258837,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.8775862776704764,
+    0.9476884781301969
+   ]
+  },
+  {
+   "match": "Ares Teixido Garcia v Lucie Nguyen Tan",
+   "level": "ITF",
+   "v2": 0.06707434081502077,
+   "incumbent": 0.1830867750488483,
+   "market_mid": 0.060000000000000005,
+   "grade": "POOR",
+   "envelope": [
+    0.043270725335996456,
+    0.10256869989954169
+   ]
+  },
+  {
+   "match": "Cristiana Nicoleta Todoni v Georgina Groth",
+   "level": "ITF",
+   "v2": 0.781852954798758,
+   "incumbent": 0.6755569556446464,
+   "market_mid": 0.7949999999999999,
+   "grade": "POOR",
+   "envelope": [
+    0.6927435507883514,
+    0.8506892915719838
+   ]
+  },
+  {
+   "match": "Maria Toma v Agnese Gentili",
+   "level": "ITF",
+   "v2": 0.7343749267808609,
+   "incumbent": 0.608766281600816,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.6349272292840586,
+    0.8146411566138607
+   ]
+  },
+  {
+   "match": "Federica Trevisan v Luisa Meyer auf der Heide",
+   "level": "ITF",
+   "v2": 0.1398491477723242,
+   "incumbent": 0.1980066150703837,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.0927875948145256,
+    0.205376544866245
+   ]
+  },
+  {
+   "match": "Yelizaveta Trush v Lia Belibova",
+   "level": "ITF",
+   "v2": 0.4182706389965346,
+   "incumbent": 0.4458122793139861,
+   "market_mid": 0.42500000000000004,
+   "grade": "POOR",
+   "envelope": [
+    0.31143976895258874,
+    0.533361249364834
+   ]
+  },
+  {
+   "match": "Katerina Tsygourova v Amandine Hesse",
+   "level": "ITF",
+   "v2": 0.3922313905523854,
+   "incumbent": 0.4428323869641963,
+   "market_mid": 0.485,
+   "grade": "POOR",
+   "envelope": [
+    0.2887500499553701,
+    0.5063941288431608
+   ]
+  },
+  {
+   "match": "Alice Tubello v Helena Muzinic",
+   "level": "ITF",
+   "v2": 0.9985278247557978,
+   "incumbent": 0.9699797711198379,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.9976617715881608,
+    0.99907339962385
+   ]
+  },
+  {
+   "match": "Sarah Van Emst v Sapfo Sakellaridi",
+   "level": "ITF",
+   "v2": 0.41545699630166516,
+   "incumbent": 0.4268992430161116,
+   "market_mid": 0.42,
+   "grade": "POOR",
+   "envelope": [
+    0.30804607275924445,
+    0.5315499099672616
+   ]
+  },
+  {
+   "match": "Viktoria Varga v Sara Cozma",
+   "level": "ITF",
+   "v2": 0.41246689685460913,
+   "incumbent": 0.433141605886353,
+   "market_mid": 0.5,
+   "grade": "POOR",
+   "envelope": [
+    0.3063377683542363,
+    0.527408386778835
+   ]
+  },
+  {
+   "match": "Laima Vladson v Beatrise Zeltina",
+   "level": "ITF",
+   "v2": 0.3661928697967607,
+   "incumbent": 0.4684514331883718,
+   "market_mid": 0.495,
+   "grade": "POOR",
+   "envelope": [
+    0.2665681535973704,
+    0.47874672887611425
+   ]
+  },
+  {
+   "match": "Ru Xi Wu v Emma Van Poppel",
+   "level": "ITF",
+   "v2": 0.8965030501663719,
+   "incumbent": 0.8795483917215681,
+   "market_mid": 0.9099999999999999,
+   "grade": "POOR",
+   "envelope": [
+    0.8449381497888002,
+    0.9322943998788251
+   ]
+  },
+  {
+   "match": "Summer Yardley v Noemi La Cagnina",
+   "level": "ITF",
+   "v2": 0.1828397987179799,
+   "incumbent": 0.29557919692203605,
+   "market_mid": 0.175,
+   "grade": "POOR",
+   "envelope": [
+    0.12338644377832547,
+    0.2623665183408271
+   ]
+  },
+  {
+   "match": "Daria Yesypchuk v Ida Wobker",
+   "level": "ITF",
+   "v2": 0.3327974642251134,
+   "incumbent": 0.42353498762428676,
+   "market_mid": 0.31,
+   "grade": "POOR",
+   "envelope": [
+    0.23883453825898385,
+    0.4422490461667572
+   ]
+  },
+  {
+   "match": "Kyoka Okamura v Darja Vidmanova",
+   "level": "WTA_125",
+   "v2": 0.26201938796783514,
+   "incumbent": 0.28005604862621364,
+   "market_mid": 0.19,
+   "grade": "POOR",
+   "envelope": [
+    0.1825718451297742,
+    0.36078033934571097
+   ]
+  },
+  {
+   "match": "Oleksandra Oliynykova v Wushuang Zheng",
+   "level": "WTA_125",
+   "v2": 0.8287091947987193,
+   "incumbent": 0.7857564019126012,
+   "market_mid": 0.725,
+   "grade": "POOR",
+   "envelope": [
+    0.7526854458391316,
+    0.8949015478699665
+   ]
+  },
+  {
+   "match": "Han Shi v Renata Zarazua",
+   "level": "WTA_125",
+   "v2": 0.31040083371025246,
+   "incumbent": 0.35271311885143103,
+   "market_mid": 0.455,
+   "grade": "POOR",
+   "envelope": [
+    0.2206699952002761,
+    0.4170911994808378
+   ]
+  },
+  {
+   "match": "Rebecca Sramkova v Claire Liu",
+   "level": "WTA_125",
+   "v2": 0.4608848854904448,
+   "incumbent": 0.48298568845077566,
+   "market_mid": 0.31,
+   "grade": "POOR",
+   "envelope": [
+    0.3497129949589573,
+    0.5760891824374228
+   ]
+  },
+  {
+   "match": "Jia-Jing Lu v Tamara Korpatsch",
+   "level": "WTA_125",
+   "v2": 0.2960562595480516,
+   "incumbent": 0.4223083005088104,
+   "market_mid": 0.325,
+   "grade": "POOR",
+   "envelope": [
+    0.20100093283146175,
+    0.40068092067199906
+   ]
+  },
+  {
+   "match": "Darya Khomutsianskaya v Tyra Caterina Grant",
+   "level": "WTA_125",
+   "v2": 0.33072866860849137,
+   "incumbent": 0.5964550121508042,
+   "market_mid": 0.35,
+   "grade": "POOR",
+   "envelope": [
+    0.2371422433255688,
+    0.43994850386501616
+   ]
+  },
+  {
+   "match": "Alina Charaeva v Qinwen Zheng",
+   "level": "MASTERS_1000",
+   "v2": 0.2107639740414651,
+   "incumbent": 0.18076048074946208,
+   "market_mid": 0.235,
+   "grade": "LOW",
+   "envelope": [
+    0.1613679631658734,
+    0.27040509919738415
+   ]
+  },
+  {
+   "match": "Iva Jovic v Iga Swiatek",
+   "level": "MASTERS_1000",
+   "v2": 0.3395361800208722,
+   "incumbent": 0.2241659146715901,
+   "market_mid": 0.355,
+   "grade": "LOW",
+   "envelope": [
+    0.27029623838600286,
+    0.41639171752064236
+   ]
+  }
+ ]
+}
