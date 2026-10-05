@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 02:33Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 02:53Z)
 
 * Earliest credible first ball: **2026-10-05 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-05 02:15Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Donna Vekic vs Iga Swiatek | 2026-10-05 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Donna Vekic vs Iga Swiatek | 2026-10-05 03:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Taro Daniel vs Shintaro Mochizuki | 2026-10-05 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Hugo Gaston vs Liam Draxl | 2026-10-05 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Andre Ilagan vs Nikoloz Basilashvili | 2026-10-05 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -19,7 +19,7 @@
 
 Published slate: `SL-20261005T015239Z-ca590a7a` built 2026-10-05 01:52Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-05T03:00:00+00:00, slate built 2026-10-05T01:52:39.732044+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-05 05:30Z, run by 2026-10-05 04:45Z, 16 match(es)
 * later window 3: first ball 2026-10-05 08:30Z, run by 2026-10-05 07:45Z, 9 match(es)
