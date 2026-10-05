@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-05T08:03:56.355494+00:00",
+ "run_id": "20261005T080356Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1408,
+  "skipped_family": 307,
+  "skipped_period": 440,
+  "skipped_live": 24,
+  "one_sided": 13,
+  "rows": 2355,
+  "devigged": 648
+ },
+ "smarkets_fetch": {
+  "events_seen": 106,
+  "events_priced": 80,
+  "markets": 833,
+  "markets_mapped": 293,
+  "contracts": 654,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20261005T080356Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 293,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 612,
+  "two_sided": 608,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 708,
+ "external_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 85,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.787,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Diego Dedura": 1,
+   "Dominic Stephan Stricker": 1,
+   "Murkel Dellien": 1,
+   "Yexin Ma": 1,
+   "Noma Akugue Noha": 1,
+   "Caroline Werner": 1,
+   "Bianca Barbulescu": 1,
+   "A. Huijsegoms": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Caroline Werner": 1,
+   "Aleksandr Shevchenko": 1,
+   "Murkel Dellien": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8221,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Seongchan Hong": 1,
+   "Aleksandr Shevchenko": 1,
+   "Pyotr Nesterov": 1,
+   "Yexin Ma": 1,
+   "Diego Giraldo": 1,
+   "Rodrigo Duarte": 1,
+   "Sacha Grandvincent": 1,
+   "Maxim Khorozov": 1,
+   "Ramon Talin maiz": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 95,
+  "tri:MODEL_LONE_OUTLIER": 67,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
