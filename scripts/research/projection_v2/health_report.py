@@ -15,13 +15,17 @@ NOTES = {
     "TENNIS-2": ("new series KXATPT5RANK (year-end top-5 ranking) not in the family registry",
                  "classified SEASON_RANKING, unpriced (no rankings-race model or rankings feed exists; not faked)"),
     "TENNIS-3": ("the same 16 KXATPT5RANK markets", "same classification"),
-    "TENNIS-4": ("40 unmapped players: ~37 appear in no reachable results source (ITF results stop April/June 2026), "
-                 "3 are spelling/transliteration variants; doubles name recovery gaps",
+    "TENNIS-4": ("unmapped players (most appear in no reachable results source: ITF results stop April/June 2026; "
+                 "others are another form of a Sackmann name, refused a minted id) and doubles teammates that "
+                 "cannot be resolved; the board is now the full open snapshot (~1,200 projectable markets, not ~90)",
                  "transliteration aliases at 0.85; alias candidates queued for human review; minted ids for new TML/ESPN "
                  "players; detail separates NO_HISTORY (data gap) from fixable identity gaps. Stays FAIL while players "
                  "are absent from every source -- no unsafe matching"),
     "TENNIS-5": ("trade-tape backlog + capture cadence slipping because every pass fetched and checked out the 8 GB "
-                 "evidence branch", "blobless fetches and sparse publishes in the capture and first-ball conductors"),
+                 "evidence branch; AFTER: the conductor publishes every ~10 min (median 9.9, max 10.1), but this gate "
+                 "reads the newest capture in RUN TENNIS's own pulled copy ~20 min after the pull, so it reads 20-34 min",
+                 "blobless fetches and sparse publishes in the capture and first-ball conductors; quadratic ledger append "
+                 "fixed (#21). Remaining FAIL is pipeline latency in the measurement -- threshold NOT changed, owner decision"),
     "TENNIS-6": ("330 legacy first-ball violations (pre 2026-09-27 guard) counted forever; AND an unseen active leak: "
                  "2,631 rows priced after the exchange had settled the market",
                  "append-only quarantine register by prediction id; post-settlement class detected; lifecycle guard "
@@ -29,7 +33,8 @@ NOTES = {
     "TENNIS-7": ("healthy", "none needed"),
     "TENNIS-8": ("all 'sports truth' was Kalshi's own result", "independent lane (Sackmann/TML/ESPN); coverage reported "
                  "overall and among covered levels; stays FAIL: ITF has no independent source"),
-    "TENNIS-9": ("no independent truth to reconcile against", "reconciliation of Kalshi settlements against independent truth"),
+    "TENNIS-9": ("no independent truth to reconcile against", "reconciliation of Kalshi settlements against independent truth; "
+                 "TML Challenger window narrowed to -6..+2 days after a previous-week meeting was taken as truth (#20)"),
     "TENNIS-10": ("330 post-start rows counted as missing pregame closes", "quarantined post-start rows excluded from "
                   "the pregame-eligible denominator (both rates reported, threshold unchanged)"),
     "TENNIS-11": ("healthy", "none needed"), "TENNIS-12": ("healthy", "none needed"),
@@ -57,7 +62,7 @@ def main():
     b = {g["gate"]: g for g in json.load(open(a.before))}
     af = {g["gate"]: g for g in json.load(open(a.after))}
     L = ["# Health gates: before / after", "",
-         f"Before: `{a.before}` (RUN TENNIS #99, main @ 4bd491d). After: `{a.after}` ({a.after_label}).", "",
+         f"Before: RUN TENNIS #99 health (main @ 4bd491d). After: {a.after_label}.", "",
          "Thresholds were not changed. Every FAIL that remains is a real condition, stated in its row.", "",
          "| gate | before | after | root cause | fix |", "|---|---|---|---|---|"]
     for k in sorted(set(b) | set(af), key=lambda x: int(x.split("-")[1])):
