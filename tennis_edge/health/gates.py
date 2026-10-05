@@ -166,9 +166,18 @@ def gate_3_4_active_coverage(projections_path=None) -> tuple[GateResult, GateRes
     # the projection run already applied lifecycle (closed since discovery) and pregame exclusions, which are not
     # coverage failures; what counts is every still-open, pregame, projectable market that was NOT priced
     hard = [e for e in pj.get("excluded", []) if e.get("stage") in ("event", "identity", "format", "pricing", "doubles")]
+    # identity gaps a rule or a person can close vs players absent from every reachable results source (2026-10-05)
+    id_kinds: dict = {}
+    for e in hard:
+        if e.get("stage") == "identity":
+            for k in (e.get("identity_kinds") or ["UNCLASSIFIED"]):
+                id_kinds[k] = id_kinds.get(k, 0) + 1
     need = len(have) + len(hard)
     g4 = GateResult("TENNIS-4", "active_market_projection", "PASS" if not hard else "FAIL",
-                    {"projectable_open_pregame": need, "projected": len(have), "not_projected": len(hard), "missing_sample": [e["ticker"] + ": " + e["reason"][:60] for e in hard[:10]],
+                    {"projectable_open_pregame": need, "projected": len(have), "not_projected": len(hard),
+                     "not_projected_by_stage": {st_: sum(1 for e in hard if e.get("stage") == st_) for st_ in sorted({e.get("stage") for e in hard})},
+                     "identity_gap_kinds": id_kinds, "alias_review_queue": len(pj.get("alias_review_queue") or []),
+                     "missing_sample": [e["ticker"] + ": " + e["reason"][:60] for e in hard[:10]],
                      "excluded_by_policy": {k: v for k, v in pj.get("coverage", {}).items() if k in ("closed_since_discovery", "past_nominal_start", "unsupported_family", "tournament_scope_not_priced_tonight", "first_ball_already_observed")},
                      "projection_run": pj.get("run_id")})
     return g3, g4
@@ -332,7 +341,8 @@ def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_con
 
 
 def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actual_start_basis: int | None,
-                         first_ball: dict | None = None, n_strict_settled: int | None = None) -> GateResult:
+                         first_ball: dict | None = None, n_strict_settled: int | None = None,
+                         n_quarantined_ab: int | None = None) -> GateResult:
     """TENNIS-10: CLV close coverage, measured against STRICT first-ball-anchored closes.
 
     The denominator is deliberately the predictions whose match HAS A/B first-ball truth. A close cut off
@@ -363,6 +373,16 @@ def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actu
     else:
         rate = (strict_rows or 0) / n_settled if n_settled else 0
     detail["strict_rate"] = round(rate, 4)
+    # 2026-10-05: a row QUARANTINED for being priced after the first ball (TENNIS-6 register) is not a pregame
+    # prediction, so it cannot have a pregame close; counting it here penalised one defect twice. It leaves the
+    # denominator only when it is in the append-only register; both rates are reported, the threshold is unchanged.
+    if n_quarantined_ab is not None and n_strict_settled is not None and n_actual_start_basis:
+        eligible = n_actual_start_basis - n_quarantined_ab
+        rate = n_strict_settled / eligible if eligible else 0
+        detail.update(quarantined_post_start_in_population=n_quarantined_ab, pregame_eligible=eligible,
+                      strict_rate_pregame_eligible=round(rate, 4),
+                      structural_note="levels with no first-ball source (Challenger, WTA 125, ITF) have no A/B truth and are "
+                                      "outside this population by construction; see first_ball.watchlist")
     return GateResult("TENNIS-10", "clv_close_coverage", "PASS" if rate >= 0.95 else "FAIL", detail)
 
 
@@ -500,6 +520,7 @@ def settlement_stats(research_root=None) -> dict | None:
                    settled_with_ab_truth=sum(1 for c in settled_clv if c.get("truth_confidence") in ("A", "B")),
                    settled_with_close=sum(1 for c in settled_clv if c.get("close_ts")),
                    settled_strict_clv=sum(1 for c in settled_clv if c.get("strict")))
+        out["_ab_truth_ids"] = [c.get("prediction_id") for c in settled_clv if c.get("truth_confidence") in ("A", "B")]
         out["_strict_research_rows"] = [{"strict": c.get("strict"), "timing_class": c.get("timing_class")}
                                         for c in latest.values()]
     return out
@@ -553,6 +574,9 @@ def _auto_extra() -> dict:
         extra["quarantine"], extra["quarantine_problems"] = _load_quarantine(qroot)
     st = settlement_stats()
     if st:
+        ab_ids = st.pop("_ab_truth_ids", None)
+        if ab_ids is not None and extra.get("quarantine") is not None:
+            extra["n_quarantined_ab"] = sum(1 for i in ab_ids if i in extra["quarantine"])
         strict_rows = st.pop("_strict_research_rows", None)
         if strict_rows is not None:
             extra["strict_research_rows"] = strict_rows
@@ -744,7 +768,8 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
                                extra.get("rules_id_changes"), first_ball=fb, settlement=extra.get("settlement")))
     out.append(gate_10_clv_coverage(extra.get("n_settled"), extra.get("n_with_close"),
                                     extra.get("n_actual_start_basis"), first_ball=fb,
-                                    n_strict_settled=extra.get("n_strict_settled")))
+                                    n_strict_settled=extra.get("n_strict_settled"),
+                                    n_quarantined_ab=extra.get("n_quarantined_ab")))
     out.append(gate_11_consistency(extra.get("consistency_violations")))
     out.append(gate_12_ledger()); out.append(gate_13_reproducible()); out.append(gate_14_source_freshness())
     out.append(gate_15_prospective_confirmation())

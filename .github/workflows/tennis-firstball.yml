@@ -76,13 +76,13 @@ jobs:
           MINUTES="${{ github.event.inputs.minutes || '340' }}"
           SEGMENT="${{ github.event.inputs.segment || '10' }}"
           SOURCES="${{ github.event.inputs.sources || 'espn_atp,espn_wta' }}"
-          git fetch --depth=1 origin tennis-data || true
+          # Blobless + sparse (2026-10-05): a full depth-1 fetch of the 8 GB evidence tip on every segment was most of
+          # this conductor's time. Trees only here; file contents are fetched for exactly the paths unpacked.
+          git config remote.origin.promisor true; git config remote.origin.partialclonefilter blob:none
+          git fetch --filter=blob:none --depth=1 origin tennis-data || true
           # the append-only store and the newest discovery snapshot both live on the data branch
-          git archive origin/tennis-data tennis-edge-finder/data/firstball/store | tar -x --strip-components=1 || true
-          LATEST=$(git ls-tree --name-only origin/tennis-data tennis-edge-finder/data/kalshi/discovery/ 2>/dev/null | sort | tail -1)
-          if [ -n "$LATEST" ]; then
-            git archive origin/tennis-data "$LATEST" | tar -x --strip-components=1 || true
-          fi
+          LATEST=$(git ls-tree --name-only origin/tennis-data tennis-edge-finder/data/kalshi/discovery/ 2>/dev/null | sort | tail -1 | sed 's#^tennis-edge-finder/data/##')
+          python3 scripts/ci/pull_data_branch.py --paths firstball/store/ ${LATEST:+"$LATEST/"} || true
           ls -d data/kalshi/discovery/* 2>/dev/null | tail -2 || echo "::warning::no discovery snapshot unpacked"
           # END = min(loop start + MINUTES, job start + timeout-minutes - 10); a segment starts only if the longest
           # segment so far still fits, so a normal conductor ends by itself instead of being cancelled by the timeout
@@ -95,7 +95,7 @@ jobs:
             # Refresh the LIVE open universe before every segment. A discovery snapshot can be many hours
             # old and still list matches that have since been played out; the capture conductor
             # republishes the open universe every ten minutes, so its freshest pass is the real one.
-            git fetch --depth=1 origin tennis-data || true
+            git fetch --filter=blob:none --depth=1 origin tennis-data || true
             rm -rf data/kalshi/capture; mkdir -p data/kalshi/capture
             # enough passes to reach back to the latest FULL snapshot (one every ~75 min): the live board is that
             # snapshot plus every changed pass after it

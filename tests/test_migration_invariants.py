@@ -68,9 +68,50 @@ def test_local_paths_are_root_relative_and_branch_paths_keep_the_prefix(wf):
             f"{wf}:{i}: local path still nested under {DEST_PREFIX}/: {line.strip()}"
 
 
-def test_run_workflow_strips_the_prefix_when_unpacking_evidence():
+def test_run_workflow_strips_the_prefix_when_unpacking_evidence(tmp_path):
+    """RUN TENNIS unpacks evidence with scripts/ci/pull_data_branch.py (blobless + sparse since 2026-10-05; the
+    full `git archive | tar --strip-components=1` downloaded 8 GB). The invariant is unchanged: the branch's
+    `tennis-edge-finder/data/X` lands at ./data/X. Exercised end to end against a real (local) origin."""
     t = _text("tennis-run.yml")
-    assert "git archive origin/tennis-data tennis-edge-finder/data | tar -x --strip-components=1" in t
+    assert "python3 scripts/ci/pull_data_branch.py" in t
+    origin = tmp_path / "origin.git"
+    _git("init", "-q", "--bare", str(origin))
+    seed = tmp_path / "seed"
+    _git("init", "-q", "-b", "tennis-data", str(seed))
+    for k, v in (("user.email", "t@example.com"), ("user.name", "t")):
+        _git("config", k, v, cwd=seed)
+    files = {f"{DEST_PREFIX}/data/research/ledger/2026-10-01.jsonl": "{}\n",
+             f"{DEST_PREFIX}/data/research/clv/20261001T000000Z.jsonl": "old\n",
+             f"{DEST_PREFIX}/data/research/clv/20261002T000000Z.jsonl": "new\n",
+             f"{DEST_PREFIX}/data/research/horizons/20261002T000000Z.jsonl": "skip\n",
+             f"{DEST_PREFIX}/data/kalshi/capture/2026-10-02/r.quotes.jsonl.gz": "q",
+             f"{DEST_PREFIX}/data/kalshi/capture/2026-10-02/r.trades.jsonl.gz": "t",
+             f"{DEST_PREFIX}/data/kalshi/discovery/20261001T000000Z/summary.json": "{}",
+             f"{DEST_PREFIX}/data/kalshi/discovery/20261002T000000Z/summary.json": "{}",
+             f"{DEST_PREFIX}/data/kalshi/discovery/20261003T000000Z/summary.json": "{}"}
+    for rel, body in files.items():
+        p = seed / rel
+        p.parent.mkdir(parents=True, exist_ok=True)
+        p.write_text(body)
+    _git("add", "-A", cwd=seed)
+    _git("commit", "-q", "-m", "evidence", cwd=seed)
+    _git("remote", "add", "origin", str(origin), cwd=seed)
+    _git("push", "-q", "origin", "tennis-data", cwd=seed)
+    repo = tmp_path / "repo"
+    _git("init", "-q", "-b", "main", str(repo))
+    _git("remote", "add", "origin", str(origin), cwd=repo)
+    r = subprocess.run([sys.executable, os.path.join(ROOT, "scripts", "ci", "pull_data_branch.py"), "--repo", str(repo)],
+                       capture_output=True, text=True)
+    assert r.returncode == 0, (r.stdout[-1500:], r.stderr[-800:])
+    d = repo / "data"
+    assert (d / "research" / "ledger" / "2026-10-01.jsonl").exists()           # prefix stripped
+    assert (d / "research" / "clv" / "20261002T000000Z.jsonl").exists()        # newest clv only
+    assert not (d / "research" / "clv" / "20261001T000000Z.jsonl").exists()
+    assert not (d / "research" / "horizons").exists()
+    assert (d / "kalshi" / "capture" / "2026-10-02" / "r.quotes.jsonl.gz").exists()
+    assert not (d / "kalshi" / "capture" / "2026-10-02" / "r.trades.jsonl.gz").exists()
+    assert sorted(x.name for x in (d / "kalshi" / "discovery").iterdir()) == ["20261002T000000Z", "20261003T000000Z"]
+    assert not (repo / DEST_PREFIX).exists()
 
 
 def _git(*a, cwd=None):

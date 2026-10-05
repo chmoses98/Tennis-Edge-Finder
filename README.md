@@ -5,6 +5,18 @@ Real-money authority OFF. No model has shown edge against bookmaker prices, and 
 Kalshi tennis markets where our probability is more accurate than the price -- including the subsets that
 returned a profit. See WAVE3_SELECTIVE_EDGE_REPORT.md and MORNING_REPORT.md.**
 
+### Projection Engine V2 (new, 2026-10-05)
+
+The independent projection was rebuilt and promoted by preregistered rules (`research/projection_v2/PREREGISTRATION.md`):
+margin-of-victory Elo + Gen-2 serve/return weighted by evidence + opponent-adjusted form + rest/layoff context + age, in a
+walk-forward logistic stacker; no market input anywhere. Brier vs the previous production model, 2021-2025: ATP
+-0.0084, WTA -0.0146; 2026 holdout: ATP -0.0080, WTA -0.0072 (all CIs exclude 0); derivative distributions better on
+every proper score. The market (Pinnacle) is still more accurate, and V2 adds little beyond it. The same branch fixed
+85,008 duplicate matches in the canonical table, stopped pricing markets the exchange had already settled (15.6% of
+settled ledger rows), added independent (non-Kalshi) sports truth, and made capture/publishing blobless.
+Docs: `docs/PROJECTION_ENGINE_V2.md`; results `research/projection_v2/RESULTS.md`; model card `MODEL_CARD.md`;
+audit `AUDIT.md`; health `HEALTH_REMEDIATION.md`. Real-money authority OFF.
+
 ### ChatGPT-assisted handicapping lane (new, 2026-09-30)
 
 A separate prospective lane measures the workflow that is actually used: repo data + Kalshi prices +

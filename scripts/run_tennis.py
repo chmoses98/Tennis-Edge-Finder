@@ -296,7 +296,7 @@ def main():
             coverage["tournament_scope_not_priced_tonight"] += 1; excluded.append({"ticker": pm.ticker, "stage": "scope", "reason": f"{pm.family}: draw simulation needs a draw feed (not wired)"}); continue
         by_event[pm.event_ticker].append(pm)
 
-    projections = []; consistency_violations = []; projected_tickers = []
+    projections = []; consistency_violations = []; projected_tickers = []; alias_queue = {}
     today = date.today()
 
     # ONE physical match is listed under several series -- KXATPMATCH-26SEP11ZVEKHA,
@@ -350,9 +350,15 @@ def main():
             continue
         maps = {side: mapper.resolve(tour, names[side], comp_ids[side], today) for side in (True, False)}
         if any(mp["status"] != "MAPPED" for mp in maps.values()):
+            kinds = sorted({maps[s].get("unmapped_kind") or maps[s]["status"] for s in (True, False) if maps[s]["status"] != "MAPPED"})
+            for s in (True, False):
+                if maps[s].get("review_candidates"):
+                    alias_queue[f"{tour}|{names[s]}"] = {"tour": tour, "kalshi_name": names[s], "competitor_id": comp_ids[s],
+                                                         "candidates": maps[s]["review_candidates"], "event": ev}
             for pm in pms:
                 coverage["unmapped_player"] += 1
-                excluded.append({"ticker": pm.ticker, "stage": "identity", "reason": "; ".join(f"{names[s]}: {maps[s]['status']} ({maps[s].get('reason', '')})" for s in (True, False) if maps[s]["status"] != "MAPPED")})
+                excluded.append({"ticker": pm.ticker, "stage": "identity", "identity_kinds": kinds,
+                                 "reason": "; ".join(f"{names[s]}: {maps[s]['status']} ({maps[s].get('reason', '')})" for s in (True, False) if maps[s]["status"] != "MAPPED")})
             continue
         try:
             fmt = resolve_format(tour, info["level"], head.year or today.year, info["competition"] if info["level"] == "GRAND_SLAM" else None, "singles")
@@ -472,7 +478,10 @@ def main():
            "lifecycle": {"open_snapshot_run": snap_run, "open_snapshot_age_s": snap_age, "snapshot_authoritative": snapshot_authoritative,
                          "settled_tickers_known": len(settled_tickers), "quote_sla_s": {"fresh": QUOTE_FRESH_S, "stale": QUOTE_STALE_S}},
            "coverage": dict(coverage), "projected_tickers": projected_tickers, "consistency_violations": consistency_violations,
-           "excluded": excluded, "projections": projections, "authority": "RESEARCH_ONLY_NO_REAL_MONEY"}
+           "excluded": excluded, "projections": projections, "authority": "RESEARCH_ONLY_NO_REAL_MONEY",
+           # human review only: nothing here is ever mapped automatically (data/identity/reviewed_aliases.json is the
+           # only place a person accepts an alias)
+           "alias_review_queue": sorted(alias_queue.values(), key=lambda x: (x["tour"], x["kalshi_name"]))}
     json.dump(out, open(os.path.join(a.out, f"{run_id}.json"), "w"), indent=0, default=str)
     json.dump({k: v for k, v in out.items() if k != "projections"}, open(os.path.join(a.out, "latest.json"), "w"), indent=0, default=str)
     write_report(out, os.path.join(a.out, f"REPORT_{run_id}.md"))

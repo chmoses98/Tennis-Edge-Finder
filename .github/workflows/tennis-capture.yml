@@ -59,14 +59,11 @@ jobs:
           # Wave 4. The scan needs the rating registry and the walk-forward states; both are published by
           # tennis-run and are far cheaper to fetch than to rebuild inside a ten-minute loop.
           python3 -m pip install --quiet pandas pyarrow
-          git fetch --depth=1 origin tennis-data || true
-          mkdir -p data/processed/asof
-          for f in ratings_ATP.json ratings_WTA.json; do
-            git show origin/tennis-data:tennis-edge-finder/data/processed/$f > data/processed/$f 2>/dev/null || echo "::warning::no $f on tennis-data"
-          done
-          for f in asof_ATP.json.gz asof_WTA.json.gz; do
-            git show origin/tennis-data:tennis-edge-finder/data/processed/asof/$f > data/processed/asof/$f 2>/dev/null || echo "::warning::no $f on tennis-data"
-          done
+          # Blobless + sparse (2026-10-05): fetching the whole 8 GB evidence tip took ~5.5 min here; only these
+          # four files are read. The fetch also marks origin as a promisor, so the per-pass `git show` below
+          # downloads one blob instead of the tree.
+          python3 scripts/ci/pull_data_branch.py --paths processed/ratings_ATP.json processed/ratings_WTA.json \
+            processed/asof/asof_ATP.json.gz processed/asof/asof_WTA.json.gz || echo "::warning::could not restore rating artifacts"
           ls -la data/processed data/processed/asof || true
       - name: Loop capture + publish
         id: loop
@@ -85,7 +82,7 @@ jobs:
           PASS_LOG="$RUNNER_TEMP/capture_passes.jsonl"; : > "$PASS_LOG"
           while conductor_should_start "$(date +%s)" "$END" "$LONGEST"; do
             T0=$(date +%s)
-            git fetch --depth=1 origin tennis-data || true
+            git fetch --filter=blob:none --depth=1 origin tennis-data || true
             mkdir -p data/kalshi/capture
             git show origin/tennis-data:tennis-edge-finder/data/kalshi/capture/state.json > data/kalshi/capture/state.json 2>/dev/null || echo '{}' > data/kalshi/capture/state.json
             CAP_RC=0; python3 scripts/kalshi/capture_tennis.py || CAP_RC=$?

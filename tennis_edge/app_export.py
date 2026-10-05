@@ -240,7 +240,8 @@ def _model_price_from_row(r: dict, market: dict, run_id: str, built_at, now) -> 
         return None                                     # doubles / unmapped identity: no producer speaks for it
     src = r.get("model_probability_source")
     mo = r.get("model") or {}
-    env = mo.get("fair_v1_envelope") if (src or "").startswith("fair_v1") else None
+    env = (mo.get("fair_v1_envelope") if (src or "").startswith("fair_v1")
+           else mo.get("projection_v2_envelope") if (src or "").startswith("projection_v2") else None)
     return build.model_price(
         run_id=run_id, market_id=market["market_id"], fair_probability=p, generated_at=built_at,
         event_id=market["event_id"], model_version=src,
@@ -249,7 +250,10 @@ def _model_price_from_row(r: dict, market: dict, run_id: str, built_at, now) -> 
         freshness_status=freshness.status_for(built_at, thresholds=MODEL_THRESHOLDS, now=now),
         data_quality_status=DATA_QUALITY.get(r.get("data_quality_status"), "UNKNOWN"),
         support_status=r.get("discrepancy_sanity_status"),
-        extensions={"gen1": mo.get("gen1"), "gen2": mo.get("gen2"), "fair_v1": mo.get("fair_v1"),
+        extensions={"projection_v2": mo.get("projection_v2"), "projection_v2_grade": mo.get("projection_v2_grade"),
+                    "projection_v2_tags": list(mo.get("projection_v2_tags") or []),
+                    "projection_v2_envelope": mo.get("projection_v2_envelope"), "incumbent": mo.get("incumbent"),
+                    "gen1": mo.get("gen1"), "gen2": mo.get("gen2"), "fair_v1": mo.get("fair_v1"),
                     "model4_conditioned": mo.get("model4_conditioned"), "model4_fundamental": mo.get("model4_fundamental"),
                     "model_uncertainty": mo.get("model_uncertainty"), "selector_v1": mo.get("selector_v1"),
                     "qualification_ok": mo.get("qualification_ok"), "model_side_edges": dict(r.get("model_side_edges") or {}),
