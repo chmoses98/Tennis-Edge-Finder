@@ -60,8 +60,15 @@ def _load_group(paths, tour, kind, id_system, source_label, seen):
     return clean_parts, q_parts, counts
 
 
-def build(min_year: int = 1990, write: bool = True) -> dict:
-    manifest = {"built_at": datetime.now(timezone.utc).isoformat(), "sources": {}, "min_year": min_year}
+BUILD_VERSION = "canonical_v2"
+LEGACY_BUILD_VERSION = "canonical_v1"
+
+
+def build(min_year: int = 1990, write: bool = True, legacy: bool = False, out_dir: str | None = None) -> dict:
+    """legacy=True reproduces the canonical_v1 table (exact-key dedupe only, no mirror main-tour files, no
+    minted players) so the effect of the v2 data fixes can be measured against the same sources."""
+    manifest = {"built_at": datetime.now(timezone.utc).isoformat(), "sources": {}, "min_year": min_year,
+                "build_version": LEGACY_BUILD_VERSION if legacy else BUILD_VERSION}
     clean_all, q_all = [], []
     # 1. Sackmann snapshots (fork or upstream)
     for tour, kinds in (("ATP", ["atp_matches_{y}", "atp_matches_qual_chall_{y}", "atp_matches_futures_{y}"]),
@@ -99,6 +106,20 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
         manifest["sources"]["tml_ATP_challenger"] = {"status": "OK", "run": os.path.basename(run), "files": counts}
     else:
         manifest["sources"]["tml_ATP_challenger"] = {"status": "ABSENT"}
+    # 3b. TML MAIN-TOUR season files from the same mirror (canonical_v2). The upstream TML-Database stopped
+    # in January 2026 while the mirror carries the main tour -- Slams, Masters, 250/500, WITH serve
+    # statistics -- to the end of September. canonical_v1 loaded only the mirror's *_challenger files, so ATP
+    # main-tour serve evidence stopped in May and June-September main-tour results arrived only through ESPN
+    # (results only). Same TML schema and id system as the upstream files, so the exact-key dedupe removes
+    # any overlap with them and the cross-source pass removes overlap with Sackmann/ESPN.
+    if run and not legacy:
+        mdir = os.path.join(run, "tennis_data_mirrors/gmalbert__tennis-predictions/tml-data")
+        paths = [p for p in glob.glob(os.path.join(mdir, "*.csv.gz"))
+                 if (mm := re.match(r"(\d{4})\.csv\.gz$", os.path.basename(p))) and int(mm.group(1)) >= max(min_year, 2025)]
+        if paths:
+            c, q, counts = _load_group(paths, "ATP", "main", "tml", "tml_ATP_main_mirror", set())
+            clean_all += c; q_all += q
+            manifest["sources"]["tml_ATP_main_mirror"] = {"status": "OK", "run": os.path.basename(run), "files": counts}
 
     # 4. ESPN current results (both tours). Results only -- no serve statistics -- so these rows carry
     # Elo forward through the months the frozen Sackmann forks no longer cover, and contribute nothing to
@@ -139,9 +160,23 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
     # naively had produced duplicate rating entities. Since the Sackmann forks froze (upstream gone), that
     # exclusion costs three months of ATP results, so the ids are now crosswalked explicitly and the rows
     # that cannot be crosswalked stay excluded and visible. See identity/crosswalk.py.
-    from tennis_edge.identity.crosswalk import build_crosswalk, apply_crosswalk, summarise
+    from tennis_edge.identity.crosswalk import build_crosswalk, apply_crosswalk, summarise, mint_new_players
     crosswalk = pd.concat([build_crosswalk(df, foreign=sysname) for sysname in ("tml", "espn")], ignore_index=True)
+    if not legacy:
+        crosswalk = mint_new_players(df, crosswalk)
     df = apply_crosswalk(df, crosswalk)
+    dedupe_audit = None
+    if not legacy:
+        # canonical_v2: the exact key above misses the same match reported under different dates / round
+        # names by two id systems (TML Challenger dates a match on the tournament's last day, Sackmann on
+        # its first). See tennis_edge/data/dedupe.py.
+        from tennis_edge.data.dedupe import drop_cross_source_duplicates
+        df, dedupe_audit = drop_cross_source_duplicates(df)
+        df = df.reset_index(drop=True)
+        manifest["cross_source_near_duplicates_dropped"] = int(len(dedupe_audit))
+        if len(dedupe_audit):
+            manifest["near_duplicates_by_pair"] = {f"{k[0]}->{k[1]}": int(v) for k, v in
+                                                   dedupe_audit.groupby(["source_dropped", "source_kept"]).size().items()}
     manifest["player_crosswalk"] = summarise(crosswalk, df)
     manifest["player_crosswalk_by_system"] = {
         sysname: summarise(crosswalk[crosswalk.foreign_id_system == sysname])
@@ -151,23 +186,32 @@ def build(min_year: int = 1990, write: bool = True) -> dict:
     manifest["by_id_system"] = {k: int(v) for k, v in df["id_system"].value_counts().items()}
     manifest["seasons"] = {k: int(v) for k, v in df["season"].value_counts().sort_index().items()}
     if write:
-        os.makedirs(PROCESSED, exist_ok=True)
+        PROCESSED_OUT = out_dir or PROCESSED
+        os.makedirs(PROCESSED_OUT, exist_ok=True)
         df2 = df.copy(); df2["set_scores"] = df2["set_scores"].map(json.dumps)
         q2 = q.copy()
         if "set_scores" in q2:
             q2["set_scores"] = q2["set_scores"].map(json.dumps)
-        df2.to_parquet(os.path.join(PROCESSED, "matches.parquet"), index=False)
-        crosswalk.to_parquet(os.path.join(PROCESSED, "player_crosswalk.parquet"), index=False)
-        q2.to_parquet(os.path.join(PROCESSED, "matches_quarantine.parquet"), index=False)
-        manifest["matches_sha256"] = hashlib.sha256(open(os.path.join(PROCESSED, "matches.parquet"), "rb").read()).hexdigest()
-        json.dump(manifest, open(os.path.join(PROCESSED, "build_manifest.json"), "w"), indent=1, default=str)
+        df2.to_parquet(os.path.join(PROCESSED_OUT, "matches.parquet"), index=False)
+        crosswalk.to_parquet(os.path.join(PROCESSED_OUT, "player_crosswalk.parquet"), index=False)
+        q2.to_parquet(os.path.join(PROCESSED_OUT, "matches_quarantine.parquet"), index=False)
+        if dedupe_audit is not None:
+            dedupe_audit.drop(columns=["index_dropped", "index_kept"]).to_parquet(
+                os.path.join(PROCESSED_OUT, "near_duplicates_dropped.parquet"), index=False)
+        manifest["matches_sha256"] = hashlib.sha256(open(os.path.join(PROCESSED_OUT, "matches.parquet"), "rb").read()).hexdigest()
+        json.dump(manifest, open(os.path.join(PROCESSED_OUT, "build_manifest.json"), "w"), indent=1, default=str)
     return manifest
 
 
 if __name__ == "__main__":
     import logging
     logging.basicConfig(level=logging.ERROR)
-    m = build()
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--legacy", action="store_true", help="rebuild the canonical_v1 table (for before/after studies)")
+    ap.add_argument("--out", default=None, help="output directory (default data/processed)")
+    a = ap.parse_args()
+    m = build(legacy=a.legacy, out_dir=a.out)
     print(json.dumps({k: v for k, v in m.items() if k != "sources"}, indent=1, default=str))
     for k, v in m["sources"].items():
         print(k, v.get("status"), sum(f["clean"] for f in v.get("files", {}).values()) if v.get("files") else "")

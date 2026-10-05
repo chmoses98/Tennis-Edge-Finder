@@ -105,7 +105,7 @@ def apply_crosswalk(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: s
     m = matches.copy()
     mp = {}
     if len(crosswalk):
-        ok = crosswalk[crosswalk["status"] == MAPPED]
+        ok = crosswalk[crosswalk["status"].isin([MAPPED, "MINTED_NEW_PLAYER"])]
         mp = {(r.foreign_id_system, str(r.foreign_id)): str(r.canonical_id) for r in ok.itertuples(index=False)}
 
     def resolve(row_ids, row_sys):
@@ -135,3 +135,63 @@ def summarise(crosswalk: pd.DataFrame, applied: pd.DataFrame | None = None) -> d
         s["foreign_rows"] = int(len(foreign))
         s["foreign_rows_mapped"] = int((foreign["canonical_id_status"] == "MAPPED").sum())
     return s
+
+
+MINTED = "MINTED_NEW_PLAYER"               # no canonical player could be this person; a new canonical id is minted
+NEAR_CANONICAL = "NEAR_CANONICAL_MATCH"    # a canonical player shares surname + first initial: maybe an alias
+
+
+def _surname_initial(key: str) -> tuple[str, str] | None:
+    toks = key.split()
+    if len(toks) < 2:
+        return None
+    return toks[-1], toks[0][:1]
+
+
+def mint_new_players(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: str = "sackmann") -> pd.DataFrame:
+    """Give players who exist ONLY in a foreign system their own canonical id -- or refuse to.
+
+    Since the Sackmann forks froze, every player who turned professional afterwards appears only in TML or
+    ESPN rows. The crosswalk (correctly) cannot map them to a Sackmann id, so before this pass their
+    matches were excluded from every rating: a new player had no rating however many matches they won.
+
+    A foreign player is minted a canonical id (``<system>:<foreign id>``) only when ALL of these hold:
+
+    * the crosswalk found NO canonical player with the name (status NO_CANONICAL_MATCH), and the name is
+      unique inside its own system;
+    * no canonical player shares the surname AND the first initial. "Pyotr Nesterov" next to an existing
+      "Petr Nesterov" is a possible transliteration of one person, so it is left UNMAPPED
+      (NEAR_CANONICAL_MATCH) for human review instead of becoming a second rating entity;
+    * if the same name is unmatched in TWO foreign systems (a new player seen by both ESPN and TML), both
+      ids collapse onto ONE minted id -- otherwise the same newcomer would be rated twice. If either system
+      has two players with that name, nobody is minted.
+    """
+    if crosswalk.empty:
+        return crosswalk
+    can_rows = player_rows(matches, canonical)
+    near = set()
+    for k in can_rows["name_key"].unique():
+        si = _surname_initial(k)
+        if si:
+            near.add(si)
+    cw = crosswalk.copy()
+    cand = cw[cw["status"] == NO_CANONICAL]
+    # a name minted in one system must not be ambiguous in any other foreign system
+    per_name = cand.groupby("name_key")
+    preferred = {"tml": 0, "espn": 1}
+    for name_key, grp in per_name:
+        si = _surname_initial(name_key)
+        if si is None:
+            continue
+        if si in near:
+            cw.loc[grp.index, "status"] = NEAR_CANONICAL
+            cw.loc[grp.index, "reason"] = "a canonical player shares surname and first initial; possible alias -- review"
+            continue
+        if grp.groupby("foreign_id_system")["foreign_id"].nunique().max() > 1:
+            continue
+        anchor = grp.sort_values("foreign_id_system", key=lambda s: s.map(lambda x: preferred.get(x, 9))).iloc[0]
+        new_id = f"{anchor.foreign_id_system}:{anchor.foreign_id}"
+        cw.loc[grp.index, "canonical_id"] = new_id
+        cw.loc[grp.index, "status"] = MINTED
+        cw.loc[grp.index, "reason"] = "foreign-only player; minted canonical id"
+    return cw

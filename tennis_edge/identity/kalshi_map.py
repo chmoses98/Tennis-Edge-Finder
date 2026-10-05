@@ -55,12 +55,18 @@ class KalshiPlayerMapper:
                 if competitor_id:
                     self.cache[competitor_id] = out
                 return out
-            ext = self._compound_surname(tour, nm, today)
+            ext = self._compound_surname(tour, nm, today) or self._given_name_transliteration(tour, nm, today)
             if ext:
                 if competitor_id:
                     self.cache[competitor_id] = ext
                 return ext
-            return {"status": "UNMAPPED", "reason": "no exact full-name match", "player_id": None, "confidence": 0.0, "name": full_name, "tour": tour}
+            cands = self.review_candidates(tour, nm)
+            reason = ("no exact full-name match; alias candidates queued for human review" if cands
+                      else "no exact full-name match and no player with this surname in the rating universe "
+                           "(most often a player absent from every reachable results source)")
+            return {"status": "UNMAPPED", "reason": reason, "player_id": None, "confidence": 0.0, "name": full_name,
+                    "tour": tour, "unmapped_kind": "ALIAS_CANDIDATES" if cands else "NO_HISTORY",
+                    "review_candidates": cands}
         if len(hits) > 1:
             # prefer the single recently-active namesake; otherwise ambiguous
             recent = [(pid, r) for pid, r in hits if r.get("last_date") and r["last_date"] != "None" and date.fromisoformat(r["last_date"][:10]) >= today - timedelta(days=730)]
@@ -108,6 +114,124 @@ class KalshiPlayerMapper:
                 "canonical_name": rec.get("name"), "last_date": last,
                 "reason": f"compound-surname alias of {rec.get('name')!r}"}
 
+    # ------------------------------------------------------------------ given-name transliteration (2026-10-05)
+    def _given_name_transliteration(self, tour: str, nm: str, today: date) -> dict | None:
+        """One more guarded rule: the SAME given name written in another transliteration.
+
+        Kalshi lists "Pyotr Nesterov"; the registry has "Petr Nesterov". Russian, Ukrainian and Belarusian
+        given names reach the West in several spellings, and that is the whole of what this rule covers:
+        the first token must belong to one curated equivalence class (`GIVEN_NAME_CLASSES`), every other
+        token must match exactly, exactly one registry player may qualify across the whole class, and that
+        player must have played within 18 months. It does NOT cover a different given name ("Mimi" /
+        "Mingge"), a dropped middle name, or a misspelt surname -- those are only ever review candidates.
+        Confidence 0.85: below the 0.95 a shadow bet requires.
+        """
+        toks = nm.split()
+        if len(toks) < 2:
+            return None
+        cls = GIVEN_NAME_INDEX.get(toks[0])
+        if not cls:
+            return None
+        idx = self.index.get(tour, {})
+        hits = []
+        for variant in cls:
+            if variant == toks[0]:
+                continue
+            for pid, rec in idx.get(" ".join([variant] + toks[1:]), []):
+                hits.append((pid, rec))
+        if len(hits) != 1:
+            return None
+        pid, rec = hits[0]
+        last = rec.get("last_date")
+        if not last or last == "None" or date.fromisoformat(last[:10]) < today - timedelta(days=548):
+            return None
+        return {"status": "MAPPED", "player_id": pid, "confidence": 0.85, "name": nm, "tour": tour,
+                "canonical_name": rec.get("name"), "last_date": last,
+                "reason": f"given-name transliteration of {rec.get('name')!r}"}
+
+    def review_candidates(self, tour: str, nm: str) -> list:
+        """Registry players a PERSON should look at for an unmapped name. Never used to map anything.
+
+        Kinds: DROPPED_TOKEN (the Kalshi name minus one interior token is a registry name -- a middle
+        name, or one half of a double surname, which is exactly why this is not automatic), SURNAME_SPELLING
+        (same given name, one surname token one edit away), SAME_SURNAME_INITIAL.
+        """
+        toks = nm.split()
+        if len(toks) < 2:
+            return []
+        idx = self.index.get(tour, {})
+        out = []
+        if len(toks) >= 3:
+            for i in range(1, len(toks) - 1):
+                k = " ".join(toks[:i] + toks[i + 1:])
+                for pid, rec in idx.get(k, []):
+                    out.append({"kind": "DROPPED_TOKEN", "player_id": pid, "name": rec.get("name"), "last_date": rec.get("last_date")})
+        first, last = toks[0], toks[-1]
+        for k, hits in idx.items():
+            kt = k.split()
+            if len(kt) < 2 or k == nm:
+                continue
+            diff = [i for i in range(len(kt)) if len(kt) == len(toks) and kt[i] != toks[i]]
+            if kt[0] == first and len(kt) == len(toks) and len(diff) == 1 and diff[0] > 0 and _edit1(kt[diff[0]], toks[diff[0]]):
+                for pid, rec in hits:
+                    out.append({"kind": "SURNAME_SPELLING", "player_id": pid, "name": rec.get("name"), "last_date": rec.get("last_date")})
+            elif kt[-1] == last and kt[0][:1] == first[:1] and kt[0] != first:
+                for pid, rec in hits:
+                    out.append({"kind": "SAME_SURNAME_INITIAL", "player_id": pid, "name": rec.get("name"), "last_date": rec.get("last_date")})
+        seen, uniq = set(), []
+        for c in out:
+            if c["player_id"] not in seen:
+                seen.add(c["player_id"]); uniq.append(c)
+        return uniq[:5]
+
     def save_cache(self):
         os.makedirs(os.path.dirname(self.cache_path), exist_ok=True)
         json.dump(self.cache, open(self.cache_path, "w"), indent=1, sort_keys=True)
+
+
+#: Given names that are ONE name written in different transliterations (first token only). Curated, short,
+#: and reviewed: adding a class is a decision about identity and belongs in review like any alias.
+GIVEN_NAME_CLASSES = (
+    ("pyotr", "petr", "piotr"),
+    ("aleksandr", "alexander", "aleksander", "alexandr", "oleksandr"),
+    ("alexey", "aleksei", "alexei", "aleksey", "oleksii", "oleksiy"),
+    ("dmitry", "dmitri", "dmitrii", "dmytro"),
+    ("yuri", "yury", "yuriy", "iurii"),
+    ("evgeny", "evgeniy", "yevgeny", "evgenii", "ievgen", "yevgen"),
+    ("andrey", "andrei", "andriy"),
+    ("sergey", "sergei", "serhiy", "sergiy"),
+    ("nikolay", "nikolai", "mykola"),
+    ("mikhail", "mykhailo"),
+    ("ilya", "ilia"),
+    ("maxim", "maksim", "maksym"),
+    ("vitaly", "vitaliy", "vitalii"),
+    ("vladyslav", "vladislav"),
+    ("timofey", "timofei"),
+    ("arseny", "arseniy", "arsenii"),
+    ("yulia", "iuliia", "yuliya", "julia"),
+    ("anastasia", "anastasiya", "anastasiia"),
+    ("daria", "darya", "dariya"),
+    ("kseniya", "ksenia", "xenia", "kseniia"),
+    ("natalia", "natalya", "nataliya", "nataliia"),
+    ("valeria", "valeriya", "valeriia"),
+    ("elizaveta", "yelizaveta"),
+    ("ekaterina", "yekaterina"),
+    ("aleksandra", "alexandra", "oleksandra", "aliaksandra"),
+    ("tatiana", "tatyana", "tetiana"),
+    ("polina", "palina"),
+)
+GIVEN_NAME_INDEX = {n: cls for cls in GIVEN_NAME_CLASSES for n in cls}
+
+
+def _edit1(a: str, b: str) -> bool:
+    """True when a and b differ by exactly one substitution, insertion or deletion."""
+    if a == b or abs(len(a) - len(b)) > 1:
+        return False
+    if len(a) == len(b):
+        return sum(x != y for x, y in zip(a, b)) == 1
+    if len(a) > len(b):
+        a, b = b, a
+    i = 0
+    while i < len(a) and a[i] == b[i]:
+        i += 1
+    return a[i:] == b[i + 1:]

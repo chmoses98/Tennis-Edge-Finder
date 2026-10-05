@@ -69,6 +69,63 @@ def latest_quotes(capture_root):
     return q
 
 
+#: quote freshness SLA (seconds). A projection may be ACTIONABLE only on a FRESH quote; the assisted slate's
+#: discrepancy layer uses the same bands (tennis_edge/assisted/discrepancy.py: FRESH <=10 min, STALE >30 min).
+QUOTE_FRESH_S = 10 * 60
+QUOTE_STALE_S = 30 * 60
+#: a full open snapshot older than this is not trusted as the lifecycle authority
+SNAPSHOT_MAX_AGE_S = 20 * 60
+#: without a fresh full snapshot, an incremental capture record older than this cannot vouch that a market is open
+UNVERIFIED_RECORD_MAX_AGE_S = 2 * 3600
+
+
+def latest_open_snapshot(root, now):
+    """(ticker -> record, run_id, age_s) from the newest COMPLETE full open snapshot, or (None, None, None)."""
+    mans = sorted(glob.glob(os.path.join(root, "*", "*.open_snapshot.manifest.json")))
+    for mp in reversed(mans):
+        try:
+            man = json.load(open(mp))
+        except ValueError:
+            continue
+        if not man.get("complete"):
+            continue
+        age = (now - datetime.fromisoformat(man["finished_at"])).total_seconds()
+        data = mp.replace(".open_snapshot.manifest.json", ".open_snapshot.jsonl.gz")
+        if not os.path.exists(data):
+            continue
+        recs = {}
+        with gzip.open(data, "rt") as fh:
+            for line in fh:
+                r = json.loads(line)
+                recs[r["ticker"]] = r
+        return recs, man["run_id"], age
+    return None, None, None
+
+
+def captured_settled_tickers(capture_root, days=4):
+    """Tickers the exchange has settled, from the capture conductor's settlement sweeps (exchange truth)."""
+    out = {}
+    day_dirs = sorted(d for d in glob.glob(os.path.join(capture_root, "*")) if os.path.isdir(d))[-days:]
+    for d in day_dirs:
+        for f in glob.glob(os.path.join(d, "*.settlements.jsonl*")):
+            opener = gzip.open if f.endswith(".gz") else open
+            with opener(f, "rt") as fh:
+                for line in fh:
+                    try:
+                        r = json.loads(line)
+                    except ValueError:
+                        continue
+                    if r.get("ticker"):
+                        out[r["ticker"]] = r.get("settlement_ts") or r.get("captured_at")
+    return out
+
+
+def quote_freshness(age_s):
+    if age_s is None or age_s < -120:
+        return "UNKNOWN"
+    return "FRESH" if age_s <= QUOTE_FRESH_S else ("AGING" if age_s <= QUOTE_STALE_S else "STALE")
+
+
 def fnum(x):
     try:
         v = float(x); return v if 0 < v < 1 else None
@@ -92,6 +149,7 @@ def main():
     ap.add_argument("--out", default=os.path.join(PROJ, "data", "research", "projections"))
     ap.add_argument("--ledger", default=os.path.join(PROJ, "data", "research", "ledger"))
     ap.add_argument("--no-ledger", action="store_true")
+    ap.add_argument("--snapshots", default=os.path.join(PROJ, "data", "kalshi", "run_snapshots"))
     a = ap.parse_args()
     run_id = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     d = a.discovery or _latest_discovery()
@@ -109,6 +167,14 @@ def main():
     matches = pd.read_parquet(os.path.join(PROJ, "data", "processed", "matches.parquet"), columns=["tourney_name", "surface", "season"])
     surf_lookup = build_surface_lookup(matches)
     quotes = latest_quotes(a.capture)
+    now0 = datetime.now(timezone.utc)
+    snap, snap_run, snap_age = latest_open_snapshot(a.snapshots, now0)
+    snapshot_authoritative = snap is not None and snap_age is not None and snap_age <= SNAPSHOT_MAX_AGE_S
+    if snapshot_authoritative:
+        # the full open snapshot is newer than any incremental record and is the lifecycle authority
+        for tk, r in snap.items():
+            quotes[tk] = r
+    settled_tickers = captured_settled_tickers(a.capture)
     markets = load_open_markets(d)
     fee_types = {}
     for p in glob.glob(os.path.join(d, "series_detail", "*.json")):
@@ -131,6 +197,19 @@ def main():
         pm = parse_market(m)
         parsed[pm.ticker] = (pm, m)
         coverage["active"] += 1
+        # LIFECYCLE (2026-10-05). Capture snapshots are incremental, so a settled market's last record still reads
+        # "active"; 2,695 ledger rows were priced after the exchange had settled them. Fail closed instead:
+        if pm.ticker in settled_tickers:
+            coverage["settled_per_exchange"] += 1; excluded.append({"ticker": pm.ticker, "stage": "lifecycle", "reason": f"exchange settlement captured at {settled_tickers[pm.ticker]}"}); continue
+        if snapshot_authoritative and pm.ticker not in snap:
+            coverage["not_in_fresh_open_snapshot"] += 1; excluded.append({"ticker": pm.ticker, "stage": "lifecycle", "reason": f"absent from the full open snapshot {snap_run} (closed or settled)"}); continue
+        qrec0 = quotes.get(pm.ticker)
+        if qrec0 is not None and (str(qrec0.get("status", "active")).lower() not in ("active", "open", "initialized") or qrec0.get("result")):
+            coverage["closed_per_latest_record"] += 1; excluded.append({"ticker": pm.ticker, "stage": "lifecycle", "reason": f"latest record status={qrec0.get('status')} result={qrec0.get('result')!r}"}); continue
+        if not snapshot_authoritative:
+            rec_age = (now0 - datetime.fromisoformat(qrec0["captured_at"])).total_seconds() if (qrec0 and qrec0.get("captured_at")) else None
+            if rec_age is None or rec_age > UNVERIFIED_RECORD_MAX_AGE_S:
+                coverage["lifecycle_unverified"] += 1; excluded.append({"ticker": pm.ticker, "stage": "lifecycle", "reason": "no fresh full open snapshot and no capture record in the last 2h: cannot verify the market is still open"}); continue
         if capture_fresh and pm.ticker not in quotes:
             coverage["closed_since_discovery"] += 1; excluded.append({"ticker": pm.ticker, "stage": "lifecycle", "reason": "not open in the freshest capture pass (closed/settled since discovery)"}); continue
         # PREGAME POLICY: refuse anything at or past its nominal start; for ITF/Challenger series the nominal
@@ -263,7 +342,9 @@ def main():
             pm = pm_by[pr.ticker]; raw = parsed[pr.ticker][1]
             qrec = quotes.get(pr.ticker) or raw
             yes_bid, yes_ask, no_bid, no_ask = (fnum(qrec.get(k)) for k in ("yes_bid_dollars", "yes_ask_dollars", "no_bid_dollars", "no_ask_dollars"))
-            quote_src = "capture" if pr.ticker in quotes else "discovery_record"
+            quote_src = ("open_snapshot" if (snapshot_authoritative and pr.ticker in snap) else "capture") if pr.ticker in quotes else "discovery_record"
+            q_ts = qrec.get("captured_at") or disc_summary["started_at"]
+            q_age = (datetime.now(timezone.utc) - datetime.fromisoformat(q_ts.replace("Z", "+00:00"))).total_seconds() if q_ts else None
             sched = raw.get("occurrence_datetime") or raw.get("expected_expiration_time")
             fee = fee_types.get(pm.series_ticker, FeeSchedule())
             evs = expected_value(pr.fair_yes, yes_ask, no_ask, 100, fee)
@@ -280,7 +361,8 @@ def main():
                               "ELO_DP_FAIR": pr.fair_yes, "MARKET_MID": (0.5 * (yes_bid + yes_ask)) if (yes_bid and yes_ask) else None,
                               "HYBRID_MARKET_MODEL": None},
                    "inputs": {"elo_a": ra, "elo_b": rb, "pa": pa, "pb": pb, "sr_pa": sr_pa, "sr_pb": sr_pb, "spw_baseline": spw, "p_elo_bo3": p_elo_bo3, "p_sr_bo3": p_sr_bo3, "p_ensemble_bo3": p_ens_bo3, "structural_used": sr_ok},
-                   "quality": q, "market_quote": {"yes_bid": yes_bid, "yes_ask": yes_ask, "no_bid": no_bid, "no_ask": no_ask, "source": quote_src, "quote_ts": qrec.get("captured_at") or disc_summary["started_at"],
+                   "quality": q, "market_quote": {"yes_bid": yes_bid, "yes_ask": yes_ask, "no_bid": no_bid, "no_ask": no_ask, "source": quote_src, "quote_ts": q_ts,
+                                                  "quote_age_s": q_age, "quote_freshness": quote_freshness(q_age), "lifecycle_basis": "FULL_OPEN_SNAPSHOT" if snapshot_authoritative else "INCREMENTAL_CAPTURE",
                                                   "volume": qrec.get("volume_fp"), "open_interest": qrec.get("open_interest_fp"), "liquidity": qrec.get("liquidity_dollars")},
                    "scheduled_start": sched, "seconds_to_scheduled_start": _secs(sched),
                    "start_basis": "SCHEDULED" if info["level"] in ("GRAND_SLAM", "MASTERS_1000", "TOUR_500_250", "TOUR_FINALS", "OLYMPICS", "TEAM") else "NOMINAL_UNRELIABLE",
@@ -296,6 +378,8 @@ def main():
     coverage["projected"] = len(projected_tickers)
     os.makedirs(a.out, exist_ok=True)
     out = {"run_id": run_id, "generated_at": datetime.now(timezone.utc).isoformat(), "discovery_run": disc_summary["run_id"], "git_sha": sha,
+           "lifecycle": {"open_snapshot_run": snap_run, "open_snapshot_age_s": snap_age, "snapshot_authoritative": snapshot_authoritative,
+                         "settled_tickers_known": len(settled_tickers), "quote_sla_s": {"fresh": QUOTE_FRESH_S, "stale": QUOTE_STALE_S}},
            "coverage": dict(coverage), "projected_tickers": projected_tickers, "consistency_violations": consistency_violations,
            "excluded": excluded, "projections": projections, "authority": "RESEARCH_ONLY_NO_REAL_MONEY"}
     json.dump(out, open(os.path.join(a.out, f"{run_id}.json"), "w"), indent=0, default=str)
@@ -399,7 +483,8 @@ def write_report(out, path):
             liq = 0.0
         two_sided = mq.get("yes_bid") is not None and mq.get("yes_ask") is not None
         spread = (mq["yes_ask"] - mq["yes_bid"]) if two_sided else 1.0
-        return two_sided and spread <= 0.10 and liq > 0 and r["quality"]["grade"] in ("A", "B") and r.get("start_basis") == "SCHEDULED" and (r.get("seconds_to_scheduled_start") or 0) > 900
+        return (two_sided and spread <= 0.10 and liq > 0 and r["quality"]["grade"] in ("A", "B") and r.get("start_basis") == "SCHEDULED"
+                and (r.get("seconds_to_scheduled_start") or 0) > 900 and mq.get("quote_freshness", "FRESH") == "FRESH")
     act = [r for r in rows if actionable(r)]; act.sort(key=lambda r: -(r["ev"]["ev_after_fees"] or -1))
     rows.sort(key=lambda r: -(r["ev"]["ev_after_fees"] or -1))
     L += ["## Actionability-filtered opportunities (two-sided quote, spread <= 10c, liquidity > 0, quality A/B)", "",

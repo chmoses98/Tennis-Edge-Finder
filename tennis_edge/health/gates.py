@@ -194,7 +194,8 @@ def gate_5_capture_freshness(max_age_min=30, now=None, max_trade_backlog_age_h=2
                        "trade_backlog": backlog or None, "trade_backlog_ok": backlog_ok})
 
 
-def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows=None) -> GateResult:
+def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows=None, quarantine: dict | None = None,
+                                 quarantine_problems: list | None = None, settled_at: dict | None = None) -> GateResult:
     """TENNIS-6: every pregame prediction was generated strictly before the match's actual first ball
     (or, when unknown, before scheduled_start - 5 min, flagged).
 
@@ -233,6 +234,17 @@ def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows
         else:
             viol.append(r["prediction_id"])
             cats["no_start_information"] += 1
+    # 2026-10-05: a row generated AFTER THE EXCHANGE SETTLED its market was certainly priced post-start, whether
+    # or not any first-ball source covers the level (ITF has none). Exchange settlement time is an upper bound on
+    # the first ball. These were invisible here: 2,695 such rows, still being produced daily.
+    cats["post_settlement"] = 0
+    if settled_at:
+        vset = set(viol)
+        for r in ledger_rows:
+            ts = settled_at.get(r["prediction_id"])
+            if ts and r["prediction_id"] not in vset and datetime.fromisoformat(r["generated_at_utc"]) > ts:
+                viol.append(r["prediction_id"])
+                cats["post_settlement"] += 1
     detail = {"violations": viol[:20], "n_violations": len(viol), "violation_classes": cats,
               "n": len(ledger_rows), "start_unknown_used_schedule": unknown,
               "start_unknown_passed_schedule_check": unknown - cats["schedule_fallback"]}
@@ -241,6 +253,28 @@ def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows
             1 for c in strict_research_rows if c.get("strict") and c.get("timing_class") != "STRICT_PREGAME")
         detail["strict_research_rows_checked"] = sum(1 for c in strict_research_rows if c.get("strict"))
     leaked = detail.get("post_start_rows_in_strict_research", 0)
+    # 2026-10-05: LEGACY vs ACTIVE. A violation counts as legacy only if it is listed, by prediction_id, in the
+    # append-only quarantine register (tennis_edge/ledger/quarantine.py), which refuses any row generated after
+    # the in-play guard was deployed. Unregistered or post-guard violations are ACTIVE and fail the gate exactly
+    # as every violation did before; so does a damaged register. Nothing is deleted from the ledger.
+    if quarantine is not None:
+        from tennis_edge.ledger.quarantine import GUARD_DEPLOYED_AT
+        by_id = {r["prediction_id"]: r for r in ledger_rows}
+        from tennis_edge.ledger.quarantine import is_legacy
+        legacy = [v for v in viol if v in quarantine and is_legacy({**quarantine[v], "git_sha": by_id[v].get("git_sha"),
+                                                                    "generated_at_utc": by_id[v]["generated_at_utc"]})]
+        active = [v for v in viol if v not in set(legacy)]
+        since = [r for r in ledger_rows if datetime.fromisoformat(r["generated_at_utc"]) >= GUARD_DEPLOYED_AT]
+        verifiable = sum(1 for r in since if starts.get(r["match_id"], (None,))[0] is not None)
+        detail.update({"legacy_quarantined": len(legacy), "active_violations": len(active),
+                       "active_violation_ids": active[:20], "quarantine_register_rows": len(quarantine),
+                       "quarantine_register_problems": quarantine_problems or [],
+                       "guard_deployed_at": GUARD_DEPLOYED_AT.isoformat(),
+                       "rows_since_guard": len(since), "rows_since_guard_with_first_ball_truth": verifiable,
+                       "note": ("rows since the guard WITHOUT A/B first-ball truth cannot be verified either way; they are "
+                                "START_UNKNOWN and excluded from strict research by construction (see TENNIS-10)")})
+        ok = not active and not leaked and not quarantine_problems
+        return GateResult("TENNIS-6", "no_post_start_leakage", "PASS" if ok else "FAIL", detail)
     return GateResult("TENNIS-6", "no_post_start_leakage", "PASS" if not viol and not leaked else "FAIL", detail)
 
 
@@ -464,6 +498,23 @@ def _auto_extra() -> dict:
         for mid, t in FirstBallStore(fbroot).latest_truths().items():
             if mid in extra.get("starts", {}) and t.strict_eligible and not t.no_play:
                 extra["starts"][mid] = (t.lower_bound_utc, extra["starts"][mid][1], t.upper_bound_utc)
+    settled_at = {}
+    for f in glob.glob(os.path.join(PROJ, "data", "research", "settlements", "*.jsonl")):
+        with open(f) as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                ts = (r.get("exchange") or {}).get("settlement_ts")
+                if ts and r.get("prediction_id"):
+                    settled_at[r["prediction_id"]] = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    if settled_at:
+        extra["settled_at"] = settled_at
+    qroot = os.path.join(PROJ, "data", "research", "quarantine")
+    if os.path.isdir(qroot):
+        from tennis_edge.ledger.quarantine import load as _load_quarantine
+        extra["quarantine"], extra["quarantine_problems"] = _load_quarantine(qroot)
     st = settlement_stats()
     if st:
         strict_rows = st.pop("_strict_research_rows", None)
@@ -646,7 +697,8 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
     out += list(gate_3_4_active_coverage())
     out.append(gate_5_capture_freshness())
     out.append(gate_6_no_post_start_leakage(extra.get("ledger_rows", []), extra.get("starts", {}),
-                                            extra.get("strict_research_rows"))
+                                            extra.get("strict_research_rows"), extra.get("quarantine"),
+                                            extra.get("quarantine_problems"), extra.get("settled_at"))
                if extra.get("ledger_rows") else GateResult("TENNIS-6", "no_post_start_leakage", "UNKNOWN", {"reason": "no ledger rows supplied"}))
     out.append(gate_7_identity(extra.get("links_summary")))
     fb = extra.get("first_ball") if extra.get("first_ball") is not None else first_ball_metrics()
