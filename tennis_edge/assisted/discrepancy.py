@@ -208,10 +208,18 @@ def identity_status(checks: dict[str, str]) -> str:
     return ID_VERIFIED
 
 
-def check_physical_match_id(pmid) -> str:
+def check_physical_match_id(pmid, a_id=None, b_id=None) -> str:
     if not pmid:
         return "AMBIGUOUS"
-    return "PASS" if re.match(r"^(ATP|WTA|MIXED|ANY):[^:]+:[^:]+:\d{4}-\d{2}-\d{2}$", str(pmid)) else "FAIL"
+    if re.match(r"^(ATP|WTA|MIXED|ANY):[^:]+:[^:]+:\d{4}-\d{2}-\d{2}$", str(pmid)):
+        return "PASS"
+    # Ids minted for players absent from Sackmann carry their system prefix ("tml:DC48", "espn:espn:10239"),
+    # so such an id cannot be split on ':' (2026-10-05: every match with a minted player read FAIL). It is
+    # well-formed only when it is exactly TOUR:<a>:<b>:<date> for this row's own two player ids.
+    m = re.match(r"^(ATP|WTA|MIXED|ANY):(.+):(\d{4}-\d{2}-\d{2})$", str(pmid))
+    if m and a_id and b_id and str(a_id) != str(b_id) and m.group(2) in (f"{a_id}:{b_id}", f"{b_id}:{a_id}"):
+        return "PASS"
+    return "FAIL"
 
 
 def check_player_ids(a, b) -> str:

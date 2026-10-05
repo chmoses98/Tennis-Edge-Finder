@@ -177,6 +177,13 @@ def test_identity_verification():
     assert DS.check_market_pair(0.6, 0.38) == "PASS" and DS.check_market_pair(0.9, 0.9) == "AMBIGUOUS"
     assert DS.check_identity_confidence(1.0, 0.9) == "AMBIGUOUS"
     assert DS.check_physical_match_id("garbage") == "FAIL" and DS.check_physical_match_id(PMID) == "PASS"
+    # minted ids carry a system prefix with ':' -- well-formed only for the row's own two players
+    minted = "ATP:211661:tml:DC48:2026-10-05"
+    assert DS.check_physical_match_id(minted) == "FAIL"                              # cannot be split blindly
+    assert DS.check_physical_match_id(minted, "211661", "tml:DC48") == "PASS"
+    assert DS.check_physical_match_id(minted, "tml:DC48", "211661") == "PASS"
+    assert DS.check_physical_match_id(minted, "211661", "tml:XX99") == "FAIL"         # not this row's players
+    assert DS.check_physical_match_id("WTA:espn:espn:1:espn:espn:2:2026-10-05", "espn:espn:1", "espn:espn:2") == "PASS"
 
 
 def test_namesakes_fail_closed(tmp_path):

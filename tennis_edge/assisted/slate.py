@@ -530,7 +530,8 @@ def _identity_checks(key, series, disc, level, fam_tour, players, per_player, mw
     """Match-level identity evidence. PASS / AMBIGUOUS / FAIL / NA per check; nothing is loosened or guessed."""
     lq = ((lg or {}).get("quality") or {})
     c = {
-        "physical_match_id": DS.check_physical_match_id((sh or {}).get("physical_match_id")),
+        "physical_match_id": DS.check_physical_match_id((sh or {}).get("physical_match_id"), (sh or {}).get("player_a_id"),
+                                                        (sh or {}).get("player_b_id")),
         "player_ids": DS.check_player_ids((sh or lg or {}).get("player_a_id"), (sh or lg or {}).get("player_b_id")),
         "identity_confidence": DS.check_identity_confidence(
             *(((sh or {}).get("identity_confidence_a"), (sh or {}).get("identity_confidence_b")) if sh
