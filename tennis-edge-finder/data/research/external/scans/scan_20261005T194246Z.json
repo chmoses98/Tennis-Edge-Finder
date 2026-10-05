@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-05T19:42:46.032786+00:00",
+ "run_id": "20261005T194246Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1500,
+  "skipped_family": 383,
+  "skipped_period": 429,
+  "skipped_live": 16,
+  "one_sided": 19,
+  "rows": 2570,
+  "devigged": 669
+ },
+ "smarkets_fetch": {
+  "events_seen": 125,
+  "events_priced": 80,
+  "markets": 746,
+  "markets_mapped": 296,
+  "contracts": 618,
+  "quoted_contracts": 618,
+  "raw": "data/research/external/raw/20261005T194246Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 296,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 49,
+  "rows": 569,
+  "two_sided": 565,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 677,
+ "external_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 91,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7913,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Blake Anderson": 1,
+   "Thea Marcu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Diego Dedura-Palomero": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.9,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Martin Baquero": 1,
+   "Dimitri Bagaric": 1,
+   "Darcy Nicholls": 1,
+   "Filippo Alfano": 1,
+   "Teodora Naidenova": 1,
+   "Anastasiia Nikolaieva": 1,
+   "Valeriia Derevyankina": 1,
+   "Phitchayaphak Srimuk": 1,
+   "Rosario Jurado": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 53,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
