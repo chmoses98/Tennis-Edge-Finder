@@ -33,18 +33,24 @@ jobs:
         run: python3 -m pip install --quiet numpy pandas scipy scikit-learn pyarrow openpyxl xlrd
       - name: Pull snapshots, capture and existing ledger from tennis-data
         run: |
-          git fetch --depth=1 origin tennis-data
-          # the evidence tree keeps its historical `tennis-edge-finder/` prefix (see MIGRATION_AUDIT.md);
-          # --strip-components=1 lands it at ./data/ where the standalone code expects it
-          git archive origin/tennis-data tennis-edge-finder/data | tar -x --strip-components=1
+          # the evidence tree keeps its historical `tennis-edge-finder/` prefix (see MIGRATION_AUDIT.md); the pull
+          # strips it so the tree lands at ./data/ where the standalone code expects it. Blobless + sparse
+          # (2026-10-05): only what a run reads is downloaded -- the full 8 GB `git archive` took ~8 minutes.
+          python3 scripts/ci/pull_data_branch.py
           ls data
       - name: Build canonical table and rating states
         run: |
           # without pipefail `| tail` reported tail's exit status and a crashed build looked green
           set -o pipefail
           PYTHONPATH=. python3 tennis_edge/data/build.py | tail -5
-          PYTHONPATH=. python3 -m tennis_edge.models.state --tour ATP
-          PYTHONPATH=. python3 -m tennis_edge.models.state --tour WTA
+          # the two tours are independent replays: fit them in parallel, and fail on EITHER exit status
+          PYTHONPATH=. python3 -m tennis_edge.models.state --tour ATP & P_ATP=$!
+          PYTHONPATH=. python3 -m tennis_edge.models.state --tour WTA & P_WTA=$!
+          wait $P_ATP; RC_ATP=$?; wait $P_WTA; RC_WTA=$?
+          [ "$RC_ATP" -eq 0 ] && [ "$RC_WTA" -eq 0 ] || { echo "::error::rating state fit failed (ATP $RC_ATP, WTA $RC_WTA)"; exit 1; }
+          # Projection V2 end states (frozen coefficients in config/projection_v2/). If this fails run_tennis falls
+          # back to the incumbent and says so in projections/latest.json; the failure is enforced after publish.
+          PYTHONPATH=. python3 scripts/ops/build_v2_state.py || { echo "::error::Projection V2 state build failed"; echo "V2_STATE_FAILED=1" >> "$GITHUB_ENV"; }
       - name: Project, settle, health
         id: project
         run: |
@@ -52,6 +58,12 @@ jobs:
           # recorded and enforced ONCE after publication (last step), so settlement and research outputs still publish.
           set -o pipefail
           CORE_FAILED=""
+          [ -n "${V2_STATE_FAILED:-}" ] && CORE_FAILED="$CORE_FAILED v2_state"
+          # Lifecycle authority (2026-10-05): a FULL snapshot of every open match-scope market, taken immediately
+          # before pricing. Incremental capture never marks a settled market closed; without this snapshot
+          # run_tennis excludes any market it cannot verify is still open.
+          PYTHONPATH=. python3 scripts/kalshi/snapshot_open_markets.py | tail -1 \
+            || echo "::warning::open-market snapshot incomplete; unverifiable markets are excluded, not priced"
           PYTHONPATH=. python3 scripts/run_tennis.py | tail -20 \
             || { echo "run_tennis.py exited non-zero; enforced after publish"; CORE_FAILED="$CORE_FAILED run_tennis"; }
           # FROZEN research producers, run live (no model is fitted or changed here). Each writes an
@@ -68,6 +80,13 @@ jobs:
           tail -20 model4.log
           PYTHONPATH=. python3 scripts/ops/settle_ledger.py | tail -10 \
             || { echo "settle_ledger.py exited non-zero; enforced after publish"; CORE_FAILED="$CORE_FAILED settle_ledger"; }
+          # independent (non-Kalshi) sports truth + exchange reconciliation (TENNIS-8 / TENNIS-9)
+          PYTHONPATH=. python3 scripts/ops/sports_truth.py | tail -3 \
+            || { echo "::error::independent sports truth failed"; CORE_FAILED="$CORE_FAILED sports_truth"; }
+          # legacy post-start / post-settlement ledger rows -> append-only quarantine register (TENNIS-6). Refuses,
+          # and fails, if asked to register a row produced by code that already had the guards.
+          PYTHONPATH=. python3 scripts/ops/quarantine_post_start.py | tail -2 \
+            || { echo "::error::post-start quarantine failed"; CORE_FAILED="$CORE_FAILED quarantine"; }
           # prospective confirmation: score the FROZEN candidates on post-freeze evidence (derived,
           # append-only layer; never writes a candidate definition). A harvest failure cannot block
           # settlement or publication, and it cannot stay invisible either (see below).
@@ -143,6 +162,8 @@ jobs:
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research --message "tennis run $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          # the pre-pricing open-market snapshot is the quote evidence every projection row cites
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/run_snapshots --message "run open-market snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
           # Edge Finder app payload (or its health-only failure record): same branch, data/app -> tennis-edge-finder/data/app
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/app --message "app export $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           # Wave 4: the walk-forward artifacts the live dislocation scan reads. Built here because this

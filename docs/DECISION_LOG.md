@@ -86,3 +86,22 @@
 | A pregame-only truth (no upper bound) is not a first-ball bound | it says "not started at t"; reading it as "may have started" hid pregame matches | keeping the lower bound as a conservative cut-off |
 | Refreshes are dispatched by the existing first-ball conductor: slate at earliest - 45 and - 10 min, a full RUN TENNIS only when producer rows are > 3 h old (cap 6/day), each once per window | the conductor already polls every 10 min; no new frequent workflow and no unnecessary rebuild | an every-10-minute RUN TENNIS cron |
 | Decision schema v3 records the start status at decision; v1/v2 stay readable | versioning, not editing, a fixed schema | silently adding fields |
+
+
+## 2026-10-05 Projection Engine V2; canonical_v2; lifecycle guard; independent sports truth
+
+| decision | why | alternative rejected |
+|---|---|---|
+| Preregister splits, selection rules and promotion rules P1-P9 before computing any challenger result | an apparent improvement chosen after seeing it is not evidence | tuning on the evaluation years |
+| Promote `projection_v2.0` (MOV Elo + Gen-2 by evidence + form + context + age, walk-forward logistic stacker) | P1-P8 pass on 2021-2025 and the 2026 holdout; derivatives better on every proper score | keeping the incumbent; a black-box learner |
+| Keep the incumbent on every ledger row; rollback is one config line | prospective confirmation needs both numbers; a reversible promotion | replacing it outright |
+| Coefficients are a committed, fingerprinted artifact refitted only deliberately per season | a production run must not change the model | refitting inside RUN TENNIS |
+| Neutralise schedule features where the level's results are > 10 days stale, and grade POOR beyond 90 days | missing results would read as layoffs | using them as if the data were complete |
+| `canonical_v2`: cross-source near-duplicate removal, mirror main-tour files, guarded new-player ids | 85,008 duplicates; ATP main-tour serve stats ignored; new players unrated | exact-key dedupe; fuzzy name merging |
+| Full open-market snapshot before pricing and before every slate; captured settlements excluded | 15.6% of settled rows had been priced after the exchange settled them | trusting the last incremental capture record |
+| TENNIS-6: legacy violations go to an append-only, hash-chained quarantine register by prediction id; eligibility by guard time / code version; exchange settlement time is a hard first-ball bound | history stays auditable, active leaks can never be registered | deleting rows; relaxing the gate |
+| Independent sports truth from Sackmann / TML / ESPN, anchored on the ticker date with source-specific windows | Kalshi-derived "truth" cannot reconcile Kalshi; a wide window produced 10 false conflicts | Kalshi results; fuzzy dates |
+| TENNIS-10 reports the raw rate and the rate over pregame-eligible rows (quarantined post-start rows excluded); threshold unchanged | a post-start row cannot have a pregame close; it was penalised twice | lowering the threshold |
+| Given-name transliteration aliases (Pyotr/Petr) map at 0.85; dropped-name and spelling variants are review candidates only | measured false-match risk; Hispanic double surnames make token drops unsafe | auto-mapping every near match |
+| `analytic.py` advantage-tail bug documented, not fixed in place | it is a frozen source of the prospective experiments; no live format affected | editing frozen code |
+| Blobless + sparse evidence pulls and publishes | full 8 GB checkouts made publishing take 13.5 min and capture passes slip | deleting or rewriting evidence |

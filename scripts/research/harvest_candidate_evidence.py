@@ -186,7 +186,8 @@ def _main():
     ledger = SC.ledger_rows(a.data_root)
     pairs = SC.recompute_clv(ctx, ledger)
     clv = SC.clv_scorecard(pairs)
-    published = sorted(glob.glob(os.path.join(a.data_root, "research", "clv", "*.jsonl")))
+    from tennis_edge.health.gates import latest_run_files
+    published = latest_run_files(os.path.join(a.data_root, "research", "clv"))
     if published:
         n_pub = sum(1 for _f, _h, r in src.iter_jsonl(published[-1]) if r.get("strict"))
         clv["published_clv_run"] = os.path.basename(published[-1])

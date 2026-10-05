@@ -39,7 +39,9 @@ from tennis_edge.firstball.watchlist import capture_board                       
 from tennis_edge.kalshi.families import SERIES                                      # noqa: E402
 
 WORKFLOWS = {"run_tennis": "tennis-run.yml", "slate_primary": "tennis-assisted-slate.yml",
-             "slate_final": "tennis-assisted-slate.yml"}
+             "slate_final": "tennis-assisted-slate.yml", "slate_stale_refresh": "tennis-assisted-slate.yml"}
+#: at most one stale-slate rebuild per this many minutes (each rebuild takes a fresh open-market snapshot)
+STALE_REFRESH_MIN = 20
 
 
 def board_entries(capture_root: str, now: datetime) -> list[dict]:
@@ -173,6 +175,16 @@ def main(argv=None) -> int:
     log = _read_jsonl(log_path)
     actions = ST.due_actions(plan, now, last_slate_built_at=run.get("built_at"),
                              last_model_run_at=srcs.get("shadow_last") or srcs.get("ledger_last"), dispatch_log=log)
+    # 2026-10-05: a slate that has gone stale because a match STARTED, became ambiguous or moved 15+ minutes
+    # earlier is not left standing until the next planned refresh -- the slate is rebuilt now, at most once per
+    # STALE_REFRESH_MIN minutes, so a person never reads an old slate as current for longer than that.
+    if any(r.startswith("STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD") for r in fresh.get("reasons") or []):
+        recent = [x for x in log if x.get("kind") == "slate_stale_refresh" and x.get("at")
+                  and (now - ST._parse(x["at"])).total_seconds() < STALE_REFRESH_MIN * 60]
+        if not recent and not any(x["kind"].startswith("slate") for x in actions):
+            actions.append({"kind": "slate_stale_refresh", "at": now.isoformat(),
+                            "reason": f"published slate {fresh.get('slate_id')} is stale: {len(fresh.get('changed_matches') or [])} "
+                                      "match(es) changed status/start since it was built"})
     for act in actions:
         act.update(dispatch(act["kind"], act["reason"]) if a.dispatch else {"dispatched": False, "note": "plan only"})
         with open(log_path, "a") as f:

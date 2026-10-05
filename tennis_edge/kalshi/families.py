@@ -137,6 +137,11 @@ SERIES = {
     "KXATP1RANK": ("SEASON_RANKING", "ATP", "ANY", "singles"),
     "KXATPRANK": ("SEASON_RANKING", "ATP", "ANY", "singles"),
     "KXWTA1RANK": ("SEASON_RANKING", "WTA", "ANY", "singles"),
+    # "Will <player> be a Top 5 ranked men's singles player on Dec 31, 2026?" (series listed 2026-10-01).
+    # A year-end ranking position: pricing it needs a points-race simulation over the remaining calendar
+    # and a current rankings feed, neither of which exists here. Explicitly SEASON_RANKING, unpriced --
+    # classified, not faked.
+    "KXATPT5RANK": ("SEASON_RANKING", "ATP", "ANY", "singles"),
     "KXATPFINALSQUAL": ("SEASON_QUALIFICATION", "ATP", "ANY", "singles"),
     "KXWTAFINALSQUAL": ("SEASON_QUALIFICATION", "WTA", "ANY", "singles"),
     "KXATPGRANDSLAM": ("SEASON_MAJORS", "ATP", "SLAM", "singles"),

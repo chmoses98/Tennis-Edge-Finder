@@ -208,3 +208,32 @@ slate, the slate run log and every schema-v3 assisted decision.
 UNKNOWN until the planner has run in production (no `plan_latest.json`). The detail reports the next
 window, counts by status and the missed windows. Replayed on 2026-10-02's data it fails with
 SLATE_LACKS_START_STATUS and WINDOW_MISSED 06:00Z -- the miss that motivated it.
+
+
+## 2026-10-05 remediation (Projection V2 branch)
+
+No threshold moved. What changed is what the gates can SEE and how history is accounted for; before/after per
+gate is in `research/projection_v2/HEALTH_REMEDIATION.md`.
+
+* **TENNIS-2/3**: `KXATPT5RANK` (year-end top-5 ranking, listed 2026-10-01) is SEASON_RANKING -- classified,
+  deliberately unpriced.
+* **TENNIS-4**: the detail now separates identity gaps that a rule or a person can close (`ALIAS_CANDIDATES`,
+  queued for review) from players absent from every reachable results source (`NO_HISTORY`, the ITF freshness
+  gap). Given-name transliterations map at 0.85.
+* **TENNIS-6**: a second violation class, `post_settlement` -- a row generated after the exchange's own
+  settlement timestamp was certainly priced after the first ball, even where no first-ball source exists (ITF).
+  Legacy violations live in `data/research/quarantine/post_start_ledger_rows.jsonl` (append-only, hash-chained,
+  by prediction id; ledger untouched). A first-ball-class row is legacy only if generated before the in-play
+  guard (2026-09-27T20:02Z); a post-settlement row only if produced by a code version in
+  `config/pre_lifecycle_guard_shas.json`. Anything else is ACTIVE and fails the gate; so does a damaged register.
+  The detail also states how many rows since the guard could not be verified either way (no first-ball truth).
+* **TENNIS-8/9**: `scripts/ops/sports_truth.py` resolves settled predictions against Sackmann / TML / ESPN (never
+  Kalshi) and reconciles Kalshi's settlement against them. TENNIS-8 keeps its 98% rule over ALL settled rows and
+  additionally reports the rate among levels a free source covers and the structural non-coverage by level;
+  TENNIS-9 is decided on the reconciled rows.
+* **TENNIS-10**: also reports `strict_rate_pregame_eligible` over settled rows with A/B truth MINUS the rows in the
+  TENNIS-6 quarantine register (priced after the first ball, so they cannot have a pregame close); the status is
+  judged on that rate, the raw rate stays in the detail.
+* **TENNIS-5 / slate freshness**: capture and first-ball conductors fetch the evidence branch blobless and publish
+  sparse; RUN TENNIS and every assisted slate take a full open-market snapshot immediately before pricing; a slate
+  made stale by a status/start change triggers a rebuild (at most every 20 min) from the first-ball planner.

@@ -166,9 +166,18 @@ def gate_3_4_active_coverage(projections_path=None) -> tuple[GateResult, GateRes
     # the projection run already applied lifecycle (closed since discovery) and pregame exclusions, which are not
     # coverage failures; what counts is every still-open, pregame, projectable market that was NOT priced
     hard = [e for e in pj.get("excluded", []) if e.get("stage") in ("event", "identity", "format", "pricing", "doubles")]
+    # identity gaps a rule or a person can close vs players absent from every reachable results source (2026-10-05)
+    id_kinds: dict = {}
+    for e in hard:
+        if e.get("stage") == "identity":
+            for k in (e.get("identity_kinds") or ["UNCLASSIFIED"]):
+                id_kinds[k] = id_kinds.get(k, 0) + 1
     need = len(have) + len(hard)
     g4 = GateResult("TENNIS-4", "active_market_projection", "PASS" if not hard else "FAIL",
-                    {"projectable_open_pregame": need, "projected": len(have), "not_projected": len(hard), "missing_sample": [e["ticker"] + ": " + e["reason"][:60] for e in hard[:10]],
+                    {"projectable_open_pregame": need, "projected": len(have), "not_projected": len(hard),
+                     "not_projected_by_stage": {st_: sum(1 for e in hard if e.get("stage") == st_) for st_ in sorted({e.get("stage") for e in hard})},
+                     "identity_gap_kinds": id_kinds, "alias_review_queue": len(pj.get("alias_review_queue") or []),
+                     "missing_sample": [e["ticker"] + ": " + e["reason"][:60] for e in hard[:10]],
                      "excluded_by_policy": {k: v for k, v in pj.get("coverage", {}).items() if k in ("closed_since_discovery", "past_nominal_start", "unsupported_family", "tournament_scope_not_priced_tonight", "first_ball_already_observed")},
                      "projection_run": pj.get("run_id")})
     return g3, g4
@@ -194,7 +203,8 @@ def gate_5_capture_freshness(max_age_min=30, now=None, max_trade_backlog_age_h=2
                        "trade_backlog": backlog or None, "trade_backlog_ok": backlog_ok})
 
 
-def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows=None) -> GateResult:
+def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows=None, quarantine: dict | None = None,
+                                 quarantine_problems: list | None = None, settled_at: dict | None = None) -> GateResult:
     """TENNIS-6: every pregame prediction was generated strictly before the match's actual first ball
     (or, when unknown, before scheduled_start - 5 min, flagged).
 
@@ -233,6 +243,17 @@ def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows
         else:
             viol.append(r["prediction_id"])
             cats["no_start_information"] += 1
+    # 2026-10-05: a row generated AFTER THE EXCHANGE SETTLED its market was certainly priced post-start, whether
+    # or not any first-ball source covers the level (ITF has none). Exchange settlement time is an upper bound on
+    # the first ball. These were invisible here: 2,695 such rows, still being produced daily.
+    if settled_at:
+        cats["post_settlement"] = 0
+        vset = set(viol)
+        for r in ledger_rows:
+            ts = settled_at.get(r["prediction_id"])
+            if ts and r["prediction_id"] not in vset and datetime.fromisoformat(r["generated_at_utc"]) > ts:
+                viol.append(r["prediction_id"])
+                cats["post_settlement"] += 1
     detail = {"violations": viol[:20], "n_violations": len(viol), "violation_classes": cats,
               "n": len(ledger_rows), "start_unknown_used_schedule": unknown,
               "start_unknown_passed_schedule_check": unknown - cats["schedule_fallback"]}
@@ -241,6 +262,28 @@ def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows
             1 for c in strict_research_rows if c.get("strict") and c.get("timing_class") != "STRICT_PREGAME")
         detail["strict_research_rows_checked"] = sum(1 for c in strict_research_rows if c.get("strict"))
     leaked = detail.get("post_start_rows_in_strict_research", 0)
+    # 2026-10-05: LEGACY vs ACTIVE. A violation counts as legacy only if it is listed, by prediction_id, in the
+    # append-only quarantine register (tennis_edge/ledger/quarantine.py), which refuses any row generated after
+    # the in-play guard was deployed. Unregistered or post-guard violations are ACTIVE and fail the gate exactly
+    # as every violation did before; so does a damaged register. Nothing is deleted from the ledger.
+    if quarantine is not None:
+        from tennis_edge.ledger.quarantine import GUARD_DEPLOYED_AT
+        by_id = {r["prediction_id"]: r for r in ledger_rows}
+        from tennis_edge.ledger.quarantine import is_legacy
+        legacy = [v for v in viol if v in quarantine and is_legacy({**quarantine[v], "git_sha": by_id[v].get("git_sha"),
+                                                                    "generated_at_utc": by_id[v]["generated_at_utc"]})]
+        active = [v for v in viol if v not in set(legacy)]
+        since = [r for r in ledger_rows if datetime.fromisoformat(r["generated_at_utc"]) >= GUARD_DEPLOYED_AT]
+        verifiable = sum(1 for r in since if starts.get(r["match_id"], (None,))[0] is not None)
+        detail.update({"legacy_quarantined": len(legacy), "active_violations": len(active),
+                       "active_violation_ids": active[:20], "quarantine_register_rows": len(quarantine),
+                       "quarantine_register_problems": quarantine_problems or [],
+                       "guard_deployed_at": GUARD_DEPLOYED_AT.isoformat(),
+                       "rows_since_guard": len(since), "rows_since_guard_with_first_ball_truth": verifiable,
+                       "note": ("rows since the guard WITHOUT A/B first-ball truth cannot be verified either way; they are "
+                                "START_UNKNOWN and excluded from strict research by construction (see TENNIS-10)")})
+        ok = not active and not leaked and not quarantine_problems
+        return GateResult("TENNIS-6", "no_post_start_leakage", "PASS" if ok else "FAIL", detail)
     return GateResult("TENNIS-6", "no_post_start_leakage", "PASS" if not viol and not leaked else "FAIL", detail)
 
 
@@ -289,12 +332,17 @@ def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_con
                   "no sports truth independent of the exchange to reconcile the exchange result against")
         g9 = GateResult("TENNIS-9", "exchange_settlement_health", "UNKNOWN", {"reason": reason, "rules_id_changes": rules_id_changes or []})
     else:
-        g9 = GateResult("TENNIS-9", "exchange_settlement_health", "PASS" if exchange_conflicts == 0 and not rules_id_changes else "FAIL", {"conflicts": exchange_conflicts, "rules_id_changes": rules_id_changes or []})
+        rec = (settlement or {}).get("exchange_reconciliation") or {}
+        g9 = GateResult("TENNIS-9", "exchange_settlement_health", "PASS" if exchange_conflicts == 0 and not rules_id_changes else "FAIL",
+                        {"conflicts": exchange_conflicts, "reconciled_against_independent_truth": (settlement or {}).get("exchange_reconciled"),
+                         "reconciliation": rec, "rules_id_changes": rules_id_changes or [],
+                         "scope": "MATCH_WINNER settlements whose match has an independent (non-Kalshi) result"})
     return g8, g9
 
 
 def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actual_start_basis: int | None,
-                         first_ball: dict | None = None, n_strict_settled: int | None = None) -> GateResult:
+                         first_ball: dict | None = None, n_strict_settled: int | None = None,
+                         n_quarantined_ab: int | None = None) -> GateResult:
     """TENNIS-10: CLV close coverage, measured against STRICT first-ball-anchored closes.
 
     The denominator is deliberately the predictions whose match HAS A/B first-ball truth. A close cut off
@@ -325,6 +373,16 @@ def gate_10_clv_coverage(n_settled: int | None, n_with_close: int | None, n_actu
     else:
         rate = (strict_rows or 0) / n_settled if n_settled else 0
     detail["strict_rate"] = round(rate, 4)
+    # 2026-10-05: a row QUARANTINED for being priced after the first ball (TENNIS-6 register) is not a pregame
+    # prediction, so it cannot have a pregame close; counting it here penalised one defect twice. It leaves the
+    # denominator only when it is in the append-only register; both rates are reported, the threshold is unchanged.
+    if n_quarantined_ab is not None and n_strict_settled is not None and n_actual_start_basis:
+        eligible = n_actual_start_basis - n_quarantined_ab
+        rate = n_strict_settled / eligible if eligible else 0
+        detail.update(quarantined_post_start_in_population=n_quarantined_ab, pregame_eligible=eligible,
+                      strict_rate_pregame_eligible=round(rate, 4),
+                      structural_note="levels with no first-ball source (Challenger, WTA 125, ITF) have no A/B truth and are "
+                                      "outside this population by construction; see first_ball.watchlist")
     return GateResult("TENNIS-10", "clv_close_coverage", "PASS" if rate >= 0.95 else "FAIL", detail)
 
 
@@ -385,6 +443,12 @@ def gate_14_source_freshness(max_age_days=8, now=None) -> GateResult:
                       {"run": best["run_id"], "snapshot_age_days": round(age, 2), "max_season_files": seasons, "ratings_as_of": as_of, "ratings_stale_days": stale_days})
 
 
+def latest_run_files(directory: str) -> list[str]:
+    """Per-run derived tables (<run_id>.jsonl, or .jsonl.gz since 2026-10-05), ordered by run id."""
+    files = glob.glob(os.path.join(directory, "*.jsonl")) + glob.glob(os.path.join(directory, "*.jsonl.gz"))
+    return sorted(files, key=lambda f: os.path.basename(f).split(".")[0])
+
+
 def settlement_stats(research_root=None) -> dict | None:
     """What the settle job has actually written, read straight from its tables.
 
@@ -415,10 +479,43 @@ def settlement_stats(research_root=None) -> dict | None:
     out = {"settled": len(rows), "settled_binary": len(binary), "settled_scalar": len(rows) - len(binary),
            "sports_truth_rows": len(sports), "sports_truth_kalshi_derived": len(kalshi_derived),
            "sports_truth_independent": len(independent), "settlement_files": len(files)}
-    clvs = sorted(glob.glob(os.path.join(root, "clv", "*.jsonl")))
+    # 2026-10-05: the INDEPENDENT sports-truth lane (scripts/ops/sports_truth.py; tennis_edge/ledger/sports_truth.py)
+    # resolves settled predictions against Sackmann / TML / ESPN results -- never Kalshi -- in its own derived table.
+    st_files = sorted(glob.glob(os.path.join(root, "sports_truth", "*.jsonl.gz")))
+    if st_files:
+        import gzip as _gz
+        binary_ids = {r.get("prediction_id") for r in binary}
+        resolved, by_status, rec, structural = set(), {}, {}, {}
+        with _gz.open(st_files[-1], "rt") as fh:
+            for line in fh:
+                try:
+                    x = json.loads(line)
+                except ValueError:
+                    continue
+                stt = (x.get("independent") or {}).get("status")
+                by_status[stt] = by_status.get(stt, 0) + 1
+                if stt == "RESOLVED" and x.get("prediction_id") in binary_ids:
+                    resolved.add(x["prediction_id"])
+                if stt in ("NOT_COVERED", "NO_CANONICAL_IDS"):
+                    k = f"{x.get('tour')}|{x.get('level')}|{stt}"
+                    structural[k] = structural.get(k, 0) + 1
+                rs = (x.get("reconciliation") or {}).get("status")
+                if rs:
+                    rec[rs] = rec.get(rs, 0) + 1
+        n_struct = by_status.get("NOT_COVERED", 0) + by_status.get("NO_CANONICAL_IDS", 0)
+        old_ids = {r.get("prediction_id") for r in independent}
+        out.update(sports_truth_independent=len(old_ids | resolved),
+                   independent_truth_run=os.path.basename(st_files[-1]), independent_truth_by_status=by_status,
+                   independent_truth_structural_non_coverage=structural,
+                   independent_truth_rate_among_covered=round(by_status.get("RESOLVED", 0) / max(1, sum(by_status.values()) - n_struct), 4),
+                   exchange_reconciliation=rec,
+                   exchange_conflicts=rec.get("CONFLICT", 0),
+                   exchange_reconciled=rec.get("AGREE", 0) + rec.get("EXPLAINED", 0) + rec.get("CONFLICT", 0))
+    clvs = latest_run_files(os.path.join(root, "clv"))
     if clvs:
         latest = {}
-        with open(clvs[-1]) as fh:
+        import gzip as _gzc
+        with (_gzc.open(clvs[-1], "rt") if clvs[-1].endswith(".gz") else open(clvs[-1])) as fh:
             for line in fh:
                 try:
                     c = json.loads(line)
@@ -430,6 +527,7 @@ def settlement_stats(research_root=None) -> dict | None:
                    settled_with_ab_truth=sum(1 for c in settled_clv if c.get("truth_confidence") in ("A", "B")),
                    settled_with_close=sum(1 for c in settled_clv if c.get("close_ts")),
                    settled_strict_clv=sum(1 for c in settled_clv if c.get("strict")))
+        out["_ab_truth_ids"] = [c.get("prediction_id") for c in settled_clv if c.get("truth_confidence") in ("A", "B")]
         out["_strict_research_rows"] = [{"strict": c.get("strict"), "timing_class": c.get("timing_class")}
                                         for c in latest.values()]
     return out
@@ -464,8 +562,28 @@ def _auto_extra() -> dict:
         for mid, t in FirstBallStore(fbroot).latest_truths().items():
             if mid in extra.get("starts", {}) and t.strict_eligible and not t.no_play:
                 extra["starts"][mid] = (t.lower_bound_utc, extra["starts"][mid][1], t.upper_bound_utc)
+    settled_at = {}
+    for f in glob.glob(os.path.join(PROJ, "data", "research", "settlements", "*.jsonl")):
+        with open(f) as fh:
+            for line in fh:
+                try:
+                    r = json.loads(line)
+                except ValueError:
+                    continue
+                ts = (r.get("exchange") or {}).get("settlement_ts")
+                if ts and r.get("prediction_id"):
+                    settled_at[r["prediction_id"]] = datetime.fromisoformat(ts.replace("Z", "+00:00"))
+    if settled_at:
+        extra["settled_at"] = settled_at
+    qroot = os.path.join(PROJ, "data", "research", "quarantine")
+    if os.path.isdir(qroot):
+        from tennis_edge.ledger.quarantine import load as _load_quarantine
+        extra["quarantine"], extra["quarantine_problems"] = _load_quarantine(qroot)
     st = settlement_stats()
     if st:
+        ab_ids = st.pop("_ab_truth_ids", None)
+        if ab_ids is not None and extra.get("quarantine") is not None:
+            extra["n_quarantined_ab"] = sum(1 for i in ab_ids if i in extra["quarantine"])
         strict_rows = st.pop("_strict_research_rows", None)
         if strict_rows is not None:
             extra["strict_research_rows"] = strict_rows
@@ -473,6 +591,8 @@ def _auto_extra() -> dict:
         extra.setdefault("n_settled", st["settled"])
         extra.setdefault("sports_total", st["settled_binary"])
         extra.setdefault("sports_ok", st["sports_truth_independent"])
+        if st.get("exchange_reconciled"):
+            extra.setdefault("exchange_conflicts", st["exchange_conflicts"])
         if st.get("settled_with_ab_truth") is not None:
             extra.setdefault("n_actual_start_basis", st["settled_with_ab_truth"])
             extra.setdefault("n_with_close", st["settled_with_close"])
@@ -646,7 +766,8 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
     out += list(gate_3_4_active_coverage())
     out.append(gate_5_capture_freshness())
     out.append(gate_6_no_post_start_leakage(extra.get("ledger_rows", []), extra.get("starts", {}),
-                                            extra.get("strict_research_rows"))
+                                            extra.get("strict_research_rows"), extra.get("quarantine"),
+                                            extra.get("quarantine_problems"), extra.get("settled_at"))
                if extra.get("ledger_rows") else GateResult("TENNIS-6", "no_post_start_leakage", "UNKNOWN", {"reason": "no ledger rows supplied"}))
     out.append(gate_7_identity(extra.get("links_summary")))
     fb = extra.get("first_ball") if extra.get("first_ball") is not None else first_ball_metrics()
@@ -654,7 +775,8 @@ def run_all(extra: dict | None = None) -> list[GateResult]:
                                extra.get("rules_id_changes"), first_ball=fb, settlement=extra.get("settlement")))
     out.append(gate_10_clv_coverage(extra.get("n_settled"), extra.get("n_with_close"),
                                     extra.get("n_actual_start_basis"), first_ball=fb,
-                                    n_strict_settled=extra.get("n_strict_settled")))
+                                    n_strict_settled=extra.get("n_strict_settled"),
+                                    n_quarantined_ab=extra.get("n_quarantined_ab")))
     out.append(gate_11_consistency(extra.get("consistency_violations")))
     out.append(gate_12_ledger()); out.append(gate_13_reproducible()); out.append(gate_14_source_freshness())
     out.append(gate_15_prospective_confirmation())

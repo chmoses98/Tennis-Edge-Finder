@@ -109,6 +109,40 @@ def open_board(capture_root: str, now: datetime | None = None) -> tuple[dict[str
     return out, meta
 
 
+#: a run snapshot (scripts/kalshi/snapshot_open_markets.py) older than this is not the lifecycle authority
+RUN_SNAPSHOT_MAX_AGE_S = 20 * 60
+
+
+def overlay_run_snapshot(board: dict, meta: dict, snapshot_root: str, now: datetime) -> tuple[dict, dict]:
+    """Live builds only: a FULL open snapshot taken minutes ago replaces the incremental board for every
+    MATCH-scope ticker. Markets absent from it are closed or settled (the incremental board can lag a closure by
+    up to the ~75-minute full-snapshot interval), and its quotes are minutes, not half an hour, old."""
+    mans = sorted(glob.glob(os.path.join(snapshot_root, "*", "*.open_snapshot.manifest.json")))
+    for mp in reversed(mans):
+        try:
+            man = json.load(open(mp))
+        except (OSError, ValueError):
+            continue
+        if not man.get("complete"):
+            continue
+        age = (now - iso(man["finished_at"])).total_seconds()
+        data = mp.replace(".open_snapshot.manifest.json", ".open_snapshot.jsonl.gz")
+        if age > RUN_SNAPSHOT_MAX_AGE_S or not os.path.exists(data):
+            break
+        snap = {}
+        with gzip.open(data, "rt") as fh:
+            for line in fh:
+                if line.strip():
+                    r = json.loads(line)
+                    snap[r["ticker"]] = r
+        out = {tk: r for tk, r in board.items() if tk.split("-")[0] not in MATCH_SCOPE_SERIES}
+        dropped = sum(1 for tk in board if tk.split("-")[0] in MATCH_SCOPE_SERIES and tk not in snap)
+        out.update(snap)
+        return out, {**meta, "run_snapshot": man["run_id"], "run_snapshot_age_s": round(age, 1),
+                     "dropped_not_open_in_run_snapshot": dropped}
+    return board, {**meta, "run_snapshot": None}
+
+
 def _latest_rows(root: str, *, ts_key: str, key: str = "ticker", days: int = 2) -> dict[str, dict]:
     """key -> most recent row across the last `days` daily JSONL files of a producer store."""
     files = sorted(glob.glob(os.path.join(root, "*.jsonl")))[-days:]
@@ -163,6 +197,8 @@ def build_slate(data_root: str, *, now: datetime | None = None, replay: bool = F
     capture_root = os.path.join(data_root, "kalshi", "capture")
     research = os.path.join(data_root, "research")
     boardd, bmeta = open_board(capture_root, now if replay else None)
+    if not replay:
+        boardd, bmeta = overlay_run_snapshot(boardd, bmeta, os.path.join(data_root, "kalshi", "run_snapshots"), now)
     truths = load_truths(os.path.join(data_root, "firstball", "store"))
 
     ledger = _latest_rows(os.path.join(research, "ledger"), ts_key="generated_at_utc")
@@ -605,7 +641,14 @@ def _market_row(pm, m, fam, lg, sh, m4, dl, now, model_validity=None) -> dict:
     gen1 = ((lg or {}).get("models") or {}).get("ELO_DP_FAIR")
     fair = (sh or {}).get("fair_v1_probability")
     m4c = (m4 or {}).get("conditioned_probability")
-    if fair is not None:
+    # Projection V2 (2026-10-05): when the prediction ledger row was priced by the PROMOTED independent model,
+    # its probability (every family comes from ONE V2 distribution) is the slate's model number. It never reads a
+    # price. fair_v1 / Model 4 / Gen-1 remain the fallbacks, in their old order, for rows V2 did not price.
+    v2 = (lg or {}).get("v2") or {}
+    p_v2 = gen1 if (lg or {}).get("production_model") == "projection_v2.0" else None
+    if p_v2 is not None:
+        p, src = p_v2, "projection_v2.0 (prediction ledger)"
+    elif fair is not None:
         p, src = fair, "fair_v1 (shadow_board_v1)"
     elif m4c is not None:
         p, src = m4c, "market_conditioned_v1 (model4_board_v1)"
@@ -657,6 +700,10 @@ def _market_row(pm, m, fam, lg, sh, m4, dl, now, model_validity=None) -> dict:
                   "gen2": _r((sh or {}).get("gen2_probability")), "fair_v1": _r(fair),
                   "fair_v1_envelope": [_r(min(sh["fair_envelope"].values())), _r(max(sh["fair_envelope"].values()))]
                   if (sh or {}).get("fair_envelope") else None,
+                  "projection_v2": _r(p_v2), "projection_v2_grade": v2.get("grade"), "projection_v2_tags": v2.get("tags"),
+                  "projection_v2_envelope": [_r(v2.get("envelope_low_yes")), _r(v2.get("envelope_high_yes"))]
+                  if v2.get("envelope_low_yes") is not None else None,
+                  "incumbent": _r(((lg or {}).get("models") or {}).get("INCUMBENT")),
                   "model4_conditioned": _r(m4c), "model4_fundamental": _r((m4 or {}).get("fundamental_probability")),
                   "model_uncertainty": _r((sh or {}).get("model_uncertainty")),
                   "selector_v1": (sh or {}).get("selector_decision"),

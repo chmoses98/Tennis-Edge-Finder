@@ -51,7 +51,8 @@ TOP_N = 200                      # top players by overall Elo per tour, among th
 ACTIVE_DAYS = 365                # "recently active" = last rated match within this many days of ratings as_of_date
 CAPTURE_DAYS = 3                 # capture / dislocation / first-ball / Model 4 day files read (now - N .. now)
 SURFACES = ("Hard", "Clay", "Grass", "Carpet")
-LEDGER_MODELS = ("ELO", "STRUCTURAL", "ENSEMBLE", "ELO_DP_FAIR", "MARKET_MID", "HYBRID_MARKET_MODEL")
+LEDGER_MODELS = ("ELO", "STRUCTURAL", "ENSEMBLE", "ELO_DP_FAIR", "MARKET_MID", "HYBRID_MARKET_MODEL",
+                 "INCUMBENT", "V2", "PRODUCTION")   # the last three exist on rows priced since Projection V2 (2026-10-05)
 SERIES_MODELS = ("ELO_DP_FAIR",)  # one per-ticker series (the explorer index budget); all six ride in projections
 INDEX_BUDGET = 300_000           # bytes of explorer/index.json (one file entry per published document)
 AUTHORITY = "RESEARCH_ONLY"
@@ -197,6 +198,10 @@ def load_inputs(data_root: str, app_root: str, *, now=None, repo_root: str = REP
         "pinnacle_ATP": _read_json(os.path.join(repo_root, "research", "market_benchmark", "results_ATP.json")),
         "elo_study_ATP": _read_json(os.path.join(repo_root, "research", "elo_study", "results_ATP.json")),
         "elo_study_WTA": _read_json(os.path.join(repo_root, "research", "elo_study", "results_WTA.json")),
+        "projection_v2_validate": _read_json(os.path.join(repo_root, "research", "projection_v2", "results_validate.json")),
+        "projection_v2_holdout": _read_json(os.path.join(repo_root, "research", "projection_v2", "results_holdout.json")),
+        "projection_v2_decision": _read_json(os.path.join(repo_root, "research", "projection_v2", "PROMOTION_DECISION.json")),
+        "projection_v2_derivatives": _read_json(os.path.join(repo_root, "research", "projection_v2", "derivatives_eval.json")),
     }
     return {"manifest": manifest, "slate": slate, "v1": v1, "ratings": ratings, "ledger": ledger,
             "ledger_days": [os.path.basename(f)[:10] for f in ledger_files], "settlements": settlements,
@@ -395,6 +400,9 @@ def _metrics(ctx: _Ctx, q: dict) -> dict:
             "ELO_DP_FAIR": "the model fair value of the contract: the frozen DP engine's price from the ensemble point probabilities (every family; the scorecard's 'model fair')",
             "MARKET_MID": "the Kalshi YES mid (bid+ask)/2 the run priced against",
             "HYBRID_MARKET_MODEL": "the hybrid market-model column (null on every row so far)",
+            "INCUMBENT": "the pre-V2 production model (elo_surface_k_lo + Gen-1 serve/return ensemble), kept on every row since Projection V2 for comparison (MATCH_WINNER rows only)",
+            "V2": "Projection V2: the independent walk-forward ensemble (MOV Elo, Gen-2 by evidence, form, context, age); no market input (MATCH_WINNER rows only)",
+            "PRODUCTION": "the match probability of the distribution that priced every family on the row (V2 when promoted, else the incumbent)",
         }[model]
         m["ledger_" + model] = R.metric(
             sport=SPORT, slug=slug, name=f"Ledger P(YES): {model}", short_name=model, entity_type="MARKET", category="model_price",
@@ -1005,6 +1013,37 @@ def _studies(studies: dict, ctx: _Ctx) -> dict:
                                 extensions={t: ({k: v.get(k) for k in ("eval_from", "n_eval", "best_by_logloss", "symmetric_scores",
                                                                         "bootstrap_vs_elo_plain")} if isinstance(v, dict) else None)
                                             for t, v in elo.items()})
+    val, hold, dec = studies.get("projection_v2_validate"), studies.get("projection_v2_holdout"), studies.get("projection_v2_decision")
+    if isinstance(val, dict) and isinstance(dec, dict):
+        def _lane(r, t, name):
+            x = ((r or {}).get(t) or {}).get("lanes", {}).get(name) or {}
+            return {k: x.get(k) for k in ("n", "brier", "log_loss", "cal_slope", "ece", "accuracy")}
+
+        def _diff(r, t):
+            x = ((r or {}).get(t) or {}).get("vs_incumbent", {}).get("CHALLENGER") or {}
+            return {k: x.get(k) for k in ("n", "clusters", "brier_diff", "brier_ci", "ll_diff", "ll_ci")}
+        qq = _quality("RESEARCH", "research/projection_v2/results_{validate,holdout}.json (preregistered study on main)", ctx,
+                      production=False, sample_size=sum((_lane(val, t, "CHALLENGER").get("n") or 0) for t in ("ATP", "WTA")),
+                      limitations=["2026 holdout data stops at the April (WTA ITF/125) / June (ATP ITF) source freeze",
+                                   "live ITF projections run on 4-5 months of missing results and are graded POOR"])
+        out["projection_v2"] = dict(sport=SPORT, slug="projection_v2_backtest", name="Projection V2 vs incumbent (preregistered backtest)",
+                                    short_name="Projection V2", entity_type="MARKET", category="calibration", subcategory="walk_forward",
+                                    stat_type="SCORE", higher_is_better=False, source="research/projection_v2/",
+                                    quality=qq, freshness="UNKNOWN",
+                                    description=("Independent pre-match model (no market input): margin-of-victory Elo + Gen-2 serve/return "
+                                                 "by evidence + form + rest/layoff context + age, fitted walk-forward. 2021-2025 and the 2026 "
+                                                 "holdout vs the incumbent, paired cluster bootstrap over tournaments; promotion rules P1-P9 "
+                                                 "were committed before any result."),
+                                    update_frequency="per research cycle", known_limitations=["the market remains more accurate than this model"],
+                                    extensions={"verdict": dec.get("verdict"), "rules": dec.get("rules"),
+                                                "spec_fingerprint": dec.get("spec_fingerprint"),
+                                                **{f"{t}_2021_2025": {"incumbent": _lane(val, t, "INCUMBENT"),
+                                                                      "challenger": _lane(val, t, "CHALLENGER"),
+                                                                      "challenger_minus_incumbent": _diff(val, t)} for t in ("ATP", "WTA")},
+                                                **{f"{t}_2026_holdout": {"incumbent": _lane(hold, t, "INCUMBENT"),
+                                                                         "challenger": _lane(hold, t, "CHALLENGER"),
+                                                                         "challenger_minus_incumbent": _diff(hold, t)} for t in ("ATP", "WTA")},
+                                                "derivatives": (studies.get("projection_v2_derivatives") or {}).get("summary")})
     return out
 
 

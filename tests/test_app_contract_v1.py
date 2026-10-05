@@ -101,7 +101,9 @@ def test_export_end_to_end_on_real_record_shapes(data_root, tmp_path):
         r = rows[p["market_id"][len("mkt_kalshi_"):]]
         assert p["fair_probability"] == r["model_probability_yes"] and p["model_version"] == r["model_probability_source"]
         assert p["uncertainty"] is None and p["generated_at"] == timeutil.to_iso(slate["built_at"])
-        assert (p["lower_bound"] is not None) == (r["model_probability_source"].startswith("fair_v1") and bool(r["model"]["fair_v1_envelope"]))
+        env = (r["model"].get("fair_v1_envelope") if r["model_probability_source"].startswith("fair_v1")
+               else r["model"].get("projection_v2_envelope") if r["model_probability_source"].startswith("projection_v2") else None)
+        assert (p["lower_bound"] is not None) == bool(env)
     # recommendations: no automated pick exists; only research-only candidates the slate itself flagged
     recs = _load(out, "recommendations")["items"]
     expected = [r for m in slate["matches"] for r in m["markets"] if r["discrepancy_band"] in ax.DISAGREEMENT_BANDS

@@ -48,6 +48,14 @@ jobs:
               echo "::warning::$path is not on tennis-data"
             fi
           done
+      - name: Fresh open-market snapshot (lifecycle + quote authority for this slate)
+        # 2026-10-05: the slate's quotes came from the capture conductor's newest pass, routinely 30+ minutes old by
+        # build time, so every slate row read STALE. A full open snapshot taken here (read-only, stateless, no
+        # shared capture state touched) is overlaid on the board; markets absent from it are closed or settled.
+        run: |
+          python3 -m pip install --quiet pandas pyarrow || true
+          PYTHONPATH=. python3 scripts/kalshi/snapshot_open_markets.py | tail -1 \
+            || echo "::warning::open-market snapshot incomplete; the slate falls back to the incremental capture board"
       - name: Build the slate
         run: PYTHONPATH=. python3 scripts/research/build_assisted_slate.py
       - name: App export + research export (Edge Finder contract)
@@ -86,6 +94,8 @@ jobs:
           git config user.email "github-actions[bot]@users.noreply.github.com"
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/assisted_slates \
             --message "assisted slate $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/run_snapshots \
+            --message "slate open-market snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/app \
             --message "app export $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
       - name: Fail the job if the app export failed (after publish)

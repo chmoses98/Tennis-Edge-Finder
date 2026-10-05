@@ -1,0 +1,202 @@
+{
+ "n_linked": 12221,
+ "seasons": [
+  2021,
+  2022,
+  2023,
+  2024,
+  2025,
+  2026
+ ],
+ "scores": {
+  "INCUMBENT": {
+   "n": 12221,
+   "brier": 0.21115099042857594,
+   "log_loss": 0.6079809264629435,
+   "accuracy": 0.6519924719744702,
+   "ece": 0.014149337376141553,
+   "cal_slope": 1.0012987901545267,
+   "cal_intercept": -0.007288521368486344,
+   "fav_ece": 0.013244790133346838,
+   "fav_cal_slope": 1.0849355781651893,
+   "fav_cal_intercept": -0.0830420839347252
+  },
+  "CHALLENGER": {
+   "n": 12221,
+   "brier": 0.20843115382073568,
+   "log_loss": 0.6016295555062569,
+   "accuracy": 0.6615661566156615,
+   "ece": 0.01045184780091144,
+   "cal_slope": 1.0081170916734308,
+   "cal_intercept": -0.004307607176043992,
+   "fav_ece": 0.007775425534999587,
+   "fav_cal_slope": 1.0670202072720445,
+   "fav_cal_intercept": -0.0599277353847105
+  },
+  "MARKET_PINNACLE": {
+   "n": 12221,
+   "brier": 0.20314972635039205,
+   "log_loss": 0.5895606607759677,
+   "accuracy": 0.6776859504132231,
+   "ece": 0.010433573905358009,
+   "cal_slope": 1.0227404023493105,
+   "cal_intercept": -0.00203231643172787,
+   "fav_ece": 0.005048917086896844,
+   "fav_cal_slope": 1.0879890963614522,
+   "fav_cal_intercept": -0.06886219423558111
+  }
+ },
+ "v2_minus_pinnacle": {
+  "n": 12221,
+  "clusters": 317,
+  "brier_diff": 0.005281427470343653,
+  "brier_ci": [
+   0.004068819603485604,
+   0.006545964986485064
+  ],
+  "ll_diff": 0.012068894730289192,
+  "ll_ci": [
+   0.009183768067946706,
+   0.015050760380837405
+  ],
+  "p_better_brier": 0.0
+ },
+ "incumbent_minus_pinnacle": {
+  "n": 12221,
+  "clusters": 317,
+  "brier_diff": 0.008001264078183872,
+  "brier_ci": [
+   0.006629373295743935,
+   0.009461440103800088
+  ],
+  "ll_diff": 0.0184202656869758,
+  "ll_ci": [
+   0.015140807321115887,
+   0.021833849038148268
+  ],
+  "p_better_brier": 0.0
+ },
+ "v2_minus_incumbent_on_linked": {
+  "n": 12221,
+  "clusters": 317,
+  "brier_diff": -0.002719836607840218,
+  "brier_ci": [
+   -0.0036858400671368795,
+   -0.0018096414370724055
+  ],
+  "ll_diff": -0.006351370956686609,
+  "ll_ci": [
+   -0.008537355535001383,
+   -0.004329744525198786
+  ],
+  "p_better_brier": 1.0
+ },
+ "by_season": {
+  "2021": {
+   "INCUMBENT": 0.21096991028645118,
+   "CHALLENGER": 0.2073483751308503,
+   "MARKET_PINNACLE": 0.20389690259433255,
+   "n": 2328
+  },
+  "2022": {
+   "INCUMBENT": 0.20709099636049919,
+   "CHALLENGER": 0.20503326821336254,
+   "MARKET_PINNACLE": 0.19913694265388793,
+   "n": 2417
+  },
+  "2023": {
+   "INCUMBENT": 0.20949977889207802,
+   "CHALLENGER": 0.2073614497319723,
+   "MARKET_PINNACLE": 0.20241147737643408,
+   "n": 2506
+  },
+  "2024": {
+   "INCUMBENT": 0.2105238679034524,
+   "CHALLENGER": 0.20729732109094948,
+   "MARKET_PINNACLE": 0.20087283507445486,
+   "n": 2602
+  },
+  "2025": {
+   "INCUMBENT": 0.21753388641805457,
+   "CHALLENGER": 0.2152048757538929,
+   "MARKET_PINNACLE": 0.20989297098010892,
+   "n": 2298
+  },
+  "2026": {
+   "INCUMBENT": 0.23024205000601863,
+   "CHALLENGER": 0.2198353896782176,
+   "MARKET_PINNACLE": 0.20654999446746203,
+   "n": 70
+  }
+ },
+ "disagreement_buckets": {
+  "0-5pp": {
+   "n": 6765,
+   "v2_side_implied_by_v2": 0.48911077080182813,
+   "v2_side_implied_by_market": 0.4660152403067876,
+   "v2_side_actual_win_rate": 0.4626755358462675
+  },
+  "5-10pp": {
+   "n": 3555,
+   "v2_side_implied_by_v2": 0.4906046086396641,
+   "v2_side_implied_by_market": 0.4190879663699039,
+   "v2_side_actual_win_rate": 0.42053445850914206
+  },
+  "10-15pp": {
+   "n": 1240,
+   "v2_side_implied_by_v2": 0.5095672407882488,
+   "v2_side_implied_by_market": 0.39005065242478554,
+   "v2_side_actual_win_rate": 0.40241935483870966
+  },
+  "15-20pp": {
+   "n": 421,
+   "v2_side_implied_by_v2": 0.5557463350704892,
+   "v2_side_implied_by_market": 0.3848347682834439,
+   "v2_side_actual_win_rate": 0.3824228028503563
+  },
+  "20-100pp": {
+   "n": 240,
+   "v2_side_implied_by_v2": 0.5995350603016244,
+   "v2_side_implied_by_market": 0.34760916929539243,
+   "v2_side_actual_win_rate": 0.35833333333333334
+  }
+ },
+ "information_beyond_market": {
+  "2022": {
+   "weight_market": 0.7373316565999146,
+   "weight_v2": 0.2923297876483366,
+   "brier_combined": 0.19942676731050735,
+   "brier_market": 0.19913694265388793,
+   "n": 2417
+  },
+  "2023": {
+   "weight_market": 0.8517239960149594,
+   "weight_v2": 0.20126868765006006,
+   "brier_combined": 0.20251807126533816,
+   "brier_market": 0.20241147737643408,
+   "n": 2506
+  },
+  "2024": {
+   "weight_market": 0.8885828412573396,
+   "weight_v2": 0.1589698179698685,
+   "brier_combined": 0.20095566505814993,
+   "brier_market": 0.20087283507445486,
+   "n": 2602
+  },
+  "2025": {
+   "weight_market": 0.9282886552379697,
+   "weight_v2": 0.1290215090860202,
+   "brier_combined": 0.21022210125977983,
+   "brier_market": 0.20989297098010892,
+   "n": 2298
+  },
+  "2026": {
+   "weight_market": 0.9407132898561028,
+   "weight_v2": 0.09202327008306707,
+   "brier_combined": 0.20686763346552614,
+   "brier_market": 0.20654999446746203,
+   "n": 70
+  }
+ },
+ "note": "Computed after the V2 freeze. A combined score better than the market's would only motivate a new, separately preregistered research cycle; no market-informed blend is part of the independent model."
+}

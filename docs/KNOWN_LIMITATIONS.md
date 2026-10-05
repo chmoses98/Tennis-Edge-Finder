@@ -41,11 +41,13 @@
   indoor/outdoor beyond surface, altitude, weather.
 * Serve/return abilities exist only where Sackmann serve stats exist (tour level + some Challengers);
   ITF/WTA-lower projections are Elo-only and flagged by data quality.
-* Elo overconfidence: calibration slope ~0.83-0.89 on tour matches for K=180-250; the ensemble is ~1.05.
+* Elo overconfidence: calibration slope ~0.83-0.89 on tour matches for K=180-250; the ensemble is ~1.05. (Since
+  Projection V2 the stacker recalibrates the rating per level walk-forward; see docs/PROJECTION_ENGINE_V2.md.)
 * Retirement mass is not modelled in derivative pricing (totals/spreads priced on completed-match
   distribution); the exchange settles determined markets and fair-prices the rest.
 * Doubles: baseline prior only, unvalidated, not wired to live pricing.
-* Cross-source id systems (Sackmann vs TML) are not linked; production uses Sackmann ids only.
+* Cross-source id systems are crosswalked by exact unique names (identity/crosswalk.py); foreign-only players get
+  minted ids unless a near-namesake exists (left for review). Sackmann itself carries a few same-person duplicate ids.
 * 2020 season gap (COVID) and partial 2025-26 ITF coverage in the forks.
 * Same-surname Kalshi events (dup-digit tickers) and 19 events whose derivative-only markets lack both
   full names are excluded from projection (listed in the coverage report).
@@ -56,3 +58,15 @@
   branch enables plain `schedule:` triggers.
 * First 5.7 h of capture (06:57-12:38 UTC) were lost to the >100 MB file rejection (fixed: gzip + shards).
 * The projection pipeline uses discovery-time quotes when no capture quotes exist; quotes can be hours old.
+  (Since 2026-10-05 a full open-market snapshot is taken before pricing; without it unverifiable markets are excluded
+  and every row carries quote_age_s / quote_freshness.)
+
+
+## Projection V2 (2026-10-05)
+* No free source publishes ITF results after 2026-04-27 (WTA) / 2026-06-01 (ATP); WTA serve statistics stop
+  2026-04-27; ATP Challenger lags ~2 weeks. Live ITF projections are graded POOR with schedule features neutralised.
+* ESPN rows (the only current WTA source) carry no serve statistics or minutes, often no surface, and unreliable
+  level labels.
+* The frozen scoring engine mis-splits the advantage-set tail (pre-2022 formats only); see PROJECTION_ENGINE_V2.md.
+* The market remains more accurate than V2 and V2 adds little information beyond it at tour level.
+* Independent sports truth cannot cover ITF (no source) and covers Challenger only up to the mirror's horizon.
