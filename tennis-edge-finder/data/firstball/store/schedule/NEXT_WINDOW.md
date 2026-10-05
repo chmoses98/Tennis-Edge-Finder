@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 15:36Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 15:57Z)
 
 * Earliest credible first ball: **2026-10-06 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-06 02:15Z**
@@ -16,10 +16,10 @@
 
 **22 main-tour match(es) without a verified start status** (BET blocked until checked): Zhizhen Zhang vs Tomas Machac, Aleksandar Kovacevic vs Matteo Berrettini, Arthur Fery vs Marin Cilic, Holger Rune vs Daniel Altmaier, Arthur Gea vs Jaime Faria, Sho Shimabukuro vs Miomir Kecmanovic, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Yannick Hanfmann vs Kamil Majchrzak, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic
 
-Published slate: `SL-20261005T135859Z-5442daea` built 2026-10-05 13:58Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261005T152005Z-7bbeec54` built 2026-10-05 15:20Z -- current
 
 Dispatched this pass: none
 
-* later window 2: first ball 2026-10-06 05:30Z, run by 2026-10-06 04:45Z, 6 match(es)
-* later window 3: first ball 2026-10-06 08:30Z, run by 2026-10-06 07:45Z, 2 match(es)
+* later window 2: first ball 2026-10-06 05:30Z, run by 2026-10-06 04:45Z, 7 match(es)
+* later window 3: first ball 2026-10-06 07:30Z, run by 2026-10-06 06:45Z, 3 match(es)
 * later window 4: first ball 2026-10-06 11:00Z, run by 2026-10-06 10:15Z, 1 match(es)
