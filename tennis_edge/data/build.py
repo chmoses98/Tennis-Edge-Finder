@@ -60,7 +60,7 @@ def _load_group(paths, tour, kind, id_system, source_label, seen):
     return clean_parts, q_parts, counts
 
 
-BUILD_VERSION = "canonical_v2"
+BUILD_VERSION = "canonical_v2.1"   # v2.1 (2026-10-05): minting refuses other forms of an existing name
 LEGACY_BUILD_VERSION = "canonical_v1"
 
 
