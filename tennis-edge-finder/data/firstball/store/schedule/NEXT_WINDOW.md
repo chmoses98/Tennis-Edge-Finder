@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 01:54Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-05 02:13Z)
 
 * Earliest credible first ball: **2026-10-05 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-05 02:15Z**
@@ -17,7 +17,7 @@
 | Marie Bouzkova vs Qinwen Zheng | 2026-10-05 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Iva Jovic vs Kamilla Rakhimova | 2026-10-05 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261004T220133Z-b9fcc96f` built 2026-10-04 22:01Z -- current
+Published slate: `SL-20261004T220133Z-b9fcc96f` built 2026-10-04 22:01Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
 Dispatched this pass: none
 
