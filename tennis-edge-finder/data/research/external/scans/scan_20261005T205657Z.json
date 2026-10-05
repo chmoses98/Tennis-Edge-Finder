@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-05T20:56:57.068718+00:00",
+ "run_id": "20261005T205657Z",
+ "external_parse": {
+  "events": 127,
+  "markets": 1555,
+  "skipped_family": 386,
+  "skipped_period": 445,
+  "skipped_live": 12,
+  "one_sided": 18,
+  "rows": 2660,
+  "devigged": 706
+ },
+ "smarkets_fetch": {
+  "events_seen": 134,
+  "events_priced": 80,
+  "markets": 808,
+  "markets_mapped": 312,
+  "contracts": 662,
+  "quoted_contracts": 662,
+  "raw": "data/research/external/raw/20261005T205657Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 312,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 59,
+  "rows": 603,
+  "two_sided": 598,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 755,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 94,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7966,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Thea Marcu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Diego Dedura-Palomero": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 156,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8864,
+  "top_refusal_subjects": {
+   "Bercel Sandor Takacs": 1,
+   "Martin SIMON": 1,
+   "Georgios Dimitriou": 1,
+   "Theofanis Kontopoulos": 1,
+   "Sacha Bouillard": 1,
+   "Rodion Chetverikov": 1,
+   "Filippo Alfano": 1,
+   "Xin Zhou": 1,
+   "Baotong Xu": 1,
+   "Ailish Garcia Fernandez": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 156,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 57,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
