@@ -1,31 +1,32 @@
 {
- "run_id": "20261005T164851Z",
- "settled": 17538,
+ "run_id": "20261005T173519Z",
+ "settled": 17594,
  "by_status": {
-  "NOT_COVERED": 9593,
-  "RESOLVED": 5998,
+  "NOT_COVERED": 9643,
+  "RESOLVED": 6004,
   "NO_CANONICAL_IDS": 780,
   "AMBIGUOUS": 10,
   "NOT_FOUND": 1157
  },
  "reconciliation": {
-  "NOT_RECONCILED": 11134,
+  "NOT_RECONCILED": 11184,
   "AGREE": 2688,
-  "EXPLAINED": 4
+  "EXPLAINED": 4,
+  "CONFLICT": 6
  },
  "by_level": {
   "ATP|CHALLENGER": {
-   "RESOLVED": 1104,
+   "RESOLVED": 1110,
    "NO_CANONICAL_IDS": 396,
    "AMBIGUOUS": 10,
    "NOT_FOUND": 554,
-   "NOT_COVERED": 324
+   "NOT_COVERED": 342
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
   },
   "ATP|ITF": {
-   "NOT_COVERED": 4570
+   "NOT_COVERED": 4576
   },
   "ATP|MASTERS_1000": {
    "NOT_FOUND": 40,
@@ -45,7 +46,7 @@
    "RESOLVED": 89
   },
   "WTA|ITF": {
-   "NOT_COVERED": 4590
+   "NOT_COVERED": 4616
   },
   "WTA|MASTERS_1000": {
    "RESOLVED": 27,
