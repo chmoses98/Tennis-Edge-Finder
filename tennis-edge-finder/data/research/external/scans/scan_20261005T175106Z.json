@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-05T17:51:06.607595+00:00",
+ "run_id": "20261005T175106Z",
+ "external_parse": {
+  "events": 126,
+  "markets": 1500,
+  "skipped_family": 349,
+  "skipped_period": 442,
+  "skipped_live": 15,
+  "one_sided": 19,
+  "rows": 2640,
+  "devigged": 690
+ },
+ "smarkets_fetch": {
+  "events_seen": 128,
+  "events_priced": 80,
+  "markets": 770,
+  "markets_mapped": 304,
+  "contracts": 638,
+  "quoted_contracts": 638,
+  "raw": "data/research/external/raw/20261005T175106Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 304,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 584,
+  "two_sided": 579,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 506,
+ "external_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7607,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jose David Segovia Perez": 1,
+   "Robin Eldin": 1,
+   "Jeremy Laumon": 1,
+   "Diego Giraldo": 1,
+   "Thea Marcu": 1,
+   "Caira Delfina Vega Guidino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Diego Dedura-Palomero": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 118,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8872,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Nicolas Eduardo Barros Corredor": 1,
+   "Jeremy LAUMON": 1,
+   "Diego Giraldo": 1,
+   "Robin Eldin": 1,
+   "Nika Stor": 1,
+   "Tereza Tsybulska": 1,
+   "Kunwei Wang": 1,
+   "Phitchayaphak Srimuk": 1,
+   "Rosario Jurado": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 118,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 4,
+  "tri:MARKETS_AGREE": 8,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
