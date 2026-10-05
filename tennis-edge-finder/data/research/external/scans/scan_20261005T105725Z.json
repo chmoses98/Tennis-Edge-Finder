@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-05T10:57:25.450120+00:00",
+ "run_id": "20261005T105725Z",
+ "external_parse": {
+  "events": 125,
+  "markets": 838,
+  "skipped_family": 121,
+  "skipped_period": 271,
+  "skipped_live": 51,
+  "one_sided": 28,
+  "rows": 1404,
+  "devigged": 418
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 706,
+  "markets_mapped": 276,
+  "contracts": 600,
+  "quoted_contracts": 600,
+  "raw": "data/research/external/raw/20261005T105725Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 276,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 562,
+  "two_sided": 556,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 749,
+ "external_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 88,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7521,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Diego Dedura": 1,
+   "Dominic Stephan Stricker": 1,
+   "Murkel Dellien": 1,
+   "Caroline Werner": 1,
+   "Mayank Sharma": 1,
+   "Lilian Chidekh": 1,
+   "Noah Malige": 1,
+   "Thea Marcu": 1,
+   "Keira Blackbeard": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Pyotr Nesterov": 1,
+   "Murkel Dellien": 1,
+   "Darya Khomutsianskaya": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 125,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8224,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Murkel Dellien": 1,
+   "Pyotr Nesterov": 1,
+   "Caroline Werner": 1,
+   "Jeremy LAUMON": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Diego Giraldo": 1,
+   "Robin Eldin": 1,
+   "Rodrigo Duarte": 1,
+   "Albin Colette": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 125,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 11,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
