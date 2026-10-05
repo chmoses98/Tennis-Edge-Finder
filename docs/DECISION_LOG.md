@@ -115,3 +115,11 @@
 | V2 data horizon per level = freshness of the sources covering it | the last match of a seasonal level is not data staleness (every Slam row would have been POOR) | per-level last match date |
 | Player-level missing-results guard (tag, neutralised schedule features, per-player drift, no HIGH; MEDIUM only with gaps <= 60d) | ITF-heavy Challenger players missing ~4 months of results were graded HIGH; it also downgrades Kicker-Cigarran, which AGREES with the market | leaving grades on the match level only; changing coefficients; using the market |
 | No coefficient, feature, or frozen-source change | the defects were in inputs, lifecycle and the quality envelope, not in the fitted model | a refit after seeing live disagreements |
+
+## 2026-10-05 Second live V2 run (RUN TENNIS #102): identity defects from canonical_v2 minting
+
+| decision | why | alternative rejected |
+|---|---|---|
+| Refuse to mint a canonical id when an existing canonical name contains, or is contained in, the foreign name as a token set (>= 2 shared, order ignored) | 82 of 181 minted ids were existing players under another form of their name (Daniel Merida / Daniel Merida Aguilar, Murkel Dellien / Murkel Alejandro Dellien Velasco, Yunchaokete Bu / Bu Yunchaokete, Zheng Qinwen / Qinwen Zheng ...): one person, two rating entities | mapping them automatically (aliases are a human decision: `research/projection_v2/ALIAS_REVIEW_MINT_TWINS.md`) |
+| Keep the promotion | with every match involving a twin id removed, V2 - incumbent Brier is unchanged or better in every window (2026 holdout ATP -0.0082 [-0.0093, -0.0071], WTA -0.0083 [-0.0098, -0.0068]; `twin_id_sensitivity.json`); both arms always saw the same table | re-running the preregistered protocol on a table changed after the holdout was revealed |
+| Slate `physical_match_id` check accepts `TOUR:<a>:<b>:<date>` only for the row's own two ids | minted ids contain ':' and every match with one read IDENTITY_FAILED | changing minted id format (ledger rows already reference them) |

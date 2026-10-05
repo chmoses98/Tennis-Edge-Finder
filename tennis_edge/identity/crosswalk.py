@@ -22,6 +22,8 @@ that were NOT crosswalked are as visible as the rows that were.
 """
 from __future__ import annotations
 
+from itertools import combinations
+
 import pandas as pd
 
 from .names import normalize_name
@@ -148,6 +150,39 @@ def _surname_initial(key: str) -> tuple[str, str] | None:
     return toks[-1], toks[0][:1]
 
 
+class _TokenIndex:
+    """Canonical names as token sets, for the 'same person, other form of the name' test below."""
+
+    def __init__(self, keys):
+        self.sets = set()
+        self.post: dict = {}
+        for k in keys:
+            toks = frozenset(str(k).split())
+            if len(toks) < 2:
+                continue
+            self.sets.add(toks)
+            for t in toks:
+                self.post.setdefault(t, set()).add(toks)
+
+    def related(self, key: str) -> bool:
+        """True when some canonical name, as a SET of tokens (order ignored), contains this name or is contained
+        in it, with at least two tokens shared: "Daniel Merida" / "Daniel Merida Aguilar" (second surname),
+        "Murkel Dellien" / "Murkel Alejandro Dellien Velasco" (middle name, second surname), "Yunchaokete Bu" /
+        "Bu Yunchaokete" (family name first). Such a player may already have a rating; minting would split it."""
+        f = frozenset(key.split())
+        if len(f) < 2:
+            return False
+        posts = [self.post.get(t, set()) for t in f]
+        if all(posts) and set.intersection(*posts):                      # canonical name contains every token
+            return True
+        toks = sorted(f)
+        for r in range(2, len(toks) + 1):                               # canonical name is a subset (>= 2 tokens)
+            for combo in combinations(toks, r):
+                if frozenset(combo) in self.sets:
+                    return True
+        return False
+
+
 def mint_new_players(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: str = "sackmann") -> pd.DataFrame:
     """Give players who exist ONLY in a foreign system their own canonical id -- or refuse to.
 
@@ -162,6 +197,11 @@ def mint_new_players(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: 
     * no canonical player shares the surname AND the first initial. "Pyotr Nesterov" next to an existing
       "Petr Nesterov" is a possible transliteration of one person, so it is left UNMAPPED
       (NEAR_CANONICAL_MATCH) for human review instead of becoming a second rating entity;
+    * no canonical player's name contains this name or is contained in it as a set of tokens (>= 2 shared;
+      order ignored). Added 2026-10-05 after the first live V2 run: "Daniel Merida" (ESPN), "Murkel Dellien" and
+      "Yunchaokete Bu" (TML) had been minted although Sackmann rates them as "Daniel Merida Aguilar", "Murkel
+      Alejandro Dellien Velasco" and "Bu Yunchaokete" -- each became a second rating entity for one person.
+      They are NEAR_CANONICAL_MATCH now: unmapped until a person accepts an alias.
     * if the same name is unmatched in TWO foreign systems (a new player seen by both ESPN and TML), both
       ids collapse onto ONE minted id -- otherwise the same newcomer would be rated twice. If either system
       has two players with that name, nobody is minted.
@@ -174,6 +214,7 @@ def mint_new_players(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: 
         si = _surname_initial(k)
         if si:
             near.add(si)
+    tokens = _TokenIndex(can_rows["name_key"].unique())
     cw = crosswalk.copy()
     cand = cw[cw["status"] == NO_CANONICAL]
     # a name minted in one system must not be ambiguous in any other foreign system
@@ -186,6 +227,10 @@ def mint_new_players(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: 
         if si in near:
             cw.loc[grp.index, "status"] = NEAR_CANONICAL
             cw.loc[grp.index, "reason"] = "a canonical player shares surname and first initial; possible alias -- review"
+            continue
+        if tokens.related(name_key):
+            cw.loc[grp.index, "status"] = NEAR_CANONICAL
+            cw.loc[grp.index, "reason"] = "a canonical name contains / is contained in this one (token set); possible alias -- review"
             continue
         if grp.groupby("foreign_id_system")["foreign_id"].nunique().max() > 1:
             continue

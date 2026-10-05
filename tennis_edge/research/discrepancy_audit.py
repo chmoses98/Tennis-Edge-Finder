@@ -313,7 +313,7 @@ def build_observations(data_root: str, cfg: dict | None = None, *, namesakes: di
         ids = (o.get("player_a_id"), o.get("player_b_id"))
         n_codes = len(same_pair.get((frozenset(map(str, ids)), o.get("match_date")), ())) if all(ids) else 0
         checks = {
-            "physical_match_id": DS.check_physical_match_id(o["physical_match_id"]) if o["source"] != "gen1_ledger" else "NA",
+            "physical_match_id": DS.check_physical_match_id(o["physical_match_id"], *ids) if o["source"] != "gen1_ledger" else "NA",
             "player_ids": DS.check_player_ids(*ids),
             "identity_confidence": DS.check_identity_confidence(*o["identity_conf"]),
             "namesake": DS.check_namesakes([o.get("subject")], namesakes) if fam == "MATCH_WINNER" else "NA",

@@ -77,3 +77,7 @@
   as is because ledger rows already reference it.
 * The open-market snapshot and capture cannot be exercised from outside GitHub Actions in this environment
   (the Kalshi API is not on the sandbox's network allow-list); live verification relies on production runs.
+* 82 players appear in TML / ESPN under a different form of the name Sackmann uses (family name first, second
+  surname dropped, middle names). Their foreign rows -- most of their 2026 results -- are excluded from ratings until a
+  person accepts the aliases listed in `research/projection_v2/ALIAS_REVIEW_MINT_TWINS.md`; Kalshi names that only match
+  the foreign form are unmapped (fail closed) until then.

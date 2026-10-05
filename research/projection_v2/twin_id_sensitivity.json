@@ -1,0 +1,100 @@
+{
+ "evaluate_ATP": {
+  "n": 117271,
+  "twin_rows": 590,
+  "diff_all": -0.00815,
+  "diff_without_twins": -0.00818,
+  "ci_without_twins": null
+ },
+ "evaluate_WTA": {
+  "n": 139293,
+  "twin_rows": 0,
+  "diff_all": -0.01542,
+  "diff_without_twins": -0.01542,
+  "ci_without_twins": null
+ },
+ "validate_ATP": {
+  "n": 149139,
+  "twin_rows": 745,
+  "diff_all": -0.00836,
+  "diff_without_twins": -0.00839,
+  "ci_without_twins": {
+   "n": 148394,
+   "clusters": 4392,
+   "brier_diff": -0.008386453507989637,
+   "brier_ci": [
+    -0.008795014110932309,
+    -0.007965710180007813
+   ],
+   "ll_diff": -0.019784493019431304,
+   "ll_ci": [
+    -0.020776857302081907,
+    -0.018749797915531836
+   ],
+   "p_better_brier": 1.0
+  }
+ },
+ "validate_WTA": {
+  "n": 162645,
+  "twin_rows": 0,
+  "diff_all": -0.01458,
+  "diff_without_twins": -0.01458,
+  "ci_without_twins": {
+   "n": 162645,
+   "clusters": 3335,
+   "brier_diff": -0.014579058995740454,
+   "brier_ci": [
+    -0.01508747805241454,
+    -0.014054649748119857
+   ],
+   "ll_diff": -0.03738170142155541,
+   "ll_ci": [
+    -0.038700736834417875,
+    -0.0360879375399335
+   ],
+   "p_better_brier": 1.0
+  }
+ },
+ "holdout_ATP": {
+  "n": 17846,
+  "twin_rows": 235,
+  "diff_all": -0.00802,
+  "diff_without_twins": -0.00818,
+  "ci_without_twins": {
+   "n": 17611,
+   "clusters": 568,
+   "brier_diff": -0.00817683982411229,
+   "brier_ci": [
+    -0.009264528099141562,
+    -0.007117906481038779
+   ],
+   "ll_diff": -0.019327688203488635,
+   "ll_ci": [
+    -0.022018214501954413,
+    -0.016685663125532893
+   ],
+   "p_better_brier": 1.0
+  }
+ },
+ "holdout_WTA": {
+  "n": 10086,
+  "twin_rows": 269,
+  "diff_all": -0.00721,
+  "diff_without_twins": -0.00831,
+  "ci_without_twins": {
+   "n": 9817,
+   "clusters": 265,
+   "brier_diff": -0.008309734521748898,
+   "brier_ci": [
+    -0.00976308306267046,
+    -0.0068173326483528815
+   ],
+   "ll_diff": -0.0209981943599488,
+   "ll_ci": [
+    -0.02494824497221608,
+    -0.01689925237786801
+   ],
+   "p_better_brier": 1.0
+  }
+ }
+}
