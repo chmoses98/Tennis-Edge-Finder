@@ -35,11 +35,22 @@ class PredictionLedger:
     def __init__(self, root: str):
         self.root = root
         os.makedirs(root, exist_ok=True)
+        # Read once per ledger object, then kept current by append(): the duplicate-id set and each day file's
+        # last row hash. Re-reading them for every row made a RUN TENNIS append quadratic (2026-10-05: ~875 rows
+        # per run on the full board took ~8.5 min, nearly all of it re-parsing the ledger). Single writer per run.
+        self._ids: set | None = None
+        self._tail: dict = {}
 
     def _path(self, day: str) -> str:
         return os.path.join(self.root, f"{day}.jsonl")
 
     def _last_hash(self, day: str) -> str:
+        if day in self._tail:
+            return self._tail[day]
+        self._tail[day] = self._read_last_hash(day)
+        return self._tail[day]
+
+    def _read_last_hash(self, day: str) -> str:
         p = self._path(day)
         if not os.path.exists(p):
             return "GENESIS"
@@ -68,7 +79,9 @@ class PredictionLedger:
         row = dict(row)
         row.setdefault("prediction_id", str(uuid.uuid4()))
         row["generated_at_utc"] = now.isoformat()
-        if row["prediction_id"] in self.existing_ids():
+        if self._ids is None:
+            self._ids = self.existing_ids()
+        if row["prediction_id"] in self._ids:
             raise LedgerError(f"duplicate prediction_id {row['prediction_id']}")
         day = now.strftime("%Y-%m-%d")
         row["prev_hash"] = self._last_hash(day)
@@ -76,6 +89,8 @@ class PredictionLedger:
         row["row_hash"] = _hash(body)
         with open(self._path(day), "a") as f:
             f.write(json.dumps(row, separators=(",", ":"), default=str) + "\n")
+        self._ids.add(row["prediction_id"])
+        self._tail[day] = row["row_hash"]
         return row
 
     def verify_chain(self) -> list[str]:
