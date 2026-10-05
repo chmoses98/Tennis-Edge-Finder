@@ -112,7 +112,7 @@ windows.
 * **grade** HIGH / MEDIUM / LOW / POOR from identity confidence, rated matches, serve evidence, data staleness
   (level horizon and the player's own last result) and envelope width;
 * **tags** THIN_RATING_HISTORY, NO_SERVE_EVIDENCE, CONTEXT_NEUTRALISED_STALE_DATA(nd), STALE_PLAYER_RATING(nd),
-  IDENTITY_ALIAS, FORMAT_TRANSLATED, WIDE_ENVELOPE;
+  PLAYER_RESULTS_INCOMPLETE(A~n over nd,...), IDENTITY_ALIAS, FORMAT_TRANSLATED, WIDE_ENVELOPE;
 * evidence counts, components (Elo, Gen-2, service levels) and every fingerprint.
 
 With V2 in production a projection is actionable in the RUN TENNIS report only at grade HIGH/MEDIUM and on a
@@ -134,6 +134,19 @@ FRESH quote; the assisted slate's discrepancy layer (TENNIS-17) is unchanged and
    lags ~2 weeks. Live, a player with no recent result in our data would look laid off. When the match level's
    data horizon is more than 10 days old, the schedule features are neutralised for both players (difference
    0) and the projection is tagged and downgraded -- ITF projections are POOR today, by design.
+   **Data horizon = source freshness (2026-10-05, after the first live run).** A level's horizon is the newest
+   last result among the SOURCES that still cover it (>= 20 of its results in the final year of the source's
+   own data), not the last date the level happened to have a match: Grand Slams are seasonal and would have
+   read four months stale on the first day of every Slam, and ESPN files WTA 1000 events under 500/250. Levels
+   whose only source stopped keep that source's date (ATP ITF 2026-06-01; WTA ITF and WTA 125 2026-04-27).
+   **Player-level incompleteness.** The match level being current does not make both players' data current:
+   on the first live board ITF-heavy Challenger players were missing ~4 months of ITF results and were graded
+   HIGH. The state now stores each player's results per stale level in the year before its horizon; at
+   inference the expected number of missing results is that rate times the days since the horizon. At >= 3
+   (`MISSING_RESULTS_FLAG`) the projection is tagged PLAYER_RESULTS_INCOMPLETE, schedule features are
+   neutralised exactly as for a stale level, the drift widening uses each player's own gap
+   (1.645 * 0.30 * sqrt((gap_a + gap_b) / 365): the former formula when only the level is stale), HIGH is
+   impossible and MEDIUM needs every gap <= 60 days. No price enters any of this.
 5. **Parity.** `tests/test_v2_inference.py` rebuilds the one-row frame from persisted states and asserts it
    equals the replay's own record for the same match, then the same probability to 1e-12.
 

@@ -129,7 +129,8 @@ def main():
         a_, b_ = r["player_a_id"], r["player_b_id"]
         raw = P.frame(a_, b_, on=today, level=r["level"], surface=r["surface"], best_of=fmts[r["format"]].best_of)
         stale = P.stale_days(r["level"], today)
-        df = P._neutralise(raw) if stale > 10 else raw
+        res_now = P.project(a_, b_, on=today, level=r["level"], surface=r["surface"], fmt=fmts[r["format"]])
+        df = P._neutralise(raw) if res_now["context_neutralised"] else raw
         X, names = build_features(df, P.base.spec)
         contrib = {n: float(X[0, i] / P.base.scale[i] * P.base.coef[i]) for i, n in enumerate(names)}
         elo_name = P.base.spec.elo
@@ -154,7 +155,8 @@ def main():
                        "seconds_to_scheduled_start": r.get("seconds_to_scheduled_start"),
                        "envelope": [r["v2"]["envelope_low_yes"], r["v2"]["envelope_high_yes"]], "grade": r["v2"]["grade"],
                        "tags": r["v2"]["tags"], "variants_p_a": r["v2"]["variants_p_a"], "level_data_horizon_days_behind": stale,
-                       "context_neutralised": stale > 10,
+                       "context_neutralised": res_now["context_neutralised"],
+                       "missing_results": {k: v for k, v in res_now["evidence"].items() if "missing" in k},
                        "p_elo": float(row[f"pf_{elo_name}"]), "p_gen2": float(raw["pf_g2"].iloc[0]),
                        "g2_point_a_on_serve": float(row["g2_pa"]), "g2_point_a_on_return": 1 - float(row["g2_pb"]),
                        "contributions_logit": dict(sorted(contrib.items(), key=lambda kv: -abs(kv[1]))),
