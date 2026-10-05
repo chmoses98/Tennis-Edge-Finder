@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-05T11:58:23.405407+00:00",
+ "run_id": "20261005T115823Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 668,
+  "skipped_family": 95,
+  "skipped_period": 214,
+  "skipped_live": 39,
+  "one_sided": 23,
+  "rows": 1124,
+  "devigged": 336
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 717,
+  "markets_mapped": 270,
+  "contracts": 592,
+  "quoted_contracts": 592,
+  "raw": "data/research/external/raw/20261005T115823Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 270,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 87,
+  "rows": 505,
+  "two_sided": 498,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 449,
+ "external_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7128,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Murkel Dellien": 1,
+   "Mayank Sharma": 1,
+   "Lucas Goncalves Franca": 1,
+   "Noah Malige": 1,
+   "Valentin Latrubesse": 1,
+   "Fermin Barcala Lopez": 1,
+   "Maria Herazo": 1,
+   "Thea Marcu": 1,
+   "Charlotte Cora Bruneton": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Murkel Dellien": 1,
+   "Darya Khomutsianskaya": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.7913,
+  "top_refusal_subjects": {
+   "Daniel Merida": 1,
+   "Pyotr Nesterov": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Robin Eldin": 1,
+   "Rodrigo Duarte": 1,
+   "Albin Colette": 1,
+   "Yannick Baluska": 1,
+   "VALENTIN LATRUBESSE": 1,
+   "Sacha Grandvincent": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 91,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:MARKETS_AGREE": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
