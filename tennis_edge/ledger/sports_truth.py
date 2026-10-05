@@ -105,7 +105,7 @@ class ResultsIndex:
         cands = []
         for r in self.by_pair.get((tour, frozenset((str(a), str(b)))), []):
             before, after = _window(r.source_label)
-            if on - timedelta(days=before) <= r.d <= on + timedelta(days=after):
+            if on - timedelta(days=before) <= r.d <= on + timedelta(days=after) and levels_compatible(level, r.level_canonical, r.source_label):
                 cands.append(r)
         if len(cands) > 1:
             # the same physical match from two sources was deduplicated upstream; two rows here are two matches
@@ -119,6 +119,21 @@ class ResultsIndex:
         if hz is None or hz < on:
             return IndependentTruth(NOT_COVERED, reason=f"independent results for {tour} {level} end {hz}; match on {on}")
         return IndependentTruth(NOT_FOUND, reason="no result between these canonical players in the window although the level is covered")
+
+
+LEVEL_FAMILY = {"GS": "TOUR", "M": "TOUR", "T": "TOUR", "O": "TOUR", "C": "CHALLENGER", "I": "ITF"}
+
+
+def levels_compatible(market_level: str, result_level: str, source_label: str | None) -> bool:
+    """A tour-level market cannot be settled by a Challenger result between the same two players (production case
+    2026-10-05: Tomic-Sun met in ATP qualifying, then again at a Challenger six days later; TML dates Challengers by
+    either start or end, so the second meeting fell inside the window). ESPN mislabels WTA 125 events as 250/500,
+    so for ESPN rows tour and Challenger/125 are treated as compatible."""
+    fm = LEVEL_FAMILY.get(LEVEL_GROUP.get(str(market_level), "O"), "TOUR")
+    fr = LEVEL_FAMILY.get(LEVEL_GROUP.get(str(result_level), "O"), "TOUR")
+    if fm == fr:
+        return True
+    return bool(source_label and source_label.startswith("espn")) and {fm, fr} == {"TOUR", "CHALLENGER"}
 
 
 def _f(x):

@@ -443,6 +443,12 @@ def gate_14_source_freshness(max_age_days=8, now=None) -> GateResult:
                       {"run": best["run_id"], "snapshot_age_days": round(age, 2), "max_season_files": seasons, "ratings_as_of": as_of, "ratings_stale_days": stale_days})
 
 
+def latest_run_files(directory: str) -> list[str]:
+    """Per-run derived tables (<run_id>.jsonl, or .jsonl.gz since 2026-10-05), ordered by run id."""
+    files = glob.glob(os.path.join(directory, "*.jsonl")) + glob.glob(os.path.join(directory, "*.jsonl.gz"))
+    return sorted(files, key=lambda f: os.path.basename(f).split(".")[0])
+
+
 def settlement_stats(research_root=None) -> dict | None:
     """What the settle job has actually written, read straight from its tables.
 
@@ -505,10 +511,11 @@ def settlement_stats(research_root=None) -> dict | None:
                    exchange_reconciliation=rec,
                    exchange_conflicts=rec.get("CONFLICT", 0),
                    exchange_reconciled=rec.get("AGREE", 0) + rec.get("EXPLAINED", 0) + rec.get("CONFLICT", 0))
-    clvs = sorted(glob.glob(os.path.join(root, "clv", "*.jsonl")))
+    clvs = latest_run_files(os.path.join(root, "clv"))
     if clvs:
         latest = {}
-        with open(clvs[-1]) as fh:
+        import gzip as _gzc
+        with (_gzc.open(clvs[-1], "rt") if clvs[-1].endswith(".gz") else open(clvs[-1])) as fh:
             for line in fh:
                 try:
                     c = json.loads(line)

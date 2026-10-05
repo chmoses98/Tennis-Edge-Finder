@@ -43,8 +43,11 @@ jobs:
           # without pipefail `| tail` reported tail's exit status and a crashed build looked green
           set -o pipefail
           PYTHONPATH=. python3 tennis_edge/data/build.py | tail -5
-          PYTHONPATH=. python3 -m tennis_edge.models.state --tour ATP
-          PYTHONPATH=. python3 -m tennis_edge.models.state --tour WTA
+          # the two tours are independent replays: fit them in parallel, and fail on EITHER exit status
+          PYTHONPATH=. python3 -m tennis_edge.models.state --tour ATP & P_ATP=$!
+          PYTHONPATH=. python3 -m tennis_edge.models.state --tour WTA & P_WTA=$!
+          wait $P_ATP; RC_ATP=$?; wait $P_WTA; RC_WTA=$?
+          [ "$RC_ATP" -eq 0 ] && [ "$RC_WTA" -eq 0 ] || { echo "::error::rating state fit failed (ATP $RC_ATP, WTA $RC_WTA)"; exit 1; }
           # Projection V2 end states (frozen coefficients in config/projection_v2/). If this fails run_tennis falls
           # back to the incumbent and says so in projections/latest.json; the failure is enforced after publish.
           PYTHONPATH=. python3 scripts/ops/build_v2_state.py || { echo "::error::Projection V2 state build failed"; echo "V2_STATE_FAILED=1" >> "$GITHUB_ENV"; }

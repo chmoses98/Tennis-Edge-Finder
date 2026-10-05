@@ -71,3 +71,18 @@ def test_tennis10_separates_quarantined_post_start_rows_from_missing_closes():
     g2 = gate_10_clv_coverage(200, 100, 100, first_ball=fb, n_strict_settled=80, n_quarantined_ab=8)
     assert g2.status == "FAIL"                                     # threshold unchanged
     assert gate_10_clv_coverage(200, 100, 100, first_ball=fb, n_strict_settled=90).status == "FAIL"
+
+
+def test_latest_run_files_orders_plain_and_gzip_runs_by_run_id(tmp_path):
+    from tennis_edge.health.gates import latest_run_files, settlement_stats
+    clv = tmp_path / "clv"
+    clv.mkdir()
+    (clv / "20261005T061450Z.jsonl").write_text(json.dumps({"prediction_id": "p1", "strict": False}) + "\n")
+    with gzip.open(clv / "20261005T200000Z.jsonl.gz", "wt") as f:
+        f.write(json.dumps({"prediction_id": "p1", "strict": True, "truth_confidence": "A", "close_ts": "x"}) + "\n")
+    assert [os.path.basename(p) for p in latest_run_files(str(clv))][-1] == "20261005T200000Z.jsonl.gz"
+    st = tmp_path / "settlements"
+    st.mkdir()
+    (st / "r.jsonl").write_text(json.dumps({"prediction_id": "p1", "gradeable": True}) + "\n")
+    s = settlement_stats(str(tmp_path))
+    assert s["settled_strict_clv"] == 1 and s["clv_run"] == "20261005T200000Z.jsonl.gz"

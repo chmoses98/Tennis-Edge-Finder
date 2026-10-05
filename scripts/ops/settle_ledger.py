@@ -186,15 +186,19 @@ def main():
                         "close": cc.to_dict(), "clv": d, "timing_class": timing.timing_class,
                         "truth_confidence": timing.truth_confidence, "settled_run": run_id})
 
-    def write(sub, rows_):
+    def write(sub, rows_, gz=False):
+        # timing / clv / horizons are full per-run snapshots (~60 MB a run uncompressed, ~230 MB a day on the evidence
+        # branch); since 2026-10-05 they are written gzip-compressed. Readers pick the newest run across .jsonl and
+        # .jsonl.gz; older runs stay exactly as they were written.
         if rows_:
-            with open(os.path.join(a.out, sub, f"{run_id}.jsonl"), "a") as f:
+            path = os.path.join(a.out, sub, f"{run_id}.jsonl" + (".gz" if gz else ""))
+            with (gzip.open(path, "at") if gz else open(path, "a")) as f:
                 for x in rows_:
                     f.write(json.dumps(x, default=str) + "\n")
 
-    write("timing", timing_rows)
-    write("clv", clv_rows)
-    write("horizons", horizon_rows)
+    write("timing", timing_rows, gz=True)
+    write("clv", clv_rows, gz=True)
+    write("horizons", horizon_rows, gz=True)
     write("settlements", settled)
 
     # ---------------- coverage scorecard: counts only, deliberately no performance by bucket yet

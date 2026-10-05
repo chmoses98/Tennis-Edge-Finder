@@ -52,3 +52,13 @@ def test_walkover_is_explained_not_a_conflict():
              "source_label": "espn_ATP", "outcome_type": "WALKOVER", "level_canonical": "TOUR_500_250"}])
     t = ResultsIndex(m, since=date(2026, 8, 1)).resolve("ATP", "a", "b", "TOUR_500_250", date(2026, 9, 28))
     assert reconcile_match_winner(t, {"result": "scalar"}, "a")["status"] == "AGREE"
+
+
+def test_tour_market_is_not_settled_by_a_challenger_meeting_days_later():
+    """Production case: KXATPMATCH-26SEP23 Tomic-Sun (tour qualifying, Sun won); TML has Tomic beating Sun at the
+    Jingshan Challenger dated 2026-09-29. Same pair, inside the TML window, different match."""
+    m = _m([{"tour": "ATP", "tourney_date": "2026-09-29", "canonical_winner_id": "tomic", "canonical_loser_id": "sun",
+             "source_label": "tml_ATP_challenger", "level_canonical": "CHALLENGER"}])
+    idx = ResultsIndex(m, since=date(2026, 8, 1))
+    assert idx.resolve("ATP", "tomic", "sun", "TOUR_500_250", date(2026, 9, 23)).status != RESOLVED
+    assert idx.resolve("ATP", "tomic", "sun", "CHALLENGER", date(2026, 9, 26)).status == RESOLVED
