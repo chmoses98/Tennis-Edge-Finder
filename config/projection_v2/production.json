@@ -1,0 +1,16 @@
+{
+ "production_model": "projection_v2.0",
+ "incumbent_model": "elo_surface_k_lo+sr_v0.1",
+ "derivative_spw_rule": "gen2",
+ "promoted_on": "2026-10-05",
+ "evidence": {
+  "preregistration": "research/projection_v2/PREREGISTRATION.md",
+  "frozen_challenger": "research/projection_v2/FROZEN_CHALLENGER.json",
+  "promotion_decision": "research/projection_v2/PROMOTION_DECISION.json",
+  "data_fix_decision": "research/projection_v2/DATA_FIX_DECISION.json",
+  "derivatives": "research/projection_v2/derivatives_eval.json",
+  "coefficients": "config/projection_v2/coefficients.json"
+ },
+ "rollback": "set production_model to \"incumbent\"; the incumbent is computed on every row regardless (models.INCUMBENT) so a rollback needs no rebuild",
+ "authority": "RESEARCH_ONLY_NO_REAL_MONEY"
+}

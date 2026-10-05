@@ -126,6 +126,67 @@ def quote_freshness(age_s):
     return "FRESH" if age_s <= QUOTE_FRESH_S else ("AGING" if age_s <= QUOTE_STALE_S else "STALE")
 
 
+def production_config():
+    """config/projection_v2/production.json: which model prices production, and why (the promotion record)."""
+    p = os.path.join(PROJ, "config", "projection_v2", "production.json")
+    return json.load(open(p)) if os.path.exists(p) else {"production_model": "incumbent"}
+
+
+def load_projection_v2():
+    """{tour: ProjectionV2} from data/processed/v2/state_<tour>.json.gz + the committed coefficients, or {} with a
+    reason. Failure to load never blocks the incumbent; it is reported in projections/latest.json."""
+    try:
+        from tennis_edge.v2.inference import ProjectionV2
+        from tennis_edge.v2.production import load_coefficients, load_state
+        coef = load_coefficients()
+        out = {}
+        for tour in ("ATP", "WTA"):
+            path = os.path.join(PROJ, "data", "processed", "v2", f"state_{tour}.json.gz")
+            if os.path.exists(path):
+                out[tour] = ProjectionV2(load_state(path), coef)
+        status = {"loaded_tours": sorted(out), "coefficients_fingerprint": coef.get("fingerprint"),
+                  "spec_fingerprint": coef.get("frozen_spec_fingerprint"),
+                  "state_built_at": {t: v.state["built_at"] for t, v in out.items()},
+                  "state_last_date": {t: v.state["last_date"] for t, v in out.items()},
+                  "data_horizon": {t: v.state["data_horizon_by_level_group"] for t, v in out.items()}}
+        return out, status
+    except Exception as e:                                           # noqa: BLE001
+        return {}, {"error": f"{type(e).__name__}: {e}"}
+
+
+def derivative_spw(production, v2res, spw_baseline):
+    """The service level the V2 distribution is built with (rule chosen by the derivative validation)."""
+    rule = production.get("derivative_spw_rule", "baseline")
+    g2 = 0.5 * (v2res["components"]["gen2_serve_point_a"] + 1 - v2res["components"]["gen2_return_point_a"])
+    if rule == "gen2":
+        return g2
+    if rule == "blend":
+        ev = min(v2res["evidence"]["serve_points_a"], v2res["evidence"]["serve_points_b"])
+        w = ev / (ev + 1500.0)
+        return (1 - w) * spw_baseline + w * g2
+    return spw_baseline
+
+
+def v2_payload(v2res, pm):
+    """The V2 block every projection row carries (shadow or production), oriented to the contract's YES side
+    for match-winner rows."""
+    if not v2res:
+        return None
+    if "error" in v2res:
+        return {"error": v2res["error"]}
+    yes_is_a = bool(pm.subject_is_a) if pm.family == "MATCH_WINNER" else True
+    o = (lambda x: x) if yes_is_a else (lambda x: 1 - x)
+    lo, hi = (v2res["p_low"], v2res["p_high"]) if yes_is_a else (1 - v2res["p_high"], 1 - v2res["p_low"])
+    return {"p_a": v2res["p"], "fair_yes": o(v2res["p"]) if pm.family == "MATCH_WINNER" else None,
+            "envelope_low_yes": lo if pm.family == "MATCH_WINNER" else None, "envelope_high_yes": hi if pm.family == "MATCH_WINNER" else None,
+            "envelope_width": v2res["envelope_width"], "grade": v2res["grade"], "tags": v2res["tags"],
+            "stale_days": v2res["stale_days"], "context_neutralised": v2res["context_neutralised"],
+            "evidence": v2res["evidence"], "components": v2res["components"], "variants_p_a": v2res["variants"],
+            "model_version": v2res["model_version"], "state_built_at": v2res["state_built_at"],
+            "state_last_date": v2res["state_last_date"], "matches_sha256": v2res["matches_sha256"],
+            "coefficients_fingerprint": v2res["coefficients_fingerprint"], "spec_fingerprint": v2res["spec_fingerprint"]}
+
+
 def fnum(x):
     try:
         v = float(x); return v if 0 < v < 1 else None
@@ -164,6 +225,9 @@ def main():
     if not states:
         raise SystemExit("no rating state: run python -m tennis_edge.models.state --tour ATP/WTA")
     mapper = KalshiPlayerMapper(states)
+    v2, v2_status = load_projection_v2()
+    production = production_config()
+    use_v2 = production.get("production_model") == "projection_v2.0" and bool(v2)
     matches = pd.read_parquet(os.path.join(PROJ, "data", "processed", "matches.parquet"), columns=["tourney_name", "surface", "season"])
     surf_lookup = build_surface_lookup(matches)
     quotes = latest_quotes(a.capture)
@@ -321,9 +385,30 @@ def main():
             p_ens_bo3 = 1 / (1 + math.exp(-z))
         else:
             p_ens_bo3 = p_elo_bo3   # no serve evidence: structural is prior-only, fall back to Elo
-        pa, pb = point_probs_from_match_prob(p_ens_bo3, 2 * spw, TOUR_SINGLES_BO3)
+        inc_pa, inc_pb = point_probs_from_match_prob(p_ens_bo3, 2 * spw, TOUR_SINGLES_BO3)
+        p_incumbent = match_win_prob(inc_pa, inc_pb, fmt)
+        id_conf = min(maps[True]["confidence"], maps[False]["confidence"])
+        v2res = None
+        if tour in v2:
+            try:
+                v2res = v2[tour].project(maps[True]["player_id"], maps[False]["player_id"], on=today, level=info["level"],
+                                         surface=surface, fmt=fmt, identity_confidence=id_conf)
+            except Exception as e:                                   # noqa: BLE001 -- shadow lane must never block pricing
+                coverage["v2_error"] += 1; v2res = {"error": f"{type(e).__name__}: {e}"}
+        if use_v2 and v2res and "p" in v2res:
+            # PRODUCTION = Projection V2: ONE distribution from V2's match probability, the service level per the
+            # derivative-validation rule (research/projection_v2/derivatives_eval.json), so every family on the event
+            # is priced coherently from V2.
+            spw_prod = derivative_spw(production, v2res, spw)
+            pa, pb = point_probs_from_match_prob(v2res["p"], 2 * spw_prod, fmt)
+            production_model = "projection_v2.0"
+        else:
+            pa, pb = inc_pa, inc_pb
+            spw_prod = spw
+            production_model = st["model_version"]
         dist = match_distribution(pa, pb, fmt)
         p_elo_fmt = match_win_prob(*point_probs_from_match_prob(p_elo_bo3, 2 * spw, TOUR_SINGLES_BO3), fmt)
+        coverage["priced_with_" + production_model] += 1
         days_a = (today - date.fromisoformat(ra_rec["last_date"][:10])).days if ra_rec.get("last_date") and ra_rec["last_date"] != "None" else None
         days_b = (today - date.fromisoformat(rb_rec["last_date"][:10])).days if rb_rec.get("last_date") and rb_rec["last_date"] != "None" else None
         q = data_quality(QualityInputs(ra_rec["n"], rb_rec["n"], ra_rec["sr_points"], rb_rec["sr_points"], days_a, days_b,
@@ -353,14 +438,19 @@ def main():
                    "player_a": names[True], "player_b": names[False], "player_a_id": maps[True]["player_id"], "player_b_id": maps[False]["player_id"],
                    "tour": tour, "level": info["level"], "competition": head.competition, "round": head.round, "format": fmt.name, "surface": surface, "surface_source": surface_src,
                    "subject": pm.subject, "line": pm.line, "set_index": pm.set_index, "exact_score": pm.exact_score,
-                   "model_version": st["model_version"], "ratings_as_of": st["as_of_date"], "git_sha": sha, "feature_snapshot_id": f"ratings:{st.get('matches_sha256', '')[:12]}",
+                   "model_version": production_model, "production_model": production_model, "incumbent_model_version": st["model_version"],
+                   "ratings_as_of": st["as_of_date"], "git_sha": sha, "feature_snapshot_id": f"ratings:{st.get('matches_sha256', '')[:12]}",
                    "data_source_versions": {"discovery": disc_summary["run_id"], "ratings_built_at": st["built_at"]},
                    "models": {"ELO": _orient(p_elo_fmt, pm) if pr.family == "MATCH_WINNER" else None,
                               "STRUCTURAL": _orient(p_sr, pm) if pr.family == "MATCH_WINNER" else None,
-                              "ENSEMBLE": _orient(dist.p_match, pm) if pr.family == "MATCH_WINNER" else None,
+                              "ENSEMBLE": _orient(p_incumbent, pm) if pr.family == "MATCH_WINNER" else None,
+                              "INCUMBENT": _orient(p_incumbent, pm) if pr.family == "MATCH_WINNER" else None,
+                              "V2": _orient(v2res["p"], pm) if (pr.family == "MATCH_WINNER" and v2res and "p" in v2res) else None,
+                              "PRODUCTION": _orient(dist.p_match, pm) if pr.family == "MATCH_WINNER" else None,
                               "ELO_DP_FAIR": pr.fair_yes, "MARKET_MID": (0.5 * (yes_bid + yes_ask)) if (yes_bid and yes_ask) else None,
                               "HYBRID_MARKET_MODEL": None},
-                   "inputs": {"elo_a": ra, "elo_b": rb, "pa": pa, "pb": pb, "sr_pa": sr_pa, "sr_pb": sr_pb, "spw_baseline": spw, "p_elo_bo3": p_elo_bo3, "p_sr_bo3": p_sr_bo3, "p_ensemble_bo3": p_ens_bo3, "structural_used": sr_ok},
+                   "inputs": {"elo_a": ra, "elo_b": rb, "pa": pa, "pb": pb, "sr_pa": sr_pa, "sr_pb": sr_pb, "spw_baseline": spw, "p_elo_bo3": p_elo_bo3, "p_sr_bo3": p_sr_bo3, "p_ensemble_bo3": p_ens_bo3, "structural_used": sr_ok, "spw_production": spw_prod},
+                   "v2": v2_payload(v2res, pm),
                    "quality": q, "market_quote": {"yes_bid": yes_bid, "yes_ask": yes_ask, "no_bid": no_bid, "no_ask": no_ask, "source": quote_src, "quote_ts": q_ts,
                                                   "quote_age_s": q_age, "quote_freshness": quote_freshness(q_age), "lifecycle_basis": "FULL_OPEN_SNAPSHOT" if snapshot_authoritative else "INCREMENTAL_CAPTURE",
                                                   "volume": qrec.get("volume_fp"), "open_interest": qrec.get("open_interest_fp"), "liquidity": qrec.get("liquidity_dollars")},
@@ -378,6 +468,7 @@ def main():
     coverage["projected"] = len(projected_tickers)
     os.makedirs(a.out, exist_ok=True)
     out = {"run_id": run_id, "generated_at": datetime.now(timezone.utc).isoformat(), "discovery_run": disc_summary["run_id"], "git_sha": sha,
+           "production_model": production.get("production_model"), "projection_v2": v2_status,
            "lifecycle": {"open_snapshot_run": snap_run, "open_snapshot_age_s": snap_age, "snapshot_authoritative": snapshot_authoritative,
                          "settled_tickers_known": len(settled_tickers), "quote_sla_s": {"fresh": QUOTE_FRESH_S, "stale": QUOTE_STALE_S}},
            "coverage": dict(coverage), "projected_tickers": projected_tickers, "consistency_violations": consistency_violations,
@@ -484,7 +575,8 @@ def write_report(out, path):
         two_sided = mq.get("yes_bid") is not None and mq.get("yes_ask") is not None
         spread = (mq["yes_ask"] - mq["yes_bid"]) if two_sided else 1.0
         return (two_sided and spread <= 0.10 and liq > 0 and r["quality"]["grade"] in ("A", "B") and r.get("start_basis") == "SCHEDULED"
-                and (r.get("seconds_to_scheduled_start") or 0) > 900 and mq.get("quote_freshness", "FRESH") == "FRESH")
+                and (r.get("seconds_to_scheduled_start") or 0) > 900 and mq.get("quote_freshness", "FRESH") == "FRESH"
+                and (r.get("production_model") != "projection_v2.0" or (r.get("v2") or {}).get("grade") in ("HIGH", "MEDIUM")))
     act = [r for r in rows if actionable(r)]; act.sort(key=lambda r: -(r["ev"]["ev_after_fees"] or -1))
     rows.sort(key=lambda r: -(r["ev"]["ev_after_fees"] or -1))
     L += ["## Actionability-filtered opportunities (two-sided quote, spread <= 10c, liquidity > 0, quality A/B)", "",

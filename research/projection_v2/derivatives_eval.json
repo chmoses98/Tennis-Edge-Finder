@@ -1,0 +1,119 @@
+{
+ "summary": {
+  "confirmation_2025_2026|ATP|INCUMBENT": {
+   "rps_total_games": 0.13025,
+   "rps_game_diff": 0.11668,
+   "ll_set_score": 1.26766,
+   "brier_distance": 0.23472,
+   "brier_over_line": 0.26053
+  },
+  "confirmation_2025_2026|ATP|V2_BASE_SPW": {
+   "rps_total_games": 0.12661,
+   "rps_game_diff": 0.11116,
+   "ll_set_score": 1.22927,
+   "brier_distance": 0.22907,
+   "brier_over_line": 0.25244
+  },
+  "confirmation_2025_2026|ATP|V2_BLEND_SPW": {
+   "rps_total_games": 0.12601,
+   "rps_game_diff": 0.11088,
+   "ll_set_score": 1.22915,
+   "brier_distance": 0.22905,
+   "brier_over_line": 0.25195
+  },
+  "confirmation_2025_2026|ATP|V2_G2_SPW": {
+   "rps_total_games": 0.12504,
+   "rps_game_diff": 0.11036,
+   "ll_set_score": 1.22926,
+   "brier_distance": 0.22907,
+   "brier_over_line": 0.25093
+  },
+  "confirmation_2025_2026|WTA|INCUMBENT": {
+   "rps_total_games": 0.12865,
+   "rps_game_diff": 0.12777,
+   "ll_set_score": 1.2314,
+   "brier_distance": 0.2338,
+   "brier_over_line": 0.25284
+  },
+  "confirmation_2025_2026|WTA|V2_BASE_SPW": {
+   "rps_total_games": 0.12205,
+   "rps_game_diff": 0.12077,
+   "ll_set_score": 1.18945,
+   "brier_distance": 0.22377,
+   "brier_over_line": 0.23957
+  },
+  "confirmation_2025_2026|WTA|V2_BLEND_SPW": {
+   "rps_total_games": 0.12202,
+   "rps_game_diff": 0.12075,
+   "ll_set_score": 1.18958,
+   "brier_distance": 0.22378,
+   "brier_over_line": 0.23955
+  },
+  "confirmation_2025_2026|WTA|V2_G2_SPW": {
+   "rps_total_games": 0.12188,
+   "rps_game_diff": 0.12064,
+   "ll_set_score": 1.18959,
+   "brier_distance": 0.22379,
+   "brier_over_line": 0.23943
+  },
+  "selection_2023_2024|ATP|INCUMBENT": {
+   "rps_total_games": 0.12902,
+   "rps_game_diff": 0.11783,
+   "ll_set_score": 1.26059,
+   "brier_distance": 0.23366,
+   "brier_over_line": 0.26059
+  },
+  "selection_2023_2024|ATP|V2_BASE_SPW": {
+   "rps_total_games": 0.12529,
+   "rps_game_diff": 0.11336,
+   "ll_set_score": 1.2313,
+   "brier_distance": 0.22771,
+   "brier_over_line": 0.25191
+  },
+  "selection_2023_2024|ATP|V2_BLEND_SPW": {
+   "rps_total_games": 0.12518,
+   "rps_game_diff": 0.11332,
+   "ll_set_score": 1.23138,
+   "brier_distance": 0.22772,
+   "brier_over_line": 0.25173
+  },
+  "selection_2023_2024|ATP|V2_G2_SPW": {
+   "rps_total_games": 0.12489,
+   "rps_game_diff": 0.11318,
+   "ll_set_score": 1.23131,
+   "brier_distance": 0.2277,
+   "brier_over_line": 0.2513
+  },
+  "selection_2023_2024|WTA|INCUMBENT": {
+   "rps_total_games": 0.13824,
+   "rps_game_diff": 0.1365,
+   "ll_set_score": 1.20928,
+   "brier_distance": 0.23166,
+   "brier_over_line": 0.25982
+  },
+  "selection_2023_2024|WTA|V2_BASE_SPW": {
+   "rps_total_games": 0.12724,
+   "rps_game_diff": 0.12431,
+   "ll_set_score": 1.13048,
+   "brier_distance": 0.21583,
+   "brier_over_line": 0.23635
+  },
+  "selection_2023_2024|WTA|V2_BLEND_SPW": {
+   "rps_total_games": 0.12726,
+   "rps_game_diff": 0.12432,
+   "ll_set_score": 1.13053,
+   "brier_distance": 0.21583,
+   "brier_over_line": 0.23643
+  },
+  "selection_2023_2024|WTA|V2_G2_SPW": {
+   "rps_total_games": 0.1272,
+   "rps_game_diff": 0.12428,
+   "ll_set_score": 1.13053,
+   "brier_distance": 0.21584,
+   "brier_over_line": 0.23636
+  }
+ },
+ "n_matches": 24000,
+ "chosen_on_selection_window": "V2_G2_SPW",
+ "note": "V2 spw rule chosen on 2023-2024 by mean rank of total-games RPS and set-score log score; 2025-2026 confirms."
+}

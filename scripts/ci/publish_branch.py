@@ -1,21 +1,32 @@
 #!/usr/bin/env python3
-"""Publish captured files onto the orphan `market-data` branch.
+"""Publish files onto the orphan evidence branch (`tennis-data`) -- append-only, without checking it out.
 
-Why an orphan branch: market observations grow by tens of MB per week and
-must never bloat `main` (the MLB repo's data/ reached ~1 GB on main). Code
-branches gitignore data/kalshi/; this script moves files into a worktree of
-`market-data` and pushes with fetch+rebase retries.
+Why it was rewritten (2026-10-05)
+---------------------------------
+The previous version fetched the branch tip and checked out the WHOLE tree into a worktree on every
+publish. The evidence tree passed 8 GB (100k+ files), so a RUN TENNIS publish took ~13.5 minutes and each
+ten-minute capture pass spent most of its interval publishing -- the capture cadence slipped to 20-80
+minutes (TENNIS-5) and every assisted slate was STALE before it was built.
 
-Conflict policy: publishers write NEW files per run (discovery/<run_id>/,
-capture/<date>/<run_id>.jsonl) so rebases never touch the same path; if a
-conflict still appears we abort and fail loudly (exit 3) rather than
-committing conflict markers (MLB lesson: `git rebase --autostash` exits 0
-with markers on disk).
+Now: a BLOBLESS shallow fetch (trees only, no file contents), a worktree whose SPARSE checkout contains only
+the directories this publish writes, commit, push. On a push race the worktree is re-synced to the new tip
+and the files are copied again -- publishers write new per-run paths (plus a few rolling files such as
+state.json / latest.json, where the newest writer wins, exactly as before), so this is equivalent to the old
+rebase and never produces conflict markers. Nothing on the branch is ever deleted.
 
-Usage: publish_market_data.py --src data/kalshi --message "..." [--branch market-data]
+Usage: publish_branch.py --src data/research --message "..." [--branch tennis-data] [--no-overwrite]
 """
 from __future__ import annotations
-import argparse, os, shutil, subprocess, sys, time
+
+import argparse
+import os
+import shutil
+import subprocess
+import sys
+import time
+
+MAX_FILE = 95 * 1024 * 1024
+
 
 def sh(cmd, cwd=None, check=True, capture=False):
     print("+", " ".join(cmd), flush=True)
@@ -25,6 +36,38 @@ def sh(cmd, cwd=None, check=True, capture=False):
             print(r.stdout, r.stderr)
         raise SystemExit(f"command failed ({r.returncode}): {' '.join(cmd)}")
     return r
+
+
+def plan(src: str):
+    """[(relative path, absolute source path)] of every file to publish (skips .part and oversized files)."""
+    out = []
+    for root, _dirs, files in os.walk(src):
+        rel = os.path.relpath(root, src)
+        for fn in files:
+            if fn.endswith(".part"):
+                continue
+            p = os.path.join(root, fn)
+            if os.path.getsize(p) > MAX_FILE:
+                # GitHub rejects files > 100 MB and the whole push with them; never let one file block the rest
+                print(f"::warning::skipping oversized file {p} ({os.path.getsize(p) / 1e6:.1f} MB)")
+                continue
+            out.append((os.path.normpath(os.path.join(rel, fn)), p))
+    return sorted(out)
+
+
+def sparse_patterns(dest_rel: str, files) -> list[str]:
+    """Only the directories that receive files (non-cone patterns), so the checkout stays tiny."""
+    dirs = sorted({os.path.dirname(os.path.join(dest_rel, r)) for r, _ in files})
+    return [f"/{d}/*" if d else "/*" for d in dirs]
+
+
+def fetch_tip(repo, branch):
+    sh(["git", "config", "remote.origin.promisor", "true"], cwd=repo)
+    sh(["git", "config", "remote.origin.partialclonefilter", "blob:none"], cwd=repo)
+    r = sh(["git", "fetch", "--filter=blob:none", "--depth=1", "origin", f"+{branch}:refs/remotes/origin/{branch}"],
+           cwd=repo, check=False, capture=True)
+    return r.returncode == 0
+
 
 def main():
     ap = argparse.ArgumentParser()
@@ -43,75 +86,62 @@ def main():
                     help="write-once trees (assisted decision records): a file that already exists on the branch is "
                          "never replaced; if its content differs the publish fails loudly (exit 4) instead")
     a = ap.parse_args()
+    t0 = time.time()
     repo = os.path.abspath(a.repo)
     src = os.path.join(repo, a.src)
     dest_rel = os.path.join(a.dest_prefix, a.src) if a.dest_prefix else a.src
     if not os.path.isdir(src) or not any(os.scandir(src)):
         print("nothing to publish (source empty)"); return 0
-    wt = os.path.join(os.path.dirname(repo), f"_{a.branch}_wt")
-    if os.path.exists(wt):
-        shutil.rmtree(wt, ignore_errors=True)
-        sh(["git", "worktree", "prune"], cwd=repo)
-    exists = subprocess.run(["git", "ls-remote", "--exit-code", "--heads", "origin", a.branch], cwd=repo, capture_output=True).returncode == 0
-    if exists:
-        sh(["git", "fetch", "--depth=1", "origin", a.branch], cwd=repo)
-        sh(["git", "worktree", "add", "-f", wt, f"origin/{a.branch}"], cwd=repo)
-        sh(["git", "checkout", "-B", a.branch, f"origin/{a.branch}"], cwd=wt)
-    else:
-        sh(["git", "worktree", "add", "--detach", wt], cwd=repo)
-        sh(["git", "checkout", "--orphan", a.branch], cwd=wt)
-        sh(["git", "rm", "-rf", "-q", "."], cwd=wt, check=False)
-        with open(os.path.join(wt, "README.md"), "w") as f:
-            f.write(f"# {a.branch}\n\nOrphan branch holding immutable raw source snapshots and Kalshi tennis market observations for tennis-edge-finder.\nNever merge into main.\n")
-        sh(["git", "add", "README.md"], cwd=wt)
-        sh(["git", "commit", "-q", "-m", "init market-data orphan branch"], cwd=wt)
-    for attempt in range(1, a.attempts + 1):
-        dest = os.path.join(wt, dest_rel)
-        os.makedirs(dest, exist_ok=True)
-        # copy (append-only: new files; existing files are overwritten with identical content)
-        for root, dirs, files in os.walk(src):
-            rel = os.path.relpath(root, src)
-            os.makedirs(os.path.join(dest, rel), exist_ok=True)
-            for fn in files:
-                if fn.endswith(".part"):
-                    continue
-                srcp = os.path.join(root, fn)
-                if os.path.getsize(srcp) > 95 * 1024 * 1024:
-                    # GitHub rejects files > 100 MB and the whole push with them; never let one file block the rest
-                    print(f"::warning::skipping oversized file {srcp} ({os.path.getsize(srcp) / 1e6:.1f} MB)")
-                    continue
-                dstp = os.path.join(dest, rel, fn)
-                if a.no_overwrite and os.path.exists(dstp):
-                    if open(srcp, "rb").read() != open(dstp, "rb").read():
-                        print(f"::error::write-once file already on {a.branch} with different content: {os.path.join(rel, fn)}")
+    files = plan(src)
+    if not files:
+        print("nothing to publish (no eligible files)"); return 0
+    wt = os.path.join(os.path.dirname(repo), f"_{a.branch}_pub_{os.getpid()}")
+    exists = subprocess.run(["git", "ls-remote", "--exit-code", "--heads", "origin", a.branch], cwd=repo,
+                            capture_output=True).returncode == 0
+    if not exists:
+        raise SystemExit(f"branch {a.branch} does not exist on origin; refusing to create an evidence branch implicitly")
+    try:
+        for attempt in range(1, a.attempts + 1):
+            if not fetch_tip(repo, a.branch):
+                time.sleep(2 * attempt); continue
+            if os.path.exists(wt):
+                sh(["git", "worktree", "remove", "--force", wt], cwd=repo, check=False)
+                shutil.rmtree(wt, ignore_errors=True)
+                sh(["git", "worktree", "prune"], cwd=repo, check=False)
+            sh(["git", "worktree", "add", "--no-checkout", "--detach", wt, f"origin/{a.branch}"], cwd=repo)
+            sh(["git", "sparse-checkout", "init", "--no-cone"], cwd=wt)
+            sh(["git", "sparse-checkout", "set", "--no-cone", *sparse_patterns(dest_rel, files)], cwd=wt)
+            sh(["git", "checkout", "-q", "-B", a.branch, f"origin/{a.branch}"], cwd=wt)
+            changed = []
+            for rel, p in files:
+                dst = os.path.join(wt, dest_rel, rel)
+                if os.path.exists(dst):
+                    if open(p, "rb").read() == open(dst, "rb").read():
+                        continue
+                    if a.no_overwrite:
+                        print(f"::error::write-once file already on {a.branch} with different content: {rel}")
                         return 4
-                    continue
-                shutil.copy2(srcp, dstp)
-        sh(["git", "add", "-A", "--", dest_rel], cwd=wt)
-        if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=wt).returncode == 0:
-            print("no changes to publish"); return 0
-        sh(["git", "commit", "-q", "-m", a.message], cwd=wt)
-        r = subprocess.run(["git", "push", "-u", "origin", a.branch], cwd=wt, text=True, capture_output=True)
-        if r.returncode == 0:
-            print("published", a.branch); return 0
-        print("push failed:", r.stderr[-500:])
-        if not exists:
-            time.sleep(3 * attempt); continue
-        sh(["git", "fetch", "origin", a.branch], cwd=wt)
-        rb = subprocess.run(["git", "rebase", f"origin/{a.branch}"], cwd=wt, text=True, capture_output=True)
-        unmerged = subprocess.run(["git", "diff", "--name-only", "--diff-filter=U"], cwd=wt, text=True, capture_output=True).stdout.strip()
-        if rb.returncode != 0 or unmerged:
-            print("rebase conflict on:", unmerged)
-            sh(["git", "rebase", "--abort"], cwd=wt, check=False)
-            sh(["git", "reset", "-q", "--hard", f"origin/{a.branch}"], cwd=wt)
-            # retry from the fresh tip: re-copy and commit again
-            continue
-        time.sleep(2 * attempt)
-        # rebased cleanly; try pushing again in next loop iteration (files already in tree)
-        r = subprocess.run(["git", "push", "-u", "origin", a.branch], cwd=wt, text=True, capture_output=True)
-        if r.returncode == 0:
-            print("published after rebase", a.branch); return 0
-    print("FAILED to publish after retries"); return 3
+                os.makedirs(os.path.dirname(dst), exist_ok=True)
+                shutil.copy2(p, dst)
+                changed.append(os.path.join(dest_rel, rel))
+            if not changed:
+                print("no changes to publish"); return 0
+            for i in range(0, len(changed), 500):
+                sh(["git", "add", "--sparse", "--", *changed[i:i + 500]], cwd=wt)
+            if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=wt).returncode == 0:
+                print("no changes to publish"); return 0
+            sh(["git", "-c", "core.hooksPath=/dev/null", "commit", "-q", "-m", a.message], cwd=wt)
+            r = subprocess.run(["git", "push", "origin", f"HEAD:refs/heads/{a.branch}"], cwd=wt, text=True, capture_output=True)
+            if r.returncode == 0:
+                print(f"published {len(changed)} file(s) to {a.branch} in {time.time() - t0:.1f}s (attempt {attempt})")
+                return 0
+            print("push failed (re-syncing to the new tip and re-copying):", r.stderr[-400:])
+            time.sleep(2 * attempt)
+        print("FAILED to publish after retries"); return 3
+    finally:
+        sh(["git", "worktree", "remove", "--force", wt], cwd=repo, check=False)
+        shutil.rmtree(wt, ignore_errors=True)
+
 
 if __name__ == "__main__":
     sys.exit(main())

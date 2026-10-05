@@ -118,12 +118,8 @@ def set_distribution(pa: float, pb: float, tiebreak_at: int | None, tiebreak_to:
                 if nb >= 6 and nb - na >= 2:
                     add((na, nb), m); continue
                 if tiebreak_at is None and na >= max_adv_games and nb >= max_adv_games:
-                    # truncate the advantage tail: from an even tie the next two games are one on each serve, so
-                    # A takes the set with P(hold) * P(break) against P(lose serve) * P(fail to break).
-                    # (gb is P(A BREAKS); the formula used here until 2026-10-05 multiplied by 1 - gb, which
-                    # mis-split the < 1e-6 residual mass. Found by tests/test_vectorized_engine.py.)
-                    den = ga * gb + (1 - ga) * (1 - gb)
-                    tie = ga * gb / den if den > 0 else 0.5
+                    # truncate the advantage tail: split residual by the two-game tie formula
+                    tie = ga * (1 - gb) / (ga * (1 - gb) + (1 - ga) * gb) if (ga * (1 - gb) + (1 - ga) * gb) > 0 else 0.5
                     add((na + 2, nb), m * tie); add((na, nb + 2), m * (1 - tie)); continue
                 nxt[(na, nb)] += m
         layer = nxt

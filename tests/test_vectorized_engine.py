@@ -15,15 +15,30 @@ FORMATS = [
 ]
 
 
-@pytest.mark.parametrize("fmt", FORMATS, ids=lambda f: f.name)
+@pytest.mark.parametrize("fmt", [f for f in FORMATS if f.final_set != "ADVANTAGE"], ids=lambda f: f.name)
 def test_match_win_prob_matches_scalar_engine(fmt):
     rng = np.random.default_rng(7)
     pa = rng.uniform(0.45, 0.80, 25)
     pb = rng.uniform(0.20, 0.55, 25)
     vec = vz.match_win_prob(pa, pb, fmt)
     ref = np.array([analytic.match_win_prob(a, b, fmt) for a, b in zip(pa, pb)])
-    tol = 1e-6 if fmt.final_set == "ADVANTAGE" else 1e-9    # scalar engine truncates the advantage tail
-    assert np.max(np.abs(vec - ref)) < tol
+    assert np.max(np.abs(vec - ref)) < 1e-9
+
+
+def test_advantage_set_is_exact_against_a_long_tail_reference():
+    """Advantage final sets: the FROZEN scalar engine truncates the tail at 40-40 and splits the residual with
+    1 - P(break) where P(break) belongs. With two big servers ~6% of the mass reaches 40-40, so its
+    match_win_prob is off by up to ~0.014 for ADVANTAGE formats (all of which ended in 2021 -- no live format
+    is affected). analytic.py is a frozen source of the prospective experiments and is NOT edited; the
+    reference here is the same scalar set DP run with a 400-game tail, where the residual is negligible."""
+    rng = np.random.default_rng(7)
+    for a, b in zip(rng.uniform(0.55, 0.80, 15), rng.uniform(0.20, 0.45, 15)):
+        for first in (True, False):
+            d = analytic.set_distribution(a, b, None, 0, False, first, max_adv_games=400)
+            ref = sum(v for (x, y), v in d.items() if x > y)
+            o = vz._set_outcomes(np.array([a]), np.array([b]), None, 0, False, first)
+            got = float(np.asarray(o[(True, True)] + o[(True, False)]).ravel()[0])
+            assert abs(got - ref) < 1e-9
 
 
 def test_tiebreak_and_game_match_scalar():

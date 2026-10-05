@@ -237,8 +237,8 @@ def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows
     # 2026-10-05: a row generated AFTER THE EXCHANGE SETTLED its market was certainly priced post-start, whether
     # or not any first-ball source covers the level (ITF has none). Exchange settlement time is an upper bound on
     # the first ball. These were invisible here: 2,695 such rows, still being produced daily.
-    cats["post_settlement"] = 0
     if settled_at:
+        cats["post_settlement"] = 0
         vset = set(viol)
         for r in ledger_rows:
             ts = settled_at.get(r["prediction_id"])
@@ -323,7 +323,11 @@ def gate_8_9_truth(sports_ok: int | None, sports_total: int | None, exchange_con
                   "no sports truth independent of the exchange to reconcile the exchange result against")
         g9 = GateResult("TENNIS-9", "exchange_settlement_health", "UNKNOWN", {"reason": reason, "rules_id_changes": rules_id_changes or []})
     else:
-        g9 = GateResult("TENNIS-9", "exchange_settlement_health", "PASS" if exchange_conflicts == 0 and not rules_id_changes else "FAIL", {"conflicts": exchange_conflicts, "rules_id_changes": rules_id_changes or []})
+        rec = (settlement or {}).get("exchange_reconciliation") or {}
+        g9 = GateResult("TENNIS-9", "exchange_settlement_health", "PASS" if exchange_conflicts == 0 and not rules_id_changes else "FAIL",
+                        {"conflicts": exchange_conflicts, "reconciled_against_independent_truth": (settlement or {}).get("exchange_reconciled"),
+                         "reconciliation": rec, "rules_id_changes": rules_id_changes or [],
+                         "scope": "MATCH_WINNER settlements whose match has an independent (non-Kalshi) result"})
     return g8, g9
 
 
@@ -449,6 +453,38 @@ def settlement_stats(research_root=None) -> dict | None:
     out = {"settled": len(rows), "settled_binary": len(binary), "settled_scalar": len(rows) - len(binary),
            "sports_truth_rows": len(sports), "sports_truth_kalshi_derived": len(kalshi_derived),
            "sports_truth_independent": len(independent), "settlement_files": len(files)}
+    # 2026-10-05: the INDEPENDENT sports-truth lane (scripts/ops/sports_truth.py; tennis_edge/ledger/sports_truth.py)
+    # resolves settled predictions against Sackmann / TML / ESPN results -- never Kalshi -- in its own derived table.
+    st_files = sorted(glob.glob(os.path.join(root, "sports_truth", "*.jsonl.gz")))
+    if st_files:
+        import gzip as _gz
+        binary_ids = {r.get("prediction_id") for r in binary}
+        resolved, by_status, rec, structural = set(), {}, {}, {}
+        with _gz.open(st_files[-1], "rt") as fh:
+            for line in fh:
+                try:
+                    x = json.loads(line)
+                except ValueError:
+                    continue
+                stt = (x.get("independent") or {}).get("status")
+                by_status[stt] = by_status.get(stt, 0) + 1
+                if stt == "RESOLVED" and x.get("prediction_id") in binary_ids:
+                    resolved.add(x["prediction_id"])
+                if stt in ("NOT_COVERED", "NO_CANONICAL_IDS"):
+                    k = f"{x.get('tour')}|{x.get('level')}|{stt}"
+                    structural[k] = structural.get(k, 0) + 1
+                rs = (x.get("reconciliation") or {}).get("status")
+                if rs:
+                    rec[rs] = rec.get(rs, 0) + 1
+        n_struct = by_status.get("NOT_COVERED", 0) + by_status.get("NO_CANONICAL_IDS", 0)
+        old_ids = {r.get("prediction_id") for r in independent}
+        out.update(sports_truth_independent=len(old_ids | resolved),
+                   independent_truth_run=os.path.basename(st_files[-1]), independent_truth_by_status=by_status,
+                   independent_truth_structural_non_coverage=structural,
+                   independent_truth_rate_among_covered=round(by_status.get("RESOLVED", 0) / max(1, sum(by_status.values()) - n_struct), 4),
+                   exchange_reconciliation=rec,
+                   exchange_conflicts=rec.get("CONFLICT", 0),
+                   exchange_reconciled=rec.get("AGREE", 0) + rec.get("EXPLAINED", 0) + rec.get("CONFLICT", 0))
     clvs = sorted(glob.glob(os.path.join(root, "clv", "*.jsonl")))
     if clvs:
         latest = {}
@@ -524,6 +560,8 @@ def _auto_extra() -> dict:
         extra.setdefault("n_settled", st["settled"])
         extra.setdefault("sports_total", st["settled_binary"])
         extra.setdefault("sports_ok", st["sports_truth_independent"])
+        if st.get("exchange_reconciled"):
+            extra.setdefault("exchange_conflicts", st["exchange_conflicts"])
         if st.get("settled_with_ab_truth") is not None:
             extra.setdefault("n_actual_start_basis", st["settled_with_ab_truth"])
             extra.setdefault("n_with_close", st["settled_with_close"])
