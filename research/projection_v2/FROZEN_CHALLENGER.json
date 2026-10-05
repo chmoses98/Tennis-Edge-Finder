@@ -1,0 +1,28 @@
+{
+ "frozen_at": "2026-10-05T13:51:30.116377+00:00",
+ "spec": {
+  "elo": "E_mov_surf25",
+  "blocks": [
+   "level",
+   "g2",
+   "g2s",
+   "form",
+   "context",
+   "age"
+  ],
+  "form_horizon": 30,
+  "C": 0.01,
+  "window": 6
+ },
+ "spec_fingerprint": "40e74a71621a24ff",
+ "selection_window": [
+  2016,
+  2020
+ ],
+ "selection_pooled_ll": 0.5630829115235484,
+ "selection_per_tour_ll": {
+  "ATP": 0.5632322008140948,
+  "WTA": 0.5629000576482663
+ },
+ "note": "Chosen on 2016-2020 only, per PREREGISTRATION.md section 3. Not to be edited."
+}
