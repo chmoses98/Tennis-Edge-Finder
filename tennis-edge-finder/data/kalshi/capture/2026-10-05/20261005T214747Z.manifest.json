@@ -1,0 +1,107 @@
+{
+ "run_id": "20261005T214747Z",
+ "started_at": "2026-10-05T21:47:47.381003+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 1778,
+  "quotes_written": 552,
+  "quotes_unchanged": 1226,
+  "events_new": 4,
+  "books": 32,
+  "book_candidates": 32,
+  "trades_tennis": 16014,
+  "trades_global_scanned": 186369,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1791236254,
+   "hi": 1791236867,
+   "complete": true,
+   "pages": 105,
+   "trades": 104547
+  },
+  "backlog_scans": [
+   {
+    "lo": 1791232109,
+    "hi": 1791232212,
+    "complete": true,
+    "pages": 28,
+    "trades": 27319
+   },
+   {
+    "lo": 1791230621,
+    "hi": 1791230901,
+    "complete": true,
+    "pages": 47,
+    "trades": 46096
+   },
+   {
+    "lo": 1791229270,
+    "hi": 1791229321,
+    "complete": true,
+    "pages": 9,
+    "trades": 8407
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 189,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 371,
+  "retries": 0,
+  "http_429": 0,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 48.81814738900434,
+  "by_path": {
+   "markets": 146,
+   "events/KXITFWMATCH-26OCT06ILIBOU": 1,
+   "events/KXITFDOUBLES-26OCT06DEFNIRFREPIC": 1,
+   "events/KXITFDOUBLES-26OCT06AGUSCHALISMI": 1,
+   "events/KXITFDOUBLES-26OCT06DECECHBEGFRY": 1,
+   "markets/KXWTADOUBLES-26OCT03AOYLIADANKRA-AOYLIA/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03AOYLIADANKRA-DANKRA/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03CHAKATMIHNIC-CHAKAT/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03CHAKATMIHNIC-MIHNIC/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03ERRPAODETFAN-DETFAN/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03ERRPAODETFAN-ERRPAO/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03HSIOSTJIAWAN-HSIOST/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03HSIOSTJIAWAN-JIAWAN/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03SINZHAFENYUA-FENYUA/orderbook": 1,
+   "markets/KXWTADOUBLES-26OCT03SINZHAFENYUA-SINZHA/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04GUOFAL-FAL/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04GUOFAL-GUO/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04JONHON-HON/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04JONHON-JON/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04PUTSHA-PUT/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04PUTSHA-SHA/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04SAWFRU-FRU/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04SAWFRU-SAW/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04UCHBAI-BAI/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26OCT04UCHBAI-UCH/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05BULPAJ-BUL/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05BULPAJ-PAJ/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05FREBER-BER/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05FREBER-FRE/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05JURMON-JUR/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05JURMON-MON/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05MALELI-ELI/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05MALELI-MAL/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05SHATAN-SHA/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05SHATAN-TAN/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05SLASHA-SHA/orderbook": 1,
+   "markets/KXITFWMATCH-26OCT05SLASHA-SLA/orderbook": 1,
+   "markets/trades": 189
+  }
+ },
+ "finished_at": "2026-10-05T21:49:01.880531+00:00"
+}
