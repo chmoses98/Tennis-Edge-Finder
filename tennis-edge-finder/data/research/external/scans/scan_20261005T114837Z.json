@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-05T11:48:37.600076+00:00",
+ "run_id": "20261005T114837Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 696,
+  "skipped_family": 98,
+  "skipped_period": 224,
+  "skipped_live": 43,
+  "one_sided": 21,
+  "rows": 1172,
+  "devigged": 353
+ },
+ "smarkets_fetch": {
+  "events_seen": 108,
+  "events_priced": 80,
+  "markets": 719,
+  "markets_mapped": 270,
+  "contracts": 594,
+  "quoted_contracts": 594,
+  "raw": "data/research/external/raw/20261005T114837Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 270,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 92,
+  "rows": 502,
+  "two_sided": 497,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 509,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.72,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Murkel Dellien": 1,
+   "Mayank Sharma": 1,
+   "Lucas Goncalves Franca": 1,
+   "Lilian Chidekh": 1,
+   "Noah Malige": 1,
+   "Valentin Latrubesse": 1,
+   "Fermin Barcala Lopez": 1,
+   "Maria Herazo": 1,
+   "Thea Marcu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Pyotr Nesterov": 1,
+   "Murkel Dellien": 1,
+   "Darya Khomutsianskaya": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7759,
+  "top_refusal_subjects": {
+   "Yunchaokete Bu": 1,
+   "Pyotr Nesterov": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Robin Eldin": 1,
+   "Rodrigo Duarte": 1,
+   "Albin Colette": 1,
+   "Yannick Baluska": 1,
+   "VALENTIN LATRUBESSE": 1,
+   "Fermin Barcala Lopez": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
