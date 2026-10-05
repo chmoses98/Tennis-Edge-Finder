@@ -40,8 +40,9 @@ def test_resolves_within_source_window_and_orientation():
 
 
 def test_two_meetings_in_window_is_ambiguous_and_uncovered_level_is_reported():
+    # two events starting a day apart (a Monday and a Tuesday Challenger in the same week) both fit the window
     m = _m([{"tour": "ATP", "tourney_date": d, "canonical_winner_id": "a", "canonical_loser_id": "b",
-             "source_label": "tml_ATP_challenger"} for d in ("2026-09-13", "2026-09-20")])
+             "source_label": "tml_ATP_challenger"} for d in ("2026-09-14", "2026-09-15")])
     idx = ResultsIndex(m, since=date(2026, 8, 1))
     assert idx.resolve("ATP", "a", "b", "CHALLENGER", date(2026, 9, 16)).status == AMBIGUOUS
     assert idx.resolve("ATP", "a", "c", "CHALLENGER", date(2026, 10, 3)).status == NOT_COVERED
@@ -61,4 +62,15 @@ def test_tour_market_is_not_settled_by_a_challenger_meeting_days_later():
              "source_label": "tml_ATP_challenger", "level_canonical": "CHALLENGER"}])
     idx = ResultsIndex(m, since=date(2026, 8, 1))
     assert idx.resolve("ATP", "tomic", "sun", "TOUR_500_250", date(2026, 9, 23)).status != RESOLVED
-    assert idx.resolve("ATP", "tomic", "sun", "CHALLENGER", date(2026, 9, 26)).status == RESOLVED
+    assert idx.resolve("ATP", "tomic", "sun", "CHALLENGER", date(2026, 9, 30)).status == RESOLVED
+
+
+def test_previous_weeks_challenger_meeting_is_not_this_weeks_result():
+    """Production case 2026-10-05: Alves beat Pereira at the Copa Internacional (TML, dated Monday 09-28); they met
+    again in Antofagasta qualifying on 10-05 and Pereira won. The old (7, 8) window took the 09-28 result as truth
+    for the 10-05 match: 6 false TENNIS-9 conflicts. Agreeing TML Challenger rows lie at -6..0 days."""
+    m = _m([{"tour": "ATP", "tourney_date": "2026-09-28", "canonical_winner_id": "alves", "canonical_loser_id": "pereira",
+             "source_label": "tml_ATP_challenger"}])
+    idx = ResultsIndex(m, since=date(2026, 8, 1))
+    assert idx.resolve("ATP", "alves", "pereira", "CHALLENGER", date(2026, 10, 5)).status != RESOLVED
+    assert idx.resolve("ATP", "alves", "pereira", "CHALLENGER", date(2026, 10, 4)).status == RESOLVED     # Sunday final

@@ -35,8 +35,12 @@ import pandas as pd
 
 LEVEL_GROUP = {"GRAND_SLAM": "GS", "MASTERS_1000": "M", "TOUR_FINALS": "M", "OLYMPICS": "M", "TOUR_500_250": "T",
                "CHALLENGER": "C", "WTA_125": "C", "ITF": "I", "TEAM": "O", "OTHER": "O"}
+#: (days before, days after) the Kalshi match day a result's tourney_date may fall. TML Challengers are dated by the
+#: Monday the event starts: every settled row that AGREES lies at -6..0 days (2026-10-05). The former (7, 8) let the
+#: previous week's event in: Alves-Pereira met at the Copa Internacional (dated 09-28) and again in Antofagasta
+#: qualifying on 10-05, and the earlier result was taken as truth for the later match (6 false TENNIS-9 conflicts).
 SOURCE_WINDOWS = {"sackmann": (15, 1), "tml_ATP_main": (15, 4), "tml_ATP_main_mirror": (15, 4),
-                  "tml_ATP_challenger": (7, 8), "espn": (1, 3)}
+                  "tml_ATP_challenger": (6, 2), "espn": (1, 3)}
 _MONTHS = {m: i for i, m in enumerate(("JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC"), 1)}
 
 
