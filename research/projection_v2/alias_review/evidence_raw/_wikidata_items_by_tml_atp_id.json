@@ -1,3 +1,9 @@
 {
+ "request": {
+  "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20%3Fatp%20WHERE%20%7B%20VALUES%20%3Fatp%20%7B%20%22j468%22%20%22J468%22%20%22a0g8%22%20%22A0G8%22%20%22h0c9%22%20%22H0C9%22%20%22r438%22%20%22R438%22%20%22t0fn%22%20%22T0FN%22%20%22h0ls%22%20%22H0LS%22%20%22s0gm%22%20%22S0GM%22%20%22d0lj%22%20%22D0LJ%22%20%22a0f9%22%20%22A0F9%22%20%22f512%22%20%22F512%22%20%22v0hq%22%20%22V0HQ%22%20%22m0wy%22%20%22M0WY%22%20%22s923%22%20%22S923%22%20%22sm71%22%20%22SM71%22%20%22l0ck%22%20%22L0CK%22%20%22y09v%22%20%22Y09V%22%20%7D%20%3Fitem%20wdt%3AP536%20%3Fatp%20.%20%7D",
+  "fetched_at": "2026-10-06T04:25:47.701624+00:00",
+  "status": 429,
+  "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)"
+ },
  "items": {}
 }

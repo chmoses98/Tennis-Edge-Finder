@@ -9,9 +9,6 @@ name: TENNIS identity evidence (alias review)
 # research/projection_v2/alias_review/REQUEST_ONLY, when present, limits a run to the ids it lists.
 on:
   workflow_dispatch:
-  push:
-    branches: ['claude/friendly-pasteur-6qizkd']
-    paths: ['research/projection_v2/alias_review/REQUEST_ONLY']
 
 permissions:
   contents: write

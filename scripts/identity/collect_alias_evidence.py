@@ -212,7 +212,8 @@ def main():
     print(f"sackmann players rows: {len(players)}")
     tml_ids = [c["foreign_id"] for c in cands if c["foreign_system"] == "tml" and (not a.only or c["foreign_id"] in a.only)]
     atp_items = wikidata_items_by_atp_id(tml_ids) if tml_ids else {"items": {}}
-    json.dump(atp_items, open(os.path.join(a.out, "_wikidata_items_by_tml_atp_id.json"), "w"), indent=1, default=str)
+    if tml_ids:                       # a filtered run without TML ids must not overwrite an earlier batch's evidence
+        json.dump(atp_items, open(os.path.join(a.out, "_wikidata_items_by_tml_atp_id.json"), "w"), indent=1, default=str)
     wd_cache: dict = {}
     for c in cands:
         if a.only and c["foreign_id"] not in a.only:

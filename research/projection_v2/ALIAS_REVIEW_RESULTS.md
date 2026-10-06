@@ -134,7 +134,7 @@ Unresolved foreign ids: espn/espn:15260 (hu jia), espn/espn:17802 (sara alejandr
 
 | Kalshi name | tour | decision | why |
 |---|---|---|---|
-| Mimi Xu | WTA | INSUFFICIENT_EVIDENCE | No governing-body record reachable from this review ties the name 'Mimi Xu' to the registry's Mingge Xu (259685, GBR, born 2007-10-02): the official WTA lookup and Wikidata search returned no player record for 'Mimi Xu'. Left PENDING_REVIEW, as instructed. |
+| Mimi Xu | WTA | ACCEPTED | The official WTA profile 331725 is named 'Mimi Xu', born 2007-10-02, GBR -- the date of birth and nationality of the registry's Mingge Xu (259685, 2007-10-02, GBR); Wikidata Q112080351 carries the same date of birth. |
 | Alex Hernandez | ATP | REJECTED | Every candidate is a different person: a different given name (Alejandro Hernandez b.1977 MEX, Antonio J Ayala Hernandez b.1995 ESP, Angel Hernandez b.? VEN). The Kalshi name stays unmapped (no history), which is correct. |
 | Andres Pereiro Lopez | ATP | REJECTED | Every candidate is a different person: a different given name (Andres Lopez b.1984 PAR, Allan Lopez b.1973 ESA, Aramis Lopez b.1972 CUB, Alberto Gonzalez Lopez b.1977 ESP, Angel Garcia Lopez b.1981 MEX). The Kalshi name stays unmapped (no history), which is correct. |
 | Xin Zhou | ATP | REJECTED | Every candidate is a different person: a different given name (Xinmu Zhou b.2001, Xian Yao Zhou b.2001 CHN, Xiao Feng Zhou b.2007 TPE). The Kalshi name stays unmapped (no history), which is correct. |
