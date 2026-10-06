@@ -161,7 +161,10 @@ jobs:
         run: |
           git config user.name  "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research --message "tennis run $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+          # research/external is written ONLY by the capture conductor; this run's pulled copy is older than the branch's
+          # by the time it publishes, and re-publishing it replaced newer rows (2026-10-07)
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research --exclude external \
+            --message "tennis run $(date -u +'%Y-%m-%dT%H:%M:%SZ')"
           # the pre-pricing open-market snapshot is the quote evidence every projection row cites
           python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/run_snapshots --message "run open-market snapshot $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
           # Edge Finder app payload (or its health-only failure record): same branch, data/app -> tennis-edge-finder/data/app

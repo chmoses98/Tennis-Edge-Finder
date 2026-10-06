@@ -322,12 +322,15 @@ def background_capture_health(now=None, max_age_min=GATE5_MAX_AGE_MIN, max_trade
     ref, ref_kind = (pulled_at, "pull") if pulled_at else (now, "evaluation (no pull record: stricter)")
     age_ref = (ref - latest_fin).total_seconds() / 60
     lo = ref - timedelta(hours=window_h)
-    fins = [f for f, _s, _m in passes if lo <= f <= ref]
-    prior = [f for f, _s, _m in passes if f < lo]
+    # cadence is START-to-start (2026-10-07): a pass's own duration must not hide or create a gap. Falls back to the
+    # finish time for a manifest without started_at.
+    starts = sorted((s_ or f) for f, s_, _m in passes)
+    fins = [x for x in starts if lo <= x <= ref]
+    prior = [x for x in starts if x < lo]
     if prior:
         fins = [prior[-1]] + fins                  # the interval that crosses into the window counts too
     cad = [(b - a).total_seconds() / 60 for a, b in zip(fins, fins[1:])]
-    tail = (ref - fins[-1]).total_seconds() / 60 if fins else age_ref
+    tail = (ref - latest_fin).total_seconds() / 60
     intervals = cad + [tail]
     gaps = [round(x, 1) for x in intervals if x > max_age_min]
     durs = [(f - s).total_seconds() for f, s, _m in passes[-50:] if s is not None]
@@ -347,6 +350,9 @@ def background_capture_health(now=None, max_age_min=GATE5_MAX_AGE_MIN, max_trade
            "gaps_over_threshold_min": gaps,
            "pass_duration_median_s": None if not durs else round(_pct(durs, 0.5), 1),
            "latest_pass_duration_s": None if latest_start is None else round((latest_fin - latest_start).total_seconds(), 1),
+           "cadence_basis": "pass start to pass start; tail = newest pass finish to measurement",
+           "cadence_p95_min": None if not cad else round(_pct(cad, 0.95), 1),
+           "step_seconds": _pass_steps(root, lo, ref),
            "failed_passes_in_window": failed, "latest_incomplete": (m.get("incomplete") or [])[:5],
            "trade_backlog": backlog or None, "trade_backlog_ok": backlog_ok}
     if not ok:
@@ -360,6 +366,32 @@ def background_capture_health(now=None, max_age_min=GATE5_MAX_AGE_MIN, max_trade
         if not backlog_ok:
             why.append("trade-tape backlog too old")
         out["reason"] = "; ".join(why)
+    return out
+
+
+def _pass_steps(capture_root: str, lo, hi) -> dict | None:
+    """Median / max wall-clock seconds per conductor step over the window, from the pass records the conductor writes
+    (data/kalshi/capture_passes/<day>/*.pass.json, 2026-10-07). None before the first record exists."""
+    root = os.path.join(os.path.dirname(capture_root.rstrip("/")), "capture_passes")
+    recs = []
+    for p in sorted(glob.glob(os.path.join(root, "*", "*.pass.json")))[-400:]:
+        try:
+            r = json.load(open(p))
+        except ValueError:
+            continue
+        t = _iso(r.get("started_at"))
+        if t is not None and lo <= t <= hi:
+            recs.append(r)
+    if not recs:
+        return None
+    keys = sorted({k for r in recs for k in (r.get("steps_s") or {})})
+    out = {"passes": len(recs), "steps": {}}
+    for k in keys + ["work_s", "start_to_start_s", "overrun_s"]:
+        xs = [(r.get("steps_s") or {}).get(k) if k in keys else r.get(k) for r in recs]
+        xs = [float(x) for x in xs if x is not None]
+        if xs:
+            out["steps"][k] = {"median": round(_pct(xs, 0.5), 1), "max": round(max(xs), 1)}
+    out["overruns"] = sum(1 for r in recs if (r.get("overrun_s") or 0) > 0)
     return out
 
 
@@ -678,7 +710,11 @@ def settlement_stats(research_root=None) -> dict | None:
            "sports_truth_independent": len(independent), "settlement_files": len(files)}
     # 2026-10-05: the INDEPENDENT sports-truth lane (scripts/ops/sports_truth.py; tennis_edge/ledger/sports_truth.py)
     # resolves settled predictions against Sackmann / TML / ESPN results -- never Kalshi -- in its own derived table.
-    st_files = sorted(glob.glob(os.path.join(root, "sports_truth", "*.jsonl.gz")))
+    # current snapshot = newest SOURCE evidence, then newest run (truth_freshness.current_snapshot, 2026-10-07): a run that
+    # pulled its sources before an ESPN publish can no longer roll the state back by finishing later
+    from tennis_edge.ledger.truth_freshness import current_snapshot
+    cur = current_snapshot(os.path.join(root, "sports_truth"))
+    st_files = [cur] if cur else []
     if st_files:
         import gzip as _gz
         binary_ids = {r.get("prediction_id") for r in binary}
@@ -693,13 +729,14 @@ def settlement_stats(research_root=None) -> dict | None:
                 by_status[stt] = by_status.get(stt, 0) + 1
                 if stt == "RESOLVED" and x.get("prediction_id") in binary_ids:
                     resolved.add(x["prediction_id"])
-                if stt in ("NOT_COVERED", "NO_CANONICAL_IDS"):
+                if stt in ("NOT_COVERED", "NO_CANONICAL_IDS", "PENDING_RESULT"):
                     k = f"{x.get('tour')}|{x.get('level')}|{stt}"
                     structural[k] = structural.get(k, 0) + 1
                 rs = (x.get("reconciliation") or {}).get("status")
                 if rs:
                     rec[rs] = rec.get(rs, 0) + 1
-        n_struct = by_status.get("NOT_COVERED", 0) + by_status.get("NO_CANONICAL_IDS", 0)
+        # PENDING_RESULT was part of NOT_COVERED until the 2026-10-07 split; it stays in the same bucket so no rate moves
+        n_struct = by_status.get("NOT_COVERED", 0) + by_status.get("NO_CANONICAL_IDS", 0) + by_status.get("PENDING_RESULT", 0)
         old_ids = {r.get("prediction_id") for r in independent}
         out.update(sports_truth_independent=len(old_ids | resolved),
                    independent_truth_run=os.path.basename(st_files[-1]), independent_truth_by_status=by_status,
@@ -708,6 +745,16 @@ def settlement_stats(research_root=None) -> dict | None:
                    exchange_reconciliation=rec,
                    exchange_conflicts=rec.get("CONFLICT", 0),
                    exchange_reconciled=rec.get("AGREE", 0) + rec.get("EXPLAINED", 0) + rec.get("CONFLICT", 0))
+        sp = cur.replace(".jsonl.gz", ".summary.json")
+        if os.path.exists(sp):
+            sm = json.load(open(sp))
+            pv = sm.get("prospective_v2") or {}
+            out.update(independent_truth_freshness=sm.get("freshness"), independent_truth_resolution=sm.get("resolution"),
+                       prospective_v2={k: pv.get(k) for k in ("predictions_with_v2_and_incumbent", "exchange_settled_predictions",
+                                                              "independently_resolved_predictions", "independently_settled_matches",
+                                                              "by_status", "reconciliation", "by_level",
+                                                              "n_stale_unresolved_tour_level", "readout_at_independently_settled_matches")},
+                       prospective_v2_warning=bool(pv.get("n_stale_unresolved_tour_level")))
     clvs = latest_run_files(os.path.join(root, "clv"))
     if clvs:
         latest = {}

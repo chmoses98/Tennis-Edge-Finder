@@ -80,12 +80,20 @@ jobs:
           LONGEST=0
           # one JSON line per pass; the final verdict step judges the conductor from it (scripts/ci/run_state.py)
           PASS_LOG="$RUNNER_TEMP/capture_passes.jsonl"; : > "$PASS_LOG"
+          # step timer (2026-10-07): wall-clock seconds per step go into a pass record (scripts/ci/pass_record.py) that is
+          # published with the next capture publish -- the evidence TENNIS-5 background_capture_health reads
+          ms() { date +%s%3N; }
+          PREV_START_MS=0
           while conductor_should_start "$(date +%s)" "$END" "$LONGEST"; do
-            T0=$(date +%s)
-            git fetch --filter=blob:none --depth=1 origin tennis-data || true
+            T0=$(date +%s); START_MS=$(ms); STEPS=""
+            step() { local t=$(ms); STEPS="$STEPS $1=$(( t - LAST_MS ))e-3"; LAST_MS=$t; }
+            LAST_MS=$START_MS
+            git fetch --filter=blob:none --depth=1 origin tennis-data || true; step fetch
             mkdir -p data/kalshi/capture
             git show origin/tennis-data:tennis-edge-finder/data/kalshi/capture/state.json > data/kalshi/capture/state.json 2>/dev/null || echo '{}' > data/kalshi/capture/state.json
-            CAP_RC=0; python3 scripts/kalshi/capture_tennis.py || CAP_RC=$?
+            # continue today's dislocation-ledger chain from the branch instead of replacing it (scripts/ci/restore_day_files.py)
+            python3 scripts/ci/restore_day_files.py || echo "::warning::could not restore today's dislocation ledger"; step restore
+            CAP_RC=0; python3 scripts/kalshi/capture_tennis.py || CAP_RC=$?; step capture
             [ "$CAP_RC" -ne 0 ] && echo "::warning::capture pass $PASS returned $CAP_RC (2 = partial, otherwise failed)"
             # daily taxonomy refresh (catalogue + events + markets + historical, no price history)
             LAST_DISC=$(git ls-tree --name-only origin/tennis-data tennis-edge-finder/data/kalshi/discovery/ 2>/dev/null | sort | tail -1 | grep -oE '[0-9]{8}T' | tr -d T || echo 0)
@@ -94,22 +102,38 @@ jobs:
               python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/discovery --message "kalshi tennis daily discovery $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
               rm -rf data/kalshi/discovery
             fi
+            step discovery
             PUB_RC=0; python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/capture --message "kalshi tennis capture $(date -u +'%Y-%m-%dT%H:%M:%SZ') (conductor pass $PASS)" || PUB_RC=$?
+            # the previous passes' timing records (a sibling of capture/: readers take capture/'s newest subdirectory as today)
+            [ -d data/kalshi/capture_passes ] && { python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/capture_passes --message "capture pass records $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true; }
+            step capture_publish
             [ "$PUB_RC" -ne 0 ] && echo "::warning::publish failed on pass $PASS (exit $PUB_RC)"
             # Wave 4: an independent venue against the same board, BEFORE the capture files are cleaned
             # up, since the scan reads the quotes this pass just wrote.
-            SCAN_RC=0; python3 scripts/external/capture_and_scan.py || SCAN_RC=$?
+            SCAN_RC=0; python3 scripts/external/capture_and_scan.py || SCAN_RC=$?; step external_scan
             [ "$SCAN_RC" -ne 0 ] && echo "::warning::external scan failed on pass $PASS (exit $SCAN_RC)"
-            SCAN_PUB_RC=0; python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/external --message "external market scan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (pass $PASS)" || SCAN_PUB_RC=$?
+            SCAN_PUB_RC=0; python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/external --message "external market scan $(date -u +'%Y-%m-%dT%H:%M:%SZ') (pass $PASS)" || SCAN_PUB_RC=$?; step external_publish
             [ "$SCAN_PUB_RC" -ne 0 ] && echo "::warning::external publish failed on pass $PASS (exit $SCAN_PUB_RC)"
             echo "{\"pass\":$PASS,\"capture_rc\":$CAP_RC,\"publish_rc\":$PUB_RC,\"scan_rc\":$SCAN_RC,\"scan_publish_rc\":$SCAN_PUB_RC}" >> "$PASS_LOG"
             rm -rf data/research/external/raw/*
+            # per-pass market shards are on the branch once their publish succeeded; keeping them would make every later
+            # publish re-read them (only the dislocation day file is a continuation and stays)
+            [ "$SCAN_PUB_RC" -eq 0 ] && find data/research/external/market -name '*.*Z.jsonl' -delete 2>/dev/null
             rm -rf data/kalshi/capture/2*; find data/kalshi/capture -size +95M -delete
-            PASS=$((PASS+1))
+            step cleanup
             ELAPSED=$(( $(date +%s) - T0 ))
             [ "$ELAPSED" -gt "$LONGEST" ] && LONGEST=$ELAPSED
-            SLEEP=$(conductor_sleep "$(date +%s)" "$END" "$INTERVAL" "$ELAPSED"); [ "$SLEEP" -gt 0 ] && sleep "$SLEEP"
+            # start-to-start cadence: sleep INTERVAL minus this pass's work (never negative, never past END); a pass that
+            # overran starts the next one immediately and the overrun is recorded -- passes never overlap
+            SLEEP=$(conductor_sleep "$(date +%s)" "$END" "$INTERVAL" "$ELAPSED")
+            python3 scripts/ci/pass_record.py --out data/kalshi/capture_passes --pass "$PASS" --run-id "$GITHUB_RUN_ID" \
+              --start-ms "$START_MS" --prev-start-ms "$PREV_START_MS" --interval "$INTERVAL" --sleep "$SLEEP" $STEPS || true
+            PREV_START_MS=$START_MS
+            PASS=$((PASS+1))
+            [ "$SLEEP" -gt 0 ] && sleep "$SLEEP"
           done
+          # the last pass record has no later capture publish to ride on
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/kalshi/capture_passes --message "capture pass records $(date -u +'%Y-%m-%dT%H:%M:%SZ')" || true
           echo "conductor finished after $PASS passes (longest pass ${LONGEST}s, $(( END - $(date +%s) ))s of budget left)"
           echo "capture conductor: $PASS passes, longest ${LONGEST}s, ended within its budget" >> "$GITHUB_STEP_SUMMARY"
       - name: Hand off to the successor (dispatch one unless a run is already queued)

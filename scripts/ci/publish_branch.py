@@ -38,13 +38,17 @@ def sh(cmd, cwd=None, check=True, capture=False):
     return r
 
 
-def plan(src: str):
-    """[(relative path, absolute source path)] of every file to publish (skips .part and oversized files)."""
+def plan(src: str, exclude=()):
+    """[(relative path, absolute source path)] of every file to publish (skips .part and oversized files, and any
+    path under an `exclude` prefix relative to src)."""
     out = []
+    ex = tuple(e.strip("/") + "/" for e in exclude)
     for root, _dirs, files in os.walk(src):
         rel = os.path.relpath(root, src)
         for fn in files:
             if fn.endswith(".part"):
+                continue
+            if ex and (os.path.normpath(os.path.join(rel, fn)) + "/").startswith(ex):
                 continue
             p = os.path.join(root, fn)
             if os.path.getsize(p) > MAX_FILE:
@@ -85,6 +89,10 @@ def main():
     ap.add_argument("--no-overwrite", action="store_true",
                     help="write-once trees (assisted decision records): a file that already exists on the branch is "
                          "never replaced; if its content differs the publish fails loudly (exit 4) instead")
+    ap.add_argument("--exclude", nargs="*", default=[],
+                    help="directories (relative to --src) NOT to publish: trees another single writer owns. RUN TENNIS "
+                         "pulls research/external (it reads it) but must not write back its older copy over the "
+                         "capture conductor's newer one (2026-10-07)")
     a = ap.parse_args()
     t0 = time.time()
     repo = os.path.abspath(a.repo)
@@ -92,7 +100,7 @@ def main():
     dest_rel = os.path.join(a.dest_prefix, a.src) if a.dest_prefix else a.src
     if not os.path.isdir(src) or not any(os.scandir(src)):
         print("nothing to publish (source empty)"); return 0
-    files = plan(src)
+    files = plan(src, a.exclude)
     if not files:
         print("nothing to publish (no eligible files)"); return 0
     wt = os.path.join(os.path.dirname(repo), f"_{a.branch}_pub_{os.getpid()}")
