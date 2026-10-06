@@ -64,6 +64,11 @@ def _window(source_label: str) -> tuple[int, int]:
     return (15, 1)
 
 RESOLVED, NOT_FOUND, AMBIGUOUS, NOT_COVERED, NO_IDS = "RESOLVED", "NOT_FOUND", "AMBIGUOUS", "NOT_COVERED", "NO_CANONICAL_IDS"
+#: the level's independent source is LIVE (its newest result is within LIVE_SOURCE_LAG_DAYS of the run date) but has not
+#: published this match yet -- a result that will arrive, not a level nobody covers (2026-10-07). Counted with the
+#: structural statuses in TENNIS-8 exactly as NOT_COVERED was, so no rate moves because of the split.
+PENDING_RESULT = "PENDING_RESULT"
+LIVE_SOURCE_LAG_DAYS = 3
 
 
 @dataclass(frozen=True)
@@ -90,7 +95,10 @@ class IndependentTruth:
 class ResultsIndex:
     """Canonical results keyed by (tour, unordered canonical pair). Built from matches.parquet."""
 
-    def __init__(self, matches: pd.DataFrame, since: date):
+    def __init__(self, matches: pd.DataFrame, since: date, as_of: date | None = None):
+        """`as_of` = the run date. Without it a level whose source ends before the match is NOT_COVERED (the original
+        behaviour); with it, a LIVE source that simply has not published the match yet gives PENDING_RESULT."""
+        self.as_of = as_of
         m = matches[(matches["canonical_id_status"] == "MAPPED") & matches["tourney_date"].notna()].copy()
         m["d"] = pd.to_datetime(m["tourney_date"]).dt.date
         m = m[m["d"] >= since]
@@ -102,6 +110,28 @@ class ResultsIndex:
         lg = full["level_canonical"].map(lambda x: LEVEL_GROUP.get(str(x), "O"))
         self.horizon = {(t, g): pd.to_datetime(grp).max().date()
                         for (t, g), grp in full["tourney_date"].groupby([full["tour"], lg])}
+        # Coverage by level FAMILY and source (2026-10-07). ESPN codes every WTA event 'P' (WTA 1000 and WTA 125 too) and
+        # every ATP tour event 'A'/'M', so its rows say "TOUR_500_250" for a WTA 1000 match. Keyed by level group, the
+        # WTA 1000 horizon came from the frozen Sackmann files (2026-08-23) although ESPN publishes Beijing daily, and a
+        # missing WTA 1000 result read NOT_COVERED instead of NOT_FOUND. ESPN therefore counts for the TOUR family of
+        # both tours and for WTA 125 (its WTA boards carry the 125s; it has no ATP Challenger or ITF board).
+        fam = lg.map(lambda g: LEVEL_FAMILY.get(g, "TOUR"))
+        is_espn = full["source_label"].astype(str).str.startswith("espn") if "source_label" in full.columns else False
+        self.family_horizon: dict = {}
+        for (t, f), grp in full["tourney_date"].groupby([full["tour"], fam.where(~is_espn, "TOUR")]):
+            self.family_horizon[(t, f)] = max(self.family_horizon.get((t, f), date.min), pd.to_datetime(grp).max().date())
+        if isinstance(is_espn, pd.Series) and is_espn.any():
+            ew = full[is_espn & (full["tour"] == "WTA")]
+            if len(ew):
+                hz = pd.to_datetime(ew["tourney_date"]).max().date()
+                self.family_horizon[("WTA", "CHALLENGER")] = max(self.family_horizon.get(("WTA", "CHALLENGER"), date.min), hz)
+
+    def coverage(self, tour: str, level: str) -> date | None:
+        """Newest independent result date for this tour and level (by family); None when no source covers it."""
+        fam = LEVEL_FAMILY.get(LEVEL_GROUP.get(level, "O"), "TOUR")
+        hz = self.family_horizon.get((tour, fam))
+        old = self.horizon.get((tour, LEVEL_GROUP.get(level, "O")))
+        return max(x for x in (hz, old) if x) if (hz or old) else None
 
     def resolve(self, tour: str, a: str | None, b: str | None, level: str, on: date) -> IndependentTruth:
         if not a or not b:
@@ -119,8 +149,11 @@ class ResultsIndex:
             return IndependentTruth(RESOLVED, str(r.canonical_winner_id), str(r.canonical_loser_id), r.outcome_type,
                                     r.score_raw, _f(r.games_w), _f(r.games_l), _f(r.sets_w), _f(r.sets_l),
                                     r.source_label, r.match_key, r.tourney_name, str(r.d))
-        hz = self.horizon.get((tour, LEVEL_GROUP.get(level, "O")))
+        hz = self.coverage(tour, level)
         if hz is None or hz < on:
+            if hz is not None and self.as_of is not None and (self.as_of - hz).days <= LIVE_SOURCE_LAG_DAYS:
+                return IndependentTruth(PENDING_RESULT, reason=f"independent results for {tour} {level} are live (newest {hz}, "
+                                                               f"run date {self.as_of}) but not yet published for a match on {on}")
             return IndependentTruth(NOT_COVERED, reason=f"independent results for {tour} {level} end {hz}; match on {on}")
         return IndependentTruth(NOT_FOUND, reason="no result between these canonical players in the window although the level is covered")
 

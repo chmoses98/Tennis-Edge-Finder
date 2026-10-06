@@ -42,7 +42,7 @@ def sh(cmd, cwd=None, check=True, capture=False):
     return r
 
 
-def patterns(paths: list[str]) -> list[str]:
+def patterns(paths: list[str], profile: str = "run_tennis") -> list[str]:
     """Non-cone sparse-checkout patterns for the files a run needs, computed from the branch's file list."""
     runs_with: dict[str, set] = {s: set() for s in SOURCE_SUBS}
     espn_runs, espn_quarantined, disc, clv = set(), set(), set(), []
@@ -69,10 +69,25 @@ def patterns(paths: list[str]) -> list[str]:
             continue
         if re.match(r"research/clv/[^/]+\.jsonl(\.gz)?$", rel):
             clv.append(rel)
+    if profile == "truth":
+        # the bounded independent-truth refresh (tennis-truth-refresh.yml): the canonical build's newest sources, the
+        # settled predictions and their ledger rows, and the truth snapshots' metadata -- not the snapshots themselves
+        out = [f"/{PREFIX}research/settlements/", f"/{PREFIX}research/ledger/",
+               f"/{PREFIX}research/sports_truth/*.meta.json", f"/{PREFIX}research/sports_truth/*.summary.json",
+               f"/{PREFIX}research/sports_truth/resolution_log/", f"/{PREFIX}sources/*/manifest.json",
+               f"/{PREFIX}sources/espn/*/manifest.json", f"/{PREFIX}sources/espn/*/QUARANTINED.md"]
+        for s_, runs in runs_with.items():
+            if runs:
+                out.append(f"/{PREFIX}sources/{max(runs)}/{s_}")
+        good = sorted(espn_runs - espn_quarantined)
+        if good:
+            out.append(f"/{PREFIX}sources/espn/{good[-1]}/")
+            out.append(f"!/{PREFIX}sources/espn/{good[-1]}/raw/")
+        return out
     out = [f"/{PREFIX}research/", f"!/{PREFIX}research/horizons/", f"!/{PREFIX}research/timing/",
            f"!/{PREFIX}research/clv/", f"!/{PREFIX}research/external/raw/",
            f"/{PREFIX}firstball/", f"/{PREFIX}app/", f"/{PREFIX}processed/", f"/{PREFIX}identity/",
-           f"/{PREFIX}kalshi/capture/", f"!/{PREFIX}kalshi/capture/*/*.trades.jsonl.gz",
+           f"/{PREFIX}kalshi/capture/", f"!/{PREFIX}kalshi/capture/*/*.trades.jsonl.gz", f"/{PREFIX}kalshi/capture_passes/",
            f"/{PREFIX}kalshi/run_snapshots/", f"/{PREFIX}sources/*/manifest.json", f"/{PREFIX}sources/espn/*/manifest.json"]
     if clv:
         out.append(f"/{PREFIX}{sorted(clv)[-1]}")
@@ -92,6 +107,8 @@ def main():
     ap.add_argument("--branch", default="tennis-data")
     ap.add_argument("--repo", default=os.getcwd())
     ap.add_argument("--dest", default="data")
+    ap.add_argument("--profile", default="run_tennis", choices=["run_tennis", "truth"],
+                    help="which selection to pull when --paths is not given")
     ap.add_argument("--paths", nargs="*", default=None,
                     help="explicit paths UNDER data/ to unpack (e.g. processed/ratings_ATP.json firstball/store/) instead "
                          "of the RUN TENNIS selection; a trailing / means a directory")
@@ -109,7 +126,7 @@ def main():
         pats = [f"/{PREFIX}{p.lstrip('/')}" for p in a.paths]
     else:
         names = sh(["git", "ls-tree", "-r", "--name-only", f"origin/{a.branch}"], cwd=repo, capture=True).stdout.split("\n")
-        pats = patterns([n for n in names if n])
+        pats = patterns([n for n in names if n], a.profile)
     print("\n".join(pats))
     wt = os.path.join(os.path.dirname(repo), f"_{a.branch}_pull")
     shutil.rmtree(wt, ignore_errors=True)

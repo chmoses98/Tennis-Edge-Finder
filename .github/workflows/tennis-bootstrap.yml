@@ -23,9 +23,13 @@ on:
         required: false
         default: 'false'
       espn_since:
-        description: 'earliest date for the ESPN results backfill (YYYY-MM-DD)'
+        description: 'ESPN full backfill from this date (YYYY-MM-DD); empty = auto (incremental daily, full on Sundays)'
         required: false
-        default: '2026-04-01'
+        default: ''
+      espn_mode:
+        description: 'ESPN refresh mode: auto | incremental | full'
+        required: false
+        default: 'auto'
 
 permissions:
   contents: write
@@ -71,7 +75,11 @@ jobs:
           # script needs pandas; without it the step dies on import and continue-on-error reports
           # SUCCESS, which is how two runs published nothing while looking green
           python3 -m pip install --quiet pandas
-          python3 scripts/data/fetch_espn_results.py --since "${{ github.event.inputs.espn_since || '2026-04-01' }}"
+          # the newest consolidated snapshot is the base an incremental refresh carries forward (CSVs + manifests only)
+          python3 scripts/ci/pull_data_branch.py --paths 'sources/espn/*/manifest.json' 'sources/espn/*/espn_matches_*.csv.gz' \
+            'sources/espn/*/QUARANTINED.md' || echo "::warning::could not pull the ESPN base snapshot; the refresh will be full"
+          SINCE="${{ github.event.inputs.espn_since }}"
+          python3 scripts/data/fetch_espn_results.py --mode "${{ github.event.inputs.espn_mode || 'auto' }}" ${SINCE:+--since "$SINCE"}
           ls -d data/sources/espn/* >/dev/null 2>&1 || { echo "::error::ESPN fetch produced no output"; exit 1; }
       - name: Probe external odds sources
         id: odds_probe

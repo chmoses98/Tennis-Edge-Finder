@@ -1,0 +1,71 @@
+name: TENNIS independent truth refresh
+
+# Re-resolves every settled prediction against the newest independent results (ESPN / TML / Sackmann -- never Kalshi)
+# as soon as a source bootstrap has published, instead of waiting for the next RUN TENNIS (2026-10-07).
+#
+# Why: Bootstrap #37 published ESPN results through 2026-10-06 at ~12:20Z, but RUN TENNIS #109/#110 had run at 05:42 and
+# 06:35Z and the 12:25Z RUN TENNIS tick never fired, so the prospective V2 study read N=0 independently settled for hours
+# with the results already on the branch. GitHub starts scheduled workflows late or drops them, so this job is driven by
+# the bootstrap's COMPLETION (workflow_run), keeps a fallback schedule, and checks the evidence itself: it rebuilds only
+# when the newest ESPN snapshot on tennis-data has not been used by any sports-truth snapshot yet.
+#
+# Bounded: a sparse pull of sources + settlements + ledger, the canonical build, scripts/ops/sports_truth.py, and a publish
+# of data/research/sports_truth ONLY (new per-run files; resolution log per run). No projection, ledger, settlement or
+# model is touched; it never runs the pricing pipeline.
+
+on:
+  workflow_run:
+    workflows: ["Tennis Bootstrap (sources + Kalshi tennis discovery)"]
+    types: [completed]
+  schedule:
+    - cron: '17 3,15 * * *'    # fallback in case a workflow_run delivery is lost; a no-op when nothing is new
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'rebuild even if the newest ESPN snapshot was already used (true/false)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-truth-refresh
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Install
+        run: python3 -m pip install --quiet numpy pandas pyarrow
+      - name: Pull sources, settlements, ledger and truth metadata
+        run: python3 scripts/ci/pull_data_branch.py --profile truth
+      - name: Anything new?
+        id: need
+        run: |
+          RC=0; python3 scripts/ops/truth_refresh_needed.py ${{ github.event.inputs.force == 'true' && '--force' || '' }} || RC=$?
+          if [ "$RC" -eq 0 ]; then echo "run=1" >> "$GITHUB_OUTPUT"; elif [ "$RC" -eq 10 ]; then echo "run=0" >> "$GITHUB_OUTPUT"; else exit "$RC"; fi
+      - name: Canonical build
+        if: steps.need.outputs.run == '1'
+        run: |
+          set -o pipefail
+          PYTHONPATH=. python3 tennis_edge/data/build.py | tail -5
+      - name: Independent sports truth
+        if: steps.need.outputs.run == '1'
+        run: |
+          set -o pipefail
+          PYTHONPATH=. python3 scripts/ops/sports_truth.py | tail -5
+          { echo "### Independent truth refresh"; echo '```'; python3 -c "import json;s=json.load(open('data/research/sports_truth/latest_summary.json'));print(json.dumps({'run':s['run_id'],'source':s['source_stamp'],'by_status':s['by_status'],'prospective_v2':{k:s['prospective_v2'][k] for k in ('predictions_with_v2_and_incumbent','independently_resolved_predictions','independently_settled_matches','by_status','n_stale_unresolved_tour_level')},'freshness':s['freshness']['horizons']},indent=1))"; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - name: Publish (sports_truth only)
+        if: steps.need.outputs.run == '1'
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          python3 scripts/ci/publish_branch.py --branch tennis-data --src data/research/sports_truth \
+            --message "independent truth refresh $(date -u +'%Y-%m-%dT%H:%M:%SZ')"

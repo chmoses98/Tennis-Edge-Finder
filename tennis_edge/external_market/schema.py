@@ -114,32 +114,37 @@ class ExternalMarketObservation:
 class ExternalStore:
     """Append-only, hash-chained, one file per UTC day. Same contract as the other evidence stores."""
 
-    def __init__(self, root: str):
+    def __init__(self, root: str, shard: str | None = None):
+        """`shard` (2026-10-07): the capture conductor writes each pass to its own file `<day>.<shard>.jsonl`
+        (shard = the scan's run stamp). A rolling day file grew past 70 MB by mid-afternoon -- GitHub refuses files
+        over 100 MB -- and every new conductor's first publish replaced the day's earlier rows. A per-pass file is
+        append-only by construction. Readers glob `*.jsonl`, so they see shards and the older day files alike."""
         self.root = root
+        self.shard = shard
         os.makedirs(root, exist_ok=True)
 
     def _path(self, day: str) -> str:
-        return os.path.join(self.root, f"{day}.jsonl")
+        return os.path.join(self.root, f"{day}.{self.shard}.jsonl" if self.shard else f"{day}.jsonl")
 
     def _last_hash(self, path: str) -> str:
-        prev = "GENESIS"
-        if os.path.exists(path):
-            with open(path) as f:
-                for line in f:
-                    if line.strip():
-                        prev = json.loads(line).get("row_hash", prev)
-        return prev
+        # the last line only (2026-10-07): reading the whole day file for every row made each capture pass slower
+        # than the last (tennis_edge/external_market/tail_hash.py)
+        from tennis_edge.external_market.tail_hash import last_row_hash
+        return last_row_hash(path)
 
     def append_many(self, rows) -> int:
-        n = 0
+        n, tail = 0, {}
         for row in rows:
             d = row.to_dict()
             day = (row.observed_at or datetime.now(timezone.utc).isoformat())[:10]
             path = self._path(day)
-            d["prev_hash"] = self._last_hash(path)
+            if path not in tail:
+                tail[path] = self._last_hash(path)
+            d["prev_hash"] = tail[path]
             d["row_hash"] = _hash({k: v for k, v in d.items() if k != "row_hash"})
             with open(path, "a") as f:
                 f.write(json.dumps(d, separators=(",", ":"), default=str) + "\n")
+            tail[path] = d["row_hash"]
             n += 1
         return n
 

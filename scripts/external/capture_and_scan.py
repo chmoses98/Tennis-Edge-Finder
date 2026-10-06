@@ -39,6 +39,7 @@ from tennis_edge.external_market.dislocation import (Dislocation, DislocationLed
                                                     triangulate)
 from tennis_edge.external_market.mapping import MAPPED, audit, map_event, physical_key        # noqa: E402
 from tennis_edge.external_market.schema import ExternalStore                                  # noqa: E402
+from tennis_edge.external_market.tail_hash import TailHashLedger                              # noqa: E402
 from tennis_edge.identity.kalshi_map import KalshiPlayerMapper                                # noqa: E402
 from tennis_edge.kalshi.families import SERIES                                                # noqa: E402
 from tennis_edge.kalshi.markets import parse_market                                           # noqa: E402
@@ -191,7 +192,7 @@ def main():
             last_executed=sm_lastex, observed_at=now.isoformat(),
             evidence_location=sm_stats.get("raw", ""))
     obs = obs + sm_obs
-    ExternalStore(a.external_store).append_many(obs)
+    ExternalStore(a.external_store, shard=stamp).append_many(obs)     # one file per pass (2026-10-07)
     stats["external_parse"] = pstats
     stats["smarkets_fetch"] = sm_stats
     stats["smarkets_parse"] = sm_pstats
@@ -305,7 +306,7 @@ def main():
         asof = {t: AsOfStates.load(os.path.join(a.asof, f"asof_{t}.json.gz")) for t in ("ATP", "WTA")}
     stats["model_witness_available"] = bool(model_ok)
 
-    ledger = DislocationLedger(a.ledger)
+    ledger = TailHashLedger(a.ledger)          # same rows as DislocationLedger, O(1) prev-hash (2026-10-07)
     rows, counts, skips = [], {}, {}
     for pid_match, krec in sorted(overlap.items()):
         ext_events = ext_by_match.get(pid_match) or []
