@@ -2,44 +2,66 @@
  "foreign_system": "tml",
  "foreign_id": "M0WY",
  "foreign_name": "guto miguel",
- "collected_at": "2026-10-06T03:40:09.904992+00:00",
+ "collected_at": "2026-10-06T03:53:58.741327+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/m0wy?v=1",
-    "fetched_at": "2026-10-06T03:40:09.905011+00:00",
+    "fetched_at": "2026-10-06T03:53:58.741349+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22m0wy%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:10.351158+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22M0WY%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:10.854121+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "213036": {
-   "sackmann_players_row": {
-    "player_id": "213036",
-    "name_first": "Zelda",
-    "name_last": "Kuhn",
-    "hand": "U",
-    "dob": "19690804",
-    "ioc": "RSA",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "213036",
+     "name_first": "Luis Guto",
+     "name_last": "Miguel",
+     "hand": "U",
+     "dob": "20090226",
+     "ioc": "BRA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Luis%20Guto%20Miguel",
+     "fetched_at": "2026-10-06T03:53:59.195123+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "213036",
+     "name_first": "Zelda",
+     "name_last": "Kuhn",
+     "hand": "U",
+     "dob": "19690804",
+     "ioc": "RSA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zelda%20Kuhn",
+     "fetched_at": "2026-10-06T03:53:59.706224+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

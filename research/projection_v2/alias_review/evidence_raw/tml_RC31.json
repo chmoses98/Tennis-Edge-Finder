@@ -2,88 +2,78 @@
  "foreign_system": "tml",
  "foreign_id": "RC31",
  "foreign_name": "eduardo russi assumpcao",
- "collected_at": "2026-10-06T03:40:02.286058+00:00",
+ "collected_at": "2026-10-06T03:53:52.242396+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/rc31?v=1",
-    "fetched_at": "2026-10-06T03:40:02.286078+00:00",
+    "fetched_at": "2026-10-06T03:53:52.242416+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22rc31%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:02.733290+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22RC31%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:03.230760+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "111796": {
-   "sackmann_players_row": {
-    "player_id": "111796",
-    "name_first": "Eduardo",
-    "name_last": "Russi",
-    "hand": "R",
-    "dob": "19950209",
-    "ioc": "BRA",
-    "height": "",
-    "wikidata_id": "Q24322615",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q24322615.json",
-    "fetched_at": "2026-10-06T03:40:03.729402+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q24322615",
-     "label_en": "Eduardo Russi Assump\u00e7\u00e3o",
-     "label_zh": null,
-     "aliases_en": [],
-     "atp_id": [
-      "RC31"
-     ],
-     "itf_id": [
-      "eduardo-russi/800337051/bra"
-     ],
-     "date_of_birth": [
-      "+1995-02-09T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q155"
-     ],
-     "country_for_sport": [
-      "Q155"
-     ],
-     "given_name": [
-      "Q18130894"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/rc31?v=1",
-     "fetched_at": "2026-10-06T03:40:04.352995+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "111796",
+     "name_first": "Eduardo",
+     "name_last": "Russi",
+     "hand": "R",
+     "dob": "19950209",
+     "ioc": "BRA",
+     "height": "",
+     "wikidata_id": "Q24322615",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=eduardo-russi/800337051/bra",
-     "fetched_at": "2026-10-06T03:40:04.805085+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q24322615.json",
+     "fetched_at": "2026-10-06T03:53:52.693961+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q24322615",
+      "label_en": "Eduardo Russi Assump\u00e7\u00e3o",
+      "label_zh": null,
+      "aliases_en": [],
+      "atp_id": [
+       "RC31"
+      ],
+      "itf_id": [
+       "eduardo-russi/800337051/bra"
+      ],
+      "date_of_birth": [
+       "+1995-02-09T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q155"
+      ],
+      "country_for_sport": [
+       "Q155"
+      ],
+      "given_name": [
+       "Q18130894"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/rc31?v=1",
+      "fetched_at": "2026-10-06T03:53:53.363713+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800337051",
+      "fetched_at": "2026-10-06T03:53:53.825242+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }

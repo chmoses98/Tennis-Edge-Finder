@@ -2,44 +2,43 @@
  "foreign_system": "tml",
  "foreign_id": "R438",
  "foreign_name": "augusto ricciardi",
- "collected_at": "2026-10-06T03:39:50.363763+00:00",
+ "collected_at": "2026-10-06T03:53:40.745841+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/r438?v=1",
-    "fetched_at": "2026-10-06T03:39:50.363783+00:00",
+    "fetched_at": "2026-10-06T03:53:40.745862+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22r438%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:39:50.810404+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22R438%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:39:51.315980+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "108943": {
-   "sackmann_players_row": {
-    "player_id": "108943",
-    "name_first": "Augusto",
-    "name_last": "Ricciardi Castelli",
-    "hand": "U",
-    "dob": "19790715",
-    "ioc": "URU",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "108943",
+     "name_first": "Augusto",
+     "name_last": "Ricciardi Castelli",
+     "hand": "U",
+     "dob": "19790715",
+     "ioc": "URU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Augusto%20Ricciardi%20Castelli",
+     "fetched_at": "2026-10-06T03:53:41.196037+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

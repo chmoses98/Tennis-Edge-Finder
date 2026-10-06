@@ -2,44 +2,89 @@
  "foreign_system": "tml",
  "foreign_id": "Z363",
  "foreign_name": "marcelo zormann",
- "collected_at": "2026-10-06T03:40:29.836131+00:00",
+ "collected_at": "2026-10-06T03:54:17.758464+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/z363?v=1",
-    "fetched_at": "2026-10-06T03:40:29.836152+00:00",
+    "fetched_at": "2026-10-06T03:54:17.758484+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22z363%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:30.286814+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22Z363%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:30.788382+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "110774": {
-   "sackmann_players_row": {
-    "player_id": "110774",
-    "name_first": "Marcelo",
-    "name_last": "Zormann Da Silva",
-    "hand": "R",
-    "dob": "19960610",
-    "ioc": "BRA",
-    "height": "180",
-    "wikidata_id": "",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "110774",
+     "name_first": "Marcelo",
+     "name_last": "Zormann Da Silva",
+     "hand": "R",
+     "dob": "19960610",
+     "ioc": "BRA",
+     "height": "180",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Marcelo%20Zormann%20Da%20Silva",
+     "fetched_at": "2026-10-06T03:54:18.214356+00:00",
+     "status": 200,
+     "hits": [
+      "Q17327545"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q17327545.json",
+       "fetched_at": "2026-10-06T03:54:18.833800+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q17327545",
+        "label_en": "Marcelo Zormann",
+        "label_zh": "\u9a6c\u585e\u6d1b\u00b7\u7d22\u5c14\u66fc",
+        "aliases_en": [
+         "Marcelo Zormann da Silva"
+        ],
+        "atp_id": [
+         "Z363"
+        ],
+        "itf_id": [
+         "marcelo-zormann/800353721/bra"
+        ],
+        "date_of_birth": [
+         "+1996-06-10T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q155"
+        ],
+        "country_for_sport": [
+         "Q155"
+        ],
+        "given_name": [
+         "Q2372965"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/z363?v=1",
+      "fetched_at": "2026-10-06T03:54:19.530279+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800353721",
+      "fetched_at": "2026-10-06T03:54:19.982362+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
    }
   }
  }

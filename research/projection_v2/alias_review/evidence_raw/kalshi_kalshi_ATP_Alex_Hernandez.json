@@ -1,0 +1,156 @@
+{
+ "foreign_system": "kalshi",
+ "foreign_id": "kalshi:ATP:Alex Hernandez",
+ "foreign_name": "Alex Hernandez",
+ "collected_at": "2026-10-06T03:54:40.484948+00:00",
+ "foreign": {
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Alex%20Hernandez",
+   "fetched_at": "2026-10-06T03:54:40.484979+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Too Many Requests",
+   "hits": [],
+   "players": []
+  },
+  "tour_profiles": []
+ },
+ "canonical": {
+  "103060": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "103060",
+     "name_first": "Alejandro",
+     "name_last": "Hernandez",
+     "hand": "R",
+     "dob": "19771001",
+     "ioc": "MEX",
+     "height": "180",
+     "wikidata_id": "Q4714572",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4714572.json",
+     "fetched_at": "2026-10-06T03:54:40.997240+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q4714572",
+      "label_en": "Alejandro Hern\u00e1ndez Julia",
+      "label_zh": null,
+      "aliases_en": [
+       "Alejandro Hernandez Julia"
+      ],
+      "atp_id": [
+       "H346"
+      ],
+      "itf_id": [
+       "alejandro-hernandez/800184106/mex"
+      ],
+      "date_of_birth": [
+       "+1977-10-01T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q96"
+      ],
+      "country_for_sport": [
+       "Q96"
+      ],
+      "given_name": [
+       "Q1707169"
+      ],
+      "family_name": [
+       "Q12175844"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/h346?v=1",
+      "fetched_at": "2026-10-06T03:54:41.694959+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800184106",
+      "fetched_at": "2026-10-06T03:54:42.141986+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
+  },
+  "122490": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "122490",
+     "name_first": "Antonio J",
+     "name_last": "Ayala Hernandez",
+     "hand": "R",
+     "dob": "19950509",
+     "ioc": "ESP",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Antonio%20J%20Ayala%20Hernandez",
+     "fetched_at": "2026-10-06T03:54:43.041894+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  },
+  "212928": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212928",
+     "name_first": "Angel",
+     "name_last": "Hernandez",
+     "hand": "U",
+     "dob": "",
+     "ioc": "VEN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Angel%20Hernandez",
+     "fetched_at": "2026-10-06T03:54:43.552640+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212928",
+     "name_first": "Sonal",
+     "name_last": "Marker",
+     "hand": "U",
+     "dob": "19760109",
+     "ioc": "IND",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Sonal%20Marker",
+     "fetched_at": "2026-10-06T03:54:44.061538+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

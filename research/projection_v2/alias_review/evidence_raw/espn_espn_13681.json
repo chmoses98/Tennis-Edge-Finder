@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13681",
  "foreign_name": "ren yufei",
- "collected_at": "2026-10-06T03:38:11.608193+00:00",
+ "collected_at": "2026-10-06T03:51:03.336273+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13681",
-    "fetched_at": "2026-10-06T03:38:11.608218+00:00",
+    "fetched_at": "2026-10-06T03:51:03.336299+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13681?lang=en&region=us",
@@ -214,25 +214,70 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13681",
-    "fetched_at": "2026-10-06T03:38:12.165352+00:00",
+    "fetched_at": "2026-10-06T03:51:03.899917+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Ren%20Yufei",
+   "fetched_at": "2026-10-06T03:51:04.468541+00:00",
+   "status": 200,
+   "hits": [
+    "Q118406101"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q118406101.json",
+     "fetched_at": "2026-10-06T03:51:05.061906+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q118406101",
+      "label_en": "Ren Yufei",
+      "label_zh": "\u4efb\u5b87\u98db",
+      "aliases_en": [],
+      "wta_id": [
+       "332913"
+      ],
+      "itf_id": [
+       "yufei-ren/800543419/chn"
+      ],
+      "date_of_birth": [
+       "+2006-04-11T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "260913": {
-   "sackmann_players_row": {
-    "player_id": "260913",
-    "name_first": "Yufei",
-    "name_last": "Ren",
-    "hand": "R",
-    "dob": "20060411",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "260913",
+     "name_first": "Yufei",
+     "name_last": "Ren",
+     "hand": "R",
+     "dob": "20060411",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yufei%20Ren",
+     "fetched_at": "2026-10-06T03:51:05.628693+00:00",
+     "status": 200,
+     "hits": [
+      "Q131009737"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

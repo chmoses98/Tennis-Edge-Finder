@@ -2,44 +2,42 @@
  "foreign_system": "tml",
  "foreign_id": "CN08",
  "foreign_name": "jordan correia",
- "collected_at": "2026-10-06T03:40:19.115249+00:00",
+ "collected_at": "2026-10-06T03:54:08.575152+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/cn08?v=1",
-    "fetched_at": "2026-10-06T03:40:19.115270+00:00",
+    "fetched_at": "2026-10-06T03:54:08.575173+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22cn08%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:19.568776+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22CN08%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:20.070213+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "144756": {
-   "sackmann_players_row": {
-    "player_id": "144756",
-    "name_first": "Jordan",
-    "name_last": "Correia Passos Do Carmo",
-    "hand": "U",
-    "dob": "19970705",
-    "ioc": "BRA",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "144756",
+     "name_first": "Jordan",
+     "name_last": "Correia Passos Do Carmo",
+     "hand": "U",
+     "dob": "19970705",
+     "ioc": "BRA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Jordan%20Correia%20Passos%20Do%20Carmo",
+     "fetched_at": "2026-10-06T03:54:09.031109+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

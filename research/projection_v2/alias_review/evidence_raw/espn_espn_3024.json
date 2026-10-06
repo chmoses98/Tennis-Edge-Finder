@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:3024",
  "foreign_name": "zhang zhizhen",
- "collected_at": "2026-10-06T03:39:11.966395+00:00",
+ "collected_at": "2026-10-06T03:52:46.383156+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/3024",
-    "fetched_at": "2026-10-06T03:39:11.966420+00:00",
+    "fetched_at": "2026-10-06T03:52:46.383184+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/3024?lang=en&region=us",
@@ -224,69 +224,79 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/3024",
-    "fetched_at": "2026-10-06T03:39:12.462054+00:00",
+    "fetched_at": "2026-10-06T03:52:46.943688+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zhang%20Zhizhen",
+   "fetched_at": "2026-10-06T03:52:47.521166+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Too Many Requests",
+   "hits": [],
+   "players": []
+  }
  },
  "canonical": {
   "111190": {
-   "sackmann_players_row": {
-    "player_id": "111190",
-    "name_first": "Zhizhen",
-    "name_last": "Zhang",
-    "hand": "R",
-    "dob": "19961016",
-    "ioc": "CHN",
-    "height": "193",
-    "wikidata_id": "Q21623382",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q21623382.json",
-    "fetched_at": "2026-10-06T03:39:13.013465+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q21623382",
-     "label_en": "Zhang Zhizhen",
-     "label_zh": "\u5f20\u4e4b\u81fb",
-     "aliases_en": [],
-     "atp_id": [
-      "Z371"
-     ],
-     "itf_id": [
-      "zhizhen-zhang/800335875/chn"
-     ],
-     "date_of_birth": [
-      "+1996-10-16T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q148"
-     ],
-     "country_for_sport": [
-      "Q148"
-     ],
-     "family_name": [
-      "Q804909"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/z371?v=1",
-     "fetched_at": "2026-10-06T03:39:13.745335+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "111190",
+     "name_first": "Zhizhen",
+     "name_last": "Zhang",
+     "hand": "R",
+     "dob": "19961016",
+     "ioc": "CHN",
+     "height": "193",
+     "wikidata_id": "Q21623382",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=zhizhen-zhang/800335875/chn",
-     "fetched_at": "2026-10-06T03:39:14.197868+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q21623382.json",
+     "fetched_at": "2026-10-06T03:52:48.033678+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q21623382",
+      "label_en": "Zhang Zhizhen",
+      "label_zh": "\u5f20\u4e4b\u81fb",
+      "aliases_en": [],
+      "atp_id": [
+       "Z371"
+      ],
+      "itf_id": [
+       "zhizhen-zhang/800335875/chn"
+      ],
+      "date_of_birth": [
+       "+1996-10-16T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ],
+      "family_name": [
+       "Q804909"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/z371?v=1",
+      "fetched_at": "2026-10-06T03:52:48.609443+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800335875",
+      "fetched_at": "2026-10-06T03:52:49.063702+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }

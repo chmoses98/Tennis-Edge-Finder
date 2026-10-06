@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:2916",
  "foreign_name": "yuan yue",
- "collected_at": "2026-10-06T03:38:57.912278+00:00",
+ "collected_at": "2026-10-06T03:52:24.977228+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2916",
-    "fetched_at": "2026-10-06T03:38:57.912301+00:00",
+    "fetched_at": "2026-10-06T03:52:24.977256+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2916?lang=en&region=us",
@@ -222,25 +222,104 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2916",
-    "fetched_at": "2026-10-06T03:38:58.433643+00:00",
+    "fetched_at": "2026-10-06T03:52:25.551599+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yuan%20Yue",
+   "fetched_at": "2026-10-06T03:52:26.112522+00:00",
+   "status": 200,
+   "hits": [
+    "Q104143505",
+    "Q10889686",
+    "Q62647853",
+    "Q56248480"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q56248480.json",
+     "fetched_at": "2026-10-06T03:52:28.430589+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q56248480",
+      "label_en": "Yuan Yue",
+      "label_zh": "\u8881\u60a6",
+      "aliases_en": [],
+      "wta_id": [
+       "324325"
+      ],
+      "itf_id": [
+       "yue-yuan/800417244/chn"
+      ],
+      "date_of_birth": [
+       "+1998-09-25T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ],
+      "given_name": [
+       "Q106967914"
+      ],
+      "family_name": [
+       "Q716212"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "206294": {
-   "sackmann_players_row": {
-    "player_id": "206294",
-    "name_first": "Yue",
-    "name_last": "Yuan",
-    "hand": "R",
-    "dob": "19980925",
-    "ioc": "CHN",
-    "height": "184",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "206294",
+     "name_first": "Kyle",
+     "name_last": "Joseph",
+     "hand": "R",
+     "dob": "19951027",
+     "ioc": "ANT",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Kyle%20Joseph",
+     "fetched_at": "2026-10-06T03:52:29.145486+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "206294",
+     "name_first": "Yue",
+     "name_last": "Yuan",
+     "hand": "R",
+     "dob": "19980925",
+     "ioc": "CHN",
+     "height": "184",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yue%20Yuan",
+     "fetched_at": "2026-10-06T03:52:29.656259+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

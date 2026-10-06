@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:15462",
  "foreign_name": "zhang tianhui",
- "collected_at": "2026-10-06T03:39:06.900859+00:00",
+ "collected_at": "2026-10-06T03:52:38.279599+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15462",
-    "fetched_at": "2026-10-06T03:39:06.900884+00:00",
+    "fetched_at": "2026-10-06T03:52:38.279642+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15462?lang=en&region=us",
@@ -220,25 +220,67 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15462",
-    "fetched_at": "2026-10-06T03:39:07.429092+00:00",
+    "fetched_at": "2026-10-06T03:52:38.860870+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zhang%20Tianhui",
+   "fetched_at": "2026-10-06T03:52:39.450570+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Too Many Requests",
+   "hits": [],
+   "players": []
+  }
  },
  "canonical": {
   "212221": {
-   "sackmann_players_row": {
-    "player_id": "212221",
-    "name_first": "Stanislava",
-    "name_last": "Cozirscaia",
-    "hand": "U",
-    "dob": "19890630",
-    "ioc": "MDA",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212221",
+     "name_first": "Tianhui",
+     "name_last": "Zhang",
+     "hand": "U",
+     "dob": "20060219",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Tianhui%20Zhang",
+     "fetched_at": "2026-10-06T03:52:39.970229+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212221",
+     "name_first": "Stanislava",
+     "name_last": "Cozirscaia",
+     "hand": "U",
+     "dob": "19890630",
+     "ioc": "MDA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Stanislava%20Cozirscaia",
+     "fetched_at": "2026-10-06T03:52:40.485441+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

@@ -2,44 +2,66 @@
  "foreign_system": "tml",
  "foreign_id": "A0F9",
  "foreign_name": "emiliano aguilera",
- "collected_at": "2026-10-06T03:40:05.535288+00:00",
+ "collected_at": "2026-10-06T03:53:54.822838+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/a0f9?v=1",
-    "fetched_at": "2026-10-06T03:40:05.535308+00:00",
+    "fetched_at": "2026-10-06T03:53:54.822858+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22a0f9%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:06.004273+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22A0F9%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:06.506244+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "212510": {
-   "sackmann_players_row": {
-    "player_id": "212510",
-    "name_first": "Yvonne",
-    "name_last": "Flynn",
-    "hand": "U",
-    "dob": "19770727",
-    "ioc": "IRL",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212510",
+     "name_first": "Emiliano",
+     "name_last": "Aguilera Guerrero",
+     "hand": "R",
+     "dob": "20030211",
+     "ioc": "MEX",
+     "height": "183",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Emiliano%20Aguilera%20Guerrero",
+     "fetched_at": "2026-10-06T03:53:55.272357+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212510",
+     "name_first": "Yvonne",
+     "name_last": "Flynn",
+     "hand": "U",
+     "dob": "19770727",
+     "ioc": "IRL",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yvonne%20Flynn",
+     "fetched_at": "2026-10-06T03:53:55.786735+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

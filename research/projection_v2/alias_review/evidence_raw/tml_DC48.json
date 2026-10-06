@@ -2,84 +2,74 @@
  "foreign_system": "tml",
  "foreign_id": "DC48",
  "foreign_name": "murkel dellien",
- "collected_at": "2026-10-06T03:40:31.290536+00:00",
+ "collected_at": "2026-10-06T03:54:20.659124+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/dc48?v=1",
-    "fetched_at": "2026-10-06T03:40:31.290570+00:00",
+    "fetched_at": "2026-10-06T03:54:20.659144+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22dc48%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:31.743913+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22DC48%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:32.245196+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "123961": {
-   "sackmann_players_row": {
-    "player_id": "123961",
-    "name_first": "Murkel Alejandro",
-    "name_last": "Dellien Velasco",
-    "hand": "R",
-    "dob": "19970916",
-    "ioc": "BOL",
-    "height": "193",
-    "wikidata_id": "Q108601101",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q108601101.json",
-    "fetched_at": "2026-10-06T03:40:32.742351+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q108601101",
-     "label_en": "Murkel Dellien",
-     "label_zh": "\u9ed8\u514b\u5c14\u00b7\u5fb7\u91cc\u6069",
-     "aliases_en": [
-      "Murkel Alejandro Dellien Velasco"
-     ],
-     "atp_id": [
-      "DC48"
-     ],
-     "itf_id": [
-      "murkel-dellien/800356373/bol"
-     ],
-     "date_of_birth": [
-      "+1997-09-16T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q750"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/dc48?v=1",
-     "fetched_at": "2026-10-06T03:40:33.429512+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "123961",
+     "name_first": "Murkel Alejandro",
+     "name_last": "Dellien Velasco",
+     "hand": "R",
+     "dob": "19970916",
+     "ioc": "BOL",
+     "height": "193",
+     "wikidata_id": "Q108601101",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=murkel-dellien/800356373/bol",
-     "fetched_at": "2026-10-06T03:40:33.881258+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q108601101.json",
+     "fetched_at": "2026-10-06T03:54:21.112383+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q108601101",
+      "label_en": "Murkel Dellien",
+      "label_zh": "\u9ed8\u514b\u5c14\u00b7\u5fb7\u91cc\u6069",
+      "aliases_en": [
+       "Murkel Alejandro Dellien Velasco"
+      ],
+      "atp_id": [
+       "DC48"
+      ],
+      "itf_id": [
+       "murkel-dellien/800356373/bol"
+      ],
+      "date_of_birth": [
+       "+1997-09-16T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q750"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/dc48?v=1",
+      "fetched_at": "2026-10-06T03:54:21.672776+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800356373",
+      "fetched_at": "2026-10-06T03:54:22.124947+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }

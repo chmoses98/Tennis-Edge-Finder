@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13680",
  "foreign_name": "li zongyu",
- "collected_at": "2026-10-06T03:38:01.861648+00:00",
+ "collected_at": "2026-10-06T03:50:43.438685+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13680",
-    "fetched_at": "2026-10-06T03:38:01.861674+00:00",
+    "fetched_at": "2026-10-06T03:50:43.438712+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13680?lang=en&region=us",
@@ -214,25 +214,44 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13680",
-    "fetched_at": "2026-10-06T03:38:02.384780+00:00",
+    "fetched_at": "2026-10-06T03:50:44.006407+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Li%20Zongyu",
+   "fetched_at": "2026-10-06T03:50:44.566215+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Too Many Requests",
+   "hits": [],
+   "players": []
+  }
  },
  "canonical": {
   "252493": {
-   "sackmann_players_row": {
-    "player_id": "252493",
-    "name_first": "Zongyu",
-    "name_last": "Li",
-    "hand": "U",
-    "dob": "20030527",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "252493",
+     "name_first": "Zongyu",
+     "name_last": "Li",
+     "hand": "U",
+     "dob": "20030527",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zongyu%20Li",
+     "fetched_at": "2026-10-06T03:50:45.075469+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

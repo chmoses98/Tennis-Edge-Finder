@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:17856",
  "foreign_name": "ye shiyu",
- "collected_at": "2026-10-06T03:38:51.131961+00:00",
+ "collected_at": "2026-10-06T03:52:08.396118+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/17856",
-    "fetched_at": "2026-10-06T03:38:51.131988+00:00",
+    "fetched_at": "2026-10-06T03:52:08.396146+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/17856?lang=en&region=us",
@@ -210,25 +210,46 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/17856",
-    "fetched_at": "2026-10-06T03:38:51.625542+00:00",
+    "fetched_at": "2026-10-06T03:52:08.968466+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Ye%20Shiyu",
+   "fetched_at": "2026-10-06T03:52:09.528024+00:00",
+   "status": 200,
+   "hits": [
+    "Q45515716"
+   ],
+   "players": []
+  }
  },
  "canonical": {
   "264085": {
-   "sackmann_players_row": {
-    "player_id": "264085",
-    "name_first": "Shiyu",
-    "name_last": "Ye",
-    "hand": "R",
-    "dob": "20070420",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "264085",
+     "name_first": "Shiyu",
+     "name_last": "Ye",
+     "hand": "R",
+     "dob": "20070420",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Shiyu%20Ye",
+     "fetched_at": "2026-10-06T03:52:10.659195+00:00",
+     "status": 200,
+     "hits": [
+      "Q135226330"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

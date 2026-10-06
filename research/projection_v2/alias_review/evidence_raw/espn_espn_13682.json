@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13682",
  "foreign_name": "yao xinxin",
- "collected_at": "2026-10-06T03:38:50.079070+00:00",
+ "collected_at": "2026-10-06T03:52:05.448585+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13682",
-    "fetched_at": "2026-10-06T03:38:50.079095+00:00",
+    "fetched_at": "2026-10-06T03:52:05.448624+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13682?lang=en&region=us",
@@ -214,25 +214,74 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13682",
-    "fetched_at": "2026-10-06T03:38:50.596942+00:00",
+    "fetched_at": "2026-10-06T03:52:06.009735+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yao%20Xinxin",
+   "fetched_at": "2026-10-06T03:52:06.572034+00:00",
+   "status": 200,
+   "hits": [
+    "Q118408878"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q118408878.json",
+     "fetched_at": "2026-10-06T03:52:07.159573+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q118408878",
+      "label_en": "Yao Xinxin",
+      "label_zh": "\u59da\u6b23\u6b23",
+      "aliases_en": [],
+      "wta_id": [
+       "331361"
+      ],
+      "itf_id": [
+       "xinxin-yao/800512672/chn"
+      ],
+      "date_of_birth": [
+       "+2003-10-20T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "given_name": [
+       "Q93989258"
+      ],
+      "family_name": [
+       "Q2233698"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "252587": {
-   "sackmann_players_row": {
-    "player_id": "252587",
-    "name_first": "Xinxin",
-    "name_last": "Yao",
-    "hand": "L",
-    "dob": "20031020",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "252587",
+     "name_first": "Xinxin",
+     "name_last": "Yao",
+     "hand": "L",
+     "dob": "20031020",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Xinxin%20Yao",
+     "fetched_at": "2026-10-06T03:52:07.816528+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

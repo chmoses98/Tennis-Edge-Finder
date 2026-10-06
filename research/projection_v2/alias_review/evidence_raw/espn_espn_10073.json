@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:10073",
  "foreign_name": "shang juncheng",
- "collected_at": "2026-10-06T03:38:13.839285+00:00",
+ "collected_at": "2026-10-06T03:51:10.929477+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/10073",
-    "fetched_at": "2026-10-06T03:38:13.839310+00:00",
+    "fetched_at": "2026-10-06T03:51:10.929504+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/10073?lang=en&region=us",
@@ -228,25 +228,141 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/10073",
-    "fetched_at": "2026-10-06T03:38:14.353002+00:00",
+    "fetched_at": "2026-10-06T03:51:11.487755+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Shang%20Juncheng",
+   "fetched_at": "2026-10-06T03:51:12.084330+00:00",
+   "status": 200,
+   "hits": [
+    "Q106466705"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q106466705.json",
+     "fetched_at": "2026-10-06T03:51:12.681101+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q106466705",
+      "label_en": "Shang Juncheng",
+      "label_zh": "\u5546\u7ae3\u7a0b",
+      "aliases_en": [
+       "Juncheng Shang",
+       "Jerry Shang"
+      ],
+      "atp_id": [
+       "S0RE"
+      ],
+      "itf_id": [
+       "juncheng-shang/800559106/chn"
+      ],
+      "date_of_birth": [
+       "+2005-02-02T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "209992": {
-   "sackmann_players_row": {
-    "player_id": "209992",
-    "name_first": "Lara",
-    "name_last": "Alsamman",
-    "hand": "U",
-    "dob": "19870413",
-    "ioc": "SYR",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "209992",
+     "name_first": "Juncheng",
+     "name_last": "Shang",
+     "hand": "L",
+     "dob": "20050202",
+     "ioc": "CHN",
+     "height": "180",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Juncheng%20Shang",
+     "fetched_at": "2026-10-06T03:51:13.392653+00:00",
+     "status": 200,
+     "hits": [
+      "Q106466705"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q106466705.json",
+       "fetched_at": "2026-10-06T03:51:13.978269+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q106466705",
+        "label_en": "Shang Juncheng",
+        "label_zh": "\u5546\u7ae3\u7a0b",
+        "aliases_en": [
+         "Juncheng Shang",
+         "Jerry Shang"
+        ],
+        "atp_id": [
+         "S0RE"
+        ],
+        "itf_id": [
+         "juncheng-shang/800559106/chn"
+        ],
+        "date_of_birth": [
+         "+2005-02-02T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q148"
+        ],
+        "country_for_sport": [
+         "Q148"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/s0re?v=1",
+      "fetched_at": "2026-10-06T03:51:14.651569+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800559106",
+      "fetched_at": "2026-10-06T03:51:15.179278+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "209992",
+     "name_first": "Lara",
+     "name_last": "Alsamman",
+     "hand": "U",
+     "dob": "19870413",
+     "ioc": "SYR",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Lara%20Alsamman",
+     "fetched_at": "2026-10-06T03:51:15.956717+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

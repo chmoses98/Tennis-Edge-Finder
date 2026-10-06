@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13482",
  "foreign_name": "xiao linang",
- "collected_at": "2026-10-06T03:38:44.689039+00:00",
+ "collected_at": "2026-10-06T03:51:57.622976+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13482",
-    "fetched_at": "2026-10-06T03:38:44.689064+00:00",
+    "fetched_at": "2026-10-06T03:51:57.623003+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13482?lang=en&region=us",
@@ -224,25 +224,67 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13482",
-    "fetched_at": "2026-10-06T03:38:45.274107+00:00",
+    "fetched_at": "2026-10-06T03:51:58.192085+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Xiao%20Linang",
+   "fetched_at": "2026-10-06T03:51:58.762891+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Too Many Requests",
+   "hits": [],
+   "players": []
+  }
  },
  "canonical": {
   "209038": {
-   "sackmann_players_row": {
-    "player_id": "209038",
-    "name_first": "Kristyna",
-    "name_last": "Sramkova",
-    "hand": "U",
-    "dob": "19881230",
-    "ioc": "CZE",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "209038",
+     "name_first": "Linang",
+     "name_last": "Xiao",
+     "hand": "R",
+     "dob": "20000318",
+     "ioc": "CHN",
+     "height": "173",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Linang%20Xiao",
+     "fetched_at": "2026-10-06T03:51:59.274467+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "209038",
+     "name_first": "Kristyna",
+     "name_last": "Sramkova",
+     "hand": "U",
+     "dob": "19881230",
+     "ioc": "CZE",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Kristyna%20Sramkova",
+     "fetched_at": "2026-10-06T03:51:59.783042+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

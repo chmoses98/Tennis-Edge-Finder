@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13708",
  "foreign_name": "tian fangran",
- "collected_at": "2026-10-06T03:38:26.085001+00:00",
+ "collected_at": "2026-10-06T03:51:30.322891+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13708",
-    "fetched_at": "2026-10-06T03:38:26.085025+00:00",
+    "fetched_at": "2026-10-06T03:51:30.322918+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13708?lang=en&region=us",
@@ -216,25 +216,44 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13708",
-    "fetched_at": "2026-10-06T03:38:26.718579+00:00",
+    "fetched_at": "2026-10-06T03:51:30.881852+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Tian%20Fangran",
+   "fetched_at": "2026-10-06T03:51:31.446372+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Too Many Requests",
+   "hits": [],
+   "players": []
+  }
  },
  "canonical": {
   "221885": {
-   "sackmann_players_row": {
-    "player_id": "221885",
-    "name_first": "Fangran",
-    "name_last": "Tian",
-    "hand": "R",
-    "dob": "20030810",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "221885",
+     "name_first": "Fangran",
+     "name_last": "Tian",
+     "hand": "R",
+     "dob": "20030810",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Fangran%20Tian",
+     "fetched_at": "2026-10-06T03:51:31.954243+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

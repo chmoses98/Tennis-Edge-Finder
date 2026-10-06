@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:10239",
  "foreign_name": "daniel merida",
- "collected_at": "2026-10-06T03:37:30.842908+00:00",
+ "collected_at": "2026-10-06T03:49:47.412104+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/10239",
-    "fetched_at": "2026-10-06T03:37:30.842934+00:00",
+    "fetched_at": "2026-10-06T03:49:47.412131+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/10239?lang=en&region=us",
@@ -224,25 +224,99 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/10239",
-    "fetched_at": "2026-10-06T03:37:31.434010+00:00",
+    "fetched_at": "2026-10-06T03:49:47.987171+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Daniel%20Merida",
+   "fetched_at": "2026-10-06T03:49:48.578006+00:00",
+   "status": 200,
+   "hits": [
+    "Q132459405"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q132459405.json",
+     "fetched_at": "2026-10-06T03:49:49.193872+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q132459405",
+      "label_en": "Daniel M\u00e9rida",
+      "label_zh": "\u4e39\u5c3c\u5c14\u00b7\u6885\u91cc\u8fbe",
+      "aliases_en": [],
+      "atp_id": [
+       "M0N7"
+      ],
+      "itf_id": [
+       "daniel-merida/800505935/esp"
+      ],
+      "date_of_birth": [
+       "+2004-09-26T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q29"
+      ],
+      "country_for_sport": [
+       "Q29"
+      ],
+      "given_name": [
+       "Q14516546"
+      ],
+      "family_name": [
+       "Q47537067"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "210017": {
-   "sackmann_players_row": {
-    "player_id": "210017",
-    "name_first": "Luiza",
-    "name_last": "Coman",
-    "hand": "U",
-    "dob": "19900223",
-    "ioc": "ROU",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "210017",
+     "name_first": "Daniel",
+     "name_last": "Merida Aguilar",
+     "hand": "R",
+     "dob": "20040926",
+     "ioc": "ESP",
+     "height": "188",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Daniel%20Merida%20Aguilar",
+     "fetched_at": "2026-10-06T03:49:49.952457+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "210017",
+     "name_first": "Luiza",
+     "name_last": "Coman",
+     "hand": "U",
+     "dob": "19900223",
+     "ioc": "ROU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Luiza%20Coman",
+     "fetched_at": "2026-10-06T03:49:50.529522+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

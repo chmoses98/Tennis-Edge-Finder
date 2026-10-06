@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:17802",
  "foreign_name": "sara alejandra lozano avellaneda",
- "collected_at": "2026-10-06T03:38:12.706338+00:00",
+ "collected_at": "2026-10-06T03:51:06.858739+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/17802",
-    "fetched_at": "2026-10-06T03:38:12.706363+00:00",
+    "fetched_at": "2026-10-06T03:51:06.858766+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/17802?lang=en&region=us",
@@ -211,25 +211,100 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/17802",
-    "fetched_at": "2026-10-06T03:38:13.320601+00:00",
+    "fetched_at": "2026-10-06T03:51:07.416107+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Sara%20Alejandra%20Lozano%20Avellaneda",
+   "fetched_at": "2026-10-06T03:51:07.974989+00:00",
+   "status": 200,
+   "hits": [
+    "Q139816890"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q139816890.json",
+     "fetched_at": "2026-10-06T03:51:08.573229+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q139816890",
+      "label_en": "Sara Alejandra Lozano Avellaneda",
+      "label_zh": null,
+      "aliases_en": [
+       "Sara Alejandra Lozano",
+       "Sara Lozano"
+      ],
+      "wta_id": [
+       "337189"
+      ],
+      "itf_id": [
+       "sara-alejandra-lozano-avellaneda/800706732/col"
+      ],
+      "date_of_birth": [
+       "+2011-04-02T00:00:00Z"
+      ],
+      "given_name": [
+       "Q833345",
+       "Q4714432"
+      ],
+      "family_name": [
+       "Q16875844",
+       "Q37563542"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "205957": {
-   "sackmann_players_row": {
-    "player_id": "205957",
-    "name_first": "Alejandra",
-    "name_last": "Lozano",
-    "hand": "R",
-    "dob": "19910614",
-    "ioc": "MEX",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "205957",
+     "name_first": "Nemanja",
+     "name_last": "Makic",
+     "hand": "U",
+     "dob": "20000501",
+     "ioc": "BIH",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Nemanja%20Makic",
+     "fetched_at": "2026-10-06T03:51:09.135532+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "205957",
+     "name_first": "Alejandra",
+     "name_last": "Lozano",
+     "hand": "R",
+     "dob": "19910614",
+     "ioc": "MEX",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Alejandra%20Lozano",
+     "fetched_at": "2026-10-06T03:51:09.698193+00:00",
+     "status": 200,
+     "hits": [
+      "Q116378930"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

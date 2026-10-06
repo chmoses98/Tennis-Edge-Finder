@@ -2,93 +2,83 @@
  "foreign_system": "tml",
  "foreign_id": "CA33",
  "foreign_name": "inigo cervantes",
- "collected_at": "2026-10-06T03:40:15.717548+00:00",
+ "collected_at": "2026-10-06T03:54:06.386748+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/ca33?v=1",
-    "fetched_at": "2026-10-06T03:40:15.717571+00:00",
+    "fetched_at": "2026-10-06T03:54:06.386770+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22ca33%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:16.167746+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22CA33%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:16.666208+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "105438": {
-   "sackmann_players_row": {
-    "player_id": "105438",
-    "name_first": "Inigo",
-    "name_last": "Cervantes Huegun",
-    "hand": "R",
-    "dob": "19891130",
-    "ioc": "ESP",
-    "height": "180",
-    "wikidata_id": "Q291871",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q291871.json",
-    "fetched_at": "2026-10-06T03:40:17.169433+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q291871",
-     "label_en": "I\u00f1igo Cervantes Huegun",
-     "label_zh": "\u4f0a\u5c3c\u6208\u00b7\u585e\u4e07\u63d0\u65af",
-     "aliases_en": [
-      "\u00cd\u00f1igo Cervantes-Huegun Garc\u00eda"
-     ],
-     "atp_id": [
-      "CA33"
-     ],
-     "itf_id": [
-      "inigo-cervantes-huegun/800261394/esp"
-     ],
-     "date_of_birth": [
-      "+1989-11-30T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q29"
-     ],
-     "country_for_sport": [
-      "Q29"
-     ],
-     "given_name": [
-      "Q43306123"
-     ],
-     "family_name": [
-      "Q37222317"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/ca33?v=1",
-     "fetched_at": "2026-10-06T03:40:17.815229+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "105438",
+     "name_first": "Inigo",
+     "name_last": "Cervantes Huegun",
+     "hand": "R",
+     "dob": "19891130",
+     "ioc": "ESP",
+     "height": "180",
+     "wikidata_id": "Q291871",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=inigo-cervantes-huegun/800261394/esp",
-     "fetched_at": "2026-10-06T03:40:18.260836+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q291871.json",
+     "fetched_at": "2026-10-06T03:54:06.840272+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q291871",
+      "label_en": "I\u00f1igo Cervantes Huegun",
+      "label_zh": "\u4f0a\u5c3c\u6208\u00b7\u585e\u4e07\u63d0\u65af",
+      "aliases_en": [
+       "\u00cd\u00f1igo Cervantes-Huegun Garc\u00eda"
+      ],
+      "atp_id": [
+       "CA33"
+      ],
+      "itf_id": [
+       "inigo-cervantes-huegun/800261394/esp"
+      ],
+      "date_of_birth": [
+       "+1989-11-30T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q29"
+      ],
+      "country_for_sport": [
+       "Q29"
+      ],
+      "given_name": [
+       "Q43306123"
+      ],
+      "family_name": [
+       "Q37222317"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/ca33?v=1",
+      "fetched_at": "2026-10-06T03:54:07.444767+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800261394",
+      "fetched_at": "2026-10-06T03:54:07.892702+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }

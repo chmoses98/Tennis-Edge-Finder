@@ -2,44 +2,69 @@
  "foreign_system": "tml",
  "foreign_id": "P0I5",
  "foreign_name": "ignacio parisca romera",
- "collected_at": "2026-10-06T03:40:14.255163+00:00",
+ "collected_at": "2026-10-06T03:54:02.282879+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/p0i5?v=1",
-    "fetched_at": "2026-10-06T03:40:14.255185+00:00",
+    "fetched_at": "2026-10-06T03:54:02.282900+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22p0i5%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:14.720652+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22P0I5%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:15.217578+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "212306": {
-   "sackmann_players_row": {
-    "player_id": "212306",
-    "name_first": "Paula",
-    "name_last": "Castro",
-    "hand": "U",
-    "dob": "19940529",
-    "ioc": "ECU",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212306",
+     "name_first": "Ignacio",
+     "name_last": "Parisca",
+     "hand": "U",
+     "dob": "20050820",
+     "ioc": "VEN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Ignacio%20Parisca",
+     "fetched_at": "2026-10-06T03:54:02.750417+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212306",
+     "name_first": "Paula",
+     "name_last": "Castro",
+     "hand": "U",
+     "dob": "19940529",
+     "ioc": "ECU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Paula%20Castro",
+     "fetched_at": "2026-10-06T03:54:03.318299+00:00",
+     "status": 200,
+     "hits": [
+      "Q57910836",
+      "Q56487414",
+      "Q57248710",
+      "Q92611595"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

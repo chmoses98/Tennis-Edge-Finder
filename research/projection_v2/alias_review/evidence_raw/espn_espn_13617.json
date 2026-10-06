@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13617",
  "foreign_name": "dang yiming",
- "collected_at": "2026-10-06T03:37:29.717275+00:00",
+ "collected_at": "2026-10-06T03:49:44.350651+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13617",
-    "fetched_at": "2026-10-06T03:37:29.717303+00:00",
+    "fetched_at": "2026-10-06T03:49:44.350680+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13617?lang=en&region=us",
@@ -210,25 +210,74 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13617",
-    "fetched_at": "2026-10-06T03:37:30.253035+00:00",
+    "fetched_at": "2026-10-06T03:49:44.963811+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Dang%20Yiming",
+   "fetched_at": "2026-10-06T03:49:45.546160+00:00",
+   "status": 200,
+   "hits": [
+    "Q132818218"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q132818218.json",
+     "fetched_at": "2026-10-06T03:49:46.177388+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q132818218",
+      "label_en": "Dang Yiming",
+      "label_zh": null,
+      "aliases_en": [],
+      "wta_id": [
+       "329671"
+      ],
+      "itf_id": [
+       "yiming-dang/800534908/chn"
+      ],
+      "date_of_birth": [
+       "+2004-08-30T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "given_name": [
+       "Q81162962"
+      ],
+      "family_name": [
+       "Q5215930"
+      ]
+     }
+    }
+   ]
+  }
  },
  "canonical": {
   "222330": {
-   "sackmann_players_row": {
-    "player_id": "222330",
-    "name_first": "Yiming",
-    "name_last": "Dang",
-    "hand": "R",
-    "dob": "20040830",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "222330",
+     "name_first": "Yiming",
+     "name_last": "Dang",
+     "hand": "R",
+     "dob": "20040830",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yiming%20Dang",
+     "fetched_at": "2026-10-06T03:49:46.823893+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

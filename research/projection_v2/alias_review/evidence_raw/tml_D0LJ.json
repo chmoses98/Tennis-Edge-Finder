@@ -2,44 +2,66 @@
  "foreign_system": "tml",
  "foreign_id": "D0LJ",
  "foreign_name": "diego dedura",
- "collected_at": "2026-10-06T03:40:00.839576+00:00",
+ "collected_at": "2026-10-06T03:53:50.769086+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/d0lj?v=1",
-    "fetched_at": "2026-10-06T03:40:00.839596+00:00",
+    "fetched_at": "2026-10-06T03:53:50.769103+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22d0lj%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:01.287362+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22D0LJ%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:01.784846+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "212309": {
-   "sackmann_players_row": {
-    "player_id": "212309",
-    "name_first": "Maria Jose",
-    "name_last": "Pintos",
-    "hand": "U",
-    "dob": "19970426",
-    "ioc": "URU",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212309",
+     "name_first": "Diego",
+     "name_last": "Dedura Palomero",
+     "hand": "L",
+     "dob": "20080312",
+     "ioc": "GER",
+     "height": "178",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Diego%20Dedura%20Palomero",
+     "fetched_at": "2026-10-06T03:53:51.216588+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212309",
+     "name_first": "Maria Jose",
+     "name_last": "Pintos",
+     "hand": "U",
+     "dob": "19970426",
+     "ioc": "URU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Maria%20Jose%20Pintos",
+     "fetched_at": "2026-10-06T03:53:51.728491+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

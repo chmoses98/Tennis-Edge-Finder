@@ -2,44 +2,64 @@
  "foreign_system": "tml",
  "foreign_id": "S0H7",
  "foreign_name": "marcelo sepulveda",
- "collected_at": "2026-10-06T03:40:28.380923+00:00",
+ "collected_at": "2026-10-06T03:54:16.148964+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/s0h7?v=1",
-    "fetched_at": "2026-10-06T03:40:28.380943+00:00",
+    "fetched_at": "2026-10-06T03:54:16.148986+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22s0h7%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:28.835705+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22S0H7%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:29.332861+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "208095": {
-   "sackmann_players_row": {
-    "player_id": "208095",
-    "name_first": "Michelle",
-    "name_last": "Aybar",
-    "hand": "U",
-    "dob": "19860614",
-    "ioc": "DOM",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "208095",
+     "name_first": "Marcelo",
+     "name_last": "Sepulveda Garza",
+     "hand": "U",
+     "dob": "20000922",
+     "ioc": "MEX",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Marcelo%20Sepulveda%20Garza",
+     "fetched_at": "2026-10-06T03:54:16.609399+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "208095",
+     "name_first": "Michelle",
+     "name_last": "Aybar",
+     "hand": "U",
+     "dob": "19860614",
+     "ioc": "DOM",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Michelle%20Aybar",
+     "fetched_at": "2026-10-06T03:54:17.179874+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

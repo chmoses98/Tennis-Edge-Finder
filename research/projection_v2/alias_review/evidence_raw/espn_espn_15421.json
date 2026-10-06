@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:15421",
  "foreign_name": "qu yihan",
- "collected_at": "2026-10-06T03:38:10.572092+00:00",
+ "collected_at": "2026-10-06T03:51:00.486124+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15421",
-    "fetched_at": "2026-10-06T03:38:10.572119+00:00",
+    "fetched_at": "2026-10-06T03:51:00.486154+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15421?lang=en&region=us",
@@ -210,25 +210,44 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15421",
-    "fetched_at": "2026-10-06T03:38:11.093492+00:00",
+    "fetched_at": "2026-10-06T03:51:01.059206+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
-  ]
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Qu%20Yihan",
+   "fetched_at": "2026-10-06T03:51:01.638226+00:00",
+   "status": 200,
+   "hits": [
+    "Q141595672"
+   ],
+   "players": []
+  }
  },
  "canonical": {
   "264086": {
-   "sackmann_players_row": {
-    "player_id": "264086",
-    "name_first": "Yihan",
-    "name_last": "Qu",
-    "hand": "U",
-    "dob": "20090322",
-    "ioc": "CHN",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "264086",
+     "name_first": "Yihan",
+     "name_last": "Qu",
+     "hand": "U",
+     "dob": "20090322",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yihan%20Qu",
+     "fetched_at": "2026-10-06T03:51:02.757019+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

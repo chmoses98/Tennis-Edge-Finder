@@ -2,88 +2,78 @@
  "foreign_system": "tml",
  "foreign_id": "SF89",
  "foreign_name": "rubin statham",
- "collected_at": "2026-10-06T03:40:42.519352+00:00",
+ "collected_at": "2026-10-06T03:54:28.475489+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/sf89?v=1",
-    "fetched_at": "2026-10-06T03:40:42.519373+00:00",
+    "fetched_at": "2026-10-06T03:54:28.475500+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22sf89%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:42.972626+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22SF89%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:43.477486+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "104907": {
-   "sackmann_players_row": {
-    "player_id": "104907",
-    "name_first": "Jose Rubin",
-    "name_last": "Statham",
-    "hand": "R",
-    "dob": "19870425",
-    "ioc": "NZL",
-    "height": "180",
-    "wikidata_id": "Q6279557",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q6279557.json",
-    "fetched_at": "2026-10-06T03:40:43.975144+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q6279557",
-     "label_en": "Rubin Statham",
-     "label_zh": "\u9c81\u5bbe\u00b7\u65af\u5766\u68ee",
-     "aliases_en": [
-      "Jose Statham",
-      "Rubin \"Jose\" Statham"
-     ],
-     "atp_id": [
-      "SF89"
-     ],
-     "itf_id": [
-      "rubin-statham/800223418/nzl"
-     ],
-     "date_of_birth": [
-      "+1987-04-25T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q664"
-     ],
-     "given_name": [
-      "Q19801116"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/sf89?v=1",
-     "fetched_at": "2026-10-06T03:40:44.577949+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "104907",
+     "name_first": "Jose Rubin",
+     "name_last": "Statham",
+     "hand": "R",
+     "dob": "19870425",
+     "ioc": "NZL",
+     "height": "180",
+     "wikidata_id": "Q6279557",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=rubin-statham/800223418/nzl",
-     "fetched_at": "2026-10-06T03:40:45.024410+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q6279557.json",
+     "fetched_at": "2026-10-06T03:54:28.932986+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q6279557",
+      "label_en": "Rubin Statham",
+      "label_zh": "\u9c81\u5bbe\u00b7\u65af\u5766\u68ee",
+      "aliases_en": [
+       "Jose Statham",
+       "Rubin \"Jose\" Statham"
+      ],
+      "atp_id": [
+       "SF89"
+      ],
+      "itf_id": [
+       "rubin-statham/800223418/nzl"
+      ],
+      "date_of_birth": [
+       "+1987-04-25T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q664"
+      ],
+      "given_name": [
+       "Q19801116"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/sf89?v=1",
+      "fetched_at": "2026-10-06T03:54:29.619786+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800223418",
+      "fetched_at": "2026-10-06T03:54:30.069209+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }

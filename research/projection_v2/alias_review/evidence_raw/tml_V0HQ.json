@@ -2,44 +2,66 @@
  "foreign_system": "tml",
  "foreign_id": "V0HQ",
  "foreign_name": "felipe virgili",
- "collected_at": "2026-10-06T03:40:08.457388+00:00",
+ "collected_at": "2026-10-06T03:53:57.268177+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/v0hq?v=1",
-    "fetched_at": "2026-10-06T03:40:08.457407+00:00",
+    "fetched_at": "2026-10-06T03:53:57.268198+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22v0hq%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:08.902162+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22V0HQ%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:09.405868+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "212854": {
-   "sackmann_players_row": {
-    "player_id": "212854",
-    "name_first": "Adriana",
-    "name_last": "Fonseca Villarroel",
-    "hand": "U",
-    "dob": "19860706",
-    "ioc": "COL",
-    "height": "",
-    "wikidata_id": "",
-    "_tour": "WTA",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212854",
+     "name_first": "Felipe",
+     "name_last": "Virgili Berini",
+     "hand": "U",
+     "dob": "20050120",
+     "ioc": "ITA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Felipe%20Virgili%20Berini",
+     "fetched_at": "2026-10-06T03:53:57.716194+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212854",
+     "name_first": "Adriana",
+     "name_last": "Fonseca Villarroel",
+     "hand": "U",
+     "dob": "19860706",
+     "ioc": "COL",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Adriana%20Fonseca%20Villarroel",
+     "fetched_at": "2026-10-06T03:53:58.228723+00:00",
+     "status": 429,
+     "error": "HTTP Error 429: Too Many Requests",
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
    }
   }
  }

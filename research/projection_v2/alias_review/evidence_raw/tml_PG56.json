@@ -2,92 +2,82 @@
  "foreign_system": "tml",
  "foreign_id": "PG56",
  "foreign_name": "jorge panta",
- "collected_at": "2026-10-06T03:40:20.569223+00:00",
+ "collected_at": "2026-10-06T03:54:09.696439+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/pg56?v=1",
-    "fetched_at": "2026-10-06T03:40:20.569244+00:00",
+    "fetched_at": "2026-10-06T03:54:09.696459+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22pg56%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:21.015565+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22PG56%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:21.514022+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "106410": {
-   "sackmann_players_row": {
-    "player_id": "106410",
-    "name_first": "Jorge Brian",
-    "name_last": "Panta Herreros",
-    "hand": "R",
-    "dob": "19950722",
-    "ioc": "PER",
-    "height": "3",
-    "wikidata_id": "Q22007316",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q22007316.json",
-    "fetched_at": "2026-10-06T03:40:22.012871+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q22007316",
-     "label_en": "Jorge Panta",
-     "label_zh": "\u8c6a\u723e\u8d6b\u00b7\u6f58\u5854",
-     "aliases_en": [],
-     "atp_id": [
-      "PG56"
-     ],
-     "itf_id": [
-      "jorge-brian-panta/800347642/per"
-     ],
-     "date_of_birth": [
-      "+1995-07-22T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q419"
-     ],
-     "country_for_sport": [
-      "Q419"
-     ],
-     "given_name": [
-      "Q14346236",
-      "Q15930574"
-     ],
-     "family_name": [
-      "Q36948829"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/pg56?v=1",
-     "fetched_at": "2026-10-06T03:40:22.637695+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "106410",
+     "name_first": "Jorge Brian",
+     "name_last": "Panta Herreros",
+     "hand": "R",
+     "dob": "19950722",
+     "ioc": "PER",
+     "height": "3",
+     "wikidata_id": "Q22007316",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=jorge-brian-panta/800347642/per",
-     "fetched_at": "2026-10-06T03:40:23.088179+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q22007316.json",
+     "fetched_at": "2026-10-06T03:54:10.152907+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q22007316",
+      "label_en": "Jorge Panta",
+      "label_zh": "\u8c6a\u723e\u8d6b\u00b7\u6f58\u5854",
+      "aliases_en": [],
+      "atp_id": [
+       "PG56"
+      ],
+      "itf_id": [
+       "jorge-brian-panta/800347642/per"
+      ],
+      "date_of_birth": [
+       "+1995-07-22T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q419"
+      ],
+      "country_for_sport": [
+       "Q419"
+      ],
+      "given_name": [
+       "Q14346236",
+       "Q15930574"
+      ],
+      "family_name": [
+       "Q36948829"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/pg56?v=1",
+      "fetched_at": "2026-10-06T03:54:10.760461+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800347642",
+      "fetched_at": "2026-10-06T03:54:11.218458+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }

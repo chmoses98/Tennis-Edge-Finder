@@ -2,88 +2,78 @@
  "foreign_system": "tml",
  "foreign_id": "PA97",
  "foreign_name": "vijay sundar prashanth",
- "collected_at": "2026-10-06T03:40:49.377968+00:00",
+ "collected_at": "2026-10-06T03:54:33.040741+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/pa97?v=1",
-    "fetched_at": "2026-10-06T03:40:49.377989+00:00",
+    "fetched_at": "2026-10-06T03:54:33.040758+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
   ],
-  "wikidata_items_with_this_atp_id": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22pa97%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:49.835392+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  },
-  "wikidata_items_with_this_atp_id_upper": {
-   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22PA97%22%20.%20%7D",
-   "fetched_at": "2026-10-06T03:40:50.337374+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
-   "items": []
-  }
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
  },
  "canonical": {
   "104822": {
-   "sackmann_players_row": {
-    "player_id": "104822",
-    "name_first": "N Vijay",
-    "name_last": "Sundar Prashanth",
-    "hand": "R",
-    "dob": "19861027",
-    "ioc": "IND",
-    "height": "178",
-    "wikidata_id": "Q18758442",
-    "_tour": "ATP",
-    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
-   },
-   "wikidata": {
-    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18758442.json",
-    "fetched_at": "2026-10-06T03:40:50.840402+00:00",
-    "status": 200,
-    "summary": {
-     "qid": "Q18758442",
-     "label_en": "Vijay Sundar Prashanth",
-     "label_zh": "\u7ef4\u8d3e\u4f0a\u00b7\u5b59\u8fbe\u5c14\u00b7\u666e\u62c9\u6851\u5854",
-     "aliases_en": [],
-     "atp_id": [
-      "PA97"
-     ],
-     "itf_id": [
-      "n-vijay-sundar-prashanth/800225215/ind"
-     ],
-     "date_of_birth": [
-      "+1986-10-27T00:00:00Z"
-     ],
-     "citizenship": [
-      "Q668"
-     ],
-     "country_for_sport": [
-      "Q668"
-     ],
-     "given_name": [
-      "Q19803511"
-     ]
-    }
-   },
-   "tour_profiles": [
-    {
-     "url": "https://www.atptour.com/en/-/www/players/hero/pa97?v=1",
-     "fetched_at": "2026-10-06T03:40:51.434642+00:00",
-     "status": 403,
-     "error": "HTTP Error 403: Forbidden"
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "104822",
+     "name_first": "N Vijay",
+     "name_last": "Sundar Prashanth",
+     "hand": "R",
+     "dob": "19861027",
+     "ioc": "IND",
+     "height": "178",
+     "wikidata_id": "Q18758442",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
     },
-    {
-     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=n-vijay-sundar-prashanth/800225215/ind",
-     "fetched_at": "2026-10-06T03:40:51.879932+00:00",
-     "status": 404,
-     "error": "HTTP Error 404: Not Found"
-    }
-   ]
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18758442.json",
+     "fetched_at": "2026-10-06T03:54:33.493254+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q18758442",
+      "label_en": "Vijay Sundar Prashanth",
+      "label_zh": "\u7ef4\u8d3e\u4f0a\u00b7\u5b59\u8fbe\u5c14\u00b7\u666e\u62c9\u6851\u5854",
+      "aliases_en": [],
+      "atp_id": [
+       "PA97"
+      ],
+      "itf_id": [
+       "n-vijay-sundar-prashanth/800225215/ind"
+      ],
+      "date_of_birth": [
+       "+1986-10-27T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q668"
+      ],
+      "country_for_sport": [
+       "Q668"
+      ],
+      "given_name": [
+       "Q19803511"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/pa97?v=1",
+      "fetched_at": "2026-10-06T03:54:34.179334+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800225215",
+      "fetched_at": "2026-10-06T03:54:34.630556+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
   }
  }
 }
