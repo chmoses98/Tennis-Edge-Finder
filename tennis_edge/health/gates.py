@@ -209,24 +209,195 @@ def gate_3_4_active_coverage(projections_path=None) -> tuple[GateResult, GateRes
     return g3, g4
 
 
-def gate_5_capture_freshness(max_age_min=30, now=None, max_trade_backlog_age_h=2.0) -> GateResult:
-    """TENNIS-5: latest capture manifest younger than max_age_min, without incomplete stages, and with the
-    trade-tape backlog (tennis_edge/kalshi/trade_tape.py) no older than max_trade_backlog_age_h.
+#: TENNIS-5 thresholds. The 30-minute limit is the one this gate has always used (and the quote STALE bound in
+#: scripts/run_tennis.py); it was not changed when the gate was split in two (2026-10-06).
+GATE5_MAX_AGE_MIN = 30
+GATE5_FRESH_QUOTE_MIN = 10          # reported only: run_tennis.py's FRESH band
+GATE5_CADENCE_WINDOW_H = 6          # one RUN TENNIS interval (cron every 6 h)
 
-    A truncated tape window whose unread remainder is QUEUED is not an incomplete stage: nothing has been
-    lost yet. A queue that stays behind for hours is a failure, and an abandoned gap is an incomplete stage."""
-    mans = sorted(glob.glob(os.path.join(PROJ, "data", "kalshi", "capture", "*", "*.manifest.json")))
+
+def _pct(xs, q):
+    xs = sorted(xs)
+    return xs[min(len(xs) - 1, int(round(q * (len(xs) - 1))))] if xs else None
+
+
+def _iso(x):
+    try:
+        return datetime.fromisoformat(str(x).replace("Z", "+00:00"))
+    except (TypeError, ValueError):
+        return None
+
+
+def pricing_quote_freshness(projections_dir=None, max_age_min=GATE5_MAX_AGE_MIN) -> dict:
+    """Age, AT PRICING TIME, of the quote each row of the latest projection run was priced against.
+
+    Read from the run's own rows (market_quote.quote_ts / priced_at, written by run_tennis.quote_provenance). This
+    is the freshness that decides whether a model-vs-market comparison used current information. Every row counts;
+    a row whose quote age cannot be established counts as over the threshold (fail closed)."""
+    root = projections_dir or os.path.join(PROJ, "data", "research", "projections")
+    latest = os.path.join(root, "latest.json")
+    if not os.path.exists(latest):
+        return {"status": "UNKNOWN", "reason": "no projection run"}
+    lj = json.load(open(latest))
+    run_path = os.path.join(root, f"{lj.get('run_id')}.json")
+    if not os.path.exists(run_path):
+        return {"status": "UNKNOWN", "reason": f"projection run file {lj.get('run_id')}.json missing"}
+    pj = json.load(open(run_path))
+    rows = pj.get("projections") or []
+    lc = pj.get("lifecycle") or {}
+    out = {"threshold_min": max_age_min, "pricing_run": pj.get("run_id"), "pricing_generated_at": pj.get("generated_at"),
+           "open_snapshot_run": lc.get("open_snapshot_run"), "snapshot_authoritative": lc.get("snapshot_authoritative"),
+           "open_snapshot_age_at_pricing_s": None if lc.get("open_snapshot_age_s") is None else round(float(lc["open_snapshot_age_s"]), 1),
+           "n_priced": len(rows)}
+    if not rows:
+        out.update(status="UNKNOWN", reason="the latest projection run priced nothing")
+        return out
+    ages, unknown, by_src, quote_ts, priced_ts = [], 0, {}, [], []
+    for r in rows:
+        mq = r.get("market_quote") or {}
+        by_src[mq.get("source") or "?"] = by_src.get(mq.get("source") or "?", 0) + 1
+        q, pr = _iso(mq.get("quote_ts")), _iso(mq.get("priced_at") or r.get("generated_at_utc"))
+        age = mq.get("quote_age_s")
+        if age is None and q is not None and pr is not None:
+            age = (pr - q).total_seconds()
+        if age is None or q is None:
+            unknown += 1
+            continue
+        if pr is None:
+            pr = q + timedelta(seconds=float(age))
+        ages.append(float(age)); quote_ts.append(q); priced_ts.append(pr)
+    lim = max_age_min * 60
+    over = sum(a > lim for a in ages) + unknown
+    out.update({
+        "quote_sources": by_src, "n_age_unknown": unknown,
+        "median_age_s": None if not ages else round(_pct(ages, 0.5), 1),
+        "p95_age_s": None if not ages else round(_pct(ages, 0.95), 1),
+        "max_age_s": None if not ages else round(max(ages), 1),
+        "n_over_threshold": over, "pct_over_threshold": round(over / len(rows), 4),
+        "n_over_fresh_band": sum(a > GATE5_FRESH_QUOTE_MIN * 60 for a in ages) + unknown,
+        "quote_ts_oldest": min(quote_ts).isoformat() if quote_ts else None,
+        "quote_ts_newest": max(quote_ts).isoformat() if quote_ts else None,
+        "priced_at_first": min(priced_ts).isoformat() if priced_ts else None,
+        "priced_at_last": max(priced_ts).isoformat() if priced_ts else None})
+    out["status"] = "PASS" if over == 0 else "FAIL"
+    if over:
+        out["reason"] = f"{over} of {len(rows)} rows were priced on a quote older than {max_age_min} min (or of unknown age)"
+    return out
+
+
+def background_capture_health(now=None, max_age_min=GATE5_MAX_AGE_MIN, max_trade_backlog_age_h=2.0,
+                              window_h=GATE5_CADENCE_WINDOW_H, capture_root=None, pull_record=None) -> dict:
+    """Operational health of the capture conductor, from its own pass manifests.
+
+    * freshness: age of the newest capture pass when THIS RUNNER TOOK ITS COPY of the evidence branch (the pull
+      record). Without a pull record the age at evaluation time is used instead -- stricter, and labelled so.
+    * cadence: every interval between consecutive completed passes in the last `window_h`, including the interval
+      from the newest pass to the pull. Any interval over `max_age_min` is a gap and fails.
+    * the newest pass must have no incomplete stage, and the trade-tape backlog must be younger than
+      `max_trade_backlog_age_h` (both exactly as before the split)."""
+    now = now or datetime.now(timezone.utc)
+    root = capture_root or os.path.join(PROJ, "data", "kalshi", "capture")
+    mans = sorted(glob.glob(os.path.join(root, "*", "*.manifest.json")))
     if not mans:
-        return GateResult("TENNIS-5", "market_capture_freshness", "UNKNOWN", {"reason": "no capture manifests"})
-    m = json.load(open(mans[-1]))
-    age = ((now or datetime.now(timezone.utc)) - datetime.fromisoformat(m["finished_at"])).total_seconds() / 60
+        return {"status": "UNKNOWN", "reason": "no capture manifests"}
+    passes = []
+    for mp in mans[-400:]:
+        try:
+            m = json.load(open(mp))
+        except ValueError:
+            continue
+        fin = _iso(m.get("finished_at"))
+        if fin is None:
+            continue
+        passes.append((fin, _iso(m.get("started_at")), m))
+    if not passes:
+        return {"status": "UNKNOWN", "reason": "no readable capture manifests"}
+    passes.sort(key=lambda x: x[0])
+    latest_fin, latest_start, m = passes[-1]
+    pr = pull_record
+    if pr is None:
+        pp = os.path.join(PROJ, "data", ".pull_record.json")
+        pr = json.load(open(pp)) if os.path.exists(pp) else None
+    pulled_at = _iso((pr or {}).get("pulled_at"))
+    ref, ref_kind = (pulled_at, "pull") if pulled_at else (now, "evaluation (no pull record: stricter)")
+    age_ref = (ref - latest_fin).total_seconds() / 60
+    lo = ref - timedelta(hours=window_h)
+    fins = [f for f, _s, _m in passes if lo <= f <= ref]
+    prior = [f for f, _s, _m in passes if f < lo]
+    if prior:
+        fins = [prior[-1]] + fins                  # the interval that crosses into the window counts too
+    cad = [(b - a).total_seconds() / 60 for a, b in zip(fins, fins[1:])]
+    tail = (ref - fins[-1]).total_seconds() / 60 if fins else age_ref
+    intervals = cad + [tail]
+    gaps = [round(x, 1) for x in intervals if x > max_age_min]
+    durs = [(f - s).total_seconds() for f, s, _m in passes[-50:] if s is not None]
+    window_passes = [mm for f, _s, mm in passes if lo <= f <= ref]
+    failed = sum(1 for mm in window_passes if mm.get("incomplete"))
     backlog = ((m.get("trades") or {}).get("backlog") or {})
     oldest = backlog.get("oldest_gap_age_s")
     backlog_ok = oldest is None or oldest <= max_trade_backlog_age_h * 3600
-    ok = age <= max_age_min and not m.get("incomplete") and backlog_ok
-    return GateResult("TENNIS-5", "market_capture_freshness", "PASS" if ok else "FAIL",
-                      {"run": m["run_id"], "age_min": round(age, 1), "incomplete": m.get("incomplete", [])[:5],
-                       "trade_backlog": backlog or None, "trade_backlog_ok": backlog_ok})
+    ok = age_ref <= max_age_min and not gaps and not m.get("incomplete") and backlog_ok
+    out = {"status": "PASS" if ok else "FAIL", "threshold_min": max_age_min,
+           "latest_capture_run": m.get("run_id"), "latest_capture_finished_at": latest_fin.isoformat(),
+           "measured_at": ref.isoformat(), "measured_at_kind": ref_kind,
+           "capture_age_at_measurement_min": round(age_ref, 1),
+           "cadence_window_h": window_h, "passes_in_window": len(window_passes),
+           "cadence_median_min": None if not cad else round(_pct(cad, 0.5), 1),
+           "cadence_max_min": None if not cad else round(max(cad), 1),
+           "gaps_over_threshold_min": gaps,
+           "pass_duration_median_s": None if not durs else round(_pct(durs, 0.5), 1),
+           "latest_pass_duration_s": None if latest_start is None else round((latest_fin - latest_start).total_seconds(), 1),
+           "failed_passes_in_window": failed, "latest_incomplete": (m.get("incomplete") or [])[:5],
+           "trade_backlog": backlog or None, "trade_backlog_ok": backlog_ok}
+    if not ok:
+        why = []
+        if age_ref > max_age_min:
+            why.append(f"newest capture was {age_ref:.1f} min old at {ref_kind.split(' ')[0]}")
+        if gaps:
+            why.append(f"capture gaps over {max_age_min} min: {gaps}")
+        if m.get("incomplete"):
+            why.append("newest pass has an incomplete stage")
+        if not backlog_ok:
+            why.append("trade-tape backlog too old")
+        out["reason"] = "; ".join(why)
+    return out
+
+
+def gate_5_capture_freshness(max_age_min=GATE5_MAX_AGE_MIN, now=None, max_trade_backlog_age_h=2.0,
+                             projections_dir=None, pull_record=None) -> GateResult:
+    """TENNIS-5: market data freshness, as TWO separately reported checks that must both PASS.
+
+    1. pricing_quote_freshness -- the age, at pricing time, of the quote every row of the latest projection run was
+       priced against. This is the "was the comparison made on current information" question.
+    2. background_capture_health -- the capture conductor's operational freshness and cadence (newest pass at the
+       moment this runner pulled the evidence, every gap in the last cadence window, incomplete passes, trade
+       backlog).
+
+    `pulled_capture_artifact_age_min` is reported beside them and is NOT a status: it is the age NOW of the newest
+    capture in this runner's pulled copy, which grows while the run works (20-34 min by the time health runs). Until
+    2026-10-06 the gate failed on that number alone, which said "the quote was stale" when the quote was seconds old.
+    Neither threshold was changed by the split."""
+    now = now or datetime.now(timezone.utc)
+    cap = background_capture_health(now=now, max_age_min=max_age_min, max_trade_backlog_age_h=max_trade_backlog_age_h,
+                                    pull_record=pull_record)
+    if cap.get("status") == "UNKNOWN" and cap.get("reason") == "no capture manifests":
+        return GateResult("TENNIS-5", "market_capture_freshness", "UNKNOWN", {"reason": "no capture manifests",
+                                                                              "background_capture_health": cap})
+    pq = pricing_quote_freshness(projections_dir, max_age_min=max_age_min)
+    statuses = (pq.get("status"), cap.get("status"))
+    status = "PASS" if statuses == ("PASS", "PASS") else ("FAIL" if "FAIL" in statuses else "UNKNOWN")
+    latest_fin = _iso(cap.get("latest_capture_finished_at"))
+    pulled_age = round((now - latest_fin).total_seconds() / 60, 1) if latest_fin else None
+    return GateResult("TENNIS-5", "market_capture_freshness", status, {
+        "pricing_quote_freshness": pq.get("status"), "background_capture_health": cap.get("status"),
+        "pulled_capture_artifact_age_min": pulled_age,
+        "pulled_capture_artifact_age_note": ("age at health-evaluation time of the newest capture pass in this runner's "
+                                             "pulled copy; it grows while the run works and is NOT the age of any quote "
+                                             "used for pricing (see pricing_quote) nor the conductor's freshness (see capture)"),
+        "pricing_quote": pq, "capture": cap,
+        # kept for readers of the old detail (same meanings as before the split)
+        "run": cap.get("latest_capture_run"), "incomplete": cap.get("latest_incomplete"),
+        "trade_backlog": cap.get("trade_backlog"), "trade_backlog_ok": cap.get("trade_backlog_ok")})
 
 
 def gate_6_no_post_start_leakage(ledger_rows, starts: dict, strict_research_rows=None, quarantine: dict | None = None,

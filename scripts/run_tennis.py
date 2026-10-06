@@ -141,6 +141,18 @@ def quote_freshness(age_s):
     return "FRESH" if age_s <= QUOTE_FRESH_S else ("AGING" if age_s <= QUOTE_STALE_S else "STALE")
 
 
+def quote_provenance(ticker, qrec, quotes, snap, snapshot_authoritative, disc_summary, now=None):
+    """(source, quote_ts, quote_age_s, priced_at) for the quote a row is priced against.
+
+    quote_age_s is measured AT PRICING TIME (priced_at), against the timestamp of the record actually used. This is
+    the pricing-quote freshness TENNIS-5 reports; it is not the age of any capture artifact read later."""
+    priced_at = now or datetime.now(timezone.utc)
+    src = ("open_snapshot" if (snapshot_authoritative and snap and ticker in snap) else "capture") if ticker in quotes else "discovery_record"
+    q_ts = qrec.get("captured_at") or disc_summary["started_at"]
+    q_age = (priced_at - datetime.fromisoformat(q_ts.replace("Z", "+00:00"))).total_seconds() if q_ts else None
+    return src, q_ts, q_age, priced_at.isoformat()
+
+
 def production_config():
     """config/projection_v2/production.json: which model prices production, and why (the promotion record)."""
     p = os.path.join(PROJ, "config", "projection_v2", "production.json")
@@ -350,7 +362,8 @@ def main():
         reason = None
         is_doubles = info["discipline"] != "singles" or head.discipline != "singles"
         if is_doubles:
-            dres = price_doubles_event(ev, pms, names, comp_ids, info, tour, states, mapper, today, quotes, parsed, fee_types, disc_summary, sha, ledger)
+            dres = price_doubles_event(ev, pms, names, comp_ids, info, tour, states, mapper, today, quotes, parsed, fee_types, disc_summary, sha, ledger,
+                                       snap=snap, snapshot_authoritative=snapshot_authoritative)
             if dres["ok"]:
                 projections.extend(dres["rows"]); projected_tickers.extend(r["ticker"] for r in dres["rows"]); coverage["projected_doubles"] += len(dres["rows"])
             else:
@@ -450,9 +463,7 @@ def main():
             pm = pm_by[pr.ticker]; raw = parsed[pr.ticker][1]
             qrec = quotes.get(pr.ticker) or raw
             yes_bid, yes_ask, no_bid, no_ask = (fnum(qrec.get(k)) for k in ("yes_bid_dollars", "yes_ask_dollars", "no_bid_dollars", "no_ask_dollars"))
-            quote_src = ("open_snapshot" if (snapshot_authoritative and pr.ticker in snap) else "capture") if pr.ticker in quotes else "discovery_record"
-            q_ts = qrec.get("captured_at") or disc_summary["started_at"]
-            q_age = (datetime.now(timezone.utc) - datetime.fromisoformat(q_ts.replace("Z", "+00:00"))).total_seconds() if q_ts else None
+            quote_src, q_ts, q_age, priced_at = quote_provenance(pr.ticker, qrec, quotes, snap, snapshot_authoritative, disc_summary)
             sched = raw.get("occurrence_datetime") or raw.get("expected_expiration_time")
             fee = fee_types.get(pm.series_ticker, FeeSchedule())
             evs = expected_value(pr.fair_yes, yes_ask, no_ask, 100, fee)
@@ -475,7 +486,7 @@ def main():
                    "inputs": {"elo_a": ra, "elo_b": rb, "pa": pa, "pb": pb, "sr_pa": sr_pa, "sr_pb": sr_pb, "spw_baseline": spw, "p_elo_bo3": p_elo_bo3, "p_sr_bo3": p_sr_bo3, "p_ensemble_bo3": p_ens_bo3, "structural_used": sr_ok, "spw_production": spw_prod},
                    "v2": v2_payload(v2res, pm),
                    "quality": q, "market_quote": {"yes_bid": yes_bid, "yes_ask": yes_ask, "no_bid": no_bid, "no_ask": no_ask, "source": quote_src, "quote_ts": q_ts,
-                                                  "quote_age_s": q_age, "quote_freshness": quote_freshness(q_age), "lifecycle_basis": "FULL_OPEN_SNAPSHOT" if snapshot_authoritative else "INCREMENTAL_CAPTURE",
+                                                  "quote_age_s": q_age, "priced_at": priced_at, "quote_freshness": quote_freshness(q_age), "lifecycle_basis": "FULL_OPEN_SNAPSHOT" if snapshot_authoritative else "INCREMENTAL_CAPTURE",
                                                   "volume": qrec.get("volume_fp"), "open_interest": qrec.get("open_interest_fp"), "liquidity": qrec.get("liquidity_dollars")},
                    "scheduled_start": sched, "seconds_to_scheduled_start": _secs(sched),
                    "start_basis": "SCHEDULED" if info["level"] in ("GRAND_SLAM", "MASTERS_1000", "TOUR_500_250", "TOUR_FINALS", "OLYMPICS", "TEAM") else "NOMINAL_UNRELIABLE",
@@ -506,7 +517,8 @@ def main():
     return 0
 
 
-def price_doubles_event(ev, pms, names, comp_ids, info, tour, states, mapper, today, quotes, parsed, fee_types, disc_summary, sha, ledger):
+def price_doubles_event(ev, pms, names, comp_ids, info, tour, states, mapper, today, quotes, parsed, fee_types, disc_summary, sha, ledger,
+                        snap=None, snapshot_authoritative=False):
     """MATCH_WINNER only, DoublesBaseline on the four players' singles Elo (documented prior, unvalidated):
     quality grade capped at C, authority RESEARCH_ONLY, never actionable."""
     from tennis_edge.doubles.model import DoublesBaseline
@@ -545,6 +557,7 @@ def price_doubles_event(ev, pms, names, comp_ids, info, tour, states, mapper, to
             continue
         fair = pred["p_a"] if pm.subject_is_a else 1 - pred["p_a"]
         raw = parsed[pm.ticker][1]; qrec = quotes.get(pm.ticker) or raw
+        q_src, q_ts, q_age, priced_at = quote_provenance(pm.ticker, qrec, quotes, snap, snapshot_authoritative, disc_summary)
         yes_bid, yes_ask, no_bid, no_ask = (fnum(qrec.get(k)) for k in ("yes_bid_dollars", "yes_ask_dollars", "no_bid_dollars", "no_ask_dollars"))
         fee = fee_types.get(pm.series_ticker, FeeSchedule()); evs = expected_value(fair, yes_ask, no_ask, 100, fee)
         best = max(evs, key=lambda e: e.ev_per_contract_after_fees) if evs else None
@@ -557,7 +570,8 @@ def price_doubles_event(ev, pms, names, comp_ids, info, tour, states, mapper, to
                "models": {"ELO": None, "STRUCTURAL": None, "ENSEMBLE": None, "ELO_DP_FAIR": fair, "MARKET_MID": (0.5 * (yes_bid + yes_ask)) if (yes_bid and yes_ask) else None, "HYBRID_MARKET_MODEL": None, "DOUBLES_BASELINE": fair},
                "inputs": {"rating_a": pred["rating_a"], "rating_b": pred["rating_b"], "basis_a": pred["basis_a"], "basis_b": pred["basis_b"]},
                "quality": {"data_quality_score": 0.3, "grade": "C", "pillars": {"note": "doubles baseline prior; unvalidated"}},
-               "market_quote": {"yes_bid": yes_bid, "yes_ask": yes_ask, "no_bid": no_bid, "no_ask": no_ask, "source": "capture" if pm.ticker in quotes else "discovery_record", "quote_ts": qrec.get("captured_at") or disc_summary["started_at"],
+               "market_quote": {"yes_bid": yes_bid, "yes_ask": yes_ask, "no_bid": no_bid, "no_ask": no_ask, "source": q_src, "quote_ts": q_ts,
+                                "quote_age_s": q_age, "priced_at": priced_at, "quote_freshness": quote_freshness(q_age),
                                 "volume": qrec.get("volume_fp"), "open_interest": qrec.get("open_interest_fp"), "liquidity": qrec.get("liquidity_dollars")},
                "scheduled_start": sched, "seconds_to_scheduled_start": _secs(sched),
                "ev": {"best_side": best.side if best else None, "price": best.price if best else None, "raw_edge": best.raw_edge if best else None, "fee_per_contract": best.fee_per_contract if best else None,

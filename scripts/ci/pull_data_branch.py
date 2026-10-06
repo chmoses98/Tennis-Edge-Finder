@@ -17,14 +17,18 @@ Nothing is deleted from the branch; this only limits what this runner unpacks. P
 from __future__ import annotations
 
 import argparse
+import json
 import os
 import re
 import shutil
 import subprocess
 import sys
 import time
+from datetime import datetime, timezone
 
 PREFIX = "tennis-edge-finder/data/"
+#: written into <dest>/ after every pull (never published: it describes this runner, not the evidence)
+PULL_RECORD = ".pull_record.json"
 SOURCE_SUBS = ("sackmann/tennis_atp/", "sackmann/tennis_wta/", "tml/", "tennis_data/",
                "tennis_data_mirrors/gmalbert__tennis-predictions/")
 
@@ -97,6 +101,10 @@ def main():
     sh(["git", "config", "remote.origin.promisor", "true"], cwd=repo)
     sh(["git", "config", "remote.origin.partialclonefilter", "blob:none"], cwd=repo)
     sh(["git", "fetch", "--filter=blob:none", "--depth=1", "origin", f"+{a.branch}:refs/remotes/origin/{a.branch}"], cwd=repo)
+    # the instant this runner's copy of the evidence branch was taken: TENNIS-5 measures the capture conductor's
+    # freshness HERE, and reports the (growing) age of the pulled artifact while the run works separately
+    pulled_at = datetime.now(timezone.utc).isoformat()
+    head = sh(["git", "log", "-1", "--format=%H %cI", f"origin/{a.branch}"], cwd=repo, capture=True).stdout.split()
     if a.paths:
         pats = [f"/{PREFIX}{p.lstrip('/')}" for p in a.paths]
     else:
@@ -117,6 +125,9 @@ def main():
             print("nothing matched on the branch for these paths"); return 0
         os.makedirs(dest, exist_ok=True)
         sh(["cp", "-a", src.rstrip("/") + "/.", dest + "/"])
+        json.dump({"branch": a.branch, "pulled_at": pulled_at, "branch_sha": head[0] if head else None,
+                   "branch_committed_at": head[1] if len(head) > 1 else None, "paths": a.paths or "run_tennis"},
+                  open(os.path.join(dest, PULL_RECORD), "w"), indent=1)
         n = sum(len(f) for _r, _d, f in os.walk(dest))
         print(f"pulled into {a.dest}/ ({n} files) in {time.time() - t0:.0f}s")
     finally:
