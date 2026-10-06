@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-06T05:41:30.106836+00:00",
+ "run_id": "20261006T054130Z",
+ "external_parse": {
+  "events": 212,
+  "markets": 2362,
+  "skipped_family": 449,
+  "skipped_period": 686,
+  "skipped_live": 19,
+  "one_sided": 62,
+  "rows": 3769,
+  "devigged": 1165
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 1118,
+  "markets_mapped": 395,
+  "contracts": 908,
+  "quoted_contracts": 908,
+  "raw": "data/research/external/raw/20261006T054130Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 395,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 69,
+  "rows": 839,
+  "two_sided": 836,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1896,
+ "external_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 165,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8128,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Diego Dedura": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Hao Yu Lin": 1,
+   "Chetanna Amadike": 1,
+   "Thiago Pernas": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 359,
+  "by_status": {
+   "MAPPED": 310,
+   "UNMAPPED_PLAYER": 49
+  },
+  "mapped_rate": 0.8635,
+  "top_refusal_subjects": {
+   "Daniel Merida": 1,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Elvin Egribel": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jeremy LAUMON": 1,
+   "Martin Hammond": 1
+  }
+ },
+ "matched_both_venues": 145,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 310,
+ "model_witness_available": true,
+ "rows": 254,
+ "counts": {
+  "PASS": 252,
+  "tri:MODEL_LONE_OUTLIER": 101,
+  "tri:INSUFFICIENT_INPUTS": 137,
+  "tri:MARKETS_AGREE": 12,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
