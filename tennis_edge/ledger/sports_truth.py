@@ -69,6 +69,10 @@ RESOLVED, NOT_FOUND, AMBIGUOUS, NOT_COVERED, NO_IDS = "RESOLVED", "NOT_FOUND", "
 #: structural statuses in TENNIS-8 exactly as NOT_COVERED was, so no rate moves because of the split.
 PENDING_RESULT = "PENDING_RESULT"
 LIVE_SOURCE_LAG_DAYS = 3
+#: a miss is conclusive (NOT_FOUND) only once the level's source has published results this many days past the match
+#: day: ESPN dates a match on the day it is played and rain delays move it up to +3 (SOURCE_WINDOWS["espn"]). Before
+#: that a live source's miss is PENDING_RESULT -- e.g. the China Open final on the day ESPN's 12:15Z board was fetched.
+CONCLUSIVE_AFTER_DAYS = 3
 
 
 @dataclass(frozen=True)
@@ -150,7 +154,7 @@ class ResultsIndex:
                                     r.score_raw, _f(r.games_w), _f(r.games_l), _f(r.sets_w), _f(r.sets_l),
                                     r.source_label, r.match_key, r.tourney_name, str(r.d))
         hz = self.coverage(tour, level)
-        if hz is None or hz < on:
+        if hz is None or hz < on + timedelta(days=CONCLUSIVE_AFTER_DAYS if self.as_of is not None else 0):
             if hz is not None and self.as_of is not None and (self.as_of - hz).days <= LIVE_SOURCE_LAG_DAYS:
                 return IndependentTruth(PENDING_RESULT, reason=f"independent results for {tour} {level} are live (newest {hz}, "
                                                                f"run date {self.as_of}) but not yet published for a match on {on}")

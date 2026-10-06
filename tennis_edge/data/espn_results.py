@@ -89,6 +89,18 @@ def _competitions(payload):
             yield ev, {}, c
 
 
+def _ending(status_type: dict, comp: dict) -> str | None:
+    """'RET' / 'W/O' when ESPN says the match ended early, from the status type or the event note."""
+    name = str(status_type.get("name") or "").upper()
+    desc = str(status_type.get("description") or "").lower()
+    notes = " ".join(str(n.get("text") or "") for n in (comp.get("notes") or []) if isinstance(n, dict)).lower()
+    if "WALKOVER" in name or "walkover" in desc or re.search(r"\bw/o\b|walkover", notes):
+        return "W/O"
+    if "RETIRED" in name or "retired" in desc or re.search(r"\bret(?:ired|\.)?\s*$", notes.strip()):
+        return "RET"
+    return None
+
+
 def parse_scoreboard(payload: dict, league: str) -> pd.DataFrame:
     """Completed SINGLES results from one dated scoreboard payload."""
     rows, skipped = [], {"not_final": 0, "doubles": 0, "no_score": 0, "no_names": 0}
@@ -113,6 +125,16 @@ def parse_scoreboard(payload: dict, league: str) -> pd.DataFrame:
             skipped["no_names"] += 1
             continue
         score = _score_string(win.get("linescores"), lose.get("linescores"))
+        # Retirements and walkovers (2026-10-07). ESPN reports a retirement as STATUS_RETIRED with the partial score in
+        # the line scores ("5-2"; the event note reads "... 5-2 ret"). Emitted without a marker, that score is an
+        # impossible completed match and the validator quarantined it: every ESPN retirement since April was missing
+        # from the canonical table and from independent truth (e.g. de Minaur d. Hurkacz 6-4 3-2 ret, China Open SF).
+        kind = _ending(st, c)
+        if kind == "RET" and score:
+            score = f"{score} RET"
+        elif kind == "W/O":
+            score = "W/O"
+            skipped["walkover"] = skipped.get("walkover", 0) + 1
         if not score:
             skipped["no_score"] += 1
             continue

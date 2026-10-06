@@ -49,7 +49,9 @@ def test_newly_published_espn_result_resolves_an_existing_prediction():
 def test_espn_coverage_is_by_family_so_a_wta_1000_miss_is_not_found_not_uncovered():
     idx = ResultsIndex(_rows([SACKMANN_OLD, ESPN_NEW]), since=date(2026, 8, 1), as_of=date(2026, 10, 7))
     assert idx.coverage("WTA", "MASTERS_1000") == date(2026, 10, 6)
-    assert idx.resolve("WTA", "x", "y", "MASTERS_1000", date(2026, 10, 5)).status == NOT_FOUND
+    assert idx.resolve("WTA", "x", "y", "MASTERS_1000", date(2026, 10, 1)).status == NOT_FOUND
+    # a match the day before ESPN's newest board: inside the rain-delay window, so not yet conclusive
+    assert idx.resolve("WTA", "x", "y", "MASTERS_1000", date(2026, 10, 5)).status == PENDING_RESULT
     # ESPN's WTA boards carry the 125s; it has no ATP Challenger or ITF board
     assert idx.coverage("WTA", "WTA_125") == date(2026, 10, 6)
     assert idx.coverage("ATP", "CHALLENGER") is None and idx.coverage("WTA", "ITF") is None
@@ -345,3 +347,21 @@ def test_publish_exclude(tmp_path):
     (tmp_path / "ledger" / "y.jsonl").write_text("1")
     assert [r for r, _ in plan(str(tmp_path), ["external"])] == ["ledger/y.jsonl"]
     assert len(plan(str(tmp_path))) == 2
+
+
+def test_espn_retirement_is_kept_not_quarantined():
+    """STATUS_RETIRED used to come through as a bare partial score ('5-2') that the validator quarantined, so every
+    ESPN retirement was missing from independent truth (Svrcina d. Nishioka 5-2 ret, Shanghai Q3, 2026-10-06)."""
+    from tennis_edge.data.espn_results import parse_scoreboard
+    def comp(cid, status, w, l, wls, lls, note):
+        return {"id": cid, "date": "2026-10-06T05:00Z", "status": {"type": {"name": status, "state": "post", "completed": True,
+                "description": status.title()}}, "notes": [{"text": note}], "round": {"displayName": "Qualifying Final"},
+                "competitors": [{"id": w, "winner": True, "athlete": {"displayName": w}, "linescores": [{"value": v} for v in wls]},
+                                {"id": l, "winner": False, "athlete": {"displayName": l}, "linescores": [{"value": v} for v in lls]}]}
+    payload = {"events": [{"id": "1", "name": "Rolex Shanghai Masters", "groupings": [{"grouping": {"id": "g", "slug": "mens-singles"},
+               "competitions": [comp("1", "STATUS_RETIRED", "Dalibor Svrcina", "Yoshihito Nishioka", [5], [2], "Svrcina bt Nishioka 5-2 ret"),
+                                comp("2", "STATUS_FINAL", "A Player", "B Player", [6, 6], [4, 4], "A bt B 6-4 6-4")]}]}]}
+    df = parse_scoreboard(payload, "atp").set_index("winner_name")
+    assert df.at["Dalibor Svrcina", "score"] == "5-2 RET" and df.at["A Player", "score"] == "6-4 6-4"
+    from tennis_edge.rules.score_parser import parse_score
+    assert parse_score("5-2 RET").outcome_type == "RETIRED"
