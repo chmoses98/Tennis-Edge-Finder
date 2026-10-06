@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-06T10:45:40.983423+00:00",
+ "run_id": "20261006T104540Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 1934,
+  "skipped_family": 336,
+  "skipped_period": 582,
+  "skipped_live": 79,
+  "one_sided": 70,
+  "rows": 2953,
+  "devigged": 945
+ },
+ "smarkets_fetch": {
+  "events_seen": 85,
+  "events_priced": 80,
+  "markets": 1143,
+  "markets_mapped": 471,
+  "contracts": 1054,
+  "quoted_contracts": 902,
+  "raw": "data/research/external/raw/20261006T104540Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 471,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 228,
+  "rows": 826,
+  "two_sided": 822,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 929,
+ "external_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 189,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Noma Akugue Noha": 2,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Rodion Chetverikov": 1,
+   "Chetanna Amadike": 1,
+   "Andres Pereiro Lopez": 1,
+   "Leandro Zgraggen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 242,
+  "by_status": {
+   "MAPPED": 219,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.905,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Martin Hammond": 1,
+   "Bercel Sandor Takacs": 1,
+   "Albin Colette": 1,
+   "Jules Alias": 1,
+   "Dimitri Bagaric": 1,
+   "Darcy Nicholls": 1,
+   "Andres Pereiro Lopez": 1
+  }
+ },
+ "matched_both_venues": 145,
+ "external_mapped_matches": 198,
+ "kalshi_mapped_matches": 219,
+ "model_witness_available": true,
+ "rows": 158,
+ "counts": {
+  "PASS": 156,
+  "tri:MODEL_LONE_OUTLIER": 66,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 15,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 62
+ }
+}
