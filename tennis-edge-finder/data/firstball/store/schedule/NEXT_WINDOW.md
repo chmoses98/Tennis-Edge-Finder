@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 02:44Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 02:55Z)
 
 * Earliest credible first ball: **2026-10-06 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-06 02:15Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Daria Snigur vs Mirra Andreeva | 2026-10-06 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Daria Snigur vs Mirra Andreeva | 2026-10-06 03:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Aziz Dougaz vs Federico Cina | 2026-10-06 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Liam Draxl vs Nikoloz Basilashvili | 2026-10-06 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Roman Safiullin vs Shintaro Mochizuki | 2026-10-06 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -16,9 +16,9 @@
 
 **22 main-tour match(es) without a verified start status** (BET blocked until checked): Zhizhen Zhang vs Tomas Machac, Aleksandar Kovacevic vs Matteo Berrettini, Arthur Fery vs Marin Cilic, Holger Rune vs Daniel Altmaier, Arthur Gea vs Jaime Faria, Sho Shimabukuro vs Miomir Kecmanovic, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Yannick Hanfmann vs Kamil Majchrzak, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic
 
-Published slate: `SL-20261006T022159Z-bf6bf039` built 2026-10-06 02:21Z -- current
+Published slate: `SL-20261006T024048Z-cd4faff9` built 2026-10-06 02:40Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-06 05:30Z, run by 2026-10-06 04:45Z, 7 match(es)
 * later window 3: first ball 2026-10-06 07:30Z, run by 2026-10-06 06:45Z, 4 match(es)
