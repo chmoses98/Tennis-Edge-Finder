@@ -118,17 +118,21 @@ class ResultsIndex:
         # every ATP tour event 'A'/'M', so its rows say "TOUR_500_250" for a WTA 1000 match. Keyed by level group, the
         # WTA 1000 horizon came from the frozen Sackmann files (2026-08-23) although ESPN publishes Beijing daily, and a
         # missing WTA 1000 result read NOT_COVERED instead of NOT_FOUND. ESPN therefore counts for the TOUR family of
-        # both tours and for WTA 125 (its WTA boards carry the 125s; it has no ATP Challenger or ITF board).
+        # both tours (it has no ATP Challenger or ITF board).
         fam = lg.map(lambda g: LEVEL_FAMILY.get(g, "TOUR"))
         is_espn = full["source_label"].astype(str).str.startswith("espn") if "source_label" in full.columns else False
         self.family_horizon: dict = {}
         for (t, f), grp in full["tourney_date"].groupby([full["tour"], fam.where(~is_espn, "TOUR")]):
             self.family_horizon[(t, f)] = max(self.family_horizon.get((t, f), date.min), pd.to_datetime(grp).max().date())
+        # WTA 125 is only PARTLY on ESPN's WTA boards: some events, and only some rounds of those (2026-09-13..17 carried
+        # Antalya 11 matches, Montreux 10, nothing from several other 125s). A miss there is not evidence the match was not
+        # played, so ESPN's WTA horizon makes a WTA 125 miss PENDING_RESULT while it may still be published and
+        # NOT_COVERED after that -- never NOT_FOUND (production 2026-10-06: 46 September 125 predictions were NOT_FOUND).
+        self.partial_horizon: dict = {}
         if isinstance(is_espn, pd.Series) and is_espn.any():
             ew = full[is_espn & (full["tour"] == "WTA")]
             if len(ew):
-                hz = pd.to_datetime(ew["tourney_date"]).max().date()
-                self.family_horizon[("WTA", "CHALLENGER")] = max(self.family_horizon.get(("WTA", "CHALLENGER"), date.min), hz)
+                self.partial_horizon[("WTA", "CHALLENGER")] = pd.to_datetime(ew["tourney_date"]).max().date()
 
     def coverage(self, tour: str, level: str) -> date | None:
         """Newest independent result date for this tour and level (by family); None when no source covers it."""
@@ -153,13 +157,20 @@ class ResultsIndex:
             return IndependentTruth(RESOLVED, str(r.canonical_winner_id), str(r.canonical_loser_id), r.outcome_type,
                                     r.score_raw, _f(r.games_w), _f(r.games_l), _f(r.sets_w), _f(r.sets_l),
                                     r.source_label, r.match_key, r.tourney_name, str(r.d))
+        conclusive = on + timedelta(days=CONCLUSIVE_AFTER_DAYS if self.as_of is not None else 0)
         hz = self.coverage(tour, level)
-        if hz is None or hz < on + timedelta(days=CONCLUSIVE_AFTER_DAYS if self.as_of is not None else 0):
-            if hz is not None and self.as_of is not None and (self.as_of - hz).days <= LIVE_SOURCE_LAG_DAYS:
-                return IndependentTruth(PENDING_RESULT, reason=f"independent results for {tour} {level} are live (newest {hz}, "
-                                                               f"run date {self.as_of}) but not yet published for a match on {on}")
-            return IndependentTruth(NOT_COVERED, reason=f"independent results for {tour} {level} end {hz}; match on {on}")
-        return IndependentTruth(NOT_FOUND, reason="no result between these canonical players in the window although the level is covered")
+        if hz is not None and hz >= conclusive:
+            return IndependentTruth(NOT_FOUND, reason="no result between these canonical players in the window although the level is covered")
+        part = self.partial_horizon.get((tour, LEVEL_FAMILY.get(LEVEL_GROUP.get(level, "O"), "TOUR")))
+        live = max((x for x in (hz, part) if x), default=None)
+        if (live is not None and live < conclusive and self.as_of is not None
+                and (self.as_of - live).days <= LIVE_SOURCE_LAG_DAYS):
+            return IndependentTruth(PENDING_RESULT, reason=f"independent results for {tour} {level} are live (newest {live}, "
+                                                           f"run date {self.as_of}) but not yet published for a match on {on}")
+        if part is not None and part >= conclusive:
+            return IndependentTruth(NOT_COVERED, reason=f"{tour} {level} is only partly covered (ESPN carries some events and "
+                                                        f"rounds; newest {part}) and this match is not among them")
+        return IndependentTruth(NOT_COVERED, reason=f"independent results for {tour} {level} end {hz}; match on {on}")
 
 
 LEVEL_FAMILY = {"GS": "TOUR", "M": "TOUR", "T": "TOUR", "O": "TOUR", "C": "CHALLENGER", "I": "ITF"}
