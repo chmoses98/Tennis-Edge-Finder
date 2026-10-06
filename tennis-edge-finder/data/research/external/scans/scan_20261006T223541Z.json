@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-06T22:35:41.587401+00:00",
+ "run_id": "20261006T223541Z",
+ "external_parse": {
+  "events": 140,
+  "markets": 1704,
+  "skipped_family": 393,
+  "skipped_period": 507,
+  "skipped_live": 15,
+  "one_sided": 23,
+  "rows": 2673,
+  "devigged": 781
+ },
+ "smarkets_fetch": {
+  "events_seen": 142,
+  "events_priced": 80,
+  "markets": 838,
+  "markets_mapped": 358,
+  "contracts": 798,
+  "quoted_contracts": 798,
+  "raw": "data/research/external/raw/20261006T223541Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 358,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 88,
+  "rows": 710,
+  "two_sided": 699,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 1734,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 103,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7923,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Dominic Stephan Stricker": 1,
+   "Vessa Turley": 1,
+   "Kim Dong Ju": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Amy Stevens": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 345,
+  "by_status": {
+   "MAPPED": 308,
+   "UNMAPPED_PLAYER": 36,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8928,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Aleksandar Tolev": 1,
+   "Robin Eldin": 1,
+   "Bogdan Seleznev": 1,
+   "Leandro Zgraggen": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 308,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 86,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 57,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
