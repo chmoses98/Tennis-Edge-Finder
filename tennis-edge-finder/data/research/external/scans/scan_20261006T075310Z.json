@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-06T07:53:10.886749+00:00",
+ "run_id": "20261006T075310Z",
+ "external_parse": {
+  "events": 283,
+  "markets": 2503,
+  "skipped_family": 423,
+  "skipped_period": 687,
+  "skipped_live": 56,
+  "one_sided": 71,
+  "rows": 3868,
+  "devigged": 1322
+ },
+ "smarkets_fetch": {
+  "events_seen": 106,
+  "events_priced": 80,
+  "markets": 1095,
+  "markets_mapped": 398,
+  "contracts": 906,
+  "quoted_contracts": 906,
+  "raw": "data/research/external/raw/20261006T075310Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 398,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 88,
+  "rows": 818,
+  "two_sided": 816,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1003,
+ "external_mapping": {
+  "total": 274,
+  "by_status": {
+   "MAPPED": 226,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8248,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Diego Dedura": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Kim Dong Ju": 1,
+   "Filippo Alfano": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 289,
+  "by_status": {
+   "MAPPED": 249,
+   "UNMAPPED_PLAYER": 40
+  },
+  "mapped_rate": 0.8616,
+  "top_refusal_subjects": {
+   "Daniel Merida": 1,
+   "Yunchaokete Bu": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Elvin Egribel": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Jeremy LAUMON": 1,
+   "Martin Hammond": 1,
+   "Bercel Sandor Takacs": 1
+  }
+ },
+ "matched_both_venues": 170,
+ "external_mapped_matches": 240,
+ "kalshi_mapped_matches": 249,
+ "model_witness_available": true,
+ "rows": 240,
+ "counts": {
+  "PASS": 237,
+  "tri:MODEL_LONE_OUTLIER": 86,
+  "tri:INSUFFICIENT_INPUTS": 125,
+  "tri:MARKETS_AGREE": 17,
+  "SHADOW_BET": 3,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 43
+ }
+}
