@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:15422",
  "foreign_name": "shao yushan",
- "collected_at": "2026-10-06T03:51:16.748119+00:00",
+ "collected_at": "2026-10-06T04:28:55.960504+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15422",
-    "fetched_at": "2026-10-06T03:51:16.748147+00:00",
+    "fetched_at": "2026-10-06T04:28:55.960532+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15422?lang=en&region=us",
@@ -210,17 +210,18 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15422",
-    "fetched_at": "2026-10-06T03:51:17.312899+00:00",
+    "fetched_at": "2026-10-06T04:28:56.556827+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Shao%20Yushan",
-   "fetched_at": "2026-10-06T03:51:17.879583+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
+   "fetched_at": "2026-10-06T04:28:57.131822+00:00",
+   "status": 200,
+   "hits": [
+    "Q141620440"
+   ],
    "players": []
   }
  },
@@ -241,9 +242,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yushan%20Shao",
-     "fetched_at": "2026-10-06T03:51:18.389905+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:29:15.966121+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

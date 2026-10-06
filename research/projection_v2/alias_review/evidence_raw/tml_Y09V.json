@@ -2,12 +2,12 @@
  "foreign_system": "tml",
  "foreign_id": "Y09V",
  "foreign_name": "yunchaokete bu",
- "collected_at": "2026-10-06T03:54:37.992694+00:00",
+ "collected_at": "2026-10-06T04:35:27.535955+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/y09v?v=1",
-    "fetched_at": "2026-10-06T03:54:37.992714+00:00",
+    "fetched_at": "2026-10-06T04:35:27.535977+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
@@ -32,13 +32,53 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Bu%20Yunchaokete",
-     "fetched_at": "2026-10-06T03:54:38.438799+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
-     "players": []
+     "fetched_at": "2026-10-06T04:35:28.027055+00:00",
+     "status": 200,
+     "hits": [
+      "Q112965927"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q112965927.json",
+       "fetched_at": "2026-10-06T04:35:29.243139+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q112965927",
+        "label_en": "Buyunchaokete",
+        "label_zh": "\u5e03\u4e91\u671d\u514b\u7279",
+        "aliases_en": [
+         "Bu Yunchaokete"
+        ],
+        "atp_id": [
+         "Y09V"
+        ],
+        "itf_id": [
+         "yunchaokete-bu/800464245/chn"
+        ],
+        "date_of_birth": [
+         "+2002-01-19T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q148"
+        ]
+       }
+      }
+     ]
     },
-    "tour_profiles": []
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/y09v?v=1",
+      "fetched_at": "2026-10-06T04:35:30.483768+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800464245",
+      "fetched_at": "2026-10-06T04:35:30.962105+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
    },
    "WTA": {
     "sackmann_players_row": {
@@ -55,9 +95,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Simona%20Porchia",
-     "fetched_at": "2026-10-06T03:54:38.947005+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:35:31.777695+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

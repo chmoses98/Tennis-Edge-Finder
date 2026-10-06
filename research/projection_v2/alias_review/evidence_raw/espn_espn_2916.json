@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:2916",
  "foreign_name": "yuan yue",
- "collected_at": "2026-10-06T03:52:24.977228+00:00",
+ "collected_at": "2026-10-06T04:31:08.535417+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2916",
-    "fetched_at": "2026-10-06T03:52:24.977256+00:00",
+    "fetched_at": "2026-10-06T04:31:08.535446+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2916?lang=en&region=us",
@@ -222,14 +222,14 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2916",
-    "fetched_at": "2026-10-06T03:52:25.551599+00:00",
+    "fetched_at": "2026-10-06T04:31:09.116407+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yuan%20Yue",
-   "fetched_at": "2026-10-06T03:52:26.112522+00:00",
+   "fetched_at": "2026-10-06T04:31:09.686240+00:00",
    "status": 200,
    "hits": [
     "Q104143505",
@@ -240,7 +240,7 @@
    "players": [
     {
      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q56248480.json",
-     "fetched_at": "2026-10-06T03:52:28.430589+00:00",
+     "fetched_at": "2026-10-06T04:31:14.598660+00:00",
      "status": 200,
      "summary": {
       "qid": "Q56248480",
@@ -290,10 +290,14 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Kyle%20Joseph",
-     "fetched_at": "2026-10-06T03:52:29.145486+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
+     "fetched_at": "2026-10-06T04:31:15.923832+00:00",
+     "status": 200,
+     "hits": [
+      "Q1369793",
+      "Q28445406",
+      "Q104694079",
+      "Q16980697"
+     ],
      "players": []
     },
     "tour_profiles": []
@@ -313,10 +317,14 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yue%20Yuan",
-     "fetched_at": "2026-10-06T03:52:29.656259+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
+     "fetched_at": "2026-10-06T04:31:22.211708+00:00",
+     "status": 200,
+     "hits": [
+      "Q114457015",
+      "Q101464173",
+      "Q131128497",
+      "Q17425452"
+     ],
      "players": []
     },
     "tour_profiles": []

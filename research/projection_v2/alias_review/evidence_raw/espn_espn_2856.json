@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:2856",
  "foreign_name": "te rigele",
- "collected_at": "2026-10-06T03:51:26.928617+00:00",
+ "collected_at": "2026-10-06T04:29:31.015808+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2856",
-    "fetched_at": "2026-10-06T03:51:26.928643+00:00",
+    "fetched_at": "2026-10-06T04:29:31.015835+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2856?lang=en&region=us",
@@ -220,18 +220,46 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2856",
-    "fetched_at": "2026-10-06T03:51:27.491326+00:00",
+    "fetched_at": "2026-10-06T04:29:31.626271+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Te%20Rigele",
-   "fetched_at": "2026-10-06T03:51:28.053963+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
-   "players": []
+   "fetched_at": "2026-10-06T04:29:32.221498+00:00",
+   "status": 200,
+   "hits": [
+    "Q18552831"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18552831.json",
+     "fetched_at": "2026-10-06T04:29:33.453984+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q18552831",
+      "label_en": "Te Rigele",
+      "label_zh": "\u7279\u65e5\u683c\u4e50",
+      "aliases_en": [],
+      "atp_id": [
+       "TG30"
+      ],
+      "itf_id": [
+       "rigele-te/800389593/chn"
+      ],
+      "date_of_birth": [
+       "+1997-10-09T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ]
+     }
+    }
+   ]
   }
  },
  "canonical": {
@@ -251,7 +279,7 @@
     },
     "wikidata": {
      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18552831.json",
-     "fetched_at": "2026-10-06T03:51:28.567106+00:00",
+     "fetched_at": "2026-10-06T04:29:34.661636+00:00",
      "status": 200,
      "summary": {
       "qid": "Q18552831",
@@ -278,13 +306,13 @@
     "tour_profiles": [
      {
       "url": "https://www.atptour.com/en/-/www/players/hero/tg30?v=1",
-      "fetched_at": "2026-10-06T03:51:29.197771+00:00",
+      "fetched_at": "2026-10-06T04:29:35.936129+00:00",
       "status": 403,
       "error": "HTTP Error 403: Forbidden"
      },
      {
       "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800389593",
-      "fetched_at": "2026-10-06T03:51:29.653929+00:00",
+      "fetched_at": "2026-10-06T04:29:36.410789+00:00",
       "status": 404,
       "error": "HTTP Error 404: Not Found"
      }

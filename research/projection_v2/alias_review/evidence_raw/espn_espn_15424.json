@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:15424",
  "foreign_name": "wei zhang qian",
- "collected_at": "2026-10-06T03:51:49.292992+00:00",
+ "collected_at": "2026-10-06T04:30:33.662918+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15424",
-    "fetched_at": "2026-10-06T03:51:49.293017+00:00",
+    "fetched_at": "2026-10-06T04:30:33.662945+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15424?lang=en&region=us",
@@ -205,16 +205,15 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15424",
-    "fetched_at": "2026-10-06T03:51:49.860072+00:00",
+    "fetched_at": "2026-10-06T04:30:34.242794+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Wei%20Zhang-Qian",
-   "fetched_at": "2026-10-06T03:51:50.424376+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
+   "fetched_at": "2026-10-06T04:30:34.816300+00:00",
+   "status": 200,
    "hits": [],
    "players": []
   }
@@ -236,9 +235,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zhang%20Qian%20Wei",
-     "fetched_at": "2026-10-06T03:51:50.931425+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:30:36.010996+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

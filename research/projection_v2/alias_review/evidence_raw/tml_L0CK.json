@@ -2,12 +2,12 @@
  "foreign_system": "tml",
  "foreign_id": "L0CK",
  "foreign_name": "younes lalami",
- "collected_at": "2026-10-06T03:54:36.519859+00:00",
+ "collected_at": "2026-10-06T04:34:22.231492+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/l0ck?v=1",
-    "fetched_at": "2026-10-06T03:54:36.519879+00:00",
+    "fetched_at": "2026-10-06T04:34:22.231513+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
@@ -32,13 +32,54 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Younes%20Lalami%20Laaroussi",
-     "fetched_at": "2026-10-06T03:54:36.972964+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
-     "players": []
+     "fetched_at": "2026-10-06T04:34:22.709264+00:00",
+     "status": 200,
+     "hits": [
+      "Q117429807"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q117429807.json",
+       "fetched_at": "2026-10-06T04:34:23.922751+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q117429807",
+        "label_en": "Younes Lalami Laaroussi",
+        "label_zh": "\u5c24\u5c3c\u65af\u00b7\u62c9\u62c9\u7c73\u00b7\u62c9\u9c81\u897f",
+        "aliases_en": [],
+        "atp_id": [
+         "L0CK"
+        ],
+        "itf_id": [
+         "younes-lalami/800375446/mar"
+        ],
+        "date_of_birth": [
+         "+2001-04-18T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q16"
+        ],
+        "country_for_sport": [
+         "Q1028"
+        ]
+       }
+      }
+     ]
     },
-    "tour_profiles": []
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/l0ck?v=1",
+      "fetched_at": "2026-10-06T04:34:25.121340+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800375446",
+      "fetched_at": "2026-10-06T04:34:25.595772+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
    },
    "WTA": {
     "sackmann_players_row": {
@@ -55,10 +96,14 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Amy%20Newman",
-     "fetched_at": "2026-10-06T03:54:37.484293+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
+     "fetched_at": "2026-10-06T04:35:21.422940+00:00",
+     "status": 200,
+     "hits": [
+      "Q76095333",
+      "Q90347169",
+      "Q88753594",
+      "Q4749331"
+     ],
      "players": []
     },
     "tour_profiles": []

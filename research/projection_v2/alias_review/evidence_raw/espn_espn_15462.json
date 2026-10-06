@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:15462",
  "foreign_name": "zhang tianhui",
- "collected_at": "2026-10-06T03:52:38.279599+00:00",
+ "collected_at": "2026-10-06T04:31:49.702291+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15462",
-    "fetched_at": "2026-10-06T03:52:38.279642+00:00",
+    "fetched_at": "2026-10-06T04:31:49.702321+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15462?lang=en&region=us",
@@ -220,17 +220,18 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15462",
-    "fetched_at": "2026-10-06T03:52:38.860870+00:00",
+    "fetched_at": "2026-10-06T04:31:50.278492+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zhang%20Tianhui",
-   "fetched_at": "2026-10-06T03:52:39.450570+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
+   "fetched_at": "2026-10-06T04:31:50.868686+00:00",
+   "status": 200,
+   "hits": [
+    "Q65877092"
+   ],
    "players": []
   }
  },
@@ -251,9 +252,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Tianhui%20Zhang",
-     "fetched_at": "2026-10-06T03:52:39.970229+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:31:53.365975+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },
@@ -274,9 +274,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Stanislava%20Cozirscaia",
-     "fetched_at": "2026-10-06T03:52:40.485441+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:32:10.723272+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

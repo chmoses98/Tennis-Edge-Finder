@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13708",
  "foreign_name": "tian fangran",
- "collected_at": "2026-10-06T03:51:30.322891+00:00",
+ "collected_at": "2026-10-06T04:29:37.228149+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13708",
-    "fetched_at": "2026-10-06T03:51:30.322918+00:00",
+    "fetched_at": "2026-10-06T04:29:37.228178+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13708?lang=en&region=us",
@@ -216,18 +216,46 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13708",
-    "fetched_at": "2026-10-06T03:51:30.881852+00:00",
+    "fetched_at": "2026-10-06T04:29:37.907503+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Tian%20Fangran",
-   "fetched_at": "2026-10-06T03:51:31.446372+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
-   "players": []
+   "fetched_at": "2026-10-06T04:29:38.481090+00:00",
+   "status": 200,
+   "hits": [
+    "Q119198619"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q119198619.json",
+     "fetched_at": "2026-10-06T04:29:39.680293+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q119198619",
+      "label_en": "Tian Fangran",
+      "label_zh": "\u7530\u65b9\u7136",
+      "aliases_en": [],
+      "wta_id": [
+       "329397"
+      ],
+      "itf_id": [
+       "fangran-tian/800531870/chn"
+      ],
+      "date_of_birth": [
+       "+2003-08-10T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "family_name": [
+       "Q50809196"
+      ]
+     }
+    }
+   ]
   }
  },
  "canonical": {
@@ -247,9 +275,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Fangran%20Tian",
-     "fetched_at": "2026-10-06T03:51:31.954243+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:29:40.875381+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

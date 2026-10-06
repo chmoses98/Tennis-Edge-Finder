@@ -2,12 +2,12 @@
  "foreign_system": "tml",
  "foreign_id": "M0WY",
  "foreign_name": "guto miguel",
- "collected_at": "2026-10-06T03:53:58.741327+00:00",
+ "collected_at": "2026-10-06T04:34:13.529204+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/m0wy?v=1",
-    "fetched_at": "2026-10-06T03:53:58.741349+00:00",
+    "fetched_at": "2026-10-06T04:34:13.529225+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
@@ -32,13 +32,54 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Luis%20Guto%20Miguel",
-     "fetched_at": "2026-10-06T03:53:59.195123+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
-     "players": []
+     "fetched_at": "2026-10-06T04:34:14.011341+00:00",
+     "status": 200,
+     "hits": [
+      "Q136654887"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q136654887.json",
+       "fetched_at": "2026-10-06T04:34:15.247216+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q136654887",
+        "label_en": "Guto Miguel",
+        "label_zh": null,
+        "aliases_en": [
+         "Lu\u00eds Guto Miguel",
+         "Lu\u00eds Miguel"
+        ],
+        "atp_id": [
+         "M0WY"
+        ],
+        "itf_id": [
+         "luis-guto-miguel/800680259/bra"
+        ],
+        "date_of_birth": [
+         "+2009-02-26T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q155"
+        ]
+       }
+      }
+     ]
     },
-    "tour_profiles": []
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/m0wy?v=1",
+      "fetched_at": "2026-10-06T04:34:16.434374+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800680259",
+      "fetched_at": "2026-10-06T04:34:16.915714+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
    },
    "WTA": {
     "sackmann_players_row": {
@@ -55,9 +96,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zelda%20Kuhn",
-     "fetched_at": "2026-10-06T03:53:59.706224+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:34:17.623828+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

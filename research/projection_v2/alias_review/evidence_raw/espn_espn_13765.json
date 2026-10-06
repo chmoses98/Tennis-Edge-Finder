@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13765",
  "foreign_name": "wang yuhan",
- "collected_at": "2026-10-06T03:51:45.015662+00:00",
+ "collected_at": "2026-10-06T04:30:15.070349+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13765",
-    "fetched_at": "2026-10-06T03:51:45.015690+00:00",
+    "fetched_at": "2026-10-06T04:30:15.070377+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13765?lang=en&region=us",
@@ -213,17 +213,20 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13765",
-    "fetched_at": "2026-10-06T03:51:45.574813+00:00",
+    "fetched_at": "2026-10-06T04:30:15.654998+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Wang%20Yuhan",
-   "fetched_at": "2026-10-06T03:51:46.134283+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
+   "fetched_at": "2026-10-06T04:30:16.267334+00:00",
+   "status": 200,
+   "hits": [
+    "Q136544535",
+    "Q134007218",
+    "Q134438010"
+   ],
    "players": []
   }
  },
@@ -244,10 +247,14 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yuhan%20Wang",
-     "fetched_at": "2026-10-06T03:51:46.642347+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
+     "fetched_at": "2026-10-06T04:30:21.259301+00:00",
+     "status": 200,
+     "hits": [
+      "Q130871456",
+      "Q130911440",
+      "Q131166541",
+      "Q130972580"
+     ],
      "players": []
     },
     "tour_profiles": []

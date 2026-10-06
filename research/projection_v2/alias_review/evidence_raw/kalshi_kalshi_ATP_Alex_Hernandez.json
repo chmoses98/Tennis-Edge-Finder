@@ -2,14 +2,18 @@
  "foreign_system": "kalshi",
  "foreign_id": "kalshi:ATP:Alex Hernandez",
  "foreign_name": "Alex Hernandez",
- "collected_at": "2026-10-06T03:54:40.484948+00:00",
+ "collected_at": "2026-10-06T04:35:43.446905+00:00",
  "foreign": {
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Alex%20Hernandez",
-   "fetched_at": "2026-10-06T03:54:40.484979+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
+   "fetched_at": "2026-10-06T04:35:43.446941+00:00",
+   "status": 200,
+   "hits": [
+    "Q11705517",
+    "Q100982751",
+    "Q124433210",
+    "Q5665101"
+   ],
    "players": []
   },
   "tour_profiles": []
@@ -31,7 +35,7 @@
     },
     "wikidata": {
      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q4714572.json",
-     "fetched_at": "2026-10-06T03:54:40.997240+00:00",
+     "fetched_at": "2026-10-06T04:35:49.693707+00:00",
      "status": 200,
      "summary": {
       "qid": "Q4714572",
@@ -66,13 +70,13 @@
     "tour_profiles": [
      {
       "url": "https://www.atptour.com/en/-/www/players/hero/h346?v=1",
-      "fetched_at": "2026-10-06T03:54:41.694959+00:00",
+      "fetched_at": "2026-10-06T04:35:50.905938+00:00",
       "status": 403,
       "error": "HTTP Error 403: Forbidden"
      },
      {
       "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800184106",
-      "fetched_at": "2026-10-06T03:54:42.141986+00:00",
+      "fetched_at": "2026-10-06T04:35:51.387103+00:00",
       "status": 404,
       "error": "HTTP Error 404: Not Found"
      }
@@ -95,9 +99,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Antonio%20J%20Ayala%20Hernandez",
-     "fetched_at": "2026-10-06T03:54:43.041894+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:35:51.992238+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },
@@ -120,10 +123,14 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Angel%20Hernandez",
-     "fetched_at": "2026-10-06T03:54:43.552640+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
+     "fetched_at": "2026-10-06T04:35:53.234333+00:00",
+     "status": 200,
+     "hits": [
+      "Q8076842",
+      "Q130303486",
+      "Q8076840",
+      "Q4762191"
+     ],
      "players": []
     },
     "tour_profiles": []
@@ -143,9 +150,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Sonal%20Marker",
-     "fetched_at": "2026-10-06T03:54:44.061538+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:35:59.260142+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

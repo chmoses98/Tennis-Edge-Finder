@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:13482",
  "foreign_name": "xiao linang",
- "collected_at": "2026-10-06T03:51:57.622976+00:00",
+ "collected_at": "2026-10-06T04:30:47.563430+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/13482",
-    "fetched_at": "2026-10-06T03:51:57.623003+00:00",
+    "fetched_at": "2026-10-06T04:30:47.563460+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/13482?lang=en&region=us",
@@ -224,16 +224,15 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/13482",
-    "fetched_at": "2026-10-06T03:51:58.192085+00:00",
+    "fetched_at": "2026-10-06T04:30:48.196564+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Xiao%20Linang",
-   "fetched_at": "2026-10-06T03:51:58.762891+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
+   "fetched_at": "2026-10-06T04:30:48.770792+00:00",
+   "status": 200,
    "hits": [],
    "players": []
   }
@@ -255,9 +254,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Linang%20Xiao",
-     "fetched_at": "2026-10-06T03:51:59.274467+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:30:50.016982+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },
@@ -278,9 +276,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Kristyna%20Sramkova",
-     "fetched_at": "2026-10-06T03:51:59.783042+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:31:07.348960+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

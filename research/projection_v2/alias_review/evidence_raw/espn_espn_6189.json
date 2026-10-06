@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:6189",
  "foreign_name": "wei sijia",
- "collected_at": "2026-10-06T03:51:47.154494+00:00",
+ "collected_at": "2026-10-06T04:30:27.376916+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/6189",
-    "fetched_at": "2026-10-06T03:51:47.154520+00:00",
+    "fetched_at": "2026-10-06T04:30:27.376942+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/6189?lang=en&region=us",
@@ -220,18 +220,43 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/6189",
-    "fetched_at": "2026-10-06T03:51:47.716341+00:00",
+    "fetched_at": "2026-10-06T04:30:28.029108+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Wei%20Sijia",
-   "fetched_at": "2026-10-06T03:51:48.274740+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
-   "players": []
+   "fetched_at": "2026-10-06T04:30:28.648551+00:00",
+   "status": 200,
+   "hits": [
+    "Q114686896"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q114686896.json",
+     "fetched_at": "2026-10-06T04:30:29.856742+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q114686896",
+      "label_en": "Wei Sijia",
+      "label_zh": "\u97e6\u601d\u4f73",
+      "aliases_en": [],
+      "wta_id": [
+       "328426"
+      ],
+      "itf_id": [
+       "sijia-wei/800507052/chn"
+      ],
+      "date_of_birth": [
+       "+2003-12-05T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ]
+     }
+    }
+   ]
   }
  },
  "canonical": {
@@ -251,10 +276,11 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Sijia%20Wei",
-     "fetched_at": "2026-10-06T03:51:48.783142+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
+     "fetched_at": "2026-10-06T04:30:31.186806+00:00",
+     "status": 200,
+     "hits": [
+      "Q91645717"
+     ],
      "players": []
     },
     "tour_profiles": []

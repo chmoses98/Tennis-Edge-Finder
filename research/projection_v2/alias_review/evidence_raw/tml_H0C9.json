@@ -2,12 +2,12 @@
  "foreign_system": "tml",
  "foreign_id": "H0C9",
  "foreign_name": "arklon huertas del pino cordova",
- "collected_at": "2026-10-06T03:53:39.275630+00:00",
+ "collected_at": "2026-10-06T04:32:56.887118+00:00",
  "foreign": {
   "atp_profile": [
    {
     "url": "https://www.atptour.com/en/-/www/players/hero/h0c9?v=1",
-    "fetched_at": "2026-10-06T03:53:39.275652+00:00",
+    "fetched_at": "2026-10-06T04:32:56.887140+00:00",
     "status": 403,
     "error": "HTTP Error 403: Forbidden"
    }
@@ -32,13 +32,60 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Arklon%20Huertas%20Del%20Pino",
-     "fetched_at": "2026-10-06T03:53:39.725788+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
-     "hits": [],
-     "players": []
+     "fetched_at": "2026-10-06T04:33:13.500938+00:00",
+     "status": 200,
+     "hits": [
+      "Q109781755"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q109781755.json",
+       "fetched_at": "2026-10-06T04:33:14.709245+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q109781755",
+        "label_en": "Arklon Huertas del Pino",
+        "label_zh": "\u963f\u514b\u9686\u00b7\u97e6\u5c14\u5854\u65af\u00b7\u5fb7\u5c14\u76ae\u8bfa",
+        "aliases_en": [],
+        "atp_id": [
+         "H0C9"
+        ],
+        "itf_id": [
+         "arklon-huertas-del-pino/800318884/per"
+        ],
+        "date_of_birth": [
+         "+1994-07-16T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q419"
+        ],
+        "country_for_sport": [
+         "Q419"
+        ],
+        "given_name": [
+         "Q11113719"
+        ],
+        "family_name": [
+         "Q141275500"
+        ]
+       }
+      }
+     ]
     },
-    "tour_profiles": []
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/h0c9?v=1",
+      "fetched_at": "2026-10-06T04:33:15.886174+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800318884",
+      "fetched_at": "2026-10-06T04:33:16.424550+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
    },
    "WTA": {
     "sackmann_players_row": {
@@ -55,9 +102,8 @@
     },
     "wikidata_search": {
      "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Maren%20Haus",
-     "fetched_at": "2026-10-06T03:53:40.233986+00:00",
-     "status": 429,
-     "error": "HTTP Error 429: Too Many Requests",
+     "fetched_at": "2026-10-06T04:33:20.161692+00:00",
+     "status": 200,
      "hits": [],
      "players": []
     },

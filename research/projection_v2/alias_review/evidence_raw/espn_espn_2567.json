@@ -2,12 +2,12 @@
  "foreign_system": "espn",
  "foreign_id": "espn:2567",
  "foreign_name": "sun fajing",
- "collected_at": "2026-10-06T03:51:18.899030+00:00",
+ "collected_at": "2026-10-06T04:29:17.169516+00:00",
  "foreign": {
   "espn_athlete": [
    {
     "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2567",
-    "fetched_at": "2026-10-06T03:51:18.899057+00:00",
+    "fetched_at": "2026-10-06T04:29:17.169542+00:00",
     "status": 200,
     "json": {
      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2567?lang=en&region=us",
@@ -224,18 +224,46 @@
    },
    {
     "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2567",
-    "fetched_at": "2026-10-06T03:51:19.476186+00:00",
+    "fetched_at": "2026-10-06T04:29:17.863572+00:00",
     "status": 500,
     "error": "HTTP Error 500: Internal Server Error"
    }
   ],
   "wikidata_search": {
    "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Sun%20Fajing",
-   "fetched_at": "2026-10-06T03:51:20.057581+00:00",
-   "status": 429,
-   "error": "HTTP Error 429: Too Many Requests",
-   "hits": [],
-   "players": []
+   "fetched_at": "2026-10-06T04:29:18.474252+00:00",
+   "status": 200,
+   "hits": [
+    "Q26251497"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q26251497.json",
+     "fetched_at": "2026-10-06T04:29:19.670269+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q26251497",
+      "label_en": "Sun Fajing",
+      "label_zh": "\u5b59\u53d1\u4eac",
+      "aliases_en": [],
+      "atp_id": [
+       "SX90"
+      ],
+      "itf_id": [
+       "fajing-sun/800333640/chn"
+      ],
+      "date_of_birth": [
+       "+1996-10-03T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ]
+     }
+    }
+   ]
   }
  },
  "canonical": {
@@ -255,7 +283,7 @@
     },
     "wikidata": {
      "url": "https://www.wikidata.org/wiki/Special:EntityData/Q26251497.json",
-     "fetched_at": "2026-10-06T03:51:20.568804+00:00",
+     "fetched_at": "2026-10-06T04:29:20.997005+00:00",
      "status": 200,
      "summary": {
       "qid": "Q26251497",
@@ -282,13 +310,13 @@
     "tour_profiles": [
      {
       "url": "https://www.atptour.com/en/-/www/players/hero/sx90?v=1",
-      "fetched_at": "2026-10-06T03:51:21.259093+00:00",
+      "fetched_at": "2026-10-06T04:29:22.178201+00:00",
       "status": 403,
       "error": "HTTP Error 403: Forbidden"
      },
      {
       "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800333640",
-      "fetched_at": "2026-10-06T03:51:21.709126+00:00",
+      "fetched_at": "2026-10-06T04:29:22.657688+00:00",
       "status": 404,
       "error": "HTTP Error 404: Not Found"
      }
