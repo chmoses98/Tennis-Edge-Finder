@@ -1,5 +1,5 @@
 {
- "built_at": "2026-10-06T05:06:45.854889+00:00",
+ "built_at": "2026-10-06T05:50:25.354856+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
@@ -1323,7 +1323,7 @@
   }
  },
  "min_year": 1990,
- "build_version": "canonical_v2.2",
+ "build_version": "canonical_v2.3",
  "cross_source_duplicates_dropped": 145740,
  "reviewed_crosswalk_aliases": {
   "file_sha256": "8c909f4eb60026f21d140faee0d641346d4d344e19d9f157f9eecc7014a5dc7c",
@@ -1331,6 +1331,89 @@
   "applied": 77,
   "refused": []
  },
+ "alias_split_opponent_duplicates_dropped": 16,
+ "alias_split_opponent_duplicates": [
+  {
+   "player": "103607",
+   "opponent_dropped": "Sandor Martinez (109731, tml)",
+   "opponent_kept": "Sandor Martinez Breijo (108651, sackmann)"
+  },
+  {
+   "player": "104907",
+   "opponent_dropped": "Catalin-Ionut Gard (103806, tml)",
+   "opponent_kept": "Catalin Gard (103805, sackmann)"
+  },
+  {
+   "player": "105438",
+   "opponent_dropped": "Catalin-Ionut Gard (103806, tml)",
+   "opponent_kept": "Catalin Gard (103805, sackmann)"
+  },
+  {
+   "player": "105438",
+   "opponent_dropped": "Sam Weissborn (tml:W612, tml)",
+   "opponent_kept": "Tristan Samuel Weissborn (105864, sackmann)"
+  },
+  {
+   "player": "104822",
+   "opponent_dropped": "Mukund Sasikumar (tml:MP13, tml)",
+   "opponent_kept": "Sasi Kumar Mukund (124154, sackmann)"
+  },
+  {
+   "player": "104907",
+   "opponent_dropped": "Nicolas N'Godrela (tml:N604, tml)",
+   "opponent_kept": "Nicolas Ngodrela (109246, sackmann)"
+  },
+  {
+   "player": "103607",
+   "opponent_dropped": "JiSung Nam (210079, tml)",
+   "opponent_kept": "Ji Sung Nam (106227, sackmann)"
+  },
+  {
+   "player": "106232",
+   "opponent_dropped": "Mukund Sasikumar (tml:MP13, tml)",
+   "opponent_kept": "Sasi Kumar Mukund (124154, sackmann)"
+  },
+  {
+   "player": "104907",
+   "opponent_dropped": "JiSung Nam (210079, tml)",
+   "opponent_kept": "Ji Sung Nam (106227, sackmann)"
+  },
+  {
+   "player": "105077",
+   "opponent_dropped": "Christopher O'Connell (tml:O483, tml)",
+   "opponent_kept": "Christopher Oconnell (106331, sackmann)"
+  },
+  {
+   "player": "207736",
+   "opponent_dropped": "Osgar O'Hoisin (tml:O684, tml)",
+   "opponent_kept": "Osgar Ohoisin (200279, sackmann)"
+  },
+  {
+   "player": "207352",
+   "opponent_dropped": "Giovanni Fonio (106198, tml)",
+   "opponent_kept": "Giovanni Fonio (200216, sackmann)"
+  },
+  {
+   "player": "123961",
+   "opponent_dropped": "Juan Bautista Torres (106426, tml)",
+   "opponent_kept": "Juan Bautista Torres (208913, sackmann)"
+  },
+  {
+   "player": "207352",
+   "opponent_dropped": "Yun seong Chung (212803, tml)",
+   "opponent_kept": "Yunseong Chung (126283, sackmann)"
+  },
+  {
+   "player": "111190",
+   "opponent_dropped": "Chak Lam Coleman Wong (208597, espn)",
+   "opponent_kept": "Coleman Wong (209409, tml)"
+  },
+  {
+   "player": "213821",
+   "opponent_dropped": "Ma YeXin (espn:espn:13615, espn)",
+   "opponent_kept": "Ye Xin Ma (215946, sackmann)"
+  }
+ ],
  "cross_source_near_duplicates_dropped": 87659,
  "near_duplicates_by_pair": {
   "espn_ATP->sackmann_ATP_main": 387,
@@ -1357,10 +1440,10 @@
    "REVIEWED_ALIAS": 77,
    "AMBIGUOUS_NAME": 60
   },
-  "rows_total": 1545897,
-  "rows_canonical_id": 1541169,
-  "foreign_rows": 18367,
-  "foreign_rows_mapped": 13639
+  "rows_total": 1545881,
+  "rows_canonical_id": 1541153,
+  "foreign_rows": 18351,
+  "foreign_rows_mapped": 13623
  },
  "player_crosswalk_by_system": {
   "tml": {
@@ -1384,16 +1467,16 @@
    }
   }
  },
- "rows": 1545897,
+ "rows": 1545881,
  "quarantine_rows": 14424,
  "by_tour_level": {
-  "ATP|CHALLENGER": 200354,
+  "ATP|CHALLENGER": 200344,
   "ATP|GRAND_SLAM": 30690,
   "ATP|ITF": 518951,
   "ATP|MASTERS_1000": 25152,
   "ATP|OLYMPICS": 68,
-  "ATP|TEAM": 11369,
-  "ATP|TOUR_500_250": 84151,
+  "ATP|TEAM": 11366,
+  "ATP|TOUR_500_250": 84149,
   "ATP|TOUR_FINALS": 526,
   "WTA|GRAND_SLAM": 31067,
   "WTA|ITF": 467977,
@@ -1401,14 +1484,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 69491,
+  "WTA|TOUR_500_250": 69490,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
   "sackmann": 1527530,
-  "tml": 14250,
-  "espn": 4117
+  "tml": 14236,
+  "espn": 4115
  },
  "seasons": {
   "1990": 15735,
@@ -1425,29 +1508,29 @@
   "2001": 34662,
   "2002": 34228,
   "2003": 35502,
-  "2004": 38022,
+  "2004": 38021,
   "2005": 39987,
   "2006": 41723,
   "2007": 43826,
-  "2008": 44888,
+  "2008": 44887,
   "2009": 43535,
-  "2010": 43751,
-  "2011": 46169,
+  "2010": 43750,
+  "2011": 46168,
   "2012": 47760,
   "2013": 50989,
-  "2014": 51606,
+  "2014": 51605,
   "2015": 53749,
   "2016": 55358,
-  "2017": 52636,
+  "2017": 52635,
   "2018": 51966,
-  "2019": 60033,
+  "2019": 60032,
   "2020": 20169,
-  "2021": 49568,
-  "2022": 65453,
-  "2023": 69012,
+  "2021": 49566,
+  "2022": 65452,
+  "2023": 69011,
   "2024": 74973,
-  "2025": 55505,
-  "2026": 28959
+  "2025": 55503,
+  "2026": 28956
  },
- "matches_sha256": "c4a3df7aebc067bb91ff3d493d6f2305285933eae5bdf2ebe127c551050cde6c"
+ "matches_sha256": "1c530500e209580a8944dcaa3d33f5703164b7fcdef45627dabd6abc23ba46e0"
 }
