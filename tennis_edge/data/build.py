@@ -60,8 +60,9 @@ def _load_group(paths, tour, kind, id_system, source_label, seen):
     return clean_parts, q_parts, counts
 
 
-BUILD_VERSION = "canonical_v2.2"   # v2.1 (2026-10-05): minting refuses other forms of an existing name
+BUILD_VERSION = "canonical_v2.3"   # v2.1 (2026-10-05): minting refuses other forms of an existing name
 #                                   v2.2 (2026-10-06): human-reviewed foreign-id aliases (reviewed_aliases.json)
+#                                   v2.3 (2026-10-06): reviewed-alias rows duplicated through a split opponent id
 LEGACY_BUILD_VERSION = "canonical_v1"
 
 
@@ -183,6 +184,13 @@ def build(min_year: int = 1990, write: bool = True, legacy: bool = False, out_di
         # its first). See tennis_edge/data/dedupe.py.
         from tennis_edge.data.dedupe import drop_cross_source_duplicates
         df, dedupe_audit = drop_cross_source_duplicates(df)
+        # canonical_v2.3: the same match whose OPPONENT carries two canonical ids, for reviewed-alias rows only
+        from tennis_edge.data.dedupe import drop_split_opponent_duplicates
+        alias_ids = {(r.foreign_id_system, str(r.foreign_id)) for r in crosswalk.itertuples(index=False)
+                     if r.status == "REVIEWED_ALIAS"}
+        df, split_audit = drop_split_opponent_duplicates(df, alias_ids)
+        manifest["alias_split_opponent_duplicates_dropped"] = int(len(split_audit))
+        manifest["alias_split_opponent_duplicates"] = split_audit[["player", "opponent_dropped", "opponent_kept"]].to_dict("records")
         df = df.reset_index(drop=True)
         manifest["cross_source_near_duplicates_dropped"] = int(len(dedupe_audit))
         if len(dedupe_audit):
