@@ -37,6 +37,16 @@ UA = "tennis-edge-finder identity review (research; contact via GitHub repo)"
 
 
 def get(url: str, accept: str = "application/json", timeout: int = 25) -> dict:
+    """GET with polite pacing; HTTP 429 is retried with backoff (Wikidata rate-limits shared runner IPs)."""
+    for attempt in range(5):
+        rec = _get_once(url, accept, timeout)
+        if rec.get("status") != 429:
+            return rec
+        time.sleep(15 * (attempt + 1))
+    return rec
+
+
+def _get_once(url: str, accept: str, timeout: int) -> dict:
     rec = {"url": url, "fetched_at": datetime.now(timezone.utc).isoformat()}
     try:
         req = urllib.request.Request(url, headers={"User-Agent": UA, "Accept": accept})
@@ -54,7 +64,7 @@ def get(url: str, accept: str = "application/json", timeout: int = 25) -> dict:
     except Exception as e:  # noqa: BLE001 -- recorded, never fatal
         rec["status"] = None
         rec["error"] = f"{type(e).__name__}: {e}"[:300]
-    time.sleep(0.4)
+    time.sleep(1.0 if "wikidata" in url else 0.4)
     return rec
 
 
@@ -190,13 +200,17 @@ def main():
     ap.add_argument("--data-root", default=os.path.join(PROJ, "data"))
     ap.add_argument("--out", default=os.path.join(OUT, "evidence_raw"))
     ap.add_argument("--only", nargs="*", default=None, help="foreign ids to (re)fetch")
+    ap.add_argument("--only-file", default=os.path.join(OUT, "REQUEST_ONLY"),
+                    help="if this file exists, (re)fetch only the foreign ids it lists, one per line")
     a = ap.parse_args()
+    if a.only is None and a.only_file and os.path.exists(a.only_file):
+        a.only = [x.strip() for x in open(a.only_file) if x.strip() and not x.startswith("#")]
     os.makedirs(a.out, exist_ok=True)
     doc = json.load(open(a.candidates))
     cands = doc["candidates"] + (doc.get("kalshi_names") or [])
     players = sackmann_players(a.data_root)
     print(f"sackmann players rows: {len(players)}")
-    tml_ids = [c["foreign_id"] for c in cands if c["foreign_system"] == "tml"]
+    tml_ids = [c["foreign_id"] for c in cands if c["foreign_system"] == "tml" and (not a.only or c["foreign_id"] in a.only)]
     atp_items = wikidata_items_by_atp_id(tml_ids) if tml_ids else {"items": {}}
     json.dump(atp_items, open(os.path.join(a.out, "_wikidata_items_by_tml_atp_id.json"), "w"), indent=1, default=str)
     wd_cache: dict = {}

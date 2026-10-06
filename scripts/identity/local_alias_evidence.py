@@ -52,7 +52,7 @@ def sackmann_bios(data_root):
         p = _newest(data_root, f"*/sackmann/tennis_{t}/{t}_players.csv*")
         if p:
             for r in _csv(p):
-                out[str(r["player_id"])] = {k: r.get(k) for k in ("name_first", "name_last", "dob", "ioc", "wikidata_id", "hand")} | {"tour": t.upper()}
+                out[(t.upper(), str(r["player_id"]))] = {k: r.get(k) for k in ("name_first", "name_last", "dob", "ioc", "wikidata_id", "hand")}
     return out
 
 
@@ -66,9 +66,11 @@ def _tok(k):
     return frozenset(str(k).split())
 
 
-def side_rows(m: pd.DataFrame, pid: str, system: str) -> pd.DataFrame:
-    """One row per match for player `pid` in `system`: date, won, opponent name key / id, tourney, level, age, ioc."""
+def side_rows(m: pd.DataFrame, pid: str, system: str, tours=None) -> pd.DataFrame:
+    """One row per match for player `pid` in `system` (restricted to `tours`: Sackmann ATP and WTA ids overlap)."""
     mm = m[m["id_system"] == system]
+    if tours:
+        mm = mm[mm["tour"].isin(tours)]
     parts = []
     for me, op, won in (("winner", "loser", True), ("loser", "winner", False)):
         s = mm[mm[f"{me}_id"].astype(str) == pid]
@@ -105,12 +107,14 @@ def activity(d: pd.DataFrame) -> dict:
     if d.empty:
         return {"n_matches": 0}
     ages = pd.to_numeric(d["age"], errors="coerce") if "age" in d else pd.Series(dtype=float)
-    birth = (d["date"] - pd.to_timedelta(ages * 365.25, unit="D")).dropna() if len(ages.dropna()) else pd.Series(dtype="datetime64[ns]")
+    ages = ages.where((ages > 10) & (ages < 60))           # sources carry junk ages; a plausible playing age only
+    yf = d["date"].dt.year + (d["date"].dt.dayofyear - 1) / 365.25 - ages          # implied birth, in fractional years
+    yf = yf.dropna()
     return {"n_matches": int(len(d)), "first": str(d["date"].min().date()), "last": str(d["date"].max().date()),
             "tours": sorted(d["tour"].dropna().unique().tolist()),
             "levels": {k: int(v) for k, v in d["level"].value_counts().items()} if "level" in d else {},
             "ioc_on_rows": {k: int(v) for k, v in d["ioc"].dropna().astype(str).value_counts().head(3).items()} if "ioc" in d else {},
-            "birth_date_implied_by_row_ages": str(birth.median().date()) if len(birth) else None}
+            "birth_year_implied_by_row_ages": round(float(yf.median()), 2) if len(yf) else None}
 
 
 def main():
@@ -121,6 +125,10 @@ def main():
     ap.add_argument("--out", default=os.path.join(OUT, "local_evidence.json"))
     a = ap.parse_args()
     m = pd.read_parquet(a.matches or os.path.join(a.data_root, "processed", "matches.parquet"))
+    keep = set()
+    for c in json.load(open(a.candidates))["candidates"]:
+        keep.add(c["foreign_id"]); keep.update(x["canonical_id"] for x in c["candidates"])
+    m = m[m["winner_id"].astype(str).isin(keep) | m["loser_id"].astype(str).isin(keep)]
     cw = pd.read_parquet(os.path.join(os.path.dirname(a.matches or os.path.join(a.data_root, "processed", "x")), "player_crosswalk.parquet"))
     canon_of = {(r.foreign_id_system, str(r.foreign_id)): str(r.canonical_id) for r in cw.itertuples(index=False)
                 if r.canonical_id is not None and r.status in ("MAPPED", "MINTED_NEW_PLAYER", "REVIEWED_ALIAS")}
@@ -132,20 +140,22 @@ def main():
         f = side_rows(m, fid, sysn)
         f_opp = {oid: canon_of.get((sysn, oid)) for oid in f["opp_id"].unique()} if not f.empty else {}
         cw_row = cw[(cw.foreign_id_system == sysn) & (cw.foreign_id.astype(str) == fid)]
-        e = {"foreign_system": sysn, "foreign_id": fid, "foreign_name": c["foreign_name"],
+        ftours = sorted(f["tour"].dropna().unique().tolist()) if not f.empty else []
+        e = {"foreign_system": sysn, "foreign_id": fid, "foreign_name": c["foreign_name"], "foreign_tours": ftours,
              "crosswalk_status": cw_row["status"].iloc[0] if len(cw_row) else None,
              "foreign_activity": activity(f),
              "foreign_bio": tb.get(fid) if sysn == "tml" else None, "candidates": []}
         for cand in c["candidates"]:
             cid = cand["canonical_id"]
-            cr = side_rows(m, cid, "sackmann")
+            cr = side_rows(m, cid, "sackmann", ftours)
             sm = shared_matches(f, cr, f_opp)
             e["candidates"].append({"canonical_id": cid, "canonical_name": cand["canonical_name"],
-                                    "sackmann_bio": sb.get(cid), "canonical_activity": activity(cr),
+                                    "sackmann_bio": {t: sb.get((t, cid)) for t in ftours},
+                                    "canonical_activity": activity(cr),
                                     "shared_matches": len(sm), "shared_match_examples": sm[:5]})
         res.append(e)
         print(sysn, fid, c["foreign_name"], [(x["canonical_id"], x["shared_matches"]) for x in e["candidates"]])
-    json.dump({"window_days": WINDOW_DAYS, "matches_rows": int(len(m)), "candidates": res}, open(a.out, "w"), indent=1, default=str)
+    json.dump({"window_days": WINDOW_DAYS, "candidates": res}, open(a.out, "w"), indent=1, default=str)
     return 0
 
 
