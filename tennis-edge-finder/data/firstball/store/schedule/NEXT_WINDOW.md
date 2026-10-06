@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 12:40Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 12:52Z)
 
 * Earliest credible first ball: **2026-10-07 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-07 03:15Z**
@@ -16,7 +16,7 @@
 
 **13 main-tour match(es) without a verified start status** (BET blocked until checked): Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic, Fabian Marozsan vs Zachary Svajda, Luca Van Assche vs Yunchaokete Bu, Mariano Navone vs Pablo Carreno Busta, Martin Landaluce vs Jan-Lennard Struff, Cameron Norrie vs Denis Shapovalov, Adolfo Daniel Vallejo vs Valentin Royer, Marcos Giron vs Sebastian Baez
 
-Published slate: `SL-20261006T121644Z-ec9373d9` built 2026-10-06 12:16Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261006T123719Z-91247041` built 2026-10-06 12:37Z -- current
 
 Dispatched this pass: none
 
