@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-06T12:53:06.872226+00:00",
+ "run_id": "20261006T125306Z",
+ "external_parse": {
+  "events": 188,
+  "markets": 1566,
+  "skipped_family": 283,
+  "skipped_period": 481,
+  "skipped_live": 61,
+  "one_sided": 55,
+  "rows": 2456,
+  "devigged": 747
+ },
+ "smarkets_fetch": {
+  "events_seen": 95,
+  "events_priced": 80,
+  "markets": 1049,
+  "markets_mapped": 384,
+  "contracts": 870,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261006T125306Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 384,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 88,
+  "rows": 782,
+  "two_sided": 774,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 767,
+ "external_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 148,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8268,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Andres Pereiro Lopez": 1,
+   "Thiago Pernas": 1,
+   "Martin Hammond": 1,
+   "Jeremy Laumon": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 165,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.9218,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Elvin Egribel": 1,
+   "Alex Hernandez": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jeremy LAUMON": 1,
+   "Martin Hammond": 1,
+   "Bercel Sandor Takacs": 1,
+   "Andres Pereiro Lopez": 1,
+   "Yara Bartashevich": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 105,
+ "external_mapped_matches": 158,
+ "kalshi_mapped_matches": 165,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 107,
+  "tri:MODEL_LONE_OUTLIER": 67,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 13
+ },
+ "skips": {
+  "external_has_no_match_winner": 47
+ }
+}
