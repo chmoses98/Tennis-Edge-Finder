@@ -6,7 +6,7 @@ name: TENNIS independent truth refresh
 # Why: Bootstrap #37 published ESPN results through 2026-10-06 at ~12:20Z, but RUN TENNIS #109/#110 had run at 05:42 and
 # 06:35Z and the 12:25Z RUN TENNIS tick never fired, so the prospective V2 study read N=0 independently settled for hours
 # with the results already on the branch. GitHub starts scheduled workflows late or drops them, so this job is driven by
-# the bootstrap's COMPLETION (workflow_run), keeps a fallback schedule, and checks the evidence itself: it rebuilds only
+# the bootstrap itself (a job that needs its sources job), keeps a fallback schedule, and checks the evidence itself: it rebuilds only
 # when the newest ESPN snapshot on tennis-data has not been used by any sports-truth snapshot yet.
 #
 # Bounded: a sparse pull of sources + settlements + ledger, the canonical build, scripts/ops/sports_truth.py, and a publish
@@ -14,9 +14,9 @@ name: TENNIS independent truth refresh
 # model is touched; it never runs the pricing pipeline.
 
 on:
-  workflow_run:
-    workflows: ["Tennis Bootstrap (sources + Kalshi tennis discovery)"]
-    types: [completed]
+  # called by the bootstrap's `truth` job right after its `sources` job publishes (needs: sources). Not workflow_run:
+  # that fires only when the WHOLE bootstrap completes, including its Kalshi discovery job (up to 350 min).
+  workflow_call:
   schedule:
     - cron: '17 3,15 * * *'    # fallback in case a workflow_run delivery is lost; a no-op when nothing is new
   workflow_dispatch:
@@ -49,7 +49,7 @@ jobs:
       - name: Anything new?
         id: need
         run: |
-          RC=0; python3 scripts/ops/truth_refresh_needed.py ${{ github.event.inputs.force == 'true' && '--force' || '' }} || RC=$?
+          RC=0; python3 scripts/ops/truth_refresh_needed.py ${{ inputs.force == 'true' && '--force' || '' }} || RC=$?
           if [ "$RC" -eq 0 ]; then echo "run=1" >> "$GITHUB_OUTPUT"; elif [ "$RC" -eq 10 ]; then echo "run=0" >> "$GITHUB_OUTPUT"; else exit "$RC"; fi
       - name: Canonical build
         if: steps.need.outputs.run == '1'

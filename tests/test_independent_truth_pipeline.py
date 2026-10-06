@@ -336,7 +336,10 @@ def test_workflows_keep_single_writers():
     assert len(pubs) == 1 and "--src data/research/sports_truth" in pubs[0]
     trw = yaml.safe_load(tr)
     on = trw.get(True) or trw.get("on")
-    assert "workflow_run" in on and "push" not in on
+    assert "workflow_call" in on and "push" not in on and "schedule" in on
+    boot = yaml.safe_load(open(os.path.join(ROOT, ".github", "workflows", "tennis-bootstrap.yml")))
+    job = boot["jobs"]["truth"]
+    assert job["needs"] == "sources" and job["uses"].endswith("tennis-truth-refresh.yml")
 
 
 def test_publish_exclude(tmp_path):

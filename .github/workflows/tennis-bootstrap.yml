@@ -141,6 +141,16 @@ jobs:
           python3 scripts/ci/run_state.py espn --acquire-outcome "${{ steps.acquire_espn.outcome }}" \
             --publish-rc "${{ steps.publish_espn.outputs.rc }}"
 
+  # Independent truth follows the ESPN publish immediately (2026-10-07), not the next RUN TENNIS: GitHub starts scheduled
+  # runs late or drops them, and on 2026-10-06 published results sat unused for 6+ hours. A no-op (one sparse pull) when
+  # the newest ESPN snapshot has already been used.
+  truth:
+    needs: sources
+    if: always() && needs.sources.result != 'cancelled'
+    permissions:
+      contents: write
+    uses: ./.github/workflows/tennis-truth-refresh.yml
+
   kalshi:
     runs-on: ubuntu-latest
     timeout-minutes: 350
