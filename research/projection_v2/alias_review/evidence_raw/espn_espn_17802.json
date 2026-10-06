@@ -1,0 +1,236 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:17802",
+ "foreign_name": "sara alejandra lozano avellaneda",
+ "collected_at": "2026-10-06T03:38:12.706338+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/17802",
+    "fetched_at": "2026-10-06T03:38:12.706363+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/17802?lang=en&region=us",
+     "id": "17802",
+     "uid": "s:850~a:17802",
+     "type": "tennis",
+     "guid": "25df664f-7834-36e6-8da6-3ce0f32bf0b0",
+     "firstName": "Sara Alejandra",
+     "lastName": "Lozano Avellaneda",
+     "fullName": "Sara Alejandra Lozano Avellaneda",
+     "displayName": "Sara Alejandra Lozano Avellaneda",
+     "shortName": "S. Lozano Avellaneda",
+     "age": 15,
+     "dateOfBirth": "2011-04-02T07:00Z",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/17802/sara-alejandra-lozano-avellaneda",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/17802/sara-alejandra-lozano-avellaneda",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:17802&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/17802/sara-alejandra-lozano-avellaneda",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/17802/sara-alejandra-lozano-avellaneda",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:17802&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/17802/sara-alejandra-lozano-avellaneda",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:17802&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/17802/sara-alejandra-lozano-avellaneda",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:17802",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "N/A"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/151?lang=en&region=us",
+      "id": "151",
+      "slug": "colombia",
+      "alternateId": "151",
+      "name": "Colombia",
+      "abbreviation": "COL",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+       "alt": "Colombia",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/151/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "sara-alejandra-lozano-avellaneda",
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/col.png",
+      "alt": "Colombia",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/types/2/athletes/17802/statistics?lang=en&region=us"
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/athletes/17802/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/17802/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/players/17802/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/17802",
+    "fetched_at": "2026-10-06T03:38:13.320601+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ]
+ },
+ "canonical": {
+  "205957": {
+   "sackmann_players_row": {
+    "player_id": "205957",
+    "name_first": "Alejandra",
+    "name_last": "Lozano",
+    "hand": "R",
+    "dob": "19910614",
+    "ioc": "MEX",
+    "height": "",
+    "wikidata_id": "",
+    "_tour": "WTA",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   }
+  }
+ }
+}

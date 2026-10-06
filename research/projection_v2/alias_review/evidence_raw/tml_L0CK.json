@@ -1,0 +1,46 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "L0CK",
+ "foreign_name": "younes lalami",
+ "collected_at": "2026-10-06T03:40:54.003969+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/l0ck?v=1",
+    "fetched_at": "2026-10-06T03:40:54.003993+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22l0ck%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:54.476440+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  },
+  "wikidata_items_with_this_atp_id_upper": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22L0CK%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:54.979047+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  }
+ },
+ "canonical": {
+  "207794": {
+   "sackmann_players_row": {
+    "player_id": "207794",
+    "name_first": "Amy",
+    "name_last": "Newman",
+    "hand": "U",
+    "dob": "19790124",
+    "ioc": "USA",
+    "height": "",
+    "wikidata_id": "",
+    "_tour": "WTA",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   }
+  }
+ }
+}

@@ -1,0 +1,289 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:2567",
+ "foreign_name": "sun fajing",
+ "collected_at": "2026-10-06T03:38:15.917581+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2567",
+    "fetched_at": "2026-10-06T03:38:15.917607+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2567?lang=en&region=us",
+     "id": "2567",
+     "uid": "s:850~a:2567",
+     "type": "tennis",
+     "guid": "6d6b391d-cb8d-c1e4-32b6-77321c041f2d",
+     "firstName": "Fajing",
+     "lastName": "Sun",
+     "fullName": "Sun Fajing",
+     "displayName": "Sun Fajing",
+     "shortName": "S. Fajing",
+     "weight": 165.0,
+     "displayWeight": "165 lbs",
+     "height": 70.0,
+     "displayHeight": "5' 10\"",
+     "age": 30,
+     "dateOfBirth": "1996-10-03T07:00Z",
+     "debutYear": 2014,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/2567/sun-fajing",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/2567/sun-fajing",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2567&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/2567/sun-fajing",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/2567/sun-fajing",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2567&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/2567/sun-fajing",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2567&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/2567/sun-fajing",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2567",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Beijing , China "
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "sun-fajing",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/2567/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 12
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/2567/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2567/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/2567/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2567",
+    "fetched_at": "2026-10-06T03:38:16.434844+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ]
+ },
+ "canonical": {
+  "111806": {
+   "sackmann_players_row": {
+    "player_id": "111806",
+    "name_first": "Fajing",
+    "name_last": "Sun",
+    "hand": "R",
+    "dob": "19961003",
+    "ioc": "CHN",
+    "height": "178",
+    "wikidata_id": "Q26251497",
+    "_tour": "ATP",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   },
+   "wikidata": {
+    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q26251497.json",
+    "fetched_at": "2026-10-06T03:38:16.985014+00:00",
+    "status": 200,
+    "summary": {
+     "qid": "Q26251497",
+     "label_en": "Sun Fajing",
+     "label_zh": "\u5b59\u53d1\u4eac",
+     "aliases_en": [],
+     "atp_id": [
+      "SX90"
+     ],
+     "itf_id": [
+      "fajing-sun/800333640/chn"
+     ],
+     "date_of_birth": [
+      "+1996-10-03T00:00:00Z"
+     ],
+     "citizenship": [
+      "Q148"
+     ],
+     "country_for_sport": [
+      "Q148"
+     ]
+    }
+   },
+   "tour_profiles": [
+    {
+     "url": "https://www.atptour.com/en/-/www/players/hero/sx90?v=1",
+     "fetched_at": "2026-10-06T03:38:17.575986+00:00",
+     "status": 403,
+     "error": "HTTP Error 403: Forbidden"
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=fajing-sun/800333640/chn",
+     "fetched_at": "2026-10-06T03:38:18.103931+00:00",
+     "status": 404,
+     "error": "HTTP Error 404: Not Found"
+    }
+   ]
+  }
+ }
+}

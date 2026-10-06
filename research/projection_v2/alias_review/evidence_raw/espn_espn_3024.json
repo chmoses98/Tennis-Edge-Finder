@@ -1,0 +1,292 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:3024",
+ "foreign_name": "zhang zhizhen",
+ "collected_at": "2026-10-06T03:39:11.966395+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/3024",
+    "fetched_at": "2026-10-06T03:39:11.966420+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/3024?lang=en&region=us",
+     "id": "3024",
+     "uid": "s:850~a:3024",
+     "type": "tennis",
+     "guid": "44dc4e80-c6f7-a272-f41b-e7777e4777b5",
+     "firstName": "Zhang",
+     "lastName": "Zhizhen",
+     "fullName": "Zhang Zhizhen",
+     "displayName": "Zhang Zhizhen",
+     "shortName": "Z. Zhang",
+     "weight": 192.0,
+     "displayWeight": "192 lbs",
+     "height": 76.0,
+     "displayHeight": "6' 4\"",
+     "age": 29,
+     "dateOfBirth": "1996-10-16T07:00Z",
+     "debutYear": 2012,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/3024/zhang-zhizhen",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/3024/zhang-zhizhen",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:3024&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/3024/zhang-zhizhen",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/3024/zhang-zhizhen",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:3024&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/3024/zhang-zhizhen",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:3024&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/3024/zhang-zhizhen",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:3024",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Shanghai, China"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "zhang-zhizhen",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/3024/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 14
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/3024/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/3024/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/3024/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/3024",
+    "fetched_at": "2026-10-06T03:39:12.462054+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ]
+ },
+ "canonical": {
+  "111190": {
+   "sackmann_players_row": {
+    "player_id": "111190",
+    "name_first": "Zhizhen",
+    "name_last": "Zhang",
+    "hand": "R",
+    "dob": "19961016",
+    "ioc": "CHN",
+    "height": "193",
+    "wikidata_id": "Q21623382",
+    "_tour": "ATP",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   },
+   "wikidata": {
+    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q21623382.json",
+    "fetched_at": "2026-10-06T03:39:13.013465+00:00",
+    "status": 200,
+    "summary": {
+     "qid": "Q21623382",
+     "label_en": "Zhang Zhizhen",
+     "label_zh": "\u5f20\u4e4b\u81fb",
+     "aliases_en": [],
+     "atp_id": [
+      "Z371"
+     ],
+     "itf_id": [
+      "zhizhen-zhang/800335875/chn"
+     ],
+     "date_of_birth": [
+      "+1996-10-16T00:00:00Z"
+     ],
+     "citizenship": [
+      "Q148"
+     ],
+     "country_for_sport": [
+      "Q148"
+     ],
+     "family_name": [
+      "Q804909"
+     ]
+    }
+   },
+   "tour_profiles": [
+    {
+     "url": "https://www.atptour.com/en/-/www/players/hero/z371?v=1",
+     "fetched_at": "2026-10-06T03:39:13.745335+00:00",
+     "status": 403,
+     "error": "HTTP Error 403: Forbidden"
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=zhizhen-zhang/800335875/chn",
+     "fetched_at": "2026-10-06T03:39:14.197868+00:00",
+     "status": 404,
+     "error": "HTTP Error 404: Not Found"
+    }
+   ]
+  }
+ }
+}

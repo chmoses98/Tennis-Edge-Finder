@@ -1,0 +1,88 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "RB00",
+ "foreign_name": "ricardo rodriguez pace",
+ "collected_at": "2026-10-06T03:40:36.038867+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/rb00?v=1",
+    "fetched_at": "2026-10-06T03:40:36.038888+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22rb00%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:36.488288+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  },
+  "wikidata_items_with_this_atp_id_upper": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22RB00%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:36.988083+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  }
+ },
+ "canonical": {
+  "106175": {
+   "sackmann_players_row": {
+    "player_id": "106175",
+    "name_first": "Ricardo",
+    "name_last": "Rodriguez",
+    "hand": "R",
+    "dob": "19930428",
+    "ioc": "VEN",
+    "height": "189",
+    "wikidata_id": "Q2148716",
+    "_tour": "ATP",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   },
+   "wikidata": {
+    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q2148716.json",
+    "fetched_at": "2026-10-06T03:40:37.488851+00:00",
+    "status": 200,
+    "summary": {
+     "qid": "Q2148716",
+     "label_en": "Ricardo Rodr\u00edguez",
+     "label_zh": "\u91cc\u5361\u5c14\u591a\u00b7\u7f57\u5fb7\u91cc\u683c\u65af",
+     "aliases_en": [
+      "Ricardo Rodriguez"
+     ],
+     "atp_id": [
+      "RB00"
+     ],
+     "itf_id": [
+      "ricardo-rodriguez/800292680/ven"
+     ],
+     "date_of_birth": [
+      "+1993-04-28T00:00:00Z"
+     ],
+     "citizenship": [
+      "Q717"
+     ],
+     "given_name": [
+      "Q15720871"
+     ]
+    }
+   },
+   "tour_profiles": [
+    {
+     "url": "https://www.atptour.com/en/-/www/players/hero/rb00?v=1",
+     "fetched_at": "2026-10-06T03:40:38.127560+00:00",
+     "status": 403,
+     "error": "HTTP Error 403: Forbidden"
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=ricardo-rodriguez/800292680/ven",
+     "fetched_at": "2026-10-06T03:40:38.573391+00:00",
+     "status": 404,
+     "error": "HTTP Error 404: Not Found"
+    }
+   ]
+  }
+ }
+}

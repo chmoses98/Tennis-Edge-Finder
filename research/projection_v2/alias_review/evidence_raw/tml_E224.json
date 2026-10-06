@@ -1,0 +1,92 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "E224",
+ "foreign_name": "victor estrella burgos",
+ "collected_at": "2026-10-06T03:40:45.745787+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/e224?v=1",
+    "fetched_at": "2026-10-06T03:40:45.745807+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22e224%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:46.192207+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  },
+  "wikidata_items_with_this_atp_id_upper": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22E224%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:46.693579+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  }
+ },
+ "canonical": {
+  "103607": {
+   "sackmann_players_row": {
+    "player_id": "103607",
+    "name_first": "Victor",
+    "name_last": "Estrella",
+    "hand": "R",
+    "dob": "19800802",
+    "ioc": "DOM",
+    "height": "173",
+    "wikidata_id": "Q548522",
+    "_tour": "ATP",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+   },
+   "wikidata": {
+    "url": "https://www.wikidata.org/wiki/Special:EntityData/Q548522.json",
+    "fetched_at": "2026-10-06T03:40:47.188788+00:00",
+    "status": 200,
+    "summary": {
+     "qid": "Q548522",
+     "label_en": "V\u00edctor Estrella",
+     "label_zh": "\u7dad\u514b\u591a\u00b7\u57c3\u65af\u7279\u96f7\u4e9e\u00b7\u5e03\u723e\u6208\u65af",
+     "aliases_en": [
+      "Victor Estrella",
+      "Estrella Brava"
+     ],
+     "atp_id": [
+      "E224"
+     ],
+     "itf_id": [
+      "victor-estrella-burgos/800202586/dom"
+     ],
+     "date_of_birth": [
+      "+1980-08-02T00:00:00Z"
+     ],
+     "citizenship": [
+      "Q786"
+     ],
+     "given_name": [
+      "Q539581"
+     ],
+     "family_name": [
+      "Q37039837"
+     ]
+    }
+   },
+   "tour_profiles": [
+    {
+     "url": "https://www.atptour.com/en/-/www/players/hero/e224?v=1",
+     "fetched_at": "2026-10-06T03:40:47.852755+00:00",
+     "status": 403,
+     "error": "HTTP Error 403: Forbidden"
+    },
+    {
+     "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=victor-estrella-burgos/800202586/dom",
+     "fetched_at": "2026-10-06T03:40:48.319069+00:00",
+     "status": 404,
+     "error": "HTTP Error 404: Not Found"
+    }
+   ]
+  }
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "M0WY",
+ "foreign_name": "guto miguel",
+ "collected_at": "2026-10-06T03:40:09.904992+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/m0wy?v=1",
+    "fetched_at": "2026-10-06T03:40:09.905011+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22m0wy%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:10.351158+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  },
+  "wikidata_items_with_this_atp_id_upper": {
+   "url": "https://query.wikidata.org/sparql?format=json&query=SELECT%20%3Fitem%20WHERE%20%7B%20%3Fitem%20wdt%3AP536%20%22M0WY%22%20.%20%7D",
+   "fetched_at": "2026-10-06T03:40:10.854121+00:00",
+   "status": 429,
+   "error": "HTTP Error 429: Aggressively rate-limiting to 1 req / min - this rule was created during active wdqs outage (797a132)",
+   "items": []
+  }
+ },
+ "canonical": {
+  "213036": {
+   "sackmann_players_row": {
+    "player_id": "213036",
+    "name_first": "Zelda",
+    "name_last": "Kuhn",
+    "hand": "U",
+    "dob": "19690804",
+    "ioc": "RSA",
+    "height": "",
+    "wikidata_id": "",
+    "_tour": "WTA",
+    "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+   }
+  }
+ }
+}
