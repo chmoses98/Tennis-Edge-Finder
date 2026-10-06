@@ -147,4 +147,21 @@ Unresolved foreign ids: espn/espn:15260 (hu jia), espn/espn:17802 (sara alejandr
 
 ## Live coverage
 
-Pending: measured on the first production RUN TENNIS after merge.
+| | before | after |
+|---|---|---|
+| run_id | 20261006T044905Z | 20261006T055404Z |
+| git_sha | 269e73acd1791f49ab8d33dd55a53c1c1598de7c | d7256d402828e3f47984dc92ac1975d979d3ce96 |
+| projectable_open_pregame | 1449 | 1400 |
+| projected | 1071 | 1058 |
+| projected_singles | 1053 | 1044 |
+| projected_doubles | 18 | 14 |
+| not_projected_hard | 378 | 342 |
+| identity_excluded_markets | 126 | 94 |
+| unresolved_singles_players | 54 | 52 |
+| doubles_excluded_markets | 252 | 248 |
+| alias_review_queue | 9 | 9 |
+| v2_grades | {'POOR': 446, 'LOW': 100, 'HIGH': 56, 'MEDIUM': 10} | {'POOR': 436, 'LOW': 104, 'HIGH': 48, 'MEDIUM': 10} |
+| identity_kinds | {'NO_HISTORY': 108, 'ALIAS_CANDIDATES': 18, 'AMBIGUOUS': 2} | {'NO_HISTORY': 76, 'ALIAS_CANDIDATES': 18, 'AMBIGUOUS': 2} |
+| coefficients_fingerprints | ['dd6d413d5bfdd820'] | ['dd6d413d5bfdd820'] |
+
+Accepted aliases whose player is on the after board: 9 players, 18 match-winner rows; rows with a > 20 pp model-market gap: 2; markets moved >= 5 pp vs the before board: 0.
