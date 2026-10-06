@@ -1,56 +1,54 @@
 {
- "run_id": "20261006T065306Z",
- "settled": 18252,
+ "run_id": "20261006T182932Z",
+ "settled": 23144,
  "by_status": {
-  "NOT_COVERED": 10240,
-  "RESOLVED": 6237,
-  "NO_CANONICAL_IDS": 802,
+  "NOT_COVERED": 13112,
+  "RESOLVED": 7743,
+  "NO_CANONICAL_IDS": 902,
   "AMBIGUOUS": 6,
-  "NOT_FOUND": 967
+  "NOT_FOUND": 1381
  },
  "reconciliation": {
-  "NOT_RECONCILED": 11624,
-  "AGREE": 2774
+  "NOT_RECONCILED": 14780,
+  "AGREE": 3040
  },
  "by_level": {
   "ATP|CHALLENGER": {
    "RESOLVED": 1114,
-   "NO_CANONICAL_IDS": 418,
+   "NO_CANONICAL_IDS": 432,
    "AMBIGUOUS": 6,
    "NOT_FOUND": 548,
-   "NOT_COVERED": 448
+   "NOT_COVERED": 738
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
   },
   "ATP|ITF": {
-   "NOT_COVERED": 4642
+   "NOT_COVERED": 5842
   },
   "ATP|MASTERS_1000": {
-   "RESOLVED": 92,
-   "NOT_FOUND": 12,
-   "NO_CANONICAL_IDS": 4,
-   "NOT_COVERED": 110
+   "RESOLVED": 1148,
+   "NOT_FOUND": 426,
+   "NO_CANONICAL_IDS": 22
   },
   "ATP|TEAM": {
    "NOT_FOUND": 102,
    "RESOLVED": 204
   },
   "ATP|TOUR_500_250": {
-   "RESOLVED": 1312,
-   "NO_CANONICAL_IDS": 122,
+   "RESOLVED": 1456,
+   "NO_CANONICAL_IDS": 136,
    "NOT_FOUND": 78
   },
   "WTA|GRAND_SLAM": {
    "RESOLVED": 89
   },
   "WTA|ITF": {
-   "NOT_COVERED": 4914
+   "NOT_COVERED": 6380
   },
   "WTA|MASTERS_1000": {
-   "RESOLVED": 36,
-   "NO_CANONICAL_IDS": 2,
-   "NOT_COVERED": 52
+   "RESOLVED": 274,
+   "NO_CANONICAL_IDS": 56
   },
   "WTA|TEAM": {
    "NOT_COVERED": 2
@@ -61,8 +59,8 @@
    "NO_CANONICAL_IDS": 256
   },
   "WTA|WTA_125": {
-   "RESOLVED": 646,
-   "NOT_COVERED": 72
+   "RESOLVED": 714,
+   "NOT_COVERED": 150
   }
  }
 }
