@@ -60,7 +60,8 @@ def _load_group(paths, tour, kind, id_system, source_label, seen):
     return clean_parts, q_parts, counts
 
 
-BUILD_VERSION = "canonical_v2.1"   # v2.1 (2026-10-05): minting refuses other forms of an existing name
+BUILD_VERSION = "canonical_v2.2"   # v2.1 (2026-10-05): minting refuses other forms of an existing name
+#                                   v2.2 (2026-10-06): human-reviewed foreign-id aliases (reviewed_aliases.json)
 LEGACY_BUILD_VERSION = "canonical_v1"
 
 
@@ -164,6 +165,16 @@ def build(min_year: int = 1990, write: bool = True, legacy: bool = False, out_di
     crosswalk = pd.concat([build_crosswalk(df, foreign=sysname) for sysname in ("tml", "espn")], ignore_index=True)
     if not legacy:
         crosswalk = mint_new_players(df, crosswalk)
+        # canonical_v2.2: foreign ids a person accepted with external evidence (data/identity/reviewed_aliases.json,
+        # `crosswalk_aliases`). By source-specific id only; refusals stay unmapped and are listed in the manifest.
+        from tennis_edge.identity.crosswalk import apply_reviewed_aliases
+        from tennis_edge.identity.reviewed_aliases import DEFAULT_PATH as ALIAS_PATH, load_crosswalk_aliases
+        accepted = load_crosswalk_aliases()
+        crosswalk, alias_problems = apply_reviewed_aliases(df, crosswalk, accepted)
+        manifest["reviewed_crosswalk_aliases"] = {
+            "file_sha256": hashlib.sha256(open(ALIAS_PATH, "rb").read()).hexdigest() if os.path.exists(ALIAS_PATH) else None,
+            "accepted": len(accepted), "applied": int((crosswalk["status"] == "REVIEWED_ALIAS").sum()) if len(crosswalk) else 0,
+            "refused": alias_problems}
     df = apply_crosswalk(df, crosswalk)
     dedupe_audit = None
     if not legacy:

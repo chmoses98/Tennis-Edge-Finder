@@ -63,7 +63,9 @@ def _open(p):
 
 
 def sackmann_players(data_root: str) -> dict:
-    """{player_id: row} from the newest Sackmann atp/wta players files on disk (they carry dob, ioc, wikidata_id)."""
+    """{(tour, player_id): row} from the newest Sackmann atp/wta players files (dob, ioc, wikidata_id).
+
+    Keyed by TOUR: Sackmann ATP and WTA ids share one numeric range (212044 is an ATP man and a WTA woman)."""
     out = {}
     for tour in ("atp", "wta"):
         hits = sorted(glob.glob(os.path.join(data_root, "sources", "*", "sackmann", f"tennis_{tour}", f"{tour}_players.csv*")))
@@ -72,7 +74,7 @@ def sackmann_players(data_root: str) -> dict:
         for r in csv.DictReader(_open(hits[-1])):
             r["_tour"] = tour.upper()
             r["_file"] = os.path.relpath(hits[-1], PROJ)
-            out[str(r.get("player_id"))] = r
+            out[(tour.upper(), str(r.get("player_id")))] = r
     return out
 
 
@@ -106,12 +108,37 @@ def wikidata_entity(qid: str) -> dict:
     return rec
 
 
-def wikidata_by_prop(prop: str, value: str) -> dict:
-    q = f'SELECT ?item WHERE {{ ?item wdt:{prop} "{value}" . }}'
-    rec = get("https://query.wikidata.org/sparql?format=json&query=" + urllib.parse.quote(q),
-              accept="application/sparql-results+json")
-    items = [b["item"]["value"].rsplit("/", 1)[-1] for b in ((rec.get("json") or {}).get("results") or {}).get("bindings") or []]
-    rec["items"] = items
+def wikidata_items_by_atp_id(ids: list) -> dict:
+    """ONE SPARQL query for every ATP id (P536, matched case-insensitively), retried on 429. {ATP id upper: [qid]}."""
+    vals = " ".join(f'"{i.lower()}" "{i.upper()}"' for i in ids)
+    q = f"SELECT ?item ?atp WHERE {{ VALUES ?atp {{ {vals} }} ?item wdt:P536 ?atp . }}"
+    rec = {}
+    for attempt in range(6):
+        rec = get("https://query.wikidata.org/sparql?format=json&query=" + urllib.parse.quote(q),
+                  accept="application/sparql-results+json", timeout=60)
+        if rec.get("status") == 200:
+            break
+        time.sleep(10 * (attempt + 1))
+    out: dict = {}
+    for b in ((rec.get("json") or {}).get("results") or {}).get("bindings") or []:
+        out.setdefault(b["atp"]["value"].upper(), []).append(b["item"]["value"].rsplit("/", 1)[-1])
+    rec.pop("json", None)
+    return {"request": rec, "items": out}
+
+
+def wikidata_search(name: str, limit: int = 4) -> dict:
+    """wbsearchentities for a name, then the entity summary of each hit that is a tennis player (has ATP/WTA/ITF id)."""
+    rec = get("https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search="
+              + urllib.parse.quote(name))
+    hits = [h.get("id") for h in ((rec.get("json") or {}).get("search") or [])][:limit]
+    rec.pop("json", None)
+    rec["hits"] = hits
+    rec["players"] = []
+    for q in hits:
+        ent = wikidata_entity(q)
+        s = ent.get("summary") or {}
+        if s.get("atp_id") or s.get("wta_id") or s.get("itf_id"):
+            rec["players"].append(ent)
     return rec
 
 
@@ -130,8 +157,31 @@ def tour_profiles(wd: dict) -> list:
         recs.append(get(f"https://api.wtatennis.com/tennis/players/{wta}"))
         recs.append(get(f"https://www.wtatennis.com/players/{wta}/x", accept="text/html"))
     for itf in s.get("itf_id") or []:
-        recs.append(get(f"https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId={itf}"))
+        num = [p for p in str(itf).split("/") if p.isdigit()]
+        if num:
+            recs.append(get(f"https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId={num[0]}"))
     return recs
+
+
+def canonical_evidence(cid: str, players: dict, wd_cache: dict, search_name: str | None) -> dict:
+    ce = {}
+    for tour in ("ATP", "WTA"):
+        prow = players.get((tour, cid))
+        if not prow:
+            continue
+        te = {"sackmann_players_row": prow}
+        qid = prow.get("wikidata_id") or ""
+        if qid.startswith("Q"):
+            if qid not in wd_cache:
+                wd_cache[qid] = wikidata_entity(qid)
+            te["wikidata"] = wd_cache[qid]
+            te["tour_profiles"] = tour_profiles(wd_cache[qid])
+        else:
+            nm = f"{prow.get('name_first', '')} {prow.get('name_last', '')}".strip()
+            te["wikidata_search"] = wikidata_search(nm)
+            te["tour_profiles"] = [p for ent in te["wikidata_search"]["players"] for p in tour_profiles(ent)]
+        ce[tour] = te
+    return ce
 
 
 def main():
@@ -142,9 +192,13 @@ def main():
     ap.add_argument("--only", nargs="*", default=None, help="foreign ids to (re)fetch")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
-    cands = json.load(open(a.candidates))["candidates"]
+    doc = json.load(open(a.candidates))
+    cands = doc["candidates"] + (doc.get("kalshi_names") or [])
     players = sackmann_players(a.data_root)
     print(f"sackmann players rows: {len(players)}")
+    tml_ids = [c["foreign_id"] for c in cands if c["foreign_system"] == "tml"]
+    atp_items = wikidata_items_by_atp_id(tml_ids) if tml_ids else {"items": {}}
+    json.dump(atp_items, open(os.path.join(a.out, "_wikidata_items_by_tml_atp_id.json"), "w"), indent=1, default=str)
     wd_cache: dict = {}
     for c in cands:
         if a.only and c["foreign_id"] not in a.only:
@@ -153,24 +207,21 @@ def main():
               "collected_at": datetime.now(timezone.utc).isoformat(), "foreign": {}, "canonical": {}}
         if c["foreign_system"] == "espn":
             ev["foreign"]["espn_athlete"] = espn_athlete(c["foreign_id"])
+            nm = ((ev["foreign"]["espn_athlete"][0].get("json") or {}).get("fullName")) or c["foreign_name"]
+            ev["foreign"]["wikidata_search"] = wikidata_search(nm)
         elif c["foreign_system"] == "tml":
             fid = c["foreign_id"]
             ev["foreign"]["atp_profile"] = [get(f"https://www.atptour.com/en/-/www/players/hero/{fid.lower()}?v=1")]
-            ev["foreign"]["wikidata_items_with_this_atp_id"] = wikidata_by_prop("P536", fid.lower())
-            if not ev["foreign"]["wikidata_items_with_this_atp_id"]["items"]:
-                ev["foreign"]["wikidata_items_with_this_atp_id_upper"] = wikidata_by_prop("P536", fid.upper())
+            items = atp_items["items"].get(fid.upper(), [])
+            ev["foreign"]["wikidata_items_with_this_atp_id"] = items
+            ev["foreign"]["wikidata_entities"] = [wd_cache.setdefault(q, wikidata_entity(q)) for q in items]
+        elif c["foreign_system"] == "kalshi":
+            # a Kalshi competitor has no public profile id: what can be checked is who carries this NAME officially
+            ev["foreign"]["wikidata_search"] = wikidata_search(c["foreign_name"])
+            ev["foreign"]["tour_profiles"] = [p for ent in ev["foreign"]["wikidata_search"]["players"] for p in tour_profiles(ent)]
         for cand in c.get("candidates") or []:
-            cid = cand["canonical_id"]
-            prow = players.get(cid)
-            ce = {"sackmann_players_row": prow}
-            qid = (prow or {}).get("wikidata_id") or ""
-            if qid.startswith("Q"):
-                if qid not in wd_cache:
-                    wd_cache[qid] = wikidata_entity(qid)
-                ce["wikidata"] = wd_cache[qid]
-                ce["tour_profiles"] = tour_profiles(wd_cache[qid])
-            ev["canonical"][cid] = ce
-        key = f"{c['foreign_system']}_{c['foreign_id'].replace(':', '_')}"
+            ev["canonical"][cand["canonical_id"]] = canonical_evidence(cand["canonical_id"], players, wd_cache, None)
+        key = f"{c['foreign_system']}_{c['foreign_id'].replace(':', '_').replace(' ', '_')}"
         json.dump(ev, open(os.path.join(a.out, f"{key}.json"), "w"), indent=1, default=str)
         print(key, "ok")
     return 0
