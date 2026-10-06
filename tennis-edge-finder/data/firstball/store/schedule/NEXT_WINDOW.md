@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 14:54Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 15:06Z)
 
 * Earliest credible first ball: **2026-10-07 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-07 03:15Z**
@@ -15,9 +15,9 @@
 | Zhizhen Zhang vs Tomas Machac | 2026-10-07 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Adrian Mannarino vs Nikoloz Basilashvili | 2026-10-07 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**18 main-tour match(es) without a verified start status** (BET blocked until checked): Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic, Fabian Marozsan vs Zachary Svajda, Luca Van Assche vs Yunchaokete Bu, Mariano Navone vs Pablo Carreno Busta, Martin Landaluce vs Jan-Lennard Struff, Cameron Norrie vs Denis Shapovalov, Adolfo Daniel Vallejo vs Valentin Royer, Marcos Giron vs Sebastian Baez
+**18 main-tour match(es) without a verified start status** (BET blocked until checked): Pavel Kotov vs Tallon Griekspoor, Camilo Ugo Carabelli vs Ilia Simakin, Kimmer Coppejans vs Stefanos Tsitsipas, Bernard Tomic vs Matteo Arnaldi, Juan Manuel Cerundolo vs Nicolas Mejia, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic, Fabian Marozsan vs Zachary Svajda, Luca Van Assche vs Yunchaokete Bu
 
-Published slate: `SL-20261006T142639Z-b9c7236b` built 2026-10-06 14:26Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261006T145027Z-91ba2889` built 2026-10-06 14:50Z -- current
 
 Dispatched this pass: none
 
