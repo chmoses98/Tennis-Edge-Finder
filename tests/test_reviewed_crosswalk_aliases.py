@@ -272,3 +272,16 @@ def test_alias_never_bypasses_the_namesake_check(alias_file):
     mp.aliases = R.load(path)
     r = mp.resolve("WTA", "Zhang Ying", today=date(2026, 10, 6))
     assert r["status"] == "AMBIGUOUS" and r["player_id"] is None
+
+
+def test_an_alias_never_renames_the_canonical_player():
+    """Regression (found in the 2026-10-06 dry run): once ESPN's "Zheng Qinwen" rows were bound to Sackmann 221012, the
+    rating state named her after the newest row, and Kalshi's "Qinwen Zheng" stopped resolving. The canonical spelling
+    must win; a minted (foreign-only) player keeps its foreign name."""
+    from tennis_edge.models.state import player_names
+    m = pd.DataFrame([
+        {"id_system": "sackmann", "winner_id": "221012", "winner_name": "Qinwen Zheng", "loser_id": "1", "loser_name": "Opp One"},
+        {"id_system": "espn", "winner_id": "221012", "winner_name": "Zheng Qinwen", "loser_id": "espn:9", "loser_name": "New Player"},
+        {"id_system": "espn", "winner_id": "1", "winner_name": "Opp One", "loser_id": "221012", "loser_name": "Zheng Qinwen"}])
+    n = player_names(m)
+    assert n["221012"] == "Qinwen Zheng" and n["espn:9"] == "New Player"

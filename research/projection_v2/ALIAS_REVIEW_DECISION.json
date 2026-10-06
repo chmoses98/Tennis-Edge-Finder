@@ -1,20 +1,20 @@
 {
  "review": "mint-twin alias review (research/projection_v2/ALIAS_REVIEW_MINT_TWINS.md) + Kalshi-name queue",
- "reviewed_at": "2026-10-06T04:04:25+00:00",
+ "reviewed_at": "2026-10-06T04:28:11+00:00",
  "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
  "criteria": "(all must hold):\n  A1  exactly one proposed canonical id survives on the foreign id's own tour;\n  A2  no conflicting evidence: dates of birth do not disagree, nationality does not disagree (unless a reviewer\n      note explains a documented source error), the foreign id is not shared by two people;\n  A3  identity is established by at least one DIRECT link:\n        - EXACT date of birth from a foreign-side source (ESPN athlete record for that ESPN id; the ATP-site\n          database record for that TML/ATP id) equal to the canonical player's date of birth, or\n        - the governing-body id: the canonical player's Wikidata ATP id (P536) equals the TML (ATP-site) id, or\n        - SHARED MATCHES: the same match (same opponent, same result, same week) recorded under both ids,\n      AND by a second, independent line (nationality agreement, an official WTA profile with the same date of birth,\n      shared matches, or a date of birth implied by the source's own per-match ages within 22 days).\nRejected: a candidate whose date of birth or nationality contradicts the foreign record with no shared match.\nAmbiguous: evidence lines contradict each other, or more than one candidate survives.\nInsufficient evidence: none of the A3 links is available.",
  "board_used_for_live_impact": "20261006T002338Z",
  "foreign_ids_reviewed": 82,
  "foreign_id_outcomes": {
-  "ACCEPTED": 78,
-  "REJECTED": 1,
+  "ACCEPTED": 77,
+  "REJECTED": 2,
   "AMBIGUOUS": 1,
   "INSUFFICIENT_EVIDENCE": 2
  },
  "pairs_reviewed": 85,
  "pair_decisions": {
-  "ACCEPTED": 78,
-  "REJECTED": 4,
+  "ACCEPTED": 77,
+  "REJECTED": 5,
   "AMBIGUOUS": 1,
   "INSUFFICIENT_EVIDENCE": 2
  },
@@ -61,7 +61,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -117,7 +117,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -174,7 +174,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -249,7 +249,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": true,
    "live_tickers_naming_this_player": 16
   },
@@ -334,7 +334,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -402,7 +402,7 @@
     "official WTA API"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -481,7 +481,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -578,7 +578,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -666,7 +666,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -712,7 +712,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -809,7 +809,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -877,7 +877,7 @@
     "official WTA API"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -923,7 +923,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -991,7 +991,7 @@
     "official WTA API"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1079,7 +1079,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1125,7 +1125,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1191,7 +1191,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1237,7 +1237,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1293,7 +1293,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1339,7 +1339,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1407,7 +1407,7 @@
     "Wikidata Q26251497"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1475,7 +1475,7 @@
     "official WTA API"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1543,7 +1543,7 @@
     "Wikidata Q18552831"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1589,7 +1589,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1655,7 +1655,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1734,7 +1734,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1831,7 +1831,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1877,7 +1877,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -1934,7 +1934,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2000,7 +2000,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2097,7 +2097,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2143,7 +2143,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2222,7 +2222,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2288,7 +2288,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2345,7 +2345,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2424,7 +2424,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2491,7 +2491,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2566,7 +2566,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2612,7 +2612,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2709,7 +2709,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2755,7 +2755,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2823,7 +2823,7 @@
     "official WTA API"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -2920,7 +2920,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3008,7 +3008,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3087,7 +3087,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3133,7 +3133,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3179,7 +3179,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3235,7 +3235,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3303,7 +3303,7 @@
     "official WTA API"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3377,7 +3377,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3474,7 +3474,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3548,7 +3548,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3604,7 +3604,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3660,7 +3660,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3735,7 +3735,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3792,7 +3792,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3848,7 +3848,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3904,7 +3904,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -3978,7 +3978,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4063,7 +4063,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4140,7 +4140,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4196,7 +4196,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4270,7 +4270,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4326,7 +4326,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4400,7 +4400,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4411,9 +4411,9 @@
    "tour": "ATP",
    "proposed_canonical_id": "119643",
    "proposed_canonical_name": "Abel Hernandez Aguila",
-   "decision": "ACCEPTED",
-   "rationale": "1 shared match(es); nationality; date of birth implied by per-match ages",
-   "reviewer_note": false,
+   "decision": "REJECTED",
+   "rationale": "Rejected as an ALIAS, not as an identity: TML carries this player twice. TML H811 'Abel Hernandez-Aguila' already maps to Sackmann 119643 by exact name; A0JF ('Hernandez Aguila Abel', one row, Troyes 2022, a match Sackmann already records) is a second TML id for the same man. Binding a second id of one source to one canonical player is the duplicate identity the build refuses (apply_reviewed_aliases: 'already bound to another tml id'). No live impact.",
+   "reviewer_note": true,
    "evidence": {
     "tour": "ATP",
     "canonical_name": "Abel Hernandez Aguila",
@@ -4456,7 +4456,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4530,7 +4530,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4596,7 +4596,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4693,7 +4693,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4749,7 +4749,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4846,7 +4846,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4891,7 +4891,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4948,7 +4948,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -4993,7 +4993,7 @@
     "Sackmann players file (dob, ioc, wikidata id)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5067,7 +5067,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5164,7 +5164,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5239,7 +5239,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5336,7 +5336,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5433,7 +5433,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5530,7 +5530,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5627,7 +5627,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5724,7 +5724,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5789,7 +5789,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5874,7 +5874,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": false,
    "live_tickers_naming_this_player": 0
   },
@@ -5959,7 +5959,7 @@
     "shared matches in the canonical table (TML/ESPN vs Sackmann)"
    ],
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "changes_live_coverage": true,
    "live_tickers_naming_this_player": 16
   }
@@ -5970,7 +5970,7 @@
    "kalshi_name": "Mimi Xu",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_Mimi_Xu.json",
    "candidates": [
     {
@@ -5998,7 +5998,7 @@
    "kalshi_name": "Alex Hernandez",
    "tour": "ATP",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_ATP_Alex_Hernandez.json",
    "candidates": [
     {
@@ -6034,7 +6034,7 @@
    "kalshi_name": "Andres Pereiro Lopez",
    "tour": "ATP",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_ATP_Andres_Pereiro_Lopez.json",
    "candidates": [
     {
@@ -6086,7 +6086,7 @@
    "kalshi_name": "Xin Zhou",
    "tour": "ATP",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_ATP_Xin_Zhou.json",
    "candidates": [
     {
@@ -6122,7 +6122,7 @@
    "kalshi_name": "Ailish Garcia Fernandez",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_Ailish_Garcia_Fernandez.json",
    "candidates": [
     {
@@ -6181,7 +6181,7 @@
    "kalshi_name": "Baotong Xu",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_Baotong_Xu.json",
    "candidates": [
     {
@@ -6201,7 +6201,7 @@
    "kalshi_name": "Bella Bergqvist Larsson",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_Bella_Bergqvist_Larsson.json",
    "candidates": [
     {
@@ -6228,7 +6228,7 @@
    "kalshi_name": "Jiarui Sun",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_Jiarui_Sun.json",
    "candidates": [
     {
@@ -6248,7 +6248,7 @@
    "kalshi_name": "Maria Valentina Pop",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_Maria_Valentina_Pop.json",
    "candidates": [
     {
@@ -6268,7 +6268,7 @@
    "kalshi_name": "aoyi li",
    "tour": "WTA",
    "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
-   "reviewed_at": "2026-10-06T04:04:25+00:00",
+   "reviewed_at": "2026-10-06T04:28:11+00:00",
    "raw_evidence_file": "research/projection_v2/alias_review/evidence_raw/kalshi_kalshi_WTA_aoyi_li.json",
    "candidates": [
     {
