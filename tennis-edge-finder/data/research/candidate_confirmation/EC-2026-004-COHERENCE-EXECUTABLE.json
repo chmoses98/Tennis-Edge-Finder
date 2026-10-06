@@ -5,12 +5,12 @@
  "status_reason": "4 eligible of 10 required",
  "universe": {
   "stream": "kalshi/capture/*/books (order books, orderbook_fp)",
-  "books_read": 474827,
+  "books_read": 477939,
   "books_before_confirmation_start": 7818,
   "books_unparsed_or_not_match_scope": 0,
-  "books_one_sided": 19740,
-  "capture_runs_scanned": 2348,
-  "match_passes_scanned": 170786,
+  "books_one_sided": 19780,
+  "capture_runs_scanned": 2357,
+  "match_passes_scanned": 171967,
   "note": "books are captured only for match-scope markets within 6h of their nominal start (budget 400 per pass), so the scan sees the near-start board, not every listing"
  },
  "metrics": {
@@ -196,11 +196,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261006T185615Z",
+ "harvest_run": "20261006T204444Z",
  "evidence_rows_this_run": 11,
  "evidence_rows_appended": 0,
  "last_evidence_at": "2026-10-05T16:46:37.549905+00:00",
- "harvest_run_at": "2026-10-06T18:58:02.868846+00:00",
+ "harvest_run_at": "2026-10-06T20:46:05.751894+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
