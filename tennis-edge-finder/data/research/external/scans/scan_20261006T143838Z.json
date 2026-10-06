@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-06T14:38:38.748995+00:00",
+ "run_id": "20261006T143838Z",
+ "external_parse": {
+  "events": 160,
+  "markets": 1399,
+  "skipped_family": 231,
+  "skipped_period": 434,
+  "skipped_live": 41,
+  "one_sided": 39,
+  "rows": 2264,
+  "devigged": 695
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 755,
+  "markets_mapped": 301,
+  "contracts": 684,
+  "quoted_contracts": 684,
+  "raw": "data/research/external/raw/20261006T143838Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 301,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 79,
+  "rows": 605,
+  "two_sided": 599,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 753,
+ "external_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 121,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8013,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Simon Myslivec": 1,
+   "Andres Pereiro Lopez": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Herman H\u00f8yeraal": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9236,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Elvin Egribel": 1,
+   "Xin Zhou": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Bercel Sandor Takacs": 1,
+   "Andres Pereiro Lopez": 1,
+   "Amy Stevens": 1,
+   "Yara Bartashevich": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 138,
+ "kalshi_mapped_matches": 133,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:MARKETS_AGREE": 8,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
