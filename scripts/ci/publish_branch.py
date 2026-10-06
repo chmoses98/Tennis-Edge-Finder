@@ -59,9 +59,24 @@ def plan(src: str, exclude=()):
     return sorted(out)
 
 
+#: up to this many files a publish checks out exactly the files it writes; above it, their directories
+EXACT_SPARSE_MAX = 300
+
+
+def _glob_escape(path: str) -> str:
+    return "".join("\\" + c if c in "\\*?[]!# " else c for c in path)
+
+
 def sparse_patterns(dest_rel: str, files) -> list[str]:
-    """Only the directories that receive files (non-cone patterns), so the checkout stays tiny."""
-    dirs = sorted({os.path.dirname(os.path.join(dest_rel, r)) for r, _ in files})
+    """What the worktree checks out (non-cone patterns). A publish of a few files checks out exactly those paths: the
+    copy step only reads the files it is about to write. Directory patterns made the capture conductor's first pass
+    download every blob under research/external/market (~1 GB of day files), raw/ (4,397 payloads) and scans/ (2,237)
+    just to add five files -- 286 s of a 600 s interval on 2026-10-06, and growing with the tree. Large publishes
+    (RUN TENNIS) keep directory patterns, which stay cheap to match."""
+    paths = sorted({os.path.join(dest_rel, r) for r, _ in files})
+    if len(paths) <= EXACT_SPARSE_MAX:
+        return ["/" + _glob_escape(p) for p in paths]
+    dirs = sorted({os.path.dirname(p) for p in paths})
     return [f"/{d}/*" if d else "/*" for d in dirs]
 
 

@@ -373,6 +373,27 @@ def test_publish_exclude(tmp_path):
     assert len(plan(str(tmp_path))) == 2
 
 
+def test_small_publish_checks_out_only_the_files_it_writes(tmp_path):
+    """The conductor's first pass spent 286 s of its 600 s interval because the publisher checked out whole directories
+    (research/external/market ~1 GB, raw/ 4,397 payloads) to add five files. A small publish now matches exactly its
+    own paths -- including names with glob characters -- and nothing else in those directories."""
+    from scripts.ci.publish_branch import EXACT_SPARSE_MAX, sparse_patterns
+    run = lambda *a: subprocess.run(["git", *a], cwd=tmp_path, check=True, capture_output=True, text=True).stdout
+    run("init", "-q", "-b", "tennis-data")
+    run("config", "user.email", "t@example.com"); run("config", "user.name", "t")
+    d = tmp_path / "p" / "market"
+    d.mkdir(parents=True)
+    for n in ("2026-10-05.jsonl", "2026-10-06.a.jsonl", "we ird[1]*.json", "#x.json"):
+        (d / n).write_text(n)
+    run("add", "-A"); run("commit", "-q", "-m", "seed")
+    pats = sparse_patterns("p", [("market/2026-10-06.a.jsonl", ""), ("market/we ird[1]*.json", ""), ("market/#x.json", "")])
+    run("sparse-checkout", "init", "--no-cone")
+    run("sparse-checkout", "set", "--no-cone", *pats)
+    assert sorted(x.name for x in d.iterdir()) == ["#x.json", "2026-10-06.a.jsonl", "we ird[1]*.json"]
+    many = [(f"market/f{i}.json", "") for i in range(EXACT_SPARSE_MAX + 1)]
+    assert sparse_patterns("p", many) == ["/p/market/*"]
+
+
 def test_espn_retirement_is_kept_not_quarantined():
     """STATUS_RETIRED used to come through as a bare partial score ('5-2') that the validator quarantined, so every
     ESPN retirement was missing from independent truth (Svrcina d. Nishioka 5-2 ret, Shanghai Q3, 2026-10-06)."""
