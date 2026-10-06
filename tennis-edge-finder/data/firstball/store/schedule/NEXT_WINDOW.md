@@ -1,26 +1,24 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 06:50Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-06 07:01Z)
 
-* Earliest credible first ball: **2026-10-06 06:50Z**
-* Recommended RUN TENNIS time: **2026-10-06 06:05Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-06 06:40Z**
-* Matches in window: 7
+* Earliest credible first ball: **2026-10-06 07:02Z**
+* Recommended RUN TENNIS time: **2026-10-06 06:17Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-06 06:52Z**
+* Matches in window: 6
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Karolina Muchova vs Naomi Osaka | 2026-10-06 06:50Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Lotus finished | MEDIUM |
-| Kyrian Jacquet vs Rei Sakamoto | 2026-10-06 07:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Coleman Wong vs Lloyd Harris | 2026-10-06 07:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Stadium Court in progress (set 2 of best-of-5) | MEDIUM |
-| Carlos Alcaraz vs Jiri Lehecka | 2026-10-06 07:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Colosseum in progress (set 2 of best-of-5) | MEDIUM |
+| Coleman Wong vs Lloyd Harris | 2026-10-06 07:02Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Stadium Court finished | MEDIUM |
 | Mattia Bellucci vs Alexandre Muller | 2026-10-06 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Dane Sweeny vs Kimmer Coppejans | 2026-10-06 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Carlos Alcaraz vs Jiri Lehecka | 2026-10-06 07:37Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Colosseum in progress (set 2 of best-of-5) | MEDIUM |
 | Pavel Kotov vs Aleksandar Vukic | 2026-10-06 08:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Sinja Kraus vs Nikola Bartunkova | 2026-10-06 08:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**22 main-tour match(es) without a verified start status** (BET blocked until checked): Zhizhen Zhang vs Tomas Machac, Aleksandar Kovacevic vs Matteo Berrettini, Arthur Fery vs Marin Cilic, Holger Rune vs Daniel Altmaier, Arthur Gea vs Jaime Faria, Sho Shimabukuro vs Miomir Kecmanovic, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Yannick Hanfmann vs Kamil Majchrzak, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic
+**24 main-tour match(es) without a verified start status** (BET blocked until checked): Kyrian Jacquet vs Rei Sakamoto, Zhizhen Zhang vs Tomas Machac, Aleksandar Kovacevic vs Matteo Berrettini, Arthur Fery vs Marin Cilic, Holger Rune vs Daniel Altmaier, Arthur Gea vs Jaime Faria, Sho Shimabukuro vs Miomir Kecmanovic, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Yannick Hanfmann vs Kamil Majchrzak, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta
 
-Published slate: `SL-20261006T063703Z-b660ef2a` built 2026-10-06 06:37Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261006T064911Z-08c36182` built 2026-10-06 06:49Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
-* later window 2: first ball 2026-10-06 08:30Z, run by 2026-10-06 07:45Z, 1 match(es)
-* later window 3: first ball 2026-10-06 11:00Z, run by 2026-10-06 10:15Z, 1 match(es)
-* later window 4: first ball 2026-10-07 06:00Z, run by 2026-10-07 05:15Z, 2 match(es)
+* later window 2: first ball 2026-10-06 11:00Z, run by 2026-10-06 10:15Z, 1 match(es)
+* later window 3: first ball 2026-10-07 06:00Z, run by 2026-10-07 05:15Z, 2 match(es)
