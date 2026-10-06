@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-06T16:13:40.439254+00:00",
+ "run_id": "20261006T161340Z",
+ "external_parse": {
+  "events": 140,
+  "markets": 1321,
+  "skipped_family": 275,
+  "skipped_period": 393,
+  "skipped_live": 35,
+  "one_sided": 22,
+  "rows": 2093,
+  "devigged": 631
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 684,
+  "markets_mapped": 299,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20261006T161340Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 43,
+  "rows": 623,
+  "two_sided": 615,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 616,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 103,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7923,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Madhav Binu": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Kim Dong Ju": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.9139,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Elvin Egribel": 1,
+   "James McGloughlin": 1,
+   "Zian Vanderstappen": 1,
+   "Darcy Nicholls": 1,
+   "Xin Zhou": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Romina Hincu": 1,
+   "Nikol Ivanova": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 126,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 66,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
