@@ -107,6 +107,10 @@ def main():
     if pv["n_stale_unresolved_tour_level"]:
         print(f"::warning::{pv['n_stale_unresolved_tour_level']} tour-level prospective predictions are still unresolved more "
               f"than {tf.TOUR_PUBLICATION_WINDOW_DAYS} days after the match although ESPN covers the level")
+    if summary["freshness"]["espn_families_not_live"]:
+        # ESPN is the only daily source: a family that stops being live stops accumulating independent truth silently
+        print(f"::warning::independent results are not live for {', '.join(summary['freshness']['espn_families_not_live'])} "
+              f"(newest result more than 3 days before {as_of}); the prospective study is not accumulating there")
     print(json.dumps({k: summary[k] for k in ("run_id", "settled", "by_status", "reconciliation")}))
     print(json.dumps({k: pv[k] for k in ("predictions_with_v2_and_incumbent", "independently_resolved_predictions",
                                          "independently_settled_matches", "by_status", "n_stale_unresolved_tour_level")}))

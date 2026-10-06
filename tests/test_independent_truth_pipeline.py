@@ -52,9 +52,30 @@ def test_espn_coverage_is_by_family_so_a_wta_1000_miss_is_not_found_not_uncovere
     assert idx.resolve("WTA", "x", "y", "MASTERS_1000", date(2026, 10, 1)).status == NOT_FOUND
     # a match the day before ESPN's newest board: inside the rain-delay window, so not yet conclusive
     assert idx.resolve("WTA", "x", "y", "MASTERS_1000", date(2026, 10, 5)).status == PENDING_RESULT
-    # ESPN's WTA boards carry the 125s; it has no ATP Challenger or ITF board
-    assert idx.coverage("WTA", "WTA_125") == date(2026, 10, 6)
+    # ESPN has no ATP Challenger or ITF board, and carries only part of WTA 125 (below)
+    assert idx.coverage("WTA", "WTA_125") is None
     assert idx.coverage("ATP", "CHALLENGER") is None and idx.coverage("WTA", "ITF") is None
+
+
+def test_wta_125_is_partial_coverage_so_a_miss_is_pending_then_not_covered_never_not_found():
+    """ESPN's WTA boards carry some WTA 125 events and some of their rounds (2026-09-13..17: Antalya 11 matches, Montreux
+    10, several 125s none). Production 2026-10-06 read 46 September 125 misses as NOT_FOUND; a source that skips events
+    cannot say a match was not played."""
+    idx = ResultsIndex(_rows([SACKMANN_OLD, ESPN_NEW]), since=date(2026, 8, 1), as_of=date(2026, 10, 7))
+    assert idx.partial_horizon[("WTA", "CHALLENGER")] == date(2026, 10, 6)
+    old = idx.resolve("WTA", "x", "y", "WTA_125", date(2026, 9, 14))
+    assert old.status == NOT_COVERED and "partly covered" in old.reason
+    assert idx.resolve("WTA", "x", "y", "WTA_125", date(2026, 10, 5)).status == PENDING_RESULT
+    # a 125 result ESPN does carry still resolves (ESPN rows say TOUR_500_250 for a 125 match)
+    hit = idx.resolve("WTA", "221012", "221406", "WTA_125", date(2026, 10, 6))
+    assert hit.status == RESOLVED and hit.source_label == "espn_WTA"
+    # ESPN gone quiet: no PENDING, and the freshness block names the families that are not live
+    stale = ResultsIndex(_rows([SACKMANN_OLD, ESPN_NEW]), since=date(2026, 8, 1), as_of=date(2026, 10, 20))
+    assert stale.resolve("WTA", "x", "y", "WTA_125", date(2026, 10, 18)).status == NOT_COVERED
+    fr = tf.freshness(stale, {"sources": {}}, date(2026, 10, 20))
+    assert fr["horizons"]["WTA 125"]["coverage"] == "partial"
+    assert set(fr["espn_families_not_live"]) == {"ATP tour", "WTA tour", "WTA 125"}
+    assert tf.freshness(idx, {"sources": {}}, date(2026, 10, 7))["espn_families_not_live"] == ["ATP tour"]
 
 
 def test_source_horizon_separates_not_covered_pending_and_not_found():

@@ -115,10 +115,14 @@ def freshness(index, manifest: dict, as_of: date) -> dict:
            "canonical_matches_sha256": manifest.get("matches_sha256"), "build_version": manifest.get("build_version"),
            "horizons": {}}
     for (tour, fam), label in LEVEL_BUCKETS.items():
-        hz = index.family_horizon.get((tour, fam))
+        full = index.family_horizon.get((tour, fam))
+        part = getattr(index, "partial_horizon", {}).get((tour, fam))
+        hz = max((x for x in (full, part) if x), default=None)
         out["horizons"][label] = {"newest_result": str(hz) if hz else None,
                                   "lag_days": None if not hz else (as_of - hz).days,
-                                  "live": bool(hz and (as_of - hz).days <= 3)}
+                                  "live": bool(hz and (as_of - hz).days <= 3),
+                                  "coverage": "partial" if part and (not full or part > full) else ("full" if hz else "none")}
+    out["espn_families_not_live"] = [LEVEL_BUCKETS[k] for k in sorted(ESPN_FAMILIES) if not out["horizons"][LEVEL_BUCKETS[k]]["live"]]
     return out
 
 

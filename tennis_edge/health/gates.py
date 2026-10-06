@@ -754,7 +754,8 @@ def settlement_stats(research_root=None) -> dict | None:
                                                               "independently_resolved_predictions", "independently_settled_matches",
                                                               "by_status", "reconciliation", "by_level",
                                                               "n_stale_unresolved_tour_level", "readout_at_independently_settled_matches")},
-                       prospective_v2_warning=bool(pv.get("n_stale_unresolved_tour_level")))
+                       prospective_v2_warning=bool(pv.get("n_stale_unresolved_tour_level")
+                                                   or (sm.get("freshness") or {}).get("espn_families_not_live")))
     clvs = latest_run_files(os.path.join(root, "clv"))
     if clvs:
         latest = {}
