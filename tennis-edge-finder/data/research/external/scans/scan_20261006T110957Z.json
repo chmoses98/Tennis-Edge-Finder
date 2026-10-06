@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-06T11:09:57.986814+00:00",
+ "run_id": "20261006T110957Z",
+ "external_parse": {
+  "events": 231,
+  "markets": 1870,
+  "skipped_family": 309,
+  "skipped_period": 566,
+  "skipped_live": 75,
+  "one_sided": 64,
+  "rows": 2904,
+  "devigged": 931
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 1139,
+  "markets_mapped": 469,
+  "contracts": 1048,
+  "quoted_contracts": 900,
+  "raw": "data/research/external/raw/20261006T110957Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 469,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 256,
+  "rows": 792,
+  "two_sided": 789,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1494,
+ "external_mapping": {
+  "total": 222,
+  "by_status": {
+   "MAPPED": 185,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Chetanna Amadike": 1,
+   "Andres Pereiro Lopez": 1,
+   "Georgios Dimitriou": 1,
+   "James McGloughlin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 265,
+  "by_status": {
+   "MAPPED": 238,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8981,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Elvin Egribel": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jeremy LAUMON": 1,
+   "Martin Hammond": 1,
+   "Bercel Sandor Takacs": 1,
+   "Albin Colette": 1,
+   "Jules Alias": 1
+  }
+ },
+ "matched_both_venues": 152,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 238,
+ "model_witness_available": true,
+ "rows": 168,
+ "counts": {
+  "PASS": 166,
+  "tri:MODEL_LONE_OUTLIER": 73,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 16,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 60
+ }
+}
