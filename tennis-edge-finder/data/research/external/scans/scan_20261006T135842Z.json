@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-06T13:58:42.482462+00:00",
+ "run_id": "20261006T135842Z",
+ "external_parse": {
+  "events": 166,
+  "markets": 1449,
+  "skipped_family": 240,
+  "skipped_period": 449,
+  "skipped_live": 45,
+  "one_sided": 41,
+  "rows": 2364,
+  "devigged": 719
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 845,
+  "markets_mapped": 322,
+  "contracts": 728,
+  "quoted_contracts": 728,
+  "raw": "data/research/external/raw/20261006T135842Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 322,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 75,
+  "rows": 653,
+  "two_sided": 651,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 722,
+ "external_mapping": {
+  "total": 157,
+  "by_status": {
+   "MAPPED": 126,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8025,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Joel Josef Schwarzler": 1,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Simon Myslivec": 1,
+   "Andres Pereiro Lopez": 1,
+   "Thiago Pernas": 1,
+   "Juan Sebastian Dominguez Collado": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 153,
+  "by_status": {
+   "MAPPED": 142,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9281,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Elvin Egribel": 1,
+   "Darcy Nicholls": 1,
+   "Sasikumar Mukund": 1,
+   "Xin Zhou": 1,
+   "Alex Hernandez": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Bercel Sandor Takacs": 1,
+   "Andres Pereiro Lopez": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 142,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 78,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:MARKETS_AGREE": 11,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
