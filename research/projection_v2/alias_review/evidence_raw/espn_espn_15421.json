@@ -1,0 +1,254 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:15421",
+ "foreign_name": "qu yihan",
+ "collected_at": "2026-10-06T03:51:00.486124+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15421",
+    "fetched_at": "2026-10-06T03:51:00.486154+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15421?lang=en&region=us",
+     "id": "15421",
+     "uid": "s:850~a:15421",
+     "type": "tennis",
+     "guid": "9ac9b399-7b01-3abb-b4d7-57bdc9d85f61",
+     "firstName": "Yihan",
+     "lastName": "Qu",
+     "fullName": "Qu Yihan",
+     "displayName": "Qu Yihan",
+     "shortName": "Q. Yihan",
+     "age": 17,
+     "dateOfBirth": "2009-03-22T07:00Z",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/15421/qu-yihan",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/15421/qu-yihan",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15421&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/15421/qu-yihan",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/15421/qu-yihan",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15421&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/15421/qu-yihan",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15421&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/15421/qu-yihan",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15421",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "qu-yihan",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "active": false,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/athletes/15421/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "2",
+      "name": "Inactive",
+      "type": "inactive",
+      "abbreviation": "Inactive"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15421/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/players/15421/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15421",
+    "fetched_at": "2026-10-06T03:51:01.059206+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Qu%20Yihan",
+   "fetched_at": "2026-10-06T03:51:01.638226+00:00",
+   "status": 200,
+   "hits": [
+    "Q141595672"
+   ],
+   "players": []
+  }
+ },
+ "canonical": {
+  "264086": {
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "264086",
+     "name_first": "Yihan",
+     "name_last": "Qu",
+     "hand": "U",
+     "dob": "20090322",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yihan%20Qu",
+     "fetched_at": "2026-10-06T03:51:02.757019+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

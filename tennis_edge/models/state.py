@@ -40,9 +40,7 @@ def fit_state(matches: pd.DataFrame, tour: str, elo_cfg: EloConfig = PROD_ELO, s
     m = match_sort_key(m)
     elo = Elo(elo_cfg); elo.run(m)
     sr = ServeReturnModel(sr_cfg); sr.run(m)
-    names = {}
-    for w, l, wn, ln in zip(m.winner_id, m.loser_id, m.winner_name, m.loser_name):
-        names[w] = wn; names[l] = ln
+    names = player_names(m)
     players = {}
     for p, r in elo.r.items():
         surfaces = {s: [elo.rs[(p, s)], elo.ns[(p, s)]] for s in ("Hard", "Clay", "Grass", "Carpet") if (p, s) in elo.rs}
@@ -53,6 +51,21 @@ def fit_state(matches: pd.DataFrame, tour: str, elo_cfg: EloConfig = PROD_ELO, s
     return {"model_version": MODEL_VERSION, "tour": tour, "id_systems_used": id_systems, "built_at": datetime.now(timezone.utc).isoformat(), "elo_config": elo_cfg.__dict__,
             "sr_config": sr_cfg.__dict__, "n_matches": int(len(m)), "as_of_date": str(m.tourney_date.max()),
             "baselines": {f"{k[0]}|{k[1]}": sr.base_num[k] / sr.base_den[k] for k in sr.base_den if sr.base_den[k] > 0}, "players": players}
+
+
+def player_names(m: pd.DataFrame, canonical: str = "sackmann") -> dict:
+    """{canonical id: display name}. The CANONICAL system's own spelling wins; a foreign row only names a player who
+    has no canonical row (a minted player). Before 2026-10-06 the last row named the player, which was harmless while
+    a foreign row could only be bound by an exact name -- but a reviewed alias binds ESPN's "Zheng Qinwen" to
+    Sackmann's "Qinwen Zheng", and Kalshi (which writes "Qinwen Zheng") then stopped finding her."""
+    names, canon = {}, {}
+    sysc = m["id_system"] if "id_system" in m.columns else pd.Series([canonical] * len(m), index=m.index)
+    for w, l, wn, ln, sy in zip(m.winner_id, m.loser_id, m.winner_name, m.loser_name, sysc):
+        names[w] = wn; names[l] = ln
+        if sy == canonical:
+            canon[w] = wn; canon[l] = ln
+    names.update(canon)
+    return names
 
 
 def save_state(state: dict, path: str):

@@ -1,0 +1,66 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "A0G8",
+ "foreign_name": "amr elsayed",
+ "collected_at": "2026-10-06T04:32:54.014850+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/a0g8?v=1",
+    "fetched_at": "2026-10-06T04:32:54.014870+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "209871": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "209871",
+     "name_first": "Amr Elsayed Abdou Ahmed",
+     "name_last": "Mohamed",
+     "hand": "R",
+     "dob": "19990304",
+     "ioc": "EGY",
+     "height": "185",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Amr%20Elsayed%20Abdou%20Ahmed%20Mohamed",
+     "fetched_at": "2026-10-06T04:32:54.492533+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "209871",
+     "name_first": "Ana Maria",
+     "name_last": "Stroe",
+     "hand": "U",
+     "dob": "19921119",
+     "ioc": "ROU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Ana%20Maria%20Stroe",
+     "fetched_at": "2026-10-06T04:32:55.676058+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

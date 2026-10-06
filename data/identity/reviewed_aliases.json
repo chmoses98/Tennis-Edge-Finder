@@ -1,23 +1,2530 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "purpose": "Player-name aliases that a HUMAN has reviewed and accepted. Nothing in this file is inferred by code.",
   "rules": [
     "An entry may only be added by a person, with provenance naming the evidence they checked.",
     "review_status must be ACCEPTED for an entry to be used. PENDING_REVIEW entries are inert.",
     "canonical_id must be a player id that already exists in the rating registry.",
     "This file never loosens an automated threshold. It is an allowlist, not a matcher.",
-    "An accepted alias resolves at confidence 0.95: enough to price a board, and it is the floor a shadow bet requires, so an alias can never be the reason a decision was taken."
+    "An accepted alias resolves at confidence 0.95: enough to price a board, and it is the floor a shadow bet requires, so an alias can never be the reason a decision was taken.",
+    "crosswalk_aliases bind a SOURCE-SPECIFIC foreign id (ESPN / TML) to an existing canonical (Sackmann) id on one tour. They are applied by the canonical build (identity/crosswalk.apply_reviewed_aliases) only where the automated crosswalk left the id unmapped, and never overwrite a mapped or minted id. Only ACCEPTED entries are listed; every other decision is in research/projection_v2/ALIAS_REVIEW_DECISION.json."
   ],
   "aliases": [
     {
       "tour": "WTA",
       "source_name": "Mimi Xu",
-      "canonical_id": null,
+      "canonical_id": "259685",
       "canonical_name": "Mingge Xu",
-      "review_status": "PENDING_REVIEW",
-      "provenance": "Kalshi lists 'Mimi Xu' on WTA and ITF boards; the registry holds 'Mingge Xu'. Mimi is widely used as this player's given name in press coverage. NOT VERIFIED against a governing-body record, and the registry also contains eleven other players surnamed Xu, so an automated match here is exactly the merge this project has already had to undo once.",
+      "review_status": "ACCEPTED",
+      "provenance": "Kalshi lists 'Mimi Xu' on WTA and ITF boards; the registry holds 'Mingge Xu'. Mimi is widely used as this player's given name in press coverage. NOT VERIFIED against a governing-body record, and the registry also contains eleven other players surnamed Xu, so an automated match here is exactly the merge this project has already had to undo once. | 2026-10-06 review: The official WTA profile 331725 is named 'Mimi Xu', born 2007-10-02, GBR -- the date of birth and nationality of the registry's Mingge Xu (259685, 2007-10-02, GBR); Wikidata Q112080351 carries the same date of birth.",
       "blocked_contracts_when_unresolved": 6,
-      "added_at": "2026-09-12"
+      "added_at": "2026-09-12",
+      "review_history": [
+        {
+          "reviewed_at": "2026-10-06",
+          "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+          "decision": "ACCEPTED",
+          "rationale": "The official WTA profile 331725 is named 'Mimi Xu', born 2007-10-02, GBR -- the date of birth and nationality of the registry's Mingge Xu (259685, 2007-10-02, GBR); Wikidata Q112080351 carries the same date of birth."
+        }
+      ]
+    }
+  ],
+  "crosswalk_aliases": [
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:5712",
+      "foreign_name": "bai zhuoxuan",
+      "tour": "WTA",
+      "canonical_id": "222296",
+      "canonical_name": "zhuoxuan bai",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2002-11-16",
+        "canonical_dob": "2002-11-16",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/5712",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_5712.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:3797",
+      "foreign_name": "cui jie",
+      "tour": "ATP",
+      "canonical_id": "200666",
+      "canonical_name": "jie cui",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1998-01-24",
+        "canonical_dob": "1998-01-24",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/3797",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_3797.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13617",
+      "foreign_name": "dang yiming",
+      "tour": "WTA",
+      "canonical_id": "222330",
+      "canonical_name": "yiming dang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2004-08-30",
+        "canonical_dob": "2004-08-30",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13617",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13617.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:10239",
+      "foreign_name": "daniel merida",
+      "tour": "ATP",
+      "canonical_id": "210017",
+      "canonical_name": "daniel merida aguilar",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2004-09-26",
+        "canonical_dob": "2004-09-26",
+        "nationality": [
+          "ESP",
+          "ESP"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 14,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/10239",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_10239.json"
+      },
+      "provenance": "exact date of birth; 14 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:14709",
+      "foreign_name": "diego dedura",
+      "tour": "ATP",
+      "canonical_id": "212309",
+      "canonical_name": "diego dedura palomero",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2008-03-12",
+        "canonical_dob": "2008-03-12",
+        "nationality": [
+          "GER",
+          "GER"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 5,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/14709",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_14709.json"
+      },
+      "provenance": "exact date of birth; 5 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:5256",
+      "foreign_name": "feng shuo",
+      "tour": "WTA",
+      "canonical_id": "215937",
+      "canonical_name": "shuo feng",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1998-01-15",
+        "canonical_dob": "1998-01-15",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/325807",
+        "wikidata": "Q56697504",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/5256",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q56697504",
+          "official WTA API"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_5256.json"
+      },
+      "provenance": "exact date of birth; nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:12315",
+      "foreign_name": "gao xinyu",
+      "tour": "WTA",
+      "canonical_id": "214386",
+      "canonical_name": "xinyu gao",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1997-11-21",
+        "canonical_dob": "1997-11-21",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/322925",
+        "wikidata": "Q27156306",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/12315",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q27156306",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_12315.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:3149",
+      "foreign_name": "guo hanyu",
+      "tour": "WTA",
+      "canonical_id": "215250",
+      "canonical_name": "hanyu guo",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1998-05-18",
+        "canonical_dob": "1998-05-18",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/323087",
+        "wikidata": "Q41735946",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/3149",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q41735946",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_3149.json"
+      },
+      "provenance": "exact date of birth; 4 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:5490",
+      "foreign_name": "guo meiqi",
+      "tour": "WTA",
+      "canonical_id": "216162",
+      "canonical_name": "meiqi guo",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2000-01-09",
+        "canonical_dob": "2000-01-09",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/326546",
+        "wikidata": "Q40334394",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/5490",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q40334394",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_5490.json"
+      },
+      "provenance": "exact date of birth; 2 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:4546",
+      "foreign_name": "irene burillo",
+      "tour": "WTA",
+      "canonical_id": "213706",
+      "canonical_name": "irene burillo escorihuela",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1997-07-23",
+        "canonical_dob": "1997-07-23",
+        "nationality": [
+          "ESP",
+          "ESP"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 3,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/321157",
+        "wikidata": "Q97293772",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/4546",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q97293772",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_4546.json"
+      },
+      "provenance": "exact date of birth; 3 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:4389",
+      "foreign_name": "iva primorac pavicic",
+      "tour": "WTA",
+      "canonical_id": "206248",
+      "canonical_name": "iva primorac",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1996-04-10",
+        "canonical_dob": "1996-04-10",
+        "nationality": [
+          "CRO",
+          "CRO"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/319515",
+        "wikidata": "Q105712051",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/4389",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q105712051",
+          "official WTA API"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_4389.json"
+      },
+      "provenance": "exact date of birth; nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13680",
+      "foreign_name": "li zongyu",
+      "tour": "WTA",
+      "canonical_id": "252493",
+      "canonical_name": "zongyu li",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2003-05-27",
+        "canonical_dob": "2003-05-27",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13680",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13680.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2509",
+      "foreign_name": "lu jia jing",
+      "tour": "WTA",
+      "canonical_id": "203288",
+      "canonical_name": "jia jing lu",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1989-11-18",
+        "canonical_dob": "1989-11-18",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/313225",
+        "wikidata": "Q17281094",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2509",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q17281094",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2509.json"
+      },
+      "provenance": "Flagged ambiguity (two Sackmann Lus). ESPN's athlete record for 2509 is 'Lu Jia-Jing', born 1989-11-18 in Liaoning, CHN. Sackmann 203288 'Jia Jing Lu' and the official WTA profile 313225 'Jia-Jing Lu' are both born 1989-11-18 (Wikidata Q17281094 agrees); two of ESPN's matches are the same matches Sackmann records for 203288. Note: the brief listed this as espn:2567; ESPN 2567 is Sun Fajing (ATP) -- the Lu Jia Jing row is espn:2509.",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:15421",
+      "foreign_name": "qu yihan",
+      "tour": "WTA",
+      "canonical_id": "264086",
+      "canonical_name": "yihan qu",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2009-03-22",
+        "canonical_dob": "2009-03-22",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/15421",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_15421.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13681",
+      "foreign_name": "ren yufei",
+      "tour": "WTA",
+      "canonical_id": "260913",
+      "canonical_name": "yufei ren",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2006-04-11",
+        "canonical_dob": "2006-04-11",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13681",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13681.json"
+      },
+      "provenance": "exact date of birth; 2 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:10073",
+      "foreign_name": "shang juncheng",
+      "tour": "ATP",
+      "canonical_id": "209992",
+      "canonical_name": "juncheng shang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2005-02-02",
+        "canonical_dob": "2005-02-02",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/10073",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_10073.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:15422",
+      "foreign_name": "shao yushan",
+      "tour": "WTA",
+      "canonical_id": "269253",
+      "canonical_name": "yushan shao",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2008-12-26",
+        "canonical_dob": "2008-12-26",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/15422",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_15422.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2567",
+      "foreign_name": "sun fajing",
+      "tour": "ATP",
+      "canonical_id": "111806",
+      "canonical_name": "fajing sun",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1996-10-03",
+        "canonical_dob": "1996-10-03",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": "Q26251497",
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2567",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q26251497"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2567.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:3478",
+      "foreign_name": "tang qianhui",
+      "tour": "WTA",
+      "canonical_id": "215043",
+      "canonical_name": "qianhui tang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2000-09-10",
+        "canonical_dob": "2000-09-10",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/324327",
+        "wikidata": "Q30068619",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/3478",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q30068619",
+          "official WTA API"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_3478.json"
+      },
+      "provenance": "exact date of birth; nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2856",
+      "foreign_name": "te rigele",
+      "tour": "ATP",
+      "canonical_id": "144751",
+      "canonical_name": "rigele te",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1997-10-09",
+        "canonical_dob": "1997-10-09",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": "Q18552831",
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2856",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q18552831"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2856.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13708",
+      "foreign_name": "tian fangran",
+      "tour": "WTA",
+      "canonical_id": "221885",
+      "canonical_name": "fangran tian",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2003-08-10",
+        "canonical_dob": "2003-08-10",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13708",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13708.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:3992",
+      "foreign_name": "wang meiling",
+      "tour": "WTA",
+      "canonical_id": "216062",
+      "canonical_name": "meiling wang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2000-02-22",
+        "canonical_dob": "2000-02-22",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/326162",
+        "wikidata": "Q57087753",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/3992",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q57087753",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_3992.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:3155",
+      "foreign_name": "wang xiyu",
+      "tour": "WTA",
+      "canonical_id": "216016",
+      "canonical_name": "xiyu wang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2001-03-28",
+        "canonical_dob": "2001-03-28",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/326160",
+        "wikidata": "Q41799108",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/3155",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q41799108",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_3155.json"
+      },
+      "provenance": "exact date of birth; 4 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13765",
+      "foreign_name": "wang yuhan",
+      "tour": "WTA",
+      "canonical_id": "264205",
+      "canonical_name": "yuhan wang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2007-06-21",
+        "canonical_dob": "2007-06-21",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13765",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13765.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:6189",
+      "foreign_name": "wei sijia",
+      "tour": "WTA",
+      "canonical_id": "221096",
+      "canonical_name": "sijia wei",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2003-12-05",
+        "canonical_dob": "2003-12-05",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/6189",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_6189.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:15424",
+      "foreign_name": "wei zhang qian",
+      "tour": "WTA",
+      "canonical_id": "268781",
+      "canonical_name": "zhang qian wei",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "UNAVAILABLE",
+        "foreign_dob": "2008-01-30",
+        "canonical_dob": null,
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/15424",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_15424.json"
+      },
+      "provenance": "2 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2875",
+      "foreign_name": "wu yibing",
+      "tour": "ATP",
+      "canonical_id": "200059",
+      "canonical_name": "yibing wu",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1999-10-14",
+        "canonical_dob": "1999-10-14",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": null,
+        "wikidata": "Q28137186",
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2875",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q28137186",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2875.json"
+      },
+      "provenance": "exact date of birth; 4 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13482",
+      "foreign_name": "xiao linang",
+      "tour": "ATP",
+      "canonical_id": "209038",
+      "canonical_name": "linang xiao",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2000-03-18",
+        "canonical_dob": "2000-03-18",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13482",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13482.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:4943",
+      "foreign_name": "yang yidi",
+      "tour": "WTA",
+      "canonical_id": "215820",
+      "canonical_name": "yidi yang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1999-12-21",
+        "canonical_dob": "1999-12-21",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/324323",
+        "wikidata": "Q106293356",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/4943",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q106293356",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_4943.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13682",
+      "foreign_name": "yao xinxin",
+      "tour": "WTA",
+      "canonical_id": "252587",
+      "canonical_name": "xinxin yao",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2003-10-20",
+        "canonical_dob": "2003-10-20",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13682",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13682.json"
+      },
+      "provenance": "exact date of birth; 2 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:17856",
+      "foreign_name": "ye shiyu",
+      "tour": "WTA",
+      "canonical_id": "264085",
+      "canonical_name": "shiyu ye",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2007-04-20",
+        "canonical_dob": "2007-04-20",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/17856",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_17856.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2603",
+      "foreign_name": "you xiaodi",
+      "tour": "WTA",
+      "canonical_id": "214646",
+      "canonical_name": "xiaodi you",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1996-05-12",
+        "canonical_dob": "1996-05-12",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/322451",
+        "wikidata": "Q15634509",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2603",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q15634509",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2603.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:12587",
+      "foreign_name": "younes lalami",
+      "tour": "ATP",
+      "canonical_id": "207794",
+      "canonical_name": "younes lalami laaroussi",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2001-04-18",
+        "canonical_dob": "2001-04-18",
+        "nationality": [
+          "LAO",
+          "MAR"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/12587",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_12587.json"
+      },
+      "provenance": "ESPN lists citizenship 'Laos' (LAO) and birthplace Montreal for 12587, which contradicts every other source; the date of birth (2001-04-18) equals Sackmann 207794 and the ATP-site database record for 'Younes Lalami Laaroussi' (MAR), and ESPN's one match is a match Sackmann records for 207794. The LAO flag is treated as an ESPN data error; the identity rests on DOB + a shared match.",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2916",
+      "foreign_name": "yuan yue",
+      "tour": "WTA",
+      "canonical_id": "206294",
+      "canonical_name": "yue yuan",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1998-09-25",
+        "canonical_dob": "1998-09-25",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 12,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2916",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2916.json"
+      },
+      "provenance": "exact date of birth; 12 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:15423",
+      "foreign_name": "zhang ruien",
+      "tour": "WTA",
+      "canonical_id": "263869",
+      "canonical_name": "ruien zhang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2008-04-27",
+        "canonical_dob": "2008-04-27",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/15423",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_15423.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:707",
+      "foreign_name": "zhang shuai",
+      "tour": "WTA",
+      "canonical_id": "201533",
+      "canonical_name": "shuai zhang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1989-01-21",
+        "canonical_dob": "1989-01-21",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 5,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/311779",
+        "wikidata": "Q197291",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/707",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q197291",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_707.json"
+      },
+      "provenance": "exact date of birth; 5 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:15462",
+      "foreign_name": "zhang tianhui",
+      "tour": "ATP",
+      "canonical_id": "212221",
+      "canonical_name": "tianhui zhang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2006-02-19",
+        "canonical_dob": "2006-02-19",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/15462",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_15462.json"
+      },
+      "provenance": "exact date of birth; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2594",
+      "foreign_name": "zhang ying",
+      "tour": "WTA",
+      "canonical_id": "213947",
+      "canonical_name": "ying zhang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1996-04-15",
+        "canonical_dob": "1996-04-15",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/321742",
+        "wikidata": "Q21067332",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2594",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q21067332",
+          "official WTA API"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2594.json"
+      },
+      "provenance": "exact date of birth; nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:3024",
+      "foreign_name": "zhang zhizhen",
+      "tour": "ATP",
+      "canonical_id": "111190",
+      "canonical_name": "zhizhen zhang",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1996-10-16",
+        "canonical_dob": "1996-10-16",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 6,
+        "official_wta_profile": null,
+        "wikidata": "Q21623382",
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/3024",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q21623382",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_3024.json"
+      },
+      "provenance": "exact date of birth; 6 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:6048",
+      "foreign_name": "zheng qinwen",
+      "tour": "WTA",
+      "canonical_id": "221012",
+      "canonical_name": "qinwen zheng",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2002-10-08",
+        "canonical_dob": "2002-10-08",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/328120",
+        "wikidata": "Q62096129",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/6048",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q62096129",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_6048.json"
+      },
+      "provenance": "exact date of birth; 2 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2608",
+      "foreign_name": "zheng wushuang",
+      "tour": "WTA",
+      "canonical_id": "213821",
+      "canonical_name": "wushuang zheng",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1998-11-29",
+        "canonical_dob": "1998-11-29",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/321329",
+        "wikidata": "Q26209574",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2608",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q26209574",
+          "official WTA API",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2608.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:13444",
+      "foreign_name": "zhou yi",
+      "tour": "ATP",
+      "canonical_id": "212044",
+      "canonical_name": "yi zhou",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2005-03-14",
+        "canonical_dob": "2005-03-14",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML)",
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/13444",
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_13444.json"
+      },
+      "provenance": "Flagged ambiguity (three Sackmann Zhous). ESPN 13444 is an ATP (men's) record: 'Zhou Yi', born 2005-03-14, Beijing, CHN. Sackmann ATP 212044 'Yi Zhou' is born 2005-03-14, CHN, and his Challenger career (last Tunis CH 2026-05-11) continues into ESPN's rows (RG/Wimbledon qualifying from 2026-05-19, Chengdu, China Open). Decided on date of birth + nationality + tour + career continuity, not on the name.",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "espn",
+      "foreign_id": "espn:2780",
+      "foreign_name": "zhu lin",
+      "tour": "WTA",
+      "canonical_id": "202684",
+      "canonical_name": "lin zhu",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1994-01-28",
+        "canonical_dob": "1994-01-28",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": "https://api.wtatennis.com/tennis/players/317306",
+        "wikidata": "Q17319111",
+        "sources": [
+          "ESPN athlete record https://sports.core.api.espn.com/v2/sports/tennis/athletes/2780",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q17319111",
+          "official WTA API"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/espn_espn_2780.json"
+      },
+      "provenance": "exact date of birth; nationality; official WTA profile date of birth",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "A09P",
+      "foreign_name": "alafia ayeni",
+      "tour": "ATP",
+      "canonical_id": "200366",
+      "canonical_name": "olukayode alafia damina ayeni",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1999-08-10",
+        "nationality": [
+          "USA",
+          "USA"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 62,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_A09P.json"
+      },
+      "provenance": "62 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "R772",
+      "foreign_name": "albert ramos vinolas",
+      "tour": "ATP",
+      "canonical_id": "105077",
+      "canonical_name": "albert ramos",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1988-01-17",
+        "canonical_dob": "1988-01-17",
+        "nationality": [
+          "ESP",
+          "ESP"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 874,
+        "official_wta_profile": null,
+        "wikidata": "Q459158",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id R772, name 'Albert Ramos-Vinolas')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q459158",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_R772.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 874 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "HH32",
+      "foreign_name": "alejandro hoyos",
+      "tour": "ATP",
+      "canonical_id": "200253",
+      "canonical_name": "alejandro hoyos franco",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1999-09-17",
+        "nationality": [
+          "COL",
+          "COL"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_HH32.json"
+      },
+      "provenance": "4 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "J468",
+      "foreign_name": "alexandru jecan",
+      "tour": "ATP",
+      "canonical_id": "121497",
+      "canonical_name": "mircea alexandru jecan",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1988-06-02",
+        "nationality": [
+          "ROU",
+          "ROU"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_J468.json"
+      },
+      "provenance": "1 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "A0G8",
+      "foreign_name": "amr elsayed",
+      "tour": "ATP",
+      "canonical_id": "209871",
+      "canonical_name": "amr elsayed abdou ahmed mohamed",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1999-03-04",
+        "nationality": [
+          "EGY",
+          "EGY"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_A0G8.json"
+      },
+      "provenance": "1 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "H0C9",
+      "foreign_name": "arklon huertas del pino cordova",
+      "tour": "ATP",
+      "canonical_id": "207736",
+      "canonical_name": "arklon huertas del pino",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1994-07-16",
+        "canonical_dob": "1994-07-16",
+        "nationality": [
+          "PER",
+          "PER"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 25,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id H0C9, name 'Arklon Huertas Del Pino Cordova')",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_H0C9.json"
+      },
+      "provenance": "exact date of birth; 25 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "R438",
+      "foreign_name": "augusto ricciardi",
+      "tour": "ATP",
+      "canonical_id": "108943",
+      "canonical_name": "augusto ricciardi castelli",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1979-07-15",
+        "canonical_dob": "1979-07-15",
+        "nationality": [
+          "URU",
+          "URU"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id R438, name 'Augusto Ricciardi')",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_R438.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "T0FN",
+      "foreign_name": "benjamin torres",
+      "tour": "ATP",
+      "canonical_id": "210301",
+      "canonical_name": "benjamin ignacio torres fernandez",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "2003-10-12",
+        "nationality": [
+          "CHI",
+          "CHI"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_T0FN.json"
+      },
+      "provenance": "1 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "H0LS",
+      "foreign_name": "courte heremana",
+      "tour": "ATP",
+      "canonical_id": "213705",
+      "canonical_name": "heremana courte",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "UNAVAILABLE",
+        "foreign_dob": null,
+        "canonical_dob": "2007-01-01",
+        "nationality": [
+          "FRA",
+          "FRA"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_H0LS.json"
+      },
+      "provenance": "1 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "S0GM",
+      "foreign_name": "daniel salazar",
+      "tour": "ATP",
+      "canonical_id": "202369",
+      "canonical_name": "daniel salazar martinez",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "2001-03-21",
+        "nationality": [
+          "COL",
+          "COL"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_S0GM.json"
+      },
+      "provenance": "4 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "D0LJ",
+      "foreign_name": "diego dedura",
+      "tour": "ATP",
+      "canonical_id": "212309",
+      "canonical_name": "diego dedura palomero",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2008-03-12",
+        "canonical_dob": "2008-03-12",
+        "nationality": [
+          "GER",
+          "GER"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 49,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id D0LJ, name 'Diego Dedura-Palomero')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_D0LJ.json"
+      },
+      "provenance": "exact date of birth; 49 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "RC31",
+      "foreign_name": "eduardo russi assumpcao",
+      "tour": "ATP",
+      "canonical_id": "111796",
+      "canonical_name": "eduardo russi",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1995-02-09",
+        "nationality": [
+          "BRA",
+          "BRA"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 2,
+        "official_wta_profile": null,
+        "wikidata": "Q24322615",
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q24322615",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_RC31.json"
+      },
+      "provenance": "ATP id on the canonical player's Wikidata item equals the foreign id; 2 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "A0F9",
+      "foreign_name": "emiliano aguilera",
+      "tour": "ATP",
+      "canonical_id": "212510",
+      "canonical_name": "emiliano aguilera guerrero",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "2003-02-11",
+        "nationality": [
+          "MEX",
+          "MEX"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_A0F9.json"
+      },
+      "provenance": "1 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "F512",
+      "foreign_name": "favel freyre",
+      "tour": "ATP",
+      "canonical_id": "108918",
+      "canonical_name": "favel antonio freyre perdomo",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "UNAVAILABLE",
+        "foreign_dob": null,
+        "canonical_dob": "1986-02-26",
+        "nationality": [
+          "CUB",
+          "CUB"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 3,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_F512.json"
+      },
+      "provenance": "3 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "V0HQ",
+      "foreign_name": "felipe virgili",
+      "tour": "ATP",
+      "canonical_id": "212854",
+      "canonical_name": "felipe virgili berini",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "2005-01-20",
+        "nationality": [
+          "ITA",
+          "ITA"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_V0HQ.json"
+      },
+      "provenance": "1 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "M0WY",
+      "foreign_name": "guto miguel",
+      "tour": "ATP",
+      "canonical_id": "213036",
+      "canonical_name": "luis guto miguel",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "2009-02-26",
+        "nationality": [
+          "BRA",
+          "BRA"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 10,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_M0WY.json"
+      },
+      "provenance": "10 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "H409",
+      "foreign_name": "hira lal",
+      "tour": "ATP",
+      "canonical_id": "110825",
+      "canonical_name": "hira lal rahman",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "UNAVAILABLE",
+        "foreign_dob": null,
+        "canonical_dob": "1971-01-21",
+        "nationality": [
+          "BAN",
+          "BAN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 6,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_H409.json"
+      },
+      "provenance": "6 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "P0I5",
+      "foreign_name": "ignacio parisca romera",
+      "tour": "ATP",
+      "canonical_id": "212306",
+      "canonical_name": "ignacio parisca",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2005-08-20",
+        "canonical_dob": "2005-08-20",
+        "nationality": [
+          "VEN",
+          "VEN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id P0I5, name 'Ignacio Parisca Romera')",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_P0I5.json"
+      },
+      "provenance": "exact date of birth; 2 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "CA33",
+      "foreign_name": "inigo cervantes",
+      "tour": "ATP",
+      "canonical_id": "105438",
+      "canonical_name": "inigo cervantes huegun",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1989-11-30",
+        "canonical_dob": "1989-11-30",
+        "nationality": [
+          "ESP",
+          "ESP"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 303,
+        "official_wta_profile": null,
+        "wikidata": "Q291871",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id CA33, name 'Inigo Cervantes')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q291871",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_CA33.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 303 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "CN08",
+      "foreign_name": "jordan correia",
+      "tour": "ATP",
+      "canonical_id": "144756",
+      "canonical_name": "jordan correia passos do carmo",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1997-07-05",
+        "nationality": [
+          "BRA",
+          "BRA"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_CN08.json"
+      },
+      "provenance": "1 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "PG56",
+      "foreign_name": "jorge panta",
+      "tour": "ATP",
+      "canonical_id": "106410",
+      "canonical_name": "jorge brian panta herreros",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1995-07-22",
+        "canonical_dob": "1995-07-22",
+        "nationality": [
+          "PER",
+          "PER"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 20,
+        "official_wta_profile": null,
+        "wikidata": "Q22007316",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id PG56, name 'Jorge Panta')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q22007316",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_PG56.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 20 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "L0HN",
+      "foreign_name": "luca lemaitre",
+      "tour": "ATP",
+      "canonical_id": "212507",
+      "canonical_name": "luca lemaitre vilchis",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "2005-02-18",
+        "nationality": [
+          "MEX",
+          "MEX"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 0,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_L0HN.json"
+      },
+      "provenance": "date of birth implied by the source's per-match ages agrees within 22 days; nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "CA39",
+      "foreign_name": "luis javier cuellar",
+      "tour": "ATP",
+      "canonical_id": "108981",
+      "canonical_name": "luis javier cuellar contreras",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1988-02-10",
+        "canonical_dob": "1988-02-10",
+        "nationality": [
+          "CUB",
+          "CUB"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 1,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id CA39, name 'Luis Javier Cuellar')",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_CA39.json"
+      },
+      "provenance": "exact date of birth; 1 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "Z363",
+      "foreign_name": "marcelo zormann",
+      "tour": "ATP",
+      "canonical_id": "110774",
+      "canonical_name": "marcelo zormann da silva",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "UNAVAILABLE",
+        "foreign_dob": null,
+        "canonical_dob": "1996-06-10",
+        "nationality": [
+          null,
+          "BRA"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 19,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_Z363.json"
+      },
+      "provenance": "TML Z363 carries no age or nationality and has no ATP-database record, so no date of birth or nationality can be compared -- but 19 of its 21 matches (2013-2023) are the same matches, against the same opponents with the same results, that Sackmann records for 110774 'Marcelo Zormann Da Silva' (BRA). A namesake cannot produce nineteen shared matches. Name differs only by the dropped second surname.",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "DC48",
+      "foreign_name": "murkel dellien",
+      "tour": "ATP",
+      "canonical_id": "123961",
+      "canonical_name": "murkel alejandro dellien velasco",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1997-09-16",
+        "canonical_dob": "1997-09-16",
+        "nationality": [
+          "BOL",
+          "BOL"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 183,
+        "official_wta_profile": null,
+        "wikidata": "Q108601101",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id DC48, name 'Murkel Dellien')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q108601101",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_DC48.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 183 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "S923",
+      "foreign_name": "nasir sherazi",
+      "tour": "ATP",
+      "canonical_id": "108846",
+      "canonical_name": "syed nasir sherazi",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1980-02-24",
+        "canonical_dob": "1980-02-24",
+        "nationality": [
+          "PAK",
+          "PAK"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id S923, name 'Nasir Sherazi')",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_S923.json"
+      },
+      "provenance": "exact date of birth; 4 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "RB00",
+      "foreign_name": "ricardo rodriguez pace",
+      "tour": "ATP",
+      "canonical_id": "106175",
+      "canonical_name": "ricardo rodriguez",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1993-04-28",
+        "canonical_dob": "1993-04-28",
+        "nationality": [
+          "VEN",
+          "VEN"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 52,
+        "official_wta_profile": null,
+        "wikidata": "Q2148716",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id RB00, name 'Ricardo Rodriguez - Pace')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q2148716",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_RB00.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 52 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "CF88",
+      "foreign_name": "roberto cid subervi",
+      "tour": "ATP",
+      "canonical_id": "106232",
+      "canonical_name": "roberto cid",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1993-08-30",
+        "canonical_dob": "1993-08-30",
+        "nationality": [
+          "DOM",
+          "DOM"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 132,
+        "official_wta_profile": null,
+        "wikidata": "Q27049222",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id CF88, name 'Roberto Cid Subervi')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q27049222",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_CF88.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 132 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "SF89",
+      "foreign_name": "rubin statham",
+      "tour": "ATP",
+      "canonical_id": "104907",
+      "canonical_name": "jose rubin statham",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1987-04-25",
+        "canonical_dob": "1987-04-25",
+        "nationality": [
+          "NZL",
+          "NZL"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 186,
+        "official_wta_profile": null,
+        "wikidata": "Q6279557",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id SF89, name 'Rubin Statham')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q6279557",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_SF89.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 186 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "E224",
+      "foreign_name": "victor estrella burgos",
+      "tour": "ATP",
+      "canonical_id": "103607",
+      "canonical_name": "victor estrella",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1980-08-02",
+        "canonical_dob": "1980-08-02",
+        "nationality": [
+          "DOM",
+          "DOM"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 416,
+        "official_wta_profile": null,
+        "wikidata": "Q548522",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id E224, name 'Victor Estrella Burgos')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q548522",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_E224.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 416 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "PA97",
+      "foreign_name": "vijay sundar prashanth",
+      "tour": "ATP",
+      "canonical_id": "104822",
+      "canonical_name": "n vijay sundar prashanth",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "1986-10-27",
+        "canonical_dob": "1986-10-27",
+        "nationality": [
+          "IND",
+          "IND"
+        ],
+        "governing_body_id_check": "MATCH",
+        "shared_matches": 27,
+        "official_wta_profile": null,
+        "wikidata": "Q18758442",
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id PA97, name 'Vijay Sundar Prashanth')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "Wikidata Q18758442",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_PA97.json"
+      },
+      "provenance": "exact date of birth; ATP id on the canonical player's Wikidata item equals the foreign id; 27 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "SM71",
+      "foreign_name": "vinayak sharma kaza",
+      "tour": "ATP",
+      "canonical_id": "105737",
+      "canonical_name": "kaza vinayak sharma",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "AGE_CONSISTENT",
+        "foreign_dob": null,
+        "canonical_dob": "1991-03-28",
+        "nationality": [
+          "IND",
+          "IND"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 2,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_SM71.json"
+      },
+      "provenance": "2 shared match(es); nationality; date of birth implied by per-match ages",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "L0CK",
+      "foreign_name": "younes lalami",
+      "tour": "ATP",
+      "canonical_id": "207794",
+      "canonical_name": "younes lalami laaroussi",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2001-04-18",
+        "canonical_dob": "2001-04-18",
+        "nationality": [
+          "MAR",
+          "MAR"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 4,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id L0CK, name 'Younes Lalami Laaroussi')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_L0CK.json"
+      },
+      "provenance": "exact date of birth; 4 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
+    },
+    {
+      "foreign_system": "tml",
+      "foreign_id": "Y09V",
+      "foreign_name": "yunchaokete bu",
+      "tour": "ATP",
+      "canonical_id": "207352",
+      "canonical_name": "bu yunchaokete",
+      "review_status": "ACCEPTED",
+      "evidence": {
+        "dob_check": "EXACT",
+        "foreign_dob": "2002-01-19",
+        "canonical_dob": "2002-01-19",
+        "nationality": [
+          "CHN",
+          "CHN"
+        ],
+        "governing_body_id_check": "UNAVAILABLE",
+        "shared_matches": 157,
+        "official_wta_profile": null,
+        "wikidata": null,
+        "sources": [
+          "ATP-site player database (TML ATP_Database.csv, id Y09V, name 'Yunchaokete Bu')",
+          "ATP-site player database (TML)",
+          "Sackmann players file (dob, ioc, wikidata id)",
+          "shared matches in the canonical table (TML/ESPN vs Sackmann)"
+        ],
+        "raw": "research/projection_v2/alias_review/evidence_raw/tml_Y09V.json"
+      },
+      "provenance": "exact date of birth; 157 shared match(es); nationality",
+      "decision_ref": "research/projection_v2/ALIAS_REVIEW_DECISION.json",
+      "reviewer": "Claude (AI reviewer acting for the repository owner, session 2026-10-06); evidence-based, not name-based",
+      "reviewed_at": "2026-10-06"
     }
   ]
 }

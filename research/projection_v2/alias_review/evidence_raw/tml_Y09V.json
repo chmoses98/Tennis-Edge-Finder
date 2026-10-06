@@ -1,0 +1,107 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "Y09V",
+ "foreign_name": "yunchaokete bu",
+ "collected_at": "2026-10-06T04:35:27.535955+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/y09v?v=1",
+    "fetched_at": "2026-10-06T04:35:27.535977+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "207352": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "207352",
+     "name_first": "Bu",
+     "name_last": "Yunchaokete",
+     "hand": "R",
+     "dob": "20020119",
+     "ioc": "CHN",
+     "height": "185",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Bu%20Yunchaokete",
+     "fetched_at": "2026-10-06T04:35:28.027055+00:00",
+     "status": 200,
+     "hits": [
+      "Q112965927"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q112965927.json",
+       "fetched_at": "2026-10-06T04:35:29.243139+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q112965927",
+        "label_en": "Buyunchaokete",
+        "label_zh": "\u5e03\u4e91\u671d\u514b\u7279",
+        "aliases_en": [
+         "Bu Yunchaokete"
+        ],
+        "atp_id": [
+         "Y09V"
+        ],
+        "itf_id": [
+         "yunchaokete-bu/800464245/chn"
+        ],
+        "date_of_birth": [
+         "+2002-01-19T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q148"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/y09v?v=1",
+      "fetched_at": "2026-10-06T04:35:30.483768+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800464245",
+      "fetched_at": "2026-10-06T04:35:30.962105+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "207352",
+     "name_first": "Simona",
+     "name_last": "Porchia",
+     "hand": "U",
+     "dob": "19760512",
+     "ioc": "ITA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Simona%20Porchia",
+     "fetched_at": "2026-10-06T04:35:31.777695+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

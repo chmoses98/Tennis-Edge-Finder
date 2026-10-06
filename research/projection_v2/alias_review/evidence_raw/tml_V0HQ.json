@@ -1,0 +1,66 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "V0HQ",
+ "foreign_name": "felipe virgili",
+ "collected_at": "2026-10-06T04:34:10.615346+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/v0hq?v=1",
+    "fetched_at": "2026-10-06T04:34:10.615366+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "212854": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212854",
+     "name_first": "Felipe",
+     "name_last": "Virgili Berini",
+     "hand": "U",
+     "dob": "20050120",
+     "ioc": "ITA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Felipe%20Virgili%20Berini",
+     "fetched_at": "2026-10-06T04:34:11.093075+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212854",
+     "name_first": "Adriana",
+     "name_last": "Fonseca Villarroel",
+     "hand": "U",
+     "dob": "19860706",
+     "ioc": "COL",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Adriana%20Fonseca%20Villarroel",
+     "fetched_at": "2026-10-06T04:34:12.307778+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

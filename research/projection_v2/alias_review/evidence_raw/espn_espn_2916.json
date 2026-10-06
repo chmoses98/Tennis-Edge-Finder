@@ -1,0 +1,334 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:2916",
+ "foreign_name": "yuan yue",
+ "collected_at": "2026-10-06T04:31:08.535417+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2916",
+    "fetched_at": "2026-10-06T04:31:08.535446+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2916?lang=en&region=us",
+     "id": "2916",
+     "uid": "s:850~a:2916",
+     "type": "tennis",
+     "guid": "ddfe2c04-d9f9-ac1e-9487-2bad3246cfce",
+     "firstName": "Yuan",
+     "lastName": "Yue",
+     "fullName": "Yuan Yue",
+     "displayName": "Yuan Yue",
+     "shortName": "Y. Yuan",
+     "height": 70.0,
+     "displayHeight": "5' 10\"",
+     "age": 28,
+     "dateOfBirth": "1998-09-25T07:00Z",
+     "debutYear": 2015,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/2916/yuan-yue",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/2916/yuan-yue",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2916&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/2916/yuan-yue",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/2916/yuan-yue",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2916&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/2916/yuan-yue",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2916&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/2916/yuan-yue",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2916",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Yangzhou, China"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "yuan-yue",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/types/2/athletes/2916/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 11
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/athletes/2916/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2916/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/players/2916/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2916",
+    "fetched_at": "2026-10-06T04:31:09.116407+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yuan%20Yue",
+   "fetched_at": "2026-10-06T04:31:09.686240+00:00",
+   "status": 200,
+   "hits": [
+    "Q104143505",
+    "Q10889686",
+    "Q62647853",
+    "Q56248480"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q56248480.json",
+     "fetched_at": "2026-10-06T04:31:14.598660+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q56248480",
+      "label_en": "Yuan Yue",
+      "label_zh": "\u8881\u60a6",
+      "aliases_en": [],
+      "wta_id": [
+       "324325"
+      ],
+      "itf_id": [
+       "yue-yuan/800417244/chn"
+      ],
+      "date_of_birth": [
+       "+1998-09-25T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ],
+      "given_name": [
+       "Q106967914"
+      ],
+      "family_name": [
+       "Q716212"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "206294": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "206294",
+     "name_first": "Kyle",
+     "name_last": "Joseph",
+     "hand": "R",
+     "dob": "19951027",
+     "ioc": "ANT",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Kyle%20Joseph",
+     "fetched_at": "2026-10-06T04:31:15.923832+00:00",
+     "status": 200,
+     "hits": [
+      "Q1369793",
+      "Q28445406",
+      "Q104694079",
+      "Q16980697"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "206294",
+     "name_first": "Yue",
+     "name_last": "Yuan",
+     "hand": "R",
+     "dob": "19980925",
+     "ioc": "CHN",
+     "height": "184",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yue%20Yuan",
+     "fetched_at": "2026-10-06T04:31:22.211708+00:00",
+     "status": 200,
+     "hits": [
+      "Q114457015",
+      "Q101464173",
+      "Q131128497",
+      "Q17425452"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

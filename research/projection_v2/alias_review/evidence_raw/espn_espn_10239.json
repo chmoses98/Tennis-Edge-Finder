@@ -1,0 +1,323 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:10239",
+ "foreign_name": "daniel merida",
+ "collected_at": "2026-10-06T03:49:47.412104+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/10239",
+    "fetched_at": "2026-10-06T03:49:47.412131+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/10239?lang=en&region=us",
+     "id": "10239",
+     "uid": "s:850~a:10239",
+     "type": "tennis",
+     "guid": "0564092a-c5de-3614-be36-924fc421d5c9",
+     "firstName": "Daniel",
+     "lastName": "Merida",
+     "fullName": "Daniel Merida",
+     "displayName": "Daniel Merida",
+     "shortName": "D. Merida Aguilar",
+     "weight": 176.0,
+     "displayWeight": "176 lbs",
+     "height": 74.0,
+     "displayHeight": "6' 2\"",
+     "age": 22,
+     "dateOfBirth": "2004-09-26T07:00Z",
+     "debutYear": 2021,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/10239/daniel-merida",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/10239/daniel-merida",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10239&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/10239/daniel-merida",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/10239/daniel-merida",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10239&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/10239/daniel-merida",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10239&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/10239/daniel-merida",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10239",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Madrid, Spain"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/104?lang=en&region=us",
+      "id": "104",
+      "slug": "spain",
+      "alternateId": "104",
+      "name": "Spain",
+      "abbreviation": "ESP",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+       "alt": "Spain",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/104/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "daniel-merida",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/esp.png",
+      "alt": "Spain",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/10239/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 5
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/10239/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/10239/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/10239/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/10239",
+    "fetched_at": "2026-10-06T03:49:47.987171+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Daniel%20Merida",
+   "fetched_at": "2026-10-06T03:49:48.578006+00:00",
+   "status": 200,
+   "hits": [
+    "Q132459405"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q132459405.json",
+     "fetched_at": "2026-10-06T03:49:49.193872+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q132459405",
+      "label_en": "Daniel M\u00e9rida",
+      "label_zh": "\u4e39\u5c3c\u5c14\u00b7\u6885\u91cc\u8fbe",
+      "aliases_en": [],
+      "atp_id": [
+       "M0N7"
+      ],
+      "itf_id": [
+       "daniel-merida/800505935/esp"
+      ],
+      "date_of_birth": [
+       "+2004-09-26T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q29"
+      ],
+      "country_for_sport": [
+       "Q29"
+      ],
+      "given_name": [
+       "Q14516546"
+      ],
+      "family_name": [
+       "Q47537067"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "210017": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "210017",
+     "name_first": "Daniel",
+     "name_last": "Merida Aguilar",
+     "hand": "R",
+     "dob": "20040926",
+     "ioc": "ESP",
+     "height": "188",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Daniel%20Merida%20Aguilar",
+     "fetched_at": "2026-10-06T03:49:49.952457+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "210017",
+     "name_first": "Luiza",
+     "name_last": "Coman",
+     "hand": "U",
+     "dob": "19900223",
+     "ioc": "ROU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Luiza%20Coman",
+     "fetched_at": "2026-10-06T03:49:50.529522+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

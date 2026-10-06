@@ -1,0 +1,360 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:12587",
+ "foreign_name": "younes lalami",
+ "collected_at": "2026-10-06T03:52:17.014339+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/12587",
+    "fetched_at": "2026-10-06T03:52:17.014366+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/12587?lang=en&region=us",
+     "id": "12587",
+     "uid": "s:850~a:12587",
+     "type": "tennis",
+     "guid": "0d07ffa5-eded-3338-9909-cc907af9a43d",
+     "firstName": "Younes",
+     "lastName": "Lalami",
+     "fullName": "Younes Lalami",
+     "displayName": "Younes Lalami",
+     "shortName": "Y. Lalami Laaroussi",
+     "weight": 182.0,
+     "displayWeight": "182 lbs",
+     "height": 74.0,
+     "displayHeight": "6' 2\"",
+     "age": 25,
+     "dateOfBirth": "2001-04-18T07:00Z",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/12587/younes-lalami",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/12587/younes-lalami",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:12587&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/12587/younes-lalami",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/12587/younes-lalami",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:12587&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/12587/younes-lalami",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:12587&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/12587/younes-lalami",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:12587",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Montreal"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/167?lang=en&region=us",
+      "id": "167",
+      "slug": "laos",
+      "alternateId": "167",
+      "name": "Laos",
+      "abbreviation": "LAO",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/lao.png",
+       "alt": "Laos",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/167/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "younes-lalami",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/lao.png",
+      "alt": "Laos",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/12587/statistics?lang=en&region=us"
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/12587/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/12587/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/12587/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/12587",
+    "fetched_at": "2026-10-06T03:52:17.592853+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Younes%20Lalami",
+   "fetched_at": "2026-10-06T03:52:18.155408+00:00",
+   "status": 200,
+   "hits": [
+    "Q117429807"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q117429807.json",
+     "fetched_at": "2026-10-06T03:52:18.741399+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q117429807",
+      "label_en": "Younes Lalami Laaroussi",
+      "label_zh": "\u5c24\u5c3c\u65af\u00b7\u62c9\u62c9\u7c73\u00b7\u62c9\u9c81\u897f",
+      "aliases_en": [],
+      "atp_id": [
+       "L0CK"
+      ],
+      "itf_id": [
+       "younes-lalami/800375446/mar"
+      ],
+      "date_of_birth": [
+       "+2001-04-18T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q16"
+      ],
+      "country_for_sport": [
+       "Q1028"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "207794": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "207794",
+     "name_first": "Younes",
+     "name_last": "Lalami Laaroussi",
+     "hand": "R",
+     "dob": "20010418",
+     "ioc": "MAR",
+     "height": "188",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Younes%20Lalami%20Laaroussi",
+     "fetched_at": "2026-10-06T03:52:19.380993+00:00",
+     "status": 200,
+     "hits": [
+      "Q117429807"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q117429807.json",
+       "fetched_at": "2026-10-06T03:52:19.972148+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q117429807",
+        "label_en": "Younes Lalami Laaroussi",
+        "label_zh": "\u5c24\u5c3c\u65af\u00b7\u62c9\u62c9\u7c73\u00b7\u62c9\u9c81\u897f",
+        "aliases_en": [],
+        "atp_id": [
+         "L0CK"
+        ],
+        "itf_id": [
+         "younes-lalami/800375446/mar"
+        ],
+        "date_of_birth": [
+         "+2001-04-18T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q16"
+        ],
+        "country_for_sport": [
+         "Q1028"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/l0ck?v=1",
+      "fetched_at": "2026-10-06T03:52:20.606094+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800375446",
+      "fetched_at": "2026-10-06T03:52:21.056777+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "207794",
+     "name_first": "Amy",
+     "name_last": "Newman",
+     "hand": "U",
+     "dob": "19790124",
+     "ioc": "USA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Amy%20Newman",
+     "fetched_at": "2026-10-06T03:52:21.825890+00:00",
+     "status": 200,
+     "hits": [
+      "Q76095333",
+      "Q90347169",
+      "Q88753594",
+      "Q4749331"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

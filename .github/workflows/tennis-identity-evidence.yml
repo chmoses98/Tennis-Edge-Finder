@@ -1,0 +1,42 @@
+name: TENNIS identity evidence (alias review)
+
+# Fetches the external evidence (ESPN athlete records, ATP/WTA/ITF profiles, Wikidata governing-body ids) that a
+# person needs to review player-alias candidates, and commits the raw responses next to the candidate list.
+# It decides nothing and maps nobody: acceptance is a human decision in data/identity/reviewed_aliases.json.
+# The research sandbox cannot reach these hosts; a runner can.
+
+# Dispatch-only (on the branch that holds the review): repository invariant -- push triggers bind to main only.
+# research/projection_v2/alias_review/REQUEST_ONLY, when present, limits a run to the ids it lists.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: tennis-identity-evidence-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Pull the Sackmann players files (dob, ioc, wikidata ids)
+        run: |
+          python3 scripts/ci/pull_data_branch.py --paths \
+            'sources/*/sackmann/tennis_atp/atp_players.csv' 'sources/*/sackmann/tennis_wta/wta_players.csv' \
+            'sources/*/sackmann/tennis_atp/atp_players.csv.gz' 'sources/*/sackmann/tennis_wta/wta_players.csv.gz'
+      - name: Collect evidence
+        run: PYTHONPATH=. python3 scripts/identity/collect_alias_evidence.py
+      - name: Commit evidence to this branch
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add research/projection_v2/alias_review/evidence_raw
+          git commit -q -m "Alias review: raw external evidence (run ${GITHUB_RUN_ID})" || { echo "nothing new"; exit 0; }
+          for i in 1 2 3 4; do git pull -q --rebase origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((i*4)); done

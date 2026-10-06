@@ -107,7 +107,7 @@ def apply_crosswalk(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: s
     m = matches.copy()
     mp = {}
     if len(crosswalk):
-        ok = crosswalk[crosswalk["status"].isin([MAPPED, "MINTED_NEW_PLAYER"])]
+        ok = crosswalk[crosswalk["status"].isin([MAPPED, "MINTED_NEW_PLAYER", "REVIEWED_ALIAS"])]
         mp = {(r.foreign_id_system, str(r.foreign_id)): str(r.canonical_id) for r in ok.itertuples(index=False)}
 
     def resolve(row_ids, row_sys):
@@ -240,3 +240,70 @@ def mint_new_players(matches: pd.DataFrame, crosswalk: pd.DataFrame, canonical: 
         cw.loc[grp.index, "status"] = MINTED
         cw.loc[grp.index, "reason"] = "foreign-only player; minted canonical id"
     return cw
+
+
+REVIEWED_ALIAS = "REVIEWED_ALIAS"          # a person accepted (system, foreign id) -> canonical id, with evidence
+#: only an id the automated steps left UNMAPPED may be bound by a reviewed alias; a mapped/minted id never is
+_REVIEWABLE = (NEAR_CANONICAL, NO_CANONICAL, AMBIGUOUS_NAME)
+
+
+def apply_reviewed_aliases(matches: pd.DataFrame, crosswalk: pd.DataFrame, aliases: dict,
+                           canonical: str = "sackmann") -> tuple[pd.DataFrame, list]:
+    """Bind foreign ids a PERSON accepted (data/identity/reviewed_aliases.json `crosswalk_aliases`) -- or refuse.
+
+    `aliases` is {(foreign system, foreign id): entry} (reviewed_aliases.load_crosswalk_aliases). Matching is by the
+    SOURCE-SPECIFIC id only, never by name; names are only cross-checked. An entry is refused (and listed in the
+    returned problems, the id staying unmapped) when:
+
+    * its foreign id is not in the crosswalk, or the crosswalk already MAPPED / MINTED it -- an alias never
+      overwrites an automated identity, it can only fill a gap the automation refused to fill;
+    * the foreign id's name in the data is no longer the name the reviewer saw (the id was reused / data changed);
+    * the canonical id does not exist in the canonical system, or no longer carries the reviewed name;
+    * the canonical id is already the target of ANOTHER foreign id of the same system (a duplicate identity).
+    """
+    problems: list = []
+    if crosswalk.empty or not aliases:
+        return crosswalk, problems
+    cw = crosswalk.copy()
+    # Sackmann ATP and WTA ids share one numeric range (212044 is an ATP man AND a WTA woman), so every check is
+    # made inside the alias's tour: the foreign id must play on that tour and the canonical id must exist there.
+    tours: dict = {}
+    can_names: dict = {}
+    for idc, namec in (("winner_id", "winner_name"), ("loser_id", "loser_name")):
+        sub = matches[[idc, namec, "id_system", "tour"]].drop_duplicates()
+        for pid, nm, sysname, tour in sub.itertuples(index=False):
+            if sysname == canonical:
+                can_names.setdefault((tour, str(pid)), set()).add(normalize_name(nm))
+            else:
+                tours.setdefault((sysname, str(pid)), set()).add(tour)
+    taken = set()
+    for r in cw.itertuples(index=False):
+        if r.status in (MAPPED, MINTED, REVIEWED_ALIAS) and r.canonical_id is not None:
+            for t in tours.get((r.foreign_id_system, str(r.foreign_id)), ()):
+                taken.add((r.foreign_id_system, t, str(r.canonical_id)))
+    idx = {(r.foreign_id_system, str(r.foreign_id)): i for i, r in zip(cw.index, cw.itertuples(index=False))}
+    for (sysname, fid), a in sorted(aliases.items()):
+        cid, tour = str(a["canonical_id"]), a.get("tour")
+        i = idx.get((sysname, fid))
+        if i is None:
+            problems.append({"foreign": f"{sysname}/{fid}", "problem": "foreign id not in the data"}); continue
+        row = cw.loc[i]
+        if row["status"] not in _REVIEWABLE:
+            if not (row["status"] == MAPPED and str(row["canonical_id"]) == cid):
+                problems.append({"foreign": f"{sysname}/{fid}", "problem": f"already {row['status']} -> {row['canonical_id']}; a reviewed alias never overwrites it"})
+            continue
+        if normalize_name(a.get("foreign_name") or "") != row["name_key"]:
+            problems.append({"foreign": f"{sysname}/{fid}", "problem": f"name in data {row['name_key']!r} != reviewed {a.get('foreign_name')!r}"}); continue
+        if tours.get((sysname, fid)) != {tour}:
+            problems.append({"foreign": f"{sysname}/{fid}", "problem": f"foreign id plays on {sorted(tours.get((sysname, fid), []))}, alias is for {tour!r}"}); continue
+        if (tour, cid) not in can_names:
+            problems.append({"foreign": f"{sysname}/{fid}", "problem": f"canonical {cid} not in {canonical} {tour}"}); continue
+        if normalize_name(a.get("canonical_name") or "") not in can_names[(tour, cid)]:
+            problems.append({"foreign": f"{sysname}/{fid}", "problem": f"canonical {tour} {cid} no longer named {a.get('canonical_name')!r}"}); continue
+        if (sysname, tour, cid) in taken:
+            problems.append({"foreign": f"{sysname}/{fid}", "problem": f"canonical {tour} {cid} already bound to another {sysname} id"}); continue
+        cw.loc[i, "canonical_id"] = cid
+        cw.loc[i, "status"] = REVIEWED_ALIAS
+        cw.loc[i, "reason"] = f"human-reviewed alias ({a.get('decision_ref') or 'reviewed_aliases.json'})"
+        taken.add((sysname, tour, cid))
+    return cw, problems

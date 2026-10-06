@@ -1,0 +1,290 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:6189",
+ "foreign_name": "wei sijia",
+ "collected_at": "2026-10-06T04:30:27.376916+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/6189",
+    "fetched_at": "2026-10-06T04:30:27.376942+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/6189?lang=en&region=us",
+     "id": "6189",
+     "uid": "s:850~a:6189",
+     "type": "tennis",
+     "guid": "011f5f57-6cb6-3660-a9a3-5daae2bf49bb",
+     "firstName": "Sijia",
+     "lastName": "Wei",
+     "fullName": "Wei Sijia",
+     "displayName": "Wei Sijia",
+     "shortName": "W. Sijia",
+     "age": 22,
+     "dateOfBirth": "2003-12-05T08:00Z",
+     "debutYear": 2018,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/6189/wei-sijia",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/6189/wei-sijia",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:6189&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/6189/wei-sijia",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/6189/wei-sijia",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:6189&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/6189/wei-sijia",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:6189&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/6189/wei-sijia",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:6189",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "N/A"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "wei-sijia",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/types/2/athletes/6189/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 8
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/athletes/6189/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/6189/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/players/6189/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/6189",
+    "fetched_at": "2026-10-06T04:30:28.029108+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Wei%20Sijia",
+   "fetched_at": "2026-10-06T04:30:28.648551+00:00",
+   "status": 200,
+   "hits": [
+    "Q114686896"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q114686896.json",
+     "fetched_at": "2026-10-06T04:30:29.856742+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q114686896",
+      "label_en": "Wei Sijia",
+      "label_zh": "\u97e6\u601d\u4f73",
+      "aliases_en": [],
+      "wta_id": [
+       "328426"
+      ],
+      "itf_id": [
+       "sijia-wei/800507052/chn"
+      ],
+      "date_of_birth": [
+       "+2003-12-05T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "221096": {
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "221096",
+     "name_first": "Sijia",
+     "name_last": "Wei",
+     "hand": "R",
+     "dob": "20031205",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Sijia%20Wei",
+     "fetched_at": "2026-10-06T04:30:31.186806+00:00",
+     "status": 200,
+     "hits": [
+      "Q91645717"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

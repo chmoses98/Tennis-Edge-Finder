@@ -1,0 +1,369 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:10073",
+ "foreign_name": "shang juncheng",
+ "collected_at": "2026-10-06T03:51:10.929477+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/10073",
+    "fetched_at": "2026-10-06T03:51:10.929504+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/10073?lang=en&region=us",
+     "id": "10073",
+     "uid": "s:850~a:10073",
+     "type": "tennis",
+     "guid": "9957ea8e-dfe0-3b5a-b686-00e54c00b6b8",
+     "firstName": "Juncheng",
+     "lastName": "Shang",
+     "fullName": "Shang Juncheng",
+     "displayName": "Shang Juncheng",
+     "shortName": "S. Juncheng",
+     "weight": 162.0,
+     "displayWeight": "162 lbs",
+     "height": 71.0,
+     "displayHeight": "5' 11\"",
+     "age": 21,
+     "dateOfBirth": "2005-02-02T08:00Z",
+     "debutYear": 2021,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/10073/shang-juncheng",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/10073/shang-juncheng",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10073&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/10073/shang-juncheng",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/10073/shang-juncheng",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10073&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/10073/shang-juncheng",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10073&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/10073/shang-juncheng",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:10073",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Beijing, China"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "shang-juncheng",
+     "headshot": {
+      "href": "https://a.espncdn.com/i/headshots/tennis/players/full/10073.png",
+      "alt": "Juncheng Shang"
+     },
+     "hand": {
+      "type": "LEFT",
+      "abbreviation": "L",
+      "displayValue": "Left"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/10073/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 5
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/10073/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/10073/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/10073/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/10073",
+    "fetched_at": "2026-10-06T03:51:11.487755+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Shang%20Juncheng",
+   "fetched_at": "2026-10-06T03:51:12.084330+00:00",
+   "status": 200,
+   "hits": [
+    "Q106466705"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q106466705.json",
+     "fetched_at": "2026-10-06T03:51:12.681101+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q106466705",
+      "label_en": "Shang Juncheng",
+      "label_zh": "\u5546\u7ae3\u7a0b",
+      "aliases_en": [
+       "Juncheng Shang",
+       "Jerry Shang"
+      ],
+      "atp_id": [
+       "S0RE"
+      ],
+      "itf_id": [
+       "juncheng-shang/800559106/chn"
+      ],
+      "date_of_birth": [
+       "+2005-02-02T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "209992": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "209992",
+     "name_first": "Juncheng",
+     "name_last": "Shang",
+     "hand": "L",
+     "dob": "20050202",
+     "ioc": "CHN",
+     "height": "180",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Juncheng%20Shang",
+     "fetched_at": "2026-10-06T03:51:13.392653+00:00",
+     "status": 200,
+     "hits": [
+      "Q106466705"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q106466705.json",
+       "fetched_at": "2026-10-06T03:51:13.978269+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q106466705",
+        "label_en": "Shang Juncheng",
+        "label_zh": "\u5546\u7ae3\u7a0b",
+        "aliases_en": [
+         "Juncheng Shang",
+         "Jerry Shang"
+        ],
+        "atp_id": [
+         "S0RE"
+        ],
+        "itf_id": [
+         "juncheng-shang/800559106/chn"
+        ],
+        "date_of_birth": [
+         "+2005-02-02T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q148"
+        ],
+        "country_for_sport": [
+         "Q148"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/s0re?v=1",
+      "fetched_at": "2026-10-06T03:51:14.651569+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800559106",
+      "fetched_at": "2026-10-06T03:51:15.179278+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "209992",
+     "name_first": "Lara",
+     "name_last": "Alsamman",
+     "hand": "U",
+     "dob": "19870413",
+     "ioc": "SYR",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Lara%20Alsamman",
+     "fetched_at": "2026-10-06T03:51:15.956717+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

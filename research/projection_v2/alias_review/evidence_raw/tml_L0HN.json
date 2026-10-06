@@ -1,0 +1,86 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "L0HN",
+ "foreign_name": "luca lemaitre",
+ "collected_at": "2026-10-06T03:54:12.369380+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/l0hn?v=1",
+    "fetched_at": "2026-10-06T03:54:12.369402+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "212507": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212507",
+     "name_first": "Luca",
+     "name_last": "Lemaitre Vilchis",
+     "hand": "U",
+     "dob": "20050218",
+     "ioc": "MEX",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Luca%20Lemaitre%20Vilchis",
+     "fetched_at": "2026-10-06T03:54:12.819513+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212507",
+     "name_first": "Soon Ho",
+     "name_last": "Shin",
+     "hand": "U",
+     "dob": "19591108",
+     "ioc": "KOR",
+     "height": "",
+     "wikidata_id": "Q62018210",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q62018210.json",
+     "fetched_at": "2026-10-06T03:54:13.532372+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q62018210",
+      "label_en": "Shin Soon-ho",
+      "label_zh": null,
+      "aliases_en": [],
+      "itf_id": [
+       "soon-ho-shin/800178098/kor"
+      ],
+      "date_of_birth": [
+       "+1959-11-08T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q884"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800178098",
+      "fetched_at": "2026-10-06T03:54:14.112160+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
+  }
+ }
+}

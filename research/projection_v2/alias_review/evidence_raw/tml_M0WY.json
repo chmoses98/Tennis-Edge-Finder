@@ -1,0 +1,108 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "M0WY",
+ "foreign_name": "guto miguel",
+ "collected_at": "2026-10-06T04:34:13.529204+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/m0wy?v=1",
+    "fetched_at": "2026-10-06T04:34:13.529225+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "213036": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "213036",
+     "name_first": "Luis Guto",
+     "name_last": "Miguel",
+     "hand": "U",
+     "dob": "20090226",
+     "ioc": "BRA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Luis%20Guto%20Miguel",
+     "fetched_at": "2026-10-06T04:34:14.011341+00:00",
+     "status": 200,
+     "hits": [
+      "Q136654887"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q136654887.json",
+       "fetched_at": "2026-10-06T04:34:15.247216+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q136654887",
+        "label_en": "Guto Miguel",
+        "label_zh": null,
+        "aliases_en": [
+         "Lu\u00eds Guto Miguel",
+         "Lu\u00eds Miguel"
+        ],
+        "atp_id": [
+         "M0WY"
+        ],
+        "itf_id": [
+         "luis-guto-miguel/800680259/bra"
+        ],
+        "date_of_birth": [
+         "+2009-02-26T00:00:00Z"
+        ],
+        "citizenship": [
+         "Q155"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/m0wy?v=1",
+      "fetched_at": "2026-10-06T04:34:16.434374+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800680259",
+      "fetched_at": "2026-10-06T04:34:16.915714+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "213036",
+     "name_first": "Zelda",
+     "name_last": "Kuhn",
+     "hand": "U",
+     "dob": "19690804",
+     "ioc": "RSA",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Zelda%20Kuhn",
+     "fetched_at": "2026-10-06T04:34:17.623828+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

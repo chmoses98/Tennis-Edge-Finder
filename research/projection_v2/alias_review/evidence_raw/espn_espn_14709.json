@@ -1,0 +1,349 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:14709",
+ "foreign_name": "diego dedura",
+ "collected_at": "2026-10-06T04:28:03.796751+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/14709",
+    "fetched_at": "2026-10-06T04:28:03.796773+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/14709?lang=en&region=us",
+     "id": "14709",
+     "uid": "s:850~a:14709",
+     "type": "tennis",
+     "guid": "aeab3ac9-fcf8-3fec-90cd-7b265a726b82",
+     "firstName": "Diego",
+     "lastName": "Dedura",
+     "fullName": "Diego Dedura",
+     "displayName": "Diego Dedura",
+     "shortName": "D. Dedura-Palomero",
+     "weight": 170.0,
+     "displayWeight": "170 lbs",
+     "height": 71.0,
+     "displayHeight": "5' 11\"",
+     "age": 18,
+     "dateOfBirth": "2008-03-12T07:00Z",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/14709/diego-dedura",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/14709/diego-dedura",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:14709&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/14709/diego-dedura",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/14709/diego-dedura",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:14709&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/14709/diego-dedura",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:14709&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/14709/diego-dedura",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:14709",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Berlin"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/106?lang=en&region=us",
+      "id": "106",
+      "slug": "germany",
+      "alternateId": "106",
+      "name": "Germany",
+      "abbreviation": "GER",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+       "alt": "Germany",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/106/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "diego-dedura",
+     "hand": {
+      "type": "LEFT",
+      "abbreviation": "L",
+      "displayValue": "Left"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/ger.png",
+      "alt": "Germany",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/14709/statistics?lang=en&region=us"
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/14709/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/14709/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/14709/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/14709",
+    "fetched_at": "2026-10-06T04:28:04.459535+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Diego%20Dedura",
+   "fetched_at": "2026-10-06T04:28:05.141579+00:00",
+   "status": 200,
+   "hits": [
+    "Q133878268"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q133878268.json",
+     "fetched_at": "2026-10-06T04:28:06.497522+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q133878268",
+      "label_en": "Diego Dedura-Palomero",
+      "label_zh": "\u8fed\u6208\u00b7\u5fb7\u675c\u62c9-\u5e15\u6d1b\u6885\u7f57",
+      "aliases_en": [],
+      "atp_id": [
+       "D0LJ"
+      ],
+      "itf_id": [
+       "diego-dedura-palomero/800569536/ger"
+      ],
+      "date_of_birth": [
+       "+2008-03-12T00:00:00Z"
+      ],
+      "given_name": [
+       "Q3579048"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "212309": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212309",
+     "name_first": "Diego",
+     "name_last": "Dedura Palomero",
+     "hand": "L",
+     "dob": "20080312",
+     "ioc": "GER",
+     "height": "178",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Diego%20Dedura%20Palomero",
+     "fetched_at": "2026-10-06T04:28:07.686575+00:00",
+     "status": 200,
+     "hits": [
+      "Q133878268"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q133878268.json",
+       "fetched_at": "2026-10-06T04:28:08.894830+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q133878268",
+        "label_en": "Diego Dedura-Palomero",
+        "label_zh": "\u8fed\u6208\u00b7\u5fb7\u675c\u62c9-\u5e15\u6d1b\u6885\u7f57",
+        "aliases_en": [],
+        "atp_id": [
+         "D0LJ"
+        ],
+        "itf_id": [
+         "diego-dedura-palomero/800569536/ger"
+        ],
+        "date_of_birth": [
+         "+2008-03-12T00:00:00Z"
+        ],
+        "given_name": [
+         "Q3579048"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/d0lj?v=1",
+      "fetched_at": "2026-10-06T04:28:10.174151+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800569536",
+      "fetched_at": "2026-10-06T04:28:10.714780+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212309",
+     "name_first": "Maria Jose",
+     "name_last": "Pintos",
+     "hand": "U",
+     "dob": "19970426",
+     "ioc": "URU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Maria%20Jose%20Pintos",
+     "fetched_at": "2026-10-06T04:28:19.310281+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

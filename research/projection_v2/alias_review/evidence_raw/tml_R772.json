@@ -1,0 +1,84 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "R772",
+ "foreign_name": "albert ramos vinolas",
+ "collected_at": "2026-10-06T03:53:29.881528+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/r772?v=1",
+    "fetched_at": "2026-10-06T03:53:29.881548+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "105077": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "105077",
+     "name_first": "Albert",
+     "name_last": "Ramos",
+     "hand": "L",
+     "dob": "19880117",
+     "ioc": "ESP",
+     "height": "188",
+     "wikidata_id": "Q459158",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q459158.json",
+     "fetched_at": "2026-10-06T03:53:30.332734+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q459158",
+      "label_en": "Albert Ramos Vi\u00f1olas",
+      "label_zh": "\u963f\u723e\u4f2f\u7279\u00b7\u62c9\u83ab\u65af",
+      "aliases_en": [
+       "Albert Ramos"
+      ],
+      "atp_id": [
+       "R772"
+      ],
+      "itf_id": [
+       "albert-ramos-vinolas/800247491/esp"
+      ],
+      "date_of_birth": [
+       "+1988-01-17T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q29"
+      ],
+      "country_for_sport": [
+       "Q29"
+      ],
+      "given_name": [
+       "Q577011"
+      ],
+      "family_name": [
+       "Q1643088"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/r772?v=1",
+      "fetched_at": "2026-10-06T03:53:31.102054+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800247491",
+      "fetched_at": "2026-10-06T03:53:31.557336+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
+  }
+ }
+}

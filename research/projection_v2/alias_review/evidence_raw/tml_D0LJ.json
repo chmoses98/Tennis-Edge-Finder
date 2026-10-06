@@ -1,0 +1,105 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "D0LJ",
+ "foreign_name": "diego dedura",
+ "collected_at": "2026-10-06T04:33:37.784416+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/d0lj?v=1",
+    "fetched_at": "2026-10-06T04:33:37.784439+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "212309": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212309",
+     "name_first": "Diego",
+     "name_last": "Dedura Palomero",
+     "hand": "L",
+     "dob": "20080312",
+     "ioc": "GER",
+     "height": "178",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Diego%20Dedura%20Palomero",
+     "fetched_at": "2026-10-06T04:33:38.266427+00:00",
+     "status": 200,
+     "hits": [
+      "Q133878268"
+     ],
+     "players": [
+      {
+       "url": "https://www.wikidata.org/wiki/Special:EntityData/Q133878268.json",
+       "fetched_at": "2026-10-06T04:33:39.496659+00:00",
+       "status": 200,
+       "summary": {
+        "qid": "Q133878268",
+        "label_en": "Diego Dedura-Palomero",
+        "label_zh": "\u8fed\u6208\u00b7\u5fb7\u675c\u62c9-\u5e15\u6d1b\u6885\u7f57",
+        "aliases_en": [],
+        "atp_id": [
+         "D0LJ"
+        ],
+        "itf_id": [
+         "diego-dedura-palomero/800569536/ger"
+        ],
+        "date_of_birth": [
+         "+2008-03-12T00:00:00Z"
+        ],
+        "given_name": [
+         "Q3579048"
+        ]
+       }
+      }
+     ]
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/d0lj?v=1",
+      "fetched_at": "2026-10-06T04:33:40.694109+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800569536",
+      "fetched_at": "2026-10-06T04:33:41.168755+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212309",
+     "name_first": "Maria Jose",
+     "name_last": "Pintos",
+     "hand": "U",
+     "dob": "19970426",
+     "ioc": "URU",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Maria%20Jose%20Pintos",
+     "fetched_at": "2026-10-06T04:33:48.537289+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

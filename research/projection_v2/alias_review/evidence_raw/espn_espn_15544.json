@@ -1,0 +1,297 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:15544",
+ "foreign_name": "wang jiaqi",
+ "collected_at": "2026-10-06T04:29:42.066482+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/15544",
+    "fetched_at": "2026-10-06T04:29:42.066508+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15544?lang=en&region=us",
+     "id": "15544",
+     "uid": "s:850~a:15544",
+     "type": "tennis",
+     "guid": "22d0c65b-d90e-3e42-b982-0a2ba5bfe0db",
+     "firstName": "Jiaqi",
+     "lastName": "Wang",
+     "fullName": "Wang Jiaqi",
+     "displayName": "Wang Jiaqi",
+     "shortName": "W. Jiaqi",
+     "age": 19,
+     "dateOfBirth": "2007-09-08T07:00Z",
+     "debutYear": 2017,
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/15544/wang-jiaqi",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/15544/wang-jiaqi",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15544&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/15544/wang-jiaqi",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/15544/wang-jiaqi",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15544&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/15544/wang-jiaqi",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15544&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/15544/wang-jiaqi",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:15544",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "N/A"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "wang-jiaqi",
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/types/2/athletes/15544/statistics?lang=en&region=us"
+     },
+     "experience": {
+      "years": 9
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/athletes/15544/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/15544/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/wta/seasons/2026/players/15544/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/15544",
+    "fetched_at": "2026-10-06T04:29:42.668152+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Wang%20Jiaqi",
+   "fetched_at": "2026-10-06T04:29:43.268361+00:00",
+   "status": 200,
+   "hits": [
+    "Q127342586",
+    "Q9065091",
+    "Q102124663",
+    "Q91435987"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q127342586.json",
+     "fetched_at": "2026-10-06T04:29:44.491104+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q127342586",
+      "label_en": "Wang Jiaqi",
+      "label_zh": null,
+      "aliases_en": [],
+      "wta_id": [
+       "327056"
+      ],
+      "itf_id": [
+       "jiaqi-wang/800482170/chn"
+      ],
+      "date_of_birth": [
+       "+2002-03-25T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "given_name": [
+       "Q122905276"
+      ],
+      "family_name": [
+       "Q10826587"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "221181": {
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "221181",
+     "name_first": "Jiaqi",
+     "name_last": "Wang",
+     "hand": "U",
+     "dob": "20020325",
+     "ioc": "CHN",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Jiaqi%20Wang",
+     "fetched_at": "2026-10-06T04:29:49.337538+00:00",
+     "status": 200,
+     "hits": [
+      "Q104143573",
+      "Q130819505",
+      "Q131017497",
+      "Q130886821"
+     ],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

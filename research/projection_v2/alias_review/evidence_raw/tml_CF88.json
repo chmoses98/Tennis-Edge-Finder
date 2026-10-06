@@ -1,0 +1,76 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "CF88",
+ "foreign_name": "roberto cid subervi",
+ "collected_at": "2026-10-06T03:54:26.291154+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/cf88?v=1",
+    "fetched_at": "2026-10-06T03:54:26.291171+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "106232": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "106232",
+     "name_first": "Roberto",
+     "name_last": "Cid",
+     "hand": "R",
+     "dob": "19930830",
+     "ioc": "DOM",
+     "height": "193",
+     "wikidata_id": "Q27049222",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q27049222.json",
+     "fetched_at": "2026-10-06T03:54:26.739859+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q27049222",
+      "label_en": "Roberto Cid Subervi",
+      "label_zh": null,
+      "aliases_en": [],
+      "atp_id": [
+       "CF88"
+      ],
+      "itf_id": [
+       "roberto-cid-subervi/800295031/dom"
+      ],
+      "date_of_birth": [
+       "+1993-08-30T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q786"
+      ],
+      "given_name": [
+       "Q15905580"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/cf88?v=1",
+      "fetched_at": "2026-10-06T03:54:27.309585+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800295031",
+      "fetched_at": "2026-10-06T03:54:27.767456+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
+  }
+ }
+}

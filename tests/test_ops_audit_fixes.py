@@ -164,6 +164,11 @@ def test_gate5_backlog_semantics(tmp_path, monkeypatch):
     man = {"run_id": "r", "finished_at": (now - timedelta(minutes=5)).isoformat(), "incomplete": [],
            "trades": {"backlog": {"gaps": 1, "pending_seconds": 60, "oldest_gap_age_s": 600}}}
     json.dump(man, open(cap / "r.manifest.json", "w"))
+    pj = tmp_path / "data" / "research" / "projections"; pj.mkdir(parents=True)     # a run priced on a 1-min-old quote
+    json.dump({"run_id": "p"}, open(pj / "latest.json", "w"))
+    json.dump({"run_id": "p", "projections": [{"market_quote": {"quote_ts": (now - timedelta(minutes=2)).isoformat(),
+                                                                "priced_at": (now - timedelta(minutes=1)).isoformat(),
+                                                                "quote_age_s": 60.0}}]}, open(pj / "p.json", "w"))
     assert G.gate_5_capture_freshness(now=now).status == "PASS"
     man["trades"]["backlog"]["oldest_gap_age_s"] = 3 * 3600
     json.dump(man, open(cap / "r.manifest.json", "w"))

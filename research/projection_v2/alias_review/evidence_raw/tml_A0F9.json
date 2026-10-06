@@ -1,0 +1,66 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "A0F9",
+ "foreign_name": "emiliano aguilera",
+ "collected_at": "2026-10-06T04:33:49.749255+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/a0f9?v=1",
+    "fetched_at": "2026-10-06T04:33:49.749277+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "212510": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "212510",
+     "name_first": "Emiliano",
+     "name_last": "Aguilera Guerrero",
+     "hand": "R",
+     "dob": "20030211",
+     "ioc": "MEX",
+     "height": "183",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Emiliano%20Aguilera%20Guerrero",
+     "fetched_at": "2026-10-06T04:34:06.456222+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "212510",
+     "name_first": "Yvonne",
+     "name_last": "Flynn",
+     "hand": "U",
+     "dob": "19770727",
+     "ioc": "IRL",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Yvonne%20Flynn",
+     "fetched_at": "2026-10-06T04:34:07.667523+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}

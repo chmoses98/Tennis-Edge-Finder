@@ -1,0 +1,323 @@
+{
+ "foreign_system": "espn",
+ "foreign_id": "espn:2856",
+ "foreign_name": "te rigele",
+ "collected_at": "2026-10-06T04:29:31.015808+00:00",
+ "foreign": {
+  "espn_athlete": [
+   {
+    "url": "https://sports.core.api.espn.com/v2/sports/tennis/athletes/2856",
+    "fetched_at": "2026-10-06T04:29:31.015835+00:00",
+    "status": 200,
+    "json": {
+     "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2856?lang=en&region=us",
+     "id": "2856",
+     "uid": "s:850~a:2856",
+     "type": "tennis",
+     "guid": "39a181a0-08d6-6ab9-7d57-f1c824444c58",
+     "firstName": "Rigele",
+     "lastName": "Te",
+     "fullName": "Te Rigele",
+     "displayName": "Te Rigele",
+     "shortName": "T. Rigele",
+     "weight": 176.0,
+     "displayWeight": "176 lbs",
+     "height": 74.0,
+     "displayHeight": "6' 2\"",
+     "age": 28,
+     "dateOfBirth": "1997-10-09T07:00Z",
+     "links": [
+      {
+       "language": "en-US",
+       "rel": [
+        "playercard",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/tennis/player/_/id/2856/te-rigele",
+       "text": "Player Card",
+       "shortText": "Player Card",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/stats/_/id/2856/te-rigele",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "stats",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2856&section=stats",
+       "text": "Stats",
+       "shortText": "Stats",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "splits",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/splits/_/id/2856/te-rigele",
+       "text": "Splits",
+       "shortText": "Splits",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/news/_/id/2856/te-rigele",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "news",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2856&section=news",
+       "text": "News",
+       "shortText": "News",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/bio/_/id/2856/te-rigele",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "bio",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2856&section=bio",
+       "text": "Bio",
+       "shortText": "Bio",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "desktop",
+        "athlete"
+       ],
+       "href": "https://www.espn.com/null/player/_/id/2856/te-rigele",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      },
+      {
+       "language": "en-US",
+       "rel": [
+        "overview",
+        "sportscenter",
+        "app",
+        "athlete"
+       ],
+       "href": "sportscenter://x-callback-url/showClubhouse?uid=s:850~a:2856",
+       "text": "Overview",
+       "shortText": "Overview",
+       "isExternal": false,
+       "isPremium": false
+      }
+     ],
+     "birthPlace": {
+      "summary": "Huhehaote, China"
+     },
+     "citizenshipCountry": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384?lang=en&region=us",
+      "id": "384",
+      "slug": "china",
+      "alternateId": "384",
+      "name": "China",
+      "abbreviation": "CHN",
+      "flag": {
+       "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+       "alt": "China",
+       "rel": [
+        "country-flag"
+       ]
+      },
+      "athletes": {
+       "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/all/countries/384/athletes?lang=en&region=us"
+      }
+     },
+     "slug": "te-rigele",
+     "hand": {
+      "type": "RIGHT",
+      "abbreviation": "R",
+      "displayValue": "Right"
+     },
+     "flag": {
+      "href": "https://a.espncdn.com/i/teamlogos/countries/500/chn.png",
+      "alt": "China",
+      "rel": [
+       "country-flag"
+      ]
+     },
+     "linked": true,
+     "statistics": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/types/2/athletes/2856/statistics?lang=en&region=us"
+     },
+     "active": true,
+     "eventLog": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/athletes/2856/eventlog?lang=en&region=us"
+     },
+     "status": {
+      "id": "1",
+      "name": "Active",
+      "type": "active",
+      "abbreviation": "Active"
+     },
+     "competitions": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/athletes/2856/competitions?lang=en&region=us"
+     },
+     "ranks": {
+      "$ref": "http://sports.core.api.espn.com/v2/sports/tennis/leagues/atp/seasons/2026/players/2856/ranks?lang=en&region=us"
+     }
+    }
+   },
+   {
+    "url": "https://site.web.api.espn.com/apis/common/v3/sports/tennis/athletes/2856",
+    "fetched_at": "2026-10-06T04:29:31.626271+00:00",
+    "status": 500,
+    "error": "HTTP Error 500: Internal Server Error"
+   }
+  ],
+  "wikidata_search": {
+   "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Te%20Rigele",
+   "fetched_at": "2026-10-06T04:29:32.221498+00:00",
+   "status": 200,
+   "hits": [
+    "Q18552831"
+   ],
+   "players": [
+    {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18552831.json",
+     "fetched_at": "2026-10-06T04:29:33.453984+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q18552831",
+      "label_en": "Te Rigele",
+      "label_zh": "\u7279\u65e5\u683c\u4e50",
+      "aliases_en": [],
+      "atp_id": [
+       "TG30"
+      ],
+      "itf_id": [
+       "rigele-te/800389593/chn"
+      ],
+      "date_of_birth": [
+       "+1997-10-09T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ]
+     }
+    }
+   ]
+  }
+ },
+ "canonical": {
+  "144751": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "144751",
+     "name_first": "Rigele",
+     "name_last": "Te",
+     "hand": "R",
+     "dob": "19971009",
+     "ioc": "CHN",
+     "height": "188",
+     "wikidata_id": "Q18552831",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q18552831.json",
+     "fetched_at": "2026-10-06T04:29:34.661636+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q18552831",
+      "label_en": "Te Rigele",
+      "label_zh": "\u7279\u65e5\u683c\u4e50",
+      "aliases_en": [],
+      "atp_id": [
+       "TG30"
+      ],
+      "itf_id": [
+       "rigele-te/800389593/chn"
+      ],
+      "date_of_birth": [
+       "+1997-10-09T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q148"
+      ],
+      "country_for_sport": [
+       "Q148"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/tg30?v=1",
+      "fetched_at": "2026-10-06T04:29:35.936129+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800389593",
+      "fetched_at": "2026-10-06T04:29:36.410789+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
+  }
+ }
+}

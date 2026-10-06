@@ -1,0 +1,75 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "DC48",
+ "foreign_name": "murkel dellien",
+ "collected_at": "2026-10-06T03:54:20.659124+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/dc48?v=1",
+    "fetched_at": "2026-10-06T03:54:20.659144+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "123961": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "123961",
+     "name_first": "Murkel Alejandro",
+     "name_last": "Dellien Velasco",
+     "hand": "R",
+     "dob": "19970916",
+     "ioc": "BOL",
+     "height": "193",
+     "wikidata_id": "Q108601101",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata": {
+     "url": "https://www.wikidata.org/wiki/Special:EntityData/Q108601101.json",
+     "fetched_at": "2026-10-06T03:54:21.112383+00:00",
+     "status": 200,
+     "summary": {
+      "qid": "Q108601101",
+      "label_en": "Murkel Dellien",
+      "label_zh": "\u9ed8\u514b\u5c14\u00b7\u5fb7\u91cc\u6069",
+      "aliases_en": [
+       "Murkel Alejandro Dellien Velasco"
+      ],
+      "atp_id": [
+       "DC48"
+      ],
+      "itf_id": [
+       "murkel-dellien/800356373/bol"
+      ],
+      "date_of_birth": [
+       "+1997-09-16T00:00:00Z"
+      ],
+      "citizenship": [
+       "Q750"
+      ]
+     }
+    },
+    "tour_profiles": [
+     {
+      "url": "https://www.atptour.com/en/-/www/players/hero/dc48?v=1",
+      "fetched_at": "2026-10-06T03:54:21.672776+00:00",
+      "status": 403,
+      "error": "HTTP Error 403: Forbidden"
+     },
+     {
+      "url": "https://www.itftennis.com/tennis/api/PlayerApi/GetPlayerHero?playerId=800356373",
+      "fetched_at": "2026-10-06T03:54:22.124947+00:00",
+      "status": 404,
+      "error": "HTTP Error 404: Not Found"
+     }
+    ]
+   }
+  }
+ }
+}

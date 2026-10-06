@@ -1,0 +1,66 @@
+{
+ "foreign_system": "tml",
+ "foreign_id": "T0FN",
+ "foreign_name": "benjamin torres",
+ "collected_at": "2026-10-06T04:33:23.091478+00:00",
+ "foreign": {
+  "atp_profile": [
+   {
+    "url": "https://www.atptour.com/en/-/www/players/hero/t0fn?v=1",
+    "fetched_at": "2026-10-06T04:33:23.091498+00:00",
+    "status": 403,
+    "error": "HTTP Error 403: Forbidden"
+   }
+  ],
+  "wikidata_items_with_this_atp_id": [],
+  "wikidata_entities": []
+ },
+ "canonical": {
+  "210301": {
+   "ATP": {
+    "sackmann_players_row": {
+     "player_id": "210301",
+     "name_first": "Benjamin Ignacio",
+     "name_last": "Torres Fernandez",
+     "hand": "R",
+     "dob": "20031012",
+     "ioc": "CHI",
+     "height": "175",
+     "wikidata_id": "",
+     "_tour": "ATP",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_atp/atp_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Benjamin%20Ignacio%20Torres%20Fernandez",
+     "fetched_at": "2026-10-06T04:33:23.567409+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   },
+   "WTA": {
+    "sackmann_players_row": {
+     "player_id": "210301",
+     "name_first": "Martina",
+     "name_last": "Krischkeova",
+     "hand": "U",
+     "dob": "19920203",
+     "ioc": "CZE",
+     "height": "",
+     "wikidata_id": "",
+     "_tour": "WTA",
+     "_file": "data/sources/20261005T123711Z/sackmann/tennis_wta/wta_players.csv.gz"
+    },
+    "wikidata_search": {
+     "url": "https://www.wikidata.org/w/api.php?action=wbsearchentities&format=json&language=en&type=item&limit=10&search=Martina%20Krischkeova",
+     "fetched_at": "2026-10-06T04:33:24.782526+00:00",
+     "status": 200,
+     "hits": [],
+     "players": []
+    },
+    "tour_profiles": []
+   }
+  }
+ }
+}
