@@ -285,3 +285,61 @@ def test_an_alias_never_renames_the_canonical_player():
         {"id_system": "espn", "winner_id": "1", "winner_name": "Opp One", "loser_id": "221012", "loser_name": "Zheng Qinwen"}])
     n = player_names(m)
     assert n["221012"] == "Qinwen Zheng" and n["espn:9"] == "New Player"
+
+
+def _dup_rows(rows):
+    base = {"tour": "ATP", "canonical_id_status": "MAPPED", "sets_w": 2, "sets_l": 0, "games_w": 12, "games_l": 6}
+    return pd.DataFrame([{**base, **r} for r in rows])
+
+
+def test_split_opponent_duplicate_of_an_alias_row_is_dropped():
+    """2026-10-06 live review: ESPN 'Chak Lam Coleman Wong' (Sackmann stub 208597) d. Zhang Zhizhen at Hangzhou is the
+    same match TML records as 'Coleman Wong' (209409) d. Zhizhen Zhang. Once the alias admitted ESPN's row, Zhang
+    would have lost it twice."""
+    from tennis_edge.data.dedupe import drop_split_opponent_duplicates
+    df = _dup_rows([
+        {"id_system": "tml", "tourney_date": "2026-09-24", "tourney_name": "Hangzhou", "winner_id": "W0BH", "loser_id": "Z371",
+         "winner_name": "Coleman Wong", "loser_name": "Zhizhen Zhang", "canonical_winner_id": "209409", "canonical_loser_id": "111190"},
+        {"id_system": "espn", "tourney_date": "2026-09-24", "tourney_name": "AITO Hangzhou Open", "winner_id": "espn:11398",
+         "loser_id": "espn:3024", "winner_name": "Chak Lam Coleman Wong", "loser_name": "Zhang Zhizhen",
+         "canonical_winner_id": "208597", "canonical_loser_id": "111190"}])
+    out, audit = drop_split_opponent_duplicates(df, {("espn", "espn:3024")})
+    assert len(out) == 1 and out.iloc[0]["id_system"] == "tml" and len(audit) == 1
+
+
+@pytest.mark.parametrize("change", [
+    {"loser_name": "Somebody Else"},                       # unrelated opponent: two different matches
+    {"games_w": 13},                                       # different score
+    {"tourney_name": "Launceston CH"},                     # different event a week apart (Burnie / Launceston)
+    {"tourney_date": "2026-10-10"},                        # outside the window
+    {"id_system": "tml"},                                  # same source: two rows are two matches
+])
+def test_split_opponent_rule_fails_closed(change):
+    from tennis_edge.data.dedupe import drop_split_opponent_duplicates
+    a = {"id_system": "tml", "tourney_date": "2026-09-24", "tourney_name": "Burnie", "winner_id": "SF89", "loser_id": "C1",
+         "winner_name": "Rubin Statham", "loser_name": "Yun seong Chung", "canonical_winner_id": "104907", "canonical_loser_id": "212803"}
+    b = {"id_system": "sackmann", "tourney_date": "2026-09-24", "tourney_name": "Burnie CH", "winner_id": "104907", "loser_id": "126283",
+         "winner_name": "Jose Rubin Statham", "loser_name": "Yunseong Chung", "canonical_winner_id": "104907", "canonical_loser_id": "126283"}
+    b = {**b, **change}
+    out, audit = drop_split_opponent_duplicates(_dup_rows([a, b]), {("tml", "SF89")})
+    assert len(out) == 2 and audit.empty
+
+
+def test_split_opponent_rule_only_touches_reviewed_alias_rows():
+    from tennis_edge.data.dedupe import drop_split_opponent_duplicates
+    df = _dup_rows([
+        {"id_system": "tml", "tourney_date": "2022-05-16", "tourney_name": "Geneva", "winner_id": "XX", "loser_id": "O483",
+         "winner_name": "Some Player", "loser_name": "Christopher O'Connell", "canonical_winner_id": "1", "canonical_loser_id": "tml:O483"},
+        {"id_system": "sackmann", "tourney_date": "2022-05-16", "tourney_name": "Geneva", "winner_id": "1", "loser_id": "106331",
+         "winner_name": "Some Player", "loser_name": "Christopher Oconnell", "canonical_winner_id": "1", "canonical_loser_id": "106331"}])
+    out, audit = drop_split_opponent_duplicates(df, set())
+    assert len(out) == 2 and audit.empty
+
+
+@pytest.mark.parametrize("a,b,rel", [("o connell", "oconnell", True), ("ma yexin", "ye xin ma", True),
+                                     ("mukund sasikumar", "sasi kumar mukund", True), ("coleman wong", "chak lam coleman wong", True),
+                                     ("sam weissborn", "tristan samuel weissborn", True), ("caroline werner", "caroline uebelhoer", False),
+                                     ("kristina mladenovic", "danka kovinic", False), ("daniil glinka", "yibing wu", False)])
+def test_names_related(a, b, rel):
+    from tennis_edge.data.dedupe import _names_related
+    assert _names_related(a, b) is rel
