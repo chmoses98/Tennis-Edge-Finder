@@ -1,6 +1,6 @@
-# Prospective scorecard (2026-10-06T18:29:31.167594+00:00)
+# Prospective scorecard (2026-10-06T18:56:06.049411+00:00)
 
-ledger rows: 27360; settled rows: 23146; gradeable with market mid: 21473
+ledger rows: 28180; settled rows: 23146; gradeable with market mid: 21473
 
 ## First-ball truth coverage
 
@@ -11,7 +11,7 @@ ledger rows: 27360; settled rows: 23146; gradeable with market mid: 21473
 | STRICT_PREGAME observations | 2426 |
 | POST_START observations | 297 |
 | AMBIGUOUS observations | 33 |
-| START_UNKNOWN observations | 24604 |
+| START_UNKNOWN observations | 25424 |
 | rows with an executable close | 2722 |
 | STRICT CLV rows | 2380 |
 | material contradictions | 0 |
