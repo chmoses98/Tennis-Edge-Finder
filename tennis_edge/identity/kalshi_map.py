@@ -31,6 +31,13 @@ class KalshiPlayerMapper:
                     idx.setdefault(nm, []).append((pid, rec))
             self.index[tour] = idx
         self.index_by_id = {pid: rec for st in states.values() for pid, rec in st["players"].items()}
+        # name TOKEN SETS per tour (order ignored): a reviewed alias must not bypass the namesake check that an exact
+        # name gets -- "Zhang Ying" may not map by alias while the registry holds another "Ying Zhang" (2026-10-06)
+        self.tokens = {tour: {} for tour in self.index}
+        for tour, idx in self.index.items():
+            for nm, hits in idx.items():
+                for pid, _rec in hits:
+                    self.tokens[tour].setdefault(frozenset(nm.split()), set()).add(pid)
         # Human-reviewed aliases only. Nothing here is inferred; an entry is inert until a person
         # accepts it, and an accepted one resolves at 0.95 -- the floor a shadow bet requires and no
         # more, so an alias can restore coverage without ever being the reason a decision was taken.
@@ -46,6 +53,11 @@ class KalshiPlayerMapper:
         hits = self.index.get(tour, {}).get(nm, [])
         if not hits:
             al = self.aliases.get((tour, nm))
+            others = sorted(self.tokens.get(tour, {}).get(frozenset(nm.split()), set()) - {str(al["canonical_id"])}) if al else []
+            if al and others:
+                return {"status": "AMBIGUOUS", "reason": f"reviewed alias -> {al['canonical_id']}, but registry player(s) {others} "
+                                                         f"carry the same name in another order: fail closed",
+                        "player_id": None, "confidence": 0.0, "name": full_name, "tour": tour, "candidates": [str(al["canonical_id"])] + others}
             if al:
                 rec = self.index_by_id.get(str(al["canonical_id"]), {})
                 out = {"status": "MAPPED", "player_id": str(al["canonical_id"]),

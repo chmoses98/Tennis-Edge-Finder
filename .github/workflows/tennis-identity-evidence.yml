@@ -5,11 +5,10 @@ name: TENNIS identity evidence (alias review)
 # It decides nothing and maps nobody: acceptance is a human decision in data/identity/reviewed_aliases.json.
 # The research sandbox cannot reach these hosts; a runner can.
 
+# Dispatch-only (on the branch that holds the review): repository invariant -- push triggers bind to main only.
+# research/projection_v2/alias_review/REQUEST_ONLY, when present, limits a run to the ids it lists.
 on:
   workflow_dispatch:
-  push:
-    branches: ['claude/**']
-    paths: ['research/projection_v2/alias_review/REQUEST']
 
 permissions:
   contents: write

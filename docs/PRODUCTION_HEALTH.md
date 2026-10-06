@@ -6,7 +6,7 @@
 | TENNIS-2 | taxonomy normalization | no tennis series outside the family registry; >= 99.5 % of live markets PARSED or explicitly UNSUPPORTED | series_tennis.json + parser |
 | TENNIS-3 | active-market mapping | zero UNPARSED among OPEN markets | markets/*.json (open) |
 | TENNIS-4 | active-market projection | every open projectable market present in the latest projection run | data/research/projections/latest.json |
-| TENNIS-5 | capture freshness | latest capture manifest <= 30 min old, no incomplete stage | data/kalshi/capture/<day>/<run>.manifest.json |
+| TENNIS-5 | market data freshness (two checks, both must PASS) | **pricing_quote_freshness**: every row of the latest projection run was priced on a quote <= 30 min old *at pricing time* (unknown age fails); **background_capture_health**: newest capture pass <= 30 min old when the runner pulled the evidence, no interval > 30 min between passes in the last 6 h, newest pass complete, trade backlog < 2 h. `pulled_capture_artifact_age_min` is reported, never judged | projections/<run>.json rows (`market_quote.quote_ts`, `priced_at`); data/kalshi/capture/<day>/<run>.manifest.json; data/.pull_record.json |
 | TENNIS-6 | no post-start leakage | every ledger row generated before actual first ball (or scheduled - 5 min when unknown, counted) | ledger + starts |
 | TENNIS-7 | player identity integrity | no AMBIGUOUS mapping used in production | link/mapping summaries |
 | TENNIS-8 | sports truth health | >= 98 % of settled predictions have gradeable sports truth | settlement table |
@@ -237,3 +237,21 @@ gate is in `research/projection_v2/HEALTH_REMEDIATION.md`.
 * **TENNIS-5 / slate freshness**: capture and first-ball conductors fetch the evidence branch blobless and publish
   sparse; RUN TENNIS and every assisted slate take a full open-market snapshot immediately before pricing; a slate
   made stale by a status/start change triggers a rebuild (at most every 20 min) from the first-ball planner.
+
+## TENNIS-5 split (2026-10-06)
+
+Until 2026-10-06 TENNIS-5 failed on one number: the age, *at health-evaluation time*, of the newest capture pass in
+RUN TENNIS's pulled copy of the evidence branch. RUN TENNIS evaluates health 20-34 minutes after it pulls, so the
+gate read 20-34 min although the conductor published every ~10 min and every price was made on a full open-market
+snapshot taken seconds before pricing. The gate now reports, and judges, two different things:
+
+* `pricing_quote_freshness` -- per priced row, `priced_at - quote_ts` of the quote actually used (median, p95, max,
+  count/pct over 30 min, the open snapshot run and its age at pricing, the first/last pricing timestamp). FAIL if any
+  row's quote was older than 30 min at pricing, or of unknown age.
+* `background_capture_health` -- the conductor: newest pass age at the pull (`data/.pull_record.json`, written by
+  `scripts/ci/pull_data_branch.py`; without it the age at evaluation is used, which is stricter), cadence
+  median/max and every gap > 30 min over the last 6 h (one RUN TENNIS interval), pass durations, failed passes in
+  the window, newest-pass incomplete stages, trade backlog. FAIL on any of them.
+* `pulled_capture_artifact_age_min` -- the old number, under a name that says what it is. Not a status.
+
+The 30-minute threshold is unchanged for both checks; the cadence-gap check is new and only adds ways to FAIL.

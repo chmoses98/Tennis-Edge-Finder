@@ -254,3 +254,21 @@ def test_production_alias_file_is_consistent():
     obj = json.load(open(R.DEFAULT_PATH))
     mimi = [a for a in obj["aliases"] if a.get("source_name") == "Mimi Xu"]
     assert len(mimi) == 1                                   # never deleted to tidy the metrics
+
+
+def test_alias_never_bypasses_the_namesake_check(alias_file):
+    """An accepted alias name ("Zhang Ying" -> 213947) must fail closed while the registry holds ANOTHER player whose
+    name has the same tokens in another order: the exact-name path would have called that ambiguous too."""
+    path = alias_file([_alias("espn", "espn:2594", "zhang ying", "213947", "ying zhang")])
+    states = {"WTA": {"players": {"213947": {"name": "Ying Zhang", "last_date": "2026-04-27"},
+                                  "299999": {"name": "Zhang Ying", "last_date": "2026-05-01"}}}}
+    mp = K.KalshiPlayerMapper.__new__(K.KalshiPlayerMapper)
+    K.KalshiPlayerMapper.__init__(mp, states, cache_path="/nonexistent/cache.json")
+    mp.aliases = R.load(path)
+    # "Zhang Ying" is an exact registry name here, so the alias is not even consulted
+    assert mp.resolve("WTA", "Zhang Ying", today=date(2026, 10, 6))["player_id"] == "299999"
+    states["WTA"]["players"]["299999"]["name"] = "Ying Zhang"            # now two "Ying Zhang"s and no "Zhang Ying"
+    K.KalshiPlayerMapper.__init__(mp, states, cache_path="/nonexistent/cache.json")
+    mp.aliases = R.load(path)
+    r = mp.resolve("WTA", "Zhang Ying", today=date(2026, 10, 6))
+    assert r["status"] == "AMBIGUOUS" and r["player_id"] is None
