@@ -33,8 +33,8 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 17545,
-  "contracts_first_observed": 3572,
+  "rows_after_effective_start": 18188,
+  "contracts_first_observed": 3576,
   "post_settlement_first_observations_excluded": 22,
   "post_settlement_first_observations_by_level": {
    "ATP": 4,
@@ -73,8 +73,8 @@
   "accuracy_condition_binding": "selected-row Brier must be no worse than the Kalshi mid's"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 13973,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 3184,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 14612,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 3188,
   "MARKET_SETTLED_BEFORE_OBSERVATION": 22
  },
  "summary": {
@@ -138,11 +138,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261006T055620Z",
- "evidence_rows_this_run": 3572,
- "evidence_rows_appended": 24,
- "last_evidence_at": "2026-10-06T05:54:27.251266+00:00",
- "harvest_run_at": "2026-10-06T05:57:27.800387+00:00",
+ "harvest_run": "20261006T065313Z",
+ "evidence_rows_this_run": 3576,
+ "evidence_rows_appended": 4,
+ "last_evidence_at": "2026-10-06T06:49:59.241553+00:00",
+ "harvest_run_at": "2026-10-06T06:55:02.355281+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -166,11 +166,11 @@
   "summary_previous_harvest": {
    "kind": "TRADE",
    "minimum_n": 600,
-   "eligible_n": 383,
+   "eligible_n": 386,
    "settled_n": 311,
    "strict_clv_n": 11,
-   "unsettled_n": 72,
-   "clv_pending_n": 72,
+   "unsettled_n": 75,
+   "clv_pending_n": 75,
    "unscorable_n": 0,
    "accuracy_pass": false,
    "clv_pass": false,
