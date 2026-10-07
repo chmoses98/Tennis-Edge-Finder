@@ -5,7 +5,7 @@
   "status": "PASS",
   "detail": {
    "run": "20261007T005520Z",
-   "age_hours": 6.0,
+   "age_hours": 11.0,
    "complete": true,
    "failures": 0,
    "series_tennis": 146
@@ -27,8 +27,8 @@
   "name": "active_market_mapping",
   "status": "PASS",
   "detail": {
-   "active": 1898,
-   "listed_after_discovery": 122,
+   "active": 1970,
+   "listed_after_discovery": 194,
    "unparsed": [],
    "unsupported": 147
   }
@@ -38,22 +38,21 @@
   "name": "active_market_projection",
   "status": "FAIL",
   "detail": {
-   "projectable_open_pregame": 1040,
-   "projected": 818,
-   "not_projected": 222,
+   "projectable_open_pregame": 586,
+   "projected": 420,
+   "not_projected": 166,
    "not_projected_by_stage": {
-    "doubles": 152,
-    "identity": 70
+    "doubles": 126,
+    "event": 6,
+    "identity": 34
    },
    "identity_gap_kinds": {
-    "ALIAS_CANDIDATES": 20,
-    "NO_HISTORY": 46,
-    "AMBIGUOUS": 4
+    "NO_HISTORY": 24,
+    "AMBIGUOUS": 2,
+    "ALIAS_CANDIDATES": 8
    },
-   "alias_review_queue": 10,
+   "alias_review_queue": 4,
    "missing_sample": [
-    "KXATPCHALLENGERMATCH-26OCT07SHEJOR-SHE: Abdullah Shelbayh: UNMAPPED (no exact full-name match; alias",
-    "KXATPCHALLENGERMATCH-26OCT07SHEJOR-JOR: Abdullah Shelbayh: UNMAPPED (no exact full-name match; alias",
     "KXITFMATCH-26OCT07RIVLES-RIV: Felipe Jose Rivadeneira Gallegos: UNMAPPED (no exact full-na",
     "KXITFMATCH-26OCT07RIVLES-LES: Felipe Jose Rivadeneira Gallegos: UNMAPPED (no exact full-na",
     "KXITFMATCH-26OCT07BARBAL-BAR: Yannick Baluska: UNMAPPED (no exact full-name match and no p",
@@ -61,13 +60,15 @@
     "KXITFMATCH-26OCT07MERMCC-MER: Tristan McCormick: AMBIGUOUS (2 namesakes, 2 recently active",
     "KXITFMATCH-26OCT07MERMCC-MCC: Tristan McCormick: AMBIGUOUS (2 namesakes, 2 recently active",
     "KXITFMATCH-26OCT07DELFRY-FRY: Vito Dell'elba: UNMAPPED (no exact full-name match and no pl",
-    "KXITFMATCH-26OCT07DELFRY-DEL: Vito Dell'elba: UNMAPPED (no exact full-name match and no pl"
+    "KXITFMATCH-26OCT07DELFRY-DEL: Vito Dell'elba: UNMAPPED (no exact full-name match and no pl",
+    "KXITFMATCH-26OCT07TAKNOR-TAK: Bercel Sandor Takacs: UNMAPPED (no exact full-name match and",
+    "KXITFMATCH-26OCT07TAKNOR-NOR: Bercel Sandor Takacs: UNMAPPED (no exact full-name match and"
    ],
    "excluded_by_policy": {
-    "past_nominal_start": 283,
-    "first_ball_already_observed": 16
+    "first_ball_already_observed": 14,
+    "past_nominal_start": 392
    },
-   "projection_run": "20261007T064805Z"
+   "projection_run": "20261007T114639Z"
   }
  },
  {
@@ -77,59 +78,59 @@
   "detail": {
    "pricing_quote_freshness": "PASS",
    "background_capture_health": "PASS",
-   "pulled_capture_artifact_age_min": 30.0,
+   "pulled_capture_artifact_age_min": 29.1,
    "pulled_capture_artifact_age_note": "age at health-evaluation time of the newest capture pass in this runner's pulled copy; it grows while the run works and is NOT the age of any quote used for pricing (see pricing_quote) nor the conductor's freshness (see capture)",
    "pricing_quote": {
     "threshold_min": 30,
-    "pricing_run": "20261007T064805Z",
-    "pricing_generated_at": "2026-10-07T06:48:31.285112+00:00",
-    "open_snapshot_run": "20261007T064756Z",
+    "pricing_run": "20261007T114639Z",
+    "pricing_generated_at": "2026-10-07T11:46:56.960114+00:00",
+    "open_snapshot_run": "20261007T114630Z",
     "snapshot_authoritative": true,
-    "open_snapshot_age_at_pricing_s": 4.6,
-    "n_priced": 818,
+    "open_snapshot_age_at_pricing_s": 4.4,
+    "n_priced": 420,
     "quote_sources": {
-     "open_snapshot": 818
+     "open_snapshot": 420
     },
     "n_age_unknown": 0,
-    "median_age_s": 21.8,
-    "p95_age_s": 31.0,
-    "max_age_s": 32.5,
+    "median_age_s": 16.1,
+    "p95_age_s": 22.2,
+    "max_age_s": 22.5,
     "n_over_threshold": 0,
     "pct_over_threshold": 0.0,
     "n_over_fresh_band": 0,
-    "quote_ts_oldest": "2026-10-07T06:47:57.149006+00:00",
-    "quote_ts_newest": "2026-10-07T06:48:05.028764+00:00",
-    "priced_at_first": "2026-10-07T06:48:10.577145+00:00",
-    "priced_at_last": "2026-10-07T06:48:31.278279+00:00",
+    "quote_ts_oldest": "2026-10-07T11:46:31.189225+00:00",
+    "quote_ts_newest": "2026-10-07T11:46:39.034008+00:00",
+    "priced_at_first": "2026-10-07T11:46:44.314449+00:00",
+    "priced_at_last": "2026-10-07T11:46:56.955067+00:00",
     "status": "PASS"
    },
    "capture": {
     "status": "PASS",
     "threshold_min": 30,
-    "latest_capture_run": "20261007T062328Z",
-    "latest_capture_finished_at": "2026-10-07T06:25:40.266970+00:00",
-    "measured_at": "2026-10-07T06:35:09.187856+00:00",
+    "latest_capture_run": "20261007T112330Z",
+    "latest_capture_finished_at": "2026-10-07T11:25:36.279102+00:00",
+    "measured_at": "2026-10-07T11:33:45.406628+00:00",
     "measured_at_kind": "pull",
-    "capture_age_at_measurement_min": 9.5,
+    "capture_age_at_measurement_min": 8.2,
     "cadence_window_h": 6,
-    "passes_in_window": 35,
+    "passes_in_window": 36,
     "cadence_median_min": 10.0,
     "cadence_max_min": 10.4,
     "gaps_over_threshold_min": [],
-    "pass_duration_median_s": 138.5,
-    "latest_pass_duration_s": 131.6,
+    "pass_duration_median_s": 128.7,
+    "latest_pass_duration_s": 126.0,
     "cadence_basis": "pass start to pass start; tail = newest pass finish to measurement",
     "cadence_p95_min": 10.0,
     "step_seconds": {
      "passes": 34,
      "steps": {
       "capture": {
-       "median": 140.5,
-       "max": 188.2
+       "median": 127.3,
+       "max": 223.0
       },
       "capture_publish": {
-       "median": 4.6,
-       "max": 17.7
+       "median": 5.0,
+       "max": 7.0
       },
       "cleanup": {
        "median": 0.0,
@@ -137,38 +138,38 @@
       },
       "discovery": {
        "median": 0.0,
-       "max": 416.5
+       "max": 0.0
       },
       "external_publish": {
-       "median": 5.3,
-       "max": 16.8
+       "median": 6.0,
+       "max": 12.5
       },
       "external_scan": {
-       "median": 37.0,
-       "max": 49.7
+       "median": 35.3,
+       "max": 40.8
       },
       "fetch": {
        "median": 0.9,
-       "max": 3.5
+       "max": 1.8
       },
       "restore": {
        "median": 0.0,
-       "max": 0.5
+       "max": 1.0
       },
       "work_s": {
-       "median": 188.3,
-       "max": 601.5
+       "median": 175.0,
+       "max": 277.4
       },
       "start_to_start_s": {
        "median": 600.1,
-       "max": 601.5
+       "max": 600.8
       },
       "overrun_s": {
        "median": 0.0,
-       "max": 1.5
+       "max": 0.0
       }
      },
-     "overruns": 1
+     "overruns": 0
     },
     "failed_passes_in_window": 0,
     "latest_incomplete": [],
@@ -179,7 +180,7 @@
     },
     "trade_backlog_ok": true
    },
-   "run": "20261007T062328Z",
+   "run": "20261007T112330Z",
    "incomplete": [],
    "trade_backlog": {
     "gaps": 0,
@@ -224,9 +225,9 @@
     "no_start_information": 0,
     "post_settlement": 2675
    },
-   "n": 31536,
-   "start_unknown_used_schedule": 28814,
-   "start_unknown_passed_schedule_check": 28814,
+   "n": 31956,
+   "start_unknown_used_schedule": 29234,
+   "start_unknown_passed_schedule_check": 29234,
    "post_start_rows_in_strict_research": 0,
    "strict_research_rows_checked": 2380,
    "legacy_quarantined": 3005,
@@ -235,7 +236,7 @@
    "quarantine_register_rows": 3005,
    "quarantine_register_problems": [],
    "guard_deployed_at": "2026-09-27T20:02:23+00:00",
-   "rows_since_guard": 19164,
+   "rows_since_guard": 19584,
    "rows_since_guard_with_first_ball_truth": 68,
    "note": "rows since the guard WITHOUT A/B first-ball truth cannot be verified either way; they are START_UNKNOWN and excluded from strict research by construction (see TENNIS-10)"
   }
@@ -245,9 +246,9 @@
   "name": "player_identity_integrity",
   "status": "PASS",
   "detail": {
-   "ambiguous": 4,
+   "ambiguous": 2,
    "ambiguous_used": 0,
-   "MATCHED": 818
+   "MATCHED": 420
   }
  },
  {
@@ -256,75 +257,76 @@
   "status": "FAIL",
   "detail": {
    "ok": 7861,
-   "total": 23350,
-   "rate": 0.3367,
+   "total": 25610,
+   "rate": 0.307,
    "first_ball_ok": true,
    "first_ball": {
-    "truths": 2302,
+    "truths": 2308,
     "strict_truths": 752,
     "no_play": 8,
     "contradictions": 0,
     "contradiction_rate": 0.0,
     "by_confidence": {
-     "C": 1550,
+     "C": 1556,
      "B": 744,
      "A": 8
     },
     "bracket_seconds_median": 210.035831,
     "bracket_seconds_p90": 263.144458,
     "chain_violations": [],
-    "observations": 470656,
-    "matches_observed": 2302,
+    "observations": 476514,
+    "matches_observed": 2308,
     "watchlist": {
-     "total": 439,
-     "levels_with_a_wired_source": 92,
-     "levels_without_any_source": 347,
-     "watched_and_observed": 92,
-     "covered_and_observed": 92,
+     "total": 447,
+     "levels_with_a_wired_source": 91,
+     "levels_without_any_source": 356,
+     "watched_and_observed": 91,
+     "covered_and_observed": 91,
      "pct_covered_with_source_mapping": 1.0
     },
-    "pct_classifiable": 0.0874,
-    "pct_strict_pregame": 0.0769,
+    "pct_classifiable": 0.0862,
+    "pct_strict_pregame": 0.0759,
     "timing_classes": {
-     "START_UNKNOWN": 28780,
+     "START_UNKNOWN": 29200,
      "STRICT_PREGAME": 2426,
      "POST_START": 297,
      "AMBIGUOUS": 33
     }
    },
    "settlement": {
-    "settled": 23946,
-    "settled_binary": 23350,
+    "settled": 26206,
+    "settled_binary": 25610,
     "settled_scalar": 596,
-    "sports_truth_rows": 18158,
-    "sports_truth_kalshi_derived": 18158,
+    "sports_truth_rows": 19388,
+    "sports_truth_kalshi_derived": 19388,
     "sports_truth_independent": 7861,
-    "settlement_files": 110,
-    "independent_truth_run": "20261007T065100Z.jsonl.gz",
+    "settlement_files": 111,
+    "independent_truth_run": "20261007T114941Z.jsonl.gz",
     "independent_truth_by_status": {
-     "NOT_COVERED": 13826,
+     "NOT_COVERED": 14808,
      "RESOLVED": 8092,
-     "NO_CANONICAL_IDS": 910,
+     "NO_CANONICAL_IDS": 972,
      "AMBIGUOUS": 10,
      "NOT_FOUND": 698,
-     "PENDING_RESULT": 408
+     "PENDING_RESULT": 1624
     },
     "independent_truth_structural_non_coverage": {
-     "WTA|ITF|NOT_COVERED": 6754,
-     "ATP|CHALLENGER|NO_CANONICAL_IDS": 440,
-     "ATP|ITF|NOT_COVERED": 5910,
+     "WTA|ITF|NOT_COVERED": 7230,
+     "ATP|CHALLENGER|NO_CANONICAL_IDS": 462,
+     "ATP|ITF|NOT_COVERED": 6408,
      "WTA|WTA_125|NOT_COVERED": 44,
      "WTA|TOUR_500_250|NO_CANONICAL_IDS": 256,
      "ATP|TOUR_500_250|NO_CANONICAL_IDS": 136,
-     "ATP|CHALLENGER|NOT_COVERED": 1118,
+     "ATP|CHALLENGER|NOT_COVERED": 1126,
      "ATP|MASTERS_1000|NO_CANONICAL_IDS": 22,
-     "WTA|MASTERS_1000|NO_CANONICAL_IDS": 56,
-     "WTA|WTA_125|PENDING_RESULT": 72,
-     "ATP|MASTERS_1000|PENDING_RESULT": 336
+     "WTA|MASTERS_1000|NO_CANONICAL_IDS": 96,
+     "WTA|WTA_125|PENDING_RESULT": 100,
+     "ATP|MASTERS_1000|PENDING_RESULT": 1380,
+     "WTA|MASTERS_1000|PENDING_RESULT": 144
     },
     "independent_truth_rate_among_covered": 0.9195,
     "exchange_reconciliation": {
-     "NOT_RECONCILED": 15304,
+     "NOT_RECONCILED": 16534,
      "AGREE": 3130
     },
     "exchange_conflicts": 0,
@@ -393,46 +395,47 @@
      "lag_days_max_new": null
     },
     "prospective_v2": {
-     "predictions_with_v2_and_incumbent": 4370,
-     "exchange_settled_predictions": 4370,
+     "predictions_with_v2_and_incumbent": 5538,
+     "exchange_settled_predictions": 5538,
      "independently_resolved_predictions": 346,
      "independently_settled_matches": 28,
      "by_status": {
-      "NOT_COVERED": 3928,
+      "NOT_COVERED": 4910,
       "RESOLVED": 346,
-      "PENDING_RESULT": 96
+      "PENDING_RESULT": 282
      },
      "reconciliation": {
-      "NOT_RECONCILED": 4024,
+      "NOT_RECONCILED": 5192,
       "AGREE": 346
      },
      "by_level": {
       "ATP Challenger": {
-       "NOT_COVERED": 500
+       "NOT_COVERED": 508
       },
       "ATP ITF": {
-       "NOT_COVERED": 1332
+       "NOT_COVERED": 1830
       },
       "ATP tour": {
        "RESOLVED": 174,
-       "PENDING_RESULT": 30
+       "PENDING_RESULT": 156
       },
       "WTA 125": {
-       "PENDING_RESULT": 66,
+       "PENDING_RESULT": 94,
        "RESOLVED": 118
       },
       "WTA ITF": {
-       "NOT_COVERED": 2096
+       "NOT_COVERED": 2572
       },
       "WTA tour": {
-       "RESOLVED": 54
+       "RESOLVED": 54,
+       "PENDING_RESULT": 32
       }
      },
      "n_stale_unresolved_tour_level": 0,
      "readout_at_independently_settled_matches": 1500
     },
     "prospective_v2_warning": false,
-    "clv_run": "20261007T065043Z.jsonl.gz",
+    "clv_run": "20261007T114922Z.jsonl.gz",
     "settled_with_ab_truth": 2756,
     "settled_with_close": 2722,
     "settled_strict_clv": 2380
@@ -447,7 +450,7 @@
    "conflicts": 0,
    "reconciled_against_independent_truth": 3130,
    "reconciliation": {
-    "NOT_RECONCILED": 15304,
+    "NOT_RECONCILED": 16534,
     "AGREE": 3130
    },
    "rules_id_changes": [],
@@ -459,17 +462,17 @@
   "name": "clv_close_coverage",
   "status": "PASS",
   "detail": {
-   "settled": 23946,
+   "settled": 26206,
    "with_close": 2722,
    "actual_first_ball_basis": 2756,
    "strict_settled": 2380,
    "strict_clv_rows": 2380,
    "executable_close_rows": 2722,
    "matches_with_strict_truth": 752,
-   "observations_classified": 31536,
-   "pct_strict_pregame": 0.0769,
+   "observations_classified": 31956,
+   "pct_strict_pregame": 0.0759,
    "horizons_populated": 18610,
-   "horizons_total": 252288,
+   "horizons_total": 255648,
    "strict_rate": 0.8636,
    "quarantined_post_start_in_population": 330,
    "pregame_eligible": 2426,
@@ -500,7 +503,7 @@
   "status": "PASS",
   "detail": {
    "hash_match": true,
-   "built_at": "2026-10-07T06:42:18.968908+00:00",
+   "built_at": "2026-10-07T11:40:38.024397+00:00",
    "rows": 1545943
   }
  },
@@ -510,7 +513,7 @@
   "status": "PASS",
   "detail": {
    "run": "20261006T185031Z",
-   "snapshot_age_days": 0.5,
+   "snapshot_age_days": 0.71,
    "max_season_files": [
     2026,
     2026
@@ -530,7 +533,7 @@
   "name": "prospective_confirmation_health",
   "status": "PASS",
   "detail": {
-   "last_harvest_success": "2026-10-07T06:55:04.930693+00:00",
+   "last_harvest_success": "2026-10-07T11:53:57.810008+00:00",
    "last_harvest_failure": "2026-09-28T05:46:56.386723+00:00",
    "last_harvest_failure_detail": "lt = libops.scalar_compare(x.ravel(), y, op)\n             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"pandas/_libs/ops.pyx\", line 107, in pandas._libs.ops.scalar_compare\n  File \"pandas/_libs/tslibs/timestamps.pyx\", line 492, in pandas._libs.tslibs.timestamps._Timestamp.__richcmp__\nTypeError: Cannot compare Timestamp with datetime.date. Use ts == pd.Timestamp(date) or ts.date() == date instead.",
    "harvest_failed": false,
@@ -541,14 +544,14 @@
      "producer": "model4_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:49:44.088593+00:00",
+     "producer_last_seen": "2026-10-07T11:48:19.579997+00:00",
      "effective_scorable_start": "2026-09-28T03:33:38.085450+00:00",
      "eligible_n": 125,
      "settled_n": 0,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-10-07T06:26:51.414437+00:00",
-     "evidence_age_h": 0.5,
+     "evidence_age_h": 5.5,
      "harvest_age_h": 0.1
     },
     "EC-2026-002-MKTCOND-GAME-SPREAD": {
@@ -556,28 +559,28 @@
      "producer": "model4_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:49:44.088593+00:00",
+     "producer_last_seen": "2026-10-07T11:48:19.579997+00:00",
      "effective_scorable_start": "2026-09-28T03:33:38.085450+00:00",
      "eligible_n": 202,
      "settled_n": 0,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-10-07T06:26:51.414437+00:00",
-     "evidence_age_h": 0.5,
+     "evidence_age_h": 5.5,
      "harvest_age_h": 0.1
     },
     "EC-2026-003-GEN2-MODERATE-EVIDENCE": {
-     "health": "INSUFFICIENT_N",
+     "health": "PENDING_SETTLEMENT",
      "producer": "shadow_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:48:35.091960+00:00",
+     "producer_last_seen": "2026-10-07T11:47:01.087698+00:00",
      "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
-     "eligible_n": 993,
-     "settled_n": 834,
+     "eligible_n": 1002,
+     "settled_n": 871,
      "strict_clv_n": 11,
-     "candidate_status": "INSUFFICIENT_N",
-     "last_evidence_at": "2026-10-07T06:48:35.091960+00:00",
+     "candidate_status": "PENDING_SETTLEMENT",
+     "last_evidence_at": "2026-10-07T11:47:01.087698+00:00",
      "evidence_age_h": 0.1,
      "harvest_age_h": 0.1
     },
@@ -586,13 +589,13 @@
      "producer": "shadow_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:48:35.091960+00:00",
+     "producer_last_seen": "2026-10-07T11:47:01.087698+00:00",
      "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
-     "eligible_n": 702,
-     "settled_n": 598,
+     "eligible_n": 711,
+     "settled_n": 641,
      "strict_clv_n": 0,
      "candidate_status": "FAIL_ACCURACY",
-     "last_evidence_at": "2026-10-07T06:48:35.091960+00:00",
+     "last_evidence_at": "2026-10-07T11:47:01.087698+00:00",
      "evidence_age_h": 0.1,
      "harvest_age_h": 0.1
     },
@@ -601,29 +604,29 @@
      "producer": "shadow_board_v1",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:48:35.091960+00:00",
+     "producer_last_seen": "2026-10-07T11:47:01.087698+00:00",
      "effective_scorable_start": "2026-09-28T03:33:22.503933+00:00",
-     "eligible_n": 412,
-     "settled_n": 369,
+     "eligible_n": 414,
+     "settled_n": 378,
      "strict_clv_n": 11,
      "candidate_status": "INSUFFICIENT_N",
-     "last_evidence_at": "2026-10-07T06:48:35.091960+00:00",
+     "last_evidence_at": "2026-10-07T11:47:01.087698+00:00",
      "evidence_age_h": 0.1,
-     "harvest_age_h": 0.0
+     "harvest_age_h": 0.1
     },
     "W4-2026-001-KALSHI-LONE-OUTLIER": {
      "health": "INSUFFICIENT_N",
      "producer": "external_scan",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:25:42+00:00",
+     "producer_last_seen": "2026-10-07T11:25:42+00:00",
      "effective_scorable_start": null,
      "eligible_n": 1,
      "settled_n": 1,
      "strict_clv_n": 1,
      "candidate_status": "INSUFFICIENT_N",
-     "last_evidence_at": "2026-10-07T06:05:20.931734+00:00",
-     "evidence_age_h": 0.8,
+     "last_evidence_at": "2026-10-07T11:25:42.216713+00:00",
+     "evidence_age_h": 0.5,
      "harvest_age_h": 0.0
     },
     "EC-2026-004-COHERENCE-EXECUTABLE": {
@@ -631,14 +634,14 @@
      "producer": "capture_books",
      "producer_required": true,
      "producer_active": true,
-     "producer_last_seen": "2026-10-07T06:25:40.266970+00:00",
+     "producer_last_seen": "2026-10-07T11:25:36.279102+00:00",
      "effective_scorable_start": null,
      "eligible_n": 4,
      "settled_n": 0,
      "strict_clv_n": 0,
      "candidate_status": "INSUFFICIENT_N",
      "last_evidence_at": "2026-10-05T16:46:37.549905+00:00",
-     "evidence_age_h": 38.2,
+     "evidence_age_h": 43.1,
      "harvest_age_h": 0.1
     }
    }
@@ -654,18 +657,18 @@
    "gate_kind": "OPERATIONS (not profitability)",
    "track_effective_start": "2026-09-30T23:08:40.025222+00:00",
    "track_start_fingerprint_ok": true,
-   "latest_slate_build": "2026-10-07T06:55:06.225507+00:00",
-   "latest_slate_id": "SL-20261007T065506Z-47164471",
+   "latest_slate_build": "2026-10-07T11:53:59.014859+00:00",
+   "latest_slate_id": "SL-20261007T115359Z-7c8635b8",
    "slate_age_h": 0.02,
-   "latest_slate_matches": 445,
+   "latest_slate_matches": 302,
    "latest_assisted_decision": null,
    "decisions": 0,
    "wagers": 0,
-   "pipeline_last_run_at": "2026-10-07T06:55:10.596483+00:00",
-   "pipeline_age_h": 0.01,
+   "pipeline_last_run_at": "2026-10-07T11:54:03.228419+00:00",
+   "pipeline_age_h": 0.02,
    "settlement_freshness": {
     "last_settlement_row_at": null,
-    "pipeline_last_run_at": "2026-10-07T06:55:10.596483+00:00"
+    "pipeline_last_run_at": "2026-10-07T11:54:03.228419+00:00"
    },
    "unsettled_decisions": 0,
    "unsettled_stalled_over_7d": [],
@@ -701,40 +704,70 @@
    "gate_kind": "INTEGRITY (not profitability; model-market disagreement alone never fails this gate)",
    "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
    "CHATGPT_ASSISTED_TRACK": "ACTIVE",
-   "slate_id": "SL-20261007T065506Z-47164471",
-   "slate_built_at": "2026-10-07T06:55:06.225507+00:00",
+   "slate_id": "SL-20261007T115359Z-7c8635b8",
+   "slate_built_at": "2026-10-07T11:53:59.014859+00:00",
    "discrepancy_version": "discrepancy_sanity_v1",
-   "priced_rows": 1003,
+   "priced_rows": 466,
    "counts_by_band": {
-    "NORMAL": 727,
-    "REVIEW": 130,
-    "EXTREME": 44,
-    "HIGH_REVIEW": 102
+    "REVIEW": 63,
+    "NORMAL": 278,
+    "EXTREME": 58,
+    "HIGH_REVIEW": 67
    },
    "counts_by_status": {
-    "OK": 727,
-    "REVIEW_CONTEXT": 130,
-    "DATA_WARNING": 46,
-    "EXPLANATION_REQUIRED_BEFORE_BET": 100
+    "REVIEW_CONTEXT": 63,
+    "OK": 278,
+    "DATA_WARNING": 62,
+    "EXPLANATION_REQUIRED_BEFORE_BET": 63
    },
    "counts_by_freshness": {
-    "FRESH": 1003
+    "FRESH": 466
    },
    "counts_by_identity": {
-    "IDENTITY_VERIFIED": 827,
-    "IDENTITY_AMBIGUOUS": 176
+    "IDENTITY_VERIFIED": 404,
+    "IDENTITY_AMBIGUOUS": 62
    },
    "counts_by_orientation": {
-    "VERIFIED": 779,
-    "UNKNOWN": 128,
-    "NOT_APPLICABLE": 96
+    "VERIFIED": 399,
+    "UNKNOWN": 40,
+    "NOT_APPLICABLE": 27
    },
-   "extreme_rows": 44,
+   "extreme_rows": 58,
    "extreme_sample": [
+    {
+     "ticker": "KXATPCHALLENGERMATCH-26OCT06NIKDAM-DAM",
+     "level_bucket": "CHALLENGER",
+     "gap_pp": -35.91,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "ADEQUATE",
+     "reasons": [
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE",
+      "SCHEDULED_START_PASSED"
+     ]
+    },
+    {
+     "ticker": "KXATPCHALLENGERMATCH-26OCT06NIKDAM-NIK",
+     "level_bucket": "CHALLENGER",
+     "gap_pp": 35.91,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "ADEQUATE",
+     "reasons": [
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE",
+      "SCHEDULED_START_PASSED"
+     ]
+    },
     {
      "ticker": "KXATPCHALLENGERMATCH-26OCT06HENKAS-HEN",
      "level_bucket": "CHALLENGER",
-     "gap_pp": -32.44,
+     "gap_pp": -31.44,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
@@ -750,13 +783,14 @@
     {
      "ticker": "KXATPCHALLENGERMATCH-26OCT06HENKAS-KAS",
      "level_bucket": "CHALLENGER",
-     "gap_pp": 33.44,
+     "gap_pp": 32.44,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
      "external": "NO_EXTERNAL_REFERENCE",
      "data_quality": "ADEQUATE",
      "reasons": [
+      "LOW_DISPLAYED_LIQUIDITY",
       "MODEL_HIGH_UNCERTAINTY",
       "NO_EXTERNAL_REFERENCE",
       "START_UNVERIFIABLE",
@@ -766,7 +800,7 @@
     {
      "ticker": "KXATPCHALLENGERMATCH-26OCT06MAETAR-MAE",
      "level_bucket": "CHALLENGER",
-     "gap_pp": -41.85,
+     "gap_pp": -40.35,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
@@ -782,7 +816,7 @@
     {
      "ticker": "KXATPCHALLENGERMATCH-26OCT06MAETAR-TAR",
      "level_bucket": "CHALLENGER",
-     "gap_pp": 41.85,
+     "gap_pp": 40.35,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
@@ -796,152 +830,212 @@
      ]
     },
     {
-     "ticker": "KXITFMATCH-26OCT06GARCUR-CUR",
-     "level_bucket": "ITF",
-     "gap_pp": 37.68,
+     "ticker": "KXATPCHALLENGERMATCH-26OCT06STRDJE-DJE",
+     "level_bucket": "CHALLENGER",
+     "gap_pp": -39.63,
      "status": "DATA_WARNING",
-     "identity": "IDENTITY_AMBIGUOUS",
+     "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
      "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "POOR",
+     "data_quality": "ADEQUATE",
      "reasons": [
-      "WIDE_SPREAD",
-      "LOW_DISPLAYED_LIQUIDITY",
-      "PLAYER_IDENTITY_RISK",
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "ASYMMETRIC_SAMPLE_SIZE",
-      "STALE_PLAYER_DATA",
       "NO_EXTERNAL_REFERENCE",
       "START_UNVERIFIABLE",
       "SCHEDULED_START_PASSED"
      ]
     },
     {
-     "ticker": "KXITFWMATCH-26OCT06BECSAT-BEC",
-     "level_bucket": "ITF",
-     "gap_pp": 49.06,
+     "ticker": "KXATPCHALLENGERMATCH-26OCT06STRDJE-STR",
+     "level_bucket": "CHALLENGER",
+     "gap_pp": 39.63,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
-     "external": "AGREES_WITH_MODEL",
-     "data_quality": "POOR",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "ADEQUATE",
      "reasons": [
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "STALE_PLAYER_DATA",
-      "MODEL_HIGH_UNCERTAINTY",
-      "EXTERNAL_MARKET_CONFIRMATION",
+      "NO_EXTERNAL_REFERENCE",
       "START_UNVERIFIABLE",
-      "MODEL_INTERNAL_DISAGREEMENT"
+      "SCHEDULED_START_PASSED"
      ]
     },
     {
-     "ticker": "KXITFWMATCH-26OCT06BECSAT-SAT",
-     "level_bucket": "ITF",
-     "gap_pp": -49.06,
+     "ticker": "KXATPCHALLENGERMATCH-26OCT07FORKRU-FOR",
+     "level_bucket": "CHALLENGER",
+     "gap_pp": -42.24,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
-     "external": "AGREES_WITH_MODEL",
-     "data_quality": "POOR",
+     "external": "EXTERNAL_STALE",
+     "data_quality": "ADEQUATE",
      "reasons": [
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "STALE_PLAYER_DATA",
-      "MODEL_HIGH_UNCERTAINTY",
-      "EXTERNAL_MARKET_CONFIRMATION",
-      "START_UNVERIFIABLE",
-      "MODEL_INTERNAL_DISAGREEMENT"
+      "LOW_DISPLAYED_LIQUIDITY",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
      ]
     },
     {
-     "ticker": "KXITFWMATCH-26OCT06MURSAT-MUR",
+     "ticker": "KXATPCHALLENGERMATCH-26OCT07FORKRU-KRU",
+     "level_bucket": "CHALLENGER",
+     "gap_pp": 42.24,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "EXTERNAL_STALE",
+     "data_quality": "ADEQUATE",
+     "reasons": [
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ]
+    },
+    {
+     "ticker": "KXITFMATCH-26OCT07GANNOC-GAN",
      "level_bucket": "ITF",
-     "gap_pp": 44.62,
+     "gap_pp": -34.99,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
      "external": "NO_EXTERNAL_REFERENCE",
      "data_quality": "LIMITED",
      "reasons": [
-      "LOW_DATA_QUALITY",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFWMATCH-26OCT06MURSAT-SAT",
-     "level_bucket": "ITF",
-     "gap_pp": -44.62,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "LIMITED",
-     "reasons": [
-      "LOW_DATA_QUALITY",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT06LEEKIM-KIM",
-     "level_bucket": "ITF",
-     "gap_pp": -38.95,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "LIMITED",
-     "reasons": [
-      "STALE_PLAYER_DATA",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT06LEEKIM-LEE",
-     "level_bucket": "ITF",
-     "gap_pp": 39.45,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "LIMITED",
-     "reasons": [
-      "STALE_PLAYER_DATA",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT07DELSAT-DEL",
-     "level_bucket": "ITF",
-     "gap_pp": -27.05,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "POOR",
-     "reasons": [
+      "LOW_DISPLAYED_LIQUIDITY",
       "LOW_DATA_QUALITY",
       "THIN_PLAYER_HISTORY",
       "ASYMMETRIC_SAMPLE_SIZE",
       "STALE_PLAYER_DATA",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ]
+    },
+    {
+     "ticker": "KXITFMATCH-26OCT07GANNOC-NOC",
+     "level_bucket": "ITF",
+     "gap_pp": 35.49,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "LIMITED",
+     "reasons": [
+      "LOW_DISPLAYED_LIQUIDITY",
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "ASYMMETRIC_SAMPLE_SIZE",
+      "STALE_PLAYER_DATA",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ]
+    },
+    {
+     "ticker": "KXITFWMATCH-26OCT07GEEZAN-GEE",
+     "level_bucket": "ITF",
+     "gap_pp": 31.94,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "ADEQUATE",
+     "reasons": [
+      "MODEL_HIGH_UNCERTAINTY",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ]
+    },
+    {
+     "ticker": "KXITFWMATCH-26OCT07GEEZAN-ZAN",
+     "level_bucket": "ITF",
+     "gap_pp": -31.94,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "ADEQUATE",
+     "reasons": [
+      "MODEL_HIGH_UNCERTAINTY",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ]
+    },
+    {
+     "ticker": "KXITFWMATCH-26OCT07GROSAM-GRO",
+     "level_bucket": "ITF",
+     "gap_pp": 43.35,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "POOR",
+     "reasons": [
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "STALE_PLAYER_DATA",
+      "SURFACE_DATA_THIN",
+      "MODEL_HIGH_UNCERTAINTY",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE",
+      "MODEL_INTERNAL_DISAGREEMENT"
+     ]
+    },
+    {
+     "ticker": "KXITFWMATCH-26OCT07GROSAM-SAM",
+     "level_bucket": "ITF",
+     "gap_pp": -42.35,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "POOR",
+     "reasons": [
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "STALE_PLAYER_DATA",
+      "SURFACE_DATA_THIN",
+      "MODEL_HIGH_UNCERTAINTY",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE",
+      "MODEL_INTERNAL_DISAGREEMENT"
+     ]
+    },
+    {
+     "ticker": "KXITFWMATCH-26OCT07JANFAV-FAV",
+     "level_bucket": "ITF",
+     "gap_pp": -36.77,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "POOR",
+     "reasons": [
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "STALE_PLAYER_DATA",
       "SURFACE_DATA_THIN",
       "NO_EXTERNAL_REFERENCE",
       "START_UNVERIFIABLE"
      ]
     },
     {
-     "ticker": "KXITFMATCH-26OCT07MILNAY-MIL",
+     "ticker": "KXITFWMATCH-26OCT07JANFAV-JAN",
      "level_bucket": "ITF",
-     "gap_pp": -25.14,
+     "gap_pp": 36.77,
+     "status": "DATA_WARNING",
+     "identity": "IDENTITY_VERIFIED",
+     "freshness": "FRESH",
+     "external": "NO_EXTERNAL_REFERENCE",
+     "data_quality": "POOR",
+     "reasons": [
+      "LOW_DATA_QUALITY",
+      "THIN_PLAYER_HISTORY",
+      "STALE_PLAYER_DATA",
+      "SURFACE_DATA_THIN",
+      "NO_EXTERNAL_REFERENCE",
+      "START_UNVERIFIABLE"
+     ]
+    },
+    {
+     "ticker": "KXITFMATCH-26OCT07JONDAL-DAL",
+     "level_bucket": "ITF",
+     "gap_pp": 31.92,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
@@ -958,9 +1052,9 @@
      ]
     },
     {
-     "ticker": "KXITFMATCH-26OCT07MILNAY-NAY",
+     "ticker": "KXITFMATCH-26OCT07JONDAL-JON",
      "level_bucket": "ITF",
-     "gap_pp": 25.64,
+     "gap_pp": -31.92,
      "status": "DATA_WARNING",
      "identity": "IDENTITY_VERIFIED",
      "freshness": "FRESH",
@@ -972,120 +1066,6 @@
       "ASYMMETRIC_SAMPLE_SIZE",
       "STALE_PLAYER_DATA",
       "LEVEL_TRANSFER_RISK",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT07REIWAL-REI",
-     "level_bucket": "ITF",
-     "gap_pp": 43.31,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "POOR",
-     "reasons": [
-      "LOW_DISPLAYED_LIQUIDITY",
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "ASYMMETRIC_SAMPLE_SIZE",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT07REIWAL-WAL",
-     "level_bucket": "ITF",
-     "gap_pp": -43.31,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "POOR",
-     "reasons": [
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "ASYMMETRIC_SAMPLE_SIZE",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFWMATCH-26OCT07VORTOD-TOD",
-     "level_bucket": "ITF",
-     "gap_pp": -27.96,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "LIMITED",
-     "reasons": [
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFWMATCH-26OCT07VORTOD-VOR",
-     "level_bucket": "ITF",
-     "gap_pp": 27.96,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "LIMITED",
-     "reasons": [
-      "LOW_DISPLAYED_LIQUIDITY",
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT07FILDUL-DUL",
-     "level_bucket": "ITF",
-     "gap_pp": -27.15,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "POOR",
-     "reasons": [
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "ASYMMETRIC_SAMPLE_SIZE",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
-      "NO_EXTERNAL_REFERENCE",
-      "START_UNVERIFIABLE"
-     ]
-    },
-    {
-     "ticker": "KXITFMATCH-26OCT07FILDUL-FIL",
-     "level_bucket": "ITF",
-     "gap_pp": 28.15,
-     "status": "DATA_WARNING",
-     "identity": "IDENTITY_VERIFIED",
-     "freshness": "FRESH",
-     "external": "NO_EXTERNAL_REFERENCE",
-     "data_quality": "POOR",
-     "reasons": [
-      "LOW_DATA_QUALITY",
-      "THIN_PLAYER_HISTORY",
-      "ASYMMETRIC_SAMPLE_SIZE",
-      "STALE_PLAYER_DATA",
-      "SURFACE_DATA_THIN",
       "NO_EXTERNAL_REFERENCE",
       "START_UNVERIFIABLE"
      ]
@@ -1104,40 +1084,30 @@
   "detail": {
    "gate_kind": "OPERATIONS (start-time reconciliation and window timing; not profitability)",
    "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
-   "plan_generated_at": "2026-10-07T06:34:38.315266+00:00",
+   "plan_generated_at": "2026-10-07T11:33:11.613042+00:00",
    "plan_age_h": 0.36,
-   "next_window_first_ball": "2026-10-07T07:30:00+00:00",
-   "recommended_run_tennis_time": "2026-10-07T06:45:00+00:00",
-   "final_check_time": "2026-10-07T07:20:00+00:00",
-   "next_window_matches": 4,
+   "next_window_first_ball": "2026-10-07T12:30:00+00:00",
+   "recommended_run_tennis_time": "2026-10-07T11:45:00+00:00",
+   "final_check_time": "2026-10-07T12:20:00+00:00",
+   "next_window_matches": 1,
    "counts_by_status": {
-    "VERIFIED_UPCOMING": 34,
-    "STARTED": 9,
-    "STATUS_AMBIGUOUS": 6,
-    "START_UNKNOWN": 411,
-    "ESTIMATED_UPCOMING": 2
+    "VERIFIED_UPCOMING": 23,
+    "STARTED": 8,
+    "STATUS_AMBIGUOUS": 2,
+    "START_UNKNOWN": 330,
+    "ESTIMATED_UPCOMING": 1,
+    "START_IMMINENT": 1
    },
-   "main_tour_status_unverified": 5,
+   "main_tour_status_unverified": 3,
    "slate_freshness": {
-    "stale": true,
-    "reasons": [
-     "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
-    ],
-    "changed_matches": [
-     {
-      "match": "KXWTADOUBLES-26OCT07HSIOSTKHRSAM",
-      "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-     },
-     {
-      "match": "KXWTADOUBLES-26OCT07SINZHABARCHW",
-      "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-     }
-    ],
-    "slate_id": "SL-20261007T062118Z-e946df33",
-    "slate_built_at": "2026-10-07T06:21:18.667902+00:00",
-    "checked_at": "2026-10-07T06:34:38.315266+00:00"
+    "stale": false,
+    "reasons": [],
+    "changed_matches": [],
+    "slate_id": "SL-20261007T111342Z-e70d62d2",
+    "slate_built_at": "2026-10-07T11:13:42.866897+00:00",
+    "checked_at": "2026-10-07T11:33:11.613042+00:00"
    },
-   "windows_checked_24h": 28,
+   "windows_checked_24h": 33,
    "failures": {},
    "failing": []
   }
