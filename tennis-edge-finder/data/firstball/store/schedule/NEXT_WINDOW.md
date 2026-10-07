@@ -1,24 +1,22 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 08:18Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 08:29Z)
 
-* Earliest credible first ball: **2026-10-07 08:18Z**
-* Recommended RUN TENNIS time: **2026-10-07 07:33Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-07 08:08Z**
-* Matches in window: 6
+* Earliest credible first ball: **2026-10-07 08:30Z**
+* Recommended RUN TENNIS time: **2026-10-07 07:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-07 08:20Z**
+* Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Rinky Hijikata vs Roman Safiullin | 2026-10-07 08:18Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 4 finished | MEDIUM |
-| Mattia Bellucci vs Yi Zhou | 2026-10-07 08:20Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Quentin Halys vs Coleman Wong | 2026-10-07 08:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Yibing Wu vs Michael Zheng | 2026-10-07 08:53Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Stadium Court in progress (set 2 of best-of-5) | MEDIUM |
-| Alina Charaeva vs Qinwen Zheng | 2026-10-07 08:53Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 2 of best-of-5) | MEDIUM |
+| Yibing Wu vs Michael Zheng | 2026-10-07 08:39Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Stadium Court in progress (set 3 of best-of-5) | MEDIUM |
+| Alina Charaeva vs Qinwen Zheng | 2026-10-07 09:04Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 2 of best-of-5) | MEDIUM |
 | Holger Rune vs Daniel Altmaier | 2026-10-07 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Mattia Bellucci vs Yi Zhou, Cameron Norrie vs Denis Shapovalov
 
-Published slate: `SL-20261007T075302Z-810fcbb5` built 2026-10-07 07:53Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
+Published slate: `SL-20261007T081605Z-bc4638a9` built 2026-10-07 08:16Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-07 11:30Z, run by 2026-10-07 10:45Z, 2 match(es)
 * later window 3: first ball 2026-10-08 04:00Z, run by 2026-10-08 03:15Z, 10 match(es)
