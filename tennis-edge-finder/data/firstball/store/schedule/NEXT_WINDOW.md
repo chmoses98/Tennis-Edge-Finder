@@ -1,9 +1,9 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 15:57Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 16:08Z)
 
 * Earliest credible first ball: **2026-10-08 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-08 03:15Z**
 * Final price/status check time: **2026-10-08 03:50Z**
-* Matches in window: 10
+* Matches in window: 11
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
@@ -12,6 +12,7 @@
 | Kimmer Coppejans vs Stefanos Tsitsipas | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Pavel Kotov vs Tallon Griekspoor | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Camilo Ugo Carabelli vs Ilia Simakin | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Ben Shelton vs Daniel Altmaier | 2026-10-08 05:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | Hubert Hurkacz vs James Duckworth | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Mariano Navone vs Pablo Carreno Busta | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Thiago Agustin Tirante vs Hamad Medjedovic | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
