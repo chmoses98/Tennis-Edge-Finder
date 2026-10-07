@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 13:40Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 13:53Z)
 
 * Earliest credible first ball: **2026-10-08 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-08 03:15Z**
@@ -18,11 +18,11 @@
 | Adolfo Daniel Vallejo vs Valentin Royer | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Bernard Tomic vs Matteo Arnaldi | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov, Ann Li vs Elina Svitolina
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
 
-Published slate: `SL-20261007T132234Z-8ed4188e` built 2026-10-07 13:22Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261007T133522Z-1ca79d7d` built 2026-10-07 13:35Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-08 06:00Z, run by 2026-10-08 05:15Z, 6 match(es)
 * later window 3: first ball 2026-10-08 08:30Z, run by 2026-10-08 07:45Z, 3 match(es)
