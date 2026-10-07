@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-07T03:25:28.586810+00:00",
+ "run_id": "20261007T032528Z",
+ "external_parse": {
+  "events": 334,
+  "markets": 3022,
+  "skipped_family": 434,
+  "skipped_period": 856,
+  "skipped_live": 18,
+  "one_sided": 73,
+  "rows": 4518,
+  "devigged": 1657
+ },
+ "smarkets_fetch": {
+  "events_seen": 140,
+  "events_priced": 80,
+  "markets": 871,
+  "markets_mapped": 343,
+  "contracts": 774,
+  "quoted_contracts": 774,
+  "raw": "data/research/external/raw/20261007T032528Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 343,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 64,
+  "rows": 710,
+  "two_sided": 703,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 483,
+ "external_mapping": {
+  "total": 324,
+  "by_status": {
+   "MAPPED": 252,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7778,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Xin Zhou": 1,
+   "Kim Dong Ju": 1,
+   "Darcy Nicholls": 1,
+   "Herman H\u00f8yeraal": 1,
+   "James McGloughlin": 1,
+   "Georgios Dimitriou": 1,
+   "Aleksandar Tolev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8785,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "James McGloughlin": 1,
+   "Jadon Price": 1,
+   "Zian Vanderstappen": 1,
+   "Natalie Kha": 1,
+   "Lujza Zimenova": 1,
+   "Raluca Georgiana Serban": 1,
+   "Maria Pankratova": 1,
+   "Nikol Ivanova": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 255,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
