@@ -1,22 +1,29 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 12:48Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 13:01Z)
 
-* Earliest credible first ball: **2026-10-07 12:55Z**
-* Recommended RUN TENNIS time: **2026-10-07 12:10Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-07 12:45Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-10-08 04:00Z**
+* Recommended RUN TENNIS time: **2026-10-08 03:15Z**
+* Final price/status check time: **2026-10-08 03:50Z**
+* Matches in window: 10
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Holger Rune vs Daniel Altmaier | 2026-10-07 12:55Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Ann Li vs Elina Svitolina | 2026-10-07 13:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Nuno Borges vs Facundo Diaz Acosta | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Jaume Munar vs Jenson Brooksby | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Kimmer Coppejans vs Stefanos Tsitsipas | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Pavel Kotov vs Tallon Griekspoor | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Camilo Ugo Carabelli vs Ilia Simakin | 2026-10-08 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Hubert Hurkacz vs James Duckworth | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Mariano Navone vs Pablo Carreno Busta | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Thiago Agustin Tirante vs Hamad Medjedovic | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Adolfo Daniel Vallejo vs Valentin Royer | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Bernard Tomic vs Matteo Arnaldi | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
+**3 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Daniel Altmaier, Cameron Norrie vs Denis Shapovalov, Ann Li vs Elina Svitolina
 
-Published slate: `SL-20261007T121603Z-e9f230c0` built 2026-10-07 12:16Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261007T124405Z-87435d54` built 2026-10-07 12:44Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
-* later window 2: first ball 2026-10-08 04:00Z, run by 2026-10-08 03:15Z, 10 match(es)
-* later window 3: first ball 2026-10-08 06:00Z, run by 2026-10-08 05:15Z, 6 match(es)
-* later window 4: first ball 2026-10-08 08:30Z, run by 2026-10-08 07:45Z, 3 match(es)
-* later window 5: first ball 2026-10-08 11:00Z, run by 2026-10-08 10:15Z, 2 match(es)
+* later window 2: first ball 2026-10-08 06:00Z, run by 2026-10-08 05:15Z, 6 match(es)
+* later window 3: first ball 2026-10-08 08:30Z, run by 2026-10-08 07:45Z, 3 match(es)
+* later window 4: first ball 2026-10-08 11:00Z, run by 2026-10-08 10:15Z, 2 match(es)
