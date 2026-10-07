@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-07T06:46:46.469305+00:00",
+ "run_id": "20261007T064646Z",
+ "external_parse": {
+  "events": 313,
+  "markets": 2592,
+  "skipped_family": 345,
+  "skipped_period": 733,
+  "skipped_live": 29,
+  "one_sided": 87,
+  "rows": 3820,
+  "devigged": 1425
+ },
+ "smarkets_fetch": {
+  "events_seen": 119,
+  "events_priced": 80,
+  "markets": 756,
+  "markets_mapped": 264,
+  "contracts": 598,
+  "quoted_contracts": 598,
+  "raw": "data/research/external/raw/20261007T064646Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 84,
+  "rows": 514,
+  "two_sided": 509,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1738,
+ "external_mapping": {
+  "total": 304,
+  "by_status": {
+   "MAPPED": 235,
+   "DOUBLES_UNSUPPORTED": 41,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.773,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Kim Dong Ju": 1,
+   "Darcy Nicholls": 1,
+   "Herman H\u00f8yeraal": 1,
+   "James McGloughlin": 1,
+   "Georgios Dimitriou": 1,
+   "Aleksandar Tolev": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 335,
+  "by_status": {
+   "MAPPED": 298,
+   "UNMAPPED_PLAYER": 35,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8896,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Aleksandar Tolev": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "matched_both_venues": 193,
+ "external_mapped_matches": 246,
+ "kalshi_mapped_matches": 298,
+ "model_witness_available": true,
+ "rows": 306,
+ "counts": {
+  "PASS": 296,
+  "tri:INSUFFICIENT_INPUTS": 229,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "WATCH": 10,
+  "tri:MARKETS_AGREE": 11,
+  "tri:KALSHI_LONE_OUTLIER": 15,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 40
+ }
+}
