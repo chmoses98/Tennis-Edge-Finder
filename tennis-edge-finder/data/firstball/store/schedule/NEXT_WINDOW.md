@@ -1,21 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 12:06Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 12:20Z)
 
-* Earliest credible first ball: **2026-10-07 12:07Z**
-* Recommended RUN TENNIS time: **2026-10-07 11:22Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-07 11:57Z**
-* Matches in window: 3
+* Earliest credible first ball: **2026-10-07 12:25Z**
+* Recommended RUN TENNIS time: **2026-10-07 11:40Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-07 12:15Z**
+* Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Arthur Fery vs Marin Cilic | 2026-10-07 12:07Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Stadium Court finished | MEDIUM |
-| Holger Rune vs Daniel Altmaier | 2026-10-07 12:10Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Ann Li vs Elina Svitolina | 2026-10-07 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Holger Rune vs Daniel Altmaier | 2026-10-07 12:25Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Ann Li vs Elina Svitolina | 2026-10-07 12:40Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
 
-Published slate: `SL-20261007T115143Z-50e70bac` built 2026-10-07 11:51Z -- current
+Published slate: `SL-20261007T115359Z-7c8635b8` built 2026-10-07 11:53Z -- current
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-08 04:00Z, run by 2026-10-08 03:15Z, 10 match(es)
 * later window 3: first ball 2026-10-08 06:00Z, run by 2026-10-08 05:15Z, 6 match(es)
