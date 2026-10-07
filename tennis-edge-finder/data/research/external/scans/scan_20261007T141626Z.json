@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-07T14:16:26.037767+00:00",
+ "run_id": "20261007T141626Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1009,
+  "skipped_family": 256,
+  "skipped_period": 280,
+  "skipped_live": 56,
+  "one_sided": 29,
+  "rows": 1456,
+  "devigged": 444
+ },
+ "smarkets_fetch": {
+  "events_seen": 114,
+  "events_priced": 80,
+  "markets": 763,
+  "markets_mapped": 342,
+  "contracts": 738,
+  "quoted_contracts": 738,
+  "raw": "data/research/external/raw/20261007T141626Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 342,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 705,
+  "two_sided": 702,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 480,
+ "external_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 100,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7463,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "James Newton": 1,
+   "Aleksandar Tolev": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9035,
+  "top_refusal_subjects": {
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Leandro Zgraggen": 1,
+   "Varvara Rubtsova": 1,
+   "Anne Christine Lutkemeyer": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 124,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 41,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
