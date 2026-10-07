@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-07T16:36:22.466088+00:00",
+ "run_id": "20261007T163622Z",
+ "external_parse": {
+  "events": 84,
+  "markets": 796,
+  "skipped_family": 228,
+  "skipped_period": 217,
+  "skipped_live": 24,
+  "one_sided": 12,
+  "rows": 1197,
+  "devigged": 338
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 822,
+  "markets_mapped": 367,
+  "contracts": 788,
+  "quoted_contracts": 788,
+  "raw": "data/research/external/raw/20261007T163622Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 367,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 747,
+  "two_sided": 747,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 351,
+ "external_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Jose David Segovia Perez": 1,
+   "Aleksandar Tolev": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Natalie Kha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Giorgia Pedone": 1,
+   "Natalie Kha": 1,
+   "Anne Christine Lutkemeyer": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 35,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
