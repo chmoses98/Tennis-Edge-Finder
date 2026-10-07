@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-07T13:56:19.696650+00:00",
+ "run_id": "20261007T135619Z",
+ "external_parse": {
+  "events": 149,
+  "markets": 1091,
+  "skipped_family": 264,
+  "skipped_period": 305,
+  "skipped_live": 55,
+  "one_sided": 28,
+  "rows": 1586,
+  "devigged": 493
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 726,
+  "markets_mapped": 335,
+  "contracts": 724,
+  "quoted_contracts": 724,
+  "raw": "data/research/external/raw/20261007T135619Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 335,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 683,
+  "two_sided": 681,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 602,
+ "external_mapping": {
+  "total": 141,
+  "by_status": {
+   "MAPPED": 104,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7376,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "James Newton": 1,
+   "Aleksandar Tolev": 1,
+   "Leandro Zgraggen": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9107,
+  "top_refusal_subjects": {
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Leandro Zgraggen": 1,
+   "Natalie Kha": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 102,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
