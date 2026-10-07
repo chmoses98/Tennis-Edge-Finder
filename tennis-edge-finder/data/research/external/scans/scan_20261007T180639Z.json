@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-07T18:06:39.560777+00:00",
+ "run_id": "20261007T180639Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 706,
+  "skipped_family": 220,
+  "skipped_period": 194,
+  "skipped_live": 26,
+  "one_sided": 10,
+  "rows": 1076,
+  "devigged": 282
+ },
+ "smarkets_fetch": {
+  "events_seen": 110,
+  "events_priced": 80,
+  "markets": 847,
+  "markets_mapped": 381,
+  "contracts": 814,
+  "quoted_contracts": 814,
+  "raw": "data/research/external/raw/20261007T180639Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 381,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 778,
+  "two_sided": 778,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 344,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7612,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Jose David Segovia Perez": 1,
+   "Darren Wei": 1,
+   "Aleksandar Tolev": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Natalie Kha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.9115,
+  "top_refusal_subjects": {
+   "Bogdan Seleznev": 1,
+   "Sasikumar Mukund": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "Maria Pankratova": 1,
+   "Varvara Rubtsova": 1,
+   "Natalie Kha": 1,
+   "Anne Christine Lutkemeyer": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 84,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 21,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
