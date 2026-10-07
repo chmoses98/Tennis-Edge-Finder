@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-07T08:05:40.180672+00:00",
+ "run_id": "20261007T080540Z",
+ "external_parse": {
+  "events": 306,
+  "markets": 2351,
+  "skipped_family": 336,
+  "skipped_period": 666,
+  "skipped_live": 56,
+  "one_sided": 60,
+  "rows": 3511,
+  "devigged": 1284
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 879,
+  "markets_mapped": 321,
+  "contracts": 720,
+  "quoted_contracts": 712,
+  "raw": "data/research/external/raw/20261007T080540Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 321,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 97,
+  "rows": 623,
+  "two_sided": 619,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 791,
+ "external_mapping": {
+  "total": 298,
+  "by_status": {
+   "MAPPED": 230,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.7718,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Jadon Price": 1,
+   "James McGloughlin": 1,
+   "Georgios Dimitriou": 1,
+   "Zian Vanderstappen": 1,
+   "Aleksandar Tolev": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 200,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.87,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Aleksandar Tolev": 1,
+   "Nazim Makhlouf": 1,
+   "Georgios Dimitriou": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "James McGloughlin": 1,
+   "Jadon Price": 1
+  }
+ },
+ "matched_both_venues": 121,
+ "external_mapped_matches": 242,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 146,
+ "counts": {
+  "PASS": 143,
+  "tri:INSUFFICIENT_INPUTS": 94,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 48
+ }
+}
