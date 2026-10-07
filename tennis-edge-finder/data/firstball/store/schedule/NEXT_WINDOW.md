@@ -1,16 +1,15 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 11:04Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 11:23Z)
 
-* Earliest credible first ball: **2026-10-07 11:05Z**
-* Recommended RUN TENNIS time: **2026-10-07 10:20Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-07 10:55Z**
-* Matches in window: 4
+* Earliest credible first ball: **2026-10-07 11:30Z**
+* Recommended RUN TENNIS time: **2026-10-07 10:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-07 11:20Z**
+* Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alina Charaeva vs Qinwen Zheng | 2026-10-07 11:05Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Arthur Fery vs Marin Cilic | 2026-10-07 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Holger Rune vs Daniel Altmaier | 2026-10-07 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Ann Li vs Elina Svitolina | 2026-10-07 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Arthur Fery vs Marin Cilic | 2026-10-07 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Holger Rune vs Daniel Altmaier | 2026-10-07 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Ann Li vs Elina Svitolina | 2026-10-07 12:24Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 1 of best-of-5) | MEDIUM |
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
 
