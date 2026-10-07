@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 02:22Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 02:35Z)
 
 * Earliest credible first ball: **2026-10-07 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-07 03:15Z**
@@ -17,7 +17,7 @@
 
 **18 main-tour match(es) without a verified start status** (BET blocked until checked): Pavel Kotov vs Tallon Griekspoor, Camilo Ugo Carabelli vs Ilia Simakin, Kimmer Coppejans vs Stefanos Tsitsipas, Bernard Tomic vs Matteo Arnaldi, Juan Manuel Cerundolo vs Nicolas Mejia, Hubert Hurkacz vs James Duckworth, Jaume Munar vs Jenson Brooksby, Botic Van de Zandschulp vs Daniel Merida, Nuno Borges vs Facundo Diaz Acosta, Thiago Agustin Tirante vs Hamad Medjedovic, Fabian Marozsan vs Zachary Svajda, Luca Van Assche vs Yunchaokete Bu
 
-Published slate: `SL-20261007T014717Z-40855312` built 2026-10-07 01:47Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261007T021754Z-6f8c6323` built 2026-10-07 02:17Z -- current
 
 Dispatched this pass: none
 
