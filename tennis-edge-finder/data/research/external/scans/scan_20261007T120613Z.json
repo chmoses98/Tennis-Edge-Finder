@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-07T12:06:13.555448+00:00",
+ "run_id": "20261007T120613Z",
+ "external_parse": {
+  "events": 145,
+  "markets": 1739,
+  "skipped_family": 387,
+  "skipped_period": 519,
+  "skipped_live": 15,
+  "one_sided": 23,
+  "rows": 2751,
+  "devigged": 810
+ },
+ "smarkets_fetch": {
+  "events_seen": 121,
+  "events_priced": 80,
+  "markets": 824,
+  "markets_mapped": 347,
+  "contracts": 756,
+  "quoted_contracts": 756,
+  "raw": "data/research/external/raw/20261007T120613Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 347,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 59,
+  "rows": 697,
+  "two_sided": 688,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 492,
+ "external_mapping": {
+  "total": 135,
+  "by_status": {
+   "MAPPED": 108,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Dominic Stephan Stricker": 1,
+   "Connor Robb-Wilcox": 1,
+   "Kim Dong Ju": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Amy Stevens": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8921,
+  "top_refusal_subjects": {
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Aleksandar Tolev": 1,
+   "Robin Eldin": 1,
+   "Bogdan Seleznev": 1,
+   "Leandro Zgraggen": 1
+  }
+ },
+ "matched_both_venues": 11,
+ "external_mapped_matches": 129,
+ "kalshi_mapped_matches": 124,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 22,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
