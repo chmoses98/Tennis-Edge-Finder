@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-07T10:35:39.182396+00:00",
+ "run_id": "20261007T103539Z",
+ "external_parse": {
+  "events": 238,
+  "markets": 1724,
+  "skipped_family": 294,
+  "skipped_period": 506,
+  "skipped_live": 67,
+  "one_sided": 90,
+  "rows": 2489,
+  "devigged": 829
+ },
+ "smarkets_fetch": {
+  "events_seen": 123,
+  "events_priced": 80,
+  "markets": 927,
+  "markets_mapped": 374,
+  "contracts": 816,
+  "quoted_contracts": 816,
+  "raw": "data/research/external/raw/20261007T103539Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 374,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 52,
+  "rows": 764,
+  "two_sided": 759,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 746,
+ "external_mapping": {
+  "total": 230,
+  "by_status": {
+   "MAPPED": 179,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7783,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Georgios Dimitriou": 1,
+   "Nazim Makhlouf": 1,
+   "Leandro Zgraggen": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 200,
+  "by_status": {
+   "MAPPED": 182,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.91,
+  "top_refusal_subjects": {
+   "Elvin Egribel": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Aleksandar Tolev": 1,
+   "Robin Eldin": 1,
+   "Bogdan Seleznev": 1
+  }
+ },
+ "matched_both_venues": 108,
+ "external_mapped_matches": 188,
+ "kalshi_mapped_matches": 182,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 82,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 62
+ }
+}
