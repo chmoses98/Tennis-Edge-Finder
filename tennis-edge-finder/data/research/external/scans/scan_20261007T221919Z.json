@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-07T22:19:19.866777+00:00",
+ "run_id": "20261007T221919Z",
+ "external_parse": {
+  "events": 47,
+  "markets": 630,
+  "skipped_family": 231,
+  "skipped_period": 168,
+  "skipped_live": 7,
+  "one_sided": 4,
+  "rows": 942,
+  "devigged": 227
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 951,
+  "markets_mapped": 418,
+  "contracts": 900,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261007T221919Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 418,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 64,
+  "rows": 836,
+  "two_sided": 830,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 484,
+ "external_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 29,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7838,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Aleksandar Tolev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9462,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Sasikumar Mukund": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Katerina Zajickova": 1,
+   "Giorgia Pedone": 1,
+   "Kateryna Diatlova": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 15,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 123,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 3
+ },
+ "skips": {}
+}
