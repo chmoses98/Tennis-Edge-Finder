@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-10-07T22:06:40.300997+00:00",
+ "run_id": "20261007T220640Z",
+ "external_parse": {
+  "events": 47,
+  "markets": 630,
+  "skipped_family": 231,
+  "skipped_period": 168,
+  "skipped_live": 7,
+  "one_sided": 4,
+  "rows": 942,
+  "devigged": 227
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 930,
+  "markets_mapped": 414,
+  "contracts": 888,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261007T220640Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 414,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 825,
+  "two_sided": 818,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 433,
+ "external_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 29,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7838,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Aleksandar Tolev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 81,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9753,
+  "top_refusal_subjects": {
+   "Kateryna Diatlova": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 12,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {}
+}
