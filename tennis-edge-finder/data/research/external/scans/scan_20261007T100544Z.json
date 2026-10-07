@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-07T10:05:44.332435+00:00",
+ "run_id": "20261007T100544Z",
+ "external_parse": {
+  "events": 266,
+  "markets": 1960,
+  "skipped_family": 322,
+  "skipped_period": 567,
+  "skipped_live": 66,
+  "one_sided": 107,
+  "rows": 2803,
+  "devigged": 959
+ },
+ "smarkets_fetch": {
+  "events_seen": 110,
+  "events_priced": 80,
+  "markets": 907,
+  "markets_mapped": 378,
+  "contracts": 834,
+  "quoted_contracts": 834,
+  "raw": "data/research/external/raw/20261007T100544Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 378,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 78,
+  "rows": 756,
+  "two_sided": 750,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 702,
+ "external_mapping": {
+  "total": 258,
+  "by_status": {
+   "MAPPED": 200,
+   "UNMAPPED_PLAYER": 23,
+   "DOUBLES_UNSUPPORTED": 34,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7752,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Aleksandar Tolev": 1,
+   "Lucas Goncalves Franca": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Georgios Dimitriou": 1,
+   "Nazim Makhlouf": 1,
+   "Leandro Zgraggen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 206,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.9272,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Aleksandar Tolev": 1,
+   "Robin Eldin": 1,
+   "Leandro Zgraggen": 1,
+   "Nazim Makhlouf": 1,
+   "Georgios Dimitriou": 1,
+   "LUCAS GONCALVES FRANCA": 1
+  }
+ },
+ "matched_both_venues": 122,
+ "external_mapped_matches": 210,
+ "kalshi_mapped_matches": 191,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 104,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 67
+ }
+}
