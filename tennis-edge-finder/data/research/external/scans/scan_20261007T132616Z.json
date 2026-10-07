@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-07T13:26:16.279238+00:00",
+ "run_id": "20261007T132616Z",
+ "external_parse": {
+  "events": 167,
+  "markets": 1199,
+  "skipped_family": 276,
+  "skipped_period": 341,
+  "skipped_live": 60,
+  "one_sided": 48,
+  "rows": 1710,
+  "devigged": 531
+ },
+ "smarkets_fetch": {
+  "events_seen": 119,
+  "events_priced": 80,
+  "markets": 801,
+  "markets_mapped": 343,
+  "contracts": 746,
+  "quoted_contracts": 746,
+  "raw": "data/research/external/raw/20261007T132616Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 343,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 58,
+  "rows": 688,
+  "two_sided": 675,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 537,
+ "external_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 118,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7421,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "James Newton": 1,
+   "Leandro Zgraggen": 1,
+   "Vito Dell'elba": 1,
+   "Aleksandar Tolev": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.931,
+  "top_refusal_subjects": {
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Leandro Zgraggen": 1,
+   "Lujza Zimenova": 1,
+   "Gabriela Agra Amorim": 1
+  }
+ },
+ "matched_both_venues": 55,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 108,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
