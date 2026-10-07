@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-07T21:26:26.641058+00:00",
+ "run_id": "20261007T212626Z",
+ "external_parse": {
+  "events": 48,
+  "markets": 630,
+  "skipped_family": 231,
+  "skipped_period": 168,
+  "skipped_live": 8,
+  "one_sided": 4,
+  "rows": 942,
+  "devigged": 227
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 914,
+  "markets_mapped": 404,
+  "contracts": 868,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261007T212626Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 404,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 43,
+  "rows": 825,
+  "two_sided": 825,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 515,
+ "external_mapping": {
+  "total": 38,
+  "by_status": {
+   "MAPPED": 30,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7895,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9268,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Sasikumar Mukund": 1,
+   "Fernanda Rain": 1,
+   "Katerina Zajickova": 1,
+   "Baotong Xu": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 14,
+ "external_mapped_matches": 64,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
