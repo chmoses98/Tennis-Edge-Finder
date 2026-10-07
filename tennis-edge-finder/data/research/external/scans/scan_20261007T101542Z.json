@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-07T10:15:42.835200+00:00",
+ "run_id": "20261007T101542Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 1710,
+  "skipped_family": 277,
+  "skipped_period": 506,
+  "skipped_live": 68,
+  "one_sided": 100,
+  "rows": 2476,
+  "devigged": 823
+ },
+ "smarkets_fetch": {
+  "events_seen": 109,
+  "events_priced": 80,
+  "markets": 879,
+  "markets_mapped": 368,
+  "contracts": 806,
+  "quoted_contracts": 806,
+  "raw": "data/research/external/raw/20261007T101542Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 368,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 70,
+  "rows": 736,
+  "two_sided": 735,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 680,
+ "external_mapping": {
+  "total": 232,
+  "by_status": {
+   "MAPPED": 182,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7845,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Dominic Stephan Stricker": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Lucas Goncalves Franca": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Nazim Makhlouf": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Vito Dell'elba": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 186,
+  "by_status": {
+   "MAPPED": 170,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.914,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Aleksandar Tolev": 1,
+   "Bogdan Seleznev": 1,
+   "Nazim Makhlouf": 1,
+   "Georgios Dimitriou": 1
+  }
+ },
+ "matched_both_venues": 95,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 170,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 46,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 69
+ }
+}
