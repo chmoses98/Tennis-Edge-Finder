@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-07T12:36:10.965609+00:00",
+ "run_id": "20261007T123610Z",
+ "external_parse": {
+  "events": 189,
+  "markets": 1329,
+  "skipped_family": 282,
+  "skipped_period": 387,
+  "skipped_live": 68,
+  "one_sided": 57,
+  "rows": 1923,
+  "devigged": 601
+ },
+ "smarkets_fetch": {
+  "events_seen": 119,
+  "events_priced": 80,
+  "markets": 812,
+  "markets_mapped": 347,
+  "contracts": 754,
+  "quoted_contracts": 754,
+  "raw": "data/research/external/raw/20261007T123610Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 347,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 49,
+  "rows": 705,
+  "two_sided": 697,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 435,
+ "external_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 139,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.768,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "James Newton": 1,
+   "Aleksandar Tolev": 1,
+   "Leandro Zgraggen": 1,
+   "Robin Eldin": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Gabriela Agra Amorim": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9115,
+  "top_refusal_subjects": {
+   "Sasikumar Mukund": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Leandro Zgraggen": 1,
+   "Anne Christine Lutkemeyer": 1,
+   "Lujza Zimenova": 1,
+   "Gabriela Agra Amorim": 1,
+   "Sara Saad": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 155,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
