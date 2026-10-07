@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-07T21:16:32.312428+00:00",
+ "run_id": "20261007T211632Z",
+ "external_parse": {
+  "events": 53,
+  "markets": 631,
+  "skipped_family": 230,
+  "skipped_period": 169,
+  "skipped_live": 12,
+  "one_sided": 5,
+  "rows": 942,
+  "devigged": 227
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 910,
+  "markets_mapped": 403,
+  "contracts": 866,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261007T211632Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 403,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 45,
+  "rows": 821,
+  "two_sided": 821,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 594,
+ "external_mapping": {
+  "total": 43,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Vessa Turley": 1,
+   "Aleksandar Tolev": 1,
+   "Natalie Kha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.9143,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Kaan Isik Kosaner": 1,
+   "Bogdan Seleznev": 1,
+   "Sasikumar Mukund": 1,
+   "Fernanda Rain": 1,
+   "Katerina Zajickova": 1,
+   "Baotong Xu": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "matched_both_venues": 18,
+ "external_mapped_matches": 66,
+ "kalshi_mapped_matches": 128,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
