@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 04:37Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 04:50Z)
 
 * Earliest credible first ball: **2026-10-07 05:00Z**
 * Recommended RUN TENNIS time: **2026-10-07 04:15Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Iva Jovic vs Iga Swiatek | 2026-10-07 05:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Iva Jovic vs Iga Swiatek | 2026-10-07 05:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Yannick Hanfmann vs Kamil Majchrzak | 2026-10-07 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Zhizhen Zhang vs Tomas Machac | 2026-10-07 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Adrian Mannarino vs Nikoloz Basilashvili | 2026-10-07 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -18,7 +18,7 @@
 
 Published slate: `SL-20261007T041756Z-3ce8eb90` built 2026-10-07 04:17Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-07 07:00Z, run by 2026-10-07 06:15Z, 5 match(es)
 * later window 3: first ball 2026-10-07 10:00Z, run by 2026-10-07 09:15Z, 3 match(es)
