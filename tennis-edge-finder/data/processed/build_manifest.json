@@ -1,9 +1,9 @@
 {
- "built_at": "2026-10-07T11:40:38.024397+00:00",
+ "built_at": "2026-10-07T13:46:11.514976+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
-   "run": "20261006T185031Z",
+   "run": "20261007T115915Z",
    "files": {
     "atp_matches_1990.csv.gz": {
      "raw": 3681,
@@ -194,7 +194,7 @@
   },
   "sackmann_ATP_qual_chall": {
    "status": "OK",
-   "run": "20261006T185031Z",
+   "run": "20261007T115915Z",
    "files": {
     "atp_matches_qual_chall_1990.csv.gz": {
      "raw": 2233,
@@ -385,7 +385,7 @@
   },
   "sackmann_ATP_futures": {
    "status": "OK",
-   "run": "20261006T185031Z",
+   "run": "20261007T115915Z",
    "files": {
     "atp_matches_futures_1991.csv.gz": {
      "raw": 9059,
@@ -571,7 +571,7 @@
   },
   "sackmann_WTA_main": {
    "status": "OK",
-   "run": "20261006T185031Z",
+   "run": "20261007T115915Z",
    "files": {
     "wta_matches_1990.csv.gz": {
      "raw": 2728,
@@ -762,7 +762,7 @@
   },
   "sackmann_WTA_qual_itf": {
    "status": "OK",
-   "run": "20261006T185031Z",
+   "run": "20261007T115915Z",
    "files": {
     "wta_matches_qual_itf_1990.csv.gz": {
      "raw": 7763,
@@ -953,7 +953,7 @@
   },
   "tml_ATP_main": {
    "status": "OK",
-   "run": "20261006T185031Z",
+   "run": "20261007T115915Z",
    "files": {
     "1990.csv.gz": {
      "raw": 3683,
@@ -1144,7 +1144,7 @@
   },
   "tml_ATP_challenger": {
    "status": "OK",
-   "run": "20261006T185517Z",
+   "run": "20261007T120443Z",
    "files": {
     "2000_challenger.csv.gz": {
      "raw": 3534,
@@ -1285,7 +1285,7 @@
   },
   "tml_ATP_main_mirror": {
    "status": "OK",
-   "run": "20261006T185517Z",
+   "run": "20261007T120443Z",
    "files": {
     "2025.csv.gz": {
      "raw": 2944,
@@ -1301,22 +1301,22 @@
   },
   "espn_ATP": {
    "status": "OK",
-   "run": "20261006T185322Z",
+   "run": "20261007T120247Z",
    "files": {
     "espn_matches_ATP_2026.csv.gz": {
-     "raw": 2353,
-     "clean": 2301,
+     "raw": 2364,
+     "clean": 2312,
      "quarantine": 52
     }
    }
   },
   "espn_WTA": {
    "status": "OK",
-   "run": "20261006T185322Z",
+   "run": "20261007T120247Z",
    "files": {
     "espn_matches_WTA_2026.csv.gz": {
-     "raw": 3993,
-     "clean": 3913,
+     "raw": 4004,
+     "clean": 3924,
      "quarantine": 80
     }
    }
@@ -1432,18 +1432,18 @@
   "tml_ATP_main_mirror->sackmann_ATP_main": 897
  },
  "player_crosswalk": {
-  "foreign_players": 6192,
+  "foreign_players": 6193,
   "by_status": {
    "MAPPED": 5769,
    "NEAR_CANONICAL_MATCH": 187,
-   "MINTED_NEW_PLAYER": 99,
+   "MINTED_NEW_PLAYER": 100,
    "REVIEWED_ALIAS": 77,
    "AMBIGUOUS_NAME": 60
   },
-  "rows_total": 1545943,
-  "rows_canonical_id": 1541214,
-  "foreign_rows": 18413,
-  "foreign_rows_mapped": 13684
+  "rows_total": 1545965,
+  "rows_canonical_id": 1541236,
+  "foreign_rows": 18435,
+  "foreign_rows_mapped": 13706
  },
  "player_crosswalk_by_system": {
   "tml": {
@@ -1457,23 +1457,23 @@
    }
   },
   "espn": {
-   "foreign_players": 1140,
+   "foreign_players": 1141,
    "by_status": {
     "MAPPED": 1021,
     "REVIEWED_ALIAS": 43,
     "NEAR_CANONICAL_MATCH": 43,
-    "MINTED_NEW_PLAYER": 26,
+    "MINTED_NEW_PLAYER": 27,
     "AMBIGUOUS_NAME": 7
    }
   }
  },
- "rows": 1545943,
+ "rows": 1545965,
  "quarantine_rows": 14408,
  "by_tour_level": {
   "ATP|CHALLENGER": 200344,
   "ATP|GRAND_SLAM": 30690,
   "ATP|ITF": 518951,
-  "ATP|MASTERS_1000": 25169,
+  "ATP|MASTERS_1000": 25180,
   "ATP|OLYMPICS": 68,
   "ATP|TEAM": 11366,
   "ATP|TOUR_500_250": 84153,
@@ -1484,14 +1484,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 69531,
+  "WTA|TOUR_500_250": 69542,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
   "sackmann": 1527530,
   "tml": 14236,
-  "espn": 4177
+  "espn": 4199
  },
  "seasons": {
   "1990": 15735,
@@ -1530,7 +1530,7 @@
   "2023": 69011,
   "2024": 74973,
   "2025": 55503,
-  "2026": 29018
+  "2026": 29040
  },
- "matches_sha256": "c974974827615a5610576858a940142db4627a02eb5fa32ea67f5e4f1b712cdc"
+ "matches_sha256": "60e1c3a17be44ae0719b13748a6a50d92d28ca1620f6d6a5a09b8e0f5a484971"
 }
