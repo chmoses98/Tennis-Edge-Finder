@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-07T07:46:36.601676+00:00",
+ "run_id": "20261007T074636Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2380,
+  "skipped_family": 339,
+  "skipped_period": 676,
+  "skipped_live": 57,
+  "one_sided": 62,
+  "rows": 3554,
+  "devigged": 1297
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 838,
+  "markets_mapped": 303,
+  "contracts": 682,
+  "quoted_contracts": 682,
+  "raw": "data/research/external/raw/20261007T074636Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 303,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 89,
+  "rows": 593,
+  "two_sided": 587,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1713,
+ "external_mapping": {
+  "total": 302,
+  "by_status": {
+   "MAPPED": 232,
+   "DOUBLES_UNSUPPORTED": 42,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.7682,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Jadon Price": 1,
+   "James McGloughlin": 1,
+   "Georgios Dimitriou": 1,
+   "Zian Vanderstappen": 1,
+   "Aleksandar Tolev": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 329,
+  "by_status": {
+   "MAPPED": 293,
+   "UNMAPPED_PLAYER": 34,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8906,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Vito Dell'elba": 1,
+   "Bercel Sandor Takacs": 1,
+   "Kaan Isik Kosaner": 1,
+   "Aleksandar Tolev": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "matched_both_venues": 191,
+ "external_mapped_matches": 242,
+ "kalshi_mapped_matches": 293,
+ "model_witness_available": true,
+ "rows": 268,
+ "counts": {
+  "PASS": 265,
+  "tri:INSUFFICIENT_INPUTS": 201,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 10,
+  "SHADOW_BET": 1,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 57
+ }
+}
