@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 14:30Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 14:43Z)
 
 * Earliest credible first ball: **2026-10-08 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-08 03:15Z**
@@ -20,7 +20,7 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
 
-Published slate: `SL-20261007T140141Z-9e411deb` built 2026-10-07 14:01Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261007T142640Z-80ee5bbf` built 2026-10-07 14:26Z -- current
 
 Dispatched this pass: none
 
