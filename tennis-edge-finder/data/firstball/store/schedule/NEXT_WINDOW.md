@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 16:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-07 17:01Z)
 
 * Earliest credible first ball: **2026-10-08 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-08 03:15Z**
@@ -18,8 +18,6 @@
 | Thiago Agustin Tirante vs Hamad Medjedovic | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Adolfo Daniel Vallejo vs Valentin Royer | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Bernard Tomic vs Matteo Arnaldi | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Cameron Norrie vs Denis Shapovalov
 
 Published slate: `SL-20261007T142640Z-80ee5bbf` built 2026-10-07 14:26Z -- current
 
