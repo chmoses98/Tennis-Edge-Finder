@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-07T07:15:41.857657+00:00",
+ "run_id": "20261007T071541Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2540,
+  "skipped_family": 340,
+  "skipped_period": 718,
+  "skipped_live": 32,
+  "one_sided": 83,
+  "rows": 3751,
+  "devigged": 1396
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 815,
+  "markets_mapped": 292,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261007T071541Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 292,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 582,
+  "two_sided": 577,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 810,
+ "external_mapping": {
+  "total": 301,
+  "by_status": {
+   "MAPPED": 232,
+   "DOUBLES_UNSUPPORTED": 41,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.7708,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Dominic Stephan Stricker": 1,
+   "Noma Akugue Noha": 1,
+   "Kim Dong Ju": 1,
+   "Darcy Nicholls": 1,
+   "Herman H\u00f8yeraal": 1,
+   "James McGloughlin": 1,
+   "Georgios Dimitriou": 1,
+   "Aleksandar Tolev": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 224,
+  "by_status": {
+   "MAPPED": 203,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9062,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Elvin Egribel": 1,
+   "Vito Dell'elba": 1,
+   "Aleksandar Tolev": 1,
+   "Bogdan Seleznev": 1,
+   "Nazim Makhlouf": 1,
+   "James McGloughlin": 1,
+   "Jadon Price": 1,
+   "Zian Vanderstappen": 1,
+   "Darcy Nicholls": 1
+  }
+ },
+ "matched_both_venues": 119,
+ "external_mapped_matches": 242,
+ "kalshi_mapped_matches": 203,
+ "model_witness_available": true,
+ "rows": 172,
+ "counts": {
+  "PASS": 170,
+  "tri:INSUFFICIENT_INPUTS": 148,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:MARKETS_AGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
