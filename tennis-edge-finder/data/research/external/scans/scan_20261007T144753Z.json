@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-07T14:47:53.274705+00:00",
+ "run_id": "20261007T144753Z",
+ "external_parse": {
+  "events": 131,
+  "markets": 964,
+  "skipped_family": 247,
+  "skipped_period": 266,
+  "skipped_live": 51,
+  "one_sided": 21,
+  "rows": 1424,
+  "devigged": 430
+ },
+ "smarkets_fetch": {
+  "events_seen": 113,
+  "events_priced": 80,
+  "markets": 763,
+  "markets_mapped": 342,
+  "contracts": 740,
+  "quoted_contracts": 740,
+  "raw": "data/research/external/raw/20261007T144753Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 342,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 702,
+  "two_sided": 702,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1159,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 92,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.748,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "James Newton": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Bercel Sandor Takacs": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 147,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.932,
+  "top_refusal_subjects": {
+   "Sasikumar Mukund": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Yannick Baluska": 1,
+   "Tristan McCormick": 1,
+   "Kaan Isik Kosaner": 1,
+   "Varvara Rubtsova": 1,
+   "Natalie Kha": 1,
+   "Anne Christine Lutkemeyer": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 116,
+ "kalshi_mapped_matches": 137,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 51,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
