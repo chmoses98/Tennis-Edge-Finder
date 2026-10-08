@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-08 02:14Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-08 02:23Z)
 
 * Earliest credible first ball: **2026-10-08 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-08 03:15Z**
@@ -19,7 +19,7 @@
 | Adolfo Daniel Vallejo vs Valentin Royer | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Bernard Tomic vs Matteo Arnaldi | 2026-10-08 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261007T232911Z-2d892952` built 2026-10-07 23:29Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261008T021201Z-d647435d` built 2026-10-08 02:12Z -- current
 
 Dispatched this pass: none
 
