@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-08 15:20Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-08 15:36Z)
 
 * Earliest credible first ball: **2026-10-09 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-09 03:15Z**
@@ -16,7 +16,7 @@
 | Yannick Hanfmann vs Frances Tiafoe | 2026-10-09 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Alexander Zverev vs Yibing Wu | 2026-10-09 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**9 main-tour match(es) without a verified start status** (BET blocked until checked): Ignacio Buse vs Zizou Bergs, Yunchaokete Bu vs Casper Ruud, Botic Van de Zandschulp vs Alex Michelsen, Daniil Medvedev vs Jan-Lennard Struff, Tommy Paul vs Adolfo Daniel Vallejo, Learner Tien vs Zachary Svajda, Arthur Fils vs Pavel Kotov, Jiri Lehecka vs Nuno Borges, Luciano Darderi vs Stefanos Tsitsipas
+**10 main-tour match(es) without a verified start status** (BET blocked until checked): Ignacio Buse vs Zizou Bergs, Yunchaokete Bu vs Casper Ruud, Botic Van de Zandschulp vs Alex Michelsen, Daniil Medvedev vs Jan-Lennard Struff, Tommy Paul vs Adolfo Daniel Vallejo, Learner Tien vs Zachary Svajda, Arthur Fils vs Pavel Kotov, Jiri Lehecka vs Nuno Borges, Luciano Darderi vs Stefanos Tsitsipas, Dalibor Svrcina vs Tomas Martin Etcheverry
 
 Published slate: `SL-20261008T140923Z-f1a2e964` built 2026-10-08 14:09Z -- current
 
