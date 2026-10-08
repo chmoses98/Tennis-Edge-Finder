@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-08T00:47:13.032815+00:00",
+ "run_id": "20261008T004713Z",
+ "external_parse": {
+  "events": 249,
+  "markets": 2598,
+  "skipped_family": 436,
+  "skipped_period": 722,
+  "skipped_live": 8,
+  "one_sided": 72,
+  "rows": 3856,
+  "devigged": 1367
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 967,
+  "markets_mapped": 424,
+  "contracts": 912,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261008T004713Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 424,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 60,
+  "rows": 852,
+  "two_sided": 846,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 483,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 204,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8536,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Joel Josef Schwarzler": 1,
+   "Nicolas Calixto": 1,
+   "Connor Robb-Wilcox": 1,
+   "Kim Dong Ju": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Varvara Rubtsova": 1,
+   "Raluca Georgiana Serban": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8972,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Tristan McCormick": 1,
+   "Nazim Makhlouf": 1,
+   "Bogdan Seleznev": 1,
+   "Katerina Zajickova": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 216,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 110,
+  "tri:MARKETS_AGREE": 11,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "WATCH": 5,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
