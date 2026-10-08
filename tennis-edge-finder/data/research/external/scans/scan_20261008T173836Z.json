@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-08T17:38:36.367469+00:00",
+ "run_id": "20261008T173836Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1285,
+  "skipped_family": 316,
+  "skipped_period": 381,
+  "skipped_live": 23,
+  "one_sided": 13,
+  "rows": 2130,
+  "devigged": 575
+ },
+ "smarkets_fetch": {
+  "events_seen": 82,
+  "events_priced": 80,
+  "markets": 707,
+  "markets_mapped": 283,
+  "contracts": 642,
+  "quoted_contracts": 642,
+  "raw": "data/research/external/raw/20261008T173836Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 283,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 616,
+  "two_sided": 610,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 301,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 74,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6916,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Jose David Segovia Perez": 1,
+   "Connor Robb-Wilcox": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9254,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Fernanda Rain": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
