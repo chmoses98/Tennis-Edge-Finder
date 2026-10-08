@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-08T06:08:24.361009+00:00",
+ "run_id": "20261008T060824Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 2365,
+  "skipped_family": 377,
+  "skipped_period": 654,
+  "skipped_live": 15,
+  "one_sided": 76,
+  "rows": 3450,
+  "devigged": 1258
+ },
+ "smarkets_fetch": {
+  "events_seen": 110,
+  "events_priced": 80,
+  "markets": 816,
+  "markets_mapped": 333,
+  "contracts": 728,
+  "quoted_contracts": 728,
+  "raw": "data/research/external/raw/20261008T060824Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 333,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 691,
+  "two_sided": 685,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 738,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 196,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8201,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Joel Josef Schwarzler": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Tristan McCormick": 1,
+   "Raluca Georgiana Serban": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Pankratova": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.525,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9313,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Kaan Isik Kosaner": 1,
+   "Bogdan Seleznev": 1,
+   "Katerina Zajickova": 1,
+   "Baotong Xu": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "Kateryna Diatlova": 1,
+   "Maria Pankratova": 1
+  }
+ },
+ "matched_both_venues": 106,
+ "external_mapped_matches": 205,
+ "kalshi_mapped_matches": 149,
+ "model_witness_available": true,
+ "rows": 192,
+ "counts": {
+  "PASS": 186,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 122,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
