@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-08T22:59:00.051696+00:00",
+ "run_id": "20261008T225900Z",
+ "external_parse": {
+  "events": 164,
+  "markets": 1823,
+  "skipped_family": 362,
+  "skipped_period": 511,
+  "skipped_live": 6,
+  "one_sided": 9,
+  "rows": 2832,
+  "devigged": 941
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 775,
+  "markets_mapped": 302,
+  "contracts": 690,
+  "quoted_contracts": 690,
+  "raw": "data/research/external/raw/20261008T225900Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 302,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 659,
+  "two_sided": 654,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 269,
+ "external_mapping": {
+  "total": 154,
+  "by_status": {
+   "MAPPED": 120,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7792,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Blake Anderson": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9423,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Nazim Makhlouf": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 73,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
