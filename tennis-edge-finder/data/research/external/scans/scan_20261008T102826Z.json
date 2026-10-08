@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-08T10:28:26.461816+00:00",
+ "run_id": "20261008T102826Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1409,
+  "skipped_family": 277,
+  "skipped_period": 417,
+  "skipped_live": 60,
+  "one_sided": 61,
+  "rows": 2058,
+  "devigged": 654
+ },
+ "smarkets_fetch": {
+  "events_seen": 99,
+  "events_priced": 80,
+  "markets": 880,
+  "markets_mapped": 346,
+  "contracts": 776,
+  "quoted_contracts": 776,
+  "raw": "data/research/external/raw/20261008T102826Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 346,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 746,
+  "two_sided": 744,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 623,
+ "external_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 141,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8011,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kaan Isik Kosaner": 1,
+   "Tristan McCormick": 1,
+   "Raluca Georgiana Serban": 1,
+   "Caijsa Hennemann": 1,
+   "Katerina Zajickova": 1,
+   "Jinte de Boer": 1,
+   "Nastasja Mariana Schunk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 27,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 142,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.9161,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Bogdan Seleznev": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Fernanda Rain": 1,
+   "Katerina Zajickova": 1
+  }
+ },
+ "matched_both_venues": 99,
+ "external_mapped_matches": 151,
+ "kalshi_mapped_matches": 142,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 106,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 45
+ }
+}
