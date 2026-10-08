@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-08T02:58:03.434941+00:00",
+ "run_id": "20261008T025803Z",
+ "external_parse": {
+  "events": 261,
+  "markets": 2645,
+  "skipped_family": 442,
+  "skipped_period": 741,
+  "skipped_live": 12,
+  "one_sided": 79,
+  "rows": 3902,
+  "devigged": 1382
+ },
+ "smarkets_fetch": {
+  "events_seen": 114,
+  "events_priced": 80,
+  "markets": 939,
+  "markets_mapped": 411,
+  "contracts": 884,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261008T025803Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 411,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 842,
+  "two_sided": 838,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1475,
+ "external_mapping": {
+  "total": 251,
+  "by_status": {
+   "MAPPED": 212,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8446,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Joel Josef Schwarzler": 1,
+   "Kim Dong Ju": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Tristan McCormick": 1,
+   "Varvara Rubtsova": 1,
+   "Raluca Georgiana Serban": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 249,
+  "by_status": {
+   "MAPPED": 229,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9197,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Tristan McCormick": 1,
+   "Aleksandar Tolev": 1,
+   "Nazim Makhlouf": 1,
+   "Kaan Isik Kosaner": 1,
+   "Bogdan Seleznev": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 169,
+ "external_mapped_matches": 221,
+ "kalshi_mapped_matches": 229,
+ "model_witness_available": true,
+ "rows": 314,
+ "counts": {
+  "PASS": 310,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 14,
+  "tri:INSUFFICIENT_INPUTS": 236,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
