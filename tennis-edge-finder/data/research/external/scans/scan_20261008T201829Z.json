@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-08T20:18:29.429477+00:00",
+ "run_id": "20261008T201829Z",
+ "external_parse": {
+  "events": 126,
+  "markets": 1445,
+  "skipped_family": 339,
+  "skipped_period": 421,
+  "skipped_live": 14,
+  "one_sided": 9,
+  "rows": 2303,
+  "devigged": 675
+ },
+ "smarkets_fetch": {
+  "events_seen": 83,
+  "events_priced": 80,
+  "markets": 707,
+  "markets_mapped": 287,
+  "contracts": 644,
+  "quoted_contracts": 644,
+  "raw": "data/research/external/raw/20261008T201829Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 619,
+  "two_sided": 613,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 387,
+ "external_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 84,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7179,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Jose David Segovia Perez": 1,
+   "Connor Robb-Wilcox": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 22,
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9359,
+  "top_refusal_subjects": {
+   "Nazim Makhlouf": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Maria Valentina Pop": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 72,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
