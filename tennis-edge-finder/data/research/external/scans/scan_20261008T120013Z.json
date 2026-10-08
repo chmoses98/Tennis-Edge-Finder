@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-08T12:00:13.161822+00:00",
+ "run_id": "20261008T120013Z",
+ "external_parse": {
+  "events": 189,
+  "markets": 1534,
+  "skipped_family": 319,
+  "skipped_period": 440,
+  "skipped_live": 56,
+  "one_sided": 65,
+  "rows": 2372,
+  "devigged": 710
+ },
+ "smarkets_fetch": {
+  "events_seen": 95,
+  "events_priced": 80,
+  "markets": 757,
+  "markets_mapped": 318,
+  "contracts": 720,
+  "quoted_contracts": 720,
+  "raw": "data/research/external/raw/20261008T120013Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 318,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 685,
+  "two_sided": 684,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1309,
+ "external_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 131,
+   "DOUBLES_UNSUPPORTED": 42,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7238,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Nazim Makhlouf": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Alex Hernandez": 1,
+   "Raluca Georgiana Serban": 1,
+   "Katerina Zajickova": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9209,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Tristan McCormick": 1,
+   "Aleksandar Tolev": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Fernanda Rain": 1,
+   "Katerina Zajickova": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 128,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 108,
+  "tri:MARKETS_AGREE": 18,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 42
+ }
+}
