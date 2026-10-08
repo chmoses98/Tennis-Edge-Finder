@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-08T09:08:34.238819+00:00",
+ "run_id": "20261008T090834Z",
+ "external_parse": {
+  "events": 232,
+  "markets": 1874,
+  "skipped_family": 323,
+  "skipped_period": 547,
+  "skipped_live": 62,
+  "one_sided": 65,
+  "rows": 2782,
+  "devigged": 939
+ },
+ "smarkets_fetch": {
+  "events_seen": 104,
+  "events_priced": 80,
+  "markets": 938,
+  "markets_mapped": 370,
+  "contracts": 824,
+  "quoted_contracts": 824,
+  "raw": "data/research/external/raw/20261008T090834Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 792,
+  "two_sided": 781,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 966,
+ "external_mapping": {
+  "total": 224,
+  "by_status": {
+   "MAPPED": 181,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.808,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Joel Josef Schwarzler": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Tristan McCormick": 1,
+   "Raluca Georgiana Serban": 1,
+   "Jinte de Boer": 1,
+   "Maria Pankratova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 211,
+  "by_status": {
+   "MAPPED": 193,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9147,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Tristan McCormick": 1,
+   "Aleksandar Tolev": 1,
+   "Nazim Makhlouf": 1,
+   "Kaan Isik Kosaner": 1,
+   "Bogdan Seleznev": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 156,
+ "external_mapped_matches": 188,
+ "kalshi_mapped_matches": 193,
+ "model_witness_available": true,
+ "rows": 218,
+ "counts": {
+  "PASS": 213,
+  "tri:MARKETS_AGREE": 17,
+  "tri:INSUFFICIENT_INPUTS": 126,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 4,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 47
+ }
+}
