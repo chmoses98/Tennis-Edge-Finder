@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-08T13:59:54.923800+00:00",
+ "run_id": "20261008T135954Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1310,
+  "skipped_family": 291,
+  "skipped_period": 374,
+  "skipped_live": 34,
+  "one_sided": 40,
+  "rows": 2068,
+  "devigged": 605
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 688,
+  "markets_mapped": 288,
+  "contracts": 660,
+  "quoted_contracts": 660,
+  "raw": "data/research/external/raw/20261008T135954Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 288,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 622,
+  "two_sided": 617,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1223,
+ "external_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 92,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6866,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jose David Segovia Perez": 1,
+   "Simon Myslivec": 1,
+   "Tristan McCormick": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Alex Hernandez": 1,
+   "Katerina Zajickova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9057,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Tristan McCormick": 1,
+   "Aleksandar Tolev": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Fernanda Rain": 1,
+   "Katerina Zajickova": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 85,
+  "tri:MARKETS_AGREE": 11,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
