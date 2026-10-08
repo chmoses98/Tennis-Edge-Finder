@@ -1,0 +1,64 @@
+{
+ "run_id": "20261008T040250Z",
+ "started_at": "2026-10-08T04:02:50.470222+00:00",
+ "passes": 4,
+ "requests": 8,
+ "observations": 260,
+ "truths_written": 6,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPSETWINNER-26OCT07KOTGRI-2": {
+   "confidence": "B",
+   "bracket_s": 293.879301,
+   "first_ball": "2026-10-08T04:09:16.046648+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26OCT07KOTGRI-1": {
+   "confidence": "B",
+   "bracket_s": 293.879301,
+   "first_ball": "2026-10-08T04:09:16.046648+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26OCT07KOTGRI": {
+   "confidence": "B",
+   "bracket_s": 293.879301,
+   "first_ball": "2026-10-08T04:09:16.046648+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26OCT07KOTGRI": {
+   "confidence": "B",
+   "bracket_s": 293.879301,
+   "first_ball": "2026-10-08T04:09:16.046648+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26OCT06BORDIA": {
+   "confidence": "B",
+   "bracket_s": 293.879301,
+   "first_ball": "2026-10-08T04:09:16.046648+00:00",
+   "no_play": false
+  },
+  "KXATPMATCH-26OCT07KOTGRI": {
+   "confidence": "B",
+   "bracket_s": 293.879301,
+   "first_ball": "2026-10-08T04:09:16.046648+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 8
+ },
+ "watchlist": {
+  "capture_board_markets": 1467,
+  "events_only_on_capture_board": 350,
+  "selected_from_capture_board": 345
+ },
+ "mapping": {
+  "MATCHED": 260,
+  "UNMATCHED": 1512
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-08T04:13:26.443476+00:00"
+}
