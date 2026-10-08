@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-08T17:58:41.279111+00:00",
+ "run_id": "20261008T175841Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1285,
+  "skipped_family": 316,
+  "skipped_period": 381,
+  "skipped_live": 23,
+  "one_sided": 13,
+  "rows": 2130,
+  "devigged": 575
+ },
+ "smarkets_fetch": {
+  "events_seen": 86,
+  "events_priced": 80,
+  "markets": 711,
+  "markets_mapped": 281,
+  "contracts": 636,
+  "quoted_contracts": 636,
+  "raw": "data/research/external/raw/20261008T175841Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 281,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 610,
+  "two_sided": 603,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 598,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 74,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6916,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Jose David Segovia Perez": 1,
+   "Connor Robb-Wilcox": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9143,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Nazim Makhlouf": 1,
+   "Aleksandar Tolev": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Maria Valentina Pop": 1,
+   "Fernanda Rain": 1,
+   "Sofia Nahiara Nappi": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
