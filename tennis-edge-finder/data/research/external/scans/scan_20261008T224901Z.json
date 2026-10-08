@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-08T22:49:01.762855+00:00",
+ "run_id": "20261008T224901Z",
+ "external_parse": {
+  "events": 170,
+  "markets": 1824,
+  "skipped_family": 360,
+  "skipped_period": 511,
+  "skipped_live": 12,
+  "one_sided": 8,
+  "rows": 2837,
+  "devigged": 944
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 775,
+  "markets_mapped": 302,
+  "contracts": 690,
+  "quoted_contracts": 690,
+  "raw": "data/research/external/raw/20261008T224901Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 302,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 656,
+  "two_sided": 651,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 255,
+ "external_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 122,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Jose David Segovia Perez": 1,
+   "Blake Anderson": 1,
+   "Alex Hernandez": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Rosario Jurado": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8462,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Nazim Makhlouf": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Alex Hernandez": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Rosario Jurado": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 138,
+ "kalshi_mapped_matches": 44,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 58,
+  "tri:MARKETS_AGREE": 3,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 32
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
