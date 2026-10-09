@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-09T18:50:58.959344+00:00",
+ "run_id": "20261009T185058Z",
+ "external_parse": {
+  "events": 84,
+  "markets": 994,
+  "skipped_family": 279,
+  "skipped_period": 270,
+  "skipped_live": 11,
+  "one_sided": 12,
+  "rows": 1750,
+  "devigged": 433
+ },
+ "smarkets_fetch": {
+  "events_seen": 68,
+  "events_priced": 68,
+  "markets": 1149,
+  "markets_mapped": 303,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20261009T185058Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 303,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 652,
+  "two_sided": 651,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 415,
+ "external_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7297,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Darren Wei": 1,
+   "Alex Hernandez": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9524,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Alex Hernandez": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 63,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
