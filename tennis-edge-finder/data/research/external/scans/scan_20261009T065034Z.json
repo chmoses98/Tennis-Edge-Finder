@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-09T06:50:34.163866+00:00",
+ "run_id": "20261009T065034Z",
+ "external_parse": {
+  "events": 170,
+  "markets": 1819,
+  "skipped_family": 320,
+  "skipped_period": 518,
+  "skipped_live": 7,
+  "one_sided": 10,
+  "rows": 2813,
+  "devigged": 970
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 775,
+  "markets_mapped": 321,
+  "contracts": 714,
+  "quoted_contracts": 714,
+  "raw": "data/research/external/raw/20261009T065034Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 321,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 679,
+  "two_sided": 675,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 395,
+ "external_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 122,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7578,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Alex Hernandez": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6438,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9848,
+  "top_refusal_subjects": {
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 127,
+ "kalshi_mapped_matches": 65,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 80,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:INSUFFICIENT_INPUTS": 41,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
