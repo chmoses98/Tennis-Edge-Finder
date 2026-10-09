@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-09T15:30:55.737255+00:00",
+ "run_id": "20261009T153055Z",
+ "external_parse": {
+  "events": 100,
+  "markets": 1075,
+  "skipped_family": 265,
+  "skipped_period": 279,
+  "skipped_live": 13,
+  "one_sided": 21,
+  "rows": 1816,
+  "devigged": 510
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 653,
+  "markets_mapped": 287,
+  "contracts": 638,
+  "quoted_contracts": 638,
+  "raw": "data/research/external/raw/20261009T153055Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 623,
+  "two_sided": 619,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 311,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "James Newton": 1,
+   "Alex Hernandez": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7391,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9298,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Alex Hernandez": 1,
+   "Fernanda Rain": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 76,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
