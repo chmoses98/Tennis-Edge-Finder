@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 10:46Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 11:02Z)
 
 * Earliest credible first ball: **2026-10-09 11:30Z**
 * Recommended RUN TENNIS time: **2026-10-09 10:45Z**  (OVERDUE: run now)
@@ -11,9 +11,9 @@
 
 **3 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Arthur Gea, Alexander Bublik vs Tomas Machac, Elise Mertens vs Iga Swiatek
 
-Published slate: `SL-20261009T102317Z-77c7e4dc` built 2026-10-09 10:23Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-09T11:30:00+00:00, slate built 2026-10-09T10:23:17.319039+00:00
+Published slate: `SL-20261009T104301Z-84e12102` built 2026-10-09 10:43Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-09T11:30:00+00:00, slate built 2026-10-09T10:43:01.424022+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-10 03:00Z, run by 2026-10-10 02:15Z, 12 match(es)
 * later window 3: first ball 2026-10-10 05:00Z, run by 2026-10-10 04:15Z, 9 match(es)
