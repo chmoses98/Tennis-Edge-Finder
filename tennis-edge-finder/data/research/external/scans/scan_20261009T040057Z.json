@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-09T04:00:57.565607+00:00",
+ "run_id": "20261009T040057Z",
+ "external_parse": {
+  "events": 181,
+  "markets": 1929,
+  "skipped_family": 350,
+  "skipped_period": 549,
+  "skipped_live": 10,
+  "one_sided": 10,
+  "rows": 3010,
+  "devigged": 1020
+ },
+ "smarkets_fetch": {
+  "events_seen": 87,
+  "events_priced": 80,
+  "markets": 754,
+  "markets_mapped": 306,
+  "contracts": 696,
+  "quoted_contracts": 696,
+  "raw": "data/research/external/raw/20261009T040057Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 665,
+  "two_sided": 662,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 422,
+ "external_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 130,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7602,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Alex Hernandez": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9077,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1,
+   "Nazim Makhlouf": 1,
+   "Fernanda Rain": 1,
+   "Bella Bergqvist Larsson": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 82,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
