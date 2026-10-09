@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-10-09T08:47:44.946832+00:00",
+ "generated_at": "2026-10-09T08:48:08.586150+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 210,
@@ -12,7 +12,7 @@
   "NO_PLAY": 1,
   "START_IMMINENT": 2
  },
- "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+ "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-10-09T09:00:00+00:00",
   "recommended_run_tennis_time": "2026-10-09T08:15:00+00:00",
@@ -391,15 +391,13 @@
   ],
   "slate_id": "SL-20261009T082843Z-7bcb233a",
   "slate_built_at": "2026-10-09T08:28:43.854054+00:00",
-  "checked_at": "2026-10-09T08:47:44.946832+00:00"
+  "checked_at": "2026-10-09T08:48:08.586150+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_final",
-   "window": "20261009T0900Z",
-   "reason": "final status/price check for window at 2026-10-09T09:00:00+00:00",
-   "at": "2026-10-09T08:47:44.946832+00:00",
-   "earliest_credible_first_ball": "2026-10-09T09:00:00+00:00",
+   "kind": "slate_stale_refresh",
+   "at": "2026-10-09T08:48:08.586150+00:00",
+   "reason": "published slate SL-20261009T082843Z-7bcb233a is stale: 2 match(es) changed status/start since it was built",
    "dispatched": true,
    "http": 204
   }
@@ -407,7 +405,7 @@
  "statuses": {
   "KXATPMATCH-26OCT10SHEGEA": {
    "match_id": "ATP:26OCT10SHEGEA:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -436,7 +434,7 @@
   },
   "KXATPMATCH-26OCT09DESAK": {
    "match_id": "ATP:26OCT09DESAK:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T05:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -469,7 +467,7 @@
   },
   "KXATPMATCH-26OCT10TIRJOD": {
    "match_id": "ATP:26OCT10TIRJOD:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -507,7 +505,7 @@
   },
   "KXATPMATCH-26OCT10UGOAUG": {
    "match_id": "ATP:26OCT10UGOAUG:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -545,7 +543,7 @@
   },
   "KXATPMATCH-26OCT10TABCAR": {
    "match_id": "ATP:26OCT10TABCAR:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -595,7 +593,7 @@
   },
   "KXATPMATCH-26OCT10ARNFRI": {
    "match_id": "ATP:26OCT10ARNFRI:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -645,7 +643,7 @@
   },
   "KXATPMATCH-26OCT10CERALC": {
    "match_id": "ATP:26OCT10CERALC:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -695,7 +693,7 @@
   },
   "KXATPMATCH-26OCT10BAEVAC": {
    "match_id": "ATP:26OCT10BAEVAC:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -745,7 +743,7 @@
   },
   "KXATPMATCH-26OCT08SVRETC": {
    "match_id": "ATP:26OCT08SVRETC:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -795,7 +793,7 @@
   },
   "KXATPMATCH-26OCT08BUSBER": {
    "match_id": "ATP:26OCT08BUSBER:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -845,7 +843,7 @@
   },
   "KXATPMATCH-26OCT08YUNRUU": {
    "match_id": "ATP:26OCT08YUNRUU:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -895,7 +893,7 @@
   },
   "KXATPMATCH-26OCT08VANMIC": {
    "match_id": "ATP:26OCT08VANMIC:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -945,7 +943,7 @@
   },
   "KXATPMATCH-26OCT08MEDSTR": {
    "match_id": "ATP:26OCT08MEDSTR:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -983,7 +981,7 @@
   },
   "KXATPMATCH-26OCT08PAUVAL": {
    "match_id": "ATP:26OCT08PAUVAL:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1033,7 +1031,7 @@
   },
   "KXATPMATCH-26OCT08TIESVA": {
    "match_id": "ATP:26OCT08TIESVA:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1083,7 +1081,7 @@
   },
   "KXATPMATCH-26OCT08DJOHUR": {
    "match_id": "ATP:26OCT08DJOHUR:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1139,7 +1137,7 @@
   },
   "KXATPMATCH-26OCT09FILKOT": {
    "match_id": "ATP:26OCT09FILKOT:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1189,7 +1187,7 @@
   },
   "KXATPMATCH-26OCT08LEHBOR": {
    "match_id": "ATP:26OCT08LEHBOR:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1227,7 +1225,7 @@
   },
   "KXATPMATCH-26OCT08DAVBRO": {
    "match_id": "ATP:26OCT08DAVBRO:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1254,7 +1252,7 @@
   },
   "KXATPMATCH-26OCT09DARTSI": {
    "match_id": "ATP:26OCT09DARTSI:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1304,7 +1302,7 @@
   },
   "KXATPMATCH-26OCT09KHAFER": {
    "match_id": "ATP:26OCT09KHAFER:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1360,7 +1358,7 @@
   },
   "KXATPMATCH-26OCT09ZHOMUS": {
    "match_id": "ATP:26OCT09ZHOMUS:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1410,7 +1408,7 @@
   },
   "KXATPMATCH-26OCT09DEMOL": {
    "match_id": "ATP:26OCT09DEMOL:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1437,7 +1435,7 @@
   },
   "KXATPMATCH-26OCT09BUBMAC": {
    "match_id": "ATP:26OCT09BUBMAC:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1487,7 +1485,7 @@
   },
   "KXATPMATCH-26OCT09HALBLO": {
    "match_id": "ATP:26OCT09HALBLO:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1514,7 +1512,7 @@
   },
   "KXATPMATCH-26OCT09KECMEN": {
    "match_id": "ATP:26OCT09KECMEN:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1569,7 +1567,7 @@
   },
   "KXATPMATCH-26OCT09CERSAF": {
    "match_id": "ATP:26OCT09CERSAF:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1625,7 +1623,7 @@
   },
   "KXATPMATCH-26OCT09HANTIA": {
    "match_id": "ATP:26OCT09HANTIA:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1652,7 +1650,7 @@
   },
   "KXWTAMATCH-26OCT10ANDBAR": {
    "match_id": "WTA:26OCT10ANDBAR:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-10T09:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -1685,7 +1683,7 @@
   },
   "KXWTAMATCH-26OCT09ZHESVI": {
    "match_id": "WTA:26OCT09ZHESVI:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T08:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -1712,7 +1710,7 @@
   },
   "KXWTAMATCH-26OCT07MERSWI": {
    "match_id": "WTA:26OCT07MERSWI:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-08T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -1772,7 +1770,7 @@
   },
   "KXWTACHALLENGERMATCH-26OCT09ANDBLI": {
    "match_id": "WTA:26OCT09ANDBLI:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T16:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -1822,7 +1820,7 @@
   },
   "KXWTACHALLENGERMATCH-26OCT09WALSAK": {
    "match_id": "WTA:26OCT09WALSAK:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -1872,7 +1870,7 @@
   },
   "KXWTACHALLENGERMATCH-26OCT09STEIAT": {
    "match_id": "WTA:26OCT09STEIAT:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T13:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -1922,7 +1920,7 @@
   },
   "KXWTACHALLENGERMATCH-26OCT09AKSCRA": {
    "match_id": "WTA:26OCT09AKSCRA:singles",
-   "evaluated_at": "2026-10-09T08:47:44.946832+00:00",
+   "evaluated_at": "2026-10-09T08:48:08.586150+00:00",
    "nominal_scheduled_start": "2026-10-09T12:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
