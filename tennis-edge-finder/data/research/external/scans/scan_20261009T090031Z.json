@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-09T09:00:31.232497+00:00",
+ "run_id": "20261009T090031Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1429,
+  "skipped_family": 263,
+  "skipped_period": 419,
+  "skipped_live": 33,
+  "one_sided": 18,
+  "rows": 2207,
+  "devigged": 728
+ },
+ "smarkets_fetch": {
+  "events_seen": 66,
+  "events_priced": 66,
+  "markets": 690,
+  "markets_mapped": 277,
+  "contracts": 628,
+  "quoted_contracts": 628,
+  "raw": "data/research/external/raw/20261009T090031Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 277,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 602,
+  "two_sided": 600,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 394,
+ "external_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 113,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7533,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Alex Hernandez": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6515,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9221,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Nazim Makhlouf": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Jialin Tian": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 30
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
