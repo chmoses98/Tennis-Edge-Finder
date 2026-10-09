@@ -1,19 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 11:02Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 11:18Z)
 
-* Earliest credible first ball: **2026-10-09 11:30Z**
-* Recommended RUN TENNIS time: **2026-10-09 10:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-09 11:20Z**
-* Matches in window: 1
+* Earliest credible first ball: **2026-10-09 11:40Z**
+* Recommended RUN TENNIS time: **2026-10-09 10:55Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-09 11:30Z**
+* Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Yi Zhou vs Lorenzo Musetti | 2026-10-09 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Alexander Bublik vs Tomas Machac | 2026-10-09 11:40Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Yi Zhou vs Lorenzo Musetti | 2026-10-09 11:40Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**3 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Arthur Gea, Alexander Bublik vs Tomas Machac, Elise Mertens vs Iga Swiatek
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Arthur Gea
 
-Published slate: `SL-20261009T104301Z-84e12102` built 2026-10-09 10:43Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-09T11:30:00+00:00, slate built 2026-10-09T10:43:01.424022+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261009T105524Z-124776ef` built 2026-10-09 10:55Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-10 03:00Z, run by 2026-10-10 02:15Z, 12 match(es)
 * later window 3: first ball 2026-10-10 05:00Z, run by 2026-10-10 04:15Z, 9 match(es)
