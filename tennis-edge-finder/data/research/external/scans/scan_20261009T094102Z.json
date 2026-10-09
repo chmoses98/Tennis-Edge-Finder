@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-09T09:41:02.272773+00:00",
+ "run_id": "20261009T094102Z",
+ "external_parse": {
+  "events": 145,
+  "markets": 1323,
+  "skipped_family": 253,
+  "skipped_period": 393,
+  "skipped_live": 30,
+  "one_sided": 30,
+  "rows": 2022,
+  "devigged": 647
+ },
+ "smarkets_fetch": {
+  "events_seen": 67,
+  "events_priced": 67,
+  "markets": 740,
+  "markets_mapped": 299,
+  "contracts": 678,
+  "quoted_contracts": 678,
+  "raw": "data/research/external/raw/20261009T094102Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 622,
+  "two_sided": 621,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 594,
+ "external_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 103,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7518,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Alex Hernandez": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 67,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 21,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6567,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9352,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Alex Hernandez": 1,
+   "Nazim Makhlouf": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Jialin Tian": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 71,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
