@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-09T18:01:06.959762+00:00",
+ "run_id": "20261009T180106Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 964,
+  "skipped_family": 253,
+  "skipped_period": 265,
+  "skipped_live": 16,
+  "one_sided": 12,
+  "rows": 1740,
+  "devigged": 434
+ },
+ "smarkets_fetch": {
+  "events_seen": 67,
+  "events_priced": 67,
+  "markets": 917,
+  "markets_mapped": 294,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20261009T180106Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 294,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 614,
+  "two_sided": 605,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 396,
+ "external_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Darren Wei": 1,
+   "Akira Roy": 1,
+   "Alex Hernandez": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7313,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9508,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Alex Hernandez": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 67,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
