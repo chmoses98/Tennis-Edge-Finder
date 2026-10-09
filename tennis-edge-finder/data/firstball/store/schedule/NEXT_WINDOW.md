@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 13:19Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 13:36Z)
 
 * Earliest credible first ball: **2026-10-10 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-10 02:15Z**
@@ -22,7 +22,7 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Arthur Gea
 
-Published slate: `SL-20261009T122834Z-e5172474` built 2026-10-09 12:28Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261009T131111Z-821aea3c` built 2026-10-09 13:11Z -- current
 
 Dispatched this pass: none
 
