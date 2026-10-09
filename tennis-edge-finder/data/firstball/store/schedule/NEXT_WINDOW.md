@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 03:20Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 03:37Z)
 
 * Earliest credible first ball: **2026-10-09 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-09 03:15Z**  (OVERDUE: run now)
@@ -18,7 +18,7 @@
 
 **10 main-tour match(es) without a verified start status** (BET blocked until checked): Dalibor Svrcina vs Tomas Martin Etcheverry, Ignacio Buse vs Zizou Bergs, Yunchaokete Bu vs Casper Ruud, Botic Van de Zandschulp vs Alex Michelsen, Daniil Medvedev vs Jan-Lennard Struff, Tommy Paul vs Adolfo Daniel Vallejo, Learner Tien vs Zachary Svajda, Arthur Fils vs Pavel Kotov, Jiri Lehecka vs Nuno Borges, Luciano Darderi vs Stefanos Tsitsipas
 
-Published slate: `SL-20261009T022051Z-0b9afbc7` built 2026-10-09 02:20Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-09T04:00:00+00:00, slate built 2026-10-09T02:20:51.398261+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261009T031219Z-53a7b154` built 2026-10-09 03:12Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-09T04:00:00+00:00, slate built 2026-10-09T03:12:19.705258+00:00
 
 Dispatched this pass: none
 
