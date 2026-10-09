@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-09T02:40:26.212958+00:00",
+ "run_id": "20261009T024026Z",
+ "external_parse": {
+  "events": 176,
+  "markets": 1928,
+  "skipped_family": 359,
+  "skipped_period": 558,
+  "skipped_live": 12,
+  "one_sided": 6,
+  "rows": 2841,
+  "devigged": 1004
+ },
+ "smarkets_fetch": {
+  "events_seen": 91,
+  "events_priced": 80,
+  "markets": 842,
+  "markets_mapped": 336,
+  "contracts": 762,
+  "quoted_contracts": 762,
+  "raw": "data/research/external/raw/20261009T024026Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 336,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 738,
+  "two_sided": 735,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 397,
+ "external_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 130,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7831,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9524,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Nazim Makhlouf": 1,
+   "Fernanda Rain": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 104,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
