@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-09T13:30:49.619995+00:00",
+ "run_id": "20261009T133049Z",
+ "external_parse": {
+  "events": 85,
+  "markets": 841,
+  "skipped_family": 160,
+  "skipped_period": 259,
+  "skipped_live": 14,
+  "one_sided": 11,
+  "rows": 1374,
+  "devigged": 411
+ },
+ "smarkets_fetch": {
+  "events_seen": 75,
+  "events_priced": 75,
+  "markets": 760,
+  "markets_mapped": 321,
+  "contracts": 718,
+  "quoted_contracts": 718,
+  "raw": "data/research/external/raw/20261009T133049Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 321,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 686,
+  "two_sided": 683,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 386,
+ "external_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6883,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guglielmo Verdese": 1,
+   "Madhav Binu": 1,
+   "Alex Hernandez": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 75,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 19,
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9474,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Fernanda Rain": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 24
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
