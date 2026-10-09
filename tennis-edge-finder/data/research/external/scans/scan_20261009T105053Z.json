@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-09T10:50:53.156786+00:00",
+ "run_id": "20261009T105053Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1153,
+  "skipped_family": 243,
+  "skipped_period": 344,
+  "skipped_live": 31,
+  "one_sided": 19,
+  "rows": 1796,
+  "devigged": 547
+ },
+ "smarkets_fetch": {
+  "events_seen": 66,
+  "events_priced": 66,
+  "markets": 704,
+  "markets_mapped": 295,
+  "contracts": 670,
+  "quoted_contracts": 670,
+  "raw": "data/research/external/raw/20261009T105053Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 295,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 653,
+  "two_sided": 650,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 503,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 85,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7328,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alex Hernandez": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.6515,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 85,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9659,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Nazim Makhlouf": 1,
+   "Jialin Tian": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 85,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
