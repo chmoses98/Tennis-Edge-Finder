@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-09T07:50:32.895722+00:00",
+ "run_id": "20261009T075032Z",
+ "external_parse": {
+  "events": 172,
+  "markets": 1701,
+  "skipped_family": 287,
+  "skipped_period": 492,
+  "skipped_live": 19,
+  "one_sided": 13,
+  "rows": 2642,
+  "devigged": 909
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 733,
+  "markets_mapped": 304,
+  "contracts": 682,
+  "quoted_contracts": 682,
+  "raw": "data/research/external/raw/20261009T075032Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 304,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 668,
+  "two_sided": 666,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 416,
+ "external_mapping": {
+  "total": 164,
+  "by_status": {
+   "MAPPED": 125,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7622,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Aleksandar Tolev": 1,
+   "Kaan Isik Kosaner": 1,
+   "Nazim Makhlouf": 1,
+   "Alex Hernandez": 1,
+   "Jinte de Boer": 1,
+   "Astrid Brune Olsen": 1,
+   "Maria Valentina Pop": 1,
+   "Caijsa Hennemann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 23,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6522,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9571,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Aleksandar Tolev": 1,
+   "Maria Valentina Pop": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 67,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 66,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 38,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
