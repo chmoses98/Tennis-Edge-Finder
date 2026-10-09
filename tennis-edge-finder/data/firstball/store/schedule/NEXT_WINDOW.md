@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 03:37Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 03:54Z)
 
 * Earliest credible first ball: **2026-10-09 04:00Z**
 * Recommended RUN TENNIS time: **2026-10-09 03:15Z**  (OVERDUE: run now)
@@ -7,10 +7,10 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Ben Shelton vs Daniel Altmaier | 2026-10-09 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Arthur Gea vs Ugo Humbert | 2026-10-09 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Adrian Mannarino vs Flavio Cobolli | 2026-10-09 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Rei Sakamoto vs Andrey Rublev | 2026-10-09 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Ben Shelton vs Daniel Altmaier | 2026-10-09 04:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Arthur Gea vs Ugo Humbert | 2026-10-09 04:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Adrian Mannarino vs Flavio Cobolli | 2026-10-09 04:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Rei Sakamoto vs Andrey Rublev | 2026-10-09 04:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Matteo Berrettini vs Brandon Nakashima | 2026-10-09 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Quentin Halys vs Alexander Blockx | 2026-10-09 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Yannick Hanfmann vs Frances Tiafoe | 2026-10-09 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -20,7 +20,7 @@
 
 Published slate: `SL-20261009T031219Z-53a7b154` built 2026-10-09 03:12Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-09T04:00:00+00:00, slate built 2026-10-09T03:12:19.705258+00:00
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-09 07:00Z, run by 2026-10-09 06:15Z, 7 match(es)
 * later window 3: first ball 2026-10-09 10:00Z, run by 2026-10-09 09:15Z, 3 match(es)
