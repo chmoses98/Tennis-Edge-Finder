@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-09T15:01:05.178262+00:00",
+ "run_id": "20261009T150105Z",
+ "external_parse": {
+  "events": 106,
+  "markets": 1076,
+  "skipped_family": 256,
+  "skipped_period": 288,
+  "skipped_live": 17,
+  "one_sided": 14,
+  "rows": 1776,
+  "devigged": 518
+ },
+ "smarkets_fetch": {
+  "events_seen": 71,
+  "events_priced": 71,
+  "markets": 697,
+  "markets_mapped": 297,
+  "contracts": 662,
+  "quoted_contracts": 662,
+  "raw": "data/research/external/raw/20261009T150105Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 297,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 11,
+  "rows": 651,
+  "two_sided": 651,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 380,
+ "external_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7347,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "James Newton": 1,
+   "Alex Hernandez": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7465,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9636,
+  "top_refusal_subjects": {
+   "Fernanda Rain": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
