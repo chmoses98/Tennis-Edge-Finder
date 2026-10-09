@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-09T14:51:00.401073+00:00",
+ "run_id": "20261009T145100Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 1047,
+  "skipped_family": 258,
+  "skipped_period": 288,
+  "skipped_live": 19,
+  "one_sided": 12,
+  "rows": 1621,
+  "devigged": 488
+ },
+ "smarkets_fetch": {
+  "events_seen": 70,
+  "events_priced": 70,
+  "markets": 672,
+  "markets_mapped": 291,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20261009T145100Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 291,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 16,
+  "rows": 632,
+  "two_sided": 631,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 456,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.73,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Madhav Binu": 1,
+   "James Newton": 1,
+   "Alex Hernandez": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9706,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Bella Bergqvist Larsson": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 66,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
