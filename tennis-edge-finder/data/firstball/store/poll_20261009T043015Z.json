@@ -1,0 +1,52 @@
+{
+ "run_id": "20261009T043015Z",
+ "started_at": "2026-10-09T04:30:15.021869+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 318,
+ "truths_written": 4,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPSETWINNER-26OCT09DEMOL-2": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPSETWINNER-26OCT09DEMOL-1": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPEXACTMATCH-26OCT09DEMOL": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPMATCH-26OCT09DEMOL": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1293,
+  "events_only_on_capture_board": 284,
+  "selected_from_capture_board": 252
+ },
+ "mapping": {
+  "MATCHED": 318,
+  "UNMATCHED": 346
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-09T04:47:30.760222+00:00"
+}
