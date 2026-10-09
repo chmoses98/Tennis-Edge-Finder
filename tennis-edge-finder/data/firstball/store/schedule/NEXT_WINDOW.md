@@ -1,22 +1,32 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 12:19Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-09 12:34Z)
 
-* Earliest credible first ball: **2026-10-09 12:27Z**
-* Recommended RUN TENNIS time: **2026-10-09 11:42Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-09 12:17Z**
-* Matches in window: 1
+* Earliest credible first ball: **2026-10-10 03:00Z**
+* Recommended RUN TENNIS time: **2026-10-10 02:15Z**
+* Final price/status check time: **2026-10-10 02:50Z**
+* Matches in window: 12
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexander Bublik vs Tomas Machac | 2026-10-09 12:27Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Grandstand 2 in progress (set 3 of best-of-5) | MEDIUM |
+| Magdalena Frech vs Moyuka Uchijima | 2026-10-10 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Talia Gibson vs Sara Sorribes Tormo | 2026-10-10 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Aoi Ito vs Alycia Parks | 2026-10-10 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Daria Kasatkina vs Viktorija Golubic | 2026-10-10 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Jiri Lehecka vs Nuno Borges | 2026-10-10 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Daniil Medvedev vs Jan-Lennard Struff | 2026-10-10 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Thiago Agustin Tirante vs Rafael Jodar | 2026-10-10 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Camilo Ugo Carabelli vs Felix Auger-Aliassime | 2026-10-10 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Sofia Kenin vs Kamilla Rakhimova | 2026-10-10 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Taylah Preston vs Ashlyn Krueger | 2026-10-10 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Elena-Gabriela Ruse vs Yulia Putintseva | 2026-10-10 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Peyton Stearns vs Han Shi | 2026-10-10 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Arthur Gea
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Arthur Gea, Alexander Bublik vs Tomas Machac
 
 Published slate: `SL-20261009T115809Z-b6116d41` built 2026-10-09 11:58Z -- current
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: none
 
-* later window 2: first ball 2026-10-10 03:00Z, run by 2026-10-10 02:15Z, 12 match(es)
-* later window 3: first ball 2026-10-10 05:00Z, run by 2026-10-10 04:15Z, 9 match(es)
-* later window 4: first ball 2026-10-10 07:00Z, run by 2026-10-10 06:15Z, 10 match(es)
-* later window 5: first ball 2026-10-10 09:00Z, run by 2026-10-10 08:15Z, 2 match(es)
-* later window 6: first ball 2026-10-10 11:30Z, run by 2026-10-10 10:45Z, 1 match(es)
+* later window 2: first ball 2026-10-10 05:00Z, run by 2026-10-10 04:15Z, 9 match(es)
+* later window 3: first ball 2026-10-10 07:00Z, run by 2026-10-10 06:15Z, 10 match(es)
+* later window 4: first ball 2026-10-10 09:00Z, run by 2026-10-10 08:15Z, 2 match(es)
+* later window 5: first ball 2026-10-10 11:30Z, run by 2026-10-10 10:45Z, 1 match(es)
