@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-10T15:12:34.320989+00:00",
+ "run_id": "20261010T151234Z",
+ "external_parse": {
+  "events": 77,
+  "markets": 799,
+  "skipped_family": 220,
+  "skipped_period": 208,
+  "skipped_live": 10,
+  "one_sided": 8,
+  "rows": 1418,
+  "devigged": 363
+ },
+ "smarkets_fetch": {
+  "events_seen": 64,
+  "events_priced": 64,
+  "markets": 709,
+  "markets_mapped": 304,
+  "contracts": 676,
+  "quoted_contracts": 676,
+  "raw": "data/research/external/raw/20261010T151234Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 304,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 162,
+  "rows": 514,
+  "two_sided": 506,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 298,
+ "external_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7391,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "James Newton": 1,
+   "Tristan McCormick": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7969,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jay Friend": 2,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 36,
+  "by_status": {
+   "MAPPED": 33,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9167,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 68,
+ "kalshi_mapped_matches": 33,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 33,
+  "tri:MARKETS_AGREE": 10,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
