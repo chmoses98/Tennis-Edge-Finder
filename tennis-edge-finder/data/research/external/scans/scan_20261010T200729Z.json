@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-10T20:07:29.239944+00:00",
+ "run_id": "20261010T200729Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 1117,
+  "skipped_family": 302,
+  "skipped_period": 308,
+  "skipped_live": 9,
+  "one_sided": 3,
+  "rows": 1919,
+  "devigged": 504
+ },
+ "smarkets_fetch": {
+  "events_seen": 106,
+  "events_priced": 80,
+  "markets": 988,
+  "markets_mapped": 305,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261010T200729Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 305,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 619,
+  "two_sided": 617,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 350,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.6774,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Nicolas Calixto": 1,
+   "Akira Roy": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jay Friend": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Ana Tamindzic": 1,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8367,
+  "top_refusal_subjects": {
+   "Kangyuan Shi": 1,
+   "Yutong Du": 1,
+   "Mats Egbring": 1,
+   "Attila Hueller-Varga": 1,
+   "Yannick Baluska": 1,
+   "Finn Hopfe": 1,
+   "Vraj Gohil": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 24,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 41,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 37,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MODEL_LONE_OUTLIER": 14
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
