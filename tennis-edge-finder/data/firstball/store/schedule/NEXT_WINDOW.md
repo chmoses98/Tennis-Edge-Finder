@@ -1,24 +1,26 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 08:45Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 09:02Z)
 
-* Earliest credible first ball: **2026-10-10 09:00Z**
-* Recommended RUN TENNIS time: **2026-10-10 08:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-10 08:50Z**
-* Matches in window: 6
+* Earliest credible first ball: **2026-10-10 09:09Z**
+* Recommended RUN TENNIS time: **2026-10-10 08:24Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-10 08:59Z**
+* Matches in window: 8
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Polina Kudermetova vs Katie Volynets | 2026-10-10 09:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Camila Osorio vs Tyra Caterina Grant | 2026-10-10 09:09Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-3) | MEDIUM |
+| Learner Tien vs Zachary Svajda | 2026-10-10 09:20Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Polina Kudermetova vs Katie Volynets | 2026-10-10 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Luciano Darderi vs Stefanos Tsitsipas | 2026-10-10 09:40Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Juan Manuel Cerundolo vs Carlos Alcaraz | 2026-10-10 09:42Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Stadium Court in progress (set 1 of best-of-5) | MEDIUM |
 | Ignacio Buse vs Zizou Bergs | 2026-10-10 09:50Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Tommy Paul vs Adolfo Daniel Vallejo | 2026-10-10 09:50Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Botic Van de Zandschulp vs Alex Michelsen | 2026-10-10 09:50Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Juan Manuel Cerundolo vs Carlos Alcaraz | 2026-10-10 09:59Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Stadium Court in progress (set 1 of best-of-5) | MEDIUM |
 
-**10 main-tour match(es) without a verified start status** (BET blocked until checked): Jiri Lehecka vs Rafael Jodar, Learner Tien vs Zachary Svajda, Arthur Fils vs Pavel Kotov, Yulia Putintseva vs Ashlyn Krueger, Sara Sorribes Tormo vs Daria Kasatkina, Magdalena Frech vs Aoi Ito, Camila Osorio vs Tyra Caterina Grant, Qinwen Zheng vs Elise Mertens, Mananchaya Sawangkaew vs Maya Joint, Han Shi vs Kamilla Rakhimova
+**6 main-tour match(es) without a verified start status** (BET blocked until checked): Jiri Lehecka vs Rafael Jodar, Yulia Putintseva vs Ashlyn Krueger, Sara Sorribes Tormo vs Daria Kasatkina, Magdalena Frech vs Aoi Ito, Qinwen Zheng vs Elise Mertens, Han Shi vs Kamilla Rakhimova
 
-Published slate: `SL-20261010T081857Z-87088786` built 2026-10-10 08:18Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261010T083719Z-e816cb2c` built 2026-10-10 08:37Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-10 11:30Z, run by 2026-10-10 10:45Z, 1 match(es)
 * later window 3: first ball 2026-10-11 04:00Z, run by 2026-10-11 03:15Z, 4 match(es)
