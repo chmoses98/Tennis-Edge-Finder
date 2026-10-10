@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 13:36Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 13:45Z)
 
 * Earliest credible first ball: **2026-10-11 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-11 02:15Z**
@@ -20,7 +20,7 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Jiri Lehecka vs Rafael Jodar
 
-Published slate: `SL-20261010T130658Z-e834a542` built 2026-10-10 13:06Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261010T133452Z-17da7766` built 2026-10-10 13:34Z -- current
 
 Dispatched this pass: none
 
