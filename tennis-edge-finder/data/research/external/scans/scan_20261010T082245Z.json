@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-10T08:22:45.091779+00:00",
+ "run_id": "20261010T082245Z",
+ "external_parse": {
+  "events": 106,
+  "markets": 938,
+  "skipped_family": 188,
+  "skipped_period": 273,
+  "skipped_live": 27,
+  "one_sided": 7,
+  "rows": 1554,
+  "devigged": 470
+ },
+ "smarkets_fetch": {
+  "events_seen": 49,
+  "events_priced": 49,
+  "markets": 752,
+  "markets_mapped": 301,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20261010T082245Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 301,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 62,
+  "rows": 604,
+  "two_sided": 597,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 444,
+ "external_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7653,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6531,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9859,
+  "top_refusal_subjects": {
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
