@@ -1,0 +1,88 @@
+{
+ "generated_at": "2026-10-10T12:32:11.661908+00:00",
+ "run_id": "20261010T123211Z",
+ "external_parse": {
+  "events": 78,
+  "markets": 670,
+  "skipped_family": 179,
+  "skipped_period": 191,
+  "skipped_live": 16,
+  "one_sided": 11,
+  "rows": 978,
+  "devigged": 289
+ },
+ "smarkets_fetch": {
+  "events_seen": 57,
+  "events_priced": 57,
+  "markets": 532,
+  "markets_mapped": 237,
+  "contracts": 544,
+  "quoted_contracts": 544,
+  "raw": "data/research/external/raw/20261010T123211Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 237,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 11,
+  "rows": 533,
+  "two_sided": 533,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 328,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "James Newton": 1,
+   "Guglielmo Verdese": 1,
+   "Tristan McCormick": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7018,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 36,
+  "by_status": {
+   "MAPPED": 35,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9722,
+  "top_refusal_subjects": {
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 35,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:MODEL_LONE_OUTLIER": 6,
+  "tri:INSUFFICIENT_INPUTS": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
