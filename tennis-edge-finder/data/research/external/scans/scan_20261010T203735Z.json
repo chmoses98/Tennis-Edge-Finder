@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-10T20:37:35.058257+00:00",
+ "run_id": "20261010T203735Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 1121,
+  "skipped_family": 306,
+  "skipped_period": 308,
+  "skipped_live": 9,
+  "one_sided": 3,
+  "rows": 1921,
+  "devigged": 504
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 977,
+  "markets_mapped": 297,
+  "contracts": 640,
+  "quoted_contracts": 640,
+  "raw": "data/research/external/raw/20261010T203735Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 297,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 608,
+  "two_sided": 608,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 263,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 23
+  },
+  "mapped_rate": 0.6774,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Nicolas Calixto": 1,
+   "Akira Roy": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jay Friend": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Ana Tamindzic": 1,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9189,
+  "top_refusal_subjects": {
+   "Vraj Gohil": 1,
+   "Mayand Tewary": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 34,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MARKETS_AGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
