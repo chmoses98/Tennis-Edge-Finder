@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 14:33Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 14:48Z)
 
 * Earliest credible first ball: **2026-10-11 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-11 02:15Z**
@@ -18,7 +18,7 @@
 | Camila Osorio vs Katie Volynets | 2026-10-11 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Lanlana Tararudee vs Caty McNally | 2026-10-11 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**5 main-tour match(es) without a verified start status** (BET blocked until checked): Pablo Carreno Busta vs Felix Auger-Aliassime, Daniil Medvedev vs Dalibor Svrcina, Jiri Lehecka vs Rafael Jodar, Zizou Bergs vs Carlos Alcaraz, Arthur Fils vs Botic Van de Zandschulp
+**5 main-tour match(es) without a verified start status** (BET blocked until checked): Zizou Bergs vs Carlos Alcaraz, Arthur Fils vs Botic Van de Zandschulp, Pablo Carreno Busta vs Felix Auger-Aliassime, Daniil Medvedev vs Dalibor Svrcina, Jiri Lehecka vs Rafael Jodar
 
 Published slate: `SL-20261010T133452Z-17da7766` built 2026-10-10 13:34Z -- current
 
