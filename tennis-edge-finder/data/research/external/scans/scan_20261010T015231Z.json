@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-10T01:52:31.951414+00:00",
+ "run_id": "20261010T015231Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1696,
+  "skipped_family": 351,
+  "skipped_period": 501,
+  "skipped_live": 1,
+  "one_sided": 3,
+  "rows": 2806,
+  "devigged": 840
+ },
+ "smarkets_fetch": {
+  "events_seen": 77,
+  "events_priced": 77,
+  "markets": 1484,
+  "markets_mapped": 387,
+  "contracts": 884,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261010T015231Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 387,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 43,
+  "rows": 841,
+  "two_sided": 833,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 375,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.7805,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Astrid Brune Olsen": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 77,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 1,
+   "MAPPED": 55
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9412,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {}
+}
