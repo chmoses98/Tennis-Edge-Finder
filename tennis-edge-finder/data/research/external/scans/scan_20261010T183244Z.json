@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-10T18:32:44.617770+00:00",
+ "run_id": "20261010T183244Z",
+ "external_parse": {
+  "events": 100,
+  "markets": 1019,
+  "skipped_family": 284,
+  "skipped_period": 277,
+  "skipped_live": 12,
+  "one_sided": 8,
+  "rows": 1765,
+  "devigged": 449
+ },
+ "smarkets_fetch": {
+  "events_seen": 89,
+  "events_priced": 80,
+  "markets": 1058,
+  "markets_mapped": 324,
+  "contracts": 706,
+  "quoted_contracts": 706,
+  "raw": "data/research/external/raw/20261010T183244Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 324,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 145,
+  "rows": 561,
+  "two_sided": 555,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 238,
+ "external_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6703,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Akira Roy": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jay Friend": 2,
+   "Kangyuan Shi": 1,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 32,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8649,
+  "top_refusal_subjects": {
+   "Yutong Du": 1,
+   "Jay Friend": 1,
+   "Vraj Gohil": 1,
+   "Tristan McCormick": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 18,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 32,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MODEL_LONE_OUTLIER": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
