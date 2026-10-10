@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-10T04:22:35.451403+00:00",
+ "run_id": "20261010T042235Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 1408,
+  "skipped_family": 288,
+  "skipped_period": 414,
+  "skipped_live": 14,
+  "one_sided": 6,
+  "rows": 2286,
+  "devigged": 699
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 1215,
+  "markets_mapped": 374,
+  "contracts": 836,
+  "quoted_contracts": 836,
+  "raw": "data/research/external/raw/20261010T042235Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 374,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 47,
+  "rows": 789,
+  "two_sided": 788,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 621,
+ "external_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7815,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.6984,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19
+  }
+ },
+ "kalshi_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9868,
+  "top_refusal_subjects": {
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 92,
+  "tri:MARKETS_AGREE": 12,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
