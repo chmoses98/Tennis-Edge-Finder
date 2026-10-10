@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-10T17:52:38.112334+00:00",
+ "run_id": "20261010T175238Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 858,
+  "skipped_family": 233,
+  "skipped_period": 238,
+  "skipped_live": 13,
+  "one_sided": 10,
+  "rows": 1502,
+  "devigged": 377
+ },
+ "smarkets_fetch": {
+  "events_seen": 85,
+  "events_priced": 80,
+  "markets": 1063,
+  "markets_mapped": 324,
+  "contracts": 708,
+  "quoted_contracts": 708,
+  "raw": "data/research/external/raw/20261010T175238Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 324,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 139,
+  "rows": 569,
+  "two_sided": 566,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 283,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Tristan McCormick": 1,
+   "Maria Urrutia": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 10,
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jay Friend": 2,
+   "Kangyuan Shi": 1,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 31,
+  "by_status": {
+   "MAPPED": 25,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "Yutong Du": 1,
+   "Jay Friend": 1,
+   "Aditya Kothari": 1,
+   "Prajwal Tewari": 1,
+   "Tristan McCormick": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 10,
+ "external_mapped_matches": 87,
+ "kalshi_mapped_matches": 25,
+ "model_witness_available": true,
+ "rows": 14,
+ "counts": {
+  "PASS": 13,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
