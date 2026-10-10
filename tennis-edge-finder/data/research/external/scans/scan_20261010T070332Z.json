@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-10T07:03:32.018003+00:00",
+ "run_id": "20261010T070332Z",
+ "external_parse": {
+  "events": 111,
+  "markets": 1145,
+  "skipped_family": 231,
+  "skipped_period": 323,
+  "skipped_live": 13,
+  "one_sided": 6,
+  "rows": 1856,
+  "devigged": 585
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 54,
+  "markets": 933,
+  "markets_mapped": 320,
+  "contracts": 710,
+  "quoted_contracts": 710,
+  "raw": "data/research/external/raw/20261010T070332Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 320,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 45,
+  "rows": 665,
+  "two_sided": 661,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1044,
+ "external_mapping": {
+  "total": 102,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7647,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6852,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 92,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9787,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 92,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 115,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 76,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
