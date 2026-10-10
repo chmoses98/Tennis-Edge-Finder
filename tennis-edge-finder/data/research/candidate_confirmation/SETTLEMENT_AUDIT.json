@@ -1,5 +1,5 @@
 {
- "ledger_rows": 39419,
+ "ledger_rows": 39902,
  "settlement_files": 124,
  "settlement_rows_unique": 37378,
  "settlement_rows_duplicate_prediction_ids": 0,
@@ -15,9 +15,9 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 2043,
+ "ledger_rows_without_settlement_row": 2526,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 2043,
+ "of_which_not_yet_settled_or_not_swept": 2526,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
   "yes": 17421,
@@ -39,7 +39,7 @@
   "sports_truth_kalshi_derived": 25464,
   "sports_truth_independent": 13889,
   "settlement_files": 124,
-  "independent_truth_run": "20261009T230056Z.jsonl.gz",
+  "independent_truth_run": "20261010T022226Z.jsonl.gz",
   "independent_truth_by_status": {
    "NOT_COVERED": 19736,
    "RESOLVED": 14292,
@@ -70,7 +70,7 @@
   "exchange_conflicts": 0,
   "exchange_reconciled": 4000,
   "independent_truth_freshness": {
-   "as_of": "2026-10-09",
+   "as_of": "2026-10-10",
    "sources": {
     "sackmann_ATP_main": "20261009T120532Z",
     "sackmann_ATP_qual_chall": "20261009T120532Z",
@@ -88,37 +88,37 @@
    "horizons": {
     "ATP tour": {
      "newest_result": "2026-10-09",
-     "lag_days": 0,
+     "lag_days": 1,
      "live": true,
      "coverage": "full"
     },
     "ATP Challenger": {
      "newest_result": "2026-09-29",
-     "lag_days": 10,
+     "lag_days": 11,
      "live": false,
      "coverage": "full"
     },
     "ATP ITF": {
      "newest_result": "2026-06-01",
-     "lag_days": 130,
+     "lag_days": 131,
      "live": false,
      "coverage": "full"
     },
     "WTA tour": {
      "newest_result": "2026-10-09",
-     "lag_days": 0,
+     "lag_days": 1,
      "live": true,
      "coverage": "full"
     },
     "WTA 125": {
      "newest_result": "2026-10-09",
-     "lag_days": 0,
+     "lag_days": 1,
      "live": true,
      "coverage": "partial"
     },
     "WTA ITF": {
      "newest_result": "2026-04-27",
-     "lag_days": 165,
+     "lag_days": 166,
      "live": false,
      "coverage": "full"
     }
@@ -126,11 +126,11 @@
    "espn_families_not_live": []
   },
   "independent_truth_resolution": {
-   "newly_resolved": 128,
+   "newly_resolved": 0,
    "first_resolutions_total": 14292,
    "backfill": false,
-   "lag_days_median_new": 0.96,
-   "lag_days_max_new": 0.96
+   "lag_days_median_new": null,
+   "lag_days_max_new": null
   },
   "prospective_v2": {
    "predictions_with_v2_and_incumbent": 11212,
@@ -173,11 +173,11 @@
      "PENDING_RESULT": 8
     }
    },
-   "n_stale_unresolved_tour_level": 12,
+   "n_stale_unresolved_tour_level": 52,
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261009T230038Z.jsonl.gz",
+  "clv_run": "20261010T022203Z.jsonl.gz",
   "settled_with_ab_truth": 3166,
   "settled_with_close": 3052,
   "settled_strict_clv": 2709,

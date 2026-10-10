@@ -33,8 +33,8 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 28182,
-  "contracts_first_observed": 5054,
+  "rows_after_effective_start": 28376,
+  "contracts_first_observed": 5066,
   "post_settlement_first_observations_excluded": 36,
   "post_settlement_first_observations_by_level": {
    "ATP": 4,
@@ -45,8 +45,8 @@
   }
  },
  "metrics": {
-  "eligible_itf_n": 935,
-  "eligible_all_n": 1483,
+  "eligible_itf_n": 936,
+  "eligible_all_n": 1486,
   "settled_itf_n": 896,
   "settled_non_itf_n": 519,
   "itf_after_fee_pnl": {
@@ -82,17 +82,17 @@
   "minimum_n_applies_to": "ITF positive-edge rows (the subset the abstention is about)"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 23128,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 3556,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 23310,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 3565,
   "MARKET_SETTLED_BEFORE_OBSERVATION": 36
  },
  "summary": {
   "kind": "ABSTENTION",
   "minimum_n": 400,
-  "eligible_n": 935,
+  "eligible_n": 936,
   "settled_n": 896,
   "strict_clv_n": 0,
-  "unsettled_n": 39,
+  "unsettled_n": 40,
   "clv_pending_n": 0,
   "unscorable_n": 0,
   "accuracy_pass": true,
@@ -129,11 +129,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261009T230107Z",
- "evidence_rows_this_run": 5054,
- "evidence_rows_appended": 184,
- "last_evidence_at": "2026-10-09T22:59:14.690318+00:00",
- "harvest_run_at": "2026-10-09T23:02:52.555602+00:00",
+ "harvest_run": "20261010T022240Z",
+ "evidence_rows_this_run": 5066,
+ "evidence_rows_appended": 14,
+ "last_evidence_at": "2026-10-10T02:20:45.475760+00:00",
+ "harvest_run_at": "2026-10-10T02:25:01.686322+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -157,10 +157,10 @@
   "summary_previous_harvest": {
    "kind": "ABSTENTION",
    "minimum_n": 400,
-   "eligible_n": 903,
-   "settled_n": 874,
+   "eligible_n": 935,
+   "settled_n": 896,
    "strict_clv_n": 0,
-   "unsettled_n": 29,
+   "unsettled_n": 39,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": true,
@@ -172,10 +172,10 @@
   "summary_this_harvest": {
    "kind": "ABSTENTION",
    "minimum_n": 400,
-   "eligible_n": 935,
+   "eligible_n": 936,
    "settled_n": 896,
    "strict_clv_n": 0,
-   "unsettled_n": 39,
+   "unsettled_n": 40,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": true,
