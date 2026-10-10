@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-10-10T03:22:39.606060+00:00",
+ "run_id": "20261010T032239Z",
+ "external_parse": {
+  "events": 130,
+  "markets": 1538,
+  "skipped_family": 324,
+  "skipped_period": 456,
+  "skipped_live": 10,
+  "one_sided": 6,
+  "rows": 2508,
+  "devigged": 751
+ },
+ "smarkets_fetch": {
+  "events_seen": 71,
+  "events_priced": 71,
+  "markets": 1276,
+  "markets_mapped": 361,
+  "contracts": 822,
+  "quoted_contracts": 822,
+  "raw": "data/research/external/raw/20261010T032239Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 361,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 791,
+  "two_sided": 784,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 407,
+ "external_mapping": {
+  "total": 120,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Astrid Brune Olsen": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7183,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9692,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 74,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
