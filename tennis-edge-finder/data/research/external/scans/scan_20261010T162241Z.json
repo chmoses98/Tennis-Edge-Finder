@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-10T16:22:41.573142+00:00",
+ "run_id": "20261010T162241Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 827,
+  "skipped_family": 224,
+  "skipped_period": 229,
+  "skipped_live": 15,
+  "one_sided": 8,
+  "rows": 1454,
+  "devigged": 366
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 1080,
+  "markets_mapped": 323,
+  "contracts": 712,
+  "quoted_contracts": 712,
+  "raw": "data/research/external/raw/20261010T162241Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 323,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 180,
+  "rows": 532,
+  "two_sided": 528,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 304,
+ "external_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7887,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Tristan McCormick": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jay Friend": 2,
+   "Kangyuan Shi": 1,
+   "Xiyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9057,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Vraj Gohil": 1,
+   "Aditya Kothari": 1,
+   "Tristan McCormick": 1,
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 24,
+ "external_mapped_matches": 87,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 24
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
