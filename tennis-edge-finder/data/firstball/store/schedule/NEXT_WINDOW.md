@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 22:22Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 22:34Z)
 
 * Earliest credible first ball: **2026-10-11 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-11 02:15Z**
@@ -20,7 +20,7 @@
 
 **5 main-tour match(es) without a verified start status** (BET blocked until checked): Zizou Bergs vs Carlos Alcaraz, Arthur Fils vs Botic Van de Zandschulp, Pablo Carreno Busta vs Felix Auger-Aliassime, Daniil Medvedev vs Dalibor Svrcina, Jiri Lehecka vs Rafael Jodar
 
-Published slate: `SL-20261010T133452Z-17da7766` built 2026-10-10 13:34Z -- current
+Published slate: `SL-20261010T221624Z-a7736bb7` built 2026-10-10 22:16Z -- current
 
 Dispatched this pass: none
 
