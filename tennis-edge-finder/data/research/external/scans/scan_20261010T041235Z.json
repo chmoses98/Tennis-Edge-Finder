@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-10T04:12:35.215606+00:00",
+ "run_id": "20261010T041235Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 1408,
+  "skipped_family": 288,
+  "skipped_period": 414,
+  "skipped_live": 14,
+  "one_sided": 6,
+  "rows": 2286,
+  "devigged": 699
+ },
+ "smarkets_fetch": {
+  "events_seen": 65,
+  "events_priced": 65,
+  "markets": 1248,
+  "markets_mapped": 391,
+  "contracts": 876,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261010T041235Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 391,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 78,
+  "rows": 798,
+  "two_sided": 797,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 547,
+ "external_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7815,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1,
+   "Caijsa Hennemann": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7231,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18
+  }
+ },
+ "kalshi_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.988,
+  "top_refusal_subjects": {
+   "Fernanda Rain": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 104,
+  "tri:MARKETS_AGREE": 15,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
