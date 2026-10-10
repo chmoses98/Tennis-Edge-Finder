@@ -5,27 +5,27 @@
  "status_reason": "1 eligible of 200 required",
  "universe": {
   "stream": "research/external/dislocations (external_v1)",
-  "rows_total": 71656,
+  "rows_total": 73538,
   "rows_before_confirmation_start": 260,
-  "rows_after": 71396,
+  "rows_after": 73278,
   "failed_gate_counts": {
-   "reference_exists": 36690,
-   "kalshi_lone_outlier": 68359,
-   "external_edge_ge_2c": 71096,
-   "displayed_size_ge_1": 512,
-   "spread_within_6c": 2000
+   "reference_exists": 37530,
+   "kalshi_lone_outlier": 70193,
+   "external_edge_ge_2c": 72972,
+   "displayed_size_ge_1": 540,
+   "spread_within_6c": 2118
   },
   "freshness_of_gate_passing_rows": {
-   "VERIFIED_FRESH": 87,
+   "VERIFIED_FRESH": 88,
    "UNVERIFIABLE": 51,
    "UNRESOLVED": 37,
    "MIXED": 6
   },
-  "scanner_shadow_bet_rows": 181,
-  "rule_gates_pass_rows": 181,
-  "rule_and_freshness_pass_rows": 87,
+  "scanner_shadow_bet_rows": 182,
+  "rule_gates_pass_rows": 182,
+  "rule_and_freshness_pass_rows": 88,
   "first_qualifying_observations": 47,
-  "reobservations_removed": 40,
+  "reobservations_removed": 41,
   "first_qualifying_by_timing": {
    "START_UNKNOWN": 46,
    "STRICT_PREGAME": 1
@@ -113,11 +113,11 @@
  },
  "exclusion_counts": {
   "OBSERVED_BEFORE_CONFIRMATION_START": 260,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 71215,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 73096,
   "EXTERNAL_FRESHNESS_UNVERIFIABLE": 51,
   "EXTERNAL_FRESHNESS_AMBIGUOUS": 43,
   "TIMING_START_UNKNOWN": 46,
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 40
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 41
  },
  "summary": {
   "kind": "TRADE",
@@ -186,11 +186,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261010T130135Z",
- "evidence_rows_this_run": 87,
- "evidence_rows_appended": 8,
- "last_evidence_at": "2026-10-10T11:22:21.347469+00:00",
- "harvest_run_at": "2026-10-10T13:05:39.881870+00:00",
+ "harvest_run": "20261010T221111Z",
+ "evidence_rows_this_run": 88,
+ "evidence_rows_appended": 7,
+ "last_evidence_at": "2026-10-10T15:02:33.498448+00:00",
+ "harvest_run_at": "2026-10-10T22:15:07.585965+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
