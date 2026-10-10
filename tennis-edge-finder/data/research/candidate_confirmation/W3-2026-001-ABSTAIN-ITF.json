@@ -1,8 +1,8 @@
 {
  "candidate_id": "W3-2026-001-ABSTAIN-ITF",
  "kind": "ABSTENTION",
- "status": "FAIL_ACCURACY",
- "status_reason": "the frozen accuracy condition is not met",
+ "status": "ABSTENTION_SUPPORTED",
+ "status_reason": "every frozen condition met; this supports NOT acting, never a position",
  "universe": {
   "experiment_start": {
    "candidate_id": "W3-2026-001-ABSTAIN-ITF",
@@ -33,8 +33,8 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 28560,
-  "contracts_first_observed": 5088,
+  "rows_after_effective_start": 28705,
+  "contracts_first_observed": 5104,
   "post_settlement_first_observations_excluded": 36,
   "post_settlement_first_observations_by_level": {
    "ATP": 4,
@@ -45,36 +45,36 @@
   }
  },
  "metrics": {
-  "eligible_itf_n": 936,
-  "eligible_all_n": 1491,
-  "settled_itf_n": 901,
-  "settled_non_itf_n": 522,
+  "eligible_itf_n": 939,
+  "eligible_all_n": 1497,
+  "settled_itf_n": 906,
+  "settled_non_itf_n": 531,
   "itf_after_fee_pnl": {
-   "n": 901,
-   "mean": -0.0335183129855716,
+   "n": 906,
+   "mean": -0.03396247240618103,
    "median": -0.16,
-   "ci_low": -0.060632630410654836,
-   "ci_high": -0.005648723640399576,
+   "ci_low": -0.06194370860927153,
+   "ci_high": -0.006015176600441517,
    "excludes_zero": true,
    "seed": 20260927,
    "n_boot": 10000
   },
   "non_itf_after_fee_pnl": {
-   "n": 522,
-   "mean": -0.03482758620689656,
+   "n": 531,
+   "mean": -0.031958568738229776,
    "median": -0.16,
-   "ci_low": -0.07289415708812262,
-   "ci_high": 0.005308429118773904,
+   "ci_low": -0.06975517890772129,
+   "ci_high": 0.007080979284369099,
    "excludes_zero": false,
    "seed": 20260927,
    "n_boot": 10000
   },
   "combined_after_fee_pnl": {
-   "n": 1423,
-   "mean": -0.033998594518622645,
+   "n": 1437,
+   "mean": -0.03322199025748088,
    "median": -0.16,
-   "ci_low": -0.056718376669009155,
-   "ci_high": -0.011630358397751247,
+   "ci_low": -0.05596416144746,
+   "ci_high": -0.010499478079331975,
    "excludes_zero": true,
    "seed": 20260927,
    "n_boot": 10000
@@ -82,22 +82,22 @@
   "minimum_n_applies_to": "ITF positive-edge rows (the subset the abstention is about)"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 23472,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 3582,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 23601,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 3592,
   "MARKET_SETTLED_BEFORE_OBSERVATION": 36
  },
  "summary": {
   "kind": "ABSTENTION",
   "minimum_n": 400,
-  "eligible_n": 936,
-  "settled_n": 901,
+  "eligible_n": 939,
+  "settled_n": 906,
   "strict_clv_n": 0,
-  "unsettled_n": 35,
+  "unsettled_n": 33,
   "clv_pending_n": 0,
   "unscorable_n": 0,
-  "accuracy_pass": false,
+  "accuracy_pass": true,
   "clv_pass": null,
-  "economics_pass": false,
+  "economics_pass": true,
   "clv_required": false,
   "notes": []
  },
@@ -129,11 +129,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261010T061855Z",
- "evidence_rows_this_run": 5088,
- "evidence_rows_appended": 46,
- "last_evidence_at": "2026-10-10T06:17:24.930655+00:00",
- "harvest_run_at": "2026-10-10T06:20:42.327658+00:00",
+ "harvest_run": "20261010T102042Z",
+ "evidence_rows_this_run": 5104,
+ "evidence_rows_appended": 56,
+ "last_evidence_at": "2026-10-10T10:19:30.859188+00:00",
+ "harvest_run_at": "2026-10-10T10:22:04.976404+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -158,21 +158,6 @@
    "kind": "ABSTENTION",
    "minimum_n": 400,
    "eligible_n": 936,
-   "settled_n": 896,
-   "strict_clv_n": 0,
-   "unsettled_n": 40,
-   "clv_pending_n": 0,
-   "unscorable_n": 0,
-   "accuracy_pass": true,
-   "clv_pass": null,
-   "economics_pass": true,
-   "clv_required": false,
-   "notes": []
-  },
-  "summary_this_harvest": {
-   "kind": "ABSTENTION",
-   "minimum_n": 400,
-   "eligible_n": 936,
    "settled_n": 901,
    "strict_clv_n": 0,
    "unsettled_n": 35,
@@ -181,6 +166,21 @@
    "accuracy_pass": false,
    "clv_pass": null,
    "economics_pass": false,
+   "clv_required": false,
+   "notes": []
+  },
+  "summary_this_harvest": {
+   "kind": "ABSTENTION",
+   "minimum_n": 400,
+   "eligible_n": 939,
+   "settled_n": 906,
+   "strict_clv_n": 0,
+   "unsettled_n": 33,
+   "clv_pending_n": 0,
+   "unscorable_n": 0,
+   "accuracy_pass": true,
+   "clv_pass": null,
+   "economics_pass": true,
    "clv_required": false,
    "notes": []
   }
