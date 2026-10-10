@@ -1,20 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 11:48Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-10 11:59Z)
 
-* Earliest credible first ball: **2026-10-10 11:48Z**
-* Recommended RUN TENNIS time: **2026-10-10 11:03Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-10 11:38Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-10-10 12:30Z**
+* Recommended RUN TENNIS time: **2026-10-10 11:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-10 12:20Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Ignacio Buse vs Zizou Bergs | 2026-10-10 11:48Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 7 finished | MEDIUM |
 | Sebastian Baez vs Valentin Vacherot | 2026-10-10 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Jiri Lehecka vs Rafael Jodar, Botic Van de Zandschulp vs Alex Michelsen
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Jiri Lehecka vs Rafael Jodar, Ignacio Buse vs Zizou Bergs
 
-Published slate: `SL-20261010T113324Z-bd2b252b` built 2026-10-10 11:33Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261010T114415Z-b6324134` built 2026-10-10 11:44Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-10T12:30:00+00:00, slate built 2026-10-10T11:44:15.767751+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-11 03:00Z, run by 2026-10-11 02:15Z, 9 match(es)
 * later window 3: first ball 2026-10-11 05:00Z, run by 2026-10-11 04:15Z, 4 match(es)
