@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-11T09:31:21.902166+00:00",
+ "run_id": "20261011T093121Z",
+ "external_parse": {
+  "events": 163,
+  "markets": 1756,
+  "skipped_family": 346,
+  "skipped_period": 535,
+  "skipped_live": 34,
+  "one_sided": 40,
+  "rows": 2940,
+  "devigged": 834
+ },
+ "smarkets_fetch": {
+  "events_seen": 162,
+  "events_priced": 80,
+  "markets": 713,
+  "markets_mapped": 284,
+  "contracts": 592,
+  "quoted_contracts": 592,
+  "raw": "data/research/external/raw/20261011T093121Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 284,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 559,
+  "two_sided": 556,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 485,
+ "external_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8258,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Xinyu Wang": 1,
+   "Lorenzo Rocco": 1,
+   "Zhe Jiang": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1,
+   "Annabel Wong": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 1
+  },
+  "mapped_rate": 0.925,
+  "top_refusal_subjects": {
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1,
+   "doubles pairs need four identities; the singles registry carries two": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.7686,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alexandre Bobiere": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Zhe Iang": 1,
+   "Sacha Maes": 1,
+   "Kim Johannes Niethammer": 1,
+   "Claus Piening": 1,
+   "Attila Hueller-Varga": 1,
+   "Yannick Baluska": 1,
+   "Finn Hopfe": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 138,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 84,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
