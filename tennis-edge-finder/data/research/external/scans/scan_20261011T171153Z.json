@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-11T17:11:53.171354+00:00",
+ "run_id": "20261011T171153Z",
+ "external_parse": {
+  "events": 91,
+  "markets": 959,
+  "skipped_family": 224,
+  "skipped_period": 289,
+  "skipped_live": 18,
+  "one_sided": 13,
+  "rows": 1641,
+  "devigged": 433
+ },
+ "smarkets_fetch": {
+  "events_seen": 144,
+  "events_priced": 80,
+  "markets": 808,
+  "markets_mapped": 315,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261011T171153Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 315,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 636,
+  "two_sided": 631,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 320,
+ "external_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6988,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Guglielmo Verdese": 1,
+   "Tristan McCormick": 1,
+   "Alexia Tchamani": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1,
+   "Aran Teixido Garcia": 1,
+   "Martha Matoula": 1,
+   "Emiliana Arango": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.74,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alexandre Bobiere": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Tristan McCormick": 1,
+   "Maya Iacoban": 1,
+   "Maria Jose Rico Sanchez": 1,
+   "Maria Paula Manrique": 1,
+   "Emy Gauvin": 1,
+   "Elisabeth Djabourian": 1,
+   "Poudima Anne-Marie Bre-Naam Gnarou": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 37,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 19,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
