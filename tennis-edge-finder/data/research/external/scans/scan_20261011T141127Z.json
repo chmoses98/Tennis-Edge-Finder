@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-11T14:11:27.168097+00:00",
+ "run_id": "20261011T141127Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 899,
+  "skipped_family": 195,
+  "skipped_period": 270,
+  "skipped_live": 35,
+  "one_sided": 23,
+  "rows": 1469,
+  "devigged": 411
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 664,
+  "markets_mapped": 238,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20261011T141127Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 238,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 496,
+  "two_sided": 489,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 350,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.76,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xinyu Wang": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Arian Hasas": 1,
+   "Tristan McCormick": 1,
+   "Pui Yin Lung": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Raluca Georgiana Serban": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1,
+   "Emiliana Arango": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7473,
+  "top_refusal_subjects": {
+   "Alexandre Bobiere": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Tristan McCormick": 1,
+   "Arian Hasas": 1,
+   "Maya Iacoban": 1,
+   "Maria Jose Rico Sanchez": 1,
+   "Sophia Xie": 1,
+   "Emy Gauvin": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 48,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
