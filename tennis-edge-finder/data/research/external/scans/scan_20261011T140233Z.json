@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-11T14:02:33.558477+00:00",
+ "run_id": "20261011T140233Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 936,
+  "skipped_family": 201,
+  "skipped_period": 283,
+  "skipped_live": 34,
+  "one_sided": 19,
+  "rows": 1543,
+  "devigged": 433
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 680,
+  "markets_mapped": 243,
+  "contracts": 518,
+  "quoted_contracts": 518,
+  "raw": "data/research/external/raw/20261011T140233Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 243,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 483,
+  "two_sided": 474,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 992,
+ "external_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7426,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xinyu Wang": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Sacha Maes": 1,
+   "Arian Hasas": 1,
+   "Tristan McCormick": 1,
+   "Edie Griffiths": 1,
+   "Pui Yin Lung": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Raluca Georgiana Serban": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1,
+   "Emiliana Arango": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7863,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alexandre Bobiere": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Tristan McCormick": 1,
+   "Arian Hasas": 1,
+   "Sacha Maes": 1,
+   "Maya Iacoban": 1,
+   "Maria Jose Rico Sanchez": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 71,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
