@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-11T04:39:06.658354+00:00",
+ "run_id": "20261011T043906Z",
+ "external_parse": {
+  "events": 170,
+  "markets": 1995,
+  "skipped_family": 406,
+  "skipped_period": 564,
+  "skipped_live": 10,
+  "one_sided": 53,
+  "rows": 3307,
+  "devigged": 969
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 936,
+  "markets_mapped": 343,
+  "contracts": 728,
+  "quoted_contracts": 728,
+  "raw": "data/research/external/raw/20261011T043906Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 343,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 704,
+  "two_sided": 701,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 464,
+ "external_mapping": {
+  "total": 162,
+  "by_status": {
+   "MAPPED": 129,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7963,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Zhe Jiang": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yutong Du": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.7857,
+  "top_refusal_subjects": {
+   "Zhe Iang": 1,
+   "Kangyuan Shi": 1,
+   "Yutong Du": 1,
+   "Jay Friend": 1,
+   "Arian Hasas": 1,
+   "Kim Johannes Niethammer": 1,
+   "Dominik Matic": 1,
+   "Claus Piening": 1,
+   "Yannick Baluska": 1,
+   "Vansh Nandal": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 77,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 86,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
