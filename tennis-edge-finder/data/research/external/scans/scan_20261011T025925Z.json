@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-10-11T02:59:25.070636+00:00",
+ "run_id": "20261011T025925Z",
+ "external_parse": {
+  "events": 169,
+  "markets": 2125,
+  "skipped_family": 439,
+  "skipped_period": 616,
+  "skipped_live": 2,
+  "one_sided": 49,
+  "rows": 3579,
+  "devigged": 1020
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 981,
+  "markets_mapped": 347,
+  "contracts": 744,
+  "quoted_contracts": 744,
+  "raw": "data/research/external/raw/20261011T025925Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 347,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 717,
+  "two_sided": 713,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 358,
+ "external_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Zhe Jiang": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Jay Friend": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7931,
+  "top_refusal_subjects": {
+   "Zhe Iang": 1,
+   "Kangyuan Shi": 1,
+   "Yutong Du": 1,
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Tristan McCormick": 1,
+   "Mats Egbring": 1,
+   "Vansh Nandal": 1,
+   "Mayank Sharma": 1,
+   "Aditya Kothari": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 76,
+  "tri:MARKETS_AGREE": 13,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
