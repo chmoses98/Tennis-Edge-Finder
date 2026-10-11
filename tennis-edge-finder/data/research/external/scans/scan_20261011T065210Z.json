@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-11T06:52:10.980244+00:00",
+ "run_id": "20261011T065210Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 2074,
+  "skipped_family": 411,
+  "skipped_period": 585,
+  "skipped_live": 16,
+  "one_sided": 51,
+  "rows": 3522,
+  "devigged": 1023
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 804,
+  "markets_mapped": 338,
+  "contracts": 708,
+  "quoted_contracts": 708,
+  "raw": "data/research/external/raw/20261011T065210Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 338,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 9,
+  "rows": 699,
+  "two_sided": 698,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1248,
+ "external_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 143,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Kangyuan Shi": 1,
+   "Zhe Jiang": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 73,
+   "DOUBLES_UNSUPPORTED": 3,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 3,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 236,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 61,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7373,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alexandre Bobiere": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kangyuan Shi": 1,
+   "Lorenzo Rocco": 1,
+   "Zhe Iang": 1,
+   "Davide Vargiu": 1,
+   "Raluca Georgiana Serban": 1,
+   "Ana Tamindzic": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 125,
+ "external_mapped_matches": 145,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 234,
+ "counts": {
+  "PASS": 213,
+  "tri:MARKETS_AGREE": 16,
+  "tri:INSUFFICIENT_INPUTS": 80,
+  "tri:KALSHI_LONE_OUTLIER": 31,
+  "WATCH": 20,
+  "tri:MODEL_LONE_OUTLIER": 97,
+  "tri:EXTERNAL_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
