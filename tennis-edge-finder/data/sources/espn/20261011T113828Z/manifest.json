@@ -1,0 +1,254 @@
+{
+ "run_id": "20261011T113828Z",
+ "mode": "full",
+ "since": "2026-04-01",
+ "until": "2026-10-11",
+ "step_days": 4,
+ "fetch_since": "2026-04-01",
+ "requests": 100,
+ "base_snapshot": "20261010T112449Z",
+ "http": {
+  "200": 100
+ },
+ "source": "ESPN site API public scoreboard",
+ "note": "results only: no serve statistics, no surface, ESPN-local player ids",
+ "finished_at": "2026-10-11T11:41:33.079621+00:00",
+ "files": {
+  "espn_matches_ATP_2026.csv.gz": 2436,
+  "espn_matches_WTA_2026.csv.gz": 4092
+ },
+ "rows_before_dedupe": 32632,
+ "rows_fetched": 6528,
+ "audit": {
+  "base_rows": 6458,
+  "added": 70,
+  "changed": 132,
+  "missing_in_refetch": 0,
+  "carried_forward": 0,
+  "examples": [
+   {
+    "kind": "changed",
+    "key": [
+     "espn-28-2026-1",
+     "175146"
+    ],
+    "before": {
+     "winner_id": "espn:3818",
+     "loser_id": "espn:2627",
+     "score": "3-6 4-1",
+     "tourney_date": "20260329",
+     "round": "Q1"
+    },
+    "after": {
+     "winner_id": "espn:3818",
+     "loser_id": "espn:2627",
+     "score": "3-6 4-1 RET",
+     "tourney_date": "20260329",
+     "round": "Q1"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-28-2026-1",
+     "173393"
+    ],
+    "before": {
+     "winner_id": "espn:12657",
+     "loser_id": "espn:3308",
+     "score": "6-2 2-0",
+     "tourney_date": "20260403",
+     "round": "QF"
+    },
+    "after": {
+     "winner_id": "espn:12657",
+     "loser_id": "espn:3308",
+     "score": "6-2 2-0 RET",
+     "tourney_date": "20260403",
+     "round": "QF"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-974-2026-1",
+     "173439"
+    ],
+    "before": {
+     "winner_id": "espn:10239",
+     "loser_id": "espn:8136",
+     "score": "4-6 7-6(7) 3-1",
+     "tourney_date": "20260403",
+     "round": "QF"
+    },
+    "after": {
+     "winner_id": "espn:10239",
+     "loser_id": "espn:8136",
+     "score": "4-6 7-6(7) 3-1 RET",
+     "tourney_date": "20260403",
+     "round": "QF"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-228-2026-2",
+     "173737"
+    ],
+    "before": {
+     "winner_id": "espn:9917",
+     "loser_id": "espn:6500",
+     "score": "7-5 3-0",
+     "tourney_date": "20260330",
+     "round": "Round 1"
+    },
+    "after": {
+     "winner_id": "espn:9917",
+     "loser_id": "espn:6500",
+     "score": "7-5 3-0 RET",
+     "tourney_date": "20260330",
+     "round": "Round 1"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-524-2026-2",
+     "173823"
+    ],
+    "before": {
+     "winner_id": "espn:2392",
+     "loser_id": "espn:8808",
+     "score": "6-4",
+     "tourney_date": "20260402",
+     "round": "Round 2"
+    },
+    "after": {
+     "winner_id": "espn:2392",
+     "loser_id": "espn:8808",
+     "score": "6-4 RET",
+     "tourney_date": "20260402",
+     "round": "Round 2"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-42-2026-1",
+     "176468"
+    ],
+    "before": {
+     "winner_id": "espn:8710",
+     "loser_id": "espn:2627",
+     "score": "6-0 0-0",
+     "tourney_date": "20260404",
+     "round": "Q1"
+    },
+    "after": {
+     "winner_id": "espn:8710",
+     "loser_id": "espn:2627",
+     "score": "6-0 0-0 RET",
+     "tourney_date": "20260404",
+     "round": "Q1"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-42-2026-1",
+     "173854"
+    ],
+    "before": {
+     "winner_id": "espn:2622",
+     "loser_id": "espn:1733",
+     "score": "4-0",
+     "tourney_date": "20260407",
+     "round": "Round 1"
+    },
+    "after": {
+     "winner_id": "espn:2622",
+     "loser_id": "espn:1733",
+     "score": "4-0 RET",
+     "tourney_date": "20260407",
+     "round": "Round 1"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-42-2026-1",
+     "173900"
+    ],
+    "before": {
+     "winner_id": "espn:3209",
+     "loser_id": "espn:2989",
+     "score": "7-5 2-2",
+     "tourney_date": "20260409",
+     "round": "Round 3"
+    },
+    "after": {
+     "winner_id": "espn:3209",
+     "loser_id": "espn:2989",
+     "score": "7-5 2-2 RET",
+     "tourney_date": "20260409",
+     "round": "Round 3"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-199-2026-2",
+     "174727"
+    ],
+    "before": {
+     "winner_id": "espn:1774",
+     "loser_id": "espn:2764",
+     "score": "5-0",
+     "tourney_date": "20260408",
+     "round": "Round 2"
+    },
+    "after": {
+     "winner_id": "espn:1774",
+     "loser_id": "espn:2764",
+     "score": "5-0 RET",
+     "tourney_date": "20260408",
+     "round": "Round 2"
+    }
+   },
+   {
+    "kind": "changed",
+    "key": [
+     "espn-1064-2026-2",
+     "174350"
+    ],
+    "before": {
+     "winner_id": "espn:8690",
+     "loser_id": "espn:1095",
+     "score": "6-3 2-1",
+     "tourney_date": "20260407",
+     "round": "Round 1"
+    },
+    "after": {
+     "winner_id": "espn:8690",
+     "loser_id": "espn:1095",
+     "score": "6-3 2-1 RET",
+     "tourney_date": "20260407",
+     "round": "Round 1"
+    }
+   }
+  ]
+ },
+ "rows": 6528,
+ "summary": {
+  "rows": 6528,
+  "by_tour": {
+   "WTA": 4092,
+   "ATP": 2436
+  },
+  "date_min": "20260328",
+  "date_max": "20261011",
+  "tournaments": 111,
+  "skipped": {},
+  "parsed_at": "2026-10-11T11:41:33.195827+00:00"
+ }
+}
