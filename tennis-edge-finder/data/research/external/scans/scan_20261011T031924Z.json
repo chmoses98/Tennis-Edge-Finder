@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-11T03:19:24.089870+00:00",
+ "run_id": "20261011T031924Z",
+ "external_parse": {
+  "events": 164,
+  "markets": 2033,
+  "skipped_family": 421,
+  "skipped_period": 575,
+  "skipped_live": 2,
+  "one_sided": 51,
+  "rows": 3392,
+  "devigged": 982
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 928,
+  "markets_mapped": 332,
+  "contracts": 704,
+  "quoted_contracts": 704,
+  "raw": "data/research/external/raw/20261011T031924Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 332,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 681,
+  "two_sided": 681,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 474,
+ "external_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Catherine McNally": 1,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Zhe Jiang": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 7,
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7963,
+  "top_refusal_subjects": {
+   "Zhe Iang": 1,
+   "Davide Vargiu": 1,
+   "Yutong Du": 1,
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Dominik Matic": 1,
+   "Pranav Gadgil": 1,
+   "Yannick Baluska": 1,
+   "Vansh Nandal": 1,
+   "Vraj Gohil": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 134,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 95,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 57,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
