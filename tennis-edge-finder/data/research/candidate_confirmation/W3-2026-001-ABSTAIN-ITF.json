@@ -33,8 +33,8 @@
    "producer_rows_before_effective_start": 0
   },
   "stream": "research/frozen_producers/shadow_board (fair_v1 + selector_v1, frozen)",
-  "rows_after_effective_start": 30069,
-  "contracts_first_observed": 5478,
+  "rows_after_effective_start": 30384,
+  "contracts_first_observed": 5488,
   "post_settlement_first_observations_excluded": 36,
   "post_settlement_first_observations_by_level": {
    "ATP": 4,
@@ -82,8 +82,8 @@
   "minimum_n_applies_to": "ITF positive-edge rows (the subset the abstention is about)"
  },
  "exclusion_counts": {
-  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 24591,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 3859,
+  "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 24896,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 3869,
   "MARKET_SETTLED_BEFORE_OBSERVATION": 36
  },
  "summary": {
@@ -129,11 +129,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261011T102428Z",
- "evidence_rows_this_run": 5478,
- "evidence_rows_appended": 108,
- "last_evidence_at": "2026-10-11T10:22:01.243903+00:00",
- "harvest_run_at": "2026-10-11T10:27:00.480450+00:00",
+ "harvest_run": "20261011T105108Z",
+ "evidence_rows_this_run": 5488,
+ "evidence_rows_appended": 10,
+ "last_evidence_at": "2026-10-11T10:49:11.299644+00:00",
+ "harvest_run_at": "2026-10-11T10:53:00.435799+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -157,10 +157,10 @@
   "summary_previous_harvest": {
    "kind": "ABSTENTION",
    "minimum_n": 400,
-   "eligible_n": 959,
-   "settled_n": 942,
+   "eligible_n": 960,
+   "settled_n": 950,
    "strict_clv_n": 0,
-   "unsettled_n": 17,
+   "unsettled_n": 10,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": true,

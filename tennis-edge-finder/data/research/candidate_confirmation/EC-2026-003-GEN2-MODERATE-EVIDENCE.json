@@ -2,7 +2,7 @@
  "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
  "kind": "TRADE",
  "status": "PENDING_STRICT_CLV",
- "status_reason": "14 strict-CLV rows of 1000 required (100 could still gain a strict close)",
+ "status_reason": "14 strict-CLV rows of 1000 required (102 could still gain a strict close)",
  "universe": {
   "experiment_start": {
    "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
@@ -32,7 +32,7 @@
    "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
    "producer_rows_before_effective_start": 0
   },
-  "rows_after_effective_start": 30069,
+  "rows_after_effective_start": 30384,
   "post_settlement_first_runs_excluded": 19,
   "post_settlement_first_runs_by_level": {
    "ATP": 2,
@@ -43,7 +43,7 @@
   }
  },
  "metrics": {
-  "eligible_n": 1398,
+  "eligible_n": 1400,
   "settled_n": 1277,
   "strict_clv_n": 14,
   "brier_gen2_blend": 0.21721845992968333,
@@ -93,16 +93,16 @@
  },
  "exclusion_counts": {
   "MARKET_SETTLED_BEFORE_OBSERVATION": 19,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 1337
+  "FROZEN_INCLUSION_RULE_NOT_MET": 1340
  },
  "summary": {
   "kind": "TRADE",
   "minimum_n": 1000,
-  "eligible_n": 1398,
+  "eligible_n": 1400,
   "settled_n": 1277,
   "strict_clv_n": 14,
-  "unsettled_n": 121,
-  "clv_pending_n": 100,
+  "unsettled_n": 123,
+  "clv_pending_n": 102,
   "unscorable_n": 0,
   "accuracy_pass": false,
   "clv_pass": false,
@@ -162,11 +162,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261011T102428Z",
- "evidence_rows_this_run": 2742,
- "evidence_rows_appended": 54,
- "last_evidence_at": "2026-10-11T10:22:01.243903+00:00",
- "harvest_run_at": "2026-10-11T10:25:35.980749+00:00",
+ "harvest_run": "20261011T105108Z",
+ "evidence_rows_this_run": 2747,
+ "evidence_rows_appended": 5,
+ "last_evidence_at": "2026-10-11T10:49:11.299644+00:00",
+ "harvest_run_at": "2026-10-11T10:51:58.756236+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -190,11 +190,11 @@
   "summary_previous_harvest": {
    "kind": "TRADE",
    "minimum_n": 1000,
-   "eligible_n": 1386,
-   "settled_n": 1255,
+   "eligible_n": 1398,
+   "settled_n": 1277,
    "strict_clv_n": 14,
-   "unsettled_n": 131,
-   "clv_pending_n": 110,
+   "unsettled_n": 121,
+   "clv_pending_n": 100,
    "unscorable_n": 0,
    "accuracy_pass": false,
    "clv_pass": false,
@@ -205,11 +205,11 @@
   "summary_this_harvest": {
    "kind": "TRADE",
    "minimum_n": 1000,
-   "eligible_n": 1398,
+   "eligible_n": 1400,
    "settled_n": 1277,
    "strict_clv_n": 14,
-   "unsettled_n": 121,
-   "clv_pending_n": 100,
+   "unsettled_n": 123,
+   "clv_pending_n": 102,
    "unscorable_n": 0,
    "accuracy_pass": false,
    "clv_pass": false,
