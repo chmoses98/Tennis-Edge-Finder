@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-10-11T11:51:10.111169+00:00",
+ "run_id": "20261011T115110Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1335,
+  "skipped_family": 257,
+  "skipped_period": 408,
+  "skipped_live": 32,
+  "one_sided": 31,
+  "rows": 2258,
+  "devigged": 638
+ },
+ "smarkets_fetch": {
+  "events_seen": 148,
+  "events_priced": 80,
+  "markets": 769,
+  "markets_mapped": 268,
+  "contracts": 564,
+  "quoted_contracts": 564,
+  "raw": "data/research/external/raw/20261011T115110Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 268,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 556,
+  "two_sided": 549,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 403,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7812,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xinyu Wang": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1,
+   "Dominik Matic": 1,
+   "Kim Johannes Niethammer": 1,
+   "Piening Claus": 1,
+   "Tristan McCormick": 1,
+   "Sophie Johnstone": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Ana Tamindzic": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1,
+   "Emiliana Arango": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.7818,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alexandre Bobiere": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Sacha Maes": 1,
+   "Kim Johannes Niethammer": 1,
+   "Claus Piening": 1,
+   "Emy Gauvin": 1,
+   "Elisabeth Djabourian": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 67,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "SHADOW_BET": 2,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
