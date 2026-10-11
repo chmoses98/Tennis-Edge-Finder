@@ -1,18 +1,18 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-11 09:38Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-11 09:48Z)
 
-* Earliest credible first ball: **2026-10-11 09:40Z**
-* Recommended RUN TENNIS time: **2026-10-11 08:55Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-11 09:30Z**
+* Earliest credible first ball: **2026-10-11 09:50Z**
+* Recommended RUN TENNIS time: **2026-10-11 09:05Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-11 09:40Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexander Bublik vs Brandon Nakashima | 2026-10-11 09:40Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Qinwen Zheng vs Mirra Andreeva | 2026-10-11 10:09Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 2 of best-of-5) | MEDIUM |
+| Alexander Bublik vs Brandon Nakashima | 2026-10-11 09:50Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Qinwen Zheng vs Mirra Andreeva | 2026-10-11 10:19Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Capital Group Diamond in progress (set 2 of best-of-5) | MEDIUM |
 
 **15 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Zverev vs Quentin Halys, Kimberly Birrell vs Katie Volynets, Yulia Putintseva vs Zeynep Sonmez, Daria Kasatkina vs Jelena Ostapenko, Ann Li vs Qinwen Zheng, Daria Snigur vs Elise Mertens, Diane Parry vs Anna Kalinskaya, Dayana Yastremska vs Cristina Bucsa, Mayar Sherif Ahmed Abdelaziz vs Maja Chwalinska, Katerina Siniakova vs Liudmila Samsonova, Hanyu Guo vs Sorana Cirstea, Lilli Tagger vs Nikola Bartunkova
 
-Published slate: `SL-20261011T091914Z-aa02673c` built 2026-10-11 09:19Z -- current
+Published slate: `SL-20261011T093805Z-3c5fdf26` built 2026-10-11 09:38Z -- current
 
 Dispatched this pass: none
 
