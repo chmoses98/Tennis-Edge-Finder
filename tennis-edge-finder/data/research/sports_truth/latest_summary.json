@@ -1,17 +1,17 @@
 {
- "run_id": "20261010T221056Z",
- "source_stamp": "20261010T112646Z|2026-10-10T22:02:33.888384+00:00",
- "settled": 40009,
+ "run_id": "20261011T015148Z",
+ "source_stamp": "20261010T112646Z|2026-10-11T01:45:27.214058+00:00",
+ "settled": 40033,
  "by_status": {
   "NOT_COVERED": 20156,
   "RESOLVED": 16035,
   "NO_CANONICAL_IDS": 1626,
   "AMBIGUOUS": 10,
   "NOT_FOUND": 1318,
-  "PENDING_RESULT": 864
+  "PENDING_RESULT": 888
  },
  "reconciliation": {
-  "NOT_RECONCILED": 22434,
+  "NOT_RECONCILED": 22440,
   "AGREE": 4286
  },
  "by_level": {
@@ -52,7 +52,7 @@
   "WTA|MASTERS_1000": {
    "RESOLVED": 1153,
    "NO_CANONICAL_IDS": 162,
-   "PENDING_RESULT": 105
+   "PENDING_RESULT": 129
   },
   "WTA|TEAM": {
    "NOT_FOUND": 2
@@ -70,7 +70,7 @@
   }
  },
  "freshness": {
-  "as_of": "2026-10-10",
+  "as_of": "2026-10-11",
   "sources": {
    "sackmann_ATP_main": "20261010T112137Z",
    "sackmann_ATP_qual_chall": "20261010T112137Z",
@@ -88,37 +88,37 @@
   "horizons": {
    "ATP tour": {
     "newest_result": "2026-10-10",
-    "lag_days": 0,
+    "lag_days": 1,
     "live": true,
     "coverage": "full"
    },
    "ATP Challenger": {
     "newest_result": "2026-09-29",
-    "lag_days": 11,
+    "lag_days": 12,
     "live": false,
     "coverage": "full"
    },
    "ATP ITF": {
     "newest_result": "2026-06-01",
-    "lag_days": 131,
+    "lag_days": 132,
     "live": false,
     "coverage": "full"
    },
    "WTA tour": {
     "newest_result": "2026-10-10",
-    "lag_days": 0,
+    "lag_days": 1,
     "live": true,
     "coverage": "full"
    },
    "WTA 125": {
     "newest_result": "2026-10-10",
-    "lag_days": 0,
+    "lag_days": 1,
     "live": true,
     "coverage": "partial"
    },
    "WTA ITF": {
     "newest_result": "2026-04-27",
-    "lag_days": 166,
+    "lag_days": 167,
     "live": false,
     "coverage": "full"
    }
@@ -126,27 +126,27 @@
   "espn_families_not_live": []
  },
  "resolution": {
-  "newly_resolved": 45,
+  "newly_resolved": 0,
   "first_resolutions_total": 16035,
   "backfill": false,
-  "lag_days_median_new": 1.92,
-  "lag_days_max_new": 1.92
+  "lag_days_median_new": null,
+  "lag_days_max_new": null
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 11940,
-  "matches_with_v2_and_incumbent": 1107,
-  "exchange_settled_predictions": 11940,
+  "predictions_with_v2_and_incumbent": 11946,
+  "matches_with_v2_and_incumbent": 1108,
+  "exchange_settled_predictions": 11946,
   "independently_resolved_predictions": 1502,
   "independently_settled_matches": 133,
   "by_status": {
    "NOT_COVERED": 10252,
    "RESOLVED": 1502,
    "NOT_FOUND": 64,
-   "PENDING_RESULT": 122
+   "PENDING_RESULT": 128
   },
   "reconciliation": {
-   "NOT_RECONCILED": 10438,
+   "NOT_RECONCILED": 10444,
    "AGREE": 1502,
    "EXPLAINED_NOTE": 16
   },
@@ -172,7 +172,7 @@
    },
    "WTA tour": {
     "RESOLVED": 254,
-    "PENDING_RESULT": 24
+    "PENDING_RESULT": 30
    }
   },
   "stale_unresolved_tour_level": [
@@ -246,6 +246,78 @@
     "prediction_id": "01beee28-b925-42f4-9812-9e6cfb753821",
     "match_id": "KXATPMATCH-26OCT05WONHAR",
     "match_day": "2026-10-05",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "472f7fe7-1cb8-4ff8-a6bd-f777cf9bba1d",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "57f1827a-dc1e-4f2c-9db5-214dd2cfaef4",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "3e2fc706-5eed-4f9e-8dff-14f14c63741a",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "162193e5-d41c-4d63-a6e4-99b6948738ea",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "d1c874b9-161b-4b14-8458-769067dc6d4c",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "3ed05385-ea70-4c96-bf6c-1aa814075c53",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "d8608863-7a17-4c18-8006-983567d4a3e8",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "8334d03d-f462-4653-b2ea-9a2451ae19a4",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "54801de8-aa8e-42d3-92f9-92440ba2141f",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "e0262591-8e8f-4a6d-8890-6d6be38d16b1",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "524cd743-ad9f-4768-ab36-b1e81061244e",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
+    "status": "NOT_FOUND"
+   },
+   {
+    "prediction_id": "d61c8450-4dc6-4e8e-b4ed-feb0d1aa3767",
+    "match_id": "KXATPMATCH-26OCT07HALWON",
+    "match_day": "2026-10-07",
     "status": "NOT_FOUND"
    },
    {
@@ -403,81 +475,9 @@
     "match_id": "KXATPMATCH-26OCT06LANSTR",
     "match_day": "2026-10-06",
     "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "403fb359-9b22-4df1-9891-21e50675f0df",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "b813c939-ec0b-49a9-8527-292318f2141c",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "809e1b98-5f0c-40e1-9fec-4e3de5e64a79",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "78832f44-03ff-4efd-a40e-0937f5ca040e",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "3f8ee12a-9948-456a-a537-db258b7f6aec",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "882bffda-83bc-42c9-9656-b173782b9aa4",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "e01e652e-5aa7-4ca0-9678-4e2068116bae",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "f44d1d70-97ff-4efd-abf3-561007ea8b45",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "9dabb4ff-1258-4045-abb8-558cd9960b25",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "1ac693bd-3fd8-4a0b-8041-96d7e5ab02fa",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "878e7b4c-15cc-433c-b3e0-5d069b3192c6",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
-   },
-   {
-    "prediction_id": "69674720-2c40-4f61-955b-5dd29c373b50",
-    "match_id": "KXATPMATCH-26OCT06LANSTR",
-    "match_day": "2026-10-06",
-    "status": "NOT_FOUND"
    }
   ],
-  "n_stale_unresolved_tour_level": 52,
+  "n_stale_unresolved_tour_level": 64,
   "readout_at_independently_settled_matches": 1500
  }
 }
