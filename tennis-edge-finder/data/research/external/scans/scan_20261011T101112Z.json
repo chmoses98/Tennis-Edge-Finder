@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-11T10:11:12.674681+00:00",
+ "run_id": "20261011T101112Z",
+ "external_parse": {
+  "events": 152,
+  "markets": 1470,
+  "skipped_family": 290,
+  "skipped_period": 452,
+  "skipped_live": 40,
+  "one_sided": 42,
+  "rows": 2436,
+  "devigged": 685
+ },
+ "smarkets_fetch": {
+  "events_seen": 146,
+  "events_priced": 80,
+  "markets": 836,
+  "markets_mapped": 299,
+  "contracts": 628,
+  "quoted_contracts": 628,
+  "raw": "data/research/external/raw/20261011T101112Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 609,
+  "two_sided": 601,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 463,
+ "external_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8264,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Xinyu Wang": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1,
+   "Tristan McCormick": 1,
+   "Annabel Wong": 1,
+   "Sophie Johnstone": 1,
+   "Zainab Williams": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7705,
+  "top_refusal_subjects": {
+   "Lorenzo Rocco": 1,
+   "Zhe Iang": 1,
+   "Ana Tamindzic": 1,
+   "Tristan McCormick": 1,
+   "Sacha Maes": 1,
+   "Kim Johannes Niethammer": 1,
+   "Pranav Gadgil": 1,
+   "Mats Egbring": 1,
+   "Attila Hueller-Varga": 1,
+   "Maya Iacoban": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 51,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
