@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-11 19:43Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-11 19:59Z)
 
 * Earliest credible first ball: **2026-10-12 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-12 02:15Z**
