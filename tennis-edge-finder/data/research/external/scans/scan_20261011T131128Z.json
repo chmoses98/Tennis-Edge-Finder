@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-11T13:11:28.538635+00:00",
+ "run_id": "20261011T131128Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1030,
+  "skipped_family": 210,
+  "skipped_period": 316,
+  "skipped_live": 34,
+  "one_sided": 22,
+  "rows": 1721,
+  "devigged": 482
+ },
+ "smarkets_fetch": {
+  "events_seen": 141,
+  "events_priced": 80,
+  "markets": 695,
+  "markets_mapped": 247,
+  "contracts": 524,
+  "quoted_contracts": 524,
+  "raw": "data/research/external/raw/20261011T131128Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 507,
+  "two_sided": 504,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 427,
+ "external_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xinyu Wang": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Sacha Maes": 1,
+   "Arian Hasas": 1,
+   "Tristan McCormick": 1,
+   "Nika Beukers": 1,
+   "Tanishka Naveen": 1,
+   "Edie Griffiths": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Raluca Georgiana Serban": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alexandre Bobiere": 1,
+   "Emiliana Arango": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "Alexandre Bobiere": 1,
+   "Lorenzo Rocco": 1,
+   "Raluca Georgiana Serban": 1,
+   "Arian Hasas": 1,
+   "Sacha Maes": 1,
+   "Maya Iacoban": 1,
+   "Emy Gauvin": 1,
+   "Poudima Anne-Marie Bre-Naam Gnarou": 1,
+   "Alexia Tchamani": 1,
+   "Amy Lu": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
