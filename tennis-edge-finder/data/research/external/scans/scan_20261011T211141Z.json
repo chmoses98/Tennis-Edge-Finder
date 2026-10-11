@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-11T21:11:41.000049+00:00",
+ "run_id": "20261011T211141Z",
+ "external_parse": {
+  "events": 87,
+  "markets": 1134,
+  "skipped_family": 268,
+  "skipped_period": 344,
+  "skipped_live": 5,
+  "one_sided": 7,
+  "rows": 1954,
+  "devigged": 515
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1159,
+  "markets_mapped": 415,
+  "contracts": 882,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261011T211141Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 415,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 58,
+  "rows": 824,
+  "two_sided": 815,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 267,
+ "external_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7013,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Sophia Xie": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.7966,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Kangyuan Shi": 1,
+   "Leonardo Suarez": 1,
+   "Guelord Kayombo": 1,
+   "Vraj Gohil": 1,
+   "Prasad Ingale": 1,
+   "Yue Xia": 1,
+   "Chloe Cleaver": 1,
+   "Ingrid Ioana Sanduleasa": 1,
+   "Maya Iacoban": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 47,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
