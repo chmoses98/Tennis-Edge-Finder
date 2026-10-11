@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-11T04:29:02.629560+00:00",
+ "run_id": "20261011T042902Z",
+ "external_parse": {
+  "events": 170,
+  "markets": 1995,
+  "skipped_family": 406,
+  "skipped_period": 564,
+  "skipped_live": 10,
+  "one_sided": 53,
+  "rows": 3307,
+  "devigged": 969
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 941,
+  "markets_mapped": 328,
+  "contracts": 696,
+  "quoted_contracts": 696,
+  "raw": "data/research/external/raw/20261011T042902Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 328,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 683,
+  "two_sided": 681,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 570,
+ "external_mapping": {
+  "total": 162,
+  "by_status": {
+   "MAPPED": 129,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7963,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Maria Camila Osorio": 1,
+   "Xinyu Wang": 1,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Zhe Jiang": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Tristan McCormick": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yutong Du": 1,
+   "Kangyuan Shi": 1,
+   "Davide Vargiu": 1,
+   "Lorenzo Rocco": 1,
+   "Ana Tamindzic": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8148,
+  "top_refusal_subjects": {
+   "Zhe Iang": 1,
+   "Davide Vargiu": 1,
+   "Yutong Du": 1,
+   "Jay Friend": 1,
+   "Arian Hasas": 1,
+   "Pranav Gadgil": 1,
+   "Yannick Baluska": 1,
+   "Vansh Nandal": 1,
+   "Mayank Sharma": 1,
+   "Vraj Gohil": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 112,
+  "tri:MARKETS_AGREE": 11,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
