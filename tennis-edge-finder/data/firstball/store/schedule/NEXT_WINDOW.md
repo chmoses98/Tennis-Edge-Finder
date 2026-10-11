@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-11 12:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-11 13:07Z)
 
 * Earliest credible first ball: **2026-10-12 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-12 02:15Z**
@@ -14,11 +14,11 @@
 | Clara Tauson vs Marie Bouzkova | 2026-10-12 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Janice Tjen vs Aoi Ito | 2026-10-12 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**14 main-tour match(es) without a verified start status** (BET blocked until checked): Alejandro Davidovich Fokina vs Frances Tiafoe, Anna Kalinskaya vs Shuai Zhang, Kimberly Birrell vs Katie Volynets, Yulia Putintseva vs Zeynep Sonmez, Daria Kasatkina vs Jelena Ostapenko, Ann Li vs Qinwen Zheng, Daria Snigur vs Elise Mertens, Dayana Yastremska vs Cristina Bucsa, Mayar Sherif Ahmed Abdelaziz vs Maja Chwalinska, Katerina Siniakova vs Liudmila Samsonova, Hanyu Guo vs Sorana Cirstea, Lilli Tagger vs Nikola Bartunkova
+**13 main-tour match(es) without a verified start status** (BET blocked until checked): Anna Kalinskaya vs Shuai Zhang, Kimberly Birrell vs Katie Volynets, Yulia Putintseva vs Zeynep Sonmez, Daria Kasatkina vs Jelena Ostapenko, Ann Li vs Qinwen Zheng, Daria Snigur vs Elise Mertens, Dayana Yastremska vs Cristina Bucsa, Mayar Sherif Ahmed Abdelaziz vs Maja Chwalinska, Katerina Siniakova vs Liudmila Samsonova, Hanyu Guo vs Sorana Cirstea, Lilli Tagger vs Nikola Bartunkova, Katie Boulter vs Diana Shnaider
 
-Published slate: `SL-20261011T122105Z-bb5f802e` built 2026-10-11 12:21Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261011T124018Z-f9b2cc9d` built 2026-10-11 12:40Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-12 05:00Z, run by 2026-10-12 04:15Z, 7 match(es)
 * later window 3: first ball 2026-10-12 07:00Z, run by 2026-10-12 06:15Z, 3 match(es)
