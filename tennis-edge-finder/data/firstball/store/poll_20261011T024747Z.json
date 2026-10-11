@@ -1,0 +1,50 @@
+{
+ "run_id": "20261011T024747Z",
+ "started_at": "2026-10-11T02:47:47.508732+00:00",
+ "passes": 1,
+ "requests": 2,
+ "observations": 176,
+ "truths_written": 0,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 2
+ },
+ "watchlist": {
+  "capture_board_markets": 1228,
+  "events_only_on_capture_board": 362,
+  "selected_from_capture_board": 339
+ },
+ "mapping": {
+  "MATCHED": 176,
+  "UNMATCHED": 180,
+  "AMBIGUOUS": 3
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT11ALEFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185336 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT11ALEFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185336 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT11ALEFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185336 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-11T02:57:30.677235+00:00"
+}
