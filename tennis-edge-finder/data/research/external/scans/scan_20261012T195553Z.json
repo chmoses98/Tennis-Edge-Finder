@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-12T19:55:53.337011+00:00",
+ "run_id": "20261012T195553Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 1169,
+  "skipped_family": 248,
+  "skipped_period": 365,
+  "skipped_live": 17,
+  "one_sided": 7,
+  "rows": 2012,
+  "devigged": 549
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1415,
+  "markets_mapped": 492,
+  "contracts": 1032,
+  "quoted_contracts": 842,
+  "raw": "data/research/external/raw/20261012T195553Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 492,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 258,
+  "rows": 774,
+  "two_sided": 767,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 371,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7065,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Adam Chodur": 1,
+   "Jason Huang": 1,
+   "Elena Goodman": 1,
+   "Maya Iacoban": 1,
+   "Zoie Epps": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 69,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.7667,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Richard Lacis": 1,
+   "Jaron Held": 1,
+   "Filip Drab": 1,
+   "Anuj Watane": 1,
+   "Jadon Price": 1,
+   "Melios Efstathiou": 1,
+   "Tim Hammes": 1,
+   "Daniel Tazabekov": 1,
+   "Tom Zeuch": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
