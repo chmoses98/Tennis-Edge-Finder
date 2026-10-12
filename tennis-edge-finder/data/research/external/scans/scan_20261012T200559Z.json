@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-12T20:05:59.415655+00:00",
+ "run_id": "20261012T200559Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 1116,
+  "skipped_family": 239,
+  "skipped_period": 347,
+  "skipped_live": 20,
+  "one_sided": 7,
+  "rows": 1924,
+  "devigged": 523
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1415,
+  "markets_mapped": 492,
+  "contracts": 1032,
+  "quoted_contracts": 842,
+  "raw": "data/research/external/raw/20261012T200559Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 492,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 251,
+  "rows": 781,
+  "two_sided": 777,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 385,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7174,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Elena Goodman": 1,
+   "Maya Iacoban": 1,
+   "Zoie Epps": 1,
+   "Sofia Cabezas Dominguez": 1,
+   "Ana Clara Furlan Britzki": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 80,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7547,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Amar Tahirovic": 1,
+   "Jaron Held": 1,
+   "Pavel Skvortcov": 1,
+   "Martim Bernardo": 1,
+   "Anuj Watane": 1,
+   "Jadon Price": 1,
+   "Giovanni Ciocca": 1,
+   "Taentawan Taddeo Majoli Maggioli": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 14,
+ "counts": {
+  "PASS": 13,
+  "tri:MODEL_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
