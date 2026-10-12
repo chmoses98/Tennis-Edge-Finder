@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-12T04:34:50.459664+00:00",
+ "run_id": "20261012T043450Z",
+ "external_parse": {
+  "events": 137,
+  "markets": 1928,
+  "skipped_family": 375,
+  "skipped_period": 638,
+  "skipped_live": 15,
+  "one_sided": 8,
+  "rows": 3307,
+  "devigged": 907
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1282,
+  "markets_mapped": 506,
+  "contracts": 1084,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261012T043450Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 506,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 268,
+  "rows": 816,
+  "two_sided": 815,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 506,
+ "external_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7829,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Thomas Linley": 1,
+   "Arjun Rathi": 1,
+   "Prasad Ingale": 1,
+   "Yue Xia": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.7321,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Kangyuan Shi": 1,
+   "Gabriela Knutson": 1,
+   "Jose Luis Claro": 1,
+   "Jakub Kusy": 1,
+   "Gabriele Crivellaro": 1,
+   "Trisztan Gubi": 1,
+   "Filip Drab": 1,
+   "Filip Czyrek": 1,
+   "Oliver Pivnik": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 73,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
