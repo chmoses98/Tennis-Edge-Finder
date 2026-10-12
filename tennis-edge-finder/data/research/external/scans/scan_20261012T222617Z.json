@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-12T22:26:17.360645+00:00",
+ "run_id": "20261012T222617Z",
+ "external_parse": {
+  "events": 97,
+  "markets": 1137,
+  "skipped_family": 242,
+  "skipped_period": 354,
+  "skipped_live": 14,
+  "one_sided": 7,
+  "rows": 1960,
+  "devigged": 534
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1429,
+  "markets_mapped": 498,
+  "contracts": 1048,
+  "quoted_contracts": 846,
+  "raw": "data/research/external/raw/20261012T222617Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 498,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 270,
+  "rows": 778,
+  "two_sided": 775,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 489,
+ "external_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7241,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Liam Oliver Toroman": 1,
+   "Sofia Cabezas Dominguez": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "AMBIGUOUS_PLAYER": 1,
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7845,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Bernardo Munk Mesa": 1,
+   "Tomas Dummer Macedo": 1,
+   "Eli Stephenson": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Filip Drab": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Daniel Tazabekov": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 91,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {}
+}
