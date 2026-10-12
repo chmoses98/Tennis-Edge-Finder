@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-12T02:04:58.805905+00:00",
+ "run_id": "20261012T020458Z",
+ "external_parse": {
+  "events": 134,
+  "markets": 2057,
+  "skipped_family": 412,
+  "skipped_period": 674,
+  "skipped_live": 2,
+  "one_sided": 8,
+  "rows": 3521,
+  "devigged": 962
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1346,
+  "markets_mapped": 504,
+  "contracts": 1078,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261012T020458Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 504,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 279,
+  "rows": 799,
+  "two_sided": 790,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 480,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7903,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Rito Arima": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7294,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Kangyuan Shi": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Filip Czyrek": 1,
+   "Dimitar Kisimov": 1,
+   "Milan Zavaczki": 1,
+   "Filip Martinovic": 1,
+   "Jiang Yi Qing": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 65,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {}
+}
