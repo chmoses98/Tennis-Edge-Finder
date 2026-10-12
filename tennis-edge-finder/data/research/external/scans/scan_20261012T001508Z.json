@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-12T00:15:08.952019+00:00",
+ "run_id": "20261012T001508Z",
+ "external_parse": {
+  "events": 126,
+  "markets": 1884,
+  "skipped_family": 385,
+  "skipped_period": 611,
+  "skipped_live": 4,
+  "one_sided": 7,
+  "rows": 3244,
+  "devigged": 881
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1286,
+  "markets_mapped": 465,
+  "contracts": 992,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261012T001508Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 465,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 186,
+  "rows": 806,
+  "two_sided": 795,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 423,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7845,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Eita Suzuki": 1,
+   "Aruth Chinsupakul": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aran Teixido Garcia": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Fred Barry Nimubona": 1,
+   "Phil Dungs": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 71,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {}
+}
