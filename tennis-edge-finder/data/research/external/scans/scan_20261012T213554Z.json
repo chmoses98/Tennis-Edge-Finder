@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-12T21:35:54.267690+00:00",
+ "run_id": "20261012T213554Z",
+ "external_parse": {
+  "events": 96,
+  "markets": 1122,
+  "skipped_family": 239,
+  "skipped_period": 350,
+  "skipped_live": 14,
+  "one_sided": 7,
+  "rows": 1930,
+  "devigged": 526
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1433,
+  "markets_mapped": 498,
+  "contracts": 1050,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261012T213554Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 498,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 268,
+  "rows": 782,
+  "two_sided": 778,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 428,
+ "external_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7209,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Liam Oliver Toroman": 1,
+   "Sofia Cabezas Dominguez": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "AMBIGUOUS_PLAYER": 1,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7586,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Bernardo Munk Mesa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Francisco Fontes Damorim": 1,
+   "Florian Zimmer": 1,
+   "Pavel Skvortcov": 1,
+   "Filip Martinovic": 1,
+   "Guilherme Barbieri Renner": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
