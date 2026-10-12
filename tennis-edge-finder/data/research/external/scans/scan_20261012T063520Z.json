@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-12T06:35:20.869252+00:00",
+ "run_id": "20261012T063520Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 1780,
+  "skipped_family": 335,
+  "skipped_period": 593,
+  "skipped_live": 15,
+  "one_sided": 6,
+  "rows": 3056,
+  "devigged": 846
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1103,
+  "markets_mapped": 460,
+  "contracts": 998,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261012T063520Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 460,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 216,
+  "rows": 782,
+  "two_sided": 765,
+  "one_sided": 17
+ },
+ "kalshi_quotes_on_disk": 400,
+ "external_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7851,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Thomas Linley": 1,
+   "Yue Xia": 1,
+   "Prasad Ingale": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.7556,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aran Teixido Garcia": 1,
+   "Fred Barry Nimubona": 1,
+   "Alexander Page": 1,
+   "Gabriele Crivellaro": 1,
+   "Filip Czyrek": 1,
+   "Afonso Oliveira": 1,
+   "Joao Rasgado": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 69,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
