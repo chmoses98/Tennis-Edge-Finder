@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-12T14:26:39.444019+00:00",
+ "run_id": "20261012T142639Z",
+ "external_parse": {
+  "events": 92,
+  "markets": 871,
+  "skipped_family": 179,
+  "skipped_period": 279,
+  "skipped_live": 24,
+  "one_sided": 21,
+  "rows": 1398,
+  "devigged": 390
+ },
+ "smarkets_fetch": {
+  "events_seen": 163,
+  "events_priced": 80,
+  "markets": 1274,
+  "markets_mapped": 430,
+  "contracts": 922,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261012T142639Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 430,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 117,
+  "rows": 805,
+  "two_sided": 793,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 846,
+ "external_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7381,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Maria Camila Osorio": 1,
+   "Phil Dungs": 1,
+   "Jakub Kusy": 1,
+   "Guelord Kayombo": 1,
+   "Ilina Ilieva": 1,
+   "Manuela Maia Citolino": 1,
+   "Emy Gauvin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Santiago Rodriguez Taverna": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 107,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.7643,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Arjun Rathi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Kaigaoge Kang": 1,
+   "Facundo Perlov": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jose Luis Claro": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 39,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MARKETS_AGREE": 3,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
