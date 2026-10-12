@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-12T22:36:18.260200+00:00",
+ "run_id": "20261012T223618Z",
+ "external_parse": {
+  "events": 132,
+  "markets": 1698,
+  "skipped_family": 325,
+  "skipped_period": 561,
+  "skipped_live": 11,
+  "one_sided": 9,
+  "rows": 2886,
+  "devigged": 803
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1435,
+  "markets_mapped": 497,
+  "contracts": 1046,
+  "quoted_contracts": 846,
+  "raw": "data/research/external/raw/20261012T223618Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 497,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 262,
+  "rows": 784,
+  "two_sided": 781,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 466,
+ "external_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7049,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 90,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7759,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Richard Lacis": 1,
+   "Filip Drab": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Anuj Watane": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Sebastian Heinrich": 1,
+   "Bercel Sandor Takacs": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 99,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
