@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-12T03:05:35.047516+00:00",
+ "run_id": "20261012T030535Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 2006,
+  "skipped_family": 398,
+  "skipped_period": 659,
+  "skipped_live": 7,
+  "one_sided": 8,
+  "rows": 3437,
+  "devigged": 941
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1311,
+  "markets_mapped": 510,
+  "contracts": 1092,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261012T030535Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 510,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 290,
+  "rows": 802,
+  "two_sided": 797,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1139,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7937,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Taiyo Hirano": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 216,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 64,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6991,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Kangyuan Shi": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aran Teixido Garcia": 1,
+   "Facundo Perlov": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jose Luis Claro": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 151,
+ "model_witness_available": true,
+ "rows": 138,
+ "counts": {
+  "PASS": 135,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:INSUFFICIENT_INPUTS": 63,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
