@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-12T11:16:52.481602+00:00",
+ "run_id": "20261012T111652Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1272,
+  "skipped_family": 242,
+  "skipped_period": 422,
+  "skipped_live": 42,
+  "one_sided": 21,
+  "rows": 2096,
+  "devigged": 585
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1317,
+  "markets_mapped": 412,
+  "contracts": 902,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261012T111652Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 412,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 68,
+  "rows": 834,
+  "two_sided": 832,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 946,
+ "external_mapping": {
+  "total": 125,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.752,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Maria Camila Osorio": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Amar Tahirovic": 1,
+   "Phil Dungs": 1,
+   "Jakub Kusy": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 174,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7126,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Bernardo Munk Mesa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aran Teixido Garcia": 1,
+   "Kaigaoge Kang": 1,
+   "Facundo Perlov": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 124,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 73,
+  "tri:MODEL_LONE_OUTLIER": 56,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
