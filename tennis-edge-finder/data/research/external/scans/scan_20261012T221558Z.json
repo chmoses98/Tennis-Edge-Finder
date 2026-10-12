@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-12T22:15:58.128568+00:00",
+ "run_id": "20261012T221558Z",
+ "external_parse": {
+  "events": 111,
+  "markets": 1359,
+  "skipped_family": 274,
+  "skipped_period": 439,
+  "skipped_live": 12,
+  "one_sided": 7,
+  "rows": 2322,
+  "devigged": 639
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1404,
+  "markets_mapped": 493,
+  "contracts": 1038,
+  "quoted_contracts": 846,
+  "raw": "data/research/external/raw/20261012T221558Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 493,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 252,
+  "rows": 786,
+  "two_sided": 781,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 539,
+ "external_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.703,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Francisco Fontes Damorim": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "AMBIGUOUS_PLAYER": 1,
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7823,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Bernardo Munk Mesa": 1,
+   "Eli Stephenson": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Francisco Fontes Damorim": 1,
+   "Filip Drab": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Sebastian Heinrich": 1,
+   "Taentawan Taddeo Majoli Maggioli": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
