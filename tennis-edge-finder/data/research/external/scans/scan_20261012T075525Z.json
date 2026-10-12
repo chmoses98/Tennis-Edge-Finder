@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-12T07:55:25.351378+00:00",
+ "run_id": "20261012T075525Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1971,
+  "skipped_family": 364,
+  "skipped_period": 657,
+  "skipped_live": 25,
+  "one_sided": 22,
+  "rows": 3314,
+  "devigged": 927
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1293,
+  "markets_mapped": 434,
+  "contracts": 950,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261012T075525Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 434,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 117,
+  "rows": 833,
+  "two_sided": 822,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 498,
+ "external_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 112,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7724,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Maria Camila Osorio": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Keisuke Ota": 1,
+   "Dimitar Kisimov": 1,
+   "Gabriele Crivellaro": 1,
+   "Phil Dungs": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 31,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6952,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Facundo Perlov": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Afonso Vaz Pinto": 1,
+   "Alexander Page": 1,
+   "Gabriele Crivellaro": 1,
+   "Filip Drab": 1,
+   "Afonso Oliveira": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 65,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
