@@ -1,19 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-12 12:38Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-12 12:52Z)
 
-* Earliest credible first ball: **2026-10-12 12:47Z**
-* Recommended RUN TENNIS time: **2026-10-12 12:02Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-12 12:37Z**
+* Earliest credible first ball: **2026-10-12 13:00Z**
+* Recommended RUN TENNIS time: **2026-10-12 12:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-12 12:50Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexandra Eala vs Han Shi | 2026-10-12 12:47Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court in progress (set 2 of best-of-3) | MEDIUM |
+| Alexandra Eala vs Han Shi | 2026-10-12 13:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Tommy Paul vs Valentin Vacherot
+Published slate: `SL-20261012T123339Z-3e15a4ac` built 2026-10-12 12:33Z -- current
 
-Published slate: `SL-20261012T120941Z-94baca84` built 2026-10-12 12:09Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
-
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-13 03:00Z, run by 2026-10-13 02:15Z, 8 match(es)
 * later window 3: first ball 2026-10-13 05:30Z, run by 2026-10-13 04:45Z, 6 match(es)
