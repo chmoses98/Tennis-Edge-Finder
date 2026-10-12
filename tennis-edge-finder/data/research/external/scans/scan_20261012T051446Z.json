@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-12T05:14:46.340014+00:00",
+ "run_id": "20261012T051446Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1891,
+  "skipped_family": 365,
+  "skipped_period": 626,
+  "skipped_live": 15,
+  "one_sided": 8,
+  "rows": 3239,
+  "devigged": 891
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1202,
+  "markets_mapped": 489,
+  "contracts": 1054,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261012T051446Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 489,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 220,
+  "rows": 834,
+  "two_sided": 833,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 466,
+ "external_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7795,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Thomas Linley": 1,
+   "Yue Xia": 1,
+   "Prasad Ingale": 1,
+   "Vraj Gohil": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7263,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Kangyuan Shi": 1,
+   "Facundo Perlov": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Gabriele Crivellaro": 1,
+   "Afonso Oliveira": 1,
+   "Guelord Kayombo": 1,
+   "Joao Rasgado": 1,
+   "Dimitar Kisimov": 1,
+   "Vilmos Krisztian Kovacs": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 65,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
