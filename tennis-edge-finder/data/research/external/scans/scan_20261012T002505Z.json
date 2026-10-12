@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-12T00:25:05.252715+00:00",
+ "run_id": "20261012T002505Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 1994,
+  "skipped_family": 403,
+  "skipped_period": 651,
+  "skipped_live": 5,
+  "one_sided": 8,
+  "rows": 3416,
+  "devigged": 932
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1286,
+  "markets_mapped": 465,
+  "contracts": 992,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261012T002505Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 465,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 187,
+  "rows": 805,
+  "two_sided": 799,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 277,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7805,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Rito Arima": 1,
+   "Eita Suzuki": 1,
+   "Aruth Chinsupakul": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7101,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Aran Teixido Garcia": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Filip Czyrek": 1,
+   "Oliver Pivnik": 1,
+   "Arjun Rathi": 1,
+   "Vraj Gohil": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 54,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {}
+}
