@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-12T21:56:39.536225+00:00",
+ "run_id": "20261012T215639Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 1231,
+  "skipped_family": 254,
+  "skipped_period": 390,
+  "skipped_live": 11,
+  "one_sided": 7,
+  "rows": 2115,
+  "devigged": 580
+ },
+ "smarkets_fetch": {
+  "events_seen": 176,
+  "events_priced": 80,
+  "markets": 1379,
+  "markets_mapped": 471,
+  "contracts": 992,
+  "quoted_contracts": 846,
+  "raw": "data/research/external/raw/20261012T215639Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 471,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 196,
+  "rows": 796,
+  "two_sided": 791,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1286,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6989,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Francisco Fontes Damorim": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "AMBIGUOUS_PLAYER": 1,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 284,
+  "by_status": {
+   "MAPPED": 204,
+   "UNMAPPED_PLAYER": 78,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7183,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Bernardo Munk Mesa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Francisco Fontes Damorim": 1,
+   "Richard Lacis": 1,
+   "Florian Zimmer": 1,
+   "Amar Tahirovic": 1,
+   "Jaron Held": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 204,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
