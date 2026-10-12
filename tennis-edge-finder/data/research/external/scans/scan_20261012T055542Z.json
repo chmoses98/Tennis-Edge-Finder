@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-12T05:55:42.752236+00:00",
+ "run_id": "20261012T055542Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1898,
+  "skipped_family": 363,
+  "skipped_period": 629,
+  "skipped_live": 15,
+  "one_sided": 8,
+  "rows": 3266,
+  "devigged": 898
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1145,
+  "markets_mapped": 474,
+  "contracts": 1022,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261012T055542Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 474,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 188,
+  "rows": 834,
+  "two_sided": 833,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 398,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7734,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Kangyuan Shi": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Thomas Linley": 1,
+   "Yue Xia": 1,
+   "Prasad Ingale": 1,
+   "Vraj Gohil": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Kangyuan Shi": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aran Teixido Garcia": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Afonso Oliveira": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 53,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
