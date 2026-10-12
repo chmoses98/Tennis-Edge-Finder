@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-12T13:45:34.370280+00:00",
+ "run_id": "20261012T134534Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 949,
+  "skipped_family": 188,
+  "skipped_period": 307,
+  "skipped_live": 30,
+  "one_sided": 16,
+  "rows": 1551,
+  "devigged": 436
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1157,
+  "markets_mapped": 369,
+  "contracts": 800,
+  "quoted_contracts": 800,
+  "raw": "data/research/external/raw/20261012T134534Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 369,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 775,
+  "two_sided": 769,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 361,
+ "external_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.734,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Maria Camila Osorio": 1,
+   "Raluca Georgiana Serban": 1,
+   "Gabriele Crivellaro": 1,
+   "Phil Dungs": 1,
+   "Jakub Kusy": 1,
+   "Guelord Kayombo": 1,
+   "Teodora Naidenova": 1,
+   "Ilina Ilieva": 1,
+   "Manuela Maia Citolino": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Santiago Rodriguez Taverna": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.7684,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Arjun Rathi": 1,
+   "Facundo Perlov": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jose Luis Claro": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Alexander Page": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MARKETS_AGREE": 3,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
