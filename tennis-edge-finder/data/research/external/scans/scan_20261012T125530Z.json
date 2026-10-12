@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-12T12:55:30.912945+00:00",
+ "run_id": "20261012T125530Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 1008,
+  "skipped_family": 193,
+  "skipped_period": 326,
+  "skipped_live": 32,
+  "one_sided": 18,
+  "rows": 1668,
+  "devigged": 471
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1243,
+  "markets_mapped": 388,
+  "contracts": 850,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261012T125530Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 388,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 813,
+  "two_sided": 809,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 351,
+ "external_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Xinyu Wang": 1,
+   "Maria Camila Osorio": 1,
+   "Raluca Georgiana Serban": 1,
+   "Filip Drab": 1,
+   "Gabriele Crivellaro": 1,
+   "Phil Dungs": 1,
+   "Jakub Kusy": 1,
+   "Guelord Kayombo": 1,
+   "Teodora Naidenova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 12,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7312,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Arjun Rathi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jose Luis Claro": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Afonso Vaz Pinto": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 36,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
