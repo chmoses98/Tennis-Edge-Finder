@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-12T22:06:01.182207+00:00",
+ "run_id": "20261012T220601Z",
+ "external_parse": {
+  "events": 111,
+  "markets": 1359,
+  "skipped_family": 274,
+  "skipped_period": 439,
+  "skipped_live": 12,
+  "one_sided": 7,
+  "rows": 2322,
+  "devigged": 639
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1406,
+  "markets_mapped": 491,
+  "contracts": 1032,
+  "quoted_contracts": 844,
+  "raw": "data/research/external/raw/20261012T220601Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 491,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 247,
+  "rows": 785,
+  "two_sided": 777,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 393,
+ "external_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.703,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Francisco Fontes Damorim": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "AMBIGUOUS_PLAYER": 1,
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 68,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Francisco Fontes Damorim": 1,
+   "Pavel Skvortcov": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Tim Hammes": 1,
+   "Daniel Tazabekov": 1,
+   "Bruno Rodrigues": 1,
+   "Tymon Litwic": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 11
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
