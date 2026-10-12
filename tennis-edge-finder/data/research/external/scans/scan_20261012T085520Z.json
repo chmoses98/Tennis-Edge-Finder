@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-12T08:55:20.090118+00:00",
+ "run_id": "20261012T085520Z",
+ "external_parse": {
+  "events": 154,
+  "markets": 1647,
+  "skipped_family": 298,
+  "skipped_period": 554,
+  "skipped_live": 41,
+  "one_sided": 36,
+  "rows": 2716,
+  "devigged": 759
+ },
+ "smarkets_fetch": {
+  "events_seen": 195,
+  "events_priced": 80,
+  "markets": 1060,
+  "markets_mapped": 392,
+  "contracts": 856,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261012T085520Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 392,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 800,
+  "two_sided": 786,
+  "one_sided": 14
+ },
+ "kalshi_quotes_on_disk": 363,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 110,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7534,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Maria Camila Osorio": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Keisuke Ota": 1,
+   "Dimitar Kisimov": 1,
+   "Gabriele Crivellaro": 1,
+   "Jiang Yi Qing": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 6,
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Aran Teixido Garcia": 1,
+   "Raluca Georgiana Serban": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6939,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Trisztan Gubi": 1,
+   "Filip Drab": 1,
+   "Filip Czyrek": 1,
+   "Afonso Oliveira": 1,
+   "Pavel Skvortcov": 1,
+   "Guelord Kayombo": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
