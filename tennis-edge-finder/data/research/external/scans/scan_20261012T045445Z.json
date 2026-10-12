@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-12T04:54:45.814531+00:00",
+ "run_id": "20261012T045445Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1889,
+  "skipped_family": 363,
+  "skipped_period": 626,
+  "skipped_live": 15,
+  "one_sided": 8,
+  "rows": 3240,
+  "devigged": 892
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1168,
+  "markets_mapped": 480,
+  "contracts": 1030,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261012T045445Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 480,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 211,
+  "rows": 819,
+  "two_sided": 817,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 437,
+ "external_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7795,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Thomas Linley": 1,
+   "Arjun Rathi": 1,
+   "Prasad Ingale": 1,
+   "Yue Xia": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 61,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6702,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Kangyuan Shi": 1,
+   "Gabriela Knutson": 1,
+   "Facundo Perlov": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Afonso Vaz Pinto": 1,
+   "Gabriele Crivellaro": 1,
+   "Trisztan Gubi": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
