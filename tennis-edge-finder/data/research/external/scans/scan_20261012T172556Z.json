@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-12T17:25:56.104844+00:00",
+ "run_id": "20261012T172556Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 1054,
+  "skipped_family": 230,
+  "skipped_period": 324,
+  "skipped_live": 24,
+  "one_sided": 13,
+  "rows": 1804,
+  "devigged": 487
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1422,
+  "markets_mapped": 482,
+  "contracts": 1018,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261012T172556Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 482,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 271,
+  "rows": 747,
+  "two_sided": 741,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 327,
+ "external_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7128,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Bernardo Munk Mesa": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Adam Duda": 1,
+   "Guelord Kayombo": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Facundo Perlov": 1,
+   "Sophia Santos": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Santiago Rodriguez Taverna": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 80,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8163,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Melios Efstathiou": 1,
+   "Arian Barbic": 1,
+   "Tim Hammes": 1,
+   "Arjun Rathi": 1,
+   "Kaigaoge Kang": 1,
+   "Facundo Perlov": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Maria Herazo": 1,
+   "Anastasiia Nikolaieva": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 17,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:MODEL_LONE_OUTLIER": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
