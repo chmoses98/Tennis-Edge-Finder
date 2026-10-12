@@ -1,20 +1,18 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-12 11:04Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-12 11:18Z)
 
-* Earliest credible first ball: **2026-10-12 11:05Z**
-* Recommended RUN TENNIS time: **2026-10-12 10:20Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-12 10:55Z**
+* Earliest credible first ball: **2026-10-12 11:19Z**
+* Recommended RUN TENNIS time: **2026-10-12 10:34Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-12 11:09Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Xiyu Wang vs Xinyu Wang | 2026-10-12 11:05Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court finished | MEDIUM |
-| Tommy Paul vs Valentin Vacherot | 2026-10-12 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Tommy Paul vs Valentin Vacherot | 2026-10-12 11:19Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Stadium Court finished | MEDIUM |
+| Xiyu Wang vs Xinyu Wang | 2026-10-12 11:19Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court finished | MEDIUM |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Arthur Fils vs Botic Van de Zandschulp
+Published slate: `SL-20261012T110215Z-cfa7f8b3` built 2026-10-12 11:02Z -- current
 
-Published slate: `SL-20261012T103018Z-9926e4e7` built 2026-10-12 10:30Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
-
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-12 13:00Z, run by 2026-10-12 12:15Z, 1 match(es)
 * later window 3: first ball 2026-10-13 03:00Z, run by 2026-10-13 02:15Z, 8 match(es)
