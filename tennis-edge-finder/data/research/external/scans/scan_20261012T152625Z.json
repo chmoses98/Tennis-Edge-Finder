@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-12T15:26:25.086531+00:00",
+ "run_id": "20261012T152625Z",
+ "external_parse": {
+  "events": 95,
+  "markets": 845,
+  "skipped_family": 175,
+  "skipped_period": 266,
+  "skipped_live": 29,
+  "one_sided": 22,
+  "rows": 1345,
+  "devigged": 382
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1255,
+  "markets_mapped": 410,
+  "contracts": 876,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261012T152625Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 410,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 73,
+  "rows": 803,
+  "two_sided": 795,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 869,
+ "external_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7471,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Camila Osorio": 1,
+   "Arjun Prabhakar": 1,
+   "Harrison Kemp": 1,
+   "Jakub Kusy": 1,
+   "Guelord Kayombo": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jose Luis Claro": 1,
+   "Emy Gauvin": 1,
+   "Gabriela Guapindaia Soares": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Santiago Rodriguez Taverna": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1,
+   "Martha Matoula": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 109,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.7466,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Cadence Benchetrit": 1,
+   "Andrei Kunitsyn": 1,
+   "Justas Trainauskas": 1,
+   "Tymon Litwic": 1,
+   "Leo Gutjahr": 1,
+   "Arjun Rathi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Kaigaoge Kang": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 109,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 42,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
