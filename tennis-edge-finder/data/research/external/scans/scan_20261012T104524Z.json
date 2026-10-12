@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-12T10:45:24.396741+00:00",
+ "run_id": "20261012T104524Z",
+ "external_parse": {
+  "events": 139,
+  "markets": 1331,
+  "skipped_family": 244,
+  "skipped_period": 442,
+  "skipped_live": 46,
+  "one_sided": 16,
+  "rows": 2236,
+  "devigged": 629
+ },
+ "smarkets_fetch": {
+  "events_seen": 179,
+  "events_priced": 80,
+  "markets": 1013,
+  "markets_mapped": 377,
+  "contracts": 828,
+  "quoted_contracts": 828,
+  "raw": "data/research/external/raw/20261012T104524Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 377,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 104,
+  "rows": 724,
+  "two_sided": 716,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 461,
+ "external_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.771,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Maria Camila Osorio": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Gabriele Crivellaro": 1,
+   "Amar Tahirovic": 1,
+   "Phil Dungs": 1,
+   "Jakub Kusy": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Raluca Georgiana Serban": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7642,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aran Teixido Garcia": 1,
+   "Kaigaoge Kang": 1,
+   "Facundo Perlov": 1,
+   "Juan Sebastian Dominguez Collado": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
