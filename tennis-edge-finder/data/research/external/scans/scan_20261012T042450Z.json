@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-12T04:24:50.122864+00:00",
+ "run_id": "20261012T042450Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1919,
+  "skipped_family": 372,
+  "skipped_period": 634,
+  "skipped_live": 13,
+  "one_sided": 8,
+  "rows": 3297,
+  "devigged": 905
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1275,
+  "markets_mapped": 506,
+  "contracts": 1082,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261012T042450Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 506,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 270,
+  "rows": 812,
+  "two_sided": 812,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 514,
+ "external_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7953,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Arjun Rathi": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Kangyuan Shi": 1,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7523,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Jakub Vrba": 1,
+   "Kangyuan Shi": 1,
+   "Gabriela Knutson": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jose Luis Claro": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Trisztan Gubi": 1,
+   "Filip Czyrek": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
