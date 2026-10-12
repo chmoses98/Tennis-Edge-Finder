@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-12T09:25:20.654908+00:00",
+ "run_id": "20261012T092520Z",
+ "external_parse": {
+  "events": 150,
+  "markets": 1630,
+  "skipped_family": 303,
+  "skipped_period": 545,
+  "skipped_live": 39,
+  "one_sided": 36,
+  "rows": 2669,
+  "devigged": 746
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1327,
+  "markets_mapped": 421,
+  "contracts": 922,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261012T092520Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 421,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 71,
+  "rows": 851,
+  "two_sided": 840,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 423,
+ "external_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 19,
+   "DOUBLES_UNSUPPORTED": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7535,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Catherine McNally": 1,
+   "Xinyu Wang": 1,
+   "Maria Camila Osorio": 1,
+   "Jakub Vrba": 1,
+   "Raluca Georgiana Serban": 1,
+   "Keisuke Ota": 1,
+   "Dimitar Kisimov": 1,
+   "Gabriele Crivellaro": 1,
+   "Jiang Yi Qing": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Aran Teixido Garcia": 1,
+   "Emiliana Arango": 1,
+   "Abdullah Shelbayh": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7288,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Bernardo Munk Mesa": 1,
+   "Jakub Vrba": 1,
+   "Gabriela Knutson": 1,
+   "Facundo Perlov": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Thomas Enrique Menzel Piccioli": 1,
+   "Jakub Kusy": 1,
+   "Alexander Page": 1,
+   "Phil Dungs": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
