@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-13T10:09:30.098350+00:00",
+ "run_id": "20261013T100930Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2180,
+  "skipped_family": 270,
+  "skipped_period": 660,
+  "skipped_live": 69,
+  "one_sided": 131,
+  "rows": 3335,
+  "devigged": 1118
+ },
+ "smarkets_fetch": {
+  "events_seen": 143,
+  "events_priced": 80,
+  "markets": 1235,
+  "markets_mapped": 447,
+  "contracts": 1002,
+  "quoted_contracts": 904,
+  "raw": "data/research/external/raw/20261013T100930Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 447,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 127,
+  "rows": 875,
+  "two_sided": 866,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 723,
+ "external_mapping": {
+  "total": 272,
+  "by_status": {
+   "MAPPED": 193,
+   "UNMAPPED_PLAYER": 44,
+   "DOUBLES_UNSUPPORTED": 35
+  },
+  "mapped_rate": 0.7096,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Simone Massellani": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Filip Drab": 1,
+   "Tom Zeuch": 1,
+   "Arian Barbic": 1,
+   "Haiyi Qin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Martha Matoula": 1,
+   "Analu Freitas": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 224,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 50
+  },
+  "mapped_rate": 0.7768,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Giorgia Pedone": 1,
+   "MARTIN SEBASTIAN ALMEIDA VELEZ": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Niko Klyachkin": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Eli Stephenson": 1,
+   "Florian Zimmer": 1,
+   "Pavel Skvortcov": 1,
+   "Filip Martinovic": 1
+  }
+ },
+ "matched_both_venues": 136,
+ "external_mapped_matches": 199,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 159,
+ "counts": {
+  "PASS": 158,
+  "tri:MODEL_LONE_OUTLIER": 85,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 51,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 54,
+  "kalshi_not_two_sided": 1
+ }
+}
