@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-13T08:19:54.528886+00:00",
+ "run_id": "20261013T081954Z",
+ "external_parse": {
+  "events": 292,
+  "markets": 2646,
+  "skipped_family": 353,
+  "skipped_period": 812,
+  "skipped_live": 55,
+  "one_sided": 111,
+  "rows": 4080,
+  "devigged": 1368
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1466,
+  "markets_mapped": 495,
+  "contracts": 1126,
+  "quoted_contracts": 910,
+  "raw": "data/research/external/raw/20261013T081954Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 495,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 255,
+  "rows": 871,
+  "two_sided": 868,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1575,
+ "external_mapping": {
+  "total": 284,
+  "by_status": {
+   "MAPPED": 218,
+   "UNMAPPED_PLAYER": 40,
+   "DOUBLES_UNSUPPORTED": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7676,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Simone Massellani": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Melios Efstathiou": 1,
+   "Anuj Watane": 1,
+   "Odysseas Geladaris": 1,
+   "Justas Trainauskas": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Analu Freitas": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 370,
+  "by_status": {
+   "MAPPED": 293,
+   "UNMAPPED_PLAYER": 76,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7919,
+  "top_refusal_subjects": {
+   "Simone Massellani": 1,
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "MARTIN SEBASTIAN ALMEIDA VELEZ": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Niko Klyachkin": 1
+  }
+ },
+ "matched_both_venues": 199,
+ "external_mapped_matches": 224,
+ "kalshi_mapped_matches": 293,
+ "model_witness_available": true,
+ "rows": 296,
+ "counts": {
+  "PASS": 285,
+  "tri:INSUFFICIENT_INPUTS": 135,
+  "WATCH": 10,
+  "tri:KALSHI_LONE_OUTLIER": 24,
+  "tri:MODEL_LONE_OUTLIER": 121,
+  "tri:MARKETS_AGREE": 12,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 50,
+  "kalshi_not_two_sided": 2
+ }
+}
