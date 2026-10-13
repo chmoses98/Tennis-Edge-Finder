@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-13T08:38:49.974546+00:00",
+ "run_id": "20261013T083849Z",
+ "external_parse": {
+  "events": 290,
+  "markets": 2604,
+  "skipped_family": 345,
+  "skipped_period": 797,
+  "skipped_live": 56,
+  "one_sided": 105,
+  "rows": 4013,
+  "devigged": 1356
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1302,
+  "markets_mapped": 469,
+  "contracts": 1070,
+  "quoted_contracts": 918,
+  "raw": "data/research/external/raw/20261013T083849Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 469,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 187,
+  "rows": 883,
+  "two_sided": 881,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 690,
+ "external_mapping": {
+  "total": 282,
+  "by_status": {
+   "MAPPED": 217,
+   "UNMAPPED_PLAYER": 39,
+   "DOUBLES_UNSUPPORTED": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7695,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Simone Massellani": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Melios Efstathiou": 1,
+   "Anuj Watane": 1,
+   "Odysseas Geladaris": 1,
+   "Tymon Litwic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Analu Freitas": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 168,
+   "UNMAPPED_PLAYER": 40,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8038,
+  "top_refusal_subjects": {
+   "Simone Massellani": 1,
+   "Jay Friend": 1,
+   "Giorgia Pedone": 1,
+   "Eli Stephenson": 1,
+   "Florian Zimmer": 1,
+   "Jaron Held": 1,
+   "Pavel Skvortcov": 1,
+   "Filip Martinovic": 1,
+   "Martim Bernardo": 1,
+   "LUCAS GONCALVES FRANCA": 1
+  }
+ },
+ "matched_both_venues": 130,
+ "external_mapped_matches": 223,
+ "kalshi_mapped_matches": 168,
+ "model_witness_available": true,
+ "rows": 176,
+ "counts": {
+  "PASS": 170,
+  "tri:INSUFFICIENT_INPUTS": 50,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 16,
+  "tri:MODEL_LONE_OUTLIER": 91,
+  "tri:MARKETS_AGREE": 14,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 42
+ }
+}
