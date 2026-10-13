@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-13 02:27Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-13 02:42Z)
 
 * Earliest credible first ball: **2026-10-13 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-13 02:15Z**  (OVERDUE: run now)
@@ -16,7 +16,7 @@
 | Hanyu Guo vs Sorana Cirstea | 2026-10-13 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Yulia Putintseva vs Zeynep Sonmez | 2026-10-13 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261013T010927Z-2a934939` built 2026-10-13 01:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-13T03:00:00+00:00, slate built 2026-10-13T01:09:27.362262+00:00
+Published slate: `SL-20261013T022056Z-2342f368` built 2026-10-13 02:20Z -- current
 
 Dispatched this pass: none
 
