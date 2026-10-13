@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-13T00:16:51.139953+00:00",
+ "run_id": "20261013T001651Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1847,
+  "skipped_family": 347,
+  "skipped_period": 611,
+  "skipped_live": 8,
+  "one_sided": 17,
+  "rows": 3077,
+  "devigged": 870
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1513,
+  "markets_mapped": 527,
+  "contracts": 1114,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261013T001651Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 527,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 317,
+  "rows": 797,
+  "two_sided": 792,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 675,
+ "external_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7252,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Varvara Rubtsova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 167,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 33
+  },
+  "mapped_rate": 0.8024,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Tomas Dummer Macedo": 1,
+   "Henrique Ortenblad Nogueira": 1,
+   "Richard Lacis": 1,
+   "Pavel Skvortcov": 1,
+   "Filip Drab": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 70,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
