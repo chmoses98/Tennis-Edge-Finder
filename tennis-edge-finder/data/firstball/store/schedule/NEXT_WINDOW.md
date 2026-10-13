@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-13 16:22Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-13 16:33Z)
 
 * Earliest credible first ball: **2026-10-14 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-14 02:15Z**
@@ -19,9 +19,9 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Han Shi vs Leylah Fernandez
 
-Published slate: `SL-20261013T151020Z-6000ac3a` built 2026-10-13 15:10Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261013T161306Z-c9e5f35a` built 2026-10-13 16:13Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-14 05:30Z, run by 2026-10-14 04:45Z, 4 match(es)
 * later window 3: first ball 2026-10-14 07:30Z, run by 2026-10-14 06:45Z, 1 match(es)
