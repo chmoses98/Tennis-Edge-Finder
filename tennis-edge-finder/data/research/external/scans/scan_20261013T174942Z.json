@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-13T17:49:42.045535+00:00",
+ "run_id": "20261013T174942Z",
+ "external_parse": {
+  "events": 127,
+  "markets": 916,
+  "skipped_family": 142,
+  "skipped_period": 251,
+  "skipped_live": 32,
+  "one_sided": 36,
+  "rows": 1606,
+  "devigged": 486
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 1345,
+  "markets_mapped": 454,
+  "contracts": 960,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261013T174942Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 454,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 162,
+  "rows": 798,
+  "two_sided": 788,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 464,
+ "external_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 21,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.563,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Arjun Prabhakar": 1,
+   "Xavier Massotte": 1,
+   "Lane Leschly": 1,
+   "Odysseas Geladaris": 1,
+   "Facundo Perlov": 1,
+   "Alex Hernandez": 1,
+   "MARTIN SEBASTIAN ALMEIDA VELEZ": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Leyre Romero Gormaz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.8095,
+  "top_refusal_subjects": {
+   "Justas Trainauskas": 1,
+   "Jan Sadzik": 1,
+   "Pablo Aunion Duran": 1,
+   "Bercel Sandor Takacs": 1,
+   "Josh Manuel": 1,
+   "Trisztan Gubi": 1,
+   "Mikhail Khodorchenko": 1,
+   "Arnav Paparkar": 1,
+   "MARTIN SEBASTIAN ALMEIDA VELEZ": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 102,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "PASS": 52,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
