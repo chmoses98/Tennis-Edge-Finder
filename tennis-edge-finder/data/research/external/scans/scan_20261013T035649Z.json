@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-13T03:56:49.526106+00:00",
+ "run_id": "20261013T035649Z",
+ "external_parse": {
+  "events": 221,
+  "markets": 2481,
+  "skipped_family": 378,
+  "skipped_period": 785,
+  "skipped_live": 18,
+  "one_sided": 61,
+  "rows": 4023,
+  "devigged": 1255
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1498,
+  "markets_mapped": 535,
+  "contracts": 1164,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261013T035649Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 535,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 338,
+  "rows": 826,
+  "two_sided": 822,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 665,
+ "external_mapping": {
+  "total": 212,
+  "by_status": {
+   "MAPPED": 158,
+   "UNMAPPED_PLAYER": 25,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7453,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Thomas Linley": 1,
+   "Siddharth Bharadwaj": 1,
+   "Aruth Chinsupakul": 1,
+   "Haru Kawanak": 1,
+   "Rito Arima": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 192,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 41,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7812,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Giorgia Pedone": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Niko Klyachkin": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Facundo Perlov": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 163,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 100,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:MARKETS_AGREE": 9,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
