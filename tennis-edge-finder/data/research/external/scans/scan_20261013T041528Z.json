@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-13T04:15:28.236517+00:00",
+ "run_id": "20261013T041528Z",
+ "external_parse": {
+  "events": 236,
+  "markets": 2551,
+  "skipped_family": 381,
+  "skipped_period": 796,
+  "skipped_live": 21,
+  "one_sided": 69,
+  "rows": 4083,
+  "devigged": 1304
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1532,
+  "markets_mapped": 536,
+  "contracts": 1174,
+  "quoted_contracts": 892,
+  "raw": "data/research/external/raw/20261013T041528Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 536,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 345,
+  "rows": 829,
+  "two_sided": 826,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1632,
+ "external_mapping": {
+  "total": 227,
+  "by_status": {
+   "MAPPED": 170,
+   "UNMAPPED_PLAYER": 28,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7489,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Aruth Chinsupakul": 1,
+   "Haru Kawanak": 1,
+   "Rito Arima": 1,
+   "Digvijay Pratap Singh": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 388,
+  "by_status": {
+   "MAPPED": 302,
+   "UNMAPPED_PLAYER": 85,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7784,
+  "top_refusal_subjects": {
+   "Simone Massellani": 1,
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "MARTIN SEBASTIAN ALMEIDA VELEZ": 1,
+   "Alex Hernandez": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Niko Klyachkin": 1
+  }
+ },
+ "matched_both_venues": 149,
+ "external_mapped_matches": 175,
+ "kalshi_mapped_matches": 302,
+ "model_witness_available": true,
+ "rows": 282,
+ "counts": {
+  "PASS": 268,
+  "tri:MODEL_LONE_OUTLIER": 95,
+  "WATCH": 14,
+  "tri:KALSHI_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 138,
+  "tri:ALL_THREE_DISAGREE": 9,
+  "tri:MARKETS_AGREE": 13,
+  "tri:EXTERNAL_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
