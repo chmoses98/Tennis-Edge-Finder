@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-13T10:29:27.594963+00:00",
+ "run_id": "20261013T102927Z",
+ "external_parse": {
+  "events": 268,
+  "markets": 1978,
+  "skipped_family": 254,
+  "skipped_period": 609,
+  "skipped_live": 72,
+  "one_sided": 154,
+  "rows": 2901,
+  "devigged": 960
+ },
+ "smarkets_fetch": {
+  "events_seen": 136,
+  "events_priced": 80,
+  "markets": 1310,
+  "markets_mapped": 500,
+  "contracts": 1108,
+  "quoted_contracts": 898,
+  "raw": "data/research/external/raw/20261013T102927Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 500,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 229,
+  "rows": 879,
+  "two_sided": 872,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 705,
+ "external_mapping": {
+  "total": 260,
+  "by_status": {
+   "MAPPED": 185,
+   "UNMAPPED_PLAYER": 40,
+   "DOUBLES_UNSUPPORTED": 35
+  },
+  "mapped_rate": 0.7115,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Simone Massellani": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Tom Zeuch": 1,
+   "Arian Barbic": 1,
+   "Tim Hammes": 1,
+   "Haiyi Qin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Martha Matoula": 1,
+   "Analu Freitas": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 208,
+  "by_status": {
+   "MAPPED": 163,
+   "UNMAPPED_PLAYER": 45
+  },
+  "mapped_rate": 0.7837,
+  "top_refusal_subjects": {
+   "Simone Massellani": 1,
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Giorgia Pedone": 1,
+   "Zichen Shao": 1,
+   "Darwin Andres Macias Elizalde": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Facundo Perlov": 1
+  }
+ },
+ "matched_both_venues": 129,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 163,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 115,
+  "tri:MODEL_LONE_OUTLIER": 69,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "WATCH": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 64,
+  "kalshi_not_two_sided": 4
+ }
+}
