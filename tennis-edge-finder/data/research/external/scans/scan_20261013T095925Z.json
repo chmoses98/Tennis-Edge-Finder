@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-13T09:59:25.657348+00:00",
+ "run_id": "20261013T095925Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2180,
+  "skipped_family": 270,
+  "skipped_period": 660,
+  "skipped_live": 69,
+  "one_sided": 131,
+  "rows": 3335,
+  "devigged": 1118
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1263,
+  "markets_mapped": 462,
+  "contracts": 1044,
+  "quoted_contracts": 910,
+  "raw": "data/research/external/raw/20261013T095925Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 462,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 166,
+  "rows": 878,
+  "two_sided": 872,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 644,
+ "external_mapping": {
+  "total": 272,
+  "by_status": {
+   "MAPPED": 193,
+   "UNMAPPED_PLAYER": 44,
+   "DOUBLES_UNSUPPORTED": 35
+  },
+  "mapped_rate": 0.7096,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Simone Massellani": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Filip Drab": 1,
+   "Tom Zeuch": 1,
+   "Arian Barbic": 1,
+   "Haiyi Qin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Martha Matoula": 1,
+   "Analu Freitas": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 131,
+   "UNMAPPED_PLAYER": 42
+  },
+  "mapped_rate": 0.7572,
+  "top_refusal_subjects": {
+   "Simone Massellani": 1,
+   "Jay Friend": 1,
+   "Giorgia Pedone": 1,
+   "MARTIN SEBASTIAN ALMEIDA VELEZ": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Filip Martinovic": 1,
+   "Martim Bernardo": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Alessio Vasquez": 1,
+   "Odysseas Geladaris": 1
+  }
+ },
+ "matched_both_venues": 101,
+ "external_mapped_matches": 200,
+ "kalshi_mapped_matches": 131,
+ "model_witness_available": true,
+ "rows": 105,
+ "counts": {
+  "PASS": 103,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 66,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 47,
+  "kalshi_not_two_sided": 1
+ }
+}
