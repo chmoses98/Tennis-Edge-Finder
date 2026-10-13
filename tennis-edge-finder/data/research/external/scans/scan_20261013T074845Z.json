@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-13T07:48:45.090792+00:00",
+ "run_id": "20261013T074845Z",
+ "external_parse": {
+  "events": 254,
+  "markets": 2421,
+  "skipped_family": 340,
+  "skipped_period": 746,
+  "skipped_live": 40,
+  "one_sided": 86,
+  "rows": 3737,
+  "devigged": 1244
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1493,
+  "markets_mapped": 508,
+  "contracts": 1156,
+  "quoted_contracts": 912,
+  "raw": "data/research/external/raw/20261013T074845Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 508,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 281,
+  "rows": 875,
+  "two_sided": 871,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 693,
+ "external_mapping": {
+  "total": 246,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 31,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.7764,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Melios Efstathiou": 1,
+   "Anuj Watane": 1,
+   "Odysseas Geladaris": 1,
+   "Justas Trainauskas": 1,
+   "Tymon Litwic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 195,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 44,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7692,
+  "top_refusal_subjects": {
+   "Simone Massellani": 1,
+   "Alex Hernandez": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Facundo Perlov": 1,
+   "Eli Stephenson": 1,
+   "Florian Zimmer": 1,
+   "Amar Tahirovic": 1,
+   "Jaron Held": 1,
+   "Pavel Skvortcov": 1,
+   "Filip Martinovic": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 196,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 115,
+  "tri:INSUFFICIENT_INPUTS": 65,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
