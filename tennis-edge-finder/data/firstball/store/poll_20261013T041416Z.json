@@ -1,0 +1,57 @@
+{
+ "run_id": "20261013T041416Z",
+ "started_at": "2026-10-13T04:14:16.299928+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 222,
+ "truths_written": 7,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPDOUBLES-26OCT13ARROLILIUMED": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1642,
+  "events_only_on_capture_board": 514,
+  "selected_from_capture_board": 508
+ },
+ "mapping": {
+  "UNMATCHED": 936,
+  "MATCHED": 222,
+  "AMBIGUOUS": 6
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT13SHIFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185347 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT13SHIFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185347 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT13SHIFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185347 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-13T04:29:28.403232+00:00"
+}
