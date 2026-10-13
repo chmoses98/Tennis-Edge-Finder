@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-13T06:18:31.983748+00:00",
+ "run_id": "20261013T061831Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 2468,
+  "skipped_family": 350,
+  "skipped_period": 759,
+  "skipped_live": 22,
+  "one_sided": 84,
+  "rows": 3842,
+  "devigged": 1275
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1576,
+  "markets_mapped": 534,
+  "contracts": 1202,
+  "quoted_contracts": 908,
+  "raw": "data/research/external/raw/20261013T061831Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 534,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 359,
+  "rows": 843,
+  "two_sided": 837,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 667,
+ "external_mapping": {
+  "total": 232,
+  "by_status": {
+   "MAPPED": 181,
+   "UNMAPPED_PLAYER": 27,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.7802,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Maria Camila Osorio": 1,
+   "Catherine McNally": 1,
+   "Noma Akugue Noha": 1,
+   "Guiomar Maristany": 1,
+   "Arjun Rathi": 1,
+   "Tom Zeuch": 1,
+   "Arian Barbic": 1,
+   "Filip Drab": 1,
+   "Melios Efstathiou": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jay Friend": 1,
+   "Martha Matoula": 1,
+   "Simone Massellani": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8324,
+  "top_refusal_subjects": {
+   "Darwin Andres Macias Elizalde": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Facundo Perlov": 1,
+   "Amar Tahirovic": 1,
+   "Jaron Held": 1,
+   "Filip Martinovic": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Odysseas Geladaris": 1,
+   "Taentawan Taddeo Majoli Maggioli": 1,
+   "Melios Efstathiou": 1
+  }
+ },
+ "matched_both_venues": 72,
+ "external_mapped_matches": 186,
+ "kalshi_mapped_matches": 149,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 115,
+  "tri:INSUFFICIENT_INPUTS": 46,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 10,
+  "SHADOW_BET": 3,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
