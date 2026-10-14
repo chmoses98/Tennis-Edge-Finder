@@ -1,18 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 10:50Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 11:01Z)
 
-* Earliest credible first ball: **2026-10-14 10:56Z**
-* Recommended RUN TENNIS time: **2026-10-14 10:11Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-14 10:46Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-10-14 11:30Z**
+* Recommended RUN TENNIS time: **2026-10-14 10:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-14 11:20Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Aryna Sabalenka vs Ann Li | 2026-10-14 10:56Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court in progress (set 3 of best-of-3) | MEDIUM |
 | Tommy Paul vs Zizou Bergs | 2026-10-14 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Ashlyn Krueger vs Lanlana Tararudee, Han Shi vs Leylah Fernandez
+**3 main-tour match(es) without a verified start status** (BET blocked until checked): Ashlyn Krueger vs Lanlana Tararudee, Aryna Sabalenka vs Ann Li, Han Shi vs Leylah Fernandez
 
-Published slate: `SL-20261014T103812Z-3bd493b7` built 2026-10-14 10:38Z -- current
+Published slate: `SL-20261014T104932Z-5659f93e` built 2026-10-14 10:49Z -- current
 
 Dispatched this pass: none
 
