@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-14T14:22:40.909439+00:00",
+ "run_id": "20261014T142240Z",
+ "external_parse": {
+  "events": 176,
+  "markets": 1194,
+  "skipped_family": 174,
+  "skipped_period": 307,
+  "skipped_live": 42,
+  "one_sided": 56,
+  "rows": 1686,
+  "devigged": 657
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 614,
+  "markets_mapped": 274,
+  "contracts": 584,
+  "quoted_contracts": 584,
+  "raw": "data/research/external/raw/20261014T142240Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 274,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 567,
+  "two_sided": 564,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 440,
+ "external_mapping": {
+  "total": 167,
+  "by_status": {
+   "MAPPED": 112,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6707,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Saahil Gupte": 1,
+   "Alexander Baez": 1,
+   "Brian Windsor": 1,
+   "Maximilian Bonte": 1,
+   "Timothee Andriveau": 1,
+   "Louis Hull": 1,
+   "Ahmed Darmoul": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.7961,
+  "top_refusal_subjects": {
+   "Arnav Paparkar": 1,
+   "Digvijay Pratap Singh": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1,
+   "Denis Klok": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1,
+   "Joao Vitor Scramin do Lago": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 143,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 57,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
