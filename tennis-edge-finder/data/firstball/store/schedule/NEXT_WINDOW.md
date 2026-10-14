@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 22:20Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 22:31Z)
 
 * Earliest credible first ball: **2026-10-15 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-15 02:15Z**
@@ -12,7 +12,7 @@
 | Iva Jovic vs Maja Chwalinska | 2026-10-15 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Elina Svitolina vs Hanyu Guo | 2026-10-15 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261014T174931Z-6869c50a` built 2026-10-14 17:49Z -- current
+Published slate: `SL-20261014T221458Z-eef1e224` built 2026-10-14 22:14Z -- current
 
 Dispatched this pass: none
 
