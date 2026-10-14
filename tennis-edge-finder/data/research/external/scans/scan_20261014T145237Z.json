@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-14T14:52:37.484936+00:00",
+ "run_id": "20261014T145237Z",
+ "external_parse": {
+  "events": 165,
+  "markets": 1106,
+  "skipped_family": 185,
+  "skipped_period": 274,
+  "skipped_live": 40,
+  "one_sided": 62,
+  "rows": 1504,
+  "devigged": 585
+ },
+ "smarkets_fetch": {
+  "events_seen": 96,
+  "events_priced": 80,
+  "markets": 626,
+  "markets_mapped": 279,
+  "contracts": 598,
+  "quoted_contracts": 598,
+  "raw": "data/research/external/raw/20261014T145237Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 279,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 124,
+  "rows": 474,
+  "two_sided": 465,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 401,
+ "external_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 106,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6839,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Saahil Gupte": 1,
+   "Alexander Baez": 1,
+   "Brian Windsor": 1,
+   "Maximilian Bonte": 1,
+   "Rohan Belday": 1,
+   "Tito Chavez": 1,
+   "Timothee Andriveau": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 34,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8427,
+  "top_refusal_subjects": {
+   "Jamie Mackenzie": 1,
+   "Arjun Rathi": 1,
+   "Emilio Camacho": 1,
+   "Bruno Rodrigues": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Christopher Thies": 1,
+   "Denis Klok": 1,
+   "Johan Oscar Lien": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 135,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
