@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-14T23:41:09.938878+00:00",
+ "run_id": "20261014T234109Z",
+ "external_parse": {
+  "events": 194,
+  "markets": 1655,
+  "skipped_family": 224,
+  "skipped_period": 436,
+  "skipped_live": 15,
+  "one_sided": 40,
+  "rows": 2507,
+  "devigged": 952
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 1011,
+  "markets_mapped": 357,
+  "contracts": 750,
+  "quoted_contracts": 750,
+  "raw": "data/research/external/raw/20261014T234109Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 357,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 700,
+  "two_sided": 679,
+  "one_sided": 21
+ },
+ "kalshi_quotes_on_disk": 400,
+ "external_mapping": {
+  "total": 183,
+  "by_status": {
+   "MAPPED": 135,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7377,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 8,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9135,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Arjun Rathi": 1,
+   "William Nolan": 1,
+   "Lujza Zimenova": 1,
+   "aoyi li": 1,
+   "Aleksandra Rangelova": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 154,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 98,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
