@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-14T09:12:24.506371+00:00",
+ "run_id": "20261014T091224Z",
+ "external_parse": {
+  "events": 308,
+  "markets": 2001,
+  "skipped_family": 208,
+  "skipped_period": 550,
+  "skipped_live": 72,
+  "one_sided": 63,
+  "rows": 3057,
+  "devigged": 1179
+ },
+ "smarkets_fetch": {
+  "events_seen": 127,
+  "events_priced": 80,
+  "markets": 931,
+  "markets_mapped": 355,
+  "contracts": 780,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20261014T091224Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 355,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 754,
+  "two_sided": 749,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 694,
+ "external_mapping": {
+  "total": 299,
+  "by_status": {
+   "MAPPED": 205,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6856,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Keisuke Ota": 1,
+   "Marko Savija": 1,
+   "Dylan Bairo": 1,
+   "Jan Wygona": 1,
+   "Filip Czyrek": 1,
+   "Mathys Picard": 1,
+   "Bercel Sandor Takacs": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 38,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Gabriela Knutson": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 235,
+  "by_status": {
+   "MAPPED": 190,
+   "UNMAPPED_PLAYER": 44,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8085,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Emilio Camacho": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1,
+   "Denis Klok": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 152,
+ "external_mapped_matches": 211,
+ "kalshi_mapped_matches": 190,
+ "model_witness_available": true,
+ "rows": 188,
+ "counts": {
+  "PASS": 177,
+  "tri:MARKETS_AGREE": 19,
+  "tri:MODEL_LONE_OUTLIER": 75,
+  "tri:INSUFFICIENT_INPUTS": 76,
+  "WATCH": 11,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:ALL_THREE_DISAGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 54
+ }
+}
