@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-14T18:02:45.889422+00:00",
+ "run_id": "20261014T180245Z",
+ "external_parse": {
+  "events": 119,
+  "markets": 710,
+  "skipped_family": 144,
+  "skipped_period": 169,
+  "skipped_live": 39,
+  "one_sided": 26,
+  "rows": 986,
+  "devigged": 371
+ },
+ "smarkets_fetch": {
+  "events_seen": 88,
+  "events_priced": 80,
+  "markets": 735,
+  "markets_mapped": 295,
+  "contracts": 618,
+  "quoted_contracts": 618,
+  "raw": "data/research/external/raw/20261014T180245Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 295,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 606,
+  "two_sided": 600,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 394,
+ "external_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 73,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6759,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Timothee Andriveau": 1,
+   "Arjun Prabhakar": 1,
+   "Eldar Greinert": 1,
+   "Lane Leschly": 1,
+   "Saahil Gupte": 1,
+   "Louis Hull": 1,
+   "Christopher Thies": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 111,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8559,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Bruno Rodrigues": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
