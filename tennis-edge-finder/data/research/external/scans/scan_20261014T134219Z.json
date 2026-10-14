@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-14T13:42:19.251034+00:00",
+ "run_id": "20261014T134219Z",
+ "external_parse": {
+  "events": 182,
+  "markets": 1208,
+  "skipped_family": 175,
+  "skipped_period": 310,
+  "skipped_live": 46,
+  "one_sided": 59,
+  "rows": 1706,
+  "devigged": 664
+ },
+ "smarkets_fetch": {
+  "events_seen": 99,
+  "events_priced": 80,
+  "markets": 681,
+  "markets_mapped": 280,
+  "contracts": 602,
+  "quoted_contracts": 602,
+  "raw": "data/research/external/raw/20261014T134219Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 280,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 578,
+  "two_sided": 576,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 470,
+ "external_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 120,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6936,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Saahil Gupte": 1,
+   "Timothee Andriveau": 1,
+   "Louis Hull": 1,
+   "Ahmed Darmoul": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "William Nolan": 1,
+   "Marat Salbiev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8411,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Emilio Camacho": 1,
+   "Tristan McCormick": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Thiago Agustin Pernas": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 147,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 75,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
