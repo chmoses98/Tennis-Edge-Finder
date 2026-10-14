@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-14T09:22:28.776989+00:00",
+ "run_id": "20261014T092228Z",
+ "external_parse": {
+  "events": 307,
+  "markets": 2010,
+  "skipped_family": 208,
+  "skipped_period": 557,
+  "skipped_live": 69,
+  "one_sided": 93,
+  "rows": 2997,
+  "devigged": 1149
+ },
+ "smarkets_fetch": {
+  "events_seen": 127,
+  "events_priced": 80,
+  "markets": 967,
+  "markets_mapped": 364,
+  "contracts": 802,
+  "quoted_contracts": 802,
+  "raw": "data/research/external/raw/20261014T092228Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 364,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 770,
+  "two_sided": 766,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 594,
+ "external_mapping": {
+  "total": 298,
+  "by_status": {
+   "MAPPED": 202,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 45,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6779,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Keisuke Ota": 1,
+   "Gabriele Crivellaro": 1,
+   "Henry Best": 1,
+   "Marko Savija": 1,
+   "Filip Czyrek": 1,
+   "Jan Wygona": 1,
+   "Mathys Picard": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 38,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Gabriela Knutson": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 156,
+  "by_status": {
+   "MAPPED": 132,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8462,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Josh Manuel": 1,
+   "Justino Rodrigues": 1,
+   "Guelord Kayombo": 1,
+   "Henry Best": 1,
+   "Mathys Picard": 1,
+   "Gabriele Crivellaro": 1,
+   "William Nolan": 1,
+   "Jakub Vrtilka": 1
+  }
+ },
+ "matched_both_venues": 106,
+ "external_mapped_matches": 208,
+ "kalshi_mapped_matches": 132,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 102,
+  "tri:MARKETS_AGREE": 12,
+  "tri:MODEL_LONE_OUTLIER": 59,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 52
+ }
+}
