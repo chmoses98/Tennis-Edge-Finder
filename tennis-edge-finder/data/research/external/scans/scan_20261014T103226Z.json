@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-14T10:32:26.301326+00:00",
+ "run_id": "20261014T103226Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 1569,
+  "skipped_family": 175,
+  "skipped_period": 443,
+  "skipped_live": 66,
+  "one_sided": 71,
+  "rows": 2308,
+  "devigged": 880
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 888,
+  "markets_mapped": 346,
+  "contracts": 754,
+  "quoted_contracts": 754,
+  "raw": "data/research/external/raw/20261014T103226Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 346,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 65,
+  "rows": 689,
+  "two_sided": 684,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 744,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 36,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.682,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Guiomar Maristany": 1,
+   "Keisuke Ota": 1,
+   "Mathys Picard": 1,
+   "Josh Manuel": 1,
+   "Pablo Aunion": 1,
+   "Ahmed Darmoul": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Thiago Pernas": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Gabriela Knutson": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 166,
+   "UNMAPPED_PLAYER": 36,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8177,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1,
+   "Denis Klok": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Marko Savija": 1,
+   "Ahmed Darmoul": 1
+  }
+ },
+ "matched_both_venues": 118,
+ "external_mapped_matches": 179,
+ "kalshi_mapped_matches": 166,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 116,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:MARKETS_AGREE": 10,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 50
+ }
+}
