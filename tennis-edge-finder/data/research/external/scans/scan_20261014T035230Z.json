@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-14T03:52:30.748140+00:00",
+ "run_id": "20261014T035230Z",
+ "external_parse": {
+  "events": 341,
+  "markets": 2796,
+  "skipped_family": 291,
+  "skipped_period": 748,
+  "skipped_live": 20,
+  "one_sided": 38,
+  "rows": 4442,
+  "devigged": 1717
+ },
+ "smarkets_fetch": {
+  "events_seen": 146,
+  "events_priced": 80,
+  "markets": 1279,
+  "markets_mapped": 436,
+  "contracts": 936,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261014T035230Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 139,
+  "rows": 797,
+  "two_sided": 797,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 1511,
+ "external_mapping": {
+  "total": 331,
+  "by_status": {
+   "MAPPED": 228,
+   "UNMAPPED_PLAYER": 50,
+   "DOUBLES_UNSUPPORTED": 52,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6888,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Catherine McNally": 1,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Eita Suzuki": 1,
+   "Lucas Hammond": 1,
+   "Matthew Shearer": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Jakub Vrtilka": 1,
+   "William Nolan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 38,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 349,
+  "by_status": {
+   "MAPPED": 282,
+   "UNMAPPED_PLAYER": 66,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.808,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Emilio Camacho": 1,
+   "Bruno Rodrigues": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 211,
+ "external_mapped_matches": 230,
+ "kalshi_mapped_matches": 282,
+ "model_witness_available": true,
+ "rows": 392,
+ "counts": {
+  "PASS": 382,
+  "tri:INSUFFICIENT_INPUTS": 266,
+  "tri:MODEL_LONE_OUTLIER": 98,
+  "tri:KALSHI_LONE_OUTLIER": 20,
+  "SHADOW_BET": 2,
+  "WATCH": 8,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
