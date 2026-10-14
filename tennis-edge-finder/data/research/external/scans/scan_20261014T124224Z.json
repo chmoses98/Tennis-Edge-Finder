@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-14T12:42:24.100539+00:00",
+ "run_id": "20261014T124224Z",
+ "external_parse": {
+  "events": 199,
+  "markets": 1325,
+  "skipped_family": 182,
+  "skipped_period": 343,
+  "skipped_live": 49,
+  "one_sided": 62,
+  "rows": 1902,
+  "devigged": 738
+ },
+ "smarkets_fetch": {
+  "events_seen": 100,
+  "events_priced": 80,
+  "markets": 700,
+  "markets_mapped": 284,
+  "contracts": 612,
+  "quoted_contracts": 612,
+  "raw": "data/research/external/raw/20261014T124224Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 284,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 43,
+  "rows": 569,
+  "two_sided": 568,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 494,
+ "external_mapping": {
+  "total": 190,
+  "by_status": {
+   "MAPPED": 135,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7105,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Saahil Gupte": 1,
+   "Timothee Andriveau": 1,
+   "Louis Hull": 1,
+   "William Nolan": 1,
+   "Justas Trainauskas": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Bercel Sandor Takacs": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8413,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Tristan McCormick": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1,
+   "Marko Savija": 1,
+   "Thiago Agustin Pernas": 1,
+   "Ahmed Darmoul": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Andrei Kunitsyn": 1
+  }
+ },
+ "matched_both_venues": 78,
+ "external_mapped_matches": 160,
+ "kalshi_mapped_matches": 106,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 72,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 38,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
