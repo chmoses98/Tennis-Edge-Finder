@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-14T12:53:37.129838+00:00",
+ "run_id": "20261014T125337Z",
+ "external_parse": {
+  "events": 197,
+  "markets": 1330,
+  "skipped_family": 185,
+  "skipped_period": 351,
+  "skipped_live": 46,
+  "one_sided": 65,
+  "rows": 1870,
+  "devigged": 729
+ },
+ "smarkets_fetch": {
+  "events_seen": 101,
+  "events_priced": 80,
+  "markets": 700,
+  "markets_mapped": 284,
+  "contracts": 612,
+  "quoted_contracts": 612,
+  "raw": "data/research/external/raw/20261014T125337Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 284,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 576,
+  "two_sided": 575,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1138,
+ "external_mapping": {
+  "total": 188,
+  "by_status": {
+   "MAPPED": 133,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7074,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Saahil Gupte": 1,
+   "Timothee Andriveau": 1,
+   "Louis Hull": 1,
+   "Justas Trainauskas": 1,
+   "Marat Salbiev": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Ahmed Darmoul": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 210,
+  "by_status": {
+   "MAPPED": 176,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8381,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Arnav Paparkar": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Emilio Camacho": 1,
+   "Bruno Rodrigues": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "Johan Alexander Rodriguez": 1
+  }
+ },
+ "matched_both_venues": 128,
+ "external_mapped_matches": 158,
+ "kalshi_mapped_matches": 176,
+ "model_witness_available": true,
+ "rows": 148,
+ "counts": {
+  "PASS": 148,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 100,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
