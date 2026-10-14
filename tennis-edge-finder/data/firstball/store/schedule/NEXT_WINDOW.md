@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 11:42Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 11:53Z)
 
 * Earliest credible first ball: **2026-10-15 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-15 02:15Z**
@@ -14,7 +14,7 @@
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Tommy Paul vs Zizou Bergs, Han Shi vs Leylah Fernandez
 
-Published slate: `SL-20261014T113102Z-77c3908b` built 2026-10-14 11:31Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261014T114128Z-b16820ff` built 2026-10-14 11:41Z -- current
 
 Dispatched this pass: none
 
