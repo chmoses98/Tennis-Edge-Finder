@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-14T18:22:51.269918+00:00",
+ "run_id": "20261014T182251Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 597,
+  "skipped_family": 133,
+  "skipped_period": 136,
+  "skipped_live": 46,
+  "one_sided": 18,
+  "rows": 820,
+  "devigged": 310
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 813,
+  "markets_mapped": 303,
+  "contracts": 632,
+  "quoted_contracts": 632,
+  "raw": "data/research/external/raw/20261014T182251Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 303,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 582,
+  "two_sided": 577,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 435,
+ "external_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6635,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Timothee Andriveau": 1,
+   "Arjun Prabhakar": 1,
+   "Eldar Greinert": 1,
+   "Lane Leschly": 1,
+   "Saahil Gupte": 1,
+   "Adam Chodur": 1,
+   "Lawee Sherif": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8793,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Henry Best": 1,
+   "Matthew Shearer": 1,
+   "Emilio Camacho": 1,
+   "Bruno Rodrigues": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "William Nolan": 1,
+   "Lujza Zimenova": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 102,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
