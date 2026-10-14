@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-14T12:02:29.163011+00:00",
+ "run_id": "20261014T120229Z",
+ "external_parse": {
+  "events": 218,
+  "markets": 1350,
+  "skipped_family": 177,
+  "skipped_period": 357,
+  "skipped_live": 60,
+  "one_sided": 72,
+  "rows": 1898,
+  "devigged": 744
+ },
+ "smarkets_fetch": {
+  "events_seen": 101,
+  "events_priced": 80,
+  "markets": 668,
+  "markets_mapped": 271,
+  "contracts": 584,
+  "quoted_contracts": 584,
+  "raw": "data/research/external/raw/20261014T120229Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 271,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 530,
+  "two_sided": 525,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 508,
+ "external_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 146,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6986,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Timothee Andriveau": 1,
+   "Louis Hull": 1,
+   "William Nolan": 1,
+   "Justas Trainauskas": 1,
+   "Jan Sadzik": 1,
+   "Tymon Litwic": 1,
+   "Maxi Carrascosa Diaz": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8136,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1,
+   "Johan Oscar Lien": 1,
+   "Marko Savija": 1,
+   "Thiago Agustin Pernas": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Marat Salbiev": 1,
+   "Andrei Kunitsyn": 1,
+   "Tymon Litwic": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 49,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 47
+ }
+}
