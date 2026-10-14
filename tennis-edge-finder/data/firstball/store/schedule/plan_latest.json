@@ -1,17 +1,16 @@
 {
- "generated_at": "2026-10-14T14:08:00.991996+00:00",
+ "generated_at": "2026-10-14T14:20:22.573436+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 320,
+ "board_matches": 277,
  "counts_by_status": {
   "ESTIMATED_UPCOMING": 1,
   "VERIFIED_UPCOMING": 17,
-  "STARTED": 7,
+  "STARTED": 5,
   "STATUS_AMBIGUOUS": 1,
-  "START_UNKNOWN": 293,
-  "START_IMMINENT": 1
+  "START_UNKNOWN": 253
  },
- "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+ "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-10-15T03:00:00+00:00",
   "recommended_run_tennis_time": "2026-10-15T02:15:00+00:00",
@@ -199,37 +198,22 @@
  ],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXWTAMATCH-26OCT15KRUSWI",
-    "change": "EXPECTED_START_MOVED_EARLIER_180_MIN"
-   }
-  ],
-  "slate_id": "SL-20261014T132942Z-57cae98d",
-  "slate_built_at": "2026-10-14T13:29:42.333579+00:00",
-  "checked_at": "2026-10-14T14:08:00.991996+00:00"
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
+  "slate_id": "SL-20261014T135305Z-b4f3bf2b",
+  "slate_built_at": "2026-10-14T13:53:05.137667+00:00",
+  "checked_at": "2026-10-14T14:20:22.573436+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-10-14T14:08:00.991996+00:00",
-   "reason": "published slate SL-20261014T132942Z-57cae98d is stale: 1 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26OCT14JODRUU": {
    "match_id": "ATP:26OCT14JODRUU:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T05:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T05:00:00+00:00",
    "start_time_source": "KALSHI_NOMINAL",
    "start_time_confidence": "LOW",
@@ -258,11 +242,11 @@
   },
   "KXATPMATCH-26OCT15GEADAV": {
    "match_id": "ATP:26OCT15GEADAV:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T07:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T06:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -313,11 +297,11 @@
   },
   "KXATPMATCH-26OCT15ZVEDE": {
    "match_id": "ATP:26OCT15ZVEDE:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T07:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T10:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -366,40 +350,68 @@
    "label": "Alexander Zverev vs Alex de Minaur",
    "level_bucket": "ATP"
   },
-  "KXATPMATCH-26OCT12PAUBER": {
-   "match_id": "ATP:26OCT12PAUBER:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
-   "nominal_scheduled_start": "2026-10-13T05:00:00+00:00",
+  "KXWTAMATCH-26OCT15KRUSWI": {
+   "match_id": "WTA:26OCT15KRUSWI:singles",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
+   "nominal_scheduled_start": "2026-10-15T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_atp (confidence C)",
-   "first_ball_at": "2026-10-14T11:55:49.515450+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
+   "current_expected_start": "2026-10-15T11:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-10-15T11:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-10-15T14:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
    ],
-   "bet_allowed": false,
-   "label": "Tommy Paul vs Zizou Bergs",
-   "level_bucket": "ATP"
+   "earliest_safe_handicap_time": "2026-10-15T10:15:00+00:00",
+   "recommended_handicap_by": "2026-10-15T10:15:00+00:00",
+   "final_check_time": "2026-10-15T10:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Dongfeng Voyah Center Court",
+   "court_context": {
+    "court": "Dongfeng Voyah Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 1,
+    "preceding": {
+     "source_match_id": "185364",
+     "players": [
+      "Jelena Ostapenko",
+      "TBD"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-10-15T07:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Ashlyn Krueger vs Iga Swiatek",
+   "level_bucket": "WTA"
   },
   "KXWTAMATCH-26OCT15SVIGUO": {
    "match_id": "WTA:26OCT15SVIGUO:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T07:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T04:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -450,11 +462,11 @@
   },
   "KXWTAMATCH-26OCT14MUCSHN": {
    "match_id": "WTA:26OCT14MUCSHN:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T06:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T03:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -488,11 +500,11 @@
   },
   "KXWTAMATCH-26OCT14PAOKAR": {
    "match_id": "WTA:26OCT14PAOKAR:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T06:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T05:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -538,11 +550,11 @@
   },
   "KXWTAMATCH-26OCT14JOVCHW": {
    "match_id": "WTA:26OCT14JOVCHW:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T06:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T04:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -588,11 +600,11 @@
   },
   "KXWTAMATCH-26OCT14POHSAK": {
    "match_id": "WTA:26OCT14POHSAK:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-15T06:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-15T03:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -624,40 +636,13 @@
    "label": "Mia Pohankova vs Maria Sakkari",
    "level_bucket": "WTA"
   },
-  "KXWTAMATCH-26OCT13KRUTAR": {
-   "match_id": "WTA:26OCT13KRUTAR:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
-   "nominal_scheduled_start": "2026-10-14T06:00:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_wta (confidence C)",
-   "first_ball_at": "2026-10-14T11:08:28.830746+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Ashlyn Krueger vs Lanlana Tararudee",
-   "level_bucket": "WTA"
-  },
   "KXWTAMATCH-26OCT13SABANN": {
    "match_id": "WTA:26OCT13SABANN:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -680,7 +665,7 @@
   },
   "KXWTAMATCH-26OCT13SHIFER": {
    "match_id": "WTA:26OCT13SHIFER:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -714,11 +699,11 @@
   },
   "KXWTACHALLENGERMATCH-26OCT14PIGHAV": {
    "match_id": "WTA:26OCT14PIGHAV:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T20:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": "2026-10-14T17:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -739,7 +724,7 @@
    "court_context": {
     "court": "Centre Court",
     "same_time_on_court": 0,
-    "queue_ahead_pre": 2,
+    "queue_ahead_pre": 1,
     "preceding": {
      "source_match_id": "185442",
      "players": [
@@ -764,24 +749,29 @@
   },
   "KXWTACHALLENGERMATCH-26OCT14TANSTE": {
    "match_id": "WTA:26OCT14TANSTE:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T18:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": "2026-10-14T15:30:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_wta",
-   "start_time_confidence": "HIGH",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
+   "current_expected_start": "2026-10-14T14:57:12.260160+00:00",
+   "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+   "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
     {
      "time": "2026-10-14T15:30:00+00:00",
      "source": "LIVE_SCHEDULE:espn_wta",
      "confidence": "HIGH"
+    },
+    {
+     "time": "2026-10-14T14:57:12.260160+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+     "confidence": "MEDIUM"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-14T14:45:00+00:00",
-   "recommended_handicap_by": "2026-10-14T14:45:00+00:00",
-   "final_check_time": "2026-10-14T15:20:00+00:00",
+   "earliest_safe_handicap_time": "2026-10-14T14:12:12.260160+00:00",
+   "recommended_handicap_by": "2026-10-14T14:12:12.260160+00:00",
+   "final_check_time": "2026-10-14T14:47:12.260160+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -789,14 +779,14 @@
    "court_context": {
     "court": "Centre Court",
     "same_time_on_court": 0,
-    "queue_ahead_pre": 1,
+    "queue_ahead_pre": 0,
     "preceding": {
      "source_match_id": "185457",
      "players": [
       "Lucia Bronzetti",
       "Jil Teichmann"
      ],
-     "state": "PRE",
+     "state": "IN",
      "period": 1,
      "best_of": 3,
      "games_played": 0,
@@ -814,24 +804,24 @@
   },
   "KXWTACHALLENGERMATCH-26OCT14MATMAR": {
    "match_id": "WTA:26OCT14MATMAR:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": "2026-10-14T15:20:00+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
+   "current_expected_start": "2026-10-14T15:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-10-14T15:20:00+00:00",
+     "time": "2026-10-14T15:30:00+00:00",
      "source": "LIVE_SCHEDULE:espn_wta",
      "confidence": "HIGH"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-14T14:35:00+00:00",
-   "recommended_handicap_by": "2026-10-14T14:35:00+00:00",
-   "final_check_time": "2026-10-14T15:10:00+00:00",
+   "earliest_safe_handicap_time": "2026-10-14T14:45:00+00:00",
+   "recommended_handicap_by": "2026-10-14T14:45:00+00:00",
+   "final_check_time": "2026-10-14T15:20:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -850,7 +840,7 @@
      "period": 1,
      "best_of": 3,
      "games_played": 0,
-     "scheduled_utc": "2026-10-14T14:10:00+00:00",
+     "scheduled_utc": "2026-10-14T14:30:00+00:00",
      "time_valid": true
     }
    },
@@ -864,66 +854,38 @@
   },
   "KXWTACHALLENGERMATCH-26OCT14TEIBRO": {
    "match_id": "WTA:26OCT14TEIBRO:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": "2026-10-14T14:09:31.879946+00:00",
-   "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court finished",
-   "start_time_confidence": "MEDIUM",
-   "start_time_candidates": [
-    {
-     "time": "2026-10-14T14:10:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_wta",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-10-14T14:09:31.879946+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Centre Court finished",
-     "confidence": "MEDIUM"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-10-14T13:24:31.879946+00:00",
-   "recommended_handicap_by": "2026-10-14T13:24:31.879946+00:00",
-   "final_check_time": "2026-10-14T13:59:31.879946+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Centre Court",
-   "court_context": {
-    "court": "Centre Court",
-    "same_time_on_court": 0,
-    "queue_ahead_pre": 0,
-    "preceding": {
-     "source_match_id": "185458",
-     "players": [
-      "Susan Bandecchi",
-      "Gabriela Knutson"
-     ],
-     "state": "POST",
-     "period": 3,
-     "best_of": 3,
-     "games_played": 35,
-     "scheduled_utc": "2026-10-14T11:00:00+00:00",
-     "time_valid": true
-    }
-   },
-   "start_status": "START_IMMINENT",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
+   "current_expected_start": null,
+   "start_time_source": null,
+   "start_time_confidence": "NONE",
+   "start_time_candidates": [],
+   "earliest_safe_handicap_time": null,
+   "recommended_handicap_by": null,
+   "final_check_time": null,
+   "first_ball_status": "OBSERVED_STARTED",
+   "first_ball_source": "espn_wta (confidence C)",
+   "first_ball_at": "2026-10-14T14:14:02.496112+00:00",
+   "court": null,
+   "court_context": null,
+   "start_status": "STARTED",
    "status_reasons": [
-    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL"
+    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
    ],
-   "bet_allowed": true,
+   "bet_allowed": false,
    "label": "Jil Teichmann vs Lucia Bronzetti",
    "level_bucket": "WTA125"
   },
   "KXWTACHALLENGERMATCH-26OCT14BOUBUR": {
    "match_id": "WTA:26OCT14BOUBUR:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T14:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -946,11 +908,11 @@
   },
   "KXWTACHALLENGERMATCH-26OCT14KNUBAN": {
    "match_id": "WTA:26OCT14KNUBAN:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T13:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -971,40 +933,13 @@
    "label": "Gabriela Knutson vs Susan Bandecchi",
    "level_bucket": "WTA125"
   },
-  "KXWTACHALLENGERMATCH-26OCT14GRAENC": {
-   "match_id": "WTA:26OCT14GRAENC:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
-   "nominal_scheduled_start": "2026-10-14T12:10:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_wta (confidence C)",
-   "first_ball_at": "2026-10-14T10:58:15.739849+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Julia Grabher vs Lidia Encheva",
-   "level_bucket": "WTA125"
-  },
   "KXWTACHALLENGERMATCH-26OCT14ZIDSTE": {
    "match_id": "WTA:26OCT14ZIDSTE:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1029,11 +964,11 @@
   },
   "KXWTACHALLENGERMATCH-26OCT14NGUSAM": {
    "match_id": "WTA:26OCT14NGUSAM:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
+   "evaluated_at": "2026-10-14T14:20:22.573436+00:00",
    "nominal_scheduled_start": "2026-10-14T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
+   "start_time_last_checked": "2026-10-14T14:17:12.260160+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1055,61 +990,6 @@
    "bet_allowed": false,
    "label": "Lucie Nguyen Tan vs Laura Samson",
    "level_bucket": "WTA125"
-  },
-  "KXWTAMATCH-26OCT15KRUSWI": {
-   "match_id": "WTA:26OCT15KRUSWI:singles",
-   "evaluated_at": "2026-10-14T14:08:00.991996+00:00",
-   "nominal_scheduled_start": "2026-10-15T14:00:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-10-14T14:04:31.879946+00:00",
-   "current_expected_start": "2026-10-15T11:00:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_wta",
-   "start_time_confidence": "HIGH",
-   "start_time_candidates": [
-    {
-     "time": "2026-10-15T11:00:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_wta",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-10-15T14:00:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-10-15T10:15:00+00:00",
-   "recommended_handicap_by": "2026-10-15T10:15:00+00:00",
-   "final_check_time": "2026-10-15T10:50:00+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Dongfeng Voyah Center Court",
-   "court_context": {
-    "court": "Dongfeng Voyah Center Court",
-    "same_time_on_court": 0,
-    "queue_ahead_pre": 1,
-    "preceding": {
-     "source_match_id": "185364",
-     "players": [
-      "Jelena Ostapenko",
-      "TBD"
-     ],
-     "state": "PRE",
-     "period": 1,
-     "best_of": 3,
-     "games_played": 0,
-     "scheduled_utc": "2026-10-15T07:00:00+00:00",
-     "time_valid": true
-    }
-   },
-   "start_status": "VERIFIED_UPCOMING",
-   "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
-   ],
-   "bet_allowed": true,
-   "label": "Ashlyn Krueger vs Iga Swiatek",
-   "level_bucket": "WTA"
   }
  }
 }
