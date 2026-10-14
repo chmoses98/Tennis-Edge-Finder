@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-14T09:53:38.693012+00:00",
+ "run_id": "20261014T095338Z",
+ "external_parse": {
+  "events": 289,
+  "markets": 1900,
+  "skipped_family": 208,
+  "skipped_period": 533,
+  "skipped_live": 70,
+  "one_sided": 92,
+  "rows": 2817,
+  "devigged": 1066
+ },
+ "smarkets_fetch": {
+  "events_seen": 125,
+  "events_priced": 80,
+  "markets": 958,
+  "markets_mapped": 366,
+  "contracts": 804,
+  "quoted_contracts": 804,
+  "raw": "data/research/external/raw/20261014T095338Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 366,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 782,
+  "two_sided": 780,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1359,
+ "external_mapping": {
+  "total": 280,
+  "by_status": {
+   "MAPPED": 191,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 41,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6821,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Keisuke Ota": 1,
+   "Marko Savija": 1,
+   "Filip Czyrek": 1,
+   "Jan Wygona": 1,
+   "Mathys Picard": 1,
+   "Bercel Sandor Takacs": 1,
+   "Josh Manuel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Gabriela Knutson": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 290,
+  "by_status": {
+   "MAPPED": 239,
+   "UNMAPPED_PLAYER": 50,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8241,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Emilio Camacho": 1,
+   "Bruno Rodrigues": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 184,
+ "external_mapped_matches": 201,
+ "kalshi_mapped_matches": 239,
+ "model_witness_available": true,
+ "rows": 224,
+ "counts": {
+  "PASS": 220,
+  "tri:MARKETS_AGREE": 11,
+  "tri:MODEL_LONE_OUTLIER": 64,
+  "tri:INSUFFICIENT_INPUTS": 144,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 60
+ }
+}
