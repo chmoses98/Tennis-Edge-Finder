@@ -1,26 +1,25 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 04:27Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 04:37Z)
 
-* Earliest credible first ball: **2026-10-14 04:30Z**
-* Recommended RUN TENNIS time: **2026-10-14 03:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-14 04:20Z**
-* Matches in window: 8
+* Earliest credible first ball: **2026-10-14 04:42Z**
+* Recommended RUN TENNIS time: **2026-10-14 03:57Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-14 04:32Z**
+* Matches in window: 7
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Iva Jovic vs Dayana Yastremska | 2026-10-14 04:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Karolina Muchova vs Caty McNally | 2026-10-14 04:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Jasmine Paolini vs Nikola Bartunkova | 2026-10-14 04:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Yulia Putintseva vs Diana Shnaider | 2026-10-14 04:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Casper Ruud vs Felix Auger-Aliassime | 2026-10-14 05:28Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Stadium Court in progress (set 1 of best-of-5) | MEDIUM |
+| Yulia Putintseva vs Diana Shnaider | 2026-10-14 04:42Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 3 in progress (set 3 of best-of-3) | MEDIUM |
+| Iva Jovic vs Dayana Yastremska | 2026-10-14 04:45Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Karolina Muchova vs Caty McNally | 2026-10-14 04:45Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Casper Ruud vs Felix Auger-Aliassime | 2026-10-14 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Jelena Ostapenko vs Jessica Pegula | 2026-10-14 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Janice Tjen vs Daria Snigur | 2026-10-14 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Katie Volynets vs Hanyu Guo | 2026-10-14 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Han Shi vs Leylah Fernandez
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Jasmine Paolini vs Nikola Bartunkova, Han Shi vs Leylah Fernandez
 
-Published slate: `SL-20261014T035753Z-fce744a8` built 2026-10-14 03:57Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
+Published slate: `SL-20261014T035753Z-fce744a8` built 2026-10-14 03:57Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-14T04:42:59.245428+00:00, slate built 2026-10-14T03:57:53.140434+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-14 07:30Z, run by 2026-10-14 06:45Z, 1 match(es)
 * later window 3: first ball 2026-10-14 10:00Z, run by 2026-10-14 09:15Z, 3 match(es)
