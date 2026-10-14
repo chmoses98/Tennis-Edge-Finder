@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 11:53Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 12:04Z)
 
 * Earliest credible first ball: **2026-10-15 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-15 02:15Z**
@@ -12,7 +12,7 @@
 | Iva Jovic vs Maja Chwalinska | 2026-10-15 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Elina Svitolina vs Hanyu Guo | 2026-10-15 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Tommy Paul vs Zizou Bergs, Han Shi vs Leylah Fernandez
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Han Shi vs Leylah Fernandez
 
 Published slate: `SL-20261014T114128Z-b16820ff` built 2026-10-14 11:41Z -- current
 
