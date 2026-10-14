@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-14T06:31:35.056359+00:00",
+ "run_id": "20261014T063135Z",
+ "external_parse": {
+  "events": 343,
+  "markets": 2670,
+  "skipped_family": 253,
+  "skipped_period": 709,
+  "skipped_live": 23,
+  "one_sided": 47,
+  "rows": 4155,
+  "devigged": 1658
+ },
+ "smarkets_fetch": {
+  "events_seen": 144,
+  "events_priced": 80,
+  "markets": 1125,
+  "markets_mapped": 391,
+  "contracts": 862,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261014T063135Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 391,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 45,
+  "rows": 817,
+  "two_sided": 817,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 601,
+ "external_mapping": {
+  "total": 334,
+  "by_status": {
+   "MAPPED": 224,
+   "UNMAPPED_PLAYER": 52,
+   "DOUBLES_UNSUPPORTED": 57,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6707,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 57,
+   "Catherine McNally": 1,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Taiyo Hirano": 1,
+   "Aruth Chinsupakul": 1,
+   "Thomas Linley": 1,
+   "Jakub Vrtilka": 1,
+   "William Nolan": 1,
+   "Gabriele Crivellaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 40,
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 167,
+  "by_status": {
+   "MAPPED": 141,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8443,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Emilio Camacho": 1,
+   "Bruno Rodrigues": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1,
+   "Denis Klok": 1,
+   "Tymon Litwic": 1,
+   "Filip Czyrek": 1
+  }
+ },
+ "matched_both_venues": 115,
+ "external_mapped_matches": 226,
+ "kalshi_mapped_matches": 141,
+ "model_witness_available": true,
+ "rows": 178,
+ "counts": {
+  "PASS": 173,
+  "tri:MARKETS_AGREE": 9,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 4,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 108,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
