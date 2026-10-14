@@ -1,20 +1,22 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 11:21Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 11:31Z)
 
-* Earliest credible first ball: **2026-10-14 11:30Z**
-* Recommended RUN TENNIS time: **2026-10-14 10:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-14 11:20Z**
-* Matches in window: 1
+* Earliest credible first ball: **2026-10-15 03:00Z**
+* Recommended RUN TENNIS time: **2026-10-15 02:15Z**
+* Final price/status check time: **2026-10-15 02:50Z**
+* Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Tommy Paul vs Zizou Bergs | 2026-10-14 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Karolina Muchova vs Diana Shnaider | 2026-10-15 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Mia Pohankova vs Maria Sakkari | 2026-10-15 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Iva Jovic vs Maja Chwalinska | 2026-10-15 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Elina Svitolina vs Hanyu Guo | 2026-10-15 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Aryna Sabalenka vs Ann Li, Han Shi vs Leylah Fernandez
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Tommy Paul vs Zizou Bergs, Han Shi vs Leylah Fernandez
 
 Published slate: `SL-20261014T104932Z-5659f93e` built 2026-10-14 10:49Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
-* later window 2: first ball 2026-10-15 03:00Z, run by 2026-10-15 02:15Z, 3 match(es)
-* later window 3: first ball 2026-10-15 05:00Z, run by 2026-10-15 04:15Z, 3 match(es)
-* later window 4: first ball 2026-10-15 10:00Z, run by 2026-10-15 09:15Z, 1 match(es)
+* later window 2: first ball 2026-10-15 05:00Z, run by 2026-10-15 04:15Z, 3 match(es)
+* later window 3: first ball 2026-10-15 10:00Z, run by 2026-10-15 09:15Z, 1 match(es)
