@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-14T17:32:45.331171+00:00",
+ "run_id": "20261014T173245Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 721,
+  "skipped_family": 147,
+  "skipped_period": 174,
+  "skipped_live": 38,
+  "one_sided": 26,
+  "rows": 1004,
+  "devigged": 374
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 754,
+  "markets_mapped": 299,
+  "contracts": 630,
+  "quoted_contracts": 630,
+  "raw": "data/research/external/raw/20261014T173245Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 604,
+  "two_sided": 602,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 399,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6729,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Guiomar Maristany": 1,
+   "Rodrigo Cruz": 1,
+   "Timothee Andriveau": 1,
+   "Arjun Prabhakar": 1,
+   "Eldar Greinert": 1,
+   "Lane Leschly": 1,
+   "Saahil Gupte": 1,
+   "Louis Hull": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.835,
+  "top_refusal_subjects": {
+   "Rihards Neimanis": 1,
+   "Henry Best": 1,
+   "Digvijay Pratap Singh": 1,
+   "Emilio Camacho": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mason Vaughan": 1,
+   "Francisco Fontes Damorim": 1,
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
