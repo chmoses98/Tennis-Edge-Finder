@@ -1,25 +1,24 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 04:58Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-14 05:08Z)
 
-* Earliest credible first ball: **2026-10-14 04:59Z**
-* Recommended RUN TENNIS time: **2026-10-14 04:14Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-14 04:49Z**
-* Matches in window: 7
+* Earliest credible first ball: **2026-10-14 05:14Z**
+* Recommended RUN TENNIS time: **2026-10-14 04:29Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-14 05:04Z**
+* Matches in window: 6
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Karolina Muchova vs Caty McNally | 2026-10-14 04:59Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court finished | MEDIUM |
-| Jasmine Paolini vs Nikola Bartunkova | 2026-10-14 05:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Yulia Putintseva vs Diana Shnaider | 2026-10-14 05:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Jasmine Paolini vs Nikola Bartunkova | 2026-10-14 05:14Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 1 in progress (set 3 of best-of-3) | MEDIUM |
+| Yulia Putintseva vs Diana Shnaider | 2026-10-14 05:14Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 3 in progress (set 3 of best-of-3) | MEDIUM |
 | Casper Ruud vs Felix Auger-Aliassime | 2026-10-14 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Janice Tjen vs Daria Snigur | 2026-10-14 05:44Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
 | Jelena Ostapenko vs Jessica Pegula | 2026-10-14 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Janice Tjen vs Daria Snigur | 2026-10-14 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Katie Volynets vs Hanyu Guo | 2026-10-14 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Iva Jovic vs Dayana Yastremska, Han Shi vs Leylah Fernandez
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Han Shi vs Leylah Fernandez, Karolina Muchova vs Caty McNally
 
-Published slate: `SL-20261014T043723Z-e4017872` built 2026-10-14 04:37Z -- current
+Published slate: `SL-20261014T045801Z-7527899c` built 2026-10-14 04:58Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-14 07:30Z, run by 2026-10-14 06:45Z, 1 match(es)
 * later window 3: first ball 2026-10-14 10:00Z, run by 2026-10-14 09:15Z, 3 match(es)
