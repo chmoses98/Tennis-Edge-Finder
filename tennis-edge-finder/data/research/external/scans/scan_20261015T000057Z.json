@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-15T00:00:57.389586+00:00",
+ "run_id": "20261015T000057Z",
+ "external_parse": {
+  "events": 194,
+  "markets": 1667,
+  "skipped_family": 228,
+  "skipped_period": 441,
+  "skipped_live": 15,
+  "one_sided": 34,
+  "rows": 2542,
+  "devigged": 964
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1026,
+  "markets_mapped": 362,
+  "contracts": 762,
+  "quoted_contracts": 762,
+  "raw": "data/research/external/raw/20261015T000057Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 362,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 48,
+  "rows": 714,
+  "two_sided": 692,
+  "one_sided": 22
+ },
+ "kalshi_quotes_on_disk": 348,
+ "external_mapping": {
+  "total": 183,
+  "by_status": {
+   "MAPPED": 135,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7377,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8495,
+  "top_refusal_subjects": {
+   "Mason Vaughan": 1,
+   "Johan Oscar Lien": 1,
+   "Mathys Picard": 1,
+   "Felix Roussel": 1,
+   "Andrei Kunitsyn": 1,
+   "Tymon Litwic": 1,
+   "Matthew Shearer": 1,
+   "Arnav Paparkar": 1,
+   "Arjun Rathi": 1,
+   "William Nolan": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 153,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
