@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-15T04:40:45.046014+00:00",
+ "run_id": "20261015T044045Z",
+ "external_parse": {
+  "events": 243,
+  "markets": 2111,
+  "skipped_family": 271,
+  "skipped_period": 568,
+  "skipped_live": 16,
+  "one_sided": 47,
+  "rows": 3159,
+  "devigged": 1224
+ },
+ "smarkets_fetch": {
+  "events_seen": 91,
+  "events_priced": 80,
+  "markets": 1061,
+  "markets_mapped": 372,
+  "contracts": 802,
+  "quoted_contracts": 802,
+  "raw": "data/research/external/raw/20261015T044045Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 372,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 767,
+  "two_sided": 757,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 553,
+ "external_mapping": {
+  "total": 233,
+  "by_status": {
+   "MAPPED": 164,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7039,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Taiyo Hirano": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Arjun Rathi": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 147,
+  "by_status": {
+   "MAPPED": 120,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8163,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1,
+   "Thiago Agustin Pernas": 1,
+   "Nazim Makhlouf": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "matched_both_venues": 80,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 120,
+ "model_witness_available": true,
+ "rows": 140,
+ "counts": {
+  "PASS": 136,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:MARKETS_AGREE": 15,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
