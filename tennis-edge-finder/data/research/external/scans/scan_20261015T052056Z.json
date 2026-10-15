@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-15T05:20:56.748725+00:00",
+ "run_id": "20261015T052056Z",
+ "external_parse": {
+  "events": 242,
+  "markets": 2097,
+  "skipped_family": 266,
+  "skipped_period": 563,
+  "skipped_live": 15,
+  "one_sided": 51,
+  "rows": 3123,
+  "devigged": 1216
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1062,
+  "markets_mapped": 378,
+  "contracts": 826,
+  "quoted_contracts": 826,
+  "raw": "data/research/external/raw/20261015T052056Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 378,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 84,
+  "rows": 742,
+  "two_sided": 735,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 588,
+ "external_mapping": {
+  "total": 232,
+  "by_status": {
+   "MAPPED": 162,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6983,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Taiyo Hirano": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 157,
+  "by_status": {
+   "MAPPED": 131,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8344,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Dominick Mosejczuk": 1,
+   "Johan Oscar Lien": 1,
+   "Mathys Picard": 1,
+   "Thiago Agustin Pernas": 1
+  }
+ },
+ "matched_both_venues": 95,
+ "external_mapped_matches": 172,
+ "kalshi_mapped_matches": 131,
+ "model_witness_available": true,
+ "rows": 172,
+ "counts": {
+  "PASS": 170,
+  "tri:MODEL_LONE_OUTLIER": 56,
+  "tri:INSUFFICIENT_INPUTS": 99,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 7,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
