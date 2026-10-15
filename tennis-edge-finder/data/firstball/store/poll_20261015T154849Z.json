@@ -1,0 +1,34 @@
+{
+ "run_id": "20261015T154849Z",
+ "started_at": "2026-10-15T15:48:49.183100+00:00",
+ "passes": 4,
+ "requests": 8,
+ "observations": 111,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26OCT15LOLBUR": {
+   "confidence": "B",
+   "bracket_s": 284.366058,
+   "first_ball": "2026-10-15T15:52:07.782478+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 8
+ },
+ "watchlist": {
+  "capture_board_markets": 869,
+  "events_only_on_capture_board": 69,
+  "selected_from_capture_board": 65
+ },
+ "mapping": {
+  "MATCHED": 111,
+  "UNMATCHED": 764
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-15T15:58:37.577015+00:00"
+}
