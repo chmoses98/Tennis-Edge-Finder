@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-15 02:41Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-15 02:54Z)
 
 * Earliest credible first ball: **2026-10-15 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-15 02:15Z**  (OVERDUE: run now)
@@ -7,13 +7,13 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Karolina Muchova vs Diana Shnaider | 2026-10-15 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Mia Pohankova vs Maria Sakkari | 2026-10-15 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Karolina Muchova vs Diana Shnaider | 2026-10-15 03:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Mia Pohankova vs Maria Sakkari | 2026-10-15 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Elina Svitolina vs Hanyu Guo | 2026-10-15 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261015T015947Z-9499ef3c` built 2026-10-15 01:59Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-15T03:00:00+00:00, slate built 2026-10-15T01:59:47.736552+00:00
+Published slate: `SL-20261015T023816Z-baaba150` built 2026-10-15 02:38Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-15 05:00Z, run by 2026-10-15 04:15Z, 3 match(es)
 * later window 3: first ball 2026-10-15 07:00Z, run by 2026-10-15 06:15Z, 2 match(es)
