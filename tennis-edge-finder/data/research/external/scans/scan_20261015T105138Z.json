@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-15T10:51:38.830590+00:00",
+ "run_id": "20261015T105138Z",
+ "external_parse": {
+  "events": 203,
+  "markets": 1431,
+  "skipped_family": 187,
+  "skipped_period": 401,
+  "skipped_live": 52,
+  "one_sided": 44,
+  "rows": 2120,
+  "devigged": 799
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 687,
+  "markets_mapped": 263,
+  "contracts": 578,
+  "quoted_contracts": 578,
+  "raw": "data/research/external/raw/20261015T105138Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 263,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 7,
+  "rows": 571,
+  "two_sided": 569,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 411,
+ "external_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 134,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6907,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Thiago Pernas": 1,
+   "Mathys Picard": 1,
+   "Tymon Litwic.": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Denis Klok": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Johan Oscar Lien": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6301,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27
+  }
+ },
+ "kalshi_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8857,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Tristan McCormick": 1,
+   "Mason Vaughan": 1,
+   "Victor Pagotto": 1,
+   "Mathys Picard": 1,
+   "Thiago Agustin Pernas": 1,
+   "Felix Roussel": 1,
+   "Andrei Kunitsyn": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 68,
+ "external_mapped_matches": 148,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 77,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
