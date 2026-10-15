@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-15T01:00:41.346204+00:00",
+ "run_id": "20261015T010041Z",
+ "external_parse": {
+  "events": 192,
+  "markets": 1726,
+  "skipped_family": 236,
+  "skipped_period": 456,
+  "skipped_live": 5,
+  "one_sided": 40,
+  "rows": 2633,
+  "devigged": 993
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1065,
+  "markets_mapped": 375,
+  "contracts": 796,
+  "quoted_contracts": 796,
+  "raw": "data/research/external/raw/20261015T010041Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 375,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 54,
+  "rows": 742,
+  "two_sided": 727,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 397,
+ "external_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 131,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7238,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1,
+   "Henry Best": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8659,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Luca Wiedenmann": 1,
+   "Andrei Kunitsyn": 1,
+   "Jamie Mackenzie": 1,
+   "Arnav Paparkar": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "William Nolan": 1,
+   "Tara Wuerth": 1,
+   "Kateryna Diatlova": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 147,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
