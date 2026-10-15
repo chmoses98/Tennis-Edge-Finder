@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-15T05:40:53.332397+00:00",
+ "run_id": "20261015T054053Z",
+ "external_parse": {
+  "events": 241,
+  "markets": 2075,
+  "skipped_family": 263,
+  "skipped_period": 556,
+  "skipped_live": 15,
+  "one_sided": 54,
+  "rows": 3080,
+  "devigged": 1202
+ },
+ "smarkets_fetch": {
+  "events_seen": 95,
+  "events_priced": 80,
+  "markets": 1055,
+  "markets_mapped": 370,
+  "contracts": 812,
+  "quoted_contracts": 812,
+  "raw": "data/research/external/raw/20261015T054053Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 79,
+  "rows": 733,
+  "two_sided": 724,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 573,
+ "external_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 162,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7013,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Taiyo Hirano": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 154,
+  "by_status": {
+   "MAPPED": 131,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8506,
+  "top_refusal_subjects": {
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Tristan McCormick": 1,
+   "Thiago Agustin Pernas": 1,
+   "Nazim Makhlouf": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Rihards Neimanis": 1,
+   "Andrei Kunitsyn": 1,
+   "Tymon Litwic": 1
+  }
+ },
+ "matched_both_venues": 90,
+ "external_mapped_matches": 170,
+ "kalshi_mapped_matches": 131,
+ "model_witness_available": true,
+ "rows": 158,
+ "counts": {
+  "PASS": 158,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:INSUFFICIENT_INPUTS": 90,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
