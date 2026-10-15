@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-15T16:21:59.692796+00:00",
+ "run_id": "20261015T162159Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1011,
+  "skipped_family": 212,
+  "skipped_period": 257,
+  "skipped_live": 25,
+  "one_sided": 31,
+  "rows": 1348,
+  "devigged": 511
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 51,
+  "markets": 432,
+  "markets_mapped": 202,
+  "contracts": 430,
+  "quoted_contracts": 430,
+  "raw": "data/research/external/raw/20261015T162159Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 202,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 426,
+  "two_sided": 425,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 342,
+ "external_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 84,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7368,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Saahil Gupte": 1,
+   "Pedro Dietrich": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Mason Vaughan": 1,
+   "Dominick Mosejczuk": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Johan Oscar Lien": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 35,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6863,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8879,
+  "top_refusal_subjects": {
+   "Christopher Thies": 1,
+   "Eli Stephenson": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1,
+   "Mason Vaughan": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 72,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
