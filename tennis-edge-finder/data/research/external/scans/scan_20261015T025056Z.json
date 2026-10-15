@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-15T02:50:56.837336+00:00",
+ "run_id": "20261015T025056Z",
+ "external_parse": {
+  "events": 214,
+  "markets": 1854,
+  "skipped_family": 248,
+  "skipped_period": 496,
+  "skipped_live": 13,
+  "one_sided": 39,
+  "rows": 2839,
+  "devigged": 1070
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 1078,
+  "markets_mapped": 376,
+  "contracts": 800,
+  "quoted_contracts": 800,
+  "raw": "data/research/external/raw/20261015T025056Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 376,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 772,
+  "two_sided": 764,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 444,
+ "external_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 141,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6946,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aruth Chinsupakul": 1,
+   "Liam Oliver Toroman": 1,
+   "Mason Tran": 1,
+   "Siddharth Bharadwaj": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8772,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Andrei Kunitsyn": 1,
+   "Henry Best": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Arnav Paparkar": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 154,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 101,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
