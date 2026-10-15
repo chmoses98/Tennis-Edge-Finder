@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-15T04:10:41.830928+00:00",
+ "run_id": "20261015T041041Z",
+ "external_parse": {
+  "events": 231,
+  "markets": 1993,
+  "skipped_family": 256,
+  "skipped_period": 535,
+  "skipped_live": 16,
+  "one_sided": 42,
+  "rows": 3017,
+  "devigged": 1159
+ },
+ "smarkets_fetch": {
+  "events_seen": 90,
+  "events_priced": 80,
+  "markets": 1049,
+  "markets_mapped": 370,
+  "contracts": 796,
+  "quoted_contracts": 796,
+  "raw": "data/research/external/raw/20261015T041041Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 765,
+  "two_sided": 751,
+  "one_sided": 14
+ },
+ "kalshi_quotes_on_disk": 603,
+ "external_mapping": {
+  "total": 221,
+  "by_status": {
+   "MAPPED": 157,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7104,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aruth Chinsupakul": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Arjun Rathi": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Denis Klok": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1,
+   "Victor Pagotto": 1,
+   "Nazim Makhlouf": 1,
+   "Felix Roussel": 1,
+   "Sergey Petrov": 1
+  }
+ },
+ "matched_both_venues": 91,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 162,
+ "counts": {
+  "PASS": 158,
+  "tri:MODEL_LONE_OUTLIER": 62,
+  "tri:INSUFFICIENT_INPUTS": 73,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 14,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
