@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-15T03:10:48.355454+00:00",
+ "run_id": "20261015T031048Z",
+ "external_parse": {
+  "events": 211,
+  "markets": 1807,
+  "skipped_family": 238,
+  "skipped_period": 482,
+  "skipped_live": 14,
+  "one_sided": 38,
+  "rows": 2754,
+  "devigged": 1049
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1059,
+  "markets_mapped": 373,
+  "contracts": 800,
+  "quoted_contracts": 800,
+  "raw": "data/research/external/raw/20261015T031048Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 373,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 776,
+  "two_sided": 772,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 451,
+ "external_mapping": {
+  "total": 201,
+  "by_status": {
+   "MAPPED": 141,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7015,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aruth Chinsupakul": 1,
+   "Siddharth Bharadwaj": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Johan Oscar Lien": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Sergey Petrov": 1,
+   "Andrei Kunitsyn": 1,
+   "Tymon Litwic": 1,
+   "Jamie Mackenzie": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 154,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 102,
+  "tri:MODEL_LONE_OUTLIER": 50,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
