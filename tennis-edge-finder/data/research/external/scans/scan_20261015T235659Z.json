@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-15T23:56:59.485442+00:00",
+ "run_id": "20261015T235659Z",
+ "external_parse": {
+  "events": 121,
+  "markets": 1189,
+  "skipped_family": 239,
+  "skipped_period": 301,
+  "skipped_live": 4,
+  "one_sided": 8,
+  "rows": 1679,
+  "devigged": 640
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 698,
+  "markets_mapped": 264,
+  "contracts": 556,
+  "quoted_contracts": 556,
+  "raw": "data/research/external/raw/20261015T235659Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 548,
+  "two_sided": 544,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 253,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 86,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7818,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Guiomar Maristany": 1,
+   "Digvijay Pratap Singh": 1,
+   "William Vinciguerra": 1,
+   "Mathys Picard": 1,
+   "Felix Roussel": 1,
+   "Luca Wiedenmann": 1,
+   "Maria Herazo": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 22,
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.629,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9259,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Sergey Petrov": 1,
+   "William Nolan": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 50,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
