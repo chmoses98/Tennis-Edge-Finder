@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-15T11:11:35.428957+00:00",
+ "run_id": "20261015T111135Z",
+ "external_parse": {
+  "events": 189,
+  "markets": 1382,
+  "skipped_family": 187,
+  "skipped_period": 390,
+  "skipped_live": 46,
+  "one_sided": 43,
+  "rows": 2040,
+  "devigged": 762
+ },
+ "smarkets_fetch": {
+  "events_seen": 70,
+  "events_priced": 70,
+  "markets": 601,
+  "markets_mapped": 243,
+  "contracts": 534,
+  "quoted_contracts": 534,
+  "raw": "data/research/external/raw/20261015T111135Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 243,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 507,
+  "two_sided": 506,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 405,
+ "external_mapping": {
+  "total": 180,
+  "by_status": {
+   "MAPPED": 124,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6889,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nazim Makhlouf": 1,
+   "Felix Roussel": 1,
+   "Thiago Pernas": 1,
+   "Mathys Picard": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Denis Klok": 1,
+   "Guilherme Barbieri Renner": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.6143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27
+  }
+ },
+ "kalshi_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.886,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Dominick Mosejczuk": 1,
+   "Mason Vaughan": 1,
+   "Mathys Picard": 1,
+   "Thiago Agustin Pernas": 1,
+   "Nazim Makhlouf": 1,
+   "Felix Roussel": 1,
+   "Andrei Kunitsyn": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 138,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 96,
+  "tri:INSUFFICIENT_INPUTS": 54,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
