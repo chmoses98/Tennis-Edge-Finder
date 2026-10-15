@@ -1,0 +1,81 @@
+{
+ "generated_at": "2026-10-15T07:40:50.849443+00:00",
+ "run_id": "20261015T074050Z",
+ "external_parse": {
+  "events": 250,
+  "markets": 2033,
+  "skipped_family": 237,
+  "skipped_period": 549,
+  "skipped_live": 24,
+  "one_sided": 55,
+  "rows": 2997,
+  "devigged": 1189
+ },
+ "smarkets_fetch": {
+  "events_seen": 91,
+  "events_priced": 80,
+  "markets": 844,
+  "markets_mapped": 313,
+  "contracts": 692,
+  "quoted_contracts": 692,
+  "raw": "data/research/external/raw/20261015T074050Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 313,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 661,
+  "two_sided": 656,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 0,
+ "external_mapping": {
+  "total": 241,
+  "by_status": {
+   "MAPPED": 169,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 34,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7012,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1,
+   "Henry Best": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 0,
+ "external_mapped_matches": 178,
+ "kalshi_mapped_matches": 0,
+ "model_witness_available": true,
+ "rows": 0,
+ "counts": {},
+ "skips": {}
+}
