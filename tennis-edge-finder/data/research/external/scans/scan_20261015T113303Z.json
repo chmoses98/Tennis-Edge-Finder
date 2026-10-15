@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-15T11:33:03.296685+00:00",
+ "run_id": "20261015T113303Z",
+ "external_parse": {
+  "events": 187,
+  "markets": 1280,
+  "skipped_family": 173,
+  "skipped_period": 354,
+  "skipped_live": 51,
+  "one_sided": 43,
+  "rows": 1872,
+  "devigged": 710
+ },
+ "smarkets_fetch": {
+  "events_seen": 66,
+  "events_priced": 66,
+  "markets": 569,
+  "markets_mapped": 231,
+  "contracts": 506,
+  "quoted_contracts": 506,
+  "raw": "data/research/external/raw/20261015T113303Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 231,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 10,
+  "rows": 496,
+  "two_sided": 491,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1025,
+ "external_mapping": {
+  "total": 178,
+  "by_status": {
+   "MAPPED": 122,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6854,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Nazim Makhlouf": 1,
+   "Felix Roussel": 1,
+   "Mathys Picard": 1,
+   "Thiago Pernas": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Denis Klok": 1,
+   "Guilherme Barbieri Renner": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6212,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25
+  }
+ },
+ "kalshi_mapping": {
+  "total": 164,
+  "by_status": {
+   "MAPPED": 144,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.878,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1,
+   "Mason Vaughan": 1,
+   "Johan Oscar Lien": 1
+  }
+ },
+ "matched_both_venues": 102,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 144,
+ "model_witness_available": true,
+ "rows": 122,
+ "counts": {
+  "PASS": 122,
+  "tri:INSUFFICIENT_INPUTS": 74,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
