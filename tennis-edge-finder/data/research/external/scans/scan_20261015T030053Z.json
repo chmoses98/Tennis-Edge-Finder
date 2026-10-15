@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-15T03:00:53.767016+00:00",
+ "run_id": "20261015T030053Z",
+ "external_parse": {
+  "events": 214,
+  "markets": 1815,
+  "skipped_family": 238,
+  "skipped_period": 484,
+  "skipped_live": 15,
+  "one_sided": 39,
+  "rows": 2763,
+  "devigged": 1053
+ },
+ "smarkets_fetch": {
+  "events_seen": 92,
+  "events_priced": 80,
+  "markets": 1030,
+  "markets_mapped": 367,
+  "contracts": 782,
+  "quoted_contracts": 782,
+  "raw": "data/research/external/raw/20261015T030053Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 367,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 763,
+  "two_sided": 757,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 489,
+ "external_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 142,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6995,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aruth Chinsupakul": 1,
+   "Liam Oliver Toroman": 1,
+   "Siddharth Bharadwaj": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Jay Friend": 1,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8487,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Mason Vaughan": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1,
+   "Mathys Picard": 1,
+   "Thiago Agustin Pernas": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 155,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 101,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 54,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
