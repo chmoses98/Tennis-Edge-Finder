@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-10-15T08:51:09.162160+00:00",
+ "run_id": "20261015T085109Z",
+ "external_parse": {
+  "events": 244,
+  "markets": 1886,
+  "skipped_family": 242,
+  "skipped_period": 522,
+  "skipped_live": 44,
+  "one_sided": 51,
+  "rows": 2796,
+  "devigged": 1071
+ },
+ "smarkets_fetch": {
+  "events_seen": 86,
+  "events_priced": 80,
+  "markets": 845,
+  "markets_mapped": 310,
+  "contracts": 684,
+  "quoted_contracts": 684,
+  "raw": "data/research/external/raw/20261015T085109Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 10,
+  "rows": 674,
+  "two_sided": 671,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 29,
+ "external_mapping": {
+  "total": 235,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6936,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Jamie Mackenzie": 1,
+   "Henry Best": 1,
+   "William Vinciguerra": 1,
+   "Rihards Neimanis": 1,
+   "Tymon Litwic.": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 1,
+  "by_status": {
+   "MAPPED": 1
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 1,
+ "external_mapped_matches": 172,
+ "kalshi_mapped_matches": 1,
+ "model_witness_available": true,
+ "rows": 2,
+ "counts": {
+  "PASS": 2,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {}
+}
