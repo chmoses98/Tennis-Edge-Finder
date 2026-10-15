@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-15T05:50:58.863912+00:00",
+ "run_id": "20261015T055058Z",
+ "external_parse": {
+  "events": 241,
+  "markets": 2075,
+  "skipped_family": 263,
+  "skipped_period": 556,
+  "skipped_live": 15,
+  "one_sided": 54,
+  "rows": 3080,
+  "devigged": 1202
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 1032,
+  "markets_mapped": 357,
+  "contracts": 784,
+  "quoted_contracts": 784,
+  "raw": "data/research/external/raw/20261015T055058Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 357,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 77,
+  "rows": 707,
+  "two_sided": 698,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 504,
+ "external_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 162,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7013,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Taiyo Hirano": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "William Vinciguerra": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 111,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8346,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Mason Vaughan": 1,
+   "Johan Oscar Lien": 1,
+   "Nazim Makhlouf": 1,
+   "Felix Roussel": 1,
+   "Rihards Neimanis": 1,
+   "Andrei Kunitsyn": 1
+  }
+ },
+ "matched_both_venues": 72,
+ "external_mapped_matches": 169,
+ "kalshi_mapped_matches": 111,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 125,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:INSUFFICIENT_INPUTS": 77,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
