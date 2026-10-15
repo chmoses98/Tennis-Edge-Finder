@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-15T07:10:46.288415+00:00",
+ "run_id": "20261015T071046Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 2078,
+  "skipped_family": 244,
+  "skipped_period": 558,
+  "skipped_live": 17,
+  "one_sided": 48,
+  "rows": 3092,
+  "devigged": 1228
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 943,
+  "markets_mapped": 344,
+  "contracts": 758,
+  "quoted_contracts": 758,
+  "raw": "data/research/external/raw/20261015T071046Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 344,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 43,
+  "rows": 715,
+  "two_sided": 706,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 841,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 167,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 34,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6987,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Taiyo Hirano": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Arjun Rathi": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Henry Best": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 35,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 208,
+  "by_status": {
+   "MAPPED": 177,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.851,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Denis Klok": 1,
+   "Alex Hernandez": 1,
+   "Mason Vaughan": 1,
+   "Victor Pagotto": 1,
+   "Mathys Picard": 1,
+   "Thiago Agustin Pernas": 1
+  }
+ },
+ "matched_both_venues": 127,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 177,
+ "model_witness_available": true,
+ "rows": 224,
+ "counts": {
+  "PASS": 224,
+  "tri:MODEL_LONE_OUTLIER": 63,
+  "tri:INSUFFICIENT_INPUTS": 138,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 12,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
