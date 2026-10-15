@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-15T08:41:08.346707+00:00",
+ "run_id": "20261015T084108Z",
+ "external_parse": {
+  "events": 246,
+  "markets": 1969,
+  "skipped_family": 242,
+  "skipped_period": 540,
+  "skipped_live": 34,
+  "one_sided": 53,
+  "rows": 2927,
+  "devigged": 1133
+ },
+ "smarkets_fetch": {
+  "events_seen": 86,
+  "events_priced": 80,
+  "markets": 846,
+  "markets_mapped": 310,
+  "contracts": 684,
+  "quoted_contracts": 684,
+  "raw": "data/research/external/raw/20261015T084108Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 10,
+  "rows": 674,
+  "two_sided": 670,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 64,
+ "external_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 166,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7004,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Henry Best": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 21,
+  "by_status": {
+   "MAPPED": 16,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7619,
+  "top_refusal_subjects": {
+   "Luca Wiedenmann": 1,
+   "Sergey Petrov": 1,
+   "Andrei Kunitsyn": 1,
+   "Lujza Zimenova": 1,
+   "Jodie Anna Burrage": 1
+  }
+ },
+ "matched_both_venues": 14,
+ "external_mapped_matches": 175,
+ "kalshi_mapped_matches": 16,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:MODEL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {}
+}
