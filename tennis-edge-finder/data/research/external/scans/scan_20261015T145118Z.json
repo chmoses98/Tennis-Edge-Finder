@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-15T14:51:18.380144+00:00",
+ "run_id": "20261015T145118Z",
+ "external_parse": {
+  "events": 127,
+  "markets": 1106,
+  "skipped_family": 232,
+  "skipped_period": 289,
+  "skipped_live": 19,
+  "one_sided": 39,
+  "rows": 1454,
+  "devigged": 546
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 402,
+  "markets_mapped": 189,
+  "contracts": 408,
+  "quoted_contracts": 408,
+  "raw": "data/research/external/raw/20261015T145118Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 189,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 404,
+  "two_sided": 401,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 326,
+ "external_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 82,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7009,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xavier Massotte": 1,
+   "Cian Ingles": 1,
+   "Yike Liu": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Denis Klok": 1,
+   "Pedro Dietrich": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Mason Vaughan": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6909,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8974,
+  "top_refusal_subjects": {
+   "Digvijay Pratap Singh": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1,
+   "Mason Vaughan": 1,
+   "Johan Oscar Lien": 1,
+   "Victor Pagotto": 1,
+   "William Nolan": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 99,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:MARKETS_AGREE": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
