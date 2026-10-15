@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-15T18:02:56.564266+00:00",
+ "run_id": "20261015T180256Z",
+ "external_parse": {
+  "events": 104,
+  "markets": 783,
+  "skipped_family": 193,
+  "skipped_period": 192,
+  "skipped_live": 29,
+  "one_sided": 12,
+  "rows": 1058,
+  "devigged": 386
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 575,
+  "markets_mapped": 230,
+  "contracts": 484,
+  "quoted_contracts": 484,
+  "raw": "data/research/external/raw/20261015T180256Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 230,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 11,
+  "rows": 473,
+  "two_sided": 471,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 963,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6882,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Saahil Gupte": 1,
+   "Brian Windsor": 1,
+   "Brice Patoux": 1,
+   "Daniel Jankoski": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Johan Oscar Lien": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 35,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8561,
+  "top_refusal_subjects": {
+   "Felix Roussel": 1,
+   "Mathys Picard": 1,
+   "Sergey Petrov": 1,
+   "Anton Arzhankin": 1,
+   "Christopher Thies": 1,
+   "Digvijay Pratap Singh": 1,
+   "Eli Stephenson": 1,
+   "Guilherme Barbieri Renner": 1,
+   "Felipe Jose Rivadeneira Gallegos": 1,
+   "Pedro Albuquerque Dietrich": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 51,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
