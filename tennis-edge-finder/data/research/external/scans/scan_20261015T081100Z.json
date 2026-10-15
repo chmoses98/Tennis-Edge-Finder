@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-15T08:11:00.609109+00:00",
+ "run_id": "20261015T081100Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 1968,
+  "skipped_family": 242,
+  "skipped_period": 540,
+  "skipped_live": 36,
+  "one_sided": 54,
+  "rows": 2923,
+  "devigged": 1131
+ },
+ "smarkets_fetch": {
+  "events_seen": 90,
+  "events_priced": 80,
+  "markets": 846,
+  "markets_mapped": 313,
+  "contracts": 692,
+  "quoted_contracts": 692,
+  "raw": "data/research/external/raw/20261015T081100Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 313,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 658,
+  "two_sided": 649,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 141,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 168,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7029,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Henry Best": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.913,
+  "top_refusal_subjects": {
+   "Raluca Georgiana Serban": 1,
+   "Luca Wiedenmann": 1,
+   "Rihards Neimanis": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 174,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
