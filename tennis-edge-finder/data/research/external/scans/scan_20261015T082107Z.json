@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-15T08:21:07.434673+00:00",
+ "run_id": "20261015T082107Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 1968,
+  "skipped_family": 242,
+  "skipped_period": 540,
+  "skipped_live": 36,
+  "one_sided": 54,
+  "rows": 2923,
+  "devigged": 1131
+ },
+ "smarkets_fetch": {
+  "events_seen": 89,
+  "events_priced": 80,
+  "markets": 837,
+  "markets_mapped": 309,
+  "contracts": 682,
+  "quoted_contracts": 682,
+  "raw": "data/research/external/raw/20261015T082107Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 309,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 667,
+  "two_sided": 656,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 131,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 168,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7029,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Henry Best": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 35,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 25,
+  "by_status": {
+   "MAPPED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.92,
+  "top_refusal_subjects": {
+   "Felix Roussel": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 175,
+ "kalshi_mapped_matches": 23,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 7
+ },
+ "skips": {}
+}
