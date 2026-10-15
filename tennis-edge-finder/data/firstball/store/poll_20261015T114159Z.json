@@ -1,0 +1,34 @@
+{
+ "run_id": "20261015T114159Z",
+ "started_at": "2026-10-15T11:41:59.796059+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 165,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPDOUBLES-26OCT15MIEOBEPOLZIE": {
+   "confidence": "B",
+   "bracket_s": 263.865079,
+   "first_ball": "2026-10-15T11:49:40.334241+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "watchlist": {
+  "capture_board_markets": 1029,
+  "events_only_on_capture_board": 39,
+  "selected_from_capture_board": 37
+ },
+ "mapping": {
+  "MATCHED": 165,
+  "UNMATCHED": 1290
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-15T11:53:04.221981+00:00"
+}
