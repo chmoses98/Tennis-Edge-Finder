@@ -1,0 +1,34 @@
+{
+ "run_id": "20261015T141121Z",
+ "started_at": "2026-10-15T14:11:21.993314+00:00",
+ "passes": 4,
+ "requests": 8,
+ "observations": 109,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26OCT15JORJON": {
+   "confidence": "B",
+   "bracket_s": 245.752531,
+   "first_ball": "2026-10-15T14:09:33.775029+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 8
+ },
+ "watchlist": {
+  "capture_board_markets": 905,
+  "events_only_on_capture_board": 51,
+  "selected_from_capture_board": 47
+ },
+ "mapping": {
+  "MATCHED": 109,
+  "UNMATCHED": 832
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-15T14:20:59.787476+00:00"
+}
