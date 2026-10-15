@@ -1,0 +1,81 @@
+{
+ "generated_at": "2026-10-15T07:50:51.094950+00:00",
+ "run_id": "20261015T075051Z",
+ "external_parse": {
+  "events": 245,
+  "markets": 1955,
+  "skipped_family": 234,
+  "skipped_period": 526,
+  "skipped_live": 29,
+  "one_sided": 46,
+  "rows": 2899,
+  "devigged": 1148
+ },
+ "smarkets_fetch": {
+  "events_seen": 90,
+  "events_priced": 80,
+  "markets": 850,
+  "markets_mapped": 316,
+  "contracts": 698,
+  "quoted_contracts": 698,
+  "raw": "data/research/external/raw/20261015T075051Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 316,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 672,
+  "two_sided": 664,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 0,
+ "external_mapping": {
+  "total": 236,
+  "by_status": {
+   "MAPPED": 166,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7034,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "William Vinciguerra": 1,
+   "Jamie Mackenzie": 1,
+   "Matthew Shearer": 1,
+   "Henry Best": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 0,
+ "external_mapped_matches": 175,
+ "kalshi_mapped_matches": 0,
+ "model_witness_available": true,
+ "rows": 0,
+ "counts": {},
+ "skips": {}
+}
