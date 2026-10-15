@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-15T04:00:44.188607+00:00",
+ "run_id": "20261015T040044Z",
+ "external_parse": {
+  "events": 219,
+  "markets": 1905,
+  "skipped_family": 252,
+  "skipped_period": 510,
+  "skipped_live": 14,
+  "one_sided": 44,
+  "rows": 2895,
+  "devigged": 1098
+ },
+ "smarkets_fetch": {
+  "events_seen": 88,
+  "events_priced": 80,
+  "markets": 956,
+  "markets_mapped": 345,
+  "contracts": 736,
+  "quoted_contracts": 736,
+  "raw": "data/research/external/raw/20261015T040044Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 345,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 16,
+  "rows": 720,
+  "two_sided": 715,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 503,
+ "external_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 149,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7129,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Dominic Stephan Stricker": 1,
+   "Raluca Georgiana Serban": 1,
+   "Aruth Chinsupakul": 1,
+   "Matthew Shearer": 1,
+   "Jamie Mackenzie": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Arjun Rathi": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Leyre Romero Gormaz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8205,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Raluca Georgiana Serban": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Tristan McCormick": 1,
+   "Victor Pagotto": 1,
+   "Thiago Agustin Pernas": 1,
+   "Sergey Petrov": 1,
+   "Rihards Neimanis": 1,
+   "Andrei Kunitsyn": 1,
+   "Tymon Litwic": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 162,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 97,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:INSUFFICIENT_INPUTS": 50,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "SHADOW_BET": 1,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
