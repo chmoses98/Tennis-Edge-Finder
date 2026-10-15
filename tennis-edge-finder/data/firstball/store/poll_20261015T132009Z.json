@@ -1,0 +1,46 @@
+{
+ "run_id": "20261015T132009Z",
+ "started_at": "2026-10-15T13:20:09.780336+00:00",
+ "passes": 4,
+ "requests": 8,
+ "observations": 118,
+ "truths_written": 3,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTAMATCH-26OCT15ANNTJE": {
+   "confidence": "B",
+   "bracket_s": 290.396647,
+   "first_ball": "2026-10-15T13:20:50.089289+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26OCT15ANNTJE-2": {
+   "confidence": "B",
+   "bracket_s": 290.396647,
+   "first_ball": "2026-10-15T13:20:50.089289+00:00",
+   "no_play": false
+  },
+  "KXWTASETWINNER-26OCT15ANNTJE-1": {
+   "confidence": "B",
+   "bracket_s": 290.396647,
+   "first_ball": "2026-10-15T13:20:50.089289+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 8
+ },
+ "watchlist": {
+  "capture_board_markets": 971,
+  "events_only_on_capture_board": 48,
+  "selected_from_capture_board": 46
+ },
+ "mapping": {
+  "MATCHED": 118,
+  "UNMATCHED": 952
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-15T13:30:16.974856+00:00"
+}
