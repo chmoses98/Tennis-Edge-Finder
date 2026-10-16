@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-16T21:19:53.653721+00:00",
+ "run_id": "20261016T211953Z",
+ "external_parse": {
+  "events": 78,
+  "markets": 983,
+  "skipped_family": 283,
+  "skipped_period": 256,
+  "skipped_live": 7,
+  "one_sided": 6,
+  "rows": 1663,
+  "devigged": 437
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 1078,
+  "markets_mapped": 303,
+  "contracts": 642,
+  "quoted_contracts": 642,
+  "raw": "data/research/external/raw/20261016T211953Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 303,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 61,
+  "rows": 581,
+  "two_sided": 579,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1203,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8358,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Joel Josef Schwarzler": 1,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 66
+  },
+  "mapped_rate": 0.8354,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9709,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Luca Wiedenmann": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 100,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 12,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
