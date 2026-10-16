@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-16T16:58:45.674913+00:00",
+ "run_id": "20261016T165845Z",
+ "external_parse": {
+  "events": 104,
+  "markets": 988,
+  "skipped_family": 239,
+  "skipped_period": 283,
+  "skipped_live": 25,
+  "one_sided": 9,
+  "rows": 1560,
+  "devigged": 457
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 760,
+  "markets_mapped": 253,
+  "contracts": 528,
+  "quoted_contracts": 528,
+  "raw": "data/research/external/raw/20261016T165845Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 253,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 506,
+  "two_sided": 505,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 339,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Louis Hull": 1,
+   "Rodrigo Cruz": 1,
+   "Michael Lorenzetti": 1,
+   "Eli Stephenson": 1,
+   "Johan Oscar Lien": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.8413,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.942,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Tristan McCormick": 1,
+   "Johan Oscar Lien": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 65,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 65,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 3,
+  "tri:INSUFFICIENT_INPUTS": 16
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
