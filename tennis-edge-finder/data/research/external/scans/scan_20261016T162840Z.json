@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-16T16:28:40.163653+00:00",
+ "run_id": "20261016T162840Z",
+ "external_parse": {
+  "events": 98,
+  "markets": 933,
+  "skipped_family": 234,
+  "skipped_period": 268,
+  "skipped_live": 27,
+  "one_sided": 6,
+  "rows": 1491,
+  "devigged": 425
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 731,
+  "markets_mapped": 256,
+  "contracts": 536,
+  "quoted_contracts": 536,
+  "raw": "data/research/external/raw/20261016T162840Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 256,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 20,
+  "rows": 516,
+  "two_sided": 515,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 378,
+ "external_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7816,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Louis Hull": 1,
+   "Rodrigo Cruz": 1,
+   "Michael Lorenzetti": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Eli Stephenson": 1,
+   "Johan Oscar Lien": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9
+  }
+ },
+ "kalshi_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 69,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9452,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Johan Oscar Lien": 1,
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 64,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MARKETS_AGREE": 8,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
