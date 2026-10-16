@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-16T18:09:25.785333+00:00",
+ "run_id": "20261016T180925Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 889,
+  "skipped_family": 230,
+  "skipped_period": 255,
+  "skipped_live": 22,
+  "one_sided": 5,
+  "rows": 1430,
+  "devigged": 399
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 905,
+  "markets_mapped": 244,
+  "contracts": 502,
+  "quoted_contracts": 502,
+  "raw": "data/research/external/raw/20261016T180925Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 244,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 18,
+  "rows": 484,
+  "two_sided": 480,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1128,
+ "external_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.8608,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Johan Oscar Lien": 1,
+   "Dominick Mosejczuk": 1,
+   "William Vinciguerra": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 111,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.9328,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Luca Wiedenmann": 1,
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Johan Oscar Lien": 1,
+   "Tara Wuerth": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 111,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 81,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 12,
+  "SHADOW_BET": 1,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "WATCH": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
