@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-16T22:29:07.561944+00:00",
+ "run_id": "20261016T222907Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 939,
+  "skipped_family": 281,
+  "skipped_period": 245,
+  "skipped_live": 11,
+  "one_sided": 1,
+  "rows": 1639,
+  "devigged": 411
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 1155,
+  "markets_mapped": 326,
+  "contracts": 704,
+  "quoted_contracts": 704,
+  "raw": "data/research/external/raw/20261016T222907Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 326,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 49,
+  "rows": 655,
+  "two_sided": 651,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 473,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8308,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Joel Josef Schwarzler": 1,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.95,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Luca Wiedenmann": 1,
+   "Yeonwoo Ku": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 81,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 68,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
