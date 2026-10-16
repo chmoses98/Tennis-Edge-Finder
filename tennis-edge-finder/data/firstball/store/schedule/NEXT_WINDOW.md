@@ -1,21 +1,30 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 09:58Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 10:22Z)
 
-* Earliest credible first ball: **2026-10-16 10:02Z**
-* Recommended RUN TENNIS time: **2026-10-16 09:17Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-16 09:52Z**
-* Matches in window: 1
+* Earliest credible first ball: **2026-10-17 02:30Z**
+* Recommended RUN TENNIS time: **2026-10-17 01:45Z**
+* Final price/status check time: **2026-10-17 02:20Z**
+* Matches in window: 11
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Ann Li vs Iga Swiatek | 2026-10-16 10:02Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court in progress (set 3 of best-of-3) | MEDIUM |
+| Sayaka Ishii vs Elina Avanesyan | 2026-10-17 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Maya Joint vs Kyoka Okamura | 2026-10-17 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Ena Koike vs Kayla Day | 2026-10-17 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Mary Stoiana vs Rinko Matsuda | 2026-10-17 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Katarzyna Kawa vs Katie Volynets | 2026-10-17 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Daria Snigur vs Yu Jun Lin | 2026-10-17 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Yuliia Starodubtseva vs Anastasia Zakharova | 2026-10-17 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Harriet Dart vs Rina Saigo | 2026-10-17 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Aoi Ito vs Tyra Caterina Grant | 2026-10-17 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Sinja Kraus vs Momoko Kobori | 2026-10-17 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Claire Liu vs Kanon Sawashiro | 2026-10-17 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Daniil Medvedev vs Tommy Paul
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Ann Li vs Iga Swiatek
 
-Published slate: `SL-20261016T094410Z-d14b730f` built 2026-10-16 09:44Z -- current
+Published slate: `SL-20261016T094410Z-d14b730f` built 2026-10-16 09:44Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
-* later window 2: first ball 2026-10-17 02:30Z, run by 2026-10-17 01:45Z, 11 match(es)
-* later window 3: first ball 2026-10-17 04:30Z, run by 2026-10-17 03:45Z, 10 match(es)
-* later window 4: first ball 2026-10-17 07:30Z, run by 2026-10-17 06:45Z, 4 match(es)
-* later window 5: first ball 2026-10-17 10:00Z, run by 2026-10-17 09:15Z, 1 match(es)
+* later window 2: first ball 2026-10-17 04:30Z, run by 2026-10-17 03:45Z, 10 match(es)
+* later window 3: first ball 2026-10-17 07:30Z, run by 2026-10-17 06:45Z, 4 match(es)
+* later window 4: first ball 2026-10-17 10:00Z, run by 2026-10-17 09:15Z, 1 match(es)
