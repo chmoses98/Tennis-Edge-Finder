@@ -1,16 +1,16 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 05:48Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 05:59Z)
 
-* Earliest credible first ball: **2026-10-16 05:51Z**
-* Recommended RUN TENNIS time: **2026-10-16 05:06Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-16 05:41Z**
+* Earliest credible first ball: **2026-10-16 06:02Z**
+* Recommended RUN TENNIS time: **2026-10-16 05:17Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-16 05:52Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Rafael Jodar vs Casper Ruud | 2026-10-16 05:51Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Stadium Court finished | MEDIUM |
-| Maja Chwalinska vs Maria Sakkari | 2026-10-16 06:26Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court in progress (set 1 of best-of-3) | MEDIUM |
+| Rafael Jodar vs Casper Ruud | 2026-10-16 06:02Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Stadium Court finished | MEDIUM |
+| Maja Chwalinska vs Maria Sakkari | 2026-10-16 06:12Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Dongfeng Voyah Center Court in progress (set 2 of best-of-3) | MEDIUM |
 
-Published slate: `SL-20261016T053656Z-8c9ae8ae` built 2026-10-16 05:36Z -- current
+Published slate: `SL-20261016T054747Z-ad981668` built 2026-10-16 05:47Z -- current
 
 Dispatched this pass: none
 
