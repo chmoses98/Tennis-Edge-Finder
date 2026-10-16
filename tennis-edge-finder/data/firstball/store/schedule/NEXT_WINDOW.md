@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 02:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 03:00Z)
 
 * Earliest credible first ball: **2026-10-16 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-16 02:15Z**  (OVERDUE: run now)
@@ -10,9 +10,9 @@
 | Diana Shnaider vs Jelena Ostapenko | 2026-10-16 03:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Elina Svitolina vs Sonay Kartal | 2026-10-16 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261016T023517Z-842dd297` built 2026-10-16 02:35Z -- current
+Published slate: `SL-20261016T023517Z-842dd297` built 2026-10-16 02:35Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-16 06:00Z, run by 2026-10-16 05:15Z, 2 match(es)
 * later window 3: first ball 2026-10-16 10:00Z, run by 2026-10-16 09:15Z, 2 match(es)
