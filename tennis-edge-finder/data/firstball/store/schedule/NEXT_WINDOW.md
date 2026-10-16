@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 22:06Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 22:20Z)
 
 * Earliest credible first ball: **2026-10-17 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-17 01:45Z**
@@ -19,7 +19,7 @@
 | Sinja Kraus vs Momoko Kobori | 2026-10-17 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Claire Liu vs Kanon Sawashiro | 2026-10-17 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261016T174115Z-a3ffc784` built 2026-10-16 17:41Z -- current
+Published slate: `SL-20261016T215912Z-5e413626` built 2026-10-16 21:59Z -- current
 
 Dispatched this pass: none
 
