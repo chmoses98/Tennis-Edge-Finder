@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-16T21:49:06.849946+00:00",
+ "run_id": "20261016T214906Z",
+ "external_parse": {
+  "events": 77,
+  "markets": 985,
+  "skipped_family": 283,
+  "skipped_period": 257,
+  "skipped_live": 7,
+  "one_sided": 3,
+  "rows": 1711,
+  "devigged": 441
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 1128,
+  "markets_mapped": 318,
+  "contracts": 680,
+  "quoted_contracts": 680,
+  "raw": "data/research/external/raw/20261016T214906Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 318,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 640,
+  "two_sided": 637,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 516,
+ "external_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Joel Josef Schwarzler": 1,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.8354,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9683,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 81,
+ "kalshi_mapped_matches": 61,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 77,
+  "tri:MODEL_LONE_OUTLIER": 59,
+  "tri:MARKETS_AGREE": 13,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
