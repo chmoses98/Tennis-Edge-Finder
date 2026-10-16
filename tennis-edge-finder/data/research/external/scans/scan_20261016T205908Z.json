@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-16T20:59:08.578593+00:00",
+ "run_id": "20261016T205908Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 987,
+  "skipped_family": 284,
+  "skipped_period": 254,
+  "skipped_live": 9,
+  "one_sided": 3,
+  "rows": 1701,
+  "devigged": 445
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 1035,
+  "markets_mapped": 285,
+  "contracts": 600,
+  "quoted_contracts": 600,
+  "raw": "data/research/external/raw/20261016T205908Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 285,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 49,
+  "rows": 551,
+  "two_sided": 546,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 448,
+ "external_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8261,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Joel Josef Schwarzler": 1,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "Alex Hernandez": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 66
+  },
+  "mapped_rate": 0.8354,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9595,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Luca Wiedenmann": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
