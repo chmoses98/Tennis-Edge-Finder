@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-16T06:07:44.133072+00:00",
+ "run_id": "20261016T060744Z",
+ "external_parse": {
+  "events": 150,
+  "markets": 1429,
+  "skipped_family": 230,
+  "skipped_period": 388,
+  "skipped_live": 7,
+  "one_sided": 22,
+  "rows": 2086,
+  "devigged": 789
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 58,
+  "markets": 687,
+  "markets_mapped": 264,
+  "contracts": 572,
+  "quoted_contracts": 572,
+  "raw": "data/research/external/raw/20261016T060744Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 559,
+  "two_sided": 549,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 346,
+ "external_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 106,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7571,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "William Vinciguerra": 1,
+   "Mathys Picard": 1,
+   "Felix Roussel": 1,
+   "Luca Wiedenmann": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Eli Stephenson": 1,
+   "Johan Oscar Lien": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6207,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.837,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Johan Oscar Lien": 1,
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Mathys Picard": 1,
+   "Sergey Petrov": 1,
+   "Anton Arzhankin": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 77,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 100,
+  "tri:INSUFFICIENT_INPUTS": 67,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 5,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
