@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-16T07:07:48.832509+00:00",
+ "run_id": "20261016T070748Z",
+ "external_parse": {
+  "events": 161,
+  "markets": 1477,
+  "skipped_family": 215,
+  "skipped_period": 410,
+  "skipped_live": 13,
+  "one_sided": 25,
+  "rows": 2180,
+  "devigged": 827
+ },
+ "smarkets_fetch": {
+  "events_seen": 57,
+  "events_priced": 57,
+  "markets": 671,
+  "markets_mapped": 252,
+  "contracts": 552,
+  "quoted_contracts": 552,
+  "raw": "data/research/external/raw/20261016T070748Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 252,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 544,
+  "two_sided": 537,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 406,
+ "external_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 113,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7434,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "William Nolan": 1,
+   "William Vinciguerra": 1,
+   "Digvijay Pratap Singh": 1,
+   "Mathys Picard": 1,
+   "Felix Roussel": 1,
+   "Luca Wiedenmann": 1,
+   "Pedro Henrique Chabalgoity": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 34,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5965,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8687,
+  "top_refusal_subjects": {
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Johan Oscar Lien": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Mathys Picard": 1,
+   "Sergey Petrov": 1,
+   "Anton Arzhankin": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 106,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
