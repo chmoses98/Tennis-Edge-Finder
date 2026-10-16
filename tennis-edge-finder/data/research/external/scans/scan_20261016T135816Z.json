@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-16T13:58:16.358773+00:00",
+ "run_id": "20261016T135816Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 1147,
+  "skipped_family": 218,
+  "skipped_period": 347,
+  "skipped_live": 26,
+  "one_sided": 8,
+  "rows": 1871,
+  "devigged": 573
+ },
+ "smarkets_fetch": {
+  "events_seen": 53,
+  "events_priced": 53,
+  "markets": 511,
+  "markets_mapped": 234,
+  "contracts": 498,
+  "quoted_contracts": 498,
+  "raw": "data/research/external/raw/20261016T135816Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 234,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 472,
+  "two_sided": 466,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 385,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 83,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7545,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Guiomar Maristany": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Eli Stephenson": 1,
+   "Johan Oscar Lien": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8679,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9672,
+  "top_refusal_subjects": {
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 37
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
