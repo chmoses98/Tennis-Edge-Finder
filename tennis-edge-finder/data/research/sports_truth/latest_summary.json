@@ -1,26 +1,26 @@
 {
- "run_id": "20261016T014555Z",
- "source_stamp": "20261015T102231Z|2026-10-16T01:37:35.181324+00:00",
- "settled": 47113,
+ "run_id": "20261016T050529Z",
+ "source_stamp": "20261015T102231Z|2026-10-16T04:57:14.315344+00:00",
+ "settled": 47119,
  "by_status": {
-  "NOT_COVERED": 22300,
+  "NOT_COVERED": 22302,
   "RESOLVED": 20157,
   "NOT_FOUND": 2354,
-  "NO_CANONICAL_IDS": 2038,
+  "NO_CANONICAL_IDS": 2042,
   "AMBIGUOUS": 114,
   "PENDING_RESULT": 150
  },
  "reconciliation": {
-  "NOT_RECONCILED": 25492,
+  "NOT_RECONCILED": 25498,
   "AGREE": 5604
  },
  "by_level": {
   "ATP|CHALLENGER": {
    "RESOLVED": 1630,
    "NOT_FOUND": 764,
-   "NO_CANONICAL_IDS": 1054,
+   "NO_CANONICAL_IDS": 1058,
    "AMBIGUOUS": 6,
-   "NOT_COVERED": 2000
+   "NOT_COVERED": 2002
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
@@ -136,27 +136,27 @@
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 15904,
-  "matches_with_v2_and_incumbent": 1936,
-  "exchange_settled_predictions": 15904,
+  "predictions_with_v2_and_incumbent": 15906,
+  "matches_with_v2_and_incumbent": 1937,
+  "exchange_settled_predictions": 15906,
   "independently_resolved_predictions": 2996,
   "independently_settled_matches": 354,
   "by_status": {
    "RESOLVED": 2996,
-   "NOT_COVERED": 12686,
+   "NOT_COVERED": 12688,
    "NOT_FOUND": 174,
    "AMBIGUOUS": 12,
    "PENDING_RESULT": 36
   },
   "reconciliation": {
    "AGREE": 2996,
-   "NOT_RECONCILED": 12908,
+   "NOT_RECONCILED": 12910,
    "EXPLAINED_NOTE": 16
   },
   "by_level": {
    "ATP Challenger": {
     "RESOLVED": 710,
-    "NOT_COVERED": 1666
+    "NOT_COVERED": 1668
    },
    "ATP ITF": {
     "NOT_COVERED": 5078
