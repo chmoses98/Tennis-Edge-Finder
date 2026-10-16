@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 10:22Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-16 10:36Z)
 
 * Earliest credible first ball: **2026-10-17 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-17 01:45Z**
@@ -21,9 +21,9 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Ann Li vs Iga Swiatek
 
-Published slate: `SL-20261016T094410Z-d14b730f` built 2026-10-16 09:44Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261016T100802Z-29caacd8` built 2026-10-16 10:08Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-17 04:30Z, run by 2026-10-17 03:45Z, 10 match(es)
 * later window 3: first ball 2026-10-17 07:30Z, run by 2026-10-17 06:45Z, 4 match(es)
