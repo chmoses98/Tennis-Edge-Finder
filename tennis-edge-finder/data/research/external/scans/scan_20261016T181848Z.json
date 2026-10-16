@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-16T18:18:48.478987+00:00",
+ "run_id": "20261016T181848Z",
+ "external_parse": {
+  "events": 92,
+  "markets": 861,
+  "skipped_family": 229,
+  "skipped_period": 248,
+  "skipped_live": 26,
+  "one_sided": 8,
+  "rows": 1350,
+  "devigged": 376
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 935,
+  "markets_mapped": 248,
+  "contracts": 510,
+  "quoted_contracts": 510,
+  "raw": "data/research/external/raw/20261016T181848Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 248,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 482,
+  "two_sided": 480,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 377,
+ "external_mapping": {
+  "total": 81,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 5
+  },
+  "mapped_rate": 0.8642,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 5,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Theodore Dean": 1,
+   "Johan Oscar Lien": 1,
+   "William Vinciguerra": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 81,
+  "by_status": {
+   "MAPPED": 75,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9259,
+  "top_refusal_subjects": {
+   "Luca Wiedenmann": 1,
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Johan Oscar Lien": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 85,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 49,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
