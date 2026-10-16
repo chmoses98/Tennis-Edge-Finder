@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-16T08:58:52.063308+00:00",
+ "run_id": "20261016T085852Z",
+ "external_parse": {
+  "events": 157,
+  "markets": 1185,
+  "skipped_family": 187,
+  "skipped_period": 344,
+  "skipped_live": 45,
+  "one_sided": 21,
+  "rows": 1772,
+  "devigged": 633
+ },
+ "smarkets_fetch": {
+  "events_seen": 57,
+  "events_priced": 57,
+  "markets": 629,
+  "markets_mapped": 249,
+  "contracts": 548,
+  "quoted_contracts": 548,
+  "raw": "data/research/external/raw/20261016T085852Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 249,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 533,
+  "two_sided": 529,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1041,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 110,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7432,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Digvijay Pratap Singh": 1,
+   "Anton Arzhankin": 1,
+   "Sergey Petrov": 1,
+   "Mathys Picard": 1,
+   "Felix Roussel": 1,
+   "Luca Wiedenmann": 1,
+   "Pedro Henrique Chabalgoity": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 57,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 22,
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5965,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.9013,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Johan Oscar Lien": 1,
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Luca Wiedenmann": 1,
+   "Felix Roussel": 1,
+   "Mathys Picard": 1
+  }
+ },
+ "matched_both_venues": 100,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 137,
+ "model_witness_available": true,
+ "rows": 132,
+ "counts": {
+  "PASS": 131,
+  "tri:MODEL_LONE_OUTLIER": 61,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
