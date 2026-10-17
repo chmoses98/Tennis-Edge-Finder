@@ -1,5 +1,5 @@
 {
- "ledger_rows": 50660,
+ "ledger_rows": 51268,
  "settlement_files": 157,
  "settlement_rows_unique": 48914,
  "settlement_rows_duplicate_prediction_ids": 0,
@@ -15,9 +15,9 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 1748,
+ "ledger_rows_without_settlement_row": 2356,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 1748,
+ "of_which_not_yet_settled_or_not_swept": 2356,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
   "yes": 22715,
@@ -39,7 +39,7 @@
   "sports_truth_kalshi_derived": 31580,
   "sports_truth_independent": 20632,
   "settlement_files": 157,
-  "independent_truth_run": "20261017T112040Z.jsonl.gz",
+  "independent_truth_run": "20261017T115504Z.jsonl.gz",
   "independent_truth_by_status": {
    "NOT_COVERED": 22916,
    "RESOLVED": 21265,
@@ -127,11 +127,11 @@
    "espn_families_not_live": []
   },
   "independent_truth_resolution": {
-   "newly_resolved": 726,
+   "newly_resolved": 0,
    "first_resolutions_total": 21607,
    "backfill": false,
-   "lag_days_median_new": 0.47,
-   "lag_days_max_new": 1.47
+   "lag_days_median_new": null,
+   "lag_days_max_new": null
   },
   "prospective_v2": {
    "predictions_with_v2_and_incumbent": 16784,
@@ -180,7 +180,7 @@
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261017T112010Z.jsonl.gz",
+  "clv_run": "20261017T115435Z.jsonl.gz",
   "settled_with_ab_truth": 3287,
   "settled_with_close": 3161,
   "settled_strict_clv": 2816,
