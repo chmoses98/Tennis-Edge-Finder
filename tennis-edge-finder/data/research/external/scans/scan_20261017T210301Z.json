@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-17T21:03:01.055995+00:00",
+ "run_id": "20261017T210301Z",
+ "external_parse": {
+  "events": 96,
+  "markets": 1005,
+  "skipped_family": 199,
+  "skipped_period": 286,
+  "skipped_live": 2,
+  "one_sided": 0,
+  "rows": 1921,
+  "devigged": 518
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1001,
+  "markets_mapped": 276,
+  "contracts": 586,
+  "quoted_contracts": 586,
+  "raw": "data/research/external/raw/20261017T210301Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 276,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 500,
+  "two_sided": 480,
+  "one_sided": 20
+ },
+ "kalshi_quotes_on_disk": 1467,
+ "external_mapping": {
+  "total": 87,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7011,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 186,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 51,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7204,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Matteo Waring": 1,
+   "Arian Barbic": 1,
+   "Martin SIMON": 1,
+   "Octave Caillat": 1,
+   "Nicolas GRY": 1,
+   "Jolino Makiesse Miguel Feijo Simao": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 80,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {}
+}
