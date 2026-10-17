@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-17T20:22:21.062791+00:00",
+ "run_id": "20261017T202221Z",
+ "external_parse": {
+  "events": 97,
+  "markets": 999,
+  "skipped_family": 193,
+  "skipped_period": 286,
+  "skipped_live": 3,
+  "one_sided": 0,
+  "rows": 1926,
+  "devigged": 519
+ },
+ "smarkets_fetch": {
+  "events_seen": 135,
+  "events_priced": 80,
+  "markets": 955,
+  "markets_mapped": 264,
+  "contracts": 554,
+  "quoted_contracts": 554,
+  "raw": "data/research/external/raw/20261017T202221Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 114,
+  "rows": 440,
+  "two_sided": 440,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 328,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7045,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Khumoyun Sultanov": 1,
+   "Dominick Mosejczuk": 1,
+   "Liv Zingg": 1,
+   "Jiayue Pan": 1,
+   "Zihan Yang": 1,
+   "Sofya Nabokova": 1,
+   "Natalie CHEN": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 49,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
