@@ -1,0 +1,27 @@
+{
+ "run_id": "20261017T041024Z",
+ "started_at": "2026-10-17T04:10:24.252233+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 330,
+ "truths_written": 6,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1226,
+  "events_only_on_capture_board": 8,
+  "selected_from_capture_board": 8
+ },
+ "mapping": {
+  "MATCHED": 330,
+  "UNMATCHED": 214
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-10-17T04:25:13.650751+00:00"
+}
