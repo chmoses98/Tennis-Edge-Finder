@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-17T03:31:20.472019+00:00",
+ "run_id": "20261017T033120Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1613,
+  "skipped_family": 362,
+  "skipped_period": 456,
+  "skipped_live": 17,
+  "one_sided": 4,
+  "rows": 2605,
+  "devigged": 789
+ },
+ "smarkets_fetch": {
+  "events_seen": 73,
+  "events_priced": 73,
+  "markets": 1129,
+  "markets_mapped": 349,
+  "contracts": 776,
+  "quoted_contracts": 776,
+  "raw": "data/research/external/raw/20261017T033120Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 349,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 44,
+  "rows": 732,
+  "two_sided": 732,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 440,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8308,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Joel Josef Schwarzler": 1,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "Brice Patoux": 1,
+   "Lucas Hammond": 1,
+   "Taiyo Hirano": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8493,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11
+  }
+ },
+ "kalshi_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9861,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 108,
+  "tri:MODEL_LONE_OUTLIER": 56,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MARKETS_AGREE": 9,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
