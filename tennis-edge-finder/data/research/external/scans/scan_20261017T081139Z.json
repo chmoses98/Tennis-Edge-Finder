@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-17T08:11:39.964422+00:00",
+ "run_id": "20261017T081139Z",
+ "external_parse": {
+  "events": 117,
+  "markets": 1121,
+  "skipped_family": 266,
+  "skipped_period": 310,
+  "skipped_live": 26,
+  "one_sided": 8,
+  "rows": 1771,
+  "devigged": 537
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 837,
+  "markets_mapped": 287,
+  "contracts": 652,
+  "quoted_contracts": 652,
+  "raw": "data/research/external/raw/20261017T081139Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 614,
+  "two_sided": 612,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 475,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8491,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Joel Josef Schwarzler": 1,
+   "Kazuki Saito": 1,
+   "Luca Wiedenmann": 1,
+   "Eli Stephenson": 1,
+   "Dominick Mosejczuk": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9859,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 77,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
