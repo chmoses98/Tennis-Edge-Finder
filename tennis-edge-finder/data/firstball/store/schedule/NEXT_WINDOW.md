@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 18:32Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 19:00Z)
 
 * Earliest credible first ball: **2026-10-18 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-18 01:45Z**
@@ -16,7 +16,7 @@
 | Sinja Kraus vs Sofia Kenin | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Claire Liu vs Maddison Inglis | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**25 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Botic Van de Zandschulp vs Kamil Majchrzak, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Holger Rune vs Raphael Collignon, Terence Atmane vs Rinky Hijikata, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac
+**32 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Botic Van de Zandschulp vs Kamil Majchrzak, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Holger Rune vs Raphael Collignon, Terence Atmane vs Rinky Hijikata, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac
 
 Published slate: `SL-20261017T160902Z-feb7bff7` built 2026-10-17 16:09Z -- current
 
