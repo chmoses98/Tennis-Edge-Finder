@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 16:23Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 16:37Z)
 
 * Earliest credible first ball: **2026-10-18 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-18 01:45Z**
@@ -18,7 +18,7 @@
 
 **20 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Botic Van de Zandschulp vs Kamil Majchrzak, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Holger Rune vs Raphael Collignon, Terence Atmane vs Rinky Hijikata, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac
 
-Published slate: `SL-20261017T151534Z-63507a30` built 2026-10-17 15:15Z -- current
+Published slate: `SL-20261017T160902Z-feb7bff7` built 2026-10-17 16:09Z -- current
 
 Dispatched this pass: none
 
