@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-17T09:31:34.883336+00:00",
+ "run_id": "20261017T093134Z",
+ "external_parse": {
+  "events": 105,
+  "markets": 988,
+  "skipped_family": 215,
+  "skipped_period": 280,
+  "skipped_live": 24,
+  "one_sided": 8,
+  "rows": 1608,
+  "devigged": 485
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 761,
+  "markets_mapped": 261,
+  "contracts": 596,
+  "quoted_contracts": 596,
+  "raw": "data/research/external/raw/20261017T093134Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 261,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 563,
+  "two_sided": 560,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 346,
+ "external_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8438,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Joel Josef Schwarzler": 1,
+   "Kazuki Saito": 1,
+   "Luca Wiedenmann": 1,
+   "Eli Stephenson": 1,
+   "Dominick Mosejczuk": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9474,
+  "top_refusal_subjects": {
+   "Eli Stephenson": 1,
+   "Luca Wiedenmann": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 14
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
