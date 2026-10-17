@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-17T17:11:47.876808+00:00",
+ "run_id": "20261017T171147Z",
+ "external_parse": {
+  "events": 66,
+  "markets": 637,
+  "skipped_family": 125,
+  "skipped_period": 193,
+  "skipped_live": 11,
+  "one_sided": 0,
+  "rows": 1171,
+  "devigged": 319
+ },
+ "smarkets_fetch": {
+  "events_seen": 110,
+  "events_priced": 80,
+  "markets": 750,
+  "markets_mapped": 229,
+  "contracts": 486,
+  "quoted_contracts": 486,
+  "raw": "data/research/external/raw/20261017T171147Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 229,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 149,
+  "rows": 337,
+  "two_sided": 329,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 267,
+ "external_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7719,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Alex Hernandez": 1,
+   "Eli Stephenson": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 22,
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 38,
+  "by_status": {
+   "MAPPED": 35,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9211,
+  "top_refusal_subjects": {
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 76,
+ "kalshi_mapped_matches": 35,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 34,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
