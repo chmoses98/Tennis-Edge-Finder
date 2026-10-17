@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-17T18:21:49.692512+00:00",
+ "run_id": "20261017T182149Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 959,
+  "skipped_family": 179,
+  "skipped_period": 277,
+  "skipped_live": 6,
+  "one_sided": 0,
+  "rows": 1803,
+  "devigged": 502
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 909,
+  "markets_mapped": 244,
+  "contracts": 516,
+  "quoted_contracts": 516,
+  "raw": "data/research/external/raw/20261017T182149Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 244,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 124,
+  "rows": 392,
+  "two_sided": 389,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 381,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6989,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8966,
+  "top_refusal_subjects": {
+   "Jolino Makiesse Miguel Feijo Simao": 1,
+   "Baptiste BELLINELLI": 1,
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Annabel Wong": 1,
+   "Zihan Yang": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 37,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
