@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-17T16:21:56.398967+00:00",
+ "run_id": "20261017T162156Z",
+ "external_parse": {
+  "events": 69,
+  "markets": 651,
+  "skipped_family": 128,
+  "skipped_period": 195,
+  "skipped_live": 13,
+  "one_sided": 0,
+  "rows": 1191,
+  "devigged": 328
+ },
+ "smarkets_fetch": {
+  "events_seen": 105,
+  "events_priced": 80,
+  "markets": 700,
+  "markets_mapped": 230,
+  "contracts": 492,
+  "quoted_contracts": 492,
+  "raw": "data/research/external/raw/20261017T162156Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 230,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 177,
+  "rows": 315,
+  "two_sided": 310,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 333,
+ "external_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7833,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9362,
+  "top_refusal_subjects": {
+   "Eli Stephenson": 1,
+   "Jiayue Pan": 1,
+   "Zihan Yang": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 78,
+ "kalshi_mapped_matches": 44,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 31,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
