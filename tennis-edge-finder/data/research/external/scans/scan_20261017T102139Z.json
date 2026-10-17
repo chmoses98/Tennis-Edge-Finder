@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-17T10:21:39.162945+00:00",
+ "run_id": "20261017T102139Z",
+ "external_parse": {
+  "events": 125,
+  "markets": 928,
+  "skipped_family": 147,
+  "skipped_period": 276,
+  "skipped_live": 38,
+  "one_sided": 13,
+  "rows": 1410,
+  "devigged": 492
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 700,
+  "markets_mapped": 257,
+  "contracts": 596,
+  "quoted_contracts": 596,
+  "raw": "data/research/external/raw/20261017T102139Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 257,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 568,
+  "two_sided": 568,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 317,
+ "external_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 82,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7069,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Dominic Stephan Stricker": 1,
+   "Guiomar Maristany": 1,
+   "Mathys Picard": 1,
+   "Felix Roussel": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Eli Stephenson": 1,
+   "Johan Oscar Lien": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9259,
+  "top_refusal_subjects": {
+   "Dominick Mosejczuk": 1,
+   "Eli Stephenson": 1,
+   "Luca Wiedenmann": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 134,
+ "kalshi_mapped_matches": 50,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {}
+}
