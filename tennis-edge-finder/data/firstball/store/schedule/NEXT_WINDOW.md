@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 21:26Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 21:43Z)
 
 * Earliest credible first ball: **2026-10-18 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-18 01:45Z**
@@ -18,7 +18,7 @@
 
 **32 main-tour match(es) without a verified start status** (BET blocked until checked): Kyrian Jacquet vs Sascha Gueymard Wayenburg, Jan Kumstat vs Michael Mmoh, Valentin Royer vs Clement Tabur, Ugo Blanchet vs Nicolai Budkov Kjaer, Otto Virtanen vs Vitaliy Sachko, Francesco Maestrelli vs Borna Gojo, Jurij Rodionov vs Pierre-Hugues Herbert, Maxim Mrva vs Dusan Lajovic, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Lorenzo Sonego vs Moise Kouame, Matteo Arnaldi vs Lorenzo Musetti
 
-Published slate: `SL-20261017T160902Z-feb7bff7` built 2026-10-17 16:09Z -- current
+Published slate: `SL-20261017T211445Z-7704a31b` built 2026-10-17 21:14Z -- current
 
 Dispatched this pass: none
 
