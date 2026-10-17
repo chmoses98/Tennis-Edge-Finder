@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-17T11:42:48.314104+00:00",
+ "run_id": "20261017T114248Z",
+ "external_parse": {
+  "events": 84,
+  "markets": 679,
+  "skipped_family": 95,
+  "skipped_period": 203,
+  "skipped_live": 17,
+  "one_sided": 13,
+  "rows": 1195,
+  "devigged": 368
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 671,
+  "markets_mapped": 274,
+  "contracts": 632,
+  "quoted_contracts": 632,
+  "raw": "data/research/external/raw/20261017T114248Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 274,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 546,
+  "two_sided": 543,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1183,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.84,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Joel Josef Schwarzler": 1,
+   "Eli Stephenson": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.873,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 83,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9651,
+  "top_refusal_subjects": {
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 83,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 105,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "WATCH": 3,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
