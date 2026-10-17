@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-17T13:51:54.124280+00:00",
+ "run_id": "20261017T135154Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 636,
+  "skipped_family": 102,
+  "skipped_period": 186,
+  "skipped_live": 15,
+  "one_sided": 11,
+  "rows": 1150,
+  "devigged": 337
+ },
+ "smarkets_fetch": {
+  "events_seen": 76,
+  "events_priced": 76,
+  "markets": 565,
+  "markets_mapped": 257,
+  "contracts": 580,
+  "quoted_contracts": 580,
+  "raw": "data/research/external/raw/20261017T135154Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 257,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 134,
+  "rows": 446,
+  "two_sided": 440,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 287,
+ "external_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8358,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Eli Stephenson": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 76,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 7,
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8421,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9787,
+  "top_refusal_subjects": {
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
