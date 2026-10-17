@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-17T00:49:39.867411+00:00",
+ "run_id": "20261017T004939Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1697,
+  "skipped_family": 385,
+  "skipped_period": 482,
+  "skipped_live": 8,
+  "one_sided": 4,
+  "rows": 2781,
+  "devigged": 823
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 1301,
+  "markets_mapped": 366,
+  "contracts": 808,
+  "quoted_contracts": 808,
+  "raw": "data/research/external/raw/20261017T004939Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 366,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 48,
+  "rows": 760,
+  "two_sided": 757,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 381,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Joel Josef Schwarzler": 1,
+   "Eme Jones": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "Keisuke Ota": 1,
+   "Oliver Statham": 1,
+   "Rito Arima": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8608,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9375,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Luca Wiedenmann": 1,
+   "Yeonwoo Ku": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 105,
+  "tri:MODEL_LONE_OUTLIER": 57,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MARKETS_AGREE": 8,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1
+ },
+ "skips": {}
+}
