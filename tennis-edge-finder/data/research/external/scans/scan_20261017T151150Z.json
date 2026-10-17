@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-17T15:11:50.960566+00:00",
+ "run_id": "20261017T151150Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 579,
+  "skipped_family": 96,
+  "skipped_period": 174,
+  "skipped_live": 12,
+  "one_sided": 8,
+  "rows": 1049,
+  "devigged": 301
+ },
+ "smarkets_fetch": {
+  "events_seen": 98,
+  "events_priced": 80,
+  "markets": 740,
+  "markets_mapped": 287,
+  "contracts": 620,
+  "quoted_contracts": 620,
+  "raw": "data/research/external/raw/20261017T151150Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 165,
+  "rows": 455,
+  "two_sided": 450,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 296,
+ "external_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8393,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Eli Stephenson": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 18,
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 42,
+  "by_status": {
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.881,
+  "top_refusal_subjects": {
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 37,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
