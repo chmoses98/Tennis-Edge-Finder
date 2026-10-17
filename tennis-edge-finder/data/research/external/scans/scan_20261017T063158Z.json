@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-17T06:31:58.519290+00:00",
+ "run_id": "20261017T063158Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1327,
+  "skipped_family": 295,
+  "skipped_period": 362,
+  "skipped_live": 15,
+  "one_sided": 7,
+  "rows": 2111,
+  "devigged": 662
+ },
+ "smarkets_fetch": {
+  "events_seen": 57,
+  "events_priced": 57,
+  "markets": 913,
+  "markets_mapped": 291,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261017T063158Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 291,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 66,
+  "rows": 592,
+  "two_sided": 589,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1123,
+ "external_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.823,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Joel Josef Schwarzler": 1,
+   "Jiali Dong": 1,
+   "Kazuki Saito": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1,
+   "Eli Stephenson": 1,
+   "Dominick Mosejczuk": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.8421,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9417,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Dominick Mosejczuk": 1,
+   "Alex Hernandez": 1,
+   "Eli Stephenson": 1,
+   "Luca Wiedenmann": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 138,
+ "counts": {
+  "PASS": 136,
+  "tri:MODEL_LONE_OUTLIER": 63,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
