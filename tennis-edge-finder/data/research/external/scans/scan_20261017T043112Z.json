@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-17T04:31:12.713715+00:00",
+ "run_id": "20261017T043112Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 1548,
+  "skipped_family": 352,
+  "skipped_period": 436,
+  "skipped_live": 16,
+  "one_sided": 4,
+  "rows": 2496,
+  "devigged": 755
+ },
+ "smarkets_fetch": {
+  "events_seen": 70,
+  "events_priced": 70,
+  "markets": 1106,
+  "markets_mapped": 337,
+  "contracts": 752,
+  "quoted_contracts": 752,
+  "raw": "data/research/external/raw/20261017T043112Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 337,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 720,
+  "two_sided": 717,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 413,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8387,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Joel Josef Schwarzler": 1,
+   "Yulia Starodubtseva": 1,
+   "Jiali Dong": 1,
+   "Lucas Hammond": 1,
+   "Taiyo Hirano": 1,
+   "William Vinciguerra": 1,
+   "Luca Wiedenmann": 1,
+   "Zhu Chenting": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8429,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9565,
+  "top_refusal_subjects": {
+   "Jiali Dong": 1,
+   "Eli Stephenson": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 66,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 91,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
