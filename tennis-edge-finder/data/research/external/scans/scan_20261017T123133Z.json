@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-17T12:31:33.537310+00:00",
+ "run_id": "20261017T123133Z",
+ "external_parse": {
+  "events": 84,
+  "markets": 716,
+  "skipped_family": 113,
+  "skipped_period": 215,
+  "skipped_live": 18,
+  "one_sided": 11,
+  "rows": 1283,
+  "devigged": 376
+ },
+ "smarkets_fetch": {
+  "events_seen": 56,
+  "events_priced": 56,
+  "markets": 555,
+  "markets_mapped": 234,
+  "contracts": 538,
+  "quoted_contracts": 538,
+  "raw": "data/research/external/raw/20261017T123133Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 234,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 67,
+  "rows": 471,
+  "two_sided": 467,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 418,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8533,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Eli Stephenson": 1,
+   "Alex Hernandez": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 56,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 8,
+   "MAPPED": 48
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.7869,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Eli Stephenson": 1,
+   "Sofya Nabokova": 1,
+   "Saina Jayesh Vaidya": 1,
+   "Caitlin Diane Woo": 1,
+   "Zi Xuan Yang": 1,
+   "Harini Parthiban": 1,
+   "Nirelle Yasin": 1,
+   "Faith Perera": 1,
+   "Kelly Yi Xian CHEN": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 82,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 35,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
