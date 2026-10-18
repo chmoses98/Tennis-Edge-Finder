@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-18T00:32:32.895707+00:00",
+ "run_id": "20261018T003232Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1657,
+  "skipped_family": 303,
+  "skipped_period": 475,
+  "skipped_live": 5,
+  "one_sided": 36,
+  "rows": 2952,
+  "devigged": 841
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1164,
+  "markets_mapped": 324,
+  "contracts": 702,
+  "quoted_contracts": 702,
+  "raw": "data/research/external/raw/20261018T003232Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 324,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 616,
+  "two_sided": 605,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 360,
+ "external_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 101,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7014,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Jason Huang": 1,
+   "Liam Oliver Toroman": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7656,
+  "top_refusal_subjects": {
+   "Jacopo Landini": 1,
+   "Pedro Liborio": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Toby Clarke": 1,
+   "Luca Wiedenmann": 1,
+   "Luke Jie Xi Ho": 1,
+   "Henry De Keulenaer": 1,
+   "Junjie Sun": 1,
+   "Sofya Nabokova": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 5,
+  "SHADOW_BET": 1
+ },
+ "skips": {}
+}
