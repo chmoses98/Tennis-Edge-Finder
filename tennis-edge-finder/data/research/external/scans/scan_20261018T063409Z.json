@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-18T06:34:09.508140+00:00",
+ "run_id": "20261018T063409Z",
+ "external_parse": {
+  "events": 163,
+  "markets": 1629,
+  "skipped_family": 291,
+  "skipped_period": 464,
+  "skipped_live": 16,
+  "one_sided": 23,
+  "rows": 2917,
+  "devigged": 850
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 865,
+  "markets_mapped": 377,
+  "contracts": 818,
+  "quoted_contracts": 818,
+  "raw": "data/research/external/raw/20261018T063409Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 377,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 70,
+  "rows": 748,
+  "two_sided": 746,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 676,
+ "external_mapping": {
+  "total": 154,
+  "by_status": {
+   "MAPPED": 112,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Fumin Jiang": 1,
+   "Pedro Liborio": 1,
+   "Kazuki Saito": 1,
+   "Luca Wiedenmann": 1,
+   "Junjie Sun": 1,
+   "Zihan Yang": 1,
+   "Lulwa Naswardhani": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Jakub Vrba": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 80,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.6838,
+  "top_refusal_subjects": {
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Rafael Augusto Garcia Finetto": 1,
+   "Mateja Stanisavljevic": 1,
+   "Alex Michael": 1,
+   "Jake Evans": 1,
+   "Mason Dace": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 130,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 68,
+  "tri:INSUFFICIENT_INPUTS": 43,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
