@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-18T14:27:40.303604+00:00",
+ "run_id": "20261018T142740Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1599,
+  "skipped_family": 309,
+  "skipped_period": 509,
+  "skipped_live": 24,
+  "one_sided": 3,
+  "rows": 2855,
+  "devigged": 775
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 769,
+  "markets_mapped": 366,
+  "contracts": 776,
+  "quoted_contracts": 776,
+  "raw": "data/research/external/raw/20261018T142740Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 366,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 751,
+  "two_sided": 746,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 733,
+ "external_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 87,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.6591,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Charlie Pycroft": 1,
+   "Carl Holder": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 27,
+   "AMBIGUOUS_PLAYER": 3,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Tristan McCormick": 1,
+   "Frazier Rengifo": 1,
+   "Duarte Lima Sanches": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.693,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Bernardo Munk Mesa": 1,
+   "Frazier Rengifo": 1,
+   "Duarte Lima Sanches": 1,
+   "Jacopo Landini": 1,
+   "Ethan David Zapp": 1,
+   "Luke Koh": 1,
+   "Tirth Doshi": 1,
+   "Alexander Watanabe Eriksson": 1,
+   "Gustavo Holanda Palmeira Oliva de Souza": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 23,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
