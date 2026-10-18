@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-18T03:33:35.515583+00:00",
+ "run_id": "20261018T033335Z",
+ "external_parse": {
+  "events": 166,
+  "markets": 1680,
+  "skipped_family": 301,
+  "skipped_period": 484,
+  "skipped_live": 17,
+  "one_sided": 25,
+  "rows": 3006,
+  "devigged": 867
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1012,
+  "markets_mapped": 363,
+  "contracts": 780,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20261018T033335Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 363,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 110,
+  "rows": 670,
+  "two_sided": 668,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 518,
+ "external_mapping": {
+  "total": 157,
+  "by_status": {
+   "MAPPED": 115,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7325,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Pedro Liborio": 1,
+   "Oliver Statham": 1,
+   "Luca Wiedenmann": 1,
+   "Junjie Sun": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 19,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7524,
+  "top_refusal_subjects": {
+   "Duarte Lima Sanches": 1,
+   "Jacopo Landini": 1,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Toby Clarke": 1,
+   "Nicolas GRY": 1,
+   "Luca Wiedenmann": 1,
+   "Martin Riu": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 133,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
