@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-18T10:44:03.220136+00:00",
+ "run_id": "20261018T104403Z",
+ "external_parse": {
+  "events": 171,
+  "markets": 1720,
+  "skipped_family": 302,
+  "skipped_period": 543,
+  "skipped_live": 36,
+  "one_sided": 18,
+  "rows": 3088,
+  "devigged": 854
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 681,
+  "markets_mapped": 323,
+  "contracts": 700,
+  "quoted_contracts": 700,
+  "raw": "data/research/external/raw/20261018T104403Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 323,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 692,
+  "two_sided": 688,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 945,
+ "external_mapping": {
+  "total": 162,
+  "by_status": {
+   "MAPPED": 111,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 5
+  },
+  "mapped_rate": 0.6852,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Khumoyun Sultanov": 1,
+   "Jakub Vrba": 1,
+   "Pedro Liborio": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 28
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Pedro Liborio": 1,
+   "Duarte Lima Sanches": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Frazier Rengifo": 1,
+   "Pedro Liborio": 1,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Gabriel Mota de Cantuaria Cantuaria": 1,
+   "Luiz Felipe Silva": 1,
+   "SANTIAGO PESINO": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 125,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 56,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
