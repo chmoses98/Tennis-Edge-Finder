@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 12:26Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 12:44Z)
 
 * Earliest credible first ball: **2026-10-18 13:00Z**
 * Recommended RUN TENNIS time: **2026-10-18 12:15Z**  (OVERDUE: run now)
@@ -14,7 +14,7 @@
 
 **37 main-tour match(es) without a verified start status** (BET blocked until checked): Kyrian Jacquet vs Sascha Gueymard Wayenburg, Valentin Royer vs Clement Tabur, Francesco Maestrelli vs Borna Gojo, Maxim Mrva vs Dusan Lajovic, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Remy Bertola vs Federico Cina, Clement Chidekh vs Gauthier Onclin, Jan-Lennard Struff vs Marcos Giron
 
-Published slate: `SL-20261018T120804Z-296881c7` built 2026-10-18 12:08Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-18T13:00:00+00:00, slate built 2026-10-18T12:08:04.517165+00:00
+Published slate: `SL-20261018T122125Z-032bac2e` built 2026-10-18 12:21Z -- current
 
 Dispatched this pass: none
 
