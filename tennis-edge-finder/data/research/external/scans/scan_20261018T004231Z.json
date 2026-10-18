@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-18T00:42:31.095727+00:00",
+ "run_id": "20261018T004231Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1657,
+  "skipped_family": 303,
+  "skipped_period": 475,
+  "skipped_live": 5,
+  "one_sided": 36,
+  "rows": 2952,
+  "devigged": 841
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1164,
+  "markets_mapped": 324,
+  "contracts": 702,
+  "quoted_contracts": 702,
+  "raw": "data/research/external/raw/20261018T004231Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 324,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 82,
+  "rows": 620,
+  "two_sided": 608,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 348,
+ "external_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 101,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7014,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Jason Huang": 1,
+   "Liam Oliver Toroman": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 57,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8382,
+  "top_refusal_subjects": {
+   "Jakub Vrba": 1,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Toby Clarke": 1,
+   "Ethan David Zapp": 1,
+   "Sofya Nabokova": 1,
+   "Saina Jayesh Vaidya": 1,
+   "Zi Xuan Yang": 1,
+   "Harini Parthiban": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "PASS": 71,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 5
+ },
+ "skips": {}
+}
