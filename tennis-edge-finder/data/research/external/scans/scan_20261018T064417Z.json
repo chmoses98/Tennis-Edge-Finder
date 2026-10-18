@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-18T06:44:17.298935+00:00",
+ "run_id": "20261018T064417Z",
+ "external_parse": {
+  "events": 157,
+  "markets": 1497,
+  "skipped_family": 267,
+  "skipped_period": 414,
+  "skipped_live": 18,
+  "one_sided": 21,
+  "rows": 2748,
+  "devigged": 791
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 865,
+  "markets_mapped": 377,
+  "contracts": 818,
+  "quoted_contracts": 818,
+  "raw": "data/research/external/raw/20261018T064417Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 377,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 66,
+  "rows": 752,
+  "two_sided": 750,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 716,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 108,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7297,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Fumin Jiang": 1,
+   "Pedro Liborio": 1,
+   "Oscar Brown": 1,
+   "Henry De Keulenaer": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Jakub Vrba": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 135,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.6963,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Bernardo Munk Mesa": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Alexander Binda": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Samuel Constantinou": 1,
+   "Mateja Stanisavljevic": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 126,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 68,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
