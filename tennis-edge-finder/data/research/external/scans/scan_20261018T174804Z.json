@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-18T17:48:04.997074+00:00",
+ "run_id": "20261018T174804Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1707,
+  "skipped_family": 368,
+  "skipped_period": 530,
+  "skipped_live": 31,
+  "one_sided": 1,
+  "rows": 3062,
+  "devigged": 806
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 853,
+  "markets_mapped": 352,
+  "contracts": 744,
+  "quoted_contracts": 744,
+  "raw": "data/research/external/raw/20261018T174804Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 352,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 717,
+  "two_sided": 716,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 473,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7055,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Catherine McNally": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Duarte De Lima Sanches": 1,
+   "Khumoyun Sultanov": 1,
+   "Theodore Dean": 1,
+   "Santiago Pesino": 1,
+   "Luiz Felipe Silva": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 60,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.7792,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Duarte Lima Sanches": 1,
+   "Timeo Trufelli": 1,
+   "Florent Lagarrigue": 1,
+   "Younes Jenkins": 1,
+   "Jake Fellows": 1,
+   "Gabriele Maria Piano": 1,
+   "Gustavo Holanda Palmeira Oliva de Souza": 1,
+   "Joao Victor Becker Fabricanti": 1,
+   "bautista de la Pena": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
