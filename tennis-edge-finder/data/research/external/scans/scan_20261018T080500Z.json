@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-18T08:05:00.636990+00:00",
+ "run_id": "20261018T080500Z",
+ "external_parse": {
+  "events": 159,
+  "markets": 1644,
+  "skipped_family": 284,
+  "skipped_period": 478,
+  "skipped_live": 14,
+  "one_sided": 21,
+  "rows": 3026,
+  "devigged": 860
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1045,
+  "markets_mapped": 470,
+  "contracts": 1020,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261018T080500Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 470,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 273,
+  "rows": 747,
+  "two_sided": 741,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1823,
+ "external_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 4
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Fumin Jiang": 1,
+   "Khumoyun Sultanov": 1,
+   "Pedro Liborio": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 26,
+   "MAPPED": 52,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 285,
+  "by_status": {
+   "MAPPED": 197,
+   "UNMAPPED_PLAYER": 83,
+   "AMBIGUOUS_PLAYER": 5
+  },
+  "mapped_rate": 0.6912,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Bernardo Munk Mesa": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Duarte Lima Sanches": 1,
+   "Jacopo Landini": 1,
+   "Martino Guidotti": 1,
+   "Pedro Liborio": 1
+  }
+ },
+ "matched_both_venues": 84,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 197,
+ "model_witness_available": true,
+ "rows": 144,
+ "counts": {
+  "PASS": 141,
+  "tri:MODEL_LONE_OUTLIER": 65,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "SHADOW_BET": 1,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
