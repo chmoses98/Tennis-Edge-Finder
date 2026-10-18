@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-18T21:08:18.246420+00:00",
+ "run_id": "20261018T210818Z",
+ "external_parse": {
+  "events": 145,
+  "markets": 1701,
+  "skipped_family": 359,
+  "skipped_period": 534,
+  "skipped_live": 14,
+  "one_sided": 4,
+  "rows": 3042,
+  "devigged": 801
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 856,
+  "markets_mapped": 348,
+  "contracts": 732,
+  "quoted_contracts": 732,
+  "raw": "data/research/external/raw/20261018T210818Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 348,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 690,
+  "two_sided": 690,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 529,
+ "external_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 88,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6617,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Bruno Vieira Alves Malacarne": 1,
+   "Bautista de la Pena": 1,
+   "Sofia Cabezas Dominguez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Khumoyun Sultanov": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7759,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Mateja Stanisavljevic": 1,
+   "Florent Lagarrigue": 1,
+   "Jake Evans": 1,
+   "Younes Jenkins": 1,
+   "Davide Ciaschetti": 1,
+   "Martin Riu": 1,
+   "Giulio Stella": 1,
+   "Simone Macchione": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
