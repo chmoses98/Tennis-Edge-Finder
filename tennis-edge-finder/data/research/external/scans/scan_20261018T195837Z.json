@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-18T19:58:37.659062+00:00",
+ "run_id": "20261018T195837Z",
+ "external_parse": {
+  "events": 149,
+  "markets": 1695,
+  "skipped_family": 359,
+  "skipped_period": 529,
+  "skipped_live": 16,
+  "one_sided": 1,
+  "rows": 3047,
+  "devigged": 805
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 868,
+  "markets_mapped": 353,
+  "contracts": 744,
+  "quoted_contracts": 744,
+  "raw": "data/research/external/raw/20261018T195837Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 353,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 47,
+  "rows": 697,
+  "two_sided": 696,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 521,
+ "external_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 40,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6569,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Siddharth Bharadwaj": 1,
+   "Luiz Felipe Silva": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Emy Gauvin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7209,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Bernardo Munk Mesa": 1,
+   "Sharath Murari": 1,
+   "Mateja Stanisavljevic": 1,
+   "Remy Dugardin": 1,
+   "Florent Lagarrigue": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Pavel Skvortcov": 1
+  }
+ },
+ "matched_both_venues": 24,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
