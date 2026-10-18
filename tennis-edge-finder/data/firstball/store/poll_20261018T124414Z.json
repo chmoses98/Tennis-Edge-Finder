@@ -1,0 +1,50 @@
+{
+ "run_id": "20261018T124414Z",
+ "started_at": "2026-10-18T12:44:14.421580+00:00",
+ "passes": 1,
+ "requests": 2,
+ "observations": 229,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 2
+ },
+ "watchlist": {
+  "capture_board_markets": 1707,
+  "events_only_on_capture_board": 196,
+  "selected_from_capture_board": 176
+ },
+ "mapping": {
+  "MATCHED": 229,
+  "UNMATCHED": 225,
+  "AMBIGUOUS": 3
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT19MERFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185526 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT19MERFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185526 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT19MERFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185526 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-18T13:01:02.167905+00:00"
+}
