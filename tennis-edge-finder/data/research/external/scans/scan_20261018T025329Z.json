@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-18T02:53:29.566007+00:00",
+ "run_id": "20261018T025329Z",
+ "external_parse": {
+  "events": 169,
+  "markets": 1754,
+  "skipped_family": 310,
+  "skipped_period": 506,
+  "skipped_live": 14,
+  "one_sided": 27,
+  "rows": 3146,
+  "devigged": 910
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1104,
+  "markets_mapped": 375,
+  "contracts": 806,
+  "quoted_contracts": 806,
+  "raw": "data/research/external/raw/20261018T025329Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 375,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 183,
+  "rows": 623,
+  "two_sided": 622,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 550,
+ "external_mapping": {
+  "total": 160,
+  "by_status": {
+   "MAPPED": 117,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7312,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Pedro Liborio": 1,
+   "Oliver Statham": 1,
+   "Luca Wiedenmann": 1,
+   "Junjie Sun": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.7053,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Alexander Binda": 1,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Joao Victor Becker Fabricanti": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "bautista de la Pena": 1,
+   "Clemens Cserni": 1,
+   "Finnian Bult": 1,
+   "Luke Koh": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 132,
+ "kalshi_mapped_matches": 67,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 82,
+  "tri:MODEL_LONE_OUTLIER": 54,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 23
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
