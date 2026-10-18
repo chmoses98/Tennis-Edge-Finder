@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 06:02Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 06:24Z)
 
 * Earliest credible first ball: **2026-10-18 07:30Z**
 * Recommended RUN TENNIS time: **2026-10-18 06:45Z**
@@ -12,9 +12,9 @@
 | Jurij Rodionov vs Pierre-Hugues Herbert | 2026-10-18 09:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Otto Virtanen vs Vitaliy Sachko | 2026-10-18 09:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**43 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Lorenzo Sonego vs Moise Kouame, Matteo Arnaldi vs Lorenzo Musetti, Ugo Humbert vs Corentin Moutet, Jaime Faria vs Felix Balshaw, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Botic Van de Zandschulp vs Kamil Majchrzak
+**42 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Lorenzo Sonego vs Moise Kouame, Matteo Arnaldi vs Lorenzo Musetti, Ugo Humbert vs Corentin Moutet, Jaime Faria vs Felix Balshaw, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Botic Van de Zandschulp vs Kamil Majchrzak
 
-Published slate: `SL-20261018T050342Z-b309e74c` built 2026-10-18 05:03Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
+Published slate: `SL-20261018T054601Z-abf19855` built 2026-10-18 05:46Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
 Dispatched this pass: slate_stale_refresh (ok)
 
