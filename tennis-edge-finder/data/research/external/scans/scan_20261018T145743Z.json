@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-18T14:57:43.380423+00:00",
+ "run_id": "20261018T145743Z",
+ "external_parse": {
+  "events": 162,
+  "markets": 1772,
+  "skipped_family": 383,
+  "skipped_period": 540,
+  "skipped_live": 27,
+  "one_sided": 7,
+  "rows": 3105,
+  "devigged": 841
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 767,
+  "markets_mapped": 331,
+  "contracts": 710,
+  "quoted_contracts": 710,
+  "raw": "data/research/external/raw/20261018T145743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 331,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 671,
+  "two_sided": 669,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 558,
+ "external_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 33,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.68,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Catherine McNally": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Carl Holder": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "AMBIGUOUS_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Duarte Lima Sanches": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 78,
+   "AMBIGUOUS_PLAYER": 3,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.6903,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Mayank Sharma": 1,
+   "Tirth Doshi": 1,
+   "Arjun Rathi": 1,
+   "Om Verma": 1,
+   "Vraj Gohil": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Gustavo Holanda Palmeira Oliva de Souza": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 124,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MODEL_LONE_OUTLIER": 16
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
