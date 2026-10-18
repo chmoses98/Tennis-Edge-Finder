@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-17 23:57Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 00:27Z)
 
 * Earliest credible first ball: **2026-10-18 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-18 01:45Z**
@@ -16,14 +16,14 @@
 | Sinja Kraus vs Sofia Kenin | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Claire Liu vs Maddison Inglis | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**32 main-tour match(es) without a verified start status** (BET blocked until checked): Kyrian Jacquet vs Sascha Gueymard Wayenburg, Jan Kumstat vs Michael Mmoh, Valentin Royer vs Clement Tabur, Ugo Blanchet vs Nicolai Budkov Kjaer, Otto Virtanen vs Vitaliy Sachko, Francesco Maestrelli vs Borna Gojo, Jurij Rodionov vs Pierre-Hugues Herbert, Maxim Mrva vs Dusan Lajovic, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Lorenzo Sonego vs Moise Kouame, Matteo Arnaldi vs Lorenzo Musetti
+**24 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Lorenzo Sonego vs Moise Kouame, Matteo Arnaldi vs Lorenzo Musetti, Ugo Humbert vs Corentin Moutet, Jaime Faria vs Felix Balshaw, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Botic Van de Zandschulp vs Kamil Majchrzak
 
 Published slate: `SL-20261017T211445Z-7704a31b` built 2026-10-17 21:14Z -- current
 
 Dispatched this pass: none
 
 * later window 2: first ball 2026-10-18 04:30Z, run by 2026-10-18 03:45Z, 6 match(es)
-* later window 3: first ball 2026-10-18 07:30Z, run by 2026-10-18 06:45Z, 2 match(es)
-* later window 4: first ball 2026-10-18 10:00Z, run by 2026-10-18 09:15Z, 3 match(es)
-* later window 5: first ball 2026-10-18 12:00Z, run by 2026-10-18 11:15Z, 2 match(es)
+* later window 3: first ball 2026-10-18 07:30Z, run by 2026-10-18 06:45Z, 4 match(es)
+* later window 4: first ball 2026-10-18 10:00Z, run by 2026-10-18 09:15Z, 5 match(es)
+* later window 5: first ball 2026-10-18 12:00Z, run by 2026-10-18 11:15Z, 6 match(es)
 * later window 6: first ball 2026-10-18 14:00Z, run by 2026-10-18 13:15Z, 1 match(es)
