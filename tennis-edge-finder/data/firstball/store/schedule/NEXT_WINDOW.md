@@ -1,22 +1,25 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 13:52Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 14:08Z)
 
-* Earliest credible first ball: **2026-10-18 14:00Z**
-* Recommended RUN TENNIS time: **2026-10-18 13:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-18 13:50Z**
-* Matches in window: 1
+* Earliest credible first ball: **2026-10-19 02:30Z**
+* Recommended RUN TENNIS time: **2026-10-19 01:45Z**
+* Final price/status check time: **2026-10-19 02:20Z**
+* Matches in window: 5
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Martin Damm Jr vs Andrea Guerrieri | 2026-10-18 14:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Viktorija Golubic vs Mai Hontama | 2026-10-19 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Lilli Tagger vs Liudmila Samsonova | 2026-10-19 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Lanlana Tararudee vs Kaitlin Quevedo | 2026-10-19 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Talia Gibson vs Harriet Dart | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Caty McNally vs Sinja Kraus | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**36 main-tour match(es) without a verified start status** (BET blocked until checked): Nishesh Basavareddy vs Aziz Dougaz, Jan Kumstat vs Michael Mmoh, Valentin Royer vs Clement Tabur, Ugo Blanchet vs Nicolai Budkov Kjaer, Francesco Maestrelli vs Borna Gojo, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Clement Chidekh vs Gauthier Onclin, Jan-Lennard Struff vs Marcos Giron
+**37 main-tour match(es) without a verified start status** (BET blocked until checked): Martin Damm Jr vs Andrea Guerrieri, Nishesh Basavareddy vs Aziz Dougaz, Jan Kumstat vs Michael Mmoh, Valentin Royer vs Clement Tabur, Ugo Blanchet vs Nicolai Budkov Kjaer, Francesco Maestrelli vs Borna Gojo, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Clement Chidekh vs Gauthier Onclin
 
-Published slate: `SL-20261018T132930Z-405de060` built 2026-10-18 13:29Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261018T134601Z-73cff8b0` built 2026-10-18 13:46Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
-* later window 2: first ball 2026-10-19 02:30Z, run by 2026-10-19 01:45Z, 5 match(es)
-* later window 3: first ball 2026-10-19 05:30Z, run by 2026-10-19 04:45Z, 5 match(es)
-* later window 4: first ball 2026-10-19 08:00Z, run by 2026-10-19 07:15Z, 4 match(es)
-* later window 5: first ball 2026-10-19 11:30Z, run by 2026-10-19 10:45Z, 2 match(es)
-* later window 6: first ball 2026-10-19 14:30Z, run by 2026-10-19 13:45Z, 2 match(es)
+* later window 2: first ball 2026-10-19 05:30Z, run by 2026-10-19 04:45Z, 5 match(es)
+* later window 3: first ball 2026-10-19 08:00Z, run by 2026-10-19 07:15Z, 4 match(es)
+* later window 4: first ball 2026-10-19 11:30Z, run by 2026-10-19 10:45Z, 2 match(es)
+* later window 5: first ball 2026-10-19 14:30Z, run by 2026-10-19 13:45Z, 2 match(es)
