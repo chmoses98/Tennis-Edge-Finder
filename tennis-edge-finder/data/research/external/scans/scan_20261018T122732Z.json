@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-18T12:27:32.261590+00:00",
+ "run_id": "20261018T122732Z",
+ "external_parse": {
+  "events": 154,
+  "markets": 1760,
+  "skipped_family": 339,
+  "skipped_period": 553,
+  "skipped_live": 25,
+  "one_sided": 10,
+  "rows": 3171,
+  "devigged": 857
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 753,
+  "markets_mapped": 362,
+  "contracts": 776,
+  "quoted_contracts": 776,
+  "raw": "data/research/external/raw/20261018T122732Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 362,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 761,
+  "two_sided": 758,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 674,
+ "external_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 96,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 4,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6621,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Jakub Vrba": 1,
+   "Pedro Liborio": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Duarte Lima Sanches": 1,
+   "Tristan McCormick": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6869,
+  "top_refusal_subjects": {
+   "Martino Guidotti": 1,
+   "Pedro Liborio": 1,
+   "Jakub Vrba": 1,
+   "Marko Retelj": 1,
+   "Robert Dolya": 1,
+   "Luke Jie Xi Ho": 1,
+   "Pedro Albuquerque Dietrich": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Gabriel Mota de Cantuaria Cantuaria": 1,
+   "Carlos Eduardo Lino": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 5,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
