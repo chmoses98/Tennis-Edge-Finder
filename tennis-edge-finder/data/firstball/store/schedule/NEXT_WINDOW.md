@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 15:07Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 15:21Z)
 
 * Earliest credible first ball: **2026-10-19 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-19 01:45Z**
@@ -13,7 +13,7 @@
 | Talia Gibson vs Harriet Dart | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Caty McNally vs Sinja Kraus | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**37 main-tour match(es) without a verified start status** (BET blocked until checked): Martin Damm Jr vs Andrea Guerrieri, Nishesh Basavareddy vs Aziz Dougaz, Jan Kumstat vs Michael Mmoh, Valentin Royer vs Clement Tabur, Ugo Blanchet vs Nicolai Budkov Kjaer, Francesco Maestrelli vs Borna Gojo, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Clement Chidekh vs Gauthier Onclin
+**36 main-tour match(es) without a verified start status** (BET blocked until checked): Martin Damm Jr vs Andrea Guerrieri, Jan Kumstat vs Michael Mmoh, Valentin Royer vs Clement Tabur, Ugo Blanchet vs Nicolai Budkov Kjaer, Francesco Maestrelli vs Borna Gojo, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Clement Chidekh vs Gauthier Onclin, Jan-Lennard Struff vs Marcos Giron
 
 Published slate: `SL-20261018T141931Z-59fee042` built 2026-10-18 14:19Z -- current
 
