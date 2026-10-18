@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-18T00:03:11.371027+00:00",
+ "run_id": "20261018T000311Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1591,
+  "skipped_family": 299,
+  "skipped_period": 460,
+  "skipped_live": 6,
+  "one_sided": 30,
+  "rows": 2852,
+  "devigged": 799
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1170,
+  "markets_mapped": 323,
+  "contracts": 700,
+  "quoted_contracts": 700,
+  "raw": "data/research/external/raw/20261018T000311Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 323,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 95,
+  "rows": 605,
+  "two_sided": 595,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 1701,
+ "external_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 95,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6934,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Jason Huang": 1,
+   "Liam Oliver Toroman": 1,
+   "Dominick Mosejczuk": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 254,
+  "by_status": {
+   "MAPPED": 161,
+   "UNMAPPED_PLAYER": 91,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6339,
+  "top_refusal_subjects": {
+   "Jacopo Landini": 1,
+   "Martino Guidotti": 1,
+   "Pedro Liborio": 1,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Glauco Pinheiro da Cruz Junior": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 161,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 113,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 38,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 9
+ },
+ "skips": {}
+}
