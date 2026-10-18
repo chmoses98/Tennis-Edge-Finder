@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-18T18:28:25.650989+00:00",
+ "run_id": "20261018T182825Z",
+ "external_parse": {
+  "events": 152,
+  "markets": 1719,
+  "skipped_family": 362,
+  "skipped_period": 545,
+  "skipped_live": 27,
+  "one_sided": 1,
+  "rows": 3090,
+  "devigged": 809
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 863,
+  "markets_mapped": 347,
+  "contracts": 732,
+  "quoted_contracts": 732,
+  "raw": "data/research/external/raw/20261018T182825Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 347,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 692,
+  "two_sided": 690,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 457,
+ "external_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Catherine McNally": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Theodore Dean": 1,
+   "Santiago Pesino": 1,
+   "Luiz Felipe Silva": 1,
+   "Glauco Pinheiro da Cruz Junior": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "AMBIGUOUS_PLAYER": 1,
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Bernardo Munk Mesa": 1,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 67,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.6505,
+  "top_refusal_subjects": {
+   "Bernardo Munk Mesa": 1,
+   "Sizhe Yan": 1,
+   "Johan Mapuard": 1,
+   "Sharath Murari": 1,
+   "Ivan Dorokhov": 1,
+   "Mateja Stanisavljevic": 1,
+   "Carl Holder": 1,
+   "Timeo Trufelli": 1,
+   "Remy Dugardin": 1,
+   "Florent Lagarrigue": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 124,
+ "kalshi_mapped_matches": 67,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
