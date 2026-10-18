@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-18T02:03:40.171684+00:00",
+ "run_id": "20261018T020340Z",
+ "external_parse": {
+  "events": 164,
+  "markets": 1828,
+  "skipped_family": 323,
+  "skipped_period": 534,
+  "skipped_live": 6,
+  "one_sided": 25,
+  "rows": 3313,
+  "devigged": 944
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1163,
+  "markets_mapped": 319,
+  "contracts": 698,
+  "quoted_contracts": 698,
+  "raw": "data/research/external/raw/20261018T020340Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 319,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 612,
+  "two_sided": 602,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 1745,
+ "external_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 113,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.729,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Oliver Statham": 1,
+   "Rito Arima": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 277,
+  "by_status": {
+   "MAPPED": 183,
+   "UNMAPPED_PLAYER": 92,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6606,
+  "top_refusal_subjects": {
+   "Duarte Lima Sanches": 1,
+   "Jacopo Landini": 1,
+   "Martino Guidotti": 1,
+   "Pedro Liborio": 1,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 183,
+ "model_witness_available": true,
+ "rows": 148,
+ "counts": {
+  "PASS": 146,
+  "tri:MODEL_LONE_OUTLIER": 59,
+  "tri:INSUFFICIENT_INPUTS": 76,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
