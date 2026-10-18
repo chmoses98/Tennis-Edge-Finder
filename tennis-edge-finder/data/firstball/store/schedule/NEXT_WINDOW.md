@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 02:32Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-18 02:50Z)
 
 * Earliest credible first ball: **2026-10-18 03:00Z**
 * Recommended RUN TENNIS time: **2026-10-18 02:15Z**  (OVERDUE: run now)
@@ -7,8 +7,8 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Daria Snigur vs Katarzyna Kawa | 2026-10-18 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Anastasia Zakharova vs Polina Kudermetova | 2026-10-18 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Daria Snigur vs Katarzyna Kawa | 2026-10-18 03:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Anastasia Zakharova vs Polina Kudermetova | 2026-10-18 03:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Harriet Dart vs Aoi Ito | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Sinja Kraus vs Sofia Kenin | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Claire Liu vs Maddison Inglis | 2026-10-18 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
@@ -19,7 +19,7 @@
 
 Published slate: `SL-20261018T020649Z-81a9e958` built 2026-10-18 02:06Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-18T03:00:00+00:00, slate built 2026-10-18T02:06:49.487939+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-18 06:00Z, run by 2026-10-18 05:15Z, 5 match(es)
 * later window 3: first ball 2026-10-18 08:30Z, run by 2026-10-18 07:45Z, 4 match(es)
