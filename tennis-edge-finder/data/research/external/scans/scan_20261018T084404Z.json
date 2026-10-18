@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-18T08:44:04.981057+00:00",
+ "run_id": "20261018T084404Z",
+ "external_parse": {
+  "events": 173,
+  "markets": 1672,
+  "skipped_family": 292,
+  "skipped_period": 498,
+  "skipped_live": 28,
+  "one_sided": 29,
+  "rows": 3007,
+  "devigged": 853
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1023,
+  "markets_mapped": 454,
+  "contracts": 984,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261018T084404Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 454,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 171,
+  "rows": 813,
+  "two_sided": 811,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 934,
+ "external_mapping": {
+  "total": 164,
+  "by_status": {
+   "MAPPED": 113,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 5
+  },
+  "mapped_rate": 0.689,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Fumin Jiang": 1,
+   "Khumoyun Sultanov": 1,
+   "Jakub Vrba": 1,
+   "Pedro Liborio": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Frazier Rengifo": 1,
+   "Tristan McCormick": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Bernardo Munk Mesa": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 51,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1,
+   "Pedro Liborio": 1,
+   "Duarte Lima Sanches": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 165,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 41,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7455,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Juan Miguel Bolivar Idarraga": 1,
+   "Jacopo Landini": 1,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1,
+   "Fumin Jiang": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Eric Von Marton Martins": 1,
+   "Samuel Constantinou": 1,
+   "Jake Fellows": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 123,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 80,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "WATCH": 6,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
