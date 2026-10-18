@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-18T00:12:25.890717+00:00",
+ "run_id": "20261018T001225Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1642,
+  "skipped_family": 297,
+  "skipped_period": 473,
+  "skipped_live": 5,
+  "one_sided": 38,
+  "rows": 2895,
+  "devigged": 832
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1164,
+  "markets_mapped": 324,
+  "contracts": 702,
+  "quoted_contracts": 702,
+  "raw": "data/research/external/raw/20261018T001225Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 324,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 90,
+  "rows": 612,
+  "two_sided": 601,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 514,
+ "external_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 101,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7014,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Fumin Jiang": 1,
+   "Jason Huang": 1,
+   "Liam Oliver Toroman": 1,
+   "Luca Wiedenmann": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Khumoyun Sultanov": 1,
+   "Xi Cheng Huang": 1,
+   "Fumin Jiang": 1,
+   "Alexander Binda": 1,
+   "Jakub Vrba": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7849,
+  "top_refusal_subjects": {
+   "Jacopo Landini": 1,
+   "Martino Guidotti": 1,
+   "Pedro Liborio": 1,
+   "Jakub Vrba": 1,
+   "Abdullah Shelbayh": 1,
+   "Alexander Binda": 1,
+   "Fumin Jiang": 1,
+   "Xi Cheng Huang": 1,
+   "Khumoyun Sultanov": 1,
+   "Toby Clarke": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "PASS": 87,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:MARKETS_AGREE": 7,
+  "SHADOW_BET": 1
+ },
+ "skips": {}
+}
