@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-19T20:46:37.389794+00:00",
+ "run_id": "20261019T204637Z",
+ "external_parse": {
+  "events": 177,
+  "markets": 1781,
+  "skipped_family": 366,
+  "skipped_period": 529,
+  "skipped_live": 15,
+  "one_sided": 45,
+  "rows": 2855,
+  "devigged": 840
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1792,
+  "markets_mapped": 606,
+  "contracts": 1284,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T204637Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 606,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 455,
+  "rows": 829,
+  "two_sided": 829,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 2018,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Ella Brownback": 1,
+   "Lachlan Brain": 1,
+   "Bautista de la Pena": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 320,
+  "by_status": {
+   "MAPPED": 220,
+   "UNMAPPED_PLAYER": 99,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Bader Idrees": 1,
+   "Jake Evans": 1,
+   "Romeo Spinolo": 1,
+   "Leonardo Iemmi": 1,
+   "Jared Horwood": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 220,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 103,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
