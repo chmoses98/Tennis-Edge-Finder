@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-19T09:05:08.047687+00:00",
+ "run_id": "20261019T090508Z",
+ "external_parse": {
+  "events": 190,
+  "markets": 2125,
+  "skipped_family": 434,
+  "skipped_period": 666,
+  "skipped_live": 24,
+  "one_sided": 20,
+  "rows": 3600,
+  "devigged": 1003
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1142,
+  "markets_mapped": 433,
+  "contracts": 946,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261019T090508Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 433,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 94,
+  "rows": 852,
+  "two_sided": 845,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1694,
+ "external_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 114,
+   "DOUBLES_UNSUPPORTED": 51,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6369,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Frazier Rengifo": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alex Hernandez": 1,
+   "Romeo Spinolo": 1,
+   "Michael Wright": 1,
+   "Gabriele Maria Piano": 1,
+   "Giulio Stella": 1,
+   "Simone Macchione": 1,
+   "Valerio Bracci": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 219,
+  "by_status": {
+   "MAPPED": 167,
+   "UNMAPPED_PLAYER": 50,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7626,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Kodai ABE": 1,
+   "Archie Stewart": 1,
+   "Cody Atkinson": 1,
+   "Adrian Correa": 1,
+   "Luca Connaughton": 1,
+   "Harrison Satara": 1,
+   "Nikolas Baker": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 167,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 108,
+  "tri:INSUFFICIENT_INPUTS": 53,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
