@@ -1,38 +1,38 @@
 {
- "generated_at": "2026-10-19T10:00:06.040776+00:00",
+ "generated_at": "2026-10-19T10:13:35.741235+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 281,
+ "board_matches": 286,
  "counts_by_status": {
   "ESTIMATED_UPCOMING": 1,
-  "VERIFIED_UPCOMING": 32,
-  "STATUS_AMBIGUOUS": 7,
-  "START_UNKNOWN": 233,
-  "STARTED": 7,
-  "START_IMMINENT": 1
+  "VERIFIED_UPCOMING": 40,
+  "STATUS_AMBIGUOUS": 5,
+  "START_IMMINENT": 1,
+  "START_UNKNOWN": 231,
+  "STARTED": 8
  },
- "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+ "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-10-19T10:02:20.931837+00:00",
-  "recommended_run_tennis_time": "2026-10-19T09:17:20.931837+00:00",
+  "earliest_credible_first_ball": "2026-10-19T10:15:48.837495+00:00",
+  "recommended_run_tennis_time": "2026-10-19T09:30:48.837495+00:00",
   "primary_refresh_window": [
-   "2026-10-19T09:17:20.931837+00:00",
-   "2026-10-19T09:32:20.931837+00:00"
+   "2026-10-19T09:30:48.837495+00:00",
+   "2026-10-19T09:45:48.837495+00:00"
   ],
-  "final_status_price_check_time": "2026-10-19T09:52:20.931837+00:00",
+  "final_status_price_check_time": "2026-10-19T10:05:48.837495+00:00",
   "final_refresh_window": [
-   "2026-10-19T09:52:20.931837+00:00",
-   "2026-10-19T09:57:20.931837+00:00"
+   "2026-10-19T10:05:48.837495+00:00",
+   "2026-10-19T10:10:48.837495+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 4,
   "matches": [
    {
-    "match_id": "KXWTAMATCH-26OCT19EALPAR",
-    "label": "Alexandra Eala vs Diane Parry",
-    "current_expected_start": "2026-10-19T10:02:20.931837+00:00",
+    "match_id": "KXATPMATCH-26OCT18CILBAS",
+    "label": "Marin Cilic vs Nikoloz Basilashvili",
+    "current_expected_start": "2026-10-19T10:15:48.837495+00:00",
     "start_status": "START_IMMINENT",
-    "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3)",
+    "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5)",
     "start_time_confidence": "MEDIUM"
    },
    {
@@ -63,26 +63,26 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-10-19T10:02:20.931837+00:00",
-   "recommended_run_tennis_time": "2026-10-19T09:17:20.931837+00:00",
+   "earliest_credible_first_ball": "2026-10-19T10:15:48.837495+00:00",
+   "recommended_run_tennis_time": "2026-10-19T09:30:48.837495+00:00",
    "primary_refresh_window": [
-    "2026-10-19T09:17:20.931837+00:00",
-    "2026-10-19T09:32:20.931837+00:00"
+    "2026-10-19T09:30:48.837495+00:00",
+    "2026-10-19T09:45:48.837495+00:00"
    ],
-   "final_status_price_check_time": "2026-10-19T09:52:20.931837+00:00",
+   "final_status_price_check_time": "2026-10-19T10:05:48.837495+00:00",
    "final_refresh_window": [
-    "2026-10-19T09:52:20.931837+00:00",
-    "2026-10-19T09:57:20.931837+00:00"
+    "2026-10-19T10:05:48.837495+00:00",
+    "2026-10-19T10:10:48.837495+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 4,
    "matches": [
     {
-     "match_id": "KXWTAMATCH-26OCT19EALPAR",
-     "label": "Alexandra Eala vs Diane Parry",
-     "current_expected_start": "2026-10-19T10:02:20.931837+00:00",
+     "match_id": "KXATPMATCH-26OCT18CILBAS",
+     "label": "Marin Cilic vs Nikoloz Basilashvili",
+     "current_expected_start": "2026-10-19T10:15:48.837495+00:00",
      "start_status": "START_IMMINENT",
-     "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3)",
+     "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5)",
      "start_time_confidence": "MEDIUM"
     },
     {
@@ -251,20 +251,28 @@
    ]
   },
   {
-   "earliest_credible_first_ball": "2026-10-20T05:30:00+00:00",
-   "recommended_run_tennis_time": "2026-10-20T04:45:00+00:00",
+   "earliest_credible_first_ball": "2026-10-20T05:00:00+00:00",
+   "recommended_run_tennis_time": "2026-10-20T04:15:00+00:00",
    "primary_refresh_window": [
-    "2026-10-20T04:45:00+00:00",
-    "2026-10-20T05:00:00+00:00"
+    "2026-10-20T04:15:00+00:00",
+    "2026-10-20T04:30:00+00:00"
    ],
-   "final_status_price_check_time": "2026-10-20T05:20:00+00:00",
+   "final_status_price_check_time": "2026-10-20T04:50:00+00:00",
    "final_refresh_window": [
-    "2026-10-20T05:20:00+00:00",
-    "2026-10-20T05:25:00+00:00"
+    "2026-10-20T04:50:00+00:00",
+    "2026-10-20T04:55:00+00:00"
    ],
    "primary_overdue": false,
-   "n_matches": 5,
+   "n_matches": 8,
    "matches": [
+    {
+     "match_id": "KXWTAMATCH-26OCT19PUTSHN",
+     "label": "Yulia Putintseva vs Diana Shnaider",
+     "current_expected_start": "2026-10-20T05:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
+    },
     {
      "match_id": "KXWTAMATCH-26OCT18JOISON",
      "label": "Maya Joint vs Zeynep Sonmez",
@@ -304,6 +312,22 @@
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "LIVE_SCHEDULE:espn_atp",
      "start_time_confidence": "HIGH"
+    },
+    {
+     "match_id": "KXWTAMATCH-26OCT19BUCKUD",
+     "label": "Cristina Bucsa vs Polina Kudermetova",
+     "current_expected_start": "2026-10-20T06:30:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
+    },
+    {
+     "match_id": "KXWTAMATCH-26OCT19PAOKAL",
+     "label": "Jasmine Paolini vs Anhelina Kalinina",
+     "current_expected_start": "2026-10-20T06:30:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
     }
    ]
   },
@@ -320,7 +344,7 @@
     "2026-10-20T07:55:00+00:00"
    ],
    "primary_overdue": false,
-   "n_matches": 2,
+   "n_matches": 4,
    "matches": [
     {
      "match_id": "KXATPMATCH-26OCT18TSIKOV",
@@ -331,12 +355,28 @@
      "start_time_confidence": "HIGH"
     },
     {
+     "match_id": "KXWTAMATCH-26OCT19OSTBEN",
+     "label": "Jelena Ostapenko vs Belinda Bencic",
+     "current_expected_start": "2026-10-20T08:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
+    },
+    {
      "match_id": "KXATPMATCH-26OCT20DUCDAR",
      "label": "James Duckworth vs Luciano Darderi",
      "current_expected_start": "2026-10-20T09:30:00+00:00",
      "start_status": "ESTIMATED_UPCOMING",
      "start_time_source": "KALSHI_NOMINAL",
      "start_time_confidence": "LOW"
+    },
+    {
+     "match_id": "KXWTAMATCH-26OCT19KAWSNI",
+     "label": "Katarzyna Kawa vs Daria Snigur",
+     "current_expected_start": "2026-10-20T09:30:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
     }
    ]
   }
@@ -347,7 +387,7 @@
    "label": "Federico Cina vs Jaume Munar",
    "status": "STATUS_AMBIGUOUS",
    "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-175_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ]
   },
@@ -366,15 +406,6 @@
    "status": "STATUS_AMBIGUOUS",
    "reasons": [
     "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
-   ]
-  },
-  {
-   "match_id": "KXATPMATCH-26OCT18CILBAS",
-   "label": "Marin Cilic vs Nikoloz Basilashvili",
-   "status": "STATUS_AMBIGUOUS",
-   "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+1150_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ]
   },
@@ -528,72 +559,12 @@
    ]
   },
   {
-   "match_id": "KXWTAMATCH-26OCT19KAWSNI",
-   "label": "Katarzyna Kawa vs Daria Snigur",
-   "status": "START_UNKNOWN",
-   "reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ]
-  },
-  {
-   "match_id": "KXWTAMATCH-26OCT19BUCKUD",
-   "label": "Cristina Bucsa vs Polina Kudermetova",
-   "status": "START_UNKNOWN",
-   "reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ]
-  },
-  {
-   "match_id": "KXWTAMATCH-26OCT19PAOKAL",
-   "label": "Jasmine Paolini vs Anhelina Kalinina",
-   "status": "START_UNKNOWN",
-   "reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ]
-  },
-  {
-   "match_id": "KXWTAMATCH-26OCT19PUTSHN",
-   "label": "Yulia Putintseva vs Diana Shnaider",
-   "status": "START_UNKNOWN",
-   "reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ]
-  },
-  {
-   "match_id": "KXWTAMATCH-26OCT19RAKBOU",
-   "label": "Kamilla Rakhimova vs Marie Bouzkova",
+   "match_id": "KXWTAMATCH-26OCT19EALPAR",
+   "label": "Alexandra Eala vs Diane Parry",
    "status": "STATUS_AMBIGUOUS",
    "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-140_MIN",
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
-   ]
-  },
-  {
-   "match_id": "KXWTAMATCH-26OCT19OSTBEN",
-   "label": "Jelena Ostapenko vs Belinda Bencic",
-   "status": "START_UNKNOWN",
-   "reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ]
-  },
-  {
-   "match_id": "KXWTAMATCH-26OCT19GUOALE",
-   "label": "Hanyu Guo vs Ekaterina Alexandrova",
-   "status": "START_UNKNOWN",
-   "reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
    ]
   },
   {
@@ -612,17 +583,9 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)"
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)"
   ],
   "changed_matches": [
-   {
-    "match": "KXATPMATCH-26OCT18CILBAS",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXWTAMATCH-26OCT19EALPAR",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
    {
     "match": "KXATPDOUBLES-26OCT18NOUVENFRAGAL",
     "change": "EXPECTED_START_PASSED_SINCE_BUILD"
@@ -636,15 +599,17 @@
     "change": "EXPECTED_START_PASSED_SINCE_BUILD"
    }
   ],
-  "slate_id": "SL-20261019T094539Z-ac928f16",
-  "slate_built_at": "2026-10-19T09:45:39.873858+00:00",
-  "checked_at": "2026-10-19T10:00:06.040776+00:00"
+  "slate_id": "SL-20261019T095924Z-8ac71e93",
+  "slate_built_at": "2026-10-19T09:59:24.995052+00:00",
+  "checked_at": "2026-10-19T10:13:35.741235+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_stale_refresh",
-   "at": "2026-10-19T10:00:06.040776+00:00",
-   "reason": "published slate SL-20261019T094539Z-ac928f16 is stale: 5 match(es) changed status/start since it was built",
+   "kind": "slate_final",
+   "window": "20261019T1015Z",
+   "reason": "final status/price check for window at 2026-10-19T10:15:48.837495+00:00",
+   "at": "2026-10-19T10:13:35.741235+00:00",
+   "earliest_credible_first_ball": "2026-10-19T10:15:48.837495+00:00",
    "dispatched": true,
    "http": 204
   }
@@ -652,11 +617,11 @@
  "statuses": {
   "KXATPMATCH-26OCT20DUCDAR": {
    "match_id": "ATP:26OCT20DUCDAR:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-20T09:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T09:30:00+00:00",
    "start_time_source": "KALSHI_NOMINAL",
    "start_time_confidence": "LOW",
@@ -685,11 +650,11 @@
   },
   "KXATPMATCH-26OCT20SHISAF": {
    "match_id": "ATP:26OCT20SHISAF:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-20T09:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T06:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -728,11 +693,11 @@
   },
   "KXATPMATCH-26OCT20SAKKHA": {
    "match_id": "ATP:26OCT20SAKKHA:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-20T09:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -783,11 +748,11 @@
   },
   "KXATPMATCH-26OCT19TABBUD": {
    "match_id": "ATP:26OCT19TABBUD:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T11:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -838,11 +803,11 @@
   },
   "KXATPMATCH-26OCT19GUEMIC": {
    "match_id": "ATP:26OCT19GUEMIC:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T13:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -893,11 +858,11 @@
   },
   "KXATPMATCH-26OCT19HANDAM": {
    "match_id": "ATP:26OCT19HANDAM:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T14:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T11:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -934,7 +899,7 @@
      "period": 1,
      "best_of": 5,
      "games_played": 0,
-     "scheduled_utc": "2026-10-19T10:00:00+00:00",
+     "scheduled_utc": "2026-10-19T10:05:00+00:00",
      "time_valid": true
     }
    },
@@ -948,17 +913,17 @@
   },
   "KXATPMATCH-26OCT19CINMUN": {
    "match_id": "ATP:26OCT19CINMUN:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": "2026-10-19T10:00:00+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-19T10:05:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-10-19T10:00:00+00:00",
+     "time": "2026-10-19T10:05:00+00:00",
      "source": "LIVE_SCHEDULE:espn_atp",
      "confidence": "HIGH"
     },
@@ -968,9 +933,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-19T09:15:00+00:00",
-   "recommended_handicap_by": "2026-10-19T09:15:00+00:00",
-   "final_check_time": "2026-10-19T09:50:00+00:00",
+   "earliest_safe_handicap_time": "2026-10-19T09:20:00+00:00",
+   "recommended_handicap_by": "2026-10-19T09:20:00+00:00",
+   "final_check_time": "2026-10-19T09:55:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -983,7 +948,7 @@
    },
    "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-175_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
    "bet_allowed": false,
@@ -992,11 +957,11 @@
   },
   "KXATPMATCH-26OCT19JACMMO": {
    "match_id": "ATP:26OCT19JACMMO:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T13:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T10:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1047,11 +1012,11 @@
   },
   "KXATPMATCH-26OCT19HERMRV": {
    "match_id": "ATP:26OCT19HERMRV:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T12:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T09:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1091,11 +1056,11 @@
   },
   "KXATPMATCH-26OCT19SACGOJ": {
    "match_id": "ATP:26OCT19SACGOJ:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T10:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1135,11 +1100,11 @@
   },
   "KXATPMATCH-26OCT19KUKSAK": {
    "match_id": "ATP:26OCT19KUKSAK:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T17:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1176,7 +1141,7 @@
      "period": 1,
      "best_of": 5,
      "games_played": 0,
-     "scheduled_utc": "2026-10-19T09:50:00+00:00",
+     "scheduled_utc": "2026-10-19T10:30:00+00:00",
      "time_valid": true
     }
    },
@@ -1190,23 +1155,23 @@
   },
   "KXATPMATCH-26OCT18CILBAS": {
    "match_id": "ATP:26OCT18CILBAS:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T14:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": "2026-10-19T09:50:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_atp",
-   "start_time_confidence": "HIGH",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-19T10:15:48.837495+00:00",
+   "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5)",
+   "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
     {
-     "time": "2026-10-19T09:50:00+00:00",
+     "time": "2026-10-19T10:30:00+00:00",
      "source": "LIVE_SCHEDULE:espn_atp",
      "confidence": "HIGH"
     },
     {
-     "time": "2026-10-19T10:27:20.931837+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5)",
+     "time": "2026-10-19T10:15:48.837495+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5)",
      "confidence": "MEDIUM"
     },
     {
@@ -1215,9 +1180,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-19T09:05:00+00:00",
-   "recommended_handicap_by": "2026-10-19T09:05:00+00:00",
-   "final_check_time": "2026-10-19T09:40:00+00:00",
+   "earliest_safe_handicap_time": "2026-10-19T09:30:48.837495+00:00",
+   "recommended_handicap_by": "2026-10-19T09:30:48.837495+00:00",
+   "final_check_time": "2026-10-19T10:05:48.837495+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -1233,29 +1198,28 @@
       "Adrian Mannarino"
      ],
      "state": "IN",
-     "period": 2,
+     "period": 3,
      "best_of": 5,
-     "games_played": 20,
+     "games_played": 24,
      "scheduled_utc": "2026-10-19T08:05:00+00:00",
      "time_valid": true
     }
    },
-   "start_status": "STATUS_AMBIGUOUS",
+   "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+1150_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+1175_MIN"
    ],
-   "bet_allowed": false,
+   "bet_allowed": true,
    "label": "Marin Cilic vs Nikoloz Basilashvili",
    "level_bucket": "ATP"
   },
   "KXATPMATCH-26OCT18WAWLAN": {
    "match_id": "ATP:26OCT18WAWLAN:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1280,11 +1244,11 @@
   },
   "KXATPMATCH-26OCT18MEDNAK": {
    "match_id": "ATP:26OCT18MEDNAK:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1309,11 +1273,11 @@
   },
   "KXATPMATCH-26OCT18SONKOU": {
    "match_id": "ATP:26OCT18SONKOU:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T16:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1359,11 +1323,11 @@
   },
   "KXATPMATCH-26OCT18ARNMUS": {
    "match_id": "ATP:26OCT18ARNMUS:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1409,11 +1373,11 @@
   },
   "KXATPMATCH-26OCT18HUMMOU": {
    "match_id": "ATP:26OCT18HUMMOU:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1438,11 +1402,11 @@
   },
   "KXATPMATCH-26OCT18FARBAL": {
    "match_id": "ATP:26OCT18FARBAL:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-19T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1488,11 +1452,11 @@
   },
   "KXATPMATCH-26OCT18BONNOR": {
    "match_id": "ATP:26OCT18BONNOR:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1517,11 +1481,11 @@
   },
   "KXATPMATCH-26OCT18ALTDRO": {
    "match_id": "ATP:26OCT18ALTDRO:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1546,7 +1510,7 @@
   },
   "KXATPMATCH-26OCT18STRGIR": {
    "match_id": "ATP:26OCT18STRGIR:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T13:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1576,7 +1540,7 @@
   },
   "KXATPMATCH-26OCT18PRIDZU": {
    "match_id": "ATP:26OCT18PRIDZU:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T13:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1606,7 +1570,7 @@
   },
   "KXATPMATCH-26OCT18SAMBER": {
    "match_id": "ATP:26OCT18SAMBER:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T13:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1636,7 +1600,7 @@
   },
   "KXATPMATCH-26OCT18FEAGAS": {
    "match_id": "ATP:26OCT18FEAGAS:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T13:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1666,7 +1630,7 @@
   },
   "KXATPMATCH-26OCT18NAVCER": {
    "match_id": "ATP:26OCT18NAVCER:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T13:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1696,7 +1660,7 @@
   },
   "KXATPMATCH-26OCT18GRISCH": {
    "match_id": "ATP:26OCT18GRISCH:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T13:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1726,11 +1690,11 @@
   },
   "KXATPMATCH-26OCT18ATMHIJ": {
    "match_id": "ATP:26OCT18ATMHIJ:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T06:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1764,7 +1728,7 @@
   },
   "KXATPMATCH-26OCT18BELETC": {
    "match_id": "ATP:26OCT18BELETC:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1794,7 +1758,7 @@
   },
   "KXATPMATCH-26OCT18MARSKA": {
    "match_id": "ATP:26OCT18MARSKA:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1824,7 +1788,7 @@
   },
   "KXATPMATCH-26OCT18NURMAC": {
    "match_id": "ATP:26OCT18NURMAC:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -1854,11 +1818,11 @@
   },
   "KXATPMATCH-26OCT18TIRDIA": {
    "match_id": "ATP:26OCT18TIRDIA:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1881,11 +1845,11 @@
   },
   "KXATPMATCH-26OCT18MANVUK": {
    "match_id": "ATP:26OCT18MANVUK:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1908,11 +1872,11 @@
   },
   "KXATPMATCH-26OCT18TSIKOV": {
    "match_id": "ATP:26OCT18TSIKOV:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-18T09:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1958,40 +1922,61 @@
   },
   "KXWTAMATCH-26OCT19KAWSNI": {
    "match_id": "WTA:26OCT19KAWSNI:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-20T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-20T09:30:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-10-20T09:30:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-10-20T08:45:00+00:00",
+   "recommended_handicap_by": "2026-10-20T08:45:00+00:00",
+   "final_check_time": "2026-10-20T09:20:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "START_UNKNOWN",
+   "court": "Grandstand",
+   "court_context": {
+    "court": "Grandstand",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 3,
+    "preceding": {
+     "source_match_id": "185554",
+     "players": [
+      "Anna Bondar / Alina Korneeva",
+      "Leylah Fernandez / Marta Kostyuk"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-10-20T08:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
    ],
-   "bet_allowed": false,
+   "bet_allowed": true,
    "label": "Katarzyna Kawa vs Daria Snigur",
    "level_bucket": "WTA"
   },
   "KXWTAMATCH-26OCT19DAYBIR": {
    "match_id": "WTA:26OCT19DAYBIR:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-20T05:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T05:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2040,121 +2025,24 @@
   },
   "KXWTAMATCH-26OCT19BUCKUD": {
    "match_id": "WTA:26OCT19BUCKUD:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-20T05:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "START_UNKNOWN",
-   "status_reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ],
-   "bet_allowed": false,
-   "label": "Cristina Bucsa vs Polina Kudermetova",
-   "level_bucket": "WTA"
-  },
-  "KXWTAMATCH-26OCT19PAOKAL": {
-   "match_id": "WTA:26OCT19PAOKAL:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
-   "nominal_scheduled_start": "2026-10-20T05:00:00+00:00",
-   "nominal_is_placeholder": true,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "START_UNKNOWN",
-   "status_reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ],
-   "bet_allowed": false,
-   "label": "Jasmine Paolini vs Anhelina Kalinina",
-   "level_bucket": "WTA"
-  },
-  "KXWTAMATCH-26OCT19PUTSHN": {
-   "match_id": "WTA:26OCT19PUTSHN:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
-   "nominal_scheduled_start": "2026-10-20T05:00:00+00:00",
-   "nominal_is_placeholder": true,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "START_UNKNOWN",
-   "status_reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
-   ],
-   "bet_allowed": false,
-   "label": "Yulia Putintseva vs Diana Shnaider",
-   "level_bucket": "WTA"
-  },
-  "KXWTAMATCH-26OCT19RAKBOU": {
-   "match_id": "WTA:26OCT19RAKBOU:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
-   "nominal_scheduled_start": "2026-10-19T12:10:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": "2026-10-19T09:50:00+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-20T06:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-10-19T09:50:00+00:00",
+     "time": "2026-10-20T06:30:00+00:00",
      "source": "LIVE_SCHEDULE:espn_wta",
      "confidence": "HIGH"
-    },
-    {
-     "time": "2026-10-19T09:52:20.931837+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Grandstand finished",
-     "confidence": "MEDIUM"
-    },
-    {
-     "time": "2026-10-19T12:10:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-19T09:05:00+00:00",
-   "recommended_handicap_by": "2026-10-19T09:05:00+00:00",
-   "final_check_time": "2026-10-19T09:40:00+00:00",
+   "earliest_safe_handicap_time": "2026-10-20T05:45:00+00:00",
+   "recommended_handicap_by": "2026-10-20T05:45:00+00:00",
+   "final_check_time": "2026-10-20T06:20:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -2162,25 +2050,139 @@
    "court_context": {
     "court": "Grandstand",
     "same_time_on_court": 0,
-    "queue_ahead_pre": 0,
+    "queue_ahead_pre": 1,
     "preceding": {
-     "source_match_id": "185527",
+     "source_match_id": "185543",
      "players": [
-      "Aliaksandra Sasnovich",
-      "Daria Kasatkina"
+      "Alycia Parks",
+      "Sara Bejlek"
      ],
-     "state": "POST",
-     "period": 2,
+     "state": "PRE",
+     "period": 1,
      "best_of": 3,
-     "games_played": 18,
-     "scheduled_utc": "2026-10-19T08:15:00+00:00",
+     "games_played": 0,
+     "scheduled_utc": "2026-10-20T05:00:00+00:00",
      "time_valid": true
     }
    },
-   "start_status": "STATUS_AMBIGUOUS",
+   "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-140_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
+   ],
+   "bet_allowed": true,
+   "label": "Cristina Bucsa vs Polina Kudermetova",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26OCT19PAOKAL": {
+   "match_id": "WTA:26OCT19PAOKAL:singles",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
+   "nominal_scheduled_start": "2026-10-20T05:00:00+00:00",
+   "nominal_is_placeholder": true,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-20T06:30:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-10-20T06:30:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-10-20T05:45:00+00:00",
+   "recommended_handicap_by": "2026-10-20T05:45:00+00:00",
+   "final_check_time": "2026-10-20T06:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 1,
+    "preceding": {
+     "source_match_id": "185525",
+     "players": [
+      "Diana Shnaider",
+      "Yulia Putintseva"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-10-20T05:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
+   ],
+   "bet_allowed": true,
+   "label": "Jasmine Paolini vs Anhelina Kalinina",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26OCT19PUTSHN": {
+   "match_id": "WTA:26OCT19PUTSHN:singles",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
+   "nominal_scheduled_start": "2026-10-20T05:00:00+00:00",
+   "nominal_is_placeholder": true,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-20T05:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-10-20T05:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-10-20T04:15:00+00:00",
+   "recommended_handicap_by": "2026-10-20T04:15:00+00:00",
+   "final_check_time": "2026-10-20T04:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
+   ],
+   "bet_allowed": true,
+   "label": "Yulia Putintseva vs Diana Shnaider",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26OCT19RAKBOU": {
+   "match_id": "WTA:26OCT19RAKBOU:singles",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
+   "nominal_scheduled_start": "2026-10-19T12:10:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": null,
+   "start_time_source": null,
+   "start_time_confidence": "NONE",
+   "start_time_candidates": [],
+   "earliest_safe_handicap_time": null,
+   "recommended_handicap_by": null,
+   "final_check_time": null,
+   "first_ball_status": "OBSERVED_STARTED",
+   "first_ball_source": "espn_wta (confidence C)",
+   "first_ball_at": "2026-10-19T09:53:04.884666+00:00",
+   "court": null,
+   "court_context": null,
+   "start_status": "STARTED",
+   "status_reasons": [
+    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
    ],
    "bet_allowed": false,
    "label": "Kamilla Rakhimova vs Marie Bouzkova",
@@ -2188,11 +2190,11 @@
   },
   "KXWTAMATCH-26OCT19KASSAS": {
    "match_id": "WTA:26OCT19KASSAS:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2215,11 +2217,11 @@
   },
   "KXWTAMATCH-26OCT18ANNJON": {
    "match_id": "WTA:26OCT18ANNJON:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T04:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T02:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2253,11 +2255,11 @@
   },
   "KXWTAMATCH-26OCT18JOISON": {
    "match_id": "WTA:26OCT18JOISON:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T04:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T05:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2303,11 +2305,11 @@
   },
   "KXWTAMATCH-26OCT18OLISTO": {
    "match_id": "WTA:26OCT18OLISTO:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T04:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T04:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2353,11 +2355,11 @@
   },
   "KXWTAMATCH-26OCT18LIULIN": {
    "match_id": "WTA:26OCT18LIULIN:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T04:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T02:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2391,42 +2393,63 @@
   },
   "KXWTAMATCH-26OCT19OSTBEN": {
    "match_id": "WTA:26OCT19OSTBEN:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-20T08:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-10-20T08:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-10-20T07:15:00+00:00",
+   "recommended_handicap_by": "2026-10-20T07:15:00+00:00",
+   "final_check_time": "2026-10-20T07:50:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "START_UNKNOWN",
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 2,
+    "preceding": {
+     "source_match_id": "185532",
+     "players": [
+      "Anhelina Kalinina",
+      "Jasmine Paolini"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-10-20T06:30:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
    ],
-   "bet_allowed": false,
+   "bet_allowed": true,
    "label": "Jelena Ostapenko vs Belinda Bencic",
    "level_bucket": "WTA"
   },
   "KXWTAMATCH-26OCT19EALPAR": {
    "match_id": "WTA:26OCT19EALPAR:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": "2026-10-19T10:02:20.931837+00:00",
-   "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3)",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-19T10:05:48.837495+00:00",
+   "start_time_source": "COURT_PROGRESSION: preceding match on Center Court finished",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
     {
@@ -2435,14 +2458,14 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-10-19T10:02:20.931837+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3)",
+     "time": "2026-10-19T10:05:48.837495+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Center Court finished",
      "confidence": "MEDIUM"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-19T09:17:20.931837+00:00",
-   "recommended_handicap_by": "2026-10-19T09:17:20.931837+00:00",
-   "final_check_time": "2026-10-19T09:52:20.931837+00:00",
+   "earliest_safe_handicap_time": "2026-10-19T09:20:48.837495+00:00",
+   "recommended_handicap_by": "2026-10-19T09:20:48.837495+00:00",
+   "final_check_time": "2026-10-19T09:55:48.837495+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -2457,54 +2480,76 @@
       "Shuko Aoyama / En-Shuo Liang",
       "Guo Hanyu / Kristina Mladenovic"
      ],
-     "state": "IN",
+     "state": "POST",
      "period": 2,
      "best_of": 3,
-     "games_played": 12,
+     "games_played": 14,
      "scheduled_utc": "2026-10-19T08:50:00+00:00",
      "time_valid": true
     }
    },
-   "start_status": "START_IMMINENT",
+   "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
-   "bet_allowed": true,
+   "bet_allowed": false,
    "label": "Alexandra Eala vs Diane Parry",
    "level_bucket": "WTA"
   },
   "KXWTAMATCH-26OCT19GUOALE": {
    "match_id": "WTA:26OCT19GUOALE:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
+   "current_expected_start": "2026-10-20T11:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-10-20T11:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-10-20T10:15:00+00:00",
+   "recommended_handicap_by": "2026-10-20T10:15:00+00:00",
+   "final_check_time": "2026-10-20T10:50:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "START_UNKNOWN",
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 3,
+    "preceding": {
+     "source_match_id": "185530",
+     "players": [
+      "Belinda Bencic",
+      "Jelena Ostapenko"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-10-20T08:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-20T04:00:00+00:00 as not a valid time",
-    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series",
-    "NO_CREDIBLE_START_TIME"
+    "NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series"
    ],
-   "bet_allowed": false,
+   "bet_allowed": true,
    "label": "Hanyu Guo vs Ekaterina Alexandrova",
    "level_bucket": "WTA"
   },
   "KXWTAMATCH-26OCT19BEJWAN": {
    "match_id": "WTA:26OCT19BEJWAN:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T07:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
@@ -2534,11 +2579,11 @@
   },
   "KXWTAMATCH-26OCT18VALZHA": {
    "match_id": "WTA:26OCT18VALZHA:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T05:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T02:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2572,11 +2617,11 @@
   },
   "KXWTAMATCH-26OCT18BOUSAK": {
    "match_id": "WTA:26OCT18BOUSAK:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T05:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2599,11 +2644,11 @@
   },
   "KXWTAMATCH-26OCT18BADRUZ": {
    "match_id": "WTA:26OCT18BADRUZ:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T05:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T04:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2649,11 +2694,11 @@
   },
   "KXWTAMATCH-26OCT18UCHSHI": {
    "match_id": "WTA:26OCT18UCHSHI:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T05:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T04:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2699,11 +2744,11 @@
   },
   "KXWTAMATCH-26OCT18SINSTE": {
    "match_id": "WTA:26OCT18SINSTE:singles",
-   "evaluated_at": "2026-10-19T10:00:06.040776+00:00",
+   "evaluated_at": "2026-10-19T10:13:35.741235+00:00",
    "nominal_scheduled_start": "2026-10-19T05:30:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-19T09:47:20.931837+00:00",
+   "start_time_last_checked": "2026-10-19T10:00:48.837495+00:00",
    "current_expected_start": "2026-10-20T05:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
