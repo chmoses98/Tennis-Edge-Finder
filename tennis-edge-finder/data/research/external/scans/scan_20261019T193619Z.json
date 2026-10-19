@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T19:36:19.426116+00:00",
+ "run_id": "20261019T193619Z",
+ "external_parse": {
+  "events": 176,
+  "markets": 1840,
+  "skipped_family": 367,
+  "skipped_period": 547,
+  "skipped_live": 20,
+  "one_sided": 10,
+  "rows": 3150,
+  "devigged": 914
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1818,
+  "markets_mapped": 608,
+  "contracts": 1290,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T193619Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 608,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 472,
+  "rows": 818,
+  "two_sided": 814,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1928,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Leonard Tramolay": 1,
+   "Siddharth Bharadwaj": 1,
+   "Lachlan Brain": 1,
+   "Ella Brownback": 1,
+   "Glauco Pinheiro da Cruz Junior": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 299,
+  "by_status": {
+   "MAPPED": 203,
+   "UNMAPPED_PLAYER": 94,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6789,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Jared Horwood": 1,
+   "Conor Brady": 1,
+   "Richard Lacis": 1,
+   "Giulio Stella": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 203,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 101,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
