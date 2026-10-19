@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T18:05:29.928357+00:00",
+ "run_id": "20261019T180529Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1977,
+  "skipped_family": 377,
+  "skipped_period": 596,
+  "skipped_live": 17,
+  "one_sided": 15,
+  "rows": 3372,
+  "devigged": 987
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1676,
+  "markets_mapped": 554,
+  "contracts": 1176,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T180529Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 554,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 344,
+  "rows": 832,
+  "two_sided": 829,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 446,
+ "external_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 112,
+   "DOUBLES_UNSUPPORTED": 44,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.655,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Rachael Phelan": 1,
+   "Leonard Tramolay": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Jaden Dewandaka Tan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8118,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Frazier Rengifo": 1,
+   "Matteo Gribaldo": 1,
+   "Samarth Sahita": 1,
+   "Saheb Sodhi": 1,
+   "Kanta Watanabe": 1,
+   "Archie Stewart": 1,
+   "Adrian Correa": 1,
+   "Eric Tripathi": 1,
+   "bautista de la Pena": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 124,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 39,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
