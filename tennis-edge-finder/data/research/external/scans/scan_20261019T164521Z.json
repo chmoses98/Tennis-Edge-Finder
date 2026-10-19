@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T16:45:21.329602+00:00",
+ "run_id": "20261019T164521Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1484,
+  "skipped_family": 298,
+  "skipped_period": 454,
+  "skipped_live": 19,
+  "one_sided": 26,
+  "rows": 2587,
+  "devigged": 704
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1534,
+  "markets_mapped": 505,
+  "contracts": 1070,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261019T164521Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 505,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 232,
+  "rows": 838,
+  "two_sided": 838,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 575,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 81,
+   "DOUBLES_UNSUPPORTED": 41,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6231,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felix Bockelmann Evans": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Rachael Phelan": 1,
+   "Glauco Pinheiro da Cruz Junior": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8081,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Tom Zeuch": 1,
+   "Dominik Guzmicky": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Adam Soukup": 1,
+   "Arjun Rathi": 1,
+   "Samarth Sahita": 1,
+   "Archie Stewart": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
