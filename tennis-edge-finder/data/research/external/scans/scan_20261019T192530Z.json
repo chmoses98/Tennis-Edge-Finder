@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T19:25:30.190875+00:00",
+ "run_id": "20261019T192530Z",
+ "external_parse": {
+  "events": 176,
+  "markets": 1840,
+  "skipped_family": 367,
+  "skipped_period": 547,
+  "skipped_live": 20,
+  "one_sided": 10,
+  "rows": 3150,
+  "devigged": 914
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1800,
+  "markets_mapped": 606,
+  "contracts": 1286,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T192530Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 606,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 477,
+  "rows": 809,
+  "two_sided": 806,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 488,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Leonard Tramolay": 1,
+   "Siddharth Bharadwaj": 1,
+   "Lachlan Brain": 1,
+   "Ella Brownback": 1,
+   "Glauco Pinheiro da Cruz Junior": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.708,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Jared Horwood": 1,
+   "Conor Brady": 1,
+   "Richard Lacis": 1,
+   "Pavel Skvortcov": 1,
+   "Pablo Perez Ramos": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 51,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
