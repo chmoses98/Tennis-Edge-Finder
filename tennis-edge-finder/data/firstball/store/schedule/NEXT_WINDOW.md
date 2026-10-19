@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 15:12Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 15:26Z)
 
-* Earliest credible first ball: **2026-10-19 16:30Z**
-* Recommended RUN TENNIS time: **2026-10-19 15:45Z**
-* Final price/status check time: **2026-10-19 16:20Z**
+* Earliest credible first ball: **2026-10-19 16:25Z**
+* Recommended RUN TENNIS time: **2026-10-19 15:40Z**
+* Final price/status check time: **2026-10-19 16:15Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Lorenzo Sonego vs Moise Kouame | 2026-10-19 16:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Lorenzo Sonego vs Moise Kouame | 2026-10-19 16:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
 
-**12 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola, Stan Wawrinka vs Martin Landaluce, Matteo Arnaldi vs Lorenzo Musetti, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac
+**11 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola, Stan Wawrinka vs Martin Landaluce, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac
 
-Published slate: `SL-20261019T142352Z-0da74740` built 2026-10-19 14:23Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261019T145939Z-7623eebe` built 2026-10-19 14:59Z -- current
 
 Dispatched this pass: none
 
