@@ -1,7 +1,7 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 05:38Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 05:50Z)
 
 * Earliest credible first ball: **2026-10-19 06:30Z**
-* Recommended RUN TENNIS time: **2026-10-19 05:45Z**
+* Recommended RUN TENNIS time: **2026-10-19 05:45Z**  (OVERDUE: run now)
 * Final price/status check time: **2026-10-19 06:20Z**
 * Matches in window: 5
 
@@ -15,9 +15,9 @@
 
 **34 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Terence Atmane vs Rinky Hijikata
 
-Published slate: `SL-20261019T043621Z-a79ec34b` built 2026-10-19 04:36Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
+Published slate: `SL-20261019T052657Z-db65eecb` built 2026-10-19 05:26Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-19T06:30:00+00:00, slate built 2026-10-19T05:26:57.156205+00:00
 
-Dispatched this pass: run_tennis (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-19 09:00Z, run by 2026-10-19 08:15Z, 6 match(es)
 * later window 3: first ball 2026-10-19 11:30Z, run by 2026-10-19 10:45Z, 4 match(es)
