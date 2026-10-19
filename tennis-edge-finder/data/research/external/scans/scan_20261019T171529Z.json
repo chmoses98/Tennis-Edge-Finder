@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T17:15:29.431568+00:00",
+ "run_id": "20261019T171529Z",
+ "external_parse": {
+  "events": 137,
+  "markets": 1450,
+  "skipped_family": 271,
+  "skipped_period": 459,
+  "skipped_live": 16,
+  "one_sided": 27,
+  "rows": 2542,
+  "devigged": 691
+ },
+ "smarkets_fetch": {
+  "events_seen": 169,
+  "events_priced": 80,
+  "markets": 1616,
+  "markets_mapped": 538,
+  "contracts": 1102,
+  "quoted_contracts": 1014,
+  "raw": "data/research/external/raw/20261019T171529Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 538,
+  "skipped_family": 0,
+  "no_contracts": 20,
+  "no_book": 163,
+  "rows": 939,
+  "two_sided": 937,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 526,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 75,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.5952,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felix Bockelmann Evans": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Rachael Phelan": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Sofia Cabezas Dominguez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7553,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Tim Vaisman": 1,
+   "William Nolan": 1,
+   "Snir Morag": 1,
+   "Adam Soukup": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
