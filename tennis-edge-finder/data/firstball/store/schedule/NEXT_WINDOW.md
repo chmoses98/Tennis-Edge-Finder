@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 03:37Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 03:49Z)
 
-* Earliest credible first ball: **2026-10-19 03:40Z**
-* Recommended RUN TENNIS time: **2026-10-19 02:55Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-19 03:30Z**
+* Earliest credible first ball: **2026-10-19 03:53Z**
+* Recommended RUN TENNIS time: **2026-10-19 03:08Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-19 03:43Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Caty McNally vs Sinja Kraus | 2026-10-19 03:40Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-3) | MEDIUM |
-| Talia Gibson vs Harriet Dart | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Talia Gibson vs Harriet Dart | 2026-10-19 03:53Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 2 in progress (set 2 of best-of-3) | MEDIUM |
+| Caty McNally vs Sinja Kraus | 2026-10-19 03:53Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-3) | MEDIUM |
 
-**33 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Terence Atmane vs Rinky Hijikata
+**32 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Terence Atmane vs Rinky Hijikata
 
-Published slate: `SL-20261019T024913Z-68b57ec1` built 2026-10-19 02:49Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-19T03:40:44.732229+00:00, slate built 2026-10-19T02:49:13.727064+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261019T031556Z-2c644bcc` built 2026-10-19 03:15Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-19 05:30Z, run by 2026-10-19 04:45Z, 5 match(es)
 * later window 3: first ball 2026-10-19 08:00Z, run by 2026-10-19 07:15Z, 5 match(es)
