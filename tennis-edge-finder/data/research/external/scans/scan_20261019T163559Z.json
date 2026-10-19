@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-19T16:35:59.266620+00:00",
+ "run_id": "20261019T163559Z",
+ "external_parse": {
+  "events": 147,
+  "markets": 1495,
+  "skipped_family": 298,
+  "skipped_period": 456,
+  "skipped_live": 24,
+  "one_sided": 23,
+  "rows": 2615,
+  "devigged": 716
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1534,
+  "markets_mapped": 506,
+  "contracts": 1074,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T163559Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 506,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 243,
+  "rows": 831,
+  "two_sided": 829,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1745,
+ "external_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 85,
+   "DOUBLES_UNSUPPORTED": 43,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felix Bockelmann Evans": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Rachael Phelan": 1,
+   "Andre Souza Pinto de Camargo e Silva": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 22,
+   "MAPPED": 53,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 207,
+  "by_status": {
+   "MAPPED": 152,
+   "UNMAPPED_PLAYER": 53,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7343,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Tom Zeuch": 1,
+   "Dominik Guzmicky": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Hudson Baxter": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 152,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
