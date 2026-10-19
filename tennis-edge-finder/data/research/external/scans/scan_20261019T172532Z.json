@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T17:25:32.948899+00:00",
+ "run_id": "20261019T172532Z",
+ "external_parse": {
+  "events": 137,
+  "markets": 1450,
+  "skipped_family": 271,
+  "skipped_period": 459,
+  "skipped_live": 16,
+  "one_sided": 27,
+  "rows": 2542,
+  "devigged": 691
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1603,
+  "markets_mapped": 535,
+  "contracts": 1136,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T172532Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 535,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 306,
+  "rows": 830,
+  "two_sided": 829,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 580,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 75,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.5952,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felix Bockelmann Evans": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Rachael Phelan": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Sofia Cabezas Dominguez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 34,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7368,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Florent Lagarrigue": 1,
+   "Melvin Vix": 1,
+   "Justino Rodrigues": 1,
+   "Kyle McKay": 1,
+   "Goncalo Da Rosa Castro": 1,
+   "Raffaele Ciurnelli": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 98,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
