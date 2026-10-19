@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-19T13:44:54.532339+00:00",
+ "run_id": "20261019T134454Z",
+ "external_parse": {
+  "events": 163,
+  "markets": 1696,
+  "skipped_family": 337,
+  "skipped_period": 527,
+  "skipped_live": 28,
+  "one_sided": 29,
+  "rows": 2905,
+  "devigged": 801
+ },
+ "smarkets_fetch": {
+  "events_seen": 173,
+  "events_priced": 80,
+  "markets": 1094,
+  "markets_mapped": 450,
+  "contracts": 966,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261019T134454Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 450,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 133,
+  "rows": 833,
+  "two_sided": 831,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 569,
+ "external_mapping": {
+  "total": 153,
+  "by_status": {
+   "MAPPED": 98,
+   "DOUBLES_UNSUPPORTED": 45,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.6405,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Valerio Bracci": 1,
+   "Eric Von Marton Martins": 1,
+   "Santiago Pesino": 1,
+   "Yaiza Borderia": 1,
+   "Sophie Ehrenbergerova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 20,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Frazier Rengifo": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 83,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8384,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Frazier Rengifo": 1,
+   "Kuan-Shou Chen": 1,
+   "Shanghui Li": 1,
+   "Kodai ABE": 1,
+   "Adrian Correa": 1,
+   "bautista de la Pena": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Eric Von Marton Martins": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 83,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
