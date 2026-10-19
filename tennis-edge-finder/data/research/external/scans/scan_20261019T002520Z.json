@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-19T00:25:20.409053+00:00",
+ "run_id": "20261019T002520Z",
+ "external_parse": {
+  "events": 164,
+  "markets": 1942,
+  "skipped_family": 423,
+  "skipped_period": 600,
+  "skipped_live": 9,
+  "one_sided": 6,
+  "rows": 3401,
+  "devigged": 908
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 891,
+  "markets_mapped": 362,
+  "contracts": 778,
+  "quoted_contracts": 778,
+  "raw": "data/research/external/raw/20261019T002520Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 362,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 715,
+  "two_sided": 715,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 374,
+ "external_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 92,
+   "DOUBLES_UNSUPPORTED": 55,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6133,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 55,
+   "Khumoyun Sultanov": 1,
+   "Pedro Dietrich": 1,
+   "Valerio Bracci": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.837,
+  "top_refusal_subjects": {
+   "Lorenzo Sverzut Corsini": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Valerio Bracci": 1,
+   "Sharath Murari": 1,
+   "Carl Holder": 1,
+   "Giulio Stella": 1,
+   "Simone Macchione": 1,
+   "Tirth Doshi": 1,
+   "Arjun Rathi": 1,
+   "Alexander Watanabe Eriksson": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 77,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
