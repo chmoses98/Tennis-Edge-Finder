@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-19T08:44:09.593251+00:00",
+ "run_id": "20261019T084409Z",
+ "external_parse": {
+  "events": 193,
+  "markets": 2131,
+  "skipped_family": 434,
+  "skipped_period": 667,
+  "skipped_live": 26,
+  "one_sided": 20,
+  "rows": 3615,
+  "devigged": 1007
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1133,
+  "markets_mapped": 443,
+  "contracts": 970,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261019T084409Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 443,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 111,
+  "rows": 859,
+  "two_sided": 855,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 555,
+ "external_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 116,
+   "DOUBLES_UNSUPPORTED": 51,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.6374,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Frazier Rengifo": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alex Hernandez": 1,
+   "Tommaso Bardocci": 1,
+   "Romeo Spinolo": 1,
+   "Michael Wright": 1,
+   "Gabriele Maria Piano": 1,
+   "Giulio Stella": 1,
+   "Simone Macchione": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 125,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.752,
+  "top_refusal_subjects": {
+   "Lorenzo Sverzut Corsini": 1,
+   "Andre Souza": 1,
+   "Eric Von Marton Martins": 1,
+   "Tom Zeuch": 1,
+   "Valerio Bracci": 1,
+   "Sizhe Yan": 1,
+   "Johan Mapuard": 1,
+   "Timeo Trufelli": 1,
+   "Remy Dugardin": 1,
+   "LUCAS GONCALVES FRANCA": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 79,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
