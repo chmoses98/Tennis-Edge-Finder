@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-19T21:25:26.862445+00:00",
+ "run_id": "20261019T212526Z",
+ "external_parse": {
+  "events": 172,
+  "markets": 1729,
+  "skipped_family": 358,
+  "skipped_period": 510,
+  "skipped_live": 13,
+  "one_sided": 45,
+  "rows": 2764,
+  "devigged": 814
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1825,
+  "markets_mapped": 626,
+  "contracts": 1328,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T212526Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 626,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 505,
+  "rows": 823,
+  "two_sided": 820,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 616,
+ "external_mapping": {
+  "total": 158,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.6456,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Ella Brownback": 1,
+   "Lachlan Brain": 1,
+   "Bautista de la Pena": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1,
+   "Samarth Sahita": 1,
+   "Arjun Rathi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.713,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1,
+   "Richard Lacis": 1,
+   "Giulio Stella": 1,
+   "Giovanni Ciocca": 1,
+   "Kyle McKay": 1,
+   "Hudson Baxter": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
