@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T18:36:12.838854+00:00",
+ "run_id": "20261019T183612Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1938,
+  "skipped_family": 347,
+  "skipped_period": 592,
+  "skipped_live": 19,
+  "one_sided": 24,
+  "rows": 3338,
+  "devigged": 973
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1776,
+  "markets_mapped": 589,
+  "contracts": 1250,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T183612Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 589,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 424,
+  "rows": 826,
+  "two_sided": 824,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1841,
+ "external_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 114,
+   "DOUBLES_UNSUPPORTED": 44,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.659,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Felix Bockelmann Evans": 1,
+   "Rachael Phelan": 1,
+   "Glauco Pinheiro da Cruz Junior": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Jaden Dewandaka Tan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 264,
+  "by_status": {
+   "MAPPED": 181,
+   "UNMAPPED_PLAYER": 81,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6856,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Pavel Skvortcov": 1,
+   "Jolino Makiesse Miguel Feijo Simao": 1,
+   "Rhys Lawlor": 1,
+   "Pablo Perez Ramos": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 126,
+ "kalshi_mapped_matches": 181,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 105,
+  "tri:INSUFFICIENT_INPUTS": 75,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
