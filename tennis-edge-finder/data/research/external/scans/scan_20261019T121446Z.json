@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-19T12:14:46.101370+00:00",
+ "run_id": "20261019T121446Z",
+ "external_parse": {
+  "events": 172,
+  "markets": 1806,
+  "skipped_family": 366,
+  "skipped_period": 561,
+  "skipped_live": 30,
+  "one_sided": 35,
+  "rows": 3054,
+  "devigged": 841
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1070,
+  "markets_mapped": 468,
+  "contracts": 1004,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261019T121446Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 468,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 156,
+  "rows": 848,
+  "two_sided": 841,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 511,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 46,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Frazier Rengifo": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Ivan Dorokhov": 1,
+   "Mateja Stanisavljevic": 1,
+   "Carl Holder": 1,
+   "Valerio Bracci": 1,
+   "Tom Zeuch": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Saheb Sodhi": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Eric Tripathi": 1,
+   "bautista de la Pena": 1,
+   "Eric Von Marton Martins": 1,
+   "Valerio Bracci": 1,
+   "Ivan Dorokhov": 1,
+   "Mateja Stanisavljevic": 1,
+   "Carl Holder": 1,
+   "Tereza Hermanova": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 15
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
