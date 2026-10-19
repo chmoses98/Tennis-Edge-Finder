@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-19T22:55:53.446306+00:00",
+ "run_id": "20261019T225553Z",
+ "external_parse": {
+  "events": 222,
+  "markets": 2334,
+  "skipped_family": 436,
+  "skipped_period": 699,
+  "skipped_live": 8,
+  "one_sided": 54,
+  "rows": 3663,
+  "devigged": 1144
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1857,
+  "markets_mapped": 641,
+  "contracts": 1360,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261019T225553Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 641,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 538,
+  "rows": 822,
+  "two_sided": 820,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 520,
+ "external_mapping": {
+  "total": 208,
+  "by_status": {
+   "MAPPED": 144,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.6923,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Khumoyun Sultanov": 1,
+   "Thomas Van Den Dooren": 1,
+   "William McEwan": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1,
+   "Samarth Sahita": 1,
+   "Arjun Rathi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 31,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7538,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Matei Victor Chelemen": 1,
+   "Conor Brady": 1,
+   "Simone Macchione": 1,
+   "Pavel Skvortcov": 1,
+   "Rhys Lawlor": 1,
+   "Pablo Perez Ramos": 1,
+   "Giovanni Ciocca": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 98,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:INSUFFICIENT_INPUTS": 43,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:MARKETS_AGREE": 1,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
