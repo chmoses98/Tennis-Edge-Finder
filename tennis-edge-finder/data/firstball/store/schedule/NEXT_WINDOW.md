@@ -1,19 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 12:12Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 12:24Z)
 
-* Earliest credible first ball: **2026-10-19 12:40Z**
-* Recommended RUN TENNIS time: **2026-10-19 11:55Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-19 12:30Z**
+* Earliest credible first ball: **2026-10-19 12:53Z**
+* Recommended RUN TENNIS time: **2026-10-19 12:08Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-19 12:43Z**
 * Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Mikhail Kukushkin vs Stefanos Sakellaridis | 2026-10-19 12:40Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
+| Mikhail Kukushkin vs Stefanos Sakellaridis | 2026-10-19 12:53Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
 | Jaime Faria vs Felix Balshaw | 2026-10-19 13:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Andrea Guerrieri vs Alex Michelsen | 2026-10-19 13:05Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
+| Andrea Guerrieri vs Alex Michelsen | 2026-10-19 13:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
 
 **16 main-tour match(es) without a verified start status** (BET blocked until checked): Clement Tabur vs Nicolai Budkov Kjaer, Kyrian Jacquet vs Michael Mmoh, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo
 
-Published slate: `SL-20261019T115647Z-95d7f828` built 2026-10-19 11:56Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261019T121140Z-f81c7cdb` built 2026-10-19 12:11Z -- current
 
 Dispatched this pass: none
 
