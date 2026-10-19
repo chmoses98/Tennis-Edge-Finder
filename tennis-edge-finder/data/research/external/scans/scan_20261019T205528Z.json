@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-19T20:55:28.113640+00:00",
+ "run_id": "20261019T205528Z",
+ "external_parse": {
+  "events": 177,
+  "markets": 1781,
+  "skipped_family": 366,
+  "skipped_period": 529,
+  "skipped_live": 15,
+  "one_sided": 45,
+  "rows": 2855,
+  "devigged": 840
+ },
+ "smarkets_fetch": {
+  "events_seen": 167,
+  "events_priced": 80,
+  "markets": 1769,
+  "markets_mapped": 592,
+  "contracts": 1250,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261019T205528Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 592,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 425,
+  "rows": 825,
+  "two_sided": 823,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 777,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 105,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6442,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Ella Brownback": 1,
+   "Lachlan Brain": 1,
+   "Bautista de la Pena": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.6964,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Bader Idrees": 1,
+   "Rhys Lawlor": 1,
+   "Pablo Perez Ramos": 1,
+   "Melvin Vix": 1,
+   "Justino Rodrigues": 1,
+   "Raffaele Ciurnelli": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 43,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
