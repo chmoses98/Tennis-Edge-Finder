@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-19T15:14:56.458288+00:00",
+ "run_id": "20261019T151456Z",
+ "external_parse": {
+  "events": 150,
+  "markets": 1587,
+  "skipped_family": 309,
+  "skipped_period": 493,
+  "skipped_live": 22,
+  "one_sided": 26,
+  "rows": 2751,
+  "devigged": 757
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1339,
+  "markets_mapped": 442,
+  "contracts": 940,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261019T151456Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 442,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 91,
+  "rows": 849,
+  "two_sided": 848,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 535,
+ "external_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 92,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6619,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Andre Souza Pinto de Camargo e Silva": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 26,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Kenta (2004) Miyoshi": 1,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.81,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Bogdan Seleznev": 1,
+   "Samuel Garcia Hernandez": 1,
+   "Mikhail Khodorchenko": 1,
+   "Arjun Rathi": 1,
+   "Saheb Sodhi": 1,
+   "Tonghan Gu": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 81,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
