@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T19:15:28.561227+00:00",
+ "run_id": "20261019T191528Z",
+ "external_parse": {
+  "events": 181,
+  "markets": 1843,
+  "skipped_family": 369,
+  "skipped_period": 547,
+  "skipped_live": 24,
+  "one_sided": 16,
+  "rows": 3138,
+  "devigged": 909
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1804,
+  "markets_mapped": 594,
+  "contracts": 1262,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261019T191528Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 594,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 436,
+  "rows": 826,
+  "two_sided": 824,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 568,
+ "external_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 108,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.6429,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Frazier Rengifo": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Leonard Tramolay": 1,
+   "Julian Messina": 1,
+   "Siddharth Bharadwaj": 1,
+   "Lachlan Brain": 1,
+   "Ella Brownback": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7132,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Giulio Stella": 1,
+   "Josh Manuel": 1,
+   "Pablo Perez Ramos": 1,
+   "Florent Lagarrigue": 1,
+   "Raffaele Ciurnelli": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 59,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
