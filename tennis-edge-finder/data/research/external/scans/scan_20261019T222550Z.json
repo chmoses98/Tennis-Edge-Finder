@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-19T22:25:50.895586+00:00",
+ "run_id": "20261019T222550Z",
+ "external_parse": {
+  "events": 218,
+  "markets": 2299,
+  "skipped_family": 422,
+  "skipped_period": 689,
+  "skipped_live": 10,
+  "one_sided": 55,
+  "rows": 3619,
+  "devigged": 1132
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1842,
+  "markets_mapped": 634,
+  "contracts": 1346,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261019T222550Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 634,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 518,
+  "rows": 828,
+  "two_sided": 827,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 807,
+ "external_mapping": {
+  "total": 204,
+  "by_status": {
+   "MAPPED": 142,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6961,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Thomas Van Den Dooren": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1,
+   "Samarth Sahita": 1,
+   "Arjun Rathi": 1,
+   "Kuan-Shou Chen": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 22
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 33
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Eric Crivei": 1,
+   "Ethan Muza": 1,
+   "Matei Victor Chelemen": 1,
+   "Giulio Stella": 1,
+   "Simone Macchione": 1,
+   "Pavel Skvortcov": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
