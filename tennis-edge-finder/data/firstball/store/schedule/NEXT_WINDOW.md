@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 02:14Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-19 02:25Z)
 
 * Earliest credible first ball: **2026-10-19 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-19 01:45Z**  (OVERDUE: run now)
@@ -7,17 +7,17 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Viktorija Golubic vs Mai Hontama | 2026-10-19 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Lilli Tagger vs Liudmila Samsonova | 2026-10-19 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Lanlana Tararudee vs Kaitlin Quevedo | 2026-10-19 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Viktorija Golubic vs Mai Hontama | 2026-10-19 02:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Lilli Tagger vs Liudmila Samsonova | 2026-10-19 02:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Lanlana Tararudee vs Kaitlin Quevedo | 2026-10-19 02:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Talia Gibson vs Harriet Dart | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Caty McNally vs Sinja Kraus | 2026-10-19 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **29 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Ugo Humbert vs Corentin Moutet, Benjamin Bonzi vs Cameron Norrie, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Terence Atmane vs Rinky Hijikata
 
-Published slate: `SL-20261019T013250Z-0b49a9b2` built 2026-10-19 01:32Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-19T02:30:00+00:00, slate built 2026-10-19T01:32:50.973306+00:00
+Published slate: `SL-20261019T021020Z-50276558` built 2026-10-19 02:10Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-19 05:30Z, run by 2026-10-19 04:45Z, 5 match(es)
 * later window 3: first ball 2026-10-19 08:00Z, run by 2026-10-19 07:15Z, 5 match(es)
