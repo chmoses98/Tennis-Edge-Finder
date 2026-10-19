@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-19T11:34:46.615281+00:00",
+ "run_id": "20261019T113446Z",
+ "external_parse": {
+  "events": 178,
+  "markets": 1854,
+  "skipped_family": 371,
+  "skipped_period": 585,
+  "skipped_live": 35,
+  "one_sided": 25,
+  "rows": 3166,
+  "devigged": 869
+ },
+ "smarkets_fetch": {
+  "events_seen": 181,
+  "events_priced": 80,
+  "markets": 1258,
+  "markets_mapped": 511,
+  "contracts": 1102,
+  "quoted_contracts": 1054,
+  "raw": "data/research/external/raw/20261019T113446Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 511,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 70,
+  "rows": 1032,
+  "two_sided": 1021,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 571,
+ "external_mapping": {
+  "total": 169,
+  "by_status": {
+   "MAPPED": 109,
+   "DOUBLES_UNSUPPORTED": 47,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.645,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Frazier Rengifo": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Florent Lagarrigue": 1,
+   "Tom Zeuch": 1,
+   "Ivan Dorokhov": 1,
+   "Mateja Stanisavljevic": 1,
+   "Carl Holder": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 14,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Frazier Rengifo": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 99,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8462,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Tonghan Gu": 1,
+   "Archie Stewart": 1,
+   "bautista de la Pena": 1,
+   "Eric Von Marton Martins": 1,
+   "Tom Zeuch": 1,
+   "Valerio Bracci": 1,
+   "Johan Mapuard": 1,
+   "Ivan Dorokhov": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 99,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
