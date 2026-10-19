@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-19T23:16:00.073001+00:00",
+ "run_id": "20261019T231600Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 2405,
+  "skipped_family": 433,
+  "skipped_period": 714,
+  "skipped_live": 14,
+  "one_sided": 54,
+  "rows": 3775,
+  "devigged": 1203
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1937,
+  "markets_mapped": 680,
+  "contracts": 1440,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261019T231600Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 680,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 603,
+  "rows": 837,
+  "two_sided": 834,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 608,
+ "external_mapping": {
+  "total": 226,
+  "by_status": {
+   "MAPPED": 155,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.6858,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Khumoyun Sultanov": 1,
+   "Thomas Van Den Dooren": 1,
+   "William McEwan": 1,
+   "Eric Tripathi": 1,
+   "Harrison Satara": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6387,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Connor Plunkett": 1,
+   "Nathan Gold": 1,
+   "Matei Victor Chelemen": 1,
+   "Conor Brady": 1,
+   "Pavel Skvortcov": 1,
+   "Rhys Lawlor": 1,
+   "Pablo Perez Ramos": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 157,
+ "kalshi_mapped_matches": 76,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 53,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "SHADOW_BET": 2,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
