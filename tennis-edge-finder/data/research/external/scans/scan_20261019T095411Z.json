@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-19T09:54:11.552111+00:00",
+ "run_id": "20261019T095411Z",
+ "external_parse": {
+  "events": 187,
+  "markets": 2027,
+  "skipped_family": 412,
+  "skipped_period": 634,
+  "skipped_live": 28,
+  "one_sided": 20,
+  "rows": 3431,
+  "devigged": 957
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1137,
+  "markets_mapped": 451,
+  "contracts": 982,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261019T095411Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 451,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 118,
+  "rows": 864,
+  "two_sided": 860,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 858,
+ "external_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 115,
+   "DOUBLES_UNSUPPORTED": 50,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.6497,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Frazier Rengifo": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Alex Hernandez": 1,
+   "Michael Wright": 1,
+   "Davide Ciaschetti": 1,
+   "Valerio Bracci": 1,
+   "Jake Fellows": 1,
+   "Younes Jenkins": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.791,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Frazier Rengifo": 1,
+   "Kanta Watanabe": 1,
+   "Archie Stewart": 1,
+   "Valerio Bracci": 1,
+   "Johan Mapuard": 1,
+   "Ivan Dorokhov": 1,
+   "Mateja Stanisavljevic": 1,
+   "Carl Holder": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 123,
+ "kalshi_mapped_matches": 106,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 83,
+  "tri:MODEL_LONE_OUTLIER": 57,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
