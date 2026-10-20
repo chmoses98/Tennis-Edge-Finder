@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-20T06:57:43.469568+00:00",
+ "run_id": "20261020T065743Z",
+ "external_parse": {
+  "events": 300,
+  "markets": 2736,
+  "skipped_family": 482,
+  "skipped_period": 786,
+  "skipped_live": 24,
+  "one_sided": 73,
+  "rows": 3933,
+  "devigged": 1394
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1581,
+  "markets_mapped": 627,
+  "contracts": 1372,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261020T065743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 627,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 542,
+  "rows": 830,
+  "two_sided": 826,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 784,
+ "external_mapping": {
+  "total": 289,
+  "by_status": {
+   "MAPPED": 191,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 51,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6609,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Igor Marcondes": 1,
+   "Arjun Rathi": 1,
+   "Samarth Sahita": 1,
+   "Kuan-Shou Chen": 1,
+   "Adam Soukup": 1,
+   "Theofanis Kontopoulos": 1,
+   "Snir Morag": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 109,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.7569,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Diogo Coelho": 1,
+   "Vaclav Schneider": 1,
+   "Giovanni Ciocca": 1,
+   "Alessandro Maina": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 109,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
