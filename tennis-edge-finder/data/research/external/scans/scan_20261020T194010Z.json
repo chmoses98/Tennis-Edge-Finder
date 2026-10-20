@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-20T19:40:10.779864+00:00",
+ "run_id": "20261020T194010Z",
+ "external_parse": {
+  "events": 194,
+  "markets": 1689,
+  "skipped_family": 271,
+  "skipped_period": 494,
+  "skipped_live": 26,
+  "one_sided": 31,
+  "rows": 2787,
+  "devigged": 893
+ },
+ "smarkets_fetch": {
+  "events_seen": 121,
+  "events_priced": 80,
+  "markets": 1118,
+  "markets_mapped": 436,
+  "contracts": 932,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261020T194010Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 165,
+  "rows": 767,
+  "two_sided": 754,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 521,
+ "external_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 117,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6429,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "William McEwan": 1,
+   "Lachlan Brain": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 38
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8309,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Tim Hammes": 1,
+   "Raul Clarijs": 1,
+   "Gilberto Ravasio": 1,
+   "Vaclav Schneider": 1,
+   "Marat Salbiev": 1
+  }
+ },
+ "matched_both_venues": 42,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 113,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 49,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
