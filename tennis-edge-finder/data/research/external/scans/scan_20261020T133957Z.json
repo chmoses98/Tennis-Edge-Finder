@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T13:39:57.693145+00:00",
+ "run_id": "20261020T133957Z",
+ "external_parse": {
+  "events": 202,
+  "markets": 1646,
+  "skipped_family": 302,
+  "skipped_period": 486,
+  "skipped_live": 56,
+  "one_sided": 73,
+  "rows": 2606,
+  "devigged": 784
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 1078,
+  "markets_mapped": 491,
+  "contracts": 1076,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261020T133957Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 491,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 242,
+  "rows": 834,
+  "two_sided": 833,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 700,
+ "external_mapping": {
+  "total": 193,
+  "by_status": {
+   "MAPPED": 132,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.6839,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Richard Lacis": 1,
+   "Rhys Lawlor": 1,
+   "Conor Brady": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8092,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Sasikumar Mukund": 1,
+   "Shotaro Yamamoto": 1,
+   "Ruochen Gao": 1,
+   "Benjamin O'Connell": 1,
+   "Mustafa Ege Sik": 1,
+   "Connor Plunkett": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Eric Crivei": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 141,
+ "kalshi_mapped_matches": 123,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 43,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 42
+ }
+}
