@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 20:33Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 20:44Z)
 
 * Earliest credible first ball: **2026-10-21 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-21 01:45Z**
@@ -11,9 +11,9 @@
 | Lanlana Tararudee vs Ashlyn Krueger | 2026-10-21 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Tereza Valentova vs Lilli Tagger | 2026-10-21 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**15 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Fabian Marozsan, Daniil Medvedev vs Sho Shimabukuro, Stan Wawrinka vs Martin Landaluce, Hamad Medjedovic vs Brandon Nakashima, Dino Prizmic vs Damir Dzumhur, Mattia Bellucci vs Tomas Martin Etcheverry, Zangar Nurlanuly vs Tomas Machac, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini, Elena Rybakina vs Polina Kudermetova, Ann Li vs Zeynep Sonmez, Antonia Ruzic vs Kayla Day
+**14 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Fabian Marozsan, Daniil Medvedev vs Sho Shimabukuro, Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Mattia Bellucci vs Tomas Martin Etcheverry, Zangar Nurlanuly vs Tomas Machac, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini, Elena Rybakina vs Polina Kudermetova, Ann Li vs Zeynep Sonmez, Antonia Ruzic vs Kayla Day, Mary Stoiana vs Moyuka Uchijima
 
-Published slate: `SL-20261020T200437Z-441fc209` built 2026-10-20 20:04Z -- current
+Published slate: `SL-20261020T202446Z-674cf1f8` built 2026-10-20 20:24Z -- current
 
 Dispatched this pass: none
 
