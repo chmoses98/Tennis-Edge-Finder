@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-20T04:37:52.563969+00:00",
+ "run_id": "20261020T043752Z",
+ "external_parse": {
+  "events": 296,
+  "markets": 2865,
+  "skipped_family": 503,
+  "skipped_period": 834,
+  "skipped_live": 20,
+  "one_sided": 93,
+  "rows": 4169,
+  "devigged": 1434
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1918,
+  "markets_mapped": 706,
+  "contracts": 1532,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261020T043752Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 706,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 666,
+  "rows": 866,
+  "two_sided": 862,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 647,
+ "external_mapping": {
+  "total": 283,
+  "by_status": {
+   "MAPPED": 193,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.682,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1,
+   "Kosuke Nakanishi": 1,
+   "Tonghan Gu": 1,
+   "Zheng Nan Huang": 1,
+   "Kuan-Shou Chen": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1,
+   "Samarth Sahita": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 138,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 37
+  },
+  "mapped_rate": 0.7319,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Connor Plunkett": 1,
+   "Eric Crivei": 1,
+   "Pavel Skvortcov": 1,
+   "Goncalo Da Rosa Castro": 1,
+   "Enrique Carrascosa Diaz": 1,
+   "Timo Rosenkranz Koenig": 1,
+   "Snir Morag": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 197,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 83,
+  "tri:INSUFFICIENT_INPUTS": 52,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
