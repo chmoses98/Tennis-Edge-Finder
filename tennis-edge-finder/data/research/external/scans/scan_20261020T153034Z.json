@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-20T15:30:34.409242+00:00",
+ "run_id": "20261020T153034Z",
+ "external_parse": {
+  "events": 176,
+  "markets": 1476,
+  "skipped_family": 257,
+  "skipped_period": 455,
+  "skipped_live": 49,
+  "one_sided": 25,
+  "rows": 2458,
+  "devigged": 738
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 1004,
+  "markets_mapped": 459,
+  "contracts": 1000,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261020T153034Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 459,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 159,
+  "rows": 841,
+  "two_sided": 835,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 602,
+ "external_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 113,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.6807,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Josh Manuel": 1,
+   "Romeo Spinolo": 1,
+   "Leonardo Iemmi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8203,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Dominik Guzmicky": 1,
+   "Haolong He": 1,
+   "Yue Xia": 1,
+   "TAKUMI KATSUDA": 1,
+   "Connor Plunkett": 1,
+   "Nathan Gold": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 105,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 66,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
