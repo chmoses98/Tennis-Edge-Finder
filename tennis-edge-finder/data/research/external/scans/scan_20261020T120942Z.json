@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T12:09:42.145698+00:00",
+ "run_id": "20261020T120942Z",
+ "external_parse": {
+  "events": 223,
+  "markets": 1876,
+  "skipped_family": 330,
+  "skipped_period": 546,
+  "skipped_live": 51,
+  "one_sided": 76,
+  "rows": 2900,
+  "devigged": 923
+ },
+ "smarkets_fetch": {
+  "events_seen": 133,
+  "events_priced": 80,
+  "markets": 1111,
+  "markets_mapped": 500,
+  "contracts": 1092,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261020T120942Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 500,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 233,
+  "rows": 859,
+  "two_sided": 858,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 801,
+ "external_mapping": {
+  "total": 214,
+  "by_status": {
+   "MAPPED": 144,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.6729,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Michael Wright": 1,
+   "Giulio Stella": 1,
+   "Leonardo Iemmi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 190,
+  "by_status": {
+   "MAPPED": 139,
+   "UNMAPPED_PLAYER": 51
+  },
+  "mapped_rate": 0.7316,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Wenze Li": 1,
+   "Shotaro Yamamoto": 1,
+   "Shao Zhang": 1,
+   "Lin Hao-Yu": 1,
+   "Eric Tripathi": 1,
+   "Yue Xia": 1,
+   "Shijie Chen": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 153,
+ "kalshi_mapped_matches": 139,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 75,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
