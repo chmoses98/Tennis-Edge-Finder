@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 18:12Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 18:22Z)
 
 * Earliest credible first ball: **2026-10-20 19:30Z**
 * Recommended RUN TENNIS time: **2026-10-20 18:45Z**
@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Hamad Medjedovic vs Brandon Nakashima | 2026-10-20 19:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**16 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Fabian Marozsan, Daniil Medvedev vs Sho Shimabukuro, Matteo Berrettini vs Kyrian Jacquet, Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Mattia Bellucci vs Tomas Martin Etcheverry, Zangar Nurlanuly vs Tomas Machac, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini, Elena Rybakina vs Polina Kudermetova, Ann Li vs Zeynep Sonmez
+**15 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Fabian Marozsan, Daniil Medvedev vs Sho Shimabukuro, Matteo Berrettini vs Kyrian Jacquet, Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Mattia Bellucci vs Tomas Martin Etcheverry, Zangar Nurlanuly vs Tomas Machac, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini, Elena Rybakina vs Polina Kudermetova, Ann Li vs Zeynep Sonmez, Antonia Ruzic vs Kayla Day
 
 Published slate: `SL-20261020T175601Z-c1d387d7` built 2026-10-20 17:56Z -- current
 
