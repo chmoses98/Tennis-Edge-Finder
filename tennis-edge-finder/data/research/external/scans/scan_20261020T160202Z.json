@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T16:02:02.732595+00:00",
+ "run_id": "20261020T160202Z",
+ "external_parse": {
+  "events": 159,
+  "markets": 1300,
+  "skipped_family": 218,
+  "skipped_period": 403,
+  "skipped_live": 40,
+  "one_sided": 31,
+  "rows": 2169,
+  "devigged": 648
+ },
+ "smarkets_fetch": {
+  "events_seen": 128,
+  "events_priced": 80,
+  "markets": 1174,
+  "markets_mapped": 447,
+  "contracts": 976,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261020T160202Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 447,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 141,
+  "rows": 835,
+  "two_sided": 830,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1722,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 98,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.6622,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Luciano Larosa": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Leonardo Iemmi": 1,
+   "Jou-George Gnjidic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 30,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 238,
+  "by_status": {
+   "MAPPED": 192,
+   "UNMAPPED_PLAYER": 44,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8067,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Odysseas Geladaris": 1,
+   "Dominik Guzmicky": 1,
+   "Lleyton Richards": 1,
+   "Eric Jr Olivarez": 1,
+   "Digvijay Pratap Singh": 1,
+   "Marko Retelj": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 192,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 77,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
