@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-20T19:20:20.487329+00:00",
+ "run_id": "20261020T192020Z",
+ "external_parse": {
+  "events": 181,
+  "markets": 1475,
+  "skipped_family": 250,
+  "skipped_period": 429,
+  "skipped_live": 32,
+  "one_sided": 31,
+  "rows": 2426,
+  "devigged": 765
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1130,
+  "markets_mapped": 438,
+  "contracts": 938,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261020T192020Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 438,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 159,
+  "rows": 779,
+  "two_sided": 766,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 528,
+ "external_mapping": {
+  "total": 169,
+  "by_status": {
+   "MAPPED": 106,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.6272,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Anastasiia Kostiushkina": 1,
+   "William McEwan": 1,
+   "Pol Masafret Hernandez": 1,
+   "Lachlan Brain": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 37
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Kenta (2004) Miyoshi": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7984,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jake Evans": 1,
+   "Rihards Neimanis": 1,
+   "Matteo Gribaldo": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Tim Hammes": 1,
+   "Henry Best": 1,
+   "Marat Salbiev": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 15
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
