@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-20T08:57:43.878786+00:00",
+ "run_id": "20261020T085743Z",
+ "external_parse": {
+  "events": 309,
+  "markets": 2534,
+  "skipped_family": 449,
+  "skipped_period": 721,
+  "skipped_live": 52,
+  "one_sided": 62,
+  "rows": 3710,
+  "devigged": 1300
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1389,
+  "markets_mapped": 595,
+  "contracts": 1294,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20261020T085743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 595,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 416,
+  "rows": 878,
+  "two_sided": 874,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 842,
+ "external_mapping": {
+  "total": 298,
+  "by_status": {
+   "MAPPED": 201,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 53
+  },
+  "mapped_rate": 0.6745,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "David Tixhon": 1,
+   "Timo Rosenkranz Koenig": 1,
+   "Richard Lacis": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 144,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7701,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Ethan Muza": 1,
+   "Leonardo Iemmi": 1,
+   "Josh Manuel": 1,
+   "Pavel Skvortcov": 1,
+   "Jolino Makiesse Miguel Feijo Simao": 1,
+   "Rhys Lawlor": 1
+  }
+ },
+ "matched_both_venues": 100,
+ "external_mapped_matches": 205,
+ "kalshi_mapped_matches": 144,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 111,
+  "tri:MODEL_LONE_OUTLIER": 54,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 42
+ }
+}
