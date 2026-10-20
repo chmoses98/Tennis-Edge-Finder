@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-20T17:50:20.772211+00:00",
+ "run_id": "20261020T175020Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1218,
+  "skipped_family": 201,
+  "skipped_period": 374,
+  "skipped_live": 25,
+  "one_sided": 27,
+  "rows": 2023,
+  "devigged": 616
+ },
+ "smarkets_fetch": {
+  "events_seen": 123,
+  "events_priced": 80,
+  "markets": 1171,
+  "markets_mapped": 450,
+  "contracts": 972,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261020T175020Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 450,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 161,
+  "rows": 811,
+  "two_sided": 808,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 558,
+ "external_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 87,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6744,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Nathan Gold": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 32
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7559,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Raul Clarijs": 1,
+   "Diogo Coelho": 1,
+   "Gilberto Ravasio": 1,
+   "Noah Boutleux": 1,
+   "Aaron Gabet": 1,
+   "Marat Salbiev": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
