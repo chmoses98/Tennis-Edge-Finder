@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-20T04:48:56.102004+00:00",
+ "run_id": "20261020T044856Z",
+ "external_parse": {
+  "events": 296,
+  "markets": 2865,
+  "skipped_family": 503,
+  "skipped_period": 834,
+  "skipped_live": 20,
+  "one_sided": 93,
+  "rows": 4169,
+  "devigged": 1434
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1782,
+  "markets_mapped": 687,
+  "contracts": 1492,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261020T044856Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 687,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 628,
+  "rows": 864,
+  "two_sided": 860,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 2121,
+ "external_mapping": {
+  "total": 283,
+  "by_status": {
+   "MAPPED": 193,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.682,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1,
+   "Kosuke Nakanishi": 1,
+   "Tonghan Gu": 1,
+   "Zheng Nan Huang": 1,
+   "Kuan-Shou Chen": 1,
+   "Aditya Vardhan Duddupudi": 1,
+   "Saheb Sodhi": 1,
+   "Samarth Sahita": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 352,
+  "by_status": {
+   "MAPPED": 254,
+   "UNMAPPED_PLAYER": 97,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7216,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Connor Plunkett": 1,
+   "Nathan Gold": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Eric Crivei": 1,
+   "Ethan Muza": 1
+  }
+ },
+ "matched_both_venues": 148,
+ "external_mapped_matches": 197,
+ "kalshi_mapped_matches": 254,
+ "model_witness_available": true,
+ "rows": 266,
+ "counts": {
+  "PASS": 265,
+  "tri:INSUFFICIENT_INPUTS": 217,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
