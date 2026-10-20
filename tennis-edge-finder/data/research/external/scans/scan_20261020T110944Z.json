@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T11:09:44.661491+00:00",
+ "run_id": "20261020T110944Z",
+ "external_parse": {
+  "events": 244,
+  "markets": 1888,
+  "skipped_family": 318,
+  "skipped_period": 576,
+  "skipped_live": 65,
+  "one_sided": 74,
+  "rows": 2840,
+  "devigged": 919
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1292,
+  "markets_mapped": 587,
+  "contracts": 1272,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261020T110944Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 587,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 414,
+  "rows": 858,
+  "two_sided": 858,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 788,
+ "external_mapping": {
+  "total": 235,
+  "by_status": {
+   "MAPPED": 148,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 47
+  },
+  "mapped_rate": 0.6298,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Michael Wright": 1,
+   "Matteo Gribaldo": 1,
+   "Raffaele Ciurnelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 50,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7228,
+  "top_refusal_subjects": {
+   "Shao Zhang": 1,
+   "Ruochen Gao": 1,
+   "Lin Hao-Yu": 1,
+   "Benjamin O'Connell": 1,
+   "Eric Tripathi": 1,
+   "Shijie Chen": 1,
+   "Toshiki Karigyo": 1,
+   "TAKUMI KATSUDA": 1,
+   "Harrison Satara": 1,
+   "Connor Plunkett": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 161,
+ "kalshi_mapped_matches": 133,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 64,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 48
+ }
+}
