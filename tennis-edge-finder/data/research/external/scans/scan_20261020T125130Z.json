@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-20T12:51:30.300599+00:00",
+ "run_id": "20261020T125130Z",
+ "external_parse": {
+  "events": 217,
+  "markets": 1754,
+  "skipped_family": 310,
+  "skipped_period": 516,
+  "skipped_live": 56,
+  "one_sided": 93,
+  "rows": 2704,
+  "devigged": 834
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 1097,
+  "markets_mapped": 500,
+  "contracts": 1096,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261020T125130Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 500,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 243,
+  "rows": 853,
+  "two_sided": 852,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1924,
+ "external_mapping": {
+  "total": 208,
+  "by_status": {
+   "MAPPED": 145,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.6971,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Giulio Stella": 1,
+   "Simone Macchione": 1,
+   "Leonardo Iemmi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 25,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 288,
+  "by_status": {
+   "MAPPED": 223,
+   "UNMAPPED_PLAYER": 64,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7743,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Digvijay Pratap Singh": 1,
+   "Marko Retelj": 1,
+   "Wenze Li": 1,
+   "Haolong He": 1,
+   "Arnav Paparkar": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 113,
+ "external_mapped_matches": 153,
+ "kalshi_mapped_matches": 223,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 108,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 48
+ }
+}
