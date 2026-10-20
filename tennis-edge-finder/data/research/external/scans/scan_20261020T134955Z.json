@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T13:49:55.103501+00:00",
+ "run_id": "20261020T134955Z",
+ "external_parse": {
+  "events": 200,
+  "markets": 1657,
+  "skipped_family": 300,
+  "skipped_period": 496,
+  "skipped_live": 54,
+  "one_sided": 67,
+  "rows": 2642,
+  "devigged": 793
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 1061,
+  "markets_mapped": 484,
+  "contracts": 1060,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261020T134955Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 484,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 206,
+  "rows": 854,
+  "two_sided": 852,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 673,
+ "external_mapping": {
+  "total": 191,
+  "by_status": {
+   "MAPPED": 129,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.6754,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Richard Lacis": 1,
+   "Rhys Lawlor": 1,
+   "Conor Brady": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7905,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Eric Jr Olivarez": 1,
+   "Marko Retelj": 1,
+   "Wenze Li": 1,
+   "Sasikumar Mukund": 1,
+   "Shotaro Yamamoto": 1,
+   "Shao Zhang": 1,
+   "Ruochen Gao": 1,
+   "Yue Xia": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 138,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 39,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
