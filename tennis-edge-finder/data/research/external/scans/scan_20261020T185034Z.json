@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-20T18:50:34.443621+00:00",
+ "run_id": "20261020T185034Z",
+ "external_parse": {
+  "events": 182,
+  "markets": 1484,
+  "skipped_family": 248,
+  "skipped_period": 434,
+  "skipped_live": 33,
+  "one_sided": 28,
+  "rows": 2463,
+  "devigged": 774
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1140,
+  "markets_mapped": 440,
+  "contracts": 944,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261020T185034Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 440,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 150,
+  "rows": 794,
+  "two_sided": 789,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 723,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 107,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.6294,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Anastasiia Kostiushkina": 1,
+   "William McEwan": 1,
+   "Pol Masafret Hernandez": 1,
+   "Lachlan Brain": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 120,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.8108,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Rihards Neimanis": 1,
+   "Matteo Gribaldo": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Tim Hammes": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 120,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
