@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T14:01:41.846748+00:00",
+ "run_id": "20261020T140141Z",
+ "external_parse": {
+  "events": 196,
+  "markets": 1669,
+  "skipped_family": 300,
+  "skipped_period": 511,
+  "skipped_live": 52,
+  "one_sided": 49,
+  "rows": 2714,
+  "devigged": 808
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 1054,
+  "markets_mapped": 463,
+  "contracts": 1016,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261020T140141Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 463,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 159,
+  "rows": 857,
+  "two_sided": 853,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1804,
+ "external_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 128,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.6845,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Richard Lacis": 1,
+   "Rhys Lawlor": 1,
+   "Conor Brady": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 211,
+   "UNMAPPED_PLAYER": 57,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7815,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Eric Jr Olivarez": 1,
+   "Digvijay Pratap Singh": 1,
+   "Marko Retelj": 1,
+   "Wenze Li": 1,
+   "Haolong He": 1,
+   "Arnav Paparkar": 1
+  }
+ },
+ "matched_both_venues": 99,
+ "external_mapped_matches": 137,
+ "kalshi_mapped_matches": 211,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 95,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:INSUFFICIENT_INPUTS": 37,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
