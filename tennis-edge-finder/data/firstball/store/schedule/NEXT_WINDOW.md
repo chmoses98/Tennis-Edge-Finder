@@ -1,22 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 12:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 13:01Z)
 
-* Earliest credible first ball: **2026-10-20 13:00Z**
-* Recommended RUN TENNIS time: **2026-10-20 12:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-20 12:50Z**
-* Matches in window: 4
+* Earliest credible first ball: **2026-10-20 13:30Z**
+* Recommended RUN TENNIS time: **2026-10-20 12:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-20 13:20Z**
+* Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Daniel Altmaier vs Titouan Droguet | 2026-10-20 13:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Rei Sakamoto vs Karen Khachanov | 2026-10-20 13:18Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
 | Benjamin Bonzi vs Cameron Norrie | 2026-10-20 13:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Luca Van Assche vs Clement Tabur | 2026-10-20 14:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**18 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola, Stan Wawrinka vs Martin Landaluce, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Tallon Griekspoor vs Max Schoenhaus, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini
+**20 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola, Rei Sakamoto vs Karen Khachanov, Stan Wawrinka vs Martin Landaluce, Daniel Altmaier vs Titouan Droguet, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Tallon Griekspoor vs Max Schoenhaus, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac
 
-Published slate: `SL-20261020T122439Z-8bdd73c9` built 2026-10-20 12:24Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261020T122439Z-8bdd73c9` built 2026-10-20 12:24Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-20T13:30:00+00:00, slate built 2026-10-20T12:24:39.942866+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_primary (ok)
 
 * later window 2: first ball 2026-10-20 17:00Z, run by 2026-10-20 16:15Z, 3 match(es)
 * later window 3: first ball 2026-10-21 02:30Z, run by 2026-10-21 01:45Z, 3 match(es)
