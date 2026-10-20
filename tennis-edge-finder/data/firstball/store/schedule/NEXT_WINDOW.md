@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 03:15Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 03:25Z)
 
-* Earliest credible first ball: **2026-10-20 03:46Z**
-* Recommended RUN TENNIS time: **2026-10-20 03:01Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-20 03:36Z**
+* Earliest credible first ball: **2026-10-20 03:56Z**
+* Recommended RUN TENNIS time: **2026-10-20 03:11Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-20 03:46Z**
 * Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Paula Badosa vs Antonia Ruzic | 2026-10-20 03:46Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 1 in progress (set 1 of best-of-3) | MEDIUM |
-| Oleksandra Oliynykova vs Mary Stoiana | 2026-10-20 03:46Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
+| Paula Badosa vs Antonia Ruzic | 2026-10-20 03:56Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 1 in progress (set 1 of best-of-3) | MEDIUM |
+| Oleksandra Oliynykova vs Mary Stoiana | 2026-10-20 03:56Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
 | Yulia Putintseva vs Diana Shnaider | 2026-10-20 05:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Sara Bejlek vs Alycia Parks | 2026-10-20 05:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **12 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola, Stan Wawrinka vs Martin Landaluce, Jan-Lennard Struff vs Marcos Giron, Dino Prizmic vs Damir Dzumhur, Toby Samuel vs Zizou Bergs, Jacob Fearnley vs Hugo Gaston, Mariano Navone vs Juan Manuel Cerundolo, Tallon Griekspoor vs Max Schoenhaus, Mattia Bellucci vs Tomas Martin Etcheverry, Fabian Marozsan vs Timofey Skatov, Zangar Nurlanuly vs Tomas Machac, Moyuka Uchijima vs Ena Shibahara
 
-Published slate: `SL-20261020T025855Z-ce08ea47` built 2026-10-20 02:58Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-20T03:46:59.002233+00:00, slate built 2026-10-20T02:58:55.679691+00:00
+Published slate: `SL-20261020T031048Z-a33a2199` built 2026-10-20 03:10Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-20T03:56:35.666342+00:00, slate built 2026-10-20T03:10:48.428999+00:00
 
 Dispatched this pass: none
 
