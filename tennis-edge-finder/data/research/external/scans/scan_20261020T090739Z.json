@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-20T09:07:39.678689+00:00",
+ "run_id": "20261020T090739Z",
+ "external_parse": {
+  "events": 309,
+  "markets": 2534,
+  "skipped_family": 449,
+  "skipped_period": 721,
+  "skipped_live": 52,
+  "one_sided": 62,
+  "rows": 3710,
+  "devigged": 1300
+ },
+ "smarkets_fetch": {
+  "events_seen": 149,
+  "events_priced": 80,
+  "markets": 1437,
+  "markets_mapped": 622,
+  "contracts": 1352,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261020T090739Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 622,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 493,
+  "rows": 859,
+  "two_sided": 856,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1032,
+ "external_mapping": {
+  "total": 298,
+  "by_status": {
+   "MAPPED": 201,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 53
+  },
+  "mapped_rate": 0.6745,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "David Tixhon": 1,
+   "Timo Rosenkranz Koenig": 1,
+   "Richard Lacis": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 267,
+  "by_status": {
+   "MAPPED": 206,
+   "UNMAPPED_PLAYER": 60,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7715,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Nathan Gold": 1,
+   "Denis Klok": 1,
+   "Ethan Muza": 1,
+   "Matei Victor Chelemen": 1,
+   "Jake Evans": 1,
+   "Leonardo Iemmi": 1,
+   "Jared Horwood": 1
+  }
+ },
+ "matched_both_venues": 136,
+ "external_mapped_matches": 207,
+ "kalshi_mapped_matches": 206,
+ "model_witness_available": true,
+ "rows": 180,
+ "counts": {
+  "PASS": 177,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:INSUFFICIENT_INPUTS": 115,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 43
+ }
+}
