@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-20T20:40:17.467539+00:00",
+ "run_id": "20261020T204017Z",
+ "external_parse": {
+  "events": 183,
+  "markets": 1622,
+  "skipped_family": 263,
+  "skipped_period": 476,
+  "skipped_live": 23,
+  "one_sided": 19,
+  "rows": 2697,
+  "devigged": 864
+ },
+ "smarkets_fetch": {
+  "events_seen": 124,
+  "events_priced": 80,
+  "markets": 1069,
+  "markets_mapped": 416,
+  "contracts": 886,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261020T204017Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 416,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 70,
+  "rows": 816,
+  "two_sided": 810,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 477,
+ "external_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 107,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.6257,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "William McEwan": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Mayra Gisone": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 40
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8073,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Matteo Gribaldo": 1,
+   "Raul Clarijs": 1,
+   "Aaron Gabet": 1,
+   "Dominik Guzmicky": 1,
+   "Ruochen Gao": 1,
+   "Oscar Brown": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 16
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
