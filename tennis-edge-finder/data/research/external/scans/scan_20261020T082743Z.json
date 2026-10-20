@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-20T08:27:43.717362+00:00",
+ "run_id": "20261020T082743Z",
+ "external_parse": {
+  "events": 307,
+  "markets": 2511,
+  "skipped_family": 400,
+  "skipped_period": 729,
+  "skipped_live": 43,
+  "one_sided": 68,
+  "rows": 3689,
+  "devigged": 1313
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1361,
+  "markets_mapped": 574,
+  "contracts": 1256,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261020T082743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 574,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 387,
+  "rows": 869,
+  "two_sided": 868,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 679,
+ "external_mapping": {
+  "total": 296,
+  "by_status": {
+   "MAPPED": 198,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 54
+  },
+  "mapped_rate": 0.6689,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Samarth Sahita": 1,
+   "Adam Soukup": 1,
+   "Theofanis Kontopoulos": 1,
+   "Parv Patel": 1,
+   "Mikhail Khodorchenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7647,
+  "top_refusal_subjects": {
+   "Oscar Brown": 1,
+   "TAKUMI KATSUDA": 1,
+   "Nick Beamish": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1,
+   "Conor Brady": 1,
+   "Simone Macchione": 1,
+   "Jolino Makiesse Miguel Feijo Simao": 1,
+   "Diogo Coelho": 1,
+   "Goncalo Da Rosa Castro": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 201,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 94,
+  "tri:INSUFFICIENT_INPUTS": 53,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
