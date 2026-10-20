@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-20T17:40:18.218197+00:00",
+ "run_id": "20261020T174018Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1239,
+  "skipped_family": 211,
+  "skipped_period": 379,
+  "skipped_live": 25,
+  "one_sided": 27,
+  "rows": 2047,
+  "devigged": 622
+ },
+ "smarkets_fetch": {
+  "events_seen": 126,
+  "events_priced": 80,
+  "markets": 1243,
+  "markets_mapped": 469,
+  "contracts": 1014,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261020T174018Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 469,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 201,
+  "rows": 813,
+  "two_sided": 809,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 603,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 86,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.6615,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Luciano Larosa": 1,
+   "Julian Messina": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Nathan Gold": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8361,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Vaclav Schneider": 1,
+   "Noah Boutleux": 1,
+   "Aaron Gabet": 1,
+   "Marat Salbiev": 1,
+   "Odysseas Geladaris": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 102,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 37,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
