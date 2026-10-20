@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T14:19:56.007937+00:00",
+ "run_id": "20261020T141956Z",
+ "external_parse": {
+  "events": 193,
+  "markets": 1570,
+  "skipped_family": 281,
+  "skipped_period": 492,
+  "skipped_live": 58,
+  "one_sided": 42,
+  "rows": 2562,
+  "devigged": 754
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 1010,
+  "markets_mapped": 455,
+  "contracts": 998,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261020T141956Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 455,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 133,
+  "rows": 865,
+  "two_sided": 864,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 785,
+ "external_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 125,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.6793,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Richard Lacis": 1,
+   "Rhys Lawlor": 1,
+   "Conor Brady": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 149,
+  "by_status": {
+   "MAPPED": 115,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7718,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Eric Jr Olivarez": 1,
+   "Marko Retelj": 1,
+   "Wenze Li": 1,
+   "Haolong He": 1,
+   "Shotaro Yamamoto": 1,
+   "Shao Zhang": 1,
+   "Ruochen Gao": 1,
+   "Benjamin O'Connell": 1
+  }
+ },
+ "matched_both_venues": 66,
+ "external_mapped_matches": 134,
+ "kalshi_mapped_matches": 115,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 45,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
