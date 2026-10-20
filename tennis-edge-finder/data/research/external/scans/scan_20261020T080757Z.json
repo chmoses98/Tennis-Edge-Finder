@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T08:07:57.907737+00:00",
+ "run_id": "20261020T080757Z",
+ "external_parse": {
+  "events": 317,
+  "markets": 2714,
+  "skipped_family": 484,
+  "skipped_period": 772,
+  "skipped_live": 38,
+  "one_sided": 67,
+  "rows": 3899,
+  "devigged": 1390
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1418,
+  "markets_mapped": 585,
+  "contracts": 1282,
+  "quoted_contracts": 896,
+  "raw": "data/research/external/raw/20261020T080757Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 585,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 422,
+  "rows": 860,
+  "two_sided": 858,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 828,
+ "external_mapping": {
+  "total": 306,
+  "by_status": {
+   "MAPPED": 202,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 56,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6601,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Arjun Rathi": 1,
+   "Samarth Sahita": 1,
+   "Adam Soukup": 1,
+   "Theofanis Kontopoulos": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 178,
+  "by_status": {
+   "MAPPED": 131,
+   "UNMAPPED_PLAYER": 46,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.736,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Harrison Satara": 1,
+   "Bruno Rodrigues": 1,
+   "Eric Crivei": 1,
+   "Ethan Muza": 1,
+   "Conor Brady": 1,
+   "Richard Lacis": 1,
+   "Jolino Makiesse Miguel Feijo Simao": 1
+  }
+ },
+ "matched_both_venues": 91,
+ "external_mapped_matches": 205,
+ "kalshi_mapped_matches": 131,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 108,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
