@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-20T02:06:01.269063+00:00",
+ "run_id": "20261020T020601Z",
+ "external_parse": {
+  "events": 296,
+  "markets": 2841,
+  "skipped_family": 515,
+  "skipped_period": 840,
+  "skipped_live": 25,
+  "one_sided": 91,
+  "rows": 4164,
+  "devigged": 1393
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 2062,
+  "markets_mapped": 720,
+  "contracts": 1550,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261020T020601Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 720,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 711,
+  "rows": 839,
+  "two_sided": 836,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 712,
+ "external_mapping": {
+  "total": 282,
+  "by_status": {
+   "MAPPED": 187,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 47,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6631,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1,
+   "David Knesl": 1,
+   "Kosuke Nakanishi": 1,
+   "Adam Chodur": 1,
+   "Luca Ostovany": 1,
+   "Archie Stewart": 1,
+   "Adrian Correa": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 43,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7267,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Giulio Stella": 1,
+   "Pavel Skvortcov": 1,
+   "Justino Rodrigues": 1,
+   "Raffaele Ciurnelli": 1,
+   "Tom Zeuch": 1,
+   "Hudson Baxter": 1,
+   "Tim Vaisman": 1,
+   "William Nolan": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 189,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 64,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
