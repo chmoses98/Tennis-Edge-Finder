@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T17:01:50.070066+00:00",
+ "run_id": "20261020T170150Z",
+ "external_parse": {
+  "events": 146,
+  "markets": 1260,
+  "skipped_family": 219,
+  "skipped_period": 386,
+  "skipped_live": 31,
+  "one_sided": 31,
+  "rows": 2093,
+  "devigged": 624
+ },
+ "smarkets_fetch": {
+  "events_seen": 125,
+  "events_priced": 80,
+  "markets": 1178,
+  "markets_mapped": 450,
+  "contracts": 974,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261020T170150Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 450,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 121,
+  "rows": 853,
+  "two_sided": 851,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1702,
+ "external_mapping": {
+  "total": 135,
+  "by_status": {
+   "MAPPED": 91,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.6741,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Luciano Larosa": 1,
+   "Julian Messina": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Bader Idrees": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 247,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 54,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7733,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "David Tixhon": 1,
+   "Henry Best": 1,
+   "Noah Boutleux": 1,
+   "Aaron Gabet": 1,
+   "Mikhail Khodorchenko": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 191,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 71,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
