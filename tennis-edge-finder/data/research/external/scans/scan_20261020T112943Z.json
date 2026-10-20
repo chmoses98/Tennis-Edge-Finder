@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T11:29:43.960717+00:00",
+ "run_id": "20261020T112943Z",
+ "external_parse": {
+  "events": 255,
+  "markets": 2097,
+  "skipped_family": 358,
+  "skipped_period": 609,
+  "skipped_live": 61,
+  "one_sided": 89,
+  "rows": 3236,
+  "devigged": 1040
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1216,
+  "markets_mapped": 559,
+  "contracts": 1220,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261020T112943Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 559,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 366,
+  "rows": 854,
+  "two_sided": 853,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 893,
+ "external_mapping": {
+  "total": 246,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 44
+  },
+  "mapped_rate": 0.6626,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Michael Wright": 1,
+   "Matteo Gribaldo": 1,
+   "Raffaele Ciurnelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 126,
+   "UNMAPPED_PLAYER": 45
+  },
+  "mapped_rate": 0.7368,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Shotaro Yamamoto": 1,
+   "Eric Tripathi": 1,
+   "Shijie Chen": 1,
+   "Oscar Brown": 1,
+   "Harrison Satara": 1,
+   "Denis Klok": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1,
+   "Romeo Spinolo": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 126,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 81,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 5,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
