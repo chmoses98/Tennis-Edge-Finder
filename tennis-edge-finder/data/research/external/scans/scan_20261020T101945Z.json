@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-20T10:19:45.041752+00:00",
+ "run_id": "20261020T101945Z",
+ "external_parse": {
+  "events": 287,
+  "markets": 2310,
+  "skipped_family": 369,
+  "skipped_period": 693,
+  "skipped_live": 70,
+  "one_sided": 82,
+  "rows": 3486,
+  "devigged": 1165
+ },
+ "smarkets_fetch": {
+  "events_seen": 143,
+  "events_priced": 80,
+  "markets": 1345,
+  "markets_mapped": 586,
+  "contracts": 1278,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261020T101945Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 586,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 431,
+  "rows": 847,
+  "two_sided": 842,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1013,
+ "external_mapping": {
+  "total": 278,
+  "by_status": {
+   "MAPPED": 180,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 53,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6475,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Tom Zeuch": 1,
+   "Florent Lagarrigue": 1,
+   "Enrique Carrascosa Diaz": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 17,
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 220,
+  "by_status": {
+   "MAPPED": 168,
+   "UNMAPPED_PLAYER": 51,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7636,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Oscar Brown": 1,
+   "TAKUMI KATSUDA": 1,
+   "Harrison Satara": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Matei Victor Chelemen": 1
+  }
+ },
+ "matched_both_venues": 112,
+ "external_mapped_matches": 187,
+ "kalshi_mapped_matches": 168,
+ "model_witness_available": true,
+ "rows": 128,
+ "counts": {
+  "PASS": 124,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 43,
+  "tri:MARKETS_AGREE": 14,
+  "tri:KALSHI_LONE_OUTLIER": 15,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 46
+ }
+}
