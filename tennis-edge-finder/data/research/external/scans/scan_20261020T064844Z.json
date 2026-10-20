@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-20T06:48:44.594156+00:00",
+ "run_id": "20261020T064844Z",
+ "external_parse": {
+  "events": 286,
+  "markets": 2712,
+  "skipped_family": 469,
+  "skipped_period": 772,
+  "skipped_live": 18,
+  "one_sided": 73,
+  "rows": 3927,
+  "devigged": 1397
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1581,
+  "markets_mapped": 627,
+  "contracts": 1372,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261020T064844Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 627,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 530,
+  "rows": 842,
+  "two_sided": 838,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 2102,
+ "external_mapping": {
+  "total": 274,
+  "by_status": {
+   "MAPPED": 182,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 45,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6642,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Igor Marcondes": 1,
+   "Kuan-Shou Chen": 1,
+   "Samarth Sahita": 1,
+   "Tom Zeuch": 1,
+   "Florent Lagarrigue": 1,
+   "Melvin Vix": 1,
+   "Justino Rodrigues": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 347,
+  "by_status": {
+   "MAPPED": 255,
+   "UNMAPPED_PLAYER": 91,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7349,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Connor Plunkett": 1,
+   "Nathan Gold": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Eric Crivei": 1,
+   "Ethan Muza": 1
+  }
+ },
+ "matched_both_venues": 154,
+ "external_mapped_matches": 190,
+ "kalshi_mapped_matches": 255,
+ "model_witness_available": true,
+ "rows": 264,
+ "counts": {
+  "PASS": 264,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:INSUFFICIENT_INPUTS": 208,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
