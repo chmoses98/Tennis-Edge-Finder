@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-20T19:10:22.746996+00:00",
+ "run_id": "20261020T191022Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1477,
+  "skipped_family": 248,
+  "skipped_period": 429,
+  "skipped_live": 35,
+  "one_sided": 28,
+  "rows": 2445,
+  "devigged": 772
+ },
+ "smarkets_fetch": {
+  "events_seen": 123,
+  "events_priced": 80,
+  "markets": 1140,
+  "markets_mapped": 440,
+  "contracts": 944,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261020T191022Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 440,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 158,
+  "rows": 786,
+  "two_sided": 781,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 562,
+ "external_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 109,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.6337,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Anastasiia Kostiushkina": 1,
+   "William McEwan": 1,
+   "Pol Masafret Hernandez": 1,
+   "Lachlan Brain": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Igor Marcondes": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 120,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8219,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Rihards Neimanis": 1,
+   "Raul Clarijs": 1,
+   "Marat Salbiev": 1,
+   "Odysseas Geladaris": 1,
+   "Dominik Guzmicky": 1,
+   "Lleyton Richards": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 121,
+ "kalshi_mapped_matches": 120,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 33,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
