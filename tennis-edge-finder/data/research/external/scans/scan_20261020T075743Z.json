@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-20T07:57:43.963942+00:00",
+ "run_id": "20261020T075743Z",
+ "external_parse": {
+  "events": 317,
+  "markets": 2714,
+  "skipped_family": 484,
+  "skipped_period": 772,
+  "skipped_live": 38,
+  "one_sided": 67,
+  "rows": 3899,
+  "devigged": 1390
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1463,
+  "markets_mapped": 603,
+  "contracts": 1322,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261020T075743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 603,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 488,
+  "rows": 834,
+  "two_sided": 833,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 584,
+ "external_mapping": {
+  "total": 306,
+  "by_status": {
+   "MAPPED": 202,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 56,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6601,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Arjun Rathi": 1,
+   "Samarth Sahita": 1,
+   "Adam Soukup": 1,
+   "Theofanis Kontopoulos": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.7623,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Conor Brady": 1,
+   "Alessandro Maina": 1,
+   "Tom Zeuch": 1,
+   "Dominik Guzmicky": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Hudson Baxter": 1,
+   "Timo Rosenkranz Koenig": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 205,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 73,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
