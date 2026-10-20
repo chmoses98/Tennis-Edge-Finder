@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-20T16:10:34.785765+00:00",
+ "run_id": "20261020T161034Z",
+ "external_parse": {
+  "events": 159,
+  "markets": 1300,
+  "skipped_family": 218,
+  "skipped_period": 403,
+  "skipped_live": 40,
+  "one_sided": 31,
+  "rows": 2169,
+  "devigged": 648
+ },
+ "smarkets_fetch": {
+  "events_seen": 128,
+  "events_priced": 80,
+  "markets": 1209,
+  "markets_mapped": 456,
+  "contracts": 992,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261020T161034Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 456,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 137,
+  "rows": 855,
+  "two_sided": 852,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 639,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 98,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.6622,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Luciano Larosa": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Leonardo Iemmi": 1,
+   "Jou-George Gnjidic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8051,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Eric Jr Olivarez": 1,
+   "Digvijay Pratap Singh": 1,
+   "Marko Retelj": 1,
+   "Alexander Watanabe Eriksson": 1,
+   "Shijie Chen": 1,
+   "Archie Stewart": 1,
+   "TAKUMI KATSUDA": 1,
+   "Harrison Satara": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
