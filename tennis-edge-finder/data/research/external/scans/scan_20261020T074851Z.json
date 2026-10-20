@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-20T07:48:51.226023+00:00",
+ "run_id": "20261020T074851Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2702,
+  "skipped_family": 477,
+  "skipped_period": 774,
+  "skipped_live": 36,
+  "one_sided": 68,
+  "rows": 3888,
+  "devigged": 1381
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1500,
+  "markets_mapped": 604,
+  "contracts": 1326,
+  "quoted_contracts": 896,
+  "raw": "data/research/external/raw/20261020T074851Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 604,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 487,
+  "rows": 839,
+  "two_sided": 839,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 2100,
+ "external_mapping": {
+  "total": 299,
+  "by_status": {
+   "MAPPED": 197,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 55,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6589,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Igor Marcondes": 1,
+   "Arjun Rathi": 1,
+   "Samarth Sahita": 1,
+   "Adam Soukup": 1,
+   "Theofanis Kontopoulos": 1,
+   "Snir Morag": 1,
+   "Parv Patel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 348,
+  "by_status": {
+   "MAPPED": 254,
+   "UNMAPPED_PLAYER": 93,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7299,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Harrison Satara": 1,
+   "Connor Plunkett": 1,
+   "Nathan Gold": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1
+  }
+ },
+ "matched_both_venues": 165,
+ "external_mapped_matches": 200,
+ "kalshi_mapped_matches": 254,
+ "model_witness_available": true,
+ "rows": 260,
+ "counts": {
+  "PASS": 258,
+  "tri:INSUFFICIENT_INPUTS": 171,
+  "tri:MODEL_LONE_OUTLIER": 75,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
