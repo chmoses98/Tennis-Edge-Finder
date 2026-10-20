@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-20T01:06:12.605451+00:00",
+ "run_id": "20261020T010612Z",
+ "external_parse": {
+  "events": 284,
+  "markets": 2886,
+  "skipped_family": 513,
+  "skipped_period": 849,
+  "skipped_live": 9,
+  "one_sided": 77,
+  "rows": 4270,
+  "devigged": 1445
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 2011,
+  "markets_mapped": 702,
+  "contracts": 1502,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261020T010612Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 702,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 684,
+  "rows": 818,
+  "two_sided": 814,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 714,
+ "external_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 185,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6852,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1,
+   "Eric Tripathi": 1,
+   "Archie Stewart": 1,
+   "Adrian Correa": 1,
+   "Luca Connaughton": 1,
+   "Kodai Abe": 1,
+   "Kanta Watanabe": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 44
+  },
+  "mapped_rate": 0.6835,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Matei Victor Chelemen": 1,
+   "Conor Brady": 1,
+   "Giulio Stella": 1,
+   "Pavel Skvortcov": 1,
+   "Rhys Lawlor": 1,
+   "Vaclav Schneider": 1,
+   "Justino Rodrigues": 1,
+   "Ramazan Kaan Oktay": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 187,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 88,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
