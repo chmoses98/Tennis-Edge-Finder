@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-20T22:11:14.953451+00:00",
+ "run_id": "20261020T221114Z",
+ "external_parse": {
+  "events": 232,
+  "markets": 2025,
+  "skipped_family": 288,
+  "skipped_period": 573,
+  "skipped_live": 17,
+  "one_sided": 37,
+  "rows": 3237,
+  "devigged": 1127
+ },
+ "smarkets_fetch": {
+  "events_seen": 123,
+  "events_priced": 80,
+  "markets": 1056,
+  "markets_mapped": 411,
+  "contracts": 874,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261020T221114Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 411,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 818,
+  "two_sided": 814,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1897,
+ "external_mapping": {
+  "total": 220,
+  "by_status": {
+   "MAPPED": 150,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.6818,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Raegan Farm": 1,
+   "Thomas Van Den Dooren": 1,
+   "Felix Bockelmann Evans": 1,
+   "Abraham Rosett": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Yue Xia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 338,
+  "by_status": {
+   "MAPPED": 260,
+   "UNMAPPED_PLAYER": 75,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7692,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Francisco Fontes Damorim": 1,
+   "Martim Bernardo": 1,
+   "Jake Evans": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Rihards Neimanis": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "matched_both_venues": 115,
+ "external_mapped_matches": 156,
+ "kalshi_mapped_matches": 260,
+ "model_witness_available": true,
+ "rows": 198,
+ "counts": {
+  "PASS": 195,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 140,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
