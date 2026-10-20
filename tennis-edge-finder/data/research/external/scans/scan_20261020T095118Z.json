@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-20T09:51:18.970819+00:00",
+ "run_id": "20261020T095118Z",
+ "external_parse": {
+  "events": 296,
+  "markets": 2386,
+  "skipped_family": 387,
+  "skipped_period": 706,
+  "skipped_live": 73,
+  "one_sided": 64,
+  "rows": 3639,
+  "devigged": 1227
+ },
+ "smarkets_fetch": {
+  "events_seen": 145,
+  "events_priced": 80,
+  "markets": 1362,
+  "markets_mapped": 575,
+  "contracts": 1248,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261020T095118Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 575,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 380,
+  "rows": 868,
+  "two_sided": 861,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 2052,
+ "external_mapping": {
+  "total": 286,
+  "by_status": {
+   "MAPPED": 189,
+   "DOUBLES_UNSUPPORTED": 43,
+   "UNMAPPED_PLAYER": 53,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6608,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "David Tixhon": 1,
+   "Richard Lacis": 1,
+   "Matei Victor Chelemen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 345,
+  "by_status": {
+   "MAPPED": 256,
+   "UNMAPPED_PLAYER": 88,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.742,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Yue Xia": 1,
+   "Shijie Chen": 1,
+   "Mustafa Ege Sik": 1,
+   "Archie Stewart": 1,
+   "Toshiki Karigyo": 1,
+   "Oscar Brown": 1
+  }
+ },
+ "matched_both_venues": 158,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 256,
+ "model_witness_available": true,
+ "rows": 216,
+ "counts": {
+  "PASS": 211,
+  "tri:MODEL_LONE_OUTLIER": 91,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 92,
+  "tri:MARKETS_AGREE": 15,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 46
+ }
+}
