@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-20T15:20:29.678958+00:00",
+ "run_id": "20261020T152029Z",
+ "external_parse": {
+  "events": 180,
+  "markets": 1476,
+  "skipped_family": 260,
+  "skipped_period": 456,
+  "skipped_live": 53,
+  "one_sided": 28,
+  "rows": 2442,
+  "devigged": 731
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 954,
+  "markets_mapped": 433,
+  "contracts": 944,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261020T152029Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 433,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 97,
+  "rows": 847,
+  "two_sided": 842,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 733,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 118,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6941,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Josh Manuel": 1,
+   "Romeo Spinolo": 1,
+   "Leonardo Iemmi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 27
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8145,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Alex Hernandez": 1,
+   "Dominik Guzmicky": 1,
+   "Wenze Li": 1,
+   "Benjamin O'Connell": 1,
+   "Oscar Brown": 1,
+   "Connor Plunkett": 1,
+   "Nathan Gold": 1,
+   "Bruno Rodrigues": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 132,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
