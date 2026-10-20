@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-20T16:50:32.957748+00:00",
+ "run_id": "20261020T165032Z",
+ "external_parse": {
+  "events": 154,
+  "markets": 1266,
+  "skipped_family": 219,
+  "skipped_period": 389,
+  "skipped_live": 38,
+  "one_sided": 31,
+  "rows": 2101,
+  "devigged": 627
+ },
+ "smarkets_fetch": {
+  "events_seen": 126,
+  "events_priced": 80,
+  "markets": 1207,
+  "markets_mapped": 465,
+  "contracts": 1006,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261020T165032Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 465,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 153,
+  "rows": 853,
+  "two_sided": 851,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 561,
+ "external_mapping": {
+  "total": 143,
+  "by_status": {
+   "MAPPED": 95,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.6643,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Andres Martin (RAC)": 1,
+   "Luciano Larosa": 1,
+   "Julian Messina": 1,
+   "Leonard Tramolay": 1,
+   "Thomas Van Den Dooren": 1,
+   "Leonardo Iemmi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 97,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7638,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "David Tixhon": 1,
+   "Henry Best": 1,
+   "Noah Boutleux": 1,
+   "Aaron Gabet": 1,
+   "Marat Salbiev": 1,
+   "Eric Jr Olivarez": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 97,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 39,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
