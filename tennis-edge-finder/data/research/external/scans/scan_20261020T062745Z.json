@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-20T06:27:45.999515+00:00",
+ "run_id": "20261020T062745Z",
+ "external_parse": {
+  "events": 281,
+  "markets": 2733,
+  "skipped_family": 478,
+  "skipped_period": 780,
+  "skipped_live": 18,
+  "one_sided": 70,
+  "rows": 3999,
+  "devigged": 1404
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1632,
+  "markets_mapped": 655,
+  "contracts": 1432,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261020T062745Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 655,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 562,
+  "rows": 870,
+  "two_sided": 866,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 658,
+ "external_mapping": {
+  "total": 269,
+  "by_status": {
+   "MAPPED": 182,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 40,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6766,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Khumoyun Sultanov": 1,
+   "Igor Marcondes": 1,
+   "Kuan-Shou Chen": 1,
+   "Tom Zeuch": 1,
+   "Florent Lagarrigue": 1,
+   "Justino Rodrigues": 1,
+   "Pavel Skvortcov": 1,
+   "Michael Wright": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 114,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Denis Klok": 1,
+   "Bruno Rodrigues": 1,
+   "Matei Victor Chelemen": 1,
+   "Pablo Perez Ramos": 1,
+   "Justino Rodrigues": 1,
+   "Kyle McKay": 1,
+   "Matteo Gribaldo": 1,
+   "Enrique Carrascosa Diaz": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 190,
+ "kalshi_mapped_matches": 114,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 59,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
