@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-20T09:27:40.216320+00:00",
+ "run_id": "20261020T092740Z",
+ "external_parse": {
+  "events": 302,
+  "markets": 2335,
+  "skipped_family": 410,
+  "skipped_period": 677,
+  "skipped_live": 66,
+  "one_sided": 63,
+  "rows": 3436,
+  "devigged": 1184
+ },
+ "smarkets_fetch": {
+  "events_seen": 147,
+  "events_priced": 80,
+  "markets": 1410,
+  "markets_mapped": 611,
+  "contracts": 1326,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261020T092740Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 611,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 458,
+  "rows": 868,
+  "two_sided": 865,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 936,
+ "external_mapping": {
+  "total": 291,
+  "by_status": {
+   "MAPPED": 196,
+   "DOUBLES_UNSUPPORTED": 43,
+   "UNMAPPED_PLAYER": 52
+  },
+  "mapped_rate": 0.6735,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "David Tixhon": 1,
+   "Timo Rosenkranz Koenig": 1,
+   "Richard Lacis": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 204,
+  "by_status": {
+   "MAPPED": 155,
+   "UNMAPPED_PLAYER": 48,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7598,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Alex Hernandez": 1,
+   "Toshiki Karigyo": 1,
+   "Connor Plunkett": 1,
+   "Denis Klok": 1,
+   "Matei Victor Chelemen": 1,
+   "Jou-George Gnjidic": 1,
+   "Jared Horwood": 1,
+   "Richard Lacis": 1,
+   "Simone Macchione": 1
+  }
+ },
+ "matched_both_venues": 107,
+ "external_mapped_matches": 202,
+ "kalshi_mapped_matches": 155,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 112,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 48
+ }
+}
