@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 22:26Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-20 22:36Z)
 
 * Earliest credible first ball: **2026-10-21 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-21 01:45Z**
@@ -13,7 +13,7 @@
 
 **14 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Fabian Marozsan, Daniil Medvedev vs Sho Shimabukuro, Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Mattia Bellucci vs Tomas Martin Etcheverry, Zangar Nurlanuly vs Tomas Machac, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini, Elena Rybakina vs Polina Kudermetova, Ann Li vs Zeynep Sonmez, Antonia Ruzic vs Kayla Day, Mary Stoiana vs Moyuka Uchijima
 
-Published slate: `SL-20261020T202446Z-674cf1f8` built 2026-10-20 20:24Z -- current
+Published slate: `SL-20261020T221846Z-57911799` built 2026-10-20 22:18Z -- current
 
 Dispatched this pass: none
 
