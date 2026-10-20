@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-20T23:20:23.324281+00:00",
+ "run_id": "20261020T232023Z",
+ "external_parse": {
+  "events": 266,
+  "markets": 2288,
+  "skipped_family": 331,
+  "skipped_period": 637,
+  "skipped_live": 19,
+  "one_sided": 59,
+  "rows": 3451,
+  "devigged": 1261
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1091,
+  "markets_mapped": 428,
+  "contracts": 910,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261020T232023Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 428,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 84,
+  "rows": 826,
+  "two_sided": 824,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 424,
+ "external_mapping": {
+  "total": 254,
+  "by_status": {
+   "MAPPED": 173,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 33
+  },
+  "mapped_rate": 0.6811,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Raegan Farm": 1,
+   "Ella Brownback": 1,
+   "Thomas Van Den Dooren": 1,
+   "Abraham Rosett": 1,
+   "Harrison Satara": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Yue Xia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.475,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8515,
+  "top_refusal_subjects": {
+   "Jake Evans": 1,
+   "Matteo Gribaldo": 1,
+   "Vaclav Schneider": 1,
+   "Noah Boutleux": 1,
+   "Oscar Brown": 1,
+   "TAKUMI KATSUDA": 1,
+   "Nick Beamish": 1,
+   "Harrison Satara": 1,
+   "Pavla Sviglerova": 1,
+   "Katerina Zajickova": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 180,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 59,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
