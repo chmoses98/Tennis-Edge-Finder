@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-20T07:37:43.084710+00:00",
+ "run_id": "20261020T073743Z",
+ "external_parse": {
+  "events": 300,
+  "markets": 2741,
+  "skipped_family": 482,
+  "skipped_period": 789,
+  "skipped_live": 24,
+  "one_sided": 69,
+  "rows": 3955,
+  "devigged": 1400
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1585,
+  "markets_mapped": 629,
+  "contracts": 1378,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261020T073743Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 629,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 546,
+  "rows": 832,
+  "two_sided": 831,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 799,
+ "external_mapping": {
+  "total": 289,
+  "by_status": {
+   "MAPPED": 189,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 53,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.654,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Igor Marcondes": 1,
+   "Arjun Rathi": 1,
+   "Samarth Sahita": 1,
+   "Kuan-Shou Chen": 1,
+   "Adam Soukup": 1,
+   "Theofanis Kontopoulos": 1,
+   "Snir Morag": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Alex Hernandez": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7598,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Alex Hernandez": 1,
+   "Khumoyun Sultanov": 1,
+   "Conor Brady": 1,
+   "Richard Lacis": 1,
+   "Giulio Stella": 1,
+   "Josh Manuel": 1,
+   "Vaclav Schneider": 1,
+   "Justino Rodrigues": 1,
+   "Michael Wright": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 191,
+ "kalshi_mapped_matches": 136,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 118,
+  "tri:INSUFFICIENT_INPUTS": 91,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
