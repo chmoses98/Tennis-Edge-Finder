@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-21T03:52:11.689560+00:00",
+ "run_id": "20261021T035211Z",
+ "external_parse": {
+  "events": 342,
+  "markets": 2825,
+  "skipped_family": 406,
+  "skipped_period": 784,
+  "skipped_live": 31,
+  "one_sided": 55,
+  "rows": 4170,
+  "devigged": 1580
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1178,
+  "markets_mapped": 463,
+  "contracts": 998,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261021T035211Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 463,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 155,
+  "rows": 843,
+  "two_sided": 838,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 533,
+ "external_mapping": {
+  "total": 329,
+  "by_status": {
+   "MAPPED": 220,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 51,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6687,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Luca Ostovany": 1,
+   "Siddharth Bharadwaj": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Mustafa Ege Sik": 1,
+   "Archie Stewart": 1,
+   "Yue Xia": 1,
+   "Shijie Chen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 39,
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7687,
+  "top_refusal_subjects": {
+   "Shrijana Thapa": 1,
+   "Aylara Kakabayeva": 1,
+   "Hye Jin Elliott": 1,
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Eli Stephenson": 1,
+   "Joshua Adamson": 1,
+   "Martim Bernardo": 1,
+   "Odysseas Geladaris": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 70,
+ "external_mapped_matches": 226,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 83,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:KALSHI_LONE_OUTLIER": 19,
+  "WATCH": 9,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MARKETS_AGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
