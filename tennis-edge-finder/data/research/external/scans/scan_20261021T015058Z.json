@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-21T01:50:58.602766+00:00",
+ "run_id": "20261021T015058Z",
+ "external_parse": {
+  "events": 320,
+  "markets": 2666,
+  "skipped_family": 377,
+  "skipped_period": 742,
+  "skipped_live": 28,
+  "one_sided": 57,
+  "rows": 3968,
+  "devigged": 1487
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1159,
+  "markets_mapped": 462,
+  "contracts": 988,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261021T015058Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 462,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 158,
+  "rows": 830,
+  "two_sided": 823,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 640,
+ "external_mapping": {
+  "total": 306,
+  "by_status": {
+   "MAPPED": 206,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 43,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6732,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Tiffany Papazian": 1,
+   "Carter Craig": 1,
+   "Luca Ostovany": 1,
+   "Noah Folkesson-Doudy": 1,
+   "Siddharth Bharadwaj": 1,
+   "Takumi Katsuda": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 35,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7791,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Francisco Fontes Damorim": 1,
+   "Martim Bernardo": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Kyle McKay": 1,
+   "Raul Clarijs": 1,
+   "David Tixhon": 1,
+   "Henry Best": 1,
+   "Noah Boutleux": 1,
+   "Marat Salbiev": 1
+  }
+ },
+ "matched_both_venues": 74,
+ "external_mapped_matches": 213,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 107,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 70,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
