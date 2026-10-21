@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-21T07:52:00.882376+00:00",
+ "run_id": "20261021T075200Z",
+ "external_parse": {
+  "events": 303,
+  "markets": 2423,
+  "skipped_family": 378,
+  "skipped_period": 669,
+  "skipped_live": 40,
+  "one_sided": 51,
+  "rows": 3471,
+  "devigged": 1324
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 1002,
+  "markets_mapped": 439,
+  "contracts": 960,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261021T075200Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 439,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 107,
+  "rows": 853,
+  "two_sided": 847,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 663,
+ "external_mapping": {
+  "total": 292,
+  "by_status": {
+   "MAPPED": 199,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 43,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6815,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Khumoyun Sultanov": 1,
+   "Haolong He": 1,
+   "Lleyton Richards": 1,
+   "Marko Retelj": 1,
+   "Eric Jr. Olivarez": 1,
+   "Eric Tripathi": 1,
+   "Odysseas Geladaris": 1,
+   "Henry Best": 1,
+   "David Tixhon": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 41,
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8267,
+  "top_refusal_subjects": {
+   "Noor Sayej": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Khumoyun Sultanov": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Joshua Adamson": 1,
+   "Francisco Fontes Damorim": 1,
+   "Joao Rasgado": 1,
+   "LUCAS GONCALVES FRANCA": 1
+  }
+ },
+ "matched_both_venues": 78,
+ "external_mapped_matches": 207,
+ "kalshi_mapped_matches": 124,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 90,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
