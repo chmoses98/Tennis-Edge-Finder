@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 13:07Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 13:18Z)
 
 * Earliest credible first ball: **2026-10-21 13:20Z**
 * Recommended RUN TENNIS time: **2026-10-21 12:35Z**  (OVERDUE: run now)
@@ -8,13 +8,13 @@
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
 | Clement Chidekh vs Jacob Fearnley | 2026-10-21 13:20Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Corentin Moutet vs Felix Balshaw | 2026-10-21 13:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Corentin Moutet vs Felix Balshaw | 2026-10-21 13:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**3 main-tour match(es) without a verified start status** (BET blocked until checked): Stefanos Tsitsipas vs Mikhail Kukushkin, Stan Wawrinka vs Martin Landaluce, Ekaterina Alexandrova vs Marta Kostyuk
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Stefanos Tsitsipas vs Mikhail Kukushkin, Stan Wawrinka vs Martin Landaluce
 
 Published slate: `SL-20261021T123805Z-1b0616b7` built 2026-10-21 12:38Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-21 15:00Z, run by 2026-10-21 14:15Z, 2 match(es)
 * later window 3: first ball 2026-10-21 17:00Z, run by 2026-10-21 16:15Z, 3 match(es)
