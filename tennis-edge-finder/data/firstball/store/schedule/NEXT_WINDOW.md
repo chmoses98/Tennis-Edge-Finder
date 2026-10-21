@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 22:37Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 22:52Z)
 
 * Earliest credible first ball: **2026-10-22 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-22 01:45Z**
@@ -11,7 +11,7 @@
 | Antonia Ruzic vs Kayla Day | 2026-10-22 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Mary Stoiana vs Moyuka Uchijima | 2026-10-22 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261021T193059Z-6ef010fe` built 2026-10-21 19:30Z -- current
+Published slate: `SL-20261021T222735Z-05bbd396` built 2026-10-21 22:27Z -- current
 
 Dispatched this pass: none
 
