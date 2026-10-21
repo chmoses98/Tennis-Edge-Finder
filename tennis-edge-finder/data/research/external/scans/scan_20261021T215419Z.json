@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-21T21:54:19.050843+00:00",
+ "run_id": "20261021T215419Z",
+ "external_parse": {
+  "events": 175,
+  "markets": 1433,
+  "skipped_family": 306,
+  "skipped_period": 382,
+  "skipped_live": 31,
+  "one_sided": 36,
+  "rows": 2034,
+  "devigged": 708
+ },
+ "smarkets_fetch": {
+  "events_seen": 87,
+  "events_priced": 80,
+  "markets": 1106,
+  "markets_mapped": 430,
+  "contracts": 918,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261021T215419Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 430,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 130,
+  "rows": 788,
+  "two_sided": 786,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1545,
+ "external_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 109,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.677,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Luciano Larosa": 1,
+   "Carter Craig": 1,
+   "Lachlan Brain": 1,
+   "Valerie Shue": 1,
+   "Noelani Teso": 1,
+   "Henry Best": 1,
+   "David Tixhon": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 243,
+  "by_status": {
+   "MAPPED": 199,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8189,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Victor Pagotto": 1,
+   "Guelord Kayombo": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Matteo Gribaldo": 1,
+   "Odysseas Geladaris": 1,
+   "Sergey Petrov": 1,
+   "Mikhail Khodorchenko": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 124,
+ "kalshi_mapped_matches": 199,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 119,
+  "tri:INSUFFICIENT_INPUTS": 84,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
