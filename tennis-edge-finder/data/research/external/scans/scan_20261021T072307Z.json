@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-21T07:23:07.439559+00:00",
+ "run_id": "20261021T072307Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2440,
+  "skipped_family": 376,
+  "skipped_period": 671,
+  "skipped_live": 45,
+  "one_sided": 39,
+  "rows": 3535,
+  "devigged": 1353
+ },
+ "smarkets_fetch": {
+  "events_seen": 113,
+  "events_priced": 80,
+  "markets": 1021,
+  "markets_mapped": 448,
+  "contracts": 980,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261021T072307Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 448,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 135,
+  "rows": 845,
+  "two_sided": 834,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 1863,
+ "external_mapping": {
+  "total": 299,
+  "by_status": {
+   "MAPPED": 205,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 44,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6856,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Khumoyun Sultanov": 1,
+   "Shotaro Yamamoto": 1,
+   "Hao Yu Lin": 1,
+   "Lleyton Richards": 1,
+   "Marko Retelj": 1,
+   "Eric Jr. Olivarez": 1,
+   "Eric Tripathi": 1,
+   "Odysseas Geladaris": 1,
+   "Henry Best": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 42,
+   "MAPPED": 36,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.45,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 320,
+  "by_status": {
+   "MAPPED": 252,
+   "UNMAPPED_PLAYER": 65,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "Noor Sayej": 1,
+   "Dana Khalifa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Khumoyun Sultanov": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Mateus Nogueira": 1,
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1
+  }
+ },
+ "matched_both_venues": 181,
+ "external_mapped_matches": 212,
+ "kalshi_mapped_matches": 252,
+ "model_witness_available": true,
+ "rows": 282,
+ "counts": {
+  "PASS": 274,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 208,
+  "WATCH": 8,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
