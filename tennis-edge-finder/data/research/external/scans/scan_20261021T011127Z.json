@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-21T01:11:27.651694+00:00",
+ "run_id": "20261021T011127Z",
+ "external_parse": {
+  "events": 306,
+  "markets": 2718,
+  "skipped_family": 383,
+  "skipped_period": 752,
+  "skipped_live": 13,
+  "one_sided": 40,
+  "rows": 4100,
+  "devigged": 1542
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1151,
+  "markets_mapped": 458,
+  "contracts": 978,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261021T011127Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 458,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 140,
+  "rows": 838,
+  "two_sided": 832,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1932,
+ "external_mapping": {
+  "total": 293,
+  "by_status": {
+   "MAPPED": 199,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6792,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Harrison Satara": 1,
+   "Nick Beamish": 1,
+   "Takumi Katsuda": 1,
+   "Toshiki Karigyo": 1,
+   "Yue Xia": 1,
+   "Hao Yu Lin": 1,
+   "Wenze Li": 1,
+   "Alexander Watanabe Eriksson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 357,
+  "by_status": {
+   "MAPPED": 277,
+   "UNMAPPED_PLAYER": 77,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7759,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Joshua Adamson": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Francisco Fontes Damorim": 1,
+   "Martim Bernardo": 1,
+   "Jake Evans": 1,
+   "Ramazan Kaan Oktay": 1
+  }
+ },
+ "matched_both_venues": 162,
+ "external_mapped_matches": 206,
+ "kalshi_mapped_matches": 277,
+ "model_witness_available": true,
+ "rows": 296,
+ "counts": {
+  "PASS": 295,
+  "tri:MODEL_LONE_OUTLIER": 83,
+  "tri:INSUFFICIENT_INPUTS": 185,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 20,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
