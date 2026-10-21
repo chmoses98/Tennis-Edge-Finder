@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 15:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 15:59Z)
 
-* Earliest credible first ball: **2026-10-21 16:45Z**
-* Recommended RUN TENNIS time: **2026-10-21 16:00Z**
-* Final price/status check time: **2026-10-21 16:35Z**
+* Earliest credible first ball: **2026-10-21 16:55Z**
+* Recommended RUN TENNIS time: **2026-10-21 16:10Z**
+* Final price/status check time: **2026-10-21 16:45Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Moise Kouame vs Lorenzo Musetti | 2026-10-21 16:45Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
+| Moise Kouame vs Lorenzo Musetti | 2026-10-21 16:55Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
 | Gauthier Onclin vs Jan-Lennard Struff | 2026-10-21 17:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola, Stan Wawrinka vs Martin Landaluce
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): David Goffin vs Remy Bertola
 
 Published slate: `SL-20261021T152039Z-ba08cba3` built 2026-10-21 15:20Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: run_tennis (ok)
 
 * later window 2: first ball 2026-10-21 18:30Z, run by 2026-10-21 17:45Z, 1 match(es)
 * later window 3: first ball 2026-10-22 02:30Z, run by 2026-10-22 01:45Z, 3 match(es)
