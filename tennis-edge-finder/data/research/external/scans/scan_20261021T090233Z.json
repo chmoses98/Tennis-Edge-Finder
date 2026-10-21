@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-21T09:02:33.693573+00:00",
+ "run_id": "20261021T090233Z",
+ "external_parse": {
+  "events": 298,
+  "markets": 2271,
+  "skipped_family": 369,
+  "skipped_period": 632,
+  "skipped_live": 60,
+  "one_sided": 43,
+  "rows": 3254,
+  "devigged": 1225
+ },
+ "smarkets_fetch": {
+  "events_seen": 106,
+  "events_priced": 80,
+  "markets": 1097,
+  "markets_mapped": 492,
+  "contracts": 1072,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261021T090233Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 492,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 216,
+  "rows": 856,
+  "two_sided": 853,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 804,
+ "external_mapping": {
+  "total": 286,
+  "by_status": {
+   "MAPPED": 199,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6958,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Eric Tripathi": 1,
+   "Odysseas Geladaris": 1,
+   "Henry Best": 1,
+   "Aaron Gabet": 1,
+   "Noah Boutleux": 1,
+   "Vaclav Schneider": 1,
+   "Diogo Coelho": 1,
+   "Gilberto Ravasio": 1,
+   "Maxi Carrascosa Diaz": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 37,
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 210,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 35,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8286,
+  "top_refusal_subjects": {
+   "Noor Sayej": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kanta Watanabe": 1,
+   "Oscar Brown": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Francisco Fontes Damorim": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "matched_both_venues": 128,
+ "external_mapped_matches": 209,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 178,
+ "counts": {
+  "PASS": 174,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:INSUFFICIENT_INPUTS": 111,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 37
+ }
+}
