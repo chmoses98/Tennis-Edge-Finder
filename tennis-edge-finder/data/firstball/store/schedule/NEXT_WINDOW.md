@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 04:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 04:59Z)
 
 * Earliest credible first ball: **2026-10-21 05:00Z**
 * Recommended RUN TENNIS time: **2026-10-21 04:15Z**  (OVERDUE: run now)
@@ -8,7 +8,7 @@
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
 | Marie Bouzkova vs Anastasia Zakharova | 2026-10-21 05:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Katie Boulter vs Viktorija Golubic | 2026-10-21 05:20Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center in progress (set 1 of best-of-3) | MEDIUM |
+| Katie Boulter vs Viktorija Golubic | 2026-10-21 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Hye Jin Elliott vs Eunice Ying Ci Lo | 2026-10-21 06:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | Shrijana Thapa vs Yara Alhaqbani | 2026-10-21 06:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | James Duckworth vs Luciano Darderi | 2026-10-21 06:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -17,7 +17,7 @@
 
 Published slate: `SL-20261021T042016Z-e18e5e2a` built 2026-10-21 04:20Z -- current
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-21 08:00Z, run by 2026-10-21 07:15Z, 4 match(es)
 * later window 3: first ball 2026-10-21 11:00Z, run by 2026-10-21 10:15Z, 3 match(es)
