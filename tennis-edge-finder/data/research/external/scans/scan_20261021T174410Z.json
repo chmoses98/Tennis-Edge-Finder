@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-21T17:44:10.954847+00:00",
+ "run_id": "20261021T174410Z",
+ "external_parse": {
+  "events": 194,
+  "markets": 1362,
+  "skipped_family": 207,
+  "skipped_period": 394,
+  "skipped_live": 48,
+  "one_sided": 36,
+  "rows": 2075,
+  "devigged": 723
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 1083,
+  "markets_mapped": 412,
+  "contracts": 878,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261021T174410Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 412,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 92,
+  "rows": 786,
+  "two_sided": 779,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1457,
+ "external_mapping": {
+  "total": 183,
+  "by_status": {
+   "MAPPED": 125,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.6831,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Anastasiia Kostiushkina": 1,
+   "William McEwan": 1,
+   "Henry Best": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Eli Stephenson": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Oscar Brown": 1,
+   "Ruochen Gao": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 34,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 170,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8134,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Odysseas Geladaris": 1,
+   "Sergey Petrov": 1,
+   "Mikhail Khodorchenko": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Samarth Sahita": 1,
+   "Eric Jr Olivarez": 1,
+   "Arnav Paparkar": 1,
+   "Digvijay Pratap Singh": 1,
+   "Yue Xia": 1
+  }
+ },
+ "matched_both_venues": 89,
+ "external_mapped_matches": 133,
+ "kalshi_mapped_matches": 170,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:MARKETS_AGREE": 12,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
