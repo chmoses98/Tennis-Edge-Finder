@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-21T00:40:39.584941+00:00",
+ "run_id": "20261021T004039Z",
+ "external_parse": {
+  "events": 266,
+  "markets": 2367,
+  "skipped_family": 343,
+  "skipped_period": 658,
+  "skipped_live": 12,
+  "one_sided": 44,
+  "rows": 3619,
+  "devigged": 1322
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1098,
+  "markets_mapped": 431,
+  "contracts": 920,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261021T004039Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 431,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 834,
+  "two_sided": 827,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 559,
+ "external_mapping": {
+  "total": 253,
+  "by_status": {
+   "MAPPED": 174,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.6877,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Harrison Satara": 1,
+   "Toshiki Karigyo": 1,
+   "Yue Xia": 1,
+   "Hao Yu Lin": 1,
+   "Wenze Li": 1,
+   "Alexander Watanabe Eriksson": 1,
+   "Marko Retelj": 1,
+   "Arnav Vijay Paparkar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7958,
+  "top_refusal_subjects": {
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Martim Bernardo": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Rihards Neimanis": 1,
+   "Noah Boutleux": 1,
+   "Mikhail Khodorchenko": 1,
+   "Eric Jr Olivarez": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Paparkar": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 181,
+ "kalshi_mapped_matches": 113,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 69,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
