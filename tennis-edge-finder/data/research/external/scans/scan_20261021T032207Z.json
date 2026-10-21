@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-21T03:22:07.564105+00:00",
+ "run_id": "20261021T032207Z",
+ "external_parse": {
+  "events": 309,
+  "markets": 2558,
+  "skipped_family": 362,
+  "skipped_period": 714,
+  "skipped_live": 30,
+  "one_sided": 50,
+  "rows": 3833,
+  "devigged": 1431
+ },
+ "smarkets_fetch": {
+  "events_seen": 120,
+  "events_priced": 80,
+  "markets": 1164,
+  "markets_mapped": 457,
+  "contracts": 986,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261021T032207Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 457,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 143,
+  "rows": 843,
+  "two_sided": 836,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 678,
+ "external_mapping": {
+  "total": 296,
+  "by_status": {
+   "MAPPED": 200,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6757,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Tiffany Papazian": 1,
+   "Luca Ostovany": 1,
+   "Noah Folkesson-Doudy": 1,
+   "Siddharth Bharadwaj": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Mustafa Ege Sik": 1,
+   "Archie Stewart": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 39,
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 178,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7753,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Joshua Adamson": 1,
+   "Martim Bernardo": 1,
+   "Kyle McKay": 1,
+   "Raul Clarijs": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "David Tixhon": 1,
+   "Henry Best": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 207,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 107,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
