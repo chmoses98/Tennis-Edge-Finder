@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 04:39Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 04:49Z)
 
 * Earliest credible first ball: **2026-10-21 05:00Z**
 * Recommended RUN TENNIS time: **2026-10-21 04:15Z**  (OVERDUE: run now)
@@ -7,17 +7,17 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Marie Bouzkova vs Anastasia Zakharova | 2026-10-21 05:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Katie Boulter vs Viktorija Golubic | 2026-10-21 05:11Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center in progress (set 1 of best-of-3) | MEDIUM |
+| Marie Bouzkova vs Anastasia Zakharova | 2026-10-21 05:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Katie Boulter vs Viktorija Golubic | 2026-10-21 05:20Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center in progress (set 1 of best-of-3) | MEDIUM |
 | Hye Jin Elliott vs Eunice Ying Ci Lo | 2026-10-21 06:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | Shrijana Thapa vs Yara Alhaqbani | 2026-10-21 06:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | James Duckworth vs Luciano Darderi | 2026-10-21 06:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **18 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Fabian Marozsan, Daniil Medvedev vs Sho Shimabukuro, Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Mattia Bellucci vs Tomas Martin Etcheverry, Zangar Nurlanuly vs Tomas Machac, AYNUR MOVLYAMOVA vs anisa yakhyaeva, Swastika Bista vs Lara Bukary, Thi Mai Linh Nguyen vs Lara Hasan, Maria Isabel Gvan Heras vs Danielle Lim, Magda Linette vs Katerina Siniakova, Iva Jovic vs Jasmine Paolini
 
-Published slate: `SL-20261021T035008Z-4cd1f009` built 2026-10-21 03:50Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-21T05:00:00+00:00, slate built 2026-10-21T03:50:08.821698+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261021T042016Z-e18e5e2a` built 2026-10-21 04:20Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-21 08:00Z, run by 2026-10-21 07:15Z, 4 match(es)
 * later window 3: first ball 2026-10-21 11:00Z, run by 2026-10-21 10:15Z, 3 match(es)
