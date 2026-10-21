@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-21T08:52:34.689844+00:00",
+ "run_id": "20261021T085234Z",
+ "external_parse": {
+  "events": 302,
+  "markets": 2313,
+  "skipped_family": 373,
+  "skipped_period": 643,
+  "skipped_live": 59,
+  "one_sided": 43,
+  "rows": 3324,
+  "devigged": 1252
+ },
+ "smarkets_fetch": {
+  "events_seen": 108,
+  "events_priced": 80,
+  "markets": 1005,
+  "markets_mapped": 445,
+  "contracts": 972,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261021T085234Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 445,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 108,
+  "rows": 864,
+  "two_sided": 862,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 578,
+ "external_mapping": {
+  "total": 290,
+  "by_status": {
+   "MAPPED": 203,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Haolong He": 1,
+   "Eric Jr. Olivarez": 1,
+   "Eric Tripathi": 1,
+   "Odysseas Geladaris": 1,
+   "Henry Best": 1,
+   "Aaron Gabet": 1,
+   "Noah Boutleux": 1,
+   "Vaclav Schneider": 1,
+   "Diogo Coelho": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 39,
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 134,
+  "by_status": {
+   "MAPPED": 114,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8507,
+  "top_refusal_subjects": {
+   "Noor Sayej": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Felix Roussel": 1,
+   "Raul Clarijs": 1,
+   "Diogo Coelho": 1,
+   "Vaclav Schneider": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "David Tixhon": 1,
+   "Noah Boutleux": 1,
+   "Aaron Gabet": 1
+  }
+ },
+ "matched_both_venues": 80,
+ "external_mapped_matches": 213,
+ "kalshi_mapped_matches": 114,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 83,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:MARKETS_AGREE": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 41,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 37
+ }
+}
