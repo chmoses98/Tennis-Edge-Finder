@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-21T08:42:25.795191+00:00",
+ "run_id": "20261021T084225Z",
+ "external_parse": {
+  "events": 302,
+  "markets": 2319,
+  "skipped_family": 372,
+  "skipped_period": 646,
+  "skipped_live": 57,
+  "one_sided": 52,
+  "rows": 3312,
+  "devigged": 1249
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 1001,
+  "markets_mapped": 432,
+  "contracts": 946,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261021T084225Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 432,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 83,
+  "rows": 863,
+  "two_sided": 856,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 747,
+ "external_mapping": {
+  "total": 290,
+  "by_status": {
+   "MAPPED": 202,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 38,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6966,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Haolong He": 1,
+   "Eric Jr. Olivarez": 1,
+   "Eric Tripathi": 1,
+   "Odysseas Geladaris": 1,
+   "Henry Best": 1,
+   "Dominik Guzmicky": 1,
+   "Aaron Gabet": 1,
+   "Noah Boutleux": 1,
+   "Diogo Coelho": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 185,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 35,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8054,
+  "top_refusal_subjects": {
+   "Noor Sayej": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Joshua Adamson": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Tim Hammes": 1,
+   "Kyle McKay": 1,
+   "Vaclav Schneider": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "David Tixhon": 1
+  }
+ },
+ "matched_both_venues": 106,
+ "external_mapped_matches": 212,
+ "kalshi_mapped_matches": 149,
+ "model_witness_available": true,
+ "rows": 132,
+ "counts": {
+  "PASS": 127,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
