@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-21T09:32:29.491608+00:00",
+ "run_id": "20261021T093229Z",
+ "external_parse": {
+  "events": 290,
+  "markets": 2044,
+  "skipped_family": 329,
+  "skipped_period": 566,
+  "skipped_live": 72,
+  "one_sided": 46,
+  "rows": 2911,
+  "devigged": 1102
+ },
+ "smarkets_fetch": {
+  "events_seen": 105,
+  "events_priced": 80,
+  "markets": 1025,
+  "markets_mapped": 452,
+  "contracts": 990,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261021T093229Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 452,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 166,
+  "rows": 824,
+  "two_sided": 821,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 576,
+ "external_mapping": {
+  "total": 278,
+  "by_status": {
+   "MAPPED": 192,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 41,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6906,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Eric Tripathi": 1,
+   "Odysseas Geladaris": 1,
+   "Henry Best": 1,
+   "David Tixhon": 1,
+   "Matteo Gribaldo": 1,
+   "Noah Boutleux": 1,
+   "Vaclav Schneider": 1,
+   "Diogo Coelho": 1,
+   "Gilberto Ravasio": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 143,
+  "by_status": {
+   "MAPPED": 125,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8741,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Kyle McKay": 1,
+   "Diogo Coelho": 1,
+   "Vaclav Schneider": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "David Tixhon": 1,
+   "Noah Boutleux": 1,
+   "Mikhail Khodorchenko": 1,
+   "Marat Salbiev": 1,
+   "Odysseas Geladaris": 1
+  }
+ },
+ "matched_both_venues": 93,
+ "external_mapped_matches": 202,
+ "kalshi_mapped_matches": 125,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 104,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
