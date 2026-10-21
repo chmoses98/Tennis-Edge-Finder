@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-21T16:13:03.151107+00:00",
+ "run_id": "20261021T161303Z",
+ "external_parse": {
+  "events": 169,
+  "markets": 1226,
+  "skipped_family": 202,
+  "skipped_period": 355,
+  "skipped_live": 49,
+  "one_sided": 7,
+  "rows": 1947,
+  "devigged": 662
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 1146,
+  "markets_mapped": 433,
+  "contracts": 930,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261021T161303Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 433,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 161,
+  "rows": 769,
+  "two_sided": 764,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 487,
+ "external_mapping": {
+  "total": 158,
+  "by_status": {
+   "MAPPED": 107,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6772,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Alexander Guajardo": 1,
+   "William McEwan": 1,
+   "Rachael Phelan": 1,
+   "Henry Best": 1,
+   "Mateus Nogueira": 1,
+   "Giovanni Branchetti": 1,
+   "Eli Stephenson": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 99,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8687,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Eric Jr Olivarez": 1,
+   "Shotaro Yamamoto": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Henry Best": 1,
+   "Benjamin O'Connell": 1,
+   "Natalie Kha": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 123,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 43,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
