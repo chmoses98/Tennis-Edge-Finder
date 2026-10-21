@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-21T17:03:13.812098+00:00",
+ "run_id": "20261021T170313Z",
+ "external_parse": {
+  "events": 170,
+  "markets": 1207,
+  "skipped_family": 197,
+  "skipped_period": 348,
+  "skipped_live": 48,
+  "one_sided": 19,
+  "rows": 1890,
+  "devigged": 642
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 1085,
+  "markets_mapped": 410,
+  "contracts": 876,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261021T170313Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 410,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 90,
+  "rows": 786,
+  "two_sided": 780,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 538,
+ "external_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 107,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.673,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Alexander Guajardo": 1,
+   "William McEwan": 1,
+   "Rachael Phelan": 1,
+   "Henry Best": 1,
+   "Giovanni Branchetti": 1,
+   "Mateus Nogueira": 1,
+   "Eli Stephenson": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 34,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8145,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Samarth Sahita": 1,
+   "Yue Xia": 1,
+   "Ruochen Gao": 1,
+   "Kuan-Shou Chen": 1,
+   "Shotaro Yamamoto": 1,
+   "Oscar Brown": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 122,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 57,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
