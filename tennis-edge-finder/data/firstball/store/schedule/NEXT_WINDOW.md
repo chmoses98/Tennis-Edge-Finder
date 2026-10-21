@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 10:40Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 10:50Z)
 
 * Earliest credible first ball: **2026-10-21 11:00Z**
 * Recommended RUN TENNIS time: **2026-10-21 10:15Z**  (OVERDUE: run now)
@@ -7,16 +7,16 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Mariano Navone vs Tallon Griekspoor | 2026-10-21 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Mariano Navone vs Tallon Griekspoor | 2026-10-21 11:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Ekaterina Alexandrova vs Marta Kostyuk | 2026-10-21 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Stefanos Tsitsipas vs Mikhail Kukushkin | 2026-10-21 11:35Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5) | MEDIUM |
+| Stefanos Tsitsipas vs Mikhail Kukushkin | 2026-10-21 11:45Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5) | MEDIUM |
 | Clement Chidekh vs Jacob Fearnley | 2026-10-21 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**5 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Zangar Nurlanuly vs Tomas Machac, Sorana Cirstea vs Sara Bejlek, Leylah Fernandez vs Aliaksandra Sasnovich
+**3 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Martin Landaluce, Dino Prizmic vs Damir Dzumhur, Sorana Cirstea vs Sara Bejlek
 
 Published slate: `SL-20261021T101215Z-904e78bb` built 2026-10-21 10:12Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-21T11:00:00+00:00, slate built 2026-10-21T10:12:15.837578+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-21 13:30Z, run by 2026-10-21 12:45Z, 2 match(es)
 * later window 3: first ball 2026-10-21 16:00Z, run by 2026-10-21 15:15Z, 3 match(es)
