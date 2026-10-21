@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-21T01:20:42.912374+00:00",
+ "run_id": "20261021T012042Z",
+ "external_parse": {
+  "events": 310,
+  "markets": 2722,
+  "skipped_family": 383,
+  "skipped_period": 750,
+  "skipped_live": 16,
+  "one_sided": 34,
+  "rows": 4101,
+  "devigged": 1555
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1151,
+  "markets_mapped": 458,
+  "contracts": 978,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261021T012042Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 458,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 140,
+  "rows": 838,
+  "two_sided": 832,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 519,
+ "external_mapping": {
+  "total": 297,
+  "by_status": {
+   "MAPPED": 203,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6835,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Harrison Satara": 1,
+   "Nick Beamish": 1,
+   "Takumi Katsuda": 1,
+   "Toshiki Karigyo": 1,
+   "Yue Xia": 1,
+   "Hao Yu Lin": 1,
+   "Wenze Li": 1,
+   "Alexander Watanabe Eriksson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7868,
+  "top_refusal_subjects": {
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Mateus Nogueira": 1,
+   "Eli Stephenson": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Francisco Fontes Damorim": 1,
+   "Rihards Neimanis": 1,
+   "Matteo Gribaldo": 1,
+   "Gilberto Ravasio": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 210,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 87,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 15,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
