@@ -1,13 +1,13 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 05:27Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-21 05:37Z)
 
-* Earliest credible first ball: **2026-10-21 05:30Z**
-* Recommended RUN TENNIS time: **2026-10-21 04:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-21 05:20Z**
+* Earliest credible first ball: **2026-10-21 05:43Z**
+* Recommended RUN TENNIS time: **2026-10-21 04:58Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-21 05:33Z**
 * Matches in window: 6
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Katie Boulter vs Viktorija Golubic | 2026-10-21 05:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Katie Boulter vs Viktorija Golubic | 2026-10-21 05:43Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 2 of best-of-3) | MEDIUM |
 | Shrijana Thapa vs Yara Alhaqbani | 2026-10-21 06:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | James Duckworth vs Luciano Darderi | 2026-10-21 06:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Swastika Bista vs Lara Bukary | 2026-10-21 07:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
@@ -18,7 +18,7 @@
 
 Published slate: `SL-20261021T050301Z-8e155d8a` built 2026-10-21 05:03Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-21 08:00Z, run by 2026-10-21 07:15Z, 4 match(es)
 * later window 3: first ball 2026-10-21 11:00Z, run by 2026-10-21 10:15Z, 3 match(es)
