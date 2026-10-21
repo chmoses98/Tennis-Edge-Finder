@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-21T04:22:13.283926+00:00",
+ "run_id": "20261021T042213Z",
+ "external_parse": {
+  "events": 334,
+  "markets": 2679,
+  "skipped_family": 352,
+  "skipped_period": 752,
+  "skipped_live": 34,
+  "one_sided": 46,
+  "rows": 4017,
+  "devigged": 1528
+ },
+ "smarkets_fetch": {
+  "events_seen": 117,
+  "events_priced": 80,
+  "markets": 1125,
+  "markets_mapped": 454,
+  "contracts": 984,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261021T042213Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 454,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 158,
+  "rows": 826,
+  "two_sided": 820,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 538,
+ "external_mapping": {
+  "total": 321,
+  "by_status": {
+   "MAPPED": 213,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 50,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6636,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Luca Ostovany": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Mustafa Ege Sik": 1,
+   "Archie Stewart": 1,
+   "Eric Jr. Olivarez": 1,
+   "Shao Zhang": 1,
+   "Hao Yu Lin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 40,
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 34,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7426,
+  "top_refusal_subjects": {
+   "Thi Mai Linh Nguyen": 1,
+   "Shrijana Thapa": 1,
+   "Hye Jin Elliott": 1,
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Connor Plunkett": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Joshua Adamson": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 220,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
