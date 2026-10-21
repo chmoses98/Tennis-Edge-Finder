@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-21T01:40:49.997800+00:00",
+ "run_id": "20261021T014049Z",
+ "external_parse": {
+  "events": 306,
+  "markets": 2664,
+  "skipped_family": 377,
+  "skipped_period": 736,
+  "skipped_live": 17,
+  "one_sided": 31,
+  "rows": 4030,
+  "devigged": 1519
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1159,
+  "markets_mapped": 462,
+  "contracts": 988,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261021T014049Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 462,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 148,
+  "rows": 840,
+  "two_sided": 832,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 718,
+ "external_mapping": {
+  "total": 292,
+  "by_status": {
+   "MAPPED": 198,
+   "DOUBLES_UNSUPPORTED": 56,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6781,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 56,
+   "Khumoyun Sultanov": 1,
+   "Tiffany Papazian": 1,
+   "Luca Ostovany": 1,
+   "Takumi Katsuda": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Nick Beamish": 1,
+   "Hao Yu Lin": 1,
+   "Wenze Li": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 215,
+  "by_status": {
+   "MAPPED": 172,
+   "UNMAPPED_PLAYER": 41,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Joao Vitor Scramin do Lago": 1,
+   "Martim Bernardo": 1,
+   "Ramazan Kaan Oktay": 1,
+   "Rihards Neimanis": 1,
+   "Kyle McKay": 1,
+   "Raul Clarijs": 1
+  }
+ },
+ "matched_both_venues": 92,
+ "external_mapped_matches": 205,
+ "kalshi_mapped_matches": 172,
+ "model_witness_available": true,
+ "rows": 162,
+ "counts": {
+  "PASS": 162,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 116,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
