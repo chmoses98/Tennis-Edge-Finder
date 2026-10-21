@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-21T00:00:33.385245+00:00",
+ "run_id": "20261021T000033Z",
+ "external_parse": {
+  "events": 268,
+  "markets": 2356,
+  "skipped_family": 341,
+  "skipped_period": 655,
+  "skipped_live": 14,
+  "one_sided": 56,
+  "rows": 3560,
+  "devigged": 1303
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1104,
+  "markets_mapped": 432,
+  "contracts": 920,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261021T000033Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 432,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 84,
+  "rows": 836,
+  "two_sided": 831,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 402,
+ "external_mapping": {
+  "total": 256,
+  "by_status": {
+   "MAPPED": 175,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.6836,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Ella Brownback": 1,
+   "Harrison Satara": 1,
+   "Oscar Brown": 1,
+   "Toshiki Karigyo": 1,
+   "Yue Xia": 1,
+   "Hao Yu Lin": 1,
+   "Wenze Li": 1,
+   "Alexander Watanabe Eriksson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.475,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Jay Friend": 1,
+   "Khumoyun Sultanov": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 16,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7907,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Jay Friend": 1,
+   "Maxi Carrascosa Diaz": 1,
+   "Tim Hammes": 1,
+   "Kyle McKay": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Noah Boutleux": 1,
+   "Dominik Guzmicky": 1,
+   "Eric Jr Olivarez": 1,
+   "Sasikumar Mukund": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 183,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
