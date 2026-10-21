@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-21T06:42:02.384922+00:00",
+ "run_id": "20261021T064202Z",
+ "external_parse": {
+  "events": 315,
+  "markets": 2555,
+  "skipped_family": 384,
+  "skipped_period": 705,
+  "skipped_live": 34,
+  "one_sided": 55,
+  "rows": 3683,
+  "devigged": 1411
+ },
+ "smarkets_fetch": {
+  "events_seen": 114,
+  "events_priced": 80,
+  "markets": 1062,
+  "markets_mapped": 450,
+  "contracts": 984,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261021T064202Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 450,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 156,
+  "rows": 828,
+  "two_sided": 825,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 754,
+ "external_mapping": {
+  "total": 304,
+  "by_status": {
+   "MAPPED": 207,
+   "DOUBLES_UNSUPPORTED": 52,
+   "UNMAPPED_PLAYER": 44,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6809,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Khumoyun Sultanov": 1,
+   "Shotaro Yamamoto": 1,
+   "Hao Yu Lin": 1,
+   "Wenze Li": 1,
+   "Marko Retelj": 1,
+   "Eric Tripathi": 1,
+   "William Vinciguerra": 1,
+   "Henry Best": 1,
+   "David Tixhon": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 40
+  },
+  "mapped_rate": 0.4625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Khumoyun Sultanov": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 144,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7826,
+  "top_refusal_subjects": {
+   "Aishath Karin Saizan": 1,
+   "Noor Sayej": 1,
+   "Gharam Alkhayat": 1,
+   "Sumou Aldabbous": 1,
+   "Dana Khalifa": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Jay Friend": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Pedro Henrique Chabalgoity": 1
+  }
+ },
+ "matched_both_venues": 101,
+ "external_mapped_matches": 215,
+ "kalshi_mapped_matches": 144,
+ "model_witness_available": true,
+ "rows": 150,
+ "counts": {
+  "PASS": 149,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:MARKETS_AGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 90,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
