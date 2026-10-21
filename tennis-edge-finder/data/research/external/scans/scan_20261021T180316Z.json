@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-21T18:03:16.190164+00:00",
+ "run_id": "20261021T180316Z",
+ "external_parse": {
+  "events": 191,
+  "markets": 1379,
+  "skipped_family": 207,
+  "skipped_period": 399,
+  "skipped_live": 45,
+  "one_sided": 27,
+  "rows": 2133,
+  "devigged": 746
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 1098,
+  "markets_mapped": 418,
+  "contracts": 892,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261021T180316Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 418,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 106,
+  "rows": 786,
+  "two_sided": 776,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 613,
+ "external_mapping": {
+  "total": 180,
+  "by_status": {
+   "MAPPED": 124,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.6889,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Anastasiia Kostiushkina": 1,
+   "William McEwan": 1,
+   "Noah Folkesson-Doudy": 1,
+   "Henry Best": 1,
+   "Pedro Henrique Chabalgoity": 1,
+   "Connor Plunkett": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Oscar Brown": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 34,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 115,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8273,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Matteo Gribaldo": 1,
+   "Odysseas Geladaris": 1,
+   "Samarth Sahita": 1,
+   "Eric Jr Olivarez": 1,
+   "Arnav Paparkar": 1,
+   "Yue Xia": 1,
+   "Lin Hao-Yu": 1,
+   "Kuan-Shou Chen": 1,
+   "Oscar Brown": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 132,
+ "kalshi_mapped_matches": 115,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
