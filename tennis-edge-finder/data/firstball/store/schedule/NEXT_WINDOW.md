@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 07:07Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 07:22Z)
 
-* Earliest credible first ball: **2026-10-22 07:41Z**
-* Recommended RUN TENNIS time: **2026-10-22 06:56Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-22 07:31Z**
+* Earliest credible first ball: **2026-10-22 07:56Z**
+* Recommended RUN TENNIS time: **2026-10-22 07:11Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-22 07:46Z**
 * Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexandra Eala vs Diana Shnaider | 2026-10-22 07:41Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3) | MEDIUM |
+| Alexandra Eala vs Diana Shnaider | 2026-10-22 07:56Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3) | MEDIUM |
 | Tomas Machac vs Karen Khachanov | 2026-10-22 08:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Ushna Suhail vs Tandin Dorji | 2026-10-22 08:53Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | yasaman yazdani vs Anna Abualhaj | 2026-10-22 08:53Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Maria Isabel Gvan Heras vs Yara Alhaqbani
 
-Published slate: `SL-20261022T055753Z-72f19dea` built 2026-10-22 05:57Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-22T07:41:20.398720+00:00, slate built 2026-10-22T05:57:53.600632+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 7 match(es)
+Published slate: `SL-20261022T055753Z-72f19dea` built 2026-10-22 05:57Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-22T07:56:07.520823+00:00, slate built 2026-10-22T05:57:53.600632+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
 
 Dispatched this pass: slate_primary (ok)
 
