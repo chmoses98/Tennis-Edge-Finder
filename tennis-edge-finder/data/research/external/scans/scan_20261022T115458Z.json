@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-22T11:54:58.575436+00:00",
+ "run_id": "20261022T115458Z",
+ "external_parse": {
+  "events": 172,
+  "markets": 1168,
+  "skipped_family": 266,
+  "skipped_period": 316,
+  "skipped_live": 55,
+  "one_sided": 71,
+  "rows": 1477,
+  "devigged": 515
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 956,
+  "markets_mapped": 418,
+  "contracts": 906,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261022T115458Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 418,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 99,
+  "rows": 807,
+  "two_sided": 799,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 455,
+ "external_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 121,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.7516,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Bentley Sparks": 1,
+   "David Tixhon": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "Lucas Goncalves Franca": 1,
+   "Guelord Kayombo": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5797,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8526,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Kuan-Shou Chen": 1,
+   "Victor Pagotto": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Henry Best": 1,
+   "Jialin Tian": 1,
+   "Giorgia Pedone": 1,
+   "Mariia Lazarenko": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 134,
+ "kalshi_mapped_matches": 81,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 37
+ }
+}
