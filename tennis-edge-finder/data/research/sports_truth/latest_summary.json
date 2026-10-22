@@ -1,32 +1,32 @@
 {
- "run_id": "20261022T104806Z",
- "source_stamp": "20261022T104241Z|2026-10-22T10:45:08.857500+00:00",
- "settled": 68028,
+ "run_id": "20261022T125538Z",
+ "source_stamp": "20261022T104241Z|2026-10-22T12:46:00.733843+00:00",
+ "settled": 68608,
  "by_status": {
-  "NOT_COVERED": 28444,
-  "RESOLVED": 32017,
+  "NOT_COVERED": 28738,
+  "RESOLVED": 32180,
   "NOT_FOUND": 4361,
-  "NO_CANONICAL_IDS": 2846,
+  "NO_CANONICAL_IDS": 2930,
   "AMBIGUOUS": 248,
-  "PENDING_RESULT": 112
+  "PENDING_RESULT": 151
  },
  "reconciliation": {
-  "NOT_RECONCILED": 33412,
-  "AGREE": 8046
+  "NOT_RECONCILED": 33794,
+  "AGREE": 8072
  },
  "by_level": {
   "ATP|CHALLENGER": {
    "RESOLVED": 2274,
    "NOT_FOUND": 1526,
-   "NO_CANONICAL_IDS": 1318,
+   "NO_CANONICAL_IDS": 1336,
    "AMBIGUOUS": 14,
-   "NOT_COVERED": 2276
+   "NOT_COVERED": 2322
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
   },
   "ATP|ITF": {
-   "NOT_COVERED": 11812
+   "NOT_COVERED": 12038
   },
   "ATP|MASTERS_1000": {
    "RESOLVED": 11059,
@@ -39,16 +39,16 @@
    "RESOLVED": 208
   },
   "ATP|TOUR_500_250": {
-   "RESOLVED": 9351,
+   "RESOLVED": 9465,
    "NOT_FOUND": 1118,
-   "NO_CANONICAL_IDS": 472,
-   "PENDING_RESULT": 112
+   "NO_CANONICAL_IDS": 518,
+   "PENDING_RESULT": 140
   },
   "WTA|GRAND_SLAM": {
    "RESOLVED": 89
   },
   "WTA|ITF": {
-   "NOT_COVERED": 14266
+   "NOT_COVERED": 14288
   },
   "WTA|MASTERS_1000": {
    "RESOLVED": 2375,
@@ -59,10 +59,11 @@
    "NOT_FOUND": 2
   },
   "WTA|TOUR_500_250": {
-   "RESOLVED": 5091,
+   "RESOLVED": 5140,
    "NOT_FOUND": 448,
-   "NO_CANONICAL_IDS": 392,
-   "AMBIGUOUS": 126
+   "NO_CANONICAL_IDS": 412,
+   "AMBIGUOUS": 126,
+   "PENDING_RESULT": 11
   },
   "WTA|WTA_125": {
    "RESOLVED": 1394,
@@ -84,7 +85,7 @@
    "espn_ATP": "20261022T104048Z",
    "espn_WTA": "20261022T104048Z"
   },
-  "canonical_matches_sha256": "bb966b3d5dd2907762a2e09875ac362e36d82efb9a6f5e7bece8406b52292007",
+  "canonical_matches_sha256": "a32e1da1d1660e7ed7d3b7656dc38605fdd62cdef56b28d50be5e4e03e91f3ff",
   "build_version": "canonical_v2.3",
   "horizons": {
    "ATP tour": {
@@ -127,43 +128,43 @@
   "espn_families_not_live": []
  },
  "resolution": {
-  "newly_resolved": 1275,
-  "first_resolutions_total": 32493,
+  "newly_resolved": 163,
+  "first_resolutions_total": 32656,
   "backfill": false,
-  "lag_days_median_new": 1.45,
-  "lag_days_max_new": 4.45
+  "lag_days_median_new": 0.54,
+  "lag_days_max_new": 2.54
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 25458,
-  "matches_with_v2_and_incumbent": 3043,
-  "exchange_settled_predictions": 25458,
-  "independently_resolved_predictions": 5434,
-  "independently_settled_matches": 675,
+  "predictions_with_v2_and_incumbent": 25782,
+  "matches_with_v2_and_incumbent": 3101,
+  "exchange_settled_predictions": 25782,
+  "independently_resolved_predictions": 5460,
+  "independently_settled_matches": 680,
   "by_status": {
-   "RESOLVED": 5434,
+   "RESOLVED": 5460,
    "NOT_FOUND": 796,
-   "NOT_COVERED": 19164,
+   "NOT_COVERED": 19458,
    "AMBIGUOUS": 50,
-   "PENDING_RESULT": 14
+   "PENDING_RESULT": 18
   },
   "reconciliation": {
-   "AGREE": 5434,
-   "NOT_RECONCILED": 20024,
+   "AGREE": 5460,
+   "NOT_RECONCILED": 20322,
    "EXPLAINED_NOTE": 20
   },
   "by_level": {
    "ATP Challenger": {
     "RESOLVED": 1350,
     "NOT_FOUND": 432,
-    "NOT_COVERED": 2276,
+    "NOT_COVERED": 2322,
     "AMBIGUOUS": 8
    },
    "ATP ITF": {
-    "NOT_COVERED": 7234
+    "NOT_COVERED": 7460
    },
    "ATP tour": {
-    "RESOLVED": 2214,
+    "RESOLVED": 2228,
     "NOT_FOUND": 216,
     "AMBIGUOUS": 12,
     "PENDING_RESULT": 14
@@ -173,12 +174,13 @@
     "RESOLVED": 734
    },
    "WTA ITF": {
-    "NOT_COVERED": 9608
+    "NOT_COVERED": 9630
    },
    "WTA tour": {
-    "RESOLVED": 1136,
+    "RESOLVED": 1148,
     "NOT_FOUND": 148,
-    "AMBIGUOUS": 30
+    "AMBIGUOUS": 30,
+    "PENDING_RESULT": 4
    }
   },
   "stale_unresolved_tour_level": [

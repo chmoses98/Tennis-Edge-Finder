@@ -1,4 +1,4 @@
-# Assisted handicapping scorecard (2026-10-22T05:57Z)
+# Assisted handicapping scorecard (2026-10-22T13:05Z)
 
 **AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF · CHATGPT_ASSISTED_TRACK = ACTIVE** · track start 2026-09-30T23:08:40.025222+00:00 · evidence state **NO_DECISIONS_YET**
 
