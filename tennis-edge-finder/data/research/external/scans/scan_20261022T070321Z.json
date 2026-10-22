@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-22T07:03:21.010727+00:00",
+ "run_id": "20261022T070321Z",
+ "external_parse": {
+  "events": 241,
+  "markets": 2023,
+  "skipped_family": 383,
+  "skipped_period": 533,
+  "skipped_live": 29,
+  "one_sided": 44,
+  "rows": 2707,
+  "devigged": 1063
+ },
+ "smarkets_fetch": {
+  "events_seen": 83,
+  "events_priced": 80,
+  "markets": 1061,
+  "markets_mapped": 471,
+  "contracts": 1026,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261022T070321Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 471,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 216,
+  "rows": 810,
+  "two_sided": 807,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1081,
+ "external_mapping": {
+  "total": 228,
+  "by_status": {
+   "MAPPED": 168,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7368,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Benjamin O'Connell": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Eric Jr. Olivarez": 1,
+   "Yue Xia": 1,
+   "Odysseas Geladaris": 1,
+   "David Tixhon": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 221,
+  "by_status": {
+   "MAPPED": 180,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8145,
+  "top_refusal_subjects": {
+   "Anna Abualhaj": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "bautista de la Pena": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Eli Stephenson": 1,
+   "Victor Pagotto": 1,
+   "Guelord Kayombo": 1
+  }
+ },
+ "matched_both_venues": 134,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 180,
+ "model_witness_available": true,
+ "rows": 228,
+ "counts": {
+  "PASS": 226,
+  "tri:MODEL_LONE_OUTLIER": 55,
+  "tri:INSUFFICIENT_INPUTS": 162,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
