@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 17:10Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 17:25Z)
 
-* Earliest credible first ball: **2026-10-22 18:30Z**
-* Recommended RUN TENNIS time: **2026-10-22 17:45Z**
-* Final price/status check time: **2026-10-22 18:20Z**
+* Earliest credible first ball: **2026-10-22 18:23Z**
+* Recommended RUN TENNIS time: **2026-10-22 17:38Z**
+* Final price/status check time: **2026-10-22 18:13Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Kyrian Jacquet vs Brandon Nakashima | 2026-10-22 18:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Kyrian Jacquet vs Brandon Nakashima | 2026-10-22 18:23Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Flavio Cobolli vs Stan Wawrinka, Leylah Fernandez vs Ekaterina Alexandrova
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261022T163933Z-d50f321f` built 2026-10-22 16:39Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261022T170709Z-29b117ec` built 2026-10-22 17:07Z -- current
 
 Dispatched this pass: run_tennis (ok)
 
