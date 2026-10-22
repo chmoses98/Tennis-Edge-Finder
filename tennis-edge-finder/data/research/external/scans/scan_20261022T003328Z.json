@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-22T00:33:28.903946+00:00",
+ "run_id": "20261022T003328Z",
+ "external_parse": {
+  "events": 216,
+  "markets": 1956,
+  "skipped_family": 366,
+  "skipped_period": 525,
+  "skipped_live": 17,
+  "one_sided": 57,
+  "rows": 2711,
+  "devigged": 1008
+ },
+ "smarkets_fetch": {
+  "events_seen": 88,
+  "events_priced": 80,
+  "markets": 1234,
+  "markets_mapped": 478,
+  "contracts": 1030,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261022T003328Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 478,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 232,
+  "rows": 798,
+  "two_sided": 795,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 579,
+ "external_mapping": {
+  "total": 201,
+  "by_status": {
+   "MAPPED": 147,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7313,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Kanta Watanabe": 1,
+   "Oscar Brown": 1,
+   "Shotaro Yamamoto": 1,
+   "Ruochen Gao": 1,
+   "Kuan-Shou Chen": 1,
+   "Hao Yu Lin": 1,
+   "Yue Xia": 1,
+   "Eric Jr. Olivarez": 1,
+   "Jaden Dewandaka Tan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8214,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Guelord Kayombo": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Matteo Gribaldo": 1,
+   "Sergey Petrov": 1,
+   "Mikhail Khodorchenko": 1,
+   "Jaden Dewandaka Tan": 1
+  }
+ },
+ "matched_both_venues": 72,
+ "external_mapped_matches": 155,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 121,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 80,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
