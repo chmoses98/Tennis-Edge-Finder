@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 22:05Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 22:21Z)
 
 * Earliest credible first ball: **2026-10-23 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-23 01:45Z**
@@ -12,7 +12,7 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261022T210334Z-3752beab` built 2026-10-22 21:03Z -- current
+Published slate: `SL-20261022T215332Z-60b6db6e` built 2026-10-22 21:53Z -- current
 
 Dispatched this pass: none
 
