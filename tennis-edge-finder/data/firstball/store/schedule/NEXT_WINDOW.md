@@ -1,19 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 14:58Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 15:13Z)
 
-* Earliest credible first ball: **2026-10-22 15:56Z**
-* Recommended RUN TENNIS time: **2026-10-22 15:11Z**
-* Final price/status check time: **2026-10-22 15:46Z**
+* Earliest credible first ball: **2026-10-22 16:11Z**
+* Recommended RUN TENNIS time: **2026-10-22 15:26Z**
+* Final price/status check time: **2026-10-22 16:01Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Flavio Cobolli vs Stan Wawrinka | 2026-10-22 15:56Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
+| Flavio Cobolli vs Stan Wawrinka | 2026-10-22 16:11Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Damir Dzumhur vs Zizou Bergs, Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261022T143835Z-453ad166` built 2026-10-22 14:38Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261022T145754Z-312d4aa3` built 2026-10-22 14:57Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-22 18:30Z, run by 2026-10-22 17:45Z, 1 match(es)
 * later window 3: first ball 2026-10-23 02:30Z, run by 2026-10-23 01:45Z, 2 match(es)
