@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-22T00:43:20.473161+00:00",
+ "run_id": "20261022T004320Z",
+ "external_parse": {
+  "events": 226,
+  "markets": 2084,
+  "skipped_family": 385,
+  "skipped_period": 553,
+  "skipped_live": 16,
+  "one_sided": 49,
+  "rows": 2886,
+  "devigged": 1096
+ },
+ "smarkets_fetch": {
+  "events_seen": 88,
+  "events_priced": 80,
+  "markets": 1242,
+  "markets_mapped": 483,
+  "contracts": 1040,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261022T004320Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 483,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 244,
+  "rows": 796,
+  "two_sided": 793,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 437,
+ "external_mapping": {
+  "total": 211,
+  "by_status": {
+   "MAPPED": 156,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7393,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Kanta Watanabe": 1,
+   "Oscar Brown": 1,
+   "Shotaro Yamamoto": 1,
+   "Ruochen Gao": 1,
+   "Kuan-Shou Chen": 1,
+   "Hao Yu Lin": 1,
+   "Yue Xia": 1,
+   "Eric Jr. Olivarez": 1,
+   "Jaden Dewandaka Tan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 120,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8667,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Guelord Kayombo": 1,
+   "Samarth Sahita": 1,
+   "Digvijay Pratap Singh": 1,
+   "Ruochen Gao": 1,
+   "Shotaro Yamamoto": 1,
+   "Kanta Watanabe": 1,
+   "Oscar Brown": 1,
+   "Benjamin O'Connell": 1,
+   "Baotong Xu": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 164,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 92,
+  "tri:INSUFFICIENT_INPUTS": 32,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
