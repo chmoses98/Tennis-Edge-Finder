@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-22T02:45:42.807721+00:00",
+ "run_id": "20261022T024542Z",
+ "external_parse": {
+  "events": 233,
+  "markets": 2038,
+  "skipped_family": 380,
+  "skipped_period": 548,
+  "skipped_live": 30,
+  "one_sided": 39,
+  "rows": 2845,
+  "devigged": 1069
+ },
+ "smarkets_fetch": {
+  "events_seen": 86,
+  "events_priced": 80,
+  "markets": 1150,
+  "markets_mapped": 469,
+  "contracts": 1012,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261022T024542Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 469,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 231,
+  "rows": 781,
+  "two_sided": 778,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 476,
+ "external_mapping": {
+  "total": 218,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7477,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Ruochen Gao": 1,
+   "Kuan-Shou Chen": 1,
+   "Hao Yu Lin": 1,
+   "Yue Xia": 1,
+   "Eric Jr. Olivarez": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Samarth Sahita": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "bautista de la Pena": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Eli Stephenson": 1,
+   "Victor Pagotto": 1,
+   "Guelord Kayombo": 1,
+   "Sergey Petrov": 1,
+   "Arnav Paparkar": 1,
+   "Lin Hao-Yu": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 172,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 78,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
