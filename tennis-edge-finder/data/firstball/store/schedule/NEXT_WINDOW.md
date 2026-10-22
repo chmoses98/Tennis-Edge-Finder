@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 18:41Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 19:43Z)
 
 * Earliest credible first ball: **2026-10-23 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-23 01:45Z**
@@ -10,9 +10,9 @@
 | Ann Li vs Lilli Tagger | 2026-10-23 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Talia Gibson vs Ashlyn Krueger | 2026-10-23 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Kyrian Jacquet vs Brandon Nakashima, Leylah Fernandez vs Ekaterina Alexandrova
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261022T174520Z-3df9478a` built 2026-10-22 17:45Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261022T182832Z-b256534e` built 2026-10-22 18:28Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
 Dispatched this pass: slate_stale_refresh (ok)
 
