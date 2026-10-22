@@ -1,0 +1,50 @@
+{
+ "run_id": "20261022T171031Z",
+ "started_at": "2026-10-22T17:10:31.907231+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 162,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1199,
+  "events_only_on_capture_board": 184,
+  "selected_from_capture_board": 167
+ },
+ "mapping": {
+  "UNMATCHED": 360,
+  "MATCHED": 162,
+  "AMBIGUOUS": 6
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT23FERALE": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185545 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT23FERALE-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185545 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT23FERALE-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185545 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-22T17:25:27.130911+00:00"
+}
