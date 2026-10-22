@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-22T10:44:10.043661+00:00",
+ "run_id": "20261022T104410Z",
+ "external_parse": {
+  "events": 187,
+  "markets": 1369,
+  "skipped_family": 310,
+  "skipped_period": 373,
+  "skipped_live": 57,
+  "one_sided": 54,
+  "rows": 1827,
+  "devigged": 630
+ },
+ "smarkets_fetch": {
+  "events_seen": 70,
+  "events_priced": 70,
+  "markets": 995,
+  "markets_mapped": 440,
+  "contracts": 950,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261022T104410Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 440,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 139,
+  "rows": 811,
+  "two_sided": 808,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 487,
+ "external_mapping": {
+  "total": 175,
+  "by_status": {
+   "MAPPED": 133,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.76,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Bentley Sparks": 1,
+   "David Tixhon": 1,
+   "Guelord Kayombo": 1,
+   "Matteo Gribaldo": 1,
+   "Florent Lagarrigue": 1,
+   "Giovanni Branchetti": 1,
+   "Bautista de la Pena": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 118,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8613,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Kuan-Shou Chen": 1,
+   "Felix Roussel": 1,
+   "Victor Pagotto": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Matteo Gribaldo": 1,
+   "Henry Best": 1,
+   "Jialin Tian": 1
+  }
+ },
+ "matched_both_venues": 89,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 118,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 94,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 48,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 38
+ }
+}
