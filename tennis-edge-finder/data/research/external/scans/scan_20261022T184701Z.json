@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-22T18:47:01.009321+00:00",
+ "run_id": "20261022T184701Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 970,
+  "skipped_family": 237,
+  "skipped_period": 255,
+  "skipped_live": 42,
+  "one_sided": 46,
+  "rows": 1257,
+  "devigged": 432
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 1043,
+  "markets_mapped": 370,
+  "contracts": 784,
+  "quoted_contracts": 784,
+  "raw": "data/research/external/raw/20261022T184701Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 708,
+  "two_sided": 705,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1211,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Bentley Sparks": 1,
+   "David Tixhon": 1,
+   "Nazim Makhlouf": 1,
+   "Florent Lagarrigue": 1,
+   "Giovanni Branchetti": 1,
+   "Bautista de la Pena": 1,
+   "Eli Stephenson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 35,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5738,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 116,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.7945,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Nazim Makhlouf": 1,
+   "Matteo Gribaldo": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Paparkar": 1,
+   "Sergey Petrov": 1,
+   "Lin Hao-Yu": 1,
+   "Kuan-Shou Chen": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 117,
+ "kalshi_mapped_matches": 116,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 68,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
