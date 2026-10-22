@@ -1,22 +1,22 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 15:13Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 15:28Z)
 
-* Earliest credible first ball: **2026-10-22 16:11Z**
-* Recommended RUN TENNIS time: **2026-10-22 15:26Z**
-* Final price/status check time: **2026-10-22 16:01Z**
+* Earliest credible first ball: **2026-10-22 18:30Z**
+* Recommended RUN TENNIS time: **2026-10-22 17:45Z**
+* Final price/status check time: **2026-10-22 18:20Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Flavio Cobolli vs Stan Wawrinka | 2026-10-22 16:11Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
+| Kyrian Jacquet vs Brandon Nakashima | 2026-10-22 18:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Damir Dzumhur vs Zizou Bergs, Leylah Fernandez vs Ekaterina Alexandrova
+**3 main-tour match(es) without a verified start status** (BET blocked until checked): Flavio Cobolli vs Stan Wawrinka, Damir Dzumhur vs Zizou Bergs, Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261022T145754Z-312d4aa3` built 2026-10-22 14:57Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261022T145754Z-312d4aa3` built 2026-10-22 14:57Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
-* later window 2: first ball 2026-10-22 18:30Z, run by 2026-10-22 17:45Z, 1 match(es)
-* later window 3: first ball 2026-10-23 02:30Z, run by 2026-10-23 01:45Z, 2 match(es)
-* later window 4: first ball 2026-10-23 05:00Z, run by 2026-10-23 04:15Z, 3 match(es)
-* later window 5: first ball 2026-10-23 07:00Z, run by 2026-10-23 06:15Z, 3 match(es)
-* later window 6: first ball 2026-10-23 09:30Z, run by 2026-10-23 08:45Z, 2 match(es)
+* later window 2: first ball 2026-10-23 02:30Z, run by 2026-10-23 01:45Z, 2 match(es)
+* later window 3: first ball 2026-10-23 05:00Z, run by 2026-10-23 04:15Z, 3 match(es)
+* later window 4: first ball 2026-10-23 07:00Z, run by 2026-10-23 06:15Z, 3 match(es)
+* later window 5: first ball 2026-10-23 09:30Z, run by 2026-10-23 08:45Z, 2 match(es)
+* later window 6: first ball 2026-10-23 12:00Z, run by 2026-10-23 11:15Z, 2 match(es)
