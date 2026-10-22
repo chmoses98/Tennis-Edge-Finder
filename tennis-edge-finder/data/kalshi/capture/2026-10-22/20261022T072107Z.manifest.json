@@ -1,0 +1,432 @@
+{
+ "run_id": "20261022T072107Z",
+ "started_at": "2026-10-22T07:21:07.104456+00:00",
+ "incomplete": [
+  {
+   "stage": "open_markets",
+   "series": "KXATPMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTAMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTAMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPCHALLENGERMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPCHALLENGERMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTACHALLENGERMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTACHALLENGERMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXITFMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXITFMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXITFWMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXITFWMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPGAME",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPGAME&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTAGAME",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTAGAME&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXLAVERCUPMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLAVERCUPMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXLAVERCUPDOUBLESMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLAVERCUPDOUBLESMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPDOUBLES",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPDOUBLES&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTADOUBLES",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTADOUBLES&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPCHALLENGERDOUBLES",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPCHALLENGERDOUBLES&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXITFDOUBLES",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXITFDOUBLES&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXITFWDOUBLES",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXITFWDOUBLES&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXMIXEDDOUBLESMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXMIXEDDOUBLESMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTASETWINNER",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTASETWINNER&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPEXACTMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPEXACTMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTAEXACTMATCH",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTAEXACTMATCH&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPGTOTAL",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPGTOTAL&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPGAMETOTAL",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPGAMETOTAL&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTAGTOTAL",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTAGTOTAL&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPTOTALSETS",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPTOTALSETS&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPSSPREAD",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPSSPREAD&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPACES",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPACES&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPGWINNER",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPGWINNER&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPS1GWINNER",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPS1GWINNER&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPS3GWINNER",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPS3GWINNER&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPS5GWINNER",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPS5GWINNER&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATP",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATP&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXWTA",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXWTA&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPROUND",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPROUND&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPNATSTAGE",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPNATSTAGE&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPNATWINNER",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPNATWINNER&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXATPSETSWEEP",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXATPSETSWEEP&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXDAVISCUP",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXDAVISCUP&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXUNITEDCUP",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXUNITEDCUP&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  },
+  {
+   "stage": "open_markets",
+   "series": "KXLAVERCUP",
+   "info": {
+    "pages": 0,
+    "error": "Kalshi HTTP 503 for https://api.elections.kalshi.com/trade-api/v2/markets?series_ticker=KXLAVERCUP&status=open&limit=1000: {\"error\":{\"code\":\"service_unavailable\",\"message\":\"service_unavailable\"}}"
+   }
+  }
+ ],
+ "counts": {
+  "open_markets": 404,
+  "quotes_written": 140,
+  "quotes_unchanged": 264,
+  "events_new": 0,
+  "books": 70,
+  "book_candidates": 70,
+  "trades_tennis": 0,
+  "trades_global_scanned": 0,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1792653067,
+   "hi": 1792653667,
+   "complete": true,
+   "pages": 1,
+   "trades": 0
+  },
+  "backlog_scans": [
+   {
+    "lo": 1792652467,
+    "hi": 1792653067,
+    "complete": true,
+    "pages": 1,
+    "trades": 0
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 2,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 453,
+  "retries": 273,
+  "http_429": 1,
+  "http_5xx": 272,
+  "failures": 38,
+  "seconds_sleeping": 2349.7778850703207,
+  "by_path": {
+   "markets": 146,
+   "markets/KXATPSETWINNER-26OCT21BUBMAR-1-BUB/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21BUBMAR-1-MAR/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21BUBMAR-2-BUB/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21BUBMAR-2-MAR/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21MEDSHI-1-MED/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21MEDSHI-1-SHI/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21MEDSHI-2-MED/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21MEDSHI-2-SHI/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21FILMUN-FIL4/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21FILMUN-FIL7/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21FILMUN-MUN2/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21FILMUN-1-FIL/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21FILMUN-1-MUN/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21FILMUN-2-FIL/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21FILMUN-2-MUN/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21HERFRI-1-FRI/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21HERFRI-1-HER/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21HERFRI-2-FRI/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT21HERFRI-2-HER/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21BUBMAR-BUB4/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21BUBMAR-BUB7/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21BUBMAR-MAR2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21MEDSHI-MED3/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21MEDSHI-MED6/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21MEDSHI-MED9/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22ATMBEL-ATM2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22ATMBEL-BEL2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22ATMBEL-BEL5/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22ATMBEL-1-ATM/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22ATMBEL-1-BEL/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22ATMBEL-2-ATM/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22ATMBEL-2-BEL/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22MACKHA-KHA3/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22MACKHA-KHA6/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22MACKHA-MAC2/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22MACKHA-1-KHA/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22MACKHA-1-MAC/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22MACKHA-2-KHA/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22MACKHA-2-MAC/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22COLLEH-COL2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22COLLEH-LEH4/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22COLLEH-LEH7/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22COLLEH-1-COL/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22COLLEH-1-LEH/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22COLLEH-2-COL/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22COLLEH-2-LEH/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21HERFRI-FRI2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21HERFRI-FRI5/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT21HERFRI-FRI8/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22GOJALT-ALT2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22GOJALT-GOJ2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22GOJALT-GOJ5/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22JACNAK-JAC2/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22JACNAK-NAK3/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22JACNAK-NAK6/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22VACVAN-VAC3/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22VACVAN-VAC6/orderbook": 1,
+   "markets/KXATPGSPREAD-26OCT22VACVAN-VAN2/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22GOJALT-1-ALT/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22GOJALT-1-GOJ/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22GOJALT-2-ALT/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22GOJALT-2-GOJ/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22JACNAK-1-JAC/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22JACNAK-1-NAK/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22JACNAK-2-JAC/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22JACNAK-2-NAK/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22VACVAN-1-VAC/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22VACVAN-1-VAN/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22VACVAN-2-VAC/orderbook": 1,
+   "markets/KXATPSETWINNER-26OCT22VACVAN-2-VAN/orderbook": 1,
+   "markets/trades": 2
+  }
+ },
+ "finished_at": "2026-10-22T08:00:49.742386+00:00"
+}
