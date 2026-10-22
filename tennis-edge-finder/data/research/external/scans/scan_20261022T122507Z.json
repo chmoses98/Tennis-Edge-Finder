@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-10-22T12:25:07.497272+00:00",
+ "run_id": "20261022T122507Z",
+ "external_parse": {
+  "events": 148,
+  "markets": 1092,
+  "skipped_family": 261,
+  "skipped_period": 286,
+  "skipped_live": 43,
+  "one_sided": 46,
+  "rows": 1426,
+  "devigged": 498
+ },
+ "smarkets_fetch": {
+  "events_seen": 65,
+  "events_priced": 65,
+  "markets": 900,
+  "markets_mapped": 391,
+  "contracts": 848,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261022T122507Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 391,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 49,
+  "rows": 799,
+  "two_sided": 792,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 572,
+ "external_mapping": {
+  "total": 138,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.7391,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Bentley Sparks": 1,
+   "David Tixhon": 1,
+   "Nazim Makhlouf": 1,
+   "Lucas Goncalves Franca": 1,
+   "Guelord Kayombo": 1,
+   "Giovanni Branchetti": 1,
+   "Bautista de la Pena": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5692,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8155,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Lin Hao-Yu": 1,
+   "Victor Pagotto": 1,
+   "Guelord Kayombo": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Henry Best": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 115,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 38,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
