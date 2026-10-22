@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-22T05:05:36.522076+00:00",
+ "run_id": "20261022T050536Z",
+ "external_parse": {
+  "events": 239,
+  "markets": 2064,
+  "skipped_family": 384,
+  "skipped_period": 553,
+  "skipped_live": 30,
+  "one_sided": 59,
+  "rows": 2763,
+  "devigged": 1068
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 1178,
+  "markets_mapped": 476,
+  "contracts": 1036,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261022T050536Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 476,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 235,
+  "rows": 801,
+  "two_sided": 799,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 637,
+ "external_mapping": {
+  "total": 224,
+  "by_status": {
+   "MAPPED": 168,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Herman H\u00f8yeraal": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Yue Xia": 1,
+   "Hao Yu Lin": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Odysseas Geladaris": 1,
+   "David Tixhon": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 125,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "Prajna Manandhar": 1,
+   "AYNUR MOVLYAMOVA": 1,
+   "Maria Isabel Gvan Heras": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "bautista de la Pena": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 125,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 115,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 86,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
