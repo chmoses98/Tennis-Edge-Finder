@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-22T09:24:09.846312+00:00",
+ "run_id": "20261022T092409Z",
+ "external_parse": {
+  "events": 227,
+  "markets": 1600,
+  "skipped_family": 347,
+  "skipped_period": 422,
+  "skipped_live": 66,
+  "one_sided": 37,
+  "rows": 2121,
+  "devigged": 794
+ },
+ "smarkets_fetch": {
+  "events_seen": 74,
+  "events_priced": 74,
+  "markets": 1005,
+  "markets_mapped": 463,
+  "contracts": 1004,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261022T092409Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 463,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 192,
+  "rows": 812,
+  "two_sided": 809,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 813,
+ "external_mapping": {
+  "total": 215,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7581,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Mikhail Khodorchenko": 1,
+   "Odysseas Geladaris": 1,
+   "David Tixhon": 1,
+   "Matteo Gribaldo": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "Lucas Goncalves Franca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6081,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 174,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.8325,
+  "top_refusal_subjects": {
+   "Anna Abualhaj": 1,
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Oscar Brown": 1,
+   "bautista de la Pena": 1,
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Eli Stephenson": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 128,
+ "external_mapped_matches": 174,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 166,
+ "counts": {
+  "PASS": 166,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 105,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
