@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-22T05:45:22.208418+00:00",
+ "run_id": "20261022T054522Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 84,
+  "events_priced": 80,
+  "markets": 1148,
+  "markets_mapped": 480,
+  "contracts": 1044,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261022T054522Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 480,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 243,
+  "rows": 801,
+  "two_sided": 799,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 430,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.802,
+  "top_refusal_subjects": {
+   "Maria Isabel Gvan Heras": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "bautista de la Pena": 1,
+   "Eli Stephenson": 1,
+   "Nazim Makhlouf": 1,
+   "Matteo Gribaldo": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Samarth Sahita": 1,
+   "Eric Jr Olivarez": 1,
+   "Arnav Paparkar": 1
+  }
+ },
+ "matched_both_venues": 18,
+ "external_mapped_matches": 46,
+ "kalshi_mapped_matches": 81,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
