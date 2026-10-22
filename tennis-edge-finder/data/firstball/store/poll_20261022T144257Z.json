@@ -1,0 +1,81 @@
+{
+ "run_id": "20261022T144257Z",
+ "started_at": "2026-10-22T14:42:57.044652+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 166,
+ "truths_written": 10,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPEXACTMATCH-26OCT21BUBMAR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPGSPREAD-26OCT21BUBMAR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPMATCH-26OCT21BUBMAR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPSETWINNER-26OCT21BUBMAR-2": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPSETWINNER-26OCT21BUBMAR-1": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1250,
+  "events_only_on_capture_board": 144,
+  "selected_from_capture_board": 130
+ },
+ "mapping": {
+  "UNMATCHED": 382,
+  "MATCHED": 166,
+  "AMBIGUOUS": 6
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT23FERALE": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185545 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT23FERALE-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185545 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT23FERALE-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185545 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-22T14:58:08.404654+00:00"
+}
