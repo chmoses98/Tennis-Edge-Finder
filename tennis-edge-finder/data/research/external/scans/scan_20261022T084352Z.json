@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-22T08:43:52.510087+00:00",
+ "run_id": "20261022T084352Z",
+ "external_parse": {
+  "events": 230,
+  "markets": 1715,
+  "skipped_family": 358,
+  "skipped_period": 448,
+  "skipped_live": 55,
+  "one_sided": 33,
+  "rows": 2297,
+  "devigged": 876
+ },
+ "smarkets_fetch": {
+  "events_seen": 78,
+  "events_priced": 78,
+  "markets": 980,
+  "markets_mapped": 447,
+  "contracts": 972,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261022T084352Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 447,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 167,
+  "rows": 805,
+  "two_sided": 799,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 184,
+ "external_mapping": {
+  "total": 218,
+  "by_status": {
+   "MAPPED": 163,
+   "UNMAPPED_PLAYER": 26,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7477,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Meshkatolzahra Safi": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Samarth Sahita": 1,
+   "Mikhail Khodorchenko": 1,
+   "Odysseas Geladaris": 1,
+   "David Tixhon": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5897,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 24,
+  "by_status": {
+   "MAPPED": 20,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8333,
+  "top_refusal_subjects": {
+   "Felix Roussel": 1,
+   "Giovanni Branchetti": 1,
+   "Florent Lagarrigue": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 18,
+ "external_mapped_matches": 174,
+ "kalshi_mapped_matches": 20,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
