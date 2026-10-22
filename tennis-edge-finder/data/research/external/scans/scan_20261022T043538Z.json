@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-22T04:35:38.801524+00:00",
+ "run_id": "20261022T043538Z",
+ "external_parse": {
+  "events": 239,
+  "markets": 2088,
+  "skipped_family": 387,
+  "skipped_period": 563,
+  "skipped_live": 29,
+  "one_sided": 54,
+  "rows": 2831,
+  "devigged": 1084
+ },
+ "smarkets_fetch": {
+  "events_seen": 85,
+  "events_priced": 80,
+  "markets": 1182,
+  "markets_mapped": 469,
+  "contracts": 1024,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261022T043538Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 469,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 213,
+  "rows": 811,
+  "two_sided": 808,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 461,
+ "external_mapping": {
+  "total": 225,
+  "by_status": {
+   "MAPPED": 167,
+   "UNMAPPED_PLAYER": 25,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7422,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Hye Jin Elliott": 1,
+   "Eric Jr. Olivarez": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Yue Xia": 1,
+   "Hao Yu Lin": 1,
+   "Digvijay Pratap Singh": 1,
+   "Arnav Vijay Paparkar": 1,
+   "Samarth Sahita": 1,
+   "Herman H\u00f8yeraal": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.789,
+  "top_refusal_subjects": {
+   "Hye Jin Elliott": 1,
+   "Thi Mai Linh Nguyen": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "bautista de la Pena": 1,
+   "Giovanni Branchetti": 1,
+   "Eli Stephenson": 1,
+   "Nazim Makhlouf": 1,
+   "LUCAS GONCALVES FRANCA": 1,
+   "Jaden Dewandaka Tan": 1,
+   "Samarth Sahita": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 176,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 74,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:INSUFFICIENT_INPUTS": 46,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
