@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 18:26Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-22 18:41Z)
 
 * Earliest credible first ball: **2026-10-23 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-23 01:45Z**
@@ -12,9 +12,9 @@
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Kyrian Jacquet vs Brandon Nakashima, Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261022T174520Z-3df9478a` built 2026-10-22 17:45Z -- current
+Published slate: `SL-20261022T174520Z-3df9478a` built 2026-10-22 17:45Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-23 05:00Z, run by 2026-10-23 04:15Z, 3 match(es)
 * later window 3: first ball 2026-10-23 07:00Z, run by 2026-10-23 06:15Z, 3 match(es)
