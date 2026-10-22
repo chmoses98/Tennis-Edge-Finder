@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-22T12:55:02.324905+00:00",
+ "run_id": "20261022T125502Z",
+ "external_parse": {
+  "events": 140,
+  "markets": 1018,
+  "skipped_family": 245,
+  "skipped_period": 265,
+  "skipped_live": 42,
+  "one_sided": 42,
+  "rows": 1337,
+  "devigged": 466
+ },
+ "smarkets_fetch": {
+  "events_seen": 64,
+  "events_priced": 64,
+  "markets": 894,
+  "markets_mapped": 370,
+  "contracts": 802,
+  "quoted_contracts": 802,
+  "raw": "data/research/external/raw/20261022T125502Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 49,
+  "rows": 753,
+  "two_sided": 747,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 421,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 94,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.7231,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Bentley Sparks": 1,
+   "David Tixhon": 1,
+   "Nazim Makhlouf": 1,
+   "Lucas Goncalves Franca": 1,
+   "Guelord Kayombo": 1,
+   "Giovanni Branchetti": 1,
+   "Bautista de la Pena": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8072,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Felix Roussel": 1,
+   "Eli Stephenson": 1,
+   "Victor Pagotto": 1,
+   "Guelord Kayombo": 1,
+   "Florent Lagarrigue": 1,
+   "Nazim Makhlouf": 1,
+   "Henry Best": 1,
+   "Jodie Anna Burrage": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 67,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 35,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MARKETS_AGREE": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
