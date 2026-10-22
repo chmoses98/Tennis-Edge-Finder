@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-22T10:54:05.963420+00:00",
+ "run_id": "20261022T105405Z",
+ "external_parse": {
+  "events": 187,
+  "markets": 1369,
+  "skipped_family": 310,
+  "skipped_period": 373,
+  "skipped_live": 57,
+  "one_sided": 54,
+  "rows": 1827,
+  "devigged": 630
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 987,
+  "markets_mapped": 436,
+  "contracts": 942,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261022T105405Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 132,
+  "rows": 810,
+  "two_sided": 801,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 446,
+ "external_mapping": {
+  "total": 175,
+  "by_status": {
+   "MAPPED": 133,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.76,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Igor Marcondes": 1,
+   "Bentley Sparks": 1,
+   "David Tixhon": 1,
+   "Guelord Kayombo": 1,
+   "Matteo Gribaldo": 1,
+   "Florent Lagarrigue": 1,
+   "Giovanni Branchetti": 1,
+   "Bautista de la Pena": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5942,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Igor Marcondes": 1,
+   "Jeffrey John Wolf": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8482,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Kuan-Shou Chen": 1,
+   "Eli Stephenson": 1,
+   "Nazim Makhlouf": 1,
+   "Matteo Gribaldo": 1,
+   "Henry Best": 1,
+   "Jodie Anna Burrage": 1,
+   "Giorgia Pedone": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 70,
+ "external_mapped_matches": 144,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:MARKETS_AGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
