@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-23T09:36:21.491994+00:00",
+ "run_id": "20261023T093621Z",
+ "external_parse": {
+  "events": 122,
+  "markets": 1040,
+  "skipped_family": 306,
+  "skipped_period": 250,
+  "skipped_live": 31,
+  "one_sided": 13,
+  "rows": 1281,
+  "devigged": 469
+ },
+ "smarkets_fetch": {
+  "events_seen": 43,
+  "events_priced": 43,
+  "markets": 639,
+  "markets_mapped": 287,
+  "contracts": 614,
+  "quoted_contracts": 614,
+  "raw": "data/research/external/raw/20261023T093621Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 580,
+  "two_sided": 576,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 366,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 85,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7727,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Nazim Makhlouf": 1,
+   "Lea Sabadi": 1,
+   "Nika Stor": 1,
+   "Pavla Sviglerova": 1,
+   "Jodie Anna Burrage": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 43,
+  "by_status": {
+   "MAPPED": 27,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6279,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.878,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "David Tixhon": 1,
+   "Nazim Makhlouf": 1,
+   "Giorgia Pedone": 1,
+   "Pavla Sviglerova": 1,
+   "Daria Lopatetska": 1,
+   "Lea Sabadi": 1,
+   "Nika Stor": 1,
+   "Vanesa Mrazova": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 41,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
