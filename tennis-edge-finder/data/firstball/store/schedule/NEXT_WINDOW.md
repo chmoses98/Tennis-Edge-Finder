@@ -1,21 +1,22 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 08:17Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 08:31Z)
 
-* Earliest credible first ball: **2026-10-23 08:25Z**
-* Recommended RUN TENNIS time: **2026-10-23 07:40Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-23 08:15Z**
-* Matches in window: 3
+* Earliest credible first ball: **2026-10-23 08:40Z**
+* Recommended RUN TENNIS time: **2026-10-23 07:55Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-23 08:30Z**
+* Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Iva Jovic vs Diana Shnaider | 2026-10-23 08:25Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3) | MEDIUM |
-| Keyara Usama Ali vs Ushna Suhail | 2026-10-23 09:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
-| Daniil Medvedev vs Terence Atmane | 2026-10-23 09:15Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5) | MEDIUM |
+| Iva Jovic vs Diana Shnaider | 2026-10-23 08:40Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3) | MEDIUM |
+| Daniil Medvedev vs Terence Atmane | 2026-10-23 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| kimia sagheb tehrani vs Mubaraka Al-Naimi | 2026-10-23 10:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
+| Aishath Karin Saizan vs Mahin Qureshi | 2026-10-23 10:00Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 
-**5 main-tour match(es) without a verified start status** (BET blocked until checked): Noor Sayej vs Sumou Aldabbous, Gharam Alkhayat vs Tenzin Wangsel Lhaden, kimia sagheb tehrani vs Mubaraka Al-Naimi, Aishath Karin Saizan vs Mahin Qureshi, Leylah Fernandez vs Ekaterina Alexandrova
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Leylah Fernandez vs Ekaterina Alexandrova
 
-Published slate: `SL-20261023T080043Z-702813d3` built 2026-10-23 08:00Z -- current
+Published slate: `SL-20261023T081546Z-93cc7d19` built 2026-10-23 08:15Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-23 11:00Z, run by 2026-10-23 10:15Z, 3 match(es)
 * later window 3: first ball 2026-10-23 13:30Z, run by 2026-10-23 12:45Z, 3 match(es)
