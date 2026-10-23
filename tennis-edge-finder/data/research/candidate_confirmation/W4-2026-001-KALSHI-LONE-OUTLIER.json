@@ -5,24 +5,24 @@
  "status_reason": "1 eligible of 200 required",
  "universe": {
   "stream": "research/external/dislocations (external_v1)",
-  "rows_total": 215370,
+  "rows_total": 216274,
   "rows_before_confirmation_start": 260,
-  "rows_after": 215110,
+  "rows_after": 216014,
   "failed_gate_counts": {
-   "reference_exists": 101620,
-   "kalshi_lone_outlier": 205804,
-   "external_edge_ge_2c": 214217,
-   "displayed_size_ge_1": 1147,
-   "spread_within_6c": 5495
+   "reference_exists": 102020,
+   "kalshi_lone_outlier": 206688,
+   "external_edge_ge_2c": 215119,
+   "displayed_size_ge_1": 1152,
+   "spread_within_6c": 5597
   },
   "freshness_of_gate_passing_rows": {
    "VERIFIED_FRESH": 245,
-   "UNVERIFIABLE": 146,
+   "UNVERIFIABLE": 147,
    "UNRESOLVED": 150,
    "MIXED": 49
   },
-  "scanner_shadow_bet_rows": 588,
-  "rule_gates_pass_rows": 590,
+  "scanner_shadow_bet_rows": 589,
+  "rule_gates_pass_rows": 591,
   "rule_and_freshness_pass_rows": 245,
   "first_qualifying_observations": 134,
   "reobservations_removed": 111,
@@ -115,8 +115,8 @@
  },
  "exclusion_counts": {
   "OBSERVED_BEFORE_CONFIRMATION_START": 260,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 214520,
-  "EXTERNAL_FRESHNESS_UNVERIFIABLE": 146,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 215423,
+  "EXTERNAL_FRESHNESS_UNVERIFIABLE": 147,
   "EXTERNAL_FRESHNESS_AMBIGUOUS": 199,
   "TIMING_START_UNKNOWN": 122,
   "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 111,
@@ -189,11 +189,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261023T100109Z",
+ "harvest_run": "20261023T122349Z",
  "evidence_rows_this_run": 245,
- "evidence_rows_appended": 1,
+ "evidence_rows_appended": 0,
  "last_evidence_at": "2026-10-23T08:06:19.070640+00:00",
- "harvest_run_at": "2026-10-23T10:08:39.901626+00:00",
+ "harvest_run_at": "2026-10-23T12:31:06.345880+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
