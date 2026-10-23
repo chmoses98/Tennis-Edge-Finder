@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 12:26Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 12:38Z)
 
-* Earliest credible first ball: **2026-10-23 13:20Z**
-* Recommended RUN TENNIS time: **2026-10-23 12:35Z**
-* Final price/status check time: **2026-10-23 13:10Z**
+* Earliest credible first ball: **2026-10-23 13:30Z**
+* Recommended RUN TENNIS time: **2026-10-23 12:45Z**
+* Final price/status check time: **2026-10-23 13:20Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Daniel Altmaier vs Taylor Fritz | 2026-10-23 13:20Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
-| Tallon Griekspoor vs Jiri Lehecka | 2026-10-23 13:20Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
+| Daniel Altmaier vs Taylor Fritz | 2026-10-23 13:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Tallon Griekspoor vs Jiri Lehecka | 2026-10-23 13:32Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Karen Khachanov
 
-Published slate: `SL-20261023T114829Z-b75a27d8` built 2026-10-23 11:48Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261023T121749Z-13fba969` built 2026-10-23 12:17Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-23 16:30Z, run by 2026-10-23 15:45Z, 3 match(es)
 * later window 3: first ball 2026-10-23 18:30Z, run by 2026-10-23 17:45Z, 1 match(es)
