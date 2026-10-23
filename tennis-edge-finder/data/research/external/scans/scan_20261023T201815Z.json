@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-23T20:18:15.865618+00:00",
+ "run_id": "20261023T201815Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 1119,
+  "skipped_family": 307,
+  "skipped_period": 310,
+  "skipped_live": 16,
+  "one_sided": 4,
+  "rows": 1661,
+  "devigged": 498
+ },
+ "smarkets_fetch": {
+  "events_seen": 65,
+  "events_priced": 65,
+  "markets": 1409,
+  "markets_mapped": 271,
+  "contracts": 568,
+  "quoted_contracts": 568,
+  "raw": "data/research/external/raw/20261023T201815Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 271,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 44,
+  "rows": 524,
+  "two_sided": 520,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 296,
+ "external_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7222,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Yulia Starodubtseva": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "David Knesl": 1,
+   "William McEwan": 1,
+   "Joseph Patton": 1,
+   "Valerie Shue": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Herman H\u00f8yeraal": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7692,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Santiago Rodriguez Taverna": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9298,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Matteo Gribaldo": 1,
+   "Alexandra Malova": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 77,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 59,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2,
+  "SHADOW_BET": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
