@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-23T18:08:23.449985+00:00",
+ "run_id": "20261023T180823Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 913,
+  "skipped_family": 304,
+  "skipped_period": 253,
+  "skipped_live": 22,
+  "one_sided": 10,
+  "rows": 1307,
+  "devigged": 346
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 54,
+  "markets": 1411,
+  "markets_mapped": 284,
+  "contracts": 594,
+  "quoted_contracts": 594,
+  "raw": "data/research/external/raw/20261023T180823Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 284,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 581,
+  "two_sided": 579,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 352,
+ "external_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 9
+  },
+  "mapped_rate": 0.7826,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Yulia Starodubtseva": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Julian Messina": 1,
+   "Luciano Larosa": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 54,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7037,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Santiago Rodriguez Taverna": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9189,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Digvijay Pratap Singh": 1,
+   "Katerina Zajickova": 1,
+   "Alexandra Malova": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 68,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
