@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 19:48Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 19:58Z)
 
 * Earliest credible first ball: **2026-10-24 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-24 00:45Z**
@@ -17,9 +17,9 @@
 | Oleksandra Oliynykova vs Mai Hontama | 2026-10-24 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Ena Shibahara vs Alycia Parks | 2026-10-24 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**8 main-tour match(es) without a verified start status** (BET blocked until checked): Sebastian Baez vs Giovanni Mpetshi Perricard, Aleksandar Kovacevic vs James Duckworth, Juan Manuel Cerundolo vs Zachary Svajda, Henry Bernet vs Daniel Altmaier, Jaime Faria vs Mika Brunold, Miomir Kecmanovic vs Rinky Hijikata, Marcos Giron vs Yannick Hanfmann, Luca Van Assche vs Lorenzo Musetti
+**7 main-tour match(es) without a verified start status** (BET blocked until checked): Sebastian Baez vs Giovanni Mpetshi Perricard, Aleksandar Kovacevic vs James Duckworth, Juan Manuel Cerundolo vs Zachary Svajda, Henry Bernet vs Daniel Altmaier, Jaime Faria vs Mika Brunold, Miomir Kecmanovic vs Rinky Hijikata, Marcos Giron vs Yannick Hanfmann
 
-Published slate: `SL-20261023T190340Z-b4d94b9a` built 2026-10-23 19:03Z -- current
+Published slate: `SL-20261023T194221Z-ec26eb66` built 2026-10-23 19:42Z -- current
 
 Dispatched this pass: none
 
