@@ -1,18 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 10:54Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-23 11:13Z)
 
-* Earliest credible first ball: **2026-10-23 11:00Z**
-* Recommended RUN TENNIS time: **2026-10-23 10:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-23 10:50Z**
-* Matches in window: 4
+* Earliest credible first ball: **2026-10-23 11:15Z**
+* Recommended RUN TENNIS time: **2026-10-23 10:30Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-23 11:05Z**
+* Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Elena Rybakina vs Katarzyna Kawa | 2026-10-23 11:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Alexander Bublik vs Karen Khachanov | 2026-10-23 11:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
-| Corentin Moutet vs Tommy Paul | 2026-10-23 11:50Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes in progress (set 1 of best-of-5) | MEDIUM |
+| Elena Rybakina vs Katarzyna Kawa | 2026-10-23 11:15Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Clement Chidekh vs Francisco Cerundolo | 2026-10-23 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Corentin Moutet vs Tommy Paul | 2026-10-23 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261023T103253Z-8955518e` built 2026-10-23 10:32Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Bublik vs Karen Khachanov
+
+Published slate: `SL-20261023T105034Z-15ee6502` built 2026-10-23 10:50Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
 Dispatched this pass: slate_final (ok)
 
