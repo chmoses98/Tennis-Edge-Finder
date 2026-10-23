@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-23T16:17:03.689594+00:00",
+ "run_id": "20261023T161703Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 888,
+  "skipped_family": 305,
+  "skipped_period": 237,
+  "skipped_live": 27,
+  "one_sided": 18,
+  "rows": 1184,
+  "devigged": 328
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 721,
+  "markets_mapped": 275,
+  "contracts": 580,
+  "quoted_contracts": 580,
+  "raw": "data/research/external/raw/20261023T161703Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 275,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 555,
+  "two_sided": 552,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 356,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Yulia Starodubtseva": 1,
+   "Yexin Ma": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "August Brostr\u00f8m Poulsen": 1,
+   "Julian Messina": 1,
+   "Maria Urrutia": 1,
+   "Jodie Anna Burrage": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7091,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Santiago Rodriguez Taverna": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9538,
+  "top_refusal_subjects": {
+   "Matteo Gribaldo": 1,
+   "Alexandra Malova": 1,
+   "Jodie Anna Burrage": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 66,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
