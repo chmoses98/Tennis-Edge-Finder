@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-23T19:58:17.149602+00:00",
+ "run_id": "20261023T195817Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 1111,
+  "skipped_family": 302,
+  "skipped_period": 308,
+  "skipped_live": 15,
+  "one_sided": 6,
+  "rows": 1653,
+  "devigged": 495
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 58,
+  "markets": 1386,
+  "markets_mapped": 264,
+  "contracts": 554,
+  "quoted_contracts": 554,
+  "raw": "data/research/external/raw/20261023T195817Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 45,
+  "rows": 509,
+  "two_sided": 506,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 310,
+ "external_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.7303,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Yulia Starodubtseva": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "David Knesl": 1,
+   "Theodore Dean": 1,
+   "William McEwan": 1,
+   "Valerie Shue": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7414,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Santiago Rodriguez Taverna": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 41,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9512,
+  "top_refusal_subjects": {
+   "Yexin Ma": 1,
+   "Santiago Rodriguez Taverna": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 70,
+ "kalshi_mapped_matches": 39,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
