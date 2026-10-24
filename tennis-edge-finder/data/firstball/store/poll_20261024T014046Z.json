@@ -1,0 +1,50 @@
+{
+ "run_id": "20261024T014046Z",
+ "started_at": "2026-10-24T01:40:46.188381+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 338,
+ "truths_written": 6,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1146,
+  "events_only_on_capture_board": 275,
+  "selected_from_capture_board": 264
+ },
+ "mapping": {
+  "UNMATCHED": 188,
+  "MATCHED": 338,
+  "AMBIGUOUS": 6
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT24FERBOU": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185549 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT24FERBOU-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185549 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT24FERBOU-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185549 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-24T01:57:48.667685+00:00"
+}
