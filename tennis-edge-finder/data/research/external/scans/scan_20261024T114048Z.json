@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-24T11:40:48.365453+00:00",
+ "run_id": "20261024T114048Z",
+ "external_parse": {
+  "events": 91,
+  "markets": 884,
+  "skipped_family": 263,
+  "skipped_period": 223,
+  "skipped_live": 20,
+  "one_sided": 5,
+  "rows": 1235,
+  "devigged": 393
+ },
+ "smarkets_fetch": {
+  "events_seen": 35,
+  "events_priced": 35,
+  "markets": 601,
+  "markets_mapped": 209,
+  "contracts": 470,
+  "quoted_contracts": 470,
+  "raw": "data/research/external/raw/20261024T114048Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 209,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 444,
+  "two_sided": 441,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 296,
+ "external_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Joel Josef Schwarzler": 1,
+   "Aishath Karin Saizan": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Digvijay Pratap Singh": 1,
+   "Jodie Anna Burrage": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 35,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 4,
+   "MAPPED": 31
+  },
+  "mapped_rate": 0.8857,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9153,
+  "top_refusal_subjects": {
+   "Aishath Karin Saizan": 1,
+   "Nayara Usama Ali": 1,
+   "Tara Wuerth": 1,
+   "Jodie Anna Burrage": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 70,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 45,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
