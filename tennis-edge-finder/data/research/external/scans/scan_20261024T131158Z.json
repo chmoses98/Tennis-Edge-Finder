@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-24T13:11:58.439129+00:00",
+ "run_id": "20261024T131158Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 732,
+  "skipped_family": 189,
+  "skipped_period": 207,
+  "skipped_live": 20,
+  "one_sided": 7,
+  "rows": 1017,
+  "devigged": 329
+ },
+ "smarkets_fetch": {
+  "events_seen": 78,
+  "events_priced": 78,
+  "markets": 619,
+  "markets_mapped": 247,
+  "contracts": 562,
+  "quoted_contracts": 562,
+  "raw": "data/research/external/raw/20261024T131158Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 536,
+  "two_sided": 535,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1181,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Joel Josef Schwarzler": 1,
+   "Mahin Qureshi": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Digvijay Pratap Singh": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 3,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8718,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 3,
+   "Sanhui Shin": 1,
+   "Min Ho Ko": 1,
+   "Khumoyun Sultanov": 1,
+   "Kaigaoge Kang": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 11,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8835,
+  "top_refusal_subjects": {
+   "Digvijay Pratap Singh": 1,
+   "Adithya SURESH": 1,
+   "Luke Koh": 1,
+   "Julien Tremolieres": 1,
+   "Eric Jr Olivarez": 1,
+   "Janie Ho": 1,
+   "Tejaswi Manneni": 1,
+   "Zi Xuan Yang": 1,
+   "Yi Jie Janelle Chen": 1,
+   "Harini Parthiban": 1
+  }
+ },
+ "matched_both_venues": 55,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 91,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 60,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
