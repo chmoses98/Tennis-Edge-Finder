@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-24T18:08:10.092303+00:00",
+ "run_id": "20261024T180810Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 598,
+  "skipped_family": 178,
+  "skipped_period": 157,
+  "skipped_live": 20,
+  "one_sided": 7,
+  "rows": 837,
+  "devigged": 255
+ },
+ "smarkets_fetch": {
+  "events_seen": 120,
+  "events_priced": 80,
+  "markets": 709,
+  "markets_mapped": 248,
+  "contracts": 530,
+  "quoted_contracts": 530,
+  "raw": "data/research/external/raw/20261024T180810Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 248,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 141,
+  "rows": 389,
+  "two_sided": 383,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 377,
+ "external_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 4,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8169,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Khumoyun Sultanov": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Thomas Van Den Dooren": 1,
+   "Ella Brownback": 1,
+   "Digvijay Pratap Singh": 1,
+   "Maria Urrutia": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9216,
+  "top_refusal_subjects": {
+   "Ethan David Zapp": 1,
+   "Luke Koh": 1,
+   "Alexandra Malova": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 90,
+ "kalshi_mapped_matches": 47,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 45,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
