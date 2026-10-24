@@ -1,26 +1,24 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 11:23Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 11:35Z)
 
-* Earliest credible first ball: **2026-10-24 11:28Z**
-* Recommended RUN TENNIS time: **2026-10-24 10:43Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-24 11:18Z**
-* Matches in window: 8
+* Earliest credible first ball: **2026-10-24 11:39Z**
+* Recommended RUN TENNIS time: **2026-10-24 10:54Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-24 11:29Z**
+* Matches in window: 6
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Anastasia Zakharova vs Ruien Zhang | 2026-10-24 11:28Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3) | MEDIUM |
-| Yihan Qu vs Teodora Kostovic | 2026-10-24 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Daniil Medvedev vs Alexander Bublik | 2026-10-24 11:53Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
-| En-Shuo Liang vs Tereza Valentova | 2026-10-24 11:53Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Indoor Court in progress (set 1 of best-of-3) | MEDIUM |
+| En-Shuo Liang vs Tereza Valentova | 2026-10-24 11:39Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Indoor Court in progress (set 2 of best-of-3) | MEDIUM |
 | Sebastian Baez vs Giovanni Mpetshi Perricard | 2026-10-24 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Alex Molcan vs Hamad Medjedovic | 2026-10-24 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Daniil Medvedev vs Alexander Bublik | 2026-10-24 12:04Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
 | Henry Bernet vs Daniel Altmaier | 2026-10-24 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Fabian Marozsan vs Sebastian Sorger | 2026-10-24 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**13 main-tour match(es) without a verified start status** (BET blocked until checked): Juan Manuel Cerundolo vs Zachary Svajda, Jaime Faria vs Mika Brunold, Marcos Giron vs Yannick Hanfmann, Joel Schwaerzler vs Titouan Droguet, Adolfo Daniel Vallejo vs Lorenzo Sonego, Vit Kopriva vs Lukas Neumayer, Jacob Fearnley vs Pablo Carreno Busta, Tommy Paul vs Taylor Fritz, Tenzin Wangsel Lhaden vs Hind Al-Mudahka, Aishath Karin Saizan vs Noor Sayej, Mahin Qureshi vs Meshkatolzahra Safi, Nayara Usama Ali vs Anna Abualhaj
+**15 main-tour match(es) without a verified start status** (BET blocked until checked): Juan Manuel Cerundolo vs Zachary Svajda, Jaime Faria vs Mika Brunold, Marcos Giron vs Yannick Hanfmann, Joel Schwaerzler vs Titouan Droguet, Adolfo Daniel Vallejo vs Lorenzo Sonego, Vit Kopriva vs Lukas Neumayer, Jacob Fearnley vs Pablo Carreno Busta, Tommy Paul vs Taylor Fritz, Tenzin Wangsel Lhaden vs Hind Al-Mudahka, Aishath Karin Saizan vs Noor Sayej, Mahin Qureshi vs Meshkatolzahra Safi, Nayara Usama Ali vs Anna Abualhaj
 
-Published slate: `SL-20261024T105935Z-65bc71d0` built 2026-10-24 10:59Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
+Published slate: `SL-20261024T105935Z-65bc71d0` built 2026-10-24 10:59Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-24 13:30Z, run by 2026-10-24 12:45Z, 5 match(es)
 * later window 3: first ball 2026-10-24 16:00Z, run by 2026-10-24 15:15Z, 2 match(es)
