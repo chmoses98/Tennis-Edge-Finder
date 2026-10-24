@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-24T09:50:27.316759+00:00",
+ "run_id": "20261024T095027Z",
+ "external_parse": {
+  "events": 97,
+  "markets": 916,
+  "skipped_family": 285,
+  "skipped_period": 231,
+  "skipped_live": 29,
+  "one_sided": 0,
+  "rows": 1325,
+  "devigged": 400
+ },
+ "smarkets_fetch": {
+  "events_seen": 39,
+  "events_priced": 39,
+  "markets": 788,
+  "markets_mapped": 259,
+  "contracts": 572,
+  "quoted_contracts": 572,
+  "raw": "data/research/external/raw/20261024T095027Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 259,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 535,
+  "two_sided": 533,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 322,
+ "external_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Joel Josef Schwarzler": 1,
+   "Yexin Ma": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Matteo Gribaldo": 1,
+   "Katerina Zajickova": 1,
+   "Jodie Anna Burrage": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 39,
+  "by_status": {
+   "MAPPED": 35,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.8974,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Tenzin Wangsel Lhaden": 1,
+   "Kinley Yangden": 1,
+   "Nayara Usama Ali": 1,
+   "Yexin Ma": 1,
+   "Matteo Gribaldo": 1,
+   "Tara Wuerth": 1,
+   "Aran Teixido Garcia": 1,
+   "Katerina Zajickova": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 77,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 11,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
