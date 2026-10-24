@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-24T12:12:01.599217+00:00",
+ "run_id": "20261024T121201Z",
+ "external_parse": {
+  "events": 93,
+  "markets": 813,
+  "skipped_family": 234,
+  "skipped_period": 211,
+  "skipped_live": 26,
+  "one_sided": 8,
+  "rows": 1129,
+  "devigged": 360
+ },
+ "smarkets_fetch": {
+  "events_seen": 71,
+  "events_priced": 71,
+  "markets": 649,
+  "markets_mapped": 237,
+  "contracts": 546,
+  "quoted_contracts": 546,
+  "raw": "data/research/external/raw/20261024T121201Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 237,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 520,
+  "two_sided": 517,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1078,
+ "external_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8293,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Joel Josef Schwarzler": 1,
+   "Aishath Karin Saizan": 1,
+   "Mahin Qureshi": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Digvijay Pratap Singh": 1,
+   "Jodie Anna Burrage": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 62,
+   "DOUBLES_UNSUPPORTED": 4,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8732,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Khumoyun Sultanov": 1,
+   "Kaigaoge Kang": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 85,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8947,
+  "top_refusal_subjects": {
+   "Aishath Karin Saizan": 1,
+   "Eric Jr Olivarez": 1,
+   "Tejaswi Manneni": 1,
+   "Zi Xuan Yang": 1,
+   "Yi Jie Janelle Chen": 1,
+   "Harini Parthiban": 1,
+   "Alexandra Malova": 1,
+   "Tara Wuerth": 1,
+   "Jodie Anna Burrage": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 85,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 68,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
