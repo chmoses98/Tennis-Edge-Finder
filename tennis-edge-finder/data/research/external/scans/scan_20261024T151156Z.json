@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-24T15:11:56.270335+00:00",
+ "run_id": "20261024T151156Z",
+ "external_parse": {
+  "events": 67,
+  "markets": 509,
+  "skipped_family": 112,
+  "skipped_period": 143,
+  "skipped_live": 21,
+  "one_sided": 4,
+  "rows": 754,
+  "devigged": 250
+ },
+ "smarkets_fetch": {
+  "events_seen": 95,
+  "events_priced": 80,
+  "markets": 592,
+  "markets_mapped": 252,
+  "contracts": 566,
+  "quoted_contracts": 566,
+  "raw": "data/research/external/raw/20261024T151156Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 252,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 196,
+  "rows": 370,
+  "two_sided": 367,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1157,
+ "external_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7586,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "August Brostr\u00f8m Poulsen": 1,
+   "Noelani Teso": 1,
+   "Rachael Phelan": 1,
+   "Raegan Farm": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Sanhui Shin": 1,
+   "Min Ho Ko": 1,
+   "Khumoyun Sultanov": 1,
+   "Tae Woo Kim": 1,
+   "Kaigaoge Kang": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8302,
+  "top_refusal_subjects": {
+   "Aditya Kothari": 1,
+   "Kazuki Nakajima": 1,
+   "Allen Leong": 1,
+   "Marko Retelj": 1,
+   "Yao Hui Dylan Chan": 1,
+   "Alexander Watanabe Eriksson": 1,
+   "Digvijay Pratap Singh": 1,
+   "Adithya SURESH": 1,
+   "Luke Koh": 1,
+   "Julien Tremolieres": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
