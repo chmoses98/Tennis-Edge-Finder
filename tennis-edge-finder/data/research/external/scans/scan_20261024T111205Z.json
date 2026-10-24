@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-24T11:12:05.694672+00:00",
+ "run_id": "20261024T111205Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 808,
+  "skipped_family": 238,
+  "skipped_period": 202,
+  "skipped_live": 22,
+  "one_sided": 2,
+  "rows": 1179,
+  "devigged": 366
+ },
+ "smarkets_fetch": {
+  "events_seen": 33,
+  "events_priced": 33,
+  "markets": 616,
+  "markets_mapped": 216,
+  "contracts": 478,
+  "quoted_contracts": 478,
+  "raw": "data/research/external/raw/20261024T111205Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 216,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 459,
+  "two_sided": 454,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 986,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.84,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Joel Josef Schwarzler": 1,
+   "Aishath Karin Saizan": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Katerina Zajickova": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 33,
+  "by_status": {
+   "MAPPED": 29,
+   "DOUBLES_UNSUPPORTED": 4
+  },
+  "mapped_rate": 0.8788,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4
+  }
+ },
+ "kalshi_mapping": {
+  "total": 81,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.9012,
+  "top_refusal_subjects": {
+   "Tenzin Wangsel Lhaden": 1,
+   "Aishath Karin Saizan": 1,
+   "Nayara Usama Ali": 1,
+   "Alexandra Malova": 1,
+   "Tara Wuerth": 1,
+   "Jodie Anna Burrage": 1,
+   "Aran Teixido Garcia": 1,
+   "Katerina Zajickova": 1
+  }
+ },
+ "matched_both_venues": 66,
+ "external_mapped_matches": 68,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 83,
+  "tri:MARKETS_AGREE": 10,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
