@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 00:48Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 01:05Z)
 
 * Earliest credible first ball: **2026-10-24 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-24 00:45Z**  (OVERDUE: run now)
@@ -17,9 +17,9 @@
 | Oleksandra Oliynykova vs Mai Hontama | 2026-10-24 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Ena Shibahara vs Alycia Parks | 2026-10-24 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261023T220743Z-f6e51b84` built 2026-10-23 22:07Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-24T01:30:00+00:00, slate built 2026-10-23T22:07:43.564522+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 7 match(es)
+Published slate: `SL-20261024T003118Z-9856ec47` built 2026-10-24 00:31Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-24T01:30:00+00:00, slate built 2026-10-24T00:31:18.223352+00:00
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-24 04:30Z, run by 2026-10-24 03:45Z, 10 match(es)
 * later window 3: first ball 2026-10-24 06:30Z, run by 2026-10-24 05:45Z, 4 match(es)
