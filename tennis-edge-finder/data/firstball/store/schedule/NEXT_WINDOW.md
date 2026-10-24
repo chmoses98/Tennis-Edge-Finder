@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 17:20Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 17:36Z)
 
 * Earliest credible first ball: **2026-10-25 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-25 00:45Z**
@@ -14,11 +14,11 @@
 | Alevtina Ibragimova vs Polina Iatcenko | 2026-10-25 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Carol Young Suh Lee vs Elena Pridankina | 2026-10-25 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**27 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Casper Ruud, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Dominic Stricker vs Alexander Bublik, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys, Valentin Vacherot vs Mariano Navone, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Hubert Hurkacz vs Arthur Fils
+**24 main-tour match(es) without a verified start status** (BET blocked until checked): Dominic Stricker vs Casper Ruud, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys, Valentin Vacherot vs Mariano Navone, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Hubert Hurkacz vs Arthur Fils, Alexander Zverev vs Martin Landaluce
 
-Published slate: `SL-20261024T170151Z-46394426` built 2026-10-24 17:01Z -- current
+Published slate: `SL-20261024T170224Z-e1975ed5` built 2026-10-24 17:02Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-25 04:30Z, run by 2026-10-25 03:45Z, 5 match(es)
 * later window 3: first ball 2026-10-25 06:30Z, run by 2026-10-25 05:45Z, 2 match(es)
