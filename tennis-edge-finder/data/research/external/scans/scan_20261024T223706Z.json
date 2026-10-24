@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-24T22:37:06.240261+00:00",
+ "run_id": "20261024T223706Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1294,
+  "skipped_family": 347,
+  "skipped_period": 337,
+  "skipped_live": 5,
+  "one_sided": 8,
+  "rows": 1980,
+  "devigged": 601
+ },
+ "smarkets_fetch": {
+  "events_seen": 147,
+  "events_priced": 80,
+  "markets": 773,
+  "markets_mapped": 259,
+  "contracts": 554,
+  "quoted_contracts": 554,
+  "raw": "data/research/external/raw/20261024T223706Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 259,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 535,
+  "two_sided": 531,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 247,
+ "external_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 92,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.7244,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Dominic Stephan Stricker": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Soonwoo Kwon": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8519,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Sanhui Shin": 1,
+   "Aditya Kothari": 1,
+   "Julien Tremolieres": 1,
+   "Tejaswi Manneni": 1,
+   "Yi Jie Janelle Chen": 1,
+   "Harini Parthiban": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
