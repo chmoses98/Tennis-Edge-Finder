@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-24T15:30:53.271990+00:00",
+ "run_id": "20261024T153053Z",
+ "external_parse": {
+  "events": 67,
+  "markets": 526,
+  "skipped_family": 128,
+  "skipped_period": 143,
+  "skipped_live": 21,
+  "one_sided": 4,
+  "rows": 756,
+  "devigged": 251
+ },
+ "smarkets_fetch": {
+  "events_seen": 99,
+  "events_priced": 80,
+  "markets": 728,
+  "markets_mapped": 339,
+  "contracts": 738,
+  "quoted_contracts": 738,
+  "raw": "data/research/external/raw/20261024T153053Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 339,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 371,
+  "rows": 367,
+  "two_sided": 358,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 349,
+ "external_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7586,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "August Brostr\u00f8m Poulsen": 1,
+   "Leonard Tramolay": 1,
+   "Noelani Teso": 1,
+   "Rachael Phelan": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Sanhui Shin": 1,
+   "Min Ho Ko": 1,
+   "Khumoyun Sultanov": 1,
+   "Tae Woo Kim": 1,
+   "Kaigaoge Kang": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9649,
+  "top_refusal_subjects": {
+   "Alexandra Malova": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 55,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
