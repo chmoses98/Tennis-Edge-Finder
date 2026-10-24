@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-24T02:19:15.703669+00:00",
+ "run_id": "20261024T021915Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1413,
+  "skipped_family": 433,
+  "skipped_period": 361,
+  "skipped_live": 13,
+  "one_sided": 4,
+  "rows": 2063,
+  "devigged": 615
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 1554,
+  "markets_mapped": 353,
+  "contracts": 768,
+  "quoted_contracts": 768,
+  "raw": "data/research/external/raw/20261024T021915Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 353,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 57,
+  "rows": 711,
+  "two_sided": 710,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 236,
+ "external_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7822,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Joel Josef Schwarzler": 1,
+   "Yulia Starodubtseva": 1,
+   "Yexin Ma": 1,
+   "Xinyu Wang": 1,
+   "Kosuke Nakanishi": 1,
+   "Luca Ostovany": 1,
+   "Tiffany Papazian": 1,
+   "Digvijay Pratap Singh": 1,
+   "Matteo Gribaldo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8413,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Yexin Ma": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9783,
+  "top_refusal_subjects": {
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 86,
+ "kalshi_mapped_matches": 45,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 68,
+  "tri:MARKETS_AGREE": 10,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
