@@ -1,9 +1,9 @@
 {
- "built_at": "2026-10-24T05:20:50.357779+00:00",
+ "built_at": "2026-10-24T11:45:37.265831+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
-   "run": "20261023T103224Z",
+   "run": "20261024T094658Z",
    "files": {
     "atp_matches_1990.csv.gz": {
      "raw": 3681,
@@ -179,12 +179,22 @@
      "raw": 3076,
      "clean": 3057,
      "quarantine": 19
+    },
+    "atp_matches_2025.csv.gz": {
+     "raw": 2944,
+     "clean": 2927,
+     "quarantine": 17
+    },
+    "atp_matches_2026.csv.gz": {
+     "raw": 1169,
+     "clean": 1168,
+     "quarantine": 1
     }
    }
   },
   "sackmann_ATP_qual_chall": {
    "status": "OK",
-   "run": "20261023T103224Z",
+   "run": "20261024T094658Z",
    "files": {
     "atp_matches_qual_chall_1990.csv.gz": {
      "raw": 2233,
@@ -360,12 +370,22 @@
      "raw": 11190,
      "clean": 11188,
      "quarantine": 2
+    },
+    "atp_matches_qual_chall_2025.csv.gz": {
+     "raw": 11629,
+     "clean": 11629,
+     "quarantine": 0
+    },
+    "atp_matches_qual_chall_2026.csv.gz": {
+     "raw": 4519,
+     "clean": 4519,
+     "quarantine": 0
     }
    }
   },
   "sackmann_ATP_futures": {
    "status": "OK",
-   "run": "20261023T103224Z",
+   "run": "20261024T094658Z",
    "files": {
     "atp_matches_futures_1991.csv.gz": {
      "raw": 9059,
@@ -536,12 +556,22 @@
      "raw": 18423,
      "clean": 18423,
      "quarantine": 0
+    },
+    "atp_matches_futures_2025.csv.gz": {
+     "raw": 17906,
+     "clean": 17453,
+     "quarantine": 453
+    },
+    "atp_matches_futures_2026.csv.gz": {
+     "raw": 4742,
+     "clean": 4601,
+     "quarantine": 141
     }
    }
   },
   "sackmann_WTA_main": {
    "status": "OK",
-   "run": "20261023T103224Z",
+   "run": "20261024T094658Z",
    "files": {
     "wta_matches_1990.csv.gz": {
      "raw": 2728,
@@ -732,7 +762,7 @@
   },
   "sackmann_WTA_qual_itf": {
    "status": "OK",
-   "run": "20261023T103224Z",
+   "run": "20261024T094658Z",
    "files": {
     "wta_matches_qual_itf_1990.csv.gz": {
      "raw": 7763,
@@ -923,7 +953,7 @@
   },
   "tml_ATP_main": {
    "status": "OK",
-   "run": "20261023T103224Z",
+   "run": "20261024T094658Z",
    "files": {
     "1990.csv.gz": {
      "raw": 3683,
@@ -1114,7 +1144,7 @@
   },
   "tml_ATP_challenger": {
    "status": "OK",
-   "run": "20261023T103720Z",
+   "run": "20261024T095200Z",
    "files": {
     "2000_challenger.csv.gz": {
      "raw": 3534,
@@ -1255,7 +1285,7 @@
   },
   "tml_ATP_main_mirror": {
    "status": "OK",
-   "run": "20261023T103720Z",
+   "run": "20261024T095200Z",
    "files": {
     "2025.csv.gz": {
      "raw": 2944,
@@ -1271,22 +1301,22 @@
   },
   "espn_ATP": {
    "status": "OK",
-   "run": "20261023T103521Z",
+   "run": "20261024T094959Z",
    "files": {
     "espn_matches_ATP_2026.csv.gz": {
-     "raw": 2560,
-     "clean": 2559,
+     "raw": 2570,
+     "clean": 2569,
      "quarantine": 1
     }
    }
   },
   "espn_WTA": {
    "status": "OK",
-   "run": "20261023T103521Z",
+   "run": "20261024T094959Z",
    "files": {
     "espn_matches_WTA_2026.csv.gz": {
-     "raw": 4356,
-     "clean": 4356,
+     "raw": 4373,
+     "clean": 4373,
      "quarantine": 0
     }
    }
@@ -1294,19 +1324,14 @@
  },
  "min_year": 1990,
  "build_version": "canonical_v2.3",
- "cross_source_duplicates_dropped": 135201,
+ "cross_source_duplicates_dropped": 145131,
  "reviewed_crosswalk_aliases": {
   "file_sha256": "8c909f4eb60026f21d140faee0d641346d4d344e19d9f157f9eecc7014a5dc7c",
   "accepted": 77,
-  "applied": 74,
-  "refused": [
-   {
-    "foreign": "tml/H0LS",
-    "problem": "already MINTED_NEW_PLAYER -> tml:H0LS; a reviewed alias never overwrites it"
-   }
-  ]
+  "applied": 75,
+  "refused": []
  },
- "alias_split_opponent_duplicates_dropped": 13,
+ "alias_split_opponent_duplicates_dropped": 16,
  "alias_split_opponent_duplicates": [
   {
    "player": "103607",
@@ -1364,6 +1389,21 @@
    "opponent_kept": "Osgar Ohoisin (200279, sackmann)"
   },
   {
+   "player": "207352",
+   "opponent_dropped": "Giovanni Fonio (106198, tml)",
+   "opponent_kept": "Giovanni Fonio (200216, sackmann)"
+  },
+  {
+   "player": "123961",
+   "opponent_dropped": "Juan Bautista Torres (106426, tml)",
+   "opponent_kept": "Juan Bautista Torres (208913, sackmann)"
+  },
+  {
+   "player": "207352",
+   "opponent_dropped": "Yun seong Chung (212803, tml)",
+   "opponent_kept": "Yunseong Chung (126283, sackmann)"
+  },
+  {
    "player": "111190",
    "opponent_dropped": "Chak Lam Coleman Wong (208597, espn)",
    "opponent_kept": "Coleman Wong (209409, tml)"
@@ -1374,65 +1414,69 @@
    "opponent_kept": "Ye Xin Ma (215946, sackmann)"
   }
  ],
- "cross_source_near_duplicates_dropped": 84331,
+ "cross_source_near_duplicates_dropped": 87502,
  "near_duplicates_by_pair": {
-  "espn_ATP->tml_ATP_main_mirror": 1296,
+  "espn_ATP->sackmann_ATP_main": 239,
+  "espn_ATP->sackmann_ATP_qual_chall": 106,
+  "espn_ATP->tml_ATP_main_mirror": 1072,
   "espn_WTA->sackmann_WTA_main": 245,
   "espn_WTA->sackmann_WTA_qual_itf": 327,
   "sackmann_ATP_futures->tml_ATP_challenger": 1,
-  "sackmann_ATP_main->tml_ATP_main": 8,
+  "sackmann_ATP_main->tml_ATP_main": 34,
+  "sackmann_ATP_main->tml_ATP_main_mirror": 43,
   "sackmann_ATP_qual_chall->tml_ATP_challenger": 28,
   "tml_ATP_challenger->sackmann_ATP_futures": 2,
   "tml_ATP_challenger->sackmann_ATP_main": 1,
-  "tml_ATP_challenger->sackmann_ATP_qual_chall": 80521,
-  "tml_ATP_main->sackmann_ATP_main": 1902
+  "tml_ATP_challenger->sackmann_ATP_qual_chall": 81972,
+  "tml_ATP_main->sackmann_ATP_main": 2670,
+  "tml_ATP_main_mirror->sackmann_ATP_main": 762
  },
  "player_crosswalk": {
-  "foreign_players": 6382,
+  "foreign_players": 6255,
   "by_status": {
-   "MAPPED": 5812,
-   "NEAR_CANONICAL_MATCH": 199,
-   "MINTED_NEW_PLAYER": 150,
-   "AMBIGUOUS_NAME": 147,
-   "REVIEWED_ALIAS": 74
+   "MAPPED": 5830,
+   "NEAR_CANONICAL_MATCH": 185,
+   "MINTED_NEW_PLAYER": 103,
+   "REVIEWED_ALIAS": 75,
+   "AMBIGUOUS_NAME": 62
   },
-  "rows_total": 1515135,
-  "rows_canonical_id": 1506739,
-  "foreign_rows": 33339,
-  "foreign_rows_mapped": 24943
+  "rows_total": 1544355,
+  "rows_canonical_id": 1539595,
+  "foreign_rows": 20334,
+  "foreign_rows_mapped": 15574
  },
  "player_crosswalk_by_system": {
   "tml": {
-   "foreign_players": 5214,
+   "foreign_players": 5088,
    "by_status": {
-    "MAPPED": 4777,
-    "NEAR_CANONICAL_MATCH": 149,
-    "AMBIGUOUS_NAME": 140,
-    "MINTED_NEW_PLAYER": 117,
-    "REVIEWED_ALIAS": 31
+    "MAPPED": 4785,
+    "NEAR_CANONICAL_MATCH": 141,
+    "MINTED_NEW_PLAYER": 75,
+    "AMBIGUOUS_NAME": 55,
+    "REVIEWED_ALIAS": 32
    }
   },
   "espn": {
-   "foreign_players": 1168,
+   "foreign_players": 1167,
    "by_status": {
-    "MAPPED": 1035,
-    "NEAR_CANONICAL_MATCH": 50,
+    "MAPPED": 1045,
+    "NEAR_CANONICAL_MATCH": 44,
     "REVIEWED_ALIAS": 43,
-    "MINTED_NEW_PLAYER": 33,
+    "MINTED_NEW_PLAYER": 28,
     "AMBIGUOUS_NAME": 7
    }
   }
  },
- "rows": 1515135,
- "quarantine_rows": 13562,
+ "rows": 1544355,
+ "quarantine_rows": 14174,
  "by_tour_level": {
-  "ATP|CHALLENGER": 195373,
-  "ATP|GRAND_SLAM": 29997,
-  "ATP|ITF": 494807,
-  "ATP|MASTERS_1000": 24642,
+  "ATP|CHALLENGER": 200192,
+  "ATP|GRAND_SLAM": 30691,
+  "ATP|ITF": 516861,
+  "ATP|MASTERS_1000": 25231,
   "ATP|OLYMPICS": 68,
-  "ATP|TEAM": 11289,
-  "ATP|TOUR_500_250": 83332,
+  "ATP|TEAM": 11364,
+  "ATP|TOUR_500_250": 84304,
   "ATP|TOUR_FINALS": 526,
   "WTA|GRAND_SLAM": 31074,
   "WTA|ITF": 467977,
@@ -1440,14 +1484,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 69862,
+  "WTA|TOUR_500_250": 69879,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
-  "sackmann": 1481796,
-  "tml": 28492,
-  "espn": 4847
+  "sackmann": 1524021,
+  "tml": 15587,
+  "espn": 4747
  },
  "seasons": {
   "1990": 15735,
@@ -1473,20 +1517,20 @@
   "2010": 43750,
   "2011": 46168,
   "2012": 47760,
-  "2013": 51008,
-  "2014": 51615,
-  "2015": 53763,
-  "2016": 55383,
-  "2017": 52650,
-  "2018": 51990,
-  "2019": 60040,
-  "2020": 20179,
-  "2021": 49598,
-  "2022": 65600,
-  "2023": 69245,
-  "2024": 75226,
-  "2025": 32086,
-  "2026": 20835
+  "2013": 50989,
+  "2014": 51605,
+  "2015": 53749,
+  "2016": 55358,
+  "2017": 52635,
+  "2018": 51966,
+  "2019": 60032,
+  "2020": 20169,
+  "2021": 49566,
+  "2022": 65452,
+  "2023": 69007,
+  "2024": 74955,
+  "2025": 55501,
+  "2026": 27454
  },
- "matches_sha256": "ff6e39608c9e7bd014efc6fbe5c0eaa164708ad3518e25064b2e3052de1869f1"
+ "matches_sha256": "db5045642a2a621896591fd9005b8f6ff98a0b72c41cad1b30d4cadf435c500d"
 }
