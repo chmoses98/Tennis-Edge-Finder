@@ -1,17 +1,17 @@
 {
- "generated_at": "2026-10-24T14:10:20.858641+00:00",
+ "generated_at": "2026-10-24T14:28:45.932933+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 147,
  "counts_by_status": {
   "START_UNKNOWN": 113,
-  "STATUS_AMBIGUOUS": 12,
+  "STATUS_AMBIGUOUS": 10,
+  "STARTED": 12,
   "VERIFIED_UPCOMING": 10,
-  "STARTED": 10,
   "ESTIMATED_UPCOMING": 1,
   "NO_PLAY": 1
  },
- "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+ "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-10-24T16:00:00+00:00",
   "recommended_run_tennis_time": "2026-10-24T15:15:00+00:00",
@@ -448,15 +448,6 @@
    ]
   },
   {
-   "match_id": "KXATPMATCH-26OCT24COBMUS",
-   "label": "Flavio Cobolli vs Lorenzo Musetti",
-   "status": "STATUS_AMBIGUOUS",
-   "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-133_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
-   ]
-  },
-  {
    "match_id": "KXATPMATCH-26OCT24BAEMPE",
    "label": "Sebastian Baez vs Giovanni Mpetshi Perricard",
    "status": "STATUS_AMBIGUOUS",
@@ -520,20 +511,11 @@
    ]
   },
   {
-   "match_id": "KXATPMATCH-26OCT24SCHDRO",
-   "label": "Joel Schwaerzler vs Titouan Droguet",
-   "status": "STATUS_AMBIGUOUS",
-   "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-160_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
-   ]
-  },
-  {
    "match_id": "KXATPMATCH-26OCT24CERGRI",
    "label": "Francisco Cerundolo vs Tallon Griekspoor",
    "status": "STATUS_AMBIGUOUS",
    "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-183_MIN",
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-170_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ]
   },
@@ -549,45 +531,22 @@
  ],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXATPMATCH-26OCT24COBMUS",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPMATCH-26OCT24BERPAU",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPMATCH-26OCT24MOUMAC",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   }
-  ],
-  "slate_id": "SL-20261024T134723Z-1826b1fc",
-  "slate_built_at": "2026-10-24T13:47:23.596282+00:00",
-  "checked_at": "2026-10-24T14:10:20.858641+00:00"
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
+  "slate_id": "SL-20261024T140558Z-d0a70534",
+  "slate_built_at": "2026-10-24T14:05:58.423262+00:00",
+  "checked_at": "2026-10-24T14:28:45.932933+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-10-24T14:10:20.858641+00:00",
-   "reason": "published slate SL-20261024T134723Z-1826b1fc is stale: 3 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26OCT25SHERUU": {
    "match_id": "ATP:26OCT25SHERUU:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -612,11 +571,11 @@
   },
   "KXATPMATCH-26OCT25KYMRIN": {
    "match_id": "ATP:26OCT25KYMRIN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -641,11 +600,11 @@
   },
   "KXATPMATCH-26OCT25WAWLEH": {
    "match_id": "ATP:26OCT25WAWLEH:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -670,11 +629,11 @@
   },
   "KXATPMATCH-26OCT25DJOHUM": {
    "match_id": "ATP:26OCT25DJOHUM:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -699,11 +658,11 @@
   },
   "KXATPMATCH-26OCT25STRBUB": {
    "match_id": "ATP:26OCT25STRBUB:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -728,11 +687,11 @@
   },
   "KXATPMATCH-26OCT25DAVBER": {
    "match_id": "ATP:26OCT25DAVBER:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -757,11 +716,11 @@
   },
   "KXATPMATCH-26OCT25RUNHAL": {
    "match_id": "ATP:26OCT25RUNHAL:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -786,11 +745,11 @@
   },
   "KXATPMATCH-26OCT25VACNAV": {
    "match_id": "ATP:26OCT25VACNAV:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -815,11 +774,11 @@
   },
   "KXATPMATCH-26OCT25TABJOD": {
    "match_id": "ATP:26OCT25TABJOD:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -844,11 +803,11 @@
   },
   "KXATPMATCH-26OCT25FRITSI": {
    "match_id": "ATP:26OCT25FRITSI:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -873,11 +832,11 @@
   },
   "KXATPMATCH-26OCT25MICVAN": {
    "match_id": "ATP:26OCT25MICVAN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -902,11 +861,11 @@
   },
   "KXATPMATCH-26OCT25HURFIL": {
    "match_id": "ATP:26OCT25HURFIL:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -931,11 +890,11 @@
   },
   "KXATPMATCH-26OCT25HIJHAN": {
    "match_id": "ATP:26OCT25HIJHAN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -960,11 +919,11 @@
   },
   "KXATPMATCH-26OCT25ZVELAN": {
    "match_id": "ATP:26OCT25ZVELAN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -989,11 +948,11 @@
   },
   "KXATPMATCH-26OCT25GRINAK": {
    "match_id": "ATP:26OCT25GRINAK:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1018,11 +977,11 @@
   },
   "KXATPMATCH-26OCT25MUSTIA": {
    "match_id": "ATP:26OCT25MUSTIA:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1047,11 +1006,11 @@
   },
   "KXATPMATCH-26OCT25COBDIM": {
    "match_id": "ATP:26OCT25COBDIM:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1076,11 +1035,11 @@
   },
   "KXATPMATCH-26OCT25BERETC": {
    "match_id": "ATP:26OCT25BERETC:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1105,11 +1064,11 @@
   },
   "KXATPMATCH-26OCT25VANTIE": {
    "match_id": "ATP:26OCT25VANTIE:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1134,11 +1093,11 @@
   },
   "KXATPMATCH-26OCT25NORCER": {
    "match_id": "ATP:26OCT25NORCER:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1163,11 +1122,11 @@
   },
   "KXATPMATCH-26OCT25MERMED": {
    "match_id": "ATP:26OCT25MERMED:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1192,11 +1151,11 @@
   },
   "KXATPMATCH-26OCT25PAURUB": {
    "match_id": "ATP:26OCT25PAURUB:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1221,11 +1180,11 @@
   },
   "KXATPMATCH-26OCT25DARARN": {
    "match_id": "ATP:26OCT25DARARN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1250,11 +1209,11 @@
   },
   "KXATPMATCH-26OCT25RODBAS": {
    "match_id": "ATP:26OCT25RODBAS:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1279,11 +1238,11 @@
   },
   "KXATPMATCH-26OCT25KHAALC": {
    "match_id": "ATP:26OCT25KHAALC:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1308,11 +1267,11 @@
   },
   "KXATPMATCH-26OCT24BERPAU": {
    "match_id": "ATP:26OCT24BERPAU:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T16:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1364,60 +1323,26 @@
   },
   "KXATPMATCH-26OCT24COBMUS": {
    "match_id": "ATP:26OCT24COBMUS:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T16:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
-   "current_expected_start": "2026-10-24T13:57:31.587062+00:00",
-   "start_time_source": "COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes finished",
-   "start_time_confidence": "MEDIUM",
-   "start_time_candidates": [
-    {
-     "time": "2026-10-24T14:05:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_atp",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-10-24T13:57:31.587062+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Court Central Auvergne-Rhone-Alpes finished",
-     "confidence": "MEDIUM"
-    },
-    {
-     "time": "2026-10-24T16:10:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-10-24T13:12:31.587062+00:00",
-   "recommended_handicap_by": "2026-10-24T13:12:31.587062+00:00",
-   "final_check_time": "2026-10-24T13:47:31.587062+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Court Central Auvergne-Rhone-Alpes",
-   "court_context": {
-    "court": "Court Central Auvergne-Rhone-Alpes",
-    "same_time_on_court": 0,
-    "queue_ahead_pre": 0,
-    "preceding": {
-     "source_match_id": "185112",
-     "players": [
-      "Taylor Fritz",
-      "Tommy Paul"
-     ],
-     "state": "POST",
-     "period": 2,
-     "best_of": 5,
-     "games_played": 21,
-     "scheduled_utc": "2026-10-24T12:10:00+00:00",
-     "time_valid": true
-    }
-   },
-   "start_status": "STATUS_AMBIGUOUS",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
+   "current_expected_start": null,
+   "start_time_source": null,
+   "start_time_confidence": "NONE",
+   "start_time_candidates": [],
+   "earliest_safe_handicap_time": null,
+   "recommended_handicap_by": null,
+   "final_check_time": null,
+   "first_ball_status": "OBSERVED_STARTED",
+   "first_ball_source": "espn_atp (confidence C)",
+   "first_ball_at": "2026-10-24T14:00:46.956236+00:00",
+   "court": null,
+   "court_context": null,
+   "start_status": "STARTED",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-133_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
    ],
    "bet_allowed": false,
    "label": "Flavio Cobolli vs Lorenzo Musetti",
@@ -1425,11 +1350,11 @@
   },
   "KXATPMATCH-26OCT24FILSTR": {
    "match_id": "ATP:26OCT24FILSTR:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T19:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1466,7 +1391,7 @@
      "period": 1,
      "best_of": 5,
      "games_played": 0,
-     "scheduled_utc": "2026-10-24T14:00:00+00:00",
+     "scheduled_utc": "2026-10-24T14:10:00+00:00",
      "time_valid": true
     }
    },
@@ -1480,11 +1405,11 @@
   },
   "KXATPMATCH-26OCT24BAEMPE": {
    "match_id": "ATP:26OCT24BAEMPE:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1495,7 +1420,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-10-24T13:57:31.587062+00:00",
+     "time": "2026-10-24T14:16:02.325411+00:00",
      "source": "COURT_PROGRESSION: preceding match on IWB Court 1 finished",
      "confidence": "MEDIUM"
     }
@@ -1536,11 +1461,11 @@
   },
   "KXATPMATCH-26OCT24KOVDUC": {
    "match_id": "ATP:26OCT24KOVDUC:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T13:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1587,11 +1512,11 @@
   },
   "KXATPMATCH-26OCT24BERALT": {
    "match_id": "ATP:26OCT24BERALT:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1638,11 +1563,11 @@
   },
   "KXATPMATCH-26OCT24FARBRU": {
    "match_id": "ATP:26OCT24FARBRU:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T11:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T10:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1653,7 +1578,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-10-24T13:57:31.587062+00:00",
+     "time": "2026-10-24T14:16:02.325411+00:00",
      "source": "COURT_PROGRESSION: preceding match on Center Court finished",
      "confidence": "MEDIUM"
     }
@@ -1694,11 +1619,11 @@
   },
   "KXATPMATCH-26OCT24MEDBUB": {
    "match_id": "ATP:26OCT24MEDBUB:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -1721,11 +1646,11 @@
   },
   "KXATPMATCH-26OCT24TIRMAN": {
    "match_id": "ATP:26OCT24TIRMAN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T16:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1751,7 +1676,7 @@
    "court_context": {
     "court": "Centre Court",
     "same_time_on_court": 0,
-    "queue_ahead_pre": 2,
+    "queue_ahead_pre": 1,
     "preceding": {
      "source_match_id": "187150",
      "players": [
@@ -1776,11 +1701,11 @@
   },
   "KXATPMATCH-26OCT24MOUMAC": {
    "match_id": "ATP:26OCT24MOUMAC:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1832,11 +1757,11 @@
   },
   "KXATPMATCH-26OCT24MARSOR": {
    "match_id": "ATP:26OCT24MARSOR:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T14:50:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1845,6 +1770,11 @@
      "time": "2026-10-24T12:30:00+00:00",
      "source": "LIVE_SCHEDULE:espn_atp",
      "confidence": "HIGH"
+    },
+    {
+     "time": "2026-10-24T14:16:02.325411+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Centre Court finished",
+     "confidence": "MEDIUM"
     },
     {
      "time": "2026-10-24T14:50:00+00:00",
@@ -1862,17 +1792,17 @@
    "court_context": {
     "court": "Centre Court",
     "same_time_on_court": 0,
-    "queue_ahead_pre": 1,
+    "queue_ahead_pre": 0,
     "preceding": {
      "source_match_id": "187152",
      "players": [
       "Titouan Droguet",
       "Joel Josef Schwaerzler"
      ],
-     "state": "PRE",
-     "period": 1,
+     "state": "POST",
+     "period": 3,
      "best_of": 5,
-     "games_played": 0,
+     "games_played": 30,
      "scheduled_utc": "2026-10-24T11:00:00+00:00",
      "time_valid": true
     }
@@ -1888,11 +1818,11 @@
   },
   "KXATPMATCH-26OCT24MOLMED": {
    "match_id": "ATP:26OCT24MOLMED:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T14:20:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-24T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -1903,7 +1833,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-10-24T13:57:31.587062+00:00",
+     "time": "2026-10-24T14:16:02.325411+00:00",
      "source": "COURT_PROGRESSION: preceding match on Glaubandich Court finished",
      "confidence": "MEDIUM"
     },
@@ -1949,60 +1879,26 @@
   },
   "KXATPMATCH-26OCT24SCHDRO": {
    "match_id": "ATP:26OCT24SCHDRO:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T13:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
-   "current_expected_start": "2026-10-24T11:00:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_atp",
-   "start_time_confidence": "HIGH",
-   "start_time_candidates": [
-    {
-     "time": "2026-10-24T11:00:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_atp",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-10-24T13:57:31.587062+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Centre Court finished",
-     "confidence": "MEDIUM"
-    },
-    {
-     "time": "2026-10-24T13:40:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-10-24T10:15:00+00:00",
-   "recommended_handicap_by": "2026-10-24T10:15:00+00:00",
-   "final_check_time": "2026-10-24T10:50:00+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Centre Court",
-   "court_context": {
-    "court": "Centre Court",
-    "same_time_on_court": 0,
-    "queue_ahead_pre": 0,
-    "preceding": {
-     "source_match_id": "187148",
-     "players": [
-      "Lukas Neumayer",
-      "Vit Kopriva"
-     ],
-     "state": "POST",
-     "period": 2,
-     "best_of": 5,
-     "games_played": 19,
-     "scheduled_utc": "2026-10-24T09:30:00+00:00",
-     "time_valid": true
-    }
-   },
-   "start_status": "STATUS_AMBIGUOUS",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
+   "current_expected_start": null,
+   "start_time_source": null,
+   "start_time_confidence": "NONE",
+   "start_time_candidates": [],
+   "earliest_safe_handicap_time": null,
+   "recommended_handicap_by": null,
+   "final_check_time": null,
+   "first_ball_status": "OBSERVED_STARTED",
+   "first_ball_source": "espn_atp (confidence C)",
+   "first_ball_at": "2026-10-24T14:00:46.956236+00:00",
+   "court": null,
+   "court_context": null,
+   "start_status": "STARTED",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-160_MIN",
-    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
    ],
    "bet_allowed": false,
    "label": "Joel Schwaerzler vs Titouan Droguet",
@@ -2010,11 +1906,11 @@
   },
   "KXATPMATCH-26OCT24VALSON": {
    "match_id": "ATP:26OCT24VALSON:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T13:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2037,11 +1933,11 @@
   },
   "KXATPMATCH-26OCT24PAUFRI": {
    "match_id": "ATP:26OCT24PAUFRI:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2064,22 +1960,22 @@
   },
   "KXATPMATCH-26OCT24CERGRI": {
    "match_id": "ATP:26OCT24CERGRI:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
-   "current_expected_start": "2026-10-24T13:57:31.587062+00:00",
-   "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court finished",
-   "start_time_confidence": "MEDIUM",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
+   "current_expected_start": "2026-10-24T14:10:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-10-24T14:00:00+00:00",
+     "time": "2026-10-24T14:10:00+00:00",
      "source": "LIVE_SCHEDULE:espn_atp",
      "confidence": "HIGH"
     },
     {
-     "time": "2026-10-24T13:57:31.587062+00:00",
+     "time": "2026-10-24T14:16:02.325411+00:00",
      "source": "COURT_PROGRESSION: preceding match on Centre Court finished",
      "confidence": "MEDIUM"
     },
@@ -2089,9 +1985,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-10-24T13:12:31.587062+00:00",
-   "recommended_handicap_by": "2026-10-24T13:12:31.587062+00:00",
-   "final_check_time": "2026-10-24T13:47:31.587062+00:00",
+   "earliest_safe_handicap_time": "2026-10-24T13:25:00+00:00",
+   "recommended_handicap_by": "2026-10-24T13:25:00+00:00",
+   "final_check_time": "2026-10-24T14:00:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -2116,7 +2012,7 @@
    },
    "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-183_MIN",
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-170_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
    "bet_allowed": false,
@@ -2125,11 +2021,11 @@
   },
   "KXWTAMATCH-26OCT24BIRKAS": {
    "match_id": "WTA:26OCT24BIRKAS:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-25T03:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2180,11 +2076,11 @@
   },
   "KXWTAMATCH-26OCT24HONJOI": {
    "match_id": "WTA:26OCT24HONJOI:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T05:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-25T02:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2223,7 +2119,7 @@
   },
   "KXWTAMATCH-26OCT25RYBFER": {
    "match_id": "WTA:26OCT25RYBFER:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T12:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -2279,11 +2175,11 @@
   },
   "KXWTAMATCH-26OCT25KRUSIN": {
    "match_id": "WTA:26OCT25KRUSIN:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T07:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-25T04:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2322,11 +2218,11 @@
   },
   "KXWTAMATCH-26OCT24IBRIAT": {
    "match_id": "WTA:26OCT24IBRIAT:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T05:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-25T03:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2365,11 +2261,11 @@
   },
   "KXWTAMATCH-26OCT24SASRAK": {
    "match_id": "WTA:26OCT24SASRAK:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T04:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-25T01:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2408,11 +2304,11 @@
   },
   "KXWTAMATCH-26OCT24WATPAR": {
    "match_id": "WTA:26OCT24WATPAR:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-25T04:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": "2026-10-25T01:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -2451,7 +2347,7 @@
   },
   "KXWTAMATCH-26OCT24QURSAF": {
    "match_id": "WTA:26OCT24QURSAF:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T10:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -2485,11 +2381,11 @@
   },
   "KXWTAMATCH-26OCT24FRUYAM": {
    "match_id": "WTA:26OCT24FRUYAM:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T10:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2512,11 +2408,11 @@
   },
   "KXWTAMATCH-26OCT24LIAVAL": {
    "match_id": "WTA:26OCT24LIAVAL:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T08:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2539,11 +2435,11 @@
   },
   "KXWTAMATCH-26OCT23YASYOU": {
    "match_id": "WTA:26OCT23YASYOU:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2566,11 +2462,11 @@
   },
   "KXWTAMATCH-26OCT23ZAKZHA": {
    "match_id": "WTA:26OCT23ZAKZHA:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2593,11 +2489,11 @@
   },
   "KXWTAMATCH-26OCT23YIHKOS": {
    "match_id": "WTA:26OCT23YIHKOS:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T06:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -2620,11 +2516,11 @@
   },
   "KXWTAMATCH-26OCT23DAYZHA": {
    "match_id": "WTA:26OCT23DAYZHA:singles",
-   "evaluated_at": "2026-10-24T14:10:20.858641+00:00",
+   "evaluated_at": "2026-10-24T14:28:45.932933+00:00",
    "nominal_scheduled_start": "2026-10-24T04:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-10-24T13:52:31.587062+00:00",
+   "start_time_last_checked": "2026-10-24T14:11:02.325411+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",

@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 14:10Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 14:28Z)
 
 * Earliest credible first ball: **2026-10-24 16:00Z**
 * Recommended RUN TENNIS time: **2026-10-24 15:15Z**
@@ -10,11 +10,11 @@
 | Thiago Agustin Tirante vs Adrian Mannarino | 2026-10-24 16:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Arthur Fils vs Jan-Lennard Struff | 2026-10-24 16:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**37 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Casper Ruud, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Dominic Stricker vs Alexander Bublik, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys, Valentin Vacherot vs Mariano Navone, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Hubert Hurkacz vs Arthur Fils
+**35 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Casper Ruud, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Dominic Stricker vs Alexander Bublik, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys, Valentin Vacherot vs Mariano Navone, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Hubert Hurkacz vs Arthur Fils
 
-Published slate: `SL-20261024T134723Z-1826b1fc` built 2026-10-24 13:47Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261024T140558Z-d0a70534` built 2026-10-24 14:05Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-25 01:30Z, run by 2026-10-25 00:45Z, 5 match(es)
 * later window 3: first ball 2026-10-25 04:30Z, run by 2026-10-25 03:45Z, 1 match(es)
