@@ -1,18 +1,18 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 14:45Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-24 15:02Z)
 
-* Earliest credible first ball: **2026-10-24 15:34Z**
-* Recommended RUN TENNIS time: **2026-10-24 14:49Z**
-* Final price/status check time: **2026-10-24 15:24Z**
+* Earliest credible first ball: **2026-10-24 15:26Z**
+* Recommended RUN TENNIS time: **2026-10-24 14:41Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-24 15:16Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Arthur Fils vs Jan-Lennard Struff | 2026-10-24 15:34Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
+| Arthur Fils vs Jan-Lennard Struff | 2026-10-24 15:26Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 2 of best-of-5) | MEDIUM |
 | Thiago Agustin Tirante vs Adrian Mannarino | 2026-10-24 16:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **32 main-tour match(es) without a verified start status** (BET blocked until checked): Ben Shelton vs Casper Ruud, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Dominic Stricker vs Alexander Bublik, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys, Valentin Vacherot vs Mariano Navone, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Hubert Hurkacz vs Arthur Fils
 
-Published slate: `SL-20261024T142250Z-49c5c17c` built 2026-10-24 14:22Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261024T142250Z-49c5c17c` built 2026-10-24 14:22Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-24T15:26:04.304814+00:00, slate built 2026-10-24T14:22:50.895848+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
 Dispatched this pass: slate_primary (ok)
 
