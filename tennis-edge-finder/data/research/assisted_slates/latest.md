@@ -1,23 +1,23 @@
-# ASSISTED SLATE -- 2026-10-24T08:08Z (`SL-20261024T080838Z-e347acf9`)
+# ASSISTED SLATE -- 2026-10-24T08:22Z (`SL-20261024T082240Z-30230df2`)
 
 **AUTONOMOUS_REAL_MONEY_AUTHORITY = OFF. CHATGPT_ASSISTED_TRACK = ACTIVE.** This is a handicapping packet: it selects nothing and claims no edge. Every probability is P(ticker resolves YES). Quotes are capture snapshots; re-check the live book before deciding.
 
-128 open matches not seen started, 529 markets. Skipped: {"no_play_confirmed": 1, "first_ball_already_observed": 5, "scheduled_start_over_24h_past": 1}. Sources: shadow board 2026-10-24T05:27:09.374717+00:00, Model 4 2026-10-24T05:27:24.381133+00:00, Gen-1 ledger 2026-10-24T05:27:05.557008+00:00, external 2026-10-24T07:50:31.215214+00:00, capture 20261024T074830Z.quotes.jsonl.gz.
+128 open matches not seen started, 530 markets. Skipped: {"no_play_confirmed": 1, "first_ball_already_observed": 5, "scheduled_start_over_24h_past": 1, "no_match_winner_listed": 1}. Sources: shadow board 2026-10-24T05:27:09.374717+00:00, Model 4 2026-10-24T05:27:24.381133+00:00, Gen-1 ledger 2026-10-24T05:27:05.557008+00:00, external 2026-10-24T08:01:21.256934+00:00, capture 20261024T075830Z.quotes.jsonl.gz.
 
 ## NEXT ACTIONABLE MAIN-TOUR WINDOW
 
-* Earliest credible first ball: **2026-10-24 08:23Z**
-* Recommended RUN TENNIS time: **2026-10-24 07:38Z**  (**OVERDUE -- run now**)
-* Final price/status check time: **2026-10-24 08:13Z**
-* Number of matches in window: 11 (Joanna Garland vs Maddison Inglis, Hayu Kinoshita vs Yulia Putintseva, Elena Rybakina vs Diana Shnaider, Nikoloz Basilashvili vs Stefanos Tsitsipas, Jacob Fearnley vs Pablo Carreno Busta, Marcos Giron vs Yannick Hanfmann ...)
+* Earliest credible first ball: **2026-10-24 08:30Z**
+* Recommended RUN TENNIS time: **2026-10-24 07:45Z**  (**OVERDUE -- run now**)
+* Final price/status check time: **2026-10-24 08:20Z**
+* Number of matches in window: 12 (Hayu Kinoshita vs Yulia Putintseva, Nikoloz Basilashvili vs Stefanos Tsitsipas, Elena Rybakina vs Diana Shnaider, Jacob Fearnley vs Pablo Carreno Busta, Marcos Giron vs Yannick Hanfmann, Miomir Kecmanovic vs Rinky Hijikata ...)
 
 * **4 main-tour match(es) have NO verified start status** (STATUS_AMBIGUOUS): BET blocked until a live status check.
 
-Slate built 2026-10-24T08:08Z. Refresh due by: 2026-10-24 07:38Z. A slate built before a window's recommended time, or before a match's status changed, is NOT authoritative for that window.
+Slate built 2026-10-24T08:22Z. Refresh due by: 2026-10-24 07:45Z. A slate built before a window's recommended time, or before a match's status changed, is NOT authoritative for that window.
 
 **Discrepancy sanity layer** (`discrepancy_sanity_v1`): the model should usually sit close to the market. A big gap is a QUESTION -- stale or in-play quote? wrong player or side? thin data? -- before it is ever an edge. NORMAL <10pp: no restriction · REVIEW 10-15pp: context below · HIGH_REVIEW 15-25pp: explain the gap before any BET (`discrepancy_explanation`) · EXTREME >=25pp: DATA_WARNING / PASS UNTIL RECHECKED unless all nine Part J conditions hold, and even then only eligible for human review. Model probabilities are unchanged by this layer.
 
-Bands (all priced contracts): {"EXTREME": 24, "HIGH_REVIEW": 46, "NORMAL": 259, "REVIEW": 63, "UNPRICED": 137}; match winners: {"EXTREME": 17, "HIGH_REVIEW": 23, "NORMAL": 94, "REVIEW": 20, "UNPRICED": 102}; quote freshness at build: {"FRESH": 392}.
+Bands (all priced contracts): {"EXTREME": 24, "HIGH_REVIEW": 37, "NORMAL": 264, "REVIEW": 67, "UNPRICED": 138}; match winners: {"EXTREME": 18, "HIGH_REVIEW": 22, "NORMAL": 89, "REVIEW": 23, "UNPRICED": 104}; quote freshness at build: {"FRESH": 392}.
 
 ## Francesco Forti vs Oriol Roca Batalla -- ATP Challenger Florence QF
 
@@ -36,7 +36,7 @@ CHALLENGER (CHALLENGER) · Hard · scheduled 2026-10-23T12:30:00Z · first ball:
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Francesco Forti (`KXATPCHALLENGERMATCH-26OCT23FORROC-FOR`) | 0.22 / 0.23 (130) | 22.5% | 55.4% | 56.5% | 53.0% [47.5%-55.5%] | -- | -- | -- | -- | WATCH | +32.9 pp | EXTREME (DATA_WARNING) | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Oriol Roca Batalla (`KXATPCHALLENGERMATCH-26OCT23FORROC-ROC`) | 0.77 / 0.78 (1467) | 77.5% | 44.6% | 43.5% | 47.0% [44.5%-52.5%] | -- | -- | -- | -- | PASS | -32.9 pp | EXTREME (DATA_WARNING) | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Oriol Roca Batalla (`KXATPCHALLENGERMATCH-26OCT23FORROC-ROC`) | 0.77 / 0.78 (1421) | 77.5% | 44.6% | 43.5% | 47.0% [44.5%-52.5%] | -- | -- | -- | -- | PASS | -32.9 pp | EXTREME (DATA_WARNING) | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1932.0, B 2870.0; serve-point win A 63.2%, B 37.9%; Elo A 1495.2, B 1504.8; model uncertainty 0.0404
 * Form inputs: days since last match A 11, B 11; matches on record A 373, B 981; data quality A
@@ -74,7 +74,7 @@ DOUBLES (CHALLENGER) · surface ? · scheduled 2026-10-23T13:40:00Z · first bal
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Juan Jose Bianchi / Jakub Vrba (`KXATPCHALLENGERDOUBLES-26OCT23HERHOUBIAVRB-BIAVRB`) | 0.12 / 0.46 (8) | 29.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Juan Jose Bianchi / Jakub Vrba (`KXATPCHALLENGERDOUBLES-26OCT23HERHOUBIAVRB-BIAVRB`) | 0.13 / 0.46 (19) | 29.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 | Mats Hermans / Max Houkes (`KXATPCHALLENGERDOUBLES-26OCT23HERHOUBIAVRB-HERHOU`) | 0.06 / 0.86 (1) | 46.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
@@ -99,12 +99,12 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T07:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Swastika Bista (`KXWTAMATCH-26OCT24BISNGU-BIS`) | 0.77 / 0.81 (6296) | 79.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Thi Mai Linh Nguyen (`KXWTAMATCH-26OCT24BISNGU-NGU`) | 0.19 / 0.22 (10) | 20.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Swastika Bista (`KXWTAMATCH-26OCT24BISNGU-BIS`) | 0.76 / 0.85 (19) | 80.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Thi Mai Linh Nguyen (`KXWTAMATCH-26OCT24BISNGU-NGU`) | 0.14 / 0.22 (8) | 18.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; SCHEDULED_START_PASSED; STATUS_AMBIGUOUS; NO_EXTERNAL_PRICE
+* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; SCHEDULED_START_PASSED; STATUS_AMBIGUOUS; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Leylah Fernandez vs Marie Bouzkova -- WTA Ningbo SF
 
@@ -122,78 +122,31 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T08:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Marie Bouzkova (`KXWTAMATCH-26OCT24FERBOU-BOU`) | 0.43 / 0.44 (117298) | 43.5% | 46.6% | 45.3% | 46.3% [45.3%-50.5%] | 53.2% | -- | 53.2% | KALSHI_LONE_OUTLIER | PASS | +3.1 pp | NORMAL | FRESH | A / LIMITED | EXTERNAL_OUTLIER | VERIFIED |
-| Leylah Fernandez (`KXWTAMATCH-26OCT24FERBOU-FER`) | 0.56 / 0.57 (60331) | 56.5% | 53.4% | 54.7% | 53.7% [49.5%-54.7%] | 46.8% | -- | 46.8% | KALSHI_LONE_OUTLIER | WATCH | -3.1 pp | NORMAL | FRESH | A / LIMITED | EXTERNAL_OUTLIER | VERIFIED |
+| Marie Bouzkova (`KXWTAMATCH-26OCT24FERBOU-BOU`) | 0.33 / 0.34 (60303) | 33.5% | 46.6% | 45.3% | 46.3% [45.3%-50.5%] | 53.2% | -- | 53.2% | KALSHI_LONE_OUTLIER | PASS | +13.1 pp | REVIEW | FRESH | A / LIMITED | SUPPORTS_MODEL_DIRECTION | VERIFIED |
+| Leylah Fernandez (`KXWTAMATCH-26OCT24FERBOU-FER`) | 0.66 / 0.67 (29543) | 66.5% | 53.4% | 54.7% | 53.7% [49.5%-54.7%] | 46.8% | -- | 46.8% | KALSHI_LONE_OUTLIER | WATCH | -13.1 pp | REVIEW | FRESH | A / LIMITED | SUPPORTS_MODEL_DIRECTION | VERIFIED |
 
 * Serve evidence (points): A 4828.0, B 4089.0; serve-point win A 57.6%, B 43.1%; Elo A 1973.1, B 1967.0; model uncertainty 0.0262
 * Form inputs: days since last match A 0, B 0; matches on record A 403, B 647; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.011, surface_pool_high +0.011, surface_dev_loose -0.000, surface_dev_tight -0.005
 * Derivatives listed: 7 (MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 7 carry a model probability
-  * `KXWTASETWINNER-26OCT24FERBOU-1-BOU` Will Marie Bouzkova win set 1 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.28/0.31 mid 29.5%, model 47.8% (projection_v2.0 (prediction ledger)) -- gap +18.3 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT24FERBOU-1-FER` Will Leylah Annie Fernandez win set 1 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.69/0.71 mid 70.0%, model 52.2% (projection_v2.0 (prediction ledger)) -- gap -17.8 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTAGTOTAL-26OCT24FERBOU-22` Over 21.5 games: 0.56/0.60 mid 58.0%, model 63.4% (projection_v2.0 (prediction ledger)) -- gap +5.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
-  * `KXWTAGTOTAL-26OCT24FERBOU-27` Over 26.5 games: 0.30/0.40 mid 35.0%, model 40.0% (projection_v2.0 (prediction ledger)) -- gap +5.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
-  * `KXWTASETWINNER-26OCT24FERBOU-2-FER` Will Leylah Annie Fernandez win set 2 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.48/0.51 mid 49.5%, model 52.2% (projection_v2.0 (prediction ledger)) -- gap +2.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT24FERBOU-2-BOU` Will Marie Bouzkova win set 2 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.49/0.51 mid 50.0%, model 47.8% (projection_v2.0 (prediction ledger)) -- gap -2.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTAGTOTAL-26OCT24FERBOU-17` Over 16.5 games: 0.90/0.96 mid 93.0%, model 94.1% (projection_v2.0 (prediction ledger)) -- gap +1.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
-* Warnings: BET_BLOCKED_START_STATUS; SCHEDULED_START_PASSED; STATUS_AMBIGUOUS; THIN_DISPLAYED_SIZE; WIDE_SPREAD
-
-## Katie Boulter vs Katerina Siniakova -- WTA Osaka SF
-
-**START STATUS: STATUS_AMBIGUOUS** -- BET BLOCKED
-* Nominal schedule: 2026-10-24 06:00Z (day placeholder, not a start time)
-* Current expected start: 2026-10-24 07:45Z
-* Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
-* First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
-* Recommended handicap-by time: 2026-10-24 07:00Z
-
-* Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN
-
-WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `WTA:211107:211701:2026-10-24`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Katie Boulter (`KXWTAMATCH-26OCT23BOUSIN-BOU`) | 0.15 / 0.16 (46814) | 15.5% | 46.3% | 46.3% | 46.3% [45.8%-46.8%] | 40.6% | 39.2% | 39.9% | MODEL_LONE_OUTLIER | SHADOW_BET | +30.8 pp | EXTREME (DATA_WARNING) | FRESH | A / LIMITED | SUPPORTS_MODEL_DIRECTION | VERIFIED |
-| Katerina Siniakova (`KXWTAMATCH-26OCT23BOUSIN-SIN`) | 0.84 / 0.85 (41646) | 84.5% | 53.7% | 53.7% | 53.7% [53.2%-54.2%] | 59.4% | 60.8% | 60.1% | MODEL_LONE_OUTLIER | PASS | -30.8 pp | EXTREME (DATA_WARNING) | FRESH | A / LIMITED | SUPPORTS_MODEL_DIRECTION | VERIFIED |
-
-* Serve evidence (points): A 3928.0, B 4278.0; serve-point win A 55.7%, B 43.6%; Elo A 1894.6, B 1921.3; model uncertainty 0.0053
-* Form inputs: days since last match A 0, B 0; matches on record A 593, B 723; data quality A
-
-```
-DISCREPANCY SANITY CHECK  KXWTAMATCH-26OCT23BOUSIN-BOU  (YES = Katie Boulter)
-Model: 46%
-Kalshi: 16%
-Gap: +31 pp
-Band: EXTREME
-Identity: VERIFIED (ticker orientation VERIFIED)
-Quote freshness: FRESH
-External: SUPPORTS_MODEL_DIRECTION
-Data quality: A (LIMITED)
-Reasons: SURFACE_DATA_THIN, EXTERNAL_MARKET_CONFIRMATION, SCHEDULED_START_PASSED
-Status: DATA_WARNING / PASS UNTIL RECHECKED
-Unmet before human review: adequate_data_quality, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
-```
-* Surface-prior sensitivity (P(A) change): surface_pool_low -0.000, surface_pool_high -0.000, surface_dev_loose -0.000, surface_dev_tight -0.005
-* Derivatives listed: 7 (MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 7 carry a model probability
-  * `KXWTASETWINNER-26OCT23BOUSIN-1-BOU` Will Katie Boulter win set 1 in the Katie Boulter vs Katerina Siniakova match: 0.01/0.04 mid 2.5%, model 47.5% (projection_v2.0 (prediction ledger)) -- gap +45.0 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23BOUSIN-1-SIN` Will Katerina Siniakova win set 1 in the Katie Boulter vs Katerina Siniakova match: 0.96/0.99 mid 97.5%, model 52.5% (projection_v2.0 (prediction ledger)) -- gap -45.0 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTAGTOTAL-26OCT23BOUSIN-18` Over 17.5 games: 0.51/0.53 mid 52.0%, model 87.9% (projection_v2.0 (prediction ledger)) -- gap +36.0 pp, EXTREME, DATA_WARNING, quote FRESH, identity VERIFIED, data LIMITED
-  * `KXWTAGTOTAL-26OCT23BOUSIN-23` Over 22.5 games: 0.29/0.38 mid 33.5%, model 56.2% (projection_v2.0 (prediction ledger)) -- gap +22.7 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data LIMITED
-  * `KXWTAGTOTAL-26OCT23BOUSIN-28` Over 27.5 games: 0.18/0.19 mid 18.5%, model 34.4% (projection_v2.0 (prediction ledger)) -- gap +15.9 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data LIMITED
-  * `KXWTASETWINNER-26OCT23BOUSIN-2-BOU` Will Katie Boulter win set 2 in the Katie Boulter vs Katerina Siniakova match: 0.33/0.34 mid 33.5%, model 47.5% (projection_v2.0 (prediction ledger)) -- gap +14.0 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23BOUSIN-2-SIN` Will Katerina Siniakova win set 2 in the Katie Boulter vs Katerina Siniakova match: 0.64/0.67 mid 65.5%, model 52.5% (projection_v2.0 (prediction ledger)) -- gap -13.0 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
-* Warnings: BET_BLOCKED_START_STATUS; SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; STATUS_AMBIGUOUS; WIDE_SPREAD
+  * `KXWTASETWINNER-26OCT24FERBOU-1-FER` Will Leylah Annie Fernandez win set 1 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.86/0.88 mid 87.0%, model 52.2% (projection_v2.0 (prediction ledger)) -- gap -34.8 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT24FERBOU-1-BOU` Will Marie Bouzkova win set 1 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.13/0.14 mid 13.5%, model 47.8% (projection_v2.0 (prediction ledger)) -- gap +34.3 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTAGTOTAL-26OCT24FERBOU-22` Over 21.5 games: 0.57/0.59 mid 58.0%, model 63.4% (projection_v2.0 (prediction ledger)) -- gap +5.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
+  * `KXWTAGTOTAL-26OCT24FERBOU-27` Over 26.5 games: 0.36/0.38 mid 37.0%, model 40.0% (projection_v2.0 (prediction ledger)) -- gap +3.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
+  * `KXWTASETWINNER-26OCT24FERBOU-2-BOU` Will Marie Bouzkova win set 2 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.48/0.50 mid 49.0%, model 47.8% (projection_v2.0 (prediction ledger)) -- gap -1.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT24FERBOU-2-FER` Will Leylah Annie Fernandez win set 2 in the Leylah Annie Fernandez vs Marie Bouzkova match: 0.50/0.52 mid 51.0%, model 52.2% (projection_v2.0 (prediction ledger)) -- gap +1.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTAGTOTAL-26OCT24FERBOU-17` Over 16.5 games: 0.92/0.96 mid 94.0%, model 94.1% (projection_v2.0 (prediction ledger)) -- gap +0.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
+* Warnings: BET_BLOCKED_START_STATUS; SCHEDULED_START_PASSED; STATUS_AMBIGUOUS
 
 ## Hong Yi Cody Wong vs Emerson Jones -- WTA Guangzhou Q1
 
 **START STATUS: STATUS_AMBIGUOUS** -- BET BLOCKED
 * Nominal schedule: 2026-10-24 06:00Z (day placeholder, not a start time)
-* Current expected start: 2026-10-24 07:58Z
-* Source: COURT_PROGRESSION: preceding match on Court 2 in progress (set 2 of best-of-3); confidence MEDIUM
+* Current expected start: 2026-10-24 08:00Z
+* Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
-* Recommended handicap-by time: 2026-10-24 07:13Z
+* Last status refresh: 2026-10-24 07:56Z
+* Recommended handicap-by time: 2026-10-24 07:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN
 
@@ -201,18 +154,18 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Emerson Jones (`KXWTAMATCH-26OCT23WONJON-JON`) | 0.90 / 0.92 (3203) | 91.0% | 84.3% | 86.6% | 84.5% [82.0%-86.0%] | -- | 90.5% | 90.5% | MODEL_LONE_OUTLIER | PASS | -6.7 pp | NORMAL | FRESH | A / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
-| Hong Yi Cody Wong (`KXWTAMATCH-26OCT23WONJON-WON`) | 0.09 / 0.12 (590) | 10.5% | 15.7% | 13.4% | 15.5% [14.0%-18.0%] | -- | 8.2% | 8.2% | MODEL_LONE_OUTLIER | SHADOW_BET | +5.2 pp | NORMAL | FRESH | A / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
+| Emerson Jones (`KXWTAMATCH-26OCT23WONJON-JON`) | 0.87 / 0.91 (283) | 89.0% | 84.3% | 86.6% | 84.5% [82.0%-86.0%] | -- | 90.5% | 90.5% | MODEL_LONE_OUTLIER | PASS | -4.7 pp | NORMAL | FRESH | A / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
+| Hong Yi Cody Wong (`KXWTAMATCH-26OCT23WONJON-WON`) | 0.09 / 0.12 (282) | 10.5% | 15.7% | 13.4% | 15.5% [14.0%-18.0%] | -- | 9.1% | 9.1% | MODEL_LONE_OUTLIER | SHADOW_BET | +5.2 pp | NORMAL | FRESH | A / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
 
 * Serve evidence (points): A 1599.0, B 3547.0; serve-point win A 54.8%, B 37.5%; Elo A 1531.8, B 1792.6; model uncertainty 0.0197
 * Form inputs: days since last match A 61, B 3; matches on record A 280, B 151; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.003, surface_pool_high +0.006, surface_dev_loose -0.003, surface_dev_tight +0.006
 * Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 4 carry a model probability
-  * `KXWTASETWINNER-26OCT23WONJON-2-JON` Will Emerson Jones win set 2 in the Hong Yi Cody Wong vs Emerson Jones match: 0.82/0.89 mid 85.5%, model 74.9% (projection_v2.0 (prediction ledger)) -- gap -10.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23WONJON-1-JON` Will Emerson Jones win set 1 in the Hong Yi Cody Wong vs Emerson Jones match: 0.81/0.88 mid 84.5%, model 74.9% (projection_v2.0 (prediction ledger)) -- gap -9.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23WONJON-1-WON` Will Hong Yi Cody Wong win set 1 in the Hong Yi Cody Wong vs Emerson Jones match: 0.12/0.19 mid 15.5%, model 25.1% (projection_v2.0 (prediction ledger)) -- gap +9.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23WONJON-2-JON` Will Emerson Jones win set 2 in the Hong Yi Cody Wong vs Emerson Jones match: 0.82/0.88 mid 85.0%, model 74.9% (projection_v2.0 (prediction ledger)) -- gap -10.1 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23WONJON-1-JON` Will Emerson Jones win set 1 in the Hong Yi Cody Wong vs Emerson Jones match: 0.82/0.87 mid 84.5%, model 74.9% (projection_v2.0 (prediction ledger)) -- gap -9.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23WONJON-1-WON` Will Hong Yi Cody Wong win set 1 in the Hong Yi Cody Wong vs Emerson Jones match: 0.13/0.18 mid 15.5%, model 25.1% (projection_v2.0 (prediction ledger)) -- gap +9.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
   * `KXWTASETWINNER-26OCT23WONJON-2-WON` Will Hong Yi Cody Wong win set 2 in the Hong Yi Cody Wong vs Emerson Jones match: 0.14/0.18 mid 16.0%, model 25.1% (projection_v2.0 (prediction ledger)) -- gap +9.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-* Warnings: BET_BLOCKED_START_STATUS; SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; STATUS_AMBIGUOUS; WIDE_SPREAD
+* Warnings: BET_BLOCKED_START_STATUS; SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; STATUS_AMBIGUOUS; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Yexin Ma vs Daria Kasatkina -- WTA Tokyo Q1
 
@@ -221,7 +174,7 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 08:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 07:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN
@@ -230,8 +183,8 @@ WTA (TOUR_500_250) · surface ? · scheduled 2026-10-24T04:30:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Daria Kasatkina (`KXWTAMATCH-26OCT23YEXKAS-KAS`) | 0.79 / 0.81 (5637) | 80.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Yexin Ma (`KXWTAMATCH-26OCT23YEXKAS-YEX`) | 0.19 / 0.21 (1494) | 20.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Daria Kasatkina (`KXWTAMATCH-26OCT23YEXKAS-KAS`) | 0.80 / 0.81 (9829) | 80.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Yexin Ma (`KXWTAMATCH-26OCT23YEXKAS-YEX`) | 0.19 / 0.20 (1213) | 19.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -254,14 +207,43 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T08:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Beale / Vujic (`KXITFDOUBLES-26OCT23BEAVUJTALVIC-BEAVUJ`) | 0.83 / 0.86 (57) | 84.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Talic / Vickery (`KXITFDOUBLES-26OCT23BEAVUJTALVIC-TALVIC`) | 0.14 / 0.17 (11) | 15.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Beale / Vujic (`KXITFDOUBLES-26OCT23BEAVUJTALVIC-BEAVUJ`) | 0.72 / 0.74 (33) | 73.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Talic / Vickery (`KXITFDOUBLES-26OCT23BEAVUJTALVIC-TALVIC`) | 0.23 / 0.28 (43) | 25.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
 * Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; SCHEDULED_START_PASSED; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE
+
+## Joanna Garland vs Maddison Inglis -- WTA Guangzhou Q1
+
+**START STATUS: STATUS_AMBIGUOUS** -- BET BLOCKED
+* Nominal schedule: 2026-10-24 06:00Z (day placeholder, not a start time)
+* Current expected start: 2026-10-24 08:11Z
+* Source: COURT_PROGRESSION: preceding match on Court 6 in progress (set 2 of best-of-3); confidence MEDIUM
+* First ball: NOT_OBSERVED_STARTED
+* Last status refresh: 2026-10-24 07:56Z
+* Recommended handicap-by time: 2026-10-24 07:26Z
+
+* Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series; EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN
+
+WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `WTA:213666:220466:2026-10-24`
+
+| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Joanna Garland (`KXWTAMATCH-26OCT23GARING-GAR`) | 0.45 / 0.47 (2976) | 46.0% | 54.4% | 56.0% | 53.5% [52.0%-55.5%] | 44.4% | 45.7% | 45.7% | MODEL_LONE_OUTLIER | SHADOW_BET | +8.4 pp | NORMAL | FRESH | A / LIMITED | EXTERNAL_STALE | VERIFIED |
+| Maddison Inglis (`KXWTAMATCH-26OCT23GARING-ING`) | 0.53 / 0.55 (3183) | 54.0% | 45.6% | 44.0% | 46.5% [44.5%-48.0%] | 55.6% | 54.5% | 54.5% | MODEL_LONE_OUTLIER | PASS | -8.4 pp | NORMAL | FRESH | A / LIMITED | EXTERNAL_STALE | VERIFIED |
+
+* Serve evidence (points): A 2480.0, B 3027.0; serve-point win A 63.0%, B 37.9%; Elo A 1771.2, B 1768.4; model uncertainty 0.0173
+* Form inputs: days since last match A 29, B 5; matches on record A 393, B 483; data quality A
+* Surface-prior sensitivity (P(A) change): surface_pool_low +0.015, surface_pool_high -0.005, surface_dev_loose -0.010, surface_dev_tight +0.015
+* Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 4 carry a model probability
+  * `KXWTASETWINNER-26OCT23GARING-2-GAR` Will Joanna Garland win set 2 in the Joanna Garland vs Maddison Inglis match: 0.44/0.49 mid 46.5%, model 53.0% (projection_v2.0 (prediction ledger)) -- gap +6.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23GARING-2-ING` Will Maddison Inglis win set 2 in the Joanna Garland vs Maddison Inglis match: 0.51/0.56 mid 53.5%, model 47.0% (projection_v2.0 (prediction ledger)) -- gap -6.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23GARING-1-GAR` Will Joanna Garland win set 1 in the Joanna Garland vs Maddison Inglis match: 0.46/0.48 mid 47.0%, model 53.0% (projection_v2.0 (prediction ledger)) -- gap +6.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23GARING-1-ING` Will Maddison Inglis win set 1 in the Joanna Garland vs Maddison Inglis match: 0.51/0.55 mid 53.0%, model 47.0% (projection_v2.0 (prediction ledger)) -- gap -6.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+* Warnings: BET_BLOCKED_START_STATUS; SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; STATUS_AMBIGUOUS; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 
 ## Yu Hsiou Hsu / Fajing Sun vs Thijmen Loof / Kaito Uesugi -- ATP Challenger Guangzhou Nansha F
 
@@ -279,53 +261,24 @@ DOUBLES (CHALLENGER) · surface ? · scheduled 2026-10-24T08:20:00Z · first bal
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Yu Hsiou Hsu / Fajing Sun (`KXATPCHALLENGERDOUBLES-26OCT24HSUSUNLOOUES-HSUSUN`) | 0.19 / 0.21 (276) | 20.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Thijmen Loof / Kaito Uesugi (`KXATPCHALLENGERDOUBLES-26OCT24HSUSUNLOOUES-LOOUES`) | 0.80 / 0.81 (1320) | 80.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Yu Hsiou Hsu / Fajing Sun (`KXATPCHALLENGERDOUBLES-26OCT24HSUSUNLOOUES-HSUSUN`) | 0.10 / 0.11 (555) | 10.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Thijmen Loof / Kaito Uesugi (`KXATPCHALLENGERDOUBLES-26OCT24HSUSUNLOOUES-LOOUES`) | 0.88 / 0.89 (1) | 88.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE
-
-## Joanna Garland vs Maddison Inglis -- WTA Guangzhou Q1
-
-**START STATUS: START_IMMINENT**
-* Nominal schedule: 2026-10-24 06:00Z (day placeholder, not a start time)
-* Current expected start: 2026-10-24 08:23Z
-* Source: COURT_PROGRESSION: preceding match on Court 6 in progress (set 1 of best-of-3); confidence MEDIUM
-* First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
-* Recommended handicap-by time: 2026-10-24 07:38Z
-
-* Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
-
-WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `WTA:213666:220466:2026-10-24`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Joanna Garland (`KXWTAMATCH-26OCT23GARING-GAR`) | 0.46 / 0.47 (2882) | 46.5% | 54.4% | 56.0% | 53.5% [52.0%-55.5%] | 44.4% | 45.7% | 45.0% | MODEL_LONE_OUTLIER | SHADOW_BET | +7.9 pp | NORMAL | FRESH | A / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
-| Maddison Inglis (`KXWTAMATCH-26OCT23GARING-ING`) | 0.53 / 0.55 (4614) | 54.0% | 45.6% | 44.0% | 46.5% [44.5%-48.0%] | 55.6% | 54.5% | 55.1% | MODEL_LONE_OUTLIER | PASS | -8.4 pp | NORMAL | FRESH | A / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
-
-* Serve evidence (points): A 2480.0, B 3027.0; serve-point win A 63.0%, B 37.9%; Elo A 1771.2, B 1768.4; model uncertainty 0.0173
-* Form inputs: days since last match A 29, B 5; matches on record A 393, B 483; data quality A
-* Surface-prior sensitivity (P(A) change): surface_pool_low +0.015, surface_pool_high -0.005, surface_dev_loose -0.010, surface_dev_tight +0.015
-* Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 4 carry a model probability
-  * `KXWTASETWINNER-26OCT23GARING-2-GAR` Will Joanna Garland win set 2 in the Joanna Garland vs Maddison Inglis match: 0.43/0.50 mid 46.5%, model 53.0% (projection_v2.0 (prediction ledger)) -- gap +6.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23GARING-2-ING` Will Maddison Inglis win set 2 in the Joanna Garland vs Maddison Inglis match: 0.50/0.57 mid 53.5%, model 47.0% (projection_v2.0 (prediction ledger)) -- gap -6.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23GARING-1-ING` Will Maddison Inglis win set 1 in the Joanna Garland vs Maddison Inglis match: 0.51/0.55 mid 53.0%, model 47.0% (projection_v2.0 (prediction ledger)) -- gap -6.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23GARING-1-GAR` Will Joanna Garland win set 1 in the Joanna Garland vs Maddison Inglis match: 0.46/0.50 mid 48.0%, model 53.0% (projection_v2.0 (prediction ledger)) -- gap +5.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; WIDE_SPREAD
+* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; SCHEDULED_START_PASSED; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE
 
 ## Hayu Kinoshita vs Yulia Putintseva -- WTA Tokyo Q1
 
 **START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-24 04:30Z (day placeholder, not a start time)
-* Current expected start: 2026-10-24 08:23Z
-* Source: COURT_PROGRESSION: preceding match on Center in progress (set 1 of best-of-3); confidence MEDIUM
+* Current expected start: 2026-10-24 08:30Z
+* Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
-* Recommended handicap-by time: 2026-10-24 07:38Z
+* Last status refresh: 2026-10-24 07:56Z
+* Recommended handicap-by time: 2026-10-24 07:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
 
@@ -333,8 +286,8 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T04:30:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hayu Kinoshita (`KXWTAMATCH-26OCT23KINPUT-KIN`) | 0.11 / 0.12 (993) | 11.5% | 28.1% | 58.4% | 44.2% [29.0%-50.5%] | 14.7% | 12.8% | 14.7% | KALSHI_LONE_OUTLIER | WATCH | +16.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Yulia Putintseva (`KXWTAMATCH-26OCT23KINPUT-PUT`) | 0.89 / 0.91 (9497) | 90.0% | 71.9% | 41.6% | 55.8% [49.5%-71.0%] | 85.3% | 87.2% | 85.3% | KALSHI_LONE_OUTLIER | PASS | -18.1 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Hayu Kinoshita (`KXWTAMATCH-26OCT23KINPUT-KIN`) | 0.11 / 0.12 (6798) | 11.5% | 28.1% | 58.4% | 44.2% [29.0%-50.5%] | 14.7% | 12.8% | -- | INSUFFICIENT_INPUTS | WATCH | +16.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Yulia Putintseva (`KXWTAMATCH-26OCT23KINPUT-PUT`) | 0.89 / 0.90 (2114) | 89.5% | 71.9% | 41.6% | 55.8% [49.5%-71.0%] | 85.3% | 87.2% | -- | INSUFFICIENT_INPUTS | PASS | -17.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 3494.0, B 4366.0; serve-point win A 55.0%, B 40.6%; Elo A 1619.5, B 1893.8; model uncertainty 0.1077
 * Form inputs: days since last match A 25, B 3; matches on record A 175, B 859; data quality A
@@ -347,37 +300,76 @@ Gap: +17 pp
 Band: HIGH_REVIEW
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: NO_EXTERNAL_REFERENCE
 Data quality: A (ADEQUATE)
-Reasons: MODEL_HIGH_UNCERTAINTY, EXTERNAL_MARKET_REJECTION, SCHEDULED_START_PASSED, MODEL_INTERNAL_DISAGREEMENT
+Reasons: MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, SCHEDULED_START_PASSED, MODEL_INTERNAL_DISAGREEMENT
 Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.000, surface_pool_high -0.000, surface_dev_loose +0.005, surface_dev_tight -0.010
 * Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 4 carry a model probability
-  * `KXWTASETWINNER-26OCT23KINPUT-2-PUT` Will Yulia Putintseva win set 2 in the Hayu Kinoshita vs Yulia Putintseva match: 0.81/0.88 mid 84.5%, model 65.1% (projection_v2.0 (prediction ledger)) -- gap -19.4 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXWTASETWINNER-26OCT23KINPUT-1-KIN` Will Hayu Kinoshita win set 1 in the Hayu Kinoshita vs Yulia Putintseva match: 0.13/0.21 mid 17.0%, model 34.9% (projection_v2.0 (prediction ledger)) -- gap +17.9 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXWTASETWINNER-26OCT23KINPUT-1-PUT` Will Yulia Putintseva win set 1 in the Hayu Kinoshita vs Yulia Putintseva match: 0.79/0.87 mid 83.0%, model 65.1% (projection_v2.0 (prediction ledger)) -- gap -17.9 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXWTASETWINNER-26OCT23KINPUT-2-KIN` Will Hayu Kinoshita win set 2 in the Hayu Kinoshita vs Yulia Putintseva match: 0.14/0.20 mid 17.0%, model 34.9% (projection_v2.0 (prediction ledger)) -- gap +17.9 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; WIDE_SPREAD
+  * `KXWTASETWINNER-26OCT23KINPUT-2-PUT` Will Yulia Putintseva win set 2 in the Hayu Kinoshita vs Yulia Putintseva match: 0.81/0.87 mid 84.0%, model 65.1% (projection_v2.0 (prediction ledger)) -- gap -18.9 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXWTASETWINNER-26OCT23KINPUT-2-KIN` Will Hayu Kinoshita win set 2 in the Hayu Kinoshita vs Yulia Putintseva match: 0.14/0.19 mid 16.5%, model 34.9% (projection_v2.0 (prediction ledger)) -- gap +18.4 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXWTASETWINNER-26OCT23KINPUT-1-KIN` Will Hayu Kinoshita win set 1 in the Hayu Kinoshita vs Yulia Putintseva match: 0.17/0.20 mid 18.5%, model 34.9% (projection_v2.0 (prediction ledger)) -- gap +16.4 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXWTASETWINNER-26OCT23KINPUT-1-PUT` Will Yulia Putintseva win set 1 in the Hayu Kinoshita vs Yulia Putintseva match: 0.80/0.83 mid 81.5%, model 65.1% (projection_v2.0 (prediction ledger)) -- gap -16.4 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
+
+## Nikoloz Basilashvili vs Stefanos Tsitsipas -- ATP Almaty SF
+
+**START STATUS: START_IMMINENT**
+* Nominal schedule: 2026-10-24 13:00Z
+* Current expected start: 2026-10-24 08:36Z
+* Source: COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5); confidence MEDIUM
+* First ball: NOT_OBSERVED_STARTED
+* Last status refresh: 2026-10-24 07:56Z
+* Recommended handicap-by time: 2026-10-24 07:51Z
+
+* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-264_MIN
+
+ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:105932:126774:2026-10-24`
+
+| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Nikoloz Basilashvili (`KXATPMATCH-26OCT24BASTSI-BAS`) | 0.29 / 0.30 (625) | 29.5% | 18.9% | 27.5% | 24.0% [20.4%-26.3%] | 29.9% | 30.3% | 30.3% | MODEL_LONE_OUTLIER | PASS | -10.6 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Stefanos Tsitsipas (`KXATPMATCH-26OCT24BASTSI-TSI`) | 0.70 / 0.71 (74583) | 70.5% | 81.1% | 72.5% | 76.0% [73.7%-79.6%] | 70.1% | 70.2% | 70.2% | MODEL_LONE_OUTLIER | SHADOW_BET | +10.6 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+
+* Serve evidence (points): A 3254.0, B 5234.0; serve-point win A 64.1%, B 28.5%; Elo A 1696.5, B 1953.8; model uncertainty 0.0298
+* Form inputs: days since last match A 1, B 1; matches on record A 915, B 804; data quality A
+* Surface-prior sensitivity (P(A) change): surface_pool_low -0.015, surface_pool_high +0.023, surface_dev_loose +0.016, surface_dev_tight -0.009
+* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 14 carry a model probability
+  * `KXATPGSPREAD-26OCT24BASTSI-TSI4` Will Stefanos Tsitsipas win at least 3.5 more games than Nikoloz Basilashvili?: 0.39/0.40 mid 39.5%, model 50.2% (projection_v2.0 (prediction ledger)) -- gap +10.7 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGSPREAD-26OCT24BASTSI-TSI7` Will Stefanos Tsitsipas win at least 6.5 more games than Nikoloz Basilashvili?: 0.01/0.36 mid 18.5%, model 8.2% (projection_v2.0 (prediction ledger)) -- gap -10.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGSPREAD-26OCT24BASTSI-BAS2` Will Nikoloz Basilashvili win at least 1.5 more games than Stefanos Tsitsipas?: 0.20/0.27 mid 23.5%, model 13.6% (projection_v2.0 (prediction ledger)) -- gap -9.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BASTSI-2-TSI` Will Stefanos Tsitsipas win set 2 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.62/0.64 mid 63.0%, model 72.2% (projection_v2.0 (prediction ledger)) -- gap +9.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BASTSI-1-BAS` Will Nikoloz Basilashvili win set 1 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.35/0.36 mid 35.5%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap -7.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BASTSI-1-TSI` Will Stefanos Tsitsipas win set 1 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.64/0.66 mid 65.0%, model 72.2% (projection_v2.0 (prediction ledger)) -- gap +7.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BASTSI-2-BAS` Will Nikoloz Basilashvili win set 2 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.33/0.37 mid 35.0%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap -7.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BASTSI-BAS20` Will Nikoloz Basilashvili win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-0?: 0.13/0.16 mid 14.5%, model 7.7% (projection_v2.0 (prediction ledger)) -- gap -6.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BASTSI-TSI20` Will Stefanos Tsitsipas win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-0?: 0.45/0.46 mid 45.5%, model 52.1% (projection_v2.0 (prediction ledger)) -- gap +6.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BASTSI-TSI21` Will Stefanos Tsitsipas win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-1?: 0.23/0.26 mid 24.5%, model 29.0% (projection_v2.0 (prediction ledger)) -- gap +4.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24BASTSI-28` Over 27.5 games: 0.31/0.35 mid 33.0%, model 35.3% (projection_v2.0 (prediction ledger)) -- gap +2.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BASTSI-BAS21` Will Nikoloz Basilashvili win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-1?: 0.11/0.15 mid 13.0%, model 11.2% (projection_v2.0 (prediction ledger)) -- gap -1.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24BASTSI-23` Over 22.5 games: 0.56/0.57 mid 56.5%, model 55.5% (projection_v2.0 (prediction ledger)) -- gap -1.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24BASTSI-18` Over 17.5 games: 0.91/0.95 mid 93.0%, model 93.1% (projection_v2.0 (prediction ledger)) -- gap +0.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Elena Rybakina vs Diana Shnaider -- WTA Ningbo SF
 
 **START STATUS: START_IMMINENT**
 * Nominal schedule: 2026-10-24 12:30Z
-* Current expected start: 2026-10-24 08:23Z
+* Current expected start: 2026-10-24 08:36Z
 * Source: COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3); confidence MEDIUM
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
-* Recommended handicap-by time: 2026-10-24 07:38Z
+* Last status refresh: 2026-10-24 07:56Z
+* Recommended handicap-by time: 2026-10-24 07:51Z
 
-* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-247_MIN
+* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-234_MIN
 
 WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T12:30:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `WTA:214981:223670:2026-10-24`
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Elena Rybakina (`KXWTAMATCH-26OCT24RYBSHN-RYB`) | 0.63 / 0.64 (376) | 63.5% | -- | 86.0% | 85.1% [82.3%-85.9%] | 63.2% | 63.7% | 63.5% | MODEL_LONE_OUTLIER | WATCH | +21.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Diana Shnaider (`KXWTAMATCH-26OCT24RYBSHN-SHN`) | 0.36 / 0.37 (34545) | 36.5% | -- | 14.0% | 14.9% [14.1%-17.7%] | 36.8% | 36.5% | 36.6% | MODEL_LONE_OUTLIER | PASS | -21.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Elena Rybakina (`KXWTAMATCH-26OCT24RYBSHN-RYB`) | 0.63 / 0.64 (52145) | 63.5% | -- | 86.0% | 85.1% [82.3%-85.9%] | 63.2% | 63.7% | 63.7% | MODEL_LONE_OUTLIER | WATCH | +21.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Diana Shnaider (`KXWTAMATCH-26OCT24RYBSHN-SHN`) | 0.36 / 0.37 (8226) | 36.5% | -- | 14.0% | 14.9% [14.1%-17.7%] | 36.8% | 36.5% | 36.5% | MODEL_LONE_OUTLIER | PASS | -21.6 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 6087.0, B 4846.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0184
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality A
@@ -390,56 +382,17 @@ Gap: +22 pp
 Band: HIGH_REVIEW
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: EXTERNAL_STALE
 Data quality: A (ADEQUATE)
-Reasons: EXTERNAL_MARKET_REJECTION, UNKNOWN
+Reasons: NO_EXTERNAL_REFERENCE, UNKNOWN
 Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.003, surface_pool_high -0.000, surface_dev_loose +0.006, surface_dev_tight -0.005
 * Derivatives listed: 7 (MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 3 carry a model probability
   * `KXWTAGTOTAL-26OCT24RYBSHN-22` Over 21.5 games: 0.50/0.51 mid 50.5%, model 65.4% (market_conditioned_v1 (model4_board_v1)) -- gap +14.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXWTAGTOTAL-26OCT24RYBSHN-27` Over 26.5 games: 0.30/0.33 mid 31.5%, model 41.6% (market_conditioned_v1 (model4_board_v1)) -- gap +10.1 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXWTAGTOTAL-26OCT24RYBSHN-17` Over 16.5 games: 0.86/0.93 mid 89.5%, model 96.1% (market_conditioned_v1 (model4_board_v1)) -- gap +6.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: WIDE_SPREAD
-
-## Nikoloz Basilashvili vs Stefanos Tsitsipas -- ATP Almaty SF
-
-**START STATUS: VERIFIED_UPCOMING**
-* Nominal schedule: 2026-10-24 13:00Z
-* Current expected start: 2026-10-24 08:48Z
-* Source: COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5); confidence MEDIUM
-* First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
-* Recommended handicap-by time: 2026-10-24 08:03Z
-
-* Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-252_MIN
-
-ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NOT_OBSERVED_STARTED (source COVERED) · match `ATP:105932:126774:2026-10-24`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Nikoloz Basilashvili (`KXATPMATCH-26OCT24BASTSI-BAS`) | 0.29 / 0.30 (1047) | 29.5% | 18.9% | 27.5% | 24.0% [20.4%-26.3%] | 29.9% | 30.1% | 30.1% | MODEL_LONE_OUTLIER | PASS | -10.6 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
-| Stefanos Tsitsipas (`KXATPMATCH-26OCT24BASTSI-TSI`) | 0.70 / 0.71 (76265) | 70.5% | 81.1% | 72.5% | 76.0% [73.7%-79.6%] | 70.1% | 70.2% | 70.2% | MODEL_LONE_OUTLIER | SHADOW_BET | +10.6 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
-
-* Serve evidence (points): A 3254.0, B 5234.0; serve-point win A 64.1%, B 28.5%; Elo A 1696.5, B 1953.8; model uncertainty 0.0298
-* Form inputs: days since last match A 1, B 1; matches on record A 915, B 804; data quality A
-* Surface-prior sensitivity (P(A) change): surface_pool_low -0.015, surface_pool_high +0.023, surface_dev_loose +0.016, surface_dev_tight -0.009
-* Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 14 carry a model probability
-  * `KXATPGSPREAD-26OCT24BASTSI-TSI4` Will Stefanos Tsitsipas win at least 3.5 more games than Nikoloz Basilashvili?: 0.39/0.40 mid 39.5%, model 50.2% (projection_v2.0 (prediction ledger)) -- gap +10.7 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGSPREAD-26OCT24BASTSI-TSI7` Will Stefanos Tsitsipas win at least 6.5 more games than Nikoloz Basilashvili?: 0.01/0.36 mid 18.5%, model 8.2% (projection_v2.0 (prediction ledger)) -- gap -10.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BASTSI-2-TSI` Will Stefanos Tsitsipas win set 2 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.61/0.64 mid 62.5%, model 72.2% (projection_v2.0 (prediction ledger)) -- gap +9.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPGSPREAD-26OCT24BASTSI-BAS2` Will Nikoloz Basilashvili win at least 1.5 more games than Stefanos Tsitsipas?: 0.19/0.27 mid 23.0%, model 13.6% (projection_v2.0 (prediction ledger)) -- gap -9.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BASTSI-1-TSI` Will Stefanos Tsitsipas win set 1 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.62/0.66 mid 64.0%, model 72.2% (projection_v2.0 (prediction ledger)) -- gap +8.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BASTSI-1-BAS` Will Nikoloz Basilashvili win set 1 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.35/0.36 mid 35.5%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap -7.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BASTSI-2-BAS` Will Nikoloz Basilashvili win set 2 in the Nikoloz Basilashvili vs Stefanos Tsitsipas match: 0.33/0.38 mid 35.5%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap -7.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24BASTSI-BAS20` Will Nikoloz Basilashvili win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-0?: 0.13/0.16 mid 14.5%, model 7.7% (projection_v2.0 (prediction ledger)) -- gap -6.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24BASTSI-TSI20` Will Stefanos Tsitsipas win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-0?: 0.45/0.46 mid 45.5%, model 52.1% (projection_v2.0 (prediction ledger)) -- gap +6.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24BASTSI-TSI21` Will Stefanos Tsitsipas win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-1?: 0.23/0.26 mid 24.5%, model 29.0% (projection_v2.0 (prediction ledger)) -- gap +4.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24BASTSI-28` Over 27.5 games: 0.31/0.35 mid 33.0%, model 35.3% (projection_v2.0 (prediction ledger)) -- gap +2.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24BASTSI-BAS21` Will Nikoloz Basilashvili win the Nikoloz Basilashvili vs Stefanos Tsitsipas match by a set score of 2-1?: 0.11/0.15 mid 13.0%, model 11.2% (projection_v2.0 (prediction ledger)) -- gap -1.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24BASTSI-23` Over 22.5 games: 0.56/0.57 mid 56.5%, model 55.5% (projection_v2.0 (prediction ledger)) -- gap -1.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24BASTSI-18` Over 17.5 games: 0.91/0.95 mid 93.0%, model 93.1% (projection_v2.0 (prediction ledger)) -- gap +0.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXWTAGTOTAL-26OCT24RYBSHN-27` Over 26.5 games: 0.31/0.33 mid 32.0%, model 41.6% (market_conditioned_v1 (model4_board_v1)) -- gap +9.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXWTAGTOTAL-26OCT24RYBSHN-17` Over 16.5 games: 0.86/0.89 mid 87.5%, model 96.1% (market_conditioned_v1 (model4_board_v1)) -- gap +8.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 
 ## Jacob Fearnley vs Pablo Carreno Busta -- ATP Vienna Q1
 
@@ -448,7 +401,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 09:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -457,22 +410,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T12:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Pablo Carreno Busta (`KXATPMATCH-26OCT24FEACAR-CAR`) | 0.38 / 0.39 (246) | 38.5% | 40.1% | 38.4% | 44.4% [39.9%-51.0%] | 39.8% | 38.3% | 39.1% | MODEL_LONE_OUTLIER | WATCH | +1.6 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
-| Jacob Fearnley (`KXATPMATCH-26OCT24FEACAR-FEA`) | 0.60 / 0.61 (1840) | 60.5% | 59.9% | 61.6% | 55.6% [49.0%-60.1%] | 60.2% | 61.0% | 60.6% | MODEL_LONE_OUTLIER | PASS | -0.6 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Pablo Carreno Busta (`KXATPMATCH-26OCT24FEACAR-CAR`) | 0.39 / 0.40 (9195) | 39.5% | 40.1% | 38.4% | 44.4% [39.9%-51.0%] | 39.8% | 38.5% | 38.5% | MODEL_LONE_OUTLIER | WATCH | +0.6 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Jacob Fearnley (`KXATPMATCH-26OCT24FEACAR-FEA`) | 0.60 / 0.61 (1873) | 60.5% | 59.9% | 61.6% | 55.6% [49.0%-60.1%] | 60.2% | 60.8% | 60.8% | MODEL_LONE_OUTLIER | PASS | -0.6 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4197.0, B 3944.0; serve-point win A 62.4%, B 39.5%; Elo A 1781.1, B 1841.3; model uncertainty 0.0555
 * Form inputs: days since last match A 3, B 12; matches on record A 185, B 959; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.015, surface_pool_high +0.030, surface_dev_loose +0.020, surface_dev_tight -0.015
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24FEACAR-FEA21` Will Jacob Fearnley win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-1?: 0.19/0.23 mid 21.0%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap +6.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24FEACAR-FEA20` Will Jacob Fearnley win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-0?: 0.35/0.42 mid 38.5%, model 32.1% (projection_v2.0 (prediction ledger)) -- gap -6.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24FEACAR-CAR21` Will Pablo Carreno Busta win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-1?: 0.14/0.19 mid 16.5%, model 21.3% (projection_v2.0 (prediction ledger)) -- gap +4.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24FEACAR-1-CAR` Will Pablo Carreno Busta win set 1 in the Jacob Fearnley vs Pablo Carreno Busta match: 0.40/0.42 mid 41.0%, model 43.4% (projection_v2.0 (prediction ledger)) -- gap +2.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24FEACAR-CAR20` Will Pablo Carreno Busta win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-0?: 0.19/0.23 mid 21.0%, model 18.8% (projection_v2.0 (prediction ledger)) -- gap -2.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FEACAR-FEA21` Will Jacob Fearnley win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-1?: 0.20/0.24 mid 22.0%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap +5.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FEACAR-FEA20` Will Jacob Fearnley win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-0?: 0.35/0.40 mid 37.5%, model 32.1% (projection_v2.0 (prediction ledger)) -- gap -5.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FEACAR-CAR21` Will Pablo Carreno Busta win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-1?: 0.15/0.19 mid 17.0%, model 21.3% (projection_v2.0 (prediction ledger)) -- gap +4.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24FEACAR-1-CAR` Will Pablo Carreno Busta win set 1 in the Jacob Fearnley vs Pablo Carreno Busta match: 0.39/0.42 mid 40.5%, model 43.4% (projection_v2.0 (prediction ledger)) -- gap +2.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24FEACAR-1-FEA` Will Jacob Fearnley win set 1 in the Jacob Fearnley vs Pablo Carreno Busta match: 0.57/0.60 mid 58.5%, model 56.6% (projection_v2.0 (prediction ledger)) -- gap -1.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24FEACAR-2-CAR` Will Pablo Carreno Busta win set 2 in the Jacob Fearnley vs Pablo Carreno Busta match: 0.39/0.44 mid 41.5%, model 43.4% (projection_v2.0 (prediction ledger)) -- gap +1.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24FEACAR-1-FEA` Will Jacob Fearnley win set 1 in the Jacob Fearnley vs Pablo Carreno Busta match: 0.56/0.60 mid 58.0%, model 56.6% (projection_v2.0 (prediction ledger)) -- gap -1.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FEACAR-CAR20` Will Pablo Carreno Busta win the Jacob Fearnley vs Pablo Carreno Busta match by a set score of 2-0?: 0.19/0.22 mid 20.5%, model 18.8% (projection_v2.0 (prediction ledger)) -- gap -1.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24FEACAR-2-FEA` Will Jacob Fearnley win set 2 in the Jacob Fearnley vs Pablo Carreno Busta match: 0.55/0.60 mid 57.5%, model 56.6% (projection_v2.0 (prediction ledger)) -- gap -0.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+* Warnings: EXTERNAL_PRICE_STALE
 
 ## Marcos Giron vs Yannick Hanfmann -- ATP Basel Q1
 
@@ -481,7 +434,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T12:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 09:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -490,22 +443,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Marcos Giron (`KXATPMATCH-26OCT24GIRHAN-GIR`) | 0.42 / 0.43 (4244) | 42.5% | 56.5% | 43.2% | 47.6% [45.2%-50.5%] | 41.7% | 41.2% | 41.7% | MARKETS_AGREE | SHADOW_BET | +14.1 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Yannick Hanfmann (`KXATPMATCH-26OCT24GIRHAN-HAN`) | 0.58 / 0.59 (4151) | 58.5% | 43.5% | 56.8% | 52.4% [49.5%-54.8%] | 58.3% | 59.2% | 58.3% | MODEL_LONE_OUTLIER | PASS | -15.1 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Marcos Giron (`KXATPMATCH-26OCT24GIRHAN-GIR`) | 0.42 / 0.43 (9487) | 42.5% | 56.5% | 43.2% | 47.6% [45.2%-50.5%] | 41.7% | 41.2% | -- | INSUFFICIENT_INPUTS | SHADOW_BET | +14.1 pp | REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Yannick Hanfmann (`KXATPMATCH-26OCT24GIRHAN-HAN`) | 0.58 / 0.59 (3599) | 58.5% | 43.5% | 56.8% | 52.4% [49.5%-54.8%] | 58.3% | 59.2% | -- | INSUFFICIENT_INPUTS | PASS | -15.1 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4256.0, B 4359.0; serve-point win A 67.3%, B 34.1%; Elo A 1805.2, B 1728.0; model uncertainty 0.0266
 * Form inputs: days since last match A 4, B 15; matches on record A 708, B 656; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.024, surface_pool_high +0.024, surface_dev_loose +0.000, surface_dev_tight +0.005
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
   * `KXATPEXACTMATCH-26OCT24GIRHAN-HAN20` Will Yannick Hanfmann win the Marcos Giron vs Yannick Hanfmann match by a set score of 2-0?: 0.34/0.38 mid 36.0%, model 20.8% (projection_v2.0 (prediction ledger)) -- gap -15.2 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24GIRHAN-2-GIR` Will Marcos Giron win set 2 in the Marcos Giron vs Yannick Hanfmann match: 0.39/0.46 mid 42.5%, model 54.4% (projection_v2.0 (prediction ledger)) -- gap +11.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24GIRHAN-1-GIR` Will Marcos Giron win set 1 in the Marcos Giron vs Yannick Hanfmann match: 0.42/0.44 mid 43.0%, model 54.4% (projection_v2.0 (prediction ledger)) -- gap +11.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24GIRHAN-1-HAN` Will Yannick Hanfmann win set 1 in the Marcos Giron vs Yannick Hanfmann match: 0.55/0.59 mid 57.0%, model 45.6% (projection_v2.0 (prediction ledger)) -- gap -11.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24GIRHAN-2-GIR` Will Marcos Giron win set 2 in the Marcos Giron vs Yannick Hanfmann match: 0.40/0.46 mid 43.0%, model 54.4% (projection_v2.0 (prediction ledger)) -- gap +11.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24GIRHAN-2-HAN` Will Yannick Hanfmann win set 2 in the Marcos Giron vs Yannick Hanfmann match: 0.54/0.59 mid 56.5%, model 45.6% (projection_v2.0 (prediction ledger)) -- gap -10.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24GIRHAN-GIR21` Will Marcos Giron win the Marcos Giron vs Yannick Hanfmann match by a set score of 2-1?: 0.14/0.20 mid 17.0%, model 27.0% (projection_v2.0 (prediction ledger)) -- gap +10.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24GIRHAN-GIR21` Will Marcos Giron win the Marcos Giron vs Yannick Hanfmann match by a set score of 2-1?: 0.15/0.20 mid 17.5%, model 27.0% (projection_v2.0 (prediction ledger)) -- gap +9.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24GIRHAN-GIR20` Will Marcos Giron win the Marcos Giron vs Yannick Hanfmann match by a set score of 2-0?: 0.20/0.24 mid 22.0%, model 29.6% (projection_v2.0 (prediction ledger)) -- gap +7.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24GIRHAN-HAN21` Will Yannick Hanfmann win the Marcos Giron vs Yannick Hanfmann match by a set score of 2-1?: 0.18/0.24 mid 21.0%, model 22.6% (projection_v2.0 (prediction ledger)) -- gap +1.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; WIDE_SPREAD
+  * `KXATPEXACTMATCH-26OCT24GIRHAN-HAN21` Will Yannick Hanfmann win the Marcos Giron vs Yannick Hanfmann match by a set score of 2-1?: 0.19/0.24 mid 21.5%, model 22.6% (projection_v2.0 (prediction ledger)) -- gap +1.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE
 
 ## Miomir Kecmanovic vs Rinky Hijikata -- ATP Basel Q1
 
@@ -514,7 +467,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 09:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -523,22 +476,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Rinky Hijikata (`KXATPMATCH-26OCT24KECHIJ-HIJ`) | 0.40 / 0.41 (5918) | 40.5% | 46.5% | 38.1% | 41.0% [39.6%-43.5%] | 40.6% | 41.5% | 41.1% | MODEL_LONE_OUTLIER | PASS | +6.0 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Miomir Kecmanovic (`KXATPMATCH-26OCT24KECHIJ-KEC`) | 0.60 / 0.61 (7892) | 60.5% | 53.5% | 61.9% | 59.0% [56.5%-60.4%] | 59.4% | 58.9% | 59.1% | MARKETS_AGREE | PASS | -7.0 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Rinky Hijikata (`KXATPMATCH-26OCT24KECHIJ-HIJ`) | 0.40 / 0.41 (5839) | 40.5% | 46.5% | 38.1% | 41.0% [39.6%-43.5%] | 40.6% | 41.2% | 41.2% | MODEL_LONE_OUTLIER | PASS | +6.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Miomir Kecmanovic (`KXATPMATCH-26OCT24KECHIJ-KEC`) | 0.60 / 0.61 (20123) | 60.5% | 53.5% | 61.9% | 59.0% [56.5%-60.4%] | 59.4% | 59.4% | 59.4% | MARKETS_AGREE | PASS | -7.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 5277.0, B 5199.0; serve-point win A 63.4%, B 37.3%; Elo A 1776.8, B 1789.2; model uncertainty 0.0196
 * Form inputs: days since last match A 5, B 4; matches on record A 608, B 435; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.000, surface_pool_high -0.010, surface_dev_loose -0.010, surface_dev_tight +0.005
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24KECHIJ-KEC20` Will Miomir Kecmanovic win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-0?: 0.34/0.38 mid 36.0%, model 27.4% (projection_v2.0 (prediction ledger)) -- gap -8.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24KECHIJ-HIJ21` Will Rinky Hijikata win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-1?: 0.14/0.18 mid 16.0%, model 23.8% (projection_v2.0 (prediction ledger)) -- gap +7.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24KECHIJ-KEC21` Will Miomir Kecmanovic win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-1?: 0.18/0.23 mid 20.5%, model 26.1% (projection_v2.0 (prediction ledger)) -- gap +5.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KECHIJ-KEC20` Will Miomir Kecmanovic win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-0?: 0.35/0.39 mid 37.0%, model 27.4% (projection_v2.0 (prediction ledger)) -- gap -9.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KECHIJ-HIJ21` Will Rinky Hijikata win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-1?: 0.15/0.19 mid 17.0%, model 23.8% (projection_v2.0 (prediction ledger)) -- gap +6.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24KECHIJ-1-HIJ` Will Rinky Hijikata win set 1 in the Miomir Kecmanovic vs Rinky Hijikata match: 0.41/0.44 mid 42.5%, model 47.7% (projection_v2.0 (prediction ledger)) -- gap +5.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24KECHIJ-2-HIJ` Will Rinky Hijikata win set 2 in the Miomir Kecmanovic vs Rinky Hijikata match: 0.40/0.45 mid 42.5%, model 47.7% (projection_v2.0 (prediction ledger)) -- gap +5.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24KECHIJ-2-KEC` Will Miomir Kecmanovic win set 2 in the Miomir Kecmanovic vs Rinky Hijikata match: 0.55/0.60 mid 57.5%, model 52.3% (projection_v2.0 (prediction ledger)) -- gap -5.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KECHIJ-KEC21` Will Miomir Kecmanovic win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-1?: 0.19/0.23 mid 21.0%, model 26.1% (projection_v2.0 (prediction ledger)) -- gap +5.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24KECHIJ-1-KEC` Will Miomir Kecmanovic win set 1 in the Miomir Kecmanovic vs Rinky Hijikata match: 0.55/0.59 mid 57.0%, model 52.3% (projection_v2.0 (prediction ledger)) -- gap -4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KECHIJ-2-HIJ` Will Rinky Hijikata win set 2 in the Miomir Kecmanovic vs Rinky Hijikata match: 0.40/0.46 mid 43.0%, model 47.7% (projection_v2.0 (prediction ledger)) -- gap +4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KECHIJ-2-KEC` Will Miomir Kecmanovic win set 2 in the Miomir Kecmanovic vs Rinky Hijikata match: 0.54/0.60 mid 57.0%, model 52.3% (projection_v2.0 (prediction ledger)) -- gap -4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24KECHIJ-HIJ20` Will Rinky Hijikata win the Miomir Kecmanovic vs Rinky Hijikata match by a set score of 2-0?: 0.20/0.22 mid 21.0%, model 22.7% (projection_v2.0 (prediction ledger)) -- gap +1.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; THIN_DISPLAYED_SIZE
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 
 ## Kayla Day vs Shuai Zhang -- WTA Tokyo Q1
 
@@ -547,7 +500,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 09:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -556,18 +509,18 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T04:30:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kayla Day (`KXWTAMATCH-26OCT23DAYZHA-DAY`) | 0.47 / 0.49 (14300) | 48.0% | 52.7% | 60.8% | 53.6% [45.3%-56.7%] | 47.8% | 47.4% | 47.6% | MODEL_LONE_OUTLIER | WATCH | +4.7 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Shuai Zhang (`KXWTAMATCH-26OCT23DAYZHA-ZHA`) | 0.53 / 0.54 (22375) | 53.5% | 47.3% | 39.2% | 46.4% [43.3%-54.7%] | 52.2% | 52.9% | 52.5% | MODEL_LONE_OUTLIER | PASS | -6.2 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Kayla Day (`KXWTAMATCH-26OCT23DAYZHA-DAY`) | 0.47 / 0.48 (12016) | 47.5% | 52.7% | 60.8% | 53.6% [45.3%-56.7%] | 47.8% | 47.4% | 47.4% | MODEL_LONE_OUTLIER | WATCH | +5.2 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Shuai Zhang (`KXWTAMATCH-26OCT23DAYZHA-ZHA`) | 0.53 / 0.54 (32232) | 53.5% | 47.3% | 39.2% | 46.4% [43.3%-54.7%] | 52.2% | 52.9% | 52.9% | MODEL_LONE_OUTLIER | PASS | -6.2 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 3639.0, B 3846.0; serve-point win A 58.9%, B 41.6%; Elo A 1748.9, B 1845.2; model uncertainty 0.0572
 * Form inputs: days since last match A 1, B 3; matches on record A 481, B 1068; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.005, surface_pool_high -0.005, surface_dev_loose +0.010, surface_dev_tight -0.010
 * Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 4 carry a model probability
+  * `KXWTASETWINNER-26OCT23DAYZHA-2-DAY` Will Kayla Day win set 2 in the Kayla Day vs Shuai Zhang match: 0.44/0.51 mid 47.5%, model 51.8% (projection_v2.0 (prediction ledger)) -- gap +4.3 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23DAYZHA-2-ZHA` Will Shuai Zhang win set 2 in the Kayla Day vs Shuai Zhang match: 0.49/0.56 mid 52.5%, model 48.2% (projection_v2.0 (prediction ledger)) -- gap -4.3 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23DAYZHA-1-ZHA` Will Shuai Zhang win set 1 in the Kayla Day vs Shuai Zhang match: 0.50/0.54 mid 52.0%, model 48.2% (projection_v2.0 (prediction ledger)) -- gap -3.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXWTASETWINNER-26OCT23DAYZHA-2-DAY` Will Kayla Day win set 2 in the Kayla Day vs Shuai Zhang match: 0.44/0.52 mid 48.0%, model 51.8% (projection_v2.0 (prediction ledger)) -- gap +3.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23DAYZHA-1-DAY` Will Kayla Day win set 1 in the Kayla Day vs Shuai Zhang match: 0.47/0.51 mid 49.0%, model 51.8% (projection_v2.0 (prediction ledger)) -- gap +2.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; WIDE_SPREAD
+* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; WIDE_SPREAD
 
 ## Ushna Suhail vs yasaman yazdani -- Billie Jean King Cup Qualifiers UNK
 
@@ -585,8 +538,8 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T09:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Ushna Suhail (`KXWTAMATCH-26OCT24SUHYAZ-SUH`) | 0.08 / 0.27 (1) | 17.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| yasaman yazdani (`KXWTAMATCH-26OCT24SUHYAZ-YAZ`) | 0.59 / 0.92 (30) | 75.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Ushna Suhail (`KXWTAMATCH-26OCT24SUHYAZ-SUH`) | 0.16 / 0.56 (27) | 36.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| yasaman yazdani (`KXWTAMATCH-26OCT24SUHYAZ-YAZ`) | 0.50 / 0.84 (8) | 67.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -608,8 +561,8 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T09:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Anna Abualhaj (`KXWTAMATCH-26OCT24USAABU-ABU`) | 0.10 / 0.75 (18) | 42.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Nayara Usama Ali (`KXWTAMATCH-26OCT24USAABU-USA`) | 0.10 / 0.74 (18) | 42.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Anna Abualhaj (`KXWTAMATCH-26OCT24USAABU-ABU`) | 0.12 / 0.70 (17) | 41.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Nayara Usama Ali (`KXWTAMATCH-26OCT24USAABU-USA`) | 0.12 / 0.76 (18) | 44.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -631,8 +584,8 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T09:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Khadija Gassama (`KXWTAMATCH-26OCT24YANGAS-GAS`) | 0.09 / 0.41 (6) | 25.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Kinley Yangden (`KXWTAMATCH-26OCT24YANGAS-YAN`) | 0.52 / 0.86 (7) | 69.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Khadija Gassama (`KXWTAMATCH-26OCT24YANGAS-GAS`) | 0.09 / 0.40 (5) | 24.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Kinley Yangden (`KXWTAMATCH-26OCT24YANGAS-YAN`) | 0.56 / 0.86 (7) | 71.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -645,7 +598,7 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T09:00:00Z · first ball: NOT_O
 * Current expected start: 2026-10-24 09:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -670,7 +623,7 @@ DOUBLES (TOUR_500_250) · surface ? · scheduled 2026-10-23T13:00:00Z · first b
 * Current expected start: 2026-10-24 09:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -679,22 +632,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T12:30:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Vit Kopriva (`KXATPMATCH-26OCT24KOPNEU-KOP`) | 0.55 / 0.56 (16203) | 55.5% | 56.9% | 51.0% | 54.6% [53.1%-57.1%] | 53.2% | 54.2% | 53.7% | MARKETS_AGREE | PASS | +1.4 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
-| Lukas Neumayer (`KXATPMATCH-26OCT24KOPNEU-NEU`) | 0.45 / 0.47 (5035) | 46.0% | 43.1% | 49.0% | 45.4% [42.9%-46.9%] | 46.8% | 46.1% | 46.4% | MODEL_LONE_OUTLIER | PASS | -2.9 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Vit Kopriva (`KXATPMATCH-26OCT24KOPNEU-KOP`) | 0.53 / 0.54 (9071) | 53.5% | 56.9% | 51.0% | 54.6% [53.1%-57.1%] | 53.2% | 54.4% | 54.4% | MARKETS_AGREE | PASS | +3.4 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Lukas Neumayer (`KXATPMATCH-26OCT24KOPNEU-NEU`) | 0.47 / 0.48 (5065) | 47.5% | 43.1% | 49.0% | 45.4% [42.9%-46.9%] | 46.8% | 45.9% | 45.9% | MODEL_LONE_OUTLIER | PASS | -4.4 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4886.0, B 4653.0; serve-point win A 61.9%, B 39.4%; Elo A 1682.3, B 1568.4; model uncertainty 0.0203
 * Form inputs: days since last match A 12, B 12; matches on record A 698, B 376; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.000, surface_pool_high -0.005, surface_dev_loose -0.005, surface_dev_tight +0.005
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24KOPNEU-KOP21` Will Vit Kopriva win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-1?: 0.17/0.24 mid 20.5%, model 27.1% (projection_v2.0 (prediction ledger)) -- gap +6.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24KOPNEU-NEU21` Will Lukas Neumayer win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-1?: 0.15/0.22 mid 18.5%, model 22.5% (projection_v2.0 (prediction ledger)) -- gap +4.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24KOPNEU-NEU20` Will Lukas Neumayer win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-0?: 0.23/0.26 mid 24.5%, model 20.6% (projection_v2.0 (prediction ledger)) -- gap -3.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KOPNEU-1-KOP` Will Vit Kopriva win set 1 in the Vit Kopriva vs Lukas Neumayer match: 0.50/0.52 mid 51.0%, model 54.6% (projection_v2.0 (prediction ledger)) -- gap +3.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KOPNEU-1-NEU` Will Lukas Neumayer win set 1 in the Vit Kopriva vs Lukas Neumayer match: 0.48/0.50 mid 49.0%, model 45.4% (projection_v2.0 (prediction ledger)) -- gap -3.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KOPNEU-KOP21` Will Vit Kopriva win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-1?: 0.18/0.23 mid 20.5%, model 27.1% (projection_v2.0 (prediction ledger)) -- gap +6.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KOPNEU-NEU20` Will Lukas Neumayer win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-0?: 0.25/0.26 mid 25.5%, model 20.6% (projection_v2.0 (prediction ledger)) -- gap -4.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24KOPNEU-1-KOP` Will Vit Kopriva win set 1 in the Vit Kopriva vs Lukas Neumayer match: 0.49/0.52 mid 50.5%, model 54.6% (projection_v2.0 (prediction ledger)) -- gap +4.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24KOPNEU-1-NEU` Will Lukas Neumayer win set 1 in the Vit Kopriva vs Lukas Neumayer match: 0.49/0.50 mid 49.5%, model 45.4% (projection_v2.0 (prediction ledger)) -- gap -4.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KOPNEU-NEU21` Will Lukas Neumayer win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-1?: 0.16/0.22 mid 19.0%, model 22.5% (projection_v2.0 (prediction ledger)) -- gap +3.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24KOPNEU-2-KOP` Will Vit Kopriva win set 2 in the Vit Kopriva vs Lukas Neumayer match: 0.50/0.54 mid 52.0%, model 54.6% (projection_v2.0 (prediction ledger)) -- gap +2.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24KOPNEU-KOP20` Will Vit Kopriva win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-0?: 0.30/0.32 mid 31.0%, model 29.8% (projection_v2.0 (prediction ledger)) -- gap -1.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KOPNEU-2-NEU` Will Lukas Neumayer win set 2 in the Vit Kopriva vs Lukas Neumayer match: 0.43/0.50 mid 46.5%, model 45.4% (projection_v2.0 (prediction ledger)) -- gap -1.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24KOPNEU-2-NEU` Will Lukas Neumayer win set 2 in the Vit Kopriva vs Lukas Neumayer match: 0.44/0.49 mid 46.5%, model 45.4% (projection_v2.0 (prediction ledger)) -- gap -1.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KOPNEU-KOP20` Will Vit Kopriva win the Vit Kopriva vs Lukas Neumayer match by a set score of 2-0?: 0.29/0.32 mid 30.5%, model 29.8% (projection_v2.0 (prediction ledger)) -- gap -0.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE
 
 ## Harriet Dart vs Cheuk Ying Shek -- WTA Guangzhou Q1
 
@@ -703,7 +656,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T12:30:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 09:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -713,16 +666,16 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Harriet Dart (`KXWTAMATCH-26OCT23DARSHE-DAR`) | 0.92 / 0.93 (43) | 92.5% | 85.7% | 70.9% | 79.7% [74.9%-86.0%] | -- | 95.3% | 95.3% | ALL_THREE_DISAGREE | PASS | -6.8 pp | NORMAL | FRESH | C / LIMITED | AGREES_WITH_KALSHI | VERIFIED |
-| Cheuk Ying Shek (`KXWTAMATCH-26OCT23DARSHE-SHE`) | 0.08 / 0.09 (13112) | 8.5% | 14.3% | 29.1% | 20.3% [14.0%-25.1%] | -- | 7.8% | -- | INSUFFICIENT_INPUTS | WATCH | +5.8 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Cheuk Ying Shek (`KXWTAMATCH-26OCT23DARSHE-SHE`) | 0.08 / 0.09 (12613) | 8.5% | 14.3% | 29.1% | 20.3% [14.0%-25.1%] | -- | 7.5% | -- | INSUFFICIENT_INPUTS | WATCH | +5.8 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4244.0, B 1558.0; serve-point win A 57.1%, B 50.9%; Elo A 1787.6, B 1461.7; model uncertainty 0.0558
 * Form inputs: days since last match A 4, B 193; matches on record A 676, B 47; data quality C
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.015, surface_pool_high -0.019, surface_dev_loose +0.004, surface_dev_tight -0.008
 * Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 4 carry a model probability
-  * `KXWTASETWINNER-26OCT23DARSHE-2-DAR` Will Harriet Dart win set 2 in the Harriet Dart vs Cheuk Ying Shek match: 0.90/0.91 mid 90.5%, model 76.2% (projection_v2.0 (prediction ledger)) -- gap -14.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23DARSHE-2-DAR` Will Harriet Dart win set 2 in the Harriet Dart vs Cheuk Ying Shek match: 0.89/0.91 mid 90.0%, model 76.2% (projection_v2.0 (prediction ledger)) -- gap -13.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23DARSHE-1-DAR` Will Harriet Dart win set 1 in the Harriet Dart vs Cheuk Ying Shek match: 0.85/0.92 mid 88.5%, model 76.2% (projection_v2.0 (prediction ledger)) -- gap -12.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
   * `KXWTASETWINNER-26OCT23DARSHE-2-SHE` Will Cheuk Ying Shek win set 2 in the Harriet Dart vs Cheuk Ying Shek match: 0.10/0.13 mid 11.5%, model 23.8% (projection_v2.0 (prediction ledger)) -- gap +12.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23DARSHE-1-DAR` Will Harriet Dart win set 1 in the Harriet Dart vs Cheuk Ying Shek match: 0.84/0.92 mid 88.0%, model 76.2% (projection_v2.0 (prediction ledger)) -- gap -11.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXWTASETWINNER-26OCT23DARSHE-1-SHE` Will Cheuk Ying Shek win set 1 in the Harriet Dart vs Cheuk Ying Shek match: 0.09/0.16 mid 12.5%, model 23.8% (projection_v2.0 (prediction ledger)) -- gap +11.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXWTASETWINNER-26OCT23DARSHE-1-SHE` Will Cheuk Ying Shek win set 1 in the Harriet Dart vs Cheuk Ying Shek match: 0.09/0.15 mid 12.0%, model 23.8% (projection_v2.0 (prediction ledger)) -- gap +11.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data LIMITED
 * Warnings: SCHEDULED_START_PASSED; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Dayana Yastremska vs Xiaodi You -- WTA Guangzhou Q1
@@ -732,7 +685,7 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 09:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 08:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -741,8 +694,8 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Dayana Yastremska (`KXWTAMATCH-26OCT23YASYOU-YAS`) | 0.82 / 0.83 (10051) | 82.5% | 66.5% | 37.5% | 48.9% [42.1%-68.9%] | 80.9% | 82.1% | 80.9% | MODEL_LONE_OUTLIER | PASS | -16.0 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Xiaodi You (`KXWTAMATCH-26OCT23YASYOU-YOU`) | 0.17 / 0.19 (3826) | 18.0% | 33.5% | 62.5% | 51.1% [31.1%-57.9%] | 19.1% | 17.6% | 19.1% | MODEL_LONE_OUTLIER | WATCH | +15.5 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Dayana Yastremska (`KXWTAMATCH-26OCT23YASYOU-YAS`) | 0.82 / 0.83 (10051) | 82.5% | 66.5% | 37.5% | 48.9% [42.1%-68.9%] | 80.9% | 82.1% | -- | INSUFFICIENT_INPUTS | PASS | -16.0 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Xiaodi You (`KXWTAMATCH-26OCT23YASYOU-YOU`) | 0.17 / 0.19 (5631) | 18.0% | 33.5% | 62.5% | 51.1% [31.1%-57.9%] | 19.1% | 17.6% | -- | INSUFFICIENT_INPUTS | WATCH | +15.5 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4632.0, B 3618.0; serve-point win A 56.5%, B 46.7%; Elo A 1842.7, B 1651.6; model uncertainty 0.134
 * Form inputs: days since last match A 6, B 24; matches on record A 480, B 579; data quality A
@@ -755,9 +708,9 @@ Gap: +16 pp
 Band: HIGH_REVIEW
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: NO_EXTERNAL_REFERENCE
 Data quality: A (ADEQUATE)
-Reasons: MODEL_HIGH_UNCERTAINTY, EXTERNAL_MARKET_REJECTION, SCHEDULED_START_PASSED, MODEL_INTERNAL_DISAGREEMENT
+Reasons: MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, SCHEDULED_START_PASSED, MODEL_INTERNAL_DISAGREEMENT
 Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.027, surface_pool_high -0.032, surface_dev_loose -0.021, surface_dev_tight +0.016
@@ -766,7 +719,7 @@ Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
   * `KXWTASETWINNER-26OCT23YASYOU-1-YOU` Will Xiaodi You win set 1 in the Dayana Yastremska vs Xiaodi You match: 0.21/0.27 mid 24.0%, model 38.8% (projection_v2.0 (prediction ledger)) -- gap +14.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23YASYOU-2-YAS` Will Dayana Yastremska win set 2 in the Dayana Yastremska vs Xiaodi You match: 0.73/0.79 mid 76.0%, model 61.2% (projection_v2.0 (prediction ledger)) -- gap -14.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23YASYOU-1-YAS` Will Dayana Yastremska win set 1 in the Dayana Yastremska vs Xiaodi You match: 0.73/0.75 mid 74.0%, model 61.2% (projection_v2.0 (prediction ledger)) -- gap -12.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; WIDE_SPREAD
+* Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; WIDE_SPREAD
 
 ## Linda Fruhvirtova vs Mei Yamaguchi -- WTA Guangzhou Q1
 
@@ -775,7 +728,7 @@ Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 * Current expected start: 2026-10-24 10:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 09:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-40_MIN
@@ -809,8 +762,8 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T10:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hind Al-Mudahka (`KXWTAMATCH-26OCT24LHAALM-ALM`) | 0.25 / 0.75 (1) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Tenzin Wangsel Lhaden (`KXWTAMATCH-26OCT24LHAALM-LHA`) | 0.20 / 0.68 (1) | 44.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Hind Al-Mudahka (`KXWTAMATCH-26OCT24LHAALM-ALM`) | 0.17 / 0.83 (1) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Tenzin Wangsel Lhaden (`KXWTAMATCH-26OCT24LHAALM-LHA`) | 0.12 / 0.76 (1) | 44.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -823,7 +776,7 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T10:00:00Z · first ball: NOT_O
 * Current expected start: 2026-10-24 10:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 09:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-135_MIN
@@ -832,13 +785,13 @@ WTA (TOUR_500_250) · surface ? · scheduled 2026-10-24T12:15:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Sayaka Ishii (`KXWTAMATCH-26OCT24OKAISH-ISH`) | 0.32 / 0.33 (1967) | 32.5% | -- | -- | -- [-----] | 33.6% | 32.5% | 33.1% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Kyoka Okamura (`KXWTAMATCH-26OCT24OKAISH-OKA`) | 0.67 / 0.69 (3518) | 68.0% | -- | -- | -- [-----] | 66.4% | 67.2% | 66.8% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Sayaka Ishii (`KXWTAMATCH-26OCT24OKAISH-ISH`) | 0.32 / 0.33 (1967) | 32.5% | -- | -- | -- [-----] | 33.6% | 32.5% | 32.5% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Kyoka Okamura (`KXWTAMATCH-26OCT24OKAISH-OKA`) | 0.67 / 0.69 (343) | 68.0% | -- | -- | -- [-----] | 66.4% | 67.2% | 67.2% | MODEL_LONE_OUTLIER | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
 * Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 0 carry a model probability
-* Warnings: NO_MODEL_FOR_MATCH; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+* Warnings: NO_MODEL_FOR_MATCH; EXTERNAL_PRICE_STALE; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Mahin Qureshi vs Meshkatolzahra Safi -- Billie Jean King Cup Qualifiers UNK
 
@@ -856,8 +809,8 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T10:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Mahin Qureshi (`KXWTAMATCH-26OCT24QURSAF-QUR`) | 0.24 / 0.78 (1) | 51.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Meshkatolzahra Safi (`KXWTAMATCH-26OCT24QURSAF-SAF`) | 0.22 / 0.79 (1) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Mahin Qureshi (`KXWTAMATCH-26OCT24QURSAF-QUR`) | 0.16 / 0.89 (2) | 52.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Meshkatolzahra Safi (`KXWTAMATCH-26OCT24QURSAF-SAF`) | 0.14 / 0.87 (1) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -879,8 +832,8 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T10:00:00Z · first ball: NOT_O
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Aishath Karin Saizan (`KXWTAMATCH-26OCT24SAISAY-SAI`) | 0.11 / 0.63 (1) | 37.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Noor Sayej (`KXWTAMATCH-26OCT24SAISAY-SAY`) | 0.17 / 0.69 (1) | 43.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Aishath Karin Saizan (`KXWTAMATCH-26OCT24SAISAY-SAI`) | 0.13 / 0.61 (1) | 37.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Noor Sayej (`KXWTAMATCH-26OCT24SAISAY-SAY`) | 0.19 / 0.67 (1) | 43.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -893,7 +846,7 @@ OTHER (TEAM) · surface ? · scheduled 2026-10-24T10:00:00Z · first ball: NOT_O
 * Current expected start: 2026-10-24 10:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 09:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -902,19 +855,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Juan Manuel Cerundolo (`KXATPMATCH-26OCT24CERSVA-CER`) | 0.41 / 0.42 (11433) | 41.5% | 51.6% | 48.0% | 48.5% [46.6%-51.0%] | 42.5% | 41.5% | -- | INSUFFICIENT_INPUTS | SHADOW_BET | +10.1 pp | REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Zachary Svajda (`KXATPMATCH-26OCT24CERSVA-SVA`) | 0.58 / 0.59 (3484) | 58.5% | 48.4% | 52.0% | 51.5% [49.0%-53.4%] | 57.5% | 58.1% | -- | INSUFFICIENT_INPUTS | PASS | -10.1 pp | REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Juan Manuel Cerundolo (`KXATPMATCH-26OCT24CERSVA-CER`) | 0.41 / 0.42 (11419) | 41.5% | 51.6% | 48.0% | 48.5% [46.6%-51.0%] | 42.5% | 41.5% | -- | INSUFFICIENT_INPUTS | SHADOW_BET | +10.1 pp | REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Zachary Svajda (`KXATPMATCH-26OCT24CERSVA-SVA`) | 0.58 / 0.59 (5254) | 58.5% | 48.4% | 52.0% | 51.5% [49.0%-53.4%] | 57.5% | 58.1% | -- | INSUFFICIENT_INPUTS | PASS | -10.1 pp | REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 5318.0, B 3677.0; serve-point win A 65.0%, B 35.4%; Elo A 1750.6, B 1764.3; model uncertainty 0.0222
 * Form inputs: days since last match A 4, B 14; matches on record A 507, B 321; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.010, surface_pool_high -0.020, surface_dev_loose -0.015, surface_dev_tight +0.010
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPSETWINNER-26OCT24CERSVA-2-SVA` Will Zachary Svajda win set 2 in the Juan Manuel Cerundolo vs Zachary Svajda match: 0.03/0.58 mid 30.5%, model 48.9% (projection_v2.0 (prediction ledger)) -- gap +18.4 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24CERSVA-SVA20` Will Zachary Svajda win the Juan Manuel Cerundolo vs Zachary Svajda match by a set score of 2-0?: 0.33/0.38 mid 35.5%, model 23.9% (projection_v2.0 (prediction ledger)) -- gap -11.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24CERSVA-2-CER` Will Juan Manuel Cerundolo win set 2 in the Juan Manuel Cerundolo vs Zachary Svajda match: 0.40/0.47 mid 43.5%, model 51.1% (projection_v2.0 (prediction ledger)) -- gap +7.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24CERSVA-CER21` Will Juan Manuel Cerundolo win the Juan Manuel Cerundolo vs Zachary Svajda match by a set score of 2-1?: 0.15/0.21 mid 18.0%, model 25.5% (projection_v2.0 (prediction ledger)) -- gap +7.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24CERSVA-2-SVA` Will Zachary Svajda win set 2 in the Juan Manuel Cerundolo vs Zachary Svajda match: 0.53/0.59 mid 56.0%, model 48.9% (projection_v2.0 (prediction ledger)) -- gap -7.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24CERSVA-1-CER` Will Juan Manuel Cerundolo win set 1 in the Juan Manuel Cerundolo vs Zachary Svajda match: 0.43/0.46 mid 44.5%, model 51.1% (projection_v2.0 (prediction ledger)) -- gap +6.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24CERSVA-1-SVA` Will Zachary Svajda win set 1 in the Juan Manuel Cerundolo vs Zachary Svajda match: 0.54/0.57 mid 55.5%, model 48.9% (projection_v2.0 (prediction ledger)) -- gap -6.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24CERSVA-2-CER` Will Juan Manuel Cerundolo win set 2 in the Juan Manuel Cerundolo vs Zachary Svajda match: 0.30/0.84 mid 57.0%, model 51.1% (projection_v2.0 (prediction ledger)) -- gap -5.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24CERSVA-SVA20` Will Zachary Svajda win the Juan Manuel Cerundolo vs Zachary Svajda match by a set score of 2-0?: 0.07/0.38 mid 22.5%, model 23.9% (projection_v2.0 (prediction ledger)) -- gap +1.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPEXACTMATCH-26OCT24CERSVA-SVA21` Will Zachary Svajda win the Juan Manuel Cerundolo vs Zachary Svajda match by a set score of 2-1?: 0.19/0.24 mid 21.5%, model 24.4% (projection_v2.0 (prediction ledger)) -- gap +3.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24CERSVA-CER20` Will Juan Manuel Cerundolo win the Juan Manuel Cerundolo vs Zachary Svajda match by a set score of 2-0?: 0.22/0.25 mid 23.5%, model 26.1% (projection_v2.0 (prediction ledger)) -- gap +2.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; WIDE_SPREAD
 
 ## Jaime Faria vs Mika Brunold -- ATP Basel Q1
 
@@ -923,7 +879,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 10:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 09:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -932,8 +888,8 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Mika Brunold (`KXATPMATCH-26OCT24FARBRU-BRU`) | 0.46 / 0.47 (400) | 46.5% | 29.0% | 44.5% | 29.8% [17.4%-34.8%] | 44.4% | 46.1% | 45.2% | MODEL_LONE_OUTLIER | PASS | -17.4 pp | HIGH_REVIEW | FRESH | F / POOR | AGREES_WITH_KALSHI | VERIFIED |
-| Jaime Faria (`KXATPMATCH-26OCT24FARBRU-FAR`) | 0.54 / 0.55 (15457) | 54.5% | 71.0% | 55.5% | 70.2% [65.2%-82.6%] | 55.6% | 53.8% | 54.7% | ALL_THREE_DISAGREE | PASS | +16.4 pp | HIGH_REVIEW | FRESH | F / POOR | AGREES_WITH_KALSHI | VERIFIED |
+| Mika Brunold (`KXATPMATCH-26OCT24FARBRU-BRU`) | 0.47 / 0.48 (1258) | 47.5% | 29.0% | 44.5% | 29.8% [17.4%-34.8%] | 44.4% | 46.3% | 46.3% | MODEL_LONE_OUTLIER | PASS | -18.4 pp | HIGH_REVIEW | FRESH | F / POOR | EXTERNAL_STALE | VERIFIED |
+| Jaime Faria (`KXATPMATCH-26OCT24FARBRU-FAR`) | 0.53 / 0.54 (5488) | 53.5% | 71.0% | 55.5% | 70.2% [65.2%-82.6%] | 55.6% | 53.8% | 53.8% | MODEL_LONE_OUTLIER | PASS | +17.4 pp | HIGH_REVIEW | FRESH | F / POOR | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4786.0, B 1536.0; serve-point win A 65.1%, B 39.2%; Elo A 1778.3, B 1510.5; model uncertainty 0.0871
 * Form inputs: days since last match A 5, B 684; matches on record A 313, B 128; data quality F
@@ -941,26 +897,27 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 ```
 DISCREPANCY SANITY CHECK  KXATPMATCH-26OCT24FARBRU-FAR  (YES = Jaime Faria)
 Model: 71%
-Kalshi: 55%
-Gap: +16 pp
+Kalshi: 54%
+Gap: +17 pp
 Band: HIGH_REVIEW
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: EXTERNAL_STALE
 Data quality: F (POOR)
-Reasons: LOW_DATA_QUALITY, STALE_PLAYER_DATA, MODEL_HIGH_UNCERTAINTY, EXTERNAL_MARKET_REJECTION, MODEL_INTERNAL_DISAGREEMENT
+Reasons: LOW_DISPLAYED_LIQUIDITY, LOW_DATA_QUALITY, STALE_PLAYER_DATA, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, MODEL_INTERNAL_DISAGREEMENT
 Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.004, surface_pool_high -0.004, surface_dev_loose -0.018, surface_dev_tight +0.018
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24FARBRU-FAR20` Will Jaime Faria win the Jaime Faria vs Mika Brunold match by a set score of 2-0?: 0.09/0.32 mid 20.5%, model 41.4% (projection_v2.0 (prediction ledger)) -- gap +20.9 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data POOR
-  * `KXATPSETWINNER-26OCT24FARBRU-2-FAR` Will Jaime Faria win set 2 in the Jaime Faria vs Mika Brunold match: 0.17/0.72 mid 44.5%, model 64.4% (projection_v2.0 (prediction ledger)) -- gap +19.9 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data POOR
   * `KXATPSETWINNER-26OCT24FARBRU-1-FAR` Will Jaime Faria win set 1 in the Jaime Faria vs Mika Brunold match: 0.49/0.52 mid 50.5%, model 64.4% (projection_v2.0 (prediction ledger)) -- gap +13.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data POOR
-  * `KXATPEXACTMATCH-26OCT24FARBRU-FAR21` Will Jaime Faria win the Jaime Faria vs Mika Brunold match by a set score of 2-1?: 0.05/0.27 mid 16.0%, model 29.5% (projection_v2.0 (prediction ledger)) -- gap +13.5 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data POOR
-  * `KXATPSETWINNER-26OCT24FARBRU-1-BRU` Will Mika Brunold win set 1 in the Jaime Faria vs Mika Brunold match: 0.46/0.51 mid 48.5%, model 35.6% (projection_v2.0 (prediction ledger)) -- gap -12.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data POOR
-  * `KXATPSETWINNER-26OCT24FARBRU-2-BRU` Will Mika Brunold win set 2 in the Jaime Faria vs Mika Brunold match: 0.15/0.76 mid 45.5%, model 35.6% (projection_v2.0 (prediction ledger)) -- gap -9.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data POOR
-  * `KXATPEXACTMATCH-26OCT24FARBRU-BRU21` Will Mika Brunold win the Jaime Faria vs Mika Brunold match by a set score of 2-1?: 0.06/0.26 mid 16.0%, model 16.4% (projection_v2.0 (prediction ledger)) -- gap +0.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data POOR
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24FARBRU-2-BRU` Will Mika Brunold win set 2 in the Jaime Faria vs Mika Brunold match: 0.46/0.51 mid 48.5%, model 35.6% (projection_v2.0 (prediction ledger)) -- gap -12.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data POOR
+  * `KXATPSETWINNER-26OCT24FARBRU-2-FAR` Will Jaime Faria win set 2 in the Jaime Faria vs Mika Brunold match: 0.49/0.54 mid 51.5%, model 64.4% (projection_v2.0 (prediction ledger)) -- gap +12.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data POOR
+  * `KXATPEXACTMATCH-26OCT24FARBRU-BRU20` Will Mika Brunold win the Jaime Faria vs Mika Brunold match by a set score of 2-0?: 0.25/0.26 mid 25.5%, model 12.7% (projection_v2.0 (prediction ledger)) -- gap -12.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data POOR
+  * `KXATPEXACTMATCH-26OCT24FARBRU-FAR20` Will Jaime Faria win the Jaime Faria vs Mika Brunold match by a set score of 2-0?: 0.26/0.32 mid 29.0%, model 41.4% (projection_v2.0 (prediction ledger)) -- gap +12.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data POOR
+  * `KXATPSETWINNER-26OCT24FARBRU-1-BRU` Will Mika Brunold win set 1 in the Jaime Faria vs Mika Brunold match: 0.46/0.50 mid 48.0%, model 35.6% (projection_v2.0 (prediction ledger)) -- gap -12.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data POOR
+  * `KXATPEXACTMATCH-26OCT24FARBRU-FAR21` Will Jaime Faria win the Jaime Faria vs Mika Brunold match by a set score of 2-1?: 0.20/0.23 mid 21.5%, model 29.5% (projection_v2.0 (prediction ledger)) -- gap +8.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data POOR
+  * `KXATPEXACTMATCH-26OCT24FARBRU-BRU21` Will Mika Brunold win the Jaime Faria vs Mika Brunold match by a set score of 2-1?: 0.17/0.22 mid 19.5%, model 16.4% (projection_v2.0 (prediction ledger)) -- gap -3.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data POOR
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE
 
 ## Adolfo Daniel Vallejo vs Lorenzo Sonego -- ATP Vienna Q1
 
@@ -969,7 +926,7 @@ Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 * Current expected start: 2026-10-24 10:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 09:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-160_MIN
@@ -978,22 +935,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:10:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Lorenzo Sonego (`KXATPMATCH-26OCT24VALSON-SON`) | 0.50 / 0.51 (3513) | 50.5% | 46.8% | 60.4% | 60.4% [58.4%-61.8%] | 50.0% | 51.3% | 50.6% | MODEL_LONE_OUTLIER | SHADOW_BET | -3.7 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
-| Adolfo Daniel Vallejo (`KXATPMATCH-26OCT24VALSON-VAL`) | 0.48 / 0.49 (12149) | 48.5% | 53.2% | 39.6% | 39.6% [38.2%-41.6%] | 50.0% | 48.9% | 49.5% | MODEL_LONE_OUTLIER | PASS | +4.7 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Lorenzo Sonego (`KXATPMATCH-26OCT24VALSON-SON`) | 0.50 / 0.51 (12) | 50.5% | 46.8% | 60.4% | 60.4% [58.4%-61.8%] | 50.0% | 51.3% | 51.3% | MODEL_LONE_OUTLIER | SHADOW_BET | -3.7 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Adolfo Daniel Vallejo (`KXATPMATCH-26OCT24VALSON-VAL`) | 0.48 / 0.49 (2022) | 48.5% | 53.2% | 39.6% | 39.6% [38.2%-41.6%] | 50.0% | 48.9% | 48.9% | MODEL_LONE_OUTLIER | PASS | +4.7 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 5092.0, B 4551.0; serve-point win A 63.9%, B 36.7%; Elo A 1707.5, B 1781.5; model uncertainty 0.0168
 * Form inputs: days since last match A 14, B 5; matches on record A 211, B 690; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.005, surface_pool_high +0.000, surface_dev_loose -0.014, surface_dev_tight +0.019
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24VALSON-VAL21` Will Adolfo Daniel Vallejo win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-1?: 0.16/0.21 mid 18.5%, model 26.0% (projection_v2.0 (prediction ledger)) -- gap +7.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24VALSON-SON20` Will Lorenzo Sonego win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-0?: 0.27/0.33 mid 30.0%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap -7.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24VALSON-SON21` Will Lorenzo Sonego win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-1?: 0.16/0.22 mid 19.0%, model 23.9% (projection_v2.0 (prediction ledger)) -- gap +4.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24VALSON-1-SON` Will Lorenzo Sonego win set 1 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.51/0.54 mid 52.5%, model 47.9% (projection_v2.0 (prediction ledger)) -- gap -4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24VALSON-1-VAL` Will Adolfo Daniel Vallejo win set 1 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.46/0.50 mid 48.0%, model 52.1% (projection_v2.0 (prediction ledger)) -- gap +4.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24VALSON-2-VAL` Will Adolfo Daniel Vallejo win set 2 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.46/0.50 mid 48.0%, model 52.1% (projection_v2.0 (prediction ledger)) -- gap +4.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24VALSON-2-SON` Will Lorenzo Sonego win set 2 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.47/0.54 mid 50.5%, model 47.9% (projection_v2.0 (prediction ledger)) -- gap -2.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24VALSON-VAL20` Will Adolfo Daniel Vallejo win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-0?: 0.26/0.28 mid 27.0%, model 27.2% (projection_v2.0 (prediction ledger)) -- gap +0.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: WIDE_SPREAD
+  * `KXATPEXACTMATCH-26OCT24VALSON-SON20` Will Lorenzo Sonego win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-0?: 0.28/0.32 mid 30.0%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap -7.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24VALSON-VAL21` Will Adolfo Daniel Vallejo win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-1?: 0.17/0.21 mid 19.0%, model 26.0% (projection_v2.0 (prediction ledger)) -- gap +7.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24VALSON-SON21` Will Lorenzo Sonego win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-1?: 0.17/0.22 mid 19.5%, model 23.9% (projection_v2.0 (prediction ledger)) -- gap +4.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24VALSON-2-VAL` Will Adolfo Daniel Vallejo win set 2 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.47/0.50 mid 48.5%, model 52.1% (projection_v2.0 (prediction ledger)) -- gap +3.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24VALSON-1-VAL` Will Adolfo Daniel Vallejo win set 1 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.48/0.50 mid 49.0%, model 52.1% (projection_v2.0 (prediction ledger)) -- gap +3.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24VALSON-1-SON` Will Lorenzo Sonego win set 1 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.49/0.52 mid 50.5%, model 47.9% (projection_v2.0 (prediction ledger)) -- gap -2.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24VALSON-2-SON` Will Lorenzo Sonego win set 2 in the Adolfo Daniel Vallejo vs Lorenzo Sonego match: 0.48/0.52 mid 50.0%, model 47.9% (projection_v2.0 (prediction ledger)) -- gap -2.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24VALSON-VAL20` Will Adolfo Daniel Vallejo win the Adolfo Daniel Vallejo vs Lorenzo Sonego match by a set score of 2-0?: 0.27/0.28 mid 27.5%, model 27.2% (projection_v2.0 (prediction ledger)) -- gap -0.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE
 
 ## En-Shuo Liang vs Tereza Valentova -- WTA Tokyo Q1
 
@@ -1002,7 +959,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:10:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 10:30Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 09:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+150_MIN
@@ -1011,39 +968,14 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T08:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| En-Shuo Liang (`KXWTAMATCH-26OCT24LIAVAL-LIA`) | 0.13 / 0.14 (674) | 13.5% | -- | 18.0% | 19.0% [16.3%-21.6%] | 15.2% | 13.6% | 15.2% | MARKETS_AGREE | SHADOW_BET | +5.5 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Tereza Valentova (`KXWTAMATCH-26OCT24LIAVAL-VAL`) | 0.86 / 0.87 (2217) | 86.5% | -- | 82.0% | 81.0% [78.4%-83.7%] | 84.8% | 86.1% | 84.8% | MARKETS_AGREE | PASS | -5.5 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| En-Shuo Liang (`KXWTAMATCH-26OCT24LIAVAL-LIA`) | 0.13 / 0.14 (674) | 13.5% | -- | 18.0% | 19.0% [16.3%-21.6%] | 15.2% | 13.6% | -- | INSUFFICIENT_INPUTS | SHADOW_BET | +5.5 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Tereza Valentova (`KXWTAMATCH-26OCT24LIAVAL-VAL`) | 0.86 / 0.87 (2217) | 86.5% | -- | 82.0% | 81.0% [78.4%-83.7%] | 84.8% | 86.1% | -- | INSUFFICIENT_INPUTS | PASS | -5.5 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2476.0, B 3231.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0268
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.027, surface_pool_high +0.026, surface_dev_loose -0.004, surface_dev_tight -0.000
 * Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 0 carry a model probability
-* Warnings: SCHEDULED_START_PASSED; THIN_DISPLAYED_SIZE; WIDE_SPREAD
-
-## An Lin / Lu vs Chanta / Naklo -- W15 Singapore F
-
-**START STATUS: START_UNKNOWN**
-* Nominal schedule: 2026-10-24 10:30Z
-* Current expected start: UNKNOWN
-* Source: none; confidence NONE
-* First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: never (no live reading)
-* Recommended handicap-by time: UNKNOWN
-
-* Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL; NO_CREDIBLE_START_TIME
-
-DOUBLES (ITF) · surface ? · scheduled 2026-10-24T10:30:00Z · first ball: NO_FIRST_BALL_SOURCE (source NO_SOURCE) · match `WTA:26OCT24ANLLUXCHANAK:doubles`
-
-| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| An Lin / Lu (`KXITFWDOUBLES-26OCT24ANLLUXCHANAK-ANLLUX`) | -- / 0.01 (65542) | -- | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Chanta / Naklo (`KXITFWDOUBLES-26OCT24ANLLUXCHANAK-CHANAK`) | 0.99 / -- (0) | -- | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-
-* **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
-
-* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
-* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; ONE_SIDED_OR_NO_QUOTE
+* Warnings: SCHEDULED_START_PASSED; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Joel Schwaerzler vs Titouan Droguet -- ATP Vienna Q1
 
@@ -1052,7 +984,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T10:30:00Z · first ball: NO_F
 * Current expected start: 2026-10-24 11:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 10:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-160_MIN
@@ -1061,21 +993,21 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:40:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Titouan Droguet (`KXATPMATCH-26OCT24SCHDRO-DRO`) | 0.72 / 0.73 (8398) | 72.5% | 73.8% | 74.0% | 74.0% [73.2%-75.5%] | -- | 73.3% | 73.3% | MODEL_LONE_OUTLIER | PASS | +1.3 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
-| Joel Schwaerzler (`KXATPMATCH-26OCT24SCHDRO-SCH`) | 0.27 / 0.28 (858) | 27.5% | 26.2% | 26.0% | 26.0% [24.5%-26.8%] | -- | 26.6% | 26.6% | MODEL_LONE_OUTLIER | PASS | -1.3 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Titouan Droguet (`KXATPMATCH-26OCT24SCHDRO-DRO`) | 0.72 / 0.73 (9360) | 72.5% | 73.8% | 74.0% | 74.0% [73.2%-75.5%] | -- | 73.3% | 73.3% | MODEL_LONE_OUTLIER | PASS | +1.3 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Joel Schwaerzler (`KXATPMATCH-26OCT24SCHDRO-SCH`) | 0.27 / 0.28 (830) | 27.5% | 26.2% | 26.0% | 26.0% [24.5%-26.8%] | -- | 26.6% | 26.6% | MODEL_LONE_OUTLIER | PASS | -1.3 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
 
 * Serve evidence (points): A 3799.0, B 5236.0; serve-point win A 64.0%, B 30.8%; Elo A 1607.9, B 1798.5; model uncertainty 0.0117
 * Form inputs: days since last match A 19, B 4; matches on record A 147, B 394; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.015, surface_pool_high +0.008, surface_dev_loose -0.007, surface_dev_tight -0.001
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24SCHDRO-DRO21` Will Titouan Droguet win the Joel Schwaerzler vs Titouan Droguet match by a set score of 2-1?: 0.18/0.26 mid 22.0%, model 29.6% (projection_v2.0 (prediction ledger)) -- gap +7.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24SCHDRO-DRO21` Will Titouan Droguet win the Joel Schwaerzler vs Titouan Droguet match by a set score of 2-1?: 0.19/0.26 mid 22.5%, model 29.6% (projection_v2.0 (prediction ledger)) -- gap +7.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24SCHDRO-DRO20` Will Titouan Droguet win the Joel Schwaerzler vs Titouan Droguet match by a set score of 2-0?: 0.48/0.49 mid 48.5%, model 44.2% (projection_v2.0 (prediction ledger)) -- gap -4.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24SCHDRO-SCH21` Will Joel Schwaerzler win the Joel Schwaerzler vs Titouan Droguet match by a set score of 2-1?: 0.08/0.14 mid 11.0%, model 14.9% (projection_v2.0 (prediction ledger)) -- gap +3.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24SCHDRO-2-SCH` Will Joel Schwaerzler win set 2 in the Joel Schwaerzler vs Titouan Droguet match: 0.28/0.34 mid 31.0%, model 33.5% (projection_v2.0 (prediction ledger)) -- gap +2.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24SCHDRO-SCH20` Will Joel Schwaerzler win the Joel Schwaerzler vs Titouan Droguet match by a set score of 2-0?: 0.11/0.15 mid 13.0%, model 11.2% (projection_v2.0 (prediction ledger)) -- gap -1.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24SCHDRO-1-SCH` Will Joel Schwaerzler win set 1 in the Joel Schwaerzler vs Titouan Droguet match: 0.33/0.36 mid 34.5%, model 33.5% (projection_v2.0 (prediction ledger)) -- gap -1.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24SCHDRO-SCH20` Will Joel Schwaerzler win the Joel Schwaerzler vs Titouan Droguet match by a set score of 2-0?: 0.12/0.15 mid 13.5%, model 11.2% (projection_v2.0 (prediction ledger)) -- gap -2.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24SCHDRO-2-SCH` Will Joel Schwaerzler win set 2 in the Joel Schwaerzler vs Titouan Droguet match: 0.29/0.34 mid 31.5%, model 33.5% (projection_v2.0 (prediction ledger)) -- gap +2.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24SCHDRO-2-DRO` Will Titouan Droguet win set 2 in the Joel Schwaerzler vs Titouan Droguet match: 0.65/0.69 mid 67.0%, model 66.5% (projection_v2.0 (prediction ledger)) -- gap -0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24SCHDRO-1-DRO` Will Titouan Droguet win set 1 in the Joel Schwaerzler vs Titouan Droguet match: 0.65/0.67 mid 66.0%, model 66.5% (projection_v2.0 (prediction ledger)) -- gap +0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24SCHDRO-1-SCH` Will Joel Schwaerzler win set 1 in the Joel Schwaerzler vs Titouan Droguet match: 0.33/0.35 mid 34.0%, model 33.5% (projection_v2.0 (prediction ledger)) -- gap -0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
 * Warnings: WIDE_SPREAD
 
 ## Yihan Qu vs Teodora Kostovic -- WTA Guangzhou Q1
@@ -1085,7 +1017,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T13:40:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 11:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 10:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1094,7 +1026,7 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Teodora Kostovic (`KXWTAMATCH-26OCT23YIHKOS-KOS`) | 0.85 / 0.86 (3325) | 85.5% | 97.0% | 92.0% | 94.6% [93.9%-95.4%] | 82.7% | 84.8% | 84.8% | MODEL_LONE_OUTLIER | PASS | +11.5 pp | REVIEW | FRESH | D / POOR | EXTERNAL_STALE | VERIFIED |
+| Teodora Kostovic (`KXWTAMATCH-26OCT23YIHKOS-KOS`) | 0.85 / 0.86 (3309) | 85.5% | 97.0% | 92.0% | 94.6% [93.9%-95.4%] | 82.7% | 84.8% | 84.8% | MODEL_LONE_OUTLIER | PASS | +11.5 pp | REVIEW | FRESH | D / POOR | EXTERNAL_STALE | VERIFIED |
 | Yihan Qu (`KXWTAMATCH-26OCT23YIHKOS-YIH`) | 0.14 / 0.15 (484) | 14.5% | 3.0% | 8.0% | 5.4% [4.6%-6.1%] | 17.3% | 15.3% | 15.3% | MODEL_LONE_OUTLIER | PASS | -11.5 pp | REVIEW | FRESH | D / POOR | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 377.0, B 3286.0; serve-point win A 50.3%, B 35.3%; Elo A 1192.8, B 1710.9; model uncertainty 0.0075
@@ -1114,7 +1046,7 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 11:00Z
 * Source: LIVE_SCHEDULE:espn_wta; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 10:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1123,8 +1055,8 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Anastasia Zakharova (`KXWTAMATCH-26OCT23ZAKZHA-ZAK`) | 0.90 / 0.92 (8216) | 91.0% | 87.7% | 89.9% | 89.4% [87.7%-90.1%] | 89.1% | 93.5% | 93.5% | ALL_THREE_DISAGREE | PASS | -3.3 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
-| Ruien Zhang (`KXWTAMATCH-26OCT23ZAKZHA-ZHA`) | 0.09 / 0.10 (943) | 9.5% | 12.3% | 10.1% | 10.6% [9.9%-12.3%] | 10.9% | 8.8% | -- | INSUFFICIENT_INPUTS | WATCH | +2.8 pp | NORMAL | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Anastasia Zakharova (`KXWTAMATCH-26OCT23ZAKZHA-ZAK`) | 0.90 / 0.92 (8818) | 91.0% | 87.7% | 89.9% | 89.4% [87.7%-90.1%] | 89.1% | 92.6% | 92.6% | MODEL_LONE_OUTLIER | PASS | -3.3 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Ruien Zhang (`KXWTAMATCH-26OCT23ZAKZHA-ZHA`) | 0.09 / 0.10 (1863) | 9.5% | 12.3% | 10.1% | 10.6% [9.9%-12.3%] | 10.9% | 8.8% | -- | INSUFFICIENT_INPUTS | WATCH | +2.8 pp | NORMAL | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4628.0, B 1375.0; serve-point win A 61.5%, B 47.4%; Elo A 1813.0, B 1448.5; model uncertainty 0.012
 * Form inputs: days since last match A 2, B 18; matches on record A 481, B 107; data quality B
@@ -1133,7 +1065,7 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
   * `KXWTASETWINNER-26OCT23ZAKZHA-1-ZHA` Will Ruien Zhang win set 1 in the Anastasia Zakharova vs Ruien Zhang match: 0.12/0.16 mid 14.0%, model 21.9% (projection_v2.0 (prediction ledger)) -- gap +7.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23ZAKZHA-1-ZAK` Will Anastasia Zakharova win set 1 in the Anastasia Zakharova vs Ruien Zhang match: 0.85/0.86 mid 85.5%, model 78.1% (projection_v2.0 (prediction ledger)) -- gap -7.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXWTASETWINNER-26OCT23ZAKZHA-2-ZAK` Will Anastasia Zakharova win set 2 in the Anastasia Zakharova vs Ruien Zhang match: 0.85/0.86 mid 85.5%, model 78.1% (projection_v2.0 (prediction ledger)) -- gap -7.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXWTASETWINNER-26OCT23ZAKZHA-2-ZHA` Will Ruien Zhang win set 2 in the Anastasia Zakharova vs Ruien Zhang match: 0.14/0.17 mid 15.5%, model 21.9% (projection_v2.0 (prediction ledger)) -- gap +6.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXWTASETWINNER-26OCT23ZAKZHA-2-ZHA` Will Ruien Zhang win set 2 in the Anastasia Zakharova vs Ruien Zhang match: 0.14/0.16 mid 15.0%, model 21.9% (projection_v2.0 (prediction ledger)) -- gap +6.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
 * Warnings: SCHEDULED_START_PASSED; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 
 ## Nicolas Barrientos / David Pel vs Sadio Doumbia / Bart Stevens -- ATP Brussels SF
@@ -1143,7 +1075,7 @@ WTA (TOUR_500_250) · Hard · scheduled 2026-10-24T06:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 11:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 10:45Z
 
 * Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL
@@ -1178,7 +1110,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T11:30:00Z · first ball: NO_F
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Kawachi / Ogura (`KXITFDOUBLES-26OCT24MASSUKKAWOGU-KAWOGU`) | 0.30 / 0.42 (4) | 36.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Masabayashi / Suksumrarn (`KXITFDOUBLES-26OCT24MASSUKKAWOGU-MASSUK`) | 0.53 / 0.63 (67) | 58.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Masabayashi / Suksumrarn (`KXITFDOUBLES-26OCT24MASSUKKAWOGU-MASSUK`) | 0.50 / 0.63 (67) | 56.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
@@ -1218,7 +1150,7 @@ DOUBLES (TEAM) · surface ? · scheduled 2026-10-24T11:30:00Z · first ball: NO_
 * Current expected start: 2026-10-24 12:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 11:15Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1227,18 +1159,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Sebastian Baez (`KXATPMATCH-26OCT24BAEMPE-BAE`) | 0.40 / 0.41 (2297) | 40.5% | 52.0% | 59.3% | 57.5% [56.1%-58.4%] | 46.8% | 43.1% | 44.9% | KALSHI_LONE_OUTLIER | SHADOW_BET | +11.5 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Giovanni Mpetshi Perricard (`KXATPMATCH-26OCT24BAEMPE-MPE`) | 0.58 / 0.59 (3) | 58.5% | 48.0% | 40.7% | 42.5% [41.6%-43.9%] | 53.2% | 56.7% | 55.0% | MODEL_LONE_OUTLIER | PASS | -10.5 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Sebastian Baez (`KXATPMATCH-26OCT24BAEMPE-BAE`) | 0.40 / 0.41 (2355) | 40.5% | 52.0% | 59.3% | 57.5% [56.1%-58.4%] | 46.8% | 41.8% | 41.8% | MODEL_LONE_OUTLIER | SHADOW_BET | +11.5 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Giovanni Mpetshi Perricard (`KXATPMATCH-26OCT24BAEMPE-MPE`) | 0.58 / 0.59 (966) | 58.5% | 48.0% | 40.7% | 42.5% [41.6%-43.9%] | 53.2% | 59.1% | 59.1% | MODEL_LONE_OUTLIER | PASS | -10.5 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4992.0, B 3847.0; serve-point win A 69.2%, B 31.2%; Elo A 1715.5, B 1698.8; model uncertainty 0.0116
 * Form inputs: days since last match A 4, B 7; matches on record A 494, B 309; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.009, surface_pool_high -0.009, surface_dev_loose -0.005, surface_dev_tight +0.000
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPSETWINNER-26OCT24BAEMPE-2-BAE` Will Sebastian Baez win set 2 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.15/0.53 mid 34.0%, model 51.3% (projection_v2.0 (prediction ledger)) -- gap +17.4 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BAEMPE-2-BAE` Will Sebastian Baez win set 2 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.05/0.47 mid 26.0%, model 51.3% (projection_v2.0 (prediction ledger)) -- gap +25.4 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BAEMPE-MPE20` Will Giovanni Mpetshi Perricard win the Sebastian Baez vs Giovanni Mpetshi Perricard match by a set score of 2-0?: 0.32/0.36 mid 34.0%, model 23.7% (projection_v2.0 (prediction ledger)) -- gap -10.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24BAEMPE-1-BAE` Will Sebastian Baez win set 1 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.41/0.46 mid 43.5%, model 51.3% (projection_v2.0 (prediction ledger)) -- gap +7.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BAEMPE-1-MPE` Will Giovanni Mpetshi Perricard win set 1 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.54/0.55 mid 54.5%, model 48.6% (projection_v2.0 (prediction ledger)) -- gap -5.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BAEMPE-2-MPE` Will Giovanni Mpetshi Perricard win set 2 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.25/0.71 mid 48.0%, model 48.6% (projection_v2.0 (prediction ledger)) -- gap +0.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24BAEMPE-1-MPE` Will Giovanni Mpetshi Perricard win set 1 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.54/0.58 mid 56.0%, model 48.6% (projection_v2.0 (prediction ledger)) -- gap -7.3 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BAEMPE-BAE21` Will Sebastian Baez win the Sebastian Baez vs Giovanni Mpetshi Perricard match by a set score of 2-1?: 0.17/0.21 mid 19.0%, model 25.7% (projection_v2.0 (prediction ledger)) -- gap +6.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BAEMPE-BAE20` Will Sebastian Baez win the Sebastian Baez vs Giovanni Mpetshi Perricard match by a set score of 2-0?: 0.21/0.23 mid 22.0%, model 26.4% (projection_v2.0 (prediction ledger)) -- gap +4.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BAEMPE-2-MPE` Will Giovanni Mpetshi Perricard win set 2 in the Sebastian Baez vs Giovanni Mpetshi Perricard match: 0.27/0.74 mid 50.5%, model 48.6% (projection_v2.0 (prediction ledger)) -- gap -1.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24BAEMPE-MPE21` Will Giovanni Mpetshi Perricard win the Sebastian Baez vs Giovanni Mpetshi Perricard match by a set score of 2-1?: 0.21/0.25 mid 23.0%, model 24.3% (projection_v2.0 (prediction ledger)) -- gap +1.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Alex Molcan vs Hamad Medjedovic -- ATP Vienna Q1
 
@@ -1247,7 +1183,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 12:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 11:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-140_MIN
@@ -1256,22 +1192,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T14:20:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hamad Medjedovic (`KXATPMATCH-26OCT24MOLMED-MED`) | 0.59 / 0.60 (1535) | 59.5% | 46.1% | 40.8% | 43.6% [41.7%-45.6%] | 60.2% | 60.3% | 60.2% | MODEL_LONE_OUTLIER | PASS | -13.4 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Alex Molcan (`KXATPMATCH-26OCT24MOLMED-MOL`) | 0.39 / 0.40 (3236) | 39.5% | 53.9% | 59.2% | 56.4% [54.4%-58.3%] | 39.8% | 39.9% | 39.8% | MODEL_LONE_OUTLIER | SHADOW_BET | +14.4 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Hamad Medjedovic (`KXATPMATCH-26OCT24MOLMED-MED`) | 0.59 / 0.60 (458) | 59.5% | 46.1% | 40.8% | 43.6% [41.7%-45.6%] | 60.2% | 60.3% | 60.3% | MODEL_LONE_OUTLIER | PASS | -13.4 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Alex Molcan (`KXATPMATCH-26OCT24MOLMED-MOL`) | 0.40 / 0.41 (8530) | 40.5% | 53.9% | 59.2% | 56.4% [54.4%-58.3%] | 39.8% | 39.9% | 39.9% | MODEL_LONE_OUTLIER | SHADOW_BET | +13.4 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 3131.0, B 3309.0; serve-point win A 65.6%, B 35.1%; Elo A 1748.0, B 1741.5; model uncertainty 0.0193
 * Form inputs: days since last match A 17, B 4; matches on record A 508, B 285; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.000, surface_pool_high +0.010, surface_dev_loose +0.014, surface_dev_tight -0.009
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24MOLMED-MOL21` Will Alex Molcan win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-1?: 0.01/0.19 mid 10.0%, model 26.2% (projection_v2.0 (prediction ledger)) -- gap +16.2 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MOLMED-MED21` Will Hamad Medjedovic win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-1?: 0.01/0.25 mid 13.0%, model 23.6% (projection_v2.0 (prediction ledger)) -- gap +10.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24MOLMED-1-MED` Will Hamad Medjedovic win set 1 in the Alex Molcan vs Hamad Medjedovic match: 0.57/0.59 mid 58.0%, model 47.4% (projection_v2.0 (prediction ledger)) -- gap -10.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24MOLMED-1-MOL` Will Alex Molcan win set 1 in the Alex Molcan vs Hamad Medjedovic match: 0.40/0.44 mid 42.0%, model 52.6% (projection_v2.0 (prediction ledger)) -- gap +10.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MOLMED-MOL20` Will Alex Molcan win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-0?: 0.15/0.22 mid 18.5%, model 27.7% (projection_v2.0 (prediction ledger)) -- gap +9.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24MOLMED-2-MOL` Will Alex Molcan win set 2 in the Alex Molcan vs Hamad Medjedovic match: 0.15/0.74 mid 44.5%, model 52.6% (projection_v2.0 (prediction ledger)) -- gap +8.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24MOLMED-2-MED` Will Hamad Medjedovic win set 2 in the Alex Molcan vs Hamad Medjedovic match: 0.26/0.84 mid 55.0%, model 47.4% (projection_v2.0 (prediction ledger)) -- gap -7.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MOLMED-MED20` Will Hamad Medjedovic win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-0?: 0.15/0.39 mid 27.0%, model 22.5% (projection_v2.0 (prediction ledger)) -- gap -4.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPEXACTMATCH-26OCT24MOLMED-MED20` Will Hamad Medjedovic win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-0?: 0.35/0.40 mid 37.5%, model 22.5% (projection_v2.0 (prediction ledger)) -- gap -15.0 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24MOLMED-2-MOL` Will Alex Molcan win set 2 in the Alex Molcan vs Hamad Medjedovic match: 0.39/0.45 mid 42.0%, model 52.6% (projection_v2.0 (prediction ledger)) -- gap +10.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24MOLMED-1-MED` Will Hamad Medjedovic win set 1 in the Alex Molcan vs Hamad Medjedovic match: 0.56/0.59 mid 57.5%, model 47.4% (projection_v2.0 (prediction ledger)) -- gap -10.1 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24MOLMED-1-MOL` Will Alex Molcan win set 1 in the Alex Molcan vs Hamad Medjedovic match: 0.41/0.44 mid 42.5%, model 52.6% (projection_v2.0 (prediction ledger)) -- gap +10.1 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MOLMED-MOL21` Will Alex Molcan win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-1?: 0.14/0.19 mid 16.5%, model 26.2% (projection_v2.0 (prediction ledger)) -- gap +9.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24MOLMED-2-MED` Will Hamad Medjedovic win set 2 in the Alex Molcan vs Hamad Medjedovic match: 0.54/0.60 mid 57.0%, model 47.4% (projection_v2.0 (prediction ledger)) -- gap -9.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MOLMED-MOL20` Will Alex Molcan win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-0?: 0.20/0.22 mid 21.0%, model 27.7% (projection_v2.0 (prediction ledger)) -- gap +6.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MOLMED-MED21` Will Hamad Medjedovic win the Alex Molcan vs Hamad Medjedovic match by a set score of 2-1?: 0.19/0.24 mid 21.5%, model 23.6% (projection_v2.0 (prediction ledger)) -- gap +2.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE
 
 ## Tommy Paul vs Taylor Fritz -- ATP Lyon SF
 
@@ -1280,7 +1216,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T14:20:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 12:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 11:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-60_MIN
@@ -1289,8 +1225,8 @@ ATP (TOUR_500_250) · Clay · scheduled 2026-10-24T13:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Taylor Fritz (`KXATPMATCH-26OCT24PAUFRI-FRI`) | 0.62 / 0.63 (57023) | 62.5% | 41.2% | 52.9% | 49.0% [46.6%-51.4%] | 62.3% | 62.2% | 62.2% | MODEL_LONE_OUTLIER | PASS | -21.3 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Tommy Paul (`KXATPMATCH-26OCT24PAUFRI-PAU`) | 0.37 / 0.38 (678) | 37.5% | 58.8% | 47.1% | 51.0% [48.5%-53.4%] | 37.7% | 37.6% | 37.6% | MODEL_LONE_OUTLIER | SHADOW_BET | +21.3 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Taylor Fritz (`KXATPMATCH-26OCT24PAUFRI-FRI`) | 0.62 / 0.63 (61504) | 62.5% | 41.2% | 52.9% | 49.0% [46.6%-51.4%] | 62.3% | 62.2% | 62.2% | MODEL_LONE_OUTLIER | PASS | -21.3 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Tommy Paul (`KXATPMATCH-26OCT24PAUFRI-PAU`) | 0.37 / 0.38 (311) | 37.5% | 58.8% | 47.1% | 51.0% [48.5%-53.4%] | 37.7% | 37.9% | 37.9% | MODEL_LONE_OUTLIER | SHADOW_BET | +21.3 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 5709.0, B 6022.0; serve-point win A 67.5%, B 34.3%; Elo A 1995.2, B 1884.4; model uncertainty 0.0242
 * Form inputs: days since last match A 3, B 2; matches on record A 721, B 740; data quality A
@@ -1303,9 +1239,9 @@ Gap: +21 pp
 Band: HIGH_REVIEW
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: EXTERNAL_STALE
 Data quality: A (ADEQUATE)
-Reasons: EXTERNAL_MARKET_REJECTION, UNKNOWN
+Reasons: NO_EXTERNAL_REFERENCE, UNKNOWN
 Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.019, surface_pool_high +0.015, surface_dev_loose +0.024, surface_dev_tight -0.024
@@ -1318,13 +1254,13 @@ Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
   * `KXATPSETWINNER-26OCT24PAUFRI-1-FRI` Will Taylor Fritz win set 1 in the Tommy Paul vs Taylor Fritz match: 0.56/0.60 mid 58.0%, model 44.1% (projection_v2.0 (prediction ledger)) -- gap -13.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24PAUFRI-1-PAU` Will Tommy Paul win set 1 in the Tommy Paul vs Taylor Fritz match: 0.41/0.43 mid 42.0%, model 55.9% (projection_v2.0 (prediction ledger)) -- gap +13.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24PAUFRI-PAU20` Will Tommy Paul win the Tommy Paul vs Taylor Fritz match by a set score of 2-0?: 0.18/0.20 mid 19.0%, model 31.2% (projection_v2.0 (prediction ledger)) -- gap +12.2 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24PAUFRI-PAU21` Will Tommy Paul win the Tommy Paul vs Taylor Fritz match by a set score of 2-1?: 0.14/0.17 mid 15.5%, model 27.6% (projection_v2.0 (prediction ledger)) -- gap +12.1 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24PAUFRI-PAU21` Will Tommy Paul win the Tommy Paul vs Taylor Fritz match by a set score of 2-1?: 0.15/0.17 mid 16.0%, model 27.6% (projection_v2.0 (prediction ledger)) -- gap +11.6 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24PAUFRI-FRI6` Will Taylor Fritz win at least 5.5 more games than Tommy Paul?: 0.05/0.23 mid 14.0%, model 4.2% (projection_v2.0 (prediction ledger)) -- gap -9.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGTOTAL-26OCT24PAUFRI-29` Over 28.5 games: 0.29/0.34 mid 31.5%, model 39.4% (projection_v2.0 (prediction ledger)) -- gap +7.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGTOTAL-26OCT24PAUFRI-24` Over 23.5 games: 0.50/0.51 mid 50.5%, model 56.2% (projection_v2.0 (prediction ledger)) -- gap +5.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24PAUFRI-19` Over 18.5 games: 0.82/0.90 mid 86.0%, model 91.6% (projection_v2.0 (prediction ledger)) -- gap +5.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24PAUFRI-19` Over 18.5 games: 0.86/0.89 mid 87.5%, model 91.6% (projection_v2.0 (prediction ledger)) -- gap +4.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24PAUFRI-FRI21` Will Taylor Fritz win the Tommy Paul vs Taylor Fritz match by a set score of 2-1?: 0.20/0.25 mid 22.5%, model 21.7% (projection_v2.0 (prediction ledger)) -- gap -0.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Madelyn Nugroho / Zheng vs Panshina / Zolotareva -- W35 Qian Daohu F
 
@@ -1342,14 +1278,14 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T12:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Madelyn Nugroho / Zheng (`KXITFWDOUBLES-26OCT24MADZHEPANZOL-MADZHE`) | 0.21 / 0.36 (8) | 28.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Panshina / Zolotareva (`KXITFWDOUBLES-26OCT24MADZHEPANZOL-PANZOL`) | 0.58 / 0.73 (47) | 65.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Madelyn Nugroho / Zheng (`KXITFWDOUBLES-26OCT24MADZHEPANZOL-MADZHE`) | 0.09 / 0.46 (76) | 27.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Panshina / Zolotareva (`KXITFWDOUBLES-26OCT24MADZHEPANZOL-PANZOL`) | 0.34 / 0.82 (37) | 58.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; WIDE_SPREAD
 
 ## Henry Bernet vs Daniel Altmaier -- ATP Basel Q1
 
@@ -1358,7 +1294,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T12:00:00Z · first ball: NO_F
 * Current expected start: 2026-10-24 12:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 11:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1367,18 +1303,18 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Daniel Altmaier (`KXATPMATCH-26OCT24BERALT-ALT`) | 0.55 / 0.56 (4876) | 55.5% | 62.9% | 48.5% | 63.8% [53.9%-76.5%] | 56.6% | 55.9% | 56.2% | MODEL_LONE_OUTLIER | WATCH | +7.4 pp | NORMAL | FRESH | B / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Henry Bernet (`KXATPMATCH-26OCT24BERALT-BER`) | 0.43 / 0.44 (837) | 43.5% | 37.1% | 51.5% | 36.2% [23.5%-46.1%] | 43.4% | 44.1% | 43.8% | MODEL_LONE_OUTLIER | PASS | -6.4 pp | NORMAL | FRESH | B / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Daniel Altmaier (`KXATPMATCH-26OCT24BERALT-ALT`) | 0.55 / 0.56 (4875) | 55.5% | 62.9% | 48.5% | 63.8% [53.9%-76.5%] | 56.6% | 55.9% | 55.9% | MODEL_LONE_OUTLIER | WATCH | +7.4 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Henry Bernet (`KXATPMATCH-26OCT24BERALT-BER`) | 0.43 / 0.44 (837) | 43.5% | 37.1% | 51.5% | 36.2% [23.5%-46.1%] | 43.4% | 44.1% | 44.1% | MODEL_LONE_OUTLIER | PASS | -6.4 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 1360.0, B 5258.0; serve-point win A 64.9%, B 32.4%; Elo A 1515.4, B 1714.1; model uncertainty 0.1134
 * Form inputs: days since last match A 12, B 2; matches on record A 34, B 707; data quality B
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.066, surface_pool_high +0.080, surface_dev_loose +0.019, surface_dev_tight -0.023
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPSETWINNER-26OCT24BERALT-1-BER` Will Henry Bernet win set 1 in the Henry Bernet vs Daniel Altmaier match: 0.46/0.49 mid 47.5%, model 41.3% (projection_v2.0 (prediction ledger)) -- gap -6.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BERALT-2-BER` Will Henry Bernet win set 2 in the Henry Bernet vs Daniel Altmaier match: 0.19/0.75 mid 47.0%, model 41.3% (projection_v2.0 (prediction ledger)) -- gap -5.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BERALT-2-ALT` Will Daniel Altmaier win set 2 in the Henry Bernet vs Daniel Altmaier match: 0.25/0.83 mid 54.0%, model 58.7% (projection_v2.0 (prediction ledger)) -- gap +4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24BERALT-1-ALT` Will Daniel Altmaier win set 1 in the Henry Bernet vs Daniel Altmaier match: 0.54/0.55 mid 54.5%, model 58.7% (projection_v2.0 (prediction ledger)) -- gap +4.2 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24BERALT-1-BER` Will Henry Bernet win set 1 in the Henry Bernet vs Daniel Altmaier match: 0.46/0.48 mid 47.0%, model 41.3% (projection_v2.0 (prediction ledger)) -- gap -5.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BERALT-2-BER` Will Henry Bernet win set 2 in the Henry Bernet vs Daniel Altmaier match: 0.14/0.80 mid 47.0%, model 41.3% (projection_v2.0 (prediction ledger)) -- gap -5.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BERALT-1-ALT` Will Daniel Altmaier win set 1 in the Henry Bernet vs Daniel Altmaier match: 0.53/0.55 mid 54.0%, model 58.7% (projection_v2.0 (prediction ledger)) -- gap +4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24BERALT-2-ALT` Will Daniel Altmaier win set 2 in the Henry Bernet vs Daniel Altmaier match: 0.20/0.88 mid 54.0%, model 58.7% (projection_v2.0 (prediction ledger)) -- gap +4.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Fabian Marozsan vs Sebastian Sorger -- ATP Vienna Q1
 
@@ -1387,7 +1323,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 12:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 11:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-140_MIN
@@ -1396,22 +1332,22 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T14:50:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Fabian Marozsan (`KXATPMATCH-26OCT24MARSOR-MAR`) | 0.83 / 0.85 (13418) | 84.0% | 86.7% | 75.9% | 88.1% [84.0%-91.7%] | 82.7% | 83.7% | 83.2% | MODEL_LONE_OUTLIER | WATCH | +2.7 pp | NORMAL | FRESH | B / LIMITED | ALL_AGREE | VERIFIED |
-| Sebastian Sorger (`KXATPMATCH-26OCT24MARSOR-SOR`) | 0.16 / 0.17 (2161) | 16.5% | 13.3% | 24.1% | 11.9% [8.3%-16.0%] | 17.3% | 16.8% | 17.1% | MODEL_LONE_OUTLIER | PASS | -3.2 pp | NORMAL | FRESH | B / LIMITED | ALL_AGREE | VERIFIED |
+| Fabian Marozsan (`KXATPMATCH-26OCT24MARSOR-MAR`) | 0.83 / 0.85 (11710) | 84.0% | 86.7% | 75.9% | 88.1% [84.0%-91.7%] | 82.7% | 83.7% | 83.7% | MODEL_LONE_OUTLIER | WATCH | +2.7 pp | NORMAL | FRESH | B / LIMITED | EXTERNAL_STALE | VERIFIED |
+| Sebastian Sorger (`KXATPMATCH-26OCT24MARSOR-SOR`) | 0.16 / 0.17 (2524) | 16.5% | 13.3% | 24.1% | 11.9% [8.3%-16.0%] | 17.3% | 16.8% | 16.8% | MODEL_LONE_OUTLIER | PASS | -3.2 pp | NORMAL | FRESH | B / LIMITED | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4525.0, B 572.0; serve-point win A 67.5%, B 41.3%; Elo A 1780.4, B 1368.9; model uncertainty 0.0387
 * Form inputs: days since last match A 4, B 47; matches on record A 440, B 154; data quality B
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.019, surface_pool_high -0.024, surface_dev_loose -0.000, surface_dev_tight -0.000
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPSETWINNER-26OCT24MARSOR-2-MAR` Will Fabian Marozsan win set 2 in the Fabian Marozsan vs Sebastian Sorger match: 0.15/0.72 mid 43.5%, model 77.1% (projection_v2.0 (prediction ledger)) -- gap +33.6 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXATPSETWINNER-26OCT24MARSOR-2-SOR` Will Sebastian Sorger win set 2 in the Fabian Marozsan vs Sebastian Sorger match: 0.15/0.81 mid 48.0%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap -25.1 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXATPSETWINNER-26OCT24MARSOR-2-MAR` Will Fabian Marozsan win set 2 in the Fabian Marozsan vs Sebastian Sorger match: 0.10/0.77 mid 43.5%, model 77.1% (projection_v2.0 (prediction ledger)) -- gap +33.6 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
+  * `KXATPSETWINNER-26OCT24MARSOR-2-SOR` Will Sebastian Sorger win set 2 in the Fabian Marozsan vs Sebastian Sorger match: 0.10/0.86 mid 48.0%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap -25.1 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data LIMITED
   * `KXATPEXACTMATCH-26OCT24MARSOR-MAR21` Will Fabian Marozsan win the Fabian Marozsan vs Sebastian Sorger match by a set score of 2-1?: 0.01/0.22 mid 11.5%, model 27.2% (projection_v2.0 (prediction ledger)) -- gap +15.7 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data LIMITED
   * `KXATPEXACTMATCH-26OCT24MARSOR-MAR20` Will Fabian Marozsan win the Fabian Marozsan vs Sebastian Sorger match by a set score of 2-0?: 0.48/0.63 mid 55.5%, model 59.5% (projection_v2.0 (prediction ledger)) -- gap +4.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
   * `KXATPEXACTMATCH-26OCT24MARSOR-SOR21` Will Sebastian Sorger win the Fabian Marozsan vs Sebastian Sorger match by a set score of 2-1?: 0.01/0.08 mid 4.5%, model 8.1% (projection_v2.0 (prediction ledger)) -- gap +3.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
   * `KXATPEXACTMATCH-26OCT24MARSOR-SOR20` Will Sebastian Sorger win the Fabian Marozsan vs Sebastian Sorger match by a set score of 2-0?: 0.05/0.07 mid 6.0%, model 5.2% (projection_v2.0 (prediction ledger)) -- gap -0.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data LIMITED
   * `KXATPSETWINNER-26OCT24MARSOR-1-MAR` Will Fabian Marozsan win set 1 in the Fabian Marozsan vs Sebastian Sorger match: 0.75/0.78 mid 76.5%, model 77.1% (projection_v2.0 (prediction ledger)) -- gap +0.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-  * `KXATPSETWINNER-26OCT24MARSOR-1-SOR` Will Sebastian Sorger win set 1 in the Fabian Marozsan vs Sebastian Sorger match: 0.22/0.25 mid 23.5%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap -0.6 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24MARSOR-1-SOR` Will Sebastian Sorger win set 1 in the Fabian Marozsan vs Sebastian Sorger match: 0.22/0.24 mid 23.0%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap -0.1 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data LIMITED
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Sandro Kopp vs Filippo Romano -- ATP Challenger Florence SF
 
@@ -1429,13 +1365,13 @@ CHALLENGER (CHALLENGER) · Hard · scheduled 2026-10-24T12:30:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Sandro Kopp (`KXATPCHALLENGERMATCH-26OCT24KOPROM-KOP`) | 0.53 / 0.54 (6333) | 53.5% | 41.7% | 45.0% | 47.0% [45.1%-50.0%] | 53.1% | 52.9% | 53.0% | MARKETS_AGREE | PASS | -11.8 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Filippo Romano (`KXATPCHALLENGERMATCH-26OCT24KOPROM-ROM`) | 0.46 / 0.47 (2426) | 46.5% | 58.3% | 55.0% | 53.0% [50.0%-54.9%] | 46.9% | 47.0% | 47.0% | MARKETS_AGREE | SHADOW_BET | +11.8 pp | REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Sandro Kopp (`KXATPCHALLENGERMATCH-26OCT24KOPROM-KOP`) | 0.53 / 0.54 (6419) | 53.5% | 41.7% | 45.0% | 47.0% [45.1%-50.0%] | 53.1% | 52.9% | 52.9% | MARKETS_AGREE | PASS | -11.8 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Filippo Romano (`KXATPCHALLENGERMATCH-26OCT24KOPROM-ROM`) | 0.46 / 0.47 (2401) | 46.5% | 58.3% | 55.0% | 53.0% [50.0%-54.9%] | 46.9% | 46.8% | 46.8% | MARKETS_AGREE | SHADOW_BET | +11.8 pp | REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 2600.0, B 1962.0; serve-point win A 63.2%, B 35.1%; Elo A 1417.3, B 1425.4; model uncertainty 0.0247
 * Form inputs: days since last match A 12, B 12; matches on record A 332, B 95; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.010, surface_pool_high -0.010, surface_dev_loose -0.019, surface_dev_tight +0.010
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
 
 ## Daniil Medvedev vs Alexander Bublik -- ATP Almaty SF
 
@@ -1444,7 +1380,7 @@ CHALLENGER (CHALLENGER) · Hard · scheduled 2026-10-24T12:30:00Z · first ball:
 * Current expected start: 2026-10-24 13:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 12:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -1453,28 +1389,28 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T16:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alexander Bublik (`KXATPMATCH-26OCT24MEDBUB-BUB`) | 0.35 / 0.36 (1881) | 35.5% | 32.1% | 30.5% | 30.5% [29.6%-32.1%] | 35.4% | 35.9% | 35.9% | MODEL_LONE_OUTLIER | PASS | -3.4 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
-| Daniil Medvedev (`KXATPMATCH-26OCT24MEDBUB-MED`) | 0.63 / 0.65 (47450) | 64.0% | 67.9% | 69.5% | 69.5% [67.8%-70.4%] | 64.6% | 64.1% | 64.1% | MODEL_LONE_OUTLIER | SHADOW_BET | +3.9 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Alexander Bublik (`KXATPMATCH-26OCT24MEDBUB-BUB`) | 0.35 / 0.36 (4556) | 35.5% | 32.1% | 30.5% | 30.5% [29.6%-32.1%] | 35.4% | 35.9% | 35.9% | MODEL_LONE_OUTLIER | PASS | -3.4 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Daniil Medvedev (`KXATPMATCH-26OCT24MEDBUB-MED`) | 0.64 / 0.65 (50945) | 64.5% | 67.9% | 69.5% | 69.5% [67.8%-70.4%] | 64.6% | 64.1% | 64.1% | MODEL_LONE_OUTLIER | SHADOW_BET | +3.4 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 5908.0, B 5279.0; serve-point win A 68.3%, B 35.5%; Elo A 2100.7, B 1950.5; model uncertainty 0.0126
 * Form inputs: days since last match A 2, B 11; matches on record A 859, B 705; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.009, surface_pool_high +0.009, surface_dev_loose -0.000, surface_dev_tight +0.001
 * Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 14 carry a model probability
-  * `KXATPGSPREAD-26OCT24MEDBUB-MED6` Will Daniil Medvedev win at least 5.5 more games than Alexander Bublik?: 0.10/0.47 mid 28.5%, model 12.2% (projection_v2.0 (prediction ledger)) -- gap -16.3 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MEDBUB-MED21` Will Daniil Medvedev win the Daniil Medvedev vs Alexander Bublik match by a set score of 2-1?: 0.21/0.27 mid 24.0%, model 29.2% (projection_v2.0 (prediction ledger)) -- gap +5.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24MEDBUB-29` Over 28.5 games: 0.27/0.37 mid 32.0%, model 37.0% (projection_v2.0 (prediction ledger)) -- gap +5.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGSPREAD-26OCT24MEDBUB-MED6` Will Daniil Medvedev win at least 5.5 more games than Alexander Bublik?: 0.13/0.27 mid 20.0%, model 12.2% (projection_v2.0 (prediction ledger)) -- gap -7.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MEDBUB-MED21` Will Daniil Medvedev win the Daniil Medvedev vs Alexander Bublik match by a set score of 2-1?: 0.23/0.26 mid 24.5%, model 29.2% (projection_v2.0 (prediction ledger)) -- gap +4.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24MEDBUB-MED3` Will Daniil Medvedev win at least 2.5 more games than Alexander Bublik?: 0.47/0.48 mid 47.5%, model 51.2% (projection_v2.0 (prediction ledger)) -- gap +3.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24MEDBUB-BUB20` Will Alexander Bublik win the Daniil Medvedev vs Alexander Bublik match by a set score of 2-0?: 0.17/0.19 mid 18.0%, model 14.3% (projection_v2.0 (prediction ledger)) -- gap -3.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGTOTAL-26OCT24MEDBUB-24` Over 23.5 games: 0.50/0.51 mid 50.5%, model 53.5% (projection_v2.0 (prediction ledger)) -- gap +3.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MEDBUB-BUB21` Will Alexander Bublik win the Daniil Medvedev vs Alexander Bublik match by a set score of 2-1?: 0.14/0.17 mid 15.5%, model 17.8% (projection_v2.0 (prediction ledger)) -- gap +2.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGSPREAD-26OCT24MEDBUB-BUB2` Will Alexander Bublik win at least 1.5 more games than Daniil Medvedev?: 0.23/0.31 mid 27.0%, model 25.1% (projection_v2.0 (prediction ledger)) -- gap -1.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGSPREAD-26OCT24MEDBUB-BUB2` Will Alexander Bublik win at least 1.5 more games than Daniil Medvedev?: 0.24/0.31 mid 27.5%, model 25.1% (projection_v2.0 (prediction ledger)) -- gap -2.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24MEDBUB-29` Over 28.5 games: 0.33/0.37 mid 35.0%, model 37.0% (projection_v2.0 (prediction ledger)) -- gap +2.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MEDBUB-BUB21` Will Alexander Bublik win the Daniil Medvedev vs Alexander Bublik match by a set score of 2-1?: 0.15/0.17 mid 16.0%, model 17.8% (projection_v2.0 (prediction ledger)) -- gap +1.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24MEDBUB-1-MED` Will Daniil Medvedev win set 1 in the Daniil Medvedev vs Alexander Bublik match: 0.59/0.62 mid 60.5%, model 62.2% (projection_v2.0 (prediction ledger)) -- gap +1.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24MEDBUB-2-BUB` Will Alexander Bublik win set 2 in the Daniil Medvedev vs Alexander Bublik match: 0.37/0.42 mid 39.5%, model 37.8% (projection_v2.0 (prediction ledger)) -- gap -1.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24MEDBUB-2-MED` Will Daniil Medvedev win set 2 in the Daniil Medvedev vs Alexander Bublik match: 0.59/0.62 mid 60.5%, model 62.2% (projection_v2.0 (prediction ledger)) -- gap +1.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24MEDBUB-1-BUB` Will Alexander Bublik win set 1 in the Daniil Medvedev vs Alexander Bublik match: 0.38/0.39 mid 38.5%, model 37.8% (projection_v2.0 (prediction ledger)) -- gap -0.7 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24MEDBUB-19` Over 18.5 games: 0.89/0.92 mid 90.5%, model 89.9% (projection_v2.0 (prediction ledger)) -- gap -0.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24MEDBUB-19` Over 18.5 games: 0.89/0.90 mid 89.5%, model 89.9% (projection_v2.0 (prediction ledger)) -- gap +0.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24MEDBUB-MED20` Will Daniil Medvedev win the Daniil Medvedev vs Alexander Bublik match by a set score of 2-0?: 0.38/0.40 mid 39.0%, model 38.6% (projection_v2.0 (prediction ledger)) -- gap -0.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+* Warnings: EXTERNAL_PRICE_STALE; WIDE_SPREAD
 
 ## Viacheslav Bielinskyi vs Alessio Basile -- M15 Bol QF
 
@@ -1492,8 +1428,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alessio Basile (`KXITFMATCH-26OCT24BIEBAS-BAS`) | 0.69 / 0.74 (5) | 71.5% | 13.7% | 52.6% | 19.8% [17.4%-22.8%] | 27.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | -57.8 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
-| Viacheslav Bielinskyi (`KXITFMATCH-26OCT24BIEBAS-BIE`) | 0.26 / 0.30 (26) | 28.0% | 86.3% | 47.4% | 80.2% [77.2%-82.6%] | 72.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | +58.3 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Alessio Basile (`KXITFMATCH-26OCT24BIEBAS-BAS`) | 0.56 / 0.57 (158) | 56.5% | 13.7% | 52.6% | 19.8% [17.4%-22.8%] | 27.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | -42.8 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Viacheslav Bielinskyi (`KXITFMATCH-26OCT24BIEBAS-BIE`) | 0.43 / 0.45 (366) | 44.0% | 86.3% | 47.4% | 80.2% [77.2%-82.6%] | 72.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | +42.3 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 154.0, B 0.0; serve-point win A 64.9%, B 43.6%; Elo A 1478.6, B 1236.3; model uncertainty 0.027
 * Form inputs: days since last match A 407, B 796; matches on record A 153, B 23; data quality F
@@ -1501,8 +1437,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 ```
 DISCREPANCY SANITY CHECK  KXITFMATCH-26OCT24BIEBAS-BIE  (YES = Viacheslav Bielinskyi)
 Model: 86%
-Kalshi: 28%
-Gap: +58 pp
+Kalshi: 44%
+Gap: +42 pp
 Band: EXTREME
 Identity: AMBIGUOUS (ticker orientation VERIFIED)
 Quote freshness: FRESH
@@ -1513,7 +1449,7 @@ Status: DATA_WARNING / PASS UNTIL RECHECKED
 Unmet before human review: identity_verified, adequate_data_quality, no_severe_asymmetry_or_justified, external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.021, surface_pool_high -0.030, surface_dev_loose +0.000, surface_dev_tight -0.001
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Marek Gengel vs Arda Azkara -- M15 Sharm ElSheikh SF
@@ -1532,8 +1468,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Arda Azkara (`KXITFMATCH-26OCT24GENAZK-AZK`) | 0.87 / 0.88 (288) | 87.5% | 27.1% | 58.0% | 32.6% [25.6%-38.2%] | -- | -- | -- | -- | PASS | -60.4 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Marek Gengel (`KXITFMATCH-26OCT24GENAZK-GEN`) | 0.12 / 0.13 (10159) | 12.5% | 72.9% | 42.0% | 67.4% [61.8%-74.4%] | -- | -- | -- | -- | PASS | +60.4 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Arda Azkara (`KXITFMATCH-26OCT24GENAZK-AZK`) | 0.65 / 0.66 (28) | 65.5% | 27.1% | 58.0% | 32.6% [25.6%-38.2%] | -- | -- | -- | -- | PASS | -38.4 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Marek Gengel (`KXITFMATCH-26OCT24GENAZK-GEN`) | 0.33 / 0.34 (1) | 33.5% | 72.9% | 42.0% | 67.4% [61.8%-74.4%] | -- | -- | -- | -- | PASS | +39.4 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1422.0, B 548.0; serve-point win A 65.9%, B 39.0%; Elo A 1610.4, B 1418.2; model uncertainty 0.0627
 * Form inputs: days since last match A 684, B 89; matches on record A 535, B 51; data quality F
@@ -1541,19 +1477,19 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 ```
 DISCREPANCY SANITY CHECK  KXITFMATCH-26OCT24GENAZK-GEN  (YES = Marek Gengel)
 Model: 73%
-Kalshi: 12%
-Gap: +60 pp
+Kalshi: 34%
+Gap: +39 pp
 Band: EXTREME
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
 External: NO_EXTERNAL_REFERENCE
 Data quality: F (POOR)
-Reasons: LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, STALE_PLAYER_DATA, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
+Reasons: LOW_DISPLAYED_LIQUIDITY, LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, STALE_PLAYER_DATA, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
 Status: DATA_WARNING / PASS UNTIL RECHECKED
 Unmet before human review: adequate_data_quality, external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.023, surface_pool_high +0.018, surface_dev_loose -0.005, surface_dev_tight -0.004
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; NOMINAL_START_IS_DAY_PLACEHOLDER; NO_EXTERNAL_PRICE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; NOMINAL_START_IS_DAY_PLACEHOLDER; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Nico Hipfl vs Ivan Biletic -- M15 Bol QF
@@ -1572,8 +1508,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Ivan Biletic (`KXITFMATCH-26OCT24HIPBIL-BIL`) | 0.23 / 0.27 (5) | 25.0% | 31.5% | 42.0% | 46.0% [46.0%-46.0%] | 27.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | +6.5 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
-| Nico Hipfl (`KXITFMATCH-26OCT24HIPBIL-HIP`) | 0.73 / 0.77 (80) | 75.0% | 68.5% | 58.0% | 54.0% [54.0%-54.0%] | 72.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | -6.5 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Ivan Biletic (`KXITFMATCH-26OCT24HIPBIL-BIL`) | 0.19 / 0.23 (29) | 21.0% | 31.5% | 42.0% | 46.0% [46.0%-46.0%] | 27.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | +10.5 pp | REVIEW | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Nico Hipfl (`KXITFMATCH-26OCT24HIPBIL-HIP`) | 0.74 / 0.78 (1) | 76.0% | 68.5% | 58.0% | 54.0% [54.0%-54.0%] | 72.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | -7.5 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 101.0, B 0.0; serve-point win A 64.3%, B 39.5%; Elo A 1285.0, B 1254.8; model uncertainty 0.0001
 * Form inputs: days since last match A 98, B 880; matches on record A 16, B 1; data quality F
@@ -1597,8 +1533,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Imanol Lopez Morillo (`KXITFMATCH-26OCT24LOPWAZ-LOP`) | 0.42 / 0.48 (333) | 45.0% | 79.9% | 47.9% | 70.9% [64.0%-78.1%] | 50.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | +34.9 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Alan Wazny (`KXITFMATCH-26OCT24LOPWAZ-WAZ`) | 0.50 / 0.57 (17) | 53.5% | 20.1% | 52.1% | 29.1% [21.9%-36.0%] | 49.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -33.4 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Imanol Lopez Morillo (`KXITFMATCH-26OCT24LOPWAZ-LOP`) | 0.33 / 0.37 (124) | 35.0% | 79.9% | 47.9% | 70.9% [64.0%-78.1%] | 50.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | +44.9 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Alan Wazny (`KXITFMATCH-26OCT24LOPWAZ-WAZ`) | 0.62 / 0.67 (166) | 64.5% | 20.1% | 52.1% | 29.1% [21.9%-36.0%] | 49.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -44.4 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 173.0, B 252.0; serve-point win A 61.1%, B 45.3%; Elo A 1396.8, B 1217.0; model uncertainty 0.0705
 * Form inputs: days since last match A 26, B 40; matches on record A 282, B 7; data quality D
@@ -1606,19 +1542,19 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 ```
 DISCREPANCY SANITY CHECK  KXITFMATCH-26OCT24LOPWAZ-LOP  (YES = Imanol Lopez Morillo)
 Model: 80%
-Kalshi: 45%
-Gap: +35 pp
+Kalshi: 35%
+Gap: +45 pp
 Band: EXTREME
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
 External: NO_EXTERNAL_REFERENCE
 Data quality: D (POOR)
-Reasons: LOW_DISPLAYED_LIQUIDITY, LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, SURFACE_DATA_THIN, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
+Reasons: LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, SURFACE_DATA_THIN, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
 Status: DATA_WARNING / PASS UNTIL RECHECKED
 Unmet before human review: adequate_data_quality, external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.056, surface_pool_high -0.056, surface_dev_loose -0.000, surface_dev_tight +0.009
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; WIDE_SPREAD
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Oskari Paldanius vs Sergey Petrov -- M15 Sharm ElSheikh SF
@@ -1637,8 +1573,8 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Oskari Paldanius (`KXITFMATCH-26OCT24PALPET-PAL`) | 0.86 / 0.87 (150) | 86.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Sergey Petrov (`KXITFMATCH-26OCT24PALPET-PET`) | 0.13 / 0.14 (10078) | 13.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Oskari Paldanius (`KXITFMATCH-26OCT24PALPET-PAL`) | 0.97 / 0.99 (10591) | 98.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Sergey Petrov (`KXITFMATCH-26OCT24PALPET-PET`) | 0.01 / 0.02 (12) | 1.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -1661,8 +1597,8 @@ CHALLENGER (CHALLENGER) · Clay · scheduled 2026-10-24T13:00:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alexander Ritschard (`KXATPCHALLENGERMATCH-26OCT24TRURIT-RIT`) | 0.46 / 0.47 (2408) | 46.5% | 48.5% | 46.4% | 45.9% [44.4%-46.9%] | 48.0% | 46.8% | 46.8% | MARKETS_AGREE | PASS | +2.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
-| Marco Trungelliti (`KXATPCHALLENGERMATCH-26OCT24TRURIT-TRU`) | 0.53 / 0.54 (11192) | 53.5% | 51.5% | 53.6% | 54.1% [53.1%-55.6%] | 52.0% | 53.2% | 53.2% | MARKETS_AGREE | PASS | -2.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Alexander Ritschard (`KXATPCHALLENGERMATCH-26OCT24TRURIT-RIT`) | 0.46 / 0.47 (4086) | 46.5% | 48.5% | 46.4% | 45.9% [44.4%-46.9%] | 48.0% | 47.0% | 47.0% | MARKETS_AGREE | PASS | +2.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Marco Trungelliti (`KXATPCHALLENGERMATCH-26OCT24TRURIT-TRU`) | 0.53 / 0.54 (26) | 53.5% | 51.5% | 53.6% | 54.1% [53.1%-55.6%] | 52.0% | 53.2% | 53.2% | MARKETS_AGREE | PASS | -2.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4942.0, B 1877.0; serve-point win A 60.3%, B 40.0%; Elo A 1773.3, B 1736.4; model uncertainty 0.0128
 * Form inputs: days since last match A 12, B 47; matches on record A 987, B 519; data quality A
@@ -1685,8 +1621,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Lamis Alhussein Abdel Aziz (`KXITFWMATCH-26OCT24BARALH-ALH`) | 0.55 / 0.60 (25) | 57.5% | -- | 88.5% | 76.3% [67.0%-80.9%] | -- | -- | -- | -- | WATCH | +18.8 pp | HIGH_REVIEW | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Kamilla Bartone (`KXITFWMATCH-26OCT24BARALH-BAR`) | 0.37 / 0.43 (1) | 40.0% | -- | 11.5% | 23.7% [19.1%-33.0%] | -- | -- | -- | -- | PASS | -16.3 pp | HIGH_REVIEW | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Lamis Alhussein Abdel Aziz (`KXITFWMATCH-26OCT24BARALH-ALH`) | 0.20 / 0.22 (6) | 21.0% | -- | 88.5% | 76.3% [67.0%-80.9%] | -- | -- | -- | -- | WATCH | +55.3 pp | EXTREME (DATA_WARNING) | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Kamilla Bartone (`KXITFWMATCH-26OCT24BARALH-BAR`) | 0.76 / 0.80 (1) | 78.0% | -- | 11.5% | 23.7% [19.1%-33.0%] | -- | -- | -- | -- | PASS | -54.3 pp | EXTREME (DATA_WARNING) | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1376.0, B 4747.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0695
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality C
@@ -1694,15 +1630,16 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 ```
 DISCREPANCY SANITY CHECK  KXITFWMATCH-26OCT24BARALH-ALH  (YES = Lamis Alhussein Abdel Aziz)
 Model: 76%
-Kalshi: 57%
-Gap: +19 pp
-Band: HIGH_REVIEW
+Kalshi: 21%
+Gap: +55 pp
+Band: EXTREME
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
 External: NO_EXTERNAL_REFERENCE
 Data quality: C (LIMITED)
 Reasons: LOW_DISPLAYED_LIQUIDITY, LOW_DATA_QUALITY, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE
-Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
+Status: DATA_WARNING / PASS UNTIL RECHECKED
+Unmet before human review: adequate_data_quality, external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.008, surface_pool_high +0.008, surface_dev_loose +0.000, surface_dev_tight +0.004
 * Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE
@@ -1724,28 +1661,13 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Daria Gorska (`KXITFWMATCH-26OCT24GORHOR-GOR`) | 0.11 / 0.12 (41) | 11.5% | -- | 43.7% | 37.0% [30.2%-40.1%] | 25.7% | -- | 25.7% | MODEL_LONE_OUTLIER | PASS | +25.5 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | SUPPORTS_MODEL_DIRECTION | VERIFIED |
-| Mia Horvit (`KXITFWMATCH-26OCT24GORHOR-HOR`) | 0.87 / 0.88 (1) | 87.5% | -- | 56.3% | 63.0% [60.0%-69.8%] | 74.3% | -- | 74.3% | MODEL_LONE_OUTLIER | PASS | -24.5 pp | HIGH_REVIEW | FRESH | D / POOR | SUPPORTS_MODEL_DIRECTION | VERIFIED |
+| Daria Gorska (`KXITFWMATCH-26OCT24GORHOR-GOR`) | 0.30 / 0.34 (106) | 32.0% | -- | 43.7% | 37.0% [30.2%-40.1%] | 25.7% | -- | 25.7% | MODEL_LONE_OUTLIER | PASS | +5.0 pp | NORMAL | FRESH | D / POOR | ALL_DISAGREE | VERIFIED |
+| Mia Horvit (`KXITFWMATCH-26OCT24GORHOR-HOR`) | 0.69 / 0.71 (41) | 70.0% | -- | 56.3% | 63.0% [60.0%-69.8%] | 74.3% | -- | 74.3% | MODEL_LONE_OUTLIER | PASS | -7.0 pp | NORMAL | FRESH | D / POOR | AGREES_WITH_KALSHI | VERIFIED |
 
 * Serve evidence (points): A 685.0, B 1568.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0494
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality D
-
-```
-DISCREPANCY SANITY CHECK  KXITFWMATCH-26OCT24GORHOR-GOR  (YES = Daria Gorska)
-Model: 37%
-Kalshi: 12%
-Gap: +26 pp
-Band: EXTREME
-Identity: VERIFIED (ticker orientation VERIFIED)
-Quote freshness: FRESH
-External: SUPPORTS_MODEL_DIRECTION
-Data quality: D (POOR)
-Reasons: LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, SURFACE_DATA_THIN, MODEL_HIGH_UNCERTAINTY, EXTERNAL_MARKET_CONFIRMATION, START_UNVERIFIABLE
-Status: DATA_WARNING / PASS UNTIL RECHECKED
-Unmet before human review: adequate_data_quality, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
-```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.039, surface_pool_high +0.030, surface_dev_loose +0.000, surface_dev_tight -0.010
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER; THIN_DISPLAYED_SIZE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Andrea Obradovic vs Sapfo Sakellaridi -- W15 Bol QF
@@ -1764,8 +1686,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Andrea Obradovic (`KXITFWMATCH-26OCT24OBRSAK-OBR`) | 0.55 / 0.58 (45) | 56.5% | -- | 22.7% | 36.6% [30.9%-43.7%] | 38.5% | -- | -- | INSUFFICIENT_INPUTS | PASS | -19.9 pp | HIGH_REVIEW | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Sapfo Sakellaridi (`KXITFWMATCH-26OCT24OBRSAK-SAK`) | 0.42 / 0.44 (100) | 43.0% | -- | 77.3% | 63.4% [56.3%-69.1%] | 61.5% | -- | -- | INSUFFICIENT_INPUTS | PASS | +20.4 pp | HIGH_REVIEW | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Andrea Obradovic (`KXITFWMATCH-26OCT24OBRSAK-OBR`) | 0.73 / 0.75 (670) | 74.0% | -- | 22.7% | 36.6% [30.9%-43.7%] | 38.5% | -- | -- | INSUFFICIENT_INPUTS | PASS | -37.4 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Sapfo Sakellaridi (`KXITFWMATCH-26OCT24OBRSAK-SAK`) | 0.25 / 0.27 (525) | 26.0% | -- | 77.3% | 63.4% [56.3%-69.1%] | 61.5% | -- | -- | INSUFFICIENT_INPUTS | PASS | +37.4 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 929.0, B 4165.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0643
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality D
@@ -1773,15 +1695,16 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 ```
 DISCREPANCY SANITY CHECK  KXITFWMATCH-26OCT24OBRSAK-SAK  (YES = Sapfo Sakellaridi)
 Model: 63%
-Kalshi: 43%
-Gap: +20 pp
-Band: HIGH_REVIEW
+Kalshi: 26%
+Gap: +37 pp
+Band: EXTREME
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
 External: NO_EXTERNAL_REFERENCE
 Data quality: D (POOR)
-Reasons: LOW_DISPLAYED_LIQUIDITY, LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, ASYMMETRIC_SAMPLE_SIZE, SURFACE_DATA_THIN, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE
-Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
+Reasons: LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, ASYMMETRIC_SAMPLE_SIZE, SURFACE_DATA_THIN, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE
+Status: DATA_WARNING / PASS UNTIL RECHECKED
+Unmet before human review: adequate_data_quality, external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.058, surface_pool_high +0.061, surface_dev_loose -0.015, surface_dev_tight +0.010
 * Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE
@@ -1803,8 +1726,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Karla Popovic (`KXITFWMATCH-26OCT24POPSAM-POP`) | 0.34 / 0.36 (1) | 35.0% | -- | 51.6% | 42.5% [32.9%-48.9%] | -- | -- | -- | -- | PASS | +7.5 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Sandra Samir (`KXITFWMATCH-26OCT24POPSAM-SAM`) | 0.63 / 0.65 (97) | 64.0% | -- | 48.4% | 57.5% [51.1%-67.1%] | -- | -- | -- | -- | WATCH | -6.5 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Karla Popovic (`KXITFWMATCH-26OCT24POPSAM-POP`) | 0.44 / 0.50 (46) | 47.0% | -- | 51.6% | 42.5% [32.9%-48.9%] | -- | -- | -- | -- | PASS | -4.5 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Sandra Samir (`KXITFWMATCH-26OCT24POPSAM-SAM`) | 0.51 / 0.55 (2) | 53.0% | -- | 48.4% | 57.5% [51.1%-67.1%] | -- | -- | -- | -- | WATCH | +4.5 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1204.0, B 4604.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0802
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality C
@@ -1828,12 +1751,12 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Viktoria Varga (`KXITFWMATCH-26OCT24WUEVAR-VAR`) | 0.14 / 0.17 (4) | 15.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Tara Wuerth (`KXITFWMATCH-26OCT24WUEVAR-WUE`) | 0.83 / 0.86 (99) | 84.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Viktoria Varga (`KXITFWMATCH-26OCT24WUEVAR-VAR`) | 0.09 / 0.10 (25) | 9.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Tara Wuerth (`KXITFWMATCH-26OCT24WUEVAR-WUE`) | 0.90 / 0.91 (6273) | 90.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NOMINAL_START_IS_DAY_PLACEHOLDER; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE
+* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NOMINAL_START_IS_DAY_PLACEHOLDER; NO_EXTERNAL_PRICE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Sonja Zhenikhova vs Maja Radenkovic -- W15 Bol QF
@@ -1852,8 +1775,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Maja Radenkovic (`KXITFWMATCH-26OCT24ZHERAD-RAD`) | 0.01 / 0.04 (9731) | 2.5% | -- | 61.6% | 35.4% [34.4%-36.4%] | 21.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | +32.9 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
-| Sonja Zhenikhova (`KXITFWMATCH-26OCT24ZHERAD-ZHE`) | 0.95 / 0.99 (8782) | 97.0% | -- | 38.4% | 64.6% [63.6%-65.6%] | 78.1% | -- | -- | INSUFFICIENT_INPUTS | PASS | -32.4 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Maja Radenkovic (`KXITFWMATCH-26OCT24ZHERAD-RAD`) | 0.07 / 0.08 (785) | 7.5% | -- | 61.6% | 35.4% [34.4%-36.4%] | 21.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | +27.9 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Sonja Zhenikhova (`KXITFWMATCH-26OCT24ZHERAD-ZHE`) | 0.92 / 0.93 (91) | 92.5% | -- | 38.4% | 64.6% [63.6%-65.6%] | 78.1% | -- | -- | INSUFFICIENT_INPUTS | PASS | -27.9 pp | EXTREME (DATA_WARNING) | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 1212.0, B 0.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.01
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality F
@@ -1861,8 +1784,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:00:00Z · first ball: NO_FIRST_BALL
 ```
 DISCREPANCY SANITY CHECK  KXITFWMATCH-26OCT24ZHERAD-RAD  (YES = Maja Radenkovic)
 Model: 35%
-Kalshi: 2%
-Gap: +33 pp
+Kalshi: 8%
+Gap: +28 pp
 Band: EXTREME
 Identity: AMBIGUOUS (ticker orientation VERIFIED)
 Quote freshness: FRESH
@@ -1908,7 +1831,7 @@ DOUBLES (CHALLENGER) · surface ? · scheduled 2026-10-24T13:10:00Z · first bal
 * Current expected start: 2026-10-24 13:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 12:45Z
 
 * Status notes: NOMINAL_IS_DAY_PLACEHOLDER: Kalshi lists this time for many matches of the series
@@ -1917,19 +1840,20 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T11:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| James Duckworth (`KXATPMATCH-26OCT24KOVDUC-DUC`) | 0.38 / 0.39 (2192) | 38.5% | 44.0% | 56.5% | 54.6% [51.9%-57.9%] | 40.6% | 39.1% | 39.9% | MODEL_LONE_OUTLIER | SHADOW_BET | +5.5 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Aleksandar Kovacevic (`KXATPMATCH-26OCT24KOVDUC-KOV`) | 0.61 / 0.62 (3062) | 61.5% | 56.0% | 43.5% | 45.4% [42.1%-48.1%] | 59.4% | 61.2% | 60.3% | MODEL_LONE_OUTLIER | PASS | -5.5 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| James Duckworth (`KXATPMATCH-26OCT24KOVDUC-DUC`) | 0.38 / 0.39 (2192) | 38.5% | 44.0% | 56.5% | 54.6% [51.9%-57.9%] | 40.6% | 39.1% | 39.1% | MODEL_LONE_OUTLIER | SHADOW_BET | +5.5 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Aleksandar Kovacevic (`KXATPMATCH-26OCT24KOVDUC-KOV`) | 0.61 / 0.62 (5744) | 61.5% | 56.0% | 43.5% | 45.4% [42.1%-48.1%] | 59.4% | 61.2% | 61.2% | MODEL_LONE_OUTLIER | PASS | -5.5 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4778.0, B 5151.0; serve-point win A 70.6%, B 30.7%; Elo A 1756.5, B 1745.6; model uncertainty 0.0303
 * Form inputs: days since last match A 4, B 1; matches on record A 400, B 900; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.032, surface_pool_high +0.028, surface_dev_loose +0.005, surface_dev_tight -0.005
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
+  * `KXATPEXACTMATCH-26OCT24KOVDUC-DUC21` Will James Duckworth win the Aleksandar Kovacevic vs James Duckworth match by a set score of 2-1?: 0.16/0.21 mid 18.5%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap +4.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24KOVDUC-1-DUC` Will James Duckworth win set 1 in the Aleksandar Kovacevic vs James Duckworth match: 0.40/0.44 mid 42.0%, model 46.0% (projection_v2.0 (prediction ledger)) -- gap +4.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24KOVDUC-1-KOV` Will Aleksandar Kovacevic win set 1 in the Aleksandar Kovacevic vs James Duckworth match: 0.56/0.60 mid 58.0%, model 54.0% (projection_v2.0 (prediction ledger)) -- gap -4.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KOVDUC-2-DUC` Will James Duckworth win set 2 in the Aleksandar Kovacevic vs James Duckworth match: 0.15/0.74 mid 44.5%, model 46.0% (projection_v2.0 (prediction ledger)) -- gap +1.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24KOVDUC-2-KOV` Will Aleksandar Kovacevic win set 2 in the Aleksandar Kovacevic vs James Duckworth match: 0.23/0.84 mid 53.5%, model 54.0% (projection_v2.0 (prediction ledger)) -- gap +0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24KOVDUC-KOV20` Will Aleksandar Kovacevic win the Aleksandar Kovacevic vs James Duckworth match by a set score of 2-0?: 0.20/0.38 mid 29.0%, model 29.2% (projection_v2.0 (prediction ledger)) -- gap +0.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24KOVDUC-2-DUC` Will James Duckworth win set 2 in the Aleksandar Kovacevic vs James Duckworth match: 0.10/0.79 mid 44.5%, model 46.0% (projection_v2.0 (prediction ledger)) -- gap +1.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24KOVDUC-2-KOV` Will Aleksandar Kovacevic win set 2 in the Aleksandar Kovacevic vs James Duckworth match: 0.18/0.89 mid 53.5%, model 54.0% (projection_v2.0 (prediction ledger)) -- gap +0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24KOVDUC-KOV20` Will Aleksandar Kovacevic win the Aleksandar Kovacevic vs James Duckworth match by a set score of 2-0?: 0.21/0.38 mid 29.5%, model 29.2% (projection_v2.0 (prediction ledger)) -- gap -0.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: NOMINAL_START_IS_DAY_PLACEHOLDER; EXTERNAL_PRICE_STALE; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Geoffrey Blancaneaux vs Giannicola Misasi -- M15 Bol QF
 
@@ -1947,8 +1871,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:30:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Geoffrey Blancaneaux (`KXITFMATCH-26OCT24BLAMIS-BLA`) | 0.95 / 0.97 (1700) | 96.0% | 91.3% | 44.9% | 87.9% [86.9%-89.4%] | 76.8% | -- | 76.8% | ALL_THREE_DISAGREE | PASS | -4.7 pp | NORMAL | FRESH | F / POOR | EXTERNAL_OUTLIER | VERIFIED |
-| Giannicola Misasi (`KXITFMATCH-26OCT24BLAMIS-MIS`) | 0.03 / 0.05 (2332) | 4.0% | 8.6% | 55.1% | 12.0% [10.6%-13.1%] | 23.2% | -- | 23.2% | ALL_THREE_DISAGREE | PASS | +4.7 pp | NORMAL | FRESH | F / POOR | EXTERNAL_OUTLIER | VERIFIED |
+| Geoffrey Blancaneaux (`KXITFMATCH-26OCT24BLAMIS-BLA`) | 0.96 / 0.97 (2774) | 96.5% | 91.3% | 44.9% | 87.9% [86.9%-89.4%] | 76.8% | -- | 76.8% | ALL_THREE_DISAGREE | PASS | -5.2 pp | NORMAL | FRESH | F / POOR | SUPPORTS_MODEL_DIRECTION | VERIFIED |
+| Giannicola Misasi (`KXITFMATCH-26OCT24BLAMIS-MIS`) | 0.03 / 0.04 (3711) | 3.5% | 8.6% | 55.1% | 12.0% [10.6%-13.1%] | 23.2% | -- | 23.2% | ALL_THREE_DISAGREE | PASS | +5.2 pp | NORMAL | FRESH | F / POOR | SUPPORTS_MODEL_DIRECTION | VERIFIED |
 
 * Serve evidence (points): A 3141.0, B 0.0; serve-point win A 66.9%, B 43.8%; Elo A 1522.5, B 1172.9; model uncertainty 0.0125
 * Form inputs: days since last match A 26, B 691; matches on record A 630, B 71; data quality F
@@ -1963,7 +1887,7 @@ ITF (ITF) · Hard · scheduled 2026-10-24T13:30:00Z · first ball: NO_FIRST_BALL
 * Current expected start: 2026-10-24 14:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 13:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -1972,28 +1896,28 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T17:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Francisco Cerundolo (`KXATPMATCH-26OCT24CERGRI-CER`) | 0.60 / 0.62 (29662) | 61.0% | 59.1% | 64.7% | 61.5% [58.7%-62.9%] | 61.6% | 61.2% | 61.4% | MODEL_LONE_OUTLIER | PASS | -1.9 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
-| Tallon Griekspoor (`KXATPMATCH-26OCT24CERGRI-GRI`) | 0.38 / 0.39 (2462) | 38.5% | 40.9% | 35.3% | 38.5% [37.1%-41.3%] | 38.4% | 38.5% | 38.4% | MODEL_LONE_OUTLIER | PASS | +2.5 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Francisco Cerundolo (`KXATPMATCH-26OCT24CERGRI-CER`) | 0.60 / 0.61 (1485) | 60.5% | 59.1% | 64.7% | 61.5% [58.7%-62.9%] | 61.6% | 61.2% | 61.2% | MODEL_LONE_OUTLIER | PASS | -1.4 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Tallon Griekspoor (`KXATPMATCH-26OCT24CERGRI-GRI`) | 0.38 / 0.39 (49) | 38.5% | 40.9% | 35.3% | 38.5% [37.1%-41.3%] | 38.4% | 38.5% | 38.5% | MODEL_LONE_OUTLIER | PASS | +2.5 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 5642.0, B 4445.0; serve-point win A 67.1%, B 34.8%; Elo A 1873.6, B 1873.8; model uncertainty 0.021
 * Form inputs: days since last match A 15, B 3; matches on record A 553, B 679; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.009, surface_pool_high -0.019, surface_dev_loose -0.005, surface_dev_tight -0.004
 * Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 14 carry a model probability
   * `KXATPGTOTAL-26OCT24CERGRI-25` Over 24.5 games: 0.44/0.45 mid 44.5%, model 54.9% (projection_v2.0 (prediction ledger)) -- gap +10.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24CERGRI-CER20` Will Francisco Cerundolo win the Francisco Cerundolo vs Tallon Griekspoor match by a set score of 2-0?: 0.37/0.42 mid 39.5%, model 31.4% (projection_v2.0 (prediction ledger)) -- gap -8.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGTOTAL-26OCT24CERGRI-30` Over 29.5 games: 0.26/0.27 mid 26.5%, model 34.4% (projection_v2.0 (prediction ledger)) -- gap +7.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGSPREAD-26OCT24CERGRI-CER5` Will Francisco Cerundolo win at least 4.5 more games than Tallon Griekspoor?: 0.22/0.29 mid 25.5%, model 18.3% (projection_v2.0 (prediction ledger)) -- gap -7.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGSPREAD-26OCT24CERGRI-CER5` Will Francisco Cerundolo win at least 4.5 more games than Tallon Griekspoor?: 0.23/0.29 mid 26.0%, model 18.3% (projection_v2.0 (prediction ledger)) -- gap -7.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24CERGRI-CER20` Will Francisco Cerundolo win the Francisco Cerundolo vs Tallon Griekspoor match by a set score of 2-0?: 0.37/0.40 mid 38.5%, model 31.4% (projection_v2.0 (prediction ledger)) -- gap -7.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24CERGRI-20` Over 19.5 games: 0.75/0.80 mid 77.5%, model 84.0% (projection_v2.0 (prediction ledger)) -- gap +6.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24CERGRI-CER21` Will Francisco Cerundolo win the Francisco Cerundolo vs Tallon Griekspoor match by a set score of 2-1?: 0.20/0.24 mid 22.0%, model 27.6% (projection_v2.0 (prediction ledger)) -- gap +5.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24CERGRI-GRI21` Will Tallon Griekspoor win the Francisco Cerundolo vs Tallon Griekspoor match by a set score of 2-1?: 0.14/0.20 mid 17.0%, model 21.6% (projection_v2.0 (prediction ledger)) -- gap +4.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24CERGRI-GRI21` Will Tallon Griekspoor win the Francisco Cerundolo vs Tallon Griekspoor match by a set score of 2-1?: 0.15/0.19 mid 17.0%, model 21.6% (projection_v2.0 (prediction ledger)) -- gap +4.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24CERGRI-CER2` Will Francisco Cerundolo win at least 1.5 more games than Tallon Griekspoor?: 0.55/0.56 mid 55.5%, model 51.0% (projection_v2.0 (prediction ledger)) -- gap -4.5 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24CERGRI-20` Over 19.5 games: 0.78/0.82 mid 80.0%, model 84.0% (projection_v2.0 (prediction ledger)) -- gap +4.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24CERGRI-1-GRI` Will Tallon Griekspoor win set 1 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.39/0.42 mid 40.5%, model 43.9% (projection_v2.0 (prediction ledger)) -- gap +3.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24CERGRI-2-GRI` Will Tallon Griekspoor win set 2 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.39/0.42 mid 40.5%, model 43.9% (projection_v2.0 (prediction ledger)) -- gap +3.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24CERGRI-2-CER` Will Francisco Cerundolo win set 2 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.57/0.60 mid 58.5%, model 56.1% (projection_v2.0 (prediction ledger)) -- gap -2.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24CERGRI-1-CER` Will Francisco Cerundolo win set 1 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.55/0.60 mid 57.5%, model 56.1% (projection_v2.0 (prediction ledger)) -- gap -1.4 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPGSPREAD-26OCT24CERGRI-GRI2` Will Tallon Griekspoor win at least 1.5 more games than Francisco Cerundolo?: 0.29/0.35 mid 32.0%, model 33.3% (projection_v2.0 (prediction ledger)) -- gap +1.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24CERGRI-1-GRI` Will Tallon Griekspoor win set 1 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.39/0.43 mid 41.0%, model 43.9% (projection_v2.0 (prediction ledger)) -- gap +2.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24CERGRI-1-CER` Will Francisco Cerundolo win set 1 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.56/0.60 mid 58.0%, model 56.1% (projection_v2.0 (prediction ledger)) -- gap -1.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24CERGRI-2-CER` Will Francisco Cerundolo win set 2 in the Francisco Cerundolo vs Tallon Griekspoor match: 0.56/0.60 mid 58.0%, model 56.1% (projection_v2.0 (prediction ledger)) -- gap -1.9 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24CERGRI-GRI20` Will Tallon Griekspoor win the Francisco Cerundolo vs Tallon Griekspoor match by a set score of 2-0?: 0.19/0.21 mid 20.0%, model 19.3% (projection_v2.0 (prediction ledger)) -- gap -0.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPGSPREAD-26OCT24CERGRI-GRI2` Will Tallon Griekspoor win at least 1.5 more games than Francisco Cerundolo?: 0.31/0.35 mid 33.0%, model 33.3% (projection_v2.0 (prediction ledger)) -- gap +0.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 
 ## Flavio Cobolli vs Lorenzo Musetti -- ATP Lyon SF
 
@@ -2002,7 +1926,7 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T17:00:00Z · first ball: NOT_
 * Current expected start: 2026-10-24 14:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 13:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-130_MIN
@@ -2011,8 +1935,8 @@ ATP (TOUR_500_250) · Clay · scheduled 2026-10-24T16:10:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Flavio Cobolli (`KXATPMATCH-26OCT24COBMUS-COB`) | 0.52 / 0.53 (1750) | 52.5% | 36.0% | 39.4% | 37.0% [35.6%-38.5%] | 53.2% | 53.5% | 53.4% | MODEL_LONE_OUTLIER | PASS | -16.5 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
-| Lorenzo Musetti (`KXATPMATCH-26OCT24COBMUS-MUS`) | 0.47 / 0.48 (48858) | 47.5% | 64.0% | 60.6% | 63.0% [61.6%-64.4%] | 46.8% | 46.3% | 46.5% | MODEL_LONE_OUTLIER | SHADOW_BET | +16.5 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | VERIFIED |
+| Flavio Cobolli (`KXATPMATCH-26OCT24COBMUS-COB`) | 0.52 / 0.53 (1650) | 52.5% | 36.0% | 39.4% | 37.0% [35.6%-38.5%] | 53.2% | 53.5% | 53.5% | MODEL_LONE_OUTLIER | PASS | -16.5 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Lorenzo Musetti (`KXATPMATCH-26OCT24COBMUS-MUS`) | 0.47 / 0.48 (61537) | 47.5% | 64.0% | 60.6% | 63.0% [61.6%-64.4%] | 46.8% | 46.1% | 46.1% | MODEL_LONE_OUTLIER | SHADOW_BET | +16.5 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 6397.0, B 4401.0; serve-point win A 60.2%, B 37.0%; Elo A 1959.6, B 2103.9; model uncertainty 0.0145
 * Form inputs: days since last match A 2, B 3; matches on record A 443, B 468; data quality A
@@ -2025,28 +1949,28 @@ Gap: +17 pp
 Band: HIGH_REVIEW
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: EXTERNAL_STALE
 Data quality: A (ADEQUATE)
-Reasons: EXTERNAL_MARKET_REJECTION, UNKNOWN
+Reasons: NO_EXTERNAL_REFERENCE, UNKNOWN
 Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.005, surface_pool_high -0.005, surface_dev_loose +0.009, surface_dev_tight -0.009
 * Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 14 carry a model probability
   * `KXATPGSPREAD-26OCT24COBMUS-COB2` Will Flavio Cobolli win at least 1.5 more games than Lorenzo Musetti?: 0.46/0.47 mid 46.5%, model 29.4% (projection_v2.0 (prediction ledger)) -- gap -17.1 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24COBMUS-MUS2` Will Lorenzo Musetti win at least 1.5 more games than Flavio Cobolli?: 0.44/0.45 mid 44.5%, model 57.2% (projection_v2.0 (prediction ledger)) -- gap +12.7 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24COBMUS-MUS21` Will Lorenzo Musetti win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-1?: 0.09/0.23 mid 16.0%, model 28.7% (projection_v2.0 (prediction ledger)) -- gap +12.7 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24COBMUS-MUS21` Will Lorenzo Musetti win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-1?: 0.10/0.22 mid 16.0%, model 28.7% (projection_v2.0 (prediction ledger)) -- gap +12.7 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPSETWINNER-26OCT24COBMUS-1-COB` Will Flavio Cobolli win set 1 in the Flavio Cobolli vs Lorenzo Musetti match: 0.50/0.54 mid 52.0%, model 40.5% (projection_v2.0 (prediction ledger)) -- gap -11.5 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24COBMUS-1-MUS` Will Lorenzo Musetti win set 1 in the Flavio Cobolli vs Lorenzo Musetti match: 0.47/0.50 mid 48.5%, model 59.5% (projection_v2.0 (prediction ledger)) -- gap +11.0 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24COBMUS-COB20` Will Flavio Cobolli win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-0?: 0.16/0.32 mid 24.0%, model 16.4% (projection_v2.0 (prediction ledger)) -- gap -7.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24COBMUS-2-MUS` Will Lorenzo Musetti win set 2 in the Flavio Cobolli vs Lorenzo Musetti match: 0.20/0.84 mid 52.0%, model 59.5% (projection_v2.0 (prediction ledger)) -- gap +7.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24COBMUS-COB20` Will Flavio Cobolli win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-0?: 0.20/0.31 mid 25.5%, model 16.4% (projection_v2.0 (prediction ledger)) -- gap -9.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24COBMUS-2-MUS` Will Lorenzo Musetti win set 2 in the Flavio Cobolli vs Lorenzo Musetti match: 0.12/0.89 mid 50.5%, model 59.5% (projection_v2.0 (prediction ledger)) -- gap +9.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24COBMUS-MUS20` Will Lorenzo Musetti win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-0?: 0.26/0.30 mid 28.0%, model 35.4% (projection_v2.0 (prediction ledger)) -- gap +7.4 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24COBMUS-28` Over 27.5 games: 0.30/0.32 mid 31.0%, model 37.1% (projection_v2.0 (prediction ledger)) -- gap +6.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24COBMUS-MUS5` Will Lorenzo Musetti win at least 4.5 more games than Flavio Cobolli?: 0.21/0.24 mid 22.5%, model 27.8% (projection_v2.0 (prediction ledger)) -- gap +5.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGTOTAL-26OCT24COBMUS-23` Over 22.5 games: 0.52/0.53 mid 52.5%, model 57.4% (projection_v2.0 (prediction ledger)) -- gap +4.9 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24COBMUS-2-COB` Will Flavio Cobolli win set 2 in the Flavio Cobolli vs Lorenzo Musetti match: 0.15/0.70 mid 42.5%, model 40.5% (projection_v2.0 (prediction ledger)) -- gap -2.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24COBMUS-COB21` Will Flavio Cobolli win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-1?: 0.11/0.26 mid 18.5%, model 19.5% (projection_v2.0 (prediction ledger)) -- gap +1.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24COBMUS-18` Over 17.5 games: 0.89/0.94 mid 91.5%, model 90.8% (projection_v2.0 (prediction ledger)) -- gap -0.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPGTOTAL-26OCT24COBMUS-28` Over 27.5 games: 0.33/0.34 mid 33.5%, model 37.1% (projection_v2.0 (prediction ledger)) -- gap +3.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24COBMUS-2-COB` Will Flavio Cobolli win set 2 in the Flavio Cobolli vs Lorenzo Musetti match: 0.10/0.75 mid 42.5%, model 40.5% (projection_v2.0 (prediction ledger)) -- gap -2.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24COBMUS-COB21` Will Flavio Cobolli win the Flavio Cobolli vs Lorenzo Musetti match by a set score of 2-1?: 0.12/0.25 mid 18.5%, model 19.5% (projection_v2.0 (prediction ledger)) -- gap +1.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24COBMUS-18` Over 17.5 games: 0.89/0.93 mid 91.0%, model 90.8% (projection_v2.0 (prediction ledger)) -- gap -0.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Corentin Moutet vs Tomas Machac -- ATP Vienna Q1
 
@@ -2055,7 +1979,7 @@ Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
 * Current expected start: 2026-10-24 14:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 13:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -2064,21 +1988,21 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T17:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Tomas Machac (`KXATPMATCH-26OCT24MOUMAC-MAC`) | 0.56 / 0.57 (59) | 56.5% | 56.0% | 45.4% | 50.0% [48.0%-55.1%] | 58.3% | 58.0% | -- | INSUFFICIENT_INPUTS | PASS | -0.6 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Tomas Machac (`KXATPMATCH-26OCT24MOUMAC-MAC`) | 0.56 / 0.57 (59) | 56.5% | 56.0% | 45.4% | 50.0% [48.0%-55.1%] | 58.3% | 58.1% | -- | INSUFFICIENT_INPUTS | PASS | -0.6 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 | Corentin Moutet (`KXATPMATCH-26OCT24MOUMAC-MOU`) | 0.42 / 0.43 (151) | 42.5% | 44.0% | 54.6% | 50.0% [44.9%-52.0%] | 41.7% | 42.0% | -- | INSUFFICIENT_INPUTS | WATCH | +1.6 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4376.0, B 3720.0; serve-point win A 60.6%, B 38.3%; Elo A 1823.8, B 1918.6; model uncertainty 0.0357
 * Form inputs: days since last match A 3, B 2; matches on record A 586, B 445; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.010, surface_pool_high +0.000, surface_dev_loose +0.005, surface_dev_tight -0.015
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
-  * `KXATPEXACTMATCH-26OCT24MOUMAC-MAC21` Will Tomas Machac win the Corentin Moutet vs Tomas Machac match by a set score of 2-1?: 0.01/0.26 mid 13.5%, model 26.8% (projection_v2.0 (prediction ledger)) -- gap +13.3 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MOUMAC-MAC20` Will Tomas Machac win the Corentin Moutet vs Tomas Machac match by a set score of 2-0?: 0.01/0.35 mid 18.0%, model 29.1% (projection_v2.0 (prediction ledger)) -- gap +11.1 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24MOUMAC-MOU21` Will Corentin Moutet win the Corentin Moutet vs Tomas Machac match by a set score of 2-1?: 0.01/0.23 mid 12.0%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap +10.9 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MOUMAC-MAC21` Will Tomas Machac win the Corentin Moutet vs Tomas Machac match by a set score of 2-1?: 0.01/0.25 mid 13.0%, model 26.8% (projection_v2.0 (prediction ledger)) -- gap +13.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MOUMAC-MOU21` Will Corentin Moutet win the Corentin Moutet vs Tomas Machac match by a set score of 2-1?: 0.01/0.20 mid 10.5%, model 22.9% (projection_v2.0 (prediction ledger)) -- gap +12.4 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24MOUMAC-MAC20` Will Tomas Machac win the Corentin Moutet vs Tomas Machac match by a set score of 2-0?: 0.01/0.40 mid 20.5%, model 29.1% (projection_v2.0 (prediction ledger)) -- gap +8.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24MOUMAC-MOU20` Will Corentin Moutet win the Corentin Moutet vs Tomas Machac match by a set score of 2-0?: 0.01/0.29 mid 15.0%, model 21.2% (projection_v2.0 (prediction ledger)) -- gap +6.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24MOUMAC-2-MAC` Will Tomas Machac win set 2 in the Corentin Moutet vs Tomas Machac match: 0.17/0.83 mid 50.0%, model 54.0% (projection_v2.0 (prediction ledger)) -- gap +4.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24MOUMAC-2-MAC` Will Tomas Machac win set 2 in the Corentin Moutet vs Tomas Machac match: 0.12/0.88 mid 50.0%, model 54.0% (projection_v2.0 (prediction ledger)) -- gap +4.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24MOUMAC-1-MOU` Will Corentin Moutet win set 1 in the Corentin Moutet vs Tomas Machac match: 0.44/0.47 mid 45.5%, model 46.0% (projection_v2.0 (prediction ledger)) -- gap +0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24MOUMAC-1-MAC` Will Tomas Machac win set 1 in the Corentin Moutet vs Tomas Machac match: 0.53/0.55 mid 54.0%, model 54.0% (projection_v2.0 (prediction ledger)) -- gap -0.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24MOUMAC-2-MOU` Will Corentin Moutet win set 2 in the Corentin Moutet vs Tomas Machac match: 0.18/0.74 mid 46.0%, model 46.0% (projection_v2.0 (prediction ledger)) -- gap +0.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24MOUMAC-2-MOU` Will Corentin Moutet win set 2 in the Corentin Moutet vs Tomas Machac match: 0.13/0.79 mid 46.0%, model 46.0% (projection_v2.0 (prediction ledger)) -- gap +0.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
 * Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Cezar Cretu vs Fons Van Sambeek -- M15 Heraklion SF
@@ -2097,13 +2021,13 @@ ITF (ITF) · Clay · scheduled 2026-10-24T14:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Cezar Cretu (`KXITFMATCH-26OCT24CREVAN-CRE`) | 0.85 / 0.86 (599) | 85.5% | 94.4% | 85.1% | 91.4% [90.3%-93.1%] | 81.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | +8.9 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Fons Van Sambeek (`KXITFMATCH-26OCT24CREVAN-VAN`) | 0.14 / 0.15 (635) | 14.5% | 5.6% | 14.9% | 8.6% [6.9%-9.7%] | 18.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | -8.9 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Cezar Cretu (`KXITFMATCH-26OCT24CREVAN-CRE`) | 0.84 / 0.85 (1) | 84.5% | 94.4% | 85.1% | 91.4% [90.3%-93.1%] | 81.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | +9.9 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Fons Van Sambeek (`KXITFMATCH-26OCT24CREVAN-VAN`) | 0.15 / 0.16 (205) | 15.5% | 5.6% | 14.9% | 8.6% [6.9%-9.7%] | 18.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | -9.9 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1940.0, B 244.0; serve-point win A 65.0%, B 47.3%; Elo A 1593.6, B 1165.2; model uncertainty 0.0141
 * Form inputs: days since last match A 12, B 712; matches on record A 338, B 36; data quality F
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.011, surface_pool_high +0.010, surface_dev_loose +0.003, surface_dev_tight -0.002
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Gretskiy / Kunitsyn vs Anavatan / Mert Ozdemir -- M15 Sharm ElSheikh F
@@ -2122,8 +2046,8 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T14:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Anavatan / Mert Ozdemir (`KXITFDOUBLES-26OCT24GREKUNANAMER-ANAMER`) | 0.07 / 0.76 (4) | 41.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Gretskiy / Kunitsyn (`KXITFDOUBLES-26OCT24GREKUNANAMER-GREKUN`) | 0.02 / 0.35 (38) | 18.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Anavatan / Mert Ozdemir (`KXITFDOUBLES-26OCT24GREKUNANAMER-ANAMER`) | 0.02 / 0.82 (1) | 42.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Gretskiy / Kunitsyn (`KXITFDOUBLES-26OCT24GREKUNANAMER-GREKUN`) | 0.02 / 0.69 (1) | 35.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
@@ -2147,12 +2071,12 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T14:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Matteo Gribaldo (`KXITFMATCH-26OCT24GRIOET-GRI`) | 0.43 / 0.44 (2) | 43.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Adrian Oetzbach (`KXITFMATCH-26OCT24GRIOET-OET`) | 0.55 / 0.57 (131) | 56.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Matteo Gribaldo (`KXITFMATCH-26OCT24GRIOET-GRI`) | 0.61 / 0.63 (723) | 62.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Adrian Oetzbach (`KXITFMATCH-26OCT24GRIOET-OET`) | 0.37 / 0.39 (197) | 38.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE
+* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NO_EXTERNAL_PRICE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Amit Vales vs Ioannis Xilas -- M15 Heraklion SF
@@ -2171,13 +2095,27 @@ ITF (ITF) · Clay · scheduled 2026-10-24T14:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Amit Vales (`KXITFMATCH-26OCT24VALXIL-VAL`) | 0.44 / 0.47 (167) | 45.5% | -- | 59.9% | 48.9% [42.8%-53.7%] | 46.2% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +3.5 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Ioannis Xilas (`KXITFMATCH-26OCT24VALXIL-XIL`) | 0.51 / 0.55 (232) | 53.0% | -- | 40.2% | 51.0% [46.3%-57.2%] | 53.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | -1.9 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Amit Vales (`KXITFMATCH-26OCT24VALXIL-VAL`) | 0.27 / 0.30 (1) | 28.5% | -- | 59.9% | 48.9% [42.8%-53.7%] | 46.2% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +20.4 pp | HIGH_REVIEW | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Ioannis Xilas (`KXITFMATCH-26OCT24VALXIL-XIL`) | 0.68 / 0.73 (61) | 70.5% | -- | 40.2% | 51.0% [46.3%-57.2%] | 53.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | -19.4 pp | HIGH_REVIEW | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 397.0, B 992.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0545
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality C
+
+```
+DISCREPANCY SANITY CHECK  KXITFMATCH-26OCT24VALXIL-VAL  (YES = Amit Vales)
+Model: 49%
+Kalshi: 28%
+Gap: +20 pp
+Band: HIGH_REVIEW
+Identity: VERIFIED (ticker orientation VERIFIED)
+Quote freshness: FRESH
+External: NO_EXTERNAL_REFERENCE
+Data quality: C (LIMITED)
+Reasons: LOW_DISPLAYED_LIQUIDITY, LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, SURFACE_DATA_THIN, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE
+Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
+```
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.036, surface_pool_high +0.031, surface_dev_loose +0.005, surface_dev_tight -0.005
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; EXTERNAL_PRICE_STALE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Alessandra Mazzola vs Jennifer Ruggeri -- W35 Santa Margherita di Pula SF
@@ -2196,11 +2134,25 @@ ITF (ITF) · Clay · scheduled 2026-10-24T14:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alessandra Mazzola (`KXITFWMATCH-26OCT24MAZRUG-MAZ`) | 0.29 / 0.33 (90) | 31.0% | -- | 38.4% | 37.9% [37.9%-39.9%] | 37.0% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +6.8 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Jennifer Ruggeri (`KXITFWMATCH-26OCT24MAZRUG-RUG`) | 0.67 / 0.69 (1) | 68.0% | -- | 61.6% | 62.2% [60.1%-62.2%] | 63.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -5.8 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Alessandra Mazzola (`KXITFWMATCH-26OCT24MAZRUG-MAZ`) | 0.20 / 0.22 (1) | 21.0% | -- | 38.4% | 37.9% [37.9%-39.9%] | 37.0% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +16.9 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Jennifer Ruggeri (`KXITFWMATCH-26OCT24MAZRUG-RUG`) | 0.77 / 0.80 (2) | 78.5% | -- | 61.6% | 62.2% [60.1%-62.2%] | 63.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -16.4 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2354.0, B 3454.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0104
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality A
+
+```
+DISCREPANCY SANITY CHECK  KXITFWMATCH-26OCT24MAZRUG-MAZ  (YES = Alessandra Mazzola)
+Model: 38%
+Kalshi: 21%
+Gap: +17 pp
+Band: HIGH_REVIEW
+Identity: VERIFIED (ticker orientation VERIFIED)
+Quote freshness: FRESH
+External: NO_EXTERNAL_REFERENCE
+Data quality: A (ADEQUATE)
+Reasons: LOW_DISPLAYED_LIQUIDITY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE
+Status: HIGH_REVIEW / EXPLAIN BEFORE ANY BET
+```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.010, surface_pool_high -0.000, surface_dev_loose -0.000, surface_dev_tight +0.005
 * Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
@@ -2221,14 +2173,14 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T14:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alhussein Abdel Aziz / Samir (`KXITFWDOUBLES-26OCT24POPSHIALHSAM-ALHSAM`) | 0.03 / 0.54 (54) | 28.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Popovic / Shinikova (`KXITFWDOUBLES-26OCT24POPSHIALHSAM-POPSHI`) | 0.05 / 0.58 (59) | 31.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Alhussein Abdel Aziz / Samir (`KXITFWDOUBLES-26OCT24POPSHIALHSAM-ALHSAM`) | 0.02 / 0.75 (1) | 38.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Popovic / Shinikova (`KXITFWDOUBLES-26OCT24POPSHIALHSAM-POPSHI`) | 0.05 / 0.71 (1) | 38.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; WIDE_SPREAD
+* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Nina Radovanovic vs Ane Mintegi Del Olmo -- W35 Santa Margherita di Pula SF
 
@@ -2246,8 +2198,8 @@ ITF (ITF) · Clay · scheduled 2026-10-24T14:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Ane Mintegi Del Olmo (`KXITFWMATCH-26OCT24RADMIN-MIN`) | 0.83 / 0.85 (1881) | 84.0% | -- | 76.6% | 83.3% [79.7%-85.8%] | 81.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | -0.7 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Nina Radovanovic (`KXITFWMATCH-26OCT24RADMIN-RAD`) | 0.15 / 0.16 (30) | 15.5% | -- | 23.4% | 16.7% [14.2%-20.3%] | 18.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | +1.2 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Ane Mintegi Del Olmo (`KXITFWMATCH-26OCT24RADMIN-MIN`) | 0.79 / 0.80 (617) | 79.5% | -- | 76.6% | 83.3% [79.7%-85.8%] | 81.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | +3.8 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Nina Radovanovic (`KXITFWMATCH-26OCT24RADMIN-RAD`) | 0.20 / 0.21 (2819) | 20.5% | -- | 23.4% | 16.7% [14.2%-20.3%] | 18.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | -3.8 pp | NORMAL | FRESH | C / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 976.0, B 2133.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0305
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality C
@@ -2271,8 +2223,8 @@ CHALLENGER (CHALLENGER) · Clay · scheduled 2026-10-24T14:10:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Svyatoslav Gulin (`KXATPCHALLENGERMATCH-26OCT24GULMOL-GUL`) | 0.30 / 0.32 (5269) | 31.0% | 30.8% | 36.0% | 29.8% [25.4%-32.6%] | 33.6% | 31.3% | 31.3% | MODEL_LONE_OUTLIER | PASS | -0.2 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
-| Elmer Moller (`KXATPCHALLENGERMATCH-26OCT24GULMOL-MOL`) | 0.68 / 0.70 (3727) | 69.0% | 69.2% | 64.0% | 70.2% [67.5%-74.6%] | 66.4% | 69.0% | 69.0% | MODEL_LONE_OUTLIER | PASS | +0.2 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Svyatoslav Gulin (`KXATPCHALLENGERMATCH-26OCT24GULMOL-GUL`) | 0.31 / 0.32 (5173) | 31.5% | 30.8% | 36.0% | 29.8% [25.4%-32.6%] | 33.6% | 31.3% | 31.3% | MODEL_LONE_OUTLIER | PASS | -0.7 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Elmer Moller (`KXATPCHALLENGERMATCH-26OCT24GULMOL-MOL`) | 0.68 / 0.70 (4713) | 69.0% | 69.2% | 64.0% | 70.2% [67.5%-74.6%] | 66.4% | 69.0% | 69.0% | MODEL_LONE_OUTLIER | PASS | +0.2 pp | NORMAL | FRESH | B / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 1071.0, B 3763.0; serve-point win A 53.7%, B 42.6%; Elo A 1529.5, B 1719.7; model uncertainty 0.0356
 * Form inputs: days since last match A 12, B 12; matches on record A 188, B 287; data quality B
@@ -2320,8 +2272,8 @@ DOUBLES (TEAM) · surface ? · scheduled 2026-10-24T14:20:00Z · first ball: NO_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Abualhaj / Sayej (`KXITFWDOUBLES-26OCT24KARUSAABUSAY-ABUSAY`) | 0.01 / 0.99 (632) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Karin Saizan / Usama Ali (`KXITFWDOUBLES-26OCT24KARUSAABUSAY-KARUSA`) | 0.01 / 0.99 (1282) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Abualhaj / Sayej (`KXITFWDOUBLES-26OCT24KARUSAABUSAY-ABUSAY`) | 0.01 / 0.99 (640) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Karin Saizan / Usama Ali (`KXITFWDOUBLES-26OCT24KARUSAABUSAY-KARUSA`) | 0.01 / 0.99 (1290) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
@@ -2345,7 +2297,7 @@ DOUBLES (TEAM) · surface ? · scheduled 2026-10-24T14:20:00Z · first ball: NO_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Qureshi / Suhail (`KXITFWDOUBLES-26OCT24QURSUHSAGSOL-QURSUH`) | 0.01 / 0.99 (1382) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Qureshi / Suhail (`KXITFWDOUBLES-26OCT24QURSUHSAGSOL-QURSUH`) | 0.01 / 0.99 (1390) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 | sagheb tehrani / Soltani (`KXITFWDOUBLES-26OCT24QURSUHSAGSOL-SAGSOL`) | 0.01 / 0.99 (532) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
@@ -2370,8 +2322,8 @@ ITF (ITF) · Hard · scheduled 2026-10-24T14:45:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Charo Esquiva Banuls (`KXITFWMATCH-26OCT24ESQTOR-ESQ`) | 0.76 / 0.80 (30) | 78.0% | -- | 6.9% | 25.9% [17.7%-41.5%] | 76.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | -52.1 pp | EXTREME (DATA_WARNING) | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Neus Torner Sensano (`KXITFWMATCH-26OCT24ESQTOR-TOR`) | 0.16 / 0.22 (55) | 19.0% | -- | 93.2% | 74.1% [58.5%-82.3%] | 23.2% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +55.1 pp | EXTREME (DATA_WARNING) | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Charo Esquiva Banuls (`KXITFWMATCH-26OCT24ESQTOR-ESQ`) | 0.76 / 0.80 (19) | 78.0% | -- | 6.9% | 25.9% [17.7%-41.5%] | 76.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | -52.1 pp | EXTREME (DATA_WARNING) | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Neus Torner Sensano (`KXITFWMATCH-26OCT24ESQTOR-TOR`) | 0.18 / 0.20 (13) | 19.0% | -- | 93.2% | 74.1% [58.5%-82.3%] | 23.2% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +55.1 pp | EXTREME (DATA_WARNING) | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1005.0, B 1512.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.119
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality B
@@ -2386,7 +2338,7 @@ Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
 External: NO_EXTERNAL_REFERENCE
 Data quality: B (ADEQUATE)
-Reasons: MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
+Reasons: LOW_DISPLAYED_LIQUIDITY, MODEL_HIGH_UNCERTAINTY, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
 Status: DATA_WARNING / PASS UNTIL RECHECKED
 Unmet before human review: external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
@@ -2435,13 +2387,13 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T15:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Eliakim Coulibaly (`KXITFMATCH-26OCT24COUFAU-COU`) | 0.55 / 0.56 (21) | 55.5% | 50.4% | 48.5% | 54.6% [52.6%-60.1%] | 52.9% | -- | 52.9% | KALSHI_LONE_OUTLIER | PASS | -5.1 pp | NORMAL | FRESH | F / POOR | AGREES_WITH_MODEL | VERIFIED |
-| Thomas Faurel (`KXITFMATCH-26OCT24COUFAU-FAU`) | 0.43 / 0.45 (6) | 44.0% | 49.6% | 51.5% | 45.4% [39.9%-47.4%] | 47.1% | -- | 47.1% | KALSHI_LONE_OUTLIER | PASS | +5.6 pp | NORMAL | FRESH | F / POOR | AGREES_WITH_MODEL | VERIFIED |
+| Eliakim Coulibaly (`KXITFMATCH-26OCT24COUFAU-COU`) | 0.54 / 0.55 (31) | 54.5% | 50.4% | 48.5% | 54.6% [52.6%-60.1%] | 52.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | -4.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Thomas Faurel (`KXITFMATCH-26OCT24COUFAU-FAU`) | 0.43 / 0.46 (1) | 44.5% | 49.6% | 51.5% | 45.4% [39.9%-47.4%] | 47.1% | -- | -- | INSUFFICIENT_INPUTS | PASS | +5.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1477.0, B 1707.0; serve-point win A 61.0%, B 39.1%; Elo A 1572.6, B 1495.9; model uncertainty 0.0376
 * Form inputs: days since last match A 698, B 26; matches on record A 248, B 54; data quality F
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.000, surface_pool_high -0.000, surface_dev_loose -0.000, surface_dev_tight -0.000
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; THIN_DISPLAYED_SIZE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Ianin / Sharma vs John Lock / Nortey -- M25 Luanda F
@@ -2485,7 +2437,7 @@ ITF (ITF) · Clay · scheduled 2026-10-24T15:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Ferdinand Livet Novkirichka (`KXITFMATCH-26OCT24LIVRAH-LIV`) | 0.21 / 0.25 (129) | 23.0% | 30.0% | 50.0% | 47.0% [47.0%-47.0%] | 25.7% | -- | -- | INSUFFICIENT_INPUTS | PASS | +7.0 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Ferdinand Livet Novkirichka (`KXITFMATCH-26OCT24LIVRAH-LIV`) | 0.21 / 0.25 (271) | 23.0% | 30.0% | 50.0% | 47.0% [47.0%-47.0%] | 25.7% | -- | -- | INSUFFICIENT_INPUTS | PASS | +7.0 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 | Kasra Rahmani (`KXITFMATCH-26OCT24LIVRAH-RAH`) | 0.76 / 0.78 (231) | 77.0% | 70.0% | 50.0% | 53.0% [53.0%-53.0%] | 74.3% | -- | -- | INSUFFICIENT_INPUTS | PASS | -7.0 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 0.0, B 0.0; serve-point win A 59.9%, B 35.9%; Elo A 1253.1, B 1273.4; model uncertainty 0.0
@@ -2511,7 +2463,7 @@ ITF (ITF) · Clay · scheduled 2026-10-24T15:00:00Z · first ball: NO_FIRST_BALL
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Tiphanie Lemaitre (`KXITFWMATCH-26OCT24LEMMIL-LEM`) | 0.49 / 0.52 (127) | 50.5% | -- | 40.5% | 55.3% [47.9%-62.6%] | 50.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | +4.8 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Elena Milovanovic (`KXITFWMATCH-26OCT24LEMMIL-MIL`) | 0.46 / 0.51 (54) | 48.5% | -- | 59.5% | 44.7% [37.4%-52.1%] | 49.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -3.8 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Elena Milovanovic (`KXITFWMATCH-26OCT24LEMMIL-MIL`) | 0.46 / 0.50 (78) | 48.0% | -- | 59.5% | 44.7% [37.4%-52.1%] | 49.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -3.3 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 0.0, B 2475.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0736
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality F
@@ -2575,7 +2527,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T15:00:00Z · first ball: NO_FIRST
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Daria Lopatetska (`KXITFWMATCH-26OCT24ZAJLOP-LOP`) | 0.60 / 0.63 (103) | 61.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Katerina Zajickova (`KXITFWMATCH-26OCT24ZAJLOP-ZAJ`) | 0.38 / 0.39 (33) | 38.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Katerina Zajickova (`KXITFWMATCH-26OCT24ZAJLOP-ZAJ`) | 0.38 / 0.39 (42) | 38.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
@@ -2624,7 +2576,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T15:30:00Z · first ball: NO_FIRST
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Paul Jubb (`KXITFMATCH-26OCT24JUBTAR-JUB`) | 0.20 / 0.21 (31) | 20.5% | 30.1% | 33.7% | 36.0% [33.2%-38.0%] | 24.7% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +9.6 pp | NORMAL | FRESH | B / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Oliver Tarvet (`KXITFMATCH-26OCT24JUBTAR-TAR`) | 0.77 / 0.79 (170) | 78.0% | 69.9% | 66.3% | 64.0% [62.0%-66.8%] | 75.3% | -- | -- | INSUFFICIENT_INPUTS | PASS | -8.1 pp | NORMAL | FRESH | B / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Oliver Tarvet (`KXITFMATCH-26OCT24JUBTAR-TAR`) | 0.77 / 0.79 (270) | 78.0% | 69.9% | 66.3% | 64.0% [62.0%-66.8%] | 75.3% | -- | -- | INSUFFICIENT_INPUTS | PASS | -8.1 pp | NORMAL | FRESH | B / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2131.0, B 1422.0; serve-point win A 59.5%, B 36.4%; Elo A 1604.2, B 1687.5; model uncertainty 0.0238
 * Form inputs: days since last match A 61, B 19; matches on record A 326, B 69; data quality B
@@ -2639,7 +2591,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T15:30:00Z · first ball: NO_FIRST
 * Current expected start: 2026-10-24 16:00Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 15:15Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -2648,8 +2600,8 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T19:00:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Adrian Mannarino (`KXATPMATCH-26OCT24TIRMAN-MAN`) | 0.43 / 0.44 (8992) | 43.5% | 41.3% | 35.7% | 40.8% [38.9%-43.7%] | 46.8% | 66.1% | -- | INSUFFICIENT_INPUTS | PASS | -2.2 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Thiago Agustin Tirante (`KXATPMATCH-26OCT24TIRMAN-TIR`) | 0.56 / 0.57 (1450) | 56.5% | 58.7% | 64.3% | 59.2% [56.3%-61.1%] | 53.2% | 61.0% | -- | INSUFFICIENT_INPUTS | PASS | +2.2 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Adrian Mannarino (`KXATPMATCH-26OCT24TIRMAN-MAN`) | 0.42 / 0.44 (10704) | 43.0% | 41.3% | 35.7% | 40.8% [38.9%-43.7%] | 46.8% | 43.4% | 43.4% | MODEL_LONE_OUTLIER | PASS | -1.7 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Thiago Agustin Tirante (`KXATPMATCH-26OCT24TIRMAN-TIR`) | 0.56 / 0.58 (1822) | 57.0% | 58.7% | 64.3% | 59.2% [56.3%-61.1%] | 53.2% | 67.0% | -- | INSUFFICIENT_INPUTS | PASS | +1.7 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4804.0, B 4318.0; serve-point win A 67.0%, B 34.8%; Elo A 1735.0, B 1776.7; model uncertainty 0.0238
 * Form inputs: days since last match A 5, B 1; matches on record A 450, B 1276; data quality A
@@ -2657,12 +2609,12 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T19:00:00Z · first ball: NOT_
 * Derivatives listed: 8 (EXACT_SET_SCORE, MATCH_WINNER, SET_WINNER); 8 carry a model probability
   * `KXATPEXACTMATCH-26OCT24TIRMAN-TIR21` Will Thiago Agustin Tirante win the Thiago Agustin Tirante vs Adrian Mannarino match by a set score of 2-1?: 0.01/0.29 mid 15.0%, model 27.5% (projection_v2.0 (prediction ledger)) -- gap +12.5 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24TIRMAN-MAN21` Will Adrian Mannarino win the Thiago Agustin Tirante vs Adrian Mannarino match by a set score of 2-1?: 0.01/0.27 mid 14.0%, model 21.8% (projection_v2.0 (prediction ledger)) -- gap +7.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24TIRMAN-2-MAN` Will Adrian Mannarino win set 2 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.15/0.87 mid 51.0%, model 44.2% (projection_v2.0 (prediction ledger)) -- gap -6.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24TIRMAN-2-TIR` Will Thiago Agustin Tirante win set 2 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.15/0.87 mid 51.0%, model 55.8% (projection_v2.0 (prediction ledger)) -- gap +4.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24TIRMAN-1-TIR` Will Thiago Agustin Tirante win set 1 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.51/0.54 mid 52.5%, model 55.8% (projection_v2.0 (prediction ledger)) -- gap +3.3 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24TIRMAN-2-MAN` Will Adrian Mannarino win set 2 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.10/0.92 mid 51.0%, model 44.2% (projection_v2.0 (prediction ledger)) -- gap -6.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24TIRMAN-2-TIR` Will Thiago Agustin Tirante win set 2 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.10/0.92 mid 51.0%, model 55.8% (projection_v2.0 (prediction ledger)) -- gap +4.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24TIRMAN-TIR20` Will Thiago Agustin Tirante win the Thiago Agustin Tirante vs Adrian Mannarino match by a set score of 2-0?: 0.20/0.36 mid 28.0%, model 31.2% (projection_v2.0 (prediction ledger)) -- gap +3.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24TIRMAN-MAN20` Will Adrian Mannarino win the Thiago Agustin Tirante vs Adrian Mannarino match by a set score of 2-0?: 0.01/0.32 mid 16.5%, model 19.5% (projection_v2.0 (prediction ledger)) -- gap +3.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24TIRMAN-TIR20` Will Thiago Agustin Tirante win the Thiago Agustin Tirante vs Adrian Mannarino match by a set score of 2-0?: 0.21/0.36 mid 28.5%, model 31.2% (projection_v2.0 (prediction ledger)) -- gap +2.7 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24TIRMAN-1-MAN` Will Adrian Mannarino win set 1 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.45/0.47 mid 46.0%, model 44.2% (projection_v2.0 (prediction ledger)) -- gap -1.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24TIRMAN-1-TIR` Will Thiago Agustin Tirante win set 1 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.52/0.54 mid 53.0%, model 55.8% (projection_v2.0 (prediction ledger)) -- gap +2.8 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24TIRMAN-1-MAN` Will Adrian Mannarino win set 1 in the Thiago Agustin Tirante vs Adrian Mannarino match: 0.44/0.47 mid 45.5%, model 44.2% (projection_v2.0 (prediction ledger)) -- gap -1.3 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
 * Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Isik Kosaner / Massellani vs Bertrand / van Wyk -- M15 Monastir F
@@ -2681,7 +2633,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T16:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Bertrand / van Wyk (`KXITFDOUBLES-26OCT24ISIMASBERVAN-BERVAN`) | 0.06 / 0.71 (5) | 38.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Bertrand / van Wyk (`KXITFDOUBLES-26OCT24ISIMASBERVAN-BERVAN`) | 0.09 / 0.71 (5) | 40.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 | Isik Kosaner / Massellani (`KXITFDOUBLES-26OCT24ISIMASBERVAN-ISIMAS`) | 0.05 / 0.40 (41) | 22.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
@@ -2706,13 +2658,13 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T16:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Daniel Domingos (`KXITFMATCH-26OCT24LOGDOM-DOM`) | 0.12 / 0.13 (2700) | 12.5% | 18.6% | 47.9% | 31.1% [31.0%-31.2%] | 13.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | +6.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Jack Loge (`KXITFMATCH-26OCT24LOGDOM-LOG`) | 0.88 / 0.89 (88) | 88.5% | 81.4% | 52.1% | 68.9% [68.8%-69.0%] | 86.2% | -- | -- | INSUFFICIENT_INPUTS | PASS | -7.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Daniel Domingos (`KXITFMATCH-26OCT24LOGDOM-DOM`) | 0.11 / 0.12 (198) | 11.5% | 18.6% | 47.9% | 31.1% [31.0%-31.2%] | 13.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | +7.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Jack Loge (`KXITFMATCH-26OCT24LOGDOM-LOG`) | 0.88 / 0.89 (0) | 88.5% | 81.4% | 52.1% | 68.9% [68.8%-69.0%] | 86.2% | -- | -- | INSUFFICIENT_INPUTS | PASS | -7.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 467.0, B 0.0; serve-point win A 63.0%, B 43.9%; Elo A 1378.5, B 1237.8; model uncertainty 0.0013
 * Form inputs: days since last match A 82, B 698; matches on record A 89, B 5; data quality F
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.000, surface_pool_high +0.000, surface_dev_loose +0.000, surface_dev_tight +0.000
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## De Zeeuw / Louise Van den Broek vs Liu / Moccia -- W35 Loule F
@@ -2732,7 +2684,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T16:00:00Z · first ball: NO_F
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | De Zeeuw / Louise Van den Broek (`KXITFWDOUBLES-26OCT24DEZLOULIUMOC-DEZLOU`) | 0.05 / 0.95 (3) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Liu / Moccia (`KXITFWDOUBLES-26OCT24DEZLOULIUMOC-LIUMOC`) | 0.05 / 0.95 (2) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Liu / Moccia (`KXITFWDOUBLES-26OCT24DEZLOULIUMOC-LIUMOC`) | 0.05 / 0.94 (100) | 49.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
@@ -2756,14 +2708,14 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T16:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kumru / Paszun (`KXITFWDOUBLES-26OCT24KUMPASVOGYAS-KUMPAS`) | 0.05 / 0.61 (64) | 33.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Vogt / Yashina (`KXITFWDOUBLES-26OCT24KUMPASVOGYAS-VOGYAS`) | 0.05 / 0.51 (51) | 28.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Kumru / Paszun (`KXITFWDOUBLES-26OCT24KUMPASVOGYAS-KUMPAS`) | 0.05 / 0.60 (0) | 32.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Vogt / Yashina (`KXITFWDOUBLES-26OCT24KUMPASVOGYAS-VOGYAS`) | 0.08 / 0.46 (65) | 27.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; WIDE_SPREAD
+* Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Arthur Fils vs Jan-Lennard Struff -- ATP Brussels SF
 
@@ -2772,7 +2724,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T16:00:00Z · first ball: NO_F
 * Current expected start: 2026-10-24 16:30Z
 * Source: LIVE_SCHEDULE:espn_atp; confidence HIGH
 * First ball: NOT_OBSERVED_STARTED
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: 2026-10-24 15:45Z
 
 * Status notes: EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN
@@ -2781,28 +2733,28 @@ ATP (TOUR_500_250) · Hard · scheduled 2026-10-24T19:30:00Z · first ball: NOT_
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Arthur Fils (`KXATPMATCH-26OCT24FILSTR-FIL`) | 0.81 / 0.82 (23515) | 81.5% | 85.5% | 81.7% | 81.7% [78.5%-83.0%] | 80.9% | 81.3% | 81.1% | MODEL_LONE_OUTLIER | PASS | +4.0 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
-| Jan-Lennard Struff (`KXATPMATCH-26OCT24FILSTR-STR`) | 0.18 / 0.20 (44284) | 19.0% | 14.5% | 18.3% | 18.3% [17.0%-21.5%] | 19.1% | 18.7% | 18.9% | MODEL_LONE_OUTLIER | PASS | -4.5 pp | NORMAL | FRESH | A / ADEQUATE | ALL_AGREE | VERIFIED |
+| Arthur Fils (`KXATPMATCH-26OCT24FILSTR-FIL`) | 0.81 / 0.82 (26582) | 81.5% | 85.5% | 81.7% | 81.7% [78.5%-83.0%] | 80.9% | 81.3% | 81.3% | MODEL_LONE_OUTLIER | PASS | +4.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
+| Jan-Lennard Struff (`KXATPMATCH-26OCT24FILSTR-STR`) | 0.18 / 0.19 (408) | 18.5% | 14.5% | 18.3% | 18.3% [17.0%-21.5%] | 19.1% | 18.7% | 18.7% | MODEL_LONE_OUTLIER | PASS | -4.0 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | VERIFIED |
 
 * Serve evidence (points): A 4268.0, B 4793.0; serve-point win A 71.3%, B 37.4%; Elo A 2036.2, B 1782.6; model uncertainty 0.0224
 * Form inputs: days since last match A 12, B 3; matches on record A 331, B 1056; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.013, surface_pool_high +0.006, surface_dev_loose +0.012, surface_dev_tight -0.019
 * Derivatives listed: 14 (EXACT_SET_SCORE, GAME_SPREAD, MATCH_WINNER, SET_WINNER, TOTAL_GAMES); 14 carry a model probability
-  * `KXATPSETWINNER-26OCT24FILSTR-2-STR` Will Jan-Lennard Struff win set 2 in the Arthur Fils vs Jan-Lennard Struff match: 0.15/0.87 mid 51.0%, model 24.0% (projection_v2.0 (prediction ledger)) -- gap -27.0 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24FILSTR-2-FIL` Will Arthur Fils win set 2 in the Arthur Fils vs Jan-Lennard Struff match: 0.15/0.86 mid 50.5%, model 76.0% (projection_v2.0 (prediction ledger)) -- gap +25.5 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-  * `KXATPGSPREAD-26OCT24FILSTR-FIL8` Will Arthur Fils win at least 7.5 more games than Jan-Lennard Struff?: 0.01/0.41 mid 21.0%, model 4.4% (projection_v2.0 (prediction ledger)) -- gap -16.6 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24FILSTR-STR21` Will Jan-Lennard Struff win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-1?: 0.04/0.43 mid 23.5%, model 8.8% (projection_v2.0 (prediction ledger)) -- gap -14.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24FILSTR-STR20` Will Jan-Lennard Struff win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-0?: 0.05/0.22 mid 13.5%, model 5.8% (projection_v2.0 (prediction ledger)) -- gap -7.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24FILSTR-2-FIL` Will Arthur Fils win set 2 in the Arthur Fils vs Jan-Lennard Struff match: 0.10/0.91 mid 50.5%, model 76.0% (projection_v2.0 (prediction ledger)) -- gap +25.5 pp, EXTREME, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPSETWINNER-26OCT24FILSTR-2-STR` Will Jan-Lennard Struff win set 2 in the Arthur Fils vs Jan-Lennard Struff match: 0.10/0.81 mid 45.5%, model 24.0% (projection_v2.0 (prediction ledger)) -- gap -21.5 pp, HIGH_REVIEW, DATA_WARNING, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+  * `KXATPGSPREAD-26OCT24FILSTR-FIL8` Will Arthur Fils win at least 7.5 more games than Jan-Lennard Struff?: 0.01/0.40 mid 20.5%, model 4.4% (projection_v2.0 (prediction ledger)) -- gap -16.1 pp, HIGH_REVIEW, EXPLANATION_REQUIRED_BEFORE_BET, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FILSTR-STR21` Will Jan-Lennard Struff win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-1?: 0.05/0.42 mid 23.5%, model 8.8% (projection_v2.0 (prediction ledger)) -- gap -14.8 pp, REVIEW, REVIEW_CONTEXT, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FILSTR-STR20` Will Jan-Lennard Struff win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-0?: 0.06/0.21 mid 13.5%, model 5.8% (projection_v2.0 (prediction ledger)) -- gap -7.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPEXACTMATCH-26OCT24FILSTR-FIL21` Will Arthur Fils win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-1?: 0.17/0.28 mid 22.5%, model 27.7% (projection_v2.0 (prediction ledger)) -- gap +5.2 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24FILSTR-FIL5` Will Arthur Fils win at least 4.5 more games than Jan-Lennard Struff?: 0.43/0.45 mid 44.0%, model 39.0% (projection_v2.0 (prediction ledger)) -- gap -5.0 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24FILSTR-18` Over 17.5 games: 0.82/0.89 mid 85.5%, model 90.3% (projection_v2.0 (prediction ledger)) -- gap +4.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPEXACTMATCH-26OCT24FILSTR-FIL20` Will Arthur Fils win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-0?: 0.42/0.66 mid 54.0%, model 57.8% (projection_v2.0 (prediction ledger)) -- gap +3.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24FILSTR-28` Over 27.5 games: 0.27/0.29 mid 28.0%, model 31.1% (projection_v2.0 (prediction ledger)) -- gap +3.1 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPGTOTAL-26OCT24FILSTR-23` Over 22.5 games: 0.46/0.48 mid 47.0%, model 49.8% (projection_v2.0 (prediction ledger)) -- gap +2.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24FILSTR-18` Over 17.5 games: 0.83/0.88 mid 85.5%, model 90.3% (projection_v2.0 (prediction ledger)) -- gap +4.8 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24FILSTR-28` Over 27.5 games: 0.26/0.29 mid 27.5%, model 31.1% (projection_v2.0 (prediction ledger)) -- gap +3.6 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPEXACTMATCH-26OCT24FILSTR-FIL20` Will Arthur Fils win the Arthur Fils vs Jan-Lennard Struff match by a set score of 2-0?: 0.44/0.65 mid 54.5%, model 57.8% (projection_v2.0 (prediction ledger)) -- gap +3.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
+  * `KXATPGTOTAL-26OCT24FILSTR-23` Over 22.5 games: 0.47/0.48 mid 47.5%, model 49.8% (projection_v2.0 (prediction ledger)) -- gap +2.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
   * `KXATPGSPREAD-26OCT24FILSTR-FIL2` Will Arthur Fils win at least 1.5 more games than Jan-Lennard Struff?: 0.77/0.79 mid 78.0%, model 80.3% (projection_v2.0 (prediction ledger)) -- gap +2.3 pp, NORMAL, OK, quote FRESH, identity VERIFIED, data ADEQUATE
-  * `KXATPSETWINNER-26OCT24FILSTR-1-STR` Will Jan-Lennard Struff win set 1 in the Arthur Fils vs Jan-Lennard Struff match: 0.23/0.27 mid 25.0%, model 24.0% (projection_v2.0 (prediction ledger)) -- gap -1.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
   * `KXATPSETWINNER-26OCT24FILSTR-1-FIL` Will Arthur Fils win set 1 in the Arthur Fils vs Jan-Lennard Struff match: 0.76/0.77 mid 76.5%, model 76.0% (projection_v2.0 (prediction ledger)) -- gap -0.5 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
-* Warnings: THIN_DISPLAYED_SIZE; WIDE_SPREAD
+  * `KXATPSETWINNER-26OCT24FILSTR-1-STR` Will Jan-Lennard Struff win set 1 in the Arthur Fils vs Jan-Lennard Struff match: 0.23/0.25 mid 24.0%, model 24.0% (projection_v2.0 (prediction ledger)) -- gap -0.0 pp, NORMAL, OK, quote FRESH, identity AMBIGUOUS, data ADEQUATE
+* Warnings: EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Karol Drzewiecki / Piotr Matuszewski vs Tiago Pereira / Benjamin Winter Lopez -- ATP Challenger Lisbon F
 
@@ -2821,7 +2773,7 @@ DOUBLES (CHALLENGER) · surface ? · scheduled 2026-10-24T17:00:00Z · first bal
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Karol Drzewiecki / Piotr Matuszewski (`KXATPCHALLENGERDOUBLES-26OCT24DRZMATPERWIN-DRZMAT`) | 0.43 / 0.57 (94) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Tiago Pereira / Benjamin Winter Lopez (`KXATPCHALLENGERDOUBLES-26OCT24DRZMATPERWIN-PERWIN`) | 0.42 / 0.57 (94) | 49.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Tiago Pereira / Benjamin Winter Lopez (`KXATPCHALLENGERDOUBLES-26OCT24DRZMATPERWIN-PERWIN`) | 0.41 / 0.57 (94) | 49.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
@@ -2845,12 +2797,12 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T17:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Jodie Anna Burrage (`KXITFWMATCH-26OCT24BURKLU-BUR`) | 0.42 / 0.45 (2) | 43.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Jodie Anna Burrage (`KXITFWMATCH-26OCT24BURKLU-BUR`) | 0.42 / 0.45 (38) | 43.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 | Hannah Klugman (`KXITFWMATCH-26OCT24BURKLU-KLU`) | 0.52 / 0.57 (31) | 54.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE
+* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NO_EXTERNAL_PRICE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Laura Mair vs Aran Teixido Garcia -- W35 Loule SF
@@ -2982,7 +2934,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T18:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Elsa Jacquemot (`KXITFWMATCH-26OCT24LAMJAC-JAC`) | 0.45 / 0.49 (60) | 47.0% | -- | 48.9% | 46.8% [44.1%-47.9%] | 49.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -0.2 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Elsa Jacquemot (`KXITFWMATCH-26OCT24LAMJAC-JAC`) | 0.45 / 0.49 (62) | 47.0% | -- | 48.9% | 46.8% [44.1%-47.9%] | 49.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -0.2 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 | Suzan Lamens (`KXITFWMATCH-26OCT24LAMJAC-LAM`) | 0.49 / 0.52 (13) | 50.5% | -- | 51.1% | 53.2% [52.1%-55.9%] | 50.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | +2.7 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 3938.0, B 4592.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0186
@@ -3007,13 +2959,13 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T18:30:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Adrien Gobat (`KXITFMATCH-26OCT24HENGOB-GOB`) | 0.33 / 0.36 (100) | 34.5% | 32.6% | 40.4% | 36.0% [35.1%-37.0%] | 37.0% | -- | 37.0% | MARKETS_AGREE | PASS | -1.9 pp | NORMAL | FRESH | F / POOR | ALL_AGREE | VERIFIED |
-| Philip Henning (`KXITFMATCH-26OCT24HENGOB-HEN`) | 0.63 / 0.65 (120) | 64.0% | 67.4% | 59.6% | 64.0% [63.0%-64.9%] | 63.0% | -- | 63.0% | MARKETS_AGREE | PASS | +3.4 pp | NORMAL | FRESH | F / POOR | ALL_AGREE | VERIFIED |
+| Adrien Gobat (`KXITFMATCH-26OCT24HENGOB-GOB`) | 0.33 / 0.37 (100) | 35.0% | 32.6% | 40.4% | 36.0% [35.1%-37.0%] | 37.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -2.4 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Philip Henning (`KXITFMATCH-26OCT24HENGOB-HEN`) | 0.63 / 0.65 (120) | 64.0% | 67.4% | 59.6% | 64.0% [63.0%-64.9%] | 63.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | +3.4 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1821.0, B 307.0; serve-point win A 63.3%, B 40.2%; Elo A 1522.4, B 1417.5; model uncertainty 0.0092
 * Form inputs: days since last match A 12, B 593; matches on record A 143, B 109; data quality F
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.000, surface_pool_high +0.000, surface_dev_loose +0.000, surface_dev_tight +0.000
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Mariam Bolkvadze vs Harmony Tan -- W50 Cherbourg-en-Cotentin SF
@@ -3032,13 +2984,13 @@ ITF (ITF) · Hard · scheduled 2026-10-24T18:30:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Mariam Bolkvadze (`KXITFWMATCH-26OCT24BOLTAN-BOL`) | 0.36 / 0.39 (5) | 37.5% | -- | 27.8% | 38.4% [34.4%-45.2%] | 41.9% | -- | 41.9% | MARKETS_AGREE | PASS | +0.9 pp | NORMAL | FRESH | A / LIMITED | ALL_AGREE | VERIFIED |
-| Harmony Tan (`KXITFWMATCH-26OCT24BOLTAN-TAN`) | 0.60 / 0.61 (3) | 60.5% | -- | 72.2% | 61.6% [54.8%-65.6%] | 58.1% | -- | 58.1% | MARKETS_AGREE | PASS | +1.1 pp | NORMAL | FRESH | A / LIMITED | ALL_AGREE | VERIFIED |
+| Mariam Bolkvadze (`KXITFWMATCH-26OCT24BOLTAN-BOL`) | 0.38 / 0.39 (5) | 38.5% | -- | 27.8% | 38.4% [34.4%-45.2%] | 41.9% | -- | -- | INSUFFICIENT_INPUTS | PASS | -0.1 pp | NORMAL | FRESH | A / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Harmony Tan (`KXITFWMATCH-26OCT24BOLTAN-TAN`) | 0.60 / 0.61 (3) | 60.5% | -- | 72.2% | 61.6% [54.8%-65.6%] | 58.1% | -- | -- | INSUFFICIENT_INPUTS | PASS | +1.1 pp | NORMAL | FRESH | A / LIMITED | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 1814.0, B 3731.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.054
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality A
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.010, surface_pool_high +0.021, surface_dev_loose -0.000, surface_dev_tight +0.010
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; THIN_DISPLAYED_SIZE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Felipe Meligeni Alves vs Valerio Aboian -- ATP Challenger Cali SF
@@ -3057,8 +3009,8 @@ CHALLENGER (CHALLENGER) · Clay · scheduled 2026-10-24T19:00:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Valerio Aboian (`KXATPCHALLENGERMATCH-26OCT24MELABO-ABO`) | 0.23 / 0.25 (2734) | 24.0% | 31.8% | 35.9% | 33.0% [31.2%-34.0%] | -- | 24.8% | -- | INSUFFICIENT_INPUTS | SHADOW_BET | +7.8 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Felipe Meligeni Alves (`KXATPCHALLENGERMATCH-26OCT24MELABO-MEL`) | 0.75 / 0.77 (2995) | 76.0% | 68.2% | 64.1% | 67.0% [66.0%-68.8%] | -- | 75.1% | -- | INSUFFICIENT_INPUTS | PASS | -7.8 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Valerio Aboian (`KXATPCHALLENGERMATCH-26OCT24MELABO-ABO`) | 0.23 / 0.25 (3376) | 24.0% | 31.8% | 35.9% | 33.0% [31.2%-34.0%] | -- | 23.5% | -- | INSUFFICIENT_INPUTS | SHADOW_BET | +7.8 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Felipe Meligeni Alves (`KXATPCHALLENGERMATCH-26OCT24MELABO-MEL`) | 0.75 / 0.77 (2995) | 76.0% | 68.2% | 64.1% | 67.0% [66.0%-68.8%] | -- | 76.5% | -- | INSUFFICIENT_INPUTS | PASS | -7.8 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2750.0, B 2578.0; serve-point win A 61.8%, B 41.8%; Elo A 1678.9, B 1516.1; model uncertainty 0.0139
 * Form inputs: days since last match A 12, B 12; matches on record A 511, B 298; data quality A
@@ -3106,13 +3058,13 @@ ITF (ITF) · Clay · scheduled 2026-10-24T19:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Barbara Gatica (`KXITFWMATCH-26OCT24SANGAT-GAT`) | 0.61 / 0.62 (47) | 61.5% | -- | 43.6% | 56.4% [53.2%-61.6%] | 57.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -5.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
-| Ana Sofia Sanchez (`KXITFWMATCH-26OCT24SANGAT-SAN`) | 0.36 / 0.40 (32) | 38.0% | -- | 56.4% | 43.6% [38.4%-46.8%] | 43.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | +5.6 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Barbara Gatica (`KXITFWMATCH-26OCT24SANGAT-GAT`) | 0.61 / 0.62 (209) | 61.5% | -- | 43.6% | 56.4% [53.2%-61.6%] | 57.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -5.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Ana Sofia Sanchez (`KXITFWMATCH-26OCT24SANGAT-SAN`) | 0.38 / 0.39 (5) | 38.5% | -- | 56.4% | 43.6% [38.4%-46.8%] | 43.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | +5.1 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 3191.0, B 633.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0421
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality F
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.027, surface_pool_high -0.026, surface_dev_loose -0.005, surface_dev_tight -0.000
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Katarina Zavatska vs Manon Leonard -- W50 Cherbourg-en-Cotentin SF
@@ -3132,7 +3084,7 @@ ITF (ITF) · Hard · scheduled 2026-10-24T19:30:00Z · first ball: NO_FIRST_BALL
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Manon Leonard (`KXITFWMATCH-26OCT24ZAVLEO-LEO`) | 0.52 / 0.55 (29) | 53.5% | -- | 50.5% | 50.5% [41.5%-55.9%] | 53.8% | -- | -- | INSUFFICIENT_INPUTS | PASS | -3.0 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Katarina Zavatska (`KXITFWMATCH-26OCT24ZAVLEO-ZAV`) | 0.42 / 0.47 (28) | 44.5% | -- | 49.5% | 49.5% [44.1%-58.5%] | 46.2% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +5.0 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Katarina Zavatska (`KXITFWMATCH-26OCT24ZAVLEO-ZAV`) | 0.42 / 0.47 (29) | 44.5% | -- | 49.5% | 49.5% [44.1%-58.5%] | 46.2% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +5.0 pp | NORMAL | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 4227.0, B 3201.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0717
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality A
@@ -3156,7 +3108,7 @@ ITF (ITF) · Clay · scheduled 2026-10-24T20:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Justina Maria Gonzalez Daniele (`KXITFWMATCH-26OCT24URRGON-GON`) | 0.47 / 0.50 (10) | 48.5% | -- | 50.0% | 47.3% [43.1%-48.9%] | -- | -- | -- | -- | PASS | -1.2 pp | NORMAL | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Justina Maria Gonzalez Daniele (`KXITFWMATCH-26OCT24URRGON-GON`) | 0.47 / 0.50 (11) | 48.5% | -- | 50.0% | 47.3% [43.1%-48.9%] | -- | -- | -- | -- | PASS | -1.2 pp | NORMAL | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 | Maria Florencia Urrutia (`KXITFWMATCH-26OCT24URRGON-URR`) | 0.48 / 0.52 (51) | 50.0% | -- | 50.0% | 52.7% [51.1%-56.9%] | -- | -- | -- | -- | PASS | +2.7 pp | NORMAL | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2454.0, B 2911.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0293
@@ -3181,12 +3133,12 @@ CHALLENGER (CHALLENGER) · Clay · scheduled 2026-10-24T20:10:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Gustavo Heide (`KXATPCHALLENGERMATCH-26OCT24HEIPDA-HEI`) | 0.58 / 0.60 (3869) | 59.0% | 64.0% | -- | -- [-----] | 58.4% | 58.9% | 58.6% | MODEL_LONE_OUTLIER | -- | +5.0 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | AMBIGUOUS |
-| Matheus Pucinelli de Almeida (`KXATPCHALLENGERMATCH-26OCT24HEIPDA-PDA`) | 0.40 / 0.42 (2789) | 41.0% | 36.0% | -- | -- [-----] | 41.6% | 41.2% | 41.4% | MODEL_LONE_OUTLIER | -- | -5.0 pp | NORMAL | FRESH | A / ADEQUATE | AGREES_WITH_KALSHI | AMBIGUOUS |
+| Gustavo Heide (`KXATPCHALLENGERMATCH-26OCT24HEIPDA-HEI`) | 0.58 / 0.59 (2037) | 58.5% | 64.0% | -- | -- [-----] | 58.4% | 58.9% | 58.9% | MODEL_LONE_OUTLIER | -- | +5.5 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | AMBIGUOUS |
+| Matheus Pucinelli de Almeida (`KXATPCHALLENGERMATCH-26OCT24HEIPDA-PDA`) | 0.41 / 0.42 (2844) | 41.5% | 36.0% | -- | -- [-----] | 41.6% | 41.2% | 41.2% | MODEL_LONE_OUTLIER | -- | -5.5 pp | NORMAL | FRESH | A / ADEQUATE | EXTERNAL_STALE | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A 61.5%, B 41.2%; Elo A 1742.0, B 1598.3; model uncertainty None
 * Form inputs: days since last match A 19, B 19; matches on record A 281, B 371; data quality A
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
 
 ## Oliver Ojakaar vs Rodrigo Fernandes -- M15 Ithaca SF
 
@@ -3205,7 +3157,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T21:00:00Z · first ball: NO_FIRST
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Rodrigo Fernandes (`KXITFMATCH-26OCT24OJAFER-FER`) | 0.32 / 0.35 (317) | 33.5% | 23.3% | 24.7% | 26.3% [24.2%-27.3%] | 34.3% | -- | -- | INSUFFICIENT_INPUTS | PASS | -10.2 pp | REVIEW | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Oliver Ojakaar (`KXITFMATCH-26OCT24OJAFER-OJA`) | 0.65 / 0.68 (106) | 66.5% | 76.7% | 75.3% | 73.7% [72.7%-75.8%] | 65.7% | -- | -- | INSUFFICIENT_INPUTS | PASS | +10.2 pp | REVIEW | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Oliver Ojakaar (`KXITFMATCH-26OCT24OJAFER-OJA`) | 0.65 / 0.68 (101) | 66.5% | 76.7% | 75.3% | 73.7% [72.7%-75.8%] | 65.7% | -- | -- | INSUFFICIENT_INPUTS | PASS | +10.2 pp | REVIEW | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 188.0, B 311.0; serve-point win A 63.0%, B 42.6%; Elo A 1378.5, B 1201.1; model uncertainty 0.0157
 * Form inputs: days since last match A 631, B 712; matches on record A 44, B 29; data quality F
@@ -3230,12 +3182,12 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T22:00:00Z · first ball: NO_FIRST
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Jack Anthrop (`KXITFMATCH-26OCT24ANTYME-ANT`) | 0.86 / 0.89 (780) | 87.5% | 89.4% | 78.8% | 79.5% [79.0%-80.6%] | 87.6% | -- | -- | INSUFFICIENT_INPUTS | PASS | +1.9 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
-| Rafael Ymer (`KXITFMATCH-26OCT24ANTYME-YME`) | 0.09 / 0.13 (8) | 11.0% | 10.6% | 21.2% | 20.5% [19.4%-21.0%] | 12.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | -0.4 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Rafael Ymer (`KXITFMATCH-26OCT24ANTYME-YME`) | 0.09 / 0.13 (62) | 11.0% | 10.6% | 21.2% | 20.5% [19.4%-21.0%] | 12.4% | -- | -- | INSUFFICIENT_INPUTS | PASS | -0.4 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 204.0, B 75.0; serve-point win A 68.8%, B 41.2%; Elo A 1417.2, B 1184.7; model uncertainty 0.0082
 * Form inputs: days since last match A 404, B 740; matches on record A 59, B 7; data quality F
 * Surface-prior sensitivity (P(A) change): surface_pool_low -0.000, surface_pool_high -0.000, surface_dev_loose -0.000, surface_dev_tight -0.000
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE; THIN_DISPLAYED_SIZE
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; EXTERNAL_PRICE_STALE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Alan Magadan / Rodrigo Pacheco Mendez vs Federico Zeballos / Marcelo Zormann -- ATP Challenger Cali F
@@ -3279,8 +3231,8 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T22:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hiromi Abe (`KXITFWMATCH-26OCT24BRAABE-ABE`) | 0.20 / 0.24 (25) | 22.0% | -- | 79.8% | 58.4% [56.4%-61.4%] | 24.0% | -- | 24.0% | MODEL_LONE_OUTLIER | PASS | +36.4 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | AGREES_WITH_KALSHI | VERIFIED |
-| Reese Brantmeier (`KXITFWMATCH-26OCT24BRAABE-BRA`) | 0.74 / 0.75 (100) | 74.5% | -- | 20.2% | 41.6% [38.6%-43.6%] | 76.0% | -- | 76.0% | MODEL_LONE_OUTLIER | PASS | -32.9 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | AGREES_WITH_KALSHI | VERIFIED |
+| Hiromi Abe (`KXITFWMATCH-26OCT24BRAABE-ABE`) | 0.20 / 0.24 (26) | 22.0% | -- | 79.8% | 58.4% [56.4%-61.4%] | 24.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | +36.4 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Reese Brantmeier (`KXITFWMATCH-26OCT24BRAABE-BRA`) | 0.74 / 0.75 (100) | 74.5% | -- | 20.2% | 41.6% [38.6%-43.6%] | 76.0% | -- | -- | INSUFFICIENT_INPUTS | PASS | -32.9 pp | EXTREME (DATA_WARNING) | FRESH | D / POOR | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 133.0, B 2555.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0253
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality D
@@ -3293,14 +3245,14 @@ Gap: +36 pp
 Band: EXTREME
 Identity: VERIFIED (ticker orientation VERIFIED)
 Quote freshness: FRESH
-External: AGREES_WITH_KALSHI
+External: NO_EXTERNAL_REFERENCE
 Data quality: D (POOR)
-Reasons: LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, ASYMMETRIC_SAMPLE_SIZE, EXTERNAL_MARKET_REJECTION, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
+Reasons: LOW_DATA_QUALITY, THIN_PLAYER_HISTORY, ASYMMETRIC_SAMPLE_SIZE, NO_EXTERNAL_REFERENCE, START_UNVERIFIABLE, MODEL_INTERNAL_DISAGREEMENT
 Status: DATA_WARNING / PASS UNTIL RECHECKED
 Unmet before human review: adequate_data_quality, no_severe_asymmetry_or_justified, external_supports_or_documented_unavailable, explains_why_market_may_be_wrong, explains_why_model_may_be_wrong, price_clears_fees_and_execution
 ```
 * Surface-prior sensitivity (P(A) change): surface_pool_low +0.000, surface_pool_high +0.000, surface_dev_loose +0.000, surface_dev_tight +0.000
-* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY
+* Warnings: FIRST_BALL_SOURCE_UNAVAILABLE; LOW_DATA_QUALITY; EXTERNAL_PRICE_STALE
 * Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Madison Brengle vs Ella McDonald -- W50 Austin F
@@ -3319,7 +3271,7 @@ ITF (ITF) · Hard · scheduled 2026-10-24T22:00:00Z · first ball: NO_FIRST_BALL
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Madison Brengle (`KXITFWMATCH-26OCT24BREMCD-BRE`) | 0.50 / 0.52 (284) | 51.0% | -- | 51.6% | 63.1% [59.6%-71.3%] | 51.9% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +12.2 pp | REVIEW | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Madison Brengle (`KXITFWMATCH-26OCT24BREMCD-BRE`) | 0.50 / 0.52 (285) | 51.0% | -- | 51.6% | 63.1% [59.6%-71.3%] | 51.9% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +12.2 pp | REVIEW | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 | Ella McDonald (`KXITFWMATCH-26OCT24BREMCD-MCD`) | 0.48 / 0.50 (84) | 49.0% | -- | 48.4% | 36.9% [28.7%-40.4%] | 48.1% | -- | -- | INSUFFICIENT_INPUTS | PASS | -12.2 pp | REVIEW | FRESH | B / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2464.0, B 1341.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0589
@@ -3353,6 +3305,29 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-24T23:00:00Z · first ball: NO_F
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
 * Warnings: NO_MODEL_FOR_MATCH; DOUBLES_NOT_MODELLED_BY_FROZEN_PRODUCERS; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; FIRST_BALL_SOURCE_UNAVAILABLE; GEN1_DOUBLES_UNVALIDATED_DO_NOT_USE; NO_EXTERNAL_PRICE; WIDE_SPREAD
 
+## Sander Jong vs Darwin Blanch -- ATP Challenger Fort Worth SF
+
+**START STATUS: START_UNKNOWN**
+* Nominal schedule: 2026-10-24 23:00Z
+* Current expected start: UNKNOWN
+* Source: none; confidence NONE
+* First ball: NO_FIRST_BALL_SOURCE
+* Last status refresh: never (no live reading)
+* Recommended handicap-by time: UNKNOWN
+
+* Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL; NO_CREDIBLE_START_TIME
+
+CHALLENGER (CHALLENGER) · surface ? · scheduled 2026-10-24T23:00:00Z · first ball: NO_FIRST_BALL_SOURCE (source NO_SOURCE) · match `ATP:26OCT24JONBLA:singles`
+
+| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Darwin Blanch (`KXATPCHALLENGERMATCH-26OCT24JONBLA-BLA`) | 0.72 / 0.75 (761) | 73.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Sander Jong (`KXATPCHALLENGERMATCH-26OCT24JONBLA-JON`) | 0.26 / 0.28 (557) | 27.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+
+* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
+* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
+* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NO_EXTERNAL_PRICE
+
 ## Ariana Arseneault vs Yuki Naito -- W75 Saguenay SF
 
 **START STATUS: START_UNKNOWN**
@@ -3370,7 +3345,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-24T23:00:00Z · first ball: NO_FIRST
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Ariana Arseneault (`KXITFWMATCH-26OCT24ARSNAI-ARS`) | 0.56 / 0.57 (905) | 56.5% | -- | 48.4% | 42.6% [38.4%-45.2%] | 59.1% | -- | -- | INSUFFICIENT_INPUTS | PASS | -13.9 pp | REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
-| Yuki Naito (`KXITFWMATCH-26OCT24ARSNAI-NAI`) | 0.41 / 0.43 (150) | 42.0% | -- | 51.6% | 57.4% [54.8%-61.6%] | 40.9% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +15.4 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
+| Yuki Naito (`KXITFWMATCH-26OCT24ARSNAI-NAI`) | 0.41 / 0.43 (151) | 42.0% | -- | 51.6% | 57.4% [54.8%-61.6%] | 40.9% | -- | -- | INSUFFICIENT_INPUTS | WATCH | +15.4 pp | HIGH_REVIEW | FRESH | A / ADEQUATE | NO_EXTERNAL_REFERENCE | VERIFIED |
 
 * Serve evidence (points): A 2049.0, B 2186.0; serve-point win A --, B --; Elo A None, B None; model uncertainty 0.0339
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality A
@@ -3458,8 +3433,8 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-25T00:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Fairclough / Christine Lutkemeyer (`KXITFWDOUBLES-26OCT24FAICHRFOUJUS-FAICHR`) | 0.05 / 0.95 (2) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Fouad / Justine Hejtmanek (`KXITFWDOUBLES-26OCT24FAICHRFOUJUS-FOUJUS`) | 0.05 / 0.95 (3) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Fairclough / Christine Lutkemeyer (`KXITFWDOUBLES-26OCT24FAICHRFOUJUS-FAICHR`) | 0.05 / 0.95 (3) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Fouad / Justine Hejtmanek (`KXITFWDOUBLES-26OCT24FAICHRFOUJUS-FOUJUS`) | 0.05 / 0.95 (2) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
 
@@ -3483,7 +3458,7 @@ DOUBLES (ITF) · surface ? · scheduled 2026-10-25T00:00:00Z · first ball: NO_F
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Garcia Vidal / Konishi Camargo Silva (`KXITFWDOUBLES-26OCT24MEDSOFGARKON-GARKON`) | 0.12 / 0.41 (42) | 26.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Garcia Vidal / Konishi Camargo Silva (`KXITFWDOUBLES-26OCT24MEDSOFGARKON-GARKON`) | 0.08 / 0.41 (42) | 24.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 | Mediorreal Arias / Sofia Sanchez (`KXITFWDOUBLES-26OCT24MEDSOFGARKON-MEDSOF`) | 0.08 / 0.76 (104) | 42.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * **Model validity: GEN1 DOUBLES = UNVALIDATED_DO_NOT_USE** -- Current Gen-1 doubles failed the no-skill validation and is suppressed from assisted handicapping pending a validated replacement. No model probability is shown for doubles; prices, liquidity and external markets remain for manual handicapping. Gen-1: --, Gen-2: --, fair_v1: -- (no model evidence; prices only)
@@ -3509,7 +3484,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-25T00:30:00Z · first ball: NO_FIRST
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
 | Joao Victor Couto Loureiro (`KXITFMATCH-26OCT24COUSAN-COU`) | 0.55 / 0.58 (184) | 56.5% | 54.9% | 38.0% | 40.9% [40.9%-40.9%] | -- | -- | -- | -- | PASS | -1.6 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
-| Kaua Lorenzo Santos Gava (`KXITFMATCH-26OCT24COUSAN-SAN`) | 0.39 / 0.44 (138) | 41.5% | 45.1% | 62.0% | 59.1% [59.1%-59.1%] | -- | -- | -- | -- | PASS | +3.6 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
+| Kaua Lorenzo Santos Gava (`KXITFMATCH-26OCT24COUSAN-SAN`) | 0.39 / 0.44 (143) | 41.5% | 45.1% | 62.0% | 59.1% [59.1%-59.1%] | -- | -- | -- | -- | PASS | +3.6 pp | NORMAL | FRESH | F / POOR | NO_EXTERNAL_REFERENCE | AMBIGUOUS |
 
 * Serve evidence (points): A 509.0, B 49.0; serve-point win A 62.4%, B 38.6%; Elo A 1147.4, B 1211.3; model uncertainty 0.0002
 * Form inputs: days since last match A 698, B 761; matches on record A 92, B 5; data quality F
@@ -3606,12 +3581,13 @@ WTA (TOUR_500_250) · surface ? · scheduled 2026-10-25T04:00:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Kamilla Rakhimova (`KXWTAMATCH-26OCT24SASRAK-RAK`) | 0.17 / 0.70 (1) | 43.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Aliaksandra Sasnovich (`KXWTAMATCH-26OCT24SASRAK-SAS`) | 0.17 / 0.84 (1) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Kamilla Rakhimova (`KXWTAMATCH-26OCT24SASRAK-RAK`) | 0.12 / 0.78 (1) | 45.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Aliaksandra Sasnovich (`KXWTAMATCH-26OCT24SASRAK-SAS`) | 0.12 / 0.89 (2) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+* Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 0 carry a model probability
+* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; NO_EXTERNAL_PRICE; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Heather Watson vs Alycia Parks -- WTA Tokyo Q3
 
@@ -3629,12 +3605,12 @@ WTA (TOUR_500_250) · surface ? · scheduled 2026-10-25T04:00:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Alycia Parks (`KXWTAMATCH-26OCT24WATPAR-PAR`) | 0.22 / 0.79 (21) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Heather Watson (`KXWTAMATCH-26OCT24WATPAR-WAT`) | 0.22 / 0.79 (29) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Alycia Parks (`KXWTAMATCH-26OCT24WATPAR-PAR`) | 0.55 / 0.69 (9) | 62.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Heather Watson (`KXWTAMATCH-26OCT24WATPAR-WAT`) | 0.32 / 0.45 (246) | 38.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; NO_EXTERNAL_PRICE; WIDE_SPREAD
+* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; NO_EXTERNAL_PRICE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
 
 ## Alevtina Ibragimova vs Polina Iatcenko -- WTA Guangzhou Q3
 
@@ -3652,12 +3628,37 @@ WTA (TOUR_500_250) · surface ? · scheduled 2026-10-25T05:00:00Z · first ball:
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Polina Iatcenko (`KXWTAMATCH-26OCT24IBRIAT-IAT`) | 0.07 / 0.96 (41) | 51.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
-| Alevtina Ibragimova (`KXWTAMATCH-26OCT24IBRIAT-IBR`) | 0.07 / 0.96 (21) | 51.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Polina Iatcenko (`KXWTAMATCH-26OCT24IBRIAT-IAT`) | 0.30 / 0.71 (5) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Alevtina Ibragimova (`KXWTAMATCH-26OCT24IBRIAT-IBR`) | 0.30 / 0.71 (23) | 50.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
 * Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
-* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; NO_EXTERNAL_PRICE; WIDE_SPREAD
+* Derivatives listed: 4 (MATCH_WINNER, SET_WINNER); 0 carry a model probability
+* Warnings: BET_BLOCKED_START_STATUS; NO_MODEL_FOR_MATCH; NO_EXTERNAL_PRICE; ONE_SIDED_OR_NO_QUOTE; THIN_DISPLAYED_SIZE; WIDE_SPREAD
+
+## Blake Ellis vs Isaac Becroft -- M25 Tamworth F
+
+**START STATUS: START_UNKNOWN**
+* Nominal schedule: 2026-10-25 05:00Z
+* Current expected start: UNKNOWN
+* Source: none; confidence NONE
+* First ball: NO_FIRST_BALL_SOURCE
+* Last status refresh: never (no live reading)
+* Recommended handicap-by time: UNKNOWN
+
+* Status notes: NOMINAL_UNRELIABLE_AT_THIS_LEVEL; NO_CREDIBLE_START_TIME
+
+ITF (ITF) · surface ? · scheduled 2026-10-25T05:00:00Z · first ball: NO_FIRST_BALL_SOURCE (source NO_SOURCE) · match `ATP:26OCT24ELLBEC:singles`
+
+| YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
+|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
+| Isaac Becroft (`KXITFMATCH-26OCT24ELLBEC-BEC`) | 0.02 / 0.98 (35) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Blake Ellis (`KXITFMATCH-26OCT24ELLBEC-ELL`) | 0.02 / 0.98 (35) | 50.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+
+* Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
+* Form inputs: days since last match A None, B None; matches on record A None, B None; data quality None
+* Warnings: NO_MODEL_FOR_MATCH; FIRST_BALL_SOURCE_UNAVAILABLE; NO_EXTERNAL_PRICE; WIDE_SPREAD
+* Frozen research context: W3-2026-001-ABSTAIN-ITF: the frozen research rule abstains at ITF (the model's ITF disagreement was worth less than nothing)
 
 ## Hikaru Sato vs I Wen Wan -- W35 Sydney F
 
@@ -3675,7 +3676,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-25T05:00:00Z · first ball: NO_FIRST
 
 | YES on | bid / ask (size) | mid | Gen-1 | Gen-2 | fair_v1 [env] | Bovada | Smarkets | consensus | triangulation | selector | MODEL-MARKET GAP | BAND | FRESHNESS | DATA QUALITY | EXTERNAL | IDENTITY |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Hikaru Sato (`KXITFWMATCH-26OCT24SATWAN-SAT`) | 0.61 / 0.65 (5) | 63.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
+| Hikaru Sato (`KXITFWMATCH-26OCT24SATWAN-SAT`) | 0.61 / 0.65 (6) | 63.0% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 | I Wen Wan (`KXITFWMATCH-26OCT24SATWAN-WAN`) | 0.36 / 0.43 (49) | 39.5% | -- | -- | -- [-----] | -- | -- | -- | -- | -- | -- | UNPRICED | FRESH | ? / UNKNOWN | INSUFFICIENT_INPUTS | AMBIGUOUS |
 
 * Serve evidence (points): A None, B None; serve-point win A --, B --; Elo A None, B None; model uncertainty None
@@ -3690,7 +3691,7 @@ ITF (ITF) · surface ? · scheduled 2026-10-25T05:00:00Z · first ball: NO_FIRST
 * Current expected start: UNKNOWN
 * Source: none; confidence NONE
 * First ball: NO_FIRST_BALL_SOURCE
-* Last status refresh: 2026-10-24 07:43Z
+* Last status refresh: 2026-10-24 07:56Z
 * Recommended handicap-by time: UNKNOWN
 
 * Status notes: LIVE_TIME_IS_PLACEHOLDER: espn_wta marks 2026-10-25T04:00:00+00:00 as not a valid time; NOMINAL_UNRELIABLE_AT_THIS_LEVEL; NO_CREDIBLE_START_TIME
