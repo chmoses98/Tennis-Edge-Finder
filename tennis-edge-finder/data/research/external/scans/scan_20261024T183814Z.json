@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-24T18:38:14.122197+00:00",
+ "run_id": "20261024T183814Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 602,
+  "skipped_family": 179,
+  "skipped_period": 157,
+  "skipped_live": 19,
+  "one_sided": 7,
+  "rows": 891,
+  "devigged": 258
+ },
+ "smarkets_fetch": {
+  "events_seen": 120,
+  "events_priced": 80,
+  "markets": 767,
+  "markets_mapped": 257,
+  "contracts": 548,
+  "quoted_contracts": 548,
+  "raw": "data/research/external/raw/20261024T183814Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 257,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 70,
+  "rows": 478,
+  "two_sided": 469,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 257,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 4,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 4,
+   "Khumoyun Sultanov": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Ella Brownback": 1,
+   "Thomas Van Den Dooren": 1,
+   "Digvijay Pratap Singh": 1,
+   "Maria Urrutia": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9783,
+  "top_refusal_subjects": {
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 89,
+ "kalshi_mapped_matches": 45,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 43,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
