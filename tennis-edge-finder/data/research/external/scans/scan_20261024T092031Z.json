@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-24T09:20:31.341170+00:00",
+ "run_id": "20261024T092031Z",
+ "external_parse": {
+  "events": 100,
+  "markets": 1048,
+  "skipped_family": 332,
+  "skipped_period": 265,
+  "skipped_live": 25,
+  "one_sided": 0,
+  "rows": 1524,
+  "devigged": 451
+ },
+ "smarkets_fetch": {
+  "events_seen": 45,
+  "events_priced": 45,
+  "markets": 965,
+  "markets_mapped": 299,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20261024T092031Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 633,
+  "two_sided": 632,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 401,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 7
+  },
+  "mapped_rate": 0.8523,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Joel Josef Schwarzler": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Matteo Gribaldo": 1,
+   "Katerina Zajickova": 1,
+   "Jodie Anna Burrage": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 45,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 1,
+   "MAPPED": 38
+  },
+  "mapped_rate": 0.8444,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Yexin Ma": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8714,
+  "top_refusal_subjects": {
+   "Tenzin Wangsel Lhaden": 1,
+   "Aishath Karin Saizan": 1,
+   "Kinley Yangden": 1,
+   "Nayara Usama Ali": 1,
+   "Swastika Bista": 1,
+   "Yexin Ma": 1,
+   "Matteo Gribaldo": 1,
+   "Jodie Anna Burrage": 1,
+   "Katerina Zajickova": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 81,
+ "kalshi_mapped_matches": 61,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 5,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
