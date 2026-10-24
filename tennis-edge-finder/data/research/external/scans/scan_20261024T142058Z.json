@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-24T14:20:58.326301+00:00",
+ "run_id": "20261024T142058Z",
+ "external_parse": {
+  "events": 80,
+  "markets": 604,
+  "skipped_family": 130,
+  "skipped_period": 172,
+  "skipped_live": 27,
+  "one_sided": 5,
+  "rows": 898,
+  "devigged": 296
+ },
+ "smarkets_fetch": {
+  "events_seen": 83,
+  "events_priced": 80,
+  "markets": 458,
+  "markets_mapped": 205,
+  "contracts": 462,
+  "quoted_contracts": 462,
+  "raw": "data/research/external/raw/20261024T142058Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 205,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 416,
+  "two_sided": 414,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 256,
+ "external_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7606,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Mahin Qureshi": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "August Brostr\u00f8m Poulsen": 1,
+   "Julian Messina": 1,
+   "Noelani Teso": 1,
+   "Rachael Phelan": 1,
+   "Raegan Farm": 1,
+   "Anastasiia Kostiushkina": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 6,
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Sanhui Shin": 1,
+   "Min Ho Ko": 1,
+   "Khumoyun Sultanov": 1,
+   "Kaigaoge Kang": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9818,
+  "top_refusal_subjects": {
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 18
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
