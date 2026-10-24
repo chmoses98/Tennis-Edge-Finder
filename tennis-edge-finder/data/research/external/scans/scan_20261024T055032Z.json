@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-24T05:50:32.319082+00:00",
+ "run_id": "20261024T055032Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1441,
+  "skipped_family": 427,
+  "skipped_period": 361,
+  "skipped_live": 15,
+  "one_sided": 3,
+  "rows": 2050,
+  "devigged": 649
+ },
+ "smarkets_fetch": {
+  "events_seen": 52,
+  "events_priced": 52,
+  "markets": 1342,
+  "markets_mapped": 336,
+  "contracts": 748,
+  "quoted_contracts": 748,
+  "raw": "data/research/external/raw/20261024T055032Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 336,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 713,
+  "two_sided": 704,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 302,
+ "external_mapping": {
+  "total": 111,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8198,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Joel Josef Schwarzler": 1,
+   "Yexin Ma": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Digvijay Pratap Singh": 1,
+   "Matteo Gribaldo": 1,
+   "Katerina Zajickova": 1,
+   "Jodie Anna Burrage": 1,
+   "Maria Urrutia": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8462,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Yexin Ma": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9062,
+  "top_refusal_subjects": {
+   "Maria Isabel Gvan Heras": 1,
+   "Shrijana Thapa": 1,
+   "Swastika Bista": 1,
+   "Yexin Ma": 1,
+   "Digvijay Pratap Singh": 1,
+   "Tara Wuerth": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 83,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
