@@ -1,14 +1,13 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-25 01:47Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-25 01:58Z)
 
 * Earliest credible first ball: **2026-10-25 02:00Z**
 * Recommended RUN TENNIS time: **2026-10-25 01:15Z**  (OVERDUE: run now)
 * Final price/status check time: **2026-10-25 01:50Z**
-* Matches in window: 4
+* Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
 | Mai Hontama vs Maya Joint | 2026-10-25 02:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
-| Kimberly Birrell vs Daria Kasatkina | 2026-10-25 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Alevtina Ibragimova vs Polina Iatcenko | 2026-10-25 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Carol Young Suh Lee vs Elena Pridankina | 2026-10-25 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
@@ -16,7 +15,7 @@
 
 Published slate: `SL-20261025T010401Z-035efcc9` built 2026-10-25 01:04Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-25T02:00:00+00:00, slate built 2026-10-25T01:04:01.983030+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-25 04:30Z, run by 2026-10-25 03:45Z, 5 match(es)
 * later window 3: first ball 2026-10-25 06:30Z, run by 2026-10-25 05:45Z, 2 match(es)
