@@ -1,9 +1,9 @@
 {
- "ledger_rows": 77059,
- "settlement_files": 209,
- "settlement_rows_unique": 74205,
+ "ledger_rows": 77998,
+ "settlement_files": 210,
+ "settlement_rows_unique": 74267,
  "settlement_rows_duplicate_prediction_ids": 0,
- "ledger_rows_settled": 74203,
+ "ledger_rows_settled": 74265,
  "settlement_rows_not_in_ledger": 2,
  "settlement_rows_not_in_ledger_sample": [
   [
@@ -15,41 +15,41 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 2856,
+ "ledger_rows_without_settlement_row": 3733,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 2856,
+ "of_which_not_yet_settled_or_not_swept": 3733,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
-  "yes": 33826,
-  "no": 37721,
-  "scalar": 2658
+  "yes": 33854,
+  "no": 37749,
+  "scalar": 2664
  },
- "gradeable_binary": 71547,
+ "gradeable_binary": 71603,
  "sports_truth_sources": {
-  "kalshi_result": 43364,
-  "none": 30841
+  "kalshi_result": 43392,
+  "none": 30875
  },
  "strict_clv_embedded_in_settlement_rows": 2816,
  "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that arrives later updates data/research/clv/<run>.jsonl but not the embedded copy",
  "health_layer_view_after_fix": {
-  "settled": 74205,
-  "settled_binary": 71547,
-  "settled_scalar": 2658,
-  "sports_truth_rows": 43364,
-  "sports_truth_kalshi_derived": 43364,
+  "settled": 74267,
+  "settled_binary": 71603,
+  "settled_scalar": 2664,
+  "sports_truth_rows": 43392,
+  "sports_truth_kalshi_derived": 43392,
   "sports_truth_independent": 34056,
-  "settlement_files": 209,
-  "independent_truth_run": "20261025T053843Z.jsonl.gz",
+  "settlement_files": 210,
+  "independent_truth_run": "20261025T063814Z.jsonl.gz",
   "independent_truth_by_status": {
-   "NOT_COVERED": 30004,
+   "NOT_COVERED": 30026,
    "RESOLVED": 35168,
    "NO_CANONICAL_IDS": 3238,
    "AMBIGUOUS": 248,
    "NOT_FOUND": 4053,
-   "PENDING_RESULT": 1492
+   "PENDING_RESULT": 1532
   },
   "independent_truth_structural_non_coverage": {
-   "WTA|ITF|NOT_COVERED": 14664,
+   "WTA|ITF|NOT_COVERED": 14672,
    "ATP|CHALLENGER|NO_CANONICAL_IDS": 1476,
    "ATP|ITF|NOT_COVERED": 12750,
    "WTA|WTA_125|NOT_COVERED": 90,
@@ -57,13 +57,13 @@
    "ATP|TOUR_500_250|NO_CANONICAL_IDS": 626,
    "ATP|MASTERS_1000|NO_CANONICAL_IDS": 362,
    "WTA|MASTERS_1000|NO_CANONICAL_IDS": 334,
-   "ATP|CHALLENGER|NOT_COVERED": 2500,
+   "ATP|CHALLENGER|NOT_COVERED": 2514,
    "ATP|TOUR_500_250|PENDING_RESULT": 1334,
-   "WTA|TOUR_500_250|PENDING_RESULT": 158
+   "WTA|TOUR_500_250|PENDING_RESULT": 198
   },
   "independent_truth_rate_among_covered": 0.891,
   "exchange_reconciliation": {
-   "NOT_RECONCILED": 35278,
+   "NOT_RECONCILED": 35308,
    "AGREE": 8870
   },
   "exchange_conflicts": 0,
@@ -132,27 +132,27 @@
    "lag_days_max_new": null
   },
   "prospective_v2": {
-   "predictions_with_v2_and_incumbent": 27756,
-   "exchange_settled_predictions": 27756,
+   "predictions_with_v2_and_incumbent": 27786,
+   "exchange_settled_predictions": 27786,
    "independently_resolved_predictions": 6030,
    "independently_settled_matches": 766,
    "by_status": {
     "RESOLVED": 6030,
     "NOT_FOUND": 666,
-    "NOT_COVERED": 20724,
+    "NOT_COVERED": 20746,
     "AMBIGUOUS": 50,
-    "PENDING_RESULT": 286
+    "PENDING_RESULT": 294
    },
    "reconciliation": {
     "AGREE": 6030,
-    "NOT_RECONCILED": 21726,
+    "NOT_RECONCILED": 21756,
     "EXPLAINED_NOTE": 46
    },
    "by_level": {
     "ATP Challenger": {
      "RESOLVED": 1634,
      "NOT_FOUND": 286,
-     "NOT_COVERED": 2500,
+     "NOT_COVERED": 2514,
      "AMBIGUOUS": 8
     },
     "ATP ITF": {
@@ -169,20 +169,20 @@
      "RESOLVED": 734
     },
     "WTA ITF": {
-     "NOT_COVERED": 10006
+     "NOT_COVERED": 10014
     },
     "WTA tour": {
      "RESOLVED": 1184,
      "NOT_FOUND": 148,
      "AMBIGUOUS": 30,
-     "PENDING_RESULT": 56
+     "PENDING_RESULT": 64
     }
    },
    "n_stale_unresolved_tour_level": 394,
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261025T053758Z.jsonl.gz",
+  "clv_run": "20261025T063730Z.jsonl.gz",
   "settled_with_ab_truth": 3493,
   "settled_with_close": 3161,
   "settled_strict_clv": 2816,
