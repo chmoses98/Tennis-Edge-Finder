@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-10-25T00:07:23.719339+00:00",
+ "run_id": "20261025T000723Z",
+ "external_parse": {
+  "events": 134,
+  "markets": 1408,
+  "skipped_family": 374,
+  "skipped_period": 369,
+  "skipped_live": 4,
+  "one_sided": 9,
+  "rows": 2197,
+  "devigged": 654
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 901,
+  "markets_mapped": 305,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20261025T000723Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 305,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 606,
+  "two_sided": 600,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 326,
+ "external_mapping": {
+  "total": 125,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 29
+  },
+  "mapped_rate": 0.72,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Dominic Stephan Stricker": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8429,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Sanhui Shin": 1,
+   "Philip Niederle": 1,
+   "Ethan David Zapp": 1,
+   "Digvijay Pratap Singh": 1,
+   "Julien Tremolieres": 1,
+   "Mia Francis": 1,
+   "Tejaswi Manneni": 1,
+   "Yi Jie Janelle Chen": 1,
+   "Harini Parthiban": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 110,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:MARKETS_AGREE": 9,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
