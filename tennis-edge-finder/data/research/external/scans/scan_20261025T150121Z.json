@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-10-25T15:01:21.408004+00:00",
+ "run_id": "20261025T150121Z",
+ "external_parse": {
+  "events": 150,
+  "markets": 1487,
+  "skipped_family": 269,
+  "skipped_period": 494,
+  "skipped_live": 28,
+  "one_sided": 30,
+  "rows": 2455,
+  "devigged": 691
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1116,
+  "markets_mapped": 504,
+  "contracts": 1072,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261025T150121Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 504,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 248,
+  "rows": 824,
+  "two_sided": 817,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 439,
+ "external_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6835,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Dominic Stephan Stricker": 1,
+   "Sergio Castro": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Maria Herazo": 1,
+   "Jake Evans": 1,
+   "Mason Dace": 1,
+   "Sophia Xie": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Sergio Castro": 1,
+   "Alex Hernandez": 1,
+   "Martin Baquero": 1,
+   "Tristan McCormick": 1,
+   "Carmen Andreea Herea": 1,
+   "Mario Andre Galarraga": 1,
+   "Min Hyuk Cho": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 97,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7423,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Sergio Castro": 1,
+   "Abril Cardenas Olivares": 1,
+   "Roberto Franchin": 1,
+   "Fabian Hinteregger": 1,
+   "Younes Jenkins": 1,
+   "Mason Dace": 1,
+   "Jake Evans": 1,
+   "Fred Barnett": 1,
+   "Mateja Stanisavljevic": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 108,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
