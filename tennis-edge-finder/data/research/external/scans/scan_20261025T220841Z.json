@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-25T22:08:41.823416+00:00",
+ "run_id": "20261025T220841Z",
+ "external_parse": {
+  "events": 136,
+  "markets": 1634,
+  "skipped_family": 330,
+  "skipped_period": 524,
+  "skipped_live": 10,
+  "one_sided": 30,
+  "rows": 2730,
+  "devigged": 750
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 816,
+  "markets_mapped": 315,
+  "contracts": 672,
+  "quoted_contracts": 672,
+  "raw": "data/research/external/raw/20261025T220841Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 315,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 648,
+  "two_sided": 647,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 319,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6935,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Dominic Stephan Stricker": 1,
+   "Xinyu Wang": 1,
+   "Mario Andre Galarraga": 1,
+   "Khumoyun Sultanov": 1,
+   "Maria Herazo": 1,
+   "Valerie Shue": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Carmen Andreea Herea": 1,
+   "Min Hyuk Cho": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8507,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Min Hyuk Cho": 1,
+   "Mario Andre Galarraga": 1,
+   "Jayson Blando": 1,
+   "Ethan David Zapp": 1,
+   "Adithya SURESH": 1,
+   "Elina Kamyabsharifi": 1,
+   "Janie Ho": 1,
+   "Paula Vargas": 1,
+   "Monika Gospodinova": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:MARKETS_AGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 3,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "SHADOW_BET": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
