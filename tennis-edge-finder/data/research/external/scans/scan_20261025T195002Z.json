@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-25T19:50:02.169873+00:00",
+ "run_id": "20261025T195002Z",
+ "external_parse": {
+  "events": 119,
+  "markets": 1439,
+  "skipped_family": 262,
+  "skipped_period": 471,
+  "skipped_live": 4,
+  "one_sided": 28,
+  "rows": 2454,
+  "devigged": 678
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 764,
+  "markets_mapped": 295,
+  "contracts": 620,
+  "quoted_contracts": 620,
+  "raw": "data/research/external/raw/20261025T195002Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 295,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 596,
+  "two_sided": 596,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 326,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6449,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Dominic Stephan Stricker": 1,
+   "Xinyu Wang": 1,
+   "Tristan McCormick": 1,
+   "Maria Herazo": 1,
+   "Roberto Franchin": 1,
+   "Amy Lu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "AMBIGUOUS_PLAYER": 3,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 21
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Mario Andre Galarraga": 1,
+   "Tristan McCormick": 1,
+   "Carmen Andreea Herea": 1,
+   "Min Hyuk Cho": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Soonwoo Kwon": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Min Hyuk Cho": 1,
+   "Mario Andre Galarraga": 1,
+   "Alex Hernandez": 1,
+   "Kim Johannes Niethammer": 1,
+   "Ethan David Zapp": 1,
+   "Adithya SURESH": 1,
+   "Roberto Franchin": 1,
+   "Fabian Hinteregger": 1,
+   "Matilde Stamborg": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 35,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
