@@ -1,17 +1,17 @@
 {
- "run_id": "20261025T174217Z",
- "source_stamp": "20261025T102002Z|2026-10-25T17:35:57.349834+00:00",
- "settled": 75847,
+ "run_id": "20261025T220902Z",
+ "source_stamp": "20261025T102002Z|2026-10-25T21:58:01.471829+00:00",
+ "settled": 76401,
  "by_status": {
-  "NOT_COVERED": 30738,
+  "NOT_COVERED": 31016,
   "RESOLVED": 36678,
   "NO_CANONICAL_IDS": 3296,
   "AMBIGUOUS": 248,
   "NOT_FOUND": 4165,
-  "PENDING_RESULT": 722
+  "PENDING_RESULT": 998
  },
  "reconciliation": {
-  "NOT_RECONCILED": 35958,
+  "NOT_RECONCILED": 36310,
   "AGREE": 9182
  },
  "by_level": {
@@ -20,13 +20,13 @@
    "NO_CANONICAL_IDS": 1482,
    "AMBIGUOUS": 14,
    "NOT_FOUND": 1154,
-   "NOT_COVERED": 2734
+   "NOT_COVERED": 2882
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
   },
   "ATP|ITF": {
-   "NOT_COVERED": 12966
+   "NOT_COVERED": 12992
   },
   "ATP|MASTERS_1000": {
    "RESOLVED": 11059,
@@ -42,13 +42,13 @@
    "RESOLVED": 12931,
    "NO_CANONICAL_IDS": 666,
    "NOT_FOUND": 1294,
-   "PENDING_RESULT": 616
+   "PENDING_RESULT": 864
   },
   "WTA|GRAND_SLAM": {
    "RESOLVED": 89
   },
   "WTA|ITF": {
-   "NOT_COVERED": 14948
+   "NOT_COVERED": 15052
   },
   "WTA|MASTERS_1000": {
    "RESOLVED": 2375,
@@ -69,7 +69,7 @@
    "RESOLVED": 1394,
    "NOT_COVERED": 90,
    "AMBIGUOUS": 4,
-   "PENDING_RESULT": 32
+   "PENDING_RESULT": 60
   }
  },
  "freshness": {
@@ -137,46 +137,46 @@
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 28690,
-  "matches_with_v2_and_incumbent": 3517,
-  "exchange_settled_predictions": 28690,
+  "predictions_with_v2_and_incumbent": 29042,
+  "matches_with_v2_and_incumbent": 3553,
+  "exchange_settled_predictions": 29042,
   "independently_resolved_predictions": 6342,
   "independently_settled_matches": 807,
   "by_status": {
    "RESOLVED": 6342,
    "NOT_FOUND": 680,
-   "NOT_COVERED": 21458,
+   "NOT_COVERED": 21736,
    "AMBIGUOUS": 50,
-   "PENDING_RESULT": 160
+   "PENDING_RESULT": 234
   },
   "reconciliation": {
    "AGREE": 6342,
-   "NOT_RECONCILED": 22348,
+   "NOT_RECONCILED": 22700,
    "EXPLAINED_NOTE": 46
   },
   "by_level": {
    "ATP Challenger": {
     "RESOLVED": 1634,
     "NOT_FOUND": 286,
-    "NOT_COVERED": 2734,
+    "NOT_COVERED": 2882,
     "AMBIGUOUS": 8
    },
    "ATP ITF": {
-    "NOT_COVERED": 8388
+    "NOT_COVERED": 8414
    },
    "ATP tour": {
     "RESOLVED": 2682,
     "NOT_FOUND": 246,
     "AMBIGUOUS": 12,
-    "PENDING_RESULT": 108
+    "PENDING_RESULT": 154
    },
    "WTA 125": {
     "NOT_COVERED": 46,
     "RESOLVED": 734,
-    "PENDING_RESULT": 32
+    "PENDING_RESULT": 60
    },
    "WTA ITF": {
-    "NOT_COVERED": 10290
+    "NOT_COVERED": 10394
    },
    "WTA tour": {
     "RESOLVED": 1292,
