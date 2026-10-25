@@ -1,18 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-25 13:43Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-25 14:01Z)
 
-* Earliest credible first ball: **2026-10-25 14:00Z**
-* Recommended RUN TENNIS time: **2026-10-25 13:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-25 13:50Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-10-25 14:49Z**
+* Recommended RUN TENNIS time: **2026-10-25 14:04Z**
+* Final price/status check time: **2026-10-25 14:39Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Mika Brunold vs Remy Bertola | 2026-10-25 14:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Jan-Lennard Struff vs Tallon Griekspoor | 2026-10-25 14:30Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
+| Jan-Lennard Struff vs Tallon Griekspoor | 2026-10-25 14:49Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
 
-**41 main-tour match(es) without a verified start status** (BET blocked until checked): Adrian Mannarino vs Alex Molcan, Lorenzo Musetti vs Taylor Fritz, Dominic Stricker vs Casper Ruud, Giovanni Mpetshi Perricard vs Aleksandar Kovacevic, Juan Manuel Cerundolo vs Daniel Altmaier, Lukas Neumayer vs Titouan Droguet, Lorenzo Sonego vs Jacob Fearnley, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys
+**41 main-tour match(es) without a verified start status** (BET blocked until checked): Adrian Mannarino vs Alex Molcan, Mika Brunold vs Remy Bertola, Dominic Stricker vs Casper Ruud, Giovanni Mpetshi Perricard vs Aleksandar Kovacevic, Juan Manuel Cerundolo vs Daniel Altmaier, Lukas Neumayer vs Titouan Droguet, Lorenzo Sonego vs Jacob Fearnley, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys
 
-Published slate: `SL-20261025T123609Z-4eb0ba81` built 2026-10-25 12:36Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-25T14:00:00+00:00, slate built 2026-10-25T12:36:09.029571+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
+Published slate: `SL-20261025T134156Z-62473162` built 2026-10-25 13:41Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
 
 Dispatched this pass: slate_primary (ok)
 
