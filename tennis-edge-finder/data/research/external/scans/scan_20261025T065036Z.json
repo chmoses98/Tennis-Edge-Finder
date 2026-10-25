@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-25T06:50:36.540337+00:00",
+ "run_id": "20261025T065036Z",
+ "external_parse": {
+  "events": 159,
+  "markets": 1725,
+  "skipped_family": 427,
+  "skipped_period": 471,
+  "skipped_live": 13,
+  "one_sided": 43,
+  "rows": 2483,
+  "devigged": 784
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1076,
+  "markets_mapped": 457,
+  "contracts": 982,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261025T065036Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 457,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 201,
+  "rows": 781,
+  "two_sided": 773,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 590,
+ "external_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 110,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.7333,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Dominic Stephan Stricker": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Khumoyun Sultanov": 1,
+   "Min Hyuk Cho": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.7634,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Sanhui Shin": 1,
+   "Jake Evans": 1,
+   "Mateja Stanisavljevic": 1,
+   "Dominik Matic": 1,
+   "Kim Johannes Niethammer": 1,
+   "Johannes Lahner": 1,
+   "LEONARDO PENASA": 1,
+   "Daniele Faustini": 1,
+   "Philip Niederle": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 116,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
