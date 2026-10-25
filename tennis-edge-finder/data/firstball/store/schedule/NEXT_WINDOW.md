@@ -1,19 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-25 06:22Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-25 06:39Z)
 
-* Earliest credible first ball: **2026-10-25 06:45Z**
-* Recommended RUN TENNIS time: **2026-10-25 06:00Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-25 06:35Z**
+* Earliest credible first ball: **2026-10-25 06:40Z**
+* Recommended RUN TENNIS time: **2026-10-25 05:55Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-25 06:30Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Anastasia Zakharova vs Teodora Kostovic | 2026-10-25 06:45Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
+| Tereza Valentova vs Shuai Zhang | 2026-10-25 06:40Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **42 main-tour match(es) without a verified start status** (BET blocked until checked): Dominic Stricker vs Casper Ruud, Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Davidovich Fokina vs Zizou Bergs, Holger Rune vs Quentin Halys, Valentin Vacherot vs Mariano Navone, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Hubert Hurkacz vs Arthur Fils, Alexander Zverev vs Martin Landaluce
 
-Published slate: `SL-20261025T060223Z-30a1f2f4` built 2026-10-25 06:02Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261025T060223Z-30a1f2f4` built 2026-10-25 06:02Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-25 09:00Z, run by 2026-10-25 08:15Z, 2 match(es)
 * later window 3: first ball 2026-10-25 11:00Z, run by 2026-10-25 10:15Z, 5 match(es)
