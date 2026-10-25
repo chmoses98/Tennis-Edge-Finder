@@ -1,0 +1,114 @@
+{
+ "generated_at": "2026-10-25T15:30:47.484380+00:00",
+ "run_id": "20261025T153047Z",
+ "external_parse": {
+  "events": 145,
+  "markets": 1397,
+  "skipped_family": 254,
+  "skipped_period": 462,
+  "skipped_live": 28,
+  "one_sided": 32,
+  "rows": 2299,
+  "devigged": 647
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1096,
+  "markets_mapped": 496,
+  "contracts": 1054,
+  "quoted_contracts": 850,
+  "raw": "data/research/external/raw/20261025T153047Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 496,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 232,
+  "rows": 822,
+  "two_sided": 815,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1450,
+ "external_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 31,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6842,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Dominic Stephan Stricker": 1,
+   "Sergio Castro": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Maria Herazo": 1,
+   "Jake Evans": 1,
+   "Mason Dace": 1,
+   "Fred Barnett": 1,
+   "Leah Bush": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Sergio Castro": 1,
+   "Alex Hernandez": 1,
+   "Martin Baquero": 1,
+   "Tristan McCormick": 1,
+   "Carmen Andreea Herea": 1,
+   "Mario Andre Galarraga": 1,
+   "Min Hyuk Cho": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 145,
+   "UNMAPPED_PLAYER": 35,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7967,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Mario Andre Galarraga": 1,
+   "Tristan McCormick": 1,
+   "Martin Baquero": 1,
+   "Alex Hernandez": 1,
+   "Sergio Castro": 1,
+   "Abril Cardenas Olivares": 1,
+   "Jayson Blando": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 145,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 66,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
