@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-25T05:19:45.925834+00:00",
+ "run_id": "20261025T051945Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1820,
+  "skipped_family": 450,
+  "skipped_period": 510,
+  "skipped_live": 11,
+  "one_sided": 36,
+  "rows": 2650,
+  "devigged": 824
+ },
+ "smarkets_fetch": {
+  "events_seen": 175,
+  "events_priced": 80,
+  "markets": 920,
+  "markets_mapped": 339,
+  "contracts": 716,
+  "quoted_contracts": 716,
+  "raw": "data/research/external/raw/20261025T051945Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 339,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 65,
+  "rows": 651,
+  "two_sided": 646,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 372,
+ "external_mapping": {
+  "total": 149,
+  "by_status": {
+   "MAPPED": 110,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.7383,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Dominic Stephan Stricker": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Maria Herazo": 1,
+   "Luke Koh": 1,
+   "Julien Tremolieres": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 5,
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 6,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Sergio Castro": 1,
+   "Alex Hernandez": 1,
+   "Martin Baquero": 1,
+   "Tristan McCormick": 1,
+   "Mario Andre Galarraga": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7159,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Sergio Castro": 1,
+   "Khumoyun Sultanov": 1,
+   "Sanhui Shin": 1,
+   "Jonny Cross": 1,
+   "Younes Jenkins": 1,
+   "Kim Johannes Niethammer": 1,
+   "Daniel Haller": 1,
+   "Matteo Trombini": 1,
+   "Philip Niederle": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
