@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 20:07Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 20:18Z)
 
 * Earliest credible first ball: **2026-10-27 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-27 00:45Z**
@@ -14,7 +14,7 @@
 | Simona Waltert vs Jil Teichmann | 2026-10-27 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Anastasia Zakharova vs Magda Linette | 2026-10-27 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**15 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Taylor Fritz vs Rinky Hijikata, Remy Bertola vs Denis Shapovalov, Dominic Stricker vs Casper Ruud, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili
+**14 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Taylor Fritz vs Rinky Hijikata, Remy Bertola vs Denis Shapovalov, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Karen Khachanov vs Carlos Alcaraz
 
 Published slate: `SL-20261026T195123Z-ab51298c` built 2026-10-26 19:51Z -- current
 
