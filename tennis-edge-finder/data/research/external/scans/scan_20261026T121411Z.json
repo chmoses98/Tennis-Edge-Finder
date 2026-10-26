@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-26T12:14:11.480467+00:00",
+ "run_id": "20261026T121411Z",
+ "external_parse": {
+  "events": 179,
+  "markets": 2055,
+  "skipped_family": 418,
+  "skipped_period": 606,
+  "skipped_live": 25,
+  "one_sided": 11,
+  "rows": 3702,
+  "devigged": 1020
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1254,
+  "markets_mapped": 447,
+  "contracts": 958,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261026T121411Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 447,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 137,
+  "rows": 821,
+  "two_sided": 817,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1726,
+ "external_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6726,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Dominic Stephan Stricker": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Noma Akugue Noha": 1,
+   "Gomes, Eduarda": 1,
+   "Abril Cardenas Olivares": 1,
+   "Maria Herazo": 1,
+   "Emna Gharbi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Carmen Andreea Herea": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Rositsa Dencheva": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 242,
+  "by_status": {
+   "MAPPED": 184,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 56
+  },
+  "mapped_rate": 0.7603,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Eduarda Gomes": 1,
+   "Abril Cardenas Olivares": 1,
+   "Jeronimo Velazco Escobar": 1,
+   "Darcy Nicholls": 1,
+   "Aleksander Franko": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 133,
+ "kalshi_mapped_matches": 184,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 93,
+  "tri:INSUFFICIENT_INPUTS": 50,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 3,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
