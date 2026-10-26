@@ -1,20 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 06:15Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 06:31Z)
 
-* Earliest credible first ball: **2026-10-26 06:16Z**
-* Recommended RUN TENNIS time: **2026-10-26 05:31Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-26 06:06Z**
-* Matches in window: 4
+* Earliest credible first ball: **2026-10-26 06:31Z**
+* Recommended RUN TENNIS time: **2026-10-26 05:46Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-26 06:21Z**
+* Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexandra Eala vs Mika Stojsavljevic | 2026-10-26 06:16Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 2 of best-of-3) | MEDIUM |
-| Han Shi vs Alevtina Ibragimova | 2026-10-26 06:16Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3) | MEDIUM |
-| Harriet Dart vs Tatiana Prozorova | 2026-10-26 06:41Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
+| Alexandra Eala vs Mika Stojsavljevic | 2026-10-26 06:31Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 2 of best-of-3) | MEDIUM |
+| Harriet Dart vs Tatiana Prozorova | 2026-10-26 06:56Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
 | Paula Badosa vs Carol Young Suh Lee | 2026-10-26 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**24 main-tour match(es) without a verified start status** (BET blocked until checked): Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Flavio Cobolli vs Grigor Dimitrov, Cameron Norrie vs Francisco Cerundolo, Daniel Merida vs Daniil Medvedev
+**25 main-tour match(es) without a verified start status** (BET blocked until checked): Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Flavio Cobolli vs Grigor Dimitrov, Cameron Norrie vs Francisco Cerundolo, Daniel Merida vs Daniil Medvedev
 
-Published slate: `SL-20261026T054350Z-853e82eb` built 2026-10-26 05:43Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
+Published slate: `SL-20261026T060725Z-f21b6eaf` built 2026-10-26 06:07Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
 
 Dispatched this pass: slate_final (ok)
 
