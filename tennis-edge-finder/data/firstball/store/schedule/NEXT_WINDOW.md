@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 17:42Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 17:55Z)
 
-* Earliest credible first ball: **2026-10-26 17:44Z**
-* Recommended RUN TENNIS time: **2026-10-26 16:59Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-26 17:34Z**
+* Earliest credible first ball: **2026-10-26 17:58Z**
+* Recommended RUN TENNIS time: **2026-10-26 17:13Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-26 17:48Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Dominic Stricker vs Casper Ruud | 2026-10-26 17:44Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5) | MEDIUM |
-| Luca Van Assche vs Learner Tien | 2026-10-26 18:09Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 2 of best-of-5) | MEDIUM |
+| Dominic Stricker vs Casper Ruud | 2026-10-26 17:58Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5) | MEDIUM |
+| Luca Van Assche vs Learner Tien | 2026-10-26 18:23Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 2 of best-of-5) | MEDIUM |
 
 **15 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Taylor Fritz vs Rinky Hijikata, Remy Bertola vs Denis Shapovalov, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Luciano Darderi vs Matteo Arnaldi, Jurij Rodionov vs Nikoloz Basilashvili
 
-Published slate: `SL-20261026T153140Z-dc3b1c42` built 2026-10-26 15:31Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-26T17:44:46.246363+00:00, slate built 2026-10-26T15:31:40.337914+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 9 match(es)
+Published slate: `SL-20261026T173403Z-537bf5b8` built 2026-10-26 17:34Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-27 01:30Z, run by 2026-10-27 00:45Z, 6 match(es)
 * later window 3: first ball 2026-10-27 03:30Z, run by 2026-10-27 02:45Z, 4 match(es)
