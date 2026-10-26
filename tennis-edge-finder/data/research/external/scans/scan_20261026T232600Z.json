@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-26T23:26:00.870021+00:00",
+ "run_id": "20261026T232600Z",
+ "external_parse": {
+  "events": 215,
+  "markets": 2318,
+  "skipped_family": 369,
+  "skipped_period": 732,
+  "skipped_live": 21,
+  "one_sided": 28,
+  "rows": 3938,
+  "devigged": 1187
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1753,
+  "markets_mapped": 584,
+  "contracts": 1262,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261026T232600Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 584,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 437,
+  "rows": 825,
+  "two_sided": 823,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 514,
+ "external_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 136,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.67,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Ella Olofson": 1,
+   "Rachael Phelan": 1,
+   "Nick Beamish": 1,
+   "Samarth Patel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 109,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8583,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Dominik Matic": 1,
+   "Denis Klok": 1,
+   "Matthew Howse": 1,
+   "Martino Guidotti": 1,
+   "Akmal Abdullaev": 1,
+   "Danila Kvasov": 1,
+   "Jeronimo Velazco Escobar": 1,
+   "Samarth Patel": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 150,
+ "kalshi_mapped_matches": 109,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:MARKETS_AGREE": 11,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "WATCH": 4,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "SHADOW_BET": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
