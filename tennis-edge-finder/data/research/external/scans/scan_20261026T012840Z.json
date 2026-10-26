@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-26T01:28:40.977180+00:00",
+ "run_id": "20261026T012840Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1959,
+  "skipped_family": 418,
+  "skipped_period": 623,
+  "skipped_live": 3,
+  "one_sided": 5,
+  "rows": 3391,
+  "devigged": 913
+ },
+ "smarkets_fetch": {
+  "events_seen": 200,
+  "events_priced": 80,
+  "markets": 1324,
+  "markets_mapped": 472,
+  "contracts": 1012,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261026T012840Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 472,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 187,
+  "rows": 825,
+  "two_sided": 821,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 305,
+ "external_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 33
+  },
+  "mapped_rate": 0.6977,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Dominic Stephan Stricker": 1,
+   "Xinyu Wang": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 6,
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Xinyu Wang": 1,
+   "Sanhui Shin": 1,
+   "Min Hyuk Cho": 1,
+   "Khumoyun Sultanov": 1,
+   "Carmen Andreea Herea": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8286,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Lance Lage": 1,
+   "Mateja Stanisavljevic": 1,
+   "Kim Johannes Niethammer": 1,
+   "Jayson Blando": 1,
+   "Luciana Sainz": 1,
+   "Aliya Vongdala": 1,
+   "Elina Kamyabsharifi": 1,
+   "Matilde Stamborg": 1,
+   "Emma Sophie Glaser": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
