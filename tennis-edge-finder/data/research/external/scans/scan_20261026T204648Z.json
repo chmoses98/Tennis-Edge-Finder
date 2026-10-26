@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-26T20:46:48.638950+00:00",
+ "run_id": "20261026T204648Z",
+ "external_parse": {
+  "events": 157,
+  "markets": 1716,
+  "skipped_family": 310,
+  "skipped_period": 540,
+  "skipped_live": 21,
+  "one_sided": 10,
+  "rows": 3056,
+  "devigged": 854
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1678,
+  "markets_mapped": 551,
+  "contracts": 1186,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261026T204648Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 551,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 367,
+  "rows": 819,
+  "two_sided": 815,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1852,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "UNMAPPED_PLAYER": 8,
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6081,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Dominic Stephan Stricker": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Atkinson Dylan": 1,
+   "Roberto Herman": 1,
+   "Sofia Cabezas Dominguez": 1,
+   "Jingjing Lu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 267,
+  "by_status": {
+   "MAPPED": 197,
+   "UNMAPPED_PLAYER": 68,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7378,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Davide Ciaschetti": 1,
+   "Gabriele Maria Piano": 1,
+   "Jake Evans": 1,
+   "Matthew Howse": 1,
+   "Aleix Galindo Puig": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 197,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 65,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 12,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
