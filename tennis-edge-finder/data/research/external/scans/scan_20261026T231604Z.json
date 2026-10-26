@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-26T23:16:04.401130+00:00",
+ "run_id": "20261026T231604Z",
+ "external_parse": {
+  "events": 208,
+  "markets": 2318,
+  "skipped_family": 362,
+  "skipped_period": 734,
+  "skipped_live": 13,
+  "one_sided": 25,
+  "rows": 3950,
+  "devigged": 1195
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1731,
+  "markets_mapped": 577,
+  "contracts": 1242,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261026T231604Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 577,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 413,
+  "rows": 829,
+  "two_sided": 828,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 690,
+ "external_mapping": {
+  "total": 196,
+  "by_status": {
+   "MAPPED": 132,
+   "DOUBLES_UNSUPPORTED": 52,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.6735,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Ella Olofson": 1,
+   "Rachael Phelan": 1,
+   "Pablo Perez Ramos": 1,
+   "Jake Evans": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8067,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Matthew Howse": 1,
+   "Marco Bavaro": 1,
+   "Aristotelis Bezianis": 1,
+   "Pablo Perez Ramos": 1,
+   "Martino Guidotti": 1,
+   "Akmal Abdullaev": 1,
+   "Danila Kvasov": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 146,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
