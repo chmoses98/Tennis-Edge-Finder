@@ -1,0 +1,21 @@
+{
+ "pass": 22,
+ "conductor_run_id": "40311408067",
+ "started_at": "2026-10-26T18:01:46.006000+00:00",
+ "finished_work_at": "2026-10-26T18:05:28.390000+00:00",
+ "steps_s": {
+  "fetch": 0.79,
+  "restore": 0.04,
+  "capture": 149.69,
+  "discovery": 0.01,
+  "capture_publish": 8.3,
+  "external_scan": 54.26,
+  "external_publish": 9.26,
+  "cleanup": 0.01
+ },
+ "work_s": 222.38,
+ "interval_s": 600,
+ "intended_sleep_s": 378,
+ "overrun_s": 0.0,
+ "start_to_start_s": 600.47
+}
