@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-26T18:44:15.154012+00:00",
+ "run_id": "20261026T184415Z",
+ "external_parse": {
+  "events": 165,
+  "markets": 1644,
+  "skipped_family": 303,
+  "skipped_period": 512,
+  "skipped_live": 32,
+  "one_sided": 19,
+  "rows": 2923,
+  "devigged": 810
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1707,
+  "markets_mapped": 566,
+  "contracts": 1214,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261026T184415Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 566,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 396,
+  "rows": 818,
+  "two_sided": 811,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 446,
+ "external_mapping": {
+  "total": 156,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.5962,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Dominic Stephan Stricker": 1,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Parashar Bharadwaj": 1,
+   "Paolo Bompieri": 1,
+   "Lauren Nolan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 84,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.7925,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Gabriela Knutson": 1,
+   "Vaclav Schneider": 1,
+   "Alessandro Maina": 1,
+   "Max Geissinger": 1,
+   "Abdurakhmon Karimov": 1,
+   "Fedor Altukhov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Dmitrii Burtsev": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 34,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
