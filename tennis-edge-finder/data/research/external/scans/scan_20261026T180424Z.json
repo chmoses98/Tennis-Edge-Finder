@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-26T18:04:24.901663+00:00",
+ "run_id": "20261026T180424Z",
+ "external_parse": {
+  "events": 177,
+  "markets": 1649,
+  "skipped_family": 294,
+  "skipped_period": 513,
+  "skipped_live": 44,
+  "one_sided": 10,
+  "rows": 2997,
+  "devigged": 832
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1634,
+  "markets_mapped": 529,
+  "contracts": 1140,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261026T180424Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 529,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 330,
+  "rows": 810,
+  "two_sided": 807,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 531,
+ "external_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 102,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 49,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6071,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Dominic Stephan Stricker": 1,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Herazo": 1,
+   "Burridge William": 1,
+   "Parashar Bharadwaj": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Rositsa Dencheva": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 100,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8264,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Gabriela Knutson": 1,
+   "Vaclav Schneider": 1,
+   "Alessandro Maina": 1,
+   "Dmitrii Burtsev": 1,
+   "masaki ishikawa": 1,
+   "Jeronimo Velazco Escobar": 1,
+   "Darcy Nicholls": 1,
+   "Roberto Herman": 1,
+   "Lance Lage": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 127,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
