@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 16:35Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 16:47Z)
 
-* Earliest credible first ball: **2026-10-26 17:03Z**
-* Recommended RUN TENNIS time: **2026-10-26 16:18Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-26 16:53Z**
+* Earliest credible first ball: **2026-10-26 17:16Z**
+* Recommended RUN TENNIS time: **2026-10-26 16:31Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-26 17:06Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Dominic Stricker vs Casper Ruud | 2026-10-26 17:03Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
+| Dominic Stricker vs Casper Ruud | 2026-10-26 17:16Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
 | Luciano Darderi vs Matteo Arnaldi | 2026-10-26 18:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **16 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Taylor Fritz vs Rinky Hijikata, Remy Bertola vs Denis Shapovalov, Arthur Fery vs Jacob Fearnley, Jakub Mensik vs Lukas Neumayer, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev
 
-Published slate: `SL-20261026T153140Z-dc3b1c42` built 2026-10-26 15:31Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-26T17:03:12.779227+00:00, slate built 2026-10-26T15:31:40.337914+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261026T153140Z-dc3b1c42` built 2026-10-26 15:31Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-26T17:16:08.859150+00:00, slate built 2026-10-26T15:31:40.337914+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-26 19:00Z, run by 2026-10-26 18:15Z, 1 match(es)
 * later window 3: first ball 2026-10-27 01:30Z, run by 2026-10-27 00:45Z, 6 match(es)
