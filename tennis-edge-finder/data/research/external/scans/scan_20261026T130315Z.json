@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-10-26T13:03:15.217999+00:00",
+ "run_id": "20261026T130315Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 2061,
+  "skipped_family": 409,
+  "skipped_period": 617,
+  "skipped_live": 31,
+  "one_sided": 15,
+  "rows": 3706,
+  "devigged": 1020
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1359,
+  "markets_mapped": 423,
+  "contracts": 910,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261026T130315Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 824,
+  "two_sided": 817,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 587,
+ "external_mapping": {
+  "total": 175,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 20,
+   "DOUBLES_UNSUPPORTED": 40,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6457,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Noma Akugue Noha": 1,
+   "Gomes, Eduarda": 1,
+   "Abril Cardenas Olivares": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Carmen Andreea Herea": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Rositsa Dencheva": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 137,
+  "by_status": {
+   "MAPPED": 98,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 38
+  },
+  "mapped_rate": 0.7153,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Abril Cardenas Olivares": 1,
+   "Darcy Nicholls": 1,
+   "Samarth Patel": 1,
+   "Nick Beamish": 1,
+   "Heaton Pann": 1,
+   "Surrya Muudgil": 1,
+   "Lance Lage": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 133,
+ "kalshi_mapped_matches": 98,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 55,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 12,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
