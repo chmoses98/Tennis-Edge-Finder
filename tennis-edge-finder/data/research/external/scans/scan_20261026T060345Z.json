@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-26T06:03:45.329859+00:00",
+ "run_id": "20261026T060345Z",
+ "external_parse": {
+  "events": 140,
+  "markets": 1729,
+  "skipped_family": 383,
+  "skipped_period": 542,
+  "skipped_live": 15,
+  "one_sided": 11,
+  "rows": 2940,
+  "devigged": 792
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 867,
+  "markets_mapped": 408,
+  "contracts": 876,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261026T060345Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 408,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 52,
+  "rows": 824,
+  "two_sided": 821,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1713,
+ "external_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6977,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Dominic Stephan Stricker": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Maria Herazo": 1,
+   "Ethan David Zapp": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Carmen Andreea Herea": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 250,
+  "by_status": {
+   "MAPPED": 186,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 63
+  },
+  "mapped_rate": 0.744,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Gabriela Knutson": 1,
+   "Eduarda Gomes": 1,
+   "Abril Cardenas Olivares": 1,
+   "Surrya Muudgil": 1,
+   "Roberto Herman": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 186,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 88,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 7,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
