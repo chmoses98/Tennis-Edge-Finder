@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 04:25Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 04:41Z)
 
 * Earliest credible first ball: **2026-10-26 06:00Z**
 * Recommended RUN TENNIS time: **2026-10-26 05:15Z**
@@ -13,9 +13,9 @@
 
 **29 main-tour match(es) without a verified start status** (BET blocked until checked): Jerome Kym vs Arthur Rinderknech, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Taylor Fritz vs Stefanos Tsitsipas, Alex Michelsen vs Botic Van de Zandschulp, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Flavio Cobolli vs Grigor Dimitrov, Cameron Norrie vs Francisco Cerundolo, Daniel Merida vs Daniil Medvedev
 
-Published slate: `SL-20261026T035106Z-5b187571` built 2026-10-26 03:51Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261026T035106Z-5b187571` built 2026-10-26 03:51Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-26 08:00Z, run by 2026-10-26 07:15Z, 2 match(es)
 * later window 3: first ball 2026-10-26 12:30Z, run by 2026-10-26 11:45Z, 7 match(es)
