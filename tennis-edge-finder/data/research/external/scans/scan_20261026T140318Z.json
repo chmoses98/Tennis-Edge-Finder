@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-26T14:03:18.607451+00:00",
+ "run_id": "20261026T140318Z",
+ "external_parse": {
+  "events": 172,
+  "markets": 1945,
+  "skipped_family": 393,
+  "skipped_period": 580,
+  "skipped_live": 27,
+  "one_sided": 15,
+  "rows": 3503,
+  "devigged": 957
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1404,
+  "markets_mapped": 428,
+  "contracts": 920,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261026T140318Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 428,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 95,
+  "rows": 825,
+  "two_sided": 822,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 707,
+ "external_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 40,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6503,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Dominic Stephan Stricker": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Noma Akugue Noha": 1,
+   "Gomes, Eduarda": 1,
+   "Abril Cardenas Olivares": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Carmen Andreea Herea": 1,
+   "Rositsa Dencheva": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 95,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.7422,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Alex Hernandez": 1,
+   "Eduarda Gomes": 1,
+   "Abril Cardenas Olivares": 1,
+   "Kazushi Idogaki": 1,
+   "masaki ishikawa": 1,
+   "Samarth Patel": 1,
+   "Surrya Muudgil": 1,
+   "Lance Lage": 1,
+   "Patricio Llanes Echavarria": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 126,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
