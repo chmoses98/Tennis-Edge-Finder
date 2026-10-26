@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-26T20:35:54.240090+00:00",
+ "run_id": "20261026T203554Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1716,
+  "skipped_family": 310,
+  "skipped_period": 540,
+  "skipped_live": 22,
+  "one_sided": 10,
+  "rows": 3058,
+  "devigged": 856
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1710,
+  "markets_mapped": 566,
+  "contracts": 1216,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261026T203554Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 566,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 410,
+  "rows": 806,
+  "two_sided": 803,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 551,
+ "external_mapping": {
+  "total": 149,
+  "by_status": {
+   "UNMAPPED_PLAYER": 7,
+   "MAPPED": 92,
+   "DOUBLES_UNSUPPORTED": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6174,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Dominic Stephan Stricker": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Atkinson Dylan": 1,
+   "Roberto Herman": 1,
+   "Jingjing Lu": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 93,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jake Evans": 1,
+   "Matthew Howse": 1,
+   "Danila Folkheims": 1,
+   "Ioannis Stamatopoulos": 1,
+   "Abdurakhmon Karimov": 1,
+   "Fedor Altukhov": 1,
+   "Aristotelis Bezianis": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 93,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 25,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
