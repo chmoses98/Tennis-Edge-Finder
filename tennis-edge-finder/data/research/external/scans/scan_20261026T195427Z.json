@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-26T19:54:27.094504+00:00",
+ "run_id": "20261026T195427Z",
+ "external_parse": {
+  "events": 152,
+  "markets": 1502,
+  "skipped_family": 277,
+  "skipped_period": 462,
+  "skipped_live": 28,
+  "one_sided": 10,
+  "rows": 2700,
+  "devigged": 753
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1698,
+  "markets_mapped": 562,
+  "contracts": 1202,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261026T195427Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 562,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 397,
+  "rows": 805,
+  "two_sided": 799,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 479,
+ "external_mapping": {
+  "total": 143,
+  "by_status": {
+   "UNMAPPED_PLAYER": 10,
+   "MAPPED": 83,
+   "DOUBLES_UNSUPPORTED": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.5804,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Dominic Stephan Stricker": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Parashar Bharadwaj": 1,
+   "Paolo Bompieri": 1,
+   "Lauren Nolan": 1,
+   "Jesus Martinez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 86,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.7414,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Gabriela Knutson": 1,
+   "Gabriele Maria Piano": 1,
+   "Jan Facek": 1,
+   "Tim Hammes": 1,
+   "Aristotelis Bezianis": 1,
+   "Martino Guidotti": 1,
+   "Marwan Ehab": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kenta Kawada": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 86,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 21,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
