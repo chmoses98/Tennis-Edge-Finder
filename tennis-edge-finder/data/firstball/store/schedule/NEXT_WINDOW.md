@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 02:04Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-26 02:20Z)
 
 * Earliest credible first ball: **2026-10-26 02:30Z**
 * Recommended RUN TENNIS time: **2026-10-26 01:45Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Daria Kasatkina vs Talia Gibson | 2026-10-26 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Daria Kasatkina vs Talia Gibson | 2026-10-26 02:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Maria Timofeeva vs Teodora Kostovic | 2026-10-26 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Panna Udvardy vs Sinja Kraus | 2026-10-26 03:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Aliaksandra Sasnovich vs Nikola Bartunkova | 2026-10-26 04:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
@@ -17,7 +17,7 @@
 
 Published slate: `SL-20261026T010559Z-fee4464d` built 2026-10-26 01:05Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-26T02:30:00+00:00, slate built 2026-10-26T01:05:59.940218+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-26 04:30Z, run by 2026-10-26 03:45Z, 2 match(es)
 * later window 3: first ball 2026-10-26 07:30Z, run by 2026-10-26 06:45Z, 3 match(es)
