@@ -1,6 +1,6 @@
 {
-"run_id": "20261025T220412Z",
-"generated_at": "2026-10-25T22:04:35.858952+00:00",
+"run_id": "20261026T015747Z",
+"generated_at": "2026-10-26T01:58:12.755757+00:00",
 "discovery_run": "20261025T035941Z",
 "git_sha": "49ca6779814edc467eb1b02a0487d47aaeb488cd",
 "production_model": "projection_v2.0",
@@ -12,8 +12,8 @@
 "coefficients_fingerprint": "dd6d413d5bfdd820",
 "spec_fingerprint": "40e74a71621a24ff",
 "state_built_at": {
-"ATP": "2026-10-25T22:03:58.642476+00:00",
-"WTA": "2026-10-25T22:03:37.712445+00:00"
+"ATP": "2026-10-26T01:57:34.106788+00:00",
+"WTA": "2026-10-26T01:57:13.939625+00:00"
 },
 "state_last_date": {
 "ATP": "2026-10-24",
@@ -39,27 +39,27 @@
 }
 },
 "lifecycle": {
-"open_snapshot_run": "20261025T220403Z",
-"open_snapshot_age_s": 4.488532,
+"open_snapshot_run": "20261026T015738Z",
+"open_snapshot_age_s": 4.15678,
 "snapshot_authoritative": true,
-"settled_tickers_known": 3351,
+"settled_tickers_known": 2352,
 "quote_sla_s": {
 "fresh": 600,
 "stale": 1800
 }
 },
 "coverage": {
-"listed_after_discovery": 491,
-"active": 2122,
-"not_in_fresh_open_snapshot": 541,
-"settled_per_exchange": 586,
-"past_nominal_start": 300,
+"listed_after_discovery": 607,
+"active": 2238,
+"not_in_fresh_open_snapshot": 521,
+"settled_per_exchange": 620,
+"past_nominal_start": 292,
 "names_recovered_from_sibling_event": 87,
-"priced_with_projection_v2.0": 237,
+"priced_with_projection_v2.0": 276,
 "projected_doubles": 26,
-"excluded_event": 28,
-"unmapped_player": 99,
-"projected": 568
+"excluded_event": 38,
+"unmapped_player": 121,
+"projected": 646
 },
 "projected_tickers": [
 "KXWTAGTOTAL-26OCT25UCHMER-25",
@@ -190,10 +190,6 @@
 "KXWTAMATCH-26OCT25EALSTO-EAL",
 "KXWTAMATCH-26OCT25OSAPAO-PAO",
 "KXWTAMATCH-26OCT25OSAPAO-OSA",
-"KXITFWMATCH-26OCT25BAYKIN-KIN",
-"KXITFWMATCH-26OCT25BAYKIN-BAY",
-"KXITFWMATCH-26OCT25BJORAB-RAB",
-"KXITFWMATCH-26OCT25BJORAB-BJO",
 "KXWTASETWINNER-26OCT25WALTEI-2-WAL",
 "KXWTASETWINNER-26OCT25WALTEI-2-TEI",
 "KXWTASETWINNER-26OCT25WALTEI-1-WAL",
@@ -258,12 +254,8 @@
 "KXWTASETWINNER-26OCT25ANNALE-2-ALE",
 "KXWTASETWINNER-26OCT25ANNALE-1-ANN",
 "KXWTASETWINNER-26OCT25ANNALE-1-ALE",
-"KXATPCHALLENGERMATCH-26OCT25BARHEC-BAR",
-"KXATPCHALLENGERMATCH-26OCT25BARHEC-HEC",
 "KXATPCHALLENGERMATCH-26OCT25BINHUR-BIN",
 "KXATPCHALLENGERMATCH-26OCT25BINHUR-HUR",
-"KXATPCHALLENGERMATCH-26OCT25BOUDOM-BOU",
-"KXATPCHALLENGERMATCH-26OCT25BOUDOM-DOM",
 "KXATPCHALLENGERMATCH-26OCT25CASPEL-CAS",
 "KXATPCHALLENGERMATCH-26OCT25CASPEL-PEL",
 "KXATPCHALLENGERMATCH-26OCT25JASKIK-JAS",
@@ -278,14 +270,20 @@
 "KXATPCHALLENGERMATCH-26OCT25PANPLE-PLE",
 "KXATPCHALLENGERMATCH-26OCT25PARIMA-IMA",
 "KXATPCHALLENGERMATCH-26OCT25PARIMA-PAR",
-"KXATPCHALLENGERMATCH-26OCT25TROSVA-SVA",
-"KXATPCHALLENGERMATCH-26OCT25TROSVA-TRO",
-"KXATPCHALLENGERMATCH-26OCT25WILCHA-CHA",
-"KXATPCHALLENGERMATCH-26OCT25WILCHA-WIL",
+"KXATPCHALLENGERMATCH-26OCT26BLAURS-BLA",
+"KXATPCHALLENGERMATCH-26OCT26BLAURS-URS",
 "KXATPCHALLENGERMATCH-26OCT26CILZHA-CIL",
 "KXATPCHALLENGERMATCH-26OCT26CILZHA-ZHA",
+"KXATPCHALLENGERMATCH-26OCT26ECHHAS-ECH",
+"KXATPCHALLENGERMATCH-26OCT26ECHHAS-HAS",
+"KXATPCHALLENGERMATCH-26OCT26FELPAR-FEL",
+"KXATPCHALLENGERMATCH-26OCT26FELPAR-PAR",
+"KXATPCHALLENGERMATCH-26OCT26GEEMCD-GEE",
+"KXATPCHALLENGERMATCH-26OCT26GEEMCD-MCD",
 "KXATPCHALLENGERMATCH-26OCT26HARSHA-HAR",
 "KXATPCHALLENGERMATCH-26OCT26HARSHA-SHA",
+"KXATPCHALLENGERMATCH-26OCT26HEMCAT-CAT",
+"KXATPCHALLENGERMATCH-26OCT26HEMCAT-HEM",
 "KXATPCHALLENGERMATCH-26OCT26KIMHAR-HAR",
 "KXATPCHALLENGERMATCH-26OCT26KIMHAR-KIM",
 "KXATPCHALLENGERMATCH-26OCT26MILUCH-MIL",
@@ -422,24 +420,36 @@
 "KXATPSETWINNER-26OCT26MENNEU-2-NEU",
 "KXITFMATCH-26OCT25MASBAU-BAU",
 "KXITFMATCH-26OCT25MASBAU-MAS",
+"KXITFMATCH-26OCT26ALVRAO-ALV",
+"KXITFMATCH-26OCT26ALVRAO-RAO",
 "KXITFMATCH-26OCT26BINESC-BIN",
 "KXITFMATCH-26OCT26BINESC-ESC",
 "KXITFMATCH-26OCT26BORMOT-BOR",
 "KXITFMATCH-26OCT26BORMOT-MOT",
 "KXITFMATCH-26OCT26BOZHIG-BOZ",
 "KXITFMATCH-26OCT26BOZHIG-HIG",
+"KXITFMATCH-26OCT26BRAGAR-BRA",
+"KXITFMATCH-26OCT26BRAGAR-GAR",
 "KXITFMATCH-26OCT26BRANOL-BRA",
 "KXITFMATCH-26OCT26BRANOL-NOL",
+"KXITFMATCH-26OCT26CERGAM-CER",
+"KXITFMATCH-26OCT26CERGAM-GAM",
 "KXITFMATCH-26OCT26HAULEC-HAU",
 "KXITFMATCH-26OCT26HAULEC-LEC",
+"KXITFMATCH-26OCT26KOKSAR-KOK",
+"KXITFMATCH-26OCT26KOKSAR-SAR",
 "KXITFMATCH-26OCT26LIMBAR-BAR",
 "KXITFMATCH-26OCT26LIMBAR-LIM",
+"KXITFMATCH-26OCT26MARVOI-MAR",
+"KXITFMATCH-26OCT26MARVOI-VOI",
 "KXITFMATCH-26OCT26NAKFUX-FUX",
 "KXITFMATCH-26OCT26NAKFUX-NAK",
 "KXITFMATCH-26OCT26NOASOU-NOA",
 "KXITFMATCH-26OCT26NOASOU-SOU",
 "KXITFMATCH-26OCT26OLIVIS-OLI",
 "KXITFMATCH-26OCT26OLIVIS-VIS",
+"KXITFMATCH-26OCT26QUECAN-CAN",
+"KXITFMATCH-26OCT26QUECAN-QUE",
 "KXITFMATCH-26OCT26TADMUG-MUG",
 "KXITFMATCH-26OCT26TADMUG-TAD",
 "KXITFMATCH-26OCT26THOCOL-COL",
@@ -476,24 +486,40 @@
 "KXITFWMATCH-26OCT25SHAYAN-YAN",
 "KXITFWMATCH-26OCT25TIKCHE-CHE",
 "KXITFWMATCH-26OCT25TIKCHE-TIK",
+"KXITFWMATCH-26OCT26ABASZO-ABA",
+"KXITFWMATCH-26OCT26ABASZO-SZO",
 "KXITFWMATCH-26OCT26ABEABE2-ABE",
 "KXITFWMATCH-26OCT26ABEABE2-ABE2",
+"KXITFWMATCH-26OCT26BAJMAR-BAJ",
+"KXITFWMATCH-26OCT26BAJMAR-MAR",
 "KXITFWMATCH-26OCT26BARSCH-BAR",
 "KXITFWMATCH-26OCT26BARSCH-SCH",
+"KXITFWMATCH-26OCT26BAYRAB-BAY",
+"KXITFWMATCH-26OCT26BAYRAB-RAB",
 "KXITFWMATCH-26OCT26BIOMAN-BIO",
 "KXITFWMATCH-26OCT26BIOMAN-MAN",
 "KXITFWMATCH-26OCT26BROGAR-BRO",
 "KXITFWMATCH-26OCT26BROGAR-GAR",
+"KXITFWMATCH-26OCT26BURKON-BUR",
+"KXITFWMATCH-26OCT26BURKON-KON",
+"KXITFWMATCH-26OCT26CHAMAL-CHA",
+"KXITFWMATCH-26OCT26CHAMAL-MAL",
 "KXITFWMATCH-26OCT26CIOKHO-CIO",
 "KXITFWMATCH-26OCT26CIOKHO-KHO",
+"KXITFWMATCH-26OCT26CROKOR-CRO",
+"KXITFWMATCH-26OCT26CROKOR-KOR",
 "KXITFWMATCH-26OCT26DANPRE-DAN",
 "KXITFWMATCH-26OCT26DANPRE-PRE",
 "KXITFWMATCH-26OCT26DEEMIH-DEE",
 "KXITFWMATCH-26OCT26DEEMIH-MIH",
 "KXITFWMATCH-26OCT26DHOROV-DHO",
 "KXITFWMATCH-26OCT26DHOROV-ROV",
+"KXITFWMATCH-26OCT26DILIYE-DIL",
+"KXITFWMATCH-26OCT26DILIYE-IYE",
 "KXITFWMATCH-26OCT26DITTEI-DIT",
 "KXITFWMATCH-26OCT26DITTEI-TEI",
+"KXITFWMATCH-26OCT26FIRPAR-FIR",
+"KXITFWMATCH-26OCT26FIRPAR-PAR",
 "KXITFWMATCH-26OCT26GARNEW-GAR",
 "KXITFWMATCH-26OCT26GARNEW-NEW",
 "KXITFWMATCH-26OCT26GORAHT-AHT",
@@ -510,28 +536,50 @@
 "KXITFWMATCH-26OCT26JANDEB-JAN",
 "KXITFWMATCH-26OCT26KUBLAC-KUB",
 "KXITFWMATCH-26OCT26KUBLAC-LAC",
+"KXITFWMATCH-26OCT26KUNLIM-KUN",
+"KXITFWMATCH-26OCT26KUNLIM-LIM",
+"KXITFWMATCH-26OCT26LEEZAM-LEE",
+"KXITFWMATCH-26OCT26LEEZAM-ZAM",
 "KXITFWMATCH-26OCT26LINYUX-LIN",
 "KXITFWMATCH-26OCT26LINYUX-YUX",
 "KXITFWMATCH-26OCT26LONYAR-LON",
 "KXITFWMATCH-26OCT26LONYAR-YAR",
+"KXITFWMATCH-26OCT26LOPPOR-LOP",
+"KXITFWMATCH-26OCT26LOPPOR-POR",
 "KXITFWMATCH-26OCT26MAQMAR-MAQ",
 "KXITFWMATCH-26OCT26MAQMAR-MAR",
 "KXITFWMATCH-26OCT26MARLEK-LEK",
 "KXITFWMATCH-26OCT26MARLEK-MAR",
+"KXITFWMATCH-26OCT26NGOXUX-NGO",
+"KXITFWMATCH-26OCT26NGOXUX-XUX",
 "KXITFWMATCH-26OCT26NOVSED-NOV",
 "KXITFWMATCH-26OCT26NOVSED-SED",
 "KXITFWMATCH-26OCT26NYLHOF-HOF",
 "KXITFWMATCH-26OCT26NYLHOF-NYL",
+"KXITFWMATCH-26OCT26PODABB-ABB",
+"KXITFWMATCH-26OCT26PODABB-POD",
 "KXITFWMATCH-26OCT26PREWED-PRE",
 "KXITFWMATCH-26OCT26PREWED-WED",
+"KXITFWMATCH-26OCT26RATREE-RAT",
+"KXITFWMATCH-26OCT26RATREE-REE",
 "KXITFWMATCH-26OCT26RUARAD-RAD",
 "KXITFWMATCH-26OCT26RUARAD-RUA",
+"KXITFWMATCH-26OCT26SCHDIG-DIG",
+"KXITFWMATCH-26OCT26SCHDIG-SCH",
 "KXITFWMATCH-26OCT26SEBGUD-GUD",
 "KXITFWMATCH-26OCT26SEBGUD-SEB",
+"KXITFWMATCH-26OCT26SHAMAR-MAR",
+"KXITFWMATCH-26OCT26SHAMAR-SHA",
+"KXITFWMATCH-26OCT26SIMGRI-GRI",
+"KXITFWMATCH-26OCT26SIMGRI-SIM",
 "KXITFWMATCH-26OCT26SMIGAR-GAR",
 "KXITFWMATCH-26OCT26SMIGAR-SMI",
+"KXITFWMATCH-26OCT26SMIPUI-PUI",
+"KXITFWMATCH-26OCT26SMIPUI-SMI",
 "KXITFWMATCH-26OCT26SUVJIA-JIA",
 "KXITFWMATCH-26OCT26SUVJIA-SUV",
+"KXITFWMATCH-26OCT26TANTAB-TAB",
+"KXITFWMATCH-26OCT26TANTAB-TAN",
 "KXITFWMATCH-26OCT26TUPTUR-TUP",
 "KXITFWMATCH-26OCT26TUPTUR-TUR",
 "KXITFWMATCH-26OCT26VELRAD-RAD",
@@ -540,16 +588,28 @@
 "KXITFWMATCH-26OCT26VICHAY-VIC",
 "KXITFWMATCH-26OCT26VLAVAN-VAN",
 "KXITFWMATCH-26OCT26VLAVAN-VLA",
+"KXITFWMATCH-26OCT26VYAMAR-MAR",
+"KXITFWMATCH-26OCT26VYAMAR-VYA",
 "KXITFWMATCH-26OCT26WAIBEK-BEK",
 "KXITFWMATCH-26OCT26WAIBEK-WAI",
 "KXITFWMATCH-26OCT26WIRSLA-SLA",
 "KXITFWMATCH-26OCT26WIRSLA-WIR",
+"KXITFWMATCH-26OCT26YANFRE-FRE",
+"KXITFWMATCH-26OCT26YANFRE-YAN",
 "KXITFWMATCH-26OCT26YASSPA-SPA",
 "KXITFWMATCH-26OCT26YASSPA-YAS",
+"KXITFWMATCH-26OCT26YOSLAG-LAG",
+"KXITFWMATCH-26OCT26YOSLAG-YOS",
 "KXITFWMATCH-26OCT26ZARCAK-CAK",
 "KXITFWMATCH-26OCT26ZARCAK-ZAR",
-"KXWTACHALLENGERMATCH-26OCT25TORNAV-NAV",
-"KXWTACHALLENGERMATCH-26OCT25TORNAV-TOR",
+"KXWTACHALLENGERMATCH-26OCT26KOTSEN-KOT",
+"KXWTACHALLENGERMATCH-26OCT26KOTSEN-SEN",
+"KXWTACHALLENGERMATCH-26OCT26NAGYES-NAG",
+"KXWTACHALLENGERMATCH-26OCT26NAGYES-YES",
+"KXWTACHALLENGERMATCH-26OCT26SAKCHI-CHI",
+"KXWTACHALLENGERMATCH-26OCT26SAKCHI-SAK",
+"KXWTACHALLENGERMATCH-26OCT26ZONMAD-MAD",
+"KXWTACHALLENGERMATCH-26OCT26ZONMAD-ZON",
 "KXWTAGTOTAL-26OCT25KASGIB-17",
 "KXWTAGTOTAL-26OCT25KASGIB-22",
 "KXWTAGTOTAL-26OCT25KASGIB-27",
@@ -604,8 +664,14 @@
 "KXWTAMATCH-26OCT26BADLEE-LEE",
 "KXWTAMATCH-26OCT26DARPRO-DAR",
 "KXWTAMATCH-26OCT26DARPRO-PRO",
+"KXWTAMATCH-26OCT26JOICIR-CIR",
+"KXWTAMATCH-26OCT26JOICIR-JOI",
+"KXWTAMATCH-26OCT26PUTSAK-PUT",
+"KXWTAMATCH-26OCT26PUTSAK-SAK",
 "KXWTAMATCH-26OCT26SHIIBR-IBR",
 "KXWTAMATCH-26OCT26SHIIBR-SHI",
+"KXWTAMATCH-26OCT26VALPOH-POH",
+"KXWTAMATCH-26OCT26VALPOH-VAL",
 "KXWTASETWINNER-26OCT25KASGIB-1-GIB",
 "KXWTASETWINNER-26OCT25KASGIB-1-KAS",
 "KXWTASETWINNER-26OCT25KASGIB-2-GIB",
@@ -626,47 +692,59 @@
 "KXWTASETWINNER-26OCT26DARPRO-1-PRO",
 "KXWTASETWINNER-26OCT26DARPRO-2-DAR",
 "KXWTASETWINNER-26OCT26DARPRO-2-PRO",
+"KXWTASETWINNER-26OCT26JOICIR-1-CIR",
+"KXWTASETWINNER-26OCT26JOICIR-1-JOI",
+"KXWTASETWINNER-26OCT26JOICIR-2-CIR",
+"KXWTASETWINNER-26OCT26JOICIR-2-JOI",
+"KXWTASETWINNER-26OCT26PUTSAK-1-PUT",
+"KXWTASETWINNER-26OCT26PUTSAK-1-SAK",
+"KXWTASETWINNER-26OCT26PUTSAK-2-PUT",
+"KXWTASETWINNER-26OCT26PUTSAK-2-SAK",
 "KXWTASETWINNER-26OCT26SHIIBR-1-IBR",
 "KXWTASETWINNER-26OCT26SHIIBR-1-SHI",
 "KXWTASETWINNER-26OCT26SHIIBR-2-IBR",
-"KXWTASETWINNER-26OCT26SHIIBR-2-SHI"
+"KXWTASETWINNER-26OCT26SHIIBR-2-SHI",
+"KXWTASETWINNER-26OCT26VALPOH-1-POH",
+"KXWTASETWINNER-26OCT26VALPOH-1-VAL",
+"KXWTASETWINNER-26OCT26VALPOH-2-POH",
+"KXWTASETWINNER-26OCT26VALPOH-2-VAL"
 ],
 "consistency_violations": [],
 "excluded": [
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A950000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A900000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A850000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A800000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A750000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A700000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXHONEYDEUCE-01JAN27-A650000",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTACHALLENGERMATCH-26OCT25LABBIA-LAB",
@@ -1201,122 +1279,122 @@
 {
 "ticker": "KXATPT5RANK-26DEC31-TFRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-RJOD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-NDJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-LMUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-JSIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-JMEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-FCOB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-FAUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-DMED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-CRUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-CALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-BSHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-AZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-AFIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-ADEM",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPT5RANK-26DEC31-ABUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-JSIN27-4",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-JSIN27-3",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-JSIN27-2",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-JSIN27-1",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-CALC27-4",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-CALC27-3",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-CALC27-2",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXGRANDSLAM-CALC27-1",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPSETWINNER-26OCT25MANMOL-2-MOL",
@@ -1661,22 +1739,22 @@
 {
 "ticker": "KXATPSETWINNER-26OCT25HURFIL-2-HUR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:43.533057Z"
 },
 {
 "ticker": "KXATPSETWINNER-26OCT25HURFIL-2-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:43.533057Z"
 },
 {
 "ticker": "KXATPSETWINNER-26OCT25HURFIL-1-HUR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:33.584658Z"
 },
 {
 "ticker": "KXATPSETWINNER-26OCT25HURFIL-1-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:33.584658Z"
 },
 {
 "ticker": "KXATPSETWINNER-26OCT25FRITSI-2-TSI",
@@ -2341,22 +2419,22 @@
 {
 "ticker": "KXATPEXACTMATCH-26OCT25HURFIL-HUR21",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:28.537125Z"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25HURFIL-HUR20",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:28.537125Z"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25HURFIL-FIL21",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:28.537125Z"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25HURFIL-FIL20",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:28.537125Z"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25FRITSI-TSI21",
@@ -2401,22 +2479,22 @@
 {
 "ticker": "KXATPEXACTMATCH-26OCT25DAVBER-DAV21",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25DAVBER-DAV20",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25DAVBER-BER21",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25DAVBER-BER20",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPEXACTMATCH-26OCT25HIJHAN-HIJ21",
@@ -2681,132 +2759,132 @@
 {
 "ticker": "KXATPFINALSQUAL-26NIT-ZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-TSI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-TIA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-STR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-SIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-SHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-RUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-RUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-PAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-NOR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-MUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-MEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-MED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-KOR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-KHA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-HUR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-FRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-FON",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-DRA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-DJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-DEM",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-CER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-BUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-AUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPFINALSQUAL-26NIT-ALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXITFMATCH-26OCT25FERANT-FER",
@@ -2820,13 +2898,13 @@
 },
 {
 "ticker": "KXITFMATCH-26OCT25KOKNOR-NOR",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T23:33:32.893984Z"
 },
 {
 "ticker": "KXITFMATCH-26OCT25KOKNOR-KOK",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T23:33:32.893984Z"
 },
 {
 "ticker": "KXITFMATCH-26OCT25FRATHU-THU",
@@ -2841,12 +2919,12 @@
 {
 "ticker": "KXITFMATCH-26OCT25HINSAR-SAR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:43:08.340807Z"
 },
 {
 "ticker": "KXITFMATCH-26OCT25HINSAR-HIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:43:08.340807Z"
 },
 {
 "ticker": "KXITFMATCH-26OCT25COUSAK-SAK",
@@ -3381,17 +3459,17 @@
 {
 "ticker": "KXATPGSPREAD-26OCT25HURFIL-HUR2",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:08.686428Z"
 },
 {
 "ticker": "KXATPGSPREAD-26OCT25HURFIL-FIL6",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:08.686254Z"
 },
 {
 "ticker": "KXATPGSPREAD-26OCT25HURFIL-FIL3",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:54:08.686319Z"
 },
 {
 "ticker": "KXATPGSPREAD-26OCT25DAVBER-DAV6",
@@ -3531,42 +3609,42 @@
 {
 "ticker": "KXATP-26-STR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26-GRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26BRUSSE-STR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26BRUSSE-GRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26BRUSSE-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26BRUSSE-CER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26BRUSSE-BLO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-26LYON-MUS",
@@ -3591,762 +3669,762 @@
 {
 "ticker": "KXATP-27USO-ZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-VAC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-TIE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-TIA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-SIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-SHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-RUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-RUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-PAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-NAK",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-MUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-MEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-MED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-LEH",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-JOD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-FRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-DJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-DE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-DAR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-COB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-CER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-BUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-AUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27USO-ALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-ZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-VAC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-TIE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-TIA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-SIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-SHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-RUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-RUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-PAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-NAK",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-MUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-MEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-MED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-LEH",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-JOD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-FRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-DJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-DE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-DAR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-COB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-CER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-BUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-AUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27WIM-ALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-ZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-VAC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-TIE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-TIA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-SIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-SHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-RUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-RUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-PAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-NAK",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-MUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-MEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-MED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-LEH",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-JOD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-FRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-DJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-DE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-DAR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-COB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-CER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-BUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-AUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27FO-ALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-ZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-VAC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-TIE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-TIA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-SIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-SHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-RUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-RUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-PAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-NAK",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-MUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-MEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-MED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-LEH",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-JOD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-FRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-DJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-DE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-DAR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-COB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-CER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-BUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-AUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP-27AO-ALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPRETIRE-27DJO-Y",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPRETIRE-28DJO-2028",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPRETIRE-28DJO-2027",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-VMBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-NOSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-MKOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-MKEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-MAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-LNOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-KMUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-JPEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-JPAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-ISWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-IJOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-ESVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-ERYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-ENAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-EMER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-EALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-DSHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-CGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-BBEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-ASAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-APOT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-AKAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-AEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAGRANDSLAM-27-AANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-AMIC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-TPAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-TFRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-RJOD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-NDJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-LMUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-KKHA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-JSIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-JMEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-JDRA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-HRUN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-FTIA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-FCOB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-FAUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-DMED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-CRUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-CALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-BSHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-BNAK",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-AZEV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-AMIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGRANDSLAM-27-ABUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPGTOTAL-26OCT25HURFIL-31",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:58.784128Z"
 },
 {
 "ticker": "KXATPGTOTAL-26OCT25HURFIL-26",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:58.783993Z"
 },
 {
 "ticker": "KXATPGTOTAL-26OCT25HURFIL-21",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:53:58.783925Z"
 },
 {
 "ticker": "KXATPGTOTAL-26OCT25DAVBER-29",
@@ -4486,17 +4564,17 @@
 {
 "ticker": "KXATPNOVAK25-DJO-28",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAMATCH-26OCT25BADWAN-WAN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:52:02.139587Z"
 },
 {
 "ticker": "KXWTAMATCH-26OCT25BADWAN-BAD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:52:02.139587Z"
 },
 {
 "ticker": "KXWTAMATCH-26OCT25VALZHA-ZHA",
@@ -4530,13 +4608,13 @@
 },
 {
 "ticker": "KXWTAMATCH-26OCT24PROGAR-PRO",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T23:35:03.002521Z"
 },
 {
 "ticker": "KXWTAMATCH-26OCT24PROGAR-GAR",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T05:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T23:35:03.002521Z"
 },
 {
 "ticker": "KXWTAMATCH-26OCT24DARYAM-YAM",
@@ -4641,32 +4719,32 @@
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-RL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-NIKE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-NB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-LULU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-ALO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXPLAYERDEAL-27MAYBSHE-ADI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-26NINGBO-RYB",
@@ -4691,542 +4769,542 @@
 {
 "ticker": "KXWTA-27USO-SWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-SVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-SHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-SAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-RYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-POT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-PEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-PAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-OSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-NOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-NAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-MUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-MER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-MBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-KOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-KEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-KAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-JOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-GAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-EAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-CIR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-BEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-ANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-AND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27USO-ALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-SWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-SVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-SHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-SAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-RYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-POT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-PEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-PAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-OSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-NOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-NAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-MUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-MER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-MBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-KOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-KEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-KAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-JOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-GAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-EAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-CIR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-BEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-ANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-AND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27WIM-ALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-SWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-SVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-SHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-SAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-RYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-POT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-PEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-PAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-OSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-NOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-NAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-MUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-MER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-MBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-KOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-KEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-KAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-JOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-GAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-EAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-CIR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-BEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-ANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-AND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27FO-ALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-SWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-SVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-SHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-SAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-RYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-POT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-PEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-PAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-OSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-NOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-NAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-MUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-MER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-MBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-KOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-KEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-KAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-JOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-GAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-EAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-CIR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-BEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-ANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-AND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA-27AO-ALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-SWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-SAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-RYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-PEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-NOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-MUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-GAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTA1RANK-26DEC31-AND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPMATCH-26OCT25MANMOL-MOL",
@@ -5431,12 +5509,12 @@
 {
 "ticker": "KXATPMATCH-26OCT25HURFIL-HUR",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:49:22.58843Z"
 },
 {
 "ticker": "KXATPMATCH-26OCT25HURFIL-FIL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:49:22.58843Z"
 },
 {
 "ticker": "KXATPMATCH-26OCT25HIJHAN-HIJ",
@@ -5571,12 +5649,12 @@
 {
 "ticker": "KXSINNERFINISH-29-JSIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTATOURNWIN-26-Y",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPDOUBLES-26OCT25DOUSTEFRAGAL-FRAGAL",
@@ -5791,852 +5869,852 @@
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-ZHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-SWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-SVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-SAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-RYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-PEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-PAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-OST",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-OSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-NAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-MUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-MBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-KRE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-KOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-KEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-JOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-GAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-BAD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-ANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTAFINALSQUAL-26RIY-AND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVESWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVESVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVESHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVESAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVERYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEPAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEOSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVENOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEMUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEKOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEKEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEJOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEBEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ZVEAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-VACSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-VACRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-TIESAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-TIERYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-TIEGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-TIASAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-TIARYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-TIAGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINSVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINSHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINPOT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINPEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINPAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINOSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINNOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINNAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINMUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINMER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINMBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINKOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINKEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINKAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINJOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINBEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SINALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHESWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHESAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHERYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHEGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHEEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHEBEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHEANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-SHEAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-RUUSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-RUURYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-RUBSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-RUBRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-PAUSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-PAURYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-PAUGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-NAKSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-NAKRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-NAKGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MUSSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MUSSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MUSRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MUSGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MUSEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MUSAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MENSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MENRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MENGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MEDSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MEDSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MEDRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MEDGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MEDEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-MEDAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-LEHSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-LEHRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-LEHGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-JODSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-JODSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-JODRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-JODGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-JODEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-JODAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FRISWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FRISAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FRIRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FRIGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FRIEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FRIAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FILSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FILSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FILRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FILGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FILEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-FILAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJORYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOBEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DJOAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DESAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DERYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DEGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DARSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-DARRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-COBSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-COBRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-COBGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-CERSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-CERRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-BUBSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-BUBRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-AUGSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-AUGRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-AUGGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCSWI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCSVI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCSHN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCSAB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCRYB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCPOT",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCPEG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCPAO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCOSA",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCNOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCNAV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCMUC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCMER",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCMBO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCKOS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCKEY",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCKAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCJOV",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCGAU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCEAL",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCBEN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCANI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCAND",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATPWTA-27AO-ALCALE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXITFDOUBLES-26OCT24BECSHETALVIC-TALVIC",
@@ -6669,6 +6747,26 @@
 "reason": "exchange settlement captured at 2026-10-25T12:43:12.333168Z"
 },
 {
+"ticker": "KXITFWMATCH-26OCT25BAYKIN-KIN",
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T23:28:02.600665Z"
+},
+{
+"ticker": "KXITFWMATCH-26OCT25BAYKIN-BAY",
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T23:28:02.600665Z"
+},
+{
+"ticker": "KXITFWMATCH-26OCT25BJORAB-RAB",
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T22:43:22.489649Z"
+},
+{
+"ticker": "KXITFWMATCH-26OCT25BJORAB-BJO",
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T22:43:22.489649Z"
+},
+{
 "ticker": "KXITFWMATCH-26OCT25TAYMAR-TAY",
 "stage": "lifecycle",
 "reason": "exchange settlement captured at 2026-10-25T21:27:48.940255Z"
@@ -6677,6 +6775,16 @@
 "ticker": "KXITFWMATCH-26OCT25TAYMAR-MAR",
 "stage": "lifecycle",
 "reason": "exchange settlement captured at 2026-10-25T21:27:48.940255Z"
+},
+{
+"ticker": "KXITFWMATCH-26OCT25VARCAM-VAR",
+"stage": "pregame",
+"reason": "nominal start 2026-10-26T00:00:00Z is <= 5 min away or past (no first-ball truth available)"
+},
+{
+"ticker": "KXITFWMATCH-26OCT25VARCAM-CAM",
+"stage": "pregame",
+"reason": "nominal start 2026-10-26T00:00:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXITFWMATCH-26OCT25BAJKAL-KAL",
@@ -7230,13 +7338,13 @@
 },
 {
 "ticker": "KXITFWMATCH-26OCT25TURSNI-TUR",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T14:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXITFWMATCH-26OCT25TURSNI-SNI",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T14:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXITFWMATCH-26OCT25FRARAD-RAD",
@@ -7260,13 +7368,13 @@
 },
 {
 "ticker": "KXITFWMATCH-26OCT25GOSSPA-SPA",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T13:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T22:27:27.447342Z"
 },
 {
 "ticker": "KXITFWMATCH-26OCT25GOSSPA-GOS",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T13:00:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "exchange settlement captured at 2026-10-25T22:27:27.447342Z"
 },
 {
 "ticker": "KXITFWMATCH-26OCT25SAMBAR-SAM",
@@ -7360,93 +7468,93 @@
 },
 {
 "ticker": "KXITFWMATCH-26OCT17LEETHA-THA",
-"stage": "pregame",
-"reason": "nominal start 2026-10-18T08:30:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXITFWMATCH-26OCT17LEETHA-LEE",
-"stage": "pregame",
-"reason": "nominal start 2026-10-18T08:30:00Z is <= 5 min away or past (no first-ball truth available)"
+"stage": "lifecycle",
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-TFRI",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-NDJO",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-LMUS",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-JSIN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-FAUG",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-DMED",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-CRUU",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-CALC",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-BSHE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-AZVE",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-ADEM",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXATP1RANK-26DEC31-ABUB",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "absent from the full open snapshot 20261026T015738Z (closed or settled)"
 },
 {
 "ticker": "KXWTASETWINNER-26OCT25BADWAN-2-WAN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:56:32.535744Z"
 },
 {
 "ticker": "KXWTASETWINNER-26OCT25BADWAN-2-BAD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:56:32.535744Z"
 },
 {
 "ticker": "KXWTASETWINNER-26OCT25BADWAN-1-WAN",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:56:17.788677Z"
 },
 {
 "ticker": "KXWTASETWINNER-26OCT25BADWAN-1-BAD",
 "stage": "lifecycle",
-"reason": "absent from the full open snapshot 20261025T220403Z (closed or settled)"
+"reason": "exchange settlement captured at 2026-10-25T21:56:17.788677Z"
 },
 {
 "ticker": "KXWTASETWINNER-26OCT25VALZHA-2-ZHA",
@@ -7679,34 +7787,24 @@
 "reason": "exchange settlement captured at 2026-10-25T04:30:27.337907Z"
 },
 {
-"ticker": "KXATPCHALLENGERMATCH-26OCT25LALSAL-LAL",
+"ticker": "KXATPCHALLENGERMATCH-26OCT25WILCHA-CHA",
 "stage": "pregame",
-"reason": "nominal start 2026-10-25T20:20:00Z is <= 5 min away or past (no first-ball truth available)"
+"reason": "nominal start 2026-10-25T23:50:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPCHALLENGERMATCH-26OCT25LALSAL-SAL",
+"ticker": "KXATPCHALLENGERMATCH-26OCT25WILCHA-WIL",
 "stage": "pregame",
-"reason": "nominal start 2026-10-25T20:20:00Z is <= 5 min away or past (no first-ball truth available)"
+"reason": "nominal start 2026-10-25T23:50:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPCHALLENGERMATCH-26OCT25WOEFEN-FEN",
+"ticker": "KXWTACHALLENGERMATCH-26OCT25HERCAR-CAR",
 "stage": "pregame",
-"reason": "nominal start 2026-10-25T21:30:00Z is <= 5 min away or past (no first-ball truth available)"
+"reason": "nominal start 2026-10-25T22:20:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
-"ticker": "KXATPCHALLENGERMATCH-26OCT25WOEFEN-WOE",
+"ticker": "KXWTACHALLENGERMATCH-26OCT25HERCAR-HER",
 "stage": "pregame",
-"reason": "nominal start 2026-10-25T21:30:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFDOUBLES-26OCT25BECSHEATKBOU-ATKBOU",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T12:30:00Z is <= 5 min away or past (no first-ball truth available)"
-},
-{
-"ticker": "KXITFDOUBLES-26OCT25BECSHEATKBOU-BECSHE",
-"stage": "pregame",
-"reason": "nominal start 2026-10-25T12:30:00Z is <= 5 min away or past (no first-ball truth available)"
+"reason": "nominal start 2026-10-25T22:20:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXWTACHALLENGERMATCH-26OCT25LLEVAN-LLE",
@@ -7757,6 +7855,16 @@
 "ticker": "KXWTACHALLENGERMATCH-26OCT25STRVIL-VIL",
 "stage": "pregame",
 "reason": "nominal start 2026-10-25T20:00:00Z is <= 5 min away or past (no first-ball truth available)"
+},
+{
+"ticker": "KXWTACHALLENGERMATCH-26OCT25TORNAV-NAV",
+"stage": "pregame",
+"reason": "nominal start 2026-10-25T22:20:00Z is <= 5 min away or past (no first-ball truth available)"
+},
+{
+"ticker": "KXWTACHALLENGERMATCH-26OCT25TORNAV-TOR",
+"stage": "pregame",
+"reason": "nominal start 2026-10-25T22:20:00Z is <= 5 min away or past (no first-ball truth available)"
 },
 {
 "ticker": "KXWTACHALLENGERMATCH-26OCT25VICSOU-SOU",
@@ -7889,22 +7997,6 @@
 "reason": "could not recover both competitors' full names from the event's markets"
 },
 {
-"ticker": "KXITFWMATCH-26OCT25VARCAM-VAR",
-"stage": "identity",
-"identity_kinds": [
-"ALIAS_CANDIDATES"
-],
-"reason": "Paula Vargas: UNMAPPED (no exact full-name match; alias candidates queued for human review); Paula Campuzano Del Castillo: UNMAPPED (no exact full-name match; alias candidates queued for human review)"
-},
-{
-"ticker": "KXITFWMATCH-26OCT25VARCAM-CAM",
-"stage": "identity",
-"identity_kinds": [
-"ALIAS_CANDIDATES"
-],
-"reason": "Paula Vargas: UNMAPPED (no exact full-name match; alias candidates queued for human review); Paula Campuzano Del Castillo: UNMAPPED (no exact full-name match; alias candidates queued for human review)"
-},
-{
 "ticker": "KXATPCHALLENGERMATCH-26OCT25LANSHI-LAN",
 "stage": "identity",
 "identity_kinds": [
@@ -7919,22 +8011,6 @@
 "ALIAS_CANDIDATES"
 ],
 "reason": "Sanhui Shin: UNMAPPED (no exact full-name match; alias candidates queued for human review)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26OCT25MAGGAL-GAL",
-"stage": "identity",
-"identity_kinds": [
-"AMBIGUOUS"
-],
-"reason": "Mario Andre Galarraga: AMBIGUOUS (2 namesakes, 2 recently active)"
-},
-{
-"ticker": "KXATPCHALLENGERMATCH-26OCT25MAGGAL-MAG",
-"stage": "identity",
-"identity_kinds": [
-"AMBIGUOUS"
-],
-"reason": "Mario Andre Galarraga: AMBIGUOUS (2 namesakes, 2 recently active)"
 },
 {
 "ticker": "KXATPCHALLENGERMATCH-26OCT25SULHON-HON",
@@ -7979,6 +8055,16 @@
 "reason": "doubles: player 'Arnaboldi' unmapped/ambiguous in ['ATP']"
 },
 {
+"ticker": "KXITFDOUBLES-26OCT26BILROTBASFRA-BASFRA",
+"stage": "doubles",
+"reason": "doubles: player 'Bilardo' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26BILROTBASFRA-BILROT",
+"stage": "doubles",
+"reason": "doubles: player 'Bilardo' unmapped/ambiguous in ['ATP']"
+},
+{
 "ticker": "KXITFDOUBLES-26OCT26FELORLMUGSAR-FELORL",
 "stage": "doubles",
 "reason": "doubles: player 'Fellin' unmapped/ambiguous in ['ATP']"
@@ -7987,6 +8073,46 @@
 "ticker": "KXITFDOUBLES-26OCT26FELORLMUGSAR-MUGSAR",
 "stage": "doubles",
 "reason": "doubles: player 'Fellin' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26FONPENCOLMAS-COLMAS",
+"stage": "doubles",
+"reason": "doubles: player 'Fondriest' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26FONPENCOLMAS-FONPEN",
+"stage": "doubles",
+"reason": "doubles: player 'Fondriest' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26HALHINALEFIG-ALEFIG",
+"stage": "doubles",
+"reason": "doubles: player 'Haller' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26HALHINALEFIG-HALHIN",
+"stage": "doubles",
+"reason": "doubles: player 'Haller' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26LECTROBORMOR-BORMOR",
+"stage": "doubles",
+"reason": "doubles: player 'Lechner' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26LECTROBORMOR-LECTRO",
+"stage": "doubles",
+"reason": "doubles: player 'Lechner' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26PRITROBOCCIU-BOCCIU",
+"stage": "doubles",
+"reason": "doubles: player 'Prinoth' unmapped/ambiguous in ['ATP']"
+},
+{
+"ticker": "KXITFDOUBLES-26OCT26PRITROBOCCIU-PRITRO",
+"stage": "doubles",
+"reason": "doubles: player 'Prinoth' unmapped/ambiguous in ['ATP']"
 },
 {
 "ticker": "KXITFMATCH-26OCT25SUMSUR-SUM",
@@ -8019,6 +8145,22 @@
 "ALIAS_CANDIDATES"
 ],
 "reason": "Mateja Stanisavljevic: UNMAPPED (no exact full-name match; alias candidates queued for human review)"
+},
+{
+"ticker": "KXITFMATCH-26OCT26DELCUN-CUN",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Vitor Machado De Melo Cunha: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFMATCH-26OCT26DELCUN-DEL",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Vitor Machado De Melo Cunha: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
 "ticker": "KXITFMATCH-26OCT26ELNPIA-ELN",
@@ -8085,6 +8227,22 @@
 "reason": "Jayson Blando: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
+"ticker": "KXITFMATCH-26OCT26KARLLA-KAR",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Patricio Llanes Echavarria: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFMATCH-26OCT26KARLLA-LLA",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Patricio Llanes Echavarria: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
 "ticker": "KXITFMATCH-26OCT26KOBNIE-KOB",
 "stage": "identity",
 "identity_kinds": [
@@ -8099,6 +8257,22 @@
 "NO_HISTORY"
 ],
 "reason": "Kim Johannes Niethammer: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFMATCH-26OCT26LAGGAL-GAL",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Lance Lage: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source)); Alex Galstyan: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFMATCH-26OCT26LAGGAL-LAG",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Lance Lage: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source)); Alex Galstyan: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
 "ticker": "KXITFMATCH-26OCT26MATVAL-MAT",
@@ -8245,6 +8419,22 @@
 "reason": "Junjie Sun: UNMAPPED (no exact full-name match; alias candidates queued for human review)"
 },
 {
+"ticker": "KXITFWMATCH-26OCT26AGUSIM-AGU",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Felicitas Simon Padros: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26AGUSIM-SIM",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Felicitas Simon Padros: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
 "ticker": "KXITFWMATCH-26OCT26AIKLUN-AIK",
 "stage": "identity",
 "identity_kinds": [
@@ -8275,6 +8465,22 @@
 "NO_HISTORY"
 ],
 "reason": "Elizaveta Anikina: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26BAIFIN-BAI",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Jazmin Baier: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source)); Sofia Finchelstein: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26BAIFIN-FIN",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Jazmin Baier: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source)); Sofia Finchelstein: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
 "ticker": "KXITFWMATCH-26OCT26BHOBIE-BHO",
@@ -8341,6 +8547,22 @@
 "reason": "Elina Kamyabsharifi: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
+"ticker": "KXITFWMATCH-26OCT26CARKIL-CAR",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Camila Eluney Kilapi: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26CARKIL-KIL",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Camila Eluney Kilapi: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
 "ticker": "KXITFWMATCH-26OCT26CHOMUR-CHO",
 "stage": "identity",
 "identity_kinds": [
@@ -8389,6 +8611,38 @@
 "reason": "Marlene Victoria Sczech: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
+"ticker": "KXITFWMATCH-26OCT26DOLGAR-DOL",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Maiten Garay: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26DOLGAR-GAR",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Maiten Garay: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26FAKVON-FAK",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Aliya Vongdala: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26FAKVON-VON",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Aliya Vongdala: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
 "ticker": "KXITFWMATCH-26OCT26GLAREU-GLA",
 "stage": "identity",
 "identity_kinds": [
@@ -8421,6 +8675,38 @@
 "reason": "Charlotte Arlt: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
+"ticker": "KXITFWMATCH-26OCT26GOWDAI-DAI",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Noelle Dai: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26GOWDAI-GOW",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Noelle Dai: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26HARSAI-HAR",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Luciana Sainz: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26HARSAI-SAI",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Luciana Sainz: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
 "ticker": "KXITFWMATCH-26OCT26KAPSIE-KAP",
 "stage": "identity",
 "identity_kinds": [
@@ -8435,6 +8721,22 @@
 "NO_HISTORY"
 ],
 "reason": "Elin Siewertz: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26KHAELJ-ELJ",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Natalie Kha: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26KHAELJ-KHA",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Natalie Kha: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
 "ticker": "KXITFWMATCH-26OCT26KIMWAT-KIM",
@@ -8597,6 +8899,54 @@
 "reason": "Francesca Parcelli: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
+"ticker": "KXITFWMATCH-26OCT26TARNAP-NAP",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Agustina Tarantola: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source)); Sofia Nahiara Nappi: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26TARNAP-TAR",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Agustina Tarantola: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source)); Sofia Nahiara Nappi: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26TEJMON-MON",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Ornela Luisana Mondati: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26TEJMON-TEJ",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Ornela Luisana Mondati: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26UGOLIN-LIN",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Precious Ugochukwu: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
+"ticker": "KXITFWMATCH-26OCT26UGOLIN-UGO",
+"stage": "identity",
+"identity_kinds": [
+"NO_HISTORY"
+],
+"reason": "Precious Ugochukwu: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
+},
+{
 "ticker": "KXITFWMATCH-26OCT26VISNEW-NEW",
 "stage": "identity",
 "identity_kinds": [
@@ -8611,22 +8961,6 @@
 "NO_HISTORY"
 ],
 "reason": "Eloise Newberry: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26OCT25HERCAR-CAR",
-"stage": "identity",
-"identity_kinds": [
-"NO_HISTORY"
-],
-"reason": "Abril Cardenas Olivares: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
-},
-{
-"ticker": "KXWTACHALLENGERMATCH-26OCT25HERCAR-HER",
-"stage": "identity",
-"identity_kinds": [
-"NO_HISTORY"
-],
-"reason": "Abril Cardenas Olivares: UNMAPPED (no exact full-name match and no player with this surname in the rating universe (most often a player absent from every reachable results source))"
 },
 {
 "ticker": "KXWTAGTOTAL-26OCT25WANPAR-17",
@@ -8846,40 +9180,6 @@
 }
 ],
 "event": "KXITFWMATCH-26OCT26BHOBIE"
-},
-{
-"tour": "WTA",
-"kalshi_name": "Paula Campuzano Del Castillo",
-"competitor_id": "44454074-23d0-4ee6-9ec5-31a99fa1b3eb",
-"candidates": [
-{
-"kind": "SAME_SURNAME_INITIAL",
-"player_id": "212273",
-"name": "Paloma Castillo",
-"last_date": "2010-04-24"
-}
-],
-"event": "KXITFWMATCH-26OCT25VARCAM"
-},
-{
-"tour": "WTA",
-"kalshi_name": "Paula Vargas",
-"competitor_id": "26cf458e-69b9-4b89-b4d9-d1e67110638b",
-"candidates": [
-{
-"kind": "SAME_SURNAME_INITIAL",
-"player_id": "208498",
-"name": "Paulina Vargas",
-"last_date": "2003-09-22"
-},
-{
-"kind": "SAME_SURNAME_INITIAL",
-"player_id": "220244",
-"name": "Paola Cortez Vargas",
-"last_date": "2019-04-18"
-}
-],
-"event": "KXITFWMATCH-26OCT25VARCAM"
 },
 {
 "tour": "WTA",
