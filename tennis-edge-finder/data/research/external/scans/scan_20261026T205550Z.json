@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-26T20:55:50.916996+00:00",
+ "run_id": "20261026T205550Z",
+ "external_parse": {
+  "events": 157,
+  "markets": 1716,
+  "skipped_family": 310,
+  "skipped_period": 540,
+  "skipped_live": 21,
+  "one_sided": 10,
+  "rows": 3056,
+  "devigged": 854
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1628,
+  "markets_mapped": 536,
+  "contracts": 1150,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261026T205550Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 536,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 324,
+  "rows": 826,
+  "two_sided": 823,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 453,
+ "external_mapping": {
+  "total": 148,
+  "by_status": {
+   "UNMAPPED_PLAYER": 8,
+   "MAPPED": 90,
+   "DOUBLES_UNSUPPORTED": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6081,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Dominic Stephan Stricker": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Atkinson Dylan": 1,
+   "Roberto Herman": 1,
+   "Sofia Cabezas Dominguez": 1,
+   "Jingjing Lu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 17
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7742,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jake Evans": 1,
+   "Aristotelis Bezianis": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazushi Idogaki": 1,
+   "masaki ishikawa": 1,
+   "Aleksander Franko": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 111,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 18,
+  "tri:MARKETS_AGREE": 10,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
