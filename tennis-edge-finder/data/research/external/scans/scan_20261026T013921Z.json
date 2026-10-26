@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-26T01:39:21.862513+00:00",
+ "run_id": "20261026T013921Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1940,
+  "skipped_family": 414,
+  "skipped_period": 616,
+  "skipped_live": 3,
+  "one_sided": 5,
+  "rows": 3361,
+  "devigged": 905
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 886,
+  "markets_mapped": 351,
+  "contracts": 764,
+  "quoted_contracts": 764,
+  "raw": "data/research/external/raw/20261026T013921Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 351,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 729,
+  "two_sided": 725,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1688,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 33
+  },
+  "mapped_rate": 0.7031,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Dominic Stephan Stricker": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Min Hyuk Cho": 1,
+   "Carmen Andreea Herea": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 238,
+  "by_status": {
+   "MAPPED": 179,
+   "UNMAPPED_PLAYER": 59
+  },
+  "mapped_rate": 0.7521,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Min Hyuk Cho": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Abril Cardenas Olivares": 1,
+   "Lance Lage": 1,
+   "Patricio Llanes Echavarria": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Vicente Jose Benitez": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 179,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
