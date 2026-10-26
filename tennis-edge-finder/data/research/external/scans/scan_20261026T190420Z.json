@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-26T19:04:20.940219+00:00",
+ "run_id": "20261026T190420Z",
+ "external_parse": {
+  "events": 163,
+  "markets": 1586,
+  "skipped_family": 287,
+  "skipped_period": 492,
+  "skipped_live": 34,
+  "one_sided": 10,
+  "rows": 2862,
+  "devigged": 797
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1644,
+  "markets_mapped": 533,
+  "contracts": 1140,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261026T190420Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 533,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 328,
+  "rows": 812,
+  "two_sided": 807,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 418,
+ "external_mapping": {
+  "total": 154,
+  "by_status": {
+   "MAPPED": 91,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 48,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.5909,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Dominic Stephan Stricker": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Tristan McCormick": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Noma Akugue Noha": 1,
+   "Parashar Bharadwaj": 1,
+   "Paolo Bompieri": 1,
+   "Lauren Nolan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Gabriela Knutson": 1,
+   "Kenta Kawada": 1,
+   "masaki ishikawa": 1,
+   "Surrya Muudgil": 1,
+   "Roberto Herman": 1,
+   "Lance Lage": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 118,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 3,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
