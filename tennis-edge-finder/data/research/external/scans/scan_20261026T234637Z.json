@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-26T23:46:37.141370+00:00",
+ "run_id": "20261026T234637Z",
+ "external_parse": {
+  "events": 215,
+  "markets": 2303,
+  "skipped_family": 369,
+  "skipped_period": 728,
+  "skipped_live": 20,
+  "one_sided": 28,
+  "rows": 3892,
+  "devigged": 1178
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1767,
+  "markets_mapped": 588,
+  "contracts": 1270,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261026T234637Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 588,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 443,
+  "rows": 827,
+  "two_sided": 825,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1934,
+ "external_mapping": {
+  "total": 202,
+  "by_status": {
+   "MAPPED": 135,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.6683,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Ella Olofson": 1,
+   "Rachael Phelan": 1,
+   "Nick Beamish": 1,
+   "Samarth Patel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 312,
+  "by_status": {
+   "MAPPED": 241,
+   "UNMAPPED_PLAYER": 69,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7724,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Dominik Matic": 1,
+   "Denis Klok": 1,
+   "Victor Pagotto": 1,
+   "Aristoteles Campos Junior": 1,
+   "Davide Ciaschetti": 1
+  }
+ },
+ "matched_both_venues": 84,
+ "external_mapped_matches": 151,
+ "kalshi_mapped_matches": 241,
+ "model_witness_available": true,
+ "rows": 148,
+ "counts": {
+  "PASS": 143,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 92,
+  "tri:MARKETS_AGREE": 16,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
