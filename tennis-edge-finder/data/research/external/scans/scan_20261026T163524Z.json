@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-26T16:35:24.090786+00:00",
+ "run_id": "20261026T163524Z",
+ "external_parse": {
+  "events": 179,
+  "markets": 1835,
+  "skipped_family": 333,
+  "skipped_period": 576,
+  "skipped_live": 37,
+  "one_sided": 15,
+  "rows": 3280,
+  "devigged": 911
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1479,
+  "markets_mapped": 460,
+  "contracts": 990,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261026T163524Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 460,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 181,
+  "rows": 809,
+  "two_sided": 801,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 1781,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 46,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6118,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Dominic Stephan Stricker": 1,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Tristan McCormick": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Noma Akugue Noha": 1,
+   "Abril Cardenas Olivares": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Rositsa Dencheva": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 181,
+   "UNMAPPED_PLAYER": 54,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7637,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Abril Cardenas Olivares": 1,
+   "Abdurakhmon Karimov": 1,
+   "Fedor Altukhov": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 181,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 76,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "tri:MARKETS_AGREE": 14,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
