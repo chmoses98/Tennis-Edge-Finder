@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-26T06:22:39.732160+00:00",
+ "run_id": "20261026T062239Z",
+ "external_parse": {
+  "events": 138,
+  "markets": 1698,
+  "skipped_family": 376,
+  "skipped_period": 531,
+  "skipped_live": 15,
+  "one_sided": 8,
+  "rows": 2892,
+  "devigged": 783
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 790,
+  "markets_mapped": 370,
+  "contracts": 794,
+  "quoted_contracts": 794,
+  "raw": "data/research/external/raw/20261026T062239Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 370,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 763,
+  "two_sided": 755,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 420,
+ "external_mapping": {
+  "total": 127,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6929,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Dominic Stephan Stricker": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Alex Hernandez": 1,
+   "Tristan McCormick": 1,
+   "Maria Herazo": 1,
+   "Ethan David Zapp": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Carmen Andreea Herea": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Soonwoo Kwon": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 101,
+  "by_status": {
+   "MAPPED": 84,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8317,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Sanhui Shin": 1,
+   "Khumoyun Sultanov": 1,
+   "Surrya Muudgil": 1,
+   "Mateja Stanisavljevic": 1,
+   "Aaron Jinks": 1,
+   "David Simoncelli": 1,
+   "Jayson Blando": 1,
+   "Ethan David Zapp": 1,
+   "Precious Ugochukwu": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 46,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
