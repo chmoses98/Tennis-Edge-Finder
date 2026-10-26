@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-26T16:24:17.573524+00:00",
+ "run_id": "20261026T162417Z",
+ "external_parse": {
+  "events": 179,
+  "markets": 1835,
+  "skipped_family": 333,
+  "skipped_period": 576,
+  "skipped_live": 37,
+  "one_sided": 15,
+  "rows": 3280,
+  "devigged": 911
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1493,
+  "markets_mapped": 461,
+  "contracts": 994,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261026T162417Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 461,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 181,
+  "rows": 813,
+  "two_sided": 809,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 569,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 46,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6118,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Dominic Stephan Stricker": 1,
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Tristan McCormick": 1,
+   "Angel Veliz": 1,
+   "Andres Martin (RAC)": 1,
+   "Noma Akugue Noha": 1,
+   "Abril Cardenas Olivares": 1,
+   "Maria Herazo": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Rositsa Dencheva": 1,
+   "Angel Veliz": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 105,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7955,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Abril Cardenas Olivares": 1,
+   "Abdurakhmon Karimov": 1,
+   "Fedor Altukhov": 1,
+   "Aristotelis Bezianis": 1,
+   "Raul Clarijs": 1,
+   "Pablo Perez Ramos": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 127,
+ "kalshi_mapped_matches": 105,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 51,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
