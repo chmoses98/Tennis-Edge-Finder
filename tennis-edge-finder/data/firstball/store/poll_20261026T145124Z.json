@@ -1,0 +1,50 @@
+{
+ "run_id": "20261026T145124Z",
+ "started_at": "2026-10-26T14:51:24.443007+00:00",
+ "passes": 1,
+ "requests": 2,
+ "observations": 162,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 2
+ },
+ "watchlist": {
+  "capture_board_markets": 1738,
+  "events_only_on_capture_board": 168,
+  "selected_from_capture_board": 158
+ },
+ "mapping": {
+  "MATCHED": 162,
+  "UNMATCHED": 283,
+  "AMBIGUOUS": 3
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT25FERSAK": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185659 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT25FERSAK-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185659 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT25FERSAK-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185659 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-26T15:04:20.152117+00:00"
+}
