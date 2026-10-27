@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 20:06Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 20:50Z)
 
 * Earliest credible first ball: **2026-10-28 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-28 00:45Z**
@@ -10,7 +10,7 @@
 | Kamilla Rakhimova vs Ekaterina Alexandrova | 2026-10-28 01:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Cristina Bucsa vs Maya Joint | 2026-10-28 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**14 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Flavio Cobolli vs Grigor Dimitrov, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo
+**13 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo, Alycia Parks vs Kimberly Birrell
 
 Published slate: `SL-20261027T191631Z-26644360` built 2026-10-27 19:16Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
