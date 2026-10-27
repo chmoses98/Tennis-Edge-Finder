@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-27T07:34:30.837113+00:00",
+ "run_id": "20261027T073430Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 2113,
+  "skipped_family": 350,
+  "skipped_period": 598,
+  "skipped_live": 31,
+  "one_sided": 46,
+  "rows": 3396,
+  "devigged": 1118
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1292,
+  "markets_mapped": 535,
+  "contracts": 1148,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261027T073430Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 535,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 330,
+  "rows": 818,
+  "two_sided": 817,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 679,
+ "external_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6878,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Sanhui Shin": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Abdulhodiy Hosilov": 1,
+   "Pablo Perez Ramos": 1,
+   "Marwan Ehab": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8221,
+  "top_refusal_subjects": {
+   "Sanhui Shin": 1,
+   "Lance Lage": 1,
+   "Aristoteles Campos Junior": 1,
+   "Davide Ciaschetti": 1,
+   "Gabriele Maria Piano": 1,
+   "Jake Evans": 1,
+   "Aleix Galindo Puig": 1,
+   "Danila Folkheims": 1,
+   "Vaclav Schneider": 1,
+   "Win Steveker": 1
+  }
+ },
+ "matched_both_venues": 55,
+ "external_mapped_matches": 176,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
