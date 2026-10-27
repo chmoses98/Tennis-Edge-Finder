@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-27T10:56:27.355737+00:00",
+ "run_id": "20261027T105627Z",
+ "external_parse": {
+  "events": 298,
+  "markets": 2598,
+  "skipped_family": 387,
+  "skipped_period": 760,
+  "skipped_live": 46,
+  "one_sided": 79,
+  "rows": 4247,
+  "devigged": 1369
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1170,
+  "markets_mapped": 525,
+  "contracts": 1152,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20261027T105627Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 525,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 322,
+  "rows": 830,
+  "two_sided": 825,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1978,
+ "external_mapping": {
+  "total": 287,
+  "by_status": {
+   "MAPPED": 202,
+   "DOUBLES_UNSUPPORTED": 58,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7038,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 58,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Tim Hammes": 1,
+   "Alessandro Maina": 1,
+   "Vaclav Schneider": 1,
+   "Raul Clarijs": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 358,
+  "by_status": {
+   "MAPPED": 309,
+   "UNMAPPED_PLAYER": 47,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8631,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Hikaru Hieda": 1,
+   "Darcy Nicholls": 1,
+   "Sebastian Arevalo": 1,
+   "Carlo Arena Fava": 1,
+   "Lance Lage": 1
+  }
+ },
+ "matched_both_venues": 165,
+ "external_mapped_matches": 211,
+ "kalshi_mapped_matches": 309,
+ "model_witness_available": true,
+ "rows": 238,
+ "counts": {
+  "PASS": 222,
+  "tri:INSUFFICIENT_INPUTS": 88,
+  "tri:MODEL_LONE_OUTLIER": 90,
+  "tri:MARKETS_AGREE": 19,
+  "tri:KALSHI_LONE_OUTLIER": 22,
+  "SHADOW_BET": 5,
+  "WATCH": 11,
+  "tri:ALL_THREE_DISAGREE": 11,
+  "tri:EXTERNAL_LONE_OUTLIER": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 38
+ }
+}
