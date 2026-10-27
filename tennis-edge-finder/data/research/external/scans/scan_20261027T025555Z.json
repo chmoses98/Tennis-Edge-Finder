@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-27T02:55:55.876738+00:00",
+ "run_id": "20261027T025555Z",
+ "external_parse": {
+  "events": 257,
+  "markets": 2517,
+  "skipped_family": 368,
+  "skipped_period": 753,
+  "skipped_live": 29,
+  "one_sided": 37,
+  "rows": 4220,
+  "devigged": 1359
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1619,
+  "markets_mapped": 581,
+  "contracts": 1248,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261027T025555Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 581,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 423,
+  "rows": 825,
+  "two_sided": 821,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 2067,
+ "external_mapping": {
+  "total": 245,
+  "by_status": {
+   "MAPPED": 169,
+   "DOUBLES_UNSUPPORTED": 54,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.6898,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 54,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Kenta Kawada": 1,
+   "Masaki Ishikawa": 1,
+   "Pablo Perez Ramos": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 351,
+  "by_status": {
+   "MAPPED": 282,
+   "UNMAPPED_PLAYER": 67,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8034,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Lance Lage": 1,
+   "Dominik Matic": 1,
+   "Denis Klok": 1,
+   "Victor Pagotto": 1,
+   "Aristoteles Campos Junior": 1
+  }
+ },
+ "matched_both_venues": 122,
+ "external_mapped_matches": 189,
+ "kalshi_mapped_matches": 282,
+ "model_witness_available": true,
+ "rows": 208,
+ "counts": {
+  "PASS": 205,
+  "tri:INSUFFICIENT_INPUTS": 165,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:MARKETS_AGREE": 15,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
