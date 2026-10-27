@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-27T18:35:34.794298+00:00",
+ "run_id": "20261027T183534Z",
+ "external_parse": {
+  "events": 236,
+  "markets": 1893,
+  "skipped_family": 246,
+  "skipped_period": 569,
+  "skipped_live": 48,
+  "one_sided": 27,
+  "rows": 3054,
+  "devigged": 1051
+ },
+ "smarkets_fetch": {
+  "events_seen": 148,
+  "events_priced": 80,
+  "markets": 1238,
+  "markets_mapped": 416,
+  "contracts": 906,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261027T183534Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 416,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 100,
+  "rows": 806,
+  "two_sided": 801,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1712,
+ "external_mapping": {
+  "total": 225,
+  "by_status": {
+   "MAPPED": 157,
+   "DOUBLES_UNSUPPORTED": 50,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6978,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Chase Robinson": 1,
+   "Eric Crivei": 1,
+   "Rohan Belday": 1,
+   "Alyson Shannon": 1,
+   "Daria Budko": 1,
+   "Saray Yli-Piipari": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Maria Carle": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 321,
+  "by_status": {
+   "MAPPED": 280,
+   "AMBIGUOUS_PLAYER": 3,
+   "UNMAPPED_PLAYER": 38
+  },
+  "mapped_rate": 0.8723,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Nazim Makhlouf": 1,
+   "Digvijay Pratap Singh": 1,
+   "Danila Kvasov": 1
+  }
+ },
+ "matched_both_venues": 131,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 280,
+ "model_witness_available": true,
+ "rows": 164,
+ "counts": {
+  "PASS": 163,
+  "tri:INSUFFICIENT_INPUTS": 99,
+  "tri:MODEL_LONE_OUTLIER": 54,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
