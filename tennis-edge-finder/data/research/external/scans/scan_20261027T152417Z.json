@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-27T15:24:17.516651+00:00",
+ "run_id": "20261027T152417Z",
+ "external_parse": {
+  "events": 286,
+  "markets": 2444,
+  "skipped_family": 333,
+  "skipped_period": 736,
+  "skipped_live": 48,
+  "one_sided": 66,
+  "rows": 3884,
+  "devigged": 1309
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1261,
+  "markets_mapped": 459,
+  "contracts": 1026,
+  "quoted_contracts": 904,
+  "raw": "data/research/external/raw/20261027T152417Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 459,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 223,
+  "rows": 803,
+  "two_sided": 799,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 727,
+ "external_mapping": {
+  "total": 277,
+  "by_status": {
+   "MAPPED": 208,
+   "DOUBLES_UNSUPPORTED": 50,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.7509,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Maria Urrutia": 1,
+   "Dominik Matic": 1,
+   "Pedro Dietrich": 1,
+   "Denis Klok": 1,
+   "Nikita Samuel Filin": 1,
+   "Julian Alonso Vivanco": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "AMBIGUOUS_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 188,
+  "by_status": {
+   "MAPPED": 179,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.9521,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Lance Lage": 1,
+   "Denis Klok": 1,
+   "Victor Pagotto": 1,
+   "mihrumah tuanna sirin": 1,
+   "Amy Stevens": 1,
+   "Yeonwoo Ku": 1,
+   "Isha Manchala": 1,
+   "Emina Honic": 1
+  }
+ },
+ "matched_both_venues": 106,
+ "external_mapped_matches": 219,
+ "kalshi_mapped_matches": 179,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 106,
+  "tri:MODEL_LONE_OUTLIER": 62,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 2,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 46
+ }
+}
