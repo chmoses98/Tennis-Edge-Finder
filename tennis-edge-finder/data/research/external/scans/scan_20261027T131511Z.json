@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-27T13:15:11.534475+00:00",
+ "run_id": "20261027T131511Z",
+ "external_parse": {
+  "events": 264,
+  "markets": 2370,
+  "skipped_family": 359,
+  "skipped_period": 725,
+  "skipped_live": 42,
+  "one_sided": 89,
+  "rows": 3856,
+  "devigged": 1196
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1162,
+  "markets_mapped": 495,
+  "contracts": 1098,
+  "quoted_contracts": 900,
+  "raw": "data/research/external/raw/20261027T131511Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 495,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 270,
+  "rows": 828,
+  "two_sided": 821,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 811,
+ "external_mapping": {
+  "total": 255,
+  "by_status": {
+   "MAPPED": 186,
+   "DOUBLES_UNSUPPORTED": 53,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.7294,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Maria Urrutia": 1,
+   "Dominik Matic": 1,
+   "Pedro Dietrich": 1,
+   "Denis Klok": 1,
+   "Nikita Samuel Filin": 1,
+   "Julian Alonso Vivanco": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 8,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 233,
+  "by_status": {
+   "MAPPED": 213,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.9142,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Alan Zinatulin": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Hikaru Hieda": 1,
+   "Lance Lage": 1,
+   "Denis Klok": 1,
+   "Victor Pagotto": 1,
+   "Aristoteles Campos Junior": 1
+  }
+ },
+ "matched_both_venues": 106,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 213,
+ "model_witness_available": true,
+ "rows": 134,
+ "counts": {
+  "PASS": 128,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "SHADOW_BET": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
