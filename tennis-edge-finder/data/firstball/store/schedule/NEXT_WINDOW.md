@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 12:12Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 12:24Z)
 
 * Earliest credible first ball: **2026-10-27 12:30Z**
 * Recommended RUN TENNIS time: **2026-10-27 11:45Z**  (OVERDUE: run now)
@@ -7,8 +7,8 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Jerome Kym vs Arthur Rinderknech | 2026-10-27 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Tommy Paul vs Andrey Rublev | 2026-10-27 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Jerome Kym vs Arthur Rinderknech | 2026-10-27 12:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Tommy Paul vs Andrey Rublev | 2026-10-27 12:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Alex Michelsen vs Botic Van de Zandschulp | 2026-10-27 14:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Adrian Mannarino vs Ignacio Buse | 2026-10-27 14:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
@@ -16,7 +16,7 @@
 
 Published slate: `SL-20261027T104633Z-1c6b394c` built 2026-10-27 10:46Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T12:30:00+00:00, slate built 2026-10-27T10:46:33.478537+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-27 14:30Z, run by 2026-10-27 13:45Z, 2 match(es)
 * later window 3: first ball 2026-10-27 17:00Z, run by 2026-10-27 16:15Z, 1 match(es)
