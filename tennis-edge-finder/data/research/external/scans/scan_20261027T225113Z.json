@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-27T22:51:13.407508+00:00",
+ "run_id": "20261027T225113Z",
+ "external_parse": {
+  "events": 207,
+  "markets": 1810,
+  "skipped_family": 251,
+  "skipped_period": 529,
+  "skipped_live": 23,
+  "one_sided": 23,
+  "rows": 2928,
+  "devigged": 1007
+ },
+ "smarkets_fetch": {
+  "events_seen": 141,
+  "events_priced": 80,
+  "markets": 1208,
+  "markets_mapped": 425,
+  "contracts": 910,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261027T225113Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 425,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 94,
+  "rows": 816,
+  "two_sided": 811,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 1700,
+ "external_mapping": {
+  "total": 196,
+  "by_status": {
+   "MAPPED": 130,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6633,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Lisa Kamigata": 1,
+   "Sadbaroi Holdarova": 1,
+   "Benjamin Sparks": 1,
+   "Aryan Saleh": 1,
+   "Carlo Arena Fava": 1,
+   "JC Roddick": 1,
+   "Herman H\u00f8yeraal": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 32,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 346,
+  "by_status": {
+   "MAPPED": 297,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 47
+  },
+  "mapped_rate": 0.8584,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "matched_both_venues": 101,
+ "external_mapped_matches": 143,
+ "kalshi_mapped_matches": 297,
+ "model_witness_available": true,
+ "rows": 158,
+ "counts": {
+  "PASS": 157,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 108,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
