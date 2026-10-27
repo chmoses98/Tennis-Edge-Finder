@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-27T00:56:09.518269+00:00",
+ "run_id": "20261027T005609Z",
+ "external_parse": {
+  "events": 252,
+  "markets": 2623,
+  "skipped_family": 384,
+  "skipped_period": 796,
+  "skipped_live": 16,
+  "one_sided": 45,
+  "rows": 4367,
+  "devigged": 1395
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1820,
+  "markets_mapped": 615,
+  "contracts": 1332,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261027T005609Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 615,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 490,
+  "rows": 842,
+  "two_sided": 838,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 919,
+ "external_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 165,
+   "DOUBLES_UNSUPPORTED": 53,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6904,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Aleksander Franko": 1,
+   "Archie Stewart": 1,
+   "Pablo Perez Ramos": 1,
+   "Jake Evans": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 164,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8354,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Dominik Matic": 1,
+   "Aleix Galindo Puig": 1,
+   "Marco Bavaro": 1,
+   "Danila Folkheims": 1,
+   "Jan Facek": 1,
+   "Aristotelis Bezianis": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 180,
+ "kalshi_mapped_matches": 137,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 92,
+  "tri:INSUFFICIENT_INPUTS": 52,
+  "tri:MARKETS_AGREE": 12,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
