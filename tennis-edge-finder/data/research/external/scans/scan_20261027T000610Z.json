@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-27T00:06:10.656594+00:00",
+ "run_id": "20261027T000610Z",
+ "external_parse": {
+  "events": 242,
+  "markets": 2479,
+  "skipped_family": 369,
+  "skipped_period": 757,
+  "skipped_live": 21,
+  "one_sided": 45,
+  "rows": 4148,
+  "devigged": 1306
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1767,
+  "markets_mapped": 588,
+  "contracts": 1270,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261027T000610Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 588,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 439,
+  "rows": 831,
+  "two_sided": 828,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 654,
+ "external_mapping": {
+  "total": 229,
+  "by_status": {
+   "MAPPED": 156,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.6812,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Andres Martin (RAC)": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Ella Olofson": 1,
+   "Rachael Phelan": 1,
+   "Nick Beamish": 1,
+   "Samarth Patel": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8041,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Dominik Matic": 1,
+   "Robin Eldin": 1,
+   "Danila Folkheims": 1,
+   "Raul Clarijs": 1,
+   "Martino Guidotti": 1,
+   "Marwan Ehab": 1,
+   "Akmal Abdullaev": 1,
+   "Alan Zinatulin": 1,
+   "Jeronimo Velazco Escobar": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 101,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 60,
+  "tri:MARKETS_AGREE": 13,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
