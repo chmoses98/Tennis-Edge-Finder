@@ -1,20 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 16:19Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 16:36Z)
 
-* Earliest credible first ball: **2026-10-27 16:26Z**
-* Recommended RUN TENNIS time: **2026-10-27 15:41Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-27 16:16Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-10-27 17:00Z**
+* Recommended RUN TENNIS time: **2026-10-27 16:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-27 16:50Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Cameron Norrie vs Francisco Cerundolo | 2026-10-27 16:26Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Glaubandich Court in progress (set 3 of best-of-5) | MEDIUM |
-| Ben Shelton vs Aleksandar Kovacevic | 2026-10-27 16:51Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
+| Ben Shelton vs Aleksandar Kovacevic | 2026-10-27 17:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**14 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Karen Khachanov vs Carlos Alcaraz, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo
+**15 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Cameron Norrie vs Francisco Cerundolo, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Karen Khachanov vs Carlos Alcaraz, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva
 
-Published slate: `SL-20261027T150752Z-a1e0d2d9` built 2026-10-27 15:07Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T16:26:10.861902+00:00, slate built 2026-10-27T15:07:52.527183+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 7 match(es)
+Published slate: `SL-20261027T150752Z-a1e0d2d9` built 2026-10-27 15:07Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T17:00:00+00:00, slate built 2026-10-27T15:07:52.527183+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 7 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_primary (ok)
 
 * later window 2: first ball 2026-10-27 19:00Z, run by 2026-10-27 18:15Z, 1 match(es)
 * later window 3: first ball 2026-10-28 01:30Z, run by 2026-10-28 00:45Z, 2 match(es)
