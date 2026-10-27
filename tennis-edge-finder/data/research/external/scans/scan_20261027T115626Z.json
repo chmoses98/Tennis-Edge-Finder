@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-27T11:56:26.356450+00:00",
+ "run_id": "20261027T115626Z",
+ "external_parse": {
+  "events": 283,
+  "markets": 2369,
+  "skipped_family": 363,
+  "skipped_period": 708,
+  "skipped_live": 51,
+  "one_sided": 108,
+  "rows": 3786,
+  "devigged": 1188
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1162,
+  "markets_mapped": 505,
+  "contracts": 1116,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261027T115626Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 505,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 296,
+  "rows": 820,
+  "two_sided": 812,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 1957,
+ "external_mapping": {
+  "total": 273,
+  "by_status": {
+   "MAPPED": 196,
+   "DOUBLES_UNSUPPORTED": 55,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.7179,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 55,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Alessandro Maina": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 351,
+  "by_status": {
+   "MAPPED": 312,
+   "UNMAPPED_PLAYER": 37,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8889,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Hikaru Hieda": 1,
+   "Darcy Nicholls": 1,
+   "Sebastian Arevalo": 1
+  }
+ },
+ "matched_both_venues": 157,
+ "external_mapped_matches": 204,
+ "kalshi_mapped_matches": 312,
+ "model_witness_available": true,
+ "rows": 192,
+ "counts": {
+  "PASS": 180,
+  "tri:MODEL_LONE_OUTLIER": 76,
+  "tri:INSUFFICIENT_INPUTS": 79,
+  "tri:KALSHI_LONE_OUTLIER": 20,
+  "WATCH": 8,
+  "tri:MARKETS_AGREE": 9,
+  "SHADOW_BET": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 4,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 52
+ }
+}
