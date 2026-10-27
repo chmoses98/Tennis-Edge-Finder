@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-27T13:05:21.424408+00:00",
+ "run_id": "20261027T130521Z",
+ "external_parse": {
+  "events": 264,
+  "markets": 2370,
+  "skipped_family": 359,
+  "skipped_period": 725,
+  "skipped_live": 42,
+  "one_sided": 89,
+  "rows": 3856,
+  "devigged": 1196
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1189,
+  "markets_mapped": 510,
+  "contracts": 1128,
+  "quoted_contracts": 896,
+  "raw": "data/research/external/raw/20261027T130521Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 510,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 302,
+  "rows": 826,
+  "two_sided": 821,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 767,
+ "external_mapping": {
+  "total": 255,
+  "by_status": {
+   "MAPPED": 186,
+   "DOUBLES_UNSUPPORTED": 53,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.7294,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Maria Urrutia": 1,
+   "Dominik Matic": 1,
+   "Pedro Dietrich": 1,
+   "Denis Klok": 1,
+   "Nikita Samuel Filin": 1,
+   "Julian Alonso Vivanco": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 8,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 168,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.913,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Maria Carle": 1,
+   "Lance Lage": 1,
+   "Dominik Matic": 1,
+   "Victor Pagotto": 1,
+   "Aristoteles Campos Junior": 1,
+   "Vaidehee Chaudhari": 1,
+   "Angela Morena Medinaceli Lobos": 1
+  }
+ },
+ "matched_both_venues": 101,
+ "external_mapped_matches": 194,
+ "kalshi_mapped_matches": 168,
+ "model_witness_available": true,
+ "rows": 120,
+ "counts": {
+  "PASS": 113,
+  "tri:MODEL_LONE_OUTLIER": 67,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "WATCH": 6,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 38
+ }
+}
