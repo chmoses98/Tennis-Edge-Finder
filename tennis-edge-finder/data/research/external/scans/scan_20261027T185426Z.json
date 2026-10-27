@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-27T18:54:26.109722+00:00",
+ "run_id": "20261027T185426Z",
+ "external_parse": {
+  "events": 231,
+  "markets": 1837,
+  "skipped_family": 238,
+  "skipped_period": 551,
+  "skipped_live": 46,
+  "one_sided": 33,
+  "rows": 2952,
+  "devigged": 1015
+ },
+ "smarkets_fetch": {
+  "events_seen": 148,
+  "events_priced": 80,
+  "markets": 1240,
+  "markets_mapped": 415,
+  "contracts": 904,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261027T185426Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 415,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 98,
+  "rows": 806,
+  "two_sided": 801,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 649,
+ "external_mapping": {
+  "total": 220,
+  "by_status": {
+   "MAPPED": 154,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 15,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Eric Crivei": 1,
+   "Rohan Belday": 1,
+   "Burridge William": 1,
+   "Daria Budko": 1,
+   "Saray Yli-Piipari": 1,
+   "Lance Lage": 1,
+   "Carlo Arena Fava": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Maria Carle": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 119,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.9084,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joaquin Benoit": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Dragos Cazacu": 1,
+   "M Rifqi Fitriadi": 1,
+   "Darcy Nicholls": 1,
+   "Dominik Matic": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 170,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
