@@ -3,7 +3,7 @@
   "commit_sha": "49ca6779814edc467eb1b02a0487d47aaeb488cd",
   "components": {
     "assisted_pipeline": {
-      "age_seconds": 2474.1,
+      "age_seconds": 3496.1,
       "as_of": "2026-10-27T06:10:58Z",
       "detail": "NO_DECISIONS_YET",
       "status": "OK"
@@ -15,26 +15,26 @@
       "status": "OK"
     },
     "export": {
-      "age_seconds": 0.0,
-      "as_of": "2026-10-27T06:52:13Z",
+      "age_seconds": 1.0,
+      "as_of": "2026-10-27T07:09:14Z",
       "detail": null,
       "status": "OK"
     },
     "frozen_producers": {
-      "age_seconds": 3351.1,
+      "age_seconds": 4373.1,
       "as_of": "2026-10-27T05:56:21Z",
       "detail": "model4_board_v1",
       "status": "OK"
     },
     "market_data": {
       "age_seconds": 4.0,
-      "as_of": "2026-10-27T06:52:09Z",
+      "as_of": "2026-10-27T07:09:11Z",
       "detail": null,
       "status": "OK"
     },
     "model": {
       "age_seconds": 4.0,
-      "as_of": "2026-10-27T06:52:09Z",
+      "as_of": "2026-10-27T07:09:11Z",
       "detail": null,
       "status": "OK"
     },
@@ -54,19 +54,19 @@
   "data_age_seconds": 4.0,
   "errors": [],
   "freshness_status": "FRESH",
-  "generated_at": "2026-10-27T06:52:13Z",
+  "generated_at": "2026-10-27T07:09:14Z",
   "kind": "health",
-  "last_export_attempt": "2026-10-27T06:52:13Z",
-  "last_market_capture": "2026-10-27T06:52:09Z",
-  "last_model_generated": "2026-10-27T06:52:09Z",
-  "last_successful_run": "2026-10-27T06:52:13Z",
+  "last_export_attempt": "2026-10-27T07:09:14Z",
+  "last_market_capture": "2026-10-27T07:09:11Z",
+  "last_model_generated": "2026-10-27T07:09:11Z",
+  "last_successful_run": "2026-10-27T07:09:14Z",
   "market_data_status": "OK",
   "model_status": "OK",
   "next_scheduled_run": "2026-10-27T10:15:00Z",
   "overall_status": "HEALTHY",
-  "payload_run_id": "run_c1fa4c9c682d28ac6c22",
+  "payload_run_id": "run_6993cc1ad8fe53cf9aa2",
   "router_status": "UNKNOWN",
-  "run_id": "run_c1fa4c9c682d28ac6c22",
+  "run_id": "run_6993cc1ad8fe53cf9aa2",
   "schema_version": "edge_finder.app.v1",
   "settlement_status": "UNKNOWN",
   "sport": "TENNIS",
