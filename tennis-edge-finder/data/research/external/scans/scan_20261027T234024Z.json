@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-27T23:40:24.648122+00:00",
+ "run_id": "20261027T234024Z",
+ "external_parse": {
+  "events": 207,
+  "markets": 1774,
+  "skipped_family": 241,
+  "skipped_period": 515,
+  "skipped_live": 23,
+  "one_sided": 27,
+  "rows": 2871,
+  "devigged": 990
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1177,
+  "markets_mapped": 420,
+  "contracts": 900,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261027T234024Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 420,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 73,
+  "rows": 827,
+  "two_sided": 821,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 787,
+ "external_mapping": {
+  "total": 196,
+  "by_status": {
+   "MAPPED": 131,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6684,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Benjamin Sparks": 1,
+   "Aryan Saleh": 1,
+   "Darcy Nicholls": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 35,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 218,
+  "by_status": {
+   "MAPPED": 188,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8624,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 142,
+ "kalshi_mapped_matches": 188,
+ "model_witness_available": true,
+ "rows": 116,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
