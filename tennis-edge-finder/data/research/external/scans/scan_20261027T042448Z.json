@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-27T04:24:48.107354+00:00",
+ "run_id": "20261027T042448Z",
+ "external_parse": {
+  "events": 235,
+  "markets": 2238,
+  "skipped_family": 321,
+  "skipped_period": 658,
+  "skipped_live": 26,
+  "one_sided": 34,
+  "rows": 3751,
+  "devigged": 1224
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1410,
+  "markets_mapped": 550,
+  "contracts": 1180,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261027T042448Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 550,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 342,
+  "rows": 838,
+  "two_sided": 837,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 878,
+ "external_mapping": {
+  "total": 224,
+  "by_status": {
+   "MAPPED": 152,
+   "DOUBLES_UNSUPPORTED": 53,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.6786,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Kazushi Idogaki": 1,
+   "Pablo Perez Ramos": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1,
+   "Jake Evans": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8721,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Seongchan Hong": 1,
+   "Lance Lage": 1,
+   "Davide Ciaschetti": 1,
+   "Marco Bavaro": 1,
+   "Win Steveker": 1,
+   "Jack Dermenjyan": 1,
+   "Max Geissinger": 1,
+   "Fedor Altukhov": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 65,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
