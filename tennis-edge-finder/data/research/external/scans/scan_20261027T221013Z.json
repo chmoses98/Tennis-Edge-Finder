@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-27T22:10:13.151027+00:00",
+ "run_id": "20261027T221013Z",
+ "external_parse": {
+  "events": 201,
+  "markets": 1717,
+  "skipped_family": 247,
+  "skipped_period": 502,
+  "skipped_live": 28,
+  "one_sided": 18,
+  "rows": 2828,
+  "devigged": 950
+ },
+ "smarkets_fetch": {
+  "events_seen": 144,
+  "events_priced": 80,
+  "markets": 1230,
+  "markets_mapped": 437,
+  "contracts": 938,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261027T221013Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 437,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 138,
+  "rows": 800,
+  "two_sided": 796,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 656,
+ "external_mapping": {
+  "total": 190,
+  "by_status": {
+   "MAPPED": 129,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6789,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Lisa Kamigata": 1,
+   "Sadbaroi Holdarova": 1,
+   "Carlo Arena Fava": 1,
+   "JC Roddick": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 48,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 153,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8844,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Matthew Howse": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Danila Kvasov": 1,
+   "Alan Zinatulin": 1,
+   "Kanta Watanabe": 1,
+   "Darcy Nicholls": 1,
+   "Sebastian Arevalo": 1
+  }
+ },
+ "matched_both_venues": 64,
+ "external_mapped_matches": 142,
+ "kalshi_mapped_matches": 153,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 88,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 54,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
