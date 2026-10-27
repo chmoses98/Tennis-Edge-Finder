@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 13:43Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 13:55Z)
 
 * Earliest credible first ball: **2026-10-27 14:00Z**
 * Recommended RUN TENNIS time: **2026-10-27 13:15Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Adrian Mannarino vs Ignacio Buse | 2026-10-27 14:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Adrian Mannarino vs Ignacio Buse | 2026-10-27 14:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Alex Michelsen vs Botic Van de Zandschulp | 2026-10-27 14:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Giovanni Mpetshi Perricard vs Arthur Fils | 2026-10-27 14:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Cameron Norrie vs Francisco Cerundolo | 2026-10-27 15:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -16,7 +16,7 @@
 
 Published slate: `SL-20261027T130058Z-e5a91af6` built 2026-10-27 13:00Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T14:00:00+00:00, slate built 2026-10-27T13:00:58.079998+00:00
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-27 17:00Z, run by 2026-10-27 16:15Z, 1 match(es)
 * later window 3: first ball 2026-10-27 19:00Z, run by 2026-10-27 18:15Z, 1 match(es)
