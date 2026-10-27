@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 19:20Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 19:35Z)
 
-* Earliest credible first ball: **2026-10-27 19:29Z**
-* Recommended RUN TENNIS time: **2026-10-27 18:44Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-27 19:19Z**
+* Earliest credible first ball: **2026-10-27 19:44Z**
+* Recommended RUN TENNIS time: **2026-10-27 18:59Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-27 19:34Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Flavio Cobolli vs Grigor Dimitrov | 2026-10-27 19:29Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Centre Court in progress (set 3 of best-of-5) | MEDIUM |
+| Flavio Cobolli vs Grigor Dimitrov | 2026-10-27 19:44Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Centre Court in progress (set 3 of best-of-5) | MEDIUM |
 
 **13 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo, Alycia Parks vs Kimberly Birrell
 
-Published slate: `SL-20261027T180939Z-93a8f15f` built 2026-10-27 18:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T19:29:01.457818+00:00, slate built 2026-10-27T18:09:39.716687+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261027T180939Z-93a8f15f` built 2026-10-27 18:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T19:44:09.255095+00:00, slate built 2026-10-27T18:09:39.716687+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
 Dispatched this pass: slate_final (ok)
 
