@@ -1,0 +1,112 @@
+{
+ "generated_at": "2026-10-27T17:26:11.034393+00:00",
+ "run_id": "20261027T172611Z",
+ "external_parse": {
+  "events": 259,
+  "markets": 2081,
+  "skipped_family": 265,
+  "skipped_period": 633,
+  "skipped_live": 49,
+  "one_sided": 50,
+  "rows": 3294,
+  "devigged": 1133
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1204,
+  "markets_mapped": 399,
+  "contracts": 882,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261027T172611Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 399,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 58,
+  "rows": 824,
+  "two_sided": 814,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 1705,
+ "external_mapping": {
+  "total": 248,
+  "by_status": {
+   "MAPPED": 179,
+   "DOUBLES_UNSUPPORTED": 49,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.7218,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Chase Robinson": 1,
+   "James Lorenzetti": 1,
+   "Alyson Shannon": 1,
+   "Joanna Kennedy": 1,
+   "Lauren Nolan": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 318,
+  "by_status": {
+   "MAPPED": 285,
+   "AMBIGUOUS_PLAYER": 3,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.8962,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Nazim Makhlouf": 1,
+   "Digvijay Pratap Singh": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Dragos Cazacu": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "matched_both_venues": 150,
+ "external_mapped_matches": 192,
+ "kalshi_mapped_matches": 285,
+ "model_witness_available": true,
+ "rows": 188,
+ "counts": {
+  "PASS": 182,
+  "tri:MODEL_LONE_OUTLIER": 62,
+  "tri:INSUFFICIENT_INPUTS": 107,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 7,
+  "SHADOW_BET": 3,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
