@@ -1,19 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 17:28Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 17:44Z)
 
-* Earliest credible first ball: **2026-10-27 18:25Z**
-* Recommended RUN TENNIS time: **2026-10-27 17:40Z**
-* Final price/status check time: **2026-10-27 18:15Z**
+* Earliest credible first ball: **2026-10-27 18:42Z**
+* Recommended RUN TENNIS time: **2026-10-27 17:57Z**
+* Final price/status check time: **2026-10-27 18:32Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Flavio Cobolli vs Grigor Dimitrov | 2026-10-27 18:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
+| Flavio Cobolli vs Grigor Dimitrov | 2026-10-27 18:42Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-5) | MEDIUM |
 
-**14 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Karen Khachanov vs Carlos Alcaraz, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo
+**13 main-tour match(es) without a verified start status** (BET blocked until checked): Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo, Alycia Parks vs Kimberly Birrell
 
 Published slate: `SL-20261027T150752Z-a1e0d2d9` built 2026-10-27 15:07Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 12 match(es)
 
-Dispatched this pass: run_tennis (ok)
+Dispatched this pass: run_tennis (ok), slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-28 01:30Z, run by 2026-10-28 00:45Z, 2 match(es)
 * later window 3: first ball 2026-10-28 04:00Z, run by 2026-10-28 03:15Z, 1 match(es)
