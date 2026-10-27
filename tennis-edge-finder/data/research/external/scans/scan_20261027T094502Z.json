@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-27T09:45:02.924754+00:00",
+ "run_id": "20261027T094502Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2231,
+  "skipped_family": 307,
+  "skipped_period": 647,
+  "skipped_live": 39,
+  "one_sided": 75,
+  "rows": 3552,
+  "devigged": 1199
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1206,
+  "markets_mapped": 529,
+  "contracts": 1160,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261027T094502Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 529,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 338,
+  "rows": 822,
+  "two_sided": 812,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 638,
+ "external_mapping": {
+  "total": 269,
+  "by_status": {
+   "MAPPED": 188,
+   "DOUBLES_UNSUPPORTED": 52,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.6989,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Abdurakhmon Karimov": 1,
+   "Pablo Perez Ramos": 1,
+   "Jan Facek": 1,
+   "Tim Hammes": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 7,
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 169,
+  "by_status": {
+   "MAPPED": 140,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8284,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Davide Ciaschetti": 1,
+   "Gabriele Maria Piano": 1,
+   "Matthew Howse": 1,
+   "Aleix Galindo Puig": 1,
+   "Marco Bavaro": 1,
+   "Danila Folkheims": 1,
+   "Ioannis Stamatopoulos": 1,
+   "Vaclav Schneider": 1
+  }
+ },
+ "matched_both_venues": 74,
+ "external_mapped_matches": 202,
+ "kalshi_mapped_matches": 140,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 81,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:MARKETS_AGREE": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
