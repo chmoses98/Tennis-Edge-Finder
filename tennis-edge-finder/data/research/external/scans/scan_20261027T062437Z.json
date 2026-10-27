@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-27T06:24:37.802471+00:00",
+ "run_id": "20261027T062437Z",
+ "external_parse": {
+  "events": 223,
+  "markets": 2070,
+  "skipped_family": 292,
+  "skipped_period": 593,
+  "skipped_live": 23,
+  "one_sided": 37,
+  "rows": 3450,
+  "devigged": 1145
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1297,
+  "markets_mapped": 540,
+  "contracts": 1158,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261027T062437Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 540,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 326,
+  "rows": 832,
+  "two_sided": 831,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 715,
+ "external_mapping": {
+  "total": 212,
+  "by_status": {
+   "MAPPED": 139,
+   "DOUBLES_UNSUPPORTED": 52,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.6557,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Kazushi Idogaki": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Dmitrii Burtsev": 1,
+   "Pablo Perez Ramos": 1,
+   "Gabriele Maria Piano": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8012,
+  "top_refusal_subjects": {
+   "Sanhui Shin": 1,
+   "Jeffrey John Wolf": 1,
+   "Seongchan Hong": 1,
+   "Tristan McCormick": 1,
+   "Lance Lage": 1,
+   "Dominik Matic": 1,
+   "Davide Ciaschetti": 1,
+   "Matthew Howse": 1,
+   "Aleix Galindo Puig": 1,
+   "Ioannis Stamatopoulos": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 166,
+ "kalshi_mapped_matches": 133,
+ "model_witness_available": true,
+ "rows": 80,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
