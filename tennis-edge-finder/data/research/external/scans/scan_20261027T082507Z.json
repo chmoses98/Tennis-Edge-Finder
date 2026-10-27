@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-27T08:25:07.186643+00:00",
+ "run_id": "20261027T082507Z",
+ "external_parse": {
+  "events": 241,
+  "markets": 2077,
+  "skipped_family": 344,
+  "skipped_period": 587,
+  "skipped_live": 26,
+  "one_sided": 55,
+  "rows": 3302,
+  "devigged": 1088
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1199,
+  "markets_mapped": 530,
+  "contracts": 1146,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261027T082507Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 530,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 329,
+  "rows": 817,
+  "two_sided": 813,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 641,
+ "external_mapping": {
+  "total": 230,
+  "by_status": {
+   "MAPPED": 159,
+   "DOUBLES_UNSUPPORTED": 49,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.6913,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Abdulhodiy Hosilov": 1,
+   "Pablo Perez Ramos": 1,
+   "Marwan Ehab": 1,
+   "Martino Guidotti": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 33
+  },
+  "mapped_rate": 0.7975,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Aristoteles Campos Junior": 1,
+   "Davide Ciaschetti": 1,
+   "Jake Evans": 1,
+   "Matthew Howse": 1,
+   "Robin Eldin": 1,
+   "Marco Bavaro": 1,
+   "Jack Dermenjyan": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 172,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
