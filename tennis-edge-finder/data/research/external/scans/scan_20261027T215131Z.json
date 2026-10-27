@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-27T21:51:31.586498+00:00",
+ "run_id": "20261027T215131Z",
+ "external_parse": {
+  "events": 201,
+  "markets": 1729,
+  "skipped_family": 247,
+  "skipped_period": 511,
+  "skipped_live": 27,
+  "one_sided": 21,
+  "rows": 2829,
+  "devigged": 949
+ },
+ "smarkets_fetch": {
+  "events_seen": 144,
+  "events_priced": 80,
+  "markets": 1206,
+  "markets_mapped": 432,
+  "contracts": 924,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261027T215131Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 432,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 134,
+  "rows": 790,
+  "two_sided": 786,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1697,
+ "external_mapping": {
+  "total": 190,
+  "by_status": {
+   "MAPPED": 129,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 9,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6789,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Lisa Kamigata": 1,
+   "Sadbaroi Holdarova": 1,
+   "Carlo Arena Fava": 1,
+   "JC Roddick": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 337,
+  "by_status": {
+   "MAPPED": 291,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 44
+  },
+  "mapped_rate": 0.8635,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 142,
+ "kalshi_mapped_matches": 291,
+ "model_witness_available": true,
+ "rows": 146,
+ "counts": {
+  "PASS": 145,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:INSUFFICIENT_INPUTS": 97,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
