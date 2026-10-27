@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-27T12:15:06.927222+00:00",
+ "run_id": "20261027T121506Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2376,
+  "skipped_family": 360,
+  "skipped_period": 713,
+  "skipped_live": 48,
+  "one_sided": 103,
+  "rows": 3818,
+  "devigged": 1198
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1182,
+  "markets_mapped": 516,
+  "contracts": 1138,
+  "quoted_contracts": 892,
+  "raw": "data/research/external/raw/20261027T121506Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 516,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 304,
+  "rows": 834,
+  "two_sided": 828,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 678,
+ "external_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 193,
+   "DOUBLES_UNSUPPORTED": 55,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.7148,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 55,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Maria Urrutia": 1,
+   "Alessandro Maina": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1,
+   "Robin Eldin": 1,
+   "Pedro Dietrich": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 9,
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 154,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.8636,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Kanta Watanabe": 1,
+   "Hikaru Hieda": 1,
+   "Lance Lage": 1,
+   "Victor Pagotto": 1,
+   "Gabriele Maria Piano": 1,
+   "Robin Eldin": 1,
+   "Alessandro Maina": 1,
+   "Jack Dermenjyan": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 201,
+ "kalshi_mapped_matches": 133,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 69,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 8,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 37
+ }
+}
