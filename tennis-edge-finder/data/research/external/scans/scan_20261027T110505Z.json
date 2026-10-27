@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-27T11:05:05.566051+00:00",
+ "run_id": "20261027T110505Z",
+ "external_parse": {
+  "events": 294,
+  "markets": 2539,
+  "skipped_family": 383,
+  "skipped_period": 744,
+  "skipped_live": 47,
+  "one_sided": 77,
+  "rows": 4138,
+  "devigged": 1334
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1197,
+  "markets_mapped": 522,
+  "contracts": 1144,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261027T110505Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 522,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 312,
+  "rows": 832,
+  "two_sided": 825,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 865,
+ "external_mapping": {
+  "total": 283,
+  "by_status": {
+   "MAPPED": 201,
+   "DOUBLES_UNSUPPORTED": 57,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7102,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 57,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Tim Hammes": 1,
+   "Alessandro Maina": 1,
+   "Vaclav Schneider": 1,
+   "Gabriele Maria Piano": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 206,
+  "by_status": {
+   "MAPPED": 179,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.8689,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Hikaru Hieda": 1,
+   "Lance Lage": 1,
+   "Dominik Matic": 1,
+   "Aristoteles Campos Junior": 1,
+   "Gabriele Maria Piano": 1,
+   "Jake Evans": 1,
+   "Aleix Galindo Puig": 1,
+   "Marco Bavaro": 1
+  }
+ },
+ "matched_both_venues": 119,
+ "external_mapped_matches": 209,
+ "kalshi_mapped_matches": 179,
+ "model_witness_available": true,
+ "rows": 160,
+ "counts": {
+  "PASS": 151,
+  "tri:MODEL_LONE_OUTLIER": 58,
+  "tri:MARKETS_AGREE": 14,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "SHADOW_BET": 2,
+  "WATCH": 7,
+  "tri:INSUFFICIENT_INPUTS": 65,
+  "tri:EXTERNAL_LONE_OUTLIER": 6,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
