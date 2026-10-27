@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-27T20:50:22.684167+00:00",
+ "run_id": "20261027T205022Z",
+ "external_parse": {
+  "events": 208,
+  "markets": 1847,
+  "skipped_family": 265,
+  "skipped_period": 555,
+  "skipped_live": 26,
+  "one_sided": 29,
+  "rows": 2998,
+  "devigged": 998
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1191,
+  "markets_mapped": 416,
+  "contracts": 894,
+  "quoted_contracts": 862,
+  "raw": "data/research/external/raw/20261027T205022Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 416,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 129,
+  "rows": 765,
+  "two_sided": 759,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 560,
+ "external_mapping": {
+  "total": 197,
+  "by_status": {
+   "MAPPED": 137,
+   "DOUBLES_UNSUPPORTED": 51,
+   "UNMAPPED_PLAYER": 8,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6954,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Lance Lage": 1,
+   "Carlo Arena Fava": 1,
+   "JC Roddick": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Amy Stevens": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 1,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 126,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.869,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Matthew Howse": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Dragos Cazacu": 1,
+   "Hikaru Hieda": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 149,
+ "kalshi_mapped_matches": 126,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 28,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
