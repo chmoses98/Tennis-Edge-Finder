@@ -1,13 +1,13 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 11:03Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 11:14Z)
 
-* Earliest credible first ball: **2026-10-27 11:30Z**
-* Recommended RUN TENNIS time: **2026-10-27 10:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-27 11:20Z**
+* Earliest credible first ball: **2026-10-27 11:19Z**
+* Recommended RUN TENNIS time: **2026-10-27 10:34Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-27 11:09Z**
 * Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Xinran Sun vs Mananchaya Sawangkaew | 2026-10-27 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Xinran Sun vs Mananchaya Sawangkaew | 2026-10-27 11:19Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3) | MEDIUM |
 | Jerome Kym vs Arthur Rinderknech | 2026-10-27 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Tommy Paul vs Andrey Rublev | 2026-10-27 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
@@ -15,7 +15,7 @@
 
 Published slate: `SL-20261027T104633Z-1c6b394c` built 2026-10-27 10:46Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-27 14:00Z, run by 2026-10-27 13:15Z, 4 match(es)
 * later window 3: first ball 2026-10-27 17:00Z, run by 2026-10-27 16:15Z, 1 match(es)
