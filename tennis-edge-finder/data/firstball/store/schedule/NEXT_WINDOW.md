@@ -1,21 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 04:36Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 04:54Z)
 
-* Earliest credible first ball: **2026-10-27 04:42Z**
-* Recommended RUN TENNIS time: **2026-10-27 03:57Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-27 04:32Z**
-* Matches in window: 5
+* Earliest credible first ball: **2026-10-27 04:55Z**
+* Recommended RUN TENNIS time: **2026-10-27 04:10Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-27 04:45Z**
+* Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Sara Sorribes Tormo vs Zeynep Sonmez | 2026-10-27 04:42Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 2 in progress (set 2 of best-of-3) | MEDIUM |
-| Dayana Yastremska vs Katie Volynets | 2026-10-27 04:42Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-3) | MEDIUM |
-| Aliaksandra Sasnovich vs Nikola Bartunkova | 2026-10-27 05:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Dayana Yastremska vs Katie Volynets | 2026-10-27 04:55Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Aliaksandra Sasnovich vs Nikola Bartunkova | 2026-10-27 05:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Polina Kudermetova vs Janice Tjen | 2026-10-27 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Antonia Ruzic vs Claire Liu | 2026-10-27 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**14 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Taylor Fritz vs Rinky Hijikata, Remy Bertola vs Denis Shapovalov, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Karen Khachanov vs Carlos Alcaraz
+**15 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Taylor Fritz vs Rinky Hijikata, Remy Bertola vs Denis Shapovalov, Stan Wawrinka vs Jiri Lehecka, Novak Djokovic vs Ugo Humbert, Alejandro Tabilo vs Rafael Jodar, Alexander Zverev vs Martin Landaluce, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Karen Khachanov vs Carlos Alcaraz
 
-Published slate: `SL-20261027T014639Z-bef6434f` built 2026-10-27 01:46Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-27T04:42:52.705668+00:00, slate built 2026-10-27T01:46:39.744966+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 11 match(es)
+Published slate: `SL-20261027T041706Z-7d326022` built 2026-10-27 04:17Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
 
 Dispatched this pass: slate_final (ok)
 
