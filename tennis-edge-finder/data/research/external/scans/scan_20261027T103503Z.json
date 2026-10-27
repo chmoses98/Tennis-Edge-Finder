@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-27T10:35:03.226999+00:00",
+ "run_id": "20261027T103503Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2317,
+  "skipped_family": 362,
+  "skipped_period": 665,
+  "skipped_live": 40,
+  "one_sided": 87,
+  "rows": 3700,
+  "devigged": 1202
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1133,
+  "markets_mapped": 516,
+  "contracts": 1128,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261027T103503Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 516,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 296,
+  "rows": 832,
+  "two_sided": 827,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 757,
+ "external_mapping": {
+  "total": 269,
+  "by_status": {
+   "MAPPED": 193,
+   "DOUBLES_UNSUPPORTED": 52,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.7175,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Maria Urrutia": 1,
+   "Abdurakhmon Karimov": 1,
+   "Pablo Perez Ramos": 1,
+   "Dominik Matic": 1,
+   "Tim Hammes": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 196,
+  "by_status": {
+   "MAPPED": 159,
+   "UNMAPPED_PLAYER": 36,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8112,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Carlo Arena Fava": 1,
+   "Victor Pagotto": 1,
+   "Davide Ciaschetti": 1,
+   "Gabriele Maria Piano": 1,
+   "Jake Evans": 1,
+   "Aleix Galindo Puig": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "matched_both_venues": 87,
+ "external_mapped_matches": 205,
+ "kalshi_mapped_matches": 159,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 101,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:KALSHI_LONE_OUTLIER": 16,
+  "SHADOW_BET": 3,
+  "WATCH": 4,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
