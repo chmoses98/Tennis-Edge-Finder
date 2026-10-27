@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-27T17:54:24.216084+00:00",
+ "run_id": "20261027T175424Z",
+ "external_parse": {
+  "events": 243,
+  "markets": 1956,
+  "skipped_family": 252,
+  "skipped_period": 587,
+  "skipped_live": 45,
+  "one_sided": 30,
+  "rows": 3150,
+  "devigged": 1087
+ },
+ "smarkets_fetch": {
+  "events_seen": 149,
+  "events_priced": 80,
+  "markets": 1142,
+  "markets_mapped": 378,
+  "contracts": 832,
+  "quoted_contracts": 832,
+  "raw": "data/research/external/raw/20261027T175424Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 378,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 66,
+  "rows": 766,
+  "two_sided": 759,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 580,
+ "external_mapping": {
+  "total": 232,
+  "by_status": {
+   "MAPPED": 166,
+   "DOUBLES_UNSUPPORTED": 50,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.7155,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Chase Robinson": 1,
+   "Alyson Shannon": 1,
+   "Joanna Kennedy": 1,
+   "Lauren Nolan": 1,
+   "Dominik Matic": 1,
+   "Julian Alonso Vivanco": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Maria Carle": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 143,
+  "by_status": {
+   "MAPPED": 125,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8741,
+  "top_refusal_subjects": {
+   "Tristan McCormick": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alan Zinatulin": 1,
+   "Sebastian Arevalo": 1,
+   "Carlo Arena Fava": 1,
+   "Lance Lage": 1,
+   "Dominik Matic": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 180,
+ "kalshi_mapped_matches": 125,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 60,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
