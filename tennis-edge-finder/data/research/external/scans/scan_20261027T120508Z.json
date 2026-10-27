@@ -1,0 +1,113 @@
+{
+ "generated_at": "2026-10-27T12:05:08.559025+00:00",
+ "run_id": "20261027T120508Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2376,
+  "skipped_family": 360,
+  "skipped_period": 713,
+  "skipped_live": 48,
+  "one_sided": 103,
+  "rows": 3818,
+  "devigged": 1198
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1174,
+  "markets_mapped": 516,
+  "contracts": 1140,
+  "quoted_contracts": 894,
+  "raw": "data/research/external/raw/20261027T120508Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 516,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 324,
+  "rows": 816,
+  "two_sided": 806,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 740,
+ "external_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 193,
+   "DOUBLES_UNSUPPORTED": 55,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.7148,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 55,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Maria Urrutia": 1,
+   "Alessandro Maina": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1,
+   "Robin Eldin": 1,
+   "Pedro Dietrich": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 172,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8866,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Maria Carle": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Darcy Nicholls": 1,
+   "Lance Lage": 1,
+   "Victor Pagotto": 1,
+   "Gabriele Maria Piano": 1,
+   "Robin Eldin": 1
+  }
+ },
+ "matched_both_venues": 99,
+ "external_mapped_matches": 200,
+ "kalshi_mapped_matches": 172,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 93,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
