@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-27T16:24:12.114786+00:00",
+ "run_id": "20261027T162412Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 2287,
+  "skipped_family": 302,
+  "skipped_period": 693,
+  "skipped_live": 58,
+  "one_sided": 43,
+  "rows": 3672,
+  "devigged": 1249
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1259,
+  "markets_mapped": 443,
+  "contracts": 988,
+  "quoted_contracts": 898,
+  "raw": "data/research/external/raw/20261027T162412Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 443,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 176,
+  "rows": 812,
+  "two_sided": 803,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 783,
+ "external_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 200,
+   "DOUBLES_UNSUPPORTED": 50,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.7407,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Chase Robinson": 1,
+   "James Lorenzetti": 1,
+   "Oskar Szymczak": 1,
+   "Alyson Shannon": 1,
+   "Dominik Matic": 1,
+   "Denis Klok": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 55,
+   "AMBIGUOUS_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 195,
+  "by_status": {
+   "MAPPED": 182,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Tristan McCormick": 1,
+   "Digvijay Pratap Singh": 1,
+   "Danila Kvasov": 1,
+   "Dragos Cazacu": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Lance Lage": 1,
+   "Denis Klok": 1,
+   "Victor Pagotto": 1
+  }
+ },
+ "matched_both_venues": 97,
+ "external_mapped_matches": 211,
+ "kalshi_mapped_matches": 182,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 86,
+  "tri:MODEL_LONE_OUTLIER": 54,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 2,
+  "SHADOW_BET": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 48
+ }
+}
