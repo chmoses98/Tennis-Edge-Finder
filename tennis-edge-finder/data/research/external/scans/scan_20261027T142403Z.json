@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-27T14:24:03.588068+00:00",
+ "run_id": "20261027T142403Z",
+ "external_parse": {
+  "events": 247,
+  "markets": 2152,
+  "skipped_family": 330,
+  "skipped_period": 670,
+  "skipped_live": 44,
+  "one_sided": 92,
+  "rows": 3474,
+  "devigged": 1058
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1218,
+  "markets_mapped": 496,
+  "contracts": 1100,
+  "quoted_contracts": 896,
+  "raw": "data/research/external/raw/20261027T142403Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 496,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 274,
+  "rows": 826,
+  "two_sided": 820,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 961,
+ "external_mapping": {
+  "total": 238,
+  "by_status": {
+   "MAPPED": 170,
+   "DOUBLES_UNSUPPORTED": 53,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Maria Urrutia": 1,
+   "Dominik Matic": 1,
+   "Pedro Dietrich": 1,
+   "Denis Klok": 1,
+   "Nikita Samuel Filin": 1,
+   "Julian Alonso Vivanco": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 3,
+   "AMBIGUOUS_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Angel Veliz": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 259,
+  "by_status": {
+   "MAPPED": 240,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9266,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Hikaru Hieda": 1,
+   "Lance Lage": 1,
+   "Dominik Matic": 1
+  }
+ },
+ "matched_both_venues": 109,
+ "external_mapped_matches": 179,
+ "kalshi_mapped_matches": 240,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 113,
+  "tri:MODEL_LONE_OUTLIER": 63,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 3,
+  "SHADOW_BET": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 44
+ }
+}
