@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-27T03:24:57.665961+00:00",
+ "run_id": "20261027T032457Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 2313,
+  "skipped_family": 335,
+  "skipped_period": 684,
+  "skipped_live": 33,
+  "one_sided": 45,
+  "rows": 3843,
+  "devigged": 1248
+ },
+ "smarkets_fetch": {
+  "events_seen": 184,
+  "events_priced": 80,
+  "markets": 1514,
+  "markets_mapped": 547,
+  "contracts": 1182,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261027T032457Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 547,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 344,
+  "rows": 838,
+  "two_sided": 835,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 911,
+ "external_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 161,
+   "DOUBLES_UNSUPPORTED": 54,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.6793,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 54,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Kenta Kawada": 1,
+   "Masaki Ishikawa": 1,
+   "Pablo Perez Ramos": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 198,
+  "by_status": {
+   "MAPPED": 166,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.8384,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Seongchan Hong": 1,
+   "Dominik Matic": 1,
+   "Davide Ciaschetti": 1,
+   "Jake Evans": 1,
+   "Matthew Howse": 1,
+   "Marco Bavaro": 1,
+   "Danila Folkheims": 1,
+   "Ioannis Stamatopoulos": 1,
+   "Vaclav Schneider": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 175,
+ "kalshi_mapped_matches": 166,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 106,
+  "tri:INSUFFICIENT_INPUTS": 54,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:MARKETS_AGREE": 9,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
