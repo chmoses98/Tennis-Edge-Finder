@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-27T03:34:57.970580+00:00",
+ "run_id": "20261027T033457Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 2247,
+  "skipped_family": 326,
+  "skipped_period": 660,
+  "skipped_live": 30,
+  "one_sided": 33,
+  "rows": 3763,
+  "devigged": 1227
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1444,
+  "markets_mapped": 554,
+  "contracts": 1188,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261027T033457Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 554,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 362,
+  "rows": 826,
+  "two_sided": 821,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 933,
+ "external_mapping": {
+  "total": 229,
+  "by_status": {
+   "MAPPED": 154,
+   "DOUBLES_UNSUPPORTED": 54,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.6725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 54,
+   "Tristan McCormick": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Angel Veliz": 1,
+   "Noma Akugue Noha": 1,
+   "Kenta Kawada": 1,
+   "Masaki Ishikawa": 1,
+   "Pablo Perez Ramos": 1,
+   "Gabriele Maria Piano": 1,
+   "Dominik Matic": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 204,
+  "by_status": {
+   "MAPPED": 173,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.848,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Seongchan Hong": 1,
+   "Tristan McCormick": 1,
+   "Davide Ciaschetti": 1,
+   "Gabriele Maria Piano": 1,
+   "Jake Evans": 1,
+   "Matthew Howse": 1,
+   "Aleix Galindo Puig": 1,
+   "Robin Eldin": 1,
+   "Marco Bavaro": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 173,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 119,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 73,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
