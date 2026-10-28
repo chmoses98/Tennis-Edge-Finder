@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T03:39:03.048081+00:00",
+ "run_id": "20261028T033903Z",
+ "external_parse": {
+  "events": 270,
+  "markets": 2262,
+  "skipped_family": 273,
+  "skipped_period": 633,
+  "skipped_live": 22,
+  "one_sided": 109,
+  "rows": 3488,
+  "devigged": 1247
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1110,
+  "markets_mapped": 410,
+  "contracts": 876,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261028T033903Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 410,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 837,
+  "two_sided": 829,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 710,
+ "external_mapping": {
+  "total": 259,
+  "by_status": {
+   "MAPPED": 179,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6911,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 189,
+  "by_status": {
+   "MAPPED": 164,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.8677,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Hayato Takamura": 1
+  }
+ },
+ "matched_both_venues": 86,
+ "external_mapped_matches": 188,
+ "kalshi_mapped_matches": 164,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 103,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
