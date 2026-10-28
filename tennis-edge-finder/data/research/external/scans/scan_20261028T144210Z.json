@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-28T14:42:10.151782+00:00",
+ "run_id": "20261028T144210Z",
+ "external_parse": {
+  "events": 246,
+  "markets": 1853,
+  "skipped_family": 246,
+  "skipped_period": 534,
+  "skipped_live": 48,
+  "one_sided": 122,
+  "rows": 2754,
+  "devigged": 949
+ },
+ "smarkets_fetch": {
+  "events_seen": 111,
+  "events_priced": 80,
+  "markets": 1121,
+  "markets_mapped": 453,
+  "contracts": 986,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261028T144210Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 453,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 171,
+  "rows": 815,
+  "two_sided": 809,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 646,
+ "external_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 170,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.7173,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 30,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8553,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1,
+   "Gerardo Delgado": 1,
+   "Johan Alexander Rodriguez": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 176,
+ "kalshi_mapped_matches": 136,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
