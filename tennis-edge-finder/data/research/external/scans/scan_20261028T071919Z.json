@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-28T07:19:19.274449+00:00",
+ "run_id": "20261028T071919Z",
+ "external_parse": {
+  "events": 376,
+  "markets": 2813,
+  "skipped_family": 300,
+  "skipped_period": 710,
+  "skipped_live": 30,
+  "one_sided": 243,
+  "rows": 3984,
+  "devigged": 1560
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 954,
+  "markets_mapped": 401,
+  "contracts": 858,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261028T071919Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 401,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 837,
+  "two_sided": 836,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 969,
+ "external_mapping": {
+  "total": 365,
+  "by_status": {
+   "MAPPED": 264,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 56,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7233,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 265,
+  "by_status": {
+   "MAPPED": 229,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.8642,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Brendan McDonald": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Joaquin Benoit": 1
+  }
+ },
+ "matched_both_venues": 169,
+ "external_mapped_matches": 265,
+ "kalshi_mapped_matches": 229,
+ "model_witness_available": true,
+ "rows": 242,
+ "counts": {
+  "PASS": 229,
+  "tri:INSUFFICIENT_INPUTS": 114,
+  "tri:MODEL_LONE_OUTLIER": 81,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 23,
+  "tri:ALL_THREE_DISAGREE": 8,
+  "tri:MARKETS_AGREE": 11,
+  "WATCH": 12,
+  "tri:EXTERNAL_LONE_OUTLIER": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
