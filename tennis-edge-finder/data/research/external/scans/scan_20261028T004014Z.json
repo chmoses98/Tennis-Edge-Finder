@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T00:40:14.329449+00:00",
+ "run_id": "20261028T004014Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 2143,
+  "skipped_family": 269,
+  "skipped_period": 595,
+  "skipped_live": 19,
+  "one_sided": 53,
+  "rows": 3449,
+  "devigged": 1225
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1161,
+  "markets_mapped": 415,
+  "contracts": 888,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T004014Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 415,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 73,
+  "rows": 815,
+  "two_sided": 807,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 720,
+ "external_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 51,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6878,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Angel Veliz": 1,
+   "Nathan Pitts": 1,
+   "Darcy Nicholls": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Gabriela Knutson": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 191,
+  "by_status": {
+   "MAPPED": 174,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.911,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Matthew Howse": 1,
+   "Max Geissinger": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Alan Zinatulin": 1,
+   "Hikaru Hieda": 1,
+   "Sebastian Arevalo": 1,
+   "Anne Christine Lutkemeyer": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 178,
+ "kalshi_mapped_matches": 174,
+ "model_witness_available": true,
+ "rows": 148,
+ "counts": {
+  "PASS": 144,
+  "tri:MODEL_LONE_OUTLIER": 55,
+  "tri:KALSHI_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 64,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 3,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
