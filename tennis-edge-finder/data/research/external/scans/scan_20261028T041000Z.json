@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-28T04:10:00.156173+00:00",
+ "run_id": "20261028T041000Z",
+ "external_parse": {
+  "events": 264,
+  "markets": 2211,
+  "skipped_family": 269,
+  "skipped_period": 613,
+  "skipped_live": 24,
+  "one_sided": 84,
+  "rows": 3481,
+  "devigged": 1244
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1106,
+  "markets_mapped": 415,
+  "contracts": 886,
+  "quoted_contracts": 844,
+  "raw": "data/research/external/raw/20261028T041000Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 415,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 59,
+  "rows": 827,
+  "two_sided": 823,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1806,
+ "external_mapping": {
+  "total": 253,
+  "by_status": {
+   "MAPPED": 173,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6838,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 37,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 380,
+  "by_status": {
+   "MAPPED": 326,
+   "UNMAPPED_PLAYER": 53,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8579,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1
+  }
+ },
+ "matched_both_venues": 151,
+ "external_mapped_matches": 183,
+ "kalshi_mapped_matches": 326,
+ "model_witness_available": true,
+ "rows": 244,
+ "counts": {
+  "PASS": 241,
+  "tri:INSUFFICIENT_INPUTS": 175,
+  "tri:MODEL_LONE_OUTLIER": 53,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 8,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
