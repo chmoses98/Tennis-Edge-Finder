@@ -1,0 +1,84 @@
+{
+ "generated_at": "2026-10-28T22:53:30.978938+00:00",
+ "run_id": "20261028T225330Z",
+ "external_parse": {
+  "events": 131,
+  "markets": 1136,
+  "skipped_family": 218,
+  "skipped_period": 319,
+  "skipped_live": 22,
+  "one_sided": 21,
+  "rows": 1772,
+  "devigged": 578
+ },
+ "smarkets_fetch": {
+  "events": 0,
+  "error": "no events returned"
+ },
+ "smarkets_parse": {},
+ "kalshi_quotes_on_disk": 1441,
+ "external_mapping": {
+  "total": 120,
+  "by_status": {
+   "MAPPED": 81,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Saray Yli-Piipari": 1,
+   "Evelyn Whiteside": 1,
+   "Graeme Angus ": 1,
+   "Benjamin Sparks": 1,
+   "Oscar Andres Martinez de Freitas": 1,
+   "Gerardo Delgado": 1,
+   "Nikita Samuel Filin": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "kalshi_mapping": {
+  "total": 218,
+  "by_status": {
+   "MAPPED": 195,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.8945,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquin Benoit": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1,
+   "Gerardo Delgado": 1
+  }
+ },
+ "matched_both_venues": 60,
+ "external_mapped_matches": 81,
+ "kalshi_mapped_matches": 195,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 92,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
