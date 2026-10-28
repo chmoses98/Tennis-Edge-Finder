@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-28T15:43:32.733030+00:00",
+ "run_id": "20261028T154332Z",
+ "external_parse": {
+  "events": 224,
+  "markets": 1625,
+  "skipped_family": 228,
+  "skipped_period": 480,
+  "skipped_live": 57,
+  "one_sided": 94,
+  "rows": 2441,
+  "devigged": 820
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 1216,
+  "markets_mapped": 447,
+  "contracts": 972,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261028T154332Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 447,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 119,
+  "rows": 853,
+  "two_sided": 846,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1543,
+ "external_mapping": {
+  "total": 215,
+  "by_status": {
+   "MAPPED": 157,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.7302,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Saray Yli-Piipari": 1,
+   "Joanna Kennedy": 1,
+   "Evelyn Whiteside": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 246,
+  "by_status": {
+   "MAPPED": 215,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.874,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1
+  }
+ },
+ "matched_both_venues": 126,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 215,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 116,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:MARKETS_AGREE": 12,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
