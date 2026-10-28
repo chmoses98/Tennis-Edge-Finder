@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-28T00:50:28.082171+00:00",
+ "run_id": "20261028T005028Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 2143,
+  "skipped_family": 269,
+  "skipped_period": 595,
+  "skipped_live": 19,
+  "one_sided": 53,
+  "rows": 3449,
+  "devigged": 1225
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1156,
+  "markets_mapped": 413,
+  "contracts": 884,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T005028Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 413,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 60,
+  "rows": 824,
+  "two_sided": 816,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 679,
+ "external_mapping": {
+  "total": 237,
+  "by_status": {
+   "MAPPED": 163,
+   "DOUBLES_UNSUPPORTED": 51,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6878,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 51,
+   "Angel Veliz": 1,
+   "Nathan Pitts": 1,
+   "Darcy Nicholls": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 164,
+  "by_status": {
+   "MAPPED": 143,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.872,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Giovanni Branchetti": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Alan Zinatulin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Sebastian Arevalo": 1
+  }
+ },
+ "matched_both_venues": 68,
+ "external_mapped_matches": 176,
+ "kalshi_mapped_matches": 143,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 114,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 90,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
