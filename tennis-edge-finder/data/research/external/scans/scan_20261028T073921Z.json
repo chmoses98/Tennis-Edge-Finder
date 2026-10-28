@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T07:39:21.910482+00:00",
+ "run_id": "20261028T073921Z",
+ "external_parse": {
+  "events": 377,
+  "markets": 2847,
+  "skipped_family": 300,
+  "skipped_period": 717,
+  "skipped_live": 27,
+  "one_sided": 238,
+  "rows": 4049,
+  "devigged": 1591
+ },
+ "smarkets_fetch": {
+  "events_seen": 130,
+  "events_priced": 80,
+  "markets": 954,
+  "markets_mapped": 399,
+  "contracts": 856,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261028T073921Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 399,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 92,
+  "rows": 764,
+  "two_sided": 756,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 677,
+ "external_mapping": {
+  "total": 366,
+  "by_status": {
+   "MAPPED": 263,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 57,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7186,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 37,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 186,
+  "by_status": {
+   "MAPPED": 160,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.8602,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Gerardo Delgado": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Joaquin Benoit": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "matched_both_venues": 117,
+ "external_mapped_matches": 265,
+ "kalshi_mapped_matches": 160,
+ "model_witness_available": true,
+ "rows": 156,
+ "counts": {
+  "PASS": 151,
+  "tri:INSUFFICIENT_INPUTS": 115,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
