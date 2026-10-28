@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T07:59:14.124879+00:00",
+ "run_id": "20261028T075914Z",
+ "external_parse": {
+  "events": 377,
+  "markets": 2848,
+  "skipped_family": 300,
+  "skipped_period": 718,
+  "skipped_live": 27,
+  "one_sided": 235,
+  "rows": 4054,
+  "devigged": 1595
+ },
+ "smarkets_fetch": {
+  "events_seen": 131,
+  "events_priced": 80,
+  "markets": 970,
+  "markets_mapped": 407,
+  "contracts": 874,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261028T075914Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 407,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 840,
+  "two_sided": 835,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 564,
+ "external_mapping": {
+  "total": 366,
+  "by_status": {
+   "MAPPED": 263,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 57,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7186,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 35,
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.525,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 119,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Xavier Calvelo": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Joaquin Benoit": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1,
+   "Danila Kvasov": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1,
+   "Yara Bartashevich": 1
+  }
+ },
+ "matched_both_venues": 85,
+ "external_mapped_matches": 267,
+ "kalshi_mapped_matches": 119,
+ "model_witness_available": true,
+ "rows": 114,
+ "counts": {
+  "PASS": 112,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 81,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
