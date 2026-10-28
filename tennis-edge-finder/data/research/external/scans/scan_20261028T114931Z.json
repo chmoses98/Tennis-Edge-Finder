@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-28T11:49:31.158856+00:00",
+ "run_id": "20261028T114931Z",
+ "external_parse": {
+  "events": 315,
+  "markets": 2315,
+  "skipped_family": 277,
+  "skipped_period": 642,
+  "skipped_live": 51,
+  "one_sided": 185,
+  "rows": 3340,
+  "devigged": 1211
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 1186,
+  "markets_mapped": 485,
+  "contracts": 1064,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261028T114931Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 485,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 202,
+  "rows": 862,
+  "two_sided": 853,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 635,
+ "external_mapping": {
+  "total": 304,
+  "by_status": {
+   "MAPPED": 221,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 47,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.727,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 128,
+   "UNMAPPED_PLAYER": 19,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8649,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1,
+   "Alexandra Malova": 1,
+   "Maria Fernanda Pantoja Espino": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 229,
+ "kalshi_mapped_matches": 128,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 66,
+  "tri:INSUFFICIENT_INPUTS": 40,
+  "tri:MODEL_LONE_OUTLIER": 26
+ },
+ "skips": {
+  "external_has_no_match_winner": 40
+ }
+}
