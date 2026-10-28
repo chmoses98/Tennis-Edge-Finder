@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-28T09:19:22.480251+00:00",
+ "run_id": "20261028T091922Z",
+ "external_parse": {
+  "events": 351,
+  "markets": 2536,
+  "skipped_family": 296,
+  "skipped_period": 638,
+  "skipped_live": 43,
+  "one_sided": 216,
+  "rows": 3599,
+  "devigged": 1385
+ },
+ "smarkets_fetch": {
+  "events_seen": 128,
+  "events_priced": 80,
+  "markets": 1015,
+  "markets_mapped": 434,
+  "contracts": 948,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261028T091922Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 434,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 109,
+  "rows": 839,
+  "two_sided": 835,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 711,
+ "external_mapping": {
+  "total": 340,
+  "by_status": {
+   "MAPPED": 246,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 53,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7235,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 33,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 189,
+  "by_status": {
+   "MAPPED": 161,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8519,
+  "top_refusal_subjects": {
+   "Gerardo Delgado": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1,
+   "Joaquin Benoit": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Nazim Makhlouf": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 112,
+ "external_mapped_matches": 252,
+ "kalshi_mapped_matches": 161,
+ "model_witness_available": true,
+ "rows": 136,
+ "counts": {
+  "PASS": 131,
+  "tri:INSUFFICIENT_INPUTS": 69,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 2,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
