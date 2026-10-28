@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T06:38:56.209564+00:00",
+ "run_id": "20261028T063856Z",
+ "external_parse": {
+  "events": 281,
+  "markets": 2223,
+  "skipped_family": 255,
+  "skipped_period": 610,
+  "skipped_live": 31,
+  "one_sided": 95,
+  "rows": 3382,
+  "devigged": 1263
+ },
+ "smarkets_fetch": {
+  "events_seen": 135,
+  "events_priced": 80,
+  "markets": 1053,
+  "markets_mapped": 418,
+  "contracts": 894,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T063856Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 418,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 51,
+  "rows": 843,
+  "two_sided": 838,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 627,
+ "external_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 190,
+   "DOUBLES_UNSUPPORTED": 47,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7037,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 47,
+   "Hayato Takamura": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1,
+   "Danila Kvasov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "William Vinciguerra": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 37,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 164,
+  "by_status": {
+   "MAPPED": 144,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.878,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Gerardo Delgado": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Hayato Takamura": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 202,
+ "kalshi_mapped_matches": 144,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 94,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:MARKETS_AGREE": 9,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
