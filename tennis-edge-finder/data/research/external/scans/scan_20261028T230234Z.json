@@ -1,0 +1,81 @@
+{
+ "generated_at": "2026-10-28T23:02:34.634439+00:00",
+ "run_id": "20261028T230234Z",
+ "external_parse": {
+  "events": 123,
+  "markets": 1134,
+  "skipped_family": 222,
+  "skipped_period": 318,
+  "skipped_live": 16,
+  "one_sided": 21,
+  "rows": 1758,
+  "devigged": 573
+ },
+ "smarkets_fetch": {
+  "events": 0,
+  "error": "no events returned"
+ },
+ "smarkets_parse": {},
+ "kalshi_quotes_on_disk": 468,
+ "external_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 79,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7054,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Saray Yli-Piipari": 1,
+   "Evelyn Whiteside": 1,
+   "Benjamin Sparks": 1,
+   "Gerardo Delgado": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "kalshi_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8522,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Joaquin Benoit": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "Gerardo Delgado": 1,
+   "Angela Morena Medinaceli Lobos": 1,
+   "Emma Sophie Glaser": 1,
+   "Vladlena Bokova": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 98,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
