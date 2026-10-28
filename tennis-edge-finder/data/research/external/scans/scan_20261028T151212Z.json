@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T15:12:12.267962+00:00",
+ "run_id": "20261028T151212Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 1833,
+  "skipped_family": 236,
+  "skipped_period": 530,
+  "skipped_live": 44,
+  "one_sided": 119,
+  "rows": 2744,
+  "devigged": 946
+ },
+ "smarkets_fetch": {
+  "events_seen": 108,
+  "events_priced": 80,
+  "markets": 1186,
+  "markets_mapped": 448,
+  "contracts": 978,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261028T151212Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 448,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 149,
+  "rows": 829,
+  "two_sided": 822,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 624,
+ "external_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 166,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.7186,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 146,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8957,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1,
+   "Abigail Haile": 1
+  }
+ },
+ "matched_both_venues": 97,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 146,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 103,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 61,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
