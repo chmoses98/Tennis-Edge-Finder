@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T07:49:22.367928+00:00",
+ "run_id": "20261028T074922Z",
+ "external_parse": {
+  "events": 377,
+  "markets": 2848,
+  "skipped_family": 300,
+  "skipped_period": 718,
+  "skipped_live": 27,
+  "one_sided": 235,
+  "rows": 4054,
+  "devigged": 1595
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 960,
+  "markets_mapped": 401,
+  "contracts": 862,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261028T074922Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 401,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 836,
+  "two_sided": 832,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 635,
+ "external_mapping": {
+  "total": 366,
+  "by_status": {
+   "MAPPED": 263,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 57,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7186,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 37,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 162,
+  "by_status": {
+   "MAPPED": 142,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8765,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Danila Kvasov": 1,
+   "Kazuki Nakajima": 1
+  }
+ },
+ "matched_both_venues": 102,
+ "external_mapped_matches": 265,
+ "kalshi_mapped_matches": 142,
+ "model_witness_available": true,
+ "rows": 128,
+ "counts": {
+  "PASS": 122,
+  "tri:INSUFFICIENT_INPUTS": 82,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:MARKETS_AGREE": 9,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "SHADOW_BET": 2,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
