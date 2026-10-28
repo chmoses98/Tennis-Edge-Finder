@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-27 23:58Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 00:16Z)
 
 * Earliest credible first ball: **2026-10-28 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-28 00:45Z**
@@ -12,9 +12,9 @@
 
 **11 main-tour match(es) without a verified start status** (BET blocked until checked): Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo, Alycia Parks vs Kimberly Birrell, Katerina Siniakova vs Lanlana Tararudee
 
-Published slate: `SL-20261027T223411Z-52770d96` built 2026-10-27 22:34Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261027T234449Z-670761c3` built 2026-10-27 23:44Z -- current
 
-Dispatched this pass: run_tennis (ok), slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-28 04:00Z, run by 2026-10-28 03:15Z, 1 match(es)
 * later window 3: first ball 2026-10-28 06:30Z, run by 2026-10-28 05:45Z, 3 match(es)
