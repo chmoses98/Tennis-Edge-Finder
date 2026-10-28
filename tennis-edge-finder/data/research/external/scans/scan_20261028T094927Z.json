@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-28T09:49:27.792045+00:00",
+ "run_id": "20261028T094927Z",
+ "external_parse": {
+  "events": 346,
+  "markets": 2535,
+  "skipped_family": 292,
+  "skipped_period": 645,
+  "skipped_live": 41,
+  "one_sided": 203,
+  "rows": 3636,
+  "devigged": 1395
+ },
+ "smarkets_fetch": {
+  "events_seen": 126,
+  "events_priced": 80,
+  "markets": 1052,
+  "markets_mapped": 445,
+  "contracts": 972,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261028T094927Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 445,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 120,
+  "rows": 852,
+  "two_sided": 844,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 738,
+ "external_mapping": {
+  "total": 335,
+  "by_status": {
+   "MAPPED": 243,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 52,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7254,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 162,
+   "UNMAPPED_PLAYER": 31,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8351,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Brendan McDonald": 1,
+   "Paul Colin": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Joaquin Benoit": 1,
+   "Jay Singh": 1
+  }
+ },
+ "matched_both_venues": 109,
+ "external_mapped_matches": 250,
+ "kalshi_mapped_matches": 162,
+ "model_witness_available": true,
+ "rows": 142,
+ "counts": {
+  "PASS": 142,
+  "tri:INSUFFICIENT_INPUTS": 113,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
