@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-28T06:59:12.367714+00:00",
+ "run_id": "20261028T065912Z",
+ "external_parse": {
+  "events": 276,
+  "markets": 2164,
+  "skipped_family": 248,
+  "skipped_period": 589,
+  "skipped_live": 33,
+  "one_sided": 97,
+  "rows": 3333,
+  "devigged": 1230
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 1004,
+  "markets_mapped": 410,
+  "contracts": 878,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T065912Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 410,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 837,
+  "two_sided": 832,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 645,
+ "external_mapping": {
+  "total": 265,
+  "by_status": {
+   "MAPPED": 186,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 30,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7019,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Hayato Takamura": 1,
+   "Alan Zinatulin": 1,
+   "Danila Kvasov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 37,
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 148,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.8555,
+  "top_refusal_subjects": {
+   "Gabriela Knutson": 1,
+   "Gerardo Delgado": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Matthew Howse": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Hayato Takamura": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 199,
+ "kalshi_mapped_matches": 148,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 95,
+  "tri:INSUFFICIENT_INPUTS": 59,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
