@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-28T17:02:25.472806+00:00",
+ "run_id": "20261028T170225Z",
+ "external_parse": {
+  "events": 190,
+  "markets": 1410,
+  "skipped_family": 209,
+  "skipped_period": 417,
+  "skipped_live": 47,
+  "one_sided": 58,
+  "rows": 2193,
+  "devigged": 723
+ },
+ "smarkets_fetch": {
+  "events_seen": 100,
+  "events_priced": 80,
+  "markets": 1195,
+  "markets_mapped": 437,
+  "contracts": 938,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261028T170225Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 437,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 99,
+  "rows": 839,
+  "two_sided": 831,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 596,
+ "external_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 124,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.6927,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Saray Yli-Piipari": 1,
+   "Joanna Kennedy": 1,
+   "Evelyn Whiteside": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 127,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.8699,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Gabriela Knutson": 1,
+   "Joaquin Benoit": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Baotong Xu": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 127,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:MARKETS_AGREE": 8,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
