@@ -1,0 +1,111 @@
+{
+ "generated_at": "2026-10-28T11:30:43.140355+00:00",
+ "run_id": "20261028T113043Z",
+ "external_parse": {
+  "events": 316,
+  "markets": 2347,
+  "skipped_family": 284,
+  "skipped_period": 651,
+  "skipped_live": 50,
+  "one_sided": 185,
+  "rows": 3394,
+  "devigged": 1227
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 1160,
+  "markets_mapped": 480,
+  "contracts": 1050,
+  "quoted_contracts": 884,
+  "raw": "data/research/external/raw/20261028T113043Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 480,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 192,
+  "rows": 858,
+  "two_sided": 847,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 1737,
+ "external_mapping": {
+  "total": 305,
+  "by_status": {
+   "MAPPED": 221,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 47,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7246,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 313,
+  "by_status": {
+   "MAPPED": 273,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8722,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 192,
+ "external_mapped_matches": 229,
+ "kalshi_mapped_matches": 273,
+ "model_witness_available": true,
+ "rows": 232,
+ "counts": {
+  "PASS": 230,
+  "tri:INSUFFICIENT_INPUTS": 157,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 52
+ }
+}
