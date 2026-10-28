@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T03:48:59.703475+00:00",
+ "run_id": "20261028T034859Z",
+ "external_parse": {
+  "events": 270,
+  "markets": 2262,
+  "skipped_family": 273,
+  "skipped_period": 633,
+  "skipped_live": 22,
+  "one_sided": 109,
+  "rows": 3488,
+  "devigged": 1247
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1100,
+  "markets_mapped": 408,
+  "contracts": 870,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261028T034859Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 408,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 837,
+  "two_sided": 831,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 642,
+ "external_mapping": {
+  "total": 259,
+  "by_status": {
+   "MAPPED": 179,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6911,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 162,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8901,
+  "top_refusal_subjects": {
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Hayato Takamura": 1,
+   "Alan Zinatulin": 1,
+   "Kanta Watanabe": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 189,
+ "kalshi_mapped_matches": 162,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 93,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
