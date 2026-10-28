@@ -1,0 +1,82 @@
+{
+ "generated_at": "2026-10-28T21:13:18.738753+00:00",
+ "run_id": "20261028T211318Z",
+ "external_parse": {
+  "events": 151,
+  "markets": 1204,
+  "skipped_family": 224,
+  "skipped_period": 343,
+  "skipped_live": 33,
+  "one_sided": 37,
+  "rows": 1839,
+  "devigged": 599
+ },
+ "smarkets_fetch": {
+  "events": 0,
+  "error": "no events returned"
+ },
+ "smarkets_parse": {},
+ "kalshi_quotes_on_disk": 538,
+ "external_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 94,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6714,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alyson Shannon": 1,
+   "Saray Yli-Piipari": 1,
+   "Evelyn Whiteside": 1,
+   "Adrien Jonah Abarca": 1,
+   "Shaurya Bharadwaj": 1,
+   "Graeme Angus ": 1,
+   "Benjamin Sparks": 1,
+   "Julian Alonso Vivanco": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 113,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8968,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Joaquin Benoit": 1,
+   "Kazuki Nakajima": 1,
+   "Lara Wagner": 1,
+   "Emma Sophie Glaser": 1,
+   "Vladlena Bokova": 1,
+   "Mariia Lazarenko": 1,
+   "Raluca Georgiana Serban": 1,
+   "Mu Jie Tzeng": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 113,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 59,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 42
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
