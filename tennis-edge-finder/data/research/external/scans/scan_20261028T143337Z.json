@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-28T14:33:37.621563+00:00",
+ "run_id": "20261028T143337Z",
+ "external_parse": {
+  "events": 250,
+  "markets": 1901,
+  "skipped_family": 250,
+  "skipped_period": 548,
+  "skipped_live": 46,
+  "one_sided": 123,
+  "rows": 2826,
+  "devigged": 978
+ },
+ "smarkets_fetch": {
+  "events_seen": 111,
+  "events_priced": 80,
+  "markets": 1128,
+  "markets_mapped": 456,
+  "contracts": 994,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261028T143337Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 456,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 189,
+  "rows": 805,
+  "two_sided": 797,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 1587,
+ "external_mapping": {
+  "total": 241,
+  "by_status": {
+   "MAPPED": 172,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.7137,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 30,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 264,
+  "by_status": {
+   "MAPPED": 230,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.8712,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1,
+   "Gerardo Delgado": 1
+  }
+ },
+ "matched_both_venues": 141,
+ "external_mapped_matches": 178,
+ "kalshi_mapped_matches": 230,
+ "model_witness_available": true,
+ "rows": 144,
+ "counts": {
+  "PASS": 141,
+  "tri:MODEL_LONE_OUTLIER": 60,
+  "tri:INSUFFICIENT_INPUTS": 69,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "SHADOW_BET": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 43
+ }
+}
