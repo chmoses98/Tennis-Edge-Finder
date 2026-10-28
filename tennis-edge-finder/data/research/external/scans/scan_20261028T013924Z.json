@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T01:39:24.357748+00:00",
+ "run_id": "20261028T013924Z",
+ "external_parse": {
+  "events": 242,
+  "markets": 2017,
+  "skipped_family": 258,
+  "skipped_period": 555,
+  "skipped_live": 25,
+  "one_sided": 55,
+  "rows": 3299,
+  "devigged": 1148
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 1099,
+  "markets_mapped": 401,
+  "contracts": 860,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T013924Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 401,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 826,
+  "two_sided": 818,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 770,
+ "external_mapping": {
+  "total": 230,
+  "by_status": {
+   "MAPPED": 154,
+   "DOUBLES_UNSUPPORTED": 53,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6696,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Angel Veliz": 1,
+   "Nathan Pitts": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Hikaru Hieda": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 35,
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.525,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 155,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.9012,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Paul Colin": 1,
+   "Matthew Howse": 1,
+   "Davide Ciaschetti": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Hikaru Hieda": 1,
+   "Yara Bartashevich": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 166,
+ "kalshi_mapped_matches": 155,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 101,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 50,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
