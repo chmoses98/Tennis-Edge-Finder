@@ -1,17 +1,17 @@
 {
- "run_id": "20261027T233729Z",
- "source_stamp": "20261027T110402Z|2026-10-27T23:29:30.826999+00:00",
- "settled": 85472,
+ "run_id": "20261028T003446Z",
+ "source_stamp": "20261027T110402Z|2026-10-28T00:28:33.753883+00:00",
+ "settled": 85694,
  "by_status": {
-  "NOT_COVERED": 33390,
+  "NOT_COVERED": 33482,
   "RESOLVED": 41144,
   "NO_CANONICAL_IDS": 3468,
   "AMBIGUOUS": 412,
   "NOT_FOUND": 4909,
-  "PENDING_RESULT": 2149
+  "PENDING_RESULT": 2279
  },
  "reconciliation": {
-  "NOT_RECONCILED": 39906,
+  "NOT_RECONCILED": 40022,
   "AGREE": 10938,
   "CONFLICT": 32
  },
@@ -21,13 +21,13 @@
    "NO_CANONICAL_IDS": 1500,
    "AMBIGUOUS": 22,
    "NOT_FOUND": 1880,
-   "NOT_COVERED": 1908
+   "NOT_COVERED": 1938
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
   },
   "ATP|ITF": {
-   "NOT_COVERED": 14154
+   "NOT_COVERED": 14202
   },
   "ATP|MASTERS_1000": {
    "RESOLVED": 11059,
@@ -43,14 +43,14 @@
    "RESOLVED": 14809,
    "NO_CANONICAL_IDS": 708,
    "NOT_FOUND": 1294,
-   "PENDING_RESULT": 1686,
+   "PENDING_RESULT": 1806,
    "AMBIGUOUS": 156
   },
   "WTA|GRAND_SLAM": {
    "RESOLVED": 89
   },
   "WTA|ITF": {
-   "NOT_COVERED": 17238
+   "NOT_COVERED": 17252
   },
   "WTA|MASTERS_1000": {
    "RESOLVED": 2375,
@@ -71,11 +71,11 @@
    "RESOLVED": 1580,
    "NOT_COVERED": 90,
    "AMBIGUOUS": 4,
-   "PENDING_RESULT": 266
+   "PENDING_RESULT": 276
   }
  },
  "freshness": {
-  "as_of": "2026-10-27",
+  "as_of": "2026-10-28",
   "sources": {
    "sackmann_ATP_main": "20261027T105819Z",
    "sackmann_ATP_qual_chall": "20261027T105819Z",
@@ -93,37 +93,37 @@
   "horizons": {
    "ATP tour": {
     "newest_result": "2026-10-26",
-    "lag_days": 1,
+    "lag_days": 2,
     "live": true,
     "coverage": "full"
    },
    "ATP Challenger": {
     "newest_result": "2026-10-19",
-    "lag_days": 8,
+    "lag_days": 9,
     "live": false,
     "coverage": "full"
    },
    "ATP ITF": {
     "newest_result": "2026-04-27",
-    "lag_days": 183,
+    "lag_days": 184,
     "live": false,
     "coverage": "full"
    },
    "WTA tour": {
     "newest_result": "2026-10-27",
-    "lag_days": 0,
+    "lag_days": 1,
     "live": true,
     "coverage": "full"
    },
    "WTA 125": {
     "newest_result": "2026-10-27",
-    "lag_days": 0,
+    "lag_days": 1,
     "live": true,
     "coverage": "partial"
    },
    "WTA ITF": {
     "newest_result": "2026-04-27",
-    "lag_days": 183,
+    "lag_days": 184,
     "live": false,
     "coverage": "full"
    }
@@ -139,21 +139,21 @@
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 34254,
-  "matches_with_v2_and_incumbent": 4065,
-  "exchange_settled_predictions": 34254,
+  "predictions_with_v2_and_incumbent": 34370,
+  "matches_with_v2_and_incumbent": 4075,
+  "exchange_settled_predictions": 34370,
   "independently_resolved_predictions": 8130,
   "independently_settled_matches": 998,
   "by_status": {
    "RESOLVED": 8130,
    "NOT_FOUND": 1412,
-   "NOT_COVERED": 24110,
+   "NOT_COVERED": 24202,
    "AMBIGUOUS": 82,
-   "PENDING_RESULT": 520
+   "PENDING_RESULT": 544
   },
   "reconciliation": {
    "AGREE": 8098,
-   "NOT_RECONCILED": 26124,
+   "NOT_RECONCILED": 26240,
    "EXPLAINED_NOTE": 56,
    "CONFLICT": 32
   },
@@ -162,24 +162,24 @@
     "RESOLVED": 2650,
     "NOT_FOUND": 1012,
     "AMBIGUOUS": 16,
-    "NOT_COVERED": 1908
+    "NOT_COVERED": 1938
    },
    "ATP ITF": {
-    "NOT_COVERED": 9576
+    "NOT_COVERED": 9624
    },
    "ATP tour": {
     "RESOLVED": 2942,
     "NOT_FOUND": 246,
     "AMBIGUOUS": 36,
-    "PENDING_RESULT": 208
+    "PENDING_RESULT": 222
    },
    "WTA 125": {
     "NOT_COVERED": 46,
     "RESOLVED": 920,
-    "PENDING_RESULT": 266
+    "PENDING_RESULT": 276
    },
    "WTA ITF": {
-    "NOT_COVERED": 12580
+    "NOT_COVERED": 12594
    },
    "WTA tour": {
     "RESOLVED": 1618,
@@ -490,7 +490,7 @@
     "status": "NOT_FOUND"
    }
   ],
-  "n_stale_unresolved_tour_level": 400,
+  "n_stale_unresolved_tour_level": 412,
   "readout_at_independently_settled_matches": 1500
  }
 }
