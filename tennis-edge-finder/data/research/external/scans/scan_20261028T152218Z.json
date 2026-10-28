@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-28T15:22:18.308824+00:00",
+ "run_id": "20261028T152218Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 1833,
+  "skipped_family": 236,
+  "skipped_period": 530,
+  "skipped_live": 44,
+  "one_sided": 119,
+  "rows": 2744,
+  "devigged": 946
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 1169,
+  "markets_mapped": 443,
+  "contracts": 966,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261028T152218Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 443,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 119,
+  "rows": 847,
+  "two_sided": 840,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 612,
+ "external_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 166,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.7186,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 30
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 162,
+  "by_status": {
+   "MAPPED": 145,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8951,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Digvijay Pratap Singh": 1,
+   "Gerardo Delgado": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Anne Christine Lutkemeyer": 1
+  }
+ },
+ "matched_both_venues": 92,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 145,
+ "model_witness_available": true,
+ "rows": 96,
+ "counts": {
+  "PASS": 94,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 64,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
