@@ -1,18 +1,18 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 08:55Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 09:14Z)
 
-* Earliest credible first ball: **2026-10-28 08:57Z**
-* Recommended RUN TENNIS time: **2026-10-28 08:12Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-28 08:47Z**
+* Earliest credible first ball: **2026-10-28 09:16Z**
+* Recommended RUN TENNIS time: **2026-10-28 08:31Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-28 09:06Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexandra Eala vs Talia Gibson | 2026-10-28 08:57Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 3 of best-of-3) | MEDIUM |
-| Han Shi vs Dayana Yastremska | 2026-10-28 09:27Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3) | MEDIUM |
+| Alexandra Eala vs Talia Gibson | 2026-10-28 09:16Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 3 of best-of-3) | MEDIUM |
+| Han Shi vs Dayana Yastremska | 2026-10-28 09:46Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3) | MEDIUM |
 
 **8 main-tour match(es) without a verified start status** (BET blocked until checked): Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Anna Bondar vs Kaitlin Quevedo
 
-Published slate: `SL-20261028T081556Z-a0ef5cd1` built 2026-10-28 08:15Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261028T081556Z-a0ef5cd1` built 2026-10-28 08:15Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-28T09:16:03.004415+00:00, slate built 2026-10-28T08:15:56.813286+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
 Dispatched this pass: slate_final (ok)
 
