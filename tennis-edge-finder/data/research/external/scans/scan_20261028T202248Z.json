@@ -1,0 +1,84 @@
+{
+ "generated_at": "2026-10-28T20:22:48.506168+00:00",
+ "run_id": "20261028T202248Z",
+ "external_parse": {
+  "events": 167,
+  "markets": 1245,
+  "skipped_family": 228,
+  "skipped_period": 352,
+  "skipped_live": 42,
+  "one_sided": 49,
+  "rows": 1868,
+  "devigged": 615
+ },
+ "smarkets_fetch": {
+  "events": 0,
+  "error": "no events returned"
+ },
+ "smarkets_parse": {},
+ "kalshi_quotes_on_disk": 560,
+ "external_mapping": {
+  "total": 156,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.6538,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1,
+   "Adrien Jonah Abarca": 1,
+   "Shaurya Bharadwaj": 1,
+   "Graeme Angus ": 1,
+   "Benjamin Sparks": 1,
+   "Alyson Shannon": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "kalshi_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8864,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquin Benoit": 1,
+   "M Rifqi Fitriadi": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Pedro Petroski Rocha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1,
+   "Lara Wagner": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 56,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "WATCH": 2,
+  "tri:INSUFFICIENT_INPUTS": 38,
+  "tri:MARKETS_AGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
