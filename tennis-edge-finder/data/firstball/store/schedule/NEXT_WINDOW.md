@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 21:38Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 21:48Z)
 
 * Earliest credible first ball: **2026-10-29 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-29 00:45Z**
@@ -11,9 +11,9 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Leylah Fernandez vs Elise Mertens
 
-Published slate: `SL-20261028T182308Z-6c1d9f4e` built 2026-10-28 18:23Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
+Published slate: `SL-20261028T213020Z-650be945` built 2026-10-28 21:30Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-29 05:00Z, run by 2026-10-29 04:15Z, 4 match(es)
 * later window 3: first ball 2026-10-29 08:00Z, run by 2026-10-29 07:15Z, 2 match(es)
