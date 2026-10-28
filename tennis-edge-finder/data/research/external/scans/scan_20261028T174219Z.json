@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-28T17:42:19.922079+00:00",
+ "run_id": "20261028T174219Z",
+ "external_parse": {
+  "events": 176,
+  "markets": 1197,
+  "skipped_family": 182,
+  "skipped_period": 360,
+  "skipped_live": 52,
+  "one_sided": 59,
+  "rows": 1837,
+  "devigged": 593
+ },
+ "smarkets_fetch": {
+  "events_seen": 98,
+  "events_priced": 80,
+  "markets": 1199,
+  "markets_mapped": 439,
+  "contracts": 940,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T174219Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 439,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 139,
+  "rows": 801,
+  "two_sided": 795,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 602,
+ "external_mapping": {
+  "total": 165,
+  "by_status": {
+   "MAPPED": 117,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7091,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1,
+   "Owen Guistwite": 1,
+   "Shaurya Bharadwaj": 1,
+   "Adrien Jonah Abarca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.8552,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Gabriela Knutson": 1,
+   "Kazuki Nakajima": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 135,
+ "kalshi_mapped_matches": 124,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
