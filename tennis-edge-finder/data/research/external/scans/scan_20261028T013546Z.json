@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T01:35:46.587221+00:00",
+ "run_id": "20261028T013546Z",
+ "external_parse": {
+  "events": 242,
+  "markets": 2017,
+  "skipped_family": 258,
+  "skipped_period": 555,
+  "skipped_live": 25,
+  "one_sided": 55,
+  "rows": 3299,
+  "devigged": 1148
+ },
+ "smarkets_fetch": {
+  "events_seen": 140,
+  "events_priced": 80,
+  "markets": 1117,
+  "markets_mapped": 410,
+  "contracts": 880,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261028T013546Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 410,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 830,
+  "two_sided": 822,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 1007,
+ "external_mapping": {
+  "total": 230,
+  "by_status": {
+   "MAPPED": 154,
+   "DOUBLES_UNSUPPORTED": 53,
+   "AMBIGUOUS_PLAYER": 2,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.6696,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 53,
+   "Angel Veliz": 1,
+   "Nathan Pitts": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Hikaru Hieda": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 283,
+  "by_status": {
+   "MAPPED": 247,
+   "AMBIGUOUS_PLAYER": 1,
+   "UNMAPPED_PLAYER": 35
+  },
+  "mapped_rate": 0.8728,
+  "top_refusal_subjects": {
+   "Angel Veliz": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1
+  }
+ },
+ "matched_both_venues": 94,
+ "external_mapped_matches": 166,
+ "kalshi_mapped_matches": 247,
+ "model_witness_available": true,
+ "rows": 150,
+ "counts": {
+  "PASS": 148,
+  "tri:MODEL_LONE_OUTLIER": 63,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
