@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-28T15:52:12.712505+00:00",
+ "run_id": "20261028T155212Z",
+ "external_parse": {
+  "events": 224,
+  "markets": 1625,
+  "skipped_family": 228,
+  "skipped_period": 480,
+  "skipped_live": 57,
+  "one_sided": 94,
+  "rows": 2441,
+  "devigged": 820
+ },
+ "smarkets_fetch": {
+  "events_seen": 108,
+  "events_priced": 80,
+  "markets": 1262,
+  "markets_mapped": 450,
+  "contracts": 978,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261028T155212Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 450,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 139,
+  "rows": 839,
+  "two_sided": 832,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 593,
+ "external_mapping": {
+  "total": 215,
+  "by_status": {
+   "MAPPED": 157,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.7302,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Saray Yli-Piipari": 1,
+   "Joanna Kennedy": 1,
+   "Evelyn Whiteside": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.5875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 154,
+  "by_status": {
+   "MAPPED": 134,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8701,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Gerardo Delgado": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Abigail Haile": 1
+  }
+ },
+ "matched_both_venues": 87,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 134,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
