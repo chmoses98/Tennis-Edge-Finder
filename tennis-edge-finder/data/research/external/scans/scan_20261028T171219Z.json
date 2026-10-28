@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T17:12:19.769685+00:00",
+ "run_id": "20261028T171219Z",
+ "external_parse": {
+  "events": 188,
+  "markets": 1284,
+  "skipped_family": 186,
+  "skipped_period": 382,
+  "skipped_live": 51,
+  "one_sided": 72,
+  "rows": 1947,
+  "devigged": 641
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 1162,
+  "markets_mapped": 423,
+  "contracts": 908,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261028T171219Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 77,
+  "rows": 831,
+  "two_sided": 823,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 612,
+ "external_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 123,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.6949,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1,
+   "Owen Guistwite": 1,
+   "Adrien Jonah Abarca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 126,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Gabriela Knutson": 1,
+   "M Rifqi Fitriadi": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Mu Jie Tzeng": 1,
+   "Baotong Xu": 1,
+   "Abigail Haile": 1
+  }
+ },
+ "matched_both_venues": 68,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 126,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 41,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
