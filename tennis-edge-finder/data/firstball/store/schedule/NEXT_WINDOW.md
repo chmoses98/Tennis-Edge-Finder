@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 07:41Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 07:59Z)
 
 * Earliest credible first ball: **2026-10-28 08:00Z**
 * Recommended RUN TENNIS time: **2026-10-28 07:15Z**  (OVERDUE: run now)
@@ -7,14 +7,14 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alexandra Eala vs Talia Gibson | 2026-10-28 08:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Harriet Dart vs Janice Tjen | 2026-10-28 08:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Alexandra Eala vs Talia Gibson | 2026-10-28 08:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Harriet Dart vs Janice Tjen | 2026-10-28 08:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**9 main-tour match(es) without a verified start status** (BET blocked until checked): Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Anna Bondar vs Kaitlin Quevedo, Katerina Siniakova vs Lanlana Tararudee
+**8 main-tour match(es) without a verified start status** (BET blocked until checked): Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Anna Bondar vs Kaitlin Quevedo
 
-Published slate: `SL-20261028T064641Z-8aed7785` built 2026-10-28 06:46Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-28T08:00:00+00:00, slate built 2026-10-28T06:46:41.836863+00:00
+Published slate: `SL-20261028T072407Z-e0ce2890` built 2026-10-28 07:24Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-28 11:00Z, run by 2026-10-28 10:15Z, 2 match(es)
 * later window 3: first ball 2026-10-28 13:00Z, run by 2026-10-28 12:15Z, 2 match(es)
