@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T14:12:13.108370+00:00",
+ "run_id": "20261028T141213Z",
+ "external_parse": {
+  "events": 258,
+  "markets": 1875,
+  "skipped_family": 235,
+  "skipped_period": 520,
+  "skipped_live": 46,
+  "one_sided": 166,
+  "rows": 2721,
+  "devigged": 953
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 1140,
+  "markets_mapped": 453,
+  "contracts": 992,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261028T141213Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 453,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 161,
+  "rows": 831,
+  "two_sided": 817,
+  "one_sided": 14
+ },
+ "kalshi_quotes_on_disk": 694,
+ "external_mapping": {
+  "total": 249,
+  "by_status": {
+   "MAPPED": 181,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.7269,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 30,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8721,
+  "top_refusal_subjects": {
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "matched_both_venues": 100,
+ "external_mapped_matches": 189,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 103,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 69,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
