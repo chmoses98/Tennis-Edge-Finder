@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-10-28T03:58:58.865556+00:00",
+ "run_id": "20261028T035858Z",
+ "external_parse": {
+  "events": 264,
+  "markets": 2211,
+  "skipped_family": 269,
+  "skipped_period": 613,
+  "skipped_live": 24,
+  "one_sided": 84,
+  "rows": 3481,
+  "devigged": 1244
+ },
+ "smarkets_fetch": {
+  "events_seen": 138,
+  "events_priced": 80,
+  "markets": 1100,
+  "markets_mapped": 408,
+  "contracts": 870,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261028T035858Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 408,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 34,
+  "rows": 836,
+  "two_sided": 833,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 680,
+ "external_mapping": {
+  "total": 253,
+  "by_status": {
+   "MAPPED": 173,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6838,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Herman H\u00f8yeraal": 1,
+   "Kanta Watanabe": 1,
+   "Hayato Takamura": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Alan Zinatulin": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 159,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8785,
+  "top_refusal_subjects": {
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1,
+   "Danila Kvasov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kanta Watanabe": 1,
+   "M Rifqi Fitriadi": 1,
+   "Maria Fernanda Pantoja Espino": 1,
+   "Yara Bartashevich": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 183,
+ "kalshi_mapped_matches": 159,
+ "model_witness_available": true,
+ "rows": 102,
+ "counts": {
+  "PASS": 97,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "WATCH": 4,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 45,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MARKETS_AGREE": 7,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
