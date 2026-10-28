@@ -1,18 +1,18 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 03:26Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 03:44Z)
 
-* Earliest credible first ball: **2026-10-28 03:28Z**
-* Recommended RUN TENNIS time: **2026-10-28 02:43Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-28 03:18Z**
+* Earliest credible first ball: **2026-10-28 03:46Z**
+* Recommended RUN TENNIS time: **2026-10-28 03:01Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-28 03:36Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Cristina Bucsa vs Maya Joint | 2026-10-28 03:28Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 3 of best-of-3) | MEDIUM |
+| Cristina Bucsa vs Maya Joint | 2026-10-28 03:46Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 3 of best-of-3) | MEDIUM |
 | Aliaksandra Sasnovich vs Diana Shnaider | 2026-10-28 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **11 main-tour match(es) without a verified start status** (BET blocked until checked): Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens, Jil Teichmann vs Zeynep Sonmez, Elena Rybakina vs Yulia Putintseva, Anna Bondar vs Kaitlin Quevedo, Alycia Parks vs Kimberly Birrell, Katerina Siniakova vs Lanlana Tararudee
 
-Published slate: `SL-20261028T030338Z-621b578d` built 2026-10-28 03:03Z -- current
+Published slate: `SL-20261028T032241Z-cfdc3ea1` built 2026-10-28 03:22Z -- current
 
 Dispatched this pass: slate_final (ok)
 
