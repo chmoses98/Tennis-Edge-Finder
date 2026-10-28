@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-28T15:02:17.805941+00:00",
+ "run_id": "20261028T150217Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 1833,
+  "skipped_family": 236,
+  "skipped_period": 530,
+  "skipped_live": 44,
+  "one_sided": 119,
+  "rows": 2744,
+  "devigged": 946
+ },
+ "smarkets_fetch": {
+  "events_seen": 110,
+  "events_priced": 80,
+  "markets": 1117,
+  "markets_mapped": 453,
+  "contracts": 986,
+  "quoted_contracts": 874,
+  "raw": "data/research/external/raw/20261028T150217Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 453,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 173,
+  "rows": 813,
+  "two_sided": 807,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 589,
+ "external_mapping": {
+  "total": 231,
+  "by_status": {
+   "MAPPED": 166,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 32
+  },
+  "mapped_rate": 0.7186,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 127,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8819,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pedro Petroski Rocha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Yara Bartashevich": 1,
+   "Anne Christine Lutkemeyer": 1
+  }
+ },
+ "matched_both_venues": 89,
+ "external_mapped_matches": 173,
+ "kalshi_mapped_matches": 127,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 90,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 49
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
