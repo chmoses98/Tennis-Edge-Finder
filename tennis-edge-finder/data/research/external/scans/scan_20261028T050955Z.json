@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-28T05:09:55.593059+00:00",
+ "run_id": "20261028T050955Z",
+ "external_parse": {
+  "events": 282,
+  "markets": 2213,
+  "skipped_family": 247,
+  "skipped_period": 605,
+  "skipped_live": 32,
+  "one_sided": 103,
+  "rows": 3423,
+  "devigged": 1258
+ },
+ "smarkets_fetch": {
+  "events_seen": 134,
+  "events_priced": 80,
+  "markets": 1036,
+  "markets_mapped": 409,
+  "contracts": 872,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261028T050955Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 409,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 835,
+  "two_sided": 829,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1802,
+ "external_mapping": {
+  "total": 271,
+  "by_status": {
+   "MAPPED": 188,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 32,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6937,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Kanta Watanabe": 1,
+   "Alan Zinatulin": 1,
+   "Danila Kvasov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Nazim Makhlouf": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 37,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 37,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 378,
+  "by_status": {
+   "MAPPED": 322,
+   "UNMAPPED_PLAYER": 55,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8519,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 168,
+ "external_mapped_matches": 198,
+ "kalshi_mapped_matches": 322,
+ "model_witness_available": true,
+ "rows": 260,
+ "counts": {
+  "PASS": 250,
+  "tri:INSUFFICIENT_INPUTS": 172,
+  "tri:MODEL_LONE_OUTLIER": 58,
+  "WATCH": 8,
+  "tri:KALSHI_LONE_OUTLIER": 14,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 2,
+  "tri:ALL_THREE_DISAGREE": 8,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
