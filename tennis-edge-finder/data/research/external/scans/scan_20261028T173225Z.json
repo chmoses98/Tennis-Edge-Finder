@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-10-28T17:32:25.120360+00:00",
+ "run_id": "20261028T173225Z",
+ "external_parse": {
+  "events": 177,
+  "markets": 1201,
+  "skipped_family": 183,
+  "skipped_period": 357,
+  "skipped_live": 53,
+  "one_sided": 58,
+  "rows": 1863,
+  "devigged": 600
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 1162,
+  "markets_mapped": 428,
+  "contracts": 916,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261028T173225Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 428,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 107,
+  "rows": 809,
+  "two_sided": 803,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 581,
+ "external_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 117,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7048,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1,
+   "Owen Guistwite": 1,
+   "Shaurya Bharadwaj": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 28,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 115,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8712,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Gabriela Knutson": 1,
+   "Joaquin Benoit": 1,
+   "Digvijay Pratap Singh": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Mu Jie Tzeng": 1,
+   "Abigail Haile": 1
+  }
+ },
+ "matched_both_venues": 69,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 115,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
