@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-28T10:59:21.657787+00:00",
+ "run_id": "20261028T105921Z",
+ "external_parse": {
+  "events": 322,
+  "markets": 2416,
+  "skipped_family": 294,
+  "skipped_period": 656,
+  "skipped_live": 47,
+  "one_sided": 198,
+  "rows": 3502,
+  "devigged": 1268
+ },
+ "smarkets_fetch": {
+  "events_seen": 121,
+  "events_priced": 80,
+  "markets": 1167,
+  "markets_mapped": 477,
+  "contracts": 1046,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20261028T105921Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 477,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 202,
+  "rows": 844,
+  "two_sided": 829,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 832,
+ "external_mapping": {
+  "total": 311,
+  "by_status": {
+   "MAPPED": 227,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 47,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7299,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 167,
+  "by_status": {
+   "MAPPED": 138,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8263,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Xavier Calvelo": 1,
+   "Brendan McDonald": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Matthew Howse": 1,
+   "Joaquin Benoit": 1,
+   "Davide Ciaschetti": 1,
+   "Jay Singh": 1,
+   "Max Geissinger": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 234,
+ "kalshi_mapped_matches": 138,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 82,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 39,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:MARKETS_AGREE": 5,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 40
+ }
+}
