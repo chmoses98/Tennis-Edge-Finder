@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-10-28T16:22:22.389993+00:00",
+ "run_id": "20261028T162222Z",
+ "external_parse": {
+  "events": 279,
+  "markets": 1993,
+  "skipped_family": 248,
+  "skipped_period": 551,
+  "skipped_live": 53,
+  "one_sided": 179,
+  "rows": 2847,
+  "devigged": 1014
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 1274,
+  "markets_mapped": 462,
+  "contracts": 998,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261028T162222Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 462,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 159,
+  "rows": 839,
+  "two_sided": 834,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 595,
+ "external_mapping": {
+  "total": 270,
+  "by_status": {
+   "MAPPED": 199,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 38
+  },
+  "mapped_rate": 0.737,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 28
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 110,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8462,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Joaquin Benoit": 1,
+   "Digvijay Pratap Singh": 1,
+   "Gerardo Delgado": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Ekaterina Dotsenko": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 212,
+ "kalshi_mapped_matches": 110,
+ "model_witness_available": true,
+ "rows": 115,
+ "counts": {
+  "PASS": 115,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 90,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 9,
+  "kalshi_not_two_sided": 1
+ }
+}
