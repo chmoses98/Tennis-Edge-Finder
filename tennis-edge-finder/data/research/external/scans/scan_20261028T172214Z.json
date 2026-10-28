@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T17:22:14.584821+00:00",
+ "run_id": "20261028T172214Z",
+ "external_parse": {
+  "events": 179,
+  "markets": 1239,
+  "skipped_family": 185,
+  "skipped_period": 369,
+  "skipped_live": 50,
+  "one_sided": 64,
+  "rows": 1899,
+  "devigged": 618
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 1162,
+  "markets_mapped": 423,
+  "contracts": 908,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261028T172214Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 75,
+  "rows": 833,
+  "two_sided": 827,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 646,
+ "external_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 119,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7083,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Burridge William": 1,
+   "Chase Robinson": 1,
+   "Owen Guistwite": 1,
+   "Adrien Jonah Abarca": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 133,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8808,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Joaquin Benoit": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1
+  }
+ },
+ "matched_both_venues": 74,
+ "external_mapped_matches": 137,
+ "kalshi_mapped_matches": 133,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 39,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:MARKETS_AGREE": 6,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
