@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-10-28T12:30:36.377629+00:00",
+ "run_id": "20261028T123036Z",
+ "external_parse": {
+  "events": 283,
+  "markets": 2106,
+  "skipped_family": 268,
+  "skipped_period": 587,
+  "skipped_live": 48,
+  "one_sided": 172,
+  "rows": 3062,
+  "devigged": 1079
+ },
+ "smarkets_fetch": {
+  "events_seen": 122,
+  "events_priced": 80,
+  "markets": 1100,
+  "markets_mapped": 445,
+  "contracts": 976,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261028T123036Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 445,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 111,
+  "rows": 865,
+  "two_sided": 851,
+  "one_sided": 14
+ },
+ "kalshi_quotes_on_disk": 1707,
+ "external_mapping": {
+  "total": 273,
+  "by_status": {
+   "MAPPED": 198,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 40,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7253,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 300,
+  "by_status": {
+   "MAPPED": 264,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.88,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Gerardo Delgado": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 171,
+ "external_mapped_matches": 209,
+ "kalshi_mapped_matches": 264,
+ "model_witness_available": true,
+ "rows": 190,
+ "counts": {
+  "PASS": 187,
+  "tri:MODEL_LONE_OUTLIER": 57,
+  "tri:INSUFFICIENT_INPUTS": 108,
+  "tri:MARKETS_AGREE": 10,
+  "tri:EXTERNAL_LONE_OUTLIER": 3,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 52
+ }
+}
