@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T14:02:15.964919+00:00",
+ "run_id": "20261028T140215Z",
+ "external_parse": {
+  "events": 258,
+  "markets": 1875,
+  "skipped_family": 235,
+  "skipped_period": 520,
+  "skipped_live": 46,
+  "one_sided": 166,
+  "rows": 2721,
+  "devigged": 953
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 1115,
+  "markets_mapped": 440,
+  "contracts": 964,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261028T140215Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 440,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 130,
+  "rows": 834,
+  "two_sided": 820,
+  "one_sided": 14
+ },
+ "kalshi_quotes_on_disk": 587,
+ "external_mapping": {
+  "total": 249,
+  "by_status": {
+   "MAPPED": 181,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.7269,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 31,
+   "MAPPED": 44,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 141,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8582,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Brendan McDonald": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 189,
+ "kalshi_mapped_matches": 121,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 58,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 43
+ }
+}
