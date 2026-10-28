@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-28T16:32:24.885243+00:00",
+ "run_id": "20261028T163224Z",
+ "external_parse": {
+  "events": 204,
+  "markets": 1501,
+  "skipped_family": 220,
+  "skipped_period": 447,
+  "skipped_live": 55,
+  "one_sided": 69,
+  "rows": 2315,
+  "devigged": 762
+ },
+ "smarkets_fetch": {
+  "events_seen": 107,
+  "events_priced": 80,
+  "markets": 1333,
+  "markets_mapped": 493,
+  "contracts": 1064,
+  "quoted_contracts": 868,
+  "raw": "data/research/external/raw/20261028T163224Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 493,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 219,
+  "rows": 845,
+  "two_sided": 840,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 541,
+ "external_mapping": {
+  "total": 193,
+  "by_status": {
+   "MAPPED": 138,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.715,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "Saray Yli-Piipari": 1,
+   "Joanna Kennedy": 1,
+   "Evelyn Whiteside": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 4,
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 122,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8714,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Gabriela Knutson": 1,
+   "Joaquin Benoit": 1,
+   "Xavier Calvelo": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pedro Petroski Rocha": 1,
+   "Abigail Haile": 1,
+   "Maria Fernanda Pantoja Espino": 1,
+   "Yara Bartashevich": 1
+  }
+ },
+ "matched_both_venues": 81,
+ "external_mapped_matches": 149,
+ "kalshi_mapped_matches": 122,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 59,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:ALL_THREE_DISAGREE": 6,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
