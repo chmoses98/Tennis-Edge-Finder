@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 11:37Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 11:47Z)
 
 * Earliest credible first ball: **2026-10-28 13:00Z**
 * Recommended RUN TENNIS time: **2026-10-28 12:15Z**
@@ -10,11 +10,11 @@
 | Remy Bertola vs Denis Shapovalov | 2026-10-28 13:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Nuno Borges vs Casper Ruud | 2026-10-28 13:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-**8 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Han Shi vs Dayana Yastremska, Leylah Fernandez vs Elise Mertens
+**7 main-tour match(es) without a verified start status** (BET blocked until checked): Yannick Hanfmann vs Jan-Lennard Struff, Novak Djokovic vs Ugo Humbert, Tallon Griekspoor vs Brandon Nakashima, Lorenzo Musetti vs Frances Tiafoe, Daniel Merida vs Daniil Medvedev, Jurij Rodionov vs Nikoloz Basilashvili, Leylah Fernandez vs Elise Mertens
 
-Published slate: `SL-20261028T110059Z-94ae89e4` built 2026-10-28 11:00Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261028T113313Z-100a859a` built 2026-10-28 11:33Z -- current
 
-Dispatched this pass: run_tennis (ok), slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-28 15:30Z, run by 2026-10-28 14:45Z, 4 match(es)
 * later window 3: first ball 2026-10-28 18:30Z, run by 2026-10-28 17:45Z, 2 match(es)
