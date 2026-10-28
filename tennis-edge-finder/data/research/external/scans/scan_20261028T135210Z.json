@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-28T13:52:10.058866+00:00",
+ "run_id": "20261028T135210Z",
+ "external_parse": {
+  "events": 264,
+  "markets": 1903,
+  "skipped_family": 239,
+  "skipped_period": 528,
+  "skipped_live": 49,
+  "one_sided": 169,
+  "rows": 2749,
+  "devigged": 966
+ },
+ "smarkets_fetch": {
+  "events_seen": 117,
+  "events_priced": 80,
+  "markets": 1150,
+  "markets_mapped": 449,
+  "contracts": 984,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261028T135210Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 449,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 135,
+  "rows": 849,
+  "two_sided": 838,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 619,
+ "external_mapping": {
+  "total": 255,
+  "by_status": {
+   "MAPPED": 185,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.7255,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Alex Hernandez": 1,
+   "Noma Akugue Noha": 1,
+   "James Lorenzetti": 1,
+   "Thomas Cardona Herrera": 1,
+   "Nathan Pitts": 1,
+   "Paolo Bompieri": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Burridge William": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Gabriela Knutson": 1,
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 132,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8684,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Alex Hernandez": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Jadielson Silva De Araujo Fio": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 192,
+ "kalshi_mapped_matches": 132,
+ "model_witness_available": true,
+ "rows": 70,
+ "counts": {
+  "PASS": 69,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
