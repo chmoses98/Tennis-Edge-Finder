@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 19:14Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-28 19:25Z)
 
 * Earliest credible first ball: **2026-10-28 19:40Z**
 * Recommended RUN TENNIS time: **2026-10-28 18:55Z**  (OVERDUE: run now)
@@ -7,13 +7,13 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Hubert Hurkacz vs Holger Rune | 2026-10-28 19:40Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Hubert Hurkacz vs Holger Rune | 2026-10-28 19:40Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Learner Tien vs Alex de Minaur, Leylah Fernandez vs Elise Mertens
 
 Published slate: `SL-20261028T182308Z-6c1d9f4e` built 2026-10-28 18:23Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-28T19:40:00+00:00, slate built 2026-10-28T18:23:08.943220+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-29 01:30Z, run by 2026-10-29 00:45Z, 1 match(es)
 * later window 3: first ball 2026-10-29 05:00Z, run by 2026-10-29 04:15Z, 4 match(es)
