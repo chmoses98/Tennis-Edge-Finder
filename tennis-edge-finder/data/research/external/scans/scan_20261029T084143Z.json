@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-29T08:41:43.815765+00:00",
+ "run_id": "20261029T084143Z",
+ "external_parse": {
+  "events": 217,
+  "markets": 1698,
+  "skipped_family": 248,
+  "skipped_period": 465,
+  "skipped_live": 29,
+  "one_sided": 19,
+  "rows": 2526,
+  "devigged": 964
+ },
+ "smarkets_fetch": {
+  "events_seen": 80,
+  "events_priced": 80,
+  "markets": 917,
+  "markets_mapped": 423,
+  "contracts": 898,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261029T084143Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 77,
+  "rows": 821,
+  "two_sided": 810,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 38,
+ "external_mapping": {
+  "total": 206,
+  "by_status": {
+   "MAPPED": 159,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7718,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Pablo Perez Ramos": 1,
+   "Kazuki Nakajima": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 4,
+  "by_status": {
+   "MAPPED": 4
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 3,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 4,
+ "model_witness_available": true,
+ "rows": 4,
+ "counts": {
+  "PASS": 4,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
