@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-29T04:39:36.694535+00:00",
+ "run_id": "20261029T043936Z",
+ "external_parse": {
+  "events": 220,
+  "markets": 1864,
+  "skipped_family": 244,
+  "skipped_period": 499,
+  "skipped_live": 18,
+  "one_sided": 9,
+  "rows": 2913,
+  "devigged": 1111
+ },
+ "smarkets_fetch": {
+  "events_seen": 83,
+  "events_priced": 80,
+  "markets": 1150,
+  "markets_mapped": 478,
+  "contracts": 1016,
+  "quoted_contracts": 854,
+  "raw": "data/research/external/raw/20261029T043936Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 478,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 209,
+  "rows": 807,
+  "two_sided": 802,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 562,
+ "external_mapping": {
+  "total": 209,
+  "by_status": {
+   "MAPPED": 158,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.756,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "Pablo Perez Ramos": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 53
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 129,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.907,
+  "top_refusal_subjects": {
+   "Seongchan Hong": 1,
+   "Jay Friend": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Joaquin Benoit": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1,
+   "Angela Morena Medinaceli Lobos": 1
+  }
+ },
+ "matched_both_venues": 71,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 113,
+  "tri:MODEL_LONE_OUTLIER": 51,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 51,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "WATCH": 5,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
