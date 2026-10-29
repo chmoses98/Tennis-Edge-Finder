@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-29T05:39:19.580629+00:00",
+ "run_id": "20261029T053919Z",
+ "external_parse": {
+  "events": 210,
+  "markets": 1786,
+  "skipped_family": 236,
+  "skipped_period": 479,
+  "skipped_live": 17,
+  "one_sided": 16,
+  "rows": 2745,
+  "devigged": 1052
+ },
+ "smarkets_fetch": {
+  "events_seen": 77,
+  "events_priced": 77,
+  "markets": 1044,
+  "markets_mapped": 454,
+  "contracts": 960,
+  "quoted_contracts": 846,
+  "raw": "data/research/external/raw/20261029T053919Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 454,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 155,
+  "rows": 805,
+  "two_sided": 798,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 502,
+ "external_mapping": {
+  "total": 199,
+  "by_status": {
+   "MAPPED": 148,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 23
+  },
+  "mapped_rate": 0.7437,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Kazuki Nakajima": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "Pablo Perez Ramos": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6753,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 94,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8704,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquin Benoit": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "M Rifqi Fitriadi": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 168,
+ "kalshi_mapped_matches": 94,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 88,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 58
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
