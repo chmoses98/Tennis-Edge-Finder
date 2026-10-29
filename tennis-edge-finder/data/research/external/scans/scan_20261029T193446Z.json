@@ -1,0 +1,102 @@
+{
+ "generated_at": "2026-10-29T19:34:46.844166+00:00",
+ "run_id": "20261029T193446Z",
+ "external_parse": {
+  "events": 131,
+  "markets": 1008,
+  "skipped_family": 254,
+  "skipped_period": 272,
+  "skipped_live": 44,
+  "one_sided": 7,
+  "rows": 1472,
+  "devigged": 475
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 766,
+  "markets_mapped": 299,
+  "contracts": 642,
+  "quoted_contracts": 642,
+  "raw": "data/research/external/raw/20261029T193446Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 299,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 55,
+  "rows": 587,
+  "two_sided": 584,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 464,
+ "external_mapping": {
+  "total": 120,
+  "by_status": {
+   "MAPPED": 83,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.6917,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Oskar Szymczak": 1,
+   "Oscar Andres Martinez de Freitas": 1,
+   "Adrien Jonah Abarca": 1,
+   "Harrison Kemp": 1,
+   "Sadbaroi Holdarova": 1,
+   "Saray Yli-Piipari": 1,
+   "Lauren Nolan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6167,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 74,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.925,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Emma Sophie Glaser": 1,
+   "Vaidehee Chaudhari": 1,
+   "Sofia Finchelstein": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 94,
+ "kalshi_mapped_matches": 74,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 45,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
