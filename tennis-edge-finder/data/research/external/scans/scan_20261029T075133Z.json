@@ -1,0 +1,88 @@
+{
+ "generated_at": "2026-10-29T07:51:33.352228+00:00",
+ "run_id": "20261029T075133Z",
+ "external_parse": {
+  "events": 221,
+  "markets": 1744,
+  "skipped_family": 245,
+  "skipped_period": 475,
+  "skipped_live": 21,
+  "one_sided": 23,
+  "rows": 2584,
+  "devigged": 1001
+ },
+ "smarkets_fetch": {
+  "events_seen": 74,
+  "events_priced": 74,
+  "markets": 957,
+  "markets_mapped": 423,
+  "contracts": 900,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261029T075133Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 824,
+  "two_sided": 815,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 42,
+ "external_mapping": {
+  "total": 210,
+  "by_status": {
+   "MAPPED": 160,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.7619,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Pablo Perez Ramos": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6622,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 2,
+  "by_status": {
+   "MAPPED": 2
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 2,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 2,
+ "model_witness_available": true,
+ "rows": 4,
+ "counts": {
+  "PASS": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MODEL_LONE_OUTLIER": 2
+ },
+ "skips": {}
+}
