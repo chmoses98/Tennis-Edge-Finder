@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-29T00:40:14.636821+00:00",
+ "run_id": "20261029T004014Z",
+ "external_parse": {
+  "events": 210,
+  "markets": 1826,
+  "skipped_family": 248,
+  "skipped_period": 500,
+  "skipped_live": 14,
+  "one_sided": 26,
+  "rows": 2865,
+  "devigged": 1051
+ },
+ "smarkets_fetch": {
+  "events_seen": 93,
+  "events_priced": 80,
+  "markets": 1255,
+  "markets_mapped": 469,
+  "contracts": 1004,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261029T004014Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 469,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 210,
+  "rows": 794,
+  "two_sided": 789,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 447,
+ "external_mapping": {
+  "total": 197,
+  "by_status": {
+   "MAPPED": 142,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.7208,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Evelyn Whiteside": 1,
+   "Herman H\u00f8yeraal": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kazuki Nakajima": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dmitrii Burtsev": 1,
+   "Pablo Perez Ramos": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 26,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Jay Friend": 1,
+   "Seongchan Hong": 1,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 103,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.8879,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Joaquin Benoit": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Lara Wagner": 1,
+   "Emma Sophie Glaser": 1,
+   "Elizaveta Anikina": 1,
+   "Vladlena Bokova": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 159,
+ "kalshi_mapped_matches": 103,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 84,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 5,
+  "tri:INSUFFICIENT_INPUTS": 46,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
