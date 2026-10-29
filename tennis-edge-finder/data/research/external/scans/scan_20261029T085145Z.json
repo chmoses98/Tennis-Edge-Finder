@@ -1,0 +1,88 @@
+{
+ "generated_at": "2026-10-29T08:51:45.536297+00:00",
+ "run_id": "20261029T085145Z",
+ "external_parse": {
+  "events": 217,
+  "markets": 1698,
+  "skipped_family": 248,
+  "skipped_period": 465,
+  "skipped_live": 29,
+  "one_sided": 19,
+  "rows": 2526,
+  "devigged": 964
+ },
+ "smarkets_fetch": {
+  "events_seen": 80,
+  "events_priced": 80,
+  "markets": 916,
+  "markets_mapped": 423,
+  "contracts": 898,
+  "quoted_contracts": 852,
+  "raw": "data/research/external/raw/20261029T085145Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 79,
+  "rows": 819,
+  "two_sided": 810,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 17,
+ "external_mapping": {
+  "total": 206,
+  "by_status": {
+   "MAPPED": 159,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.7718,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Pablo Perez Ramos": 1,
+   "Kazuki Nakajima": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 1,
+  "by_status": {
+   "MAPPED": 1
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 1,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 1,
+ "model_witness_available": true,
+ "rows": 2,
+ "counts": {
+  "PASS": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {}
+}
