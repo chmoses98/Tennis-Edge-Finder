@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-10-29T10:32:14.198926+00:00",
+ "run_id": "20261029T103214Z",
+ "external_parse": {
+  "events": 179,
+  "markets": 1485,
+  "skipped_family": 256,
+  "skipped_period": 410,
+  "skipped_live": 26,
+  "one_sided": 16,
+  "rows": 2189,
+  "devigged": 802
+ },
+ "smarkets_fetch": {
+  "events_seen": 85,
+  "events_priced": 80,
+  "markets": 1044,
+  "markets_mapped": 451,
+  "contracts": 970,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261029T103214Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 451,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 139,
+  "rows": 831,
+  "two_sided": 818,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 458,
+ "external_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 131,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.7798,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1,
+   "Nikita Samuel Filin": 1,
+   "JC Roddick": 1,
+   "Viktoriia Sedenkova": 1,
+   "Baotong Xu": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 117,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.8632,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquin Benoit": 1,
+   "Gerardo Delgado": 1,
+   "Vaidehee Chaudhari": 1,
+   "Angela Morena Medinaceli Lobos": 1,
+   "Emma Sophie Glaser": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 142,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 84,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:MARKETS_AGREE": 7,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
