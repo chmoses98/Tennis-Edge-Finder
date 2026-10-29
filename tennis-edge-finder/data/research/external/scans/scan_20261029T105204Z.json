@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-10-29T10:52:04.801656+00:00",
+ "run_id": "20261029T105204Z",
+ "external_parse": {
+  "events": 169,
+  "markets": 1402,
+  "skipped_family": 256,
+  "skipped_period": 391,
+  "skipped_live": 28,
+  "one_sided": 10,
+  "rows": 2072,
+  "devigged": 743
+ },
+ "smarkets_fetch": {
+  "events_seen": 85,
+  "events_priced": 80,
+  "markets": 1053,
+  "markets_mapped": 453,
+  "contracts": 976,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261029T105204Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 453,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 138,
+  "rows": 838,
+  "two_sided": 827,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 479,
+ "external_mapping": {
+  "total": 158,
+  "by_status": {
+   "MAPPED": 125,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.7911,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1,
+   "Nikita Samuel Filin": 1,
+   "JC Roddick": 1,
+   "Viktoriia Sedenkova": 1,
+   "Baotong Xu": 1,
+   "Lei Mailuodi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9076,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquin Benoit": 1,
+   "Angela Morena Medinaceli Lobos": 1,
+   "Emma Sophie Glaser": 1,
+   "Elizaveta Anikina": 1,
+   "Vladlena Bokova": 1,
+   "Mariia Lazarenko": 1,
+   "Raluca Georgiana Serban": 1,
+   "Viktoriia Sedenkova": 1
+  }
+ },
+ "matched_both_venues": 68,
+ "external_mapped_matches": 137,
+ "kalshi_mapped_matches": 108,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 94,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
