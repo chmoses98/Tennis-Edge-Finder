@@ -1,0 +1,50 @@
+{
+ "run_id": "20261029T223722Z",
+ "started_at": "2026-10-29T22:37:22.828405+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 142,
+ "truths_written": 2,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1111,
+  "events_only_on_capture_board": 248,
+  "selected_from_capture_board": 230
+ },
+ "mapping": {
+  "MATCHED": 142,
+  "UNMATCHED": 354,
+  "AMBIGUOUS": 6
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26OCT30RYBFER": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185683 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT30RYBFER-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185683 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26OCT30RYBFER-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 185683 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-10-29T22:52:39.871717+00:00"
+}
