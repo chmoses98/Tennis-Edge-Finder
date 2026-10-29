@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-29 19:41Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-29 19:57Z)
 
 * Earliest credible first ball: **2026-10-29 20:00Z**
 * Recommended RUN TENNIS time: **2026-10-29 19:15Z**  (OVERDUE: run now)
@@ -7,13 +7,11 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Ben Shelton vs Jerome Kym | 2026-10-29 20:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Flavio Cobolli vs Matteo Berrettini
+| Ben Shelton vs Jerome Kym | 2026-10-29 20:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 
 Published slate: `SL-20261029T191006Z-3110e0e7` built 2026-10-29 19:10Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-29T20:00:00+00:00, slate built 2026-10-29T19:10:06.667674+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-30 01:30Z, run by 2026-10-30 00:45Z, 2 match(es)
 * later window 3: first ball 2026-10-30 05:00Z, run by 2026-10-30 04:15Z, 3 match(es)
