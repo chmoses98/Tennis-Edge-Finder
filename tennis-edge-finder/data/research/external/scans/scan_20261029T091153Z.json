@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-10-29T09:11:53.812719+00:00",
+ "run_id": "20261029T091153Z",
+ "external_parse": {
+  "events": 210,
+  "markets": 1646,
+  "skipped_family": 262,
+  "skipped_period": 452,
+  "skipped_live": 34,
+  "one_sided": 25,
+  "rows": 2433,
+  "devigged": 906
+ },
+ "smarkets_fetch": {
+  "events_seen": 83,
+  "events_priced": 80,
+  "markets": 963,
+  "markets_mapped": 437,
+  "contracts": 934,
+  "quoted_contracts": 856,
+  "raw": "data/research/external/raw/20261029T091153Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 437,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 122,
+  "rows": 812,
+  "two_sided": 802,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 978,
+ "external_mapping": {
+  "total": 199,
+  "by_status": {
+   "MAPPED": 155,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.7789,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Alex Hernandez": 1,
+   "Pablo Perez Ramos": 1,
+   "William Vinciguerra": 1,
+   "Manas Manoj Dhamne": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Paul Colin": 1,
+   "Nikita Samuel Filin": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Maria Carle": 1,
+   "Alex Hernandez": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 208,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.9183,
+  "top_refusal_subjects": {
+   "Alex Hernandez": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquin Benoit": 1,
+   "Gerardo Delgado": 1,
+   "Angela Morena Medinaceli Lobos": 1,
+   "Lara Wagner": 1,
+   "Emma Sophie Glaser": 1
+  }
+ },
+ "matched_both_venues": 132,
+ "external_mapped_matches": 167,
+ "kalshi_mapped_matches": 191,
+ "model_witness_available": true,
+ "rows": 206,
+ "counts": {
+  "PASS": 201,
+  "tri:MODEL_LONE_OUTLIER": 64,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:INSUFFICIENT_INPUTS": 124,
+  "tri:ALL_THREE_DISAGREE": 7,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 7,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
