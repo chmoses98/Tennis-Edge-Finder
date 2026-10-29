@@ -1,15 +1,15 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-29 19:57Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-29 20:14Z)
 
-* Earliest credible first ball: **2026-10-29 20:00Z**
-* Recommended RUN TENNIS time: **2026-10-29 19:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-29 19:50Z**
+* Earliest credible first ball: **2026-10-29 20:22Z**
+* Recommended RUN TENNIS time: **2026-10-29 19:37Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-29 20:12Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Ben Shelton vs Jerome Kym | 2026-10-29 20:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Ben Shelton vs Jerome Kym | 2026-10-29 20:22Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center Court in progress (set 3 of best-of-5) | MEDIUM |
 
-Published slate: `SL-20261029T191006Z-3110e0e7` built 2026-10-29 19:10Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-29T20:00:00+00:00, slate built 2026-10-29T19:10:06.667674+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261029T191006Z-3110e0e7` built 2026-10-29 19:10Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-29T20:22:04.600173+00:00, slate built 2026-10-29T19:10:06.667674+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
 
 Dispatched this pass: slate_final (ok)
 
