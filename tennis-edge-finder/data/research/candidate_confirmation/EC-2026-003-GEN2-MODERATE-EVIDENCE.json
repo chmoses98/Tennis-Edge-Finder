@@ -2,7 +2,7 @@
  "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
  "kind": "TRADE",
  "status": "PENDING_STRICT_CLV",
- "status_reason": "26 strict-CLV rows of 1000 required (97 could still gain a strict close)",
+ "status_reason": "26 strict-CLV rows of 1000 required (108 could still gain a strict close)",
  "universe": {
   "experiment_start": {
    "candidate_id": "EC-2026-003-GEN2-MODERATE-EVIDENCE",
@@ -32,7 +32,7 @@
    "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
    "producer_rows_before_effective_start": 0
   },
-  "rows_after_effective_start": 76374,
+  "rows_after_effective_start": 76814,
   "post_settlement_first_runs_excluded": 47,
   "post_settlement_first_runs_by_level": {
    "ATP": 2,
@@ -43,28 +43,28 @@
   }
  },
  "metrics": {
-  "eligible_n": 2925,
-  "settled_n": 2765,
+  "eligible_n": 2954,
+  "settled_n": 2783,
   "strict_clv_n": 26,
-  "brier_gen2_blend": 0.2228980657438238,
-  "brier_gen1_elo": 0.21959814103346992,
-  "brier_kalshi_mid": 0.21440438517179047,
+  "brier_gen2_blend": 0.2234841433843075,
+  "brier_gen1_elo": 0.2200147471300876,
+  "brier_kalshi_mid": 0.21455701581027686,
   "paired_gen2_minus_gen1": {
-   "n": 2765,
-   "mean": 0.003299924710353838,
-   "median": 0.003849549504788982,
-   "ci_low": -7.327089632446067e-05,
-   "ci_high": 0.00678322764308122,
-   "excludes_zero": false,
+   "n": 2783,
+   "mean": 0.0034693962542199012,
+   "median": 0.003941680054806718,
+   "ci_low": 3.0044116722663187e-05,
+   "ci_high": 0.006917564417313992,
+   "excludes_zero": true,
    "seed": 20260927,
    "n_boot": 10000
   },
   "paired_gen2_minus_market": {
-   "n": 2765,
-   "mean": 0.008493680572033702,
-   "median": 0.006404844618975891,
-   "ci_low": 0.0037058376485654154,
-   "ci_high": 0.013352876856070188,
+   "n": 2783,
+   "mean": 0.00892712757403099,
+   "median": 0.006593797411339291,
+   "ci_low": 0.004131782224984328,
+   "ci_high": 0.013794864484792594,
    "excludes_zero": true,
    "seed": 20260927,
    "n_boot": 10000
@@ -80,29 +80,29 @@
    "n_boot": 10000
   },
   "after_fee_ev_of_positions": {
-   "n": 1901,
-   "mean": 0.09429595760493512,
-   "median": 0.07494513372490409,
-   "ci_low": 0.09074732090763389,
-   "ci_high": 0.09778202854010104,
+   "n": 1925,
+   "mean": 0.09424521189260582,
+   "median": 0.07491311648807876,
+   "ci_low": 0.09073332613658791,
+   "ci_high": 0.09774154848827465,
    "excludes_zero": true,
    "seed": 20260927,
    "n_boot": 10000
   },
-  "positions": 1901
+  "positions": 1925
  },
  "exclusion_counts": {
   "MARKET_SETTLED_BEFORE_OBSERVATION": 47,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 3604
+  "FROZEN_INCLUSION_RULE_NOT_MET": 3631
  },
  "summary": {
   "kind": "TRADE",
   "minimum_n": 1000,
-  "eligible_n": 2925,
-  "settled_n": 2765,
+  "eligible_n": 2954,
+  "settled_n": 2783,
   "strict_clv_n": 26,
-  "unsettled_n": 160,
-  "clv_pending_n": 97,
+  "unsettled_n": 171,
+  "clv_pending_n": 108,
   "unscorable_n": 0,
   "accuracy_pass": false,
   "clv_pass": false,
@@ -162,11 +162,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261029T003352Z",
- "evidence_rows_this_run": 6543,
- "evidence_rows_appended": 25,
- "last_evidence_at": "2026-10-29T00:29:02.883839+00:00",
- "harvest_run_at": "2026-10-29T00:36:03.970953+00:00",
+ "harvest_run": "20261029T063736Z",
+ "evidence_rows_this_run": 6599,
+ "evidence_rows_appended": 95,
+ "last_evidence_at": "2026-10-29T06:33:27.847526+00:00",
+ "harvest_run_at": "2026-10-29T06:39:37.129647+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -190,8 +190,8 @@
   "summary_previous_harvest": {
    "kind": "TRADE",
    "minimum_n": 1000,
-   "eligible_n": 2923,
-   "settled_n": 2763,
+   "eligible_n": 2925,
+   "settled_n": 2765,
    "strict_clv_n": 26,
    "unsettled_n": 160,
    "clv_pending_n": 97,
@@ -205,11 +205,11 @@
   "summary_this_harvest": {
    "kind": "TRADE",
    "minimum_n": 1000,
-   "eligible_n": 2925,
-   "settled_n": 2765,
+   "eligible_n": 2954,
+   "settled_n": 2783,
    "strict_clv_n": 26,
-   "unsettled_n": 160,
-   "clv_pending_n": 97,
+   "unsettled_n": 171,
+   "clv_pending_n": 108,
    "unscorable_n": 0,
    "accuracy_pass": false,
    "clv_pass": false,
