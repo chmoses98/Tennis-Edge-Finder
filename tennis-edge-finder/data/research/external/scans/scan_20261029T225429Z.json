@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-29T22:54:29.536592+00:00",
+ "run_id": "20261029T225429Z",
+ "external_parse": {
+  "events": 104,
+  "markets": 1000,
+  "skipped_family": 241,
+  "skipped_period": 272,
+  "skipped_live": 17,
+  "one_sided": 6,
+  "rows": 1472,
+  "devigged": 481
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 58,
+  "markets": 992,
+  "markets_mapped": 340,
+  "contracts": 730,
+  "quoted_contracts": 730,
+  "raw": "data/research/external/raw/20261029T225429Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 340,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 702,
+  "two_sided": 697,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 314,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7204,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Maeve Thornton": 1,
+   "Eric Crivei": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Zhu Chenting": 1,
+   "Lei Mailuodi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 18,
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6552,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8776,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Gerardo Delgado": 1,
+   "Emma Sophie Glaser": 1,
+   "Mariia Lazarenko": 1,
+   "Alexandra Malova": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MODEL_LONE_OUTLIER": 13
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
