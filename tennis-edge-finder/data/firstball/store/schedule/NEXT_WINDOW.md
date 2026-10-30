@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 19:39Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 19:54Z)
 
 * Earliest credible first ball: **2026-10-31 02:00Z**
 * Recommended RUN TENNIS time: **2026-10-31 01:15Z**
@@ -16,9 +16,9 @@
 
 **8 main-tour match(es) without a verified start status** (BET blocked until checked): Aliona Falei vs Ekaterina Yashina, Mariia Tkacheva vs Rada Zolotareva, Kyoka Okamura vs Diya Ramesh Ramesh, Rinko Matsuda vs Momoko Kobori, Mei Yamaguchi vs Zeel Desai, Zhibek Kulambayeva vs Yelyzaveta Kotliar, Viktoria Morvayova vs Shrivalli Rashmikaa Bhamidipaty, Jensi Dipakbhai Kanabar vs Weronika Falkowska
 
-Published slate: `SL-20261030T185202Z-8f896389` built 2026-10-30 18:52Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261030T192302Z-070b8a86` built 2026-10-30 19:23Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-31 04:30Z, run by 2026-10-31 03:45Z, 4 match(es)
 * later window 3: first ball 2026-10-31 08:30Z, run by 2026-10-31 07:45Z, 2 match(es)
