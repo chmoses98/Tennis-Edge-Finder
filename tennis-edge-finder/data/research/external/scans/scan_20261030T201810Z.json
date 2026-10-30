@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-30T20:18:10.604866+00:00",
+ "run_id": "20261030T201810Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 641,
+  "skipped_family": 180,
+  "skipped_period": 174,
+  "skipped_live": 21,
+  "one_sided": 24,
+  "rows": 901,
+  "devigged": 263
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 50,
+  "markets": 881,
+  "markets_mapped": 223,
+  "contracts": 480,
+  "quoted_contracts": 480,
+  "raw": "data/research/external/raw/20261030T201810Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 223,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 430,
+  "two_sided": 426,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 289,
+ "external_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.6912,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Lisa Kamigata": 1,
+   "Saray Yli-Piipari": 1,
+   "Evelyn Whiteside": 1,
+   "Sadbaroi Holdarova": 1,
+   "Maeve Thornton": 1,
+   "Owen Guistwite": 1,
+   "Aryan Saleh": 1,
+   "Adrien Jonah Abarca": 1,
+   "James Lorenzetti": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 13
+  },
+  "mapped_rate": 0.74,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 56,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 34,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
