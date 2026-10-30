@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-30T16:09:57.036361+00:00",
+ "run_id": "20261030T160957Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1006,
+  "skipped_family": 256,
+  "skipped_period": 270,
+  "skipped_live": 27,
+  "one_sided": 29,
+  "rows": 1395,
+  "devigged": 451
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 58,
+  "markets": 736,
+  "markets_mapped": 275,
+  "contracts": 596,
+  "quoted_contracts": 596,
+  "raw": "data/research/external/raw/20261030T160957Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 275,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 574,
+  "two_sided": 571,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1000,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 84,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.7925,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Harrison Kemp": 1,
+   "Nischal Spurling": 1,
+   "JC Roddick": 1,
+   "Nikita Samuel Filin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 16,
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7069,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 100,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.9259,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Paul Colin": 1,
+   "Gerardo Delgado": 1,
+   "Alexandra Malova": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 100,
+ "model_witness_available": true,
+ "rows": 98,
+ "counts": {
+  "PASS": 95,
+  "tri:MARKETS_AGREE": 14,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:INSUFFICIENT_INPUTS": 45,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
