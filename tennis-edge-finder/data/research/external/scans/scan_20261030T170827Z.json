@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-30T17:08:27.680524+00:00",
+ "run_id": "20261030T170827Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 815,
+  "skipped_family": 202,
+  "skipped_period": 229,
+  "skipped_live": 40,
+  "one_sided": 35,
+  "rows": 1116,
+  "devigged": 349
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 856,
+  "markets_mapped": 238,
+  "contracts": 516,
+  "quoted_contracts": 516,
+  "raw": "data/research/external/raw/20261030T170827Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 238,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 495,
+  "two_sided": 490,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 317,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 79,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7453,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Harrison Kemp": 1,
+   "Nischal Spurling": 1,
+   "Graeme Angus ": 1,
+   "Oscar Andres Martinez de Freitas": 1,
+   "Parashar Bharadwaj": 1,
+   "Ava Esposito Cogan": 1,
+   "Nikita Samuel Filin": 1,
+   "JC Roddick": 1,
+   "Paul Colin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7091,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9394,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Paul Colin": 1,
+   "Gerardo Delgado": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 33,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
