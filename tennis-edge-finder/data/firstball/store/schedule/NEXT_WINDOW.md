@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 05:09Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 05:26Z)
 
 * Earliest credible first ball: **2026-10-30 05:30Z**
 * Recommended RUN TENNIS time: **2026-10-30 04:45Z**  (OVERDUE: run now)
@@ -7,14 +7,12 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Elena Rybakina vs Leylah Fernandez | 2026-10-30 05:30Z | ESTIMATED_UPCOMING | LIVE_SCHEDULE:espn_wta | MEDIUM |
-| Kaitlin Quevedo vs Jil Teichmann | 2026-10-30 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Elena Rybakina vs Leylah Fernandez | 2026-10-30 05:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | MEDIUM |
+| Kaitlin Quevedo vs Jil Teichmann | 2026-10-30 05:59Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3) | MEDIUM |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Paula Badosa vs Harriet Dart
+Published slate: `SL-20261030T050845Z-6c96324c` built 2026-10-30 05:08Z -- current
 
-Published slate: `SL-20261030T043932Z-37c1a077` built 2026-10-30 04:39Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T05:30:00+00:00, slate built 2026-10-30T04:39:32.270960+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
-
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-30 07:30Z, run by 2026-10-30 06:45Z, 2 match(es)
 * later window 3: first ball 2026-10-30 11:00Z, run by 2026-10-30 10:15Z, 2 match(es)
