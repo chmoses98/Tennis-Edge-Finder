@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-30T12:58:30.393663+00:00",
+ "run_id": "20261030T125830Z",
+ "external_parse": {
+  "events": 115,
+  "markets": 1125,
+  "skipped_family": 270,
+  "skipped_period": 300,
+  "skipped_live": 17,
+  "one_sided": 18,
+  "rows": 1536,
+  "devigged": 537
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 725,
+  "markets_mapped": 323,
+  "contracts": 704,
+  "quoted_contracts": 704,
+  "raw": "data/research/external/raw/20261030T125830Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 323,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 671,
+  "two_sided": 666,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 412,
+ "external_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 85,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8173,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Noma Akugue Noha": 1,
+   "JC Roddick": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7097,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9375,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "M Rifqi Fitriadi": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "matched_both_venues": 58,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 92,
+  "tri:MARKETS_AGREE": 10,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 54,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
