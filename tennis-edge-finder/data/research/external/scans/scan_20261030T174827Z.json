@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-30T17:48:27.750398+00:00",
+ "run_id": "20261030T174827Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 759,
+  "skipped_family": 202,
+  "skipped_period": 208,
+  "skipped_live": 35,
+  "one_sided": 32,
+  "rows": 1050,
+  "devigged": 317
+ },
+ "smarkets_fetch": {
+  "events_seen": 52,
+  "events_priced": 52,
+  "markets": 845,
+  "markets_mapped": 251,
+  "contracts": 540,
+  "quoted_contracts": 540,
+  "raw": "data/research/external/raw/20261030T174827Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 251,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 518,
+  "two_sided": 516,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 358,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7419,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Nischal Spurling": 1,
+   "Graeme Angus ": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Ava Esposito Cogan": 1,
+   "Nikita Samuel Filin": 1,
+   "JC Roddick": 1,
+   "Paul Colin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 52,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7308,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9429,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Digvijay Pratap Singh": 1,
+   "Paul Colin": 1,
+   "Gerardo Delgado": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 79,
+ "kalshi_mapped_matches": 66,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MARKETS_AGREE": 6,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
