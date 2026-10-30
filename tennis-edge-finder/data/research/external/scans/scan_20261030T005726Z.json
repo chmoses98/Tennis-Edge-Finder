@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-30T00:57:26.156266+00:00",
+ "run_id": "20261030T005726Z",
+ "external_parse": {
+  "events": 143,
+  "markets": 1458,
+  "skipped_family": 317,
+  "skipped_period": 379,
+  "skipped_live": 12,
+  "one_sided": 4,
+  "rows": 2130,
+  "devigged": 758
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 1077,
+  "markets_mapped": 384,
+  "contracts": 824,
+  "quoted_contracts": 824,
+  "raw": "data/research/external/raw/20261030T005726Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 384,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 782,
+  "two_sided": 781,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 260,
+ "external_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 99,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Noma Akugue Noha": 1,
+   "Eric Crivei": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Raluca Georgiana Serban": 1,
+   "Zhu Chenting": 1,
+   "Lei Mailuodi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6935,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Seongchan Hong": 1,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9643,
+  "top_refusal_subjects": {
+   "M Rifqi Fitriadi": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 114,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 67,
+  "tri:MARKETS_AGREE": 14,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
