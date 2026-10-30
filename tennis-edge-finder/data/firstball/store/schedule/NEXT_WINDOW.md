@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 00:10Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 00:24Z)
 
 * Earliest credible first ball: **2026-10-30 01:30Z**
 * Recommended RUN TENNIS time: **2026-10-30 00:45Z**
@@ -10,7 +10,7 @@
 | Kamilla Rakhimova vs Maya Joint | 2026-10-30 01:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Mia Pohankova vs Alycia Parks | 2026-10-30 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261029T234158Z-d930eea7` built 2026-10-29 23:41Z -- current
+Published slate: `SL-20261030T000929Z-0f08e703` built 2026-10-30 00:09Z -- current
 
 Dispatched this pass: none
 
