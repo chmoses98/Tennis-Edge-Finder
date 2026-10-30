@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 05:42Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 05:58Z)
 
 * Earliest credible first ball: **2026-10-30 06:00Z**
 * Recommended RUN TENNIS time: **2026-10-30 05:15Z**  (OVERDUE: run now)
@@ -7,14 +7,14 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Kaitlin Quevedo vs Jil Teichmann | 2026-10-30 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Kaitlin Quevedo vs Jil Teichmann | 2026-10-30 06:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Xinran Sun vs Claire Liu | 2026-10-30 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Elena Rybakina vs Leylah Fernandez
 
 Published slate: `SL-20261030T050845Z-6c96324c` built 2026-10-30 05:08Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T06:00:00+00:00, slate built 2026-10-30T05:08:45.108421+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-10-30 08:00Z, run by 2026-10-30 07:15Z, 1 match(es)
 * later window 3: first ball 2026-10-30 11:00Z, run by 2026-10-30 10:15Z, 2 match(es)
