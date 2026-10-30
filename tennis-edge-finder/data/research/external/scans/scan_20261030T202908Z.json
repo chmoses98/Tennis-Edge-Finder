@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-10-30T20:29:08.720673+00:00",
+ "run_id": "20261030T202908Z",
+ "external_parse": {
+  "events": 77,
+  "markets": 631,
+  "skipped_family": 180,
+  "skipped_period": 170,
+  "skipped_live": 21,
+  "one_sided": 20,
+  "rows": 895,
+  "devigged": 261
+ },
+ "smarkets_fetch": {
+  "events_seen": 48,
+  "events_priced": 48,
+  "markets": 874,
+  "markets_mapped": 219,
+  "contracts": 468,
+  "quoted_contracts": 468,
+  "raw": "data/research/external/raw/20261030T202908Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 219,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 437,
+  "two_sided": 433,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 945,
+ "external_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7121,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Lisa Kamigata": 1,
+   "Evelyn Whiteside": 1,
+   "Sadbaroi Holdarova": 1,
+   "Maeve Thornton": 1,
+   "Owen Guistwite": 1,
+   "Aryan Saleh": 1,
+   "Adrien Jonah Abarca": 1,
+   "James Lorenzetti": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 48,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 35
+  },
+  "mapped_rate": 0.7292,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.932,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 61,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 64,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:MARKETS_AGREE": 7,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
