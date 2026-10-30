@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-10-30T08:37:48.224147+00:00",
+ "run_id": "20261030T083748Z",
+ "external_parse": {
+  "events": 141,
+  "markets": 1414,
+  "skipped_family": 328,
+  "skipped_period": 355,
+  "skipped_live": 13,
+  "one_sided": 3,
+  "rows": 1932,
+  "devigged": 728
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 706,
+  "markets_mapped": 306,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261030T083748Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 20,
+  "rows": 638,
+  "two_sided": 636,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 381,
+ "external_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7846,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Noma Akugue Noha": 1,
+   "Pablo Perez Ramos": 1,
+   "Paul Colin": 1,
+   "JC Roddick": 1,
+   "Nikita Samuel Filin": 1,
+   "Raluca Georgiana Serban": 1,
+   "Zhu Chenting": 1,
+   "Lei Mailuodi": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6545,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 82,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9146,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Paul Colin": 1,
+   "Pablo Perez Ramos": 1,
+   "Gerardo Delgado": 1,
+   "Emma Sophie Glaser": 1,
+   "Mariia Lazarenko": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 113,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 98,
+  "tri:MARKETS_AGREE": 14,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 46,
+  "tri:ALL_THREE_DISAGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
