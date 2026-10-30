@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-10-30T22:20:21.845298+00:00",
+ "run_id": "20261030T222021Z",
+ "external_parse": {
+  "events": 73,
+  "markets": 676,
+  "skipped_family": 234,
+  "skipped_period": 165,
+  "skipped_live": 17,
+  "one_sided": 15,
+  "rows": 920,
+  "devigged": 262
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 51,
+  "markets": 950,
+  "markets_mapped": 255,
+  "contracts": 548,
+  "quoted_contracts": 548,
+  "raw": "data/research/external/raw/20261030T222021Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 255,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 512,
+  "two_sided": 507,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 296,
+ "external_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Sadbaroi Holdarova": 1,
+   "Maeve Thornton": 1,
+   "Nathan Pitts": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7647,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9531,
+  "top_refusal_subjects": {
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 63,
+ "kalshi_mapped_matches": 61,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
