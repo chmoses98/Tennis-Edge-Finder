@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 04:21Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 04:37Z)
 
 * Earliest credible first ball: **2026-10-30 05:00Z**
 * Recommended RUN TENNIS time: **2026-10-30 04:15Z**  (OVERDUE: run now)
@@ -11,11 +11,9 @@
 | Elena Rybakina vs Leylah Fernandez | 2026-10-30 05:30Z | ESTIMATED_UPCOMING | LIVE_SCHEDULE:espn_wta | MEDIUM |
 | Kaitlin Quevedo vs Jil Teichmann | 2026-10-30 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Mia Pohankova vs Alycia Parks
+Published slate: `SL-20261030T041955Z-05adfba3` built 2026-10-30 04:19Z -- current
 
-Published slate: `SL-20261030T040444Z-a60b843e` built 2026-10-30 04:04Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T05:00:00+00:00, slate built 2026-10-30T04:04:44.076607+00:00
-
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-30 07:30Z, run by 2026-10-30 06:45Z, 2 match(es)
 * later window 3: first ball 2026-10-30 11:00Z, run by 2026-10-30 10:15Z, 2 match(es)
