@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-10-30T08:47:51.043845+00:00",
+ "run_id": "20261030T084751Z",
+ "external_parse": {
+  "events": 154,
+  "markets": 1530,
+  "skipped_family": 355,
+  "skipped_period": 393,
+  "skipped_live": 18,
+  "one_sided": 15,
+  "rows": 2090,
+  "devigged": 767
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 706,
+  "markets_mapped": 306,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261030T084751Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 20,
+  "rows": 638,
+  "two_sided": 635,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 321,
+ "external_mapping": {
+  "total": 143,
+  "by_status": {
+   "MAPPED": 114,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7972,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Noma Akugue Noha": 1,
+   "Pablo Perez Ramos": 1,
+   "Paul Colin": 1,
+   "JC Roddick": 1,
+   "Nikita Samuel Filin": 1,
+   "Raluca Georgiana Serban": 1,
+   "Zhu Chenting": 1,
+   "Lei Mailuodi": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6545,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9375,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Pablo Perez Ramos": 1,
+   "Mariia Lazarenko": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 59,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 16
+ }
+}
