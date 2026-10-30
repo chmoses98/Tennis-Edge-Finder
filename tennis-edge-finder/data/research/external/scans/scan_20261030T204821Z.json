@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-30T20:48:21.125700+00:00",
+ "run_id": "20261030T204821Z",
+ "external_parse": {
+  "events": 77,
+  "markets": 643,
+  "skipped_family": 180,
+  "skipped_period": 177,
+  "skipped_live": 20,
+  "one_sided": 22,
+  "rows": 907,
+  "devigged": 264
+ },
+ "smarkets_fetch": {
+  "events_seen": 49,
+  "events_priced": 49,
+  "markets": 886,
+  "markets_mapped": 225,
+  "contracts": 480,
+  "quoted_contracts": 480,
+  "raw": "data/research/external/raw/20261030T204821Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 225,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 441,
+  "two_sided": 438,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 350,
+ "external_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.7121,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Lisa Kamigata": 1,
+   "Evelyn Whiteside": 1,
+   "Sadbaroi Holdarova": 1,
+   "Maeve Thornton": 1,
+   "Owen Guistwite": 1,
+   "Aryan Saleh": 1,
+   "Adrien Jonah Abarca": 1,
+   "James Lorenzetti": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 49,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 36
+  },
+  "mapped_rate": 0.7347,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9692,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "matched_both_venues": 33,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 4,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
