@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 19:06Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 19:39Z)
 
 * Earliest credible first ball: **2026-10-31 02:00Z**
 * Recommended RUN TENNIS time: **2026-10-31 01:15Z**
@@ -14,9 +14,9 @@
 | Elena Pridankina vs Ekaterine Gorgodze | 2026-10-31 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Aliaksandra Sasnovich vs Cheuk Ying Shek | 2026-10-31 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**9 main-tour match(es) without a verified start status** (BET blocked until checked): Matteo Berrettini vs Alex de Minaur, Aliona Falei vs Ekaterina Yashina, Mariia Tkacheva vs Rada Zolotareva, Kyoka Okamura vs Diya Ramesh Ramesh, Rinko Matsuda vs Momoko Kobori, Mei Yamaguchi vs Zeel Desai, Zhibek Kulambayeva vs Yelyzaveta Kotliar, Viktoria Morvayova vs Shrivalli Rashmikaa Bhamidipaty, Jensi Dipakbhai Kanabar vs Weronika Falkowska
+**8 main-tour match(es) without a verified start status** (BET blocked until checked): Aliona Falei vs Ekaterina Yashina, Mariia Tkacheva vs Rada Zolotareva, Kyoka Okamura vs Diya Ramesh Ramesh, Rinko Matsuda vs Momoko Kobori, Mei Yamaguchi vs Zeel Desai, Zhibek Kulambayeva vs Yelyzaveta Kotliar, Viktoria Morvayova vs Shrivalli Rashmikaa Bhamidipaty, Jensi Dipakbhai Kanabar vs Weronika Falkowska
 
-Published slate: `SL-20261030T175831Z-97bbe106` built 2026-10-30 17:58Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
+Published slate: `SL-20261030T185202Z-8f896389` built 2026-10-30 18:52Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
 Dispatched this pass: slate_stale_refresh (ok)
 
