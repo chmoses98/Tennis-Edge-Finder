@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-30T23:20:37.975828+00:00",
+ "run_id": "20261030T232037Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 873,
+  "skipped_family": 254,
+  "skipped_period": 225,
+  "skipped_live": 14,
+  "one_sided": 10,
+  "rows": 1272,
+  "devigged": 384
+ },
+ "smarkets_fetch": {
+  "events_seen": 59,
+  "events_priced": 59,
+  "markets": 975,
+  "markets_mapped": 262,
+  "contracts": 560,
+  "quoted_contracts": 560,
+  "raw": "data/research/external/raw/20261030T232037Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 262,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 548,
+  "two_sided": 545,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 279,
+ "external_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7534,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 59,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 46
+  },
+  "mapped_rate": 0.7797,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.913,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 25,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
