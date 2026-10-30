@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-30T21:08:07.668667+00:00",
+ "run_id": "20261030T210807Z",
+ "external_parse": {
+  "events": 75,
+  "markets": 645,
+  "skipped_family": 180,
+  "skipped_period": 178,
+  "skipped_live": 17,
+  "one_sided": 22,
+  "rows": 909,
+  "devigged": 265
+ },
+ "smarkets_fetch": {
+  "events_seen": 49,
+  "events_priced": 49,
+  "markets": 893,
+  "markets_mapped": 227,
+  "contracts": 486,
+  "quoted_contracts": 486,
+  "raw": "data/research/external/raw/20261030T210807Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 227,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 440,
+  "two_sided": 437,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 290,
+ "external_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7302,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Aryan Saleh": 1,
+   "James Lorenzetti": 1,
+   "Nathan Pitts": 1,
+   "Sadbaroi Holdarova": 1,
+   "Maeve Thornton": 1,
+   "JC Roddick": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7551,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9062,
+  "top_refusal_subjects": {
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
