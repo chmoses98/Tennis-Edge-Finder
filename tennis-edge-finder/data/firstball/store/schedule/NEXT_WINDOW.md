@@ -1,18 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 01:24Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 01:39Z)
 
-* Earliest credible first ball: **2026-10-30 01:30Z**
-* Recommended RUN TENNIS time: **2026-10-30 00:45Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-30 01:20Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-10-30 02:30Z**
+* Recommended RUN TENNIS time: **2026-10-30 01:45Z**
+* Final price/status check time: **2026-10-30 02:20Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Kamilla Rakhimova vs Maya Joint | 2026-10-30 01:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Mia Pohankova vs Alycia Parks | 2026-10-30 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261030T000929Z-0f08e703` built 2026-10-30 00:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T01:30:00+00:00, slate built 2026-10-30T00:09:29.401446+00:00
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Kamilla Rakhimova vs Maya Joint
 
-Dispatched this pass: slate_final (ok)
+Published slate: `SL-20261030T000929Z-0f08e703` built 2026-10-30 00:09Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+
+Dispatched this pass: slate_primary (ok)
 
 * later window 2: first ball 2026-10-30 05:00Z, run by 2026-10-30 04:15Z, 3 match(es)
 * later window 3: first ball 2026-10-30 07:30Z, run by 2026-10-30 06:45Z, 2 match(es)
