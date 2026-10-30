@@ -1,16 +1,16 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 03:32Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 03:49Z)
 
-* Earliest credible first ball: **2026-10-30 03:40Z**
-* Recommended RUN TENNIS time: **2026-10-30 02:55Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-30 03:30Z**
+* Earliest credible first ball: **2026-10-30 03:51Z**
+* Recommended RUN TENNIS time: **2026-10-30 03:06Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-30 03:41Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Mia Pohankova vs Alycia Parks | 2026-10-30 03:40Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 2 of best-of-3) | MEDIUM |
+| Mia Pohankova vs Alycia Parks | 2026-10-30 03:51Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Center in progress (set 3 of best-of-3) | MEDIUM |
 | Paula Badosa vs Harriet Dart | 2026-10-30 05:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261030T025852Z-c4e8e65b` built 2026-10-30 02:58Z -- current
+Published slate: `SL-20261030T025852Z-c4e8e65b` built 2026-10-30 02:58Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T03:51:53.808215+00:00, slate built 2026-10-30T02:58:52.810199+00:00
 
 Dispatched this pass: slate_final (ok)
 
