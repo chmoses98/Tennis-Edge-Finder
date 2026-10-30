@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-30T17:58:24.922705+00:00",
+ "run_id": "20261030T175824Z",
+ "external_parse": {
+  "events": 103,
+  "markets": 768,
+  "skipped_family": 205,
+  "skipped_period": 210,
+  "skipped_live": 34,
+  "one_sided": 36,
+  "rows": 1069,
+  "devigged": 317
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 51,
+  "markets": 883,
+  "markets_mapped": 253,
+  "contracts": 544,
+  "quoted_contracts": 544,
+  "raw": "data/research/external/raw/20261030T175824Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 253,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 521,
+  "two_sided": 519,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 305,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 70,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7527,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Nischal Spurling": 1,
+   "Parashar Bharadwaj": 1,
+   "Eric Crivei": 1,
+   "Ava Esposito Cogan": 1,
+   "Nikita Samuel Filin": 1,
+   "JC Roddick": 1,
+   "Paul Colin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 51,
+  "by_status": {
+   "UNMAPPED_PLAYER": 1,
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7451,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9545,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Paul Colin": 1,
+   "Gerardo Delgado": 1
+  }
+ },
+ "matched_both_venues": 51,
+ "external_mapped_matches": 80,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MARKETS_AGREE": 8,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 22
+ }
+}
