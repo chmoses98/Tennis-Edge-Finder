@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 22:03Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 22:17Z)
 
 * Earliest credible first ball: **2026-10-31 02:00Z**
 * Recommended RUN TENNIS time: **2026-10-31 01:15Z**
@@ -16,9 +16,9 @@
 
 **22 main-tour match(es) without a verified start status** (BET blocked until checked): Sebastian Baez vs Damir Dzumhur, Tomas Machac vs Martin Landaluce, Tallon Griekspoor vs Benjamin Bonzi, Felix Balshaw vs Yannick Hanfmann, Thiago Agustin Tirante vs Zachary Svajda, Pablo Carreno Busta vs Mattia Bellucci, Nuno Borges vs Adrian Mannarino, Alex Molcan vs Daniel Altmaier, Juan Manuel Cerundolo vs Aleksandar Kovacevic, James Duckworth vs Miomir Kecmanovic, Adolfo Daniel Vallejo vs Grigor Dimitrov, Lorenzo Sonego vs Jaume Munar
 
-Published slate: `SL-20261030T192302Z-070b8a86` built 2026-10-30 19:23Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261030T215424Z-61c0d979` built 2026-10-30 21:54Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-10-31 04:30Z, run by 2026-10-31 03:45Z, 4 match(es)
 * later window 3: first ball 2026-10-31 08:30Z, run by 2026-10-31 07:45Z, 2 match(es)
