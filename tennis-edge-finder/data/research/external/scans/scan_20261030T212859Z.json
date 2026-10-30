@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-30T21:28:59.917064+00:00",
+ "run_id": "20261030T212859Z",
+ "external_parse": {
+  "events": 72,
+  "markets": 660,
+  "skipped_family": 190,
+  "skipped_period": 182,
+  "skipped_live": 14,
+  "one_sided": 20,
+  "rows": 916,
+  "devigged": 268
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 50,
+  "markets": 940,
+  "markets_mapped": 245,
+  "contracts": 528,
+  "quoted_contracts": 528,
+  "raw": "data/research/external/raw/20261030T212859Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 245,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 57,
+  "rows": 471,
+  "two_sided": 467,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1049,
+ "external_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Sadbaroi Holdarova": 1,
+   "Maeve Thornton": 1,
+   "Nathan Pitts": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 38,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.76,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 54,
+ "external_mapped_matches": 63,
+ "kalshi_mapped_matches": 98,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 66,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:MARKETS_AGREE": 9,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
