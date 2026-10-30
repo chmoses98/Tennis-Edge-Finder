@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 01:55Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 02:11Z)
 
-* Earliest credible first ball: **2026-10-30 02:28Z**
-* Recommended RUN TENNIS time: **2026-10-30 01:43Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-30 02:18Z**
+* Earliest credible first ball: **2026-10-30 02:30Z**
+* Recommended RUN TENNIS time: **2026-10-30 01:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-30 02:20Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Mia Pohankova vs Alycia Parks | 2026-10-30 02:28Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center in progress (set 1 of best-of-3) | MEDIUM |
+| Mia Pohankova vs Alycia Parks | 2026-10-30 02:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261030T000929Z-0f08e703` built 2026-10-30 00:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T02:28:40.954024+00:00, slate built 2026-10-30T00:09:29.401446+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261030T000929Z-0f08e703` built 2026-10-30 00:09Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T02:30:00+00:00, slate built 2026-10-30T00:09:29.401446+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-30 05:00Z, run by 2026-10-30 04:15Z, 3 match(es)
 * later window 3: first ball 2026-10-30 07:30Z, run by 2026-10-30 06:45Z, 2 match(es)
