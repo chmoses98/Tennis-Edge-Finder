@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-30T12:28:33.568606+00:00",
+ "run_id": "20261030T122833Z",
+ "external_parse": {
+  "events": 117,
+  "markets": 1168,
+  "skipped_family": 297,
+  "skipped_period": 307,
+  "skipped_live": 18,
+  "one_sided": 18,
+  "rows": 1574,
+  "devigged": 546
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 684,
+  "markets_mapped": 307,
+  "contracts": 668,
+  "quoted_contracts": 668,
+  "raw": "data/research/external/raw/20261030T122833Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 307,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 7,
+  "rows": 661,
+  "two_sided": 658,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 419,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 87,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8208,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Noma Akugue Noha": 1,
+   "JC Roddick": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7167,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jeffrey John Wolf": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9438,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "M Rifqi Fitriadi": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Gerardo Delgado": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "matched_both_venues": 63,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 90,
+  "tri:MARKETS_AGREE": 14,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 42
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
