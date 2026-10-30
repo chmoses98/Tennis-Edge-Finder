@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-30T23:40:42.802231+00:00",
+ "run_id": "20261030T234042Z",
+ "external_parse": {
+  "events": 98,
+  "markets": 998,
+  "skipped_family": 283,
+  "skipped_period": 248,
+  "skipped_live": 13,
+  "one_sided": 28,
+  "rows": 1427,
+  "devigged": 439
+ },
+ "smarkets_fetch": {
+  "events_seen": 59,
+  "events_priced": 59,
+  "markets": 995,
+  "markets_mapped": 269,
+  "contracts": 578,
+  "quoted_contracts": 578,
+  "raw": "data/research/external/raw/20261030T234042Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 269,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 554,
+  "two_sided": 551,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 323,
+ "external_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7882,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7966,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 83,
+  "by_status": {
+   "MAPPED": 78,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9398,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 76,
+ "kalshi_mapped_matches": 78,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 74,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 11,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
