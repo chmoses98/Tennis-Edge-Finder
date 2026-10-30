@@ -1,15 +1,15 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 08:37Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-30 08:53Z)
 
-* Earliest credible first ball: **2026-10-30 08:45Z**
-* Recommended RUN TENNIS time: **2026-10-30 08:00Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-30 08:35Z**
+* Earliest credible first ball: **2026-10-30 09:00Z**
+* Recommended RUN TENNIS time: **2026-10-30 08:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-30 08:50Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Xinran Sun vs Claire Liu | 2026-10-30 08:45Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Xinran Sun vs Claire Liu | 2026-10-30 09:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261030T075347Z-0df9602e` built 2026-10-30 07:53Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-30T08:45:00+00:00, slate built 2026-10-30T07:53:47.435130+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261030T082004Z-ba0191bb` built 2026-10-30 08:20Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
 Dispatched this pass: slate_final (ok)
 
