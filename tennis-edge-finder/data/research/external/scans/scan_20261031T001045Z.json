@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-10-31T00:10:45.343636+00:00",
+ "run_id": "20261031T001045Z",
+ "external_parse": {
+  "events": 118,
+  "markets": 1158,
+  "skipped_family": 314,
+  "skipped_period": 281,
+  "skipped_live": 11,
+  "one_sided": 66,
+  "rows": 1552,
+  "devigged": 495
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 997,
+  "markets_mapped": 271,
+  "contracts": 580,
+  "quoted_contracts": 580,
+  "raw": "data/research/external/raw/20261031T001045Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 271,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 553,
+  "two_sided": 548,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 320,
+ "external_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 84,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Mariia Lazarenko": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 43,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 70,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 70,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:MARKETS_AGREE": 11,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
