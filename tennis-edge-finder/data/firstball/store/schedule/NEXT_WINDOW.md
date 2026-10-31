@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-31 06:23Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-31 06:36Z)
 
 * Earliest credible first ball: **2026-10-31 08:30Z**
 * Recommended RUN TENNIS time: **2026-10-31 07:45Z**
@@ -16,11 +16,9 @@
 | Thiago Agustin Tirante vs Zachary Svajda | 2026-10-31 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Kaitlin Quevedo vs Lilli Tagger | 2026-10-31 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Ying Zhang vs Alexandra Shubladze
+Published slate: `SL-20261031T032752Z-fe419356` built 2026-10-31 03:27Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
 
-Published slate: `SL-20261031T032752Z-fe419356` built 2026-10-31 03:27Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
-
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-31 11:00Z, run by 2026-10-31 10:15Z, 10 match(es)
 * later window 3: first ball 2026-10-31 13:00Z, run by 2026-10-31 12:15Z, 7 match(es)
