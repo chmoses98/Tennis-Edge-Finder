@@ -1,27 +1,27 @@
 {
- "run_id": "20261031T062844Z",
- "source_stamp": "20261030T114614Z|2026-10-31T06:19:14.643421+00:00",
- "settled": 100177,
+ "run_id": "20261031T090130Z",
+ "source_stamp": "20261030T114614Z|2026-10-31T08:54:40.366998+00:00",
+ "settled": 100301,
  "by_status": {
-  "NOT_COVERED": 41344,
+  "NOT_COVERED": 41350,
   "RESOLVED": 46989,
-  "NO_CANONICAL_IDS": 4302,
+  "NO_CANONICAL_IDS": 4308,
   "AMBIGUOUS": 660,
   "NOT_FOUND": 5443,
-  "PENDING_RESULT": 1439
+  "PENDING_RESULT": 1551
  },
  "reconciliation": {
-  "NOT_RECONCILED": 48618,
+  "NOT_RECONCILED": 48670,
   "AGREE": 12216,
   "CONFLICT": 20
  },
  "by_level": {
   "ATP|CHALLENGER": {
    "RESOLVED": 3800,
-   "NO_CANONICAL_IDS": 1906,
+   "NO_CANONICAL_IDS": 1912,
    "AMBIGUOUS": 22,
    "NOT_FOUND": 1880,
-   "NOT_COVERED": 2478
+   "NOT_COVERED": 2484
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
@@ -65,7 +65,7 @@
    "NOT_FOUND": 544,
    "NO_CANONICAL_IDS": 754,
    "AMBIGUOUS": 126,
-   "PENDING_RESULT": 395
+   "PENDING_RESULT": 507
   },
   "WTA|WTA_125": {
    "RESOLVED": 2034,
@@ -139,21 +139,21 @@
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 43398,
-  "matches_with_v2_and_incumbent": 4871,
-  "exchange_settled_predictions": 43398,
+  "predictions_with_v2_and_incumbent": 43444,
+  "matches_with_v2_and_incumbent": 4876,
+  "exchange_settled_predictions": 43444,
   "independently_resolved_predictions": 9396,
   "independently_settled_matches": 1107,
   "by_status": {
    "RESOLVED": 9396,
    "NOT_FOUND": 1496,
-   "NOT_COVERED": 32064,
+   "NOT_COVERED": 32070,
    "AMBIGUOUS": 110,
-   "PENDING_RESULT": 332
+   "PENDING_RESULT": 372
   },
   "reconciliation": {
    "AGREE": 9376,
-   "NOT_RECONCILED": 34002,
+   "NOT_RECONCILED": 34048,
    "EXPLAINED_NOTE": 78,
    "CONFLICT": 20
   },
@@ -162,7 +162,7 @@
     "RESOLVED": 2650,
     "NOT_FOUND": 1012,
     "AMBIGUOUS": 16,
-    "NOT_COVERED": 2478
+    "NOT_COVERED": 2484
    },
    "ATP ITF": {
     "NOT_COVERED": 13050
@@ -185,7 +185,7 @@
     "RESOLVED": 1966,
     "NOT_FOUND": 172,
     "AMBIGUOUS": 30,
-    "PENDING_RESULT": 104
+    "PENDING_RESULT": 144
    }
   },
   "stale_unresolved_tour_level": [
