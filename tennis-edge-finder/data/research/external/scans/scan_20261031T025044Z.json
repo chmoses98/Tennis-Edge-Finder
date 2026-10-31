@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-31T02:50:44.163936+00:00",
+ "run_id": "20261031T025044Z",
+ "external_parse": {
+  "events": 132,
+  "markets": 1500,
+  "skipped_family": 413,
+  "skipped_period": 381,
+  "skipped_live": 11,
+  "one_sided": 47,
+  "rows": 2129,
+  "devigged": 657
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 934,
+  "markets_mapped": 304,
+  "contracts": 646,
+  "quoted_contracts": 646,
+  "raw": "data/research/external/raw/20261031T025044Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 304,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 608,
+  "two_sided": 602,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 290,
+ "external_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 99,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8319,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Noma Akugue Noha": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.8167,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9388,
+  "top_refusal_subjects": {
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 40,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 60,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 6,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
