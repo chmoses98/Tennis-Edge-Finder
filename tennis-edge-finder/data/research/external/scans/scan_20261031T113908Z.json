@@ -1,0 +1,77 @@
+{
+ "generated_at": "2026-10-31T11:39:08.788131+00:00",
+ "run_id": "20261031T113908Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 63,
+  "events_priced": 63,
+  "markets": 802,
+  "markets_mapped": 289,
+  "contracts": 676,
+  "quoted_contracts": 676,
+  "raw": "data/research/external/raw/20261031T113908Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 289,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 27,
+  "rows": 649,
+  "two_sided": 648,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 377,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8095,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.96,
+  "top_refusal_subjects": {
+   "hyerin sim": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 51,
+ "kalshi_mapped_matches": 72,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 68,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {}
+}
