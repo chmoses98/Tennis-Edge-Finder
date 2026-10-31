@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-31T01:10:41.034475+00:00",
+ "run_id": "20261031T011041Z",
+ "external_parse": {
+  "events": 123,
+  "markets": 1362,
+  "skipped_family": 390,
+  "skipped_period": 321,
+  "skipped_live": 6,
+  "one_sided": 70,
+  "rows": 1829,
+  "devigged": 578
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 1002,
+  "markets_mapped": 273,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20261031T011041Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 273,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 553,
+  "two_sided": 549,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 222,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8091,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8033,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9556,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
