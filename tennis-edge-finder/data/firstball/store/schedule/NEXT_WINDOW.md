@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-31 02:58Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-31 03:13Z)
 
-* Earliest credible first ball: **2026-10-31 03:00Z**
-* Recommended RUN TENNIS time: **2026-10-31 02:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-10-31 02:50Z**
+* Earliest credible first ball: **2026-10-31 03:14Z**
+* Recommended RUN TENNIS time: **2026-10-31 02:29Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-31 03:04Z**
 * Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Emerson Jones vs Heather Watson | 2026-10-31 03:00Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-3) | MEDIUM |
-| Elena Pridankina vs Ekaterine Gorgodze | 2026-10-31 03:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
-| Aliaksandra Sasnovich vs Cheuk Ying Shek | 2026-10-31 03:25Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3) | MEDIUM |
+| Emerson Jones vs Heather Watson | 2026-10-31 03:14Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-3) | MEDIUM |
+| Elena Pridankina vs Ekaterine Gorgodze | 2026-10-31 03:14Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court 2 in progress (set 2 of best-of-3) | MEDIUM |
+| Aliaksandra Sasnovich vs Cheuk Ying Shek | 2026-10-31 03:14Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Centre Court in progress (set 2 of best-of-3) | MEDIUM |
 | Diana Shnaider vs Mia Pohankova | 2026-10-31 04:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261030T231557Z-a3156820` built 2026-10-30 23:15Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-31T03:00:09.990772+00:00, slate built 2026-10-30T23:15:57.226172+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
+Published slate: `SL-20261030T231557Z-a3156820` built 2026-10-30 23:15Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-31T03:14:38.895971+00:00, slate built 2026-10-30T23:15:57.226172+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 7 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-10-31 05:00Z, run by 2026-10-31 04:15Z, 3 match(es)
 * later window 3: first ball 2026-10-31 08:30Z, run by 2026-10-31 07:45Z, 8 match(es)
