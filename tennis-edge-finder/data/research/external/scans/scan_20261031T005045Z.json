@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-31T00:50:45.206020+00:00",
+ "run_id": "20261031T005045Z",
+ "external_parse": {
+  "events": 122,
+  "markets": 1333,
+  "skipped_family": 386,
+  "skipped_period": 310,
+  "skipped_live": 7,
+  "one_sided": 71,
+  "rows": 1798,
+  "devigged": 564
+ },
+ "smarkets_fetch": {
+  "events_seen": 61,
+  "events_priced": 61,
+  "markets": 1004,
+  "markets_mapped": 273,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20261031T005045Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 273,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 553,
+  "two_sided": 549,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 286,
+ "external_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8165,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8033,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9574,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 97,
+ "kalshi_mapped_matches": 45,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 64,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 11,
+  "tri:INSUFFICIENT_INPUTS": 15,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
