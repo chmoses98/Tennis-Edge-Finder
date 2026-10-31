@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-10-31T17:09:42.763381+00:00",
+ "run_id": "20261031T170942Z",
+ "external_parse": {
+  "events": 101,
+  "markets": 980,
+  "skipped_family": 249,
+  "skipped_period": 287,
+  "skipped_live": 25,
+  "one_sided": 23,
+  "rows": 1688,
+  "devigged": 421
+ },
+ "smarkets_fetch": {
+  "events_seen": 88,
+  "events_priced": 80,
+  "markets": 764,
+  "markets_mapped": 241,
+  "contracts": 550,
+  "quoted_contracts": 550,
+  "raw": "data/research/external/raw/20261031T170942Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 241,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 123,
+  "rows": 427,
+  "two_sided": 412,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 314,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 9,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.837,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Alyson Shannon": 1,
+   "Saray Yli-Piipari": 1,
+   "Oscar Andres Martinez de Freitas": 1,
+   "Moukarzel, Anthony": 1,
+   "Jacob Brisky": 1,
+   "Parashar Bharadwaj": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Khumoyun Sultanov": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 43,
+  "by_status": {
+   "MAPPED": 43
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
