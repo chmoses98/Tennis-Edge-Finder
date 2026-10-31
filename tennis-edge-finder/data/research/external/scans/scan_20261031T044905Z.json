@@ -1,0 +1,81 @@
+{
+ "generated_at": "2026-10-31T04:49:05.819972+00:00",
+ "run_id": "20261031T044905Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 56,
+  "events_priced": 56,
+  "markets": 795,
+  "markets_mapped": 280,
+  "contracts": 602,
+  "quoted_contracts": 602,
+  "raw": "data/research/external/raw/20261031T044905Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 280,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 94,
+  "rows": 508,
+  "two_sided": 504,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1059,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7857,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 92,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9388,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 44,
+ "kalshi_mapped_matches": 92,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 38,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 11,
+  "SHADOW_BET": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {}
+}
