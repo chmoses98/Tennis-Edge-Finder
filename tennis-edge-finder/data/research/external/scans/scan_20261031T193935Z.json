@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-31T19:39:35.147982+00:00",
+ "run_id": "20261031T193935Z",
+ "external_parse": {
+  "events": 109,
+  "markets": 1151,
+  "skipped_family": 302,
+  "skipped_period": 328,
+  "skipped_live": 16,
+  "one_sided": 8,
+  "rows": 2019,
+  "devigged": 512
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 832,
+  "markets_mapped": 243,
+  "contracts": 524,
+  "quoted_contracts": 524,
+  "raw": "data/research/external/raw/20261031T193935Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 243,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 140,
+  "rows": 384,
+  "two_sided": 372,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 341,
+ "external_mapping": {
+  "total": 98,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7449,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Parashar Bharadwaj": 1,
+   "Shaurya Bharadwaj": 1,
+   "Nathan Pitts": 1,
+   "Lauren Nolan": 1,
+   "Lisa Kamigata": 1,
+   "Ella Olofson": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Khumoyun Sultanov": 1,
+   "Marco Bavaro": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 43,
+  "by_status": {
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9535,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 41,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
