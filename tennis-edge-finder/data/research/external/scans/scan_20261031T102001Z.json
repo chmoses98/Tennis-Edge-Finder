@@ -1,0 +1,79 @@
+{
+ "generated_at": "2026-10-31T10:20:01.201070+00:00",
+ "run_id": "20261031T102001Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 68,
+  "events_priced": 68,
+  "markets": 972,
+  "markets_mapped": 327,
+  "contracts": 762,
+  "quoted_contracts": 762,
+  "raw": "data/research/external/raw/20261031T102001Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 327,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 738,
+  "two_sided": 732,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1081,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 57,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8382,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 107,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9554,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Ye Ryeong Jo": 1,
+   "Dain Lee": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 46,
+ "external_mapped_matches": 57,
+ "kalshi_mapped_matches": 107,
+ "model_witness_available": true,
+ "rows": 92,
+ "counts": {
+  "PASS": 92,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 44,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {}
+}
