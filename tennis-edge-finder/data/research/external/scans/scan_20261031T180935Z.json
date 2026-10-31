@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-10-31T18:09:35.043653+00:00",
+ "run_id": "20261031T180935Z",
+ "external_parse": {
+  "events": 114,
+  "markets": 1080,
+  "skipped_family": 269,
+  "skipped_period": 313,
+  "skipped_live": 23,
+  "one_sided": 12,
+  "rows": 1891,
+  "devigged": 485
+ },
+ "smarkets_fetch": {
+  "events_seen": 96,
+  "events_priced": 80,
+  "markets": 750,
+  "markets_mapped": 245,
+  "contracts": 542,
+  "quoted_contracts": 542,
+  "raw": "data/research/external/raw/20261031T180935Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 245,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 159,
+  "rows": 383,
+  "two_sided": 360,
+  "one_sided": 23
+ },
+ "kalshi_quotes_on_disk": 290,
+ "external_mapping": {
+  "total": 105,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7238,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Alyson Shannon": 1,
+   "Lauren Nolan": 1,
+   "Lisa Kamigata": 1,
+   "Jacob Brisky": 1,
+   "Parashar Bharadwaj": 1,
+   "Shaurya Bharadwaj": 1,
+   "Nathan Pitts": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Khumoyun Sultanov": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 50
+  },
+  "mapped_rate": 1.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 50,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 33,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:KALSHI_LONE_OUTLIER": 7,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
