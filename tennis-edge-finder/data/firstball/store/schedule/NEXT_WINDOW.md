@@ -1,25 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-31 06:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-10-31 07:02Z)
 
-* Earliest credible first ball: **2026-10-31 08:30Z**
-* Recommended RUN TENNIS time: **2026-10-31 07:45Z**
-* Final price/status check time: **2026-10-31 08:20Z**
-* Matches in window: 8
+* Earliest credible first ball: **2026-10-31 07:29Z**
+* Recommended RUN TENNIS time: **2026-10-31 06:44Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-10-31 07:19Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Xinran Sun vs Harriet Dart | 2026-10-31 08:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Aliona Falei vs Ekaterina Yashina | 2026-10-31 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Kyoka Okamura vs Diya Ramesh Ramesh | 2026-10-31 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Mariia Tkacheva vs Rada Zolotareva | 2026-10-31 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Pablo Carreno Busta vs Mattia Bellucci | 2026-10-31 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Jaime Faria vs Rinky Hijikata | 2026-10-31 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Thiago Agustin Tirante vs Zachary Svajda | 2026-10-31 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Kaitlin Quevedo vs Lilli Tagger | 2026-10-31 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Xinran Sun vs Harriet Dart | 2026-10-31 07:29Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-3) | MEDIUM |
 
-Published slate: `SL-20261031T063057Z-c853120c` built 2026-10-31 06:30Z -- current
+Published slate: `SL-20261031T064057Z-1e26c6e4` built 2026-10-31 06:40Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-10-31T07:29:57.377228+00:00, slate built 2026-10-31T06:40:57.284155+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
-* later window 2: first ball 2026-10-31 11:00Z, run by 2026-10-31 10:15Z, 10 match(es)
-* later window 3: first ball 2026-10-31 13:00Z, run by 2026-10-31 12:15Z, 7 match(es)
-* later window 4: first ball 2026-10-31 15:00Z, run by 2026-10-31 14:15Z, 3 match(es)
+* later window 2: first ball 2026-10-31 09:30Z, run by 2026-10-31 08:45Z, 11 match(es)
+* later window 3: first ball 2026-10-31 11:30Z, run by 2026-10-31 10:45Z, 9 match(es)
+* later window 4: first ball 2026-10-31 14:00Z, run by 2026-10-31 13:15Z, 6 match(es)
+* later window 5: first ball 2026-10-31 16:00Z, run by 2026-10-31 15:15Z, 1 match(es)
