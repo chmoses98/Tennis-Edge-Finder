@@ -1,0 +1,78 @@
+{
+ "generated_at": "2026-10-31T07:18:42.103051+00:00",
+ "run_id": "20261031T071842Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 52,
+  "events_priced": 52,
+  "markets": 806,
+  "markets_mapped": 283,
+  "contracts": 628,
+  "quoted_contracts": 628,
+  "raw": "data/research/external/raw/20261031T071842Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 283,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 88,
+  "rows": 540,
+  "two_sided": 534,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 300,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 52,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 41
+  },
+  "mapped_rate": 0.7885,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11
+  }
+ },
+ "kalshi_mapping": {
+  "total": 57,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9298,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "Paul Colin": 1,
+   "Elizaveta Anikina": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 41,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 57,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 8,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
