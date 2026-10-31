@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-10-31T17:20:34.142011+00:00",
+ "run_id": "20261031T172034Z",
+ "external_parse": {
+  "events": 101,
+  "markets": 965,
+  "skipped_family": 244,
+  "skipped_period": 284,
+  "skipped_live": 26,
+  "one_sided": 23,
+  "rows": 1667,
+  "devigged": 413
+ },
+ "smarkets_fetch": {
+  "events_seen": 87,
+  "events_priced": 80,
+  "markets": 766,
+  "markets_mapped": 241,
+  "contracts": 550,
+  "quoted_contracts": 550,
+  "raw": "data/research/external/raw/20261031T172034Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 241,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 113,
+  "rows": 437,
+  "two_sided": 420,
+  "one_sided": 17
+ },
+ "kalshi_quotes_on_disk": 1135,
+ "external_mapping": {
+  "total": 92,
+  "by_status": {
+   "MAPPED": 76,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8261,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Alyson Shannon": 1,
+   "Saray Yli-Piipari": 1,
+   "Moukarzel, Anthony": 1,
+   "Jacob Brisky": 1,
+   "Parashar Bharadwaj": 1,
+   "Shaurya Bharadwaj": 1,
+   "Nathan Pitts": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Khumoyun Sultanov": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9302,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "hyerin sim": 1,
+   "Ye Ryeong Jo": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 62,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
