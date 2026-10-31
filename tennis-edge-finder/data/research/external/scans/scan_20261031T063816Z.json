@@ -1,0 +1,77 @@
+{
+ "generated_at": "2026-10-31T06:38:16.610503+00:00",
+ "run_id": "20261031T063816Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 53,
+  "events_priced": 53,
+  "markets": 819,
+  "markets_mapped": 287,
+  "contracts": 636,
+  "quoted_contracts": 636,
+  "raw": "data/research/external/raw/20261031T063816Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 89,
+  "rows": 547,
+  "two_sided": 541,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 248,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 53,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 42
+  },
+  "mapped_rate": 0.7925,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9388,
+  "top_refusal_subjects": {
+   "Pablo Perez Ramos": 1,
+   "M Rifqi Fitriadi": 1,
+   "Paul Colin": 1
+  }
+ },
+ "matched_both_venues": 24,
+ "external_mapped_matches": 42,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 47,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:MARKETS_AGREE": 8,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
