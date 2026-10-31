@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-10-31T02:00:53.653907+00:00",
+ "run_id": "20261031T020053Z",
+ "external_parse": {
+  "events": 122,
+  "markets": 1304,
+  "skipped_family": 381,
+  "skipped_period": 294,
+  "skipped_live": 10,
+  "one_sided": 67,
+  "rows": 1863,
+  "devigged": 559
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 921,
+  "markets_mapped": 297,
+  "contracts": 632,
+  "quoted_contracts": 632,
+  "raw": "data/research/external/raw/20261031T020053Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 297,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 60,
+  "rows": 572,
+  "two_sided": 566,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 227,
+ "external_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8165,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 48,
+  "by_status": {
+   "MAPPED": 46,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9583,
+  "top_refusal_subjects": {
+   "Paul Colin": 1,
+   "Alexandra Malova": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 99,
+ "kalshi_mapped_matches": 46,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
