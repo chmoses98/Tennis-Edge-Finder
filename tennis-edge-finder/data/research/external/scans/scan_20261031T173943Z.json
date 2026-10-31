@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-10-31T17:39:43.310311+00:00",
+ "run_id": "20261031T173943Z",
+ "external_parse": {
+  "events": 97,
+  "markets": 959,
+  "skipped_family": 244,
+  "skipped_period": 283,
+  "skipped_live": 23,
+  "one_sided": 18,
+  "rows": 1662,
+  "devigged": 414
+ },
+ "smarkets_fetch": {
+  "events_seen": 91,
+  "events_priced": 80,
+  "markets": 744,
+  "markets_mapped": 238,
+  "contracts": 534,
+  "quoted_contracts": 534,
+  "raw": "data/research/external/raw/20261031T173943Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 238,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 124,
+  "rows": 410,
+  "two_sided": 396,
+  "one_sided": 14
+ },
+ "kalshi_quotes_on_disk": 343,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 72,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Alyson Shannon": 1,
+   "Lauren Nolan": 1,
+   "Moukarzel, Anthony": 1,
+   "Jacob Brisky": 1,
+   "Parashar Bharadwaj": 1,
+   "Shaurya Bharadwaj": 1,
+   "Nathan Pitts": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Khumoyun Sultanov": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9556,
+  "top_refusal_subjects": {
+   "Khumoyun Sultanov": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 17,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
