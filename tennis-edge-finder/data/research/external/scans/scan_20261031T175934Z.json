@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-10-31T17:59:34.347610+00:00",
+ "run_id": "20261031T175934Z",
+ "external_parse": {
+  "events": 116,
+  "markets": 1075,
+  "skipped_family": 269,
+  "skipped_period": 311,
+  "skipped_live": 24,
+  "one_sided": 15,
+  "rows": 1871,
+  "devigged": 479
+ },
+ "smarkets_fetch": {
+  "events_seen": 95,
+  "events_priced": 80,
+  "markets": 731,
+  "markets_mapped": 237,
+  "contracts": 524,
+  "quoted_contracts": 524,
+  "raw": "data/research/external/raw/20261031T175934Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 237,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 141,
+  "rows": 383,
+  "two_sided": 362,
+  "one_sided": 21
+ },
+ "kalshi_quotes_on_disk": 353,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 77,
+   "UNMAPPED_PLAYER": 12,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7196,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Alyson Shannon": 1,
+   "Lauren Nolan": 1,
+   "Lisa Kamigata": 1,
+   "Moukarzel, Anthony": 1,
+   "Jacob Brisky": 1,
+   "Parashar Bharadwaj": 1,
+   "Shaurya Bharadwaj": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Khumoyun Sultanov": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9643,
+  "top_refusal_subjects": {
+   "Digvijay Pratap Singh": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 107,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
