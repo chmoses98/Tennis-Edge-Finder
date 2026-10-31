@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-10-31T01:20:49.731925+00:00",
+ "run_id": "20261031T012049Z",
+ "external_parse": {
+  "events": 123,
+  "markets": 1362,
+  "skipped_family": 390,
+  "skipped_period": 321,
+  "skipped_live": 6,
+  "one_sided": 70,
+  "rows": 1829,
+  "devigged": 578
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 62,
+  "markets": 1004,
+  "markets_mapped": 274,
+  "contracts": 590,
+  "quoted_contracts": 590,
+  "raw": "data/research/external/raw/20261031T012049Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 274,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 554,
+  "two_sided": 552,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 229,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8091,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Alexandra Malova": 1,
+   "Nastasja Mariana Schunk": 1,
+   "Zhu Chenting": 1,
+   "Elizaveta Anikina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 43,
+  "by_status": {
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9767,
+  "top_refusal_subjects": {
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 63,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 9,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
