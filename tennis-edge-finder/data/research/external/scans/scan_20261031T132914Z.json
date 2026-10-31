@@ -1,0 +1,78 @@
+{
+ "generated_at": "2026-10-31T13:29:14.639617+00:00",
+ "run_id": "20261031T132914Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 85,
+  "events_priced": 80,
+  "markets": 835,
+  "markets_mapped": 316,
+  "contracts": 734,
+  "quoted_contracts": 734,
+  "raw": "data/research/external/raw/20261031T132914Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 316,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 77,
+  "rows": 657,
+  "two_sided": 651,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 337,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Khumoyun Sultanov": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9828,
+  "top_refusal_subjects": {
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 67,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
