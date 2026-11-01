@@ -1,0 +1,50 @@
+{
+ "run_id": "20261101T131748Z",
+ "started_at": "2026-11-01T13:17:48.779211+00:00",
+ "passes": 8,
+ "requests": 16,
+ "observations": 1755,
+ "truths_written": 0,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {},
+ "http": {
+  "200": 16
+ },
+ "watchlist": {
+  "capture_board_markets": 1471,
+  "events_only_on_capture_board": 395,
+  "selected_from_capture_board": 360
+ },
+ "mapping": {
+  "MATCHED": 1755,
+  "UNMATCHED": 1069,
+  "AMBIGUOUS": 24
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26NOV01FERKEN": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186627 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26NOV01FERKEN-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186627 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26NOV01FERKEN-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186627 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-11-01T13:27:00.796289+00:00"
+}
