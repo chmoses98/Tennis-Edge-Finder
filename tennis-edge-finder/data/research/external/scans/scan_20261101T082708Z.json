@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-11-01T08:27:08.813105+00:00",
+ "run_id": "20261101T082708Z",
+ "external_parse": {
+  "events": 200,
+  "markets": 2312,
+  "skipped_family": 476,
+  "skipped_period": 673,
+  "skipped_live": 11,
+  "one_sided": 34,
+  "rows": 4002,
+  "devigged": 1128
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 772,
+  "markets_mapped": 276,
+  "contracts": 594,
+  "quoted_contracts": 594,
+  "raw": "data/research/external/raw/20261101T082708Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 276,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 564,
+  "two_sided": 564,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 455,
+ "external_mapping": {
+  "total": 189,
+  "by_status": {
+   "MAPPED": 142,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 34
+  },
+  "mapped_rate": 0.7513,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Jodie Anna Burrage": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Alessio Calabrese": 1,
+   "Manas Manoj Dhamne": 1,
+   "Marco Bavaro": 1,
+   "Thiago Pernas": 1,
+   "Denis Klok": 1,
+   "Faustino Boffelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.775,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Faris Zakaria": 1,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Ian Luca Vertberger": 1,
+   "Faustino Boffelli": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.9167,
+  "top_refusal_subjects": {
+   "Ian Luca Vertberger": 1,
+   "Marco Bavaro": 1,
+   "Alessio Balestrieri": 1,
+   "Faris Zakaria": 1,
+   "Dario Ruiz Cruz": 1,
+   "Vicente Alcaraz Galbis": 1,
+   "Digvijay Pratap Singh": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 162,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 84,
+  "tri:MODEL_LONE_OUTLIER": 48,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "SHADOW_BET": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
