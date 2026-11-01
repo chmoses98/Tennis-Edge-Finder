@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-01T11:37:10.785638+00:00",
+ "run_id": "20261101T113710Z",
+ "external_parse": {
+  "events": 181,
+  "markets": 1914,
+  "skipped_family": 410,
+  "skipped_period": 540,
+  "skipped_live": 23,
+  "one_sided": 64,
+  "rows": 3277,
+  "devigged": 899
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 484,
+  "markets_mapped": 209,
+  "contracts": 440,
+  "quoted_contracts": 440,
+  "raw": "data/research/external/raw/20261101T113710Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 209,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 436,
+  "two_sided": 429,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 442,
+ "external_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 34
+  },
+  "mapped_rate": 0.7235,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Jodie Anna Burrage": 1,
+   "Xinyu Wang": 1,
+   "Manas Manoj Dhamne": 1,
+   "Marco Bavaro": 1,
+   "Joel Josef Schwarzler": 1,
+   "Dominik Macej": 1,
+   "Thiago Pernas": 1,
+   "Denis Klok": 1,
+   "Faustino Boffelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 10
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Marco Bavaro": 1,
+   "Marko Bekeni": 1,
+   "Ian Luca Vertberger": 1,
+   "Faustino Boffelli": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8723,
+  "top_refusal_subjects": {
+   "Marco Bavaro": 1,
+   "Nikita Belozertsev": 1,
+   "Dominik Macej": 1,
+   "Alessio Balestrieri": 1,
+   "Maria Jose Rico Sanchez": 1,
+   "Teo Wyszlawski": 1,
+   "Dario Ruiz Cruz": 1,
+   "Florin Cristian Lucaciu": 1,
+   "Pedro Montero Nicolau": 1,
+   "Chimo Minguez": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 156,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 75,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
