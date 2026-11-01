@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 08:12Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 08:24Z)
 
 * Earliest credible first ball: **2026-11-01 08:30Z**
 * Recommended RUN TENNIS time: **2026-11-01 07:45Z**  (OVERDUE: run now)
@@ -7,9 +7,9 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Aliona Falei vs Rada Zolotareva | 2026-11-01 08:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Viktoria Morvayova vs Weronika Falkowska | 2026-11-01 08:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Kyoka Okamura vs Momoko Kobori | 2026-11-01 08:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Aliona Falei vs Rada Zolotareva | 2026-11-01 08:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Viktoria Morvayova vs Weronika Falkowska | 2026-11-01 08:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Kyoka Okamura vs Momoko Kobori | 2026-11-01 08:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Mei Yamaguchi vs Zhibek Kulambayeva | 2026-11-01 09:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Rinky Hijikata vs Vit Kopriva | 2026-11-01 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Thiago Agustin Tirante vs Mattia Bellucci | 2026-11-01 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -18,7 +18,7 @@
 
 Published slate: `SL-20261101T075916Z-2b20573a` built 2026-11-01 07:59Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-01 11:00Z, run by 2026-11-01 10:15Z, 3 match(es)
 * later window 3: first ball 2026-11-01 13:00Z, run by 2026-11-01 12:15Z, 4 match(es)
