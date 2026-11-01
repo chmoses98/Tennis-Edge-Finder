@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 09:15Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 09:27Z)
 
 * Earliest credible first ball: **2026-11-01 09:30Z**
 * Recommended RUN TENNIS time: **2026-11-01 08:45Z**  (OVERDUE: run now)
@@ -14,9 +14,9 @@
 
 **28 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Arthur Gea, Lorenzo Musetti vs Hubert Hurkacz, Luca Van Assche vs Mariano Navone, Stefanos Tsitsipas vs Learner Tien, Novak Djokovic vs Valentin Vacherot, Andrey Rublev vs Tomas Martin Etcheverry, Cameron Norrie vs Matteo Arnaldi, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Daniel Merida vs Alexander Blockx, Quentin Halys vs Arthur Fery, Alejandro Tabilo vs Rafael Jodar
 
-Published slate: `SL-20261101T081822Z-1d839320` built 2026-11-01 08:18Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-01T09:30:00+00:00, slate built 2026-11-01T08:18:22.089931+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261101T090618Z-a1a56817` built 2026-11-01 09:06Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_final (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-01 11:30Z, run by 2026-11-01 10:45Z, 3 match(es)
 * later window 3: first ball 2026-11-01 13:30Z, run by 2026-11-01 12:45Z, 3 match(es)
