@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-01T19:10:19.937151+00:00",
+ "run_id": "20261101T191019Z",
+ "external_parse": {
+  "events": 158,
+  "markets": 1712,
+  "skipped_family": 343,
+  "skipped_period": 520,
+  "skipped_live": 21,
+  "one_sided": 21,
+  "rows": 3122,
+  "devigged": 826
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 961,
+  "markets_mapped": 364,
+  "contracts": 776,
+  "quoted_contracts": 776,
+  "raw": "data/research/external/raw/20261101T191019Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 364,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 755,
+  "two_sided": 753,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 268,
+ "external_mapping": {
+  "total": 146,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 34
+  },
+  "mapped_rate": 0.7192,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Andres Martin (RAC)": 1,
+   "Joel Josef Schwarzler": 1,
+   "Noma Akugue Noha": 1,
+   "Parashar Bharadwaj": 1,
+   "Oskar Szymczak": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.725,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Kenta (2004) Miyoshi": 1,
+   "Xinyu Wang": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 64,
+  "by_status": {
+   "MAPPED": 61,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9531,
+  "top_refusal_subjects": {
+   "Tsuki Shibutani": 1,
+   "Ayane Takagi": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 61,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
