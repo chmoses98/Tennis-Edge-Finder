@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-11-01T13:27:16.293176+00:00",
+ "run_id": "20261101T132716Z",
+ "external_parse": {
+  "events": 193,
+  "markets": 2142,
+  "skipped_family": 417,
+  "skipped_period": 645,
+  "skipped_live": 24,
+  "one_sided": 45,
+  "rows": 3718,
+  "devigged": 1033
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 600,
+  "markets_mapped": 285,
+  "contracts": 602,
+  "quoted_contracts": 602,
+  "raw": "data/research/external/raw/20261101T132716Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 285,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 589,
+  "two_sided": 580,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 373,
+ "external_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.7473,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Noma Akugue Noha": 2,
+   "Jodie Anna Burrage": 1,
+   "Xinyu Wang": 1,
+   "Thiago Pernas": 1,
+   "Denis Klok": 1,
+   "Faustino Boffelli": 1,
+   "Andres Martin (RAC)": 1,
+   "Joel Josef Schwarzler": 1,
+   "JC Roddick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Ian Luca Vertberger": 1,
+   "Faustino Boffelli": 1,
+   "Marko Bekeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8411,
+  "top_refusal_subjects": {
+   "Faustino Boffelli": 1,
+   "Marko Bekeni": 1,
+   "Teo Wyszlawski": 1,
+   "Dario Ruiz Cruz": 1,
+   "Florin Cristian Lucaciu": 1,
+   "Aren Baybars": 1,
+   "Daniel Herrero Soria": 1,
+   "Filip Christoffersson": 1,
+   "Vicente Alcaraz Galbis": 1,
+   "Ivan Candela Garcia": 1
+  }
+ },
+ "matched_both_venues": 53,
+ "external_mapped_matches": 156,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 65,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
