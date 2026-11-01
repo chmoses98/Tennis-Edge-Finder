@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-11-01T04:13:23.090309+00:00",
+ "run_id": "20261101T041323Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 909,
+  "markets_mapped": 365,
+  "contracts": 780,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20261101T041323Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 365,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 115,
+  "rows": 665,
+  "two_sided": 661,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 324,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 8,
+   "MAPPED": 64
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Khumoyun Sultanov": 1,
+   "Faris Zakaria": 1,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Ian Luca Vertberger": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 71,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8875,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alessio Calabrese": 1,
+   "Faustino Boffelli": 1,
+   "Ian Luca Vertberger": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Polina Maneshina": 1,
+   "Ye Ryeong Jo": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 64,
+ "kalshi_mapped_matches": 71,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 35,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
