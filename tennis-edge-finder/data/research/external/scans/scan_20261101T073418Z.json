@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-11-01T07:34:18.689118+00:00",
+ "run_id": "20261101T073418Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1022,
+  "markets_mapped": 386,
+  "contracts": 826,
+  "quoted_contracts": 826,
+  "raw": "data/research/external/raw/20261101T073418Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 386,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 67,
+  "rows": 759,
+  "two_sided": 759,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 364,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Faris Zakaria": 1,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Ian Luca Vertberger": 1,
+   "Faustino Boffelli": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 78,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8846,
+  "top_refusal_subjects": {
+   "Alessio Calabrese": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Alessio Balestrieri": 1,
+   "Faris Zakaria": 1,
+   "Maria Jose Rico Sanchez": 1,
+   "Digvijay Pratap Singh": 1,
+   "hyerin sim": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 60,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 31
+ },
+ "skips": {}
+}
