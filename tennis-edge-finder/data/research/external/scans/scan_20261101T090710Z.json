@@ -1,0 +1,109 @@
+{
+ "generated_at": "2026-11-01T09:07:10.340423+00:00",
+ "run_id": "20261101T090710Z",
+ "external_parse": {
+  "events": 198,
+  "markets": 2177,
+  "skipped_family": 423,
+  "skipped_period": 640,
+  "skipped_live": 15,
+  "one_sided": 36,
+  "rows": 3794,
+  "devigged": 1077
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 622,
+  "markets_mapped": 251,
+  "contracts": 536,
+  "quoted_contracts": 536,
+  "raw": "data/research/external/raw/20261101T090710Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 251,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 512,
+  "two_sided": 504,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 558,
+ "external_mapping": {
+  "total": 187,
+  "by_status": {
+   "MAPPED": 140,
+   "UNMAPPED_PLAYER": 13,
+   "DOUBLES_UNSUPPORTED": 34
+  },
+  "mapped_rate": 0.7487,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Jodie Anna Burrage": 1,
+   "Xinyu Wang": 1,
+   "Joel Josef Schwarzler": 1,
+   "Alessio Calabrese": 1,
+   "Manas Manoj Dhamne": 1,
+   "Marco Bavaro": 1,
+   "Thiago Pernas": 1,
+   "Denis Klok": 1,
+   "Faustino Boffelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Ian Luca Vertberger": 1,
+   "Faustino Boffelli": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 112,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8615,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alessio Calabrese": 1,
+   "Ian Luca Vertberger": 1,
+   "Marco Bavaro": 1,
+   "Nikita Belozertsev": 1,
+   "Dominik Macej": 1,
+   "Alessio Balestrieri": 1,
+   "Faris Zakaria": 1,
+   "Maria Jose Rico Sanchez": 1,
+   "Teo Wyszlawski": 1
+  }
+ },
+ "matched_both_venues": 66,
+ "external_mapped_matches": 159,
+ "kalshi_mapped_matches": 112,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:INSUFFICIENT_INPUTS": 52,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 5,
+  "tri:KALSHI_LONE_OUTLIER": 8,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 14
+ }
+}
