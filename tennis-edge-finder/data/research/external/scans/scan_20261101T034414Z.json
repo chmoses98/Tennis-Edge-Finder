@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-01T03:44:14.915598+00:00",
+ "run_id": "20261101T034414Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 900,
+  "markets_mapped": 365,
+  "contracts": 776,
+  "quoted_contracts": 776,
+  "raw": "data/research/external/raw/20261101T034414Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 365,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 114,
+  "rows": 662,
+  "two_sided": 656,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 1362,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Khumoyun Sultanov": 1,
+   "Faris Zakaria": 1,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8976,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Faustino Boffelli": 1,
+   "Ian Luca Vertberger": 1,
+   "Marko Bekeni": 1,
+   "Marco Bavaro": 1,
+   "Nikita Belozertsev": 1,
+   "Dominik Macej": 1,
+   "Alessio Balestrieri": 1,
+   "Faris Zakaria": 1,
+   "Khumoyun Sultanov": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 149,
+ "model_witness_available": true,
+ "rows": 118,
+ "counts": {
+  "PASS": 116,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 76,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {}
+}
