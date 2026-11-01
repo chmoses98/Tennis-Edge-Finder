@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-01T13:07:22.370821+00:00",
+ "run_id": "20261101T130722Z",
+ "external_parse": {
+  "events": 195,
+  "markets": 2217,
+  "skipped_family": 433,
+  "skipped_period": 668,
+  "skipped_live": 21,
+  "one_sided": 52,
+  "rows": 3825,
+  "devigged": 1063
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 580,
+  "markets_mapped": 270,
+  "contracts": 572,
+  "quoted_contracts": 572,
+  "raw": "data/research/external/raw/20261101T130722Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 270,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 557,
+  "two_sided": 550,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 485,
+ "external_mapping": {
+  "total": 184,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 11,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.7446,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Noma Akugue Noha": 2,
+   "Jodie Anna Burrage": 1,
+   "Xinyu Wang": 1,
+   "Marco Bavaro": 1,
+   "Thiago Pernas": 1,
+   "Denis Klok": 1,
+   "Faustino Boffelli": 1,
+   "Andres Martin (RAC)": 1,
+   "Joel Josef Schwarzler": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Ian Luca Vertberger": 1,
+   "Faustino Boffelli": 1,
+   "Marko Bekeni": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "Faustino Boffelli": 1,
+   "Ian Luca Vertberger": 1,
+   "Marko Bekeni": 1,
+   "Marco Bavaro": 1,
+   "Teo Wyszlawski": 1,
+   "Dario Ruiz Cruz": 1,
+   "Florin Cristian Lucaciu": 1,
+   "Aren Baybars": 1,
+   "Manuel Belda": 1,
+   "Pau Berto Bosca": 1
+  }
+ },
+ "matched_both_venues": 61,
+ "external_mapped_matches": 157,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 88,
+ "counts": {
+  "PASS": 85,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:ALL_THREE_DISAGREE": 4,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 17
+ }
+}
