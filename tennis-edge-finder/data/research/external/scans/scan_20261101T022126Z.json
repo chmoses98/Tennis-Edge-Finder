@@ -1,0 +1,110 @@
+{
+ "generated_at": "2026-11-01T02:21:26.619797+00:00",
+ "run_id": "20261101T022126Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1582,
+  "skipped_family": 400,
+  "skipped_period": 427,
+  "skipped_live": 9,
+  "one_sided": 25,
+  "rows": 2646,
+  "devigged": 730
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 976,
+  "markets_mapped": 372,
+  "contracts": 788,
+  "quoted_contracts": 788,
+  "raw": "data/research/external/raw/20261101T022126Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 372,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 128,
+  "rows": 660,
+  "two_sided": 651,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 373,
+ "external_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 10,
+   "DOUBLES_UNSUPPORTED": 31
+  },
+  "mapped_rate": 0.7113,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Xinyu Wang": 1,
+   "Jodie Anna Burrage": 1,
+   "Alessio Calabrese": 1,
+   "Manas Manoj Dhamne": 1,
+   "Marco Bavaro": 1,
+   "Khumoyun Sultanov": 1,
+   "Noma Akugue Noha": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Khumoyun Sultanov": 1,
+   "Faris Zakaria": 1,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Marco Bavaro": 1,
+   "Nikita Belozertsev": 1,
+   "Alessio Balestrieri": 1,
+   "Faris Zakaria": 1,
+   "Khumoyun Sultanov": 1,
+   "hyerin sim": 1,
+   "Ye Ryeong Jo": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 50,
+ "external_mapped_matches": 120,
+ "kalshi_mapped_matches": 63,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 84,
+  "tri:MODEL_LONE_OUTLIER": 32,
+  "tri:KALSHI_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2,
+  "tri:MARKETS_AGREE": 7,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
