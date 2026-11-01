@@ -1,18 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 02:52Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 03:12Z)
 
-* Earliest credible first ball: **2026-11-01 03:14Z**
-* Recommended RUN TENNIS time: **2026-11-01 02:29Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-01 03:04Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-11-01 03:30Z**
+* Recommended RUN TENNIS time: **2026-11-01 02:45Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-01 03:20Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Emerson Jones vs Alexandra Shubladze | 2026-11-01 03:14Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 2 in progress (set 1 of best-of-3) | MEDIUM |
-| Himeno Sakatsume vs Elena Pridankina | 2026-11-01 03:14Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 1 in progress (set 1 of best-of-3) | MEDIUM |
+| Emerson Jones vs Alexandra Shubladze | 2026-11-01 03:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**30 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Arthur Gea, Lorenzo Musetti vs Hubert Hurkacz, Luca Van Assche vs Mariano Navone, Stefanos Tsitsipas vs Learner Tien, Novak Djokovic vs Valentin Vacherot, Andrey Rublev vs Tomas Martin Etcheverry, Cameron Norrie vs Matteo Arnaldi, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Daniel Merida vs Alexander Blockx, Quentin Halys vs Arthur Fery, Alejandro Tabilo vs Rafael Jodar
+**31 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Arthur Gea, Lorenzo Musetti vs Hubert Hurkacz, Luca Van Assche vs Mariano Navone, Stefanos Tsitsipas vs Learner Tien, Novak Djokovic vs Valentin Vacherot, Andrey Rublev vs Tomas Martin Etcheverry, Cameron Norrie vs Matteo Arnaldi, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Daniel Merida vs Alexander Blockx, Quentin Halys vs Arthur Fery, Alejandro Tabilo vs Rafael Jodar
 
-Published slate: `SL-20261101T023004Z-a24d6fef` built 2026-11-01 02:30Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261101T024912Z-b4f0632f` built 2026-11-01 02:49Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
 Dispatched this pass: slate_stale_refresh (ok)
 
