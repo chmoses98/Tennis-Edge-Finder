@@ -1,0 +1,88 @@
+{
+ "generated_at": "2026-11-01T03:53:29.028079+00:00",
+ "run_id": "20261101T035329Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 895,
+  "markets_mapped": 363,
+  "contracts": 772,
+  "quoted_contracts": 772,
+  "raw": "data/research/external/raw/20261101T035329Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 363,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 115,
+  "rows": 657,
+  "two_sided": 651,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 363,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 8,
+   "UNMAPPED_PLAYER": 8,
+   "MAPPED": 64
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Khumoyun Sultanov": 1,
+   "Faris Zakaria": 1,
+   "Nikita Belozertsev": 1,
+   "Marco Bavaro": 1,
+   "Dominik Macej": 1,
+   "Marko Bekeni": 1,
+   "Ian Luca Vertberger": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9155,
+  "top_refusal_subjects": {
+   "Dominik Macej": 1,
+   "Alessio Balestrieri": 1,
+   "Digvijay Pratap Singh": 1,
+   "M Rifqi Fitriadi": 1,
+   "Ye Ryeong Jo": 1,
+   "Dain Lee": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 64,
+ "kalshi_mapped_matches": 65,
+ "model_witness_available": true,
+ "rows": 58,
+ "counts": {
+  "PASS": 57,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 4,
+  "WATCH": 1
+ },
+ "skips": {}
+}
