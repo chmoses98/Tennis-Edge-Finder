@@ -1,18 +1,18 @@
 {
  "baseline": {
-  "n": 296,
-  "mean_exec_clv": -0.01570945945945946,
+  "n": 303,
+  "mean_exec_clv": -0.016006600660066005,
   "median_exec_clv": -0.010000000000000009,
   "ci95": [
-   -0.026081925675675677,
-   -0.005945101351351361
+   -0.026138613861386138,
+   -0.0065016501650165
   ],
   "excludes_zero": true,
-  "share_positive": 0.1554054054054054,
-  "mean_mid_clv": 0.0025337837837837844,
-  "mean_entry_spread": 0.02300675675675655,
-  "mean_entry_fee": 0.018378378378378267,
-  "median_hours_entry_to_first_ball": 6.037934074305556
+  "share_positive": 0.15181518151815182,
+  "mean_mid_clv": 0.0033993399339933995,
+  "mean_entry_spread": 0.025214521452145006,
+  "mean_entry_fee": 0.018382838283828265,
+  "median_hours_entry_to_first_ball": 6.168616280833334
  },
  "weeks": {
   "2026-W37": {
@@ -104,6 +104,21 @@
    "mean_entry_spread": 0.013749999999999991,
    "mean_entry_fee": 0.0175,
    "median_hours_entry_to_first_ball": 12.607568642361109
+  },
+  "2026-W44": {
+   "n": 7,
+   "mean_exec_clv": -0.02857142857142858,
+   "median_exec_clv": -0.010000000000000009,
+   "ci95": [
+    -0.05857142857142857,
+    -0.00714285714285715
+   ],
+   "excludes_zero": true,
+   "share_positive": 0.0,
+   "mean_mid_clv": 0.03999999999999998,
+   "mean_entry_spread": 0.11857142857142858,
+   "mean_entry_fee": 0.018571428571428572,
+   "median_hours_entry_to_first_ball": 14.662807380555556
   }
  },
  "note": "descriptive; never used to edit a candidate"

@@ -2,7 +2,7 @@
  "candidate_id": "EC-2026-002-MKTCOND-GAME-SPREAD",
  "kind": "PRICING_ACCURACY",
  "status": "PENDING_SETTLEMENT",
- "status_reason": "0 settled of 400 required (709 awaiting settlement)",
+ "status_reason": "0 settled of 400 required (717 awaiting settlement)",
  "universe": {
   "experiment_start": {
    "candidate_id": "EC-2026-002-MKTCOND-GAME-SPREAD",
@@ -32,14 +32,14 @@
    "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
    "producer_rows_before_effective_start": 0
   },
-  "listed_contract_rows_after_effective_start": 24359,
-  "listed_contracts": 3243,
+  "listed_contract_rows_after_effective_start": 24517,
+  "listed_contracts": 3272,
   "note": "rows exist only for contracts Kalshi actually listed; zero is a valid count",
   "post_settlement_first_runs_excluded": 0,
   "post_settlement_first_runs_by_level": {}
  },
  "metrics": {
-  "eligible_matches": 709,
+  "eligible_matches": 717,
   "scored_matches": 0,
   "game_diff_mae_conditioned_minus_fundamental": {
    "n": 0,
@@ -59,10 +59,10 @@
  "summary": {
   "kind": "PRICING_ACCURACY",
   "minimum_n": 400,
-  "eligible_n": 709,
+  "eligible_n": 717,
   "settled_n": 0,
   "strict_clv_n": 0,
-  "unsettled_n": 709,
+  "unsettled_n": 717,
   "clv_pending_n": 0,
   "unscorable_n": 0,
   "accuracy_pass": null,
@@ -105,11 +105,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261101T070558Z",
- "evidence_rows_this_run": 711,
- "evidence_rows_appended": 11,
- "last_evidence_at": "2026-11-01T07:02:06.809028+00:00",
- "harvest_run_at": "2026-11-01T07:06:04.026437+00:00",
+ "harvest_run": "20261101T184810Z",
+ "evidence_rows_this_run": 719,
+ "evidence_rows_appended": 10,
+ "last_evidence_at": "2026-11-01T18:44:26.364520+00:00",
+ "harvest_run_at": "2026-11-01T18:48:16.680787+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -127,10 +127,10 @@
   "summary_previous_harvest": {
    "kind": "PRICING_ACCURACY",
    "minimum_n": 400,
-   "eligible_n": 698,
+   "eligible_n": 709,
    "settled_n": 0,
    "strict_clv_n": 0,
-   "unsettled_n": 698,
+   "unsettled_n": 709,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": null,
@@ -142,10 +142,10 @@
   "summary_this_harvest": {
    "kind": "PRICING_ACCURACY",
    "minimum_n": 400,
-   "eligible_n": 709,
+   "eligible_n": 717,
    "settled_n": 0,
    "strict_clv_n": 0,
-   "unsettled_n": 709,
+   "unsettled_n": 717,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": null,
