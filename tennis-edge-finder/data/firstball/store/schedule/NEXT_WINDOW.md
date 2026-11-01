@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 09:40Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-01 09:52Z)
 
 * Earliest credible first ball: **2026-11-01 10:00Z**
 * Recommended RUN TENNIS time: **2026-11-01 09:15Z**  (OVERDUE: run now)
@@ -7,8 +7,8 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Rinky Hijikata vs Vit Kopriva | 2026-11-01 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Thiago Agustin Tirante vs Mattia Bellucci | 2026-11-01 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Rinky Hijikata vs Vit Kopriva | 2026-11-01 10:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Thiago Agustin Tirante vs Mattia Bellucci | 2026-11-01 10:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Juan Manuel Cerundolo vs Miomir Kecmanovic | 2026-11-01 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Sebastian Baez vs Tomas Machac | 2026-11-01 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Benjamin Bonzi vs Yannick Hanfmann | 2026-11-01 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
@@ -17,7 +17,7 @@
 
 Published slate: `SL-20261101T090618Z-a1a56817` built 2026-11-01 09:06Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-01T10:00:00+00:00, slate built 2026-11-01T09:06:18.835196+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-01 13:00Z, run by 2026-11-01 12:15Z, 4 match(es)
 * later window 3: first ball 2026-11-02 06:00Z, run by 2026-11-02 05:15Z, 4 match(es)
