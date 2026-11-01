@@ -1,0 +1,81 @@
+{
+ "run_id": "20261101T143707Z",
+ "started_at": "2026-11-01T14:37:07.033866+00:00",
+ "passes": 7,
+ "requests": 14,
+ "observations": 1367,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPMATCH-26NOV01LEHVAC": {
+   "confidence": "B",
+   "bracket_s": 211.636755,
+   "first_ball": "2026-11-01T14:43:01.426697+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26NOV01LEHVAC-2": {
+   "confidence": "B",
+   "bracket_s": 211.636755,
+   "first_ball": "2026-11-01T14:43:01.426697+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26NOV01LEHVAC-1": {
+   "confidence": "B",
+   "bracket_s": 211.636755,
+   "first_ball": "2026-11-01T14:43:01.426697+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26NOV01LEHVAC": {
+   "confidence": "B",
+   "bracket_s": 211.636755,
+   "first_ball": "2026-11-01T14:43:01.426697+00:00",
+   "no_play": false
+  },
+  "KXATPGSPREAD-26NOV01LEHVAC": {
+   "confidence": "B",
+   "bracket_s": 211.636755,
+   "first_ball": "2026-11-01T14:43:01.426697+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 14
+ },
+ "watchlist": {
+  "capture_board_markets": 1427,
+  "events_only_on_capture_board": 377,
+  "selected_from_capture_board": 342
+ },
+ "mapping": {
+  "MATCHED": 1367,
+  "UNMATCHED": 903,
+  "AMBIGUOUS": 21
+ },
+ "mapping_refusals": {
+  "KXWTAMATCH-26NOV01FERKEN": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186627 claimed by 2 different physical matches",
+   "score": 1.0,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26NOV01FERKEN-2": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186627 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  },
+  "KXWTASETWINNER-26NOV01FERKEN-1": {
+   "status": "AMBIGUOUS",
+   "reason": "feed match 186627 claimed by 2 different physical matches",
+   "score": 0.95,
+   "runner_up": 0.0,
+   "source": "espn_wta"
+  }
+ },
+ "finished_at": "2026-11-01T14:46:46.177853+00:00"
+}
