@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 10:05Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 10:22Z)
 
 * Earliest credible first ball: **2026-11-02 10:30Z**
 * Recommended RUN TENNIS time: **2026-11-02 09:45Z**  (OVERDUE: run now)
@@ -7,9 +7,9 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Aliona Falei vs Magda Linette | 2026-11-02 10:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Mananchaya Sawangkaew vs Mai Hontama | 2026-11-02 10:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Jeline Vandromme vs Kyoka Okamura | 2026-11-02 10:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Aliona Falei vs Magda Linette | 2026-11-02 10:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Mananchaya Sawangkaew vs Mai Hontama | 2026-11-02 10:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Jeline Vandromme vs Kyoka Okamura | 2026-11-02 10:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Alejandro Tabilo vs Rafael Jodar | 2026-11-02 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Luca Van Assche vs Mariano Navone | 2026-11-02 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Xinyu Wang vs Adithya Karunaratne | 2026-11-02 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
@@ -21,7 +21,7 @@
 
 Published slate: `SL-20261102T091357Z-97ba81f2` built 2026-11-02 09:13Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-02T10:30:00+00:00, slate built 2026-11-02T09:13:57.813254+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-02 13:00Z, run by 2026-11-02 12:15Z, 6 match(es)
 * later window 3: first ball 2026-11-02 16:00Z, run by 2026-11-02 15:15Z, 1 match(es)
