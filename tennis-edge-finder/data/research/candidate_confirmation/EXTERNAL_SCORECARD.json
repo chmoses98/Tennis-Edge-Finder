@@ -1,56 +1,56 @@
 {
  "since": "2026-09-12T21:09:38.644348+00:00",
- "scan_passes": 5981,
- "dislocation_rows": 316395,
- "matched_matches": 5542,
- "matched_contracts": 11084,
- "rows_with_reference": 169308,
- "three_venue_observations": 121168,
- "three_venue_contracts": 4254,
+ "scan_passes": 6060,
+ "dislocation_rows": 319451,
+ "matched_matches": 5576,
+ "matched_contracts": 11152,
+ "rows_with_reference": 171236,
+ "three_venue_observations": 121809,
+ "three_venue_contracts": 4270,
  "rows_by_source_set": {
-  "bovada": 154658,
-  "smarkets": 39263,
-  "bovada+smarkets": 121168,
-  "none": 1306
+  "bovada": 156639,
+  "smarkets": 39687,
+  "bovada+smarkets": 121809,
+  "none": 1316
  },
  "triangulation_rows": {
-  "INSUFFICIENT_INPUTS": 147087,
-  "MODEL_LONE_OUTLIER": 128093,
-  "MARKETS_AGREE": 21735,
-  "KALSHI_LONE_OUTLIER": 13612,
-  "ALL_THREE_DISAGREE": 4672,
-  "EXTERNAL_LONE_OUTLIER": 1196
+  "INSUFFICIENT_INPUTS": 148215,
+  "MODEL_LONE_OUTLIER": 129537,
+  "MARKETS_AGREE": 22024,
+  "KALSHI_LONE_OUTLIER": 13745,
+  "ALL_THREE_DISAGREE": 4713,
+  "EXTERNAL_LONE_OUTLIER": 1217
  },
  "triangulation_contracts": {
-  "INSUFFICIENT_INPUTS": 9660,
-  "MODEL_LONE_OUTLIER": 7896,
-  "MARKETS_AGREE": 1472,
-  "KALSHI_LONE_OUTLIER": 3693,
-  "ALL_THREE_DISAGREE": 1408,
-  "EXTERNAL_LONE_OUTLIER": 431
+  "INSUFFICIENT_INPUTS": 9744,
+  "MODEL_LONE_OUTLIER": 7954,
+  "MARKETS_AGREE": 1484,
+  "KALSHI_LONE_OUTLIER": 3727,
+  "ALL_THREE_DISAGREE": 1417,
+  "EXTERNAL_LONE_OUTLIER": 437
  },
  "scanner_decisions": {
-  "PASS": 309361,
-  "WATCH": 5896,
-  "SHADOW_BET": 1138
+  "PASS": 312343,
+  "WATCH": 5961,
+  "SHADOW_BET": 1147
  },
- "w4_first_qualifying_observations": 200,
+ "w4_first_qualifying_observations": 202,
  "w4_first_qualifying_by_timing": {
-  "START_UNKNOWN": 198,
+  "START_UNKNOWN": 200,
   "STRICT_PREGAME": 2
  },
  "w4_eligible_strict_pregame": 2,
  "w4_strict_clv_attached": 1,
- "w4_settled_attached": 1,
+ "w4_settled_attached": 2,
  "w4_after_fee_pnl": {
-  "n": 1,
-  "mean": 0.58,
-  "median": 0.58,
+  "n": 2,
+  "mean": 0.25999999999999995,
+  "median": 0.25999999999999995,
   "ci_low": null,
   "ci_high": null,
   "excludes_zero": null,
   "seed": 20260927,
   "n_boot": 10000
  },
- "w4_after_fee_pnl_sum": 0.58
+ "w4_after_fee_pnl_sum": 0.5199999999999999
 }
