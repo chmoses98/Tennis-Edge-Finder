@@ -1,0 +1,84 @@
+{
+ "generated_at": "2026-11-02T13:55:56.107602+00:00",
+ "run_id": "20261102T135556Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1315,
+  "markets_mapped": 485,
+  "contracts": 1038,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261102T135556Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 485,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 194,
+  "rows": 844,
+  "two_sided": 841,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 501,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 92,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8214,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Ian Luca Vertberger": 1,
+   "Seongchan Hong": 1,
+   "Lance Lage": 1,
+   "Jonny Degroot": 1,
+   "Pedro Petroski Rocha": 1,
+   "Danny Al Barbour": 1,
+   "Tareq Alani": 1,
+   "Rohan Sachdev": 1,
+   "Eric Von Marton Martins": 1
+  }
+ },
+ "matched_both_venues": 5,
+ "external_mapped_matches": 56,
+ "kalshi_mapped_matches": 92,
+ "model_witness_available": true,
+ "rows": 6,
+ "counts": {
+  "PASS": 6,
+  "tri:MODEL_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
