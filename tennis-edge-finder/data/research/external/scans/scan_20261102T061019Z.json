@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-02T06:10:19.654273+00:00",
+ "run_id": "20261102T061019Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1182,
+  "markets_mapped": 436,
+  "contracts": 936,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261102T061019Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 86,
+  "rows": 850,
+  "two_sided": 847,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 503,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 50,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Xinyu Wang": 1,
+   "Marcelo Tomas Barrios Vera": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 95,
+  "by_status": {
+   "MAPPED": 81,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8526,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Alessio Balestrieri": 1,
+   "Lance Lage": 1,
+   "Caden Colburne": 1,
+   "Matthew Michibata": 1,
+   "Kim Johannes Niethammer": 1,
+   "Danny Al Barbour": 1,
+   "Tareq Alani": 1,
+   "Rohan Sachdev": 1,
+   "Mateus Napoli da Silveira": 1
+  }
+ },
+ "matched_both_venues": 11,
+ "external_mapped_matches": 50,
+ "kalshi_mapped_matches": 81,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 22,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
