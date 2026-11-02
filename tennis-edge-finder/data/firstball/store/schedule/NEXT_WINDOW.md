@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 23:02Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 23:16Z)
 
 * Earliest credible first ball: **2026-11-03 05:30Z**
 * Recommended RUN TENNIS time: **2026-11-03 04:45Z**
@@ -20,7 +20,7 @@
 
 **8 main-tour match(es) without a verified start status** (BET blocked until checked): Stefanos Tsitsipas vs Learner Tien, Andrey Rublev vs Tomas Martin Etcheverry, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Quentin Halys vs Arthur Fery, Brandon Nakashima vs Matteo Berrettini, Leylah Fernandez vs Sofia Kenin, Antonia Ruzic vs Alina Charaeva
 
-Published slate: `SL-20261102T091357Z-97ba81f2` built 2026-11-02 09:13Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 38 match(es)
+Published slate: `SL-20261102T224935Z-e98695a8` built 2026-11-02 22:49Z -- current
 
 Dispatched this pass: none
 
