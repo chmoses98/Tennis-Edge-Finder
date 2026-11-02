@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 08:07Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 08:24Z)
 
 * Earliest credible first ball: **2026-11-02 09:30Z**
 * Recommended RUN TENNIS time: **2026-11-02 08:45Z**
@@ -18,11 +18,11 @@
 | Linda Fruhvirtova vs Weronika Falkowska | 2026-11-02 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Moyuka Uchijima vs Rebecca Sramkova | 2026-11-02 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**23 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Arthur Gea, Stefanos Tsitsipas vs Learner Tien, Novak Djokovic vs Valentin Vacherot, Andrey Rublev vs Tomas Martin Etcheverry, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Quentin Halys vs Arthur Fery, Alejandro Davidovich Fokina vs Moise Kouame, Brandon Nakashima vs Matteo Berrettini, Alex Michelsen vs Jiri Lehecka, Viktoria Morvayova vs Polina Kudermetova, Elsa Jacquemot vs Lucrezia Stefanini
+**22 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Arthur Gea, Stefanos Tsitsipas vs Learner Tien, Novak Djokovic vs Valentin Vacherot, Andrey Rublev vs Tomas Martin Etcheverry, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Quentin Halys vs Arthur Fery, Alejandro Davidovich Fokina vs Moise Kouame, Brandon Nakashima vs Matteo Berrettini, Alex Michelsen vs Jiri Lehecka, Viktoria Morvayova vs Polina Kudermetova, Elsa Jacquemot vs Lucrezia Stefanini
 
 Published slate: `SL-20261102T074318Z-9a690c73` built 2026-11-02 07:43Z -- current
 
-Dispatched this pass: none
+Dispatched this pass: run_tennis (ok)
 
 * later window 2: first ball 2026-11-02 11:30Z, run by 2026-11-02 10:45Z, 7 match(es)
 * later window 3: first ball 2026-11-02 14:30Z, run by 2026-11-02 13:45Z, 3 match(es)
