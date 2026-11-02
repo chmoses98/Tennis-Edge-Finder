@@ -1,22 +1,22 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 05:11Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 05:52Z)
 
 * Earliest credible first ball: **2026-11-02 06:00Z**
-* Recommended RUN TENNIS time: **2026-11-02 05:15Z**
+* Recommended RUN TENNIS time: **2026-11-02 05:15Z**  (OVERDUE: run now)
 * Final price/status check time: **2026-11-02 05:50Z**
 * Matches in window: 4
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Viktorija Golubic vs Katie Boulter | 2026-11-02 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Claire Liu vs Tatiana Prozorova | 2026-11-02 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Viktorija Golubic vs Katie Boulter | 2026-11-02 06:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Claire Liu vs Tatiana Prozorova | 2026-11-02 06:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Carol Young Suh Lee vs Maria Sakkari | 2026-11-02 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Katie Volynets vs Aliaksandra Sasnovich | 2026-11-02 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **29 main-tour match(es) without a verified start status** (BET blocked until checked): Jan-Lennard Struff vs Arthur Gea, Stefanos Tsitsipas vs Learner Tien, Novak Djokovic vs Valentin Vacherot, Andrey Rublev vs Tomas Martin Etcheverry, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Quentin Halys vs Arthur Fery, Alejandro Davidovich Fokina vs Moise Kouame, Brandon Nakashima vs Matteo Berrettini, Alex Michelsen vs Jiri Lehecka, Viktoria Morvayova vs Polina Kudermetova, Elsa Jacquemot vs Lucrezia Stefanini
 
-Published slate: `SL-20261101T235026Z-df47fe27` built 2026-11-01 23:50Z -- current
+Published slate: `SL-20261101T235026Z-df47fe27` built 2026-11-01 23:50Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-02T06:00:00+00:00, slate built 2026-11-01T23:50:26.090619+00:00
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-02 09:30Z, run by 2026-11-02 08:45Z, 10 match(es)
 * later window 3: first ball 2026-11-02 11:30Z, run by 2026-11-02 10:45Z, 7 match(es)
