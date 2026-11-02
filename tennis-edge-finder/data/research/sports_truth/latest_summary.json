@@ -1,17 +1,17 @@
 {
- "run_id": "20261102T070959Z",
- "source_stamp": "20261101T121459Z|2026-11-02T06:59:11.238625+00:00",
- "settled": 103356,
+ "run_id": "20261102T090241Z",
+ "source_stamp": "20261101T121459Z|2026-11-02T08:54:02.791428+00:00",
+ "settled": 103378,
  "by_status": {
-  "NOT_COVERED": 42460,
+  "NOT_COVERED": 42468,
   "RESOLVED": 49697,
   "NO_CANONICAL_IDS": 4430,
   "AMBIGUOUS": 700,
   "NOT_FOUND": 5659,
-  "PENDING_RESULT": 410
+  "PENDING_RESULT": 424
  },
  "reconciliation": {
-  "NOT_RECONCILED": 49674,
+  "NOT_RECONCILED": 49684,
   "AGREE": 12884,
   "CONFLICT": 20
  },
@@ -21,7 +21,7 @@
    "NO_CANONICAL_IDS": 1936,
    "AMBIGUOUS": 22,
    "NOT_FOUND": 1880,
-   "NOT_COVERED": 2776
+   "NOT_COVERED": 2784
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
@@ -66,7 +66,7 @@
    "NOT_FOUND": 622,
    "NO_CANONICAL_IDS": 810,
    "AMBIGUOUS": 126,
-   "PENDING_RESULT": 104
+   "PENDING_RESULT": 118
   },
   "WTA|WTA_125": {
    "RESOLVED": 2180,
@@ -140,21 +140,21 @@
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 44994,
-  "matches_with_v2_and_incumbent": 5123,
-  "exchange_settled_predictions": 44994,
+  "predictions_with_v2_and_incumbent": 45004,
+  "matches_with_v2_and_incumbent": 5126,
+  "exchange_settled_predictions": 45004,
   "independently_resolved_predictions": 10064,
   "independently_settled_matches": 1181,
   "by_status": {
    "RESOLVED": 10064,
    "NOT_FOUND": 1532,
-   "NOT_COVERED": 33180,
+   "NOT_COVERED": 33188,
    "AMBIGUOUS": 118,
-   "PENDING_RESULT": 100
+   "PENDING_RESULT": 102
   },
   "reconciliation": {
    "AGREE": 10044,
-   "NOT_RECONCILED": 34930,
+   "NOT_RECONCILED": 34940,
    "EXPLAINED_NOTE": 78,
    "CONFLICT": 20
   },
@@ -163,7 +163,7 @@
     "RESOLVED": 2650,
     "NOT_FOUND": 1012,
     "AMBIGUOUS": 16,
-    "NOT_COVERED": 2776
+    "NOT_COVERED": 2784
    },
    "ATP ITF": {
     "NOT_COVERED": 13294
@@ -186,7 +186,7 @@
     "RESOLVED": 2234,
     "NOT_FOUND": 190,
     "AMBIGUOUS": 30,
-    "PENDING_RESULT": 30
+    "PENDING_RESULT": 32
    }
   },
   "stale_unresolved_tour_level": [
