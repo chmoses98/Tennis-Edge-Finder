@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 21:05Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-02 21:18Z)
 
 * Earliest credible first ball: **2026-11-03 05:30Z**
 * Recommended RUN TENNIS time: **2026-11-03 04:45Z**
@@ -18,11 +18,11 @@
 | Jeline Vandromme vs Kyoka Okamura | 2026-11-03 07:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Anastasia Zakharova vs Polina Iatcenko | 2026-11-03 07:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**9 main-tour match(es) without a verified start status** (BET blocked until checked): Stefanos Tsitsipas vs Learner Tien, Andrey Rublev vs Tomas Martin Etcheverry, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Quentin Halys vs Arthur Fery, Brandon Nakashima vs Matteo Berrettini, Ugo Humbert vs Botic Van de Zandschulp, Leylah Fernandez vs Sofia Kenin, Antonia Ruzic vs Alina Charaeva
+**8 main-tour match(es) without a verified start status** (BET blocked until checked): Stefanos Tsitsipas vs Learner Tien, Andrey Rublev vs Tomas Martin Etcheverry, Arthur Rinderknech vs Francisco Cerundolo, Tommy Paul vs Holger Rune, Quentin Halys vs Arthur Fery, Brandon Nakashima vs Matteo Berrettini, Leylah Fernandez vs Sofia Kenin, Antonia Ruzic vs Alina Charaeva
 
 Published slate: `SL-20261102T091357Z-97ba81f2` built 2026-11-02 09:13Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 38 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-11-03 07:30Z, run by 2026-11-03 06:45Z, 7 match(es)
 * later window 3: first ball 2026-11-03 10:00Z, run by 2026-11-03 09:15Z, 7 match(es)
