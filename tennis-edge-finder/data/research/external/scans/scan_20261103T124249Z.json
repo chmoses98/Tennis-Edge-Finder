@@ -1,0 +1,105 @@
+{
+ "generated_at": "2026-11-03T12:42:49.661933+00:00",
+ "run_id": "20261103T124249Z",
+ "external_parse": {
+  "events": 249,
+  "markets": 2104,
+  "skipped_family": 328,
+  "skipped_period": 613,
+  "skipped_live": 54,
+  "one_sided": 66,
+  "rows": 3474,
+  "devigged": 1091
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1442,
+  "markets_mapped": 546,
+  "contracts": 1206,
+  "quoted_contracts": 890,
+  "raw": "data/research/external/raw/20261103T124249Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 546,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 330,
+  "rows": 876,
+  "two_sided": 865,
+  "one_sided": 11
+ },
+ "kalshi_quotes_on_disk": 663,
+ "external_mapping": {
+  "total": 240,
+  "by_status": {
+   "MAPPED": 169,
+   "UNMAPPED_PLAYER": 22,
+   "DOUBLES_UNSUPPORTED": 49
+  },
+  "mapped_rate": 0.7042,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Jodie Anna Burrage": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Nazim Makhlouf": 1,
+   "Heorhii Shylov": 1,
+   "Akhmadjon Toshmukhamedov": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 68,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 163,
+  "by_status": {
+   "MAPPED": 145,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8896,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Xin Zhou": 1,
+   "Xavier Massotte": 1,
+   "Miguel Bellorio Pinheiro": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Rohan Sachdev": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 176,
+ "kalshi_mapped_matches": 145,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 110,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
