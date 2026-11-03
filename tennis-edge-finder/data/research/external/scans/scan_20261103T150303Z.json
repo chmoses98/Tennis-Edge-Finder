@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-03T15:03:03.155959+00:00",
+ "run_id": "20261103T150303Z",
+ "external_parse": {
+  "events": 205,
+  "markets": 1732,
+  "skipped_family": 251,
+  "skipped_period": 518,
+  "skipped_live": 41,
+  "one_sided": 54,
+  "rows": 2981,
+  "devigged": 907
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1351,
+  "markets_mapped": 492,
+  "contracts": 1090,
+  "quoted_contracts": 900,
+  "raw": "data/research/external/raw/20261103T150303Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 492,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 222,
+  "rows": 868,
+  "two_sided": 859,
+  "one_sided": 9
+ },
+ "kalshi_quotes_on_disk": 789,
+ "external_mapping": {
+  "total": 196,
+  "by_status": {
+   "MAPPED": 129,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.6582,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Alessio Pergola": 1,
+   "Lorenzo Rocco": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Rohan Sachdev": 1,
+   "Pedro Petroski Rocha": 1,
+   "Giovanni Branchetti": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 193,
+  "by_status": {
+   "MAPPED": 164,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8497,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Maria Carle": 1,
+   "Abdurakhmon Karimov": 1,
+   "Arkhip Kozlov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Xin Zhou": 1,
+   "Cristobal Plasencia Robles": 1,
+   "Joao Cunha Cunha": 1,
+   "Dragos Cazacu": 1
+  }
+ },
+ "matched_both_venues": 85,
+ "external_mapped_matches": 136,
+ "kalshi_mapped_matches": 164,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 105,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 68,
+  "tri:INSUFFICIENT_INPUTS": 27,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
