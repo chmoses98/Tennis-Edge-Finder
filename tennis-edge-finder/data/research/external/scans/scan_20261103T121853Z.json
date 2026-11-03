@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-11-03T12:18:53.427509+00:00",
+ "run_id": "20261103T121853Z",
+ "external_parse": {
+  "events": 254,
+  "markets": 2137,
+  "skipped_family": 322,
+  "skipped_period": 630,
+  "skipped_live": 56,
+  "one_sided": 73,
+  "rows": 3525,
+  "devigged": 1107
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1451,
+  "markets_mapped": 544,
+  "contracts": 1194,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261103T121853Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 544,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 328,
+  "rows": 866,
+  "two_sided": 859,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 746,
+ "external_mapping": {
+  "total": 245,
+  "by_status": {
+   "MAPPED": 175,
+   "UNMAPPED_PLAYER": 27,
+   "DOUBLES_UNSUPPORTED": 43
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Jodie Anna Burrage": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Kenta Kawada": 1,
+   "Pablo Perez Ramos": 1,
+   "Adrian Constantin": 1,
+   "Noah Held": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 182,
+  "by_status": {
+   "MAPPED": 166,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.9121,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Miguel Bellorio Pinheiro": 1,
+   "Lorenzo Rocco": 1,
+   "Pedro Petroski Rocha": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Nazim Makhlouf": 1,
+   "Heorhii Shylov": 1
+  }
+ },
+ "matched_both_venues": 104,
+ "external_mapped_matches": 184,
+ "kalshi_mapped_matches": 166,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 123,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 81,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
