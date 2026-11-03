@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-03T08:38:40.615408+00:00",
+ "run_id": "20261103T083840Z",
+ "external_parse": {
+  "events": 289,
+  "markets": 2572,
+  "skipped_family": 402,
+  "skipped_period": 748,
+  "skipped_live": 46,
+  "one_sided": 44,
+  "rows": 4317,
+  "devigged": 1375
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1656,
+  "markets_mapped": 599,
+  "contracts": 1288,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261103T083840Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 599,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 439,
+  "rows": 849,
+  "two_sided": 848,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 745,
+ "external_mapping": {
+  "total": 279,
+  "by_status": {
+   "MAPPED": 202,
+   "UNMAPPED_PLAYER": 24,
+   "DOUBLES_UNSUPPORTED": 52,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.724,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Jodie Anna Burrage": 1,
+   "Andres Martin (RAC)": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Taiyo Uenoyama": 1,
+   "Haru Kawanak": 1,
+   "Makhmudbek Beknazarov": 1,
+   "Jakub Januchowski": 1,
+   "Matias Reyniak": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 213,
+  "by_status": {
+   "MAPPED": 173,
+   "UNMAPPED_PLAYER": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8122,
+  "top_refusal_subjects": {
+   "Igor Marcondes": 1,
+   "Saidumar Saidakbarov": 1,
+   "Joao Cunha Cunha": 1,
+   "Carlo Arena Fava": 1,
+   "Pedro Petroski Rocha": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Vitor Machado De Melo Cunha": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Alessio Pergola": 1,
+   "Michael Wright": 1
+  }
+ },
+ "matched_both_venues": 88,
+ "external_mapped_matches": 207,
+ "kalshi_mapped_matches": 173,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 110,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "tri:KALSHI_LONE_OUTLIER": 13,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 31
+ }
+}
