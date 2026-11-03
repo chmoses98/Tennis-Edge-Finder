@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-11-03T16:13:05.548230+00:00",
+ "run_id": "20261103T161305Z",
+ "external_parse": {
+  "events": 203,
+  "markets": 1501,
+  "skipped_family": 219,
+  "skipped_period": 442,
+  "skipped_live": 56,
+  "one_sided": 55,
+  "rows": 2608,
+  "devigged": 783
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1293,
+  "markets_mapped": 462,
+  "contracts": 1030,
+  "quoted_contracts": 902,
+  "raw": "data/research/external/raw/20261103T161305Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 462,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 163,
+  "rows": 867,
+  "two_sided": 857,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 734,
+ "external_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 131,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6753,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Felix Bockelmann Evans": 1,
+   "Rudy Ceccon": 1,
+   "Giovanni Branchetti": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Felipe Badaro": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 220,
+  "by_status": {
+   "MAPPED": 189,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.8591,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Maria Carle": 1,
+   "Gregoire Delattre": 1,
+   "Cem Christopher Kucukhuseyin": 1,
+   "Abdurakhmon Karimov": 1,
+   "Alan Zinatulin": 1,
+   "Arkhip Kozlov": 1,
+   "Xin Zhou": 1
+  }
+ },
+ "matched_both_venues": 101,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 189,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 100,
+  "tri:MARKETS_AGREE": 13,
+  "tri:MODEL_LONE_OUTLIER": 65,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 4,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 39
+ }
+}
