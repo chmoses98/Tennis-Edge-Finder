@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-03T16:53:13.591134+00:00",
+ "run_id": "20261103T165313Z",
+ "external_parse": {
+  "events": 188,
+  "markets": 1395,
+  "skipped_family": 205,
+  "skipped_period": 407,
+  "skipped_live": 50,
+  "one_sided": 48,
+  "rows": 2437,
+  "devigged": 734
+ },
+ "smarkets_fetch": {
+  "events_seen": 145,
+  "events_priced": 80,
+  "markets": 1242,
+  "markets_mapped": 434,
+  "contracts": 960,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20261103T165313Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 434,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 116,
+  "rows": 844,
+  "two_sided": 837,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 653,
+ "external_mapping": {
+  "total": 179,
+  "by_status": {
+   "MAPPED": 117,
+   "DOUBLES_UNSUPPORTED": 45,
+   "UNMAPPED_PLAYER": 16,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6536,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 45,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Georgia Cranford": 1,
+   "Felix Bockelmann Evans": 1,
+   "Rudy Ceccon": 1,
+   "Giovanni Branchetti": 1,
+   "Vitor Machado de Melo Cunha": 1,
+   "Agustin E.C. Lorberg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 53,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Maria Carle": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 170,
+  "by_status": {
+   "MAPPED": 148,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8706,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Mario Vukovic": 1,
+   "Gregoire Delattre": 1,
+   "Alan Zinatulin": 1,
+   "Xin Zhou": 1,
+   "Dragos Cazacu": 1,
+   "Carlo Arena Fava": 1,
+   "Emilio Bravo": 1,
+   "Linus Rohlin": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 126,
+ "kalshi_mapped_matches": 148,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 67,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 42,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
