@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-11-03T14:53:02.645755+00:00",
+ "run_id": "20261103T145302Z",
+ "external_parse": {
+  "events": 207,
+  "markets": 1816,
+  "skipped_family": 265,
+  "skipped_period": 545,
+  "skipped_live": 38,
+  "one_sided": 54,
+  "rows": 3116,
+  "devigged": 950
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1348,
+  "markets_mapped": 488,
+  "contracts": 1084,
+  "quoted_contracts": 902,
+  "raw": "data/research/external/raw/20261103T145302Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 488,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 214,
+  "rows": 870,
+  "two_sided": 865,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 715,
+ "external_mapping": {
+  "total": 198,
+  "by_status": {
+   "MAPPED": 132,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Alessio Pergola": 1,
+   "Lorenzo Rocco": 1,
+   "Giovanni Branchetti": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Agustin E.C. Lorberg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 136,
+   "UNMAPPED_PLAYER": 30
+  },
+  "mapped_rate": 0.8193,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Maria Carle": 1,
+   "Abdurakhmon Karimov": 1,
+   "Arkhip Kozlov": 1,
+   "Xin Zhou": 1,
+   "Cristobal Plasencia Robles": 1,
+   "Joao Cunha Cunha": 1,
+   "Dragos Cazacu": 1
+  }
+ },
+ "matched_both_venues": 74,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 136,
+ "model_witness_available": true,
+ "rows": 94,
+ "counts": {
+  "PASS": 92,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 52,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "SHADOW_BET": 1,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
