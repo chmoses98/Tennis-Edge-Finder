@@ -1,9 +1,9 @@
 {
- "ledger_rows": 106419,
- "settlement_files": 263,
- "settlement_rows_unique": 104677,
+ "ledger_rows": 106740,
+ "settlement_files": 264,
+ "settlement_rows_unique": 104803,
  "settlement_rows_duplicate_prediction_ids": 0,
- "ledger_rows_settled": 104675,
+ "ledger_rows_settled": 104801,
  "settlement_rows_not_in_ledger": 2,
  "settlement_rows_not_in_ledger_sample": [
   [
@@ -15,63 +15,63 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 1744,
+ "ledger_rows_without_settlement_row": 1939,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 1744,
+ "of_which_not_yet_settled_or_not_swept": 1939,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
-  "yes": 47861,
-  "no": 53058,
-  "scalar": 3758
+  "yes": 47916,
+  "no": 53113,
+  "scalar": 3774
  },
- "gradeable_binary": 100919,
+ "gradeable_binary": 101029,
  "sports_truth_sources": {
-  "kalshi_result": 62032,
-  "none": 42645
+  "kalshi_result": 62062,
+  "none": 42741
  },
  "strict_clv_embedded_in_settlement_rows": 2956,
  "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that arrives later updates data/research/clv/<run>.jsonl but not the embedded copy",
  "health_layer_view_after_fix": {
-  "settled": 104677,
-  "settled_binary": 100919,
-  "settled_scalar": 3758,
-  "sports_truth_rows": 62032,
-  "sports_truth_kalshi_derived": 62032,
+  "settled": 104803,
+  "settled_binary": 101029,
+  "settled_scalar": 3774,
+  "sports_truth_rows": 62062,
+  "sports_truth_kalshi_derived": 62062,
   "sports_truth_independent": 49594,
-  "settlement_files": 263,
-  "independent_truth_run": "20261102T223534Z.jsonl.gz",
+  "settlement_files": 264,
+  "independent_truth_run": "20261103T043517Z.jsonl.gz",
   "independent_truth_by_status": {
-   "NOT_COVERED": 41084,
+   "NOT_COVERED": 41104,
    "RESOLVED": 51324,
-   "NO_CANONICAL_IDS": 4460,
+   "NO_CANONICAL_IDS": 4462,
    "AMBIGUOUS": 768,
    "NOT_FOUND": 6471,
-   "PENDING_RESULT": 568
+   "PENDING_RESULT": 672
   },
   "independent_truth_structural_non_coverage": {
    "WTA|ITF|NOT_COVERED": 21918,
-   "ATP|CHALLENGER|NO_CANONICAL_IDS": 1936,
-   "ATP|ITF|NOT_COVERED": 17924,
+   "ATP|CHALLENGER|NO_CANONICAL_IDS": 1938,
+   "ATP|ITF|NOT_COVERED": 17932,
    "WTA|WTA_125|NOT_COVERED": 184,
    "WTA|TOUR_500_250|NO_CANONICAL_IDS": 816,
    "ATP|TOUR_500_250|NO_CANONICAL_IDS": 988,
    "ATP|MASTERS_1000|NO_CANONICAL_IDS": 386,
    "WTA|MASTERS_1000|NO_CANONICAL_IDS": 334,
-   "ATP|CHALLENGER|NOT_COVERED": 1058,
+   "ATP|CHALLENGER|NOT_COVERED": 1070,
    "WTA|TOUR_500_250|PENDING_RESULT": 78,
-   "ATP|MASTERS_1000|PENDING_RESULT": 488,
+   "ATP|MASTERS_1000|PENDING_RESULT": 592,
    "WTA|WTA_125|PENDING_RESULT": 2
   },
   "independent_truth_rate_among_covered": 0.8764,
   "exchange_reconciliation": {
-   "NOT_RECONCILED": 49110,
+   "NOT_RECONCILED": 49140,
    "AGREE": 13998,
    "CONFLICT": 20
   },
   "exchange_conflicts": 20,
   "exchange_reconciled": 14018,
   "independent_truth_freshness": {
-   "as_of": "2026-11-02",
+   "as_of": "2026-11-03",
    "sources": {
     "sackmann_ATP_main": "20261102T134949Z",
     "sackmann_ATP_qual_chall": "20261102T134949Z",
@@ -89,37 +89,37 @@
    "horizons": {
     "ATP tour": {
      "newest_result": "2026-11-02",
-     "lag_days": 0,
+     "lag_days": 1,
      "live": true,
      "coverage": "full"
     },
     "ATP Challenger": {
      "newest_result": "2026-10-26",
-     "lag_days": 7,
+     "lag_days": 8,
      "live": false,
      "coverage": "full"
     },
     "ATP ITF": {
      "newest_result": "2026-04-27",
-     "lag_days": 189,
+     "lag_days": 190,
      "live": false,
      "coverage": "full"
     },
     "WTA tour": {
      "newest_result": "2026-11-02",
-     "lag_days": 0,
+     "lag_days": 1,
      "live": true,
      "coverage": "full"
     },
     "WTA 125": {
      "newest_result": "2026-11-02",
-     "lag_days": 0,
+     "lag_days": 1,
      "live": true,
      "coverage": "partial"
     },
     "WTA ITF": {
      "newest_result": "2026-04-27",
-     "lag_days": 189,
+     "lag_days": 190,
      "live": false,
      "coverage": "full"
     }
@@ -127,27 +127,27 @@
    "espn_families_not_live": []
   },
   "independent_truth_resolution": {
-   "newly_resolved": 339,
+   "newly_resolved": 0,
    "first_resolutions_total": 52112,
    "backfill": false,
-   "lag_days_median_new": 1.94,
-   "lag_days_max_new": 1.94
+   "lag_days_median_new": null,
+   "lag_days_max_new": null
   },
   "prospective_v2": {
-   "predictions_with_v2_and_incumbent": 45514,
-   "exchange_settled_predictions": 45514,
+   "predictions_with_v2_and_incumbent": 45542,
+   "exchange_settled_predictions": 45542,
    "independently_resolved_predictions": 11178,
    "independently_settled_matches": 1325,
    "by_status": {
     "RESOLVED": 11178,
     "NOT_FOUND": 2302,
-    "NOT_COVERED": 31804,
+    "NOT_COVERED": 31824,
     "AMBIGUOUS": 136,
-    "PENDING_RESULT": 94
+    "PENDING_RESULT": 102
    },
    "reconciliation": {
     "AGREE": 11158,
-    "NOT_RECONCILED": 34336,
+    "NOT_RECONCILED": 34364,
     "EXPLAINED_NOTE": 78,
     "CONFLICT": 20
    },
@@ -156,16 +156,16 @@
      "RESOLVED": 3640,
      "NOT_FOUND": 1768,
      "AMBIGUOUS": 26,
-     "NOT_COVERED": 1058
+     "NOT_COVERED": 1070
     },
     "ATP ITF": {
-     "NOT_COVERED": 13346
+     "NOT_COVERED": 13354
     },
     "ATP tour": {
      "RESOLVED": 3736,
      "NOT_FOUND": 330,
      "AMBIGUOUS": 80,
-     "PENDING_RESULT": 72
+     "PENDING_RESULT": 80
     },
     "WTA 125": {
      "NOT_COVERED": 140,
@@ -182,11 +182,11 @@
      "PENDING_RESULT": 20
     }
    },
-   "n_stale_unresolved_tour_level": 520,
+   "n_stale_unresolved_tour_level": 534,
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261102T223433Z.jsonl.gz",
+  "clv_run": "20261103T043415Z.jsonl.gz",
   "settled_with_ab_truth": 3672,
   "settled_with_close": 3302,
   "settled_strict_clv": 2956,
