@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-03T09:28:41.243809+00:00",
+ "run_id": "20261103T092841Z",
+ "external_parse": {
+  "events": 277,
+  "markets": 2355,
+  "skipped_family": 383,
+  "skipped_period": 686,
+  "skipped_live": 59,
+  "one_sided": 43,
+  "rows": 3948,
+  "devigged": 1241
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1667,
+  "markets_mapped": 605,
+  "contracts": 1304,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261103T092841Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 605,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 467,
+  "rows": 837,
+  "two_sided": 831,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 759,
+ "external_mapping": {
+  "total": 267,
+  "by_status": {
+   "MAPPED": 198,
+   "UNMAPPED_PLAYER": 28,
+   "DOUBLES_UNSUPPORTED": 40,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7416,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Jodie Anna Burrage": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Taiyo Uenoyama": 1,
+   "Haru Kawanak": 1,
+   "Makhmudbek Beknazarov": 1,
+   "Gabriele Maria Piano": 1,
+   "Jakub Januchowski": 1,
+   "Luca Jinar": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 214,
+  "by_status": {
+   "MAPPED": 173,
+   "UNMAPPED_PLAYER": 40,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8084,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Saidumar Saidakbarov": 1,
+   "Dragos Cazacu": 1,
+   "Antoine Clavel": 1,
+   "Lorenzo Rocco": 1,
+   "Pedro Petroski Rocha": 1,
+   "Rohan Sachdev": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Alessio Pergola": 1,
+   "Michael Wright": 1
+  }
+ },
+ "matched_both_venues": 87,
+ "external_mapped_matches": 204,
+ "kalshi_mapped_matches": 173,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 63,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 37
+ }
+}
