@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-03T08:09:58.351387+00:00",
+ "run_id": "20261103T080958Z",
+ "external_parse": {
+  "events": 283,
+  "markets": 2647,
+  "skipped_family": 412,
+  "skipped_period": 768,
+  "skipped_live": 33,
+  "one_sided": 40,
+  "rows": 4465,
+  "devigged": 1424
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1647,
+  "markets_mapped": 597,
+  "contracts": 1282,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261103T080958Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 597,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 431,
+  "rows": 851,
+  "two_sided": 850,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1925,
+ "external_mapping": {
+  "total": 273,
+  "by_status": {
+   "MAPPED": 202,
+   "UNMAPPED_PLAYER": 18,
+   "DOUBLES_UNSUPPORTED": 52,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7399,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 52,
+   "Jodie Anna Burrage": 1,
+   "Andres Martin (RAC)": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Tomoki Fujiwara": 1,
+   "Makhmudbek Beknazarov": 1,
+   "Nazim Makhlouf": 1,
+   "Rohan Sachdev": 1,
+   "Xavier Massotte": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 68,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 341,
+  "by_status": {
+   "MAPPED": 275,
+   "UNMAPPED_PLAYER": 65,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8065,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Maria Carle": 1,
+   "Saidumar Saidakbarov": 1,
+   "Joao Cunha Cunha": 1,
+   "Dragos Cazacu": 1,
+   "Felipe Badaro": 1,
+   "Carlo Arena Fava": 1,
+   "Emilio Bravo": 1
+  }
+ },
+ "matched_both_venues": 133,
+ "external_mapped_matches": 207,
+ "kalshi_mapped_matches": 275,
+ "model_witness_available": true,
+ "rows": 212,
+ "counts": {
+  "PASS": 206,
+  "tri:INSUFFICIENT_INPUTS": 163,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 6,
+  "WATCH": 6,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
