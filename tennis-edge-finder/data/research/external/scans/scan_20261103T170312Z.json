@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-03T17:03:12.392335+00:00",
+ "run_id": "20261103T170312Z",
+ "external_parse": {
+  "events": 190,
+  "markets": 1450,
+  "skipped_family": 229,
+  "skipped_period": 422,
+  "skipped_live": 52,
+  "one_sided": 32,
+  "rows": 2582,
+  "devigged": 767
+ },
+ "smarkets_fetch": {
+  "events_seen": 149,
+  "events_priced": 80,
+  "markets": 1184,
+  "markets_mapped": 419,
+  "contracts": 928,
+  "quoted_contracts": 888,
+  "raw": "data/research/external/raw/20261103T170312Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 419,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 68,
+  "rows": 860,
+  "two_sided": 853,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 714,
+ "external_mapping": {
+  "total": 181,
+  "by_status": {
+   "MAPPED": 120,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.663,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Georgia Cranford": 1,
+   "Felix Bockelmann Evans": 1,
+   "Rudy Ceccon": 1,
+   "Rohan Sachdev": 1,
+   "Pedro Petroski Rocha": 1,
+   "Vitor Machado de Melo Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 21,
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Maria Carle": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 173,
+  "by_status": {
+   "MAPPED": 152,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.8786,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Mario Vukovic": 1,
+   "Gregoire Delattre": 1,
+   "Cem Christopher Kucukhuseyin": 1,
+   "Alan Zinatulin": 1,
+   "Carlo Arena Fava": 1,
+   "Emilio Bravo": 1,
+   "Linus Rohlin": 1,
+   "August Brostroem Poulsen": 1
+  }
+ },
+ "matched_both_venues": 77,
+ "external_mapped_matches": 131,
+ "kalshi_mapped_matches": 152,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 62,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 47,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
