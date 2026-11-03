@@ -1,9 +1,9 @@
 {
- "built_at": "2026-11-03T10:59:47.446143+00:00",
+ "built_at": "2026-11-03T16:21:47.514048+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
-   "run": "20261102T134949Z",
+   "run": "20261103T125936Z",
    "files": {
     "atp_matches_1990.csv.gz": {
      "raw": 3681,
@@ -194,7 +194,7 @@
   },
   "sackmann_ATP_qual_chall": {
    "status": "OK",
-   "run": "20261102T134949Z",
+   "run": "20261103T125936Z",
    "files": {
     "atp_matches_qual_chall_1990.csv.gz": {
      "raw": 2233,
@@ -385,7 +385,7 @@
   },
   "sackmann_ATP_futures": {
    "status": "OK",
-   "run": "20261102T134949Z",
+   "run": "20261103T125936Z",
    "files": {
     "atp_matches_futures_1991.csv.gz": {
      "raw": 9059,
@@ -571,7 +571,7 @@
   },
   "sackmann_WTA_main": {
    "status": "OK",
-   "run": "20261102T134949Z",
+   "run": "20261103T125936Z",
    "files": {
     "wta_matches_1990.csv.gz": {
      "raw": 2728,
@@ -762,7 +762,7 @@
   },
   "sackmann_WTA_qual_itf": {
    "status": "OK",
-   "run": "20261102T134949Z",
+   "run": "20261103T125936Z",
    "files": {
     "wta_matches_qual_itf_1990.csv.gz": {
      "raw": 7763,
@@ -953,7 +953,7 @@
   },
   "tml_ATP_main": {
    "status": "OK",
-   "run": "20261102T134949Z",
+   "run": "20261103T125936Z",
    "files": {
     "1990.csv.gz": {
      "raw": 3683,
@@ -1144,7 +1144,7 @@
   },
   "tml_ATP_challenger": {
    "status": "OK",
-   "run": "20261102T135457Z",
+   "run": "20261103T130521Z",
    "files": {
     "2000_challenger.csv.gz": {
      "raw": 3534,
@@ -1285,7 +1285,7 @@
   },
   "tml_ATP_main_mirror": {
    "status": "OK",
-   "run": "20261102T135457Z",
+   "run": "20261103T130521Z",
    "files": {
     "2025.csv.gz": {
      "raw": 2944,
@@ -1301,22 +1301,22 @@
   },
   "espn_ATP": {
    "status": "OK",
-   "run": "20261102T135304Z",
+   "run": "20261103T130319Z",
    "files": {
     "espn_matches_ATP_2026.csv.gz": {
-     "raw": 2691,
-     "clean": 2690,
+     "raw": 2702,
+     "clean": 2701,
      "quarantine": 1
     }
    }
   },
   "espn_WTA": {
    "status": "OK",
-   "run": "20261102T135304Z",
+   "run": "20261103T130319Z",
    "files": {
     "espn_matches_WTA_2026.csv.gz": {
-     "raw": 4615,
-     "clean": 4615,
+     "raw": 4641,
+     "clean": 4641,
      "quarantine": 0
     }
    }
@@ -1432,18 +1432,18 @@
   "tml_ATP_main_mirror->sackmann_ATP_main": 766
  },
  "player_crosswalk": {
-  "foreign_players": 6302,
+  "foreign_players": 6305,
   "by_status": {
-   "MAPPED": 5865,
+   "MAPPED": 5868,
    "NEAR_CANONICAL_MATCH": 194,
    "MINTED_NEW_PLAYER": 104,
    "REVIEWED_ALIAS": 75,
    "AMBIGUOUS_NAME": 64
   },
-  "rows_total": 1545029,
-  "rows_canonical_id": 1540189,
-  "foreign_rows": 21009,
-  "foreign_rows_mapped": 16169
+  "rows_total": 1545066,
+  "rows_canonical_id": 1540226,
+  "foreign_rows": 21046,
+  "foreign_rows_mapped": 16206
  },
  "player_crosswalk_by_system": {
   "tml": {
@@ -1457,9 +1457,9 @@
    }
   },
   "espn": {
-   "foreign_players": 1210,
+   "foreign_players": 1213,
    "by_status": {
-    "MAPPED": 1077,
+    "MAPPED": 1080,
     "NEAR_CANONICAL_MATCH": 52,
     "REVIEWED_ALIAS": 43,
     "MINTED_NEW_PLAYER": 29,
@@ -1467,13 +1467,13 @@
    }
   }
  },
- "rows": 1545029,
+ "rows": 1545066,
  "quarantine_rows": 14174,
  "by_tour_level": {
   "ATP|CHALLENGER": 200499,
   "ATP|GRAND_SLAM": 30690,
   "ATP|ITF": 516861,
-  "ATP|MASTERS_1000": 25210,
+  "ATP|MASTERS_1000": 25221,
   "ATP|OLYMPICS": 68,
   "ATP|TEAM": 11364,
   "ATP|TOUR_500_250": 84451,
@@ -1484,14 +1484,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 70121,
+  "WTA|TOUR_500_250": 70147,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
   "sackmann": 1524020,
   "tml": 16038,
-  "espn": 4971
+  "espn": 5008
  },
  "seasons": {
   "1990": 15735,
@@ -1530,7 +1530,7 @@
   "2023": 69007,
   "2024": 74955,
   "2025": 55501,
-  "2026": 28128
+  "2026": 28165
  },
- "matches_sha256": "67102611d333f637d1d8d6c9e7b192a9ded048b99b1533bd5b6b3db868d79304"
+ "matches_sha256": "566dda6cedc451f80fc32b0d00fae901b2587f4b62e19f5a733472ef6827e307"
 }
