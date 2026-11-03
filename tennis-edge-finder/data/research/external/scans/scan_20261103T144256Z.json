@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-03T14:42:56.087188+00:00",
+ "run_id": "20261103T144256Z",
+ "external_parse": {
+  "events": 207,
+  "markets": 1816,
+  "skipped_family": 265,
+  "skipped_period": 545,
+  "skipped_live": 38,
+  "one_sided": 54,
+  "rows": 3116,
+  "devigged": 950
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1363,
+  "markets_mapped": 488,
+  "contracts": 1084,
+  "quoted_contracts": 902,
+  "raw": "data/research/external/raw/20261103T144256Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 488,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 214,
+  "rows": 870,
+  "two_sided": 864,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 867,
+ "external_mapping": {
+  "total": 198,
+  "by_status": {
+   "MAPPED": 132,
+   "DOUBLES_UNSUPPORTED": 50,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 50,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Alessio Pergola": 1,
+   "Lorenzo Rocco": 1,
+   "Giovanni Branchetti": 1,
+   "Lorenzo Sverzut Corsini": 1,
+   "Agustin E.C. Lorberg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Jeffrey John Wolf": 1,
+   "Maria Carle": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 149,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.8466,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Igor Marcondes": 1,
+   "Maria Carle": 1,
+   "Abdurakhmon Karimov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Joao Cunha Cunha": 1,
+   "Dragos Cazacu": 1,
+   "Carlo Arena Fava": 1,
+   "Emilio Bravo": 1,
+   "Antoine Clavel": 1
+  }
+ },
+ "matched_both_venues": 83,
+ "external_mapped_matches": 139,
+ "kalshi_mapped_matches": 149,
+ "model_witness_available": true,
+ "rows": 106,
+ "counts": {
+  "PASS": 102,
+  "tri:MARKETS_AGREE": 7,
+  "tri:MODEL_LONE_OUTLIER": 72,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "WATCH": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 24
+ }
+}
