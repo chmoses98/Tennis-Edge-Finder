@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-03T13:02:49.361575+00:00",
+ "run_id": "20261103T130249Z",
+ "external_parse": {
+  "events": 245,
+  "markets": 2104,
+  "skipped_family": 329,
+  "skipped_period": 615,
+  "skipped_live": 51,
+  "one_sided": 66,
+  "rows": 3479,
+  "devigged": 1089
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 1420,
+  "markets_mapped": 535,
+  "contracts": 1180,
+  "quoted_contracts": 892,
+  "raw": "data/research/external/raw/20261103T130249Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 535,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 307,
+  "rows": 873,
+  "two_sided": 863,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 723,
+ "external_mapping": {
+  "total": 236,
+  "by_status": {
+   "MAPPED": 167,
+   "UNMAPPED_PLAYER": 20,
+   "DOUBLES_UNSUPPORTED": 49
+  },
+  "mapped_rate": 0.7076,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Jodie Anna Burrage": 1,
+   "Andres Martin (RAC)": 1,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Heorhii Shylov": 1,
+   "Nazim Makhlouf": 1,
+   "Giovanni Branchetti": 1,
+   "Lorenzo Sverzut Corsini": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 191,
+  "by_status": {
+   "MAPPED": 171,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8953,
+  "top_refusal_subjects": {
+   "Jeffrey John Wolf": 1,
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Maria Carle": 1,
+   "Linus Rohlin": 1,
+   "Xavier Massotte": 1,
+   "Miguel Bellorio Pinheiro": 1,
+   "Andy Tchinda Kepche": 1,
+   "Bruno Vieira Alves Malacarne Bruno": 1,
+   "Vitor Machado De Melo Cunha": 1
+  }
+ },
+ "matched_both_venues": 117,
+ "external_mapped_matches": 174,
+ "kalshi_mapped_matches": 171,
+ "model_witness_available": true,
+ "rows": 144,
+ "counts": {
+  "PASS": 143,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 65,
+  "tri:INSUFFICIENT_INPUTS": 71,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
