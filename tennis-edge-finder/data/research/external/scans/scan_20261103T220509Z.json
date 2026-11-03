@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-03T22:05:09.633034+00:00",
+ "run_id": "20261103T220509Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1186,
+  "skipped_family": 180,
+  "skipped_period": 366,
+  "skipped_live": 31,
+  "one_sided": 14,
+  "rows": 2037,
+  "devigged": 625
+ },
+ "smarkets_fetch": {
+  "events_seen": 132,
+  "events_priced": 80,
+  "markets": 1172,
+  "markets_mapped": 411,
+  "contracts": 882,
+  "quoted_contracts": 860,
+  "raw": "data/research/external/raw/20261103T220509Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 411,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 63,
+  "rows": 819,
+  "two_sided": 817,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1669,
+ "external_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 93,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7099,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Igor Marcondes": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Noma Akugue Noha": 1,
+   "Lily Stohl": 1,
+   "Lawee Sherif": 1,
+   "Felipe Badaro": 1,
+   "Joao Cunha Cunha": 1,
+   "Xin Zhou": 1,
+   "Arkhip Kozlov": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 36
+  },
+  "mapped_rate": 0.55,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36
+  }
+ },
+ "kalshi_mapping": {
+  "total": 300,
+  "by_status": {
+   "MAPPED": 258,
+   "UNMAPPED_PLAYER": 40,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.86,
+  "top_refusal_subjects": {
+   "Santiago Rodriguez Taverna": 1,
+   "Igor Marcondes": 1,
+   "Giovanni Branchetti": 1,
+   "Antonio Marigliano": 1,
+   "Aren Baybars": 1,
+   "Michael Wright": 1,
+   "Pablo Perez Ramos": 1,
+   "Matias Reyniak": 1,
+   "Vuk Krstajic": 1,
+   "Saveli Razanau": 1
+  }
+ },
+ "matched_both_venues": 79,
+ "external_mapped_matches": 109,
+ "kalshi_mapped_matches": 258,
+ "model_witness_available": true,
+ "rows": 108,
+ "counts": {
+  "PASS": 108,
+  "tri:MODEL_LONE_OUTLIER": 40,
+  "tri:INSUFFICIENT_INPUTS": 62,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
