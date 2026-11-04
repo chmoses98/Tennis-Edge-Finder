@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-04T11:54:39.784201+00:00",
+ "run_id": "20261104T115439Z",
+ "external_parse": {
+  "events": 275,
+  "markets": 2114,
+  "skipped_family": 271,
+  "skipped_period": 614,
+  "skipped_live": 55,
+  "one_sided": 65,
+  "rows": 3221,
+  "devigged": 1163
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 1013,
+  "markets_mapped": 415,
+  "contracts": 910,
+  "quoted_contracts": 880,
+  "raw": "data/research/external/raw/20261104T115439Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 415,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 61,
+  "rows": 849,
+  "two_sided": 846,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 1647,
+ "external_mapping": {
+  "total": 266,
+  "by_status": {
+   "MAPPED": 186,
+   "DOUBLES_UNSUPPORTED": 49,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6992,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 49,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Michael Wright": 1,
+   "Pablo Perez Ramos": 1,
+   "Matias Reyniak": 1,
+   "Saveli Razanau": 1,
+   "Cem Christopher Kucukhuseyin": 1,
+   "Antonio Marigliano": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 259,
+  "by_status": {
+   "MAPPED": 229,
+   "UNMAPPED_PLAYER": 28,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8842,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Igor Marcondes": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Mathias Roy": 1,
+   "Prathinav Chunduru": 1,
+   "Carlo Arena Fava": 1,
+   "Tristan McCormick": 1,
+   "Joao Cunha Cunha": 1,
+   "Kayden Colombo": 1,
+   "Juan Sebastian Dominguez Collado": 1
+  }
+ },
+ "matched_both_venues": 171,
+ "external_mapped_matches": 191,
+ "kalshi_mapped_matches": 229,
+ "model_witness_available": true,
+ "rows": 228,
+ "counts": {
+  "PASS": 225,
+  "tri:MODEL_LONE_OUTLIER": 80,
+  "tri:INSUFFICIENT_INPUTS": 127,
+  "tri:MARKETS_AGREE": 15,
+  "WATCH": 3,
+  "tri:KALSHI_LONE_OUTLIER": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 43
+ }
+}
