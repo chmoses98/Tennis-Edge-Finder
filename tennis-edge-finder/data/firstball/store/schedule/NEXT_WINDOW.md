@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 12:29Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 12:40Z)
 
 * Earliest credible first ball: **2026-11-04 13:00Z**
 * Recommended RUN TENNIS time: **2026-11-04 12:15Z**  (OVERDUE: run now)
@@ -16,9 +16,9 @@
 
 **4 main-tour match(es) without a verified start status** (BET blocked until checked): Alexander Zverev vs Lorenzo Musetti, Moyuka Uchijima vs Magda Linette, Anastasia Zakharova vs Vaishnavi Adkar, Janice Tjen vs Joanna Garland
 
-Published slate: `SL-20261104T090557Z-654c7933` built 2026-11-04 09:05Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-04T13:00:00+00:00, slate built 2026-11-04T09:05:57.658953+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 14 match(es)
+Published slate: `SL-20261104T090557Z-654c7933` built 2026-11-04 09:05Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-04T13:00:00+00:00, slate built 2026-11-04T09:05:57.658953+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 15 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-04 16:00Z, run by 2026-11-04 15:15Z, 2 match(es)
 * later window 3: first ball 2026-11-04 18:00Z, run by 2026-11-04 17:15Z, 2 match(es)
