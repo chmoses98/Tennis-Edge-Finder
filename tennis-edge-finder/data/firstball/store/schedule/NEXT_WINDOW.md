@@ -1,20 +1,20 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 06:59Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 07:09Z)
 
-* Earliest credible first ball: **2026-11-04 07:28Z**
-* Recommended RUN TENNIS time: **2026-11-04 06:43Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-04 07:18Z**
+* Earliest credible first ball: **2026-11-04 07:14Z**
+* Recommended RUN TENNIS time: **2026-11-04 06:29Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-04 07:04Z**
 * Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Talia Gibson vs Aliaksandra Sasnovich | 2026-11-04 07:28Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 1 in progress (set 1 of best-of-3) | MEDIUM |
-| Claire Liu vs Katie Boulter | 2026-11-04 07:28Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3) | MEDIUM |
+| Claire Liu vs Katie Boulter | 2026-11-04 07:14Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Centre Court in progress (set 2 of best-of-3) | MEDIUM |
+| Talia Gibson vs Aliaksandra Sasnovich | 2026-11-04 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **3 main-tour match(es) without a verified start status** (BET blocked until checked): Moyuka Uchijima vs Magda Linette, Anastasia Zakharova vs Vaishnavi Adkar, Antonia Ruzic vs Alina Charaeva
 
-Published slate: `SL-20261104T061550Z-8b576846` built 2026-11-04 06:15Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-04T07:28:43.711205+00:00, slate built 2026-11-04T06:15:50.985847+00:00
+Published slate: `SL-20261104T061550Z-8b576846` built 2026-11-04 06:15Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-04T07:14:46.482975+00:00, slate built 2026-11-04T06:15:50.985847+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-04 09:30Z, run by 2026-11-04 08:45Z, 6 match(es)
 * later window 3: first ball 2026-11-04 11:30Z, run by 2026-11-04 10:45Z, 6 match(es)
