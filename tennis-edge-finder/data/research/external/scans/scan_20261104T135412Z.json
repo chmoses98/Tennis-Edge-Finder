@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-04T13:54:12.836955+00:00",
+ "run_id": "20261104T135412Z",
+ "external_parse": {
+  "events": 243,
+  "markets": 1897,
+  "skipped_family": 223,
+  "skipped_period": 547,
+  "skipped_live": 48,
+  "one_sided": 53,
+  "rows": 2927,
+  "devigged": 1074
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 919,
+  "markets_mapped": 389,
+  "contracts": 858,
+  "quoted_contracts": 858,
+  "raw": "data/research/external/raw/20261104T135412Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 389,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 833,
+  "two_sided": 831,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1549,
+ "external_mapping": {
+  "total": 234,
+  "by_status": {
+   "MAPPED": 176,
+   "DOUBLES_UNSUPPORTED": 38,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7521,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Joao Cunha Cunha": 1,
+   "Joaquim de Almeida": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 236,
+  "by_status": {
+   "MAPPED": 210,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8898,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Igor Marcondes": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Xin Zhou": 1,
+   "Seongchan Hong": 1,
+   "Digvijay Pratap Singh": 1,
+   "Mathias Roy": 1,
+   "Prathinav Chunduru": 1,
+   "Carlo Arena Fava": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 159,
+ "external_mapped_matches": 188,
+ "kalshi_mapped_matches": 210,
+ "model_witness_available": true,
+ "rows": 218,
+ "counts": {
+  "PASS": 214,
+  "tri:MODEL_LONE_OUTLIER": 62,
+  "tri:INSUFFICIENT_INPUTS": 132,
+  "tri:MARKETS_AGREE": 14,
+  "tri:KALSHI_LONE_OUTLIER": 10,
+  "WATCH": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
