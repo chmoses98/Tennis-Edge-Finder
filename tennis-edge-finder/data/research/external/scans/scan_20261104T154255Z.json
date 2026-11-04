@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-04T15:42:55.974191+00:00",
+ "run_id": "20261104T154255Z",
+ "external_parse": {
+  "events": 202,
+  "markets": 1512,
+  "skipped_family": 162,
+  "skipped_period": 449,
+  "skipped_live": 43,
+  "one_sided": 58,
+  "rows": 2328,
+  "devigged": 843
+ },
+ "smarkets_fetch": {
+  "events_seen": 108,
+  "events_priced": 80,
+  "markets": 996,
+  "markets_mapped": 401,
+  "contracts": 874,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261104T154255Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 401,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 862,
+  "two_sided": 860,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 589,
+ "external_mapping": {
+  "total": 193,
+  "by_status": {
+   "MAPPED": 148,
+   "DOUBLES_UNSUPPORTED": 26,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7668,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Kim Johannes Niethammer": 1,
+   "Antonio Marigliano": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Joao Cunha Cunha": 1,
+   "Joaquim de Almeida": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8966,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Seongchan Hong": 1,
+   "Digvijay Pratap Singh": 1,
+   "Carlo Arena Fava": 1,
+   "Tristan McCormick": 1,
+   "Joao Cunha Cunha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Kim Johannes Niethammer": 1,
+   "Giovanni Branchetti": 1,
+   "Antonio Marigliano": 1
+  }
+ },
+ "matched_both_venues": 103,
+ "external_mapped_matches": 164,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 124,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:MARKETS_AGREE": 7,
+  "tri:INSUFFICIENT_INPUTS": 72,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
