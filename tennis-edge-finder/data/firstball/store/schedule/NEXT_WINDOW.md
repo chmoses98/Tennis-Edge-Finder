@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 05:36Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 05:46Z)
 
 * Earliest credible first ball: **2026-11-04 07:30Z**
 * Recommended RUN TENNIS time: **2026-11-04 06:45Z**
@@ -10,7 +10,7 @@
 | Talia Gibson vs Aliaksandra Sasnovich | 2026-11-04 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Claire Liu vs Katie Boulter | 2026-11-04 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**4 main-tour match(es) without a verified start status** (BET blocked until checked): Moyuka Uchijima vs Magda Linette, Anastasia Zakharova vs Vaishnavi Adkar, Leylah Fernandez vs Sofia Kenin, Antonia Ruzic vs Alina Charaeva
+**3 main-tour match(es) without a verified start status** (BET blocked until checked): Moyuka Uchijima vs Magda Linette, Anastasia Zakharova vs Vaishnavi Adkar, Antonia Ruzic vs Alina Charaeva
 
 Published slate: `SL-20261104T003018Z-c6662f47` built 2026-11-04 00:30Z -- current
 
