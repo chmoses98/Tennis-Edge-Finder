@@ -61,3 +61,30 @@ def test_truth_reconciliation():
     wo = SportsTruth("m1", "A", "B", "WALKOVER", "W/O", confidence=0.95)
     assert reconcile(wo, e_scalar, True)["consistent"]
     assert not wo.gradeable_binary and s.gradeable_binary
+
+
+def test_quoted_execution_clv_is_half_spread_not_full_spread_and_fee_once():
+    """clv_executable (close BID - entry ASK) is a round-trip liquidation value. On a market that never moves it scores
+    minus the FULL entry spread plus half the close spread; the canonical quoted-execution CLV (close MID - entry ASK)
+    scores only the half spread, and the entry fee is charged once in the separate net figure."""
+    from tennis_edge.ledger.clv import clv_record
+    from tennis_edge.pricing.fees import taker_fee
+    entry = Quote(T0 - timedelta(minutes=60), 0.48, 0.52, source="market_record")
+    cc = canonical_close([Quote(T0 - timedelta(minutes=1), 0.48, 0.52, source="market_record")], TRUTH)
+    rec = clv_record(prediction_id="p", ticker="T", match_id="m1", family="MATCH_WINNER", entry=entry, close=cc,
+                     truth=TRUTH, timing=classify(entry.ts, TRUTH))
+    assert abs(rec.clv_midpoint) < 1e-12                                   # nothing moved
+    assert abs(rec.clv_executable - (-0.04)) < 1e-12                        # full 4c spread
+    assert abs(rec.clv_quoted_execution - (-0.02)) < 1e-12                  # half spread only
+    fee = taker_fee(0.52, 1)
+    assert abs(rec.entry_taker_fee_per_contract - fee) < 1e-12
+    assert abs(rec.clv_quoted_execution_net_of_entry_fee - (-0.02 - fee)) < 1e-12   # fee counted once
+
+
+def test_quoted_execution_clv_absent_when_entry_not_executable():
+    from tennis_edge.ledger.clv import clv_record
+    entry = Quote(T0 - timedelta(minutes=60), None, 0.52, source="market_record")
+    cc = canonical_close([Quote(T0 - timedelta(minutes=1), 0.48, 0.52, source="market_record")], TRUTH)
+    rec = clv_record(prediction_id="p", ticker="T", match_id="m1", family="MATCH_WINNER", entry=entry, close=cc,
+                     truth=TRUTH, timing=classify(entry.ts, TRUTH))
+    assert rec.clv_quoted_execution is None and rec.clv_quoted_execution_net_of_entry_fee is None

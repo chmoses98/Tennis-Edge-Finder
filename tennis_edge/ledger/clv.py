@@ -22,7 +22,18 @@ event. Price-space and probability-space movement are therefore the SAME NUMBER 
 including spreads and totals, whose contracts are binary on a threshold. Both are reported, with explicit
 units, so that nobody later mistakes one for a separate piece of evidence.
 
-Fees are computed but reported SEPARATELY and never folded into a CLV number.
+Added in engine v2.1 (additive; the three measures above and every gate that reads them are unchanged):
+
+  clv_quoted_execution                 close_mid - entry_yes_ask. The CANONICAL quoted-execution CLV: pre-fee, includes
+                                       only the half-spread paid on entry. NOT clv_executable: that one subtracts the
+                                       close BID from the entry ASK, i.e. it charges the full entry spread plus half the
+                                       close spread - a round-trip liquidation value that a position held to the
+                                       first ball never realises. Do not describe clv_executable as execution CLV.
+  clv_quoted_execution_net_of_entry_fee  clv_quoted_execution - entry_taker_fee_per_contract. The entry fee is charged
+                                       exactly once; no closing fee is ever charged. The fee is a MODEL (quantity-1
+                                       ceiling, an upper bound on the per-contract fee of a larger fill), not a fill.
+
+Fees are computed but reported SEPARATELY and never folded into the three original CLV numbers.
 
 Strictness. A CLV record is `strict` only when the close is anchored to A/B first-ball truth AND the
 entry itself classifies as STRICT_PREGAME. Anything else is retained, labelled, and excluded from strict
@@ -38,7 +49,7 @@ from tennis_edge.firstball.truth import FirstBallTruth
 from tennis_edge.ledger.close import CanonicalClose, Quote
 from tennis_edge.pricing.fees import FeeSchedule, taker_fee
 
-CLV_ENGINE_VERSION = 2
+CLV_ENGINE_VERSION = 2   # additive fields in v2.1 do not change any existing field; version number kept so ledgers stay comparable
 
 
 @dataclass(frozen=True)
@@ -78,6 +89,8 @@ class ClvRecord:
     clv_executable: float | None = None
     clv_ask_to_ask: float | None = None
     clv_midpoint: float | None = None
+    clv_quoted_execution: float | None = None
+    clv_quoted_execution_net_of_entry_fee: float | None = None
     price_move_cents: float | None = None
     prob_move: float | None = None
     # ---- model context
@@ -126,6 +139,8 @@ def clv_record(*, prediction_id: str, ticker: str, match_id: str, family: str, e
     exe = (cq.yes_bid - entry.yes_ask) if (entry_ok and close_ok) else None
     a2a = (cq.yes_ask - entry.yes_ask) if (entry_ok and close_ok) else None
     midclv = (cq.mid - entry.mid) if (entry_ok and close_ok) else None
+    qex = (cq.mid - entry.yes_ask) if (entry_ok and close_ok and cq.mid is not None) else None
+    entry_fee = taker_fee(entry.yes_ask, 1, fs) if entry_ok else None
     return ClvRecord(
         prediction_id=prediction_id, ticker=ticker, match_id=match_id, family=family, tour=tour, level=level,
         entry_ts=entry.ts if entry else None,
@@ -143,12 +158,14 @@ def clv_record(*, prediction_id: str, ticker: str, match_id: str, family: str, e
         seconds_close_to_first_ball=(lo - cq.ts).total_seconds() if (lo and cq) else None,
         seconds_entry_to_close=(cq.ts - entry.ts).total_seconds() if (cq and entry) else None,
         clv_executable=exe, clv_ask_to_ask=a2a, clv_midpoint=midclv,
+        clv_quoted_execution=qex,
+        clv_quoted_execution_net_of_entry_fee=(qex - entry_fee) if (qex is not None and entry_fee is not None) else None,
         price_move_cents=round(midclv * 100, 4) if midclv is not None else None,
         prob_move=midclv,
         model_prob=model_prob,
         market_mid_at_entry=entry.mid if entry else None,
         model_market_disagreement=(model_prob - entry.mid) if (model_prob is not None and entry_ok) else None,
         data_quality_grade=data_quality_grade,
-        entry_taker_fee_per_contract=taker_fee(entry.yes_ask, 1, fs) if entry_ok else None,
+        entry_taker_fee_per_contract=entry_fee,
         close_taker_fee_per_contract=taker_fee(cq.yes_bid, 1, fs) if close_ok else None,
         strict=strict, exclusion_reason="; ".join(reasons))
