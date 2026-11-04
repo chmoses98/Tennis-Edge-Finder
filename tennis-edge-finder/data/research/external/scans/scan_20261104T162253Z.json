@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-04T16:22:53.756606+00:00",
+ "run_id": "20261104T162253Z",
+ "external_parse": {
+  "events": 185,
+  "markets": 1287,
+  "skipped_family": 143,
+  "skipped_period": 375,
+  "skipped_live": 50,
+  "one_sided": 34,
+  "rows": 2017,
+  "devigged": 735
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 1090,
+  "markets_mapped": 411,
+  "contracts": 894,
+  "quoted_contracts": 872,
+  "raw": "data/research/external/raw/20261104T162253Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 411,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 61,
+  "rows": 833,
+  "two_sided": 831,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 577,
+ "external_mapping": {
+  "total": 176,
+  "by_status": {
+   "MAPPED": 139,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7898,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Antonio Marigliano": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Joao Cunha Cunha": 1,
+   "Joaquim de Almeida": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 136,
+  "by_status": {
+   "MAPPED": 121,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.8897,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Heorhii Shylov": 1,
+   "Xin Zhou": 1,
+   "Seongchan Hong": 1,
+   "Digvijay Pratap Singh": 1,
+   "Mathias Roy": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Antonio Marigliano": 1,
+   "Theresa Stabauer": 1,
+   "Anastasia Lepskaya": 1
+  }
+ },
+ "matched_both_venues": 82,
+ "external_mapped_matches": 157,
+ "kalshi_mapped_matches": 121,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 83,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 38,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:EXTERNAL_LONE_OUTLIER": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 35
+ }
+}
