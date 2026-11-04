@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-11-04T15:22:49.638048+00:00",
+ "run_id": "20261104T152249Z",
+ "external_parse": {
+  "events": 213,
+  "markets": 1591,
+  "skipped_family": 181,
+  "skipped_period": 465,
+  "skipped_live": 50,
+  "one_sided": 45,
+  "rows": 2478,
+  "devigged": 900
+ },
+ "smarkets_fetch": {
+  "events_seen": 109,
+  "events_priced": 80,
+  "markets": 980,
+  "markets_mapped": 399,
+  "contracts": 870,
+  "quoted_contracts": 870,
+  "raw": "data/research/external/raw/20261104T152249Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 399,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 862,
+  "two_sided": 860,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 591,
+ "external_mapping": {
+  "total": 204,
+  "by_status": {
+   "MAPPED": 156,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7647,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Kim Johannes Niethammer": 1,
+   "Antonio Marigliano": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Joao Cunha Cunha": 1,
+   "Joaquim de Almeida": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 140,
+  "by_status": {
+   "MAPPED": 127,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9071,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Xin Zhou": 1,
+   "Seongchan Hong": 1,
+   "Digvijay Pratap Singh": 1,
+   "Carlo Arena Fava": 1,
+   "Tristan McCormick": 1,
+   "Joao Cunha Cunha": 1,
+   "Kayden Colombo": 1,
+   "Kim Johannes Niethammer": 1
+  }
+ },
+ "matched_both_venues": 100,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 127,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 126,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:MARKETS_AGREE": 11,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 32
+ }
+}
