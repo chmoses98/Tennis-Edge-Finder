@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 00:39Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 00:49Z)
 
 * Earliest credible first ball: **2026-11-04 07:30Z**
 * Recommended RUN TENNIS time: **2026-11-04 06:45Z**
@@ -12,7 +12,7 @@
 
 **4 main-tour match(es) without a verified start status** (BET blocked until checked): Moyuka Uchijima vs Magda Linette, Anastasia Zakharova vs Vaishnavi Adkar, Leylah Fernandez vs Sofia Kenin, Antonia Ruzic vs Alina Charaeva
 
-Published slate: `SL-20261104T000046Z-e64ecaa4` built 2026-11-04 00:00Z -- current
+Published slate: `SL-20261104T003018Z-c6662f47` built 2026-11-04 00:30Z -- current
 
 Dispatched this pass: none
 
