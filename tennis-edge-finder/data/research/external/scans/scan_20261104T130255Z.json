@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-04T13:02:55.357759+00:00",
+ "run_id": "20261104T130255Z",
+ "external_parse": {
+  "events": 267,
+  "markets": 2122,
+  "skipped_family": 255,
+  "skipped_period": 609,
+  "skipped_live": 46,
+  "one_sided": 64,
+  "rows": 3228,
+  "devigged": 1194
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 956,
+  "markets_mapped": 408,
+  "contracts": 898,
+  "quoted_contracts": 882,
+  "raw": "data/research/external/raw/20261104T130255Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 408,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 856,
+  "two_sided": 854,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 761,
+ "external_mapping": {
+  "total": 258,
+  "by_status": {
+   "MAPPED": 193,
+   "DOUBLES_UNSUPPORTED": 43,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7481,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Pablo Perez Ramos": 1,
+   "Matias Reyniak": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Joao Cunha Cunha": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 130,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.9155,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Igor Marcondes": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kim Johannes Niethammer": 1,
+   "Giovanni Branchetti": 1,
+   "Pablo Perez Ramos": 1,
+   "Matias Reyniak": 1,
+   "Yeonwoo Ku": 1,
+   "Abigail Haile": 1,
+   "Agustina Tarantola": 1
+  }
+ },
+ "matched_both_venues": 104,
+ "external_mapped_matches": 202,
+ "kalshi_mapped_matches": 130,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 123,
+  "tri:MODEL_LONE_OUTLIER": 49,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 68,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 36
+ }
+}
