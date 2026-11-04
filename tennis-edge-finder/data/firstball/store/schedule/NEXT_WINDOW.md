@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 22:23Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 22:35Z)
 
 * Earliest credible first ball: **2026-11-05 06:00Z**
 * Recommended RUN TENNIS time: **2026-11-05 05:15Z**
@@ -18,4 +18,4 @@ Dispatched this pass: none
 * later window 2: first ball 2026-11-05 09:30Z, run by 2026-11-05 08:45Z, 5 match(es)
 * later window 3: first ball 2026-11-05 11:30Z, run by 2026-11-05 10:45Z, 5 match(es)
 * later window 4: first ball 2026-11-05 14:30Z, run by 2026-11-05 13:45Z, 2 match(es)
-* later window 5: first ball 2026-11-05 18:00Z, run by 2026-11-05 17:15Z, 1 match(es)
+* later window 5: first ball 2026-11-05 18:00Z, run by 2026-11-05 17:15Z, 2 match(es)
