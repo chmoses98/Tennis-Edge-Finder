@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-04T16:32:53.468421+00:00",
+ "run_id": "20261104T163253Z",
+ "external_parse": {
+  "events": 183,
+  "markets": 1244,
+  "skipped_family": 142,
+  "skipped_period": 360,
+  "skipped_live": 51,
+  "one_sided": 41,
+  "rows": 1909,
+  "devigged": 701
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 1049,
+  "markets_mapped": 400,
+  "contracts": 866,
+  "quoted_contracts": 866,
+  "raw": "data/research/external/raw/20261104T163253Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 400,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 824,
+  "two_sided": 823,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 611,
+ "external_mapping": {
+  "total": 174,
+  "by_status": {
+   "MAPPED": 137,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7874,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Antonio Marigliano": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Joao Cunha Cunha": 1,
+   "Joaquim de Almeida": 1,
+   "Tristan McCormick": 1,
+   "Juan Sebastian Dominguez Collado": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 29,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 152,
+  "by_status": {
+   "MAPPED": 137,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.9013,
+  "top_refusal_subjects": {
+   "Heorhii Shylov": 1,
+   "Xin Zhou": 1,
+   "Seongchan Hong": 1,
+   "Digvijay Pratap Singh": 1,
+   "Mathias Roy": 1,
+   "Prathinav Chunduru": 1,
+   "Tristan McCormick": 1,
+   "Joao Cunha Cunha": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Antonio Marigliano": 1
+  }
+ },
+ "matched_both_venues": 99,
+ "external_mapped_matches": 158,
+ "kalshi_mapped_matches": 137,
+ "model_witness_available": true,
+ "rows": 100,
+ "counts": {
+  "PASS": 99,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 42
+ }
+}
