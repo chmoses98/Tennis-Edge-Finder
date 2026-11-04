@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-11-04T12:22:52.958928+00:00",
+ "run_id": "20261104T122252Z",
+ "external_parse": {
+  "events": 266,
+  "markets": 2058,
+  "skipped_family": 263,
+  "skipped_period": 599,
+  "skipped_live": 51,
+  "one_sided": 76,
+  "rows": 3116,
+  "devigged": 1120
+ },
+ "smarkets_fetch": {
+  "events_seen": 117,
+  "events_priced": 80,
+  "markets": 1045,
+  "markets_mapped": 436,
+  "contracts": 960,
+  "quoted_contracts": 886,
+  "raw": "data/research/external/raw/20261104T122252Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 117,
+  "rows": 843,
+  "two_sided": 836,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 574,
+ "external_mapping": {
+  "total": 257,
+  "by_status": {
+   "MAPPED": 181,
+   "DOUBLES_UNSUPPORTED": 48,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7043,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 48,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "N. Khirin": 1,
+   "Michael Wright": 1,
+   "Pablo Perez Ramos": 1,
+   "Matias Reyniak": 1,
+   "Saveli Razanau": 1,
+   "Cem Christopher Kucukhuseyin": 1,
+   "Antonio Marigliano": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Igor Marcondes": 1,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 135,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8667,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Igor Marcondes": 1,
+   "Prathinav Chunduru": 1,
+   "Carlo Arena Fava": 1,
+   "Tristan McCormick": 1,
+   "Kayden Colombo": 1,
+   "Juan Sebastian Dominguez Collado": 1,
+   "Giovanni Branchetti": 1,
+   "Michael Wright": 1,
+   "Pablo Perez Ramos": 1
+  }
+ },
+ "matched_both_venues": 90,
+ "external_mapped_matches": 186,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 80,
+  "tri:MODEL_LONE_OUTLIER": 46,
+  "tri:INSUFFICIENT_INPUTS": 23,
+  "tri:MARKETS_AGREE": 10,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 41
+ }
+}
