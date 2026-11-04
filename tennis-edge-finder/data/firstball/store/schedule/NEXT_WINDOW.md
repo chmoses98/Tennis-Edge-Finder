@@ -1,20 +1,21 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 05:46Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 05:56Z)
 
-* Earliest credible first ball: **2026-11-04 07:30Z**
-* Recommended RUN TENNIS time: **2026-11-04 06:45Z**
-* Final price/status check time: **2026-11-04 07:20Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-11-04 06:00Z**
+* Recommended RUN TENNIS time: **2026-11-04 05:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-04 05:50Z**
+* Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
+| Mika Stojsavljevic vs Sofia Kenin | 2026-11-04 06:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Talia Gibson vs Aliaksandra Sasnovich | 2026-11-04 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Claire Liu vs Katie Boulter | 2026-11-04 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 **3 main-tour match(es) without a verified start status** (BET blocked until checked): Moyuka Uchijima vs Magda Linette, Anastasia Zakharova vs Vaishnavi Adkar, Antonia Ruzic vs Alina Charaeva
 
-Published slate: `SL-20261104T003018Z-c6662f47` built 2026-11-04 00:30Z -- current
+Published slate: `SL-20261104T003018Z-c6662f47` built 2026-11-04 00:30Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-04T06:00:00+00:00, slate built 2026-11-04T00:30:18.361152+00:00
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-04 09:30Z, run by 2026-11-04 08:45Z, 6 match(es)
 * later window 3: first ball 2026-11-04 11:30Z, run by 2026-11-04 10:45Z, 6 match(es)
