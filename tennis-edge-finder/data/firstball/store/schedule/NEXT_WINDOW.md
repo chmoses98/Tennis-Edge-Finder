@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 14:25Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 14:41Z)
 
-* Earliest credible first ball: **2026-11-05 14:58Z**
-* Recommended RUN TENNIS time: **2026-11-05 14:13Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-05 14:48Z**
+* Earliest credible first ball: **2026-11-05 15:00Z**
+* Recommended RUN TENNIS time: **2026-11-05 14:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-05 14:50Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Nuno Borges vs Ignacio Buse | 2026-11-05 14:58Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court 1 in progress (set 2 of best-of-5) | MEDIUM |
+| Nuno Borges vs Ignacio Buse | 2026-11-05 15:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Lorenzo Musetti vs Luca Van Assche
 
-Published slate: `SL-20261105T090450Z-00f841fe` built 2026-11-05 09:04Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-05T14:58:02.765175+00:00, slate built 2026-11-05T09:04:50.107314+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 18 match(es)
+Published slate: `SL-20261105T090450Z-00f841fe` built 2026-11-05 09:04Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-05T15:00:00+00:00, slate built 2026-11-05T09:04:50.107314+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 19 match(es)
 
 Dispatched this pass: slate_primary (ok)
 
