@@ -1,0 +1,79 @@
+{
+ "generated_at": "2026-11-05T08:50:16.142188+00:00",
+ "run_id": "20261105T085016Z",
+ "external_parse": {
+  "events": 273,
+  "markets": 2142,
+  "skipped_family": 295,
+  "skipped_period": 567,
+  "skipped_live": 38,
+  "one_sided": 120,
+  "rows": 3032,
+  "devigged": 1160
+ },
+ "smarkets_fetch": {
+  "events_seen": 110,
+  "events_priced": 80,
+  "markets": 1125,
+  "markets_mapped": 417,
+  "contracts": 910,
+  "quoted_contracts": 876,
+  "raw": "data/research/external/raw/20261105T085016Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 417,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 53,
+  "rows": 857,
+  "two_sided": 854,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 0,
+ "external_mapping": {
+  "total": 262,
+  "by_status": {
+   "MAPPED": 189,
+   "DOUBLES_UNSUPPORTED": 39,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7214,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Noma Akugue Noha": 1,
+   "Tsukamoto Koji": 1,
+   "Motokura Yakumo": 1,
+   "Kenta Kawada": 1,
+   "Leonard Tramolay": 1,
+   "Nathan Pitts": 1,
+   "Perez Francisco": 1,
+   "Henry Dornbusch": 1,
+   "Delgado Sarah": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 35,
+   "MAPPED": 45
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35
+  }
+ },
+ "kalshi_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "matched_both_venues": 0,
+ "external_mapped_matches": 191,
+ "kalshi_mapped_matches": 0,
+ "model_witness_available": true,
+ "rows": 0,
+ "counts": {},
+ "skips": {}
+}
