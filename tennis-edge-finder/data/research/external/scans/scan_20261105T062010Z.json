@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-11-05T06:20:10.195485+00:00",
+ "run_id": "20261105T062010Z",
+ "external_parse": {
+  "events": 229,
+  "markets": 2019,
+  "skipped_family": 246,
+  "skipped_period": 548,
+  "skipped_live": 15,
+  "one_sided": 62,
+  "rows": 3044,
+  "devigged": 1163
+ },
+ "smarkets_fetch": {
+  "events_seen": 101,
+  "events_priced": 80,
+  "markets": 1148,
+  "markets_mapped": 420,
+  "contracts": 906,
+  "quoted_contracts": 864,
+  "raw": "data/research/external/raw/20261105T062010Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 420,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 101,
+  "rows": 805,
+  "two_sided": 803,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 455,
+ "external_mapping": {
+  "total": 218,
+  "by_status": {
+   "MAPPED": 163,
+   "UNMAPPED_PLAYER": 20,
+   "DOUBLES_UNSUPPORTED": 35
+  },
+  "mapped_rate": 0.7477,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Xinyu Wang": 1,
+   "Noma Akugue Noha": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Michael Wright": 1,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Rohan Sachdev": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 32,
+   "MAPPED": 48
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32
+  }
+ },
+ "kalshi_mapping": {
+  "total": 94,
+  "by_status": {
+   "MAPPED": 85,
+   "UNMAPPED_PLAYER": 8,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9043,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Nazim Makhlouf": 1,
+   "Heorhii Shylov": 1,
+   "Seongchan Hong": 1,
+   "Digvijay Pratap Singh": 1,
+   "Brooke Black": 1,
+   "Abigail Haile": 1,
+   "Valeriia Iushchenko": 1,
+   "Maria Pankratova": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 85,
+ "model_witness_available": true,
+ "rows": 112,
+ "counts": {
+  "PASS": 111,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
