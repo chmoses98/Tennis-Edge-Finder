@@ -1,7 +1,7 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 08:35Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 08:45Z)
 
 * Earliest credible first ball: **2026-11-05 09:30Z**
-* Recommended RUN TENNIS time: **2026-11-05 08:45Z**
+* Recommended RUN TENNIS time: **2026-11-05 08:45Z**  (OVERDUE: run now)
 * Final price/status check time: **2026-11-05 09:20Z**
 * Matches in window: 5
 
@@ -15,9 +15,9 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Mika Stojsavljevic vs Zeynep Sonmez
 
-Published slate: `SL-20261105T075336Z-a4ce41cb` built 2026-11-05 07:53Z -- current
+Published slate: `SL-20261105T075336Z-a4ce41cb` built 2026-11-05 07:53Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-05T09:30:00+00:00, slate built 2026-11-05T07:53:36.867948+00:00
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-11-05 11:30Z, run by 2026-11-05 10:45Z, 5 match(es)
 * later window 3: first ball 2026-11-05 14:30Z, run by 2026-11-05 13:45Z, 2 match(es)
