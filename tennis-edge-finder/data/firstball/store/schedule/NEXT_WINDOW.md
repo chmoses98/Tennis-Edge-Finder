@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 05:41Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 05:59Z)
 
 * Earliest credible first ball: **2026-11-05 06:00Z**
 * Recommended RUN TENNIS time: **2026-11-05 05:15Z**  (OVERDUE: run now)
@@ -7,13 +7,13 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Elena Pridankina vs Alexandra Shubladze | 2026-11-05 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
-| Xinyu Wang vs Antonia Ruzic | 2026-11-05 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Elena Pridankina vs Alexandra Shubladze | 2026-11-05 06:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Xinyu Wang vs Antonia Ruzic | 2026-11-05 06:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Mika Stojsavljevic vs Zeynep Sonmez | 2026-11-05 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
 Published slate: `SL-20261105T000443Z-cb0da17d` built 2026-11-05 00:04Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-05T06:00:00+00:00, slate built 2026-11-05T00:04:43.465209+00:00
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-05 09:30Z, run by 2026-11-05 08:45Z, 5 match(es)
 * later window 3: first ball 2026-11-05 11:30Z, run by 2026-11-05 10:45Z, 5 match(es)
