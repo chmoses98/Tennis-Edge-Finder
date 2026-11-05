@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 20:06Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 20:16Z)
 
 * Earliest credible first ball: **2026-11-06 06:00Z**
 * Recommended RUN TENNIS time: **2026-11-06 05:15Z**
@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Zeynep Sonmez vs Claire Liu | 2026-11-06 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261105T192603Z-0a52354f` built 2026-11-05 19:26Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261105T195520Z-9ba48432` built 2026-11-05 19:55Z -- current
 
 Dispatched this pass: none
 
