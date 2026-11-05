@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-11-05T17:21:10.358903+00:00",
+ "run_id": "20261105T172110Z",
+ "external_parse": {
+  "events": 132,
+  "markets": 826,
+  "skipped_family": 173,
+  "skipped_period": 212,
+  "skipped_live": 45,
+  "one_sided": 46,
+  "rows": 1226,
+  "devigged": 395
+ },
+ "smarkets_fetch": {
+  "events_seen": 67,
+  "events_priced": 59,
+  "markets": 660,
+  "markets_mapped": 271,
+  "contracts": 584,
+  "quoted_contracts": 584,
+  "raw": "data/research/external/raw/20261105T172110Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 271,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 558,
+  "two_sided": 556,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 474,
+ "external_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 85,
+   "DOUBLES_UNSUPPORTED": 21,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7025,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 21,
+   "Tsukamoto Koji": 1,
+   "Motokura Yakumo": 1,
+   "Kenta Kawada": 1,
+   "Nathan Pitts": 1,
+   "Perez Francisco": 1,
+   "Leonard Tramolay": 1,
+   "Henry Dornbusch": 1,
+   "Delgado Sarah": 1,
+   "Georgia Cranford": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.661,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20
+  }
+ },
+ "kalshi_mapping": {
+  "total": 89,
+  "by_status": {
+   "MAPPED": 83,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9326,
+  "top_refusal_subjects": {
+   "Heorhii Shylov": 1,
+   "Dragos Cazacu": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Sofia Barhacova": 1,
+   "Brooke Black": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 83,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 49,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 33
+ }
+}
