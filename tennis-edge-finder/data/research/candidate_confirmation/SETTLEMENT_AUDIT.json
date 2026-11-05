@@ -1,9 +1,9 @@
 {
- "ledger_rows": 111662,
- "settlement_files": 273,
- "settlement_rows_unique": 110127,
+ "ledger_rows": 112270,
+ "settlement_files": 274,
+ "settlement_rows_unique": 110221,
  "settlement_rows_duplicate_prediction_ids": 0,
- "ledger_rows_settled": 110125,
+ "ledger_rows_settled": 110219,
  "settlement_rows_not_in_ledger": 2,
  "settlement_rows_not_in_ledger_sample": [
   [
@@ -15,33 +15,33 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 1537,
+ "ledger_rows_without_settlement_row": 2051,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 1537,
+ "of_which_not_yet_settled_or_not_swept": 2051,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
-  "yes": 50330,
-  "no": 55735,
+  "yes": 50377,
+  "no": 55782,
   "scalar": 4062
  },
- "gradeable_binary": 106065,
+ "gradeable_binary": 106159,
  "sports_truth_sources": {
-  "kalshi_result": 65252,
+  "kalshi_result": 65346,
   "none": 44875
  },
  "strict_clv_embedded_in_settlement_rows": 2956,
  "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that arrives later updates data/research/clv/<run>.jsonl but not the embedded copy",
  "health_layer_view_after_fix": {
-  "settled": 110127,
-  "settled_binary": 106065,
+  "settled": 110221,
+  "settled_binary": 106159,
   "settled_scalar": 4062,
-  "sports_truth_rows": 65252,
-  "sports_truth_kalshi_derived": 65252,
+  "sports_truth_rows": 65346,
+  "sports_truth_kalshi_derived": 65346,
   "sports_truth_independent": 51687,
-  "settlement_files": 273,
-  "independent_truth_run": "20261105T052529Z.jsonl.gz",
+  "settlement_files": 274,
+  "independent_truth_run": "20261105T073959Z.jsonl.gz",
   "independent_truth_by_status": {
-   "NOT_COVERED": 43680,
+   "NOT_COVERED": 43774,
    "RESOLVED": 53451,
    "NO_CANONICAL_IDS": 4764,
    "AMBIGUOUS": 804,
@@ -49,7 +49,7 @@
    "PENDING_RESULT": 609
   },
   "independent_truth_structural_non_coverage": {
-   "WTA|ITF|NOT_COVERED": 23114,
+   "WTA|ITF|NOT_COVERED": 23192,
    "ATP|CHALLENGER|NO_CANONICAL_IDS": 2092,
    "ATP|ITF|NOT_COVERED": 19050,
    "WTA|WTA_125|NOT_COVERED": 184,
@@ -57,14 +57,14 @@
    "ATP|TOUR_500_250|NO_CANONICAL_IDS": 988,
    "ATP|MASTERS_1000|NO_CANONICAL_IDS": 484,
    "WTA|MASTERS_1000|NO_CANONICAL_IDS": 334,
-   "ATP|CHALLENGER|NOT_COVERED": 1332,
+   "ATP|CHALLENGER|NOT_COVERED": 1348,
    "WTA|TOUR_500_250|PENDING_RESULT": 63,
    "WTA|WTA_125|PENDING_RESULT": 72,
    "ATP|MASTERS_1000|PENDING_RESULT": 474
   },
   "independent_truth_rate_among_covered": 0.8752,
   "exchange_reconciliation": {
-   "NOT_RECONCILED": 52134,
+   "NOT_RECONCILED": 52228,
    "AGREE": 14308,
    "CONFLICT": 26
   },
@@ -134,20 +134,20 @@
    "lag_days_max_new": null
   },
   "prospective_v2": {
-   "predictions_with_v2_and_incumbent": 48550,
-   "exchange_settled_predictions": 48550,
+   "predictions_with_v2_and_incumbent": 48644,
+   "exchange_settled_predictions": 48644,
    "independently_resolved_predictions": 11494,
    "independently_settled_matches": 1388,
    "by_status": {
     "RESOLVED": 11494,
     "NOT_FOUND": 2368,
-    "NOT_COVERED": 34400,
+    "NOT_COVERED": 34494,
     "AMBIGUOUS": 144,
     "PENDING_RESULT": 144
    },
    "reconciliation": {
     "AGREE": 11468,
-    "NOT_RECONCILED": 37056,
+    "NOT_RECONCILED": 37150,
     "EXPLAINED_NOTE": 78,
     "CONFLICT": 26
    },
@@ -156,7 +156,7 @@
      "RESOLVED": 3640,
      "NOT_FOUND": 1768,
      "AMBIGUOUS": 26,
-     "NOT_COVERED": 1332
+     "NOT_COVERED": 1348
     },
     "ATP ITF": {
      "NOT_COVERED": 14472
@@ -173,7 +173,7 @@
      "PENDING_RESULT": 72
     },
     "WTA ITF": {
-     "NOT_COVERED": 18456
+     "NOT_COVERED": 18534
     },
     "WTA tour": {
      "RESOLVED": 2362,
@@ -186,7 +186,7 @@
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261105T052451Z.jsonl.gz",
+  "clv_run": "20261105T073908Z.jsonl.gz",
   "settled_with_ab_truth": 3672,
   "settled_with_close": 3302,
   "settled_strict_clv": 2956,

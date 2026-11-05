@@ -1,9 +1,9 @@
 {
- "run_id": "20261105T052529Z",
- "source_stamp": "20261104T132920Z|2026-11-05T05:19:13.739275+00:00",
- "settled": 110125,
+ "run_id": "20261105T073959Z",
+ "source_stamp": "20261104T132920Z|2026-11-05T07:31:08.321140+00:00",
+ "settled": 110219,
  "by_status": {
-  "NOT_COVERED": 43680,
+  "NOT_COVERED": 43774,
   "RESOLVED": 53451,
   "NO_CANONICAL_IDS": 4764,
   "AMBIGUOUS": 804,
@@ -11,7 +11,7 @@
   "PENDING_RESULT": 609
  },
  "reconciliation": {
-  "NOT_RECONCILED": 52134,
+  "NOT_RECONCILED": 52228,
   "AGREE": 14308,
   "CONFLICT": 26
  },
@@ -21,7 +21,7 @@
    "NO_CANONICAL_IDS": 2092,
    "AMBIGUOUS": 32,
    "NOT_FOUND": 2636,
-   "NOT_COVERED": 1332
+   "NOT_COVERED": 1348
   },
   "ATP|GRAND_SLAM": {
    "RESOLVED": 176
@@ -50,7 +50,7 @@
    "RESOLVED": 89
   },
   "WTA|ITF": {
-   "NOT_COVERED": 23114
+   "NOT_COVERED": 23192
   },
   "WTA|MASTERS_1000": {
    "RESOLVED": 2375,
@@ -139,21 +139,21 @@
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 48550,
-  "matches_with_v2_and_incumbent": 5828,
-  "exchange_settled_predictions": 48550,
+  "predictions_with_v2_and_incumbent": 48644,
+  "matches_with_v2_and_incumbent": 5841,
+  "exchange_settled_predictions": 48644,
   "independently_resolved_predictions": 11494,
   "independently_settled_matches": 1388,
   "by_status": {
    "RESOLVED": 11494,
    "NOT_FOUND": 2368,
-   "NOT_COVERED": 34400,
+   "NOT_COVERED": 34494,
    "AMBIGUOUS": 144,
    "PENDING_RESULT": 144
   },
   "reconciliation": {
    "AGREE": 11468,
-   "NOT_RECONCILED": 37056,
+   "NOT_RECONCILED": 37150,
    "EXPLAINED_NOTE": 78,
    "CONFLICT": 26
   },
@@ -162,7 +162,7 @@
     "RESOLVED": 3640,
     "NOT_FOUND": 1768,
     "AMBIGUOUS": 26,
-    "NOT_COVERED": 1332
+    "NOT_COVERED": 1348
    },
    "ATP ITF": {
     "NOT_COVERED": 14472
@@ -179,7 +179,7 @@
     "PENDING_RESULT": 72
    },
    "WTA ITF": {
-    "NOT_COVERED": 18456
+    "NOT_COVERED": 18534
    },
    "WTA tour": {
     "RESOLVED": 2362,
