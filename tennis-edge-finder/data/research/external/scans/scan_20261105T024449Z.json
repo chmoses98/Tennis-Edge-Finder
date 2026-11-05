@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-05T02:44:49.443550+00:00",
+ "run_id": "20261105T024449Z",
+ "external_parse": {
+  "events": 182,
+  "markets": 1675,
+  "skipped_family": 222,
+  "skipped_period": 475,
+  "skipped_live": 15,
+  "one_sided": 22,
+  "rows": 2658,
+  "devigged": 956
+ },
+ "smarkets_fetch": {
+  "events_seen": 97,
+  "events_priced": 80,
+  "markets": 1179,
+  "markets_mapped": 436,
+  "contracts": 922,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261105T024449Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 436,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 119,
+  "rows": 803,
+  "two_sided": 802,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 394,
+ "external_mapping": {
+  "total": 171,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 15,
+   "DOUBLES_UNSUPPORTED": 32
+  },
+  "mapped_rate": 0.7251,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Xinyu Wang": 1,
+   "Noma Akugue Noha": 1,
+   "Sofia Thorne": 1,
+   "Mlouk Olivia": 1,
+   "Winston Lee": 1,
+   "Xin Zhou": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 54,
+   "DOUBLES_UNSUPPORTED": 25,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.675,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 77,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8961,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Rohan Sachdev": 1,
+   "Matias Reyniak": 1,
+   "Xin Zhou": 1,
+   "Sofia Barhacova": 1,
+   "Sophie Ehrenbergerova": 1,
+   "Anastasia Lepskaya": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 141,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 75,
+  "tri:MODEL_LONE_OUTLIER": 39,
+  "tri:MARKETS_AGREE": 7,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 30
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
