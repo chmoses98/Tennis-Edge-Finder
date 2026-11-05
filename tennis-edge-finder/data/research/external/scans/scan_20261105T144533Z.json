@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-11-05T14:45:33.071709+00:00",
+ "run_id": "20261105T144533Z",
+ "external_parse": {
+  "events": 168,
+  "markets": 1244,
+  "skipped_family": 180,
+  "skipped_period": 336,
+  "skipped_live": 33,
+  "one_sided": 61,
+  "rows": 1764,
+  "devigged": 667
+ },
+ "smarkets_fetch": {
+  "events_seen": 78,
+  "events_priced": 70,
+  "markets": 783,
+  "markets_mapped": 309,
+  "contracts": 676,
+  "quoted_contracts": 676,
+  "raw": "data/research/external/raw/20261105T144533Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 309,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 662,
+  "two_sided": 658,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 358,
+ "external_mapping": {
+  "total": 159,
+  "by_status": {
+   "MAPPED": 109,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 20,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6855,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Tsukamoto Koji": 1,
+   "Motokura Yakumo": 1,
+   "Kenta Kawada": 1,
+   "Leonard Tramolay": 1,
+   "Nathan Pitts": 1,
+   "Perez Francisco": 1,
+   "Henry Dornbusch": 1,
+   "Delgado Sarah": 1,
+   "Georgia Cranford": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 25
+  },
+  "mapped_rate": 0.6429,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 25
+  }
+ },
+ "kalshi_mapping": {
+  "total": 73,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9452,
+  "top_refusal_subjects": {
+   "Antoine Genereux": 1,
+   "Yara Bartashevich": 1,
+   "Abigail Haile": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "matched_both_venues": 56,
+ "external_mapped_matches": 128,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 65,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 26,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 21
+ }
+}
