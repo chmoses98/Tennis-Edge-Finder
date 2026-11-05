@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-05T00:44:42.469629+00:00",
+ "run_id": "20261105T004442Z",
+ "external_parse": {
+  "events": 183,
+  "markets": 1642,
+  "skipped_family": 214,
+  "skipped_period": 444,
+  "skipped_live": 9,
+  "one_sided": 33,
+  "rows": 2584,
+  "devigged": 951
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 1154,
+  "markets_mapped": 425,
+  "contracts": 900,
+  "quoted_contracts": 848,
+  "raw": "data/research/external/raw/20261105T004442Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 425,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 93,
+  "rows": 807,
+  "two_sided": 803,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 366,
+ "external_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 123,
+   "UNMAPPED_PLAYER": 14,
+   "DOUBLES_UNSUPPORTED": 35
+  },
+  "mapped_rate": 0.7151,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Xinyu Wang": 1,
+   "Noma Akugue Noha": 1,
+   "Nathan Pitts": 1,
+   "Sofia Thorne": 1,
+   "Xin Zhou": 1,
+   "Digvijay Pratap Singh": 1,
+   "Pablo Perez Ramos": 1,
+   "Nazim Makhlouf": 1,
+   "Maria Pankratova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 24,
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Xinyu Wang": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9375,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Seongchan Hong": 1,
+   "Sofia Barhacova": 1,
+   "Sophie Ehrenbergerova": 1,
+   "Anastasia Lepskaya": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 65,
+ "external_mapped_matches": 140,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 124,
+ "counts": {
+  "PASS": 123,
+  "tri:MODEL_LONE_OUTLIER": 45,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {}
+}
