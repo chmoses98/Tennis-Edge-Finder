@@ -1,0 +1,81 @@
+{
+ "generated_at": "2026-11-05T23:32:00.065143+00:00",
+ "run_id": "20261105T233200Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 56,
+  "markets": 891,
+  "markets_mapped": 295,
+  "contracts": 628,
+  "quoted_contracts": 628,
+  "raw": "data/research/external/raw/20261105T233200Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 295,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 572,
+  "two_sided": 570,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 440,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7321,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "Ksenia Zaytseva": 1,
+   "Rohan Sachdev": 1,
+   "Nazim Makhlouf": 1,
+   "Digvijay Pratap Singh": 1,
+   "Seongchan Hong": 1,
+   "Raluca Georgiana Serban": 1,
+   "Emese Serkedi": 1,
+   "Sophie Ehrenbergerova": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 17,
+ "external_mapped_matches": 41,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {}
+}
