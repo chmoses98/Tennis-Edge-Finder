@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-04 23:45Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 01:07Z)
 
 * Earliest credible first ball: **2026-11-05 06:00Z**
 * Recommended RUN TENNIS time: **2026-11-05 05:15Z**
@@ -11,7 +11,7 @@
 | Xinyu Wang vs Antonia Ruzic | 2026-11-05 06:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Mika Stojsavljevic vs Zeynep Sonmez | 2026-11-05 07:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261104T230812Z-67b2c53a` built 2026-11-04 23:08Z -- current
+Published slate: `SL-20261105T000443Z-cb0da17d` built 2026-11-05 00:04Z -- current
 
 Dispatched this pass: none
 
