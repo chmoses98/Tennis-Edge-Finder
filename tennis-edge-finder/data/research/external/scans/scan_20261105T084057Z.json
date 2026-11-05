@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-05T08:40:57.506958+00:00",
+ "run_id": "20261105T084057Z",
+ "external_parse": {
+  "events": 278,
+  "markets": 2272,
+  "skipped_family": 300,
+  "skipped_period": 601,
+  "skipped_live": 25,
+  "one_sided": 135,
+  "rows": 3218,
+  "devigged": 1236
+ },
+ "smarkets_fetch": {
+  "events_seen": 111,
+  "events_priced": 80,
+  "markets": 1143,
+  "markets_mapped": 423,
+  "contracts": 924,
+  "quoted_contracts": 878,
+  "raw": "data/research/external/raw/20261105T084057Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 423,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 65,
+  "rows": 859,
+  "two_sided": 855,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 1442,
+ "external_mapping": {
+  "total": 267,
+  "by_status": {
+   "MAPPED": 191,
+   "UNMAPPED_PLAYER": 36,
+   "DOUBLES_UNSUPPORTED": 39,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7154,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39,
+   "Xinyu Wang": 1,
+   "Noma Akugue Noha": 1,
+   "Tsukamoto Koji": 1,
+   "Motokura Yakumo": 1,
+   "Kenta Kawada": 1,
+   "Leonard Tramolay": 1,
+   "Nathan Pitts": 1,
+   "Perez Francisco": 1,
+   "Henry Dornbusch": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 35,
+   "MAPPED": 45
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35
+  }
+ },
+ "kalshi_mapping": {
+  "total": 239,
+  "by_status": {
+   "MAPPED": 211,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8828,
+  "top_refusal_subjects": {
+   "Xinyu Wang": 1,
+   "Antoine Genereux": 1,
+   "Dragos Cazacu": 1,
+   "Johan Alexander Rodriguez": 1,
+   "Rohan Sachdev": 1,
+   "Carel Aubriel Ngounoue": 1,
+   "Giovanni Branchetti": 1,
+   "Michael Wright": 1,
+   "Matias Reyniak": 1,
+   "Pablo Perez Ramos": 1
+  }
+ },
+ "matched_both_venues": 175,
+ "external_mapped_matches": 193,
+ "kalshi_mapped_matches": 211,
+ "model_witness_available": true,
+ "rows": 296,
+ "counts": {
+  "PASS": 291,
+  "tri:MODEL_LONE_OUTLIER": 65,
+  "tri:INSUFFICIENT_INPUTS": 203,
+  "tri:MARKETS_AGREE": 14,
+  "WATCH": 4,
+  "tri:ALL_THREE_DISAGREE": 9,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:EXTERNAL_LONE_OUTLIER": 1,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 23
+ }
+}
