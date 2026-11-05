@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-11-05T18:31:09.295046+00:00",
+ "run_id": "20261105T183109Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 815,
+  "skipped_family": 250,
+  "skipped_period": 193,
+  "skipped_live": 47,
+  "one_sided": 30,
+  "rows": 1074,
+  "devigged": 342
+ },
+ "smarkets_fetch": {
+  "events_seen": 67,
+  "events_priced": 59,
+  "markets": 717,
+  "markets_mapped": 271,
+  "contracts": 582,
+  "quoted_contracts": 582,
+  "raw": "data/research/external/raw/20261105T183109Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 271,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 542,
+  "two_sided": 537,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 354,
+ "external_mapping": {
+  "total": 109,
+  "by_status": {
+   "MAPPED": 76,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6972,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Tsukamoto Koji": 1,
+   "Motokura Yakumo": 1,
+   "Kenta Kawada": 1,
+   "Felix Bockelmann Evans": 1,
+   "Kai luca Ampaw": 1,
+   "Henry Dornbusch": 1,
+   "Conway Haylee": 1,
+   "Lauren Nolan": 1,
+   "N. Khirin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.661,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20
+  }
+ },
+ "kalshi_mapping": {
+  "total": 84,
+  "by_status": {
+   "MAPPED": 79,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.9405,
+  "top_refusal_subjects": {
+   "Antoine Genereux": 1,
+   "Dragos Cazacu": 1,
+   "Sophie Ehrenbergerova": 1,
+   "Yeonwoo Ku": 1,
+   "Brooke Black": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 93,
+ "kalshi_mapped_matches": 79,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 44,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:INSUFFICIENT_INPUTS": 2,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "WATCH": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
