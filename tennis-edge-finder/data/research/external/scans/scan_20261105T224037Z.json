@@ -1,0 +1,77 @@
+{
+ "generated_at": "2026-11-05T22:40:37.550981+00:00",
+ "run_id": "20261105T224037Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 64,
+  "events_priced": 59,
+  "markets": 876,
+  "markets_mapped": 287,
+  "contracts": 612,
+  "quoted_contracts": 612,
+  "raw": "data/research/external/raw/20261105T224037Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 287,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 579,
+  "two_sided": 575,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 220,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 59,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 17,
+   "MAPPED": 42
+  },
+  "mapped_rate": 0.7119,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17
+  }
+ },
+ "kalshi_mapping": {
+  "total": 48,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8958,
+  "top_refusal_subjects": {
+   "Sofya Lansere": 1,
+   "Nazim Makhlouf": 1,
+   "Emese Serkedi": 1,
+   "Sophie Ehrenbergerova": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 13,
+ "external_mapped_matches": 42,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 22,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 1,
+  "tri:MODEL_LONE_OUTLIER": 17
+ },
+ "skips": {}
+}
