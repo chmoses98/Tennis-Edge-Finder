@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 09:43Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-05 09:53Z)
 
 * Earliest credible first ball: **2026-11-05 10:00Z**
 * Recommended RUN TENNIS time: **2026-11-05 09:15Z**  (OVERDUE: run now)
@@ -7,16 +7,14 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Tommy Paul vs Quentin Halys | 2026-11-05 10:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| Tereza Valentova vs Alexandra Eala | 2026-11-05 10:14Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3) | MEDIUM |
-| Simona Waltert vs Lucrezia Stefanini | 2026-11-05 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
+| Tommy Paul vs Quentin Halys | 2026-11-05 10:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Tereza Valentova vs Alexandra Eala | 2026-11-05 10:24Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3) | MEDIUM |
+| Simona Waltert vs Lucrezia Stefanini | 2026-11-05 10:24Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3) | MEDIUM |
 | Ben Shelton vs Arthur Rinderknech | 2026-11-05 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-
-**2 main-tour match(es) without a verified start status** (BET blocked until checked): Mai Hontama vs Zhibek Kulambayeva, Moyuka Uchijima vs Magda Linette
 
 Published slate: `SL-20261105T090450Z-00f841fe` built 2026-11-05 09:04Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-05T10:00:00+00:00, slate built 2026-11-05T09:04:50.107314+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-05 12:00Z, run by 2026-11-05 11:15Z, 4 match(es)
 * later window 3: first ball 2026-11-05 14:30Z, run by 2026-11-05 13:45Z, 2 match(es)
