@@ -1,19 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-06 18:50Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-06 19:00Z)
 
-* Earliest credible first ball: **2026-11-06 18:52Z**
-* Recommended RUN TENNIS time: **2026-11-06 18:07Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-06 18:42Z**
-* Matches in window: 1
+* Earliest credible first ball: **2026-11-06 19:00Z**
+* Recommended RUN TENNIS time: **2026-11-06 18:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-06 18:50Z**
+* Matches in window: 2
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Taylor Fritz vs Carlos Alcaraz | 2026-11-06 18:52Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Court Central finished | MEDIUM |
+| Taylor Fritz vs Carlos Alcaraz | 2026-11-06 19:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| Casper Ruud vs Nuno Borges | 2026-11-06 20:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261106T152223Z-952e5f8e` built 2026-11-06 15:22Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-06T18:52:35.811374+00:00, slate built 2026-11-06T15:22:23.371768+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
+Published slate: `SL-20261106T152223Z-952e5f8e` built 2026-11-06 15:22Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-06T19:00:00+00:00, slate built 2026-11-06T15:22:23.371768+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
-* later window 2: first ball 2026-11-06 20:30Z, run by 2026-11-06 19:45Z, 1 match(es)
-* later window 3: first ball 2026-11-07 06:00Z, run by 2026-11-07 05:15Z, 1 match(es)
-* later window 4: first ball 2026-11-07 08:00Z, run by 2026-11-07 07:15Z, 1 match(es)
-* later window 5: first ball 2026-11-07 12:30Z, run by 2026-11-07 11:45Z, 1 match(es)
+* later window 2: first ball 2026-11-07 06:00Z, run by 2026-11-07 05:15Z, 1 match(es)
+* later window 3: first ball 2026-11-07 08:00Z, run by 2026-11-07 07:15Z, 1 match(es)
+* later window 4: first ball 2026-11-07 12:30Z, run by 2026-11-07 11:45Z, 1 match(es)
