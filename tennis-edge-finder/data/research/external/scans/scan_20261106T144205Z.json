@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-06T14:42:05.002564+00:00",
+ "run_id": "20261106T144205Z",
+ "external_parse": {
+  "events": 91,
+  "markets": 970,
+  "skipped_family": 251,
+  "skipped_period": 259,
+  "skipped_live": 14,
+  "one_sided": 5,
+  "rows": 1356,
+  "devigged": 455
+ },
+ "smarkets_fetch": {
+  "events_seen": 44,
+  "events_priced": 40,
+  "markets": 599,
+  "markets_mapped": 211,
+  "contracts": 474,
+  "quoted_contracts": 474,
+  "raw": "data/research/external/raw/20261106T144205Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 211,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 459,
+  "two_sided": 459,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 229,
+ "external_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Noma Akugue Noha": 1,
+   "Rohan Sachdev": 1,
+   "Julian Alonso Vivanco": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Juliana Singeorzan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 40,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 26
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8305,
+  "top_refusal_subjects": {
+   "Alice Tubello": 1,
+   "Leyre Romero Gormaz": 1,
+   "Anna Blinkova": 1,
+   "Justina Mikulskyte": 1,
+   "Sofya Lansere": 1,
+   "Digvijay Pratap Singh": 1,
+   "Giovanni Branchetti": 1,
+   "Rohan Sachdev": 1,
+   "Yeonwoo Ku": 1,
+   "Yara Bartashevich": 1
+  }
+ },
+ "matched_both_venues": 37,
+ "external_mapped_matches": 62,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 46,
+  "tri:MARKETS_AGREE": 10,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
