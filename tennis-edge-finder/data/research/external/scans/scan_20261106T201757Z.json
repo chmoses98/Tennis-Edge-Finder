@@ -1,0 +1,78 @@
+{
+ "generated_at": "2026-11-06T20:17:57.895533+00:00",
+ "run_id": "20261106T201757Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 40,
+  "events_priced": 37,
+  "markets": 535,
+  "markets_mapped": 150,
+  "contracts": 322,
+  "quoted_contracts": 322,
+  "raw": "data/research/external/raw/20261106T201757Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 150,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 300,
+  "two_sided": 299,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 235,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 25,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.6757,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12
+  }
+ },
+ "kalshi_mapping": {
+  "total": 35,
+  "by_status": {
+   "MAPPED": 29,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8286,
+  "top_refusal_subjects": {
+   "Alice Tubello": 1,
+   "Anna Blinkova": 1,
+   "Mariia Lazarenko": 1,
+   "Valeriia Iushchenko": 1,
+   "Yeonwoo Ku": 1,
+   "Yara Bartashevich": 1
+  }
+ },
+ "matched_both_venues": 7,
+ "external_mapped_matches": 25,
+ "kalshi_mapped_matches": 29,
+ "model_witness_available": true,
+ "rows": 12,
+ "counts": {
+  "PASS": 12,
+  "tri:MODEL_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 6
+ },
+ "skips": {}
+}
