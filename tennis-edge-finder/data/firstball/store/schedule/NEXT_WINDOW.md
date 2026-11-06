@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-06 19:10Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-06 19:20Z)
 
-* Earliest credible first ball: **2026-11-06 20:13Z**
-* Recommended RUN TENNIS time: **2026-11-06 19:28Z**
-* Final price/status check time: **2026-11-06 20:03Z**
+* Earliest credible first ball: **2026-11-06 20:23Z**
+* Recommended RUN TENNIS time: **2026-11-06 19:38Z**
+* Final price/status check time: **2026-11-06 20:13Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Casper Ruud vs Nuno Borges | 2026-11-06 20:13Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central in progress (set 1 of best-of-5) | MEDIUM |
+| Casper Ruud vs Nuno Borges | 2026-11-06 20:23Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Court Central in progress (set 1 of best-of-5) | MEDIUM |
 
 Published slate: `SL-20261106T152223Z-952e5f8e` built 2026-11-06 15:22Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 6 match(es)
 
-Dispatched this pass: run_tennis (ok), slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-11-07 06:00Z, run by 2026-11-07 05:15Z, 1 match(es)
 * later window 3: first ball 2026-11-07 08:00Z, run by 2026-11-07 07:15Z, 1 match(es)
