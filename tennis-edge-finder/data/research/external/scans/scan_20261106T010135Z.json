@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-11-06T01:01:35.248597+00:00",
+ "run_id": "20261106T010135Z",
+ "external_parse": {
+  "events": 120,
+  "markets": 1243,
+  "skipped_family": 310,
+  "skipped_period": 301,
+  "skipped_live": 7,
+  "one_sided": 16,
+  "rows": 1696,
+  "devigged": 616
+ },
+ "smarkets_fetch": {
+  "events_seen": 59,
+  "events_priced": 55,
+  "markets": 915,
+  "markets_mapped": 310,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261106T010135Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 617,
+  "two_sided": 612,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 252,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 74,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.6981,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Noma Akugue Noha": 1,
+   "Kenta Kawada": 1,
+   "Motokura Yakumo": 1,
+   "Tomoki Fujiwara": 1,
+   "Digvijay Pratap Singh": 1,
+   "Nazim Makhlouf": 1,
+   "Maria Pankratova": 1,
+   "Raluca Georgiana Serban": 1,
+   "Sophie Ehrenbergerova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7455,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9322,
+  "top_refusal_subjects": {
+   "Ksenia Zaytseva": 1,
+   "Heorhii Shylov": 1,
+   "Raluca Georgiana Serban": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 38,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 55,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 71,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:INSUFFICIENT_INPUTS": 31,
+  "tri:MARKETS_AGREE": 10,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {}
+}
