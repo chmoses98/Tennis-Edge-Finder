@@ -1,0 +1,103 @@
+{
+ "run_id": "20261106T012012Z",
+ "started_at": "2026-11-06T01:20:12.727520+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 967,
+  "quotes_written": 212,
+  "quotes_unchanged": 755,
+  "events_new": 2,
+  "books": 44,
+  "book_candidates": 44,
+  "trades_tennis": 5732,
+  "trades_global_scanned": 205594,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1793927411,
+   "hi": 1793928012,
+   "complete": false,
+   "pages": 200,
+   "trades": 200000
+  },
+  "backlog_scans": [
+   {
+    "lo": 1793927411,
+    "hi": 1793927429,
+    "complete": true,
+    "pages": 6,
+    "trades": 5594
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 206,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 405,
+  "retries": 7,
+  "http_429": 7,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 46.246089296491334,
+  "by_path": {
+   "markets": 146,
+   "events/KXITFMATCH-26NOV06HANMCH": 1,
+   "events/KXITFWDOUBLES-26NOV06BOYVICLABVER": 1,
+   "markets/KXITFDOUBLES-26OCT28LUCALEALUSAL-ALUSAL/orderbook": 1,
+   "markets/KXITFDOUBLES-26OCT28LUCALEALUSAL-LUCALE/orderbook": 1,
+   "markets/KXWTADOUBLES-26NOV05BURMONADKBHO-ADKBHO/orderbook": 1,
+   "markets/KXWTADOUBLES-26NOV05BURMONADKBHO-BURMON/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05ALAEICBESKHA-ALAEIC/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05ALAEICBESKHA-BESKHA/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05ARCDOLHRALAK-ARCDOL/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05ARCDOLHRALAK-HRALAK/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05IGNSERDUHMUR-DUHMUR/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05IGNSERDUHMUR-IGNSER/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05GULCAR-CAR/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05GULCAR-GUL/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05PIEZIE-PIE/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05PIEZIE-ZIE/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05PORGAK-GAK/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05PORGAK-POR/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05SHEPER-PER/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05SHEPER-SHE/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05BARPUJNAHTAL-BARPUJ/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05BARPUJNAHTAL-NAHTAL/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV05OZXCHE-CHE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV05OZXCHE-OZX/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05SEYRON-RON/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05SEYRON-SEY/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05KRAWATLIESHE-KRAWAT/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05KRAWATLIESHE-LIESHE/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05ANDTRO-AND/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05ANDTRO-TRO/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26NOV05LOOUESREYWAT-LOOUES/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26NOV05LOOUESREYWAT-REYWAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05SHIJAS-JAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05SHIJAS-SHI/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05WONSAM-SAM/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05WONSAM-WON/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05HECZAMARTSNI-ARTSNI/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05HECZAMARTSNI-HECZAM/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05RENESTALUBEN-ALUBEN/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV05RENESTALUBEN-RENEST/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05KUMMAY-KUM/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05KUMMAY-MAY/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05RUBCLA-CLA/orderbook": 1,
+   "markets/KXITFMATCH-26NOV05RUBCLA-RUB/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05WATMUL-MUL/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV05WATMUL-WAT/orderbook": 1,
+   "markets/trades": 206
+  }
+ },
+ "finished_at": "2026-11-06T01:21:44.540759+00:00"
+}
