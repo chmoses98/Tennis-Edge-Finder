@@ -1,0 +1,82 @@
+{
+ "generated_at": "2026-11-06T07:25:21.211774+00:00",
+ "run_id": "20261106T072521Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 65,
+  "markets": 1040,
+  "markets_mapped": 337,
+  "contracts": 728,
+  "quoted_contracts": 728,
+  "raw": "data/research/external/raw/20261106T072521Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 337,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 46,
+  "rows": 682,
+  "two_sided": 680,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 993,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.6308,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 106,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8413,
+  "top_refusal_subjects": {
+   "Alice Tubello": 1,
+   "Leyre Romero Gormaz": 1,
+   "Anna Blinkova": 1,
+   "Justina Mikulskyte": 1,
+   "Ksenia Zaytseva": 1,
+   "Sofya Lansere": 1,
+   "Giovanni Branchetti": 1,
+   "Dragos Cazacu": 1,
+   "Rohan Sachdev": 1,
+   "Nazim Makhlouf": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 41,
+ "kalshi_mapped_matches": 106,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 37,
+  "tri:MARKETS_AGREE": 13,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {}
+}
