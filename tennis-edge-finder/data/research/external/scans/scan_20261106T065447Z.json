@@ -1,0 +1,80 @@
+{
+ "generated_at": "2026-11-06T06:54:47.319663+00:00",
+ "run_id": "20261106T065447Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 67,
+  "events_priced": 63,
+  "markets": 1010,
+  "markets_mapped": 327,
+  "contracts": 702,
+  "quoted_contracts": 702,
+  "raw": "data/research/external/raw/20261106T065447Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 327,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 663,
+  "two_sided": 661,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 226,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 24
+  },
+  "mapped_rate": 0.619,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8431,
+  "top_refusal_subjects": {
+   "Anna Blinkova": 1,
+   "Sofya Lansere": 1,
+   "Heorhii Shylov": 1,
+   "Digvijay Pratap Singh": 1,
+   "Seongchan Hong": 1,
+   "Yara Bartashevich": 1,
+   "Valeriia Iushchenko": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 39,
+ "kalshi_mapped_matches": 43,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 4
+ },
+ "skips": {}
+}
