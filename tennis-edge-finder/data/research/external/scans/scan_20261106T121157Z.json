@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-06T12:11:57.539202+00:00",
+ "run_id": "20261106T121157Z",
+ "external_parse": {
+  "events": 119,
+  "markets": 1242,
+  "skipped_family": 309,
+  "skipped_period": 333,
+  "skipped_live": 19,
+  "one_sided": 17,
+  "rows": 1748,
+  "devigged": 583
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 50,
+  "markets": 798,
+  "markets_mapped": 274,
+  "contracts": 610,
+  "quoted_contracts": 610,
+  "raw": "data/research/external/raw/20261106T121157Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 274,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 18,
+  "rows": 592,
+  "two_sided": 591,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 300,
+ "external_mapping": {
+  "total": 107,
+  "by_status": {
+   "MAPPED": 76,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.7103,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Noma Akugue Noha": 1,
+   "Nazim Makhlouf": 1,
+   "Rohan Sachdev": 1,
+   "Julian Alonso Vivanco": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Raluca Georgiana Serban": 1,
+   "Juliana Singeorzan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 34,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.68,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8136,
+  "top_refusal_subjects": {
+   "Alice Tubello": 1,
+   "Anna Blinkova": 1,
+   "Justina Mikulskyte": 1,
+   "Ksenia Zaytseva": 1,
+   "Sofya Lansere": 1,
+   "Giovanni Branchetti": 1,
+   "Nazim Makhlouf": 1,
+   "Yeonwoo Ku": 1,
+   "Yara Bartashevich": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 80,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MARKETS_AGREE": 13,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
