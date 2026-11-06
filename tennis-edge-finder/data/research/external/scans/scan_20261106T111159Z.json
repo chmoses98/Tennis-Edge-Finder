@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-06T11:11:59.367032+00:00",
+ "run_id": "20261106T111159Z",
+ "external_parse": {
+  "events": 145,
+  "markets": 1367,
+  "skipped_family": 331,
+  "skipped_period": 366,
+  "skipped_live": 32,
+  "one_sided": 14,
+  "rows": 1922,
+  "devigged": 656
+ },
+ "smarkets_fetch": {
+  "events_seen": 58,
+  "events_priced": 54,
+  "markets": 921,
+  "markets_mapped": 308,
+  "contracts": 680,
+  "quoted_contracts": 680,
+  "raw": "data/research/external/raw/20261106T111159Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 308,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 652,
+  "two_sided": 651,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 301,
+ "external_mapping": {
+  "total": 133,
+  "by_status": {
+   "MAPPED": 97,
+   "DOUBLES_UNSUPPORTED": 27,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.7293,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Noma Akugue Noha": 1,
+   "Heorhii Shylov": 1,
+   "Rohan Sachdev": 1,
+   "Julian Alonso Vivanco": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Sophie Ehrenbergerova": 1,
+   "Sofia Barhacova": 1,
+   "Emese Serkedi": 1,
+   "Juliana Singeorzan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18
+  }
+ },
+ "kalshi_mapping": {
+  "total": 71,
+  "by_status": {
+   "MAPPED": 62,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.8732,
+  "top_refusal_subjects": {
+   "Alice Tubello": 1,
+   "Leyre Romero Gormaz": 1,
+   "Justina Mikulskyte": 1,
+   "Ksenia Zaytseva": 1,
+   "Sofya Lansere": 1,
+   "Nazim Makhlouf": 1,
+   "Yeonwoo Ku": 1,
+   "Raluca Georgiana Serban": 1,
+   "Emese Serkedi": 1
+  }
+ },
+ "matched_both_venues": 52,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 62,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 72,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 34
+ },
+ "skips": {
+  "external_has_no_match_winner": 15
+ }
+}
