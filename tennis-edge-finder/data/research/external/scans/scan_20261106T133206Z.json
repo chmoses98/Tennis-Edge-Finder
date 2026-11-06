@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-11-06T13:32:06.119194+00:00",
+ "run_id": "20261106T133206Z",
+ "external_parse": {
+  "events": 104,
+  "markets": 1047,
+  "skipped_family": 227,
+  "skipped_period": 293,
+  "skipped_live": 16,
+  "one_sided": 8,
+  "rows": 1528,
+  "devigged": 519
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 46,
+  "markets": 695,
+  "markets_mapped": 244,
+  "contracts": 546,
+  "quoted_contracts": 546,
+  "raw": "data/research/external/raw/20261106T133206Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 244,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 4,
+  "rows": 542,
+  "two_sided": 540,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 239,
+ "external_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7419,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Noma Akugue Noha": 1,
+   "Rohan Sachdev": 1,
+   "Julian Alonso Vivanco": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Emese Serkedi": 1,
+   "Juliana Singeorzan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 31,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.6739,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 41,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8367,
+  "top_refusal_subjects": {
+   "Anna Blinkova": 1,
+   "Justina Mikulskyte": 1,
+   "Sofya Lansere": 1,
+   "Dragos Cazacu": 1,
+   "Rohan Sachdev": 1,
+   "Yeonwoo Ku": 1,
+   "Yara Bartashevich": 1,
+   "Emese Serkedi": 1
+  }
+ },
+ "matched_both_venues": 32,
+ "external_mapped_matches": 73,
+ "kalshi_mapped_matches": 41,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 41,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:MARKETS_AGREE": 12,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
