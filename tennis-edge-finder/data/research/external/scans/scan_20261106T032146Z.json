@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-06T03:21:46.409275+00:00",
+ "run_id": "20261106T032146Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 1397,
+  "skipped_family": 345,
+  "skipped_period": 339,
+  "skipped_live": 15,
+  "one_sided": 21,
+  "rows": 1882,
+  "devigged": 692
+ },
+ "smarkets_fetch": {
+  "events_seen": 62,
+  "events_priced": 58,
+  "markets": 926,
+  "markets_mapped": 318,
+  "contracts": 670,
+  "quoted_contracts": 670,
+  "raw": "data/research/external/raw/20261106T032146Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 318,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 639,
+  "two_sided": 633,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 232,
+ "external_mapping": {
+  "total": 128,
+  "by_status": {
+   "MAPPED": 86,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.6719,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Noma Akugue Noha": 1,
+   "Tomoki Fujiwara": 1,
+   "Taiyo Uenoyama": 1,
+   "Siddharth Bharadwaj": 1,
+   "Winston Lee": 1,
+   "Eita Suzuki": 1,
+   "Danielle Tuhten": 1,
+   "Mlouk Olivia": 1,
+   "Yulia Zhytelna": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 58,
+  "by_status": {
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.6897,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8983,
+  "top_refusal_subjects": {
+   "Justina Mikulskyte": 1,
+   "Digvijay Pratap Singh": 1,
+   "Seongchan Hong": 1,
+   "Raluca Georgiana Serban": 1,
+   "Valeriia Iushchenko": 1,
+   "Maria Pankratova": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 72,
+ "counts": {
+  "PASS": 71,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:MARKETS_AGREE": 10,
+  "tri:INSUFFICIENT_INPUTS": 30,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
