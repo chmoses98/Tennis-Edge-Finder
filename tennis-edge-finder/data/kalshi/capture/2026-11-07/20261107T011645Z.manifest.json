@@ -1,0 +1,75 @@
+{
+ "run_id": "20261107T011645Z",
+ "started_at": "2026-11-07T01:16:45.273342+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 825,
+  "quotes_written": 204,
+  "quotes_unchanged": 621,
+  "events_new": 2,
+  "books": 24,
+  "book_candidates": 24,
+  "trades_tennis": 3703,
+  "trades_global_scanned": 163597,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794013606,
+   "hi": 1794014205,
+   "complete": true,
+   "pages": 164,
+   "trades": 163597
+  },
+  "backlog_scans": [],
+  "errors": [],
+  "abandoned": [],
+  "pages": 164,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 341,
+  "retries": 5,
+  "http_429": 5,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 30.099185062208303,
+  "by_path": {
+   "markets": 146,
+   "events/KXITFMATCH-26NOV07ARTBIG": 1,
+   "events/KXITFWDOUBLES-26NOV07CATSHAELASAF": 1,
+   "markets/KXITFDOUBLES-26OCT28LUCALEALUSAL-ALUSAL/orderbook": 1,
+   "markets/KXITFDOUBLES-26OCT28LUCALEALUSAL-LUCALE/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26NOV06BLIKAB-BLI/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26NOV06BLIKAB-KAB/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26NOV06TUBAND-AND/orderbook": 1,
+   "markets/KXWTACHALLENGERMATCH-26NOV06TUBAND-TUB/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV06STRBRA-BRA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV06STRBRA-STR/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV06CHEPOR-CHE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV06CHEPOR-POR/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06CASODORODTRA-CASODO/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06CASODORODTRA-RODTRA/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06RAPSHOFERPAW-FERPAW/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06RAPSHOFERPAW-RAPSHO/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06ADASZABOHBUR-ADASZA/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06ADASZABOHBUR-BOHBUR/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06BLAJAUPENPEN-BLAJAU/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06BLAJAUPENPEN-PENPEN/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV06WOLBOW-BOW/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV06WOLBOW-WOL/orderbook": 1,
+   "markets/KXITFMATCH-26NOV06BAKCLA-BAK/orderbook": 1,
+   "markets/KXITFMATCH-26NOV06BAKCLA-CLA/orderbook": 1,
+   "markets/KXITFMATCH-26NOV06ALVPAC-ALV/orderbook": 1,
+   "markets/KXITFMATCH-26NOV06ALVPAC-PAC/orderbook": 1,
+   "markets/trades": 164
+  }
+ },
+ "finished_at": "2026-11-07T01:18:05.418572+00:00"
+}
