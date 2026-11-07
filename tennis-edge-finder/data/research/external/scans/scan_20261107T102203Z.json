@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-11-07T10:22:03.199016+00:00",
+ "run_id": "20261107T102203Z",
+ "external_parse": {
+  "events": 87,
+  "markets": 882,
+  "skipped_family": 271,
+  "skipped_period": 225,
+  "skipped_live": 19,
+  "one_sided": 4,
+  "rows": 1198,
+  "devigged": 382
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 51,
+  "markets": 697,
+  "markets_mapped": 212,
+  "contracts": 472,
+  "quoted_contracts": 472,
+  "raw": "data/research/external/raw/20261107T102203Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 212,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 437,
+  "two_sided": 432,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 197,
+ "external_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7432,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Noma Akugue Noha": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Raluca Georgiana Serban": 1,
+   "Emese Serkedi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 51,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 38
+  },
+  "mapped_rate": 0.7451,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 31,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8378,
+  "top_refusal_subjects": {
+   "Alice Tubello": 1,
+   "Anna Blinkova": 1,
+   "Sofia Barhacova": 1,
+   "Emese Serkedi": 1,
+   "Raluca Georgiana Serban": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 69,
+ "kalshi_mapped_matches": 31,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "WATCH": 1,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "PASS": 21,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
