@@ -1,0 +1,97 @@
+{
+ "generated_at": "2026-11-07T15:23:00.328546+00:00",
+ "run_id": "20261107T152300Z",
+ "external_parse": {
+  "events": 70,
+  "markets": 573,
+  "skipped_family": 198,
+  "skipped_period": 137,
+  "skipped_live": 17,
+  "one_sided": 9,
+  "rows": 786,
+  "devigged": 229
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 591,
+  "markets_mapped": 187,
+  "contracts": 418,
+  "quoted_contracts": 418,
+  "raw": "data/research/external/raw/20261107T152300Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 187,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 60,
+  "rows": 358,
+  "two_sided": 342,
+  "one_sided": 16
+ },
+ "kalshi_quotes_on_disk": 728,
+ "external_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7288,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Delgado Sarah": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 51,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.7612,
+  "top_refusal_subjects": {
+   "Ryu Kotikula": 1,
+   "Vraj Gohil": 1,
+   "Puchit Sukjai": 1,
+   "Narathip Rueangsri": 1,
+   "Zitawe Kulphisanrat": 1,
+   "Wang Ziteng": 1,
+   "Woravin Kumthonkittikul": 1,
+   "Jimmy Chin": 1,
+   "Dharma Pantaratorn": 1,
+   "Tawan Rattaseri": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 85,
+ "kalshi_mapped_matches": 51,
+ "model_witness_available": true,
+ "rows": 22,
+ "counts": {
+  "PASS": 22,
+  "tri:MODEL_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MARKETS_AGREE": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
