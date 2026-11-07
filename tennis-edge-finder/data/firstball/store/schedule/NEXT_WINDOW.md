@@ -1,20 +1,21 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-07 09:57Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-07 10:09Z)
 
-* Earliest credible first ball: **2026-11-07 10:00Z**
-* Recommended RUN TENNIS time: **2026-11-07 09:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-07 09:50Z**
-* Matches in window: 4
+* Earliest credible first ball: **2026-11-07 11:30Z**
+* Recommended RUN TENNIS time: **2026-11-07 10:45Z**
+* Final price/status check time: **2026-11-07 11:20Z**
+* Matches in window: 3
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Nikoloz Basilashvili vs Francesco Passaro | 2026-11-07 10:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
-| Mika Brunold vs Borna Gojo | 2026-11-07 10:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Damir Dzumhur vs Inaki Montes-de la Torre | 2026-11-07 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Olle Wallin vs Lorenzo Sonego | 2026-11-07 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Janice Tjen vs Robin Montgomery | 2026-11-07 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261107T093208Z-63d22ee2` built 2026-11-07 09:32Z -- current
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Mika Brunold vs Borna Gojo, Nikoloz Basilashvili vs Francesco Passaro
 
-Dispatched this pass: none
+Published slate: `SL-20261107T093208Z-63d22ee2` built 2026-11-07 09:32Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-* later window 2: first ball 2026-11-07 12:30Z, run by 2026-11-07 11:45Z, 3 match(es)
-* later window 3: first ball 2026-11-07 14:30Z, run by 2026-11-07 13:45Z, 3 match(es)
+Dispatched this pass: slate_stale_refresh (ok)
+
+* later window 2: first ball 2026-11-07 13:30Z, run by 2026-11-07 12:45Z, 3 match(es)
+* later window 3: first ball 2026-11-07 16:00Z, run by 2026-11-07 15:15Z, 2 match(es)
