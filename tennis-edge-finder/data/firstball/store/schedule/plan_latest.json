@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-07T18:34:12.015381+00:00",
+ "generated_at": "2026-11-07T18:44:23.974053+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 105,
+ "board_matches": 104,
  "counts_by_status": {
-  "STARTED": 2,
   "VERIFIED_UPCOMING": 3,
-  "START_UNKNOWN": 100
+  "START_UNKNOWN": 100,
+  "STARTED": 1
  },
- "evaluated_at": "2026-11-07T18:34:12.015381+00:00",
+ "evaluated_at": "2026-11-07T18:44:23.974053+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-08T08:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-08T07:15:00+00:00",
@@ -69,44 +69,17 @@
   "changed_matches": [],
   "slate_id": "SL-20261107T181142Z-600a346c",
   "slate_built_at": "2026-11-07T18:11:42.685569+00:00",
-  "checked_at": "2026-11-07T18:34:12.015381+00:00"
+  "checked_at": "2026-11-07T18:44:23.974053+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
-  "KXATPMATCH-26NOV07RUUALC": {
-   "match_id": "ATP:26NOV07RUUALC:singles",
-   "evaluated_at": "2026-11-07T18:34:12.015381+00:00",
-   "nominal_scheduled_start": "2026-11-07T19:00:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T16:29:51.056789+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_atp (confidence B)",
-   "first_ball_at": "2026-11-07T16:27:33.865144+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Casper Ruud vs Carlos Alcaraz",
-   "level_bucket": "ATP"
-  },
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-07T18:34:12.015381+00:00",
+   "evaluated_at": "2026-11-07T18:44:23.974053+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T18:33:35.611525+00:00",
+   "start_time_last_checked": "2026-11-07T18:43:47.890314+00:00",
    "current_expected_start": "2026-11-08T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
