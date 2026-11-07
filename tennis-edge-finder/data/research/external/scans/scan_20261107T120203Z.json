@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-11-07T12:02:03.144781+00:00",
+ "run_id": "20261107T120203Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 824,
+  "skipped_family": 263,
+  "skipped_period": 209,
+  "skipped_live": 12,
+  "one_sided": 10,
+  "rows": 1081,
+  "devigged": 342
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 54,
+  "markets": 663,
+  "markets_mapped": 204,
+  "contracts": 450,
+  "quoted_contracts": 450,
+  "raw": "data/research/external/raw/20261107T120203Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 204,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 28,
+  "rows": 422,
+  "two_sided": 419,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 199,
+ "external_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7302,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Noma Akugue Noha": 1,
+   "Agustin E.C. Lorberg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8519,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Kazushi Idogaki": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 31,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8378,
+  "top_refusal_subjects": {
+   "Sofya Lansere": 1,
+   "Alice Tubello": 1,
+   "Anna Blinkova": 1,
+   "Dragos Cazacu": 1,
+   "Yeonwoo Ku": 1,
+   "Sofia Barhacova": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 69,
+ "kalshi_mapped_matches": 31,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
