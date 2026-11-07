@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-07T23:32:39.773568+00:00",
+ "generated_at": "2026-11-07T23:46:06.885242+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 119,
+ "board_matches": 126,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 14,
-  "ESTIMATED_UPCOMING": 1,
-  "START_UNKNOWN": 104
+  "ESTIMATED_UPCOMING": 3,
+  "START_UNKNOWN": 109
  },
- "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+ "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-08T08:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-08T07:15:00+00:00",
@@ -174,6 +174,39 @@
      "start_time_confidence": "HIGH"
     }
    ]
+  },
+  {
+   "earliest_credible_first_ball": "2026-11-08T23:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-08T22:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-08T22:15:00+00:00",
+    "2026-11-08T22:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-08T22:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-08T22:50:00+00:00",
+    "2026-11-08T22:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 2,
+   "matches": [
+    {
+     "match_id": "KXWTAMATCH-26NOV08KOSNOS",
+     "label": "Marta Kostyuk vs Linda Noskova",
+     "current_expected_start": "2026-11-08T23:00:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "KALSHI_NOMINAL",
+     "start_time_confidence": "LOW"
+    },
+    {
+     "match_id": "KXWTAMATCH-26NOV08GAUPEG",
+     "label": "Coco Gauff vs Jessica Pegula",
+     "current_expected_start": "2026-11-09T00:30:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "KALSHI_NOMINAL",
+     "start_time_confidence": "LOW"
+    }
+   ]
   }
  ],
  "main_tour_status_unverified": [],
@@ -184,17 +217,17 @@
   "changed_matches": [],
   "slate_id": "SL-20261107T184226Z-e53c2216",
   "slate_built_at": "2026-11-07T18:42:26.497482+00:00",
-  "checked_at": "2026-11-07T23:32:39.773568+00:00"
+  "checked_at": "2026-11-07T23:46:06.885242+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV08TIRMUN": {
    "match_id": "ATP:26NOV08TIRMUN:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T19:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -245,11 +278,11 @@
   },
   "KXATPMATCH-26NOV08YMECER": {
    "match_id": "ATP:26NOV08YMECER:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -300,11 +333,11 @@
   },
   "KXATPMATCH-26NOV08MANSAM": {
    "match_id": "ATP:26NOV08MANSAM:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -355,7 +388,7 @@
   },
   "KXATPMATCH-26NOV08FEASHE": {
    "match_id": "ATP:26NOV08FEASHE:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -388,11 +421,11 @@
   },
   "KXATPMATCH-26NOV08MONSON": {
    "match_id": "ATP:26NOV08MONSON:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -431,11 +464,11 @@
   },
   "KXATPMATCH-26NOV08BASGOJ": {
    "match_id": "ATP:26NOV08BASGOJ:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -474,11 +507,11 @@
   },
   "KXATPMATCH-26NOV08SHEALC": {
    "match_id": "ATP:26NOV08SHEALC:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -529,11 +562,11 @@
   },
   "KXWTAMATCH-26NOV08TJELIN": {
    "match_id": "WTA:26NOV08TJELIN:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -584,11 +617,11 @@
   },
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -639,11 +672,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV08BLILAN": {
    "match_id": "WTA:26NOV08BLILAN:singles",
-   "evaluated_at": "2026-11-07T23:32:39.773568+00:00",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
    "nominal_scheduled_start": "2026-11-08T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T23:29:11.589500+00:00",
+   "start_time_last_checked": "2026-11-07T23:42:37.597513+00:00",
    "current_expected_start": "2026-11-08T10:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -674,6 +707,72 @@
    "bet_allowed": true,
    "label": "Anna Blinkova vs Sofya Lansere",
    "level_bucket": "WTA125"
+  },
+  "KXWTAMATCH-26NOV08GAUPEG": {
+   "match_id": "WTA:26NOV08GAUPEG:singles",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
+   "nominal_scheduled_start": "2026-11-09T00:30:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": null,
+   "current_expected_start": "2026-11-09T00:30:00+00:00",
+   "start_time_source": "KALSHI_NOMINAL",
+   "start_time_confidence": "LOW",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-09T00:30:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T23:45:00+00:00",
+   "recommended_handicap_by": "2026-11-08T23:45:00+00:00",
+   "final_check_time": "2026-11-09T00:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": null,
+   "court_context": null,
+   "start_status": "ESTIMATED_UPCOMING",
+   "status_reasons": [
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
+   ],
+   "bet_allowed": false,
+   "label": "Coco Gauff vs Jessica Pegula",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26NOV08KOSNOS": {
+   "match_id": "WTA:26NOV08KOSNOS:singles",
+   "evaluated_at": "2026-11-07T23:46:06.885242+00:00",
+   "nominal_scheduled_start": "2026-11-08T23:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": null,
+   "current_expected_start": "2026-11-08T23:00:00+00:00",
+   "start_time_source": "KALSHI_NOMINAL",
+   "start_time_confidence": "LOW",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T23:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T22:15:00+00:00",
+   "recommended_handicap_by": "2026-11-08T22:15:00+00:00",
+   "final_check_time": "2026-11-08T22:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": null,
+   "court_context": null,
+   "start_status": "ESTIMATED_UPCOMING",
+   "status_reasons": [
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
+   ],
+   "bet_allowed": false,
+   "label": "Marta Kostyuk vs Linda Noskova",
+   "level_bucket": "WTA"
   }
  }
 }
