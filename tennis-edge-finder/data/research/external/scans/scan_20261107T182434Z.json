@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-07T18:24:34.233177+00:00",
+ "run_id": "20261107T182434Z",
+ "external_parse": {
+  "events": 66,
+  "markets": 487,
+  "skipped_family": 181,
+  "skipped_period": 108,
+  "skipped_live": 20,
+  "one_sided": 2,
+  "rows": 664,
+  "devigged": 196
+ },
+ "smarkets_fetch": {
+  "events_seen": 82,
+  "events_priced": 80,
+  "markets": 580,
+  "markets_mapped": 170,
+  "contracts": 376,
+  "quoted_contracts": 376,
+  "raw": "data/research/external/raw/20261107T182434Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 170,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 53,
+  "rows": 323,
+  "two_sided": 319,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 728,
+ "external_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6852,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Felix Bockelmann Evans": 1,
+   "Wesley Cotton": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.6044,
+  "top_refusal_subjects": {
+   "Yanick Schneider": 1,
+   "Mark Laubic": 1,
+   "Oriol Alvarez Velis": 1,
+   "Alexandru Constantin": 1,
+   "Rares Ioan Poiana": 1,
+   "Daniele Augenti": 1,
+   "Jakub Januchowski": 1,
+   "Anton Kartsev": 1,
+   "Matei Marius Partal": 1,
+   "Jonah Haidarian": 1
+  }
+ },
+ "matched_both_venues": 18,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 55,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
