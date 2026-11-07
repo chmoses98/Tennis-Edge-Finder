@@ -5,12 +5,12 @@
  "status_reason": "every frozen condition met; the claim cannot justify a trade on its own",
  "universe": {
   "stream": "kalshi/capture/*/books (order books, orderbook_fp)",
-  "books_read": 1680136,
+  "books_read": 1683002,
   "books_before_confirmation_start": 7818,
   "books_unparsed_or_not_match_scope": 0,
-  "books_one_sided": 64879,
-  "capture_runs_scanned": 6812,
-  "match_passes_scanned": 588241,
+  "books_one_sided": 65003,
+  "capture_runs_scanned": 6833,
+  "match_passes_scanned": 589243,
   "note": "books are captured only for match-scope markets within 6h of their nominal start (budget 400 per pass), so the scan sees the near-start board, not every listing"
  },
  "metrics": {
@@ -398,11 +398,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261107T105556Z",
+ "harvest_run": "20261107T142157Z",
  "evidence_rows_this_run": 28,
  "evidence_rows_appended": 0,
  "last_evidence_at": "2026-11-04T04:07:58.364666+00:00",
- "harvest_run_at": "2026-11-07T11:00:21.831826+00:00",
+ "harvest_run_at": "2026-11-07T14:26:41.141533+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
