@@ -1,13 +1,14 @@
 {
- "generated_at": "2026-11-07T21:49:43.693154+00:00",
+ "generated_at": "2026-11-07T22:00:24.729886+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 99,
+ "board_matches": 105,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 4,
-  "START_UNKNOWN": 95
+  "VERIFIED_UPCOMING": 13,
+  "ESTIMATED_UPCOMING": 1,
+  "START_UNKNOWN": 91
  },
- "evaluated_at": "2026-11-07T21:49:43.693154+00:00",
+ "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-08T08:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-08T07:15:00+00:00",
@@ -60,6 +61,47 @@
    ]
   },
   {
+   "earliest_credible_first_ball": "2026-11-08T11:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-08T10:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-08T10:15:00+00:00",
+    "2026-11-08T10:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-08T10:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-08T10:50:00+00:00",
+    "2026-11-08T10:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 3,
+   "matches": [
+    {
+     "match_id": "KXATPMATCH-26NOV08BASGOJ",
+     "label": "Nikoloz Basilashvili vs Borna Gojo",
+     "current_expected_start": "2026-11-08T11:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "HIGH"
+    },
+    {
+     "match_id": "KXATPMATCH-26NOV08MONSON",
+     "label": "Inaki Montes-de la Torre vs Lorenzo Sonego",
+     "current_expected_start": "2026-11-08T11:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "HIGH"
+    },
+    {
+     "match_id": "KXATPMATCH-26NOV08MANSAM",
+     "label": "Adrian Mannarino vs Toby Samuel",
+     "current_expected_start": "2026-11-08T12:30:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "HIGH"
+    }
+   ]
+  },
+  {
    "earliest_credible_first_ball": "2026-11-08T13:00:00+00:00",
    "recommended_run_tennis_time": "2026-11-08T12:15:00+00:00",
    "primary_refresh_window": [
@@ -72,7 +114,7 @@
     "2026-11-08T12:55:00+00:00"
    ],
    "primary_overdue": false,
-   "n_matches": 1,
+   "n_matches": 2,
    "matches": [
     {
      "match_id": "KXWTAMATCH-26NOV08TJELIN",
@@ -80,6 +122,55 @@
      "current_expected_start": "2026-11-08T13:00:00+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
+    },
+    {
+     "match_id": "KXATPMATCH-26NOV08SHEALC",
+     "label": "Ben Shelton vs Carlos Alcaraz",
+     "current_expected_start": "2026-11-08T14:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "HIGH"
+    }
+   ]
+  },
+  {
+   "earliest_credible_first_ball": "2026-11-08T15:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-08T14:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-08T14:15:00+00:00",
+    "2026-11-08T14:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-08T14:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-08T14:50:00+00:00",
+    "2026-11-08T14:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 3,
+   "matches": [
+    {
+     "match_id": "KXATPMATCH-26NOV08YMECER",
+     "label": "Elias Ymer vs Juan Manuel Cerundolo",
+     "current_expected_start": "2026-11-08T15:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "HIGH"
+    },
+    {
+     "match_id": "KXATPMATCH-26NOV08FEASHE",
+     "label": "Jacob Fearnley vs Alexander Shevchenko",
+     "current_expected_start": "2026-11-08T15:30:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "KALSHI_NOMINAL",
+     "start_time_confidence": "LOW"
+    },
+    {
+     "match_id": "KXATPMATCH-26NOV08TIRMUN",
+     "label": "Thiago Agustin Tirante vs Jaume Munar",
+     "current_expected_start": "2026-11-08T16:30:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
      "start_time_confidence": "HIGH"
     }
    ]
@@ -93,17 +184,356 @@
   "changed_matches": [],
   "slate_id": "SL-20261107T184226Z-e53c2216",
   "slate_built_at": "2026-11-07T18:42:26.497482+00:00",
-  "checked_at": "2026-11-07T21:49:43.693154+00:00"
+  "checked_at": "2026-11-07T22:00:24.729886+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
+  "KXATPMATCH-26NOV08TIRMUN": {
+   "match_id": "ATP:26NOV08TIRMUN:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T19:30:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
+   "current_expected_start": "2026-11-08T16:30:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T16:30:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T19:30:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T15:45:00+00:00",
+   "recommended_handicap_by": "2026-11-08T15:45:00+00:00",
+   "final_check_time": "2026-11-08T16:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 3,
+    "preceding": {
+     "source_match_id": "186534",
+     "players": [
+      "Juan Manuel Cerundolo",
+      "Elias Ymer"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 5,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-08T15:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Thiago Agustin Tirante vs Jaume Munar",
+   "level_bucket": "ATP"
+  },
+  "KXATPMATCH-26NOV08YMECER": {
+   "match_id": "ATP:26NOV08YMECER:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T18:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
+   "current_expected_start": "2026-11-08T15:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T15:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T18:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T14:15:00+00:00",
+   "recommended_handicap_by": "2026-11-08T14:15:00+00:00",
+   "final_check_time": "2026-11-08T14:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 2,
+    "preceding": {
+     "source_match_id": "187455",
+     "players": [
+      "Toby Samuel",
+      "Adrian Mannarino"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 5,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-08T12:30:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Elias Ymer vs Juan Manuel Cerundolo",
+   "level_bucket": "ATP"
+  },
+  "KXATPMATCH-26NOV08MANSAM": {
+   "match_id": "ATP:26NOV08MANSAM:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
+   "current_expected_start": "2026-11-08T12:30:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T12:30:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T15:30:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T11:45:00+00:00",
+   "recommended_handicap_by": "2026-11-08T11:45:00+00:00",
+   "final_check_time": "2026-11-08T12:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 1,
+    "preceding": {
+     "source_match_id": "187456",
+     "players": [
+      "Borna Gojo",
+      "Nikoloz Basilashvili"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 5,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-08T11:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Adrian Mannarino vs Toby Samuel",
+   "level_bucket": "ATP"
+  },
+  "KXATPMATCH-26NOV08FEASHE": {
+   "match_id": "ATP:26NOV08FEASHE:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": null,
+   "current_expected_start": "2026-11-08T15:30:00+00:00",
+   "start_time_source": "KALSHI_NOMINAL",
+   "start_time_confidence": "LOW",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T15:30:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T14:45:00+00:00",
+   "recommended_handicap_by": "2026-11-08T14:45:00+00:00",
+   "final_check_time": "2026-11-08T15:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": null,
+   "court_context": null,
+   "start_status": "ESTIMATED_UPCOMING",
+   "status_reasons": [
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
+   ],
+   "bet_allowed": false,
+   "label": "Jacob Fearnley vs Alexander Shevchenko",
+   "level_bucket": "ATP"
+  },
+  "KXATPMATCH-26NOV08MONSON": {
+   "match_id": "ATP:26NOV08MONSON:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
+   "current_expected_start": "2026-11-08T11:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T11:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T14:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T10:15:00+00:00",
+   "recommended_handicap_by": "2026-11-08T10:15:00+00:00",
+   "final_check_time": "2026-11-08T10:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Court 1",
+   "court_context": {
+    "court": "Court 1",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Inaki Montes-de la Torre vs Lorenzo Sonego",
+   "level_bucket": "ATP"
+  },
+  "KXATPMATCH-26NOV08BASGOJ": {
+   "match_id": "ATP:26NOV08BASGOJ:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
+   "current_expected_start": "2026-11-08T11:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T11:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T14:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T10:15:00+00:00",
+   "recommended_handicap_by": "2026-11-08T10:15:00+00:00",
+   "final_check_time": "2026-11-08T10:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Nikoloz Basilashvili vs Borna Gojo",
+   "level_bucket": "ATP"
+  },
+  "KXATPMATCH-26NOV08SHEALC": {
+   "match_id": "ATP:26NOV08SHEALC:singles",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
+   "nominal_scheduled_start": "2026-11-08T17:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
+   "current_expected_start": "2026-11-08T14:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T14:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T17:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T13:15:00+00:00",
+   "recommended_handicap_by": "2026-11-08T13:15:00+00:00",
+   "final_check_time": "2026-11-08T13:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Court Central",
+   "court_context": {
+    "court": "Court Central",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 1,
+    "preceding": {
+     "source_match_id": "186517",
+     "players": [
+      "Christian Harrison / Neal Skupski",
+      "Quentin Halys / Pierre-Hugues Herbert"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 5,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-08T11:30:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Ben Shelton vs Carlos Alcaraz",
+   "level_bucket": "ATP"
+  },
   "KXWTAMATCH-26NOV08TJELIN": {
    "match_id": "WTA:26NOV08TJELIN:singles",
-   "evaluated_at": "2026-11-07T21:49:43.693154+00:00",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
    "nominal_scheduled_start": "2026-11-08T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T21:48:52.538290+00:00",
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
    "current_expected_start": "2026-11-08T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -154,11 +584,11 @@
   },
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-07T21:49:43.693154+00:00",
+   "evaluated_at": "2026-11-07T22:00:24.729886+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T21:48:52.538290+00:00",
+   "start_time_last_checked": "2026-11-07T21:58:47.334838+00:00",
    "current_expected_start": "2026-11-08T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
