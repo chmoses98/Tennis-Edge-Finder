@@ -1,0 +1,52 @@
+{
+ "run_id": "20261107T164845Z",
+ "started_at": "2026-11-07T16:48:45.172779+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 42,
+ "truths_written": 4,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPMATCH-26NOV07FEANAG": {
+   "confidence": "B",
+   "bracket_s": 252.70939,
+   "first_ball": "2026-11-07T16:51:25.580110+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26NOV07FEANAG-2": {
+   "confidence": "B",
+   "bracket_s": 252.70939,
+   "first_ball": "2026-11-07T16:51:25.580110+00:00",
+   "no_play": false
+  },
+  "KXATPSETWINNER-26NOV07FEANAG-1": {
+   "confidence": "B",
+   "bracket_s": 252.70939,
+   "first_ball": "2026-11-07T16:51:25.580110+00:00",
+   "no_play": false
+  },
+  "KXATPEXACTMATCH-26NOV07FEANAG": {
+   "confidence": "B",
+   "bracket_s": 252.70939,
+   "first_ball": "2026-11-07T16:51:25.580110+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "watchlist": {
+  "capture_board_markets": 727,
+  "events_only_on_capture_board": 69,
+  "selected_from_capture_board": 66
+ },
+ "mapping": {
+  "MATCHED": 42,
+  "UNMATCHED": 420
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-11-07T16:58:08.824549+00:00"
+}
