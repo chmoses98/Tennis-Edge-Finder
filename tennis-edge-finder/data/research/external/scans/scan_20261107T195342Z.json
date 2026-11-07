@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-07T19:53:42.430125+00:00",
+ "run_id": "20261107T195342Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 537,
+  "skipped_family": 195,
+  "skipped_period": 117,
+  "skipped_live": 12,
+  "one_sided": 3,
+  "rows": 740,
+  "devigged": 222
+ },
+ "smarkets_fetch": {
+  "events_seen": 90,
+  "events_priced": 80,
+  "markets": 386,
+  "markets_mapped": 153,
+  "contracts": 318,
+  "quoted_contracts": 318,
+  "raw": "data/research/external/raw/20261107T195342Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 153,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 11,
+  "rows": 307,
+  "two_sided": 306,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 81,
+ "external_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6038,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "N. Khirin": 1,
+   "Wesley Cotton": 1,
+   "Umit Ege Cankus": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Kazushi Idogaki": 1,
+   "Faris Zakaria": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 21,
+  "by_status": {
+   "MAPPED": 18,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Agathe Charlot kolb": 1,
+   "Capucine Dournes": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 8,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 18,
+ "model_witness_available": true,
+ "rows": 10,
+ "counts": {
+  "PASS": 10,
+  "tri:INSUFFICIENT_INPUTS": 2,
+  "tri:MODEL_LONE_OUTLIER": 4,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
