@@ -1,0 +1,90 @@
+{
+ "generated_at": "2026-11-07T14:02:14.952521+00:00",
+ "run_id": "20261107T140214Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 640,
+  "skipped_family": 200,
+  "skipped_period": 159,
+  "skipped_live": 12,
+  "one_sided": 8,
+  "rows": 821,
+  "devigged": 273
+ },
+ "smarkets_fetch": {
+  "events_seen": 87,
+  "events_priced": 80,
+  "markets": 602,
+  "markets_mapped": 214,
+  "contracts": 472,
+  "quoted_contracts": 472,
+  "raw": "data/research/external/raw/20261107T140214Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 214,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 56,
+  "rows": 416,
+  "two_sided": 412,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 192,
+ "external_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.7778,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Noma Akugue Noha": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 34,
+  "by_status": {
+   "MAPPED": 30,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8824,
+  "top_refusal_subjects": {
+   "Sofya Lansere": 1,
+   "Alice Tubello": 1,
+   "Digvijay Pratap Singh": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 30,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 18
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
