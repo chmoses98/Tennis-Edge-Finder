@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-07T10:42:02.960551+00:00",
+ "run_id": "20261107T104202Z",
+ "external_parse": {
+  "events": 87,
+  "markets": 880,
+  "skipped_family": 269,
+  "skipped_period": 225,
+  "skipped_live": 19,
+  "one_sided": 4,
+  "rows": 1202,
+  "devigged": 382
+ },
+ "smarkets_fetch": {
+  "events_seen": 48,
+  "events_priced": 48,
+  "markets": 684,
+  "markets_mapped": 207,
+  "contracts": 460,
+  "quoted_contracts": 460,
+  "raw": "data/research/external/raw/20261107T104202Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 207,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 425,
+  "two_sided": 420,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 161,
+ "external_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7432,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Noma Akugue Noha": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Raluca Georgiana Serban": 1,
+   "Emese Serkedi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 48,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 10,
+   "MAPPED": 38
+  },
+  "mapped_rate": 0.7917,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 30,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8108,
+  "top_refusal_subjects": {
+   "Sofya Lansere": 1,
+   "Alice Tubello": 1,
+   "Anna Blinkova": 1,
+   "Sofia Barhacova": 1,
+   "Emese Serkedi": 1,
+   "Raluca Georgiana Serban": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 69,
+ "kalshi_mapped_matches": 30,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 33,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "WATCH": 3,
+  "tri:MARKETS_AGREE": 4,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
