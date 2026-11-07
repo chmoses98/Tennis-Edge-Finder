@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-07T16:24:40.633874+00:00",
+ "run_id": "20261107T162440Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 514,
+  "skipped_family": 162,
+  "skipped_period": 123,
+  "skipped_live": 28,
+  "one_sided": 5,
+  "rows": 724,
+  "devigged": 224
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 589,
+  "markets_mapped": 177,
+  "contracts": 394,
+  "quoted_contracts": 394,
+  "raw": "data/research/external/raw/20261107T162440Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 177,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 69,
+  "rows": 325,
+  "two_sided": 324,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 727,
+ "external_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 5,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7206,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Delgado Sarah": 1,
+   "Conway Haylee": 1,
+   "Louis Hull": 1,
+   "Brendan Boland": 1,
+   "Rudy Ceccon": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7722,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.7297,
+  "top_refusal_subjects": {
+   "Aditya Kothari": 1,
+   "Nathan Fekadu": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Vraj Gohil": 1,
+   "Puchit Sukjai": 1,
+   "Narathip Rueangsri": 1,
+   "Zitawe Kulphisanrat": 1,
+   "Wang Ziteng": 1,
+   "Woravin Kumthonkittikul": 1
+  }
+ },
+ "matched_both_venues": 28,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
