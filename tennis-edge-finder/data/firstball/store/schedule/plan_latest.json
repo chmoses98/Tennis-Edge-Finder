@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-07T14:51:57.118586+00:00",
+ "generated_at": "2026-11-07T15:04:49.629491+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 83,
+ "board_matches": 78,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 2,
   "START_IMMINENT": 1,
   "ESTIMATED_UPCOMING": 1,
-  "STARTED": 8,
-  "START_UNKNOWN": 71
+  "STARTED": 6,
+  "START_UNKNOWN": 68
  },
- "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+ "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-07T14:30:00+00:00",
   "recommended_run_tennis_time": "2026-11-07T13:45:00+00:00",
@@ -37,7 +37,7 @@
    {
     "match_id": "KXATPMATCH-26NOV07RUUALC",
     "label": "Casper Ruud vs Carlos Alcaraz",
-    "current_expected_start": "2026-11-07T15:29:11.392550+00:00",
+    "current_expected_start": "2026-11-07T15:42:42.725472+00:00",
     "start_status": "VERIFIED_UPCOMING",
     "start_time_source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
     "start_time_confidence": "MEDIUM"
@@ -79,7 +79,7 @@
     {
      "match_id": "KXATPMATCH-26NOV07RUUALC",
      "label": "Casper Ruud vs Carlos Alcaraz",
-     "current_expected_start": "2026-11-07T15:29:11.392550+00:00",
+     "current_expected_start": "2026-11-07T15:42:42.725472+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
      "start_time_confidence": "MEDIUM"
@@ -100,61 +100,28 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-07T14:30:00+00:00, slate built 2026-11-07T11:08:07.149081+00:00",
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 7 match(es)"
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
   ],
   "changed_matches": [
    {
-    "match": "KXATPMATCH-26NOV07DZUMON",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPMATCH-26NOV07WALSON",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXWTAMATCH-26NOV06TJEMON",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPMATCH-26NOV07VANASHE",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXWTAMATCH-26NOV07LINZAK",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPMATCH-26NOV07FEANAG",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
     "match": "KXATPMATCH-26NOV07RUUALC",
-    "change": "EXPECTED_START_MOVED_EARLIER_30_MIN"
+    "change": "EXPECTED_START_MOVED_EARLIER_17_MIN"
    }
   ],
-  "slate_id": "SL-20261107T110807Z-8ad5fb9b",
-  "slate_built_at": "2026-11-07T11:08:07.149081+00:00",
-  "checked_at": "2026-11-07T14:51:57.118586+00:00"
+  "slate_id": "SL-20261107T143504Z-b707b043",
+  "slate_built_at": "2026-11-07T14:35:04.692523+00:00",
+  "checked_at": "2026-11-07T15:04:49.629491+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-07T14:51:57.118586+00:00",
-   "reason": "published slate SL-20261107T110807Z-8ad5fb9b is stale: 7 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV07RUUALC": {
    "match_id": "ATP:26NOV07RUUALC:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
-   "current_expected_start": "2026-11-07T15:29:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "current_expected_start": "2026-11-07T15:42:42.725472+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -164,7 +131,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-07T15:29:11.392550+00:00",
+     "time": "2026-11-07T15:42:42.725472+00:00",
      "source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
      "confidence": "MEDIUM"
     },
@@ -174,9 +141,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-07T14:44:11.392550+00:00",
-   "recommended_handicap_by": "2026-11-07T14:44:11.392550+00:00",
-   "final_check_time": "2026-11-07T15:19:11.392550+00:00",
+   "earliest_safe_handicap_time": "2026-11-07T14:57:42.725472+00:00",
+   "recommended_handicap_by": "2026-11-07T14:57:42.725472+00:00",
+   "final_check_time": "2026-11-07T15:32:42.725472+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -194,14 +161,14 @@
      "state": "IN",
      "period": 2,
      "best_of": 5,
-     "games_played": 13,
+     "games_played": 17,
      "scheduled_utc": "2026-11-07T13:40:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-211_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-198_MIN"
    ],
    "bet_allowed": true,
    "label": "Casper Ruud vs Carlos Alcaraz",
@@ -209,11 +176,11 @@
   },
   "KXATPMATCH-26NOV07FEANAG": {
    "match_id": "ATP:26NOV07FEANAG:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T17:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
    "current_expected_start": "2026-11-07T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -257,7 +224,7 @@
    "start_status": "START_IMMINENT",
    "status_reasons": [
     "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
-    "OVERDUE_BUT_SEEN_NOT_STARTED_165S_AGO"
+    "OVERDUE_BUT_SEEN_NOT_STARTED_126S_AGO"
    ],
    "bet_allowed": true,
    "label": "Jacob Fearnley vs Arthur Nagel",
@@ -265,7 +232,7 @@
   },
   "KXATPMATCH-26NOV07DURSHE": {
    "match_id": "ATP:26NOV07DURSHE:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -296,40 +263,13 @@
    "label": "Viktor Durasovic vs Alexander Shevchenko",
    "level_bucket": "ATP"
   },
-  "KXATPMATCH-26NOV07WALSON": {
-   "match_id": "ATP:26NOV07WALSON:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
-   "nominal_scheduled_start": "2026-11-07T14:30:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_atp (confidence C)",
-   "first_ball_at": "2026-11-07T14:03:21.685717+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Olle Wallin vs Lorenzo Sonego",
-   "level_bucket": "ATP"
-  },
   "KXATPMATCH-26NOV07DZUMON": {
    "match_id": "ATP:26NOV07DZUMON:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T14:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -352,11 +292,11 @@
   },
   "KXATPMATCH-26NOV07VANASHE": {
    "match_id": "ATP:26NOV07VANASHE:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -379,11 +319,11 @@
   },
   "KXWTAMATCH-26NOV07LINZAK": {
    "match_id": "WTA:26NOV07LINZAK:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -404,40 +344,13 @@
    "label": "Magda Linette vs Anastasia Zakharova",
    "level_bucket": "WTA"
   },
-  "KXWTAMATCH-26NOV06TJEMON": {
-   "match_id": "WTA:26NOV06TJEMON:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
-   "nominal_scheduled_start": "2026-11-07T07:30:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_wta (confidence C)",
-   "first_ball_at": "2026-11-07T12:39:55.541954+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Janice Tjen vs Robin Montgomery",
-   "level_bucket": "WTA"
-  },
   "KXWTACHALLENGERMATCH-26NOV07LANNOH": {
    "match_id": "WTA:26NOV07LANNOH:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-07T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -460,11 +373,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV06TUBAND": {
    "match_id": "WTA:26NOV06TUBAND:singles",
-   "evaluated_at": "2026-11-07T14:51:57.118586+00:00",
+   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
    "nominal_scheduled_start": "2026-11-06T21:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T14:49:11.392550+00:00",
+   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
