@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-11-07T16:43:46.309442+00:00",
+ "run_id": "20261107T164346Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 514,
+  "skipped_family": 162,
+  "skipped_period": 123,
+  "skipped_live": 25,
+  "one_sided": 5,
+  "rows": 724,
+  "devigged": 224
+ },
+ "smarkets_fetch": {
+  "events_seen": 79,
+  "events_priced": 79,
+  "markets": 531,
+  "markets_mapped": 163,
+  "contracts": 362,
+  "quoted_contracts": 362,
+  "raw": "data/research/external/raw/20261107T164346Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 163,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 35,
+  "rows": 327,
+  "two_sided": 326,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 130,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 47,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7231,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Delgado Sarah": 1,
+   "Louis Hull": 1,
+   "Brendan Boland": 1,
+   "Rudy Ceccon": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 79,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 18,
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7468,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 32,
+  "by_status": {
+   "MAPPED": 29,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9062,
+  "top_refusal_subjects": {
+   "Dragos Cazacu": 1,
+   "Raluca Georgiana Serban": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 29,
+ "model_witness_available": true,
+ "rows": 16,
+ "counts": {
+  "PASS": 15,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MODEL_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
