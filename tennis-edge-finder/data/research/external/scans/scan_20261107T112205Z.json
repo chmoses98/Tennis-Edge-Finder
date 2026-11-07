@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-07T11:22:05.402572+00:00",
+ "run_id": "20261107T112205Z",
+ "external_parse": {
+  "events": 83,
+  "markets": 864,
+  "skipped_family": 271,
+  "skipped_period": 223,
+  "skipped_live": 17,
+  "one_sided": 10,
+  "rows": 1150,
+  "devigged": 360
+ },
+ "smarkets_fetch": {
+  "events_seen": 45,
+  "events_priced": 45,
+  "markets": 676,
+  "markets_mapped": 202,
+  "contracts": 450,
+  "quoted_contracts": 450,
+  "raw": "data/research/external/raw/20261107T112205Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 202,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 417,
+  "two_sided": 413,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 183,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.7286,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Noma Akugue Noha": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Raluca Georgiana Serban": 1,
+   "Emese Serkedi": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 45,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 8,
+   "MAPPED": 37
+  },
+  "mapped_rate": 0.8222,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8
+  }
+ },
+ "kalshi_mapping": {
+  "total": 33,
+  "by_status": {
+   "MAPPED": 25,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7576,
+  "top_refusal_subjects": {
+   "Sofya Lansere": 1,
+   "Alice Tubello": 1,
+   "Anna Blinkova": 1,
+   "Yeonwoo Ku": 1,
+   "Sofia Barhacova": 1,
+   "Emese Serkedi": 1,
+   "Raluca Georgiana Serban": 1,
+   "Mariia Lazarenko": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 64,
+ "kalshi_mapped_matches": 25,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 27,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:MARKETS_AGREE": 4,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
