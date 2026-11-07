@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-07 10:09Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-07 10:21Z)
 
 * Earliest credible first ball: **2026-11-07 11:30Z**
 * Recommended RUN TENNIS time: **2026-11-07 10:45Z**
@@ -13,9 +13,9 @@
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Mika Brunold vs Borna Gojo, Nikoloz Basilashvili vs Francesco Passaro
 
-Published slate: `SL-20261107T093208Z-63d22ee2` built 2026-11-07 09:32Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261107T100839Z-e5d7ff29` built 2026-11-07 10:08Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: run_tennis (ok)
 
 * later window 2: first ball 2026-11-07 13:30Z, run by 2026-11-07 12:45Z, 3 match(es)
 * later window 3: first ball 2026-11-07 16:00Z, run by 2026-11-07 15:15Z, 2 match(es)
