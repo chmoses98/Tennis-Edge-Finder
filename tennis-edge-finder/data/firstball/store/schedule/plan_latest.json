@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-07T16:37:51.736221+00:00",
+ "generated_at": "2026-11-07T16:48:26.382337+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 91,
@@ -9,7 +9,7 @@
   "VERIFIED_UPCOMING": 4,
   "START_UNKNOWN": 85
  },
- "evaluated_at": "2026-11-07T16:37:51.736221+00:00",
+ "evaluated_at": "2026-11-07T16:48:26.382337+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-07T14:30:00+00:00",
   "recommended_run_tennis_time": "2026-11-07T13:45:00+00:00",
@@ -102,13 +102,21 @@
   ],
   "slate_id": "SL-20261107T160022Z-2a2556c6",
   "slate_built_at": "2026-11-07T16:00:22.912410+00:00",
-  "checked_at": "2026-11-07T16:37:51.736221+00:00"
+  "checked_at": "2026-11-07T16:48:26.382337+00:00"
  },
- "actions_this_pass": [],
+ "actions_this_pass": [
+  {
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-07T16:48:26.382337+00:00",
+   "reason": "published slate SL-20261107T160022Z-2a2556c6 is stale: 1 match(es) changed status/start since it was built",
+   "dispatched": true,
+   "http": 204
+  }
+ ],
  "statuses": {
   "KXATPMATCH-26NOV07RUUALC": {
    "match_id": "ATP:26NOV07RUUALC:singles",
-   "evaluated_at": "2026-11-07T16:37:51.736221+00:00",
+   "evaluated_at": "2026-11-07T16:48:26.382337+00:00",
    "nominal_scheduled_start": "2026-11-07T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -135,11 +143,11 @@
   },
   "KXATPMATCH-26NOV07FEANAG": {
    "match_id": "ATP:26NOV07FEANAG:singles",
-   "evaluated_at": "2026-11-07T16:37:51.736221+00:00",
+   "evaluated_at": "2026-11-07T16:48:26.382337+00:00",
    "nominal_scheduled_start": "2026-11-07T17:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T16:36:51.163223+00:00",
+   "start_time_last_checked": "2026-11-07T16:47:24.639386+00:00",
    "current_expected_start": "2026-11-07T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -150,7 +158,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-07T16:41:51.163223+00:00",
+     "time": "2026-11-07T16:52:24.639386+00:00",
      "source": "COURT_PROGRESSION: preceding match on Court 1 finished",
      "confidence": "MEDIUM"
     },
@@ -188,7 +196,7 @@
    "start_status": "START_IMMINENT",
    "status_reasons": [
     "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
-    "OVERDUE_BUT_SEEN_NOT_STARTED_60S_AGO"
+    "OVERDUE_BUT_SEEN_NOT_STARTED_61S_AGO"
    ],
    "bet_allowed": true,
    "label": "Jacob Fearnley vs Arthur Nagel",
@@ -196,11 +204,11 @@
   },
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-07T16:37:51.736221+00:00",
+   "evaluated_at": "2026-11-07T16:48:26.382337+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T16:36:51.163223+00:00",
+   "start_time_last_checked": "2026-11-07T16:47:24.639386+00:00",
    "current_expected_start": "2026-11-08T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
