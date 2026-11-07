@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-07T22:10:14.431379+00:00",
+ "run_id": "20261107T221014Z",
+ "external_parse": {
+  "events": 56,
+  "markets": 547,
+  "skipped_family": 191,
+  "skipped_period": 126,
+  "skipped_live": 6,
+  "one_sided": 5,
+  "rows": 758,
+  "devigged": 225
+ },
+ "smarkets_fetch": {
+  "events_seen": 106,
+  "events_priced": 80,
+  "markets": 461,
+  "markets_mapped": 189,
+  "contracts": 390,
+  "quoted_contracts": 390,
+  "raw": "data/research/external/raw/20261107T221014Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 189,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 376,
+  "two_sided": 369,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 223,
+ "external_mapping": {
+  "total": 44,
+  "by_status": {
+   "MAPPED": 27,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.6136,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Chloe Zigliara": 1,
+   "Perez Francisco": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Kazushi Idogaki": 1,
+   "Faris Zakaria": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.6727,
+  "top_refusal_subjects": {
+   "Anna Blinkova": 1,
+   "Davi Domarco Carlos": 1,
+   "Mateus Kuwar Lang": 1,
+   "Gabriel Ribeiro Pinho": 1,
+   "Ari Feig": 1,
+   "Vraj Gohil": 1,
+   "Puchit Sukjai": 1,
+   "Narathip Rueangsri": 1,
+   "Wang Ziteng": 1,
+   "Woravin Kumthonkittikul": 1
+  }
+ },
+ "matched_both_venues": 17,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 37,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
