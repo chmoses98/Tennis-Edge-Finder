@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-07T19:13:42.339717+00:00",
+ "run_id": "20261107T191342Z",
+ "external_parse": {
+  "events": 72,
+  "markets": 552,
+  "skipped_family": 198,
+  "skipped_period": 122,
+  "skipped_live": 18,
+  "one_sided": 5,
+  "rows": 754,
+  "devigged": 227
+ },
+ "smarkets_fetch": {
+  "events_seen": 82,
+  "events_priced": 80,
+  "markets": 565,
+  "markets_mapped": 171,
+  "contracts": 374,
+  "quoted_contracts": 374,
+  "raw": "data/research/external/raw/20261107T191342Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 171,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 357,
+  "two_sided": 356,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 106,
+ "external_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.6167,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "N. Khirin": 1,
+   "Felix Bockelmann Evans": 1,
+   "Wesley Cotton": 1,
+   "Umit Ege Cankus": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 28,
+  "by_status": {
+   "MAPPED": 24,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8571,
+  "top_refusal_subjects": {
+   "Jonah Haidarian": 1,
+   "Mariia Lazarenko": 1,
+   "Valeriia Iushchenko": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 14,
+ "external_mapped_matches": 85,
+ "kalshi_mapped_matches": 24,
+ "model_witness_available": true,
+ "rows": 14,
+ "counts": {
+  "PASS": 14,
+  "tri:MODEL_LONE_OUTLIER": 9,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
