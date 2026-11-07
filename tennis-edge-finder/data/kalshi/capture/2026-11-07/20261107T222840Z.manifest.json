@@ -1,0 +1,55 @@
+{
+ "run_id": "20261107T222840Z",
+ "started_at": "2026-11-07T22:28:40.040268+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 826,
+  "quotes_written": 175,
+  "quotes_unchanged": 651,
+  "events_new": 0,
+  "books": 6,
+  "book_candidates": 6,
+  "trades_tennis": 1738,
+  "trades_global_scanned": 178652,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794089919,
+   "hi": 1794090520,
+   "complete": true,
+   "pages": 179,
+   "trades": 178652
+  },
+  "backlog_scans": [],
+  "errors": [],
+  "abandoned": [],
+  "pages": 179,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 337,
+  "retries": 6,
+  "http_429": 6,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 36.72992251866453,
+  "by_path": {
+   "markets": 146,
+   "markets/KXATPCHALLENGERDOUBLES-26NOV07HIDMOLKOLROD-HIDMOL/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26NOV07HIDMOLKOLROD-KOLROD/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07OSULAS-LAS/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07OSULAS-OSU/orderbook": 1,
+   "markets/trades": 179
+  }
+ },
+ "finished_at": "2026-11-07T22:29:58.979555+00:00"
+}
