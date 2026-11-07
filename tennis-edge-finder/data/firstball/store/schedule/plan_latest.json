@@ -1,89 +1,63 @@
 {
- "generated_at": "2026-11-07T06:08:25.461436+00:00",
+ "generated_at": "2026-11-07T06:20:28.224316+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 105,
+ "board_matches": 102,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 15,
   "ESTIMATED_UPCOMING": 1,
-  "START_IMMINENT": 1,
-  "START_UNKNOWN": 86,
-  "STARTED": 2
+  "STARTED": 3,
+  "START_UNKNOWN": 83
  },
- "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+ "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-07T06:05:00+00:00",
-  "recommended_run_tennis_time": "2026-11-07T05:20:00+00:00",
+  "earliest_credible_first_ball": "2026-11-07T06:57:24.342110+00:00",
+  "recommended_run_tennis_time": "2026-11-07T06:12:24.342110+00:00",
   "primary_refresh_window": [
-   "2026-11-07T05:20:00+00:00",
-   "2026-11-07T05:35:00+00:00"
+   "2026-11-07T06:12:24.342110+00:00",
+   "2026-11-07T06:27:24.342110+00:00"
   ],
-  "final_status_price_check_time": "2026-11-07T05:55:00+00:00",
+  "final_status_price_check_time": "2026-11-07T06:47:24.342110+00:00",
   "final_refresh_window": [
-   "2026-11-07T05:55:00+00:00",
-   "2026-11-07T06:00:00+00:00"
+   "2026-11-07T06:47:24.342110+00:00",
+   "2026-11-07T06:52:24.342110+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
   "matches": [
    {
-    "match_id": "KXWTAMATCH-26NOV07SHULIU",
-    "label": "Alexandra Shubladze vs Claire Liu",
-    "current_expected_start": "2026-11-07T06:05:00+00:00",
-    "start_status": "START_IMMINENT",
-    "start_time_source": "LIVE_SCHEDULE:espn_wta",
-    "start_time_confidence": "HIGH"
+    "match_id": "KXWTAMATCH-26NOV07SAKEAL",
+    "label": "Maria Sakkari vs Alexandra Eala",
+    "current_expected_start": "2026-11-07T06:57:24.342110+00:00",
+    "start_status": "VERIFIED_UPCOMING",
+    "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+    "start_time_confidence": "MEDIUM"
    }
   ]
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-07T06:05:00+00:00",
-   "recommended_run_tennis_time": "2026-11-07T05:20:00+00:00",
+   "earliest_credible_first_ball": "2026-11-07T06:57:24.342110+00:00",
+   "recommended_run_tennis_time": "2026-11-07T06:12:24.342110+00:00",
    "primary_refresh_window": [
-    "2026-11-07T05:20:00+00:00",
-    "2026-11-07T05:35:00+00:00"
+    "2026-11-07T06:12:24.342110+00:00",
+    "2026-11-07T06:27:24.342110+00:00"
    ],
-   "final_status_price_check_time": "2026-11-07T05:55:00+00:00",
+   "final_status_price_check_time": "2026-11-07T06:47:24.342110+00:00",
    "final_refresh_window": [
-    "2026-11-07T05:55:00+00:00",
-    "2026-11-07T06:00:00+00:00"
+    "2026-11-07T06:47:24.342110+00:00",
+    "2026-11-07T06:52:24.342110+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
    "matches": [
     {
-     "match_id": "KXWTAMATCH-26NOV07SHULIU",
-     "label": "Alexandra Shubladze vs Claire Liu",
-     "current_expected_start": "2026-11-07T06:05:00+00:00",
-     "start_status": "START_IMMINENT",
-     "start_time_source": "LIVE_SCHEDULE:espn_wta",
-     "start_time_confidence": "HIGH"
-    }
-   ]
-  },
-  {
-   "earliest_credible_first_ball": "2026-11-07T08:00:00+00:00",
-   "recommended_run_tennis_time": "2026-11-07T07:15:00+00:00",
-   "primary_refresh_window": [
-    "2026-11-07T07:15:00+00:00",
-    "2026-11-07T07:30:00+00:00"
-   ],
-   "final_status_price_check_time": "2026-11-07T07:50:00+00:00",
-   "final_refresh_window": [
-    "2026-11-07T07:50:00+00:00",
-    "2026-11-07T07:55:00+00:00"
-   ],
-   "primary_overdue": false,
-   "n_matches": 1,
-   "matches": [
-    {
      "match_id": "KXWTAMATCH-26NOV07SAKEAL",
      "label": "Maria Sakkari vs Alexandra Eala",
-     "current_expected_start": "2026-11-07T08:00:00+00:00",
+     "current_expected_start": "2026-11-07T06:57:24.342110+00:00",
      "start_status": "VERIFIED_UPCOMING",
-     "start_time_source": "LIVE_SCHEDULE:espn_wta",
-     "start_time_confidence": "HIGH"
+     "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+     "start_time_confidence": "MEDIUM"
     }
    ]
   },
@@ -216,24 +190,30 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-07T06:05:00+00:00, slate built 2026-11-07T04:23:53.617462+00:00",
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
+   "PRIMARY_REFRESH_DUE: window at 2026-11-07T06:57:24.342110+00:00, slate built 2026-11-07T04:23:53.617462+00:00",
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
   ],
   "changed_matches": [
    {
     "match": "KXWTAMATCH-26NOV07SHULIU",
     "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   },
+   {
+    "match": "KXWTAMATCH-26NOV07SAKEAL",
+    "change": "EXPECTED_START_MOVED_EARLIER_62_MIN"
    }
   ],
   "slate_id": "SL-20261107T042353Z-177e2533",
   "slate_built_at": "2026-11-07T04:23:53.617462+00:00",
-  "checked_at": "2026-11-07T06:08:25.461436+00:00"
+  "checked_at": "2026-11-07T06:20:28.224316+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-07T06:08:25.461436+00:00",
-   "reason": "published slate SL-20261107T042353Z-177e2533 is stale: 1 match(es) changed status/start since it was built",
+   "kind": "slate_primary",
+   "window": "20261107T0645Z",
+   "reason": "primary handicap packet for window at 2026-11-07T06:57:24.342110+00:00",
+   "at": "2026-11-07T06:20:28.224316+00:00",
+   "earliest_credible_first_ball": "2026-11-07T06:57:24.342110+00:00",
    "dispatched": true,
    "http": 204
   }
@@ -241,11 +221,11 @@
  "statuses": {
   "KXATPMATCH-26NOV07FEANAG": {
    "match_id": "ATP:26NOV07FEANAG:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T17:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -296,7 +276,7 @@
   },
   "KXATPMATCH-26NOV07DURSHE": {
    "match_id": "ATP:26NOV07DURSHE:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -329,11 +309,11 @@
   },
   "KXATPMATCH-26NOV07WALSON": {
    "match_id": "ATP:26NOV07WALSON:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T14:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T11:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -384,11 +364,11 @@
   },
   "KXATPMATCH-26NOV07DZUMON": {
    "match_id": "ATP:26NOV07DZUMON:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T14:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T11:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -439,11 +419,11 @@
   },
   "KXATPMATCH-26NOV07BRUGOJ": {
    "match_id": "ATP:26NOV07BRUGOJ:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T10:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -482,11 +462,11 @@
   },
   "KXATPMATCH-26NOV07BASPAS": {
    "match_id": "ATP:26NOV07BASPAS:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T10:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -525,11 +505,11 @@
   },
   "KXATPMATCH-26NOV07VANASHE": {
    "match_id": "ATP:26NOV07VANASHE:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T13:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -580,11 +560,11 @@
   },
   "KXWTAMATCH-26NOV07LINZAK": {
    "match_id": "WTA:26NOV07LINZAK:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -635,14 +615,14 @@
   },
   "KXWTAMATCH-26NOV07SAKEAL": {
    "match_id": "WTA:26NOV07SAKEAL:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T10:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
-   "current_expected_start": "2026-11-07T08:00:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_wta",
-   "start_time_confidence": "HIGH",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
+   "current_expected_start": "2026-11-07T06:57:24.342110+00:00",
+   "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+   "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
     {
      "time": "2026-11-07T08:00:00+00:00",
@@ -650,14 +630,19 @@
      "confidence": "HIGH"
     },
     {
+     "time": "2026-11-07T06:57:24.342110+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
+     "confidence": "MEDIUM"
+    },
+    {
      "time": "2026-11-07T10:30:00+00:00",
      "source": "KALSHI_NOMINAL",
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-07T07:15:00+00:00",
-   "recommended_handicap_by": "2026-11-07T07:15:00+00:00",
-   "final_check_time": "2026-11-07T07:50:00+00:00",
+   "earliest_safe_handicap_time": "2026-11-07T06:12:24.342110+00:00",
+   "recommended_handicap_by": "2026-11-07T06:12:24.342110+00:00",
+   "final_check_time": "2026-11-07T06:47:24.342110+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -665,24 +650,24 @@
    "court_context": {
     "court": "Centre Court",
     "same_time_on_court": 0,
-    "queue_ahead_pre": 1,
+    "queue_ahead_pre": 0,
     "preceding": {
      "source_match_id": "186644",
      "players": [
       "Claire Liu",
       "Alexandra Shubladze"
      ],
-     "state": "PRE",
+     "state": "IN",
      "period": 1,
      "best_of": 3,
-     "games_played": 0,
+     "games_played": 1,
      "scheduled_utc": "2026-11-07T06:05:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-150_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-213_MIN"
    ],
    "bet_allowed": true,
    "label": "Maria Sakkari vs Alexandra Eala",
@@ -690,11 +675,11 @@
   },
   "KXWTAMATCH-26NOV06TJEMON": {
    "match_id": "WTA:26NOV06TJEMON:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T07:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -745,55 +730,38 @@
   },
   "KXWTAMATCH-26NOV07SHULIU": {
    "match_id": "WTA:26NOV07SHULIU:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T09:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
-   "current_expected_start": "2026-11-07T06:05:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_wta",
-   "start_time_confidence": "HIGH",
-   "start_time_candidates": [
-    {
-     "time": "2026-11-07T06:05:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_wta",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-11-07T09:00:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-11-07T05:20:00+00:00",
-   "recommended_handicap_by": "2026-11-07T05:20:00+00:00",
-   "final_check_time": "2026-11-07T05:55:00+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Centre Court",
-   "court_context": {
-    "court": "Centre Court",
-    "preceding": null,
-    "queue_ahead_pre": 0,
-    "same_time_on_court": 0
-   },
-   "start_status": "START_IMMINENT",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
+   "current_expected_start": null,
+   "start_time_source": null,
+   "start_time_confidence": "NONE",
+   "start_time_candidates": [],
+   "earliest_safe_handicap_time": null,
+   "recommended_handicap_by": null,
+   "final_check_time": null,
+   "first_ball_status": "OBSERVED_STARTED",
+   "first_ball_source": "espn_wta (confidence C)",
+   "first_ball_at": "2026-11-07T06:10:04.188670+00:00",
+   "court": null,
+   "court_context": null,
+   "start_status": "STARTED",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-175_MIN",
-    "OVERDUE_BUT_SEEN_NOT_STARTED_179S_AGO"
+    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
    ],
-   "bet_allowed": true,
+   "bet_allowed": false,
    "label": "Alexandra Shubladze vs Claire Liu",
    "level_bucket": "WTA"
   },
   "KXWTACHALLENGERMATCH-26NOV07LANNOH": {
    "match_id": "WTA:26NOV07LANNOH:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-07T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": "2026-11-07T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -839,11 +807,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV06TUBAND": {
    "match_id": "WTA:26NOV06TUBAND:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-06T21:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -866,11 +834,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV06BLIKAB": {
    "match_id": "WTA:26NOV06BLIKAB:singles",
-   "evaluated_at": "2026-11-07T06:08:25.461436+00:00",
+   "evaluated_at": "2026-11-07T06:20:28.224316+00:00",
    "nominal_scheduled_start": "2026-11-06T18:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T06:05:26.210547+00:00",
+   "start_time_last_checked": "2026-11-07T06:17:24.342110+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
