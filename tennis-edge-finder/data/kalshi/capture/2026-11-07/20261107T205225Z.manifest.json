@@ -1,0 +1,64 @@
+{
+ "run_id": "20261107T205225Z",
+ "started_at": "2026-11-07T20:52:25.206444+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 718,
+  "quotes_written": 146,
+  "quotes_unchanged": 572,
+  "events_new": 3,
+  "books": 12,
+  "book_candidates": 12,
+  "trades_tennis": 5375,
+  "trades_global_scanned": 187626,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794084144,
+   "hi": 1794084745,
+   "complete": true,
+   "pages": 188,
+   "trades": 187626
+  },
+  "backlog_scans": [],
+  "errors": [],
+  "abandoned": [],
+  "pages": 188,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 356,
+  "retries": 7,
+  "http_429": 7,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 36.6883903634407,
+  "by_path": {
+   "markets": 146,
+   "events/KXITFWMATCH-26NOV08BRICRI": 1,
+   "events/KXITFWMATCH-26NOV08BOULAN": 1,
+   "events/KXITFWMATCH-26NOV08CHASTE": 1,
+   "markets/KXITFWDOUBLES-26NOV06RAPSHOFERPAW-FERPAW/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV06RAPSHOFERPAW-RAPSHO/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07DIASEY-DIA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07DIASEY-SEY/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07CHIKOZ-CHI/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07CHIKOZ-KOZ/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHEBRA-BRA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHEBRA-CHE/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26NOV07HIDMOLKOLROD-HIDMOL/orderbook": 1,
+   "markets/KXATPCHALLENGERDOUBLES-26NOV07HIDMOLKOLROD-KOLROD/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV07MOYROMLABVER-LABVER/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV07MOYROMLABVER-MOYROM/orderbook": 1,
+   "markets/trades": 188
+  }
+ },
+ "finished_at": "2026-11-07T20:53:46.814612+00:00"
+}
