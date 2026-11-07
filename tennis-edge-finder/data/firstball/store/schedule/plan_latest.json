@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-07T17:30:28.133980+00:00",
+ "generated_at": "2026-11-07T17:41:09.940224+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 91,
+ "board_matches": 94,
  "counts_by_status": {
-  "STARTED": 2,
+  "STARTED": 1,
   "VERIFIED_UPCOMING": 4,
-  "START_UNKNOWN": 85
+  "START_UNKNOWN": 89
  },
- "evaluated_at": "2026-11-07T17:30:28.133980+00:00",
+ "evaluated_at": "2026-11-07T17:41:09.940224+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-08T08:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-08T07:15:00+00:00",
@@ -76,21 +76,13 @@
   ],
   "slate_id": "SL-20261107T164631Z-5ccac1dd",
   "slate_built_at": "2026-11-07T16:46:31.493178+00:00",
-  "checked_at": "2026-11-07T17:30:28.133980+00:00"
+  "checked_at": "2026-11-07T17:41:09.940224+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-07T17:30:28.133980+00:00",
-   "reason": "published slate SL-20261107T164631Z-5ccac1dd is stale: 1 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV07RUUALC": {
    "match_id": "ATP:26NOV07RUUALC:singles",
-   "evaluated_at": "2026-11-07T17:30:28.133980+00:00",
+   "evaluated_at": "2026-11-07T17:41:09.940224+00:00",
    "nominal_scheduled_start": "2026-11-07T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -115,40 +107,13 @@
    "label": "Casper Ruud vs Carlos Alcaraz",
    "level_bucket": "ATP"
   },
-  "KXATPMATCH-26NOV07FEANAG": {
-   "match_id": "ATP:26NOV07FEANAG:singles",
-   "evaluated_at": "2026-11-07T17:30:28.133980+00:00",
-   "nominal_scheduled_start": "2026-11-07T17:30:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T16:53:31.934805+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_atp (confidence B)",
-   "first_ball_at": "2026-11-07T16:51:25.580110+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Jacob Fearnley vs Arthur Nagel",
-   "level_bucket": "ATP"
-  },
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-07T17:30:28.133980+00:00",
+   "evaluated_at": "2026-11-07T17:41:09.940224+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T17:29:48.212066+00:00",
+   "start_time_last_checked": "2026-11-07T17:40:29.968646+00:00",
    "current_expected_start": "2026-11-08T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
