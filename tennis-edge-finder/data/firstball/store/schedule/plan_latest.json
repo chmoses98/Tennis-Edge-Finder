@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-07T20:03:31.084229+00:00",
+ "generated_at": "2026-11-07T20:14:09.520679+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 97,
+ "board_matches": 101,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 3,
-  "START_UNKNOWN": 93,
+  "VERIFIED_UPCOMING": 4,
+  "START_UNKNOWN": 96,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-07T20:03:31.084229+00:00",
+ "evaluated_at": "2026-11-07T20:14:09.520679+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-08T08:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-08T07:15:00+00:00",
@@ -59,6 +59,31 @@
      "start_time_confidence": "HIGH"
     }
    ]
+  },
+  {
+   "earliest_credible_first_ball": "2026-11-08T13:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-08T12:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-08T12:15:00+00:00",
+    "2026-11-08T12:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-08T12:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-08T12:50:00+00:00",
+    "2026-11-08T12:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 1,
+   "matches": [
+    {
+     "match_id": "KXWTAMATCH-26NOV08TJELIN",
+     "label": "Janice Tjen vs Magda Linette",
+     "current_expected_start": "2026-11-08T13:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
+    }
+   ]
   }
  ],
  "main_tour_status_unverified": [],
@@ -69,17 +94,17 @@
   "changed_matches": [],
   "slate_id": "SL-20261107T184226Z-e53c2216",
   "slate_built_at": "2026-11-07T18:42:26.497482+00:00",
-  "checked_at": "2026-11-07T20:03:31.084229+00:00"
+  "checked_at": "2026-11-07T20:14:09.520679+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-07T20:03:31.084229+00:00",
+   "evaluated_at": "2026-11-07T20:14:09.520679+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T20:02:56.735671+00:00",
+   "start_time_last_checked": "2026-11-07T20:13:29.773335+00:00",
    "current_expected_start": "2026-11-08T08:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -126,6 +151,61 @@
    ],
    "bet_allowed": true,
    "label": "Claire Liu vs Alexandra Eala",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26NOV08TJELIN": {
+   "match_id": "WTA:26NOV08TJELIN:singles",
+   "evaluated_at": "2026-11-07T20:14:09.520679+00:00",
+   "nominal_scheduled_start": "2026-11-08T16:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-07T20:13:29.773335+00:00",
+   "current_expected_start": "2026-11-08T13:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-08T13:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-08T16:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-08T12:15:00+00:00",
+   "recommended_handicap_by": "2026-11-08T12:15:00+00:00",
+   "final_check_time": "2026-11-08T12:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Centre Court",
+   "court_context": {
+    "court": "Centre Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 1,
+    "preceding": {
+     "source_match_id": "186607",
+     "players": [
+      "Vaishnavi Adkar / Rutuja Bhosale",
+      "Naima Karamoko / Simona Waltert"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-08T10:30:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Janice Tjen vs Magda Linette",
    "level_bucket": "WTA"
   }
  }
