@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-07 18:44Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-07 18:54Z)
 
 * Earliest credible first ball: **2026-11-08 08:00Z**
 * Recommended RUN TENNIS time: **2026-11-08 07:15Z**
@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Claire Liu vs Alexandra Eala | 2026-11-08 08:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261107T181142Z-600a346c` built 2026-11-07 18:11Z -- current
+Published slate: `SL-20261107T184226Z-e53c2216` built 2026-11-07 18:42Z -- current
 
 Dispatched this pass: none
 
