@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-11-07T17:13:45.806961+00:00",
+ "run_id": "20261107T171345Z",
+ "external_parse": {
+  "events": 71,
+  "markets": 496,
+  "skipped_family": 162,
+  "skipped_period": 117,
+  "skipped_live": 23,
+  "one_sided": 2,
+  "rows": 704,
+  "devigged": 215
+ },
+ "smarkets_fetch": {
+  "events_seen": 78,
+  "events_priced": 78,
+  "markets": 529,
+  "markets_mapped": 162,
+  "contracts": 360,
+  "quoted_contracts": 360,
+  "raw": "data/research/external/raw/20261107T171345Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 162,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 336,
+  "two_sided": 335,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 123,
+ "external_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 4,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Delgado Sarah": 1,
+   "Louis Hull": 1,
+   "Brendan Boland": 1,
+   "Rudy Ceccon": 1,
+   "Digvijay Pratap Singh": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 78,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 17,
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7564,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Kazushi Idogaki": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 32,
+  "by_status": {
+   "MAPPED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.9688,
+  "top_refusal_subjects": {
+   "Dragos Cazacu": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 83,
+ "kalshi_mapped_matches": 31,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
