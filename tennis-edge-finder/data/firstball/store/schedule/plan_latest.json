@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-07T15:04:49.629491+00:00",
+ "generated_at": "2026-11-07T15:17:30.424911+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 78,
+ "board_matches": 90,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 2,
   "START_IMMINENT": 1,
   "ESTIMATED_UPCOMING": 1,
   "STARTED": 6,
-  "START_UNKNOWN": 68
+  "START_UNKNOWN": 80
  },
- "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+ "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-07T14:30:00+00:00",
   "recommended_run_tennis_time": "2026-11-07T13:45:00+00:00",
@@ -37,7 +37,7 @@
    {
     "match_id": "KXATPMATCH-26NOV07RUUALC",
     "label": "Casper Ruud vs Carlos Alcaraz",
-    "current_expected_start": "2026-11-07T15:42:42.725472+00:00",
+    "current_expected_start": "2026-11-07T15:55:24.180519+00:00",
     "start_status": "VERIFIED_UPCOMING",
     "start_time_source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
     "start_time_confidence": "MEDIUM"
@@ -79,7 +79,7 @@
     {
      "match_id": "KXATPMATCH-26NOV07RUUALC",
      "label": "Casper Ruud vs Carlos Alcaraz",
-     "current_expected_start": "2026-11-07T15:42:42.725472+00:00",
+     "current_expected_start": "2026-11-07T15:55:24.180519+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
      "start_time_confidence": "MEDIUM"
@@ -98,30 +98,23 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXATPMATCH-26NOV07RUUALC",
-    "change": "EXPECTED_START_MOVED_EARLIER_17_MIN"
-   }
-  ],
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
   "slate_id": "SL-20261107T143504Z-b707b043",
   "slate_built_at": "2026-11-07T14:35:04.692523+00:00",
-  "checked_at": "2026-11-07T15:04:49.629491+00:00"
+  "checked_at": "2026-11-07T15:17:30.424911+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV07RUUALC": {
    "match_id": "ATP:26NOV07RUUALC:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
-   "current_expected_start": "2026-11-07T15:42:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
+   "current_expected_start": "2026-11-07T15:55:24.180519+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -131,7 +124,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-07T15:42:42.725472+00:00",
+     "time": "2026-11-07T15:55:24.180519+00:00",
      "source": "COURT_PROGRESSION: preceding match on Court Central in progress (set 2 of best-of-5)",
      "confidence": "MEDIUM"
     },
@@ -141,9 +134,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-07T14:57:42.725472+00:00",
-   "recommended_handicap_by": "2026-11-07T14:57:42.725472+00:00",
-   "final_check_time": "2026-11-07T15:32:42.725472+00:00",
+   "earliest_safe_handicap_time": "2026-11-07T15:10:24.180519+00:00",
+   "recommended_handicap_by": "2026-11-07T15:10:24.180519+00:00",
+   "final_check_time": "2026-11-07T15:45:24.180519+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -161,14 +154,14 @@
      "state": "IN",
      "period": 2,
      "best_of": 5,
-     "games_played": 17,
+     "games_played": 21,
      "scheduled_utc": "2026-11-07T13:40:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-198_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-185_MIN"
    ],
    "bet_allowed": true,
    "label": "Casper Ruud vs Carlos Alcaraz",
@@ -176,11 +169,11 @@
   },
   "KXATPMATCH-26NOV07FEANAG": {
    "match_id": "ATP:26NOV07FEANAG:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T17:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
    "current_expected_start": "2026-11-07T14:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -232,7 +225,7 @@
   },
   "KXATPMATCH-26NOV07DURSHE": {
    "match_id": "ATP:26NOV07DURSHE:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -265,11 +258,11 @@
   },
   "KXATPMATCH-26NOV07DZUMON": {
    "match_id": "ATP:26NOV07DZUMON:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T14:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -292,11 +285,11 @@
   },
   "KXATPMATCH-26NOV07VANASHE": {
    "match_id": "ATP:26NOV07VANASHE:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -319,11 +312,11 @@
   },
   "KXWTAMATCH-26NOV07LINZAK": {
    "match_id": "WTA:26NOV07LINZAK:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -346,11 +339,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV07LANNOH": {
    "match_id": "WTA:26NOV07LANNOH:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-07T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -373,11 +366,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV06TUBAND": {
    "match_id": "WTA:26NOV06TUBAND:singles",
-   "evaluated_at": "2026-11-07T15:04:49.629491+00:00",
+   "evaluated_at": "2026-11-07T15:17:30.424911+00:00",
    "nominal_scheduled_start": "2026-11-06T21:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-07T15:02:42.725472+00:00",
+   "start_time_last_checked": "2026-11-07T15:15:24.180519+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
