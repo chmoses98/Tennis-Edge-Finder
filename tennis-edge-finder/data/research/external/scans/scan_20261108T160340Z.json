@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-08T16:03:40.837586+00:00",
+ "run_id": "20261108T160340Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 591,
+  "markets_mapped": 231,
+  "contracts": 484,
+  "quoted_contracts": 484,
+  "raw": "data/research/external/raw/20261108T160340Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 231,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 471,
+  "two_sided": 468,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 181,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Igor Marcondes": 1,
+   "Connor Huertas Del Pino": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.6909,
+  "top_refusal_subjects": {
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Katrina Scott": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev M": 1,
+   "Kareem Abdul Hakim": 1,
+   "Heimanarii Lai San": 1,
+   "Pranav Gadgil": 1,
+   "Finnian Bult": 1,
+   "Sharan Somasi": 1
+  }
+ },
+ "matched_both_venues": 15,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 38,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 26,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 3,
+  "WATCH": 1
+ },
+ "skips": {}
+}
