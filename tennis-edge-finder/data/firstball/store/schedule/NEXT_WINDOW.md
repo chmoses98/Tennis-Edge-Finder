@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 14:38Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 14:52Z)
 
 * Earliest credible first ball: **2026-11-08 15:00Z**
 * Recommended RUN TENNIS time: **2026-11-08 14:15Z**  (OVERDUE: run now)
@@ -7,7 +7,7 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Elias Ymer vs Juan Manuel Cerundolo | 2026-11-08 15:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Elias Ymer vs Juan Manuel Cerundolo | 2026-11-08 15:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Jacob Fearnley vs Alexander Shevchenko | 2026-11-08 15:30Z | ESTIMATED_UPCOMING | KALSHI_NOMINAL | LOW |
 | Thiago Agustin Tirante vs Jaume Munar | 2026-11-08 16:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
@@ -15,7 +15,7 @@
 
 Published slate: `SL-20261108T130752Z-e0c66a68` built 2026-11-08 13:07Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-08T15:00:00+00:00, slate built 2026-11-08T13:07:52.636541+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-08 20:00Z, run by 2026-11-08 19:15Z, 2 match(es)
 * later window 3: first ball 2026-11-09 11:30Z, run by 2026-11-09 10:45Z, 2 match(es)
