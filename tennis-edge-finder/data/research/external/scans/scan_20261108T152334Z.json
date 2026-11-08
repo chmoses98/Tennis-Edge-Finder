@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-11-08T15:23:34.919521+00:00",
+ "run_id": "20261108T152334Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 643,
+  "markets_mapped": 258,
+  "contracts": 540,
+  "quoted_contracts": 540,
+  "raw": "data/research/external/raw/20261108T152334Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 258,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 69,
+  "rows": 471,
+  "two_sided": 467,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 222,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "DOUBLES_UNSUPPORTED": 6,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Igor Marcondes": 1,
+   "Connor Huertas Del Pino": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.7778,
+  "top_refusal_subjects": {
+   "Kenta (2004) Miyoshi": 1,
+   "Katrina Scott": 1,
+   "Vishal Vasudev M": 1,
+   "Kareem Abdul Hakim": 1,
+   "Finnian Bult": 1,
+   "John Paul Baroni Schtz Tankersley": 1,
+   "Eduardo Heineberg": 1,
+   "Dragos Cazacu": 1,
+   "Augusto Land": 1,
+   "Ryan Char": 1
+  }
+ },
+ "matched_both_venues": 15,
+ "external_mapped_matches": 66,
+ "kalshi_mapped_matches": 42,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 6,
+  "tri:MODEL_LONE_OUTLIER": 8
+ },
+ "skips": {}
+}
