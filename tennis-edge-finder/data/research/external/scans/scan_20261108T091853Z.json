@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-08T09:18:53.626449+00:00",
+ "run_id": "20261108T091853Z",
+ "external_parse": {
+  "events": 122,
+  "markets": 1233,
+  "skipped_family": 284,
+  "skipped_period": 354,
+  "skipped_live": 14,
+  "one_sided": 16,
+  "rows": 1937,
+  "devigged": 578
+ },
+ "smarkets_fetch": {
+  "events_seen": 140,
+  "events_priced": 80,
+  "markets": 739,
+  "markets_mapped": 276,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20261108T091853Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 276,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 576,
+  "two_sided": 573,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 809,
+ "external_mapping": {
+  "total": 110,
+  "by_status": {
+   "MAPPED": 91,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Herman H\u00f8yeraal": 1,
+   "Igor Marcondes": 1,
+   "Maria Herazo": 1,
+   "Valeriia Iushchenko": 1,
+   "Raluca Georgiana Serban": 1,
+   "Sofia Barhacova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 7,
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Faris Zakaria": 1,
+   "Franco Davila Blotte": 1,
+   "Carolina Alves": 1,
+   "Igor Marcondes": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 103,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.6699,
+  "top_refusal_subjects": {
+   "Kenta (2004) Miyoshi": 1,
+   "Igor Marcondes": 1,
+   "Katrina Scott": 1,
+   "Anna Blinkova": 1,
+   "Andrey Barbiero": 1,
+   "Joao Marcos Angelico": 1,
+   "John Paul Baroni Schtz Tankersley": 1,
+   "Eduardo Heineberg": 1,
+   "Dragos Cazacu": 1,
+   "Augusto Land": 1
+  }
+ },
+ "matched_both_venues": 49,
+ "external_mapped_matches": 102,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 82,
+ "counts": {
+  "PASS": 81,
+  "tri:INSUFFICIENT_INPUTS": 47,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
