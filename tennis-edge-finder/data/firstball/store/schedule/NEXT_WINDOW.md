@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 22:10Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 22:21Z)
 
 * Earliest credible first ball: **2026-11-09 05:30Z**
 * Recommended RUN TENNIS time: **2026-11-09 04:45Z**
@@ -9,11 +9,11 @@
 |---|---|---|---|---|
 | Janice Tjen vs Magda Linette | 2026-11-09 05:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**3 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic, Coco Gauff vs Jessica Pegula
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic
 
 Published slate: `SL-20261108T194114Z-2bf12028` built 2026-11-08 19:41Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-09 11:30Z, run by 2026-11-09 10:45Z, 2 match(es)
 * later window 3: first ball 2026-11-09 13:30Z, run by 2026-11-09 12:45Z, 1 match(es)
