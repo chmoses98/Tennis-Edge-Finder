@@ -1,0 +1,75 @@
+{
+ "run_id": "20261108T004844Z",
+ "started_at": "2026-11-08T00:48:44.064558+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 868,
+  "quotes_written": 868,
+  "quotes_unchanged": 0,
+  "events_new": 0,
+  "books": 14,
+  "book_candidates": 14,
+  "trades_tennis": 2330,
+  "trades_global_scanned": 202754,
+  "settlements": 4,
+  "candles": 4
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794098322,
+   "hi": 1794098924,
+   "complete": false,
+   "pages": 200,
+   "trades": 200000
+  },
+  "backlog_scans": [
+   {
+    "lo": 1794098322,
+    "hi": 1794098330,
+    "complete": true,
+    "pages": 3,
+    "trades": 2754
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 203,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": true,
+ "client_stats": {
+  "requests": 527,
+  "retries": 10,
+  "http_429": 10,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 58.25937251550332,
+  "by_path": {
+   "markets": 292,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-ICH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-FAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-ZHU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-CAM/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-HOE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-CHA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-STE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-HUA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-MIC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-BRI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-KHA/orderbook": 1,
+   "markets/trades": 203,
+   "series/KXITFWMATCH/markets/KXITFWMATCH-26NOV07PREBOW-PRE/candlesticks": 2,
+   "series/KXITFWMATCH/markets/KXITFWMATCH-26NOV07PREBOW-BOW/candlesticks": 2,
+   "series/KXITFWDOUBLES/markets/KXITFWDOUBLES-26NOV07RODTRAFERPAW-RODTRA/candlesticks": 2,
+   "series/KXITFWDOUBLES/markets/KXITFWDOUBLES-26NOV07RODTRAFERPAW-FERPAW/candlesticks": 2
+  }
+ },
+ "finished_at": "2026-11-08T00:50:46.992782+00:00"
+}
