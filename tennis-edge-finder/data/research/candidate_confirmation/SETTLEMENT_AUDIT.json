@@ -1,9 +1,9 @@
 {
- "ledger_rows": 116304,
- "settlement_files": 291,
- "settlement_rows_unique": 115799,
+ "ledger_rows": 116430,
+ "settlement_files": 292,
+ "settlement_rows_unique": 115831,
  "settlement_rows_duplicate_prediction_ids": 0,
- "ledger_rows_settled": 115797,
+ "ledger_rows_settled": 115829,
  "settlement_rows_not_in_ledger": 2,
  "settlement_rows_not_in_ledger_sample": [
   [
@@ -15,38 +15,38 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 507,
+ "ledger_rows_without_settlement_row": 601,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 507,
+ "of_which_not_yet_settled_or_not_swept": 601,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
-  "yes": 53038,
-  "no": 58608,
+  "yes": 53054,
+  "no": 58624,
   "scalar": 4153
  },
- "gradeable_binary": 111646,
+ "gradeable_binary": 111678,
  "sports_truth_sources": {
-  "kalshi_result": 69208,
-  "none": 46591
+  "kalshi_result": 69232,
+  "none": 46599
  },
  "strict_clv_embedded_in_settlement_rows": 3054,
  "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that arrives later updates data/research/clv/<run>.jsonl but not the embedded copy",
  "health_layer_view_after_fix": {
-  "settled": 115799,
-  "settled_binary": 111646,
+  "settled": 115831,
+  "settled_binary": 111678,
   "settled_scalar": 4153,
-  "sports_truth_rows": 69208,
-  "sports_truth_kalshi_derived": 69208,
+  "sports_truth_rows": 69232,
+  "sports_truth_kalshi_derived": 69232,
   "sports_truth_independent": 53829,
-  "settlement_files": 291,
-  "independent_truth_run": "20261108T220721Z.jsonl.gz",
+  "settlement_files": 292,
+  "independent_truth_run": "20261108T231311Z.jsonl.gz",
   "independent_truth_by_status": {
-   "NOT_COVERED": 46822,
+   "NOT_COVERED": 46838,
    "RESOLVED": 55660,
    "NO_CANONICAL_IDS": 5180,
    "AMBIGUOUS": 1024,
    "NOT_FOUND": 6835,
-   "PENDING_RESULT": 276
+   "PENDING_RESULT": 292
   },
   "independent_truth_structural_non_coverage": {
    "WTA|ITF|NOT_COVERED": 24502,
@@ -57,14 +57,14 @@
    "ATP|TOUR_500_250|NO_CANONICAL_IDS": 1012,
    "ATP|MASTERS_1000|NO_CANONICAL_IDS": 590,
    "WTA|MASTERS_1000|NO_CANONICAL_IDS": 334,
-   "ATP|CHALLENGER|NOT_COVERED": 1824,
+   "ATP|CHALLENGER|NOT_COVERED": 1840,
    "ATP|TOUR_500_250|PENDING_RESULT": 220,
    "ATP|MASTERS_1000|PENDING_RESULT": 48,
-   "WTA|TOUR_FINALS|PENDING_RESULT": 8
+   "WTA|TOUR_FINALS|PENDING_RESULT": 24
   },
   "independent_truth_rate_among_covered": 0.8763,
   "exchange_reconciliation": {
-   "NOT_RECONCILED": 55628,
+   "NOT_RECONCILED": 55652,
    "AGREE": 14806,
    "CONFLICT": 20
   },
@@ -134,20 +134,20 @@
    "lag_days_max_new": null
   },
   "prospective_v2": {
-   "predictions_with_v2_and_incumbent": 52120,
-   "exchange_settled_predictions": 52120,
+   "predictions_with_v2_and_incumbent": 52144,
+   "exchange_settled_predictions": 52144,
    "independently_resolved_predictions": 11986,
    "independently_settled_matches": 1456,
    "by_status": {
     "RESOLVED": 11986,
     "NOT_FOUND": 2370,
-    "NOT_COVERED": 37542,
+    "NOT_COVERED": 37558,
     "AMBIGUOUS": 176,
-    "PENDING_RESULT": 46
+    "PENDING_RESULT": 54
    },
    "reconciliation": {
     "AGREE": 11966,
-    "NOT_RECONCILED": 40134,
+    "NOT_RECONCILED": 40158,
     "EXPLAINED_NOTE": 84,
     "CONFLICT": 20
    },
@@ -156,7 +156,7 @@
      "RESOLVED": 3640,
      "NOT_FOUND": 1768,
      "AMBIGUOUS": 26,
-     "NOT_COVERED": 1824
+     "NOT_COVERED": 1840
     },
     "ATP ITF": {
      "NOT_COVERED": 15732
@@ -177,14 +177,15 @@
     "WTA tour": {
      "RESOLVED": 2568,
      "NOT_FOUND": 240,
-     "AMBIGUOUS": 38
+     "AMBIGUOUS": 38,
+     "PENDING_RESULT": 8
     }
    },
    "n_stale_unresolved_tour_level": 602,
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261108T220612Z.jsonl.gz",
+  "clv_run": "20261108T231200Z.jsonl.gz",
   "settled_with_ab_truth": 3800,
   "settled_with_close": 3400,
   "settled_strict_clv": 3054,

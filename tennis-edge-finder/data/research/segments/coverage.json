@@ -1,11 +1,11 @@
 {
- "run_id": "20261108T220612Z",
- "generated_at": "2026-11-08T22:07:14.529220+00:00",
- "ledger_rows": 116304,
- "matches_with_truth": 5680,
+ "run_id": "20261108T231200Z",
+ "generated_at": "2026-11-08T23:13:02.808337+00:00",
+ "ledger_rows": 116430,
+ "matches_with_truth": 5683,
  "matches_with_strict_truth": 861,
  "timing_classes": {
-  "START_UNKNOWN": 112504,
+  "START_UNKNOWN": 112630,
   "STRICT_PREGAME": 3468,
   "POST_START": 299,
   "AMBIGUOUS": 33
@@ -15,11 +15,11 @@
  "strict_clv_rows": 3054,
  "contradictions": 0,
  "horizons_populated": 23646,
- "horizons_total": 930432,
+ "horizons_total": 931440,
  "segments": {
   "tour": {
    "ATP": {
-    "n": 72908,
+    "n": 73034,
     "strict": 1210,
     "with_close": 1290,
     "with_clv": 1280
@@ -33,7 +33,7 @@
   },
   "level": {
    "CHALLENGER": {
-    "n": 11610,
+    "n": 11630,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
@@ -51,13 +51,13 @@
     "with_clv": 615
    },
    "ITF": {
-    "n": 44952,
+    "n": 44976,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
    },
    "TOUR_500_250": {
-    "n": 36886,
+    "n": 36968,
     "strict": 1940,
     "with_close": 2115,
     "with_clv": 2087
@@ -83,19 +83,19 @@
   },
   "family": {
    "MATCH_WINNER": {
-    "n": 70698,
+    "n": 70754,
     "strict": 1198,
     "with_close": 1408,
     "with_clv": 1386
    },
    "EXACT_SET_SCORE": {
-    "n": 9808,
+    "n": 9828,
     "strict": 382,
     "with_close": 412,
     "with_clv": 406
    },
    "SET_WINNER": {
-    "n": 17084,
+    "n": 17104,
     "strict": 1144,
     "with_close": 1228,
     "with_clv": 1210
@@ -107,13 +107,13 @@
     "with_clv": 4
    },
    "TOTAL_GAMES": {
-    "n": 11349,
+    "n": 11364,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
    },
    "GAME_SPREAD": {
-    "n": 7341,
+    "n": 7356,
     "strict": 326,
     "with_close": 348,
     "with_clv": 344
@@ -127,19 +127,19 @@
   },
   "surface": {
    "Clay": {
-    "n": 22093,
+    "n": 22097,
     "strict": 570,
     "with_close": 670,
     "with_clv": 656
    },
    "Hard": {
-    "n": 79545,
+    "n": 79665,
     "strict": 2312,
     "with_close": 2546,
     "with_clv": 2510
    },
    "UNKNOWN": {
-    "n": 14182,
+    "n": 14184,
     "strict": 162,
     "with_close": 174,
     "with_clv": 174
@@ -159,7 +159,7 @@
   },
   "discipline": {
    "singles": {
-    "n": 116304,
+    "n": 116430,
     "strict": 3054,
     "with_close": 3400,
     "with_clv": 3350
@@ -167,7 +167,7 @@
   },
   "timing_class": {
    "START_UNKNOWN": {
-    "n": 112504,
+    "n": 112630,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
@@ -193,13 +193,13 @@
   },
   "truth_confidence": {
    "UNKNOWN": {
-    "n": 70235,
+    "n": 70294,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
    },
    "C": {
-    "n": 42269,
+    "n": 42336,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
@@ -219,7 +219,7 @@
   },
   "close_basis": {
    "NO_FIRST_BALL_TRUTH": {
-    "n": 112904,
+    "n": 113030,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
@@ -233,31 +233,31 @@
   },
   "data_quality_grade": {
    "A": {
-    "n": 61507,
+    "n": 61603,
     "strict": 2612,
     "with_close": 2882,
     "with_clv": 2845
    },
    "B": {
-    "n": 11586,
+    "n": 11590,
     "strict": 174,
     "with_close": 206,
     "with_clv": 202
    },
    "C": {
-    "n": 14375,
+    "n": 14377,
     "strict": 172,
     "with_close": 204,
     "with_clv": 197
    },
    "D": {
-    "n": 10862,
+    "n": 10864,
     "strict": 74,
     "with_close": 82,
     "with_clv": 80
    },
    "F": {
-    "n": 17974,
+    "n": 17996,
     "strict": 22,
     "with_close": 26,
     "with_clv": 26
@@ -265,31 +265,31 @@
   },
   "spread_bucket": {
    "<=2c": {
-    "n": 34637,
+    "n": 34670,
     "strict": 1529,
     "with_close": 1745,
     "with_clv": 1745
    },
    "<=5c": {
-    "n": 39597,
+    "n": 39652,
     "strict": 1007,
     "with_close": 1062,
     "with_clv": 1062
    },
    "UNKNOWN": {
-    "n": 3263,
+    "n": 3264,
     "strict": 0,
     "with_close": 50,
     "with_clv": 0
    },
    "<=10c": {
-    "n": 12312,
+    "n": 12324,
     "strict": 170,
     "with_close": 188,
     "with_clv": 188
    },
    ">10c": {
-    "n": 26495,
+    "n": 26520,
     "strict": 348,
     "with_close": 355,
     "with_clv": 355
@@ -303,7 +303,7 @@
     "with_clv": 2672
    },
    "UNKNOWN": {
-    "n": 100620,
+    "n": 100746,
     "strict": 676,
     "with_close": 680,
     "with_clv": 678
@@ -311,13 +311,13 @@
   },
   "time_to_first_ball_bucket": {
    "UNKNOWN": {
-    "n": 70817,
+    "n": 70876,
     "strict": 0,
     "with_close": 0,
     "with_clv": 0
    },
    ">6h": {
-    "n": 27244,
+    "n": 27268,
     "strict": 1813,
     "with_close": 1820,
     "with_clv": 1813
@@ -329,7 +329,7 @@
     "with_clv": 618
    },
    "<=15m": {
-    "n": 9354,
+    "n": 9403,
     "strict": 22,
     "with_close": 354,
     "with_clv": 318
@@ -341,7 +341,7 @@
     "with_clv": 498
    },
    "<=1h": {
-    "n": 967,
+    "n": 961,
     "strict": 103,
     "with_close": 104,
     "with_clv": 103
@@ -349,43 +349,43 @@
   },
   "implied_prob_bucket": {
    "<=50%": {
-    "n": 44538,
+    "n": 44592,
     "strict": 1202,
     "with_close": 1301,
     "with_clv": 1301
    },
    "<=75%": {
-    "n": 30301,
+    "n": 30341,
     "strict": 928,
     "with_close": 1005,
     "with_clv": 1005
    },
    "<=90%": {
-    "n": 11259,
+    "n": 11264,
     "strict": 225,
     "with_close": 253,
     "with_clv": 253
    },
    "<=25%": {
-    "n": 17770,
+    "n": 17792,
     "strict": 600,
     "with_close": 648,
     "with_clv": 648
    },
    "UNKNOWN": {
-    "n": 3263,
+    "n": 3264,
     "strict": 0,
     "with_close": 50,
     "with_clv": 0
    },
    "<=10%": {
-    "n": 5083,
+    "n": 5085,
     "strict": 69,
     "with_close": 91,
     "with_clv": 91
    },
    ">90%": {
-    "n": 4090,
+    "n": 4092,
     "strict": 30,
     "with_close": 52,
     "with_clv": 52
@@ -393,19 +393,19 @@
   },
   "favourite_side": {
    "UNDERDOG": {
-    "n": 67391,
+    "n": 67469,
     "strict": 1871,
     "with_close": 2040,
     "with_clv": 2040
    },
    "FAVOURITE": {
-    "n": 45650,
+    "n": 45697,
     "strict": 1183,
     "with_close": 1310,
     "with_clv": 1310
    },
    "UNKNOWN": {
-    "n": 3263,
+    "n": 3264,
     "strict": 0,
     "with_close": 50,
     "with_clv": 0
@@ -413,31 +413,31 @@
   },
   "disagreement_bucket": {
    "<=5pp": {
-    "n": 21555,
+    "n": 21582,
     "strict": 648,
     "with_close": 689,
     "with_clv": 689
    },
    "<=10pp": {
-    "n": 29447,
+    "n": 29482,
     "strict": 827,
     "with_close": 878,
     "with_clv": 878
    },
    ">10pp": {
-    "n": 47295,
+    "n": 47334,
     "strict": 1114,
     "with_close": 1296,
     "with_clv": 1296
    },
    "UNKNOWN": {
-    "n": 3263,
+    "n": 3264,
     "strict": 0,
     "with_close": 50,
     "with_clv": 0
    },
    "<=2pp": {
-    "n": 14744,
+    "n": 14768,
     "strict": 465,
     "with_close": 487,
     "with_clv": 487
