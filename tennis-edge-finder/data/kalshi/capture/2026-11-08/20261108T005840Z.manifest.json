@@ -1,0 +1,63 @@
+{
+ "run_id": "20261108T005840Z",
+ "started_at": "2026-11-08T00:58:40.118755+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 868,
+  "quotes_written": 175,
+  "quotes_unchanged": 693,
+  "events_new": 0,
+  "books": 14,
+  "book_candidates": 14,
+  "trades_tennis": 2009,
+  "trades_global_scanned": 184317,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794098924,
+   "hi": 1794099520,
+   "complete": true,
+   "pages": 185,
+   "trades": 184317
+  },
+  "backlog_scans": [],
+  "errors": [],
+  "abandoned": [],
+  "pages": 185,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 351,
+  "retries": 6,
+  "http_429": 6,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 40.13636074919597,
+  "by_path": {
+   "markets": 146,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-ICH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-FAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-ZHU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-CAM/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-HOE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-CHA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-STE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-HUA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-MIC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-BRI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-KHA/orderbook": 1,
+   "markets/trades": 185
+  }
+ },
+ "finished_at": "2026-11-08T01:00:01.171871+00:00"
+}
