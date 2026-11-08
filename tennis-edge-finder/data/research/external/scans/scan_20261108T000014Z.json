@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-11-08T00:00:14.792592+00:00",
+ "run_id": "20261108T000014Z",
+ "external_parse": {
+  "events": 68,
+  "markets": 662,
+  "skipped_family": 189,
+  "skipped_period": 167,
+  "skipped_live": 8,
+  "one_sided": 0,
+  "rows": 982,
+  "devigged": 306
+ },
+ "smarkets_fetch": {
+  "events_seen": 109,
+  "events_priced": 80,
+  "markets": 515,
+  "markets_mapped": 212,
+  "contracts": 442,
+  "quoted_contracts": 442,
+  "raw": "data/research/external/raw/20261108T000014Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 212,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 409,
+  "two_sided": 403,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 250,
+ "external_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.6429,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Andi Anderson": 1,
+   "Lawee Sherif": 1,
+   "Roman Sancilio": 1,
+   "Siddharth Bharadwaj": 1,
+   "Digvijay Pratap Singh": 1,
+   "Raluca Georgiana Serban": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.825,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Kazushi Idogaki": 1,
+   "Faris Zakaria": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 37,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.74,
+  "top_refusal_subjects": {
+   "Anna Blinkova": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Vraj Gohil": 1,
+   "Woravin Kumthonkittikul": 1,
+   "Jimmy Chin": 1,
+   "Dharma Pantaratorn": 1,
+   "Woramet Bunphueng": 1,
+   "Digvijay Pratap Singh": 1,
+   "Capucine Dournes": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 88,
+ "kalshi_mapped_matches": 37,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 37,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:MARKETS_AGREE": 1,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "WATCH": 1
+ },
+ "skips": {}
+}
