@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 13:56Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 14:10Z)
 
 * Earliest credible first ball: **2026-11-08 15:00Z**
 * Recommended RUN TENNIS time: **2026-11-08 14:15Z**
@@ -13,8 +13,8 @@
 
 **8 main-tour match(es) without a verified start status** (BET blocked until checked): Adolfo Daniel Vallejo vs Ugo Humbert, Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic, Alex Michelsen vs Yannick Hanfmann, James Duckworth vs Cameron Norrie, Adrian Mannarino vs Toby Samuel, Ben Shelton vs Carlos Alcaraz, Janice Tjen vs Magda Linette
 
-Published slate: `SL-20261108T130752Z-e0c66a68` built 2026-11-08 13:07Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261108T130752Z-e0c66a68` built 2026-11-08 13:07Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-08 20:00Z, run by 2026-11-08 19:15Z, 2 match(es)
