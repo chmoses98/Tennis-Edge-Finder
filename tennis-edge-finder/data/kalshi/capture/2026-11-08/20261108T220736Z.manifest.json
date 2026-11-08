@@ -1,0 +1,107 @@
+{
+ "run_id": "20261108T220736Z",
+ "started_at": "2026-11-08T22:07:36.179772+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 785,
+  "quotes_written": 785,
+  "quotes_unchanged": 0,
+  "events_new": 4,
+  "books": 29,
+  "book_candidates": 29,
+  "trades_tennis": 950,
+  "trades_global_scanned": 225070,
+  "settlements": 10,
+  "candles": 10
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794175055,
+   "hi": 1794175656,
+   "complete": false,
+   "pages": 200,
+   "trades": 200000
+  },
+  "backlog_scans": [
+   {
+    "lo": 1794175055,
+    "hi": 1794175112,
+    "complete": true,
+    "pages": 18,
+    "trades": 17306
+   },
+   {
+    "lo": 1794174455,
+    "hi": 1794174473,
+    "complete": true,
+    "pages": 8,
+    "trades": 7764
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 226,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": true,
+ "client_stats": {
+  "requests": 580,
+  "retries": 9,
+  "http_429": 9,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 70.47518169452199,
+  "by_path": {
+   "markets": 292,
+   "events/KXATPCHALLENGERMATCH-26NOV09GADBLA": 1,
+   "events/KXITFWMATCH-26NOV09SAKKRU": 1,
+   "events/KXITFWMATCH-26NOV09SOUGOM": 1,
+   "events/KXITFWMATCH-26NOV09LOPDIA": 1,
+   "markets/KXWTAGTOTAL-26NOV08TJELIN-16/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV08TJELIN-21/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV08TJELIN-26/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV08TJELIN-LIN/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV08TJELIN-TJE/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08TJELIN-1-LIN/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08TJELIN-1-TJE/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08TJELIN-2-LIN/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08TJELIN-2-TJE/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08MITBLA-BLA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08MITBLA-MIT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08FENMIY-FEN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08FENMIY-MIY/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08ZAHDOM-DOM/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08ZAHDOM-ZAH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08HUSBIG-BIG/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08HUSBIG-HUS/orderbook": 1,
+   "markets/KXITFMATCH-26NOV08ARTVAN-ART/orderbook": 1,
+   "markets/KXITFMATCH-26NOV08ARTVAN-VAN/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV08GAUPEG-GAU/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV08GAUPEG-PEG/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08GAUPEG-1-GAU/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08GAUPEG-1-PEG/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08GAUPEG-2-GAU/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV08GAUPEG-2-PEG/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08IMAMAT-IMA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08IMAMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08OGUSHI-OGU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV08OGUSHI-SHI/orderbook": 1,
+   "markets/trades": 226,
+   "series/KXWTAMATCH/markets/KXWTAMATCH-26NOV08KOSNOS-NOS/candlesticks": 2,
+   "series/KXWTAMATCH/markets/KXWTAMATCH-26NOV08KOSNOS-KOS/candlesticks": 2,
+   "series/KXATPCHALLENGERMATCH/markets/KXATPCHALLENGERMATCH-26NOV08ROCCAM-ROC/candlesticks": 2,
+   "series/KXATPCHALLENGERMATCH/markets/KXATPCHALLENGERMATCH-26NOV08ROCCAM-CAM/candlesticks": 2,
+   "series/KXATPCHALLENGERMATCH/markets/KXATPCHALLENGERMATCH-26NOV08BARMAG-MAG/candlesticks": 2,
+   "series/KXATPCHALLENGERMATCH/markets/KXATPCHALLENGERMATCH-26NOV08BARMAG-BAR/candlesticks": 2,
+   "series/KXATPCHALLENGERMATCH/markets/KXATPCHALLENGERMATCH-26NOV08KOZMAY-MAY/candlesticks": 2,
+   "series/KXATPCHALLENGERMATCH/markets/KXATPCHALLENGERMATCH-26NOV08KOZMAY-KOZ/candlesticks": 2,
+   "series/KXWTASETWINNER/markets/KXWTASETWINNER-26NOV08KOSNOS-2-NOS/candlesticks": 2,
+   "series/KXWTASETWINNER/markets/KXWTASETWINNER-26NOV08KOSNOS-2-KOS/candlesticks": 2
+  }
+ },
+ "finished_at": "2026-11-08T22:09:55.468874+00:00"
+}
