@@ -1,0 +1,76 @@
+{
+ "run_id": "20261108T011841Z",
+ "started_at": "2026-11-08T01:18:41.902407+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 872,
+  "quotes_written": 208,
+  "quotes_unchanged": 664,
+  "events_new": 1,
+  "books": 26,
+  "book_candidates": 26,
+  "trades_tennis": 2839,
+  "trades_global_scanned": 195519,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794100122,
+   "hi": 1794100721,
+   "complete": true,
+   "pages": 196,
+   "trades": 195519
+  },
+  "backlog_scans": [],
+  "errors": [],
+  "abandoned": [],
+  "pages": 196,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 374,
+  "retries": 5,
+  "http_429": 5,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 34.31703580638666,
+  "by_path": {
+   "markets": 146,
+   "events/KXITFWMATCH-26NOV08CHERAP": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-ICH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-FAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-ZHU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-CAM/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-HOE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-CHA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-STE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-HUA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-MIC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-BRI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-KHA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07IMABIT-BIT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07IMABIT-IMA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07SAITAK-SAI/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07SAITAK-TAK/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07IVABEC-BEC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07IVABEC-IVA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07LESZHE-LES/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07LESZHE-ZHE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07WEIWAN-WAN/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07WEIWAN-WEI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07YUALOP-LOP/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07YUALOP-YUA/orderbook": 1,
+   "markets/trades": 196
+  }
+ },
+ "finished_at": "2026-11-08T01:20:07.988498+00:00"
+}
