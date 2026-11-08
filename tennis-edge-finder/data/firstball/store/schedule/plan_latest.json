@@ -1,27 +1,27 @@
 {
- "generated_at": "2026-11-08T07:38:12.065840+00:00",
+ "generated_at": "2026-11-08T07:49:16.017148+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 109,
+ "board_matches": 112,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 14,
   "ESTIMATED_UPCOMING": 1,
   "START_IMMINENT": 1,
-  "START_UNKNOWN": 92,
+  "START_UNKNOWN": 95,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+ "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-08T07:38:41.107964+00:00",
-  "recommended_run_tennis_time": "2026-11-08T06:53:41.107964+00:00",
+  "earliest_credible_first_ball": "2026-11-08T07:49:39.407066+00:00",
+  "recommended_run_tennis_time": "2026-11-08T07:04:39.407066+00:00",
   "primary_refresh_window": [
-   "2026-11-08T06:53:41.107964+00:00",
-   "2026-11-08T07:08:41.107964+00:00"
+   "2026-11-08T07:04:39.407066+00:00",
+   "2026-11-08T07:19:39.407066+00:00"
   ],
-  "final_status_price_check_time": "2026-11-08T07:28:41.107964+00:00",
+  "final_status_price_check_time": "2026-11-08T07:39:39.407066+00:00",
   "final_refresh_window": [
-   "2026-11-08T07:28:41.107964+00:00",
-   "2026-11-08T07:33:41.107964+00:00"
+   "2026-11-08T07:39:39.407066+00:00",
+   "2026-11-08T07:44:39.407066+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -29,7 +29,7 @@
    {
     "match_id": "KXWTAMATCH-26NOV08LIUEAL",
     "label": "Claire Liu vs Alexandra Eala",
-    "current_expected_start": "2026-11-08T07:38:41.107964+00:00",
+    "current_expected_start": "2026-11-08T07:49:39.407066+00:00",
     "start_status": "START_IMMINENT",
     "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court finished",
     "start_time_confidence": "MEDIUM"
@@ -38,16 +38,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-08T07:38:41.107964+00:00",
-   "recommended_run_tennis_time": "2026-11-08T06:53:41.107964+00:00",
+   "earliest_credible_first_ball": "2026-11-08T07:49:39.407066+00:00",
+   "recommended_run_tennis_time": "2026-11-08T07:04:39.407066+00:00",
    "primary_refresh_window": [
-    "2026-11-08T06:53:41.107964+00:00",
-    "2026-11-08T07:08:41.107964+00:00"
+    "2026-11-08T07:04:39.407066+00:00",
+    "2026-11-08T07:19:39.407066+00:00"
    ],
-   "final_status_price_check_time": "2026-11-08T07:28:41.107964+00:00",
+   "final_status_price_check_time": "2026-11-08T07:39:39.407066+00:00",
    "final_refresh_window": [
-    "2026-11-08T07:28:41.107964+00:00",
-    "2026-11-08T07:33:41.107964+00:00"
+    "2026-11-08T07:39:39.407066+00:00",
+    "2026-11-08T07:44:39.407066+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -55,7 +55,7 @@
     {
      "match_id": "KXWTAMATCH-26NOV08LIUEAL",
      "label": "Claire Liu vs Alexandra Eala",
-     "current_expected_start": "2026-11-08T07:38:41.107964+00:00",
+     "current_expected_start": "2026-11-08T07:49:39.407066+00:00",
      "start_status": "START_IMMINENT",
      "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court finished",
      "start_time_confidence": "MEDIUM"
@@ -214,22 +214,34 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": false,
-  "reasons": [],
+  "stale": true,
+  "reasons": [
+   "PRIMARY_REFRESH_DUE: window at 2026-11-08T07:49:39.407066+00:00, slate built 2026-11-08T07:03:57.828208+00:00"
+  ],
   "changed_matches": [],
   "slate_id": "SL-20261108T070357Z-b1aece95",
   "slate_built_at": "2026-11-08T07:03:57.828208+00:00",
-  "checked_at": "2026-11-08T07:38:12.065840+00:00"
+  "checked_at": "2026-11-08T07:49:16.017148+00:00"
  },
- "actions_this_pass": [],
+ "actions_this_pass": [
+  {
+   "kind": "slate_final",
+   "window": "20261108T0745Z",
+   "reason": "final status/price check for window at 2026-11-08T07:49:39.407066+00:00",
+   "at": "2026-11-08T07:49:16.017148+00:00",
+   "earliest_credible_first_ball": "2026-11-08T07:49:39.407066+00:00",
+   "dispatched": true,
+   "http": 204
+  }
+ ],
  "statuses": {
   "KXATPMATCH-26NOV08TIRMUN": {
    "match_id": "ATP:26NOV08TIRMUN:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T19:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -280,11 +292,11 @@
   },
   "KXATPMATCH-26NOV08YMECER": {
    "match_id": "ATP:26NOV08YMECER:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -335,11 +347,11 @@
   },
   "KXATPMATCH-26NOV08MANSAM": {
    "match_id": "ATP:26NOV08MANSAM:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -390,7 +402,7 @@
   },
   "KXATPMATCH-26NOV08FEASHE": {
    "match_id": "ATP:26NOV08FEASHE:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -423,11 +435,11 @@
   },
   "KXATPMATCH-26NOV08MONSON": {
    "match_id": "ATP:26NOV08MONSON:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -466,11 +478,11 @@
   },
   "KXATPMATCH-26NOV08BASGOJ": {
    "match_id": "ATP:26NOV08BASGOJ:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -509,11 +521,11 @@
   },
   "KXATPMATCH-26NOV08SHEALC": {
    "match_id": "ATP:26NOV08SHEALC:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -564,11 +576,11 @@
   },
   "KXWTAMATCH-26NOV08GAUPEG": {
    "match_id": "WTA:26NOV08GAUPEG:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-09T00:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -619,11 +631,11 @@
   },
   "KXWTAMATCH-26NOV08KOSNOS": {
    "match_id": "WTA:26NOV08KOSNOS:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -662,11 +674,11 @@
   },
   "KXWTAMATCH-26NOV08TJELIN": {
    "match_id": "WTA:26NOV08TJELIN:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -717,12 +729,12 @@
   },
   "KXWTAMATCH-26NOV08LIUEAL": {
    "match_id": "WTA:26NOV08LIUEAL:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T11:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
-   "current_expected_start": "2026-11-08T07:38:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
+   "current_expected_start": "2026-11-08T07:49:39.407066+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court finished",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -732,7 +744,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-08T07:38:41.107964+00:00",
+     "time": "2026-11-08T07:49:39.407066+00:00",
      "source": "COURT_PROGRESSION: preceding match on Centre Court finished",
      "confidence": "MEDIUM"
     },
@@ -742,9 +754,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-08T06:53:41.107964+00:00",
-   "recommended_handicap_by": "2026-11-08T06:53:41.107964+00:00",
-   "final_check_time": "2026-11-08T07:28:41.107964+00:00",
+   "earliest_safe_handicap_time": "2026-11-08T07:04:39.407066+00:00",
+   "recommended_handicap_by": "2026-11-08T07:04:39.407066+00:00",
+   "final_check_time": "2026-11-08T07:39:39.407066+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -769,7 +781,7 @@
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-202_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-191_MIN"
    ],
    "bet_allowed": true,
    "label": "Claire Liu vs Alexandra Eala",
@@ -777,11 +789,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV08BLILAN": {
    "match_id": "WTA:26NOV08BLILAN:singles",
-   "evaluated_at": "2026-11-08T07:38:12.065840+00:00",
+   "evaluated_at": "2026-11-08T07:49:16.017148+00:00",
    "nominal_scheduled_start": "2026-11-08T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T07:33:41.107964+00:00",
+   "start_time_last_checked": "2026-11-08T07:44:39.407066+00:00",
    "current_expected_start": "2026-11-08T10:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
