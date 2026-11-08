@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-08T06:53:34.135052+00:00",
+ "run_id": "20261108T065334Z",
+ "external_parse": {
+  "events": 108,
+  "markets": 1249,
+  "skipped_family": 302,
+  "skipped_period": 359,
+  "skipped_live": 14,
+  "one_sided": 13,
+  "rows": 1899,
+  "devigged": 575
+ },
+ "smarkets_fetch": {
+  "events_seen": 141,
+  "events_priced": 80,
+  "markets": 812,
+  "markets_mapped": 298,
+  "contracts": 626,
+  "quoted_contracts": 626,
+  "raw": "data/research/external/raw/20261108T065334Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 298,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 39,
+  "rows": 587,
+  "two_sided": 583,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 160,
+ "external_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 77,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8021,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Herman H\u00f8yeraal": 1,
+   "Taiyo Uenoyama": 1,
+   "Digvijay Pratap Singh": 1,
+   "Raluca Georgiana Serban": 1,
+   "Sofia Barhacova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 70,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Faris Zakaria": 1,
+   "Igor Marcondes": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 23,
+   "UNMAPPED_PLAYER": 26
+  },
+  "mapped_rate": 0.4694,
+  "top_refusal_subjects": {
+   "Anna Blinkova": 1,
+   "Yanick Schneider": 1,
+   "Mark Laubic": 1,
+   "Oriol Alvarez Velis": 1,
+   "Alexandru Constantin": 1,
+   "Rares Ioan Poiana": 1,
+   "Daniele Augenti": 1,
+   "Jakub Januchowski": 1,
+   "Matei Marius Partal": 1,
+   "Jonah Haidarian": 1
+  }
+ },
+ "matched_both_venues": 13,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 23,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 4,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
