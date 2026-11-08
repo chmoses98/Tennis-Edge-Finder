@@ -1,0 +1,74 @@
+{
+ "run_id": "20261108T003842Z",
+ "started_at": "2026-11-08T00:38:42.236372+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 868,
+  "quotes_written": 180,
+  "quotes_unchanged": 688,
+  "events_new": 3,
+  "books": 14,
+  "book_candidates": 14,
+  "trades_tennis": 2363,
+  "trades_global_scanned": 228461,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794097719,
+   "hi": 1794098322,
+   "complete": false,
+   "pages": 200,
+   "trades": 200000
+  },
+  "backlog_scans": [
+   {
+    "lo": 1794097719,
+    "hi": 1794097772,
+    "complete": true,
+    "pages": 29,
+    "trades": 28461
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 229,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 398,
+  "retries": 6,
+  "http_429": 6,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 40.53635050768054,
+  "by_path": {
+   "markets": 146,
+   "events/KXATPCHALLENGERMATCH-26NOV08RAQCAR": 1,
+   "events/KXATPCHALLENGERMATCH-26NOV08PAVGRE": 1,
+   "events/KXITFWMATCH-26NOV08PRELAS": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-ICH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-FAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-ZHU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-CAM/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-HOE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-CHA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-STE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-HUA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-MIC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-BRI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-KHA/orderbook": 1,
+   "markets/trades": 229
+  }
+ },
+ "finished_at": "2026-11-08T00:40:14.264840+00:00"
+}
