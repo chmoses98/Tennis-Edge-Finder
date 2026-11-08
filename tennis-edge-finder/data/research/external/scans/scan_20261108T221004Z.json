@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-11-08T22:10:04.132788+00:00",
+ "run_id": "20261108T221004Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 662,
+  "markets_mapped": 258,
+  "contracts": 544,
+  "quoted_contracts": 544,
+  "raw": "data/research/external/raw/20261108T221004Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 258,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 44,
+  "rows": 500,
+  "two_sided": 494,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 785,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 14
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.6706,
+  "top_refusal_subjects": {
+   "Kenta (2004) Miyoshi": 1,
+   "Vraj Gohil": 1,
+   "Aditya Kothari": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev M": 1,
+   "Jayson Blando": 1,
+   "Harshit Yadav": 1,
+   "Eshant Patra": 1,
+   "Dharma Pantaratorn": 1,
+   "Perawat Sukjai": 1
+  }
+ },
+ "matched_both_venues": 16,
+ "external_mapped_matches": 63,
+ "kalshi_mapped_matches": 57,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 7,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {}
+}
