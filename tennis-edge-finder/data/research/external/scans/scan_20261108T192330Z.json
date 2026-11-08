@@ -1,0 +1,88 @@
+{
+ "generated_at": "2026-11-08T19:23:30.799246+00:00",
+ "run_id": "20261108T192330Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 602,
+  "markets_mapped": 252,
+  "contracts": 522,
+  "quoted_contracts": 522,
+  "raw": "data/research/external/raw/20261108T192330Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 252,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 486,
+  "two_sided": 481,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 125,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Connor Huertas Del Pino": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 34,
+  "by_status": {
+   "MAPPED": 28,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "Daniel Wright": 1,
+   "Perawat Sukjai": 1,
+   "Finnian Bult": 1,
+   "Andrey Barbiero": 1,
+   "Joao Marcos Angelico": 1,
+   "Capucine Dournes": 1
+  }
+ },
+ "matched_both_venues": 8,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 28,
+ "model_witness_available": true,
+ "rows": 14,
+ "counts": {
+  "PASS": 13,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "WATCH": 1,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:MARKETS_AGREE": 1,
+  "tri:MODEL_LONE_OUTLIER": 3
+ },
+ "skips": {}
+}
