@@ -1,0 +1,93 @@
+{
+ "generated_at": "2026-11-08T15:53:36.829922+00:00",
+ "run_id": "20261108T155336Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 616,
+  "markets_mapped": 245,
+  "contracts": 512,
+  "quoted_contracts": 512,
+  "raw": "data/research/external/raw/20261108T155336Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 245,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 472,
+  "two_sided": 470,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 207,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 7,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 7,
+   "Igor Marcondes": 1,
+   "Connor Huertas Del Pino": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 31,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.5636,
+  "top_refusal_subjects": {
+   "Katrina Scott": 1,
+   "Vraj Gohil": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev M": 1,
+   "Jayson Blando": 1,
+   "Harshit Yadav": 1,
+   "Eshant Patra": 1,
+   "Perawat Sukjai": 1,
+   "Mohammad Farhanuddin Fariz": 1,
+   "Kareem Abdul Hakim": 1
+  }
+ },
+ "matched_both_venues": 10,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 31,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 17,
+  "tri:MODEL_LONE_OUTLIER": 5,
+  "tri:INSUFFICIENT_INPUTS": 8,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {}
+}
