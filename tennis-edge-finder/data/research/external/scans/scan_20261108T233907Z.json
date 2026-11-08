@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-08T23:39:07.046151+00:00",
+ "run_id": "20261108T233907Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 691,
+  "markets_mapped": 272,
+  "contracts": 574,
+  "quoted_contracts": 574,
+  "raw": "data/research/external/raw/20261108T233907Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 272,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 551,
+  "two_sided": 548,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 153,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 65,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 37,
+  "by_status": {
+   "MAPPED": 23,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.6216,
+  "top_refusal_subjects": {
+   "Kenta (2004) Miyoshi": 1,
+   "Eric Von Marton Martins": 1,
+   "Eduardo Heineberg": 1,
+   "Augusto Land": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev M": 1,
+   "Harshit Yadav": 1,
+   "Eshant Patra": 1,
+   "Heimanarii Lai San": 1,
+   "Malkia Ngounoue": 1
+  }
+ },
+ "matched_both_venues": 8,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 23,
+ "model_witness_available": true,
+ "rows": 14,
+ "counts": {
+  "PASS": 13,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {}
+}
