@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 08:10Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 08:22Z)
 
 * Earliest credible first ball: **2026-11-08 11:00Z**
 * Recommended RUN TENNIS time: **2026-11-08 10:15Z**
@@ -10,8 +10,6 @@
 | Nikoloz Basilashvili vs Borna Gojo | 2026-11-08 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Inaki Montes-de la Torre vs Lorenzo Sonego | 2026-11-08 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Adrian Mannarino vs Toby Samuel | 2026-11-08 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Claire Liu vs Alexandra Eala
 
 Published slate: `SL-20261108T073322Z-de92232d` built 2026-11-08 07:33Z -- current
 
