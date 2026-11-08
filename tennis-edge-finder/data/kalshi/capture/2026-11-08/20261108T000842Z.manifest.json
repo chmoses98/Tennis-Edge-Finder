@@ -1,0 +1,68 @@
+{
+ "run_id": "20261108T000842Z",
+ "started_at": "2026-11-08T00:08:42.341612+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 857,
+  "quotes_written": 259,
+  "quotes_unchanged": 598,
+  "events_new": 1,
+  "books": 18,
+  "book_candidates": 18,
+  "trades_tennis": 3297,
+  "trades_global_scanned": 193108,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794095921,
+   "hi": 1794096522,
+   "complete": true,
+   "pages": 194,
+   "trades": 193108
+  },
+  "backlog_scans": [],
+  "errors": [],
+  "abandoned": [],
+  "pages": 194,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 365,
+  "retries": 6,
+  "http_429": 6,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 39.93928085335549,
+  "by_path": {
+   "markets": 146,
+   "events/KXATPCHALLENGERMATCH-26NOV08ROLGOM": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07PREBOW-BOW/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07PREBOW-PRE/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV07RODTRAFERPAW-FERPAW/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV07RODTRAFERPAW-RODTRA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-ICH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-FAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-ZHU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-CAM/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-HOE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-CHA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-STE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-HUA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-MIC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-BRI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-KHA/orderbook": 1,
+   "markets/trades": 194
+  }
+ },
+ "finished_at": "2026-11-08T00:10:06.797123+00:00"
+}
