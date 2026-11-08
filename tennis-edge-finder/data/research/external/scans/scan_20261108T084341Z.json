@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-08T08:43:41.754049+00:00",
+ "run_id": "20261108T084341Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1253,
+  "skipped_family": 286,
+  "skipped_period": 362,
+  "skipped_live": 14,
+  "one_sided": 16,
+  "rows": 1973,
+  "devigged": 588
+ },
+ "smarkets_fetch": {
+  "events_seen": 139,
+  "events_priced": 80,
+  "markets": 747,
+  "markets_mapped": 279,
+  "contracts": 594,
+  "quoted_contracts": 594,
+  "raw": "data/research/external/raw/20261108T084341Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 279,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 18,
+  "rows": 576,
+  "two_sided": 569,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 207,
+ "external_mapping": {
+  "total": 112,
+  "by_status": {
+   "MAPPED": 93,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8304,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Herman H\u00f8yeraal": 1,
+   "Igor Marcondes": 1,
+   "Maria Herazo": 1,
+   "Valeriia Iushchenko": 1,
+   "Raluca Georgiana Serban": 1,
+   "Sofia Barhacova": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "UNMAPPED_PLAYER": 7,
+   "DOUBLES_UNSUPPORTED": 6
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 6,
+   "Faris Zakaria": 1,
+   "Franco Davila Blotte": 1,
+   "Carolina Alves": 1,
+   "Igor Marcondes": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 29,
+   "UNMAPPED_PLAYER": 21
+  },
+  "mapped_rate": 0.58,
+  "top_refusal_subjects": {
+   "Katrina Scott": 1,
+   "Anna Blinkova": 1,
+   "Augusto Land": 1,
+   "Davi Domarco Carlos": 1,
+   "Gabriel Ribeiro Pinho": 1,
+   "Yanick Schneider": 1,
+   "Mark Laubic": 1,
+   "Oriol Alvarez Velis": 1,
+   "Alexandru Constantin": 1,
+   "Rares Ioan Poiana": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 29,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
