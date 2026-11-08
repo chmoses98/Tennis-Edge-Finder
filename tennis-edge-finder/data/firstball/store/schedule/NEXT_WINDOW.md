@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 17:36Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 17:47Z)
 
 * Earliest credible first ball: **2026-11-08 20:00Z**
 * Recommended RUN TENNIS time: **2026-11-08 19:15Z**
@@ -10,7 +10,7 @@
 | Marta Kostyuk vs Linda Noskova | 2026-11-08 20:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Coco Gauff vs Jessica Pegula | 2026-11-08 21:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-**3 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic, Thiago Agustin Tirante vs Jaume Munar
+**2 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic
 
 Published slate: `SL-20261108T172048Z-ebacf4e2` built 2026-11-08 17:20Z -- current
 
