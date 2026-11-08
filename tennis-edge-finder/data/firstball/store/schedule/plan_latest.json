@@ -1,51 +1,35 @@
 {
- "generated_at": "2026-11-08T10:52:45.909927+00:00",
+ "generated_at": "2026-11-08T11:03:12.281678+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 112,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 11,
   "ESTIMATED_UPCOMING": 1,
-  "START_IMMINENT": 3,
+  "STATUS_AMBIGUOUS": 3,
   "START_UNKNOWN": 96,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+ "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-08T11:00:00+00:00",
-  "recommended_run_tennis_time": "2026-11-08T10:15:00+00:00",
+  "earliest_credible_first_ball": "2026-11-08T11:38:55.266004+00:00",
+  "recommended_run_tennis_time": "2026-11-08T10:53:55.266004+00:00",
   "primary_refresh_window": [
-   "2026-11-08T10:15:00+00:00",
-   "2026-11-08T10:30:00+00:00"
+   "2026-11-08T10:53:55.266004+00:00",
+   "2026-11-08T11:08:55.266004+00:00"
   ],
-  "final_status_price_check_time": "2026-11-08T10:50:00+00:00",
+  "final_status_price_check_time": "2026-11-08T11:28:55.266004+00:00",
   "final_refresh_window": [
-   "2026-11-08T10:50:00+00:00",
-   "2026-11-08T10:55:00+00:00"
+   "2026-11-08T11:28:55.266004+00:00",
+   "2026-11-08T11:33:55.266004+00:00"
   ],
   "primary_overdue": true,
-  "n_matches": 4,
+  "n_matches": 2,
   "matches": [
-   {
-    "match_id": "KXATPMATCH-26NOV08BASGOJ",
-    "label": "Nikoloz Basilashvili vs Borna Gojo",
-    "current_expected_start": "2026-11-08T11:00:00+00:00",
-    "start_status": "START_IMMINENT",
-    "start_time_source": "LIVE_SCHEDULE:espn_atp",
-    "start_time_confidence": "HIGH"
-   },
-   {
-    "match_id": "KXATPMATCH-26NOV08MONSON",
-    "label": "Inaki Montes-de la Torre vs Lorenzo Sonego",
-    "current_expected_start": "2026-11-08T11:00:00+00:00",
-    "start_status": "START_IMMINENT",
-    "start_time_source": "LIVE_SCHEDULE:espn_atp",
-    "start_time_confidence": "HIGH"
-   },
    {
     "match_id": "KXWTAMATCH-26NOV08TJELIN",
     "label": "Janice Tjen vs Magda Linette",
-    "current_expected_start": "2026-11-08T11:28:32.632733+00:00",
+    "current_expected_start": "2026-11-08T11:38:55.266004+00:00",
     "start_status": "VERIFIED_UPCOMING",
     "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
     "start_time_confidence": "MEDIUM"
@@ -62,40 +46,24 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-08T11:00:00+00:00",
-   "recommended_run_tennis_time": "2026-11-08T10:15:00+00:00",
+   "earliest_credible_first_ball": "2026-11-08T11:38:55.266004+00:00",
+   "recommended_run_tennis_time": "2026-11-08T10:53:55.266004+00:00",
    "primary_refresh_window": [
-    "2026-11-08T10:15:00+00:00",
-    "2026-11-08T10:30:00+00:00"
+    "2026-11-08T10:53:55.266004+00:00",
+    "2026-11-08T11:08:55.266004+00:00"
    ],
-   "final_status_price_check_time": "2026-11-08T10:50:00+00:00",
+   "final_status_price_check_time": "2026-11-08T11:28:55.266004+00:00",
    "final_refresh_window": [
-    "2026-11-08T10:50:00+00:00",
-    "2026-11-08T10:55:00+00:00"
+    "2026-11-08T11:28:55.266004+00:00",
+    "2026-11-08T11:33:55.266004+00:00"
    ],
    "primary_overdue": true,
-   "n_matches": 4,
+   "n_matches": 2,
    "matches": [
-    {
-     "match_id": "KXATPMATCH-26NOV08BASGOJ",
-     "label": "Nikoloz Basilashvili vs Borna Gojo",
-     "current_expected_start": "2026-11-08T11:00:00+00:00",
-     "start_status": "START_IMMINENT",
-     "start_time_source": "LIVE_SCHEDULE:espn_atp",
-     "start_time_confidence": "HIGH"
-    },
-    {
-     "match_id": "KXATPMATCH-26NOV08MONSON",
-     "label": "Inaki Montes-de la Torre vs Lorenzo Sonego",
-     "current_expected_start": "2026-11-08T11:00:00+00:00",
-     "start_status": "START_IMMINENT",
-     "start_time_source": "LIVE_SCHEDULE:espn_atp",
-     "start_time_confidence": "HIGH"
-    },
     {
      "match_id": "KXWTAMATCH-26NOV08TJELIN",
      "label": "Janice Tjen vs Magda Linette",
-     "current_expected_start": "2026-11-08T11:28:32.632733+00:00",
+     "current_expected_start": "2026-11-08T11:38:55.266004+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
      "start_time_confidence": "MEDIUM"
@@ -210,30 +178,58 @@
    ]
   }
  ],
- "main_tour_status_unverified": [],
+ "main_tour_status_unverified": [
+  {
+   "match_id": "KXATPMATCH-26NOV08MONSON",
+   "label": "Inaki Montes-de la Torre vs Lorenzo Sonego",
+   "status": "STATUS_AMBIGUOUS",
+   "reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+   ]
+  },
+  {
+   "match_id": "KXATPMATCH-26NOV08BASGOJ",
+   "label": "Nikoloz Basilashvili vs Borna Gojo",
+   "status": "STATUS_AMBIGUOUS",
+   "reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
+   ]
+  }
+ ],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
+   "PRIMARY_REFRESH_DUE: window at 2026-11-08T11:38:55.266004+00:00, slate built 2026-11-08T10:39:01.893281+00:00",
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)"
   ],
   "changed_matches": [
    {
+    "match": "KXATPMATCH-26NOV08BASGOJ",
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   },
+   {
+    "match": "KXATPMATCH-26NOV08MONSON",
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   },
+   {
     "match": "KXWTAMATCH-26NOV08TJELIN",
-    "change": "EXPECTED_START_MOVED_EARLIER_91_MIN"
+    "change": "EXPECTED_START_MOVED_EARLIER_81_MIN"
    }
   ],
   "slate_id": "SL-20261108T103901Z-0ef35bb7",
   "slate_built_at": "2026-11-08T10:39:01.893281+00:00",
-  "checked_at": "2026-11-08T10:52:45.909927+00:00"
+  "checked_at": "2026-11-08T11:03:12.281678+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_final",
-   "window": "20261108T1100Z",
-   "reason": "final status/price check for window at 2026-11-08T11:00:00+00:00",
-   "at": "2026-11-08T10:52:45.909927+00:00",
-   "earliest_credible_first_ball": "2026-11-08T11:00:00+00:00",
+   "kind": "slate_primary",
+   "window": "20261108T1130Z",
+   "reason": "primary handicap packet for window at 2026-11-08T11:38:55.266004+00:00",
+   "at": "2026-11-08T11:03:12.281678+00:00",
+   "earliest_credible_first_ball": "2026-11-08T11:38:55.266004+00:00",
    "dispatched": true,
    "http": 204
   }
@@ -241,11 +237,11 @@
  "statuses": {
   "KXATPMATCH-26NOV08TIRMUN": {
    "match_id": "ATP:26NOV08TIRMUN:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T19:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -296,11 +292,11 @@
   },
   "KXATPMATCH-26NOV08YMECER": {
    "match_id": "ATP:26NOV08YMECER:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -351,11 +347,11 @@
   },
   "KXATPMATCH-26NOV08MANSAM": {
    "match_id": "ATP:26NOV08MANSAM:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T12:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -406,7 +402,7 @@
   },
   "KXATPMATCH-26NOV08FEASHE": {
    "match_id": "ATP:26NOV08FEASHE:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T15:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -439,11 +435,11 @@
   },
   "KXATPMATCH-26NOV08MONSON": {
    "match_id": "ATP:26NOV08MONSON:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -472,21 +468,22 @@
     "queue_ahead_pre": 0,
     "same_time_on_court": 0
    },
-   "start_status": "START_IMMINENT",
+   "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
-   "bet_allowed": true,
+   "bet_allowed": false,
    "label": "Inaki Montes-de la Torre vs Lorenzo Sonego",
    "level_bucket": "ATP"
   },
   "KXATPMATCH-26NOV08BASGOJ": {
    "match_id": "ATP:26NOV08BASGOJ:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -515,21 +512,22 @@
     "queue_ahead_pre": 0,
     "same_time_on_court": 0
    },
-   "start_status": "START_IMMINENT",
+   "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
-   "bet_allowed": true,
+   "bet_allowed": false,
    "label": "Nikoloz Basilashvili vs Borna Gojo",
    "level_bucket": "ATP"
   },
   "KXATPMATCH-26NOV08SHEALC": {
    "match_id": "ATP:26NOV08SHEALC:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -580,11 +578,11 @@
   },
   "KXWTAMATCH-26NOV08GAUPEG": {
    "match_id": "WTA:26NOV08GAUPEG:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-09T00:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -635,11 +633,11 @@
   },
   "KXWTAMATCH-26NOV08KOSNOS": {
    "match_id": "WTA:26NOV08KOSNOS:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -678,12 +676,12 @@
   },
   "KXWTAMATCH-26NOV08TJELIN": {
    "match_id": "WTA:26NOV08TJELIN:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
-   "current_expected_start": "2026-11-08T11:28:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
+   "current_expected_start": "2026-11-08T11:38:55.266004+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -693,7 +691,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-08T11:28:32.632733+00:00",
+     "time": "2026-11-08T11:38:55.266004+00:00",
      "source": "COURT_PROGRESSION: preceding match on Centre Court in progress (set 1 of best-of-3)",
      "confidence": "MEDIUM"
     },
@@ -703,9 +701,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-08T10:43:32.632733+00:00",
-   "recommended_handicap_by": "2026-11-08T10:43:32.632733+00:00",
-   "final_check_time": "2026-11-08T11:18:32.632733+00:00",
+   "earliest_safe_handicap_time": "2026-11-08T10:53:55.266004+00:00",
+   "recommended_handicap_by": "2026-11-08T10:53:55.266004+00:00",
+   "final_check_time": "2026-11-08T11:28:55.266004+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -723,14 +721,14 @@
      "state": "IN",
      "period": 1,
      "best_of": 3,
-     "games_played": 2,
+     "games_played": 4,
      "scheduled_utc": "2026-11-08T10:35:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-272_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-262_MIN"
    ],
    "bet_allowed": true,
    "label": "Janice Tjen vs Magda Linette",
@@ -738,11 +736,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV08SCOTOR": {
    "match_id": "WTA:26NOV08SCOTOR:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -776,11 +774,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV08BLILAN": {
    "match_id": "WTA:26NOV08BLILAN:singles",
-   "evaluated_at": "2026-11-08T10:52:45.909927+00:00",
+   "evaluated_at": "2026-11-08T11:03:12.281678+00:00",
    "nominal_scheduled_start": "2026-11-08T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-08T10:48:32.632733+00:00",
+   "start_time_last_checked": "2026-11-08T10:58:55.266004+00:00",
    "current_expected_start": "2026-11-08T11:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -804,11 +802,12 @@
     "queue_ahead_pre": 0,
     "same_time_on_court": 0
    },
-   "start_status": "START_IMMINENT",
+   "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL"
+    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL",
+    "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
-   "bet_allowed": true,
+   "bet_allowed": false,
    "label": "Anna Blinkova vs Sofya Lansere",
    "level_bucket": "WTA125"
   }
