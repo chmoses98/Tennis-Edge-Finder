@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-08T16:33:38.495108+00:00",
+ "run_id": "20261108T163338Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 592,
+  "markets_mapped": 247,
+  "contracts": 516,
+  "quoted_contracts": 516,
+  "raw": "data/research/external/raw/20261108T163338Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 50,
+  "rows": 466,
+  "two_sided": 458,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 192,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 8,
+   "DOUBLES_UNSUPPORTED": 8
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 8,
+   "Igor Marcondes": 1,
+   "Connor Huertas Del Pino": 1,
+   "Alex Hernandez": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.6786,
+  "top_refusal_subjects": {
+   "Katrina Scott": 1,
+   "Vishal Vasudev M": 1,
+   "Jayson Blando": 1,
+   "Hien Pham": 1,
+   "Kareem Abdul Hakim": 1,
+   "Heimanarii Lai San": 1,
+   "Pranav Gadgil": 1,
+   "Finnian Bult": 1,
+   "Sharan Somasi": 1,
+   "Joao Marcos Angelico": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 64,
+ "kalshi_mapped_matches": 38,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 35,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:MODEL_LONE_OUTLIER": 9,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
