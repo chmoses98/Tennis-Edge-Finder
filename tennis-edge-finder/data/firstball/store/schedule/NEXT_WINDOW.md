@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 08:22Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-08 08:33Z)
 
 * Earliest credible first ball: **2026-11-08 11:00Z**
 * Recommended RUN TENNIS time: **2026-11-08 10:15Z**
@@ -11,7 +11,7 @@
 | Inaki Montes-de la Torre vs Lorenzo Sonego | 2026-11-08 11:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Adrian Mannarino vs Toby Samuel | 2026-11-08 12:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261108T073322Z-de92232d` built 2026-11-08 07:33Z -- current
+Published slate: `SL-20261108T082121Z-50010c21` built 2026-11-08 08:21Z -- current
 
 Dispatched this pass: none
 
