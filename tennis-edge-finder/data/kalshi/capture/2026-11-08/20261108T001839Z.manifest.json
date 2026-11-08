@@ -1,0 +1,77 @@
+{
+ "run_id": "20261108T001839Z",
+ "started_at": "2026-11-08T00:18:39.710950+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 864,
+  "quotes_written": 215,
+  "quotes_unchanged": 649,
+  "events_new": 4,
+  "books": 16,
+  "book_candidates": 16,
+  "trades_tennis": 4039,
+  "trades_global_scanned": 226409,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794096522,
+   "hi": 1794097119,
+   "complete": false,
+   "pages": 200,
+   "trades": 200000
+  },
+  "backlog_scans": [
+   {
+    "lo": 1794096522,
+    "hi": 1794096599,
+    "complete": true,
+    "pages": 27,
+    "trades": 26409
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 227,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 399,
+  "retries": 6,
+  "http_429": 6,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 42.206510414334694,
+  "by_path": {
+   "markets": 146,
+   "events/KXITFMATCH-26NOV08BARIKE": 1,
+   "events/KXITFMATCH-26NOV08ANGPIN": 1,
+   "events/KXITFMATCH-26NOV08SLALIE": 1,
+   "events/KXWTAGTOTAL-26NOV08TJELIN": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-HAS/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07HASOGU-OGU/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV07RODTRAFERPAW-FERPAW/orderbook": 1,
+   "markets/KXITFWDOUBLES-26NOV07RODTRAFERPAW-RODTRA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-ICH/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ICHMAT-MAT/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-FAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV07ZHUFAN-ZHU/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-CAM/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CAMHOE-HOE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-CHA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07CHASTE-STE/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-HUA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07HUAMIC-MIC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-BRI/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV07KHABRI-KHA/orderbook": 1,
+   "markets/trades": 227
+  }
+ },
+ "finished_at": "2026-11-08T00:20:12.605960+00:00"
+}
