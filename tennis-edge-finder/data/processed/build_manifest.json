@@ -1,9 +1,9 @@
 {
- "built_at": "2026-11-08T07:06:45.399370+00:00",
+ "built_at": "2026-11-08T14:09:39.083495+00:00",
  "sources": {
   "sackmann_ATP_main": {
    "status": "OK",
-   "run": "20261107T120714Z",
+   "run": "20261108T133309Z",
    "files": {
     "atp_matches_1990.csv.gz": {
      "raw": 3681,
@@ -194,7 +194,7 @@
   },
   "sackmann_ATP_qual_chall": {
    "status": "OK",
-   "run": "20261107T120714Z",
+   "run": "20261108T133309Z",
    "files": {
     "atp_matches_qual_chall_1990.csv.gz": {
      "raw": 2233,
@@ -385,7 +385,7 @@
   },
   "sackmann_ATP_futures": {
    "status": "OK",
-   "run": "20261107T120714Z",
+   "run": "20261108T133309Z",
    "files": {
     "atp_matches_futures_1991.csv.gz": {
      "raw": 9059,
@@ -571,7 +571,7 @@
   },
   "sackmann_WTA_main": {
    "status": "OK",
-   "run": "20261107T120714Z",
+   "run": "20261108T133309Z",
    "files": {
     "wta_matches_1990.csv.gz": {
      "raw": 2728,
@@ -762,7 +762,7 @@
   },
   "sackmann_WTA_qual_itf": {
    "status": "OK",
-   "run": "20261107T120714Z",
+   "run": "20261108T133309Z",
    "files": {
     "wta_matches_qual_itf_1990.csv.gz": {
      "raw": 7763,
@@ -953,7 +953,7 @@
   },
   "tml_ATP_main": {
    "status": "OK",
-   "run": "20261107T120714Z",
+   "run": "20261108T133309Z",
    "files": {
     "1990.csv.gz": {
      "raw": 3683,
@@ -1144,7 +1144,7 @@
   },
   "tml_ATP_challenger": {
    "status": "OK",
-   "run": "20261107T121227Z",
+   "run": "20261108T134117Z",
    "files": {
     "2000_challenger.csv.gz": {
      "raw": 3534,
@@ -1285,7 +1285,7 @@
   },
   "tml_ATP_main_mirror": {
    "status": "OK",
-   "run": "20261107T121227Z",
+   "run": "20261108T134117Z",
    "files": {
     "2025.csv.gz": {
      "raw": 2944,
@@ -1301,22 +1301,22 @@
   },
   "espn_ATP": {
    "status": "OK",
-   "run": "20261107T121025Z",
+   "run": "20261108T133622Z",
    "files": {
     "espn_matches_ATP_2026.csv.gz": {
-     "raw": 2739,
-     "clean": 2738,
+     "raw": 2750,
+     "clean": 2749,
      "quarantine": 1
     }
    }
   },
   "espn_WTA": {
    "status": "OK",
-   "run": "20261107T121025Z",
+   "run": "20261108T133622Z",
    "files": {
     "espn_matches_WTA_2026.csv.gz": {
-     "raw": 4721,
-     "clean": 4721,
+     "raw": 4729,
+     "clean": 4729,
      "quarantine": 0
     }
    }
@@ -1414,9 +1414,9 @@
    "opponent_kept": "Ye Xin Ma (215946, sackmann)"
   }
  ],
- "cross_source_near_duplicates_dropped": 87609,
+ "cross_source_near_duplicates_dropped": 87608,
  "near_duplicates_by_pair": {
-  "espn_ATP->sackmann_ATP_main": 239,
+  "espn_ATP->sackmann_ATP_main": 238,
   "espn_ATP->sackmann_ATP_qual_chall": 106,
   "espn_ATP->tml_ATP_main_mirror": 1174,
   "espn_WTA->sackmann_WTA_main": 245,
@@ -1432,18 +1432,18 @@
   "tml_ATP_main_mirror->sackmann_ATP_main": 766
  },
  "player_crosswalk": {
-  "foreign_players": 6312,
+  "foreign_players": 6318,
   "by_status": {
-   "MAPPED": 5875,
-   "NEAR_CANONICAL_MATCH": 194,
+   "MAPPED": 5880,
+   "NEAR_CANONICAL_MATCH": 195,
    "MINTED_NEW_PLAYER": 104,
    "REVIEWED_ALIAS": 75,
    "AMBIGUOUS_NAME": 64
   },
-  "rows_total": 1545183,
-  "rows_canonical_id": 1540342,
-  "foreign_rows": 21163,
-  "foreign_rows_mapped": 16322
+  "rows_total": 1545203,
+  "rows_canonical_id": 1540360,
+  "foreign_rows": 21183,
+  "foreign_rows_mapped": 16340
  },
  "player_crosswalk_by_system": {
   "tml": {
@@ -1457,26 +1457,26 @@
    }
   },
   "espn": {
-   "foreign_players": 1220,
+   "foreign_players": 1226,
    "by_status": {
-    "MAPPED": 1087,
-    "NEAR_CANONICAL_MATCH": 52,
+    "MAPPED": 1092,
+    "NEAR_CANONICAL_MATCH": 53,
     "REVIEWED_ALIAS": 43,
     "MINTED_NEW_PLAYER": 29,
     "AMBIGUOUS_NAME": 9
    }
   }
  },
- "rows": 1545183,
+ "rows": 1545203,
  "quarantine_rows": 14174,
  "by_tour_level": {
   "ATP|CHALLENGER": 200499,
   "ATP|GRAND_SLAM": 30690,
   "ATP|ITF": 516861,
-  "ATP|MASTERS_1000": 25257,
+  "ATP|MASTERS_1000": 25259,
   "ATP|OLYMPICS": 68,
   "ATP|TEAM": 11364,
-  "ATP|TOUR_500_250": 84452,
+  "ATP|TOUR_500_250": 84462,
   "ATP|TOUR_FINALS": 526,
   "WTA|GRAND_SLAM": 31074,
   "WTA|ITF": 467977,
@@ -1484,14 +1484,14 @@
   "WTA|OLYMPICS": 572,
   "WTA|OTHER": 32351,
   "WTA|TEAM": 10176,
-  "WTA|TOUR_500_250": 70227,
+  "WTA|TOUR_500_250": 70235,
   "WTA|TOUR_FINALS": 506,
   "WTA|WTA_125": 47628
  },
  "by_id_system": {
   "sackmann": 1524020,
   "tml": 16038,
-  "espn": 5125
+  "espn": 5145
  },
  "seasons": {
   "1990": 15735,
@@ -1530,7 +1530,7 @@
   "2023": 69007,
   "2024": 74955,
   "2025": 55501,
-  "2026": 28282
+  "2026": 28302
  },
- "matches_sha256": "b333ee97abdc47bbf3bceb5a8dcef033b29149d8a208f4e6e77139c5e83972db"
+ "matches_sha256": "177c914b5c18c77ce4ae5ef0f45d7309db57181120bf852209ee0e86f371f917"
 }
