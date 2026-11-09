@@ -1,19 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 13:30Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 13:45Z)
 
-* Earliest credible first ball: **2026-11-09 17:00Z**
-* Recommended RUN TENNIS time: **2026-11-09 16:15Z**
-* Final price/status check time: **2026-11-09 16:50Z**
+* Earliest credible first ball: **2026-11-09 14:43Z**
+* Recommended RUN TENNIS time: **2026-11-09 13:58Z**
+* Final price/status check time: **2026-11-09 14:33Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Tomas Martin Etcheverry vs Max Dahlin | 2026-11-09 17:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Tomas Martin Etcheverry vs Max Dahlin | 2026-11-09 14:43Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5) | MEDIUM |
 
-**1 main-tour match(es) without a verified start status** (BET blocked until checked): Adolfo Daniel Vallejo vs Ugo Humbert
+Published slate: `SL-20261109T115921Z-e031b96e` built 2026-11-09 11:59Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
 
-Published slate: `SL-20261109T115921Z-e031b96e` built 2026-11-09 11:59Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
-
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: run_tennis (ok)
 
 * later window 2: first ball 2026-11-09 20:00Z, run by 2026-11-09 19:15Z, 2 match(es)
 * later window 3: first ball 2026-11-10 13:00Z, run by 2026-11-10 12:15Z, 2 match(es)
