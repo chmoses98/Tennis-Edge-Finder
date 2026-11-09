@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 16:45Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 16:58Z)
 
 * Earliest credible first ball: **2026-11-09 18:30Z**
 * Recommended RUN TENNIS time: **2026-11-09 17:45Z**
@@ -12,9 +12,9 @@
 
 **1 main-tour match(es) without a verified start status** (BET blocked until checked): Tomas Martin Etcheverry vs Max Dahlin
 
-Published slate: `SL-20261109T155509Z-3b466f7c` built 2026-11-09 15:55Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261109T164030Z-ec2a3354` built 2026-11-09 16:40Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-11-09 21:30Z, run by 2026-11-09 20:45Z, 1 match(es)
 * later window 3: first ball 2026-11-10 12:00Z, run by 2026-11-10 11:15Z, 4 match(es)
