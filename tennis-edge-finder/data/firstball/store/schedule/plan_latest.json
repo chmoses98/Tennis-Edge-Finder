@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-09T21:56:51.546457+00:00",
+ "generated_at": "2026-11-09T22:07:44.066866+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 365,
@@ -10,18 +10,18 @@
   "STARTED": 2,
   "START_UNKNOWN": 350
  },
- "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+ "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-09T22:00:00+00:00",
-  "recommended_run_tennis_time": "2026-11-09T21:15:00+00:00",
+  "earliest_credible_first_ball": "2026-11-09T22:10:00+00:00",
+  "recommended_run_tennis_time": "2026-11-09T21:25:00+00:00",
   "primary_refresh_window": [
-   "2026-11-09T21:15:00+00:00",
-   "2026-11-09T21:30:00+00:00"
+   "2026-11-09T21:25:00+00:00",
+   "2026-11-09T21:40:00+00:00"
   ],
-  "final_status_price_check_time": "2026-11-09T21:50:00+00:00",
+  "final_status_price_check_time": "2026-11-09T22:00:00+00:00",
   "final_refresh_window": [
-   "2026-11-09T21:50:00+00:00",
-   "2026-11-09T21:55:00+00:00"
+   "2026-11-09T22:00:00+00:00",
+   "2026-11-09T22:05:00+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -29,7 +29,7 @@
    {
     "match_id": "KXWTAMATCH-26NOV09ANDSVI",
     "label": "Mirra Andreeva vs Elina Svitolina",
-    "current_expected_start": "2026-11-09T22:00:00+00:00",
+    "current_expected_start": "2026-11-09T22:10:00+00:00",
     "start_status": "START_IMMINENT",
     "start_time_source": "LIVE_SCHEDULE:espn_wta",
     "start_time_confidence": "HIGH"
@@ -38,16 +38,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-09T22:00:00+00:00",
-   "recommended_run_tennis_time": "2026-11-09T21:15:00+00:00",
+   "earliest_credible_first_ball": "2026-11-09T22:10:00+00:00",
+   "recommended_run_tennis_time": "2026-11-09T21:25:00+00:00",
    "primary_refresh_window": [
-    "2026-11-09T21:15:00+00:00",
-    "2026-11-09T21:30:00+00:00"
+    "2026-11-09T21:25:00+00:00",
+    "2026-11-09T21:40:00+00:00"
    ],
-   "final_status_price_check_time": "2026-11-09T21:50:00+00:00",
+   "final_status_price_check_time": "2026-11-09T22:00:00+00:00",
    "final_refresh_window": [
-    "2026-11-09T21:50:00+00:00",
-    "2026-11-09T21:55:00+00:00"
+    "2026-11-09T22:00:00+00:00",
+    "2026-11-09T22:05:00+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -55,7 +55,7 @@
     {
      "match_id": "KXWTAMATCH-26NOV09ANDSVI",
      "label": "Mirra Andreeva vs Elina Svitolina",
-     "current_expected_start": "2026-11-09T22:00:00+00:00",
+     "current_expected_start": "2026-11-09T22:10:00+00:00",
      "start_status": "START_IMMINENT",
      "start_time_source": "LIVE_SCHEDULE:espn_wta",
      "start_time_confidence": "HIGH"
@@ -183,7 +183,7 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-09T22:00:00+00:00, slate built 2026-11-09T19:32:24.435307+00:00",
+   "PRIMARY_REFRESH_DUE: window at 2026-11-09T22:10:00+00:00, slate built 2026-11-09T19:32:24.435307+00:00",
    "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
   ],
   "changed_matches": [
@@ -198,13 +198,15 @@
   ],
   "slate_id": "SL-20261109T193224Z-219b0fa4",
   "slate_built_at": "2026-11-09T19:32:24.435307+00:00",
-  "checked_at": "2026-11-09T21:56:51.546457+00:00"
+  "checked_at": "2026-11-09T22:07:44.066866+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-09T21:56:51.546457+00:00",
-   "reason": "published slate SL-20261109T193224Z-219b0fa4 is stale: 2 match(es) changed status/start since it was built",
+   "kind": "slate_final",
+   "window": "20261109T2200Z",
+   "reason": "final status/price check for window at 2026-11-09T22:10:00+00:00",
+   "at": "2026-11-09T22:07:44.066866+00:00",
+   "earliest_credible_first_ball": "2026-11-09T22:10:00+00:00",
    "dispatched": true,
    "http": 204
   }
@@ -212,11 +214,11 @@
  "statuses": {
   "KXATPMATCH-26NOV10ETCTIR": {
    "match_id": "ATP:26NOV10ETCTIR:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T16:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T13:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -267,11 +269,11 @@
   },
   "KXATPMATCH-26NOV10MANSHE": {
    "match_id": "ATP:26NOV10MANSHE:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -310,11 +312,11 @@
   },
   "KXATPMATCH-26NOV10MICCER": {
    "match_id": "ATP:26NOV10MICCER:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -353,7 +355,7 @@
   },
   "KXATPMATCH-26NOV10VANASHE": {
    "match_id": "ATP:26NOV10VANASHE:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -386,11 +388,11 @@
   },
   "KXATPMATCH-26NOV10SONHAL": {
    "match_id": "ATP:26NOV10SONHAL:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T13:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T13:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -441,11 +443,11 @@
   },
   "KXATPMATCH-26NOV09RUNBER": {
    "match_id": "ATP:26NOV09RUNBER:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T17:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -496,11 +498,11 @@
   },
   "KXATPMATCH-26NOV09RINKEC": {
    "match_id": "ATP:26NOV09RINKEC:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -551,22 +553,22 @@
   },
   "KXWTAMATCH-26NOV09ANDSVI": {
    "match_id": "WTA:26NOV09ANDSVI:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T00:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
-   "current_expected_start": "2026-11-09T22:00:00+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
+   "current_expected_start": "2026-11-09T22:10:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-11-09T22:00:00+00:00",
+     "time": "2026-11-09T22:10:00+00:00",
      "source": "LIVE_SCHEDULE:espn_wta",
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-09T22:09:12.837561+00:00",
+     "time": "2026-11-09T22:20:02.714885+00:00",
      "source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 2 of best-of-3)",
      "confidence": "MEDIUM"
     },
@@ -576,9 +578,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-09T21:15:00+00:00",
-   "recommended_handicap_by": "2026-11-09T21:15:00+00:00",
-   "final_check_time": "2026-11-09T21:50:00+00:00",
+   "earliest_safe_handicap_time": "2026-11-09T21:25:00+00:00",
+   "recommended_handicap_by": "2026-11-09T21:25:00+00:00",
+   "final_check_time": "2026-11-09T22:00:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -596,14 +598,14 @@
      "state": "IN",
      "period": 2,
      "best_of": 3,
-     "games_played": 22,
+     "games_played": 24,
      "scheduled_utc": "2026-11-09T20:15:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-150_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-140_MIN"
    ],
    "bet_allowed": true,
    "label": "Mirra Andreeva vs Elina Svitolina",
@@ -611,11 +613,11 @@
   },
   "KXWTAMATCH-26NOV09SABMUC": {
    "match_id": "WTA:26NOV09SABMUC:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-09T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -638,11 +640,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV09BURLIZ": {
    "match_id": "WTA:26NOV09BURLIZ:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-09T21:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -665,11 +667,11 @@
   },
   "KXATPMATCH-26NOV10MUSSAM": {
    "match_id": "ATP:26NOV10MUSSAM:singles",
-   "evaluated_at": "2026-11-09T21:56:51.546457+00:00",
+   "evaluated_at": "2026-11-09T22:07:44.066866+00:00",
    "nominal_scheduled_start": "2026-11-10T21:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T21:54:12.837561+00:00",
+   "start_time_last_checked": "2026-11-09T22:05:02.714885+00:00",
    "current_expected_start": "2026-11-10T18:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
