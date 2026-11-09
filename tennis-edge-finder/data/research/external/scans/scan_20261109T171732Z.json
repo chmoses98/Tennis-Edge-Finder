@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-09T17:17:32.879874+00:00",
+ "run_id": "20261109T171732Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 741,
+  "markets_mapped": 310,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261109T171732Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 645,
+  "two_sided": 645,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 425,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 63,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.7875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Sofia Costoulas": 1,
+   "Kenta (2004) Miyoshi": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 36
+  },
+  "mapped_rate": 0.7143,
+  "top_refusal_subjects": {
+   "Kenta (2004) Miyoshi": 1,
+   "Alex Hernandez": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Elizabeth Mandlik": 1,
+   "Tatjana Maria": 1,
+   "Tamara Zidansek": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Maria Fernanda Herazo Gonzalez": 1,
+   "Polona Hercog": 1
+  }
+ },
+ "matched_both_venues": 23,
+ "external_mapped_matches": 63,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 30,
+  "tri:INSUFFICIENT_INPUTS": 10,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
