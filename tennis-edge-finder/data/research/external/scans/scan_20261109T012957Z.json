@@ -1,0 +1,83 @@
+{
+ "generated_at": "2026-11-09T01:29:57.926896+00:00",
+ "run_id": "20261109T012957Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 769,
+  "markets_mapped": 308,
+  "contracts": 648,
+  "quoted_contracts": 648,
+  "raw": "data/research/external/raw/20261109T012957Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 308,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 606,
+  "two_sided": 591,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 799,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 93,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 34
+  },
+  "mapped_rate": 0.6344,
+  "top_refusal_subjects": {
+   "Andrey Barbiero": 1,
+   "Eric Von Marton Martins": 1,
+   "Eduardo Heineberg": 1,
+   "Augusto Land": 1,
+   "Vraj Gohil": 1,
+   "Aditya Kothari": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev M": 1,
+   "Jayson Blando": 1,
+   "Harshit Yadav": 1
+  }
+ },
+ "matched_both_venues": 15,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 28,
+ "counts": {
+  "PASS": 28,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 6
+ },
+ "skips": {}
+}
