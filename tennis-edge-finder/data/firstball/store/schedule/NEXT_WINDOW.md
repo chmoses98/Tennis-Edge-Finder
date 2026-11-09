@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 09:51Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 10:05Z)
 
 * Earliest credible first ball: **2026-11-09 11:30Z**
 * Recommended RUN TENNIS time: **2026-11-09 10:45Z**
@@ -13,9 +13,9 @@
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic
 
-Published slate: `SL-20261109T075256Z-89c37333` built 2026-11-09 07:52Z -- current
+Published slate: `SL-20261109T075256Z-89c37333` built 2026-11-09 07:52Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-09 13:30Z, run by 2026-11-09 12:45Z, 1 match(es)
 * later window 3: first ball 2026-11-09 17:00Z, run by 2026-11-09 16:15Z, 1 match(es)
