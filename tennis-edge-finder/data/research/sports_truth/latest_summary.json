@@ -1,17 +1,17 @@
 {
- "run_id": "20261109T151850Z",
- "source_stamp": "20261109T150035Z|2026-11-09T15:16:16.941004+00:00",
- "settled": 116374,
+ "run_id": "20261109T154336Z",
+ "source_stamp": "20261109T150035Z|2026-11-09T15:35:11.963007+00:00",
+ "settled": 116396,
  "by_status": {
-  "NOT_COVERED": 45774,
-  "RESOLVED": 56733,
+  "NOT_COVERED": 45782,
+  "RESOLVED": 56747,
   "NO_CANONICAL_IDS": 5180,
   "AMBIGUOUS": 1024,
   "NOT_FOUND": 7605,
   "PENDING_RESULT": 58
  },
  "reconciliation": {
-  "NOT_RECONCILED": 55316,
+  "NOT_RECONCILED": 55324,
   "AGREE": 15446,
   "CONFLICT": 20
  },
@@ -27,7 +27,7 @@
    "RESOLVED": 176
   },
   "ATP|ITF": {
-   "NOT_COVERED": 20384
+   "NOT_COVERED": 20392
   },
   "ATP|MASTERS_1000": {
    "RESOLVED": 14565,
@@ -40,7 +40,7 @@
    "RESOLVED": 208
   },
   "ATP|TOUR_500_250": {
-   "RESOLVED": 20411,
+   "RESOLVED": 20425,
    "NO_CANONICAL_IDS": 1012,
    "NOT_FOUND": 1894,
    "AMBIGUOUS": 404,
@@ -132,29 +132,29 @@
   "espn_families_not_live": []
  },
  "resolution": {
-  "newly_resolved": 1073,
-  "first_resolutions_total": 57777,
+  "newly_resolved": 1087,
+  "first_resolutions_total": 57791,
   "backfill": false,
-  "lag_days_median_new": 1.64,
-  "lag_days_max_new": 7.64
+  "lag_days_median_new": 1.66,
+  "lag_days_max_new": 7.66
  },
  "prospective_v2": {
   "first_v2_run": "2026-10-05T15:45:00+00:00",
-  "predictions_with_v2_and_incumbent": 52448,
-  "matches_with_v2_and_incumbent": 6390,
-  "exchange_settled_predictions": 52448,
+  "predictions_with_v2_and_incumbent": 52456,
+  "matches_with_v2_and_incumbent": 6392,
+  "exchange_settled_predictions": 52456,
   "independently_resolved_predictions": 12626,
   "independently_settled_matches": 1585,
   "by_status": {
    "RESOLVED": 12626,
    "NOT_FOUND": 3140,
-   "NOT_COVERED": 36494,
+   "NOT_COVERED": 36502,
    "AMBIGUOUS": 176,
    "PENDING_RESULT": 12
   },
   "reconciliation": {
    "AGREE": 12606,
-   "NOT_RECONCILED": 39822,
+   "NOT_RECONCILED": 39830,
    "EXPLAINED_NOTE": 84,
    "CONFLICT": 20
   },
@@ -166,7 +166,7 @@
     "NOT_COVERED": 564
    },
    "ATP ITF": {
-    "NOT_COVERED": 15806
+    "NOT_COVERED": 15814
    },
    "ATP tour": {
     "RESOLVED": 4148,
