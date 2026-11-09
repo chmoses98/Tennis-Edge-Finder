@@ -1,0 +1,83 @@
+{
+ "generated_at": "2026-11-09T01:59:09.372613+00:00",
+ "run_id": "20261109T015909Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 762,
+  "markets_mapped": 306,
+  "contracts": 644,
+  "quoted_contracts": 644,
+  "raw": "data/research/external/raw/20261109T015909Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 42,
+  "rows": 602,
+  "two_sided": 587,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 243,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 65,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 28
+  },
+  "mapped_rate": 0.5758,
+  "top_refusal_subjects": {
+   "Ranak Pajpani": 1,
+   "Mathias Roy": 1,
+   "Mathias Hamel-Van Dun": 1,
+   "Kim Johannes Niethammer": 1,
+   "Haig Daouidian": 1,
+   "Michael Glen": 1,
+   "Jonathan Bedard": 1,
+   "Vishal Vasudev M": 1,
+   "Jayson Blando": 1,
+   "Eshant Patra": 1
+  }
+ },
+ "matched_both_venues": 10,
+ "external_mapped_matches": 65,
+ "kalshi_mapped_matches": 38,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 2
+ },
+ "skips": {}
+}
