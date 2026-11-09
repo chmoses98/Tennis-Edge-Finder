@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-09T05:30:14.628546+00:00",
+ "generated_at": "2026-11-09T05:42:28.568469+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 127,
+ "board_matches": 131,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 11,
-  "START_UNKNOWN": 115,
+  "START_UNKNOWN": 119,
   "STATUS_AMBIGUOUS": 1
  },
- "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+ "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-09T11:30:00+00:00",
   "recommended_run_tennis_time": "2026-11-09T10:45:00+00:00",
@@ -186,7 +186,7 @@
    "label": "Janice Tjen vs Magda Linette",
    "status": "STATUS_AMBIGUOUS",
    "reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+810_MIN",
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+815_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ]
   }
@@ -205,25 +205,17 @@
   ],
   "slate_id": "SL-20261109T051642Z-a0fe9f4e",
   "slate_built_at": "2026-11-09T05:16:42.682707+00:00",
-  "checked_at": "2026-11-09T05:30:14.628546+00:00"
+  "checked_at": "2026-11-09T05:42:28.568469+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-09T05:30:14.628546+00:00",
-   "reason": "published slate SL-20261109T051642Z-a0fe9f4e is stale: 1 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV09ETCDAH": {
    "match_id": "ATP:26NOV09ETCDAH:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T20:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": "2026-11-09T17:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -274,11 +266,11 @@
   },
   "KXATPMATCH-26NOV09VALHUM": {
    "match_id": "ATP:26NOV09VALHUM:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": "2026-11-09T13:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -324,11 +316,11 @@
   },
   "KXATPMATCH-26NOV09RUNBER": {
    "match_id": "ATP:26NOV09RUNBER:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -353,11 +345,11 @@
   },
   "KXATPMATCH-26NOV09RINKEC": {
    "match_id": "ATP:26NOV09RINKEC:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -382,11 +374,11 @@
   },
   "KXATPMATCH-26NOV09MICHAN": {
    "match_id": "ATP:26NOV09MICHAN:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": "2026-11-09T11:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -432,11 +424,11 @@
   },
   "KXATPMATCH-26NOV09DUCNOR": {
    "match_id": "ATP:26NOV09DUCNOR:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T14:00:00+00:00",
    "nominal_is_placeholder": true,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": "2026-11-09T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -482,11 +474,11 @@
   },
   "KXWTAMATCH-26NOV09ANDSVI": {
    "match_id": "WTA:26NOV09ANDSVI:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-10T00:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": "2026-11-09T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -537,11 +529,11 @@
   },
   "KXWTAMATCH-26NOV09SABMUC": {
    "match_id": "WTA:26NOV09SABMUC:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-09T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
    "current_expected_start": "2026-11-09T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -580,17 +572,17 @@
   },
   "KXWTAMATCH-26NOV08TJELIN": {
    "match_id": "WTA:26NOV08TJELIN:singles",
-   "evaluated_at": "2026-11-09T05:30:14.628546+00:00",
+   "evaluated_at": "2026-11-09T05:42:28.568469+00:00",
    "nominal_scheduled_start": "2026-11-08T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-09T05:25:15.083748+00:00",
-   "current_expected_start": "2026-11-09T05:30:00+00:00",
+   "start_time_last_checked": "2026-11-09T05:37:22.267546+00:00",
+   "current_expected_start": "2026-11-09T05:35:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-11-09T05:30:00+00:00",
+     "time": "2026-11-09T05:35:00+00:00",
      "source": "LIVE_SCHEDULE:espn_wta",
      "confidence": "HIGH"
     },
@@ -600,9 +592,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-09T04:45:00+00:00",
-   "recommended_handicap_by": "2026-11-09T04:45:00+00:00",
-   "final_check_time": "2026-11-09T05:20:00+00:00",
+   "earliest_safe_handicap_time": "2026-11-09T04:50:00+00:00",
+   "recommended_handicap_by": "2026-11-09T04:50:00+00:00",
+   "final_check_time": "2026-11-09T05:25:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -615,7 +607,7 @@
    },
    "start_status": "STATUS_AMBIGUOUS",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+810_MIN",
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_+815_MIN",
     "EXPECTED_START_PASSED_FIRST_BALL_NOT_POSITIVELY_KNOWN"
    ],
    "bet_allowed": false,
