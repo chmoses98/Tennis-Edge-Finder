@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 11:03Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-09 11:18Z)
 
 * Earliest credible first ball: **2026-11-09 11:30Z**
 * Recommended RUN TENNIS time: **2026-11-09 10:45Z**  (OVERDUE: run now)
@@ -7,15 +7,15 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Alex Michelsen vs Yannick Hanfmann | 2026-11-09 11:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
-| James Duckworth vs Cameron Norrie | 2026-11-09 11:36Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
+| Alex Michelsen vs Yannick Hanfmann | 2026-11-09 11:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
+| James Duckworth vs Cameron Norrie | 2026-11-09 11:51Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
 | Tomas Machac vs Borna Gojo | 2026-11-09 13:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
 **2 main-tour match(es) without a verified start status** (BET blocked until checked): Holger Rune vs Zizou Bergs, Arthur Rinderknech vs Miomir Kecmanovic
 
-Published slate: `SL-20261109T102612Z-972ad430` built 2026-11-09 10:26Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-09T11:30:00+00:00, slate built 2026-11-09T10:26:12.896910+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261109T102612Z-972ad430` built 2026-11-09 10:26Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-09T11:30:00+00:00, slate built 2026-11-09T10:26:12.896910+00:00
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-09 13:30Z, run by 2026-11-09 12:45Z, 1 match(es)
 * later window 3: first ball 2026-11-09 17:00Z, run by 2026-11-09 16:15Z, 1 match(es)
