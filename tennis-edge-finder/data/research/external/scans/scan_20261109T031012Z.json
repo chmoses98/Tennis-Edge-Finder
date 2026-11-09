@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-11-09T03:10:12.726118+00:00",
+ "run_id": "20261109T031012Z",
+ "external_parse": {
+  "events": 101,
+  "markets": 1135,
+  "skipped_family": 248,
+  "skipped_period": 355,
+  "skipped_live": 17,
+  "one_sided": 20,
+  "rows": 1864,
+  "devigged": 512
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 748,
+  "markets_mapped": 306,
+  "contracts": 642,
+  "quoted_contracts": 642,
+  "raw": "data/research/external/raw/20261109T031012Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 48,
+  "rows": 594,
+  "two_sided": 582,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 256,
+ "external_mapping": {
+  "total": 90,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Joel Josef Schwarzler": 1,
+   "Oscar Andrews": 1,
+   "Pranav Gadgil": 1,
+   "Lleyton Richards": 1,
+   "Finnian Bult": 1,
+   "Capucine Dournes": 1,
+   "Francesca Parcelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 1,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 85,
+  "by_status": {
+   "MAPPED": 66,
+   "UNMAPPED_PLAYER": 19
+  },
+  "mapped_rate": 0.7765,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Steven McCartney": 1,
+   "Eric Von Marton Martins": 1,
+   "Eduardo Heineberg": 1,
+   "Aditya Kothari": 1,
+   "Daniel Wright": 1,
+   "Eshant Patra": 1,
+   "Dharma Pantaratorn": 1,
+   "Perawat Sukjai": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 66,
+ "model_witness_available": true,
+ "rows": 60,
+ "counts": {
+  "PASS": 59,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
