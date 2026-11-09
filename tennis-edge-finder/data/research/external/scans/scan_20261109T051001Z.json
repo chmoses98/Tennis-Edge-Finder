@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-09T05:10:01.523689+00:00",
+ "run_id": "20261109T051001Z",
+ "external_parse": {
+  "events": 72,
+  "markets": 663,
+  "skipped_family": 175,
+  "skipped_period": 179,
+  "skipped_live": 18,
+  "one_sided": 2,
+  "rows": 1097,
+  "devigged": 306
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 741,
+  "markets_mapped": 306,
+  "contracts": 642,
+  "quoted_contracts": 642,
+  "raw": "data/research/external/raw/20261109T051001Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 306,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 71,
+  "rows": 571,
+  "two_sided": 558,
+  "one_sided": 13
+ },
+ "kalshi_quotes_on_disk": 264,
+ "external_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.7541,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Igor Marcondes": 1,
+   "Alex Hernandez": 1,
+   "Felipe Meligeni Rodrigues Alves": 1,
+   "Maria Herazo": 1,
+   "Chloe Zigliara": 1,
+   "Kai luca Ampaw": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "UNMAPPED_PLAYER": 1,
+   "MAPPED": 59,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.7375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.7385,
+  "top_refusal_subjects": {
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Steven McCartney": 1,
+   "Lance Lage": 1,
+   "Jonathan Bedard": 1,
+   "Andrey Barbiero": 1,
+   "Vraj Gohil": 1,
+   "Aditya Kothari": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev M": 1,
+   "Jayson Blando": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 99,
+ "kalshi_mapped_matches": 48,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:INSUFFICIENT_INPUTS": 18
+ },
+ "skips": {}
+}
