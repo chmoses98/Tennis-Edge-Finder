@@ -1,0 +1,99 @@
+{
+ "generated_at": "2026-11-09T06:59:47.484591+00:00",
+ "run_id": "20261109T065947Z",
+ "external_parse": {
+  "events": 99,
+  "markets": 1145,
+  "skipped_family": 222,
+  "skipped_period": 348,
+  "skipped_live": 7,
+  "one_sided": 31,
+  "rows": 1922,
+  "devigged": 544
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 737,
+  "markets_mapped": 323,
+  "contracts": 672,
+  "quoted_contracts": 672,
+  "raw": "data/research/external/raw/20261109T065947Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 323,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 76,
+  "rows": 596,
+  "two_sided": 581,
+  "one_sided": 15
+ },
+ "kalshi_quotes_on_disk": 218,
+ "external_mapping": {
+  "total": 88,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Maria Herazo": 1,
+   "Jayson Blando": 1,
+   "Daniel Wright": 1,
+   "Capucine Dournes": 1,
+   "Francesca Parcelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 61,
+   "DOUBLES_UNSUPPORTED": 19
+  },
+  "mapped_rate": 0.7625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 27
+  },
+  "mapped_rate": 0.5574,
+  "top_refusal_subjects": {
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Tamara Zidansek": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Maria Fernanda Herazo Gonzalez": 1,
+   "Laura Pigossi": 1,
+   "Polona Hercog": 1,
+   "Roberto Herman": 1,
+   "Stefano Lacroce": 1,
+   "Gabriel Miller": 1,
+   "Steven McCartney": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 92,
+ "kalshi_mapped_matches": 34,
+ "model_witness_available": true,
+ "rows": 34,
+ "counts": {
+  "PASS": 33,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:INSUFFICIENT_INPUTS": 9,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "WATCH": 1,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 4
+ }
+}
