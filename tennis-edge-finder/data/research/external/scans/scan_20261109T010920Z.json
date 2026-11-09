@@ -1,0 +1,83 @@
+{
+ "generated_at": "2026-11-09T01:09:20.241065+00:00",
+ "run_id": "20261109T010920Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 802,
+  "markets_mapped": 314,
+  "contracts": 666,
+  "quoted_contracts": 666,
+  "raw": "data/research/external/raw/20261109T010920Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 314,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 626,
+  "two_sided": 616,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 164,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 15,
+   "MAPPED": 64,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "Daniel Wright": 1,
+   "Eshant Patra": 1,
+   "Dharma Pantaratorn": 1,
+   "Perawat Sukjai": 1,
+   "Hien Pham": 1,
+   "Mohammad Farhanuddin Fariz": 1,
+   "Kareem Abdul Hakim": 1,
+   "Heimanarii Lai San": 1,
+   "Pranav Gadgil": 1,
+   "Finnian Bult": 1
+  }
+ },
+ "matched_both_venues": 11,
+ "external_mapped_matches": 64,
+ "kalshi_mapped_matches": 34,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 5
+ },
+ "skips": {}
+}
