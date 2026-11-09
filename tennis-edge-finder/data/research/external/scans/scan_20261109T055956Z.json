@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-09T05:59:56.296865+00:00",
+ "run_id": "20261109T055956Z",
+ "external_parse": {
+  "events": 102,
+  "markets": 1120,
+  "skipped_family": 213,
+  "skipped_period": 343,
+  "skipped_live": 12,
+  "one_sided": 32,
+  "rows": 1880,
+  "devigged": 532
+ },
+ "smarkets_fetch": {
+  "events_seen": 150,
+  "events_priced": 80,
+  "markets": 730,
+  "markets_mapped": 315,
+  "contracts": 658,
+  "quoted_contracts": 658,
+  "raw": "data/research/external/raw/20261109T055956Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 315,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 61,
+  "rows": 597,
+  "two_sided": 585,
+  "one_sided": 12
+ },
+ "kalshi_quotes_on_disk": 220,
+ "external_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 72,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7912,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Joel Josef Schwarzler": 1,
+   "Maria Herazo": 1,
+   "Daniel Wright": 1,
+   "Vishal Vasudev Mahesh Kumar": 1,
+   "Aditya Kothari": 1,
+   "Vraj Gohil": 1,
+   "Capucine Dournes": 1,
+   "Francesca Parcelli": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 60,
+   "DOUBLES_UNSUPPORTED": 20
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 33,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.6471,
+  "top_refusal_subjects": {
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Nicolas Dagda Mireles": 1,
+   "Roberto Herman": 1,
+   "Axel Cabrera": 1,
+   "Stefano Lacroce": 1,
+   "Ranak Pajpani": 1,
+   "Mathias Hamel-Van Dun": 1,
+   "Eduardo Heineberg": 1,
+   "Vraj Gohil": 1,
+   "Aditya Kothari": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 91,
+ "kalshi_mapped_matches": 33,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "tri:INSUFFICIENT_INPUTS": 5,
+  "SHADOW_BET": 1,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
