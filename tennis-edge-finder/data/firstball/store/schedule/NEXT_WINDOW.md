@@ -1,13 +1,13 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-10 21:51Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-10 22:03Z)
 
-* Earliest credible first ball: **2026-11-10 21:54Z**
-* Recommended RUN TENNIS time: **2026-11-10 21:09Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-10 21:44Z**
+* Earliest credible first ball: **2026-11-10 22:00Z**
+* Recommended RUN TENNIS time: **2026-11-10 21:15Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-10 21:50Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Coco Gauff vs Linda Noskova | 2026-11-10 21:54Z | START_IMMINENT | COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden finished | MEDIUM |
+| Coco Gauff vs Linda Noskova | 2026-11-10 22:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 
 Published slate: `SL-20261110T212314Z-6366ef1f` built 2026-11-10 21:23Z -- current
 
