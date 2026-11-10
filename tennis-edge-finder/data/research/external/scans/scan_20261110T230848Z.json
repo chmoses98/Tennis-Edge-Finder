@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-11-10T23:08:48.471845+00:00",
+ "run_id": "20261110T230848Z",
+ "external_parse": {
+  "events": 138,
+  "markets": 927,
+  "skipped_family": 117,
+  "skipped_period": 247,
+  "skipped_live": 27,
+  "one_sided": 15,
+  "rows": 1470,
+  "devigged": 548
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 546,
+  "markets_mapped": 242,
+  "contracts": 520,
+  "quoted_contracts": 520,
+  "raw": "data/research/external/raw/20261110T230848Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 242,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 29,
+  "rows": 491,
+  "two_sided": 487,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 474,
+ "external_mapping": {
+  "total": 126,
+  "by_status": {
+   "MAPPED": 78,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.619,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Cooper Dillon": 1,
+   "Andrew Gordon": 1,
+   "Noa Tcherniack": 1,
+   "Diego Britt-Alvarez": 1,
+   "Tom Garcia": 1,
+   "Nela Linhartova": 1,
+   "Emma Maria Ansorge": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 38
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 22
+  },
+  "mapped_rate": 0.8417,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joaquin Sabina": 1,
+   "Franco Boriosi": 1,
+   "Giovanni Branchetti": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Charlie Bazil": 1,
+   "Nikita Belozertsev": 1,
+   "Nazim Makhlouf": 1,
+   "Martin Hammond": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 103,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 86,
+ "counts": {
+  "PASS": 86,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 58,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
