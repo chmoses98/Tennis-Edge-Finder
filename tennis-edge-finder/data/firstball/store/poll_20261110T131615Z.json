@@ -1,0 +1,58 @@
+{
+ "run_id": "20261110T131615Z",
+ "started_at": "2026-11-10T13:16:15.606567+00:00",
+ "passes": 2,
+ "requests": 4,
+ "observations": 118,
+ "truths_written": 5,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPMATCH-26NOV10ETCTIR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPSETWINNER-26NOV10ETCTIR-2": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPSETWINNER-26NOV10ETCTIR-1": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPEXACTMATCH-26NOV10ETCTIR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  },
+  "KXATPGSPREAD-26NOV10ETCTIR": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 4
+ },
+ "watchlist": {
+  "capture_board_markets": 1490,
+  "events_only_on_capture_board": 174,
+  "selected_from_capture_board": 172
+ },
+ "mapping": {
+  "MATCHED": 118,
+  "UNMATCHED": 796
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-11-10T13:31:45.644994+00:00"
+}
