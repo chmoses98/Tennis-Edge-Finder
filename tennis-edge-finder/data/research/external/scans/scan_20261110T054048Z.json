@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-11-10T05:40:48.160345+00:00",
+ "run_id": "20261110T054048Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 141,
+  "events_priced": 80,
+  "markets": 832,
+  "markets_mapped": 364,
+  "contracts": 780,
+  "quoted_contracts": 780,
+  "raw": "data/research/external/raw/20261110T054048Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 364,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 60,
+  "rows": 720,
+  "two_sided": 719,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 569,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 69,
+   "DOUBLES_UNSUPPORTED": 9,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 9,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 148,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.7905,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Carole Monnet": 1,
+   "Lucia Bronzetti": 1,
+   "Antoine Genereux": 1,
+   "Tomas Giangrasso": 1,
+   "Giovanni Branchetti": 1,
+   "Alessandro Del Francia": 1,
+   "Milledge Galphin Cossu": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 69,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 42,
+ "counts": {
+  "PASS": 42,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {}
+}
