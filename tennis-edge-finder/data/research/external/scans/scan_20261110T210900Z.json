@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-10T21:09:00.907944+00:00",
+ "run_id": "20261110T210900Z",
+ "external_parse": {
+  "events": 156,
+  "markets": 1070,
+  "skipped_family": 158,
+  "skipped_period": 283,
+  "skipped_live": 33,
+  "one_sided": 35,
+  "rows": 1628,
+  "devigged": 594
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 554,
+  "markets_mapped": 235,
+  "contracts": 506,
+  "quoted_contracts": 506,
+  "raw": "data/research/external/raw/20261110T210900Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 235,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 21,
+  "rows": 485,
+  "two_sided": 477,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 516,
+ "external_mapping": {
+  "total": 145,
+  "by_status": {
+   "MAPPED": 95,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.6552,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Arjun Prabhakar": 1,
+   "Isac Str\u00f6mberg": 1,
+   "Cade Fernando": 1,
+   "Gabriel Porras": 1,
+   "Kinaa Graham": 1,
+   "Pablo Perez Ramos": 1,
+   "Joaquim de Almeida": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 42
+  },
+  "mapped_rate": 0.425,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 153,
+  "by_status": {
+   "MAPPED": 126,
+   "UNMAPPED_PLAYER": 26,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Charlie Bazil": 1,
+   "Nikita Belozertsev": 1,
+   "Xavier Massotte": 1,
+   "Nazim Makhlouf": 1,
+   "Martin Hammond": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "matched_both_venues": 44,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 126,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 24
+ },
+ "skips": {
+  "external_has_no_match_winner": 11
+ }
+}
