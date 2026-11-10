@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-10T22:08:46.534838+00:00",
+ "run_id": "20261110T220846Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 974,
+  "skipped_family": 122,
+  "skipped_period": 263,
+  "skipped_live": 28,
+  "one_sided": 18,
+  "rows": 1560,
+  "devigged": 571
+ },
+ "smarkets_fetch": {
+  "events_seen": 117,
+  "events_priced": 80,
+  "markets": 545,
+  "markets_mapped": 226,
+  "contracts": 490,
+  "quoted_contracts": 490,
+  "raw": "data/research/external/raw/20261110T220846Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 226,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 467,
+  "two_sided": 463,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 509,
+ "external_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 81,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.6183,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Kinaa Graham": 1,
+   "Nela Linhartova": 1,
+   "Isac Str\u00f6mberg": 1,
+   "Cade Fernando": 1,
+   "Cooper Dillon": 1,
+   "Andrew Gordon": 1,
+   "Noa Tcherniack": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 42
+  },
+  "mapped_rate": 0.425,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 122,
+  "by_status": {
+   "MAPPED": 104,
+   "UNMAPPED_PLAYER": 18
+  },
+  "mapped_rate": 0.8525,
+  "top_refusal_subjects": {
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Charlie Bazil": 1,
+   "Nazim Makhlouf": 1,
+   "Liangxuan Liu": 1,
+   "Sasikumar Mukund": 1,
+   "M Rifqi Fitriadi": 1,
+   "Francisco Moreno Rico": 1
+  }
+ },
+ "matched_both_venues": 41,
+ "external_mapped_matches": 100,
+ "kalshi_mapped_matches": 104,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 51,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
