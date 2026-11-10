@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-10T21:38:52.979479+00:00",
+ "run_id": "20261110T213852Z",
+ "external_parse": {
+  "events": 150,
+  "markets": 1022,
+  "skipped_family": 153,
+  "skipped_period": 271,
+  "skipped_live": 35,
+  "one_sided": 21,
+  "rows": 1588,
+  "devigged": 575
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 591,
+  "markets_mapped": 247,
+  "contracts": 536,
+  "quoted_contracts": 536,
+  "raw": "data/research/external/raw/20261110T213852Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 32,
+  "rows": 504,
+  "two_sided": 497,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 468,
+ "external_mapping": {
+  "total": 139,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.6403,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Kinaa Graham": 1,
+   "Nela Linhartova": 1,
+   "Isac Str\u00f6mberg": 1,
+   "Cade Fernando": 1,
+   "Cooper Dillon": 1,
+   "Andrew Gordon": 1,
+   "Diego Britt-Alvarez": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 42
+  },
+  "mapped_rate": 0.425,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 42,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 130,
+  "by_status": {
+   "MAPPED": 108,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8308,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Charlie Bazil": 1,
+   "Nikita Belozertsev": 1,
+   "Filippo Alfano": 1,
+   "Liangxuan Liu": 1,
+   "Jayson Blando": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 108,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:ALL_THREE_DISAGREE": 3,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 33,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
