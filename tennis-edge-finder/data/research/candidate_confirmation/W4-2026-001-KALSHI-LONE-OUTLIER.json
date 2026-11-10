@@ -5,14 +5,14 @@
  "status_reason": "2 eligible of 200 required",
  "universe": {
   "stream": "research/external/dislocations (external_v1)",
-  "rows_total": 390471,
+  "rows_total": 390889,
   "rows_before_confirmation_start": 260,
-  "rows_after": 390211,
+  "rows_after": 390629,
   "failed_gate_counts": {
-   "reference_exists": 181919,
-   "kalshi_lone_outlier": 374418,
-   "external_edge_ge_2c": 388424,
-   "displayed_size_ge_1": 2247,
+   "reference_exists": 181947,
+   "kalshi_lone_outlier": 374834,
+   "external_edge_ge_2c": 388842,
+   "displayed_size_ge_1": 2252,
    "spread_within_6c": 10745
   },
   "freshness_of_gate_passing_rows": {
@@ -116,7 +116,7 @@
  },
  "exclusion_counts": {
   "OBSERVED_BEFORE_CONFIRMATION_START": 260,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 388912,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 389330,
   "EXTERNAL_FRESHNESS_UNVERIFIABLE": 493,
   "EXTERNAL_FRESHNESS_AMBIGUOUS": 333,
   "TIMING_START_UNKNOWN": 219,
@@ -190,11 +190,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261110T123203Z",
+ "harvest_run": "20261110T142147Z",
  "evidence_rows_this_run": 473,
  "evidence_rows_appended": 0,
  "last_evidence_at": "2026-11-10T05:10:58.117487+00:00",
- "harvest_run_at": "2026-11-10T12:39:39.527026+00:00",
+ "harvest_run_at": "2026-11-10T14:34:12.727064+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
