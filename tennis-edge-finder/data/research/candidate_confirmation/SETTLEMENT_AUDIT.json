@@ -1,9 +1,9 @@
 {
- "ledger_rows": 119834,
- "settlement_files": 302,
- "settlement_rows_unique": 117782,
+ "ledger_rows": 120386,
+ "settlement_files": 303,
+ "settlement_rows_unique": 118622,
  "settlement_rows_duplicate_prediction_ids": 0,
- "ledger_rows_settled": 117780,
+ "ledger_rows_settled": 118620,
  "settlement_rows_not_in_ledger": 2,
  "settlement_rows_not_in_ledger_sample": [
   [
@@ -15,81 +15,80 @@
    "2026-09-11T13:59:28.188445+00:00"
   ]
  ],
- "ledger_rows_without_settlement_row": 2054,
+ "ledger_rows_without_settlement_row": 1766,
  "of_which_exchange_has_settled": 0,
- "of_which_not_yet_settled_or_not_swept": 2054,
+ "of_which_not_yet_settled_or_not_swept": 1766,
  "settlement_vs_capture_result_conflicts": 0,
  "results": {
-  "yes": 53993,
-  "no": 59628,
-  "scalar": 4161
+  "yes": 54334,
+  "no": 60039,
+  "scalar": 4249
  },
- "gradeable_binary": 113621,
+ "gradeable_binary": 114373,
  "sports_truth_sources": {
-  "kalshi_result": 70738,
-  "none": 47044
+  "kalshi_result": 71232,
+  "none": 47390
  },
  "strict_clv_embedded_in_settlement_rows": 3054,
  "note": "the settle job embeds the CLV record as computed AT SETTLEMENT TIME; first-ball truth that arrives later updates data/research/clv/<run>.jsonl but not the embedded copy",
  "health_layer_view_after_fix": {
-  "settled": 117782,
-  "settled_binary": 113621,
-  "settled_scalar": 4161,
-  "sports_truth_rows": 70738,
-  "sports_truth_kalshi_derived": 70738,
-  "sports_truth_independent": 55014,
-  "settlement_files": 302,
-  "independent_truth_run": "20261110T142105Z.jsonl.gz",
+  "settled": 118622,
+  "settled_binary": 114373,
+  "settled_scalar": 4249,
+  "sports_truth_rows": 71232,
+  "sports_truth_kalshi_derived": 71232,
+  "sports_truth_independent": 55176,
+  "settlement_files": 303,
+  "independent_truth_run": "20261110T180603Z.jsonl.gz",
   "independent_truth_by_status": {
-   "NOT_COVERED": 46904,
-   "RESOLVED": 56845,
-   "NO_CANONICAL_IDS": 5232,
+   "NOT_COVERED": 47346,
+   "RESOLVED": 57055,
+   "NO_CANONICAL_IDS": 5248,
    "AMBIGUOUS": 1024,
-   "NOT_FOUND": 7605,
-   "PENDING_RESULT": 170
+   "NOT_FOUND": 7635,
+   "PENDING_RESULT": 312
   },
   "independent_truth_structural_non_coverage": {
-   "WTA|ITF|NOT_COVERED": 25090,
-   "ATP|CHALLENGER|NO_CANONICAL_IDS": 2294,
-   "ATP|ITF|NOT_COVERED": 20800,
+   "WTA|ITF|NOT_COVERED": 25234,
+   "ATP|CHALLENGER|NO_CANONICAL_IDS": 2300,
+   "ATP|ITF|NOT_COVERED": 21014,
    "WTA|WTA_125|NOT_COVERED": 186,
    "WTA|TOUR_500_250|NO_CANONICAL_IDS": 962,
-   "ATP|TOUR_500_250|NO_CANONICAL_IDS": 1024,
+   "ATP|TOUR_500_250|NO_CANONICAL_IDS": 1034,
    "ATP|MASTERS_1000|NO_CANONICAL_IDS": 590,
    "WTA|MASTERS_1000|NO_CANONICAL_IDS": 334,
-   "ATP|CHALLENGER|NOT_COVERED": 828,
-   "ATP|TOUR_500_250|PENDING_RESULT": 108,
-   "WTA|TOUR_FINALS|PENDING_RESULT": 62,
+   "ATP|CHALLENGER|NOT_COVERED": 912,
+   "ATP|TOUR_500_250|PENDING_RESULT": 312,
    "WTA|TOUR_FINALS|NO_CANONICAL_IDS": 28
   },
   "independent_truth_rate_among_covered": 0.8682,
   "exchange_reconciliation": {
-   "NOT_RECONCILED": 56512,
-   "AGREE": 15460,
+   "NOT_RECONCILED": 56994,
+   "AGREE": 15490,
    "CONFLICT": 20
   },
   "exchange_conflicts": 20,
-  "exchange_reconciled": 15480,
+  "exchange_reconciled": 15510,
   "independent_truth_freshness": {
    "as_of": "2026-11-10",
    "sources": {
-    "sackmann_ATP_main": "20261109T145505Z",
-    "sackmann_ATP_qual_chall": "20261109T145505Z",
-    "sackmann_ATP_futures": "20261109T145505Z",
-    "sackmann_WTA_main": "20261109T145505Z",
-    "sackmann_WTA_qual_itf": "20261109T145505Z",
-    "tml_ATP_main": "20261109T145505Z",
-    "tml_ATP_challenger": "20261109T150035Z",
-    "tml_ATP_main_mirror": "20261109T150035Z",
-    "espn_ATP": "20261109T145829Z",
-    "espn_WTA": "20261109T145829Z"
+    "sackmann_ATP_main": "20261110T140747Z",
+    "sackmann_ATP_qual_chall": "20261110T140747Z",
+    "sackmann_ATP_futures": "20261110T140747Z",
+    "sackmann_WTA_main": "20261110T140747Z",
+    "sackmann_WTA_qual_itf": "20261110T140747Z",
+    "tml_ATP_main": "20261110T140747Z",
+    "tml_ATP_challenger": "20261110T141414Z",
+    "tml_ATP_main_mirror": "20261110T141414Z",
+    "espn_ATP": "20261110T141157Z",
+    "espn_WTA": "20261110T141157Z"
    },
-   "canonical_matches_sha256": "8833fa04b4cd4ed55d47c77776d9e74eb3ad82740c9892901e58b7bfc120bab0",
+   "canonical_matches_sha256": "b62f25b143af0b3251bfd3cc0448eb3ceabfd2bc224d3c7069e9fc72851237df",
    "build_version": "canonical_v2.3",
    "horizons": {
     "ATP tour": {
-     "newest_result": "2026-11-09",
-     "lag_days": 1,
+     "newest_result": "2026-11-10",
+     "lag_days": 0,
      "live": true,
      "coverage": "full"
     },
@@ -127,28 +126,28 @@
    "espn_families_not_live": []
   },
   "independent_truth_resolution": {
-   "newly_resolved": 0,
-   "first_resolutions_total": 57889,
+   "newly_resolved": 114,
+   "first_resolutions_total": 58099,
    "backfill": false,
-   "lag_days_median_new": null,
-   "lag_days_max_new": null
+   "lag_days_median_new": 0.75,
+   "lag_days_max_new": 0.75
   },
   "prospective_v2": {
-   "predictions_with_v2_and_incumbent": 53606,
-   "exchange_settled_predictions": 53606,
-   "independently_resolved_predictions": 12640,
-   "independently_settled_matches": 1586,
+   "predictions_with_v2_and_incumbent": 54102,
+   "exchange_settled_predictions": 54102,
+   "independently_resolved_predictions": 12670,
+   "independently_settled_matches": 1592,
    "by_status": {
-    "RESOLVED": 12640,
-    "NOT_FOUND": 3140,
-    "NOT_COVERED": 37624,
+    "RESOLVED": 12670,
+    "NOT_FOUND": 3146,
+    "NOT_COVERED": 38066,
     "AMBIGUOUS": 176,
-    "PENDING_RESULT": 26
+    "PENDING_RESULT": 44
    },
    "reconciliation": {
-    "AGREE": 12620,
-    "NOT_RECONCILED": 40966,
-    "EXPLAINED_NOTE": 84,
+    "AGREE": 12650,
+    "NOT_RECONCILED": 41432,
+    "EXPLAINED_NOTE": 90,
     "CONFLICT": 20
    },
    "by_level": {
@@ -156,37 +155,36 @@
      "RESOLVED": 4198,
      "NOT_FOUND": 2532,
      "AMBIGUOUS": 26,
-     "NOT_COVERED": 828
+     "NOT_COVERED": 912
     },
     "ATP ITF": {
-     "NOT_COVERED": 16222
+     "NOT_COVERED": 16436
     },
     "ATP tour": {
-     "RESOLVED": 4162,
-     "NOT_FOUND": 368,
+     "RESOLVED": 4184,
+     "NOT_FOUND": 374,
      "AMBIGUOUS": 112,
-     "PENDING_RESULT": 18
+     "PENDING_RESULT": 44
     },
     "WTA 125": {
      "NOT_COVERED": 142,
      "RESOLVED": 1686
     },
     "WTA ITF": {
-     "NOT_COVERED": 20432
+     "NOT_COVERED": 20576
     },
     "WTA tour": {
-     "RESOLVED": 2594,
+     "RESOLVED": 2602,
      "NOT_FOUND": 240,
-     "AMBIGUOUS": 38,
-     "PENDING_RESULT": 8
+     "AMBIGUOUS": 38
     }
    },
    "n_stale_unresolved_tour_level": 608,
    "readout_at_independently_settled_matches": 1500
   },
   "prospective_v2_warning": true,
-  "clv_run": "20261110T141951Z.jsonl.gz",
-  "settled_with_ab_truth": 3800,
+  "clv_run": "20261110T180458Z.jsonl.gz",
+  "settled_with_ab_truth": 3839,
   "settled_with_close": 3400,
   "settled_strict_clv": 3054,
   "_ab_truth_ids": [
@@ -3989,7 +3987,46 @@
    "ecd6dc28-bef1-4f4f-bf01-a49b16996ff0",
    "c76fc066-8580-49be-9ab7-f34ee4daf9af",
    "5448bafe-0303-4c77-945e-7f7c13605bfd",
-   "78a64b32-b22b-40c3-a76c-f36bd57f9f47"
+   "78a64b32-b22b-40c3-a76c-f36bd57f9f47",
+   "eae8ebb9-4adb-48d2-87bb-af0a64a697b0",
+   "5a096274-2b18-448e-ac2a-1f8a5029cfd7",
+   "badc9cde-5763-44e4-89e8-36081472999c",
+   "9dbe3a12-fcc8-4d7e-8b08-54f0d6167a4d",
+   "b6ca2ebd-2239-4596-ab4a-f31dcf608864",
+   "2a6e7c83-66aa-4a9b-83a9-9c129a929b32",
+   "5c61fe3f-89d6-450c-81e3-3e86d0316aba",
+   "0af6b6a9-8a84-4e0e-b5f5-716e51e3c472",
+   "29137ba8-2467-4347-a996-d4fc9706ec32",
+   "d5ce7a86-a7e9-4fd9-a26e-afd8a7f28745",
+   "3c90f60a-7e80-4d20-a545-d997719aebe8",
+   "e3b5e9b8-0992-4487-95c6-350e4083edcd",
+   "9feb7fa8-27d3-42a7-ba3d-1ed6b52d484c",
+   "d07ff145-8744-4e50-8f1d-03e6e407e750",
+   "b2157c00-adb5-418d-b725-5e115bbf83ff",
+   "ecd1a505-7d0b-4ee0-b863-c04fdce41c6f",
+   "a478f042-557b-494e-9ac4-e0494e237e2d",
+   "3053bb27-5606-401a-89d7-14f7adce67e1",
+   "37fc26fd-99fd-4d58-8d1d-3a08ead9a46e",
+   "ebbff1c3-bc3c-4b9f-8252-bd56f061197c",
+   "57ced5d6-0211-4026-9bb8-cd794025cf06",
+   "cc298d7e-1cca-46a5-a2fc-6c53e3e7c07c",
+   "fef2c776-7aab-4d7e-8151-55a93dc0bb58",
+   "5a74e373-9ceb-485b-a020-45135e706f47",
+   "449518de-96ff-4433-a251-2edfb38f8728",
+   "c0b0c7ee-3653-4f41-a17b-bc889f2c5e7d",
+   "49597b0f-1413-4abc-9240-48a5d4525539",
+   "0fb1c3ce-1fcd-445c-83ae-95cee7e0ced0",
+   "ef8a5f5d-75ea-4ce9-8165-983dad7671e2",
+   "3916b865-9450-46dc-84c4-9c78369b4276",
+   "ef6d241b-a3f8-4b68-a8ab-a4d2d8741f21",
+   "a76f6e6a-5184-4c1c-a139-727a944dd92f",
+   "15eca203-b6ca-49ef-a724-064e03035f4a",
+   "d3ff0b34-dfed-4a60-a015-b6ada647c191",
+   "9af3d2c6-468d-4cf2-839b-7677ffded7b3",
+   "54818480-b74e-4a03-be6f-d68a260d2fde",
+   "b7a52090-8e90-46b2-96de-0952335202bd",
+   "9ac735a6-49f4-46dc-8291-4dc0082b5917",
+   "e00178c3-d337-4e46-99e8-a9f610936485"
   ]
  }
 }

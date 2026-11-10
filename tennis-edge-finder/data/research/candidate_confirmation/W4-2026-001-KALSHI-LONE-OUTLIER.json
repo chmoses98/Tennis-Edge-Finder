@@ -5,40 +5,40 @@
  "status_reason": "2 eligible of 200 required",
  "universe": {
   "stream": "research/external/dislocations (external_v1)",
-  "rows_total": 390889,
+  "rows_total": 392183,
   "rows_before_confirmation_start": 260,
-  "rows_after": 390629,
+  "rows_after": 391923,
   "failed_gate_counts": {
-   "reference_exists": 181947,
-   "kalshi_lone_outlier": 374834,
-   "external_edge_ge_2c": 388842,
-   "displayed_size_ge_1": 2252,
-   "spread_within_6c": 10745
+   "reference_exists": 182405,
+   "kalshi_lone_outlier": 376112,
+   "external_edge_ge_2c": 390134,
+   "displayed_size_ge_1": 2283,
+   "spread_within_6c": 10755
   },
   "freshness_of_gate_passing_rows": {
-   "VERIFIED_FRESH": 473,
+   "VERIFIED_FRESH": 475,
    "UNVERIFIABLE": 493,
    "UNRESOLVED": 233,
    "MIXED": 100
   },
-  "scanner_shadow_bet_rows": 1296,
-  "rule_gates_pass_rows": 1299,
-  "rule_and_freshness_pass_rows": 473,
-  "first_qualifying_observations": 243,
+  "scanner_shadow_bet_rows": 1298,
+  "rule_gates_pass_rows": 1301,
+  "rule_and_freshness_pass_rows": 475,
+  "first_qualifying_observations": 245,
   "reobservations_removed": 230,
   "first_qualifying_by_timing": {
-   "START_UNKNOWN": 241,
+   "START_UNKNOWN": 243,
    "STRICT_PREGAME": 2
   },
   "first_qualifying_sample": {
-   "n": 243,
+   "n": 245,
    "first": "2026-09-13T22:54:29.058817+00:00",
-   "last": "2026-11-10T05:10:58.117487+00:00",
-   "physical_matches": 243,
+   "last": "2026-11-10T17:29:29.559126+00:00",
+   "physical_matches": 245,
    "calendar_days": 47,
-   "tournaments": 122,
+   "tournaments": 124,
    "tour_level": {
-    "ATP/CHALLENGER": 31,
+    "ATP/CHALLENGER": 33,
     "ATP/ITF": 105,
     "ATP/TEAM": 4,
     "WTA/TOUR": 7,
@@ -116,10 +116,10 @@
  },
  "exclusion_counts": {
   "OBSERVED_BEFORE_CONFIRMATION_START": 260,
-  "FROZEN_INCLUSION_RULE_NOT_MET": 389330,
+  "FROZEN_INCLUSION_RULE_NOT_MET": 390622,
   "EXTERNAL_FRESHNESS_UNVERIFIABLE": 493,
   "EXTERNAL_FRESHNESS_AMBIGUOUS": 333,
-  "TIMING_START_UNKNOWN": 219,
+  "TIMING_START_UNKNOWN": 221,
   "REOBSERVATION_OF_CONTRACT_ALREADY_COUNTED": 230,
   "FIRST_BALL_CONFIDENCE_C_ONLY": 22
  },
@@ -190,11 +190,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261110T142147Z",
- "evidence_rows_this_run": 473,
- "evidence_rows_appended": 0,
- "last_evidence_at": "2026-11-10T05:10:58.117487+00:00",
- "harvest_run_at": "2026-11-10T14:34:12.727064+00:00",
+ "harvest_run": "20261110T180641Z",
+ "evidence_rows_this_run": 475,
+ "evidence_rows_appended": 2,
+ "last_evidence_at": "2026-11-10T17:29:29.559126+00:00",
+ "harvest_run_at": "2026-11-10T18:17:49.238628+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
