@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-10T13:58:53.100597+00:00",
+ "run_id": "20261110T135853Z",
+ "external_parse": {
+  "events": 226,
+  "markets": 1816,
+  "skipped_family": 279,
+  "skipped_period": 506,
+  "skipped_live": 35,
+  "one_sided": 80,
+  "rows": 2801,
+  "devigged": 950
+ },
+ "smarkets_fetch": {
+  "events_seen": 135,
+  "events_priced": 80,
+  "markets": 1066,
+  "markets_mapped": 405,
+  "contracts": 908,
+  "quoted_contracts": 898,
+  "raw": "data/research/external/raw/20261110T135853Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 405,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 38,
+  "rows": 870,
+  "two_sided": 862,
+  "one_sided": 8
+ },
+ "kalshi_quotes_on_disk": 758,
+ "external_mapping": {
+  "total": 214,
+  "by_status": {
+   "MAPPED": 157,
+   "DOUBLES_UNSUPPORTED": 33,
+   "UNMAPPED_PLAYER": 24
+  },
+  "mapped_rate": 0.7336,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 33,
+   "Manas Manoj Dhamne": 1,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Adrian Solorzano": 1,
+   "Gabriel Porras": 1,
+   "Matias Reyniak": 1,
+   "Ollie Knight": 1,
+   "Martin Hammond": 1,
+   "Ntungamili Raguin": 1,
+   "Yahor Slizevich": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Maria Carle": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 194,
+  "by_status": {
+   "MAPPED": 151,
+   "UNMAPPED_PLAYER": 42,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7784,
+  "top_refusal_subjects": {
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Laura Samson": 1,
+   "Bianca Andreescu": 1,
+   "Katrina Scott": 1,
+   "Alice Tubello": 1,
+   "Carole Monnet": 1,
+   "Lucia Bronzetti": 1,
+   "Liangxuan Liu": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 166,
+ "kalshi_mapped_matches": 151,
+ "model_witness_available": true,
+ "rows": 110,
+ "counts": {
+  "PASS": 110,
+  "tri:MODEL_LONE_OUTLIER": 44,
+  "tri:INSUFFICIENT_INPUTS": 54,
+  "tri:MARKETS_AGREE": 12
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
