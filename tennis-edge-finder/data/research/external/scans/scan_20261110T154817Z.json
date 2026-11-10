@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-10T15:48:17.104767+00:00",
+ "run_id": "20261110T154817Z",
+ "external_parse": {
+  "events": 153,
+  "markets": 1092,
+  "skipped_family": 180,
+  "skipped_period": 308,
+  "skipped_live": 41,
+  "one_sided": 43,
+  "rows": 1730,
+  "devigged": 561
+ },
+ "smarkets_fetch": {
+  "events_seen": 124,
+  "events_priced": 80,
+  "markets": 858,
+  "markets_mapped": 328,
+  "contracts": 728,
+  "quoted_contracts": 728,
+  "raw": "data/research/external/raw/20261110T154817Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 328,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 11,
+  "rows": 717,
+  "two_sided": 711,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 552,
+ "external_mapping": {
+  "total": 142,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 29,
+   "UNMAPPED_PLAYER": 10,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7183,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 29,
+   "Adrian Solorzano": 1,
+   "Gabriel Porras": 1,
+   "Thiago Horacio Messa": 1,
+   "Pablo Perez Ramos": 1,
+   "Tomas Giangrasso": 1,
+   "Antoine Genereux": 1,
+   "Nara Koki": 1,
+   "Joaquim de Almeida": 1,
+   "Brooke Black": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 52,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.65,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Maria Carle": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 161,
+  "by_status": {
+   "MAPPED": 127,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7888,
+  "top_refusal_subjects": {
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Bianca Andreescu": 1,
+   "Alice Tubello": 1,
+   "Carole Monnet": 1,
+   "Lucia Bronzetti": 1,
+   "Vito Dell'elba": 1,
+   "Liangxuan Liu": 1,
+   "Jayson Blando": 1,
+   "Hien Pham": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 119,
+ "kalshi_mapped_matches": 127,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MODEL_LONE_OUTLIER": 34,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "tri:MARKETS_AGREE": 6,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 30
+ }
+}
