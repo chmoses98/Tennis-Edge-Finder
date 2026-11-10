@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-10T14:38:16.602459+00:00",
+ "run_id": "20261110T143816Z",
+ "external_parse": {
+  "events": 155,
+  "markets": 1237,
+  "skipped_family": 208,
+  "skipped_period": 349,
+  "skipped_live": 27,
+  "one_sided": 47,
+  "rows": 1966,
+  "devigged": 633
+ },
+ "smarkets_fetch": {
+  "events_seen": 136,
+  "events_priced": 80,
+  "markets": 1005,
+  "markets_mapped": 377,
+  "contracts": 846,
+  "quoted_contracts": 846,
+  "raw": "data/research/external/raw/20261110T143816Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 377,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 827,
+  "two_sided": 817,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 621,
+ "external_mapping": {
+  "total": 144,
+  "by_status": {
+   "MAPPED": 102,
+   "DOUBLES_UNSUPPORTED": 31,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.7083,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 31,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Adrian Solorzano": 1,
+   "Gabriel Porras": 1,
+   "Giovanni Branchetti": 1,
+   "Tomas Giangrasso": 1,
+   "Augusto Land": 1,
+   "Antoine Genereux": 1,
+   "Nara Koki": 1,
+   "Joaquim de Almeida": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 57,
+   "UNMAPPED_PLAYER": 5,
+   "DOUBLES_UNSUPPORTED": 18
+  },
+  "mapped_rate": 0.7125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Fabio Manuel Zavalaga Uculmana": 1,
+   "Maria Carle": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 151,
+  "by_status": {
+   "MAPPED": 117,
+   "UNMAPPED_PLAYER": 33,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7748,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Laura Samson": 1,
+   "Katrina Scott": 1,
+   "Alice Tubello": 1,
+   "Carole Monnet": 1,
+   "Lucia Bronzetti": 1,
+   "Vraj Gohil": 1,
+   "Hien Pham": 1,
+   "Aqil Adibi Rahiman": 1
+  }
+ },
+ "matched_both_venues": 59,
+ "external_mapped_matches": 116,
+ "kalshi_mapped_matches": 117,
+ "model_witness_available": true,
+ "rows": 66,
+ "counts": {
+  "PASS": 66,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MODEL_LONE_OUTLIER": 35,
+  "tri:MARKETS_AGREE": 7
+ },
+ "skips": {
+  "external_has_no_match_winner": 20
+ }
+}
