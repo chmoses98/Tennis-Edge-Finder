@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-10T19:40:17.333813+00:00",
+ "run_id": "20261110T194017Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1278,
+  "skipped_family": 202,
+  "skipped_period": 341,
+  "skipped_live": 44,
+  "one_sided": 36,
+  "rows": 1940,
+  "devigged": 699
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 622,
+  "markets_mapped": 252,
+  "contracts": 546,
+  "quoted_contracts": 546,
+  "raw": "data/research/external/raw/20261110T194017Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 252,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 522,
+  "two_sided": 515,
+  "one_sided": 7
+ },
+ "kalshi_quotes_on_disk": 1381,
+ "external_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 120,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6977,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Piper Johnson": 1,
+   "Arjun Prabhakar": 1,
+   "Esunge Ndumbe": 1,
+   "Gabriel Porras": 1,
+   "Pablo Perez Ramos": 1,
+   "Augusto Land": 1,
+   "Donald Nikolas Stoot": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 33,
+   "DOUBLES_UNSUPPORTED": 43,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.4125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 43,
+   "Kenta (2004) Miyoshi": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 302,
+  "by_status": {
+   "MAPPED": 251,
+   "UNMAPPED_PLAYER": 50,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8311,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Bianca Andreescu": 1,
+   "Katrina Scott": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Charlie Bazil": 1,
+   "Nikita Belozertsev": 1
+  }
+ },
+ "matched_both_venues": 96,
+ "external_mapped_matches": 132,
+ "kalshi_mapped_matches": 251,
+ "model_witness_available": true,
+ "rows": 104,
+ "counts": {
+  "PASS": 103,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:INSUFFICIENT_INPUTS": 78,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "SHADOW_BET": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
