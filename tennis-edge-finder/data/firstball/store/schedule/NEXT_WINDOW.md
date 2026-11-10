@@ -1,18 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-10 19:50Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-10 20:00Z)
 
-* Earliest credible first ball: **2026-11-10 20:00Z**
-* Recommended RUN TENNIS time: **2026-11-10 19:15Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-10 19:50Z**
-* Matches in window: 2
+* Earliest credible first ball: **2026-11-10 21:30Z**
+* Recommended RUN TENNIS time: **2026-11-10 20:45Z**
+* Final price/status check time: **2026-11-10 21:20Z**
+* Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Marta Kostyuk vs Jessica Pegula | 2026-11-10 20:00Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 | Coco Gauff vs Linda Noskova | 2026-11-10 21:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261110T182103Z-ab841816` built 2026-11-10 18:21Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-10T20:00:00+00:00, slate built 2026-11-10T18:21:03.815220+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+**1 main-tour match(es) without a verified start status** (BET blocked until checked): Marta Kostyuk vs Jessica Pegula
 
-Dispatched this pass: slate_final (ok)
+Published slate: `SL-20261110T182103Z-ab841816` built 2026-11-10 18:21Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 4 match(es)
+
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-11 12:00Z, run by 2026-11-11 11:15Z, 2 match(es)
 * later window 3: first ball 2026-11-11 15:00Z, run by 2026-11-11 14:15Z, 1 match(es)
