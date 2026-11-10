@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-10T19:28:14.120564+00:00",
+ "run_id": "20261110T192814Z",
+ "external_parse": {
+  "events": 184,
+  "markets": 1278,
+  "skipped_family": 202,
+  "skipped_period": 341,
+  "skipped_live": 44,
+  "one_sided": 36,
+  "rows": 1940,
+  "devigged": 699
+ },
+ "smarkets_fetch": {
+  "events_seen": 118,
+  "events_priced": 80,
+  "markets": 657,
+  "markets_mapped": 263,
+  "contracts": 574,
+  "quoted_contracts": 574,
+  "raw": "data/research/external/raw/20261110T192814Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 263,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 544,
+  "two_sided": 539,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 587,
+ "external_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 120,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 16
+  },
+  "mapped_rate": 0.6977,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Piper Johnson": 1,
+   "Arjun Prabhakar": 1,
+   "Esunge Ndumbe": 1,
+   "Gabriel Porras": 1,
+   "Pablo Perez Ramos": 1,
+   "Augusto Land": 1,
+   "Donald Nikolas Stoot": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.45,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Kenta (2004) Miyoshi": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 155,
+  "by_status": {
+   "MAPPED": 126,
+   "UNMAPPED_PLAYER": 29
+  },
+  "mapped_rate": 0.8129,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Jazmin Ortenzi": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Bianca Andreescu": 1,
+   "Katrina Scott": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Charlie Bazil": 1,
+   "Heorhii Shylov": 1
+  }
+ },
+ "matched_both_venues": 62,
+ "external_mapped_matches": 132,
+ "kalshi_mapped_matches": 126,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 43,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MARKETS_AGREE": 5,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 26
+ }
+}
