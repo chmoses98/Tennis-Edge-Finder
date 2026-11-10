@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-10T22:18:46.582076+00:00",
+ "run_id": "20261110T221846Z",
+ "external_parse": {
+  "events": 142,
+  "markets": 974,
+  "skipped_family": 122,
+  "skipped_period": 263,
+  "skipped_live": 28,
+  "one_sided": 18,
+  "rows": 1560,
+  "devigged": 571
+ },
+ "smarkets_fetch": {
+  "events_seen": 116,
+  "events_priced": 80,
+  "markets": 540,
+  "markets_mapped": 238,
+  "contracts": 514,
+  "quoted_contracts": 514,
+  "raw": "data/research/external/raw/20261110T221846Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 238,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 490,
+  "two_sided": 486,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 414,
+ "external_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 81,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 15
+  },
+  "mapped_rate": 0.6183,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Kinaa Graham": 1,
+   "Nela Linhartova": 1,
+   "Isac Str\u00f6mberg": 1,
+   "Cade Fernando": 1,
+   "Cooper Dillon": 1,
+   "Andrew Gordon": 1,
+   "Noa Tcherniack": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 38,
+   "UNMAPPED_PLAYER": 4,
+   "DOUBLES_UNSUPPORTED": 38
+  },
+  "mapped_rate": 0.475,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 80,
+   "UNMAPPED_PLAYER": 20
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Maria Carle": 1,
+   "Laura Samson": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Charlie Bazil": 1,
+   "Nazim Makhlouf": 1,
+   "M Rifqi Fitriadi": 1,
+   "Alfonso Costamagna": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 104,
+ "kalshi_mapped_matches": 80,
+ "model_witness_available": true,
+ "rows": 46,
+ "counts": {
+  "PASS": 45,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:ALL_THREE_DISAGREE": 1,
+  "SHADOW_BET": 1,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
