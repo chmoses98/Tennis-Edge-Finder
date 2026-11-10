@@ -1,0 +1,101 @@
+{
+ "generated_at": "2026-11-10T23:28:37.160343+00:00",
+ "run_id": "20261110T232837Z",
+ "external_parse": {
+  "events": 135,
+  "markets": 927,
+  "skipped_family": 117,
+  "skipped_period": 247,
+  "skipped_live": 25,
+  "one_sided": 15,
+  "rows": 1478,
+  "devigged": 548
+ },
+ "smarkets_fetch": {
+  "events_seen": 115,
+  "events_priced": 80,
+  "markets": 552,
+  "markets_mapped": 245,
+  "contracts": 526,
+  "quoted_contracts": 526,
+  "raw": "data/research/external/raw/20261110T232837Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 245,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 503,
+  "two_sided": 499,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 426,
+ "external_mapping": {
+  "total": 124,
+  "by_status": {
+   "MAPPED": 76,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6129,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Cooper Dillon": 1,
+   "Andrew Gordon": 1,
+   "Noa Tcherniack": 1,
+   "Diego Britt-Alvarez": 1,
+   "Tom Garcia": 1,
+   "Nela Linhartova": 1,
+   "Emma Maria Ansorge": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 38
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 86,
+  "by_status": {
+   "MAPPED": 69,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.8023,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Tomas Giangrasso": 1,
+   "Justin Riley Anson": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Nazim Makhlouf": 1,
+   "Martin Hammond": 1,
+   "Veerawit Kamput": 1,
+   "Vraj Gohil": 1,
+   "Hien Pham": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 69,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 14,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
