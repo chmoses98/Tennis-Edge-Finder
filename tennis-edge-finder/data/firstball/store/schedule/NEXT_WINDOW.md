@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-10 08:47Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-10 08:59Z)
 
 * Earliest credible first ball: **2026-11-10 12:00Z**
 * Recommended RUN TENNIS time: **2026-11-10 11:15Z**
@@ -12,7 +12,7 @@
 | Tomas Martin Etcheverry vs Thiago Agustin Tirante | 2026-11-10 13:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Lorenzo Sonego vs Quentin Halys | 2026-11-10 13:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261110T055731Z-abebd852` built 2026-11-10 05:57Z -- current
+Published slate: `SL-20261110T082431Z-f5656424` built 2026-11-10 08:24Z -- current
 
 Dispatched this pass: none
 
