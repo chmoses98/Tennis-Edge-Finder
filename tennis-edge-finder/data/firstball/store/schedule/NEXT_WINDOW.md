@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 08:27Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 08:39Z)
 
 * Earliest credible first ball: **2026-11-11 12:00Z**
 * Recommended RUN TENNIS time: **2026-11-11 11:15Z**
@@ -10,7 +10,7 @@
 | Lorenzo Sonego vs Alejandro Tabilo | 2026-11-11 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 | Taylor Fritz vs Cameron Norrie | 2026-11-11 13:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261111T040401Z-dc9c78aa` built 2026-11-11 04:04Z -- current
+Published slate: `SL-20261111T080600Z-dacac2bd` built 2026-11-11 08:06Z -- current
 
 Dispatched this pass: none
 
