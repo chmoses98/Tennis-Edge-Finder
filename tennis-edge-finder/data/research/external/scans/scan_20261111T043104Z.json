@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-11T04:31:04.950359+00:00",
+ "run_id": "20261111T043104Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 100,
+  "events_priced": 80,
+  "markets": 627,
+  "markets_mapped": 260,
+  "contracts": 548,
+  "quoted_contracts": 548,
+  "raw": "data/research/external/raw/20261111T043104Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 260,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 531,
+  "two_sided": 526,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 501,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 95,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7724,
+  "top_refusal_subjects": {
+   "Irene Burillo Escorihuela": 1,
+   "Laura Samson": 1,
+   "Lucia Bronzetti": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Dragos Cazacu": 1,
+   "Kamil Stolarczyk": 1,
+   "Charlie Snow": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 16,
+ "external_mapped_matches": 43,
+ "kalshi_mapped_matches": 95,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:MARKETS_AGREE": 1,
+  "tri:INSUFFICIENT_INPUTS": 10
+ },
+ "skips": {}
+}
