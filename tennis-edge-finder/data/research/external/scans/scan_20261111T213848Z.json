@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-11T21:38:48.734699+00:00",
+ "run_id": "20261111T213848Z",
+ "external_parse": {
+  "events": 133,
+  "markets": 876,
+  "skipped_family": 172,
+  "skipped_period": 222,
+  "skipped_live": 40,
+  "one_sided": 45,
+  "rows": 1210,
+  "devigged": 437
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 626,
+  "markets_mapped": 247,
+  "contracts": 530,
+  "quoted_contracts": 530,
+  "raw": "data/research/external/raw/20261111T213848Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 6,
+  "rows": 524,
+  "two_sided": 519,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 602,
+ "external_mapping": {
+  "total": 123,
+  "by_status": {
+   "MAPPED": 83,
+   "DOUBLES_UNSUPPORTED": 24,
+   "UNMAPPED_PLAYER": 14,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.6748,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 24,
+   "Ettore Danesi": 1,
+   "Madhav Binu": 1,
+   "Marek Pazdera": 1,
+   "Tom Garcia": 1,
+   "Vicente Freda": 1,
+   "Gabriel Porras": 1,
+   "Neil Kandhai": 1,
+   "Nikita Samuel Filin": 1,
+   "Agustin E.C. Lorberg": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 20,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6812,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 115,
+  "by_status": {
+   "MAPPED": 101,
+   "UNMAPPED_PLAYER": 12,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8783,
+  "top_refusal_subjects": {
+   "Nikita Belozertsev": 1,
+   "Nazim Makhlouf": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Jayson Blando": 1,
+   "Pablo Perez Ramos": 1,
+   "Isadora Sigrist": 1,
+   "Valeriia Iushchenko": 1,
+   "Aleksandra Pozarenko": 1,
+   "Sophie Ehrenbergerova": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 112,
+ "kalshi_mapped_matches": 101,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 52,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 36,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
