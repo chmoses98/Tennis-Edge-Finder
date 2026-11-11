@@ -1,0 +1,103 @@
+{
+ "generated_at": "2026-11-11T05:50:50.109142+00:00",
+ "run_id": "20261111T055050Z",
+ "external_parse": {
+  "events": 280,
+  "markets": 1996,
+  "skipped_family": 165,
+  "skipped_period": 520,
+  "skipped_live": 22,
+  "one_sided": 67,
+  "rows": 2921,
+  "devigged": 1240
+ },
+ "smarkets_fetch": {
+  "events_seen": 102,
+  "events_priced": 80,
+  "markets": 637,
+  "markets_mapped": 264,
+  "contracts": 556,
+  "quoted_contracts": 556,
+  "raw": "data/research/external/raw/20261111T055050Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 264,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 537,
+  "two_sided": 533,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 451,
+ "external_mapping": {
+  "total": 268,
+  "by_status": {
+   "MAPPED": 196,
+   "DOUBLES_UNSUPPORTED": 40,
+   "UNMAPPED_PLAYER": 29,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7313,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 40,
+   "Joel Josef Schwarzler": 1,
+   "Aqil Adibi Rahiman": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Jayson Blando": 1,
+   "Francisco Moreno Rico": 1,
+   "Veerawit Kamput": 1,
+   "Vraj Gohil": 1,
+   "Jack Dermenjyan": 1,
+   "Andrei Radu (CLV)": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 36,
+   "MAPPED": 43,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 25
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "Maria Carle": 1,
+   "Bianca Andreescu": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Laura Samson": 1,
+   "Lucia Bronzetti": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Nazim Makhlouf": 1,
+   "Martin Hammond": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 215,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 54,
+ "counts": {
+  "PASS": 54,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 23,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 19
+ }
+}
