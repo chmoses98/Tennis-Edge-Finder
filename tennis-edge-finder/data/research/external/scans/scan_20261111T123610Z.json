@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-11T12:36:10.456580+00:00",
+ "run_id": "20261111T123610Z",
+ "external_parse": {
+  "events": 251,
+  "markets": 1858,
+  "skipped_family": 219,
+  "skipped_period": 507,
+  "skipped_live": 42,
+  "one_sided": 58,
+  "rows": 2806,
+  "devigged": 1074
+ },
+ "smarkets_fetch": {
+  "events_seen": 96,
+  "events_priced": 80,
+  "markets": 782,
+  "markets_mapped": 310,
+  "contracts": 682,
+  "quoted_contracts": 682,
+  "raw": "data/research/external/raw/20261111T123610Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 310,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 656,
+  "two_sided": 651,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 531,
+ "external_mapping": {
+  "total": 240,
+  "by_status": {
+   "MAPPED": 170,
+   "DOUBLES_UNSUPPORTED": 46,
+   "UNMAPPED_PLAYER": 22,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7083,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 46,
+   "Charlie Bazil": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Pedro Dietrich": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Giovanni Branchetti": 1,
+   "Thiago Pernas": 1,
+   "Tomas Giangrasso": 1,
+   "Justin Riley Anson": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Maria Carle": 1,
+   "Enhanced Specials - Elina Svitolina": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 131,
+  "by_status": {
+   "MAPPED": 105,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8015,
+  "top_refusal_subjects": {
+   "Maria Carle": 1,
+   "Bianca Andreescu": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Laura Samson": 1,
+   "Lucia Bronzetti": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Sanhui Shin": 1,
+   "Jayson Blando": 1,
+   "Kamil Stolarczyk": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 180,
+ "kalshi_mapped_matches": 105,
+ "model_witness_available": true,
+ "rows": 76,
+ "counts": {
+  "PASS": 76,
+  "tri:MODEL_LONE_OUTLIER": 36,
+  "tri:INSUFFICIENT_INPUTS": 34,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
