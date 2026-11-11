@@ -1,0 +1,83 @@
+{
+ "generated_at": "2026-11-11T03:21:57.016481+00:00",
+ "run_id": "20261111T032157Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 99,
+  "events_priced": 80,
+  "markets": 634,
+  "markets_mapped": 260,
+  "contracts": 550,
+  "quoted_contracts": 550,
+  "raw": "data/research/external/raw/20261111T032157Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 260,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 14,
+  "rows": 536,
+  "two_sided": 534,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 1518,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 39
+  },
+  "mapped_rate": 0.5125,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 39
+  }
+ },
+ "kalshi_mapping": {
+  "total": 339,
+  "by_status": {
+   "MAPPED": 275,
+   "UNMAPPED_PLAYER": 61,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.8112,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Dragos Cazacu": 1,
+   "Kamil Stolarczyk": 1,
+   "Charlie Snow": 1,
+   "Tristan McCormick": 1,
+   "Alexander Okonkwo": 1,
+   "Tomas Giangrasso": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 41,
+ "kalshi_mapped_matches": 275,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
