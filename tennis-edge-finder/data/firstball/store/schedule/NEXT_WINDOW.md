@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 15:59Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 16:11Z)
 
 * Earliest credible first ball: **2026-11-11 17:00Z**
 * Recommended RUN TENNIS time: **2026-11-11 16:15Z**
@@ -12,7 +12,7 @@
 
 Published slate: `SL-20261111T130014Z-86c0a3b2` built 2026-11-11 13:00Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 5 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: run_tennis (ok), slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-11 20:00Z, run by 2026-11-11 19:15Z, 2 match(es)
 * later window 3: first ball 2026-11-12 12:00Z, run by 2026-11-12 11:15Z, 1 match(es)
