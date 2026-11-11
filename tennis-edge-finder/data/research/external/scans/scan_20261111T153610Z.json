@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-11T15:36:10.256577+00:00",
+ "run_id": "20261111T153610Z",
+ "external_parse": {
+  "events": 214,
+  "markets": 1498,
+  "skipped_family": 169,
+  "skipped_period": 406,
+  "skipped_live": 39,
+  "one_sided": 64,
+  "rows": 2220,
+  "devigged": 859
+ },
+ "smarkets_fetch": {
+  "events_seen": 81,
+  "events_priced": 80,
+  "markets": 664,
+  "markets_mapped": 265,
+  "contracts": 580,
+  "quoted_contracts": 580,
+  "raw": "data/research/external/raw/20261111T153610Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 265,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 550,
+  "two_sided": 550,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 444,
+ "external_mapping": {
+  "total": 203,
+  "by_status": {
+   "MAPPED": 149,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.734,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Pedro Dietrich": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Giovanni Branchetti": 1,
+   "Tomas Giangrasso": 1,
+   "Tristan McCormick": 1,
+   "Kamil Stolarczyk": 1,
+   "Alexander Okonkwo": 1,
+   "Nikita Samuel Filin": 1,
+   "Jayson Blando": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 26,
+   "MAPPED": 50,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 26,
+   "Maria Carle": 1,
+   "Enhanced Specials - Elina Svitolina": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 100,
+  "by_status": {
+   "MAPPED": 75,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "Irene Burillo Escorihuela": 1,
+   "Lucia Bronzetti": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Seongchan Hong": 1,
+   "M Rifqi Fitriadi": 1,
+   "Jayson Blando": 1,
+   "Dragos Cazacu": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 75,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:INSUFFICIENT_INPUTS": 21,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:MARKETS_AGREE": 3,
+  "tri:ALL_THREE_DISAGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 25
+ }
+}
