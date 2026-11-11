@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-11T22:17:49.321727+00:00",
+ "generated_at": "2026-11-11T22:30:06.633079+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 325,
@@ -9,18 +9,18 @@
   "STARTED": 1,
   "START_UNKNOWN": 313
  },
- "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+ "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-11T22:20:00+00:00",
-  "recommended_run_tennis_time": "2026-11-11T21:35:00+00:00",
+  "earliest_credible_first_ball": "2026-11-11T22:30:00+00:00",
+  "recommended_run_tennis_time": "2026-11-11T21:45:00+00:00",
   "primary_refresh_window": [
-   "2026-11-11T21:35:00+00:00",
-   "2026-11-11T21:50:00+00:00"
+   "2026-11-11T21:45:00+00:00",
+   "2026-11-11T22:00:00+00:00"
   ],
-  "final_status_price_check_time": "2026-11-11T22:10:00+00:00",
+  "final_status_price_check_time": "2026-11-11T22:20:00+00:00",
   "final_refresh_window": [
-   "2026-11-11T22:10:00+00:00",
-   "2026-11-11T22:15:00+00:00"
+   "2026-11-11T22:20:00+00:00",
+   "2026-11-11T22:25:00+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -28,7 +28,7 @@
    {
     "match_id": "KXWTAMATCH-26NOV11SABAND",
     "label": "Aryna Sabalenka vs Mirra Andreeva",
-    "current_expected_start": "2026-11-11T22:20:00+00:00",
+    "current_expected_start": "2026-11-11T22:30:00+00:00",
     "start_status": "START_IMMINENT",
     "start_time_source": "LIVE_SCHEDULE:espn_wta",
     "start_time_confidence": "HIGH"
@@ -37,16 +37,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-11T22:20:00+00:00",
-   "recommended_run_tennis_time": "2026-11-11T21:35:00+00:00",
+   "earliest_credible_first_ball": "2026-11-11T22:30:00+00:00",
+   "recommended_run_tennis_time": "2026-11-11T21:45:00+00:00",
    "primary_refresh_window": [
-    "2026-11-11T21:35:00+00:00",
-    "2026-11-11T21:50:00+00:00"
+    "2026-11-11T21:45:00+00:00",
+    "2026-11-11T22:00:00+00:00"
    ],
-   "final_status_price_check_time": "2026-11-11T22:10:00+00:00",
+   "final_status_price_check_time": "2026-11-11T22:20:00+00:00",
    "final_refresh_window": [
-    "2026-11-11T22:10:00+00:00",
-    "2026-11-11T22:15:00+00:00"
+    "2026-11-11T22:20:00+00:00",
+    "2026-11-11T22:25:00+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -54,7 +54,7 @@
     {
      "match_id": "KXWTAMATCH-26NOV11SABAND",
      "label": "Aryna Sabalenka vs Mirra Andreeva",
-     "current_expected_start": "2026-11-11T22:20:00+00:00",
+     "current_expected_start": "2026-11-11T22:30:00+00:00",
      "start_status": "START_IMMINENT",
      "start_time_source": "LIVE_SCHEDULE:espn_wta",
      "start_time_confidence": "HIGH"
@@ -183,6 +183,7 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
+   "PRIMARY_REFRESH_DUE: window at 2026-11-11T22:30:00+00:00, slate built 2026-11-11T21:36:23.996786+00:00",
    "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
   ],
   "changed_matches": [
@@ -197,25 +198,17 @@
   ],
   "slate_id": "SL-20261111T213623Z-1c2fe2f3",
   "slate_built_at": "2026-11-11T21:36:23.996786+00:00",
-  "checked_at": "2026-11-11T22:17:49.321727+00:00"
+  "checked_at": "2026-11-11T22:30:06.633079+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-11T22:17:49.321727+00:00",
-   "reason": "published slate SL-20261111T213623Z-1c2fe2f3 is stale: 2 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV12FRIRUN": {
    "match_id": "ATP:26NOV12FRIRUN:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-12T20:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": "2026-11-12T17:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -266,11 +259,11 @@
   },
   "KXATPMATCH-26NOV12TIRSHE": {
    "match_id": "ATP:26NOV12TIRSHE:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-12T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": "2026-11-12T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -321,11 +314,11 @@
   },
   "KXATPMATCH-26NOV12MUSHUM": {
    "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": "2026-11-12T19:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -376,11 +369,11 @@
   },
   "KXATPMATCH-26NOV12MICTAB": {
    "match_id": "ATP:26NOV12MICTAB:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-12T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": "2026-11-12T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -419,11 +412,11 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": "2026-11-12T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -474,11 +467,11 @@
   },
   "KXWTAMATCH-26NOV12KOSGAU": {
    "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": "2026-11-12T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -517,23 +510,23 @@
   },
   "KXWTAMATCH-26NOV11SABAND": {
    "match_id": "WTA:26NOV11SABAND:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-12T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
-   "current_expected_start": "2026-11-11T22:20:00+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
+   "current_expected_start": "2026-11-11T22:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-11-11T22:20:00+00:00",
+     "time": "2026-11-11T22:30:00+00:00",
      "source": "LIVE_SCHEDULE:espn_wta",
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-11T22:25:45.091713+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 3 of best-of-3)",
+     "time": "2026-11-11T22:33:03.536758+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden finished",
      "confidence": "MEDIUM"
     },
     {
@@ -542,9 +535,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-11T21:35:00+00:00",
-   "recommended_handicap_by": "2026-11-11T21:35:00+00:00",
-   "final_check_time": "2026-11-11T22:10:00+00:00",
+   "earliest_safe_handicap_time": "2026-11-11T21:45:00+00:00",
+   "recommended_handicap_by": "2026-11-11T21:45:00+00:00",
+   "final_check_time": "2026-11-11T22:20:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -559,7 +552,7 @@
       "Karolina Muchova",
       "Elina Svitolina"
      ],
-     "state": "IN",
+     "state": "POST",
      "period": 3,
      "best_of": 3,
      "games_played": 25,
@@ -569,7 +562,8 @@
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-110_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-100_MIN",
+    "OVERDUE_BUT_SEEN_NOT_STARTED_123S_AGO"
    ],
    "bet_allowed": true,
    "label": "Aryna Sabalenka vs Mirra Andreeva",
@@ -577,11 +571,11 @@
   },
   "KXWTAMATCH-26NOV11SVIMUC": {
    "match_id": "WTA:26NOV11SVIMUC:singles",
-   "evaluated_at": "2026-11-11T22:17:49.321727+00:00",
+   "evaluated_at": "2026-11-11T22:30:06.633079+00:00",
    "nominal_scheduled_start": "2026-11-11T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-11T22:15:45.091713+00:00",
+   "start_time_last_checked": "2026-11-11T22:28:03.536758+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
