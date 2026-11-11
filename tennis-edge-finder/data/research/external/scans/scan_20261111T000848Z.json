@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-11T00:08:48.731535+00:00",
+ "run_id": "20261111T000848Z",
+ "external_parse": {
+  "events": 129,
+  "markets": 888,
+  "skipped_family": 113,
+  "skipped_period": 238,
+  "skipped_live": 23,
+  "one_sided": 14,
+  "rows": 1396,
+  "devigged": 523
+ },
+ "smarkets_fetch": {
+  "events_seen": 112,
+  "events_priced": 80,
+  "markets": 565,
+  "markets_mapped": 254,
+  "contracts": 542,
+  "quoted_contracts": 542,
+  "raw": "data/research/external/raw/20261111T000848Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 254,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 26,
+  "rows": 516,
+  "two_sided": 511,
+  "one_sided": 5
+ },
+ "kalshi_quotes_on_disk": 486,
+ "external_mapping": {
+  "total": 118,
+  "by_status": {
+   "MAPPED": 71,
+   "DOUBLES_UNSUPPORTED": 35,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.6017,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 35,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Joel Josef Schwarzler": 1,
+   "Andrew Gordon": 1,
+   "Noa Tcherniack": 1,
+   "Tom Garcia": 1,
+   "Thomas Nelson": 1,
+   "Emma Maria Ansorge": 1,
+   "Sammie Schouten": 1,
+   "Pablo Perez Ramos": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 3,
+   "DOUBLES_UNSUPPORTED": 38
+  },
+  "mapped_rate": 0.4875,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 38,
+   "Kenta (2004) Miyoshi": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 141,
+  "by_status": {
+   "MAPPED": 110,
+   "UNMAPPED_PLAYER": 31
+  },
+  "mapped_rate": 0.7801,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Marcelo Tomas Barrios Vera": 1,
+   "Tomas Giangrasso": 1,
+   "Joaquin Sabina": 1,
+   "Giovanni Branchetti": 1,
+   "Marcos Diaz Revuelta": 1,
+   "Jack Dermenjyan": 1,
+   "Andrei Radu": 1,
+   "Martin Hammond": 1,
+   "Heorhii Shylov": 1
+  }
+ },
+ "matched_both_venues": 48,
+ "external_mapped_matches": 96,
+ "kalshi_mapped_matches": 110,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 73,
+  "tri:MODEL_LONE_OUTLIER": 19,
+  "tri:INSUFFICIENT_INPUTS": 51,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
