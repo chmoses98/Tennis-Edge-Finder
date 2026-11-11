@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 20:53Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 21:04Z)
 
 * Earliest credible first ball: **2026-11-11 21:30Z**
 * Recommended RUN TENNIS time: **2026-11-11 20:45Z**  (OVERDUE: run now)
@@ -9,9 +9,9 @@
 |---|---|---|---|---|
 | Aryna Sabalenka vs Mirra Andreeva | 2026-11-11 21:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261111T181013Z-55d6f7a8` built 2026-11-11 18:10Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-11T21:30:00+00:00, slate built 2026-11-11T18:10:13.639948+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
+Published slate: `SL-20261111T204950Z-a32f138f` built 2026-11-11 20:49Z -- current
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-11-12 12:00Z, run by 2026-11-12 11:15Z, 1 match(es)
 * later window 3: first ball 2026-11-12 14:00Z, run by 2026-11-12 13:15Z, 1 match(es)
