@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-11T13:36:17.376712+00:00",
+ "run_id": "20261111T133617Z",
+ "external_parse": {
+  "events": 240,
+  "markets": 1783,
+  "skipped_family": 216,
+  "skipped_period": 493,
+  "skipped_live": 43,
+  "one_sided": 55,
+  "rows": 2682,
+  "devigged": 1019
+ },
+ "smarkets_fetch": {
+  "events_seen": 94,
+  "events_priced": 80,
+  "markets": 814,
+  "markets_mapped": 317,
+  "contracts": 702,
+  "quoted_contracts": 702,
+  "raw": "data/research/external/raw/20261111T133617Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 317,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 41,
+  "rows": 661,
+  "two_sided": 655,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 478,
+ "external_mapping": {
+  "total": 229,
+  "by_status": {
+   "MAPPED": 162,
+   "DOUBLES_UNSUPPORTED": 41,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7074,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 41,
+   "Xavier Massotte": 1,
+   "Joaquin Sabina": 1,
+   "Giovanni Branchetti": 1,
+   "Thiago Pernas": 1,
+   "Tomas Giangrasso": 1,
+   "Pedro Dietrich": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Justin Riley Anson": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 30,
+   "MAPPED": 48,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 30,
+   "Maria Carle": 1,
+   "Enhanced Specials - Elina Svitolina": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 113,
+  "by_status": {
+   "MAPPED": 88,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7788,
+  "top_refusal_subjects": {
+   "Bianca Andreescu": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Lucia Bronzetti": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Seongchan Hong": 1,
+   "Tristan McCormick": 1,
+   "Alexander Okonkwo": 1,
+   "Joaquin Sabina": 1
+  }
+ },
+ "matched_both_venues": 57,
+ "external_mapped_matches": 175,
+ "kalshi_mapped_matches": 88,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MARKETS_AGREE": 8,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 28
+ }
+}
