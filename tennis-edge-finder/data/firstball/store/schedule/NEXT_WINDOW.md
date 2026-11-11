@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 18:11Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-11 18:25Z)
 
 * Earliest credible first ball: **2026-11-11 18:30Z**
 * Recommended RUN TENNIS time: **2026-11-11 17:45Z**  (OVERDUE: run now)
@@ -7,12 +7,12 @@
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Miomir Kecmanovic vs Holger Rune | 2026-11-11 18:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Miomir Kecmanovic vs Holger Rune | 2026-11-11 18:30Z | START_IMMINENT | LIVE_SCHEDULE:espn_atp | HIGH |
 | Elina Svitolina vs Karolina Muchova | 2026-11-11 20:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261111T173729Z-17e8d6bd` built 2026-11-11 17:37Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-11T18:30:00+00:00, slate built 2026-11-11T17:37:29.468122+00:00
+Published slate: `SL-20261111T181013Z-55d6f7a8` built 2026-11-11 18:10Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: none
+Dispatched this pass: slate_final (ok)
 
 * later window 2: first ball 2026-11-11 21:30Z, run by 2026-11-11 20:45Z, 1 match(es)
 * later window 3: first ball 2026-11-12 12:00Z, run by 2026-11-12 11:15Z, 1 match(es)
