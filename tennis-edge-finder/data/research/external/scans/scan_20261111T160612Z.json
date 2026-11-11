@@ -1,0 +1,106 @@
+{
+ "generated_at": "2026-11-11T16:06:12.428761+00:00",
+ "run_id": "20261111T160612Z",
+ "external_parse": {
+  "events": 213,
+  "markets": 1498,
+  "skipped_family": 169,
+  "skipped_period": 407,
+  "skipped_live": 37,
+  "one_sided": 75,
+  "rows": 2194,
+  "devigged": 847
+ },
+ "smarkets_fetch": {
+  "events_seen": 83,
+  "events_priced": 80,
+  "markets": 676,
+  "markets_mapped": 270,
+  "contracts": 588,
+  "quoted_contracts": 588,
+  "raw": "data/research/external/raw/20261111T160612Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 270,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 40,
+  "rows": 548,
+  "two_sided": 547,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 472,
+ "external_mapping": {
+  "total": 202,
+  "by_status": {
+   "MAPPED": 150,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7426,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Pedro Dietrich": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Giovanni Branchetti": 1,
+   "Tomas Giangrasso": 1,
+   "Tristan McCormick": 1,
+   "Kamil Stolarczyk": 1,
+   "Alexander Okonkwo": 1,
+   "Nikita Samuel Filin": 1,
+   "Jayson Blando": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 48,
+   "DOUBLES_UNSUPPORTED": 28,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 28,
+   "Maria Carle": 1,
+   "Enhanced Specials - Elina Svitolina": 1,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 116,
+  "by_status": {
+   "MAPPED": 90,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7759,
+  "top_refusal_subjects": {
+   "Bianca Andreescu": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Laura Samson": 1,
+   "Lucia Bronzetti": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Dragos Cazacu": 1,
+   "Charlie Snow": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 76,
+ "external_mapped_matches": 171,
+ "kalshi_mapped_matches": 90,
+ "model_witness_available": true,
+ "rows": 90,
+ "counts": {
+  "PASS": 90,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:INSUFFICIENT_INPUTS": 66,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
