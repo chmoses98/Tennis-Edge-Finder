@@ -1,0 +1,108 @@
+{
+ "generated_at": "2026-11-11T12:46:11.450160+00:00",
+ "run_id": "20261111T124611Z",
+ "external_parse": {
+  "events": 247,
+  "markets": 1852,
+  "skipped_family": 221,
+  "skipped_period": 505,
+  "skipped_live": 39,
+  "one_sided": 61,
+  "rows": 2788,
+  "devigged": 1065
+ },
+ "smarkets_fetch": {
+  "events_seen": 96,
+  "events_priced": 80,
+  "markets": 788,
+  "markets_mapped": 316,
+  "contracts": 696,
+  "quoted_contracts": 696,
+  "raw": "data/research/external/raw/20261111T124611Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 316,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 33,
+  "rows": 663,
+  "two_sided": 660,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 492,
+ "external_mapping": {
+  "total": 236,
+  "by_status": {
+   "MAPPED": 167,
+   "DOUBLES_UNSUPPORTED": 44,
+   "UNMAPPED_PLAYER": 23,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.7076,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 44,
+   "Marcos Diaz Revuelta": 1,
+   "Xavier Massotte": 1,
+   "Joaquin Sabina": 1,
+   "Giovanni Branchetti": 1,
+   "Thiago Pernas": 1,
+   "Tomas Giangrasso": 1,
+   "Pedro Dietrich": 1,
+   "Agustin E.C. Lorberg": 1,
+   "Justin Riley Anson": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 46,
+   "DOUBLES_UNSUPPORTED": 32,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.575,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 32,
+   "Maria Carle": 1,
+   "Enhanced Specials - Elina Svitolina": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 121,
+  "by_status": {
+   "MAPPED": 96,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7934,
+  "top_refusal_subjects": {
+   "Bianca Andreescu": 1,
+   "Irene Burillo Escorihuela": 1,
+   "Lucia Bronzetti": 1,
+   "Andrea Lazaro Garcia": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Seongchan Hong": 1,
+   "Sanhui Shin": 1,
+   "Charlie Snow": 1,
+   "Tristan McCormick": 1
+  }
+ },
+ "matched_both_venues": 67,
+ "external_mapped_matches": 177,
+ "kalshi_mapped_matches": 96,
+ "model_witness_available": true,
+ "rows": 64,
+ "counts": {
+  "PASS": 61,
+  "tri:MODEL_LONE_OUTLIER": 28,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 4,
+  "tri:ALL_THREE_DISAGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 3,
+  "tri:EXTERNAL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 29
+ }
+}
