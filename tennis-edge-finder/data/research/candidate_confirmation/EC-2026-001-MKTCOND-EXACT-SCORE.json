@@ -32,7 +32,7 @@
    "reason": "the frozen decision probability this candidate needs was not produced by any scheduled job between its confirmation_start and this producer's first production run; those observations are permanently UNSCORABLE and are never reconstructed",
    "producer_rows_before_effective_start": 0
   },
-  "listed_contract_rows_after_effective_start": 15947,
+  "listed_contract_rows_after_effective_start": 15967,
   "listed_contracts": 1992,
   "note": "rows exist only for contracts Kalshi actually listed; zero is a valid count",
   "post_settlement_first_runs_excluded": 1,
@@ -120,11 +120,11 @@
   }
  ],
  "harvester_version": 1,
- "harvest_run": "20261110T211301Z",
+ "harvest_run": "20261111T075009Z",
  "evidence_rows_this_run": 500,
- "evidence_rows_appended": 1,
+ "evidence_rows_appended": 0,
  "last_evidence_at": "2026-11-10T21:09:41.385311+00:00",
- "harvest_run_at": "2026-11-10T21:13:05.032504+00:00",
+ "harvest_run_at": "2026-11-11T07:50:14.068433+00:00",
  "evidence_chain_violations": [],
  "evidence_accounting_correction": {
   "rule": "an observation timestamped at or after the exchange's recorded settlement_ts of its contract cannot be prospective pregame evidence (evidence-accounting correction, not a frozen-rule change)",
@@ -144,10 +144,10 @@
   "summary_previous_harvest": {
    "kind": "PRICING_ACCURACY",
    "minimum_n": 400,
-   "eligible_n": 498,
+   "eligible_n": 499,
    "settled_n": 0,
    "strict_clv_n": 0,
-   "unsettled_n": 498,
+   "unsettled_n": 499,
    "clv_pending_n": 0,
    "unscorable_n": 0,
    "accuracy_pass": null,
