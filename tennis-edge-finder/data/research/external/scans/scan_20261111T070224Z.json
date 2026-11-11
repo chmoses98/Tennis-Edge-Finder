@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-11T07:02:24.363412+00:00",
+ "run_id": "20261111T070224Z",
+ "external_parse": {
+  "events": 248,
+  "markets": 1946,
+  "skipped_family": 173,
+  "skipped_period": 501,
+  "skipped_live": 2,
+  "one_sided": 49,
+  "rows": 2866,
+  "devigged": 1223
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 715,
+  "markets_mapped": 288,
+  "contracts": 614,
+  "quoted_contracts": 614,
+  "raw": "data/research/external/raw/20261111T070224Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 288,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 30,
+  "rows": 584,
+  "two_sided": 580,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 568,
+ "external_mapping": {
+  "total": 236,
+  "by_status": {
+   "MAPPED": 173,
+   "DOUBLES_UNSUPPORTED": 36,
+   "UNMAPPED_PLAYER": 24,
+   "AMBIGUOUS_PLAYER": 3
+  },
+  "mapped_rate": 0.7331,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 36,
+   "Veerawit Kamput": 1,
+   "Vraj Gohil": 1,
+   "Jack Dermenjyan": 1,
+   "Jayson Blando": 1,
+   "Andrei Radu (CLV)": 1,
+   "Nazim Makhlouf": 1,
+   "Charlie Bazil": 1,
+   "Duarte De Lima Sanches": 1,
+   "Marcos Diaz Revuelta": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 45,
+   "DOUBLES_UNSUPPORTED": 34,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5625,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 34,
+   "Maria Carle": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 150,
+  "by_status": {
+   "MAPPED": 124,
+   "UNMAPPED_PLAYER": 25,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8267,
+  "top_refusal_subjects": {
+   "Laura Samson": 1,
+   "Polona Hercog": 1,
+   "Tatjana Maria": 1,
+   "Tristan McCormick": 1,
+   "Franco Boriosi": 1,
+   "Andrei Radu": 1,
+   "Martin Hammond": 1,
+   "Filippo Alfano": 1,
+   "Vito Dell'elba": 1,
+   "Heorhii Shylov": 1
+  }
+ },
+ "matched_both_venues": 75,
+ "external_mapped_matches": 193,
+ "kalshi_mapped_matches": 124,
+ "model_witness_available": true,
+ "rows": 146,
+ "counts": {
+  "PASS": 144,
+  "tri:INSUFFICIENT_INPUTS": 93,
+  "tri:MARKETS_AGREE": 4,
+  "tri:MODEL_LONE_OUTLIER": 43,
+  "tri:KALSHI_LONE_OUTLIER": 4,
+  "WATCH": 2,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {}
+}
