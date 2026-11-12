@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-11-12T00:51:31.784355+00:00",
+ "run_id": "20261112T005131Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 68,
+  "events_priced": 68,
+  "markets": 591,
+  "markets_mapped": 247,
+  "contracts": 526,
+  "quoted_contracts": 526,
+  "raw": "data/research/external/raw/20261112T005131Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 247,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 511,
+  "two_sided": 510,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 1223,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 68,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 19,
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6912,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 19,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 221,
+  "by_status": {
+   "MAPPED": 192,
+   "UNMAPPED_PLAYER": 27,
+   "AMBIGUOUS_PLAYER": 2
+  },
+  "mapped_rate": 0.8688,
+  "top_refusal_subjects": {
+   "Dragos Cazacu": 1,
+   "Alexander Okonkwo": 1,
+   "Justin Riley Anson": 1,
+   "Augusto Land": 1,
+   "Heorhii Shylov": 1,
+   "Duarte Lima Sanches": 1,
+   "Matias Reyniak": 1,
+   "Nikita Belozertsev": 1,
+   "Nazim Makhlouf": 1,
+   "Seongchan Hong": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 47,
+ "kalshi_mapped_matches": 192,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 33,
+  "tri:INSUFFICIENT_INPUTS": 3,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {}
+}
