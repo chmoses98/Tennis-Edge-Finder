@@ -1,14 +1,15 @@
 {
- "generated_at": "2026-11-12T19:37:25.852932+00:00",
+ "generated_at": "2026-11-12T19:48:16.689268+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 207,
+ "board_matches": 208,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 6,
   "STARTED": 1,
+  "START_IMMINENT": 1,
   "START_UNKNOWN": 200
  },
- "evaluated_at": "2026-11-12T19:37:25.852932+00:00",
+ "evaluated_at": "2026-11-12T19:48:16.689268+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-12T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-12T19:15:00+00:00",
@@ -28,7 +29,7 @@
     "match_id": "KXWTAMATCH-26NOV12KOSGAU",
     "label": "Marta Kostyuk vs Coco Gauff",
     "current_expected_start": "2026-11-12T20:00:00+00:00",
-    "start_status": "VERIFIED_UPCOMING",
+    "start_status": "START_IMMINENT",
     "start_time_source": "LIVE_SCHEDULE:espn_wta",
     "start_time_confidence": "HIGH"
    },
@@ -62,7 +63,7 @@
      "match_id": "KXWTAMATCH-26NOV12KOSGAU",
      "label": "Marta Kostyuk vs Coco Gauff",
      "current_expected_start": "2026-11-12T20:00:00+00:00",
-     "start_status": "VERIFIED_UPCOMING",
+     "start_status": "START_IMMINENT",
      "start_time_source": "LIVE_SCHEDULE:espn_wta",
      "start_time_confidence": "HIGH"
     },
@@ -112,14 +113,14 @@
   "changed_matches": [],
   "slate_id": "SL-20261112T184225Z-f54625b4",
   "slate_built_at": "2026-11-12T18:42:25.935414+00:00",
-  "checked_at": "2026-11-12T19:37:25.852932+00:00"
+  "checked_at": "2026-11-12T19:48:16.689268+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_primary",
+   "kind": "slate_final",
    "window": "20261112T2000Z",
-   "reason": "primary handicap packet for window at 2026-11-12T20:00:00+00:00",
-   "at": "2026-11-12T19:37:25.852932+00:00",
+   "reason": "final status/price check for window at 2026-11-12T20:00:00+00:00",
+   "at": "2026-11-12T19:48:16.689268+00:00",
    "earliest_credible_first_ball": "2026-11-12T20:00:00+00:00",
    "dispatched": true,
    "http": 204
@@ -128,11 +129,11 @@
  "statuses": {
   "KXATPMATCH-26NOV13TABTIR": {
    "match_id": "ATP:26NOV13TABTIR:singles",
-   "evaluated_at": "2026-11-12T19:37:25.852932+00:00",
+   "evaluated_at": "2026-11-12T19:48:16.689268+00:00",
    "nominal_scheduled_start": "2026-11-13T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:35:02.234320+00:00",
+   "start_time_last_checked": "2026-11-12T19:45:46.302468+00:00",
    "current_expected_start": "2026-11-13T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -183,11 +184,11 @@
   },
   "KXATPMATCH-26NOV12MUSHUM": {
    "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-12T19:37:25.852932+00:00",
+   "evaluated_at": "2026-11-12T19:48:16.689268+00:00",
    "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:35:02.234320+00:00",
+   "start_time_last_checked": "2026-11-12T19:45:46.302468+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -210,11 +211,11 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-12T19:37:25.852932+00:00",
+   "evaluated_at": "2026-11-12T19:48:16.689268+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:35:02.234320+00:00",
+   "start_time_last_checked": "2026-11-12T19:45:46.302468+00:00",
    "current_expected_start": "2026-11-12T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -265,11 +266,11 @@
   },
   "KXWTAMATCH-26NOV12KOSGAU": {
    "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-12T19:37:25.852932+00:00",
+   "evaluated_at": "2026-11-12T19:48:16.689268+00:00",
    "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:35:02.234320+00:00",
+   "start_time_last_checked": "2026-11-12T19:45:46.302468+00:00",
    "current_expected_start": "2026-11-12T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -298,7 +299,7 @@
     "queue_ahead_pre": 0,
     "same_time_on_court": 0
    },
-   "start_status": "VERIFIED_UPCOMING",
+   "start_status": "START_IMMINENT",
    "status_reasons": [
     "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
    ],
