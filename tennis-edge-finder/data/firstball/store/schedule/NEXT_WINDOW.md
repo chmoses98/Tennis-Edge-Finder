@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-12 04:12Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-12 04:26Z)
 
 * Earliest credible first ball: **2026-11-12 12:00Z**
 * Recommended RUN TENNIS time: **2026-11-12 11:15Z**
@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Alex Michelsen vs Alejandro Tabilo | 2026-11-12 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261112T032349Z-349b2366` built 2026-11-12 03:23Z -- current
+Published slate: `SL-20261112T040948Z-defbc8e8` built 2026-11-12 04:09Z -- current
 
 Dispatched this pass: none
 
