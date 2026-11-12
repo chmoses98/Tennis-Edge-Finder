@@ -1,14 +1,15 @@
 {
- "generated_at": "2026-11-12T22:33:47.043576+00:00",
+ "generated_at": "2026-11-12T23:03:44.670218+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 195,
+ "board_matches": 189,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 7,
-  "STARTED": 3,
-  "START_UNKNOWN": 185
+  "VERIFIED_UPCOMING": 8,
+  "STARTED": 1,
+  "START_UNKNOWN": 179,
+  "START_IMMINENT": 1
  },
- "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
+ "evaluated_at": "2026-11-12T23:03:44.670218+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-13T13:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-13T12:15:00+00:00",
@@ -61,6 +62,31 @@
    ]
   },
   {
+   "earliest_credible_first_ball": "2026-11-13T16:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-13T15:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-13T15:15:00+00:00",
+    "2026-11-13T15:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-13T15:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-13T15:50:00+00:00",
+    "2026-11-13T15:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 1,
+   "matches": [
+    {
+     "match_id": "KXATPMATCH-26NOV13FRIMUS",
+     "label": "Taylor Fritz vs Lorenzo Musetti",
+     "current_expected_start": "2026-11-13T16:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_atp",
+     "start_time_confidence": "HIGH"
+    }
+   ]
+  },
+  {
    "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
    "recommended_run_tennis_time": "2026-11-13T19:15:00+00:00",
    "primary_refresh_window": [
@@ -97,22 +123,96 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": false,
-  "reasons": [],
-  "changed_matches": [],
-  "slate_id": "SL-20261112T212133Z-c10587d3",
-  "slate_built_at": "2026-11-12T21:21:33.873223+00:00",
-  "checked_at": "2026-11-12T22:33:47.043576+00:00"
+  "stale": true,
+  "reasons": [
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
+  ],
+  "changed_matches": [
+   {
+    "match": "KXWTADOUBLES-26NOV12SINTOWBUCMEL",
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   },
+   {
+    "match": "KXATPMATCH-26NOV13FRIMUS",
+    "change": "EXPECTED_START_MOVED_EARLIER_180_MIN"
+   }
+  ],
+  "slate_id": "SL-20261112T222130Z-b0de5187",
+  "slate_built_at": "2026-11-12T22:21:30.805732+00:00",
+  "checked_at": "2026-11-12T23:03:44.670218+00:00"
  },
- "actions_this_pass": [],
+ "actions_this_pass": [
+  {
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-12T23:03:44.670218+00:00",
+   "reason": "published slate SL-20261112T222130Z-b0de5187 is stale: 2 match(es) changed status/start since it was built",
+   "dispatched": true,
+   "http": 204
+  }
+ ],
  "statuses": {
+  "KXATPMATCH-26NOV13FRIMUS": {
+   "match_id": "ATP:26NOV13FRIMUS:singles",
+   "evaluated_at": "2026-11-12T23:03:44.670218+00:00",
+   "nominal_scheduled_start": "2026-11-13T19:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-12T23:01:57.589599+00:00",
+   "current_expected_start": "2026-11-13T16:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-13T16:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-13T19:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-13T15:15:00+00:00",
+   "recommended_handicap_by": "2026-11-13T15:15:00+00:00",
+   "final_check_time": "2026-11-13T15:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 2,
+    "preceding": {
+     "source_match_id": "186546",
+     "players": [
+      "Thiago Agustin Tirante",
+      "Alejandro Tabilo"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 5,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-13T13:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Taylor Fritz vs Lorenzo Musetti",
+   "level_bucket": "ATP"
+  },
   "KXATPMATCH-26NOV13TABTIR": {
    "match_id": "ATP:26NOV13TABTIR:singles",
-   "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
+   "evaluated_at": "2026-11-12T23:03:44.670218+00:00",
    "nominal_scheduled_start": "2026-11-13T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T22:30:46.559336+00:00",
+   "start_time_last_checked": "2026-11-12T23:01:57.589599+00:00",
    "current_expected_start": "2026-11-13T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -161,40 +261,13 @@
    "label": "Alejandro Tabilo vs Thiago Agustin Tirante",
    "level_bucket": "ATP"
   },
-  "KXATPMATCH-26NOV12MUSHUM": {
-   "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
-   "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T22:30:46.559336+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_atp (confidence C)",
-   "first_ball_at": "2026-11-12T19:28:33.209827+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Lorenzo Musetti vs Ugo Humbert",
-   "level_bucket": "ATP"
-  },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
+   "evaluated_at": "2026-11-12T23:03:44.670218+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T22:30:46.559336+00:00",
+   "start_time_last_checked": "2026-11-12T23:01:57.589599+00:00",
    "current_expected_start": "2026-11-13T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -245,11 +318,11 @@
   },
   "KXWTAMATCH-26NOV13ANDMUC": {
    "match_id": "WTA:26NOV13ANDMUC:singles",
-   "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
+   "evaluated_at": "2026-11-12T23:03:44.670218+00:00",
    "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T22:30:46.559336+00:00",
+   "start_time_last_checked": "2026-11-12T23:01:57.589599+00:00",
    "current_expected_start": "2026-11-13T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -288,11 +361,11 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
+   "evaluated_at": "2026-11-12T23:03:44.670218+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T22:30:46.559336+00:00",
+   "start_time_last_checked": "2026-11-12T23:01:57.589599+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -311,33 +384,6 @@
    ],
    "bet_allowed": false,
    "label": "Jessica Pegula vs Linda Noskova",
-   "level_bucket": "WTA"
-  },
-  "KXWTAMATCH-26NOV12KOSGAU": {
-   "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-12T22:33:47.043576+00:00",
-   "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T22:30:46.559336+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_wta (confidence C)",
-   "first_ball_at": "2026-11-12T20:15:44.187301+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Marta Kostyuk vs Coco Gauff",
    "level_bucket": "WTA"
   }
  }
