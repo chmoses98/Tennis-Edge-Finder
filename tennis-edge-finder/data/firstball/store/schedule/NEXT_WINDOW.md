@@ -1,13 +1,13 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-12 21:56Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-12 22:09Z)
 
-* Earliest credible first ball: **2026-11-12 21:55Z**
-* Recommended RUN TENNIS time: **2026-11-12 21:10Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-12 21:45Z**
+* Earliest credible first ball: **2026-11-12 22:05Z**
+* Recommended RUN TENNIS time: **2026-11-12 21:20Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-12 21:55Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Jessica Pegula vs Linda Noskova | 2026-11-12 21:55Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
+| Jessica Pegula vs Linda Noskova | 2026-11-12 22:05Z | START_IMMINENT | LIVE_SCHEDULE:espn_wta | HIGH |
 
 Published slate: `SL-20261112T212133Z-c10587d3` built 2026-11-12 21:21Z -- current
 
