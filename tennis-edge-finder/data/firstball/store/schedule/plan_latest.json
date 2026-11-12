@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-12T03:30:19.918526+00:00",
+ "generated_at": "2026-11-12T03:44:13.064591+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 330,
+ "board_matches": 340,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 10,
-  "START_UNKNOWN": 319,
+  "VERIFIED_UPCOMING": 12,
+  "START_UNKNOWN": 327,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+ "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-12T12:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-12T11:15:00+00:00",
@@ -155,37 +155,22 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXWTADOUBLES-26NOV11HSIOSTMERZHA",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   }
-  ],
-  "slate_id": "SL-20261112T004938Z-9f2976db",
-  "slate_built_at": "2026-11-12T00:49:38.960094+00:00",
-  "checked_at": "2026-11-12T03:30:19.918526+00:00"
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
+  "slate_id": "SL-20261112T032349Z-349b2366",
+  "slate_built_at": "2026-11-12T03:23:49.372572+00:00",
+  "checked_at": "2026-11-12T03:44:13.064591+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-12T03:30:19.918526+00:00",
-   "reason": "published slate SL-20261112T004938Z-9f2976db is stale: 1 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV12FRIRUN": {
    "match_id": "ATP:26NOV12FRIRUN:singles",
-   "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
    "nominal_scheduled_start": "2026-11-12T20:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T03:27:03.835468+00:00",
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
    "current_expected_start": "2026-11-12T17:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -236,11 +221,11 @@
   },
   "KXATPMATCH-26NOV12TIRSHE": {
    "match_id": "ATP:26NOV12TIRSHE:singles",
-   "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
    "nominal_scheduled_start": "2026-11-12T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T03:27:03.835468+00:00",
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
    "current_expected_start": "2026-11-12T14:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -291,11 +276,11 @@
   },
   "KXATPMATCH-26NOV12MUSHUM": {
    "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
    "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T03:27:03.835468+00:00",
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
    "current_expected_start": "2026-11-12T19:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -346,11 +331,11 @@
   },
   "KXATPMATCH-26NOV12MICTAB": {
    "match_id": "ATP:26NOV12MICTAB:singles",
-   "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
    "nominal_scheduled_start": "2026-11-12T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T03:27:03.835468+00:00",
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
    "current_expected_start": "2026-11-12T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -389,11 +374,11 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T03:27:03.835468+00:00",
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
    "current_expected_start": "2026-11-12T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -444,11 +429,11 @@
   },
   "KXWTAMATCH-26NOV12KOSGAU": {
    "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-12T03:30:19.918526+00:00",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
    "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T03:27:03.835468+00:00",
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
    "current_expected_start": "2026-11-12T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -484,6 +469,82 @@
    "bet_allowed": true,
    "label": "Marta Kostyuk vs Coco Gauff",
    "level_bucket": "WTA"
+  },
+  "KXWTACHALLENGERMATCH-26NOV12MANLAZ": {
+   "match_id": "WTA:26NOV12MANLAZ:singles",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
+   "nominal_scheduled_start": "2026-11-12T18:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
+   "current_expected_start": "2026-11-12T15:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-12T15:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-12T14:15:00+00:00",
+   "recommended_handicap_by": "2026-11-12T14:15:00+00:00",
+   "final_check_time": "2026-11-12T14:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Court 1",
+   "court_context": {
+    "court": "Court 1",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL"
+   ],
+   "bet_allowed": true,
+   "label": "Elizabeth Mandlik vs Andrea Lazaro Garcia",
+   "level_bucket": "WTA125"
+  },
+  "KXWTACHALLENGERMATCH-26NOV12SAMBUR": {
+   "match_id": "WTA:26NOV12SAMBUR:singles",
+   "evaluated_at": "2026-11-12T03:44:13.064591+00:00",
+   "nominal_scheduled_start": "2026-11-12T18:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-12T03:40:44.921523+00:00",
+   "current_expected_start": "2026-11-12T15:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-12T15:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-12T14:15:00+00:00",
+   "recommended_handicap_by": "2026-11-12T14:15:00+00:00",
+   "final_check_time": "2026-11-12T14:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Main Court",
+   "court_context": {
+    "court": "Main Court",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL"
+   ],
+   "bet_allowed": true,
+   "label": "Laura Samson vs Irene Burillo Escorihuela",
+   "level_bucket": "WTA125"
   }
  }
 }
