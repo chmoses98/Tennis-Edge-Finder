@@ -1,0 +1,107 @@
+{
+ "generated_at": "2026-11-12T10:15:45.197397+00:00",
+ "run_id": "20261112T101545Z",
+ "external_parse": {
+  "events": 180,
+  "markets": 1340,
+  "skipped_family": 239,
+  "skipped_period": 325,
+  "skipped_live": 35,
+  "one_sided": 62,
+  "rows": 1824,
+  "devigged": 714
+ },
+ "smarkets_fetch": {
+  "events_seen": 71,
+  "events_priced": 71,
+  "markets": 662,
+  "markets_mapped": 265,
+  "contracts": 572,
+  "quoted_contracts": 572,
+  "raw": "data/research/external/raw/20261112T101545Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 265,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 25,
+  "rows": 547,
+  "two_sided": 541,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 615,
+ "external_mapping": {
+  "total": 168,
+  "by_status": {
+   "MAPPED": 129,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7679,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "Duarte De Lima Sanches": 1,
+   "Augusto Land": 1,
+   "Pedro Dietrich": 1,
+   "Joaquim de Almeida": 1,
+   "Justin Riley Anson": 1,
+   "Alexander Okonkwo": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 71,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 27,
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5915,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 172,
+  "by_status": {
+   "MAPPED": 150,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8721,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Alice Tubello": 1,
+   "Elizabeth Mandlik": 1,
+   "Laura Samson": 1,
+   "M Rifqi Fitriadi": 1,
+   "Dragos Cazacu": 1,
+   "Alexander Okonkwo": 1,
+   "Justin Riley Anson": 1,
+   "Augusto Land": 1
+  }
+ },
+ "matched_both_venues": 99,
+ "external_mapped_matches": 148,
+ "kalshi_mapped_matches": 150,
+ "model_witness_available": true,
+ "rows": 126,
+ "counts": {
+  "PASS": 125,
+  "tri:INSUFFICIENT_INPUTS": 88,
+  "tri:MODEL_LONE_OUTLIER": 31,
+  "tri:MARKETS_AGREE": 3,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 27
+ }
+}
