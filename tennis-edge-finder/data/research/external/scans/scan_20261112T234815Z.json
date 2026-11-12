@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-12T23:48:15.969553+00:00",
+ "run_id": "20261112T234815Z",
+ "external_parse": {
+  "events": 121,
+  "markets": 1045,
+  "skipped_family": 132,
+  "skipped_period": 285,
+  "skipped_live": 13,
+  "one_sided": 9,
+  "rows": 1592,
+  "devigged": 619
+ },
+ "smarkets_fetch": {
+  "events_seen": 57,
+  "events_priced": 53,
+  "markets": 514,
+  "markets_mapped": 201,
+  "contracts": 436,
+  "quoted_contracts": 436,
+  "raw": "data/research/external/raw/20261112T234815Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 201,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 5,
+  "rows": 431,
+  "two_sided": 427,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 253,
+ "external_mapping": {
+  "total": 111,
+  "by_status": {
+   "MAPPED": 88,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7928,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Ilan Hediger": 1,
+   "Arjun Prabhakar": 1,
+   "Esunge Ndumbe": 1,
+   "Andrew Gordon": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 34,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6415,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 54,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.9074,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Nikita Belozertsev": 1,
+   "Dragos Cazacu": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 101,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 52,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:KALSHI_LONE_OUTLIER": 5,
+  "tri:MARKETS_AGREE": 2,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "WATCH": 2,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 1
+ }
+}
