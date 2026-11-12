@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-12T02:20:39.067497+00:00",
+ "run_id": "20261112T022039Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 69,
+  "events_priced": 69,
+  "markets": 557,
+  "markets_mapped": 232,
+  "contracts": 490,
+  "quoted_contracts": 490,
+  "raw": "data/research/external/raw/20261112T022039Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 232,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 475,
+  "two_sided": 471,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 409,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 69,
+  "by_status": {
+   "MAPPED": 44,
+   "DOUBLES_UNSUPPORTED": 23,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6377,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 23,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 96,
+  "by_status": {
+   "MAPPED": 82,
+   "UNMAPPED_PLAYER": 13,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8542,
+  "top_refusal_subjects": {
+   "Alexander Okonkwo": 1,
+   "Heorhii Shylov": 1,
+   "Duarte Lima Sanches": 1,
+   "Seongchan Hong": 1,
+   "M Rifqi Fitriadi": 1,
+   "Jayson Blando": 1,
+   "Sasikumar Mukund": 1,
+   "Pablo Perez Ramos": 1,
+   "Mu Jie Tzeng": 1,
+   "Alexandra Chapurina": 1
+  }
+ },
+ "matched_both_venues": 10,
+ "external_mapped_matches": 44,
+ "kalshi_mapped_matches": 82,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
