@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-11-12T22:44:00.178041+00:00",
+ "run_id": "20261112T224400Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 637,
+  "skipped_family": 94,
+  "skipped_period": 162,
+  "skipped_live": 18,
+  "one_sided": 3,
+  "rows": 984,
+  "devigged": 378
+ },
+ "smarkets_fetch": {
+  "events_seen": 53,
+  "events_priced": 49,
+  "markets": 448,
+  "markets_mapped": 167,
+  "contracts": 366,
+  "quoted_contracts": 366,
+  "raw": "data/research/external/raw/20261112T224400Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 167,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 6,
+  "rows": 360,
+  "two_sided": 358,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 410,
+ "external_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.7089,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Ilan Hediger": 1,
+   "Arjun Prabhakar": 1,
+   "Esunge Ndumbe": 1,
+   "Andrew Gordon": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 49,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 17,
+   "MAPPED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6327,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 40,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.85,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Dragos Cazacu": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "matched_both_venues": 21,
+ "external_mapped_matches": 75,
+ "kalshi_mapped_matches": 34,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 2
+ }
+}
