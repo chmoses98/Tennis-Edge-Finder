@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-12T12:32:57.067709+00:00",
+ "generated_at": "2026-11-12T12:47:13.258351+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 263,
+ "board_matches": 267,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 12,
   "STARTED": 2,
-  "START_UNKNOWN": 249
+  "START_UNKNOWN": 253
  },
- "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+ "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-12T13:34:21.748628+00:00",
-  "recommended_run_tennis_time": "2026-11-12T12:49:21.748628+00:00",
+  "earliest_credible_first_ball": "2026-11-12T13:48:35.340965+00:00",
+  "recommended_run_tennis_time": "2026-11-12T13:03:35.340965+00:00",
   "primary_refresh_window": [
-   "2026-11-12T12:49:21.748628+00:00",
-   "2026-11-12T13:04:21.748628+00:00"
+   "2026-11-12T13:03:35.340965+00:00",
+   "2026-11-12T13:18:35.340965+00:00"
   ],
-  "final_status_price_check_time": "2026-11-12T13:24:21.748628+00:00",
+  "final_status_price_check_time": "2026-11-12T13:38:35.340965+00:00",
   "final_refresh_window": [
-   "2026-11-12T13:24:21.748628+00:00",
-   "2026-11-12T13:29:21.748628+00:00"
+   "2026-11-12T13:38:35.340965+00:00",
+   "2026-11-12T13:43:35.340965+00:00"
   ],
   "primary_overdue": false,
   "n_matches": 1,
@@ -27,7 +27,7 @@
    {
     "match_id": "KXATPMATCH-26NOV12TIRSHE",
     "label": "Thiago Agustin Tirante vs Aleksandr Shevchenko",
-    "current_expected_start": "2026-11-12T13:34:21.748628+00:00",
+    "current_expected_start": "2026-11-12T13:48:35.340965+00:00",
     "start_status": "VERIFIED_UPCOMING",
     "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5)",
     "start_time_confidence": "MEDIUM"
@@ -36,16 +36,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-12T13:34:21.748628+00:00",
-   "recommended_run_tennis_time": "2026-11-12T12:49:21.748628+00:00",
+   "earliest_credible_first_ball": "2026-11-12T13:48:35.340965+00:00",
+   "recommended_run_tennis_time": "2026-11-12T13:03:35.340965+00:00",
    "primary_refresh_window": [
-    "2026-11-12T12:49:21.748628+00:00",
-    "2026-11-12T13:04:21.748628+00:00"
+    "2026-11-12T13:03:35.340965+00:00",
+    "2026-11-12T13:18:35.340965+00:00"
    ],
-   "final_status_price_check_time": "2026-11-12T13:24:21.748628+00:00",
+   "final_status_price_check_time": "2026-11-12T13:38:35.340965+00:00",
    "final_refresh_window": [
-    "2026-11-12T13:24:21.748628+00:00",
-    "2026-11-12T13:29:21.748628+00:00"
+    "2026-11-12T13:38:35.340965+00:00",
+    "2026-11-12T13:43:35.340965+00:00"
    ],
    "primary_overdue": false,
    "n_matches": 1,
@@ -53,7 +53,7 @@
     {
      "match_id": "KXATPMATCH-26NOV12TIRSHE",
      "label": "Thiago Agustin Tirante vs Aleksandr Shevchenko",
-     "current_expected_start": "2026-11-12T13:34:21.748628+00:00",
+     "current_expected_start": "2026-11-12T13:48:35.340965+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5)",
      "start_time_confidence": "MEDIUM"
@@ -130,29 +130,22 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXATPMATCH-26NOV12TIRSHE",
-    "change": "EXPECTED_START_MOVED_EARLIER_25_MIN"
-   }
-  ],
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
   "slate_id": "SL-20261112T120420Z-82fb7083",
   "slate_built_at": "2026-11-12T12:04:20.429303+00:00",
-  "checked_at": "2026-11-12T12:32:57.067709+00:00"
+  "checked_at": "2026-11-12T12:47:13.258351+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV12FRIRUN": {
    "match_id": "ATP:26NOV12FRIRUN:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T20:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T17:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -203,12 +196,12 @@
   },
   "KXATPMATCH-26NOV12TIRSHE": {
    "match_id": "ATP:26NOV12TIRSHE:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T17:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
-   "current_expected_start": "2026-11-12T13:34:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
+   "current_expected_start": "2026-11-12T13:48:35.340965+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5)",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -218,7 +211,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-12T13:34:21.748628+00:00",
+     "time": "2026-11-12T13:48:35.340965+00:00",
      "source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 1 of best-of-5)",
      "confidence": "MEDIUM"
     },
@@ -228,9 +221,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-12T12:49:21.748628+00:00",
-   "recommended_handicap_by": "2026-11-12T12:49:21.748628+00:00",
-   "final_check_time": "2026-11-12T13:24:21.748628+00:00",
+   "earliest_safe_handicap_time": "2026-11-12T13:03:35.340965+00:00",
+   "recommended_handicap_by": "2026-11-12T13:03:35.340965+00:00",
+   "final_check_time": "2026-11-12T13:38:35.340965+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -248,14 +241,14 @@
      "state": "IN",
      "period": 1,
      "best_of": 5,
-     "games_played": 4,
+     "games_played": 7,
      "scheduled_utc": "2026-11-12T12:05:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-206_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-192_MIN"
    ],
    "bet_allowed": true,
    "label": "Thiago Agustin Tirante vs Aleksandr Shevchenko",
@@ -263,11 +256,11 @@
   },
   "KXATPMATCH-26NOV12MUSHUM": {
    "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T19:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -318,11 +311,11 @@
   },
   "KXATPMATCH-26NOV12MICTAB": {
    "match_id": "ATP:26NOV12MICTAB:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -345,11 +338,11 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -400,11 +393,11 @@
   },
   "KXWTAMATCH-26NOV12KOSGAU": {
    "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -443,11 +436,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV12ANDBAS": {
    "match_id": "WTA:26NOV12ANDBAS:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T19:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -493,11 +486,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV12TUBHER": {
    "match_id": "WTA:26NOV12TUBHER:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T19:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -543,11 +536,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV12MANLAZ": {
    "match_id": "WTA:26NOV12MANLAZ:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -581,11 +574,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV12SAMBUR": {
    "match_id": "WTA:26NOV12SAMBUR:singles",
-   "evaluated_at": "2026-11-12T12:32:57.067709+00:00",
+   "evaluated_at": "2026-11-12T12:47:13.258351+00:00",
    "nominal_scheduled_start": "2026-11-12T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T12:29:21.748628+00:00",
+   "start_time_last_checked": "2026-11-12T12:43:35.340965+00:00",
    "current_expected_start": "2026-11-12T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
