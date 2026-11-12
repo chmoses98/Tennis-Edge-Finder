@@ -1,0 +1,104 @@
+{
+ "generated_at": "2026-11-12T10:25:47.883859+00:00",
+ "run_id": "20261112T102547Z",
+ "external_parse": {
+  "events": 178,
+  "markets": 1311,
+  "skipped_family": 237,
+  "skipped_period": 322,
+  "skipped_live": 36,
+  "one_sided": 91,
+  "rows": 1716,
+  "devigged": 661
+ },
+ "smarkets_fetch": {
+  "events_seen": 71,
+  "events_priced": 71,
+  "markets": 662,
+  "markets_mapped": 265,
+  "contracts": 572,
+  "quoted_contracts": 572,
+  "raw": "data/research/external/raw/20261112T102547Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 265,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 19,
+  "rows": 553,
+  "two_sided": 547,
+  "one_sided": 6
+ },
+ "kalshi_quotes_on_disk": 505,
+ "external_mapping": {
+  "total": 166,
+  "by_status": {
+   "MAPPED": 127,
+   "DOUBLES_UNSUPPORTED": 20,
+   "UNMAPPED_PLAYER": 18,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7651,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 20,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "Duarte De Lima Sanches": 1,
+   "Augusto Land": 1,
+   "Pedro Dietrich": 1,
+   "Joaquim de Almeida": 1,
+   "Justin Riley Anson": 1,
+   "Alexander Okonkwo": 1,
+   "Nikita Samuel Filin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 71,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 27,
+   "MAPPED": 42,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.5915,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 27,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 132,
+  "by_status": {
+   "MAPPED": 114,
+   "UNMAPPED_PLAYER": 17,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8636,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Alice Tubello": 1,
+   "Elizabeth Mandlik": 1,
+   "Laura Samson": 1,
+   "M Rifqi Fitriadi": 1,
+   "Alexander Okonkwo": 1,
+   "Augusto Land": 1,
+   "Duarte Lima Sanches": 1,
+   "Matias Reyniak": 1
+  }
+ },
+ "matched_both_venues": 73,
+ "external_mapped_matches": 146,
+ "kalshi_mapped_matches": 114,
+ "model_witness_available": true,
+ "rows": 68,
+ "counts": {
+  "PASS": 68,
+  "tri:MODEL_LONE_OUTLIER": 29,
+  "tri:MARKETS_AGREE": 6,
+  "tri:INSUFFICIENT_INPUTS": 33
+ },
+ "skips": {
+  "external_has_no_match_winner": 34
+ }
+}
