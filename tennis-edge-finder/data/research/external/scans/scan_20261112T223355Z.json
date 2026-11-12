@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-12T22:33:55.154839+00:00",
+ "run_id": "20261112T223355Z",
+ "external_parse": {
+  "events": 90,
+  "markets": 637,
+  "skipped_family": 94,
+  "skipped_period": 162,
+  "skipped_live": 18,
+  "one_sided": 3,
+  "rows": 984,
+  "devigged": 378
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 50,
+  "markets": 467,
+  "markets_mapped": 177,
+  "contracts": 388,
+  "quoted_contracts": 388,
+  "raw": "data/research/external/raw/20261112T223355Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 177,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 6,
+  "rows": 382,
+  "two_sided": 380,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 289,
+ "external_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 8,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.6962,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Ilan Hediger": 1,
+   "Arjun Prabhakar": 1,
+   "Esunge Ndumbe": 1,
+   "Andrew Gordon": 1,
+   "Noemie Oliveras": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.64,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 61,
+  "by_status": {
+   "MAPPED": 54,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8852,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Dragos Cazacu": 1,
+   "Valeriia Iushchenko": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "matched_both_venues": 30,
+ "external_mapped_matches": 75,
+ "kalshi_mapped_matches": 54,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 38,
+  "tri:MODEL_LONE_OUTLIER": 16,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 2,
+  "tri:KALSHI_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 3
+ }
+}
