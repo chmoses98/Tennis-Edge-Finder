@@ -1,25 +1,25 @@
 {
- "generated_at": "2026-11-12T20:21:10.699617+00:00",
+ "generated_at": "2026-11-12T20:32:30.551243+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 213,
+ "board_matches": 216,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 6,
+  "VERIFIED_UPCOMING": 7,
   "STARTED": 2,
-  "START_UNKNOWN": 205
+  "START_UNKNOWN": 207
  },
- "evaluated_at": "2026-11-12T20:21:10.699617+00:00",
+ "evaluated_at": "2026-11-12T20:32:30.551243+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-12T20:58:38.764358+00:00",
-  "recommended_run_tennis_time": "2026-11-12T20:13:38.764358+00:00",
+  "earliest_credible_first_ball": "2026-11-12T21:09:48.679582+00:00",
+  "recommended_run_tennis_time": "2026-11-12T20:24:48.679582+00:00",
   "primary_refresh_window": [
-   "2026-11-12T20:13:38.764358+00:00",
-   "2026-11-12T20:28:38.764358+00:00"
+   "2026-11-12T20:24:48.679582+00:00",
+   "2026-11-12T20:39:48.679582+00:00"
   ],
-  "final_status_price_check_time": "2026-11-12T20:48:38.764358+00:00",
+  "final_status_price_check_time": "2026-11-12T20:59:48.679582+00:00",
   "final_refresh_window": [
-   "2026-11-12T20:48:38.764358+00:00",
-   "2026-11-12T20:53:38.764358+00:00"
+   "2026-11-12T20:59:48.679582+00:00",
+   "2026-11-12T21:04:48.679582+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -27,7 +27,7 @@
    {
     "match_id": "KXWTAMATCH-26NOV12PEGNOS",
     "label": "Jessica Pegula vs Linda Noskova",
-    "current_expected_start": "2026-11-12T20:58:38.764358+00:00",
+    "current_expected_start": "2026-11-12T21:09:48.679582+00:00",
     "start_status": "VERIFIED_UPCOMING",
     "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
     "start_time_confidence": "MEDIUM"
@@ -36,16 +36,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-12T20:58:38.764358+00:00",
-   "recommended_run_tennis_time": "2026-11-12T20:13:38.764358+00:00",
+   "earliest_credible_first_ball": "2026-11-12T21:09:48.679582+00:00",
+   "recommended_run_tennis_time": "2026-11-12T20:24:48.679582+00:00",
    "primary_refresh_window": [
-    "2026-11-12T20:13:38.764358+00:00",
-    "2026-11-12T20:28:38.764358+00:00"
+    "2026-11-12T20:24:48.679582+00:00",
+    "2026-11-12T20:39:48.679582+00:00"
    ],
-   "final_status_price_check_time": "2026-11-12T20:48:38.764358+00:00",
+   "final_status_price_check_time": "2026-11-12T20:59:48.679582+00:00",
    "final_refresh_window": [
-    "2026-11-12T20:48:38.764358+00:00",
-    "2026-11-12T20:53:38.764358+00:00"
+    "2026-11-12T20:59:48.679582+00:00",
+    "2026-11-12T21:04:48.679582+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -53,7 +53,7 @@
     {
      "match_id": "KXWTAMATCH-26NOV12PEGNOS",
      "label": "Jessica Pegula vs Linda Noskova",
-     "current_expected_start": "2026-11-12T20:58:38.764358+00:00",
+     "current_expected_start": "2026-11-12T21:09:48.679582+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
      "start_time_confidence": "MEDIUM"
@@ -84,6 +84,31 @@
      "start_time_confidence": "HIGH"
     }
    ]
+  },
+  {
+   "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-13T19:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-13T19:15:00+00:00",
+    "2026-11-13T19:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-13T19:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-13T19:50:00+00:00",
+    "2026-11-13T19:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 1,
+   "matches": [
+    {
+     "match_id": "KXWTAMATCH-26NOV13ANDMUC",
+     "label": "Mirra Andreeva vs Karolina Muchova",
+     "current_expected_start": "2026-11-13T20:00:00+00:00",
+     "start_status": "VERIFIED_UPCOMING",
+     "start_time_source": "LIVE_SCHEDULE:espn_wta",
+     "start_time_confidence": "HIGH"
+    }
+   ]
   }
  ],
  "main_tour_status_unverified": [],
@@ -91,7 +116,7 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-12T20:58:38.764358+00:00, slate built 2026-11-12T18:42:25.935414+00:00",
+   "PRIMARY_REFRESH_DUE: window at 2026-11-12T21:09:48.679582+00:00, slate built 2026-11-12T18:42:25.935414+00:00",
    "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
   ],
   "changed_matches": [
@@ -101,20 +126,18 @@
    },
    {
     "match": "KXWTAMATCH-26NOV12PEGNOS",
-    "change": "EXPECTED_START_MOVED_EARLIER_31_MIN"
+    "change": "EXPECTED_START_MOVED_EARLIER_20_MIN"
    }
   ],
   "slate_id": "SL-20261112T184225Z-f54625b4",
   "slate_built_at": "2026-11-12T18:42:25.935414+00:00",
-  "checked_at": "2026-11-12T20:21:10.699617+00:00"
+  "checked_at": "2026-11-12T20:32:30.551243+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_primary",
-   "window": "20261112T2045Z",
-   "reason": "primary handicap packet for window at 2026-11-12T20:58:38.764358+00:00",
-   "at": "2026-11-12T20:21:10.699617+00:00",
-   "earliest_credible_first_ball": "2026-11-12T20:58:38.764358+00:00",
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-12T20:32:30.551243+00:00",
+   "reason": "published slate SL-20261112T184225Z-f54625b4 is stale: 2 match(es) changed status/start since it was built",
    "dispatched": true,
    "http": 204
   }
@@ -122,11 +145,11 @@
  "statuses": {
   "KXATPMATCH-26NOV13TABTIR": {
    "match_id": "ATP:26NOV13TABTIR:singles",
-   "evaluated_at": "2026-11-12T20:21:10.699617+00:00",
+   "evaluated_at": "2026-11-12T20:32:30.551243+00:00",
    "nominal_scheduled_start": "2026-11-13T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T20:18:38.764358+00:00",
+   "start_time_last_checked": "2026-11-12T20:29:48.679582+00:00",
    "current_expected_start": "2026-11-13T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -177,11 +200,11 @@
   },
   "KXATPMATCH-26NOV12MUSHUM": {
    "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-12T20:21:10.699617+00:00",
+   "evaluated_at": "2026-11-12T20:32:30.551243+00:00",
    "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T20:18:38.764358+00:00",
+   "start_time_last_checked": "2026-11-12T20:29:48.679582+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -204,12 +227,12 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-12T20:21:10.699617+00:00",
+   "evaluated_at": "2026-11-12T20:32:30.551243+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T20:18:38.764358+00:00",
-   "current_expected_start": "2026-11-12T20:58:38.764358+00:00",
+   "start_time_last_checked": "2026-11-12T20:29:48.679582+00:00",
+   "current_expected_start": "2026-11-12T21:09:48.679582+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -219,7 +242,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-12T20:58:38.764358+00:00",
+     "time": "2026-11-12T21:09:48.679582+00:00",
      "source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
      "confidence": "MEDIUM"
     },
@@ -229,9 +252,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-12T20:13:38.764358+00:00",
-   "recommended_handicap_by": "2026-11-12T20:13:38.764358+00:00",
-   "final_check_time": "2026-11-12T20:48:38.764358+00:00",
+   "earliest_safe_handicap_time": "2026-11-12T20:24:48.679582+00:00",
+   "recommended_handicap_by": "2026-11-12T20:24:48.679582+00:00",
+   "final_check_time": "2026-11-12T20:59:48.679582+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -249,14 +272,14 @@
      "state": "IN",
      "period": 1,
      "best_of": 3,
-     "games_played": 1,
+     "games_played": 4,
      "scheduled_utc": "2026-11-12T20:15:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-192_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-181_MIN"
    ],
    "bet_allowed": true,
    "label": "Jessica Pegula vs Linda Noskova",
@@ -264,11 +287,11 @@
   },
   "KXWTAMATCH-26NOV12KOSGAU": {
    "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-12T20:21:10.699617+00:00",
+   "evaluated_at": "2026-11-12T20:32:30.551243+00:00",
    "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T20:18:38.764358+00:00",
+   "start_time_last_checked": "2026-11-12T20:29:48.679582+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -287,6 +310,49 @@
    ],
    "bet_allowed": false,
    "label": "Marta Kostyuk vs Coco Gauff",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26NOV13ANDMUC": {
+   "match_id": "WTA:26NOV13ANDMUC:singles",
+   "evaluated_at": "2026-11-12T20:32:30.551243+00:00",
+   "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-12T20:29:48.679582+00:00",
+   "current_expected_start": "2026-11-13T20:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-13T20:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-13T23:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-13T19:15:00+00:00",
+   "recommended_handicap_by": "2026-11-13T19:15:00+00:00",
+   "final_check_time": "2026-11-13T19:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Indian Wells Tennis Garden",
+   "court_context": {
+    "court": "Indian Wells Tennis Garden",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Mirra Andreeva vs Karolina Muchova",
    "level_bucket": "WTA"
   }
  }
