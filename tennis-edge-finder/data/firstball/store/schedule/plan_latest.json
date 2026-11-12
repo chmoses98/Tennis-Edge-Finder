@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-12T19:03:33.236731+00:00",
+ "generated_at": "2026-11-12T19:15:18.591432+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 218,
+ "board_matches": 220,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 6,
   "START_IMMINENT": 1,
-  "START_UNKNOWN": 208,
+  "START_UNKNOWN": 210,
   "STARTED": 3
  },
- "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+ "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-12T19:15:00+00:00",
   "recommended_run_tennis_time": "2026-11-12T18:30:00+00:00",
@@ -131,40 +131,22 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-12T19:15:00+00:00, slate built 2026-11-12T17:23:19.275162+00:00",
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXATPMATCH-26NOV12MUSHUM",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   }
-  ],
-  "slate_id": "SL-20261112T172319Z-f87098ac",
-  "slate_built_at": "2026-11-12T17:23:19.275162+00:00",
-  "checked_at": "2026-11-12T19:03:33.236731+00:00"
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
+  "slate_id": "SL-20261112T184225Z-f54625b4",
+  "slate_built_at": "2026-11-12T18:42:25.935414+00:00",
+  "checked_at": "2026-11-12T19:15:18.591432+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_primary",
-   "window": "20261112T1915Z",
-   "reason": "primary handicap packet for window at 2026-11-12T19:15:00+00:00",
-   "at": "2026-11-12T19:03:33.236731+00:00",
-   "earliest_credible_first_ball": "2026-11-12T19:15:00+00:00",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV13TABTIR": {
    "match_id": "ATP:26NOV13TABTIR:singles",
-   "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+   "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
    "nominal_scheduled_start": "2026-11-13T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:00:49.865441+00:00",
+   "start_time_last_checked": "2026-11-12T19:12:34.158840+00:00",
    "current_expected_start": "2026-11-13T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -215,11 +197,11 @@
   },
   "KXATPMATCH-26NOV12MUSHUM": {
    "match_id": "ATP:26NOV12MUSHUM:singles",
-   "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+   "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
    "nominal_scheduled_start": "2026-11-12T21:40:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:00:49.865441+00:00",
+   "start_time_last_checked": "2026-11-12T19:12:34.158840+00:00",
    "current_expected_start": "2026-11-12T19:15:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -230,8 +212,8 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-12T19:40:49.865441+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5)",
+     "time": "2026-11-12T19:17:34.158840+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Center Court finished",
      "confidence": "MEDIUM"
     },
     {
@@ -257,17 +239,18 @@
       "Robert Galloway / Andre Goransson",
       "Constantin Frantz\u00e9n / Bart Stevens"
      ],
-     "state": "IN",
+     "state": "POST",
      "period": 2,
      "best_of": 5,
-     "games_played": 21,
+     "games_played": 23,
      "scheduled_utc": "2026-11-12T17:45:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-145_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-145_MIN",
+    "OVERDUE_BUT_SEEN_NOT_STARTED_164S_AGO"
    ],
    "bet_allowed": true,
    "label": "Lorenzo Musetti vs Ugo Humbert",
@@ -275,11 +258,11 @@
   },
   "KXWTAMATCH-26NOV12PEGNOS": {
    "match_id": "WTA:26NOV12PEGNOS:singles",
-   "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+   "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
    "nominal_scheduled_start": "2026-11-13T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:00:49.865441+00:00",
+   "start_time_last_checked": "2026-11-12T19:12:34.158840+00:00",
    "current_expected_start": "2026-11-12T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -330,11 +313,11 @@
   },
   "KXWTAMATCH-26NOV12KOSGAU": {
    "match_id": "WTA:26NOV12KOSGAU:singles",
-   "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+   "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
    "nominal_scheduled_start": "2026-11-12T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:00:49.865441+00:00",
+   "start_time_last_checked": "2026-11-12T19:12:34.158840+00:00",
    "current_expected_start": "2026-11-12T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -373,11 +356,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV12ANDBAS": {
    "match_id": "WTA:26NOV12ANDBAS:singles",
-   "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+   "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
    "nominal_scheduled_start": "2026-11-12T19:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:00:49.865441+00:00",
+   "start_time_last_checked": "2026-11-12T19:12:34.158840+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
@@ -400,11 +383,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV12TUBHER": {
    "match_id": "WTA:26NOV12TUBHER:singles",
-   "evaluated_at": "2026-11-12T19:03:33.236731+00:00",
+   "evaluated_at": "2026-11-12T19:15:18.591432+00:00",
    "nominal_scheduled_start": "2026-11-12T19:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-12T19:00:49.865441+00:00",
+   "start_time_last_checked": "2026-11-12T19:12:34.158840+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
