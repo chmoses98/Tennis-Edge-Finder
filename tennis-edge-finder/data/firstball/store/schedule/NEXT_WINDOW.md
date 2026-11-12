@@ -1,17 +1,17 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-12 13:01Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-12 13:15Z)
 
-* Earliest credible first ball: **2026-11-12 14:00Z**
-* Recommended RUN TENNIS time: **2026-11-12 13:15Z**
-* Final price/status check time: **2026-11-12 13:50Z**
+* Earliest credible first ball: **2026-11-12 13:51Z**
+* Recommended RUN TENNIS time: **2026-11-12 13:06Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-12 13:41Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Thiago Agustin Tirante vs Aleksandr Shevchenko | 2026-11-12 14:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
+| Thiago Agustin Tirante vs Aleksandr Shevchenko | 2026-11-12 13:51Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Center Court in progress (set 2 of best-of-5) | MEDIUM |
 
-Published slate: `SL-20261112T123810Z-bf4d42c9` built 2026-11-12 12:38Z -- current
+Published slate: `SL-20261112T123810Z-bf4d42c9` built 2026-11-12 12:38Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-12T13:51:57.674317+00:00, slate built 2026-11-12T12:38:10.577827+00:00
 
-Dispatched this pass: none
+Dispatched this pass: slate_primary (ok)
 
 * later window 2: first ball 2026-11-12 17:30Z, run by 2026-11-12 16:45Z, 2 match(es)
 * later window 3: first ball 2026-11-12 20:00Z, run by 2026-11-12 19:15Z, 2 match(es)
