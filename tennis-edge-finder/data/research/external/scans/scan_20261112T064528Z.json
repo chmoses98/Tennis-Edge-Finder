@@ -1,0 +1,100 @@
+{
+ "generated_at": "2026-11-12T06:45:28.228943+00:00",
+ "run_id": "20261112T064528Z",
+ "external_parse": {
+  "events": 189,
+  "markets": 1607,
+  "skipped_family": 241,
+  "skipped_period": 390,
+  "skipped_live": 14,
+  "one_sided": 68,
+  "rows": 2236,
+  "devigged": 908
+ },
+ "smarkets_fetch": {
+  "events_seen": 65,
+  "events_priced": 65,
+  "markets": 575,
+  "markets_mapped": 237,
+  "contracts": 504,
+  "quoted_contracts": 504,
+  "raw": "data/research/external/raw/20261112T064528Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 237,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 37,
+  "rows": 467,
+  "two_sided": 463,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 381,
+ "external_mapping": {
+  "total": 177,
+  "by_status": {
+   "MAPPED": 138,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 21,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7797,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Heorhii Shylov": 1,
+   "Matias Reyniak": 1,
+   "Nazim Makhlouf": 1,
+   "Duarte De Lima Sanches": 1,
+   "Augusto Land": 1,
+   "Pedro Dietrich": 1,
+   "Joaquim de Almeida": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 22,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6308,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 22,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 79,
+  "by_status": {
+   "MAPPED": 73,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.9241,
+  "top_refusal_subjects": {
+   "Laura Samson": 1,
+   "Heorhii Shylov": 1,
+   "Sanhui Shin": 1,
+   "Pablo Perez Ramos": 1,
+   "Ava Esposito Cogan": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 47,
+ "external_mapped_matches": 154,
+ "kalshi_mapped_matches": 73,
+ "model_witness_available": true,
+ "rows": 74,
+ "counts": {
+  "PASS": 74,
+  "tri:MODEL_LONE_OUTLIER": 27,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:INSUFFICIENT_INPUTS": 42,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 9
+ }
+}
