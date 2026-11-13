@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-13T04:58:09.190560+00:00",
+ "run_id": "20261113T045809Z",
+ "external_parse": {
+  "events": 131,
+  "markets": 1082,
+  "skipped_family": 201,
+  "skipped_period": 265,
+  "skipped_live": 20,
+  "one_sided": 10,
+  "rows": 1530,
+  "devigged": 606
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 46,
+  "markets": 471,
+  "markets_mapped": 183,
+  "contracts": 390,
+  "quoted_contracts": 390,
+  "raw": "data/research/external/raw/20261113T045809Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 183,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 367,
+  "two_sided": 364,
+  "one_sided": 3
+ },
+ "kalshi_quotes_on_disk": 338,
+ "external_mapping": {
+  "total": 119,
+  "by_status": {
+   "MAPPED": 98,
+   "UNMAPPED_PLAYER": 6,
+   "DOUBLES_UNSUPPORTED": 15
+  },
+  "mapped_rate": 0.8235,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Rushikesh Sonawane": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kim Dong Ju": 1,
+   "Justin Riley Anson": 1,
+   "Joaquim de Almeida": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 28,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6087,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 91,
+  "by_status": {
+   "MAPPED": 84,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.9231,
+  "top_refusal_subjects": {
+   "Polona Hercog": 1,
+   "Justin Riley Anson": 1,
+   "Nikita Belozertsev": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Aran Teixido Garcia": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 55,
+ "external_mapped_matches": 106,
+ "kalshi_mapped_matches": 84,
+ "model_witness_available": true,
+ "rows": 84,
+ "counts": {
+  "PASS": 84,
+  "tri:INSUFFICIENT_INPUTS": 56,
+  "tri:MODEL_LONE_OUTLIER": 20,
+  "tri:MARKETS_AGREE": 8
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
