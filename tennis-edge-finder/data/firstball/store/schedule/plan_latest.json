@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-13T19:45:32.435861+00:00",
+ "generated_at": "2026-11-13T19:56:06.544196+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 114,
+ "board_matches": 115,
  "counts_by_status": {
   "VERIFIED_UPCOMING": 5,
-  "ESTIMATED_UPCOMING": 1,
+  "ESTIMATED_UPCOMING": 2,
   "START_UNKNOWN": 107,
   "START_IMMINENT": 1
  },
- "evaluated_at": "2026-11-13T19:45:32.435861+00:00",
+ "evaluated_at": "2026-11-13T19:56:06.544196+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-13T19:15:00+00:00",
@@ -126,39 +126,52 @@
      "start_time_confidence": "LOW"
     }
    ]
+  },
+  {
+   "earliest_credible_first_ball": "2026-11-15T22:30:00+00:00",
+   "recommended_run_tennis_time": "2026-11-15T21:45:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-15T21:45:00+00:00",
+    "2026-11-15T22:00:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-15T22:20:00+00:00",
+   "final_refresh_window": [
+    "2026-11-15T22:20:00+00:00",
+    "2026-11-15T22:25:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 1,
+   "matches": [
+    {
+     "match_id": "KXATPMATCH-26NOV15SHEFIL",
+     "label": "Ben Shelton vs Arthur Fils",
+     "current_expected_start": "2026-11-15T22:30:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "KALSHI_NOMINAL",
+     "start_time_confidence": "LOW"
+    }
+   ]
   }
  ],
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-13T20:00:00+00:00, slate built 2026-11-13T19:04:05.644639+00:00"
-  ],
+  "stale": false,
+  "reasons": [],
   "changed_matches": [],
-  "slate_id": "SL-20261113T190405Z-42effb23",
-  "slate_built_at": "2026-11-13T19:04:05.644639+00:00",
-  "checked_at": "2026-11-13T19:45:32.435861+00:00"
+  "slate_id": "SL-20261113T192346Z-3c0e45ce",
+  "slate_built_at": "2026-11-13T19:23:46.360312+00:00",
+  "checked_at": "2026-11-13T19:56:06.544196+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_final",
-   "window": "20261113T2000Z",
-   "reason": "final status/price check for window at 2026-11-13T20:00:00+00:00",
-   "at": "2026-11-13T19:45:32.435861+00:00",
-   "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-13T19:45:32.435861+00:00",
+   "evaluated_at": "2026-11-13T19:56:06.544196+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T19:44:02.844934+00:00",
+   "start_time_last_checked": "2026-11-13T19:54:36.845543+00:00",
    "current_expected_start": "2026-11-14T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -197,7 +210,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-13T19:45:32.435861+00:00",
+   "evaluated_at": "2026-11-13T19:56:06.544196+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -230,11 +243,11 @@
   },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T19:45:32.435861+00:00",
+   "evaluated_at": "2026-11-13T19:56:06.544196+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T19:44:02.844934+00:00",
+   "start_time_last_checked": "2026-11-13T19:54:36.845543+00:00",
    "current_expected_start": "2026-11-13T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -285,11 +298,11 @@
   },
   "KXWTAMATCH-26NOV13ANDSHN": {
    "match_id": "WTA:26NOV13ANDSHN:singles",
-   "evaluated_at": "2026-11-13T19:45:32.435861+00:00",
+   "evaluated_at": "2026-11-13T19:56:06.544196+00:00",
    "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T19:44:02.844934+00:00",
+   "start_time_last_checked": "2026-11-13T19:54:36.845543+00:00",
    "current_expected_start": "2026-11-13T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -325,6 +338,39 @@
    "bet_allowed": true,
    "label": "Mirra Andreeva vs Diana Shnaider",
    "level_bucket": "WTA"
+  },
+  "KXATPMATCH-26NOV15SHEFIL": {
+   "match_id": "ATP:26NOV15SHEFIL:singles",
+   "evaluated_at": "2026-11-13T19:56:06.544196+00:00",
+   "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": null,
+   "current_expected_start": "2026-11-15T22:30:00+00:00",
+   "start_time_source": "KALSHI_NOMINAL",
+   "start_time_confidence": "LOW",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-15T22:30:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-15T21:45:00+00:00",
+   "recommended_handicap_by": "2026-11-15T21:45:00+00:00",
+   "final_check_time": "2026-11-15T22:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": null,
+   "court_context": null,
+   "start_status": "ESTIMATED_UPCOMING",
+   "status_reasons": [
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
+   ],
+   "bet_allowed": false,
+   "label": "Ben Shelton vs Arthur Fils",
+   "level_bucket": "ATP"
   }
  }
 }
