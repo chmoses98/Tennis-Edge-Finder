@@ -1,0 +1,96 @@
+{
+ "generated_at": "2026-11-13T16:41:42.636790+00:00",
+ "run_id": "20261113T164142Z",
+ "external_parse": {
+  "events": 85,
+  "markets": 677,
+  "skipped_family": 185,
+  "skipped_period": 158,
+  "skipped_live": 23,
+  "one_sided": 6,
+  "rows": 964,
+  "devigged": 328
+ },
+ "smarkets_fetch": {
+  "events_seen": 41,
+  "events_priced": 39,
+  "markets": 413,
+  "markets_mapped": 145,
+  "contracts": 324,
+  "quoted_contracts": 324,
+  "raw": "data/research/external/raw/20261113T164142Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 145,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 8,
+  "rows": 316,
+  "two_sided": 316,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 243,
+ "external_mapping": {
+  "total": 74,
+  "by_status": {
+   "MAPPED": 51,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.6892,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Adrian Solorzano": 1,
+   "Jan Kusy": 1,
+   "Simon Myslivec": 1,
+   "Neil Kandhai": 1,
+   "Justin Riley Anson": 1,
+   "Ava Esposito Cogan": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 39,
+  "by_status": {
+   "MAPPED": 23,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5897,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 62,
+  "by_status": {
+   "MAPPED": 55,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8871,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Polona Hercog": 1,
+   "Laura Samson": 1,
+   "Dragos Cazacu": 1,
+   "Justin Riley Anson": 1,
+   "Valeriia Iushchenko": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "matched_both_venues": 36,
+ "external_mapped_matches": 58,
+ "kalshi_mapped_matches": 55,
+ "model_witness_available": true,
+ "rows": 36,
+ "counts": {
+  "PASS": 36,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 12
+ }
+}
