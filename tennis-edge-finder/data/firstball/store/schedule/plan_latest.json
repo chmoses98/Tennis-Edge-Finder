@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-13T18:29:00.192394+00:00",
+ "generated_at": "2026-11-13T18:40:33.219678+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 121,
+ "board_matches": 116,
  "counts_by_status": {
-  "ESTIMATED_UPCOMING": 1,
   "VERIFIED_UPCOMING": 5,
-  "START_UNKNOWN": 113,
-  "STARTED": 2
+  "ESTIMATED_UPCOMING": 1,
+  "START_UNKNOWN": 109,
+  "STARTED": 1
  },
- "evaluated_at": "2026-11-13T18:29:00.192394+00:00",
+ "evaluated_at": "2026-11-13T18:40:33.219678+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-13T19:15:00+00:00",
@@ -151,23 +151,64 @@
   ],
   "slate_id": "SL-20261113T152254Z-a8a00d93",
   "slate_built_at": "2026-11-13T15:22:54.002828+00:00",
-  "checked_at": "2026-11-13T18:29:00.192394+00:00"
+  "checked_at": "2026-11-13T18:40:33.219678+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "run_tennis",
-   "window": "20261113T2000Z",
-   "reason": "producer rows stale; window at 2026-11-13T20:00:00+00:00",
-   "at": "2026-11-13T18:29:00.192394+00:00",
-   "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-13T18:40:33.219678+00:00",
+   "reason": "published slate SL-20261113T152254Z-a8a00d93 is stale: 3 match(es) changed status/start since it was built",
    "dispatched": true,
    "http": 204
   }
  ],
  "statuses": {
+  "KXATPMATCH-26NOV14FRITIR": {
+   "match_id": "ATP:26NOV14FRITIR:singles",
+   "evaluated_at": "2026-11-13T18:40:33.219678+00:00",
+   "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-13T18:39:23.999336+00:00",
+   "current_expected_start": "2026-11-14T12:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_atp",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-14T12:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_atp",
+     "confidence": "HIGH"
+    },
+    {
+     "time": "2026-11-14T15:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-14T11:15:00+00:00",
+   "recommended_handicap_by": "2026-11-14T11:15:00+00:00",
+   "final_check_time": "2026-11-14T11:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Center Court",
+   "court_context": {
+    "court": "Center Court",
+    "preceding": null,
+    "queue_ahead_pre": 0,
+    "same_time_on_court": 0
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+   ],
+   "bet_allowed": true,
+   "label": "Taylor Fritz vs Thiago Agustin Tirante",
+   "level_bucket": "ATP"
+  },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-13T18:29:00.192394+00:00",
+   "evaluated_at": "2026-11-13T18:40:33.219678+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -200,11 +241,11 @@
   },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T18:29:00.192394+00:00",
+   "evaluated_at": "2026-11-13T18:40:33.219678+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T18:27:44.064360+00:00",
+   "start_time_last_checked": "2026-11-13T18:39:23.999336+00:00",
    "current_expected_start": "2026-11-13T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -255,7 +296,7 @@
   },
   "KXWTAMATCH-26NOV13ANDMUC": {
    "match_id": "WTA:26NOV13ANDMUC:singles",
-   "evaluated_at": "2026-11-13T18:29:00.192394+00:00",
+   "evaluated_at": "2026-11-13T18:40:33.219678+00:00",
    "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -295,76 +336,6 @@
    "bet_allowed": true,
    "label": "Mirra Andreeva vs Karolina Muchova",
    "level_bucket": "WTA"
-  },
-  "KXWTACHALLENGERMATCH-26NOV13HERAND": {
-   "match_id": "WTA:26NOV13HERAND:singles",
-   "evaluated_at": "2026-11-13T18:29:00.192394+00:00",
-   "nominal_scheduled_start": "2026-11-13T19:10:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T18:27:44.064360+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_wta (confidence C)",
-   "first_ball_at": "2026-11-13T16:52:12.209493+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Polona Hercog vs Bianca Andreescu",
-   "level_bucket": "WTA125"
-  },
-  "KXATPMATCH-26NOV14FRITIR": {
-   "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-13T18:29:00.192394+00:00",
-   "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T18:27:44.064360+00:00",
-   "current_expected_start": "2026-11-14T12:00:00+00:00",
-   "start_time_source": "LIVE_SCHEDULE:espn_atp",
-   "start_time_confidence": "HIGH",
-   "start_time_candidates": [
-    {
-     "time": "2026-11-14T12:00:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_atp",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-11-14T15:00:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-11-14T11:15:00+00:00",
-   "recommended_handicap_by": "2026-11-14T11:15:00+00:00",
-   "final_check_time": "2026-11-14T11:50:00+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Center Court",
-   "court_context": {
-    "court": "Center Court",
-    "preceding": null,
-    "queue_ahead_pre": 0,
-    "same_time_on_court": 0
-   },
-   "start_status": "VERIFIED_UPCOMING",
-   "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
-   ],
-   "bet_allowed": true,
-   "label": "Taylor Fritz vs Thiago Agustin Tirante",
-   "level_bucket": "ATP"
   }
  }
 }
