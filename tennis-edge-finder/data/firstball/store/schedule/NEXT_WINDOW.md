@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-13 03:49Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-13 03:59Z)
 
 * Earliest credible first ball: **2026-11-13 13:00Z**
 * Recommended RUN TENNIS time: **2026-11-13 12:15Z**
@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Alejandro Tabilo vs Thiago Agustin Tirante | 2026-11-13 13:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261113T025735Z-a9fc72b0` built 2026-11-13 02:57Z -- current
+Published slate: `SL-20261113T033926Z-ea8d4aab` built 2026-11-13 03:39Z -- current
 
 Dispatched this pass: none
 
