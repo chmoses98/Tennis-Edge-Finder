@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-11-13T08:49:19.269106+00:00",
+ "run_id": "20261113T084919Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 46,
+  "markets": 521,
+  "markets_mapped": 199,
+  "contracts": 430,
+  "quoted_contracts": 430,
+  "raw": "data/research/external/raw/20261113T084919Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 199,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 5,
+  "rows": 425,
+  "two_sided": 425,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 905,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 29,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6304,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 120,
+  "by_status": {
+   "MAPPED": 109,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.9083,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Polona Hercog": 1,
+   "Laura Samson": 1,
+   "Dragos Cazacu": 1,
+   "Justin Riley Anson": 1,
+   "Nikita Belozertsev": 1,
+   "Sanhui Shin": 1,
+   "Arina Malygina": 1,
+   "Ava Esposito Cogan": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 29,
+ "kalshi_mapped_matches": 109,
+ "model_witness_available": true,
+ "rows": 38,
+ "counts": {
+  "PASS": 37,
+  "tri:MODEL_LONE_OUTLIER": 24,
+  "tri:MARKETS_AGREE": 11,
+  "tri:INSUFFICIENT_INPUTS": 2,
+  "WATCH": 1,
+  "tri:EXTERNAL_LONE_OUTLIER": 1
+ },
+ "skips": {}
+}
