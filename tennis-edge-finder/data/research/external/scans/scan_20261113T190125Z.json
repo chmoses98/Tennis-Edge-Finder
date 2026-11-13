@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-13T19:01:25.052274+00:00",
+ "run_id": "20261113T190125Z",
+ "external_parse": {
+  "events": 76,
+  "markets": 539,
+  "skipped_family": 199,
+  "skipped_period": 108,
+  "skipped_live": 31,
+  "one_sided": 6,
+  "rows": 690,
+  "devigged": 226
+ },
+ "smarkets_fetch": {
+  "events_seen": 36,
+  "events_priced": 35,
+  "markets": 339,
+  "markets_mapped": 135,
+  "contracts": 302,
+  "quoted_contracts": 302,
+  "raw": "data/research/external/raw/20261113T190125Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 135,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 17,
+  "rows": 285,
+  "two_sided": 285,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 163,
+ "external_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.6615,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Neil Kandhai": 1,
+   "Noey Do": 1,
+   "Madhav Binu": 1,
+   "Lasse Rensing": 1,
+   "Ben Stecker": 1,
+   "Andrew Li": 1,
+   "Marek Pazdera": 1,
+   "Nela Linhartova": 1,
+   "Sanhui Shin": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 35,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 21,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 34,
+  "by_status": {
+   "MAPPED": 30,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8824,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Arina Malygina": 1,
+   "Ava Esposito Cogan": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 20,
+ "external_mapped_matches": 52,
+ "kalshi_mapped_matches": 30,
+ "model_witness_available": true,
+ "rows": 4,
+ "counts": {
+  "PASS": 4,
+  "tri:MARKETS_AGREE": 2,
+  "tri:MODEL_LONE_OUTLIER": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 13
+ }
+}
