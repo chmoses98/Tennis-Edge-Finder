@@ -1,0 +1,74 @@
+{
+ "generated_at": "2026-11-13T22:41:49.241820+00:00",
+ "run_id": "20261113T224149Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 34,
+  "events_priced": 34,
+  "markets": 268,
+  "markets_mapped": 120,
+  "contracts": 268,
+  "quoted_contracts": 268,
+  "raw": "data/research/external/raw/20261113T224149Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 120,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 18,
+  "rows": 250,
+  "two_sided": 250,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 163,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 34,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 20
+  },
+  "mapped_rate": 0.5882,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14
+  }
+ },
+ "kalshi_mapping": {
+  "total": 28,
+  "by_status": {
+   "MAPPED": 26,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9286,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Nikita Belozertsev": 1
+  }
+ },
+ "matched_both_venues": 9,
+ "external_mapped_matches": 20,
+ "kalshi_mapped_matches": 26,
+ "model_witness_available": true,
+ "rows": 16,
+ "counts": {
+  "PASS": 16,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:INSUFFICIENT_INPUTS": 2,
+  "tri:MARKETS_AGREE": 3
+ },
+ "skips": {}
+}
