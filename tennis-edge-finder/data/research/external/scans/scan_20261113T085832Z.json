@@ -1,0 +1,77 @@
+{
+ "generated_at": "2026-11-13T08:58:32.590930+00:00",
+ "run_id": "20261113T085832Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 46,
+  "markets": 521,
+  "markets_mapped": 199,
+  "contracts": 430,
+  "quoted_contracts": 430,
+  "raw": "data/research/external/raw/20261113T085832Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 199,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 5,
+  "rows": 425,
+  "two_sided": 425,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 264,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 29,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6304,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 60,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9333,
+  "top_refusal_subjects": {
+   "Nikita Belozertsev": 1,
+   "Sanhui Shin": 1,
+   "Aran Teixido Garcia": 1,
+   "Mu Jie Tzeng": 1
+  }
+ },
+ "matched_both_venues": 11,
+ "external_mapped_matches": 29,
+ "kalshi_mapped_matches": 56,
+ "model_witness_available": true,
+ "rows": 20,
+ "counts": {
+  "PASS": 20,
+  "tri:MODEL_LONE_OUTLIER": 11,
+  "tri:MARKETS_AGREE": 9
+ },
+ "skips": {}
+}
