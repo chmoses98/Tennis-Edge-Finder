@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-13 17:27Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-13 17:37Z)
 
 * Earliest credible first ball: **2026-11-13 20:00Z**
 * Recommended RUN TENNIS time: **2026-11-13 19:15Z**
@@ -10,8 +10,8 @@
 | Mirra Andreeva vs Karolina Muchova | 2026-11-13 20:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Aryna Sabalenka vs Elina Svitolina | 2026-11-13 21:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261113T152254Z-a8a00d93` built 2026-11-13 15:22Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)
+Published slate: `SL-20261113T152254Z-a8a00d93` built 2026-11-13 15:22Z -- **STALE / NEEDS REFRESH**: STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)
 
-Dispatched this pass: slate_stale_refresh (ok)
+Dispatched this pass: none
 
 * later window 2: first ball 2026-11-15 16:00Z, run by 2026-11-15 15:15Z, 1 match(es)
