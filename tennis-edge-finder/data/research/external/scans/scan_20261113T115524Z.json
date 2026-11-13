@@ -1,0 +1,76 @@
+{
+ "generated_at": "2026-11-13T11:55:24.181151+00:00",
+ "run_id": "20261113T115524Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 50,
+  "events_priced": 47,
+  "markets": 574,
+  "markets_mapped": 211,
+  "contracts": 462,
+  "quoted_contracts": 462,
+  "raw": "data/research/external/raw/20261113T115524Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 211,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 24,
+  "rows": 438,
+  "two_sided": 438,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 229,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 28,
+   "DOUBLES_UNSUPPORTED": 18,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5957,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 18,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 56,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.9492,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Polona Hercog": 1,
+   "Laura Samson": 1
+  }
+ },
+ "matched_both_venues": 16,
+ "external_mapped_matches": 28,
+ "kalshi_mapped_matches": 56,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 21,
+  "tri:MARKETS_AGREE": 9
+ },
+ "skips": {}
+}
