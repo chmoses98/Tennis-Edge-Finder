@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-13T04:08:24.797254+00:00",
+ "run_id": "20261113T040824Z",
+ "external_parse": {
+  "events": 119,
+  "markets": 1021,
+  "skipped_family": 201,
+  "skipped_period": 250,
+  "skipped_live": 17,
+  "one_sided": 12,
+  "rows": 1434,
+  "devigged": 558
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 47,
+  "markets": 490,
+  "markets_mapped": 191,
+  "contracts": 408,
+  "quoted_contracts": 404,
+  "raw": "data/research/external/raw/20261113T040824Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 191,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 22,
+  "rows": 386,
+  "two_sided": 384,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 279,
+ "external_mapping": {
+  "total": 108,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8241,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Justin Riley Anson": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 30,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6383,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8806,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Dragos Cazacu": 1,
+   "Justin Riley Anson": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Arina Malygina": 1,
+   "Ava Esposito Cogan": 1,
+   "Mu Jie Tzeng": 1
+  }
+ },
+ "matched_both_venues": 35,
+ "external_mapped_matches": 98,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 50,
+ "counts": {
+  "PASS": 50,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:MARKETS_AGREE": 9,
+  "tri:INSUFFICIENT_INPUTS": 28
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
