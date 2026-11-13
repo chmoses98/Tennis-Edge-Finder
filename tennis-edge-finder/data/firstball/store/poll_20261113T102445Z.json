@@ -1,0 +1,34 @@
+{
+ "run_id": "20261113T102445Z",
+ "started_at": "2026-11-13T10:24:45.100882+00:00",
+ "passes": 3,
+ "requests": 6,
+ "observations": 66,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPDOUBLES-26NOV13MEKROGPAVRIK": {
+   "confidence": "A",
+   "bracket_s": null,
+   "first_ball": null,
+   "no_play": true
+  }
+ },
+ "http": {
+  "200": 6
+ },
+ "watchlist": {
+  "capture_board_markets": 903,
+  "events_only_on_capture_board": 17,
+  "selected_from_capture_board": 17
+ },
+ "mapping": {
+  "MATCHED": 66,
+  "UNMATCHED": 501
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-11-13T10:33:51.280368+00:00"
+}
