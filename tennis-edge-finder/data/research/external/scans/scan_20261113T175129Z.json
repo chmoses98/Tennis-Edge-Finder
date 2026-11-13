@@ -1,0 +1,98 @@
+{
+ "generated_at": "2026-11-13T17:51:29.309688+00:00",
+ "run_id": "20261113T175129Z",
+ "external_parse": {
+  "events": 86,
+  "markets": 578,
+  "skipped_family": 182,
+  "skipped_period": 124,
+  "skipped_live": 33,
+  "one_sided": 11,
+  "rows": 778,
+  "devigged": 261
+ },
+ "smarkets_fetch": {
+  "events_seen": 37,
+  "events_priced": 36,
+  "markets": 394,
+  "markets_mapped": 141,
+  "contracts": 316,
+  "quoted_contracts": 316,
+  "raw": "data/research/external/raw/20261113T175129Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 141,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 16,
+  "rows": 300,
+  "two_sided": 300,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 212,
+ "external_mapping": {
+  "total": 75,
+  "by_status": {
+   "MAPPED": 49,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 13
+  },
+  "mapped_rate": 0.6533,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Neil Kandhai": 1,
+   "Gabriel Jalouneix": 1,
+   "Leon Nickel": 1,
+   "Ilan Hediger": 1,
+   "Noey Do": 1,
+   "Arjun Prabhakar": 1,
+   "Madhav Binu": 1,
+   "Cade Fernando": 1,
+   "Lasse Rensing": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 36,
+  "by_status": {
+   "MAPPED": 20,
+   "DOUBLES_UNSUPPORTED": 15,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.5556,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 15,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 49,
+   "UNMAPPED_PLAYER": 6
+  },
+  "mapped_rate": 0.8909,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Polona Hercog": 1,
+   "Dragos Cazacu": 1,
+   "Justin Riley Anson": 1,
+   "Valeriia Iushchenko": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 34,
+ "external_mapped_matches": 57,
+ "kalshi_mapped_matches": 49,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:INSUFFICIENT_INPUTS": 6,
+  "tri:MARKETS_AGREE": 5,
+  "tri:MODEL_LONE_OUTLIER": 6,
+  "tri:KALSHI_LONE_OUTLIER": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 18
+ }
+}
