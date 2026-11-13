@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-13T19:05:00.167524+00:00",
+ "generated_at": "2026-11-13T19:15:00.847039+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 118,
+ "board_matches": 119,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 4,
+  "VERIFIED_UPCOMING": 5,
   "ESTIMATED_UPCOMING": 2,
   "START_UNKNOWN": 111,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-13T19:05:00.167524+00:00",
+ "evaluated_at": "2026-11-13T19:15:00.847039+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-13T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-13T19:15:00+00:00",
@@ -22,7 +22,7 @@
    "2026-11-13T19:50:00+00:00",
    "2026-11-13T19:55:00+00:00"
   ],
-  "primary_overdue": false,
+  "primary_overdue": true,
   "n_matches": 2,
   "matches": [
    {
@@ -56,7 +56,7 @@
     "2026-11-13T19:50:00+00:00",
     "2026-11-13T19:55:00+00:00"
    ],
-   "primary_overdue": false,
+   "primary_overdue": true,
    "n_matches": 2,
    "matches": [
     {
@@ -133,43 +133,22 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)"
+   "PRIMARY_REFRESH_DUE: window at 2026-11-13T20:00:00+00:00, slate built 2026-11-13T19:04:05.644639+00:00"
   ],
-  "changed_matches": [
-   {
-    "match": "KXATPMATCH-26NOV13FRIMUS",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXWTACHALLENGERMATCH-26NOV13HERAND",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPDOUBLES-26NOV13GREHEIFRASTE",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   }
-  ],
-  "slate_id": "SL-20261113T152254Z-a8a00d93",
-  "slate_built_at": "2026-11-13T15:22:54.002828+00:00",
-  "checked_at": "2026-11-13T19:05:00.167524+00:00"
+  "changed_matches": [],
+  "slate_id": "SL-20261113T190405Z-42effb23",
+  "slate_built_at": "2026-11-13T19:04:05.644639+00:00",
+  "checked_at": "2026-11-13T19:15:00.847039+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-13T19:05:00.167524+00:00",
-   "reason": "published slate SL-20261113T152254Z-a8a00d93 is stale: 3 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-13T19:05:00.167524+00:00",
+   "evaluated_at": "2026-11-13T19:15:00.847039+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T19:03:23.780652+00:00",
+   "start_time_last_checked": "2026-11-13T19:13:39.589523+00:00",
    "current_expected_start": "2026-11-14T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -208,7 +187,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-13T19:05:00.167524+00:00",
+   "evaluated_at": "2026-11-13T19:15:00.847039+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -241,11 +220,11 @@
   },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T19:05:00.167524+00:00",
+   "evaluated_at": "2026-11-13T19:15:00.847039+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T19:03:23.780652+00:00",
+   "start_time_last_checked": "2026-11-13T19:13:39.589523+00:00",
    "current_expected_start": "2026-11-13T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -296,7 +275,7 @@
   },
   "KXWTAMATCH-26NOV13ANDMUC": {
    "match_id": "WTA:26NOV13ANDMUC:singles",
-   "evaluated_at": "2026-11-13T19:05:00.167524+00:00",
+   "evaluated_at": "2026-11-13T19:15:00.847039+00:00",
    "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
