@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-13T00:48:35.343516+00:00",
+ "run_id": "20261113T004835Z",
+ "external_parse": {
+  "events": 114,
+  "markets": 1032,
+  "skipped_family": 128,
+  "skipped_period": 283,
+  "skipped_live": 7,
+  "one_sided": 7,
+  "rows": 1578,
+  "devigged": 614
+ },
+ "smarkets_fetch": {
+  "events_seen": 56,
+  "events_priced": 52,
+  "markets": 537,
+  "markets_mapped": 213,
+  "contracts": 460,
+  "quoted_contracts": 460,
+  "raw": "data/research/external/raw/20261113T004835Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 213,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 18,
+  "rows": 442,
+  "two_sided": 432,
+  "one_sided": 10
+ },
+ "kalshi_quotes_on_disk": 338,
+ "external_mapping": {
+  "total": 104,
+  "by_status": {
+   "MAPPED": 82,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 7,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.7885,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Andrew Gordon": 1,
+   "Alleno Loup": 1,
+   "Vicente Freda": 1,
+   "Faustine Liope": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 52,
+  "by_status": {
+   "MAPPED": 34,
+   "DOUBLES_UNSUPPORTED": 17,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6538,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 17,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 47,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.9216,
+  "top_refusal_subjects": {
+   "Nikita Belozertsev": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 25,
+ "external_mapped_matches": 95,
+ "kalshi_mapped_matches": 47,
+ "model_witness_available": true,
+ "rows": 48,
+ "counts": {
+  "PASS": 48,
+  "tri:MODEL_LONE_OUTLIER": 17,
+  "tri:MARKETS_AGREE": 8,
+  "tri:INSUFFICIENT_INPUTS": 20,
+  "tri:KALSHI_LONE_OUTLIER": 1,
+  "tri:ALL_THREE_DISAGREE": 2
+ },
+ "skips": {}
+}
