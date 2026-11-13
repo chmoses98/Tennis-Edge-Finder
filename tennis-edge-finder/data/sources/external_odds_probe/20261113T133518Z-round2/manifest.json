@@ -1,0 +1,62 @@
+{
+ "generated_at": "2026-11-13T13:35:18.851016+00:00",
+ "run_id": "20261113T133518Z-round2",
+ "polymarket": {
+  "events_open_tennis": 0,
+  "match_style_events": 0,
+  "markets_accepting_orders": 0,
+  "clob_books_fetched": 0,
+  "books_two_sided": 0,
+  "books_two_sided_within_10c_and_50_size": 0,
+  "examples": [],
+  "tradeable_examples": []
+ },
+ "alternates": {
+  "bovada": [
+   {
+    "url": "https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis?lang=en",
+    "status": 200,
+    "bytes": 2,
+    "mentions_tennis": false,
+    "head": "{}"
+   },
+   {
+    "url": "https://www.bovada.lv/services/sports/event/v2/events/A/description/tennis?lang=en",
+    "status": 200,
+    "bytes": 2,
+    "mentions_tennis": false,
+    "head": "{}"
+   },
+   {
+    "url": "https://www.bovada.lv/services/sports/event/coupon/events/A/description/tennis/atp?lang=en",
+    "status": 200,
+    "bytes": 214780,
+    "mentions_tennis": true,
+    "head": "[{\"path\":[{\"id\":\"9493828\",\"link\":\"/tennis/atp/stockholm\",\"description\":\"Stockholm\",\"type\":\"LEAGUE\",\"sportCode\":\"TENN\",\"order\":9223372036854775807,\"leaf\":true,\"current\":false},{\"id\":\"6672423\",\"link\":\"/tennis/atp\",\"description\":\"ATP\",\"type\":\"TOUR\",\"sportCode\":\"TENN\",\"order\":1,\"leaf\":false,\"current\":tr"
+   }
+  ],
+  "smarkets": [
+   {
+    "url": "https://api.smarkets.com/v3/events/",
+    "status": 200,
+    "bytes": 16613,
+    "mentions_tennis": true,
+    "head": "{\"events\": [{\"bet_allowed\": true, \"bettable\": false, \"chart_time_period\": null, \"created\": \"2010-05-08T16:31:52.714438Z\", \"description\": null, \"display_order\": 100, \"end_date\": null, \"full_slug\": \"/sport/cycling\", \"hidden\": false, \"id\": \"102002\", \"inplay_enabled\": true, \"modified\": \"2017-07-23T17:18"
+   },
+   {
+    "url": "https://api.smarkets.com/v3/popular_events/",
+    "status": 404,
+    "error": "HTTP Error 404: Not Found",
+    "body": "{\"data\":{\"description\":\"Nothing matches the given URI\"},\"error_type\":\"NOT_FOUND\"}\n",
+    "bytes": 0
+   },
+   {
+    "url": "https://api.smarkets.com/v3/events/?state=upcoming&type=sport&limit=20",
+    "status": 400,
+    "error": "HTTP Error 400: Bad Request",
+    "body": "{\"data\":\"data.type[0] must be one of ['american_football_match', 'american_football_outright', 'baseball_match', 'baseball_outright', 'basketball_esports_match', 'basketball_match', 'boxing_match', 'call_of_duty_match', 'cricket_match', 'cricket_outright', 'csgo_match', 'current_affairs', 'cycling', 'darts_match', 'darts_outright', 'dota_2_match', 'football_esports_match', 'football_match', 'footb",
+    "bytes": 0
+   }
+  ]
+ }
+}
