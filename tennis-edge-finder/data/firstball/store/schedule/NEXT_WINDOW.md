@@ -1,18 +1,19 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-13 20:19Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-13 20:29Z)
 
-* Earliest credible first ball: **2026-11-13 20:57Z**
-* Recommended RUN TENNIS time: **2026-11-13 20:12Z**  (OVERDUE: run now)
-* Final price/status check time: **2026-11-13 20:47Z**
+* Earliest credible first ball: **2026-11-13 21:08Z**
+* Recommended RUN TENNIS time: **2026-11-13 20:23Z**  (OVERDUE: run now)
+* Final price/status check time: **2026-11-13 20:58Z**
 * Matches in window: 1
 
 | match | expected start | status | source | confidence |
 |---|---|---|---|---|
-| Aryna Sabalenka vs Elina Svitolina | 2026-11-13 20:57Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3) | MEDIUM |
+| Aryna Sabalenka vs Elina Svitolina | 2026-11-13 21:08Z | VERIFIED_UPCOMING | COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3) | MEDIUM |
 
-Published slate: `SL-20261113T192346Z-3c0e45ce` built 2026-11-13 19:23Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-13T20:57:09.902899+00:00, slate built 2026-11-13T19:23:46.360312+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
+Published slate: `SL-20261113T192346Z-3c0e45ce` built 2026-11-13 19:23Z -- **STALE / NEEDS REFRESH**: PRIMARY_REFRESH_DUE: window at 2026-11-13T21:08:02.426609+00:00, slate built 2026-11-13T19:23:46.360312+00:00; STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)
 
-Dispatched this pass: slate_primary (ok)
+Dispatched this pass: slate_stale_refresh (ok)
 
 * later window 2: first ball 2026-11-14 12:00Z, run by 2026-11-14 11:15Z, 1 match(es)
-* later window 3: first ball 2026-11-15 16:00Z, run by 2026-11-15 15:15Z, 1 match(es)
-* later window 4: first ball 2026-11-15 22:30Z, run by 2026-11-15 21:45Z, 1 match(es)
+* later window 3: first ball 2026-11-14 23:00Z, run by 2026-11-14 22:15Z, 1 match(es)
+* later window 4: first ball 2026-11-15 16:00Z, run by 2026-11-15 15:15Z, 1 match(es)
+* later window 5: first ball 2026-11-15 22:30Z, run by 2026-11-15 21:45Z, 1 match(es)
