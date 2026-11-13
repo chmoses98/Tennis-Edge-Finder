@@ -1,16 +1,16 @@
 {
- "generated_at": "2026-11-13T22:52:10.889956+00:00",
+ "generated_at": "2026-11-13T23:03:46.721727+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 96,
+ "board_matches": 99,
  "counts_by_status": {
   "ESTIMATED_UPCOMING": 3,
   "VERIFIED_UPCOMING": 3,
   "STARTED": 1,
-  "START_UNKNOWN": 88,
+  "START_UNKNOWN": 91,
   "START_IMMINENT": 1
  },
- "evaluated_at": "2026-11-13T22:52:10.889956+00:00",
+ "evaluated_at": "2026-11-13T23:03:46.721727+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-14T11:15:00+00:00",
@@ -143,23 +143,35 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
   ],
   "changed_matches": [
    {
     "match": "KXWTAMATCH-26NOV13SABSVI",
     "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   },
+   {
+    "match": "KXWTADOUBLES-26NOV13DABSTEHSIOST",
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
    }
   ],
   "slate_id": "SL-20261113T205325Z-6b8fc3f4",
   "slate_built_at": "2026-11-13T20:53:25.063288+00:00",
-  "checked_at": "2026-11-13T22:52:10.889956+00:00"
+  "checked_at": "2026-11-13T23:03:46.721727+00:00"
  },
- "actions_this_pass": [],
+ "actions_this_pass": [
+  {
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-13T23:03:46.721727+00:00",
+   "reason": "published slate SL-20261113T205325Z-6b8fc3f4 is stale: 2 match(es) changed status/start since it was built",
+   "dispatched": true,
+   "http": 204
+  }
+ ],
  "statuses": {
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-13T22:52:10.889956+00:00",
+   "evaluated_at": "2026-11-13T23:03:46.721727+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -192,11 +204,11 @@
   },
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-13T22:52:10.889956+00:00",
+   "evaluated_at": "2026-11-13T23:03:46.721727+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T22:50:47.112342+00:00",
+   "start_time_last_checked": "2026-11-13T23:02:31.128247+00:00",
    "current_expected_start": "2026-11-14T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -235,7 +247,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-13T22:52:10.889956+00:00",
+   "evaluated_at": "2026-11-13T23:03:46.721727+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -268,11 +280,11 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-13T22:52:10.889956+00:00",
+   "evaluated_at": "2026-11-13T23:03:46.721727+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T22:50:47.112342+00:00",
+   "start_time_last_checked": "2026-11-13T23:02:31.128247+00:00",
    "current_expected_start": "2026-11-14T23:00:00+00:00",
    "start_time_source": "KALSHI_NOMINAL",
    "start_time_confidence": "LOW",
@@ -301,11 +313,11 @@
   },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T22:52:10.889956+00:00",
+   "evaluated_at": "2026-11-13T23:03:46.721727+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T22:50:47.112342+00:00",
+   "start_time_last_checked": "2026-11-13T23:02:31.128247+00:00",
    "current_expected_start": null,
    "start_time_source": null,
    "start_time_confidence": "NONE",
