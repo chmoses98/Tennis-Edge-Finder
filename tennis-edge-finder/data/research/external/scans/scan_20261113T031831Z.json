@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-13T03:18:31.286649+00:00",
+ "run_id": "20261113T031831Z",
+ "external_parse": {
+  "events": 117,
+  "markets": 1030,
+  "skipped_family": 201,
+  "skipped_period": 255,
+  "skipped_live": 15,
+  "one_sided": 14,
+  "rows": 1450,
+  "devigged": 560
+ },
+ "smarkets_fetch": {
+  "events_seen": 51,
+  "events_priced": 47,
+  "markets": 471,
+  "markets_mapped": 185,
+  "contracts": 396,
+  "quoted_contracts": 396,
+  "raw": "data/research/external/raw/20261113T031831Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 185,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 381,
+  "two_sided": 379,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 245,
+ "external_mapping": {
+  "total": 106,
+  "by_status": {
+   "MAPPED": 89,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8396,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 30,
+   "DOUBLES_UNSUPPORTED": 16,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6383,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 67,
+  "by_status": {
+   "MAPPED": 60,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8955,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Laura Samson": 1,
+   "Dragos Cazacu": 1,
+   "Sanhui Shin": 1,
+   "M Rifqi Fitriadi": 1,
+   "Arina Malygina": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 39,
+ "external_mapped_matches": 100,
+ "kalshi_mapped_matches": 60,
+ "model_witness_available": true,
+ "rows": 56,
+ "counts": {
+  "PASS": 56,
+  "tri:MODEL_LONE_OUTLIER": 25,
+  "tri:INSUFFICIENT_INPUTS": 26,
+  "tri:MARKETS_AGREE": 5
+ },
+ "skips": {
+  "external_has_no_match_winner": 10
+ }
+}
