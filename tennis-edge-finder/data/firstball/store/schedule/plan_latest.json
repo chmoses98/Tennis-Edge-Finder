@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T12:52:52.358308+00:00",
+ "generated_at": "2026-11-13T13:05:24.535749+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 149,
@@ -8,18 +8,18 @@
   "START_IMMINENT": 1,
   "START_UNKNOWN": 140
  },
- "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+ "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-13T13:00:00+00:00",
-  "recommended_run_tennis_time": "2026-11-13T12:15:00+00:00",
+  "earliest_credible_first_ball": "2026-11-13T13:05:00+00:00",
+  "recommended_run_tennis_time": "2026-11-13T12:20:00+00:00",
   "primary_refresh_window": [
-   "2026-11-13T12:15:00+00:00",
-   "2026-11-13T12:30:00+00:00"
+   "2026-11-13T12:20:00+00:00",
+   "2026-11-13T12:35:00+00:00"
   ],
-  "final_status_price_check_time": "2026-11-13T12:50:00+00:00",
+  "final_status_price_check_time": "2026-11-13T12:55:00+00:00",
   "final_refresh_window": [
-   "2026-11-13T12:50:00+00:00",
-   "2026-11-13T12:55:00+00:00"
+   "2026-11-13T12:55:00+00:00",
+   "2026-11-13T13:00:00+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -27,7 +27,7 @@
    {
     "match_id": "KXATPMATCH-26NOV13TABTIR",
     "label": "Alejandro Tabilo vs Thiago Agustin Tirante",
-    "current_expected_start": "2026-11-13T13:00:00+00:00",
+    "current_expected_start": "2026-11-13T13:05:00+00:00",
     "start_status": "START_IMMINENT",
     "start_time_source": "LIVE_SCHEDULE:espn_atp",
     "start_time_confidence": "HIGH"
@@ -36,16 +36,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-13T13:00:00+00:00",
-   "recommended_run_tennis_time": "2026-11-13T12:15:00+00:00",
+   "earliest_credible_first_ball": "2026-11-13T13:05:00+00:00",
+   "recommended_run_tennis_time": "2026-11-13T12:20:00+00:00",
    "primary_refresh_window": [
-    "2026-11-13T12:15:00+00:00",
-    "2026-11-13T12:30:00+00:00"
+    "2026-11-13T12:20:00+00:00",
+    "2026-11-13T12:35:00+00:00"
    ],
-   "final_status_price_check_time": "2026-11-13T12:50:00+00:00",
+   "final_status_price_check_time": "2026-11-13T12:55:00+00:00",
    "final_refresh_window": [
-    "2026-11-13T12:50:00+00:00",
-    "2026-11-13T12:55:00+00:00"
+    "2026-11-13T12:55:00+00:00",
+    "2026-11-13T13:00:00+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -53,7 +53,7 @@
     {
      "match_id": "KXATPMATCH-26NOV13TABTIR",
      "label": "Alejandro Tabilo vs Thiago Agustin Tirante",
-     "current_expected_start": "2026-11-13T13:00:00+00:00",
+     "current_expected_start": "2026-11-13T13:05:00+00:00",
      "start_status": "START_IMMINENT",
      "start_time_source": "LIVE_SCHEDULE:espn_atp",
      "start_time_confidence": "HIGH"
@@ -122,20 +122,25 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": false,
-  "reasons": [],
-  "changed_matches": [],
+  "stale": true,
+  "reasons": [
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
+  ],
+  "changed_matches": [
+   {
+    "match": "KXATPMATCH-26NOV13TABTIR",
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   }
+  ],
   "slate_id": "SL-20261113T122351Z-fe57fd96",
   "slate_built_at": "2026-11-13T12:23:51.686980+00:00",
-  "checked_at": "2026-11-13T12:52:52.358308+00:00"
+  "checked_at": "2026-11-13T13:05:24.535749+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_final",
-   "window": "20261113T1300Z",
-   "reason": "final status/price check for window at 2026-11-13T13:00:00+00:00",
-   "at": "2026-11-13T12:52:52.358308+00:00",
-   "earliest_credible_first_ball": "2026-11-13T13:00:00+00:00",
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-13T13:05:24.535749+00:00",
+   "reason": "published slate SL-20261113T122351Z-fe57fd96 is stale: 1 match(es) changed status/start since it was built",
    "dispatched": true,
    "http": 204
   }
@@ -143,11 +148,11 @@
  "statuses": {
   "KXATPMATCH-26NOV13FRIMUS": {
    "match_id": "ATP:26NOV13FRIMUS:singles",
-   "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+   "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
    "nominal_scheduled_start": "2026-11-13T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T12:50:48.816987+00:00",
+   "start_time_last_checked": "2026-11-13T13:03:22.033702+00:00",
    "current_expected_start": "2026-11-13T16:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -184,7 +189,7 @@
      "period": 1,
      "best_of": 5,
      "games_played": 0,
-     "scheduled_utc": "2026-11-13T13:00:00+00:00",
+     "scheduled_utc": "2026-11-13T13:05:00+00:00",
      "time_valid": true
     }
    },
@@ -198,17 +203,17 @@
   },
   "KXATPMATCH-26NOV13TABTIR": {
    "match_id": "ATP:26NOV13TABTIR:singles",
-   "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+   "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
    "nominal_scheduled_start": "2026-11-13T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T12:50:48.816987+00:00",
-   "current_expected_start": "2026-11-13T13:00:00+00:00",
+   "start_time_last_checked": "2026-11-13T13:03:22.033702+00:00",
+   "current_expected_start": "2026-11-13T13:05:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-11-13T13:00:00+00:00",
+     "time": "2026-11-13T13:05:00+00:00",
      "source": "LIVE_SCHEDULE:espn_atp",
      "confidence": "HIGH"
     },
@@ -218,9 +223,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-13T12:15:00+00:00",
-   "recommended_handicap_by": "2026-11-13T12:15:00+00:00",
-   "final_check_time": "2026-11-13T12:50:00+00:00",
+   "earliest_safe_handicap_time": "2026-11-13T12:20:00+00:00",
+   "recommended_handicap_by": "2026-11-13T12:20:00+00:00",
+   "final_check_time": "2026-11-13T12:55:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -233,7 +238,8 @@
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-175_MIN",
+    "OVERDUE_BUT_SEEN_NOT_STARTED_122S_AGO"
    ],
    "bet_allowed": true,
    "label": "Alejandro Tabilo vs Thiago Agustin Tirante",
@@ -241,11 +247,11 @@
   },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+   "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T12:50:48.816987+00:00",
+   "start_time_last_checked": "2026-11-13T13:03:22.033702+00:00",
    "current_expected_start": "2026-11-13T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -296,11 +302,11 @@
   },
   "KXWTAMATCH-26NOV13ANDMUC": {
    "match_id": "WTA:26NOV13ANDMUC:singles",
-   "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+   "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
    "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T12:50:48.816987+00:00",
+   "start_time_last_checked": "2026-11-13T13:03:22.033702+00:00",
    "current_expected_start": "2026-11-13T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -339,11 +345,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV13HERAND": {
    "match_id": "WTA:26NOV13HERAND:singles",
-   "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+   "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
    "nominal_scheduled_start": "2026-11-13T19:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T12:50:48.816987+00:00",
+   "start_time_last_checked": "2026-11-13T13:03:22.033702+00:00",
    "current_expected_start": "2026-11-13T16:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -389,11 +395,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV13SAMMAN": {
    "match_id": "WTA:26NOV13SAMMAN:singles",
-   "evaluated_at": "2026-11-13T12:52:52.358308+00:00",
+   "evaluated_at": "2026-11-13T13:05:24.535749+00:00",
    "nominal_scheduled_start": "2026-11-13T18:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T12:50:48.816987+00:00",
+   "start_time_last_checked": "2026-11-13T13:03:22.033702+00:00",
    "current_expected_start": "2026-11-13T15:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
