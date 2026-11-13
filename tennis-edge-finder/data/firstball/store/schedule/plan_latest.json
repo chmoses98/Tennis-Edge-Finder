@@ -1,66 +1,41 @@
 {
- "generated_at": "2026-11-13T20:29:31.937306+00:00",
+ "generated_at": "2026-11-13T21:53:53.309959+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 116,
+ "board_matches": 100,
  "counts_by_status": {
-  "VERIFIED_UPCOMING": 5,
   "ESTIMATED_UPCOMING": 3,
-  "START_UNKNOWN": 107,
-  "STARTED": 1
+  "VERIFIED_UPCOMING": 4,
+  "STARTED": 1,
+  "START_UNKNOWN": 92
  },
- "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
+ "evaluated_at": "2026-11-13T21:53:53.309959+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-13T21:08:02.426609+00:00",
-  "recommended_run_tennis_time": "2026-11-13T20:23:02.426609+00:00",
+  "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
+  "recommended_run_tennis_time": "2026-11-14T11:15:00+00:00",
   "primary_refresh_window": [
-   "2026-11-13T20:23:02.426609+00:00",
-   "2026-11-13T20:38:02.426609+00:00"
+   "2026-11-14T11:15:00+00:00",
+   "2026-11-14T11:30:00+00:00"
   ],
-  "final_status_price_check_time": "2026-11-13T20:58:02.426609+00:00",
+  "final_status_price_check_time": "2026-11-14T11:50:00+00:00",
   "final_refresh_window": [
-   "2026-11-13T20:58:02.426609+00:00",
-   "2026-11-13T21:03:02.426609+00:00"
+   "2026-11-14T11:50:00+00:00",
+   "2026-11-14T11:55:00+00:00"
   ],
-  "primary_overdue": true,
+  "primary_overdue": false,
   "n_matches": 1,
   "matches": [
    {
-    "match_id": "KXWTAMATCH-26NOV13SABSVI",
-    "label": "Aryna Sabalenka vs Elina Svitolina",
-    "current_expected_start": "2026-11-13T21:08:02.426609+00:00",
+    "match_id": "KXATPMATCH-26NOV14FRITIR",
+    "label": "Taylor Fritz vs Thiago Agustin Tirante",
+    "current_expected_start": "2026-11-14T12:00:00+00:00",
     "start_status": "VERIFIED_UPCOMING",
-    "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
-    "start_time_confidence": "MEDIUM"
+    "start_time_source": "LIVE_SCHEDULE:espn_atp",
+    "start_time_confidence": "HIGH"
    }
   ]
  },
  "windows": [
-  {
-   "earliest_credible_first_ball": "2026-11-13T21:08:02.426609+00:00",
-   "recommended_run_tennis_time": "2026-11-13T20:23:02.426609+00:00",
-   "primary_refresh_window": [
-    "2026-11-13T20:23:02.426609+00:00",
-    "2026-11-13T20:38:02.426609+00:00"
-   ],
-   "final_status_price_check_time": "2026-11-13T20:58:02.426609+00:00",
-   "final_refresh_window": [
-    "2026-11-13T20:58:02.426609+00:00",
-    "2026-11-13T21:03:02.426609+00:00"
-   ],
-   "primary_overdue": true,
-   "n_matches": 1,
-   "matches": [
-    {
-     "match_id": "KXWTAMATCH-26NOV13SABSVI",
-     "label": "Aryna Sabalenka vs Elina Svitolina",
-     "current_expected_start": "2026-11-13T21:08:02.426609+00:00",
-     "start_status": "VERIFIED_UPCOMING",
-     "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
-     "start_time_confidence": "MEDIUM"
-    }
-   ]
-  },
   {
    "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
    "recommended_run_tennis_time": "2026-11-14T11:15:00+00:00",
@@ -167,36 +142,68 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-13T21:08:02.426609+00:00, slate built 2026-11-13T19:23:46.360312+00:00",
    "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
   ],
   "changed_matches": [
    {
     "match": "KXWTAMATCH-26NOV13SABSVI",
-    "change": "EXPECTED_START_MOVED_EARLIER_21_MIN"
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
    }
   ],
-  "slate_id": "SL-20261113T192346Z-3c0e45ce",
-  "slate_built_at": "2026-11-13T19:23:46.360312+00:00",
-  "checked_at": "2026-11-13T20:29:31.937306+00:00"
+  "slate_id": "SL-20261113T205325Z-6b8fc3f4",
+  "slate_built_at": "2026-11-13T20:53:25.063288+00:00",
+  "checked_at": "2026-11-13T21:53:53.309959+00:00"
  },
  "actions_this_pass": [
   {
    "kind": "slate_stale_refresh",
-   "at": "2026-11-13T20:29:31.937306+00:00",
-   "reason": "published slate SL-20261113T192346Z-3c0e45ce is stale: 1 match(es) changed status/start since it was built",
+   "at": "2026-11-13T21:53:53.309959+00:00",
+   "reason": "published slate SL-20261113T205325Z-6b8fc3f4 is stale: 1 match(es) changed status/start since it was built",
    "dispatched": true,
    "http": 204
   }
  ],
  "statuses": {
+  "KXATPMATCH-26NOV15SHEFIL": {
+   "match_id": "ATP:26NOV15SHEFIL:singles",
+   "evaluated_at": "2026-11-13T21:53:53.309959+00:00",
+   "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": null,
+   "current_expected_start": "2026-11-15T22:30:00+00:00",
+   "start_time_source": "KALSHI_NOMINAL",
+   "start_time_confidence": "LOW",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-15T22:30:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-15T21:45:00+00:00",
+   "recommended_handicap_by": "2026-11-15T21:45:00+00:00",
+   "final_check_time": "2026-11-15T22:20:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": null,
+   "court_context": null,
+   "start_status": "ESTIMATED_UPCOMING",
+   "status_reasons": [
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
+   ],
+   "bet_allowed": false,
+   "label": "Ben Shelton vs Arthur Fils",
+   "level_bucket": "ATP"
+  },
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
+   "evaluated_at": "2026-11-13T21:53:53.309959+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T20:28:02.426609+00:00",
+   "start_time_last_checked": "2026-11-13T21:52:36.698302+00:00",
    "current_expected_start": "2026-11-14T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -235,7 +242,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
+   "evaluated_at": "2026-11-13T21:53:53.309959+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -266,133 +273,13 @@
    "label": "Alexander Zverev vs Rafael Jodar",
    "level_bucket": "ATP"
   },
-  "KXWTAMATCH-26NOV13SABSVI": {
-   "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
-   "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T20:28:02.426609+00:00",
-   "current_expected_start": "2026-11-13T21:08:02.426609+00:00",
-   "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
-   "start_time_confidence": "MEDIUM",
-   "start_time_candidates": [
-    {
-     "time": "2026-11-13T21:30:00+00:00",
-     "source": "LIVE_SCHEDULE:espn_wta",
-     "confidence": "HIGH"
-    },
-    {
-     "time": "2026-11-13T21:08:02.426609+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
-     "confidence": "MEDIUM"
-    },
-    {
-     "time": "2026-11-14T00:10:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-11-13T20:23:02.426609+00:00",
-   "recommended_handicap_by": "2026-11-13T20:23:02.426609+00:00",
-   "final_check_time": "2026-11-13T20:58:02.426609+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": "Indian Wells Tennis Garden",
-   "court_context": {
-    "court": "Indian Wells Tennis Garden",
-    "same_time_on_court": 0,
-    "queue_ahead_pre": 0,
-    "preceding": {
-     "source_match_id": "187384",
-     "players": [
-      "Diana Shnaider",
-      "Mirra Andreeva"
-     ],
-     "state": "IN",
-     "period": 1,
-     "best_of": 3,
-     "games_played": 3,
-     "scheduled_utc": "2026-11-13T20:10:00+00:00",
-     "time_valid": true
-    }
-   },
-   "start_status": "VERIFIED_UPCOMING",
-   "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-182_MIN"
-   ],
-   "bet_allowed": true,
-   "label": "Aryna Sabalenka vs Elina Svitolina",
-   "level_bucket": "WTA"
-  },
-  "KXWTAMATCH-26NOV13ANDSHN": {
-   "match_id": "WTA:26NOV13ANDSHN:singles",
-   "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
-   "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T20:17:09.902899+00:00",
-   "current_expected_start": null,
-   "start_time_source": null,
-   "start_time_confidence": "NONE",
-   "start_time_candidates": [],
-   "earliest_safe_handicap_time": null,
-   "recommended_handicap_by": null,
-   "final_check_time": null,
-   "first_ball_status": "OBSERVED_STARTED",
-   "first_ball_source": "espn_wta (confidence B)",
-   "first_ball_at": "2026-11-13T20:14:40.735298+00:00",
-   "court": null,
-   "court_context": null,
-   "start_status": "STARTED",
-   "status_reasons": [
-    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
-   ],
-   "bet_allowed": false,
-   "label": "Mirra Andreeva vs Diana Shnaider",
-   "level_bucket": "WTA"
-  },
-  "KXATPMATCH-26NOV15SHEFIL": {
-   "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
-   "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
-   "nominal_is_placeholder": false,
-   "live_source_covered": true,
-   "start_time_last_checked": null,
-   "current_expected_start": "2026-11-15T22:30:00+00:00",
-   "start_time_source": "KALSHI_NOMINAL",
-   "start_time_confidence": "LOW",
-   "start_time_candidates": [
-    {
-     "time": "2026-11-15T22:30:00+00:00",
-     "source": "KALSHI_NOMINAL",
-     "confidence": "LOW"
-    }
-   ],
-   "earliest_safe_handicap_time": "2026-11-15T21:45:00+00:00",
-   "recommended_handicap_by": "2026-11-15T21:45:00+00:00",
-   "final_check_time": "2026-11-15T22:20:00+00:00",
-   "first_ball_status": "NOT_OBSERVED_STARTED",
-   "first_ball_source": null,
-   "first_ball_at": null,
-   "court": null,
-   "court_context": null,
-   "start_status": "ESTIMATED_UPCOMING",
-   "status_reasons": [
-    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
-   ],
-   "bet_allowed": false,
-   "label": "Ben Shelton vs Arthur Fils",
-   "level_bucket": "ATP"
-  },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-13T20:29:31.937306+00:00",
+   "evaluated_at": "2026-11-13T21:53:53.309959+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T20:28:02.426609+00:00",
+   "start_time_last_checked": "2026-11-13T21:52:36.698302+00:00",
    "current_expected_start": "2026-11-14T23:00:00+00:00",
    "start_time_source": "KALSHI_NOMINAL",
    "start_time_confidence": "LOW",
@@ -417,6 +304,33 @@
    ],
    "bet_allowed": true,
    "label": "Jessica Pegula vs Mirra Andreeva",
+   "level_bucket": "WTA"
+  },
+  "KXWTAMATCH-26NOV13SABSVI": {
+   "match_id": "WTA:26NOV13SABSVI:singles",
+   "evaluated_at": "2026-11-13T21:53:53.309959+00:00",
+   "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-13T21:52:36.698302+00:00",
+   "current_expected_start": null,
+   "start_time_source": null,
+   "start_time_confidence": "NONE",
+   "start_time_candidates": [],
+   "earliest_safe_handicap_time": null,
+   "recommended_handicap_by": null,
+   "final_check_time": null,
+   "first_ball_status": "OBSERVED_STARTED",
+   "first_ball_source": "espn_wta (confidence C)",
+   "first_ball_at": "2026-11-13T21:04:28.781015+00:00",
+   "court": null,
+   "court_context": null,
+   "start_status": "STARTED",
+   "status_reasons": [
+    "PLAY_OBSERVED_BY_FIRST_BALL_TRUTH"
+   ],
+   "bet_allowed": false,
+   "label": "Aryna Sabalenka vs Elina Svitolina",
    "level_bucket": "WTA"
   }
  }
