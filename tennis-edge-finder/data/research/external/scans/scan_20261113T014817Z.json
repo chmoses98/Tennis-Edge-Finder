@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-13T01:48:17.640377+00:00",
+ "run_id": "20261113T014817Z",
+ "external_parse": {
+  "events": 124,
+  "markets": 1101,
+  "skipped_family": 192,
+  "skipped_period": 279,
+  "skipped_live": 15,
+  "one_sided": 11,
+  "rows": 1594,
+  "devigged": 619
+ },
+ "smarkets_fetch": {
+  "events_seen": 54,
+  "events_priced": 50,
+  "markets": 506,
+  "markets_mapped": 202,
+  "contracts": 432,
+  "quoted_contracts": 432,
+  "raw": "data/research/external/raw/20261113T014817Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 202,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 420,
+  "two_sided": 416,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 175,
+ "external_mapping": {
+  "total": 114,
+  "by_status": {
+   "MAPPED": 93,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 6,
+   "AMBIGUOUS_PLAYER": 1
+  },
+  "mapped_rate": 0.8158,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Faustine Liope": 1,
+   "Vicente Freda": 1,
+   "Hugo Didier": 1,
+   "Muhammad Rifqi Fitriadi": 1,
+   "Kim Dong Ju": 1,
+   "Sanhui Shin": 1,
+   "Astrid Brune Olsen": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 50,
+  "by_status": {
+   "UNMAPPED_PLAYER": 2,
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 16
+  },
+  "mapped_rate": 0.64,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 16,
+   "Jay Friend": 1,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 39,
+  "by_status": {
+   "MAPPED": 35,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8974,
+  "top_refusal_subjects": {
+   "Jay Friend": 1,
+   "Dragos Cazacu": 1,
+   "M Rifqi Fitriadi": 1,
+   "Yeonwoo Ku": 1
+  }
+ },
+ "matched_both_venues": 27,
+ "external_mapped_matches": 105,
+ "kalshi_mapped_matches": 35,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:INSUFFICIENT_INPUTS": 16,
+  "tri:MODEL_LONE_OUTLIER": 18,
+  "tri:MARKETS_AGREE": 6
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
