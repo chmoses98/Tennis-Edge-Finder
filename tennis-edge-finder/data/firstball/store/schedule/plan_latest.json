@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-13T02:59:20.954271+00:00",
+ "generated_at": "2026-11-13T03:09:22.532613+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 197,
@@ -9,7 +9,7 @@
   "START_IMMINENT": 1,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-13T02:59:20.954271+00:00",
+ "evaluated_at": "2026-11-13T03:09:22.532613+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-13T13:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-13T12:15:00+00:00",
@@ -123,45 +123,22 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 3 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXWTADOUBLES-26NOV12SINTOWBUCMEL",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXWTADOUBLES-26NOV12PERSCHERRPAO",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   },
-   {
-    "match": "KXATPMATCH-26NOV13FRIMUS",
-    "change": "EXPECTED_START_MOVED_EARLIER_180_MIN"
-   }
-  ],
-  "slate_id": "SL-20261112T222130Z-b0de5187",
-  "slate_built_at": "2026-11-12T22:21:30.805732+00:00",
-  "checked_at": "2026-11-13T02:59:20.954271+00:00"
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
+  "slate_id": "SL-20261113T025735Z-a9fc72b0",
+  "slate_built_at": "2026-11-13T02:57:35.222065+00:00",
+  "checked_at": "2026-11-13T03:09:22.532613+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-13T02:59:20.954271+00:00",
-   "reason": "published slate SL-20261112T222130Z-b0de5187 is stale: 3 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV13FRIMUS": {
    "match_id": "ATP:26NOV13FRIMUS:singles",
-   "evaluated_at": "2026-11-13T02:59:20.954271+00:00",
+   "evaluated_at": "2026-11-13T03:09:22.532613+00:00",
    "nominal_scheduled_start": "2026-11-13T19:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T02:57:52.375270+00:00",
+   "start_time_last_checked": "2026-11-13T03:07:54.596247+00:00",
    "current_expected_start": "2026-11-13T16:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -212,11 +189,11 @@
   },
   "KXATPMATCH-26NOV13TABTIR": {
    "match_id": "ATP:26NOV13TABTIR:singles",
-   "evaluated_at": "2026-11-13T02:59:20.954271+00:00",
+   "evaluated_at": "2026-11-13T03:09:22.532613+00:00",
    "nominal_scheduled_start": "2026-11-13T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T02:57:52.375270+00:00",
+   "start_time_last_checked": "2026-11-13T03:07:54.596247+00:00",
    "current_expected_start": "2026-11-13T13:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -267,11 +244,11 @@
   },
   "KXWTAMATCH-26NOV13SABSVI": {
    "match_id": "WTA:26NOV13SABSVI:singles",
-   "evaluated_at": "2026-11-13T02:59:20.954271+00:00",
+   "evaluated_at": "2026-11-13T03:09:22.532613+00:00",
    "nominal_scheduled_start": "2026-11-14T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T02:57:52.375270+00:00",
+   "start_time_last_checked": "2026-11-13T03:07:54.596247+00:00",
    "current_expected_start": "2026-11-13T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -322,11 +299,11 @@
   },
   "KXWTAMATCH-26NOV13ANDMUC": {
    "match_id": "WTA:26NOV13ANDMUC:singles",
-   "evaluated_at": "2026-11-13T02:59:20.954271+00:00",
+   "evaluated_at": "2026-11-13T03:09:22.532613+00:00",
    "nominal_scheduled_start": "2026-11-13T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-13T02:57:52.375270+00:00",
+   "start_time_last_checked": "2026-11-13T03:07:54.596247+00:00",
    "current_expected_start": "2026-11-13T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
