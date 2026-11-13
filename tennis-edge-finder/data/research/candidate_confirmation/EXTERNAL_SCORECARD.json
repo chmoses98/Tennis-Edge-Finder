@@ -1,38 +1,38 @@
 {
  "since": "2026-09-12T21:09:38.644348+00:00",
- "scan_passes": 7577,
- "dislocation_rows": 415981,
- "matched_matches": 7044,
- "matched_contracts": 14088,
- "rows_with_reference": 220672,
- "three_venue_observations": 151089,
- "three_venue_contracts": 5207,
+ "scan_passes": 7585,
+ "dislocation_rows": 416113,
+ "matched_matches": 7049,
+ "matched_contracts": 14098,
+ "rows_with_reference": 220748,
+ "three_venue_observations": 151161,
+ "three_venue_contracts": 5213,
  "rows_by_source_set": {
-  "bovada": 203155,
-  "smarkets": 60041,
-  "bovada+smarkets": 151089,
+  "bovada": 203203,
+  "smarkets": 60053,
+  "bovada+smarkets": 151161,
   "none": 1696
  },
  "triangulation_rows": {
-  "INSUFFICIENT_INPUTS": 195309,
-  "MODEL_LONE_OUTLIER": 168003,
-  "MARKETS_AGREE": 29229,
-  "KALSHI_LONE_OUTLIER": 16290,
+  "INSUFFICIENT_INPUTS": 195365,
+  "MODEL_LONE_OUTLIER": 168047,
+  "MARKETS_AGREE": 29250,
+  "KALSHI_LONE_OUTLIER": 16301,
   "ALL_THREE_DISAGREE": 5608,
   "EXTERNAL_LONE_OUTLIER": 1542
  },
  "triangulation_contracts": {
-  "INSUFFICIENT_INPUTS": 12525,
-  "MODEL_LONE_OUTLIER": 10015,
-  "MARKETS_AGREE": 1841,
-  "KALSHI_LONE_OUTLIER": 4559,
+  "INSUFFICIENT_INPUTS": 12531,
+  "MODEL_LONE_OUTLIER": 10026,
+  "MARKETS_AGREE": 1842,
+  "KALSHI_LONE_OUTLIER": 4565,
   "ALL_THREE_DISAGREE": 1777,
   "EXTERNAL_LONE_OUTLIER": 527
  },
  "scanner_decisions": {
-  "PASS": 407537,
-  "WATCH": 7121,
-  "SHADOW_BET": 1323
+  "PASS": 407664,
+  "WATCH": 7125,
+  "SHADOW_BET": 1324
  },
  "w4_first_qualifying_observations": 257,
  "w4_first_qualifying_by_timing": {
