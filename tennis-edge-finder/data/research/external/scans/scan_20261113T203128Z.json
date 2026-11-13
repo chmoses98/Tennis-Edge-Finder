@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-13T20:31:28.360530+00:00",
+ "run_id": "20261113T203128Z",
+ "external_parse": {
+  "events": 65,
+  "markets": 507,
+  "skipped_family": 172,
+  "skipped_period": 111,
+  "skipped_live": 23,
+  "one_sided": 4,
+  "rows": 686,
+  "devigged": 220
+ },
+ "smarkets_fetch": {
+  "events_seen": 33,
+  "events_priced": 33,
+  "markets": 336,
+  "markets_mapped": 137,
+  "contracts": 304,
+  "quoted_contracts": 304,
+  "raw": "data/research/external/raw/20261113T203128Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 137,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 18,
+  "rows": 286,
+  "two_sided": 286,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 185,
+ "external_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 10,
+   "UNMAPPED_PLAYER": 9
+  },
+  "mapped_rate": 0.6545,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 10,
+   "Ben Stecker": 1,
+   "Andrew Li": 1,
+   "Marek Pazdera": 1,
+   "Noa Tcherniack": 1,
+   "Hugo Didier": 1,
+   "Ilan Hediger": 1,
+   "Emma Maria Ansorge": 1,
+   "Sanhui Shin": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 33,
+  "by_status": {
+   "UNMAPPED_PLAYER": 1,
+   "MAPPED": 21,
+   "DOUBLES_UNSUPPORTED": 11
+  },
+  "mapped_rate": 0.6364,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 38,
+  "by_status": {
+   "MAPPED": 34,
+   "UNMAPPED_PLAYER": 4
+  },
+  "mapped_rate": 0.8947,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Sanhui Shin": 1,
+   "Valeriia Iushchenko": 1,
+   "Arina Malygina": 1
+  }
+ },
+ "matched_both_venues": 24,
+ "external_mapped_matches": 44,
+ "kalshi_mapped_matches": 34,
+ "model_witness_available": true,
+ "rows": 24,
+ "counts": {
+  "PASS": 24,
+  "tri:MODEL_LONE_OUTLIER": 8,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MARKETS_AGREE": 4
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
