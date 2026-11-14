@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-14T17:23:21.384698+00:00",
+ "run_id": "20261114T172321Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 60,
+  "events_priced": 60,
+  "markets": 371,
+  "markets_mapped": 139,
+  "contracts": 298,
+  "quoted_contracts": 298,
+  "raw": "data/research/external/raw/20261114T172321Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 139,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 283,
+  "two_sided": 283,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 223,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 60,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Kanta Watanabe": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 76,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 17
+  },
+  "mapped_rate": 0.7763,
+  "top_refusal_subjects": {
+   "Kanta Watanabe": 1,
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Mikal Statham": 1,
+   "Perawat Sukjai": 1,
+   "Puchit Sukjai": 1,
+   "Zitawe Kulphisanrat": 1,
+   "Pitchayapong Soponpisut": 1,
+   "Veerawit Kamput": 1,
+   "Dragos Cazacu": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 45,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 44,
+  "tri:MODEL_LONE_OUTLIER": 13,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
