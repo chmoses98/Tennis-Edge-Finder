@@ -1,0 +1,89 @@
+{
+ "generated_at": "2026-11-14T12:37:44.569873+00:00",
+ "run_id": "20261114T123744Z",
+ "external_parse": {
+  "events": 70,
+  "markets": 669,
+  "skipped_family": 201,
+  "skipped_period": 154,
+  "skipped_live": 10,
+  "one_sided": 0,
+  "rows": 920,
+  "devigged": 314
+ },
+ "smarkets_fetch": {
+  "events_seen": 38,
+  "events_priced": 38,
+  "markets": 366,
+  "markets_mapped": 128,
+  "contracts": 284,
+  "quoted_contracts": 284,
+  "raw": "data/research/external/raw/20261114T123744Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 128,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 12,
+  "rows": 272,
+  "two_sided": 272,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 170,
+ "external_mapping": {
+  "total": 59,
+  "by_status": {
+   "MAPPED": 43,
+   "DOUBLES_UNSUPPORTED": 14,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7288,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Valeriia Iushchenko": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 38,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 13,
+   "MAPPED": 24,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6316,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 45,
+  "by_status": {
+   "MAPPED": 40,
+   "UNMAPPED_PLAYER": 5
+  },
+  "mapped_rate": 0.8889,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Amy Stevens": 1,
+   "Aran Teixido Garcia": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 52,
+ "kalshi_mapped_matches": 40,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:INSUFFICIENT_INPUTS": 12,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
