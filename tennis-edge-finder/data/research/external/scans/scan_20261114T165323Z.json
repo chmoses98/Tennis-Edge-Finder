@@ -1,0 +1,86 @@
+{
+ "generated_at": "2026-11-14T16:53:23.639393+00:00",
+ "run_id": "20261114T165323Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 55,
+  "events_priced": 55,
+  "markets": 409,
+  "markets_mapped": 150,
+  "contracts": 326,
+  "quoted_contracts": 326,
+  "raw": "data/research/external/raw/20261114T165323Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 150,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 311,
+  "two_sided": 311,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 234,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 55,
+  "by_status": {
+   "UNMAPPED_PLAYER": 3,
+   "MAPPED": 40,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.7273,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Abdullah Shelbayh": 1,
+   "Kanta Watanabe": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 65,
+  "by_status": {
+   "MAPPED": 53,
+   "UNMAPPED_PLAYER": 12
+  },
+  "mapped_rate": 0.8154,
+  "top_refusal_subjects": {
+   "Kanta Watanabe": 1,
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Mikal Statham": 1,
+   "Perawat Sukjai": 1,
+   "Pitchayapong Soponpisut": 1,
+   "Woramet Bunphueng": 1,
+   "Dragos Cazacu": 1,
+   "Valeriia Iushchenko": 1,
+   "Vaidehee Chaudhari": 1
+  }
+ },
+ "matched_both_venues": 19,
+ "external_mapped_matches": 40,
+ "kalshi_mapped_matches": 53,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 30,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:INSUFFICIENT_INPUTS": 19,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {}
+}
