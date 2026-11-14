@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-14T04:57:53.244564+00:00",
+ "run_id": "20261114T045753Z",
+ "external_parse": {
+  "events": 79,
+  "markets": 786,
+  "skipped_family": 218,
+  "skipped_period": 186,
+  "skipped_live": 7,
+  "one_sided": 3,
+  "rows": 1059,
+  "devigged": 378
+ },
+ "smarkets_fetch": {
+  "events_seen": 30,
+  "events_priced": 30,
+  "markets": 253,
+  "markets_mapped": 116,
+  "contracts": 250,
+  "quoted_contracts": 250,
+  "raw": "data/research/external/raw/20261114T045753Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 116,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 10,
+  "rows": 240,
+  "two_sided": 240,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 746,
+ "external_mapping": {
+  "total": 68,
+  "by_status": {
+   "MAPPED": 55,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8088,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Sanhui Shin": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 30,
+  "by_status": {
+   "MAPPED": 18,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 66,
+  "by_status": {
+   "MAPPED": 59,
+   "UNMAPPED_PLAYER": 7
+  },
+  "mapped_rate": 0.8939,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Dragos Cazacu": 1,
+   "Nikita Belozertsev": 1,
+   "Sanhui Shin": 1,
+   "Ava Esposito Cogan": 1,
+   "Aran Teixido Garcia": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 45,
+ "external_mapped_matches": 57,
+ "kalshi_mapped_matches": 59,
+ "model_witness_available": true,
+ "rows": 78,
+ "counts": {
+  "PASS": 78,
+  "tri:MODEL_LONE_OUTLIER": 22,
+  "tri:INSUFFICIENT_INPUTS": 52,
+  "tri:KALSHI_LONE_OUTLIER": 2,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
