@@ -1,0 +1,92 @@
+{
+ "generated_at": "2026-11-14T14:07:56.143807+00:00",
+ "run_id": "20261114T140756Z",
+ "external_parse": {
+  "events": 66,
+  "markets": 620,
+  "skipped_family": 194,
+  "skipped_period": 139,
+  "skipped_live": 12,
+  "one_sided": 0,
+  "rows": 848,
+  "devigged": 287
+ },
+ "smarkets_fetch": {
+  "events_seen": 47,
+  "events_priced": 47,
+  "markets": 375,
+  "markets_mapped": 144,
+  "contracts": 316,
+  "quoted_contracts": 316,
+  "raw": "data/research/external/raw/20261114T140756Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 144,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 301,
+  "two_sided": 301,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 363,
+ "external_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 41,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7455,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 47,
+  "by_status": {
+   "MAPPED": 32,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6809,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8491,
+  "top_refusal_subjects": {
+   "Bianca Andreescu": 1,
+   "Dharma Pantaratorn": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Veerawit Kamput": 1,
+   "Woramet Bunphueng": 1,
+   "Dragos Cazacu": 1,
+   "Amy Stevens": 1
+  }
+ },
+ "matched_both_venues": 26,
+ "external_mapped_matches": 59,
+ "kalshi_mapped_matches": 45,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 18,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
