@@ -1,26 +1,26 @@
 {
- "generated_at": "2026-11-14T11:48:50.387071+00:00",
+ "generated_at": "2026-11-14T11:59:18.898064+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 108,
+ "board_matches": 109,
  "counts_by_status": {
   "ESTIMATED_UPCOMING": 2,
   "START_IMMINENT": 1,
   "VERIFIED_UPCOMING": 6,
-  "START_UNKNOWN": 99
+  "START_UNKNOWN": 100
  },
- "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+ "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
-  "recommended_run_tennis_time": "2026-11-14T11:15:00+00:00",
+  "earliest_credible_first_ball": "2026-11-14T12:05:00+00:00",
+  "recommended_run_tennis_time": "2026-11-14T11:20:00+00:00",
   "primary_refresh_window": [
-   "2026-11-14T11:15:00+00:00",
-   "2026-11-14T11:30:00+00:00"
+   "2026-11-14T11:20:00+00:00",
+   "2026-11-14T11:35:00+00:00"
   ],
-  "final_status_price_check_time": "2026-11-14T11:50:00+00:00",
+  "final_status_price_check_time": "2026-11-14T11:55:00+00:00",
   "final_refresh_window": [
-   "2026-11-14T11:50:00+00:00",
-   "2026-11-14T11:55:00+00:00"
+   "2026-11-14T11:55:00+00:00",
+   "2026-11-14T12:00:00+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -28,7 +28,7 @@
    {
     "match_id": "KXATPMATCH-26NOV14FRITIR",
     "label": "Taylor Fritz vs Thiago Agustin Tirante",
-    "current_expected_start": "2026-11-14T12:00:00+00:00",
+    "current_expected_start": "2026-11-14T12:05:00+00:00",
     "start_status": "START_IMMINENT",
     "start_time_source": "LIVE_SCHEDULE:espn_atp",
     "start_time_confidence": "HIGH"
@@ -37,16 +37,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
-   "recommended_run_tennis_time": "2026-11-14T11:15:00+00:00",
+   "earliest_credible_first_ball": "2026-11-14T12:05:00+00:00",
+   "recommended_run_tennis_time": "2026-11-14T11:20:00+00:00",
    "primary_refresh_window": [
-    "2026-11-14T11:15:00+00:00",
-    "2026-11-14T11:30:00+00:00"
+    "2026-11-14T11:20:00+00:00",
+    "2026-11-14T11:35:00+00:00"
    ],
-   "final_status_price_check_time": "2026-11-14T11:50:00+00:00",
+   "final_status_price_check_time": "2026-11-14T11:55:00+00:00",
    "final_refresh_window": [
-    "2026-11-14T11:50:00+00:00",
-    "2026-11-14T11:55:00+00:00"
+    "2026-11-14T11:55:00+00:00",
+    "2026-11-14T12:00:00+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -54,7 +54,7 @@
     {
      "match_id": "KXATPMATCH-26NOV14FRITIR",
      "label": "Taylor Fritz vs Thiago Agustin Tirante",
-     "current_expected_start": "2026-11-14T12:00:00+00:00",
+     "current_expected_start": "2026-11-14T12:05:00+00:00",
      "start_status": "START_IMMINENT",
      "start_time_source": "LIVE_SCHEDULE:espn_atp",
      "start_time_confidence": "HIGH"
@@ -153,23 +153,13 @@
   "changed_matches": [],
   "slate_id": "SL-20261114T112132Z-299de7ad",
   "slate_built_at": "2026-11-14T11:21:32.574654+00:00",
-  "checked_at": "2026-11-14T11:48:50.387071+00:00"
+  "checked_at": "2026-11-14T11:59:18.898064+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_final",
-   "window": "20261114T1200Z",
-   "reason": "final status/price check for window at 2026-11-14T12:00:00+00:00",
-   "at": "2026-11-14T11:48:50.387071+00:00",
-   "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+   "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -202,17 +192,17 @@
   },
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+   "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T11:47:20.301495+00:00",
-   "current_expected_start": "2026-11-14T12:00:00+00:00",
+   "start_time_last_checked": "2026-11-14T11:57:47.646194+00:00",
+   "current_expected_start": "2026-11-14T12:05:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
-     "time": "2026-11-14T12:00:00+00:00",
+     "time": "2026-11-14T12:05:00+00:00",
      "source": "LIVE_SCHEDULE:espn_atp",
      "confidence": "HIGH"
     },
@@ -222,9 +212,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-14T11:15:00+00:00",
-   "recommended_handicap_by": "2026-11-14T11:15:00+00:00",
-   "final_check_time": "2026-11-14T11:50:00+00:00",
+   "earliest_safe_handicap_time": "2026-11-14T11:20:00+00:00",
+   "recommended_handicap_by": "2026-11-14T11:20:00+00:00",
+   "final_check_time": "2026-11-14T11:55:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -237,7 +227,7 @@
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-180_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-175_MIN"
    ],
    "bet_allowed": true,
    "label": "Taylor Fritz vs Thiago Agustin Tirante",
@@ -245,7 +235,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+   "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -278,11 +268,11 @@
   },
   "KXWTAMATCH-26NOV14NOSSVI": {
    "match_id": "WTA:26NOV14NOSSVI:singles",
-   "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+   "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
    "nominal_scheduled_start": "2026-11-15T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T11:47:20.301495+00:00",
+   "start_time_last_checked": "2026-11-14T11:57:47.646194+00:00",
    "current_expected_start": "2026-11-14T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -333,11 +323,11 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+   "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T11:47:20.301495+00:00",
+   "start_time_last_checked": "2026-11-14T11:57:47.646194+00:00",
    "current_expected_start": "2026-11-14T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -376,11 +366,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV14ANDMAN": {
    "match_id": "WTA:26NOV14ANDMAN:singles",
-   "evaluated_at": "2026-11-14T11:48:50.387071+00:00",
+   "evaluated_at": "2026-11-14T11:59:18.898064+00:00",
    "nominal_scheduled_start": "2026-11-14T20:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T11:47:20.301495+00:00",
+   "start_time_last_checked": "2026-11-14T11:57:47.646194+00:00",
    "current_expected_start": "2026-11-14T17:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
