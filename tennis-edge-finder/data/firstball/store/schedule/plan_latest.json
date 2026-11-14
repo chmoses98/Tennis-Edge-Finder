@@ -1,15 +1,16 @@
 {
- "generated_at": "2026-11-14T13:14:22.801961+00:00",
+ "generated_at": "2026-11-14T13:25:17.283907+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 98,
+ "board_matches": 107,
  "counts_by_status": {
-  "ESTIMATED_UPCOMING": 2,
+  "ESTIMATED_UPCOMING": 3,
   "STARTED": 1,
-  "VERIFIED_UPCOMING": 6,
-  "START_UNKNOWN": 89
+  "VERIFIED_UPCOMING": 5,
+  "START_UNKNOWN": 97,
+  "START_IMMINENT": 1
  },
- "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+ "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-14T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-14T19:15:00+00:00",
@@ -126,6 +127,31 @@
      "start_time_confidence": "LOW"
     }
    ]
+  },
+  {
+   "earliest_credible_first_ball": "2026-11-16T16:00:00+00:00",
+   "recommended_run_tennis_time": "2026-11-16T15:15:00+00:00",
+   "primary_refresh_window": [
+    "2026-11-16T15:15:00+00:00",
+    "2026-11-16T15:30:00+00:00"
+   ],
+   "final_status_price_check_time": "2026-11-16T15:50:00+00:00",
+   "final_refresh_window": [
+    "2026-11-16T15:50:00+00:00",
+    "2026-11-16T15:55:00+00:00"
+   ],
+   "primary_overdue": false,
+   "n_matches": 1,
+   "matches": [
+    {
+     "match_id": "KXATPMATCH-26NOV16ALCTIA",
+     "label": "Carlos Alcaraz vs Frances Tiafoe",
+     "current_expected_start": "2026-11-16T16:00:00+00:00",
+     "start_status": "ESTIMATED_UPCOMING",
+     "start_time_source": "KALSHI_NOMINAL",
+     "start_time_confidence": "LOW"
+    }
+   ]
   }
  ],
  "main_tour_status_unverified": [],
@@ -136,13 +162,13 @@
   "changed_matches": [],
   "slate_id": "SL-20261114T125309Z-94ae412b",
   "slate_built_at": "2026-11-14T12:53:09.377816+00:00",
-  "checked_at": "2026-11-14T13:14:22.801961+00:00"
+  "checked_at": "2026-11-14T13:25:17.283907+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -175,7 +201,7 @@
   },
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -202,7 +228,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -235,11 +261,11 @@
   },
   "KXWTAMATCH-26NOV14NOSSVI": {
    "match_id": "WTA:26NOV14NOSSVI:singles",
-   "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
    "nominal_scheduled_start": "2026-11-15T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T13:13:18.501883+00:00",
+   "start_time_last_checked": "2026-11-14T13:24:12.140041+00:00",
    "current_expected_start": "2026-11-14T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -290,11 +316,11 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T13:13:18.501883+00:00",
+   "start_time_last_checked": "2026-11-14T13:24:12.140041+00:00",
    "current_expected_start": "2026-11-14T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -333,11 +359,11 @@
   },
   "KXWTACHALLENGERMATCH-26NOV14ANDMAN": {
    "match_id": "WTA:26NOV14ANDMAN:singles",
-   "evaluated_at": "2026-11-14T13:14:22.801961+00:00",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
    "nominal_scheduled_start": "2026-11-14T20:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T13:13:18.501883+00:00",
+   "start_time_last_checked": "2026-11-14T13:24:12.140041+00:00",
    "current_expected_start": "2026-11-14T17:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -380,6 +406,39 @@
    "bet_allowed": true,
    "label": "Bianca Andreescu vs Elizabeth Mandlik",
    "level_bucket": "WTA125"
+  },
+  "KXATPMATCH-26NOV16ALCTIA": {
+   "match_id": "ATP:26NOV16ALCTIA:singles",
+   "evaluated_at": "2026-11-14T13:25:17.283907+00:00",
+   "nominal_scheduled_start": "2026-11-16T16:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": null,
+   "current_expected_start": "2026-11-16T16:00:00+00:00",
+   "start_time_source": "KALSHI_NOMINAL",
+   "start_time_confidence": "LOW",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-16T16:00:00+00:00",
+     "source": "KALSHI_NOMINAL",
+     "confidence": "LOW"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-16T15:15:00+00:00",
+   "recommended_handicap_by": "2026-11-16T15:15:00+00:00",
+   "final_check_time": "2026-11-16T15:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": null,
+   "court_context": null,
+   "start_status": "ESTIMATED_UPCOMING",
+   "status_reasons": [
+    "NO_RECENT_LIVE_STATUS: no live PRE reading within 30 min (never observed by a live source)"
+   ],
+   "bet_allowed": false,
+   "label": "Carlos Alcaraz vs Frances Tiafoe",
+   "level_bucket": "ATP"
   }
  }
 }
