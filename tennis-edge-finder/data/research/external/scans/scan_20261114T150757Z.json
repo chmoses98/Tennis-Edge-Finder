@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-14T15:07:57.592452+00:00",
+ "run_id": "20261114T150757Z",
+ "external_parse": {
+  "events": 60,
+  "markets": 582,
+  "skipped_family": 190,
+  "skipped_period": 127,
+  "skipped_live": 10,
+  "one_sided": 0,
+  "rows": 786,
+  "devigged": 265
+ },
+ "smarkets_fetch": {
+  "events_seen": 48,
+  "events_priced": 48,
+  "markets": 388,
+  "markets_mapped": 147,
+  "contracts": 324,
+  "quoted_contracts": 324,
+  "raw": "data/research/external/raw/20261114T150757Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 147,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 31,
+  "rows": 293,
+  "two_sided": 293,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 197,
+ "external_mapping": {
+  "total": 49,
+  "by_status": {
+   "MAPPED": 36,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7347,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 48,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 14,
+   "MAPPED": 32,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.6667,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 14,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 55,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 10
+  },
+  "mapped_rate": 0.8182,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Puchit Sukjai": 1,
+   "Pitchayapong Soponpisut": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Veerawit Kamput": 1,
+   "Woramet Bunphueng": 1,
+   "Amy Stevens": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "matched_both_venues": 24,
+ "external_mapped_matches": 55,
+ "kalshi_mapped_matches": 45,
+ "model_witness_available": true,
+ "rows": 30,
+ "counts": {
+  "PASS": 29,
+  "tri:MODEL_LONE_OUTLIER": 14,
+  "tri:INSUFFICIENT_INPUTS": 13,
+  "WATCH": 1,
+  "tri:KALSHI_LONE_OUTLIER": 3
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
