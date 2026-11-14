@@ -1,0 +1,34 @@
+{
+ "run_id": "20261114T171359Z",
+ "started_at": "2026-11-14T17:13:59.623276+00:00",
+ "passes": 5,
+ "requests": 10,
+ "observations": 41,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXWTACHALLENGERMATCH-26NOV14ANDMAN": {
+   "confidence": "B",
+   "bracket_s": 237.495715,
+   "first_ball": "2026-11-14T17:12:27.138986+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 10
+ },
+ "watchlist": {
+  "capture_board_markets": 765,
+  "events_only_on_capture_board": 87,
+  "selected_from_capture_board": 80
+ },
+ "mapping": {
+  "UNMATCHED": 550,
+  "MATCHED": 41
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-11-14T17:24:57.406614+00:00"
+}
