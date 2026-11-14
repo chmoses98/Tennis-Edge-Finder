@@ -1,0 +1,97 @@
+{
+ "run_id": "20261114T210155Z",
+ "started_at": "2026-11-14T21:01:55.580885+00:00",
+ "incomplete": [],
+ "counts": {
+  "open_markets": 817,
+  "quotes_written": 226,
+  "quotes_unchanged": 591,
+  "events_new": 0,
+  "books": 40,
+  "book_candidates": 40,
+  "trades_tennis": 8522,
+  "trades_global_scanned": 236162,
+  "settlements": 0,
+  "candles": 0
+ },
+ "trades": {
+  "new_window": {
+   "lo": 1794689514,
+   "hi": 1794690115,
+   "complete": false,
+   "pages": 200,
+   "trades": 200000
+  },
+  "backlog_scans": [
+   {
+    "lo": 1794689514,
+    "hi": 1794689615,
+    "complete": true,
+    "pages": 37,
+    "trades": 36162
+   }
+  ],
+  "errors": [],
+  "abandoned": [],
+  "pages": 237,
+  "backlog": {
+   "gaps": 0,
+   "pending_seconds": 0,
+   "oldest_gap_age_s": null
+  }
+ },
+ "hourly_sweep": false,
+ "client_stats": {
+  "requests": 431,
+  "retries": 8,
+  "http_429": 8,
+  "http_5xx": 0,
+  "failures": 0,
+  "seconds_sleeping": 74.30672659575278,
+  "by_path": {
+   "markets": 146,
+   "markets/KXITFWMATCH-26NOV14SATBEC-BEC/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV14SATBEC-SAT/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV14WANSUB-SUB/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV14WANSUB-WAN/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14CHIZHE-CHI/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14CHIZHE-ZHE/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV14PEGAND-17/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV14PEGAND-22/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV14PEGAND-27/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV14PEGAND-AND/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV14PEGAND-PEG/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14PEGAND-1-AND/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14PEGAND-1-PEG/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14PEGAND-2-AND/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14PEGAND-2-PEG/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV14NOSSVI-18/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV14NOSSVI-23/orderbook": 1,
+   "markets/KXWTAGTOTAL-26NOV14NOSSVI-28/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV14NOSSVI-NOS/orderbook": 1,
+   "markets/KXWTAMATCH-26NOV14NOSSVI-SVI/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14NOSSVI-1-NOS/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14NOSSVI-1-SVI/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14NOSSVI-2-NOS/orderbook": 1,
+   "markets/KXWTASETWINNER-26NOV14NOSSVI-2-SVI/orderbook": 1,
+   "markets/KXWTADOUBLES-26NOV14DABSTESINTOW-DABSTE/orderbook": 1,
+   "markets/KXWTADOUBLES-26NOV14DABSTESINTOW-SINTOW/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV14ANTSTEFOROKO-ANTSTE/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV14ANTSTEFOROKO-FOROKO/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV14BRUDELESTZEI-BRUDEL/orderbook": 1,
+   "markets/KXITFDOUBLES-26NOV14BRUDELESTZEI-ESTZEI/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14KUBVUJ-KUB/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14KUBVUJ-VUJ/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14MORRYA-MOR/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14MORRYA-RYA/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14OCFER-FER/orderbook": 1,
+   "markets/KXATPCHALLENGERMATCH-26NOV14OCFER-OC/orderbook": 1,
+   "markets/KXWTADOUBLES-26NOV14GUOMLAERRPAO-ERRPAO/orderbook": 1,
+   "markets/KXWTADOUBLES-26NOV14GUOMLAERRPAO-GUOMLA/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV14CROBUL-BUL/orderbook": 1,
+   "markets/KXITFWMATCH-26NOV14CROBUL-CRO/orderbook": 1,
+   "markets/trades": 237
+  }
+ },
+ "finished_at": "2026-11-14T21:03:33.276054+00:00"
+}
