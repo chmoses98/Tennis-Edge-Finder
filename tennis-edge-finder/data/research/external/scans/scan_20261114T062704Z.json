@@ -1,0 +1,76 @@
+{
+ "generated_at": "2026-11-14T06:27:04.195092+00:00",
+ "run_id": "20261114T062704Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 30,
+  "events_priced": 30,
+  "markets": 271,
+  "markets_mapped": 120,
+  "contracts": 262,
+  "quoted_contracts": 262,
+  "raw": "data/research/external/raw/20261114T062704Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 120,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 7,
+  "rows": 255,
+  "two_sided": 253,
+  "one_sided": 2
+ },
+ "kalshi_quotes_on_disk": 128,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 30,
+  "by_status": {
+   "MAPPED": 18,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 27,
+  "by_status": {
+   "MAPPED": 24,
+   "UNMAPPED_PLAYER": 3
+  },
+  "mapped_rate": 0.8889,
+  "top_refusal_subjects": {
+   "Dragos Cazacu": 1,
+   "Nikita Belozertsev": 1,
+   "Valeriia Iushchenko": 1
+  }
+ },
+ "matched_both_venues": 10,
+ "external_mapped_matches": 18,
+ "kalshi_mapped_matches": 24,
+ "model_witness_available": true,
+ "rows": 18,
+ "counts": {
+  "PASS": 18,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 6
+ },
+ "skips": {}
+}
