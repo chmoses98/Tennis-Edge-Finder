@@ -1,14 +1,14 @@
 {
- "generated_at": "2026-11-14T05:21:10.938928+00:00",
+ "generated_at": "2026-11-14T05:33:03.934442+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 101,
+ "board_matches": 106,
  "counts_by_status": {
   "ESTIMATED_UPCOMING": 2,
-  "VERIFIED_UPCOMING": 4,
-  "START_UNKNOWN": 95
+  "VERIFIED_UPCOMING": 7,
+  "START_UNKNOWN": 97
  },
- "evaluated_at": "2026-11-14T05:21:10.938928+00:00",
+ "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-14T12:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-14T11:15:00+00:00",
@@ -150,15 +150,15 @@
   "stale": false,
   "reasons": [],
   "changed_matches": [],
-  "slate_id": "SL-20261114T045706Z-46b6f4b1",
-  "slate_built_at": "2026-11-14T04:57:06.995125+00:00",
-  "checked_at": "2026-11-14T05:21:10.938928+00:00"
+  "slate_id": "SL-20261114T051823Z-7ccf9d3e",
+  "slate_built_at": "2026-11-14T05:18:23.050610+00:00",
+  "checked_at": "2026-11-14T05:33:03.934442+00:00"
  },
  "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-14T05:21:10.938928+00:00",
+   "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -191,11 +191,11 @@
   },
   "KXATPMATCH-26NOV14FRITIR": {
    "match_id": "ATP:26NOV14FRITIR:singles",
-   "evaluated_at": "2026-11-14T05:21:10.938928+00:00",
+   "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
    "nominal_scheduled_start": "2026-11-14T15:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T05:20:03.479670+00:00",
+   "start_time_last_checked": "2026-11-14T05:31:45.562048+00:00",
    "current_expected_start": "2026-11-14T12:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_atp",
    "start_time_confidence": "HIGH",
@@ -234,7 +234,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-14T05:21:10.938928+00:00",
+   "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -267,11 +267,11 @@
   },
   "KXWTAMATCH-26NOV14NOSSVI": {
    "match_id": "WTA:26NOV14NOSSVI:singles",
-   "evaluated_at": "2026-11-14T05:21:10.938928+00:00",
+   "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
    "nominal_scheduled_start": "2026-11-15T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T05:20:03.479670+00:00",
+   "start_time_last_checked": "2026-11-14T05:31:45.562048+00:00",
    "current_expected_start": "2026-11-14T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -322,11 +322,11 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-14T05:21:10.938928+00:00",
+   "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T05:20:03.479670+00:00",
+   "start_time_last_checked": "2026-11-14T05:31:45.562048+00:00",
    "current_expected_start": "2026-11-14T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -362,6 +362,56 @@
    "bet_allowed": true,
    "label": "Jessica Pegula vs Mirra Andreeva",
    "level_bucket": "WTA"
+  },
+  "KXWTACHALLENGERMATCH-26NOV14ANDMAN": {
+   "match_id": "WTA:26NOV14ANDMAN:singles",
+   "evaluated_at": "2026-11-14T05:33:03.934442+00:00",
+   "nominal_scheduled_start": "2026-11-14T20:00:00+00:00",
+   "nominal_is_placeholder": false,
+   "live_source_covered": true,
+   "start_time_last_checked": "2026-11-14T05:31:45.562048+00:00",
+   "current_expected_start": "2026-11-14T17:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
+   "start_time_candidates": [
+    {
+     "time": "2026-11-14T17:00:00+00:00",
+     "source": "LIVE_SCHEDULE:espn_wta",
+     "confidence": "HIGH"
+    }
+   ],
+   "earliest_safe_handicap_time": "2026-11-14T16:15:00+00:00",
+   "recommended_handicap_by": "2026-11-14T16:15:00+00:00",
+   "final_check_time": "2026-11-14T16:50:00+00:00",
+   "first_ball_status": "NOT_OBSERVED_STARTED",
+   "first_ball_source": null,
+   "first_ball_at": null,
+   "court": "Main Court",
+   "court_context": {
+    "court": "Main Court",
+    "same_time_on_court": 0,
+    "queue_ahead_pre": 1,
+    "preceding": {
+     "source_match_id": "186780",
+     "players": [
+      "Veronika Erjavec / Zhibek Kulambayeva",
+      "Laura Samson / Tamara Zidansek"
+     ],
+     "state": "PRE",
+     "period": 1,
+     "best_of": 3,
+     "games_played": 0,
+     "scheduled_utc": "2026-11-14T15:00:00+00:00",
+     "time_valid": true
+    }
+   },
+   "start_status": "VERIFIED_UPCOMING",
+   "status_reasons": [
+    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL"
+   ],
+   "bet_allowed": true,
+   "label": "Bianca Andreescu vs Elizabeth Mandlik",
+   "level_bucket": "WTA125"
   }
  }
 }
