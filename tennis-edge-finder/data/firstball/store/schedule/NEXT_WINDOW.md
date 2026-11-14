@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-14 13:03Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-14 13:14Z)
 
 * Earliest credible first ball: **2026-11-14 20:00Z**
 * Recommended RUN TENNIS time: **2026-11-14 19:15Z**
@@ -10,7 +10,7 @@
 | Jessica Pegula vs Mirra Andreeva | 2026-11-14 20:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 | Linda Noskova vs Elina Svitolina | 2026-11-14 21:30Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_wta | HIGH |
 
-Published slate: `SL-20261114T122733Z-2b5574d3` built 2026-11-14 12:27Z -- current
+Published slate: `SL-20261114T125309Z-94ae412b` built 2026-11-14 12:53Z -- current
 
 Dispatched this pass: none
 
