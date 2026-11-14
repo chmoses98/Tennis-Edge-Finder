@@ -1,0 +1,85 @@
+{
+ "generated_at": "2026-11-14T04:27:18.224633+00:00",
+ "run_id": "20261114T042718Z",
+ "external_parse": {
+  "events": 81,
+  "markets": 789,
+  "skipped_family": 221,
+  "skipped_period": 186,
+  "skipped_live": 9,
+  "one_sided": 3,
+  "rows": 1060,
+  "devigged": 379
+ },
+ "smarkets_fetch": {
+  "events_seen": 31,
+  "events_priced": 31,
+  "markets": 268,
+  "markets_mapped": 122,
+  "contracts": 264,
+  "quoted_contracts": 264,
+  "raw": "data/research/external/raw/20261114T042718Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 122,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 249,
+  "two_sided": 245,
+  "one_sided": 4
+ },
+ "kalshi_quotes_on_disk": 127,
+ "external_mapping": {
+  "total": 70,
+  "by_status": {
+   "MAPPED": 56,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.8,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Sanhui Shin": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 31,
+  "by_status": {
+   "MAPPED": 19,
+   "DOUBLES_UNSUPPORTED": 11,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.6129,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 32,
+  "by_status": {
+   "MAPPED": 30,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.9375,
+  "top_refusal_subjects": {
+   "Nikita Belozertsev": 1,
+   "Sanhui Shin": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 58,
+ "kalshi_mapped_matches": 30,
+ "model_witness_available": true,
+ "rows": 32,
+ "counts": {
+  "PASS": 32,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 20
+ },
+ "skips": {
+  "external_has_no_match_winner": 5
+ }
+}
