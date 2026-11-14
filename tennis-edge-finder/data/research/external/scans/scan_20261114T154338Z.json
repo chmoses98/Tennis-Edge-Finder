@@ -1,0 +1,95 @@
+{
+ "generated_at": "2026-11-14T15:43:38.310647+00:00",
+ "run_id": "20261114T154338Z",
+ "external_parse": {
+  "events": 62,
+  "markets": 553,
+  "skipped_family": 190,
+  "skipped_period": 120,
+  "skipped_live": 16,
+  "one_sided": 0,
+  "rows": 740,
+  "devigged": 243
+ },
+ "smarkets_fetch": {
+  "events_seen": 46,
+  "events_priced": 46,
+  "markets": 363,
+  "markets_mapped": 138,
+  "contracts": 302,
+  "quoted_contracts": 302,
+  "raw": "data/research/external/raw/20261114T154338Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 138,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 13,
+  "rows": 289,
+  "two_sided": 289,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 245,
+ "external_mapping": {
+  "total": 51,
+  "by_status": {
+   "MAPPED": 37,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7255,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Madhav Binu": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 46,
+  "by_status": {
+   "MAPPED": 32,
+   "UNMAPPED_PLAYER": 2,
+   "DOUBLES_UNSUPPORTED": 12
+  },
+  "mapped_rate": 0.6957,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 72,
+  "by_status": {
+   "MAPPED": 58,
+   "UNMAPPED_PLAYER": 14
+  },
+  "mapped_rate": 0.8056,
+  "top_refusal_subjects": {
+   "Kanta Watanabe": 1,
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Puchit Sukjai": 1,
+   "Zitawe Kulphisanrat": 1,
+   "Dharma Pantaratorn": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Veerawit Kamput": 1,
+   "Woramet Bunphueng": 1
+  }
+ },
+ "matched_both_venues": 31,
+ "external_mapped_matches": 56,
+ "kalshi_mapped_matches": 58,
+ "model_witness_available": true,
+ "rows": 40,
+ "counts": {
+  "PASS": 40,
+  "tri:MODEL_LONE_OUTLIER": 15,
+  "tri:INSUFFICIENT_INPUTS": 24,
+  "tri:MARKETS_AGREE": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 8
+ }
+}
