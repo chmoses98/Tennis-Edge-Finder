@@ -1,0 +1,34 @@
+{
+ "run_id": "20261114T151708Z",
+ "started_at": "2026-11-14T15:17:08.267356+00:00",
+ "passes": 4,
+ "requests": 8,
+ "observations": 38,
+ "truths_written": 1,
+ "sources": [
+  "espn_atp",
+  "espn_wta"
+ ],
+ "resolved": {
+  "KXATPDOUBLES-26NOV14MEKROGGREHEI": {
+   "confidence": "B",
+   "bracket_s": 274.632466,
+   "first_ball": "2026-11-14T15:17:51.886656+00:00",
+   "no_play": false
+  }
+ },
+ "http": {
+  "200": 8
+ },
+ "watchlist": {
+  "capture_board_markets": 753,
+  "events_only_on_capture_board": 69,
+  "selected_from_capture_board": 63
+ },
+ "mapping": {
+  "UNMATCHED": 396,
+  "MATCHED": 38
+ },
+ "mapping_refusals": {},
+ "finished_at": "2026-11-14T15:26:16.450690+00:00"
+}
