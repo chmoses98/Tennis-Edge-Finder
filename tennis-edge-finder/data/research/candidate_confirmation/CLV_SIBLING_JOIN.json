@@ -1,12 +1,12 @@
 {
  "clv_join_version": 1,
  "join_method": "CANONICAL_PHYSICAL_MATCH",
- "strict_before": 3102,
- "strict_after": 4156,
- "rows_given_a_sibling_truth": 1127,
- "rows_recovered_strict": 1054,
+ "strict_before": 3161,
+ "strict_after": 4227,
+ "rows_given_a_sibling_truth": 1139,
+ "rows_recovered_strict": 1066,
  "families_recovered": {
-  "TOTAL_GAMES": 768,
+  "TOTAL_GAMES": 780,
   "SET_WINNER": 118,
   "TOTAL_SETS": 4,
   "GAME_SPREAD": 50,
@@ -14,7 +14,7 @@
   "MATCH_WINNER": 38
  },
  "rejected": {
-  "source_is_a_match_leg": 249,
+  "source_is_a_match_leg": 251,
   "target_event_maps_to_several_physical_matches": 200
  }
 }
