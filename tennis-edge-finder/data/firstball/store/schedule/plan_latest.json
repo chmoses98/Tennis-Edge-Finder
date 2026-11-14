@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T20:19:22.992480+00:00",
+ "generated_at": "2026-11-14T20:29:12.750058+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 133,
@@ -9,18 +9,18 @@
   "STARTED": 1,
   "START_UNKNOWN": 125
  },
- "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+ "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
  "next_window": {
-  "earliest_credible_first_ball": "2026-11-14T20:58:45.554790+00:00",
-  "recommended_run_tennis_time": "2026-11-14T20:13:45.554790+00:00",
+  "earliest_credible_first_ball": "2026-11-14T21:08:36.519612+00:00",
+  "recommended_run_tennis_time": "2026-11-14T20:23:36.519612+00:00",
   "primary_refresh_window": [
-   "2026-11-14T20:13:45.554790+00:00",
-   "2026-11-14T20:28:45.554790+00:00"
+   "2026-11-14T20:23:36.519612+00:00",
+   "2026-11-14T20:38:36.519612+00:00"
   ],
-  "final_status_price_check_time": "2026-11-14T20:48:45.554790+00:00",
+  "final_status_price_check_time": "2026-11-14T20:58:36.519612+00:00",
   "final_refresh_window": [
-   "2026-11-14T20:48:45.554790+00:00",
-   "2026-11-14T20:53:45.554790+00:00"
+   "2026-11-14T20:58:36.519612+00:00",
+   "2026-11-14T21:03:36.519612+00:00"
   ],
   "primary_overdue": true,
   "n_matches": 1,
@@ -28,7 +28,7 @@
    {
     "match_id": "KXWTAMATCH-26NOV14NOSSVI",
     "label": "Linda Noskova vs Elina Svitolina",
-    "current_expected_start": "2026-11-14T20:58:45.554790+00:00",
+    "current_expected_start": "2026-11-14T21:08:36.519612+00:00",
     "start_status": "VERIFIED_UPCOMING",
     "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
     "start_time_confidence": "MEDIUM"
@@ -37,16 +37,16 @@
  },
  "windows": [
   {
-   "earliest_credible_first_ball": "2026-11-14T20:58:45.554790+00:00",
-   "recommended_run_tennis_time": "2026-11-14T20:13:45.554790+00:00",
+   "earliest_credible_first_ball": "2026-11-14T21:08:36.519612+00:00",
+   "recommended_run_tennis_time": "2026-11-14T20:23:36.519612+00:00",
    "primary_refresh_window": [
-    "2026-11-14T20:13:45.554790+00:00",
-    "2026-11-14T20:28:45.554790+00:00"
+    "2026-11-14T20:23:36.519612+00:00",
+    "2026-11-14T20:38:36.519612+00:00"
    ],
-   "final_status_price_check_time": "2026-11-14T20:48:45.554790+00:00",
+   "final_status_price_check_time": "2026-11-14T20:58:36.519612+00:00",
    "final_refresh_window": [
-    "2026-11-14T20:48:45.554790+00:00",
-    "2026-11-14T20:53:45.554790+00:00"
+    "2026-11-14T20:58:36.519612+00:00",
+    "2026-11-14T21:03:36.519612+00:00"
    ],
    "primary_overdue": true,
    "n_matches": 1,
@@ -54,7 +54,7 @@
     {
      "match_id": "KXWTAMATCH-26NOV14NOSSVI",
      "label": "Linda Noskova vs Elina Svitolina",
-     "current_expected_start": "2026-11-14T20:58:45.554790+00:00",
+     "current_expected_start": "2026-11-14T21:08:36.519612+00:00",
      "start_status": "VERIFIED_UPCOMING",
      "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
      "start_time_confidence": "MEDIUM"
@@ -167,7 +167,7 @@
  "slate_freshness": {
   "stale": true,
   "reasons": [
-   "PRIMARY_REFRESH_DUE: window at 2026-11-14T20:58:45.554790+00:00, slate built 2026-11-14T19:32:32.684022+00:00",
+   "PRIMARY_REFRESH_DUE: window at 2026-11-14T21:08:36.519612+00:00, slate built 2026-11-14T19:32:32.684022+00:00",
    "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 2 match(es)"
   ],
   "changed_matches": [
@@ -177,20 +177,18 @@
    },
    {
     "match": "KXWTAMATCH-26NOV14NOSSVI",
-    "change": "EXPECTED_START_MOVED_EARLIER_31_MIN"
+    "change": "EXPECTED_START_MOVED_EARLIER_21_MIN"
    }
   ],
   "slate_id": "SL-20261114T193232Z-18d074ee",
   "slate_built_at": "2026-11-14T19:32:32.684022+00:00",
-  "checked_at": "2026-11-14T20:19:22.992480+00:00"
+  "checked_at": "2026-11-14T20:29:12.750058+00:00"
  },
  "actions_this_pass": [
   {
-   "kind": "slate_primary",
-   "window": "20261114T2045Z",
-   "reason": "primary handicap packet for window at 2026-11-14T20:58:45.554790+00:00",
-   "at": "2026-11-14T20:19:22.992480+00:00",
-   "earliest_credible_first_ball": "2026-11-14T20:58:45.554790+00:00",
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-14T20:29:12.750058+00:00",
+   "reason": "published slate SL-20261114T193232Z-18d074ee is stale: 2 match(es) changed status/start since it was built",
    "dispatched": true,
    "http": 204
   }
@@ -198,7 +196,7 @@
  "statuses": {
   "KXATPMATCH-26NOV16MEDCOB": {
    "match_id": "ATP:26NOV16MEDCOB:singles",
-   "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+   "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
    "nominal_scheduled_start": "2026-11-16T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -231,7 +229,7 @@
   },
   "KXATPMATCH-26NOV16ALCTIA": {
    "match_id": "ATP:26NOV16ALCTIA:singles",
-   "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+   "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
    "nominal_scheduled_start": "2026-11-16T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -264,7 +262,7 @@
   },
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+   "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -297,7 +295,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+   "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -330,12 +328,12 @@
   },
   "KXWTAMATCH-26NOV14NOSSVI": {
    "match_id": "WTA:26NOV14NOSSVI:singles",
-   "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+   "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
    "nominal_scheduled_start": "2026-11-15T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T20:18:45.554790+00:00",
-   "current_expected_start": "2026-11-14T20:58:45.554790+00:00",
+   "start_time_last_checked": "2026-11-14T20:28:36.519612+00:00",
+   "current_expected_start": "2026-11-14T21:08:36.519612+00:00",
    "start_time_source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
    "start_time_confidence": "MEDIUM",
    "start_time_candidates": [
@@ -345,7 +343,7 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-14T20:58:45.554790+00:00",
+     "time": "2026-11-14T21:08:36.519612+00:00",
      "source": "COURT_PROGRESSION: preceding match on Indian Wells Tennis Garden in progress (set 1 of best-of-3)",
      "confidence": "MEDIUM"
     },
@@ -355,9 +353,9 @@
      "confidence": "LOW"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-14T20:13:45.554790+00:00",
-   "recommended_handicap_by": "2026-11-14T20:13:45.554790+00:00",
-   "final_check_time": "2026-11-14T20:48:45.554790+00:00",
+   "earliest_safe_handicap_time": "2026-11-14T20:23:36.519612+00:00",
+   "recommended_handicap_by": "2026-11-14T20:23:36.519612+00:00",
+   "final_check_time": "2026-11-14T20:58:36.519612+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -375,14 +373,14 @@
      "state": "IN",
      "period": 1,
      "best_of": 3,
-     "games_played": 1,
+     "games_played": 3,
      "scheduled_utc": "2026-11-14T20:10:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "VERIFIED_UPCOMING",
    "status_reasons": [
-    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-192_MIN"
+    "EXPECTED_START_DIFFERS_FROM_NOMINAL_BY_-182_MIN"
    ],
    "bet_allowed": true,
    "label": "Linda Noskova vs Elina Svitolina",
@@ -390,7 +388,7 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-14T20:19:22.992480+00:00",
+   "evaluated_at": "2026-11-14T20:29:12.750058+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
