@@ -1,5 +1,5 @@
 {
- "generated_at": "2026-11-14T16:49:52.826536+00:00",
+ "generated_at": "2026-11-14T17:01:46.414780+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
  "board_matches": 117,
@@ -10,7 +10,7 @@
   "START_IMMINENT": 1,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+ "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-14T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-14T19:15:00+00:00",
@@ -157,18 +157,33 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": false,
-  "reasons": [],
-  "changed_matches": [],
+  "stale": true,
+  "reasons": [
+   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
+  ],
+  "changed_matches": [
+   {
+    "match": "KXWTACHALLENGERMATCH-26NOV14ANDMAN",
+    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
+   }
+  ],
   "slate_id": "SL-20261114T143104Z-d7f132c8",
   "slate_built_at": "2026-11-14T14:31:04.059960+00:00",
-  "checked_at": "2026-11-14T16:49:52.826536+00:00"
+  "checked_at": "2026-11-14T17:01:46.414780+00:00"
  },
- "actions_this_pass": [],
+ "actions_this_pass": [
+  {
+   "kind": "slate_stale_refresh",
+   "at": "2026-11-14T17:01:46.414780+00:00",
+   "reason": "published slate SL-20261114T143104Z-d7f132c8 is stale: 1 match(es) changed status/start since it was built",
+   "dispatched": true,
+   "http": 204
+  }
+ ],
  "statuses": {
   "KXATPMATCH-26NOV16ALCTIA": {
    "match_id": "ATP:26NOV16ALCTIA:singles",
-   "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+   "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
    "nominal_scheduled_start": "2026-11-16T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -201,7 +216,7 @@
   },
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+   "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -234,7 +249,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+   "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -267,11 +282,11 @@
   },
   "KXWTAMATCH-26NOV14NOSSVI": {
    "match_id": "WTA:26NOV14NOSSVI:singles",
-   "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+   "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
    "nominal_scheduled_start": "2026-11-15T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T16:48:39.796074+00:00",
+   "start_time_last_checked": "2026-11-14T17:00:30.975237+00:00",
    "current_expected_start": "2026-11-14T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -322,11 +337,11 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+   "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T16:48:39.796074+00:00",
+   "start_time_last_checked": "2026-11-14T17:00:30.975237+00:00",
    "current_expected_start": "2026-11-14T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -365,14 +380,14 @@
   },
   "KXWTACHALLENGERMATCH-26NOV14ANDMAN": {
    "match_id": "WTA:26NOV14ANDMAN:singles",
-   "evaluated_at": "2026-11-14T16:49:52.826536+00:00",
+   "evaluated_at": "2026-11-14T17:01:46.414780+00:00",
    "nominal_scheduled_start": "2026-11-14T20:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T16:48:39.796074+00:00",
-   "current_expected_start": "2026-11-14T16:58:39.796074+00:00",
-   "start_time_source": "COURT_PROGRESSION: preceding match on Main Court in progress (set 3 of best-of-3)",
-   "start_time_confidence": "MEDIUM",
+   "start_time_last_checked": "2026-11-14T17:00:30.975237+00:00",
+   "current_expected_start": "2026-11-14T17:00:00+00:00",
+   "start_time_source": "LIVE_SCHEDULE:espn_wta",
+   "start_time_confidence": "HIGH",
    "start_time_candidates": [
     {
      "time": "2026-11-14T17:00:00+00:00",
@@ -380,14 +395,14 @@
      "confidence": "HIGH"
     },
     {
-     "time": "2026-11-14T16:58:39.796074+00:00",
-     "source": "COURT_PROGRESSION: preceding match on Main Court in progress (set 3 of best-of-3)",
+     "time": "2026-11-14T17:05:30.975237+00:00",
+     "source": "COURT_PROGRESSION: preceding match on Main Court finished",
      "confidence": "MEDIUM"
     }
    ],
-   "earliest_safe_handicap_time": "2026-11-14T16:13:39.796074+00:00",
-   "recommended_handicap_by": "2026-11-14T16:13:39.796074+00:00",
-   "final_check_time": "2026-11-14T16:48:39.796074+00:00",
+   "earliest_safe_handicap_time": "2026-11-14T16:15:00+00:00",
+   "recommended_handicap_by": "2026-11-14T16:15:00+00:00",
+   "final_check_time": "2026-11-14T16:50:00+00:00",
    "first_ball_status": "NOT_OBSERVED_STARTED",
    "first_ball_source": null,
    "first_ball_at": null,
@@ -402,17 +417,18 @@
       "Veronika Erjavec / Zhibek Kulambayeva",
       "Laura Samson / Tamara Zidansek"
      ],
-     "state": "IN",
+     "state": "POST",
      "period": 3,
      "best_of": 3,
-     "games_played": 20,
+     "games_played": 21,
      "scheduled_utc": "2026-11-14T15:05:00+00:00",
      "time_valid": true
     }
    },
    "start_status": "START_IMMINENT",
    "status_reasons": [
-    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL"
+    "NOMINAL_UNRELIABLE_AT_THIS_LEVEL",
+    "OVERDUE_BUT_SEEN_NOT_STARTED_75S_AGO"
    ],
    "bet_allowed": true,
    "label": "Bianca Andreescu vs Elizabeth Mandlik",
