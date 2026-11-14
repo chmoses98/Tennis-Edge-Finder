@@ -1,15 +1,15 @@
 {
- "generated_at": "2026-11-14T17:47:53.033163+00:00",
+ "generated_at": "2026-11-14T17:59:14.113771+00:00",
  "planner": "start_times_v1",
  "AUTONOMOUS_REAL_MONEY_AUTHORITY": "OFF",
- "board_matches": 115,
+ "board_matches": 118,
  "counts_by_status": {
   "ESTIMATED_UPCOMING": 3,
   "VERIFIED_UPCOMING": 4,
-  "START_UNKNOWN": 107,
+  "START_UNKNOWN": 110,
   "STARTED": 1
  },
- "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+ "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
  "next_window": {
   "earliest_credible_first_ball": "2026-11-14T20:00:00+00:00",
   "recommended_run_tennis_time": "2026-11-14T19:15:00+00:00",
@@ -156,33 +156,18 @@
  "main_tour_status_unverified": [],
  "rule": "primary handicap refresh 45->30 min before the EARLIEST credible first ball of the window; final status/price refresh 10->5 min before; times come from start reconciliation, never a nominal alone",
  "slate_freshness": {
-  "stale": true,
-  "reasons": [
-   "STATUS_OR_SCHEDULE_CHANGED_SINCE_BUILD: 1 match(es)"
-  ],
-  "changed_matches": [
-   {
-    "match": "KXWTACHALLENGERMATCH-26NOV14ANDMAN",
-    "change": "EXPECTED_START_PASSED_SINCE_BUILD"
-   }
-  ],
-  "slate_id": "SL-20261114T143104Z-d7f132c8",
-  "slate_built_at": "2026-11-14T14:31:04.059960+00:00",
-  "checked_at": "2026-11-14T17:47:53.033163+00:00"
+  "stale": false,
+  "reasons": [],
+  "changed_matches": [],
+  "slate_id": "SL-20261114T174433Z-5c357476",
+  "slate_built_at": "2026-11-14T17:44:33.391662+00:00",
+  "checked_at": "2026-11-14T17:59:14.113771+00:00"
  },
- "actions_this_pass": [
-  {
-   "kind": "slate_stale_refresh",
-   "at": "2026-11-14T17:47:53.033163+00:00",
-   "reason": "published slate SL-20261114T143104Z-d7f132c8 is stale: 1 match(es) changed status/start since it was built",
-   "dispatched": true,
-   "http": 204
-  }
- ],
+ "actions_this_pass": [],
  "statuses": {
   "KXATPMATCH-26NOV16ALCTIA": {
    "match_id": "ATP:26NOV16ALCTIA:singles",
-   "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+   "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
    "nominal_scheduled_start": "2026-11-16T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -215,7 +200,7 @@
   },
   "KXATPMATCH-26NOV15SHEFIL": {
    "match_id": "ATP:26NOV15SHEFIL:singles",
-   "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+   "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
    "nominal_scheduled_start": "2026-11-15T22:30:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -248,7 +233,7 @@
   },
   "KXATPMATCH-26NOV15ZVEJOD": {
    "match_id": "ATP:26NOV15ZVEJOD:singles",
-   "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+   "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
    "nominal_scheduled_start": "2026-11-15T16:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
@@ -281,11 +266,11 @@
   },
   "KXWTAMATCH-26NOV14NOSSVI": {
    "match_id": "WTA:26NOV14NOSSVI:singles",
-   "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+   "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
    "nominal_scheduled_start": "2026-11-15T00:10:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T17:46:45.519960+00:00",
+   "start_time_last_checked": "2026-11-14T17:58:08.282183+00:00",
    "current_expected_start": "2026-11-14T21:30:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -336,11 +321,11 @@
   },
   "KXWTAMATCH-26NOV14PEGAND": {
    "match_id": "WTA:26NOV14PEGAND:singles",
-   "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+   "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
    "nominal_scheduled_start": "2026-11-14T23:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
-   "start_time_last_checked": "2026-11-14T17:46:45.519960+00:00",
+   "start_time_last_checked": "2026-11-14T17:58:08.282183+00:00",
    "current_expected_start": "2026-11-14T20:00:00+00:00",
    "start_time_source": "LIVE_SCHEDULE:espn_wta",
    "start_time_confidence": "HIGH",
@@ -379,7 +364,7 @@
   },
   "KXWTACHALLENGERMATCH-26NOV14ANDMAN": {
    "match_id": "WTA:26NOV14ANDMAN:singles",
-   "evaluated_at": "2026-11-14T17:47:53.033163+00:00",
+   "evaluated_at": "2026-11-14T17:59:14.113771+00:00",
    "nominal_scheduled_start": "2026-11-14T20:00:00+00:00",
    "nominal_is_placeholder": false,
    "live_source_covered": true,
