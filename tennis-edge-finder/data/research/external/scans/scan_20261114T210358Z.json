@@ -1,0 +1,84 @@
+{
+ "generated_at": "2026-11-14T21:03:58.948838+00:00",
+ "run_id": "20261114T210358Z",
+ "external_parse": {
+  "events": 0,
+  "markets": 0,
+  "skipped_family": 0,
+  "skipped_period": 0,
+  "skipped_live": 0,
+  "one_sided": 0,
+  "rows": 0,
+  "devigged": 0
+ },
+ "smarkets_fetch": {
+  "events_seen": 103,
+  "events_priced": 80,
+  "markets": 313,
+  "markets_mapped": 144,
+  "contracts": 300,
+  "quoted_contracts": 300,
+  "raw": "data/research/external/raw/20261114T210358Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 144,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 23,
+  "rows": 277,
+  "two_sided": 276,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 226,
+ "external_mapping": {
+  "total": 0,
+  "by_status": {},
+  "mapped_rate": 0.0,
+  "top_refusal_subjects": {}
+ },
+ "smarkets_mapping": {
+  "total": 80,
+  "by_status": {
+   "MAPPED": 67,
+   "DOUBLES_UNSUPPORTED": 12,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.8375,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Kanta Watanabe": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 50,
+  "by_status": {
+   "MAPPED": 39,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.78,
+  "top_refusal_subjects": {
+   "Woravin Kumthonkittikul": 1,
+   "Pitchayapong Soponpisut": 1,
+   "Ryu Kotikula": 1,
+   "Ambre Le Prunenec": 1,
+   "Julia Salamon": 1,
+   "Capucine Dournes": 1,
+   "Sophie Ray": 1,
+   "Marilyn Seraphidou": 1,
+   "Rebecca Di Giovannantonio": 1,
+   "Angel Warang": 1
+  }
+ },
+ "matched_both_venues": 16,
+ "external_mapped_matches": 67,
+ "kalshi_mapped_matches": 39,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:MODEL_LONE_OUTLIER": 2,
+  "tri:INSUFFICIENT_INPUTS": 22,
+  "tri:MARKETS_AGREE": 2
+ },
+ "skips": {}
+}
