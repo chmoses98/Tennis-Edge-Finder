@@ -1,0 +1,91 @@
+{
+ "generated_at": "2026-11-14T13:47:57.034239+00:00",
+ "run_id": "20261114T134757Z",
+ "external_parse": {
+  "events": 64,
+  "markets": 617,
+  "skipped_family": 193,
+  "skipped_period": 139,
+  "skipped_live": 10,
+  "one_sided": 1,
+  "rows": 841,
+  "devigged": 284
+ },
+ "smarkets_fetch": {
+  "events_seen": 45,
+  "events_priced": 45,
+  "markets": 373,
+  "markets_mapped": 142,
+  "contracts": 312,
+  "quoted_contracts": 312,
+  "raw": "data/research/external/raw/20261114T134757Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 142,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 15,
+  "rows": 297,
+  "two_sided": 297,
+  "one_sided": 0
+ },
+ "kalshi_quotes_on_disk": 192,
+ "external_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 39,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7358,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 45,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 11,
+   "MAPPED": 32,
+   "UNMAPPED_PLAYER": 2
+  },
+  "mapped_rate": 0.7111,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 11,
+   "Abdullah Shelbayh": 1,
+   "Jay Friend": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 53,
+  "by_status": {
+   "MAPPED": 45,
+   "UNMAPPED_PLAYER": 8
+  },
+  "mapped_rate": 0.8491,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Dharma Pantaratorn": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Veerawit Kamput": 1,
+   "Woramet Bunphueng": 1,
+   "Amy Stevens": 1,
+   "Aran Teixido Garcia": 1
+  }
+ },
+ "matched_both_venues": 22,
+ "external_mapped_matches": 57,
+ "kalshi_mapped_matches": 45,
+ "model_witness_available": true,
+ "rows": 26,
+ "counts": {
+  "PASS": 26,
+  "tri:MODEL_LONE_OUTLIER": 10,
+  "tri:INSUFFICIENT_INPUTS": 16
+ },
+ "skips": {
+  "external_has_no_match_winner": 7
+ }
+}
