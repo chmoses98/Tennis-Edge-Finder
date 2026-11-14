@@ -1,4 +1,4 @@
-# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-14 08:08Z)
+# NEXT ACTIONABLE MAIN-TOUR WINDOW (planned 2026-11-14 08:47Z)
 
 * Earliest credible first ball: **2026-11-14 12:00Z**
 * Recommended RUN TENNIS time: **2026-11-14 11:15Z**
@@ -9,7 +9,7 @@
 |---|---|---|---|---|
 | Taylor Fritz vs Thiago Agustin Tirante | 2026-11-14 12:00Z | VERIFIED_UPCOMING | LIVE_SCHEDULE:espn_atp | HIGH |
 
-Published slate: `SL-20261114T051823Z-7ccf9d3e` built 2026-11-14 05:18Z -- current
+Published slate: `SL-20261114T075400Z-3690c009` built 2026-11-14 07:54Z -- current
 
 Dispatched this pass: none
 
