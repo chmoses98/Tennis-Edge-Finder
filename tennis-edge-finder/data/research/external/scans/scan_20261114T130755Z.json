@@ -1,0 +1,94 @@
+{
+ "generated_at": "2026-11-14T13:07:55.515211+00:00",
+ "run_id": "20261114T130755Z",
+ "external_parse": {
+  "events": 67,
+  "markets": 658,
+  "skipped_family": 200,
+  "skipped_period": 151,
+  "skipped_live": 8,
+  "one_sided": 3,
+  "rows": 886,
+  "devigged": 304
+ },
+ "smarkets_fetch": {
+  "events_seen": 44,
+  "events_priced": 44,
+  "markets": 375,
+  "markets_mapped": 142,
+  "contracts": 314,
+  "quoted_contracts": 314,
+  "raw": "data/research/external/raw/20261114T130755Z.smarkets.json.gz"
+ },
+ "smarkets_parse": {
+  "markets": 142,
+  "skipped_family": 0,
+  "no_contracts": 0,
+  "no_book": 36,
+  "rows": 278,
+  "two_sided": 277,
+  "one_sided": 1
+ },
+ "kalshi_quotes_on_disk": 220,
+ "external_mapping": {
+  "total": 56,
+  "by_status": {
+   "MAPPED": 42,
+   "DOUBLES_UNSUPPORTED": 13,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.75,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 13,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "smarkets_mapping": {
+  "total": 44,
+  "by_status": {
+   "DOUBLES_UNSUPPORTED": 12,
+   "MAPPED": 31,
+   "UNMAPPED_PLAYER": 1
+  },
+  "mapped_rate": 0.7045,
+  "top_refusal_subjects": {
+   "doubles pairs need four identities; the singles registry carries two": 12,
+   "Abdullah Shelbayh": 1
+  }
+ },
+ "kalshi_mapping": {
+  "total": 63,
+  "by_status": {
+   "MAPPED": 52,
+   "UNMAPPED_PLAYER": 11
+  },
+  "mapped_rate": 0.8254,
+  "top_refusal_subjects": {
+   "Abdullah Shelbayh": 1,
+   "Bianca Andreescu": 1,
+   "Dharma Pantaratorn": 1,
+   "Ari Feig": 1,
+   "Ryu Kotikula": 1,
+   "Veerawit Kamput": 1,
+   "Woramet Bunphueng": 1,
+   "Dragos Cazacu": 1,
+   "Amy Stevens": 1,
+   "Ava Esposito Cogan": 1
+  }
+ },
+ "matched_both_venues": 29,
+ "external_mapped_matches": 59,
+ "kalshi_mapped_matches": 52,
+ "model_witness_available": true,
+ "rows": 44,
+ "counts": {
+  "PASS": 43,
+  "tri:MODEL_LONE_OUTLIER": 12,
+  "tri:INSUFFICIENT_INPUTS": 29,
+  "tri:KALSHI_LONE_OUTLIER": 3,
+  "WATCH": 1
+ },
+ "skips": {
+  "external_has_no_match_winner": 6
+ }
+}
